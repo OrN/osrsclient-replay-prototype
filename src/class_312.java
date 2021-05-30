@@ -27,21 +27,7 @@ public class class_312 {
       }
    }
 
-   // $FF: renamed from: s () int
-   public int method_5556() {
-      return 8 == (this.field_3755 & 8)?1:0;
-   }
-
-   // $FF: renamed from: g (int) void
-   void method_5557(int var1) {
-      this.field_3755 &= -9;
-      if(1 == var1) {
-         this.field_3755 = (byte)(this.field_3755 | 8);
-      }
-
-   }
-
-   // $FF: renamed from: n (int) int
+    // $FF: renamed from: n (int) int
    public int method_5558() {
       try {
          return this.field_3755 & 7;
@@ -89,41 +75,7 @@ public class class_312 {
       }
    }
 
-   // $FF: renamed from: j (java.lang.Integer) void
-   void method_5562() {}
-
-   // $FF: renamed from: o (int) void
-   void method_5563(int var1) {
-      this.field_3755 &= -8;
-      this.field_3755 = (byte)(this.field_3755 | var1 & 7);
-   }
-
-   // $FF: renamed from: b () int
-   public int method_5564() {
-      return this.field_3755 & 7;
-   }
-
-   // $FF: renamed from: d () int
-   public int method_5565() {
-      return this.field_3755 & 7;
-   }
-
-   // $FF: renamed from: u (int) void
-   void method_5566(int var1) {
-      this.field_3755 = (byte)(this.field_3755 & -446224026);
-      this.field_3755 = (byte)(this.field_3755 | var1 & 7);
-   }
-
-   // $FF: renamed from: l (int) void
-   void method_5567(int var1) {
-      this.field_3755 &= -8;
-      this.field_3755 = (byte)(this.field_3755 | var1 & 7);
-   }
-
-   // $FF: renamed from: r (java.lang.Integer) void
-   void method_5568() {}
-
-   // $FF: renamed from: <init> (nd, boolean) void
+    // $FF: renamed from: <init> (nd, boolean) void
    public class_312(class_28 var1, boolean var2) {
       super();
       try {
@@ -175,25 +127,7 @@ public class class_312 {
       }
    }
 
-   // $FF: renamed from: c (int) void
-   void method_5570(int var1) {
-      this.field_3755 &= -9;
-      if(1 == var1) {
-         this.field_3755 = (byte)(this.field_3755 | 8);
-      }
-
-   }
-
-   // $FF: renamed from: e (int) void
-   void method_5571(int var1) {
-      this.field_3755 &= -9;
-      if(1 == var1) {
-         this.field_3755 = (byte)(this.field_3755 | 8);
-      }
-
-   }
-
-   // $FF: renamed from: p (int, byte) void
+    // $FF: renamed from: p (int, byte) void
    void method_5572(int var1, byte var2) {
       try {
          this.field_3755 &= -9;
@@ -210,12 +144,4 @@ public class class_312 {
       }
    }
 
-   // $FF: renamed from: a (int) void
-   void method_5573(int var1) {
-      this.field_3755 &= -9;
-      if(1 == var1) {
-         this.field_3755 = (byte)(this.field_3755 | 8);
-      }
-
-   }
 }

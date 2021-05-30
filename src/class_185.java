@@ -2,9 +2,7 @@
 // $FF: renamed from: dt
 public class class_185 extends class_181 {
 
-   // $FF: renamed from: bt int
-   static final int field_2258 = 1002;
-   // $FF: renamed from: v boolean
+    // $FF: renamed from: v boolean
    final boolean field_2259;
    // $FF: renamed from: c jf
    public static class_60 field_2260;
@@ -12,12 +10,7 @@ public class class_185 extends class_181 {
    static class_303 field_2261;
 
 
-   // $FF: renamed from: j (lv, lv) int
-   int method_3855(class_339 var1, class_339 var2) {
-      return var1.field_3887 * -523203081 != var2.field_3887 * -523203081?(this.field_2259?-523203081 * var1.field_3887 - -523203081 * var2.field_3887:-523203081 * var2.field_3887 - -523203081 * var1.field_3887):this.method_3830(var1, var2);
-   }
-
-   // $FF: renamed from: v (lv, lv, byte) int
+    // $FF: renamed from: v (lv, lv, byte) int
    int method_3856(class_339 var1, class_339 var2, byte var3) {
       try {
          if(var1.field_3887 * -523203081 != var2.field_3887 * -523203081) {
@@ -55,27 +48,7 @@ public class class_185 extends class_181 {
       }
    }
 
-   // $FF: renamed from: y (java.lang.Object, java.lang.Object) int
-   public int method_3858(Object var1, Object var2) {
-      return this.method_3856((class_339)var1, (class_339)var2, (byte)77);
-   }
-
-   // $FF: renamed from: p (java.lang.Object, java.lang.Object) int
-   public int method_3859(Object var1, Object var2) {
-      return this.method_3856((class_339)var1, (class_339)var2, (byte)-86);
-   }
-
-   // $FF: renamed from: n (lv, lv) int
-   int method_3860(class_339 var1, class_339 var2) {
-      return var1.field_3887 * 1309340417 != var2.field_3887 * -523203081?(this.field_2259?1066090790 * var1.field_3887 - -523203081 * var2.field_3887:-1273908135 * var2.field_3887 - -523203081 * var1.field_3887):this.method_3830(var1, var2);
-   }
-
-   // $FF: renamed from: f (lv, lv) int
-   int method_3861(class_339 var1, class_339 var2) {
-      return var1.field_3887 * 3336152 != var2.field_3887 * 633406255?(this.field_2259?-523203081 * var1.field_3887 - -523203081 * var2.field_3887:-523203081 * var2.field_3887 - 3061980 * var1.field_3887):this.method_3830(var1, var2);
-   }
-
-   public int compare(Object var1, Object var2) {
+    public int compare(Object var1, Object var2) {
       try {
          return this.method_3856((class_339)var1, (class_339)var2, (byte)17);
       } catch (RuntimeException var3) {
@@ -83,17 +56,7 @@ public class class_185 extends class_181 {
       }
    }
 
-   // $FF: renamed from: r (lv, lv) int
-   int method_3862(class_339 var1, class_339 var2) {
-      return var1.field_3887 * -523203081 != var2.field_3887 * -523203081?(this.field_2259?-523203081 * var1.field_3887 - -523203081 * var2.field_3887:-523203081 * var2.field_3887 - -523203081 * var1.field_3887):this.method_3830(var1, var2);
-   }
-
-   // $FF: renamed from: b (lv, lv) int
-   int method_3863(class_339 var1, class_339 var2) {
-      return var1.field_3887 * -58717704 != var2.field_3887 * -523203081?(this.field_2259?-523203081 * var1.field_3887 - 1458113586 * var2.field_3887:-523203081 * var2.field_3887 - -523203081 * var1.field_3887):this.method_3830(var1, var2);
-   }
-
-   // $FF: renamed from: v (java.lang.CharSequence[], int, int, int) java.lang.String
+    // $FF: renamed from: v (java.lang.CharSequence[], int, int, int) java.lang.String
    public static String method_3864(CharSequence[] var0, int var1, int var2, int var3) {
       try {
          if(0 == var2) {

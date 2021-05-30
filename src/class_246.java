@@ -6,9 +6,7 @@ public class class_246 {
 
    // $FF: renamed from: f int
    int field_2721;
-   // $FF: renamed from: t int
-   static final int field_2722 = 1;
-   // $FF: renamed from: n int
+    // $FF: renamed from: n int
    int field_2723;
    // $FF: renamed from: j int
    static int field_2724;

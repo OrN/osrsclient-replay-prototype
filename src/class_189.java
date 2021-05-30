@@ -10,26 +10,11 @@ public class class_189 extends class_181 {
    static class_307 field_2275;
    // $FF: renamed from: iz int
    static int field_2276;
-   // $FF: renamed from: s int
-   static final int field_2277 = 512;
-   // $FF: renamed from: u short[]
+    // $FF: renamed from: u short[]
    public static short[] field_2278;
 
 
-   // $FF: renamed from: n (lv, lv) int
-   int method_3893(class_339 var1, class_339 var2) {
-      if(var1.field_3888 * 1693720149 != 0) {
-         if(0 == 1693720149 * var2.field_3888) {
-            return this.field_2273?-1:1;
-         }
-      } else if(0 != var2.field_3888 * 1693720149) {
-         return this.field_2273?1:-1;
-      }
-
-      return this.method_3830(var1, var2);
-   }
-
-   // $FF: renamed from: v (lv, lv, int) int
+    // $FF: renamed from: v (lv, lv, int) int
    int method_3894(class_339 var1, class_339 var2, int var3) {
       try {
          byte var10000;
@@ -83,12 +68,7 @@ public class class_189 extends class_181 {
       }
    }
 
-   // $FF: renamed from: y (java.lang.Object, java.lang.Object) int
-   public int method_3895(Object var1, Object var2) {
-      return this.method_3894((class_339)var1, (class_339)var2, 775898900);
-   }
-
-   // $FF: renamed from: hz (ch, int) void
+    // $FF: renamed from: hz (ch, int) void
    static final void method_3896(class_50 var0, int var1) {
       try {
          long var2 = 0L;
@@ -198,34 +178,4 @@ public class class_189 extends class_181 {
       }
    }
 
-   // $FF: renamed from: j (lv, lv) int
-   int method_3899(class_339 var1, class_339 var2) {
-      if(var1.field_3888 * -2035629280 != 0) {
-         if(0 == 1693720149 * var2.field_3888) {
-            return this.field_2273?-1:1;
-         }
-      } else if(0 != var2.field_3888 * 1693720149) {
-         return this.field_2273?1:-1;
-      }
-
-      return this.method_3830(var1, var2);
-   }
-
-   // $FF: renamed from: p (java.lang.Object, java.lang.Object) int
-   public int method_3900(Object var1, Object var2) {
-      return this.method_3894((class_339)var1, (class_339)var2, 1000205713);
-   }
-
-   // $FF: renamed from: f (lv, lv) int
-   int method_3901(class_339 var1, class_339 var2) {
-      if(var1.field_3888 * 1693720149 != 0) {
-         if(0 == 1693720149 * var2.field_3888) {
-            return this.field_2273?-1:1;
-         }
-      } else if(0 != var2.field_3888 * 1693720149) {
-         return this.field_2273?1:-1;
-      }
-
-      return this.method_3830(var1, var2);
-   }
 }

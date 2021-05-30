@@ -10,11 +10,9 @@ public class class_351 {
    public int field_3947;
    // $FF: renamed from: y int
    public int field_3948;
-   // $FF: renamed from: r int
-   public static final int field_3949 = 260;
 
 
-   // $FF: renamed from: f (li, li, byte) void
+    // $FF: renamed from: f (li, li, byte) void
    public void method_6207(class_351 var1, class_351 var2) {
       try {
          this.method_6212(var1, var2, -1616583168);
@@ -63,13 +61,7 @@ public class class_351 {
       }
    }
 
-   // $FF: renamed from: s (int, int) void
-   public void method_6211(int var1, int var2) {
-      this.field_3947 = -888661779 * var1;
-      this.field_3948 = 1584612999 * var2;
-   }
-
-   // $FF: renamed from: y (li, li, int) void
+    // $FF: renamed from: y (li, li, int) void
    void method_6212(class_351 var1, class_351 var2, int var3) {
       try {
          var2.field_3946 = this.field_3946 * 1;
@@ -157,65 +149,7 @@ public class class_351 {
       }
    }
 
-   // $FF: renamed from: e (li, li) void
-   void method_6216(class_351 var1, class_351 var2) {
-      var2.field_3946 = this.field_3946 * 1;
-      var2.field_3947 = this.field_3947 * 1;
-      if(this.field_3946 * -1774637825 < -1774637825 * var1.field_3946) {
-         var2.field_3947 -= 203329555 * var1.field_3946 - this.field_3946 * 203329555;
-         var2.field_3946 = var1.field_3946 * 1;
-      }
-
-      if(var2.method_6214() > var1.method_6214()) {
-         var2.field_3947 -= (var2.method_6214() - var1.method_6214()) * -888661779;
-      }
-
-      if(var2.field_3947 * -250215195 < 0) {
-         var2.field_3947 = 0;
-      }
-
-   }
-
-   // $FF: renamed from: g (li, li) void
-   void method_6217(class_351 var1, class_351 var2) {
-      var2.field_3945 = 1 * this.field_3945;
-      var2.field_3948 = this.field_3948 * 1;
-      if(47432047 * this.field_3945 < var1.field_3945 * 47432047) {
-         var2.field_3948 -= 191650697 * var1.field_3945 - 191650697 * this.field_3945;
-         var2.field_3945 = 1 * var1.field_3945;
-      }
-
-      if(var2.method_6215() > var1.method_6215()) {
-         var2.field_3948 -= (var2.method_6215() - var1.method_6215()) * 1584612999;
-      }
-
-      if(1839374135 * var2.field_3948 < 0) {
-         var2.field_3948 = 0;
-      }
-
-   }
-
-   public String aci() {
-      return null;
-   }
-
-   public String acx() {
-      return null;
-   }
-
-   // $FF: renamed from: b (int, int) void
-   public void method_6218(int var1, int var2) {
-      this.field_3946 = var1 * 1658704639;
-      this.field_3945 = var2 * -2070364785;
-   }
-
-   // $FF: renamed from: d (int, int) void
-   public void method_6219(int var1, int var2) {
-      this.field_3947 = -888661779 * var1;
-      this.field_3948 = 1584612999 * var2;
-   }
-
-   // $FF: renamed from: <init> (int, int) void
+    // $FF: renamed from: <init> (int, int) void
    public class_351(int var1, int var2) {
       this(0, 0, var1, var2);
       try {
@@ -224,96 +158,4 @@ public class class_351 {
       }
    }
 
-   // $FF: renamed from: u (li, li) void
-   public void method_6221(class_351 var1, class_351 var2) {
-      this.method_6212(var1, var2, -1306742589);
-      this.method_6213(var1, var2, (short)10900);
-   }
-
-   // $FF: renamed from: l (li, li) void
-   public void method_6222(class_351 var1, class_351 var2) {
-      this.method_6212(var1, var2, -374100087);
-      this.method_6213(var1, var2, (short)30954);
-   }
-
-   public String acv() {
-      return null;
-   }
-
-   // $FF: renamed from: c (li, li) void
-   void method_6223(class_351 var1, class_351 var2) {
-      var2.field_3946 = this.field_3946 * 1;
-      var2.field_3947 = this.field_3947 * 1;
-      if(this.field_3946 * -1774637825 < -1774637825 * var1.field_3946) {
-         var2.field_3947 -= -114496560 * var1.field_3946 - this.field_3946 * 203329555;
-         var2.field_3946 = var1.field_3946 * 1;
-      }
-
-      if(var2.method_6214() > var1.method_6214()) {
-         var2.field_3947 -= (var2.method_6214() - var1.method_6214()) * 167911886;
-      }
-
-      if(var2.field_3947 * -250215195 < 0) {
-         var2.field_3947 = 0;
-      }
-
-   }
-
-   public String acm() {
-      return null;
-   }
-
-   // $FF: renamed from: o (li, li) void
-   public void method_6224(class_351 var1, class_351 var2) {
-      this.method_6212(var1, var2, -1224509065);
-      this.method_6213(var1, var2, (short)17130);
-   }
-
-   // $FF: renamed from: a (li, li) void
-   void method_6225(class_351 var1, class_351 var2) {
-      var2.field_3945 = 1 * this.field_3945;
-      var2.field_3948 = this.field_3948 * 1;
-      if(47432047 * this.field_3945 < var1.field_3945 * 47432047) {
-         var2.field_3948 -= 191650697 * var1.field_3945 - 191650697 * this.field_3945;
-         var2.field_3945 = 1 * var1.field_3945;
-      }
-
-      if(var2.method_6215() > var1.method_6215()) {
-         var2.field_3948 -= (var2.method_6215() - var1.method_6215()) * 1584612999;
-      }
-
-      if(1839374135 * var2.field_3948 < 0) {
-         var2.field_3948 = 0;
-      }
-
-   }
-
-   // $FF: renamed from: k (li, li) void
-   void method_6226(class_351 var1, class_351 var2) {
-      var2.field_3945 = 1 * this.field_3945;
-      var2.field_3948 = this.field_3948 * 1;
-      if(47432047 * this.field_3945 < var1.field_3945 * 1570499101) {
-         var2.field_3948 -= 191650697 * var1.field_3945 - 1813754763 * this.field_3945;
-         var2.field_3945 = 1 * var1.field_3945;
-      }
-
-      if(var2.method_6215() > var1.method_6215()) {
-         var2.field_3948 -= (var2.method_6215() - var1.method_6215()) * 1584612999;
-      }
-
-      if(1839374135 * var2.field_3948 < 0) {
-         var2.field_3948 = 0;
-      }
-
-   }
-
-   // $FF: renamed from: m () int
-   int method_6227() {
-      return this.field_3947 * -250215195 + this.field_3946 * -1774637825;
-   }
-
-   // $FF: renamed from: x () int
-   int method_6228() {
-      return 1839374135 * this.field_3948 + this.field_3945 * -1898815010;
-   }
 }

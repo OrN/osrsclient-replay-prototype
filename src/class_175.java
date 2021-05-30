@@ -2,25 +2,17 @@
 // $FF: renamed from: cs
 public class class_175 {
 
-   // $FF: renamed from: v int
-   static final int field_2169 = 100;
-   // $FF: renamed from: ey int
+    // $FF: renamed from: ey int
    static int field_2170;
    // $FF: renamed from: f int
    int field_2171;
    // $FF: renamed from: s int[]
    static int[] field_2172;
-   // $FF: renamed from: ad int
-   static final int field_2173 = 19136830;
-   // $FF: renamed from: n bi[]
+    // $FF: renamed from: n bi[]
    class_101[] field_2174;
-   // $FF: renamed from: d int
-   public static final int field_2175 = 9;
-   // $FF: renamed from: cp int
-   static final int field_2176 = 102;
 
 
-   // $FF: renamed from: f (byte) int
+    // $FF: renamed from: f (byte) int
    int method_3731() {
       try {
          return -1182640923 * this.field_2171;
@@ -105,34 +97,7 @@ public class class_175 {
       }
    }
 
-   // $FF: renamed from: y (int, java.lang.String, java.lang.String, java.lang.String) bi
-   class_101 method_3735(int var1, String var2, String var3, String var4) {
-      class_101 var5 = this.field_2174[99];
-
-      for(int var6 = this.field_2171 * -495110777; var6 > 0; --var6) {
-         if(var6 != 100) {
-            this.field_2174[var6] = this.field_2174[var6 - 1];
-         }
-      }
-
-      if(var5 == null) {
-         class_101 var10000 = new class_101(var1, var2, var4, var3);
-         var5 = var10000;
-      } else {
-         var5.method_108();
-         var5.method_635();
-         var5.method_1883(var1, var2, var4, var3);
-      }
-
-      this.field_2174[0] = var5;
-      if(74750156 * this.field_2171 < 100) {
-         this.field_2171 += 83025307;
-      }
-
-      return var5;
-   }
-
-   // $FF: renamed from: b (int, cf, boolean, byte) int
+    // $FF: renamed from: b (int, cf, boolean, byte) int
    static int method_3736(int var0, boolean var2, byte var3) {
       try {
          boolean var4 = true;
@@ -421,17 +386,7 @@ public class class_175 {
       }
    }
 
-   // $FF: renamed from: j (int) bi
-   class_101 method_3737(int var1) {
-      return var1 >= 0 && var1 < -1729706357 * this.field_2171?this.field_2174[var1]:null;
-   }
-
-   // $FF: renamed from: r (int) bi
-   class_101 method_3738(int var1) {
-      return var1 >= 0 && var1 < -802734255 * this.field_2171?this.field_2174[var1]:null;
-   }
-
-   // $FF: renamed from: v (jv, jv, int) void
+    // $FF: renamed from: v (jv, jv, int) void
    public static void method_3739(class_306 var0, class_306 var1) {
       try {
          class_394.field_4247 = var0;
@@ -479,30 +434,4 @@ public class class_175 {
       }
    }
 
-   // $FF: renamed from: p (int, java.lang.String, java.lang.String, java.lang.String) bi
-   class_101 method_3743(int var1, String var2, String var3, String var4) {
-      class_101 var5 = this.field_2174[99];
-
-      for(int var6 = this.field_2171 * 144559705; var6 > 0; --var6) {
-         if(var6 != 550330253) {
-            this.field_2174[var6] = this.field_2174[var6 - 1];
-         }
-      }
-
-      if(var5 == null) {
-         class_101 var10000 = new class_101(var1, var2, var4, var3);
-         var5 = var10000;
-      } else {
-         var5.method_108();
-         var5.method_635();
-         var5.method_1883(var1, var2, var4, var3);
-      }
-
-      this.field_2174[0] = var5;
-      if(-1182640923 * this.field_2171 < 100) {
-         this.field_2171 += 2016102637;
-      }
-
-      return var5;
-   }
 }

@@ -17,19 +17,11 @@ public class class_245 implements class_7 {
    class_42[] field_2714;
    // $FF: renamed from: p double
    double field_2715;
-   // $FF: renamed from: e int
-   static final int field_2716 = 4;
-   // $FF: renamed from: b int
-   static final int field_2717 = 5;
-   // $FF: renamed from: hy oh[]
+    // $FF: renamed from: hy oh[]
    static class_67[] field_2718;
-   // $FF: renamed from: ar int
-   static final int field_2719 = 38;
-   // $FF: renamed from: ax int
-   static final int field_2720 = 36;
 
 
-   // $FF: renamed from: t (int) boolean
+    // $FF: renamed from: t (int) boolean
    public boolean method_43() {
       return 861354963 * this.field_2711 == 64;
    }
@@ -180,20 +172,7 @@ public class class_245 implements class_7 {
       }
    }
 
-   // $FF: renamed from: h () void
-   public void method_4693() {
-      for(int var1 = 0; var1 < this.field_2714.length; ++var1) {
-         if(this.field_2714[var1] != null) {
-            this.field_2714[var1].method_490();
-         }
-      }
-
-      class_335 var10001 = new class_335();
-      this.field_2710 = var10001;
-      this.field_2712 = this.field_2709 * 117958777;
-   }
-
-   // $FF: renamed from: b (int, int) void
+    // $FF: renamed from: b (int, int) void
    public void method_4694(int var1, int var2) {
       try {
          for(int var3 = 0; var3 < this.field_2714.length; ++var3) {
@@ -229,65 +208,7 @@ public class class_245 implements class_7 {
       }
    }
 
-   // $FF: renamed from: d () int
-   public int method_4695() {
-      int var1 = 0;
-      int var2 = 0;
-      class_42[] var3 = this.field_2714;
-
-      for(int var4 = 0; var4 < var3.length; ++var4) {
-         class_42 var5 = var3[var4];
-         if(var5 != null && null != var5.field_301) {
-            var1 += var5.field_301.length;
-            int[] var6 = var5.field_301;
-
-            for(int var7 = 0; var7 < var6.length; ++var7) {
-               int var8 = var6[var7];
-               if(this.field_2713.method_5429(var8, (byte)0)) {
-                  ++var2;
-               }
-            }
-         }
-      }
-
-      if(var1 == 0) {
-         return 0;
-      } else {
-         return 100 * var2 / var1;
-      }
-   }
-
-   // $FF: renamed from: ab (int) void
-   public void method_4696(int var1) {
-      for(int var2 = 0; var2 < this.field_2714.length; ++var2) {
-         class_42 var3 = this.field_2714[var2];
-         if(var3 != null && 0 != var3.field_305 && var3.field_308) {
-            var3.method_485(var1);
-            var3.field_308 = false;
-         }
-      }
-
-   }
-
-   // $FF: renamed from: o (double) void
-   public void method_4697(double var1) {
-      this.field_2715 = var1;
-      this.method_4703((short)128);
-   }
-
-   // $FF: renamed from: l (double) void
-   public void method_4698(double var1) {
-      this.field_2715 = var1;
-      this.method_4703((short)128);
-   }
-
-   // $FF: renamed from: u (double) void
-   public void method_4699(double var1) {
-      this.field_2715 = var1;
-      this.method_4703((short)128);
-   }
-
-   // $FF: renamed from: c (int) int[]
+    // $FF: renamed from: c (int) int[]
    public int[] method_39(int var1) {
       class_42 var2 = this.field_2714[var1];
       if(null != var2) {
@@ -371,20 +292,7 @@ public class class_245 implements class_7 {
       return null;
    }
 
-   // $FF: renamed from: q () void
-   public void method_4700() {
-      for(int var1 = 0; var1 < this.field_2714.length; ++var1) {
-         if(this.field_2714[var1] != null) {
-            this.field_2714[var1].method_490();
-         }
-      }
-
-      class_335 var10001 = new class_335();
-      this.field_2710 = var10001;
-      this.field_2712 = this.field_2709 * -504791449;
-   }
-
-   // $FF: renamed from: k (int) int
+    // $FF: renamed from: k (int) int
    public int method_38(int var1) {
       return null != this.field_2714[var1]?this.field_2714[var1].field_299:0;
    }
@@ -441,19 +349,7 @@ public class class_245 implements class_7 {
       }
    }
 
-   // $FF: renamed from: al (int) void
-   public void method_4702(int var1) {
-      for(int var2 = 0; var2 < this.field_2714.length; ++var2) {
-         class_42 var3 = this.field_2714[var2];
-         if(var3 != null && 0 != var3.field_305 && var3.field_308) {
-            var3.method_485(var1);
-            var3.field_308 = false;
-         }
-      }
-
-   }
-
-   // $FF: renamed from: r (short) void
+    // $FF: renamed from: r (short) void
    public void method_4703(short var1) {
       try {
          for(int var2 = 0; var2 < this.field_2714.length; ++var2) {
@@ -478,72 +374,7 @@ public class class_245 implements class_7 {
       }
    }
 
-   // $FF: renamed from: i () void
-   public void method_4704() {
-      for(int var1 = 0; var1 < this.field_2714.length; ++var1) {
-         if(this.field_2714[var1] != null) {
-            this.field_2714[var1].method_490();
-         }
-      }
-
-      class_335 var10001 = new class_335();
-      this.field_2710 = var10001;
-      this.field_2712 = this.field_2709 * 117958777;
-   }
-
-   // $FF: renamed from: ae (int) void
-   public void method_4705(int var1) {
-      for(int var2 = 0; var2 < this.field_2714.length; ++var2) {
-         class_42 var3 = this.field_2714[var2];
-         if(var3 != null && 0 != var3.field_305 && var3.field_308) {
-            var3.method_485(var1);
-            var3.field_308 = false;
-         }
-      }
-
-   }
-
-   // $FF: renamed from: ap (int) void
-   public void method_4706(int var1) {
-      for(int var2 = 0; var2 < this.field_2714.length; ++var2) {
-         class_42 var3 = this.field_2714[var2];
-         if(var3 != null && 0 != var3.field_305 && var3.field_308) {
-            var3.method_485(var1);
-            var3.field_308 = false;
-         }
-      }
-
-   }
-
-   // $FF: renamed from: s () int
-   public int method_4707() {
-      int var1 = 0;
-      int var2 = 0;
-      class_42[] var3 = this.field_2714;
-
-      for(int var4 = 0; var4 < var3.length; ++var4) {
-         class_42 var5 = var3[var4];
-         if(var5 != null && null != var5.field_301) {
-            var1 += var5.field_301.length;
-            int[] var6 = var5.field_301;
-
-            for(int var7 = 0; var7 < var6.length; ++var7) {
-               int var8 = var6[var7];
-               if(this.field_2713.method_5429(var8, (byte)0)) {
-                  ++var2;
-               }
-            }
-         }
-      }
-
-      if(var1 == 0) {
-         return 0;
-      } else {
-         return 100 * var2 / var1;
-      }
-   }
-
-   // $FF: renamed from: a (int) int
+    // $FF: renamed from: a (int) int
    public int method_34(int var1) {
       return null != this.field_2714[var1]?this.field_2714[var1].field_299:0;
    }

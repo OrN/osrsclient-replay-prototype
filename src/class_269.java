@@ -6,9 +6,7 @@ public final class class_269 {
    public long field_3169;
    // $FF: renamed from: v int
    int field_3170;
-   // $FF: renamed from: l int
-   public static final int field_3171 = 14;
-   // $FF: renamed from: y int
+    // $FF: renamed from: y int
    int field_3172;
    // $FF: renamed from: p int
    int field_3173;

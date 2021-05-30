@@ -14,11 +14,9 @@ public class class_238 implements class_14 {
    final int field_2650;
    // $FF: renamed from: j byte
    final byte field_2651;
-   // $FF: renamed from: bp int
-   static final int field_2652 = 0;
 
 
-   // $FF: renamed from: <clinit> () void
+    // $FF: renamed from: <clinit> () void
    static {
       class_238 var10000 = new class_238(0, (byte)0);
       field_2646 = var10000;

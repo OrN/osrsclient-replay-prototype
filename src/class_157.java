@@ -5,9 +5,7 @@ import java.io.RandomAccessFile;
 // $FF: renamed from: bu
 public class class_157 {
 
-   // $FF: renamed from: o int
-   public static final int field_1952 = 512;
-   // $FF: renamed from: f md
+    // $FF: renamed from: f md
    class_364 field_1953;
    // $FF: renamed from: v jv
    class_306 field_1954;
@@ -110,44 +108,7 @@ public class class_157 {
       }
    }
 
-   // $FF: renamed from: e (int, int[]) au
-   public class_110 method_3282(int var1, int[] var2) {
-      if(this.field_1954.method_5457() == 1) {
-         return this.method_3280(0, var1, var2, (byte)-41);
-      } else if(this.field_1954.method_5393(var1) == 1) {
-         return this.method_3280(var1, 0, var2, (byte)-94);
-      } else {
-         throw new RuntimeException();
-      }
-   }
-
-   // $FF: renamed from: r (int, int, int[]) au
-   class_110 method_3283(int var1, int var2, int[] var3) {
-      int var4 = var2 ^ (var1 << 4 & '\uffff' | var1 >>> 12);
-      var4 |= var1 << 16;
-      long var5 = (long)var4;
-      class_110 var7 = (class_110)this.field_1955.method_6523(var5);
-      if(var7 != null) {
-         return var7;
-      } else if(null != var3 && var3[0] <= 0) {
-         return null;
-      } else {
-         class_24 var8 = class_24.method_79(this.field_1954, var1, var2);
-         if(null == var8) {
-            return null;
-         } else {
-            var7 = var8.method_78();
-            this.field_1955.method_6525(var7, var5);
-            if(var3 != null) {
-               var3[0] -= var7.field_1266.length;
-            }
-
-            return var7;
-         }
-      }
-   }
-
-   // $FF: renamed from: y (int, int[], int) au
+    // $FF: renamed from: y (int, int[], int) au
    public class_110 method_3284(int var1, int[] var2, int var3) {
       try {
          if(this.field_1959.method_5457() == 1) {
@@ -170,210 +131,7 @@ public class class_157 {
       }
    }
 
-   // $FF: renamed from: j (int, int, int[]) au
-   class_110 method_3285(int var1, int var2, int[] var3) {
-      int var4 = var2 ^ (var1 << 4 & '\uffff' | var1 >>> 12);
-      var4 |= var1 << 16;
-      long var5 = (long)var4;
-      class_110 var7 = (class_110)this.field_1955.method_6523(var5);
-      if(var7 != null) {
-         return var7;
-      } else if(null != var3 && var3[0] <= 0) {
-         return null;
-      } else {
-         class_24 var8 = class_24.method_79(this.field_1954, var1, var2);
-         if(null == var8) {
-            return null;
-         } else {
-            var7 = var8.method_78();
-            this.field_1955.method_6525(var7, var5);
-            if(var3 != null) {
-               var3[0] -= var7.field_1266.length;
-            }
-
-            return var7;
-         }
-      }
-   }
-
-   // $FF: renamed from: p (int, int, int[]) au
-   class_110 method_3286(int var1, int var2, int[] var3) {
-      int var4 = var2 ^ (var1 << 4 & '\uffff' | var1 >>> 12);
-      var4 |= var1 << 16;
-      long var5 = (long)var4;
-      class_110 var7 = (class_110)this.field_1955.method_6523(var5);
-      if(var7 != null) {
-         return var7;
-      } else if(null != var3 && var3[0] <= 0) {
-         return null;
-      } else {
-         class_24 var8 = class_24.method_79(this.field_1954, var1, var2);
-         if(null == var8) {
-            return null;
-         } else {
-            var7 = var8.method_78();
-            this.field_1955.method_6525(var7, var5);
-            if(var3 != null) {
-               var3[0] -= var7.field_1266.length;
-            }
-
-            return var7;
-         }
-      }
-   }
-
-   // $FF: renamed from: b (int, int, int[]) au
-   class_110 method_3287(int var1, int var2, int[] var3) {
-      int var4 = var2 ^ (var1 << 4 & '\uffff' | var1 >>> 12);
-      var4 |= var1 << 16;
-      long var5 = (long)var4 ^ 4294967296L;
-      class_110 var7 = (class_110)this.field_1955.method_6523(var5);
-      if(null != var7) {
-         return var7;
-      } else if(null != var3 && var3[0] <= 0) {
-         return null;
-      } else {
-         class_57 var8 = (class_57)this.field_1953.method_6523(var5);
-         if(null == var8) {
-            var8 = class_57.method_594(this.field_1959, var1, var2);
-            if(var8 == null) {
-               return null;
-            }
-
-            this.field_1953.method_6525(var8, var5);
-         }
-
-         var7 = var8.method_604(var3);
-         if(var7 == null) {
-            return null;
-         } else {
-            var8.method_108();
-            this.field_1955.method_6525(var7, var5);
-            return var7;
-         }
-      }
-   }
-
-   // $FF: renamed from: m (int, int[]) au
-   public class_110 method_3288(int var1, int[] var2) {
-      if(this.field_1959.method_5457() == 1) {
-         return this.method_3295(0, var1, var2, (byte)-45);
-      } else if(this.field_1959.method_5393(var1) == 1) {
-         return this.method_3295(var1, 0, var2, (byte)-108);
-      } else {
-         throw new RuntimeException();
-      }
-   }
-
-   // $FF: renamed from: s (int, int, int[]) au
-   class_110 method_3289(int var1, int var2, int[] var3) {
-      int var4 = var2 ^ (var1 << 4 & '\uffff' | var1 >>> 12);
-      var4 |= var1 << 16;
-      long var5 = (long)var4 ^ 4294967296L;
-      class_110 var7 = (class_110)this.field_1955.method_6523(var5);
-      if(null != var7) {
-         return var7;
-      } else if(null != var3 && var3[0] <= 0) {
-         return null;
-      } else {
-         class_57 var8 = (class_57)this.field_1953.method_6523(var5);
-         if(null == var8) {
-            var8 = class_57.method_594(this.field_1959, var1, var2);
-            if(var8 == null) {
-               return null;
-            }
-
-            this.field_1953.method_6525(var8, var5);
-         }
-
-         var7 = var8.method_604(var3);
-         if(var7 == null) {
-            return null;
-         } else {
-            var8.method_108();
-            this.field_1955.method_6525(var7, var5);
-            return var7;
-         }
-      }
-   }
-
-   // $FF: renamed from: u (int, int, int[]) au
-   class_110 method_3290(int var1, int var2, int[] var3) {
-      int var4 = var2 ^ (var1 << 4 & '\uffff' | var1 >>> 12);
-      var4 |= var1 << 16;
-      long var5 = (long)var4 ^ 4294967296L;
-      class_110 var7 = (class_110)this.field_1955.method_6523(var5);
-      if(null != var7) {
-         return var7;
-      } else if(null != var3 && var3[0] <= 0) {
-         return null;
-      } else {
-         class_57 var8 = (class_57)this.field_1953.method_6523(var5);
-         if(null == var8) {
-            var8 = class_57.method_594(this.field_1959, var1, var2);
-            if(var8 == null) {
-               return null;
-            }
-
-            this.field_1953.method_6525(var8, var5);
-         }
-
-         var7 = var8.method_604(var3);
-         if(var7 == null) {
-            return null;
-         } else {
-            var8.method_108();
-            this.field_1955.method_6525(var7, var5);
-            return var7;
-         }
-      }
-   }
-
-   // $FF: renamed from: l (int, int[]) au
-   public class_110 method_3291(int var1, int[] var2) {
-      if(this.field_1954.method_5457() == 1) {
-         return this.method_3280(0, var1, var2, (byte)4);
-      } else if(this.field_1954.method_5393(var1) == 1) {
-         return this.method_3280(var1, 0, var2, (byte)2);
-      } else {
-         throw new RuntimeException();
-      }
-   }
-
-   // $FF: renamed from: o (int, int[]) au
-   public class_110 method_3292(int var1, int[] var2) {
-      if(this.field_1954.method_5457() == 1) {
-         return this.method_3280(0, var1, var2, (byte)85);
-      } else if(this.field_1954.method_5393(var1) == 1) {
-         return this.method_3280(var1, 0, var2, (byte)-36);
-      } else {
-         throw new RuntimeException();
-      }
-   }
-
-   // $FF: renamed from: c (int, int[]) au
-   public class_110 method_3293(int var1, int[] var2) {
-      if(this.field_1954.method_5457() == 1) {
-         return this.method_3280(0, var1, var2, (byte)-63);
-      } else if(this.field_1954.method_5393(var1) == 1) {
-         return this.method_3280(var1, 0, var2, (byte)41);
-      } else {
-         throw new RuntimeException();
-      }
-   }
-
-   // $FF: renamed from: g (int, int[]) au
-   public class_110 method_3294(int var1, int[] var2) {
-      if(this.field_1959.method_5457() == 1) {
-         return this.method_3295(0, var1, var2, (byte)76);
-      } else if(this.field_1959.method_5393(var1) == 1) {
-         return this.method_3295(var1, 0, var2, (byte)-27);
-      } else {
-         throw new RuntimeException();
-      }
-   }
-
-   // $FF: renamed from: n (int, int, int[], byte) au
+    // $FF: renamed from: n (int, int, int[], byte) au
    class_110 method_3295(int var1, int var2, int[] var3, byte var4) {
       try {
          int var5 = var2 ^ (var1 << 4 & '\uffff' | var1 >>> 12);
@@ -433,29 +191,7 @@ public class class_157 {
       }
    }
 
-   // $FF: renamed from: a (int, int[]) au
-   public class_110 method_3296(int var1, int[] var2) {
-      if(this.field_1959.method_5457() == 1) {
-         return this.method_3295(0, var1, var2, (byte)-39);
-      } else if(this.field_1959.method_5393(var1) == 1) {
-         return this.method_3295(var1, 0, var2, (byte)-11);
-      } else {
-         throw new RuntimeException();
-      }
-   }
-
-   // $FF: renamed from: k (int, int[]) au
-   public class_110 method_3297(int var1, int[] var2) {
-      if(this.field_1959.method_5457() == 1) {
-         return this.method_3295(0, var1, var2, (byte)40);
-      } else if(this.field_1959.method_5393(var1) == 1) {
-         return this.method_3295(var1, 0, var2, (byte)-49);
-      } else {
-         throw new RuntimeException();
-      }
-   }
-
-   // $FF: renamed from: <init> (jv, jv) void
+    // $FF: renamed from: <init> (jv, jv) void
    public class_157(class_306 var1, class_306 var2) {
       super();
       try {
@@ -776,35 +512,4 @@ public class class_157 {
       }
    }
 
-   // $FF: renamed from: d (int, int, int[]) au
-   class_110 method_3301(int var1, int var2, int[] var3) {
-      int var4 = var2 ^ (var1 << 4 & '\uffff' | var1 >>> 12);
-      var4 |= var1 << 16;
-      long var5 = (long)var4 ^ 4294967296L;
-      class_110 var7 = (class_110)this.field_1955.method_6523(var5);
-      if(null != var7) {
-         return var7;
-      } else if(null != var3 && var3[0] <= 0) {
-         return null;
-      } else {
-         class_57 var8 = (class_57)this.field_1953.method_6523(var5);
-         if(null == var8) {
-            var8 = class_57.method_594(this.field_1959, var1, var2);
-            if(var8 == null) {
-               return null;
-            }
-
-            this.field_1953.method_6525(var8, var5);
-         }
-
-         var7 = var8.method_604(var3);
-         if(var7 == null) {
-            return null;
-         } else {
-            var8.method_108();
-            this.field_1955.method_6525(var7, var5);
-            return var7;
-         }
-      }
-   }
 }

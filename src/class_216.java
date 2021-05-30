@@ -22,13 +22,9 @@ public class class_216 implements class_6 {
    int field_2470;
    // $FF: renamed from: s int
    int field_2471;
-   // $FF: renamed from: ai int
-   static final int field_2472 = 14;
-   // $FF: renamed from: po int
-   static final int field_2473 = 2160;
 
 
-   // $FF: renamed from: n (int, int, int, int) boolean
+    // $FF: renamed from: n (int, int, int, int) boolean
    public boolean method_23(int var1, int var2, int var3, int var4) {
       try {
          if(var1 >= this.field_2469 * -1405879659) {
@@ -242,10 +238,7 @@ public class class_216 implements class_6 {
       return var1 >= this.field_2469 * -238766187 && var1 < this.field_2464 * -1291885051 + -1405879659 * this.field_2469?var2 >> 6 >= 1498756419 * this.field_2470 && var2 >> 6 <= this.field_2466 * -144912345 && var3 >> 6 >= this.field_2465 * -1980768738 && var3 >> 6 <= 401188967 * this.field_2467:false;
    }
 
-   // $FF: renamed from: w () void
-   void method_4194() {}
-
-   // $FF: renamed from: l (int, int) boolean
+    // $FF: renamed from: l (int, int) boolean
    public boolean method_20(int var1, int var2) {
       return var1 >> 6 >= -18859023 * this.field_2468 && var1 >> 6 <= -120763515 * this.field_2462 && var2 >> 6 >= -1614238823 * this.field_2463 && var2 >> 6 <= this.field_2471 * 1556024609;
    }

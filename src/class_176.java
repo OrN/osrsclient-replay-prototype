@@ -2,13 +2,9 @@
 // $FF: renamed from: q
 public class class_176 {
 
-   // $FF: renamed from: v int
-   static final int field_2177 = 0;
-   // $FF: renamed from: gu int[]
+    // $FF: renamed from: gu int[]
    static int[] field_2178;
-   // $FF: renamed from: n int
-   public static final int field_2179 = 1;
-   // $FF: renamed from: lp int
+    // $FF: renamed from: lp int
    static int field_2180;
    // $FF: renamed from: e ca
    static class_162 field_2181;
@@ -765,13 +761,4 @@ public class class_176 {
       }
    }
 
-   // $FF: renamed from: <init> () void
-   class_176() throws Throwable {
-      super();
-      try {
-         throw new Error();
-      } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1);
-      }
-   }
 }

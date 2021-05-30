@@ -16,10 +16,6 @@ public class class_220 extends class_218 {
    final int field_2496;
    // $FF: renamed from: f int
    int field_2497;
-   // $FF: renamed from: ct int
-   static final int field_2498 = 15;
-   // $FF: renamed from: al int
-   static final int field_2499 = 31;
 
 
    // $FF: renamed from: l () int
@@ -80,38 +76,6 @@ public class class_220 extends class_218 {
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2);
       }
-   }
-
-   // $FF: renamed from: j () void
-   void method_4232() {
-      this.field_2497 = class_121.method_2269(this.field_2496 * 523010301, -1344455457).method_1492(1458836150).field_815 * -1370836757;
-      this.field_2494 = this.field_2492.method_4488(class_116.method_2248(this.field_2497 * 626777191, 1647125333), -1892975149);
-      class_75 var1 = class_116.method_2248(this.method_4205(), 1647125333);
-      class_67 var2 = var1.method_1134(false, -2060838679);
-      if(null != var2) {
-         this.field_2495 = -1749270801 * var2.field_508;
-         this.field_2493 = -1069142927 * var2.field_500;
-      } else {
-         this.field_2495 = 0;
-         this.field_2493 = 0;
-      }
-
-   }
-
-   // $FF: renamed from: r () void
-   void method_4233() {
-      this.field_2497 = class_121.method_2269(this.field_2496 * 934080878, 1677862063).method_1492(204858961).field_815 * -1370836757;
-      this.field_2494 = this.field_2492.method_4488(class_116.method_2248(this.field_2497 * 626777191, 1647125333), -1962631058);
-      class_75 var1 = class_116.method_2248(this.method_4205(), 1647125333);
-      class_67 var2 = var1.method_1134(false, -2060838679);
-      if(null != var2) {
-         this.field_2495 = -1749270801 * var2.field_508;
-         this.field_2493 = -1228639210 * var2.field_500;
-      } else {
-         this.field_2495 = 0;
-         this.field_2493 = 0;
-      }
-
    }
 
    // $FF: renamed from: b () int

@@ -12,11 +12,7 @@ public final class class_248 {
    public class_91 field_2749;
    // $FF: renamed from: p long
    public long field_2750;
-   // $FF: renamed from: o int
-   static final int field_2751 = 100;
-   // $FF: renamed from: aa java.lang.String
-   static final String field_2752 = "oldschool";
-   // $FF: renamed from: v int
+    // $FF: renamed from: v int
    int field_2753;
 
 

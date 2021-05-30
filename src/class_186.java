@@ -2,11 +2,7 @@
 // $FF: renamed from: dn
 public class class_186 extends class_181 {
 
-   // $FF: renamed from: g int
-   static final int field_2262 = 32768;
-   // $FF: renamed from: f java.lang.String
-   public static final String field_2263 = "rw";
-   // $FF: renamed from: v boolean
+    // $FF: renamed from: v boolean
    final boolean field_2264;
 
 
@@ -21,12 +17,7 @@ public class class_186 extends class_181 {
       }
    }
 
-   // $FF: renamed from: r (lv, lv) int
-   int method_3866(class_339 var1, class_339 var2) {
-      return 1693720149 * var1.field_3888 != 0 && 1693720149 * var2.field_3888 != 0?(this.field_2264?var1.method_5999().method_6275(var2.method_5999(), -1297226844):var2.method_5999().method_6275(var1.method_5999(), 1180475677)):this.method_3830(var1, var2);
-   }
-
-   public int compare(Object var1, Object var2) {
+    public int compare(Object var1, Object var2) {
       try {
          return this.method_3874((class_339)var1, (class_339)var2, -26460885);
       } catch (RuntimeException var3) {
@@ -34,22 +25,7 @@ public class class_186 extends class_181 {
       }
    }
 
-   // $FF: renamed from: y (java.lang.Object, java.lang.Object) int
-   public int method_3867(Object var1, Object var2) {
-      return this.method_3874((class_339)var1, (class_339)var2, -26460885);
-   }
-
-   // $FF: renamed from: p (java.lang.Object, java.lang.Object) int
-   public int method_3868(Object var1, Object var2) {
-      return this.method_3874((class_339)var1, (class_339)var2, -26460885);
-   }
-
-   // $FF: renamed from: n (lv, lv) int
-   int method_3869(class_339 var1, class_339 var2) {
-      return 1693720149 * var1.field_3888 != 0 && 1693720149 * var2.field_3888 != 0?(this.field_2264?var1.method_5999().method_6275(var2.method_5999(), -1253527721):var2.method_5999().method_6275(var1.method_5999(), -759465980)):this.method_3830(var1, var2);
-   }
-
-   // $FF: renamed from: <init> (boolean) void
+    // $FF: renamed from: <init> (boolean) void
    public class_186(boolean var1) {
       super();
       try {
@@ -59,17 +35,7 @@ public class class_186 extends class_181 {
       }
    }
 
-   // $FF: renamed from: f (lv, lv) int
-   int method_3871(class_339 var1, class_339 var2) {
-      return 1693720149 * var1.field_3888 != 0 && 1693720149 * var2.field_3888 != 0?(this.field_2264?var1.method_5999().method_6275(var2.method_5999(), 1798482446):var2.method_5999().method_6275(var1.method_5999(), 912654459)):this.method_3830(var1, var2);
-   }
-
-   // $FF: renamed from: j (lv, lv) int
-   int method_3872(class_339 var1, class_339 var2) {
-      return 1693720149 * var1.field_3888 != 0 && 1693720149 * var2.field_3888 != 0?(this.field_2264?var1.method_5999().method_6275(var2.method_5999(), 296433554):var2.method_5999().method_6275(var1.method_5999(), -143061120)):this.method_3830(var1, var2);
-   }
-
-   // $FF: renamed from: v (int, int) et
+    // $FF: renamed from: v (int, int) et
    public static class_77 method_3873(int var0, int var1) {
       try {
          class_77 var2 = (class_77)class_77.field_666.method_5065((long)var0);

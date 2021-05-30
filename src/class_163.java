@@ -14,11 +14,7 @@ public class class_163 implements Runnable {
    int[] field_2030;
    // $FF: renamed from: v boolean
    boolean field_2031;
-   // $FF: renamed from: q int
-   static final int field_2032 = 26;
-   // $FF: renamed from: ak int
-   static final int field_2033 = 57;
-   // $FF: renamed from: ri bd
+    // $FF: renamed from: ri bd
    static class_139 field_2034;
 
 
@@ -64,67 +60,7 @@ public class class_163 implements Runnable {
       }
    }
 
-   // $FF: renamed from: by () void
-   public void method_3419() {
-      while(this.field_2031) {
-         Object var1 = this.field_2027;
-         synchronized(this.field_2027) {
-            if(-1046460859 * this.field_2028 < 500) {
-               this.field_2026[-1046460859 * this.field_2028] = -678881683 * class_131.field_1722;
-               this.field_2030[this.field_2028 * -1046460859] = 1903378733 * class_131.field_1703;
-               this.field_2029[this.field_2028 * -1046460859] = -7947308061041944289L * class_131.field_1712;
-               this.field_2028 += 492756109;
-            }
-         }
-
-         long var7 = 49L;
-
-         try {
-            Thread.sleep(var7);
-         } catch (InterruptedException var5) {
-            ;
-         }
-
-         try {
-            Thread.sleep(1L);
-         } catch (InterruptedException var4) {
-            ;
-         }
-      }
-
-   }
-
-   // $FF: renamed from: bc () void
-   public void method_3420() {
-      while(this.field_2031) {
-         Object var1 = this.field_2027;
-         synchronized(this.field_2027) {
-            if(-1046460859 * this.field_2028 < 376033378) {
-               this.field_2026[-1046460859 * this.field_2028] = -70668678 * class_131.field_1722;
-               this.field_2030[this.field_2028 * -1046460859] = -1464003718 * class_131.field_1703;
-               this.field_2029[this.field_2028 * -1250628805] = -7947308061041944289L * class_131.field_1712;
-               this.field_2028 += -712106700;
-            }
-         }
-
-         long var7 = 49L;
-
-         try {
-            Thread.sleep(var7);
-         } catch (InterruptedException var5) {
-            ;
-         }
-
-         try {
-            Thread.sleep(1L);
-         } catch (InterruptedException var4) {
-            ;
-         }
-      }
-
-   }
-
-   // $FF: renamed from: il (int, int) java.lang.String
+    // $FF: renamed from: il (int, int) java.lang.String
    static String method_3421(int var0, int var1) {
       try {
          if(var0 < 0) {

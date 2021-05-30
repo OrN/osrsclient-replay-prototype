@@ -5,13 +5,7 @@ public class class_162 {
 
    // $FF: renamed from: u int[]
    int[] field_2006;
-   // $FF: renamed from: n int
-   static final int field_2007 = 256;
-   // $FF: renamed from: f int
-   static final int field_2008 = 128;
-   // $FF: renamed from: p int
-   static final int field_2009 = 768;
-   // $FF: renamed from: r int[]
+    // $FF: renamed from: r int[]
    int[] field_2010;
    // $FF: renamed from: b int
    int field_2011;
@@ -41,17 +35,9 @@ public class class_162 {
    int field_2023;
    // $FF: renamed from: z int
    int field_2024;
-   // $FF: renamed from: al int
-   static final int field_2025 = 19136995;
 
 
-   // $FF: renamed from: m (int, int, int) int
-   final int method_3380(int var1, int var2, int var3) {
-      int var4 = 256 - var3;
-      return (var4 * (var1 & 16711935) + (var2 & 16711935) * var3 & -16711936) + (var3 * (var2 & '\uff00') + (var1 & '\uff00') * var4 & 16711680) >> 8;
-   }
-
-   // $FF: renamed from: r (int, int[], int) void
+    // $FF: renamed from: r (int, int[], int) void
    final void method_3381(int var1, int[] var2, int var3) {
       try {
          int var4 = this.field_2012.length;
@@ -97,47 +83,7 @@ public class class_162 {
       }
    }
 
-   // $FF: renamed from: ap (int) void
-   final void method_3383(int var1) {
-      int var2 = 0;
-
-      for(int var3 = 1; var3 < 255; ++var3) {
-         int var4 = (256 - var3) * this.field_2010[var3] / 256;
-         int var5 = var1 + var4;
-         int var6 = 0;
-         int var7 = 128;
-         if(var5 < 0) {
-            var6 = -var5;
-            var5 = 0;
-         }
-
-         if(128 + var5 >= class_126.field_1370.field_1816 * -740510445) {
-            var7 = -740510445 * class_126.field_1370.field_1816 - var5;
-         }
-
-         int var8 = (var3 + 8) * class_126.field_1370.field_1816 * -740510445 + var5;
-         var2 += var6;
-
-         for(int var9 = var6; var9 < var7; ++var9) {
-            int var10 = this.field_2018[var2++];
-            int var11 = var8 % class_65.field_484;
-            if(var10 != 0 && var11 >= class_65.field_489 && var11 < class_65.field_488) {
-               int var12 = var10;
-               int var13 = 256 - var10;
-               var10 = this.field_2012[var10];
-               int var14 = class_126.field_1370.field_1817[var8];
-               class_126.field_1370.field_1817[var8++] = -16777216 | (var12 * (var10 & '\uff00') + (var14 & '\uff00') * var13 & 16711680) + (var12 * (var10 & 16711935) + (var14 & 16711935) * var13 & -16711936) >> 8;
-            } else {
-               ++var8;
-            }
-         }
-
-         var2 += 128 - var7;
-      }
-
-   }
-
-   // $FF: renamed from: y (int, short) void
+    // $FF: renamed from: y (int, short) void
    final void method_3384(int var1, short var2) {
       try {
          this.field_2022 += -731534976 * var1;
@@ -402,73 +348,7 @@ public class class_162 {
       }
    }
 
-   // $FF: renamed from: u () void
-   void method_3387() {
-      this.field_2013 = new int[256];
-
-      int var1;
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2013[var1] = 262144 * var1;
-      }
-
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2013[var1 + 64] = 16711680 + var1 * 1024;
-      }
-
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2013[var1 + 128] = 4 * var1 + 16776960;
-      }
-
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2013[var1 + 192] = 16777215;
-      }
-
-      this.field_2006 = new int[256];
-
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2006[var1] = 1024 * var1;
-      }
-
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2006[var1 + 64] = var1 * 4 + '\uff00';
-      }
-
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2006[128 + var1] = 262144 * var1 + '\uffff';
-      }
-
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2006[var1 + 192] = 16777215;
-      }
-
-      this.field_2017 = new int[256];
-
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2017[var1] = 4 * var1;
-      }
-
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2017[var1 + 64] = 255 + var1 * 262144;
-      }
-
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2017[128 + var1] = 1024 * var1 + 16711935;
-      }
-
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2017[var1 + 192] = 16777215;
-      }
-
-      this.field_2012 = new int[256];
-      this.field_2022 = 0;
-      this.field_2021 = new int['\u8000'];
-      this.field_2014 = new int['\u8000'];
-      this.method_3413((class_66)null, (byte)4);
-      this.field_2018 = new int['\u8000'];
-      this.field_2019 = new int['\u8000'];
-   }
-
-   // $FF: renamed from: b (int, int) void
+    // $FF: renamed from: b (int, int) void
    final void method_3388(int var1, int var2) {
       try {
          int var3 = 0;
@@ -545,21 +425,7 @@ public class class_162 {
       }
    }
 
-   // $FF: renamed from: c () void
-   void method_3389() {
-      this.field_2013 = null;
-      this.field_2006 = null;
-      this.field_2017 = null;
-      this.field_2012 = null;
-      this.field_2021 = null;
-      this.field_2014 = null;
-      this.field_2018 = null;
-      this.field_2019 = null;
-      this.field_2022 = 0;
-      this.field_2023 = 0;
-   }
-
-   // $FF: renamed from: v (jv, int) void
+    // $FF: renamed from: v (jv, int) void
    public static void method_3390(class_306 var0) {
       try {
          class_81.field_754 = var0;
@@ -568,300 +434,7 @@ public class class_162 {
       }
    }
 
-   // $FF: renamed from: ad (op) void
-   final void method_3391(class_66 var1) {
-      int var2;
-      for(var2 = 0; var2 < this.field_2021.length; ++var2) {
-         this.field_2021[var2] = 0;
-      }
-
-      int var3;
-      for(var2 = 0; var2 < 5000; ++var2) {
-         var3 = (int)(Math.random() * 128.0D * 256.0D);
-         this.field_2021[var3] = (int)(Math.random() * 256.0D);
-      }
-
-      int var4;
-      int var5;
-      for(var2 = 0; var2 < 20; ++var2) {
-         for(var3 = 1; var3 < 255; ++var3) {
-            for(var4 = 1; var4 < 127; ++var4) {
-               var5 = (var3 << 7) + var4;
-               this.field_2014[var5] = (this.field_2021[var5 + 1] + this.field_2021[var5 - 1] + this.field_2021[var5 - 128] + this.field_2021[128 + var5]) / 4;
-            }
-         }
-
-         int[] var8 = this.field_2021;
-         this.field_2021 = this.field_2014;
-         this.field_2014 = var8;
-      }
-
-      if(var1 != null) {
-         var2 = 0;
-
-         for(var3 = 0; var3 < var1.field_492; ++var3) {
-            for(var4 = 0; var4 < var1.field_498; ++var4) {
-               if(var1.field_493[var2++] != 0) {
-                  var5 = var1.field_495 + var4 + 16;
-                  int var6 = var3 + 16 + var1.field_496;
-                  int var7 = var5 + (var6 << 7);
-                  this.field_2021[var7] = 0;
-               }
-            }
-         }
-      }
-
-   }
-
-   // $FF: renamed from: l () void
-   void method_3392() {
-      this.field_2013 = new int[256];
-
-      int var1;
-      for(var1 = 0; var1 < 517961501; ++var1) {
-         this.field_2013[var1] = 262144 * var1;
-      }
-
-      for(var1 = 0; var1 < -1855764204; ++var1) {
-         this.field_2013[var1 + 1811552308] = -1382671456 + var1 * -1661903571;
-      }
-
-      for(var1 = 0; var1 < 2071151028; ++var1) {
-         this.field_2013[var1 + -514613512] = 4 * var1 + 16776960;
-      }
-
-      for(var1 = 0; var1 < -1238010397; ++var1) {
-         this.field_2013[var1 + 192] = 16777215;
-      }
-
-      this.field_2006 = new int[1005635773];
-
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2006[var1] = 1024 * var1;
-      }
-
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2006[var1 + 22900652] = var1 * 4 + 850780257;
-      }
-
-      for(var1 = 0; var1 < -394051418; ++var1) {
-         this.field_2006[169038052 + var1] = 434095686 * var1 + 772758599;
-      }
-
-      for(var1 = 0; var1 < 709370465; ++var1) {
-         this.field_2006[var1 + 192] = 1607872891;
-      }
-
-      this.field_2017 = new int[256];
-
-      for(var1 = 0; var1 < 1188298; ++var1) {
-         this.field_2017[var1] = 4 * var1;
-      }
-
-      for(var1 = 0; var1 < -1881559440; ++var1) {
-         this.field_2017[var1 + 64] = 255 + var1 * 2042519452;
-      }
-
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2017[-685690454 + var1] = 1024 * var1 + 16711935;
-      }
-
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2017[var1 + -765423754] = -233098220;
-      }
-
-      this.field_2012 = new int[256];
-      this.field_2022 = 0;
-      this.field_2021 = new int[807321877];
-      this.field_2014 = new int['\u8000'];
-      this.method_3413((class_66)null, (byte)0);
-      this.field_2018 = new int[-56253378];
-      this.field_2019 = new int['\u8000'];
-   }
-
-   // $FF: renamed from: a (int) void
-   final void method_3393(int var1) {
-      this.field_2022 += -731534976 * var1;
-      int var2;
-      if(348893403 * this.field_2022 > this.field_2021.length) {
-         this.field_2022 -= this.field_2021.length * 396938067;
-         var2 = (int)(Math.random() * 12.0D);
-         this.method_3413(this.field_2016[var2], (byte)-30);
-      }
-
-      var2 = 0;
-      int var3 = 128 * var1;
-      int var4 = (256 - var1) * 128;
-
-      int var6;
-      for(int var5 = 0; var5 < var4; ++var5) {
-         var6 = this.field_2018[var2 + var3] - var1 * this.field_2021[this.field_2022 * 348893403 + var2 & this.field_2021.length - 1] / 6;
-         if(var6 < 0) {
-            var6 = 0;
-         }
-
-         this.field_2018[var2++] = var6;
-      }
-
-      byte var15 = 10;
-      var6 = 128 - var15;
-
-      int var7;
-      int var10;
-      for(var7 = 256 - var1; var7 < 256; ++var7) {
-         int var8 = var7 * 128;
-
-         for(int var9 = 0; var9 < 128; ++var9) {
-            var10 = (int)(Math.random() * 100.0D);
-            if(var10 < 50 && var9 > var15 && var9 < var6) {
-               this.field_2018[var8 + var9] = 255;
-            } else {
-               this.field_2018[var9 + var8] = 0;
-            }
-         }
-      }
-
-      if(this.field_2020 * 1784020073 > 0) {
-         this.field_2020 -= 1958563684 * var1;
-      }
-
-      if(this.field_2015 * -962717377 > 0) {
-         this.field_2015 -= 1640061692 * var1;
-      }
-
-      if(0 == this.field_2020 * 1784020073 && 0 == this.field_2015 * -962717377) {
-         var7 = (int)(Math.random() * (double)(2000 / var1));
-         if(var7 == 0) {
-            this.field_2020 = -1118870528;
-         }
-
-         if(var7 == 1) {
-            this.field_2015 = -1051001856;
-         }
-      }
-
-      for(var7 = 0; var7 < 256 - var1; ++var7) {
-         this.field_2010[var7] = this.field_2010[var7 + var1];
-      }
-
-      for(var7 = 256 - var1; var7 < 256; ++var7) {
-         this.field_2010[var7] = (int)(Math.sin((double)(1934818705 * this.field_2011) / 14.0D) * 16.0D + Math.sin((double)(this.field_2011 * 1934818705) / 15.0D) * 14.0D + Math.sin((double)(this.field_2011 * 1934818705) / 16.0D) * 12.0D);
-         this.field_2011 += -1344314511;
-      }
-
-      this.field_2023 += -1124753851 * var1;
-      var7 = (var1 + (-1702273423 * client.field_1425 & 1)) / 2;
-      if(var7 > 0) {
-         short var16 = 128;
-         byte var17 = 2;
-         var10 = 128 - var17 - var17;
-
-         int var11;
-         int var12;
-         int var13;
-         for(var11 = 0; var11 < this.field_2023 * -2077702380; ++var11) {
-            var12 = (int)(Math.random() * (double)var10) + var17;
-            var13 = (int)(Math.random() * (double)var16) + var16;
-            this.field_2018[(var13 << 7) + var12] = 192;
-         }
-
-         this.field_2023 = 0;
-
-         int var14;
-         for(var11 = 0; var11 < 256; ++var11) {
-            var12 = 0;
-            var13 = 128 * var11;
-
-            for(var14 = -var7; var14 < 128; ++var14) {
-               if(var14 + var7 < 128) {
-                  var12 += this.field_2018[var7 + var13 + var14];
-               }
-
-               if(var14 - (var7 + 1) >= 0) {
-                  var12 -= this.field_2018[var13 + var14 - (1 + var7)];
-               }
-
-               if(var14 >= 0) {
-                  this.field_2019[var13 + var14] = var12 / (1 + var7 * 2);
-               }
-            }
-         }
-
-         for(var11 = 0; var11 < 128; ++var11) {
-            var12 = 0;
-
-            for(var13 = -var7; var13 < 256; ++var13) {
-               var14 = var13 * 128;
-               if(var7 + var13 < 256) {
-                  var12 += this.field_2019[128 * var7 + var14 + var11];
-               }
-
-               if(var13 - (1 + var7) >= 0) {
-                  var12 -= this.field_2019[var11 + var14 - (1 + var7) * 128];
-               }
-
-               if(var13 >= 0) {
-                  this.field_2018[var14 + var11] = var12 / (2 * var7 + 1);
-               }
-            }
-         }
-      }
-
-   }
-
-   // $FF: renamed from: x (int, int, int) int
-   final int method_3394(int var1, int var2, int var3) {
-      int var4 = 1085863126 - var3;
-      return (var4 * (var1 & -1717998175) + (var2 & 125105893) * var3 & -16711936) + (var3 * (var2 & '\uff00') + (var1 & 378302009) * var4 & 1242911581) >> 8;
-   }
-
-   // $FF: renamed from: e (int, int) void
-   void method_3395(int var1, int var2) {
-      if(this.field_2018 == null) {
-         this.method_3397((byte)22);
-      }
-
-      if(0 == this.field_2024 * -453028953) {
-         this.field_2024 = var2 * 1157512263;
-      }
-
-      int var3 = var2 - this.field_2024 * -453028953;
-      if(var3 >= 1858873682) {
-         var3 = 0;
-      }
-
-      this.field_2024 = 1281574803 * var2;
-      if(var3 > 0) {
-         this.method_3384(var3, (short)31505);
-      }
-
-      this.method_3386(var1, 2119175783);
-   }
-
-   // $FF: renamed from: g (int, int) void
-   void method_3396(int var1, int var2) {
-      if(this.field_2018 == null) {
-         this.method_3397((byte)5);
-      }
-
-      if(0 == this.field_2024 * -453028953) {
-         this.field_2024 = var2 * -1445714921;
-      }
-
-      int var3 = var2 - this.field_2024 * -453028953;
-      if(var3 >= 256) {
-         var3 = 0;
-      }
-
-      this.field_2024 = -1445714921 * var2;
-      if(var3 > 0) {
-         this.method_3384(var3, (short)28073);
-      }
-
-      this.method_3386(var1, 2141866790);
-   }
-
-   // $FF: renamed from: v (byte) void
+    // $FF: renamed from: v (byte) void
    void method_3397(byte var1) {
       try {
          this.field_2013 = new int[256];
@@ -967,13 +540,7 @@ public class class_162 {
       }
    }
 
-   // $FF: renamed from: k (int, int, int) int
-   final int method_3398(int var1, int var2, int var3) {
-      int var4 = 256 - var3;
-      return (var4 * (var1 & 16711935) + (var2 & 16711935) * var3 & -16711936) + (var3 * (var2 & '\uff00') + (var1 & -1759890055) * var4 & -399084513) >> 8;
-   }
-
-   // $FF: renamed from: n (jv, int, int, int, boolean, int) void
+    // $FF: renamed from: n (jv, int, int, int, boolean, int) void
    public static void method_3399(class_306 var0, int var1, int var2, int var3, boolean var4) {
       try {
          class_270.field_3180 = 1262412465;
@@ -988,21 +555,7 @@ public class class_162 {
       }
    }
 
-   // $FF: renamed from: o () void
-   void method_3400() {
-      this.field_2013 = null;
-      this.field_2006 = null;
-      this.field_2017 = null;
-      this.field_2012 = null;
-      this.field_2021 = null;
-      this.field_2014 = null;
-      this.field_2018 = null;
-      this.field_2019 = null;
-      this.field_2022 = 0;
-      this.field_2023 = 0;
-   }
-
-   // $FF: renamed from: f (int, int, int) void
+    // $FF: renamed from: f (int, int, int) void
    void method_3401(int var1, int var2, int var3) {
       try {
          if(this.field_2018 == null) {
@@ -1063,229 +616,7 @@ public class class_162 {
       }
    }
 
-   // $FF: renamed from: t (int) void
-   final void method_3403(int var1) {
-      int var2 = this.field_2012.length;
-      if(this.field_2020 * 1784020073 > 0) {
-         this.method_3381(this.field_2020 * 1004635701, this.field_2006, 1483319070);
-      } else if(-962717377 * this.field_2015 > 0) {
-         this.method_3381(this.field_2015 * -1332514292, this.field_2017, 1435030789);
-      } else {
-         for(int var3 = 0; var3 < var2; ++var3) {
-            this.field_2012[var3] = this.field_2013[var3];
-         }
-      }
-
-      this.method_3388(var1, -1675351162);
-   }
-
-   // $FF: renamed from: h (int, int[]) void
-   final void method_3404(int var1, int[] var2) {
-      int var3 = this.field_2012.length;
-
-      for(int var4 = 0; var4 < var3; ++var4) {
-         if(var1 > 768) {
-            this.field_2012[var4] = this.method_3385(this.field_2013[var4], var2[var4], 1024 - var1);
-         } else if(var1 > 256) {
-            this.field_2012[var4] = var2[var4];
-         } else {
-            this.field_2012[var4] = this.method_3385(var2[var4], this.field_2013[var4], 256 - var1);
-         }
-      }
-
-   }
-
-   // $FF: renamed from: q (int, int[]) void
-   final void method_3405(int var1, int[] var2) {
-      int var3 = this.field_2012.length;
-
-      for(int var4 = 0; var4 < var3; ++var4) {
-         if(var1 > 768) {
-            this.field_2012[var4] = this.method_3385(this.field_2013[var4], var2[var4], 1024 - var1);
-         } else if(var1 > 256) {
-            this.field_2012[var4] = var2[var4];
-         } else {
-            this.field_2012[var4] = this.method_3385(var2[var4], this.field_2013[var4], 256 - var1);
-         }
-      }
-
-   }
-
-   // $FF: renamed from: i (int, int[]) void
-   final void method_3406(int var1, int[] var2) {
-      int var3 = this.field_2012.length;
-
-      for(int var4 = 0; var4 < var3; ++var4) {
-         if(var1 > -2120162179) {
-            this.field_2012[var4] = this.method_3385(this.field_2013[var4], var2[var4], 1254193695 - var1);
-         } else if(var1 > 256) {
-            this.field_2012[var4] = var2[var4];
-         } else {
-            this.field_2012[var4] = this.method_3385(var2[var4], this.field_2013[var4], -320616931 - var1);
-         }
-      }
-
-   }
-
-   // $FF: renamed from: ae (int) void
-   final void method_3407(int var1) {
-      int var2 = 0;
-
-      for(int var3 = 1; var3 < 255; ++var3) {
-         int var4 = (256 - var3) * this.field_2010[var3] / 256;
-         int var5 = var1 + var4;
-         int var6 = 0;
-         int var7 = 128;
-         if(var5 < 0) {
-            var6 = -var5;
-            var5 = 0;
-         }
-
-         if(128 + var5 >= class_126.field_1370.field_1816 * -740510445) {
-            var7 = -740510445 * class_126.field_1370.field_1816 - var5;
-         }
-
-         int var8 = (var3 + 8) * class_126.field_1370.field_1816 * -740510445 + var5;
-         var2 += var6;
-
-         for(int var9 = var6; var9 < var7; ++var9) {
-            int var10 = this.field_2018[var2++];
-            int var11 = var8 % class_65.field_484;
-            if(var10 != 0 && var11 >= class_65.field_489 && var11 < class_65.field_488) {
-               int var12 = var10;
-               int var13 = 256 - var10;
-               var10 = this.field_2012[var10];
-               int var14 = class_126.field_1370.field_1817[var8];
-               class_126.field_1370.field_1817[var8++] = -16777216 | (var12 * (var10 & '\uff00') + (var14 & '\uff00') * var13 & 16711680) + (var12 * (var10 & 16711935) + (var14 & 16711935) * var13 & -16711936) >> 8;
-            } else {
-               ++var8;
-            }
-         }
-
-         var2 += 128 - var7;
-      }
-
-   }
-
-   // $FF: renamed from: w (int, int, int) int
-   final int method_3408(int var1, int var2, int var3) {
-      int var4 = 256 - var3;
-      return (var4 * (var1 & 16711935) + (var2 & 16711935) * var3 & -16711936) + (var3 * (var2 & '\uff00') + (var1 & '\uff00') * var4 & 16711680) >> 8;
-   }
-
-   // $FF: renamed from: ab (int) void
-   final void method_3409(int var1) {
-      int var2 = 0;
-
-      for(int var3 = 1; var3 < 255; ++var3) {
-         int var4 = (256 - var3) * this.field_2010[var3] / 256;
-         int var5 = var1 + var4;
-         int var6 = 0;
-         int var7 = 128;
-         if(var5 < 0) {
-            var6 = -var5;
-            var5 = 0;
-         }
-
-         if(128 + var5 >= class_126.field_1370.field_1816 * -740510445) {
-            var7 = -740510445 * class_126.field_1370.field_1816 - var5;
-         }
-
-         int var8 = (var3 + 8) * class_126.field_1370.field_1816 * -740510445 + var5;
-         var2 += var6;
-
-         for(int var9 = var6; var9 < var7; ++var9) {
-            int var10 = this.field_2018[var2++];
-            int var11 = var8 % class_65.field_484;
-            if(var10 != 0 && var11 >= class_65.field_489 && var11 < class_65.field_488) {
-               int var12 = var10;
-               int var13 = 256 - var10;
-               var10 = this.field_2012[var10];
-               int var14 = class_126.field_1370.field_1817[var8];
-               class_126.field_1370.field_1817[var8++] = -16777216 | (var12 * (var10 & '\uff00') + (var14 & '\uff00') * var13 & 16711680) + (var12 * (var10 & 16711935) + (var14 & 16711935) * var13 & -16711936) >> 8;
-            } else {
-               ++var8;
-            }
-         }
-
-         var2 += 128 - var7;
-      }
-
-   }
-
-   // $FF: renamed from: s () void
-   void method_3410() {
-      this.field_2013 = new int[256];
-
-      int var1;
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2013[var1] = 262144 * var1;
-      }
-
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2013[var1 + 64] = 16711680 + var1 * 1024;
-      }
-
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2013[var1 + 128] = 4 * var1 + 16776960;
-      }
-
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2013[var1 + 192] = 16777215;
-      }
-
-      this.field_2006 = new int[256];
-
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2006[var1] = 1024 * var1;
-      }
-
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2006[var1 + 64] = var1 * 4 + '\uff00';
-      }
-
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2006[128 + var1] = 262144 * var1 + '\uffff';
-      }
-
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2006[var1 + 192] = 16777215;
-      }
-
-      this.field_2017 = new int[256];
-
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2017[var1] = 4 * var1;
-      }
-
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2017[var1 + 64] = 255 + var1 * 262144;
-      }
-
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2017[128 + var1] = 1024 * var1 + 16711935;
-      }
-
-      for(var1 = 0; var1 < 64; ++var1) {
-         this.field_2017[var1 + 192] = 16777215;
-      }
-
-      this.field_2012 = new int[256];
-      this.field_2022 = 0;
-      this.field_2021 = new int['\u8000'];
-      this.field_2014 = new int['\u8000'];
-      this.method_3413((class_66)null, (byte)-18);
-      this.field_2018 = new int['\u8000'];
-      this.field_2019 = new int['\u8000'];
-   }
-
-   // $FF: renamed from: z (int, int, int) int
-   final int method_3411(int var1, int var2, int var3) {
-      int var4 = 256 - var3;
-      return (var4 * (var1 & 16711935) + (var2 & 16711935) * var3 & -16711936) + (var3 * (var2 & '\uff00') + (var1 & '\uff00') * var4 & 16711680) >> 8;
-   }
-
-   // $FF: renamed from: v (int, int) fl
+    // $FF: renamed from: v (int, int) fl
    public static class_72 method_3412(int var0, int var1) {
       try {
          class_72 var2 = (class_72)class_72.field_577.method_5065((long)var0);
@@ -1402,52 +733,7 @@ public class class_162 {
       }
    }
 
-   // $FF: renamed from: al (op) void
-   final void method_3414(class_66 var1) {
-      int var2;
-      for(var2 = 0; var2 < this.field_2021.length; ++var2) {
-         this.field_2021[var2] = 0;
-      }
-
-      int var3;
-      for(var2 = 0; var2 < -1514334799; ++var2) {
-         var3 = (int)(Math.random() * 128.0D * 256.0D);
-         this.field_2021[var3] = (int)(Math.random() * 256.0D);
-      }
-
-      int var4;
-      int var5;
-      for(var2 = 0; var2 < 20; ++var2) {
-         for(var3 = 1; var3 < 255; ++var3) {
-            for(var4 = 1; var4 < 127; ++var4) {
-               var5 = (var3 << 7) + var4;
-               this.field_2014[var5] = (this.field_2021[var5 + 1] + this.field_2021[var5 - 1] + this.field_2021[var5 - 128] + this.field_2021[841335970 + var5]) / 4;
-            }
-         }
-
-         int[] var8 = this.field_2021;
-         this.field_2021 = this.field_2014;
-         this.field_2014 = var8;
-      }
-
-      if(var1 != null) {
-         var2 = 0;
-
-         for(var3 = 0; var3 < var1.field_492; ++var3) {
-            for(var4 = 0; var4 < var1.field_498; ++var4) {
-               if(var1.field_493[var2++] != 0) {
-                  var5 = var1.field_495 + var4 + 16;
-                  int var6 = var3 + 16 + var1.field_496;
-                  int var7 = var5 + (var6 << 7);
-                  this.field_2021[var7] = 0;
-               }
-            }
-         }
-      }
-
-   }
-
-   // $FF: renamed from: it (int, int, int, int, int) void
+    // $FF: renamed from: it (int, int, int, int, int) void
    static void method_3415(int var0, int var1, int var2, int var3, int var4) {
       try {
          class_37 var5 = class_325.method_5779(var0, var1, -456851860);

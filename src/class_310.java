@@ -12,18 +12,9 @@ public class class_310 {
    public final int field_3745;
    // $FF: renamed from: p java.lang.String
    String field_3746;
-   // $FF: renamed from: at int
-   public static final int field_3747 = 51;
-   // $FF: renamed from: fc int
-   static final int field_3748 = 15;
 
 
-   // $FF: renamed from: r () java.lang.String
-   public String method_5536() {
-      return this.field_3746;
-   }
-
-   // $FF: renamed from: v (byte) java.lang.String
+    // $FF: renamed from: v (byte) java.lang.String
    public String method_5537() {
       try {
          return this.field_3742;
@@ -32,27 +23,7 @@ public class class_310 {
       }
    }
 
-   // $FF: renamed from: j () java.lang.String
-   public String method_5538() {
-      return this.field_3746;
-   }
-
-   // $FF: renamed from: f () java.lang.String
-   public String method_5539() {
-      return this.field_3742;
-   }
-
-   // $FF: renamed from: y () java.lang.String
-   public String method_5540() {
-      return this.field_3742;
-   }
-
-   // $FF: renamed from: p () java.lang.String
-   public String method_5541() {
-      return this.field_3746;
-   }
-
-   // $FF: renamed from: <init> (nd, byte, int) void
+    // $FF: renamed from: <init> (nd, byte, int) void
    class_310(class_28 var1, byte var2, int var3) {
       super();
       try {

@@ -4,9 +4,7 @@ import java.util.TimeZone;
 // $FF: renamed from: ip
 public class class_284 {
 
-   // $FF: renamed from: c int
-   public static final int field_3256 = 44;
-   // $FF: renamed from: n java.lang.String[]
+    // $FF: renamed from: n java.lang.String[]
    public static final String[] field_3257;
    // $FF: renamed from: f java.util.Calendar
    public static Calendar field_3258;
@@ -16,17 +14,7 @@ public class class_284 {
    public static int[] field_3260;
 
 
-   // $FF: renamed from: <init> () void
-   class_284() throws Throwable {
-      super();
-      try {
-         throw new Error();
-      } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1);
-      }
-   }
-
-   // $FF: renamed from: <clinit> () void
+    // $FF: renamed from: <clinit> () void
    static {
       field_3259 = new String[][]{{"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"}, {"Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"}, {"jan", "fév", "mars", "avr", "mai", "juin", "juil", "août", "sept", "oct", "nov", "déc"}, {"jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"}, {"jan", "feb", "mrt", "apr", "mei", "jun", "jul", "aug", "sep", "okt", "nov", "dec"}, {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"}, {"ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"}};
       field_3257 = new String[]{"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};

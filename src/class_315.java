@@ -3,18 +3,8 @@ import java.util.Comparator;
 // $FF: renamed from: jz
 final class class_315 implements Comparator {
 
-   // $FF: renamed from: y int
-   static final int field_3784 = 4;
-   // $FF: renamed from: ki int
-   static final int field_3785 = 4;
 
-
-   // $FF: renamed from: p (java.lang.Object, java.lang.Object) int
-   public int method_5598(Object var1, Object var2) {
-      return this.method_5599((class_310)var1, (class_310)var2, 2051450447);
-   }
-
-   // $FF: renamed from: v (js, js, int) int
+    // $FF: renamed from: v (js, js, int) int
    int method_5599(class_310 var1, class_310 var2, int var3) {
       try {
          byte var10000;
@@ -56,22 +46,7 @@ final class class_315 implements Comparator {
       }
    }
 
-   // $FF: renamed from: y (java.lang.Object, java.lang.Object) int
-   public int method_5600(Object var1, Object var2) {
-      return this.method_5599((class_310)var1, (class_310)var2, 2121585914);
-   }
-
-   // $FF: renamed from: f (js, js) int
-   int method_5601(class_310 var1, class_310 var2) {
-      return 1348551191 * var1.field_3744.field_3758 < var2.field_3744.field_3758 * -1781520327?-1:(var1.field_3744.field_3758 * 880981164 == -2009281387 * var2.field_3744.field_3758?0:1);
-   }
-
-   // $FF: renamed from: eg (java.lang.Object) boolean
-   public boolean method_5602(Object var1) {
-      return super.equals(var1);
-   }
-
-   // $FF: renamed from: v (jv, byte) void
+    // $FF: renamed from: v (jv, byte) void
    public static void method_5603(class_306 var0) {
       try {
          class_79.field_690 = var0;
@@ -80,23 +55,9 @@ final class class_315 implements Comparator {
       }
    }
 
-   // $FF: renamed from: fl (java.lang.Object) boolean
-   public boolean method_5604(Object var1) {
-      return super.equals(var1);
-   }
-
-   // $FF: renamed from: <init> () void
+    // $FF: renamed from: <init> () void
    class_315() {
       super();
    }
 
-   // $FF: renamed from: eo (java.lang.Object) boolean
-   public boolean method_5606(Object var1) {
-      return super.equals(var1);
-   }
-
-   // $FF: renamed from: n (js, js) int
-   int method_5607(class_310 var1, class_310 var2) {
-      return 1976315769 * var1.field_3744.field_3758 < var2.field_3744.field_3758 * -1486209325?-1:(var1.field_3744.field_3758 * 1229494071 == 321535859 * var2.field_3744.field_3758?0:1);
-   }
 }

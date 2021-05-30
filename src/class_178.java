@@ -2,15 +2,9 @@
 // $FF: renamed from: s
 public class class_178 {
 
-   // $FF: renamed from: z int
-   static final int field_2216 = 7;
-   // $FF: renamed from: n int
+    // $FF: renamed from: n int
    public int field_2217;
-   // $FF: renamed from: aq int
-   static final int field_2218 = 46;
-   // $FF: renamed from: l int
-   static final int field_2219 = 16384;
-   // $FF: renamed from: mq int
+    // $FF: renamed from: mq int
    static int field_2220;
    // $FF: renamed from: v byte
    public byte field_2221;

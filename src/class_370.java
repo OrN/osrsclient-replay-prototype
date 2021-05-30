@@ -4,13 +4,9 @@ public class class_370 implements class_20 {
 
    // $FF: renamed from: v mg
    public final class_17 field_4102;
-   // $FF: renamed from: u int
-   static final int field_4103 = 5;
-   // $FF: renamed from: r int
-   public static final int field_4104 = 64;
 
 
-   // $FF: renamed from: ho (boolean, nb, int) void
+    // $FF: renamed from: ho (boolean, nb, int) void
    static final void method_6601(boolean var0, class_29 var1, int var2) {
       try {
          client.field_1476 = var0;
@@ -294,12 +290,7 @@ public class class_370 implements class_20 {
       }
    }
 
-   // $FF: renamed from: n (int) int
-   public int method_6604(int var1) {
-      return this.field_4102.method_53(var1, -869219041);
-   }
-
-   // $FF: renamed from: v (int, int) int
+    // $FF: renamed from: v (int, int) int
    public int method_6605(int var1) {
       try {
          return this.field_4102.method_53(var1, -350566290);
@@ -327,8 +318,4 @@ public class class_370 implements class_20 {
       }
    }
 
-   // $FF: renamed from: f (int) int
-   public int method_6607(int var1) {
-      return this.field_4102.method_53(var1, -1411954801);
-   }
 }

@@ -18,15 +18,9 @@ public class class_268 implements class_12 {
    public final int field_3164;
    // $FF: renamed from: v hv
    public static final class_268 field_3165;
-   // $FF: renamed from: a int
-   static final int field_3166 = 17;
-   // $FF: renamed from: ai int
-   static final int field_3167 = 37;
-   // $FF: renamed from: cy int
-   public static final int field_3168 = 4;
 
 
-   // $FF: renamed from: <init> (int, int) void
+    // $FF: renamed from: <init> (int, int) void
    class_268(int var1) {
       super();
       try {

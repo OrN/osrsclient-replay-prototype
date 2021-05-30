@@ -2,13 +2,7 @@
 // $FF: renamed from: ma
 public class class_361 {
 
-   // $FF: renamed from: v int
-   static final int field_4006 = 0;
-   // $FF: renamed from: n int
-   static final int field_4007 = 33;
-   // $FF: renamed from: y int
-   static final int field_4008 = 100;
-   // $FF: renamed from: p java.lang.String
+    // $FF: renamed from: p java.lang.String
    String field_4009;
    // $FF: renamed from: b boolean
    boolean field_4010;
@@ -27,19 +21,7 @@ public class class_361 {
       }
    }
 
-   // $FF: renamed from: p (java.lang.String) void
-   void method_6298(String var1) {
-      if(var1 != null && !var1.isEmpty()) {
-         if(var1 != this.field_4009) {
-            this.field_4009 = var1;
-            this.field_4012 = 0;
-            this.field_4010 = false;
-            this.method_6299((byte)-8);
-         }
-      }
-   }
-
-   // $FF: renamed from: n (byte) int
+    // $FF: renamed from: n (byte) int
    int method_6299(byte var1) {
       try {
          if(this.field_4012 * 134811513 < 33) {
@@ -99,42 +81,7 @@ public class class_361 {
       }
    }
 
-   // $FF: renamed from: r () int
-   int method_6300() {
-      if(this.field_4012 * 134811513 < 33) {
-         if(!this.field_4011.method_5403(class_254.field_2869.field_2873, this.field_4009)) {
-            return 134811513 * this.field_4012;
-         }
-
-         this.field_4012 = 805733353;
-      }
-
-      if(33 == 134811513 * this.field_4012) {
-         if(this.field_4011.method_5420(class_254.field_2871.field_2873, this.field_4009, (byte)0) && !this.field_4011.method_5403(class_254.field_2871.field_2873, this.field_4009)) {
-            return 134811513 * this.field_4012;
-         }
-
-         this.field_4012 = 1611466706;
-      }
-
-      if(this.field_4012 * 134811513 == 66) {
-         if(!this.field_4011.method_5403(this.field_4009, class_254.field_2872.field_2873)) {
-            return this.field_4012 * 134811513;
-         }
-
-         this.field_4012 = 1140110980;
-         this.field_4010 = true;
-      }
-
-      return this.field_4012 * 134811513;
-   }
-
-   // $FF: renamed from: s () boolean
-   boolean method_6301() {
-      return this.field_4010;
-   }
-
-   // $FF: renamed from: y (int) int
+    // $FF: renamed from: y (int) int
    int method_6302() {
       try {
          return 134811513 * this.field_4012;
@@ -143,19 +90,7 @@ public class class_361 {
       }
    }
 
-   // $FF: renamed from: j (java.lang.String) void
-   void method_6303(String var1) {
-      if(var1 != null && !var1.isEmpty()) {
-         if(var1 != this.field_4009) {
-            this.field_4009 = var1;
-            this.field_4012 = 0;
-            this.field_4010 = false;
-            this.method_6299((byte)-29);
-         }
-      }
-   }
-
-   // $FF: renamed from: <init> (jv) void
+    // $FF: renamed from: <init> (jv) void
    class_361(class_306 var1) {
       super();
       try {
@@ -167,42 +102,7 @@ public class class_361 {
       }
    }
 
-   // $FF: renamed from: b () int
-   int method_6305() {
-      if(this.field_4012 * 134811513 < 33) {
-         if(!this.field_4011.method_5403(class_254.field_2869.field_2873, this.field_4009)) {
-            return 134811513 * this.field_4012;
-         }
-
-         this.field_4012 = 805733353;
-      }
-
-      if(33 == 134811513 * this.field_4012) {
-         if(this.field_4011.method_5420(class_254.field_2871.field_2873, this.field_4009, (byte)0) && !this.field_4011.method_5403(class_254.field_2871.field_2873, this.field_4009)) {
-            return 134811513 * this.field_4012;
-         }
-
-         this.field_4012 = 1611466706;
-      }
-
-      if(this.field_4012 * 134811513 == 66) {
-         if(!this.field_4011.method_5403(this.field_4009, class_254.field_2872.field_2873)) {
-            return this.field_4012 * 134811513;
-         }
-
-         this.field_4012 = 1140110980;
-         this.field_4010 = true;
-      }
-
-      return this.field_4012 * 134811513;
-   }
-
-   // $FF: renamed from: d () boolean
-   boolean method_6306() {
-      return this.field_4010;
-   }
-
-   // $FF: renamed from: v (java.lang.String, byte) void
+    // $FF: renamed from: v (java.lang.String, byte) void
    void method_6307(String var1, byte var2) {
       try {
          if(var1 != null) {
@@ -232,13 +132,4 @@ public class class_361 {
       }
    }
 
-   // $FF: renamed from: u () boolean
-   boolean method_6308() {
-      return this.field_4010;
-   }
-
-   // $FF: renamed from: l () int
-   int method_6309() {
-      return 134811513 * this.field_4012;
-   }
 }

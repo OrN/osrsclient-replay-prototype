@@ -15,12 +15,7 @@ public class class_151 implements Comparator {
    static class_190 field_1913;
 
 
-   // $FF: renamed from: y (java.lang.Object, java.lang.Object) int
-   public int method_3203(Object var1, Object var2) {
-      return this.method_3204((class_310)var1, (class_310)var2, 924902000);
-   }
-
-   // $FF: renamed from: v (js, js, int) int
+    // $FF: renamed from: v (js, js, int) int
    int method_3204(class_310 var1, class_310 var2, int var3) {
       try {
          if(var1.field_3745 * 512263149 == 512263149 * var2.field_3745) {
@@ -88,65 +83,7 @@ public class class_151 implements Comparator {
       }
    }
 
-   // $FF: renamed from: f (js, js) int
-   int method_3207(class_310 var1, class_310 var2) {
-      if(var1.field_3745 * -1139687414 == 512263149 * var2.field_3745) {
-         return 0;
-      } else {
-         if(this.field_1911) {
-            if(512263149 * var1.field_3745 == -334519117 * client.field_1413) {
-               return -1;
-            }
-
-            if(client.field_1413 * 1396273817 == 512263149 * var2.field_3745) {
-               return 1;
-            }
-         }
-
-         return var1.field_3745 * 357612084 < var2.field_3745 * 512263149?-1:1;
-      }
-   }
-
-   // $FF: renamed from: p (java.lang.Object, java.lang.Object) int
-   public int method_3208(Object var1, Object var2) {
-      return this.method_3204((class_310)var1, (class_310)var2, -1154352432);
-   }
-
-   // $FF: renamed from: n (js, js) int
-   int method_3209(class_310 var1, class_310 var2) {
-      if(var1.field_3745 * 512263149 == 709719390 * var2.field_3745) {
-         return 0;
-      } else {
-         if(this.field_1911) {
-            if(985902171 * var1.field_3745 == 1851802348 * client.field_1413) {
-               return -1;
-            }
-
-            if(client.field_1413 * 1322143533 == 512263149 * var2.field_3745) {
-               return 1;
-            }
-         }
-
-         return var1.field_3745 * 512263149 < var2.field_3745 * 512263149?-1:1;
-      }
-   }
-
-   // $FF: renamed from: eg (java.lang.Object) boolean
-   public boolean method_3210(Object var1) {
-      return super.equals(var1);
-   }
-
-   // $FF: renamed from: eo (java.lang.Object) boolean
-   public boolean method_3211(Object var1) {
-      return super.equals(var1);
-   }
-
-   // $FF: renamed from: fl (java.lang.Object) boolean
-   public boolean method_3212(Object var1) {
-      return super.equals(var1);
-   }
-
-   // $FF: renamed from: gl (boolean, int) void
+    // $FF: renamed from: gl (boolean, int) void
    static final void method_3213(boolean var0, int var1) {
       try {
          for(int var2 = 0; var2 < client.field_1459 * -1300723479; ++var2) {

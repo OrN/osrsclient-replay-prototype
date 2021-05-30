@@ -4,9 +4,7 @@ import java.util.concurrent.TimeUnit;
 // $FF: renamed from: en
 public class class_213 implements class_14 {
 
-   // $FF: renamed from: r int
-   public static final int field_2438 = 8;
-   // $FF: renamed from: n en
+    // $FF: renamed from: n en
    static final class_213 field_2439;
    // $FF: renamed from: f en
    static final class_213 field_2440;
@@ -14,25 +12,11 @@ public class class_213 implements class_14 {
    public final int field_2441;
    // $FF: renamed from: p int
    final int field_2442;
-   // $FF: renamed from: bk int
-   static final int field_2443 = 6;
-   // $FF: renamed from: v en
+    // $FF: renamed from: v en
    static final class_213 field_2444;
-   // $FF: renamed from: al int
-   static final int field_2445 = 3;
 
 
-   // $FF: renamed from: r () en[]
-   static class_213[] method_4183() {
-      return new class_213[]{field_2439, field_2444, field_2440};
-   }
-
-   // $FF: renamed from: p () en[]
-   static class_213[] method_4184() {
-      return new class_213[]{field_2439, field_2444, field_2440};
-   }
-
-   // $FF: renamed from: <clinit> () void
+    // $FF: renamed from: <clinit> () void
    static {
       class_213 var10000 = new class_213(1, 0);
       field_2444 = var10000;
@@ -63,12 +47,7 @@ public class class_213 implements class_14 {
       }
    }
 
-   // $FF: renamed from: j () en[]
-   static class_213[] method_4187() {
-      return new class_213[]{field_2439, field_2444, field_2440};
-   }
-
-   // $FF: renamed from: q (dp, int, int, byte) bd
+    // $FF: renamed from: q (dp, int, int, byte) bd
    public static final class_139 method_4188(int var1, int var2, byte var3) {
       try {
          if(0 == 1631160541 * class_139.field_1793) {

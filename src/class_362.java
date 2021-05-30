@@ -5,12 +5,6 @@ public class class_362 implements class_18 {
 
    // $FF: renamed from: p int
    int field_4013;
-   // $FF: renamed from: v int
-   static final int field_4014 = 0;
-   // $FF: renamed from: f java.lang.String
-   static final String field_4015 = "_";
-   // $FF: renamed from: n java.lang.String
-   static final String field_4016 = "\\.";
    // $FF: renamed from: rm bd
    static class_139 field_4017;
    // $FF: renamed from: j int
@@ -20,16 +14,6 @@ public class class_362 implements class_18 {
    // $FF: renamed from: em int
    static int field_4020;
 
-
-   // $FF: renamed from: b (java.lang.String) void
-   void method_6310(String var1) {
-      if(var1.startsWith("1.")) {
-         this.method_6312(var1);
-      } else {
-         this.method_6325(var1);
-      }
-
-   }
 
    // $FF: renamed from: v (byte) my
    public class_30 method_59(byte var1) {
@@ -316,44 +300,9 @@ public class class_362 implements class_18 {
       }
    }
 
-   // $FF: renamed from: s (java.lang.String) void
-   void method_6313(String var1) {
-      if(var1.startsWith("1.")) {
-         this.method_6312(var1);
-      } else {
-         this.method_6325(var1);
-      }
-
-   }
-
-   // $FF: renamed from: u (java.lang.String) void
-   void method_6314(String var1) {
-      String[] var2 = var1.split("\\.");
-
-      try {
-         this.field_4019 = Integer.parseInt(var2[1]) * -234169487;
-         var2 = var2[2].split("_");
-         this.field_4013 = Integer.parseInt(var2[0]) * 591170907;
-         this.field_4018 = Integer.parseInt(var2[1]) * -378613255;
-      } catch (Exception var4) {
-         ;
-      }
-
-   }
-
    // $FF: renamed from: <init> () void
    public class_362() {
       super();
-   }
-
-   // $FF: renamed from: r (java.lang.String) void
-   void method_6316(String var1) {
-      if(var1.startsWith("1.")) {
-         this.method_6312(var1);
-      } else {
-         this.method_6325(var1);
-      }
-
    }
 
    // $FF: renamed from: r (byte) void
@@ -373,21 +322,6 @@ public class class_362 implements class_18 {
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
       }
-   }
-
-   // $FF: renamed from: o (java.lang.String) void
-   void method_6318(String var1) {
-      String[] var2 = var1.split("\\.");
-
-      try {
-         this.field_4019 = Integer.parseInt(var2[1]) * -234169487;
-         var2 = var2[2].split("_");
-         this.field_4013 = Integer.parseInt(var2[0]) * 591170907;
-         this.field_4018 = Integer.parseInt(var2[1]) * -378613255;
-      } catch (Exception var4) {
-         ;
-      }
-
    }
 
    // $FF: renamed from: j () my
@@ -517,31 +451,6 @@ public class class_362 implements class_18 {
       return var10000;
    }
 
-   // $FF: renamed from: d (java.lang.String) void
-   void method_6319(String var1) {
-      if(var1.startsWith("1.")) {
-         this.method_6312(var1);
-      } else {
-         this.method_6325(var1);
-      }
-
-   }
-
-   // $FF: renamed from: l (java.lang.String) void
-   void method_6320(String var1) {
-      String[] var2 = var1.split("\\.");
-
-      try {
-         this.field_4019 = Integer.parseInt(var2[1]) * -234169487;
-         var2 = var2[2].split("_");
-         this.field_4013 = Integer.parseInt(var2[0]) * 591170907;
-         this.field_4018 = Integer.parseInt(var2[1]) * -378613255;
-      } catch (Exception var4) {
-         ;
-      }
-
-   }
-
    // $FF: renamed from: p () my
    public class_30 method_60() {
       byte var1;
@@ -667,48 +576,6 @@ public class class_362 implements class_18 {
       int[] var23 = new int[3];
       class_30 var10000 = new class_30(var1, var6, var7, var8, this.field_4019 * -1520925295, this.field_4013 * -1280779565, this.field_4018 * 1746870345, false, var10, var11, var12, 0, var13, var14, var15, var16, 0, 0, 0, 0, var17, var18, var23, 0, "");
       return var10000;
-   }
-
-   // $FF: renamed from: c (java.lang.String) void
-   void method_6321(String var1) {
-      String[] var2 = var1.split("\\.");
-
-      try {
-         this.field_4019 = Integer.parseInt(var2[0]) * -234169487;
-         this.field_4013 = Integer.parseInt(var2[1]) * -413644917;
-         this.field_4018 = Integer.parseInt(var2[2]) * 505694284;
-      } catch (Exception var4) {
-         ;
-      }
-
-   }
-
-   // $FF: renamed from: e (java.lang.String) void
-   void method_6322(String var1) {
-      String[] var2 = var1.split("\\.");
-
-      try {
-         this.field_4019 = Integer.parseInt(var2[0]) * -234169487;
-         this.field_4013 = Integer.parseInt(var2[1]) * 591170907;
-         this.field_4018 = Integer.parseInt(var2[2]) * -378613255;
-      } catch (Exception var4) {
-         ;
-      }
-
-   }
-
-   // $FF: renamed from: g (java.lang.String) void
-   void method_6323(String var1) {
-      String[] var2 = var1.split("\\.");
-
-      try {
-         this.field_4019 = Integer.parseInt(var2[0]) * -234169487;
-         this.field_4013 = Integer.parseInt(var2[1]) * -1773151186;
-         this.field_4018 = Integer.parseInt(var2[2]) * 2142209752;
-      } catch (Exception var4) {
-         ;
-      }
-
    }
 
    // $FF: renamed from: p (int, int, int, boolean, int, boolean, int) void

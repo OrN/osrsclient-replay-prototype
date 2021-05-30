@@ -10,17 +10,9 @@ public class class_219 extends class_218 {
    final int field_2485;
    // $FF: renamed from: y int
    final int field_2486;
-   // $FF: renamed from: ae int
-   static final int field_2487 = 3;
-   // $FF: renamed from: ac int
-   public static final int field_2488 = 50;
-   // $FF: renamed from: e int
-   public static final int field_2489 = 46;
-   // $FF: renamed from: aw int
-   static final int field_2490 = 106;
 
 
-   // $FF: renamed from: l () int
+    // $FF: renamed from: l () int
    int method_4216() {
       return this.field_2483 * 520142189;
    }

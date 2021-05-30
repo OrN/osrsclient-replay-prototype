@@ -10,13 +10,9 @@ public class class_237 {
    String field_2642;
    // $FF: renamed from: y fp
    class_232 field_2643;
-   // $FF: renamed from: s int
-   public static final int field_2644 = 27;
-   // $FF: renamed from: b int
-   public static final int field_2645 = 0;
 
 
-   // $FF: renamed from: y (byte[], int, int, int, int, fz[], int) void
+    // $FF: renamed from: y (byte[], int, int, int, int, fz[], int) void
    static final void method_4595(byte[] var0, int var1, int var2, int var3, int var4, class_240[] var5, int var6) {
       try {
          int var8;

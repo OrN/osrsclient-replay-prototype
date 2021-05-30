@@ -196,8 +196,6 @@ public class class_263 {
    public static final class_263 field_3026;
    // $FF: renamed from: cb int
    public final int field_3027;
-   // $FF: renamed from: qk int
-   static final int field_3028 = 48;
    // $FF: renamed from: b hl
    public static final class_263 field_3029;
 
@@ -613,13 +611,6 @@ public class class_263 {
       }
    }
 
-   // $FF: renamed from: n () hl[]
-   public static class_263[] method_4996() {
-      // TODO: Failed to decompile this method
-      System.out.println("Unimplemented method class_263.method_4996()");
-      return null;
-   }
-
    // $FF: renamed from: <init> (int, int) void
    class_263(int var1, int var2) {
       super();
@@ -631,13 +622,4 @@ public class class_263 {
       }
    }
 
-   // $FF: renamed from: y () hl[]
-   public static class_263[] method_4998() {
-      return new class_263[]{field_3011, field_2982, field_2933, field_2934, field_2935, field_2936, field_2937, field_3029, field_2939, field_3016, field_2960, field_2942, field_2979, field_2944, field_2945, field_2991, field_2947, field_2948, field_2977, field_2950, field_2940, field_2952, field_2946, field_2954, field_2955, field_2956, field_2957, field_3006, field_2987, field_2953, field_2995, field_2962, field_2943, field_3026, field_2965, field_2966, field_2931, field_2968, field_2980, field_2970, field_2971, field_2972, field_2973, field_2974, field_2975, field_2976, field_3005, field_2963, field_3004, field_2969, field_2981, field_2978, field_2983, field_2984, field_2985, field_2986, field_2988, field_3020, field_2941, field_2990, field_3024, field_2992, field_2993, field_2994, field_3018, field_2996, field_3015, field_2998, field_2961, field_3000, field_3001, field_3002, field_3003, field_2999, field_2932, field_2949, field_3007, field_3008, field_3009, field_3010, field_3025, field_3012, field_3013, field_3014, field_2958, field_2959, field_3017, field_2938, field_3019, field_2997, field_3021, field_3022, field_3023, field_2951, field_2967};
-   }
-
-   // $FF: renamed from: f () hl[]
-   public static class_263[] method_4999() {
-      return new class_263[]{field_3011, field_2982, field_2933, field_2934, field_2935, field_2936, field_2937, field_3029, field_2939, field_3016, field_2960, field_2942, field_2979, field_2944, field_2945, field_2991, field_2947, field_2948, field_2977, field_2950, field_2940, field_2952, field_2946, field_2954, field_2955, field_2956, field_2957, field_3006, field_2987, field_2953, field_2995, field_2962, field_2943, field_3026, field_2965, field_2966, field_2931, field_2968, field_2980, field_2970, field_2971, field_2972, field_2973, field_2974, field_2975, field_2976, field_3005, field_2963, field_3004, field_2969, field_2981, field_2978, field_2983, field_2984, field_2985, field_2986, field_2988, field_3020, field_2941, field_2990, field_3024, field_2992, field_2993, field_2994, field_3018, field_2996, field_3015, field_2998, field_2961, field_3000, field_3001, field_3002, field_3003, field_2999, field_2932, field_2949, field_3007, field_3008, field_3009, field_3010, field_3025, field_3012, field_3013, field_3014, field_2958, field_2959, field_3017, field_2938, field_3019, field_2997, field_3021, field_3022, field_3023, field_2951, field_2967};
-   }
 }

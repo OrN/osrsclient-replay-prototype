@@ -4,17 +4,9 @@ public final class class_378 {
 
    // $FF: renamed from: aj int[][]
    int[][] field_4160;
-   // $FF: renamed from: n int
-   final int field_4161;
-   // $FF: renamed from: f int
-   final int field_4162;
-   // $FF: renamed from: ai byte[]
+    // $FF: renamed from: ai byte[]
    byte[] field_4163;
-   // $FF: renamed from: p int
-   final int field_4164;
-   // $FF: renamed from: j int
-   final int field_4165;
-   // $FF: renamed from: ax int[][]
+    // $FF: renamed from: ax int[][]
    int[][] field_4166;
    // $FF: renamed from: b int
    int field_4167;
@@ -24,9 +16,7 @@ public final class class_378 {
    byte[] field_4169;
    // $FF: renamed from: u int
    int field_4170;
-   // $FF: renamed from: v int
-   final int field_4171;
-   // $FF: renamed from: r byte[]
+    // $FF: renamed from: r byte[]
    byte[] field_4172;
    // $FF: renamed from: c byte
    byte field_4173;
@@ -54,9 +44,7 @@ public final class class_378 {
    int field_4184;
    // $FF: renamed from: ae boolean[]
    boolean[] field_4185;
-   // $FF: renamed from: y int
-   final int field_4186;
-   // $FF: renamed from: ab byte[]
+    // $FF: renamed from: ab byte[]
    byte[] field_4187;
    // $FF: renamed from: al byte[]
    byte[] field_4188;
@@ -84,13 +72,7 @@ public final class class_378 {
    class_378() {
       super();
       try {
-         this.field_4171 = 4096;
-         this.field_4161 = 16;
-         this.field_4162 = 258;
-         this.field_4186 = 6;
-         this.field_4164 = 50;
-         this.field_4165 = 18002;
-         this.field_4167 = 0;
+          this.field_4167 = 0;
          this.field_4170 = 0;
          this.field_4181 = new int[256];
          this.field_4183 = new int[257];

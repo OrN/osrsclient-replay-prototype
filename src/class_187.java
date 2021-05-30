@@ -2,26 +2,13 @@
 // $FF: renamed from: dg
 public class class_187 extends class_181 {
 
-   // $FF: renamed from: d java.lang.String
-   public static final String field_2265 = "main_file_cache.idx255";
-   // $FF: renamed from: k int
-   public static final int field_2266 = 99;
-   // $FF: renamed from: l int
-   public static final int field_2267 = 14;
-   // $FF: renamed from: bq int
-   static final int field_2268 = 1003;
-   // $FF: renamed from: ff eu
+    // $FF: renamed from: ff eu
    static class_214 field_2269;
    // $FF: renamed from: v boolean
    final boolean field_2270;
 
 
-   // $FF: renamed from: y (java.lang.Object, java.lang.Object) int
-   public int method_3877(Object var1, Object var2) {
-      return this.method_3878((class_339)var1, (class_339)var2, (byte)-100);
-   }
-
-   // $FF: renamed from: v (lv, lv, byte) int
+    // $FF: renamed from: v (lv, lv, byte) int
    int method_3878(class_339 var1, class_339 var2, byte var3) {
       try {
          if(1396273817 * client.field_1413 == var1.field_3888 * 1693720149 && client.field_1413 * 1396273817 == var2.field_3888 * 1693720149) {
@@ -59,27 +46,7 @@ public class class_187 extends class_181 {
       }
    }
 
-   // $FF: renamed from: j (lv, lv) int
-   int method_3880(class_339 var1, class_339 var2) {
-      return 1396273817 * client.field_1413 == var1.field_3888 * 76797026 && client.field_1413 * 1396273817 == var2.field_3888 * 1693720149?(this.field_2270?var1.method_5999().method_6275(var2.method_5999(), 628916186):var2.method_5999().method_6275(var1.method_5999(), -1367553227)):this.method_3830(var1, var2);
-   }
-
-   // $FF: renamed from: p (java.lang.Object, java.lang.Object) int
-   public int method_3881(Object var1, Object var2) {
-      return this.method_3878((class_339)var1, (class_339)var2, (byte)-123);
-   }
-
-   // $FF: renamed from: n (lv, lv) int
-   int method_3882(class_339 var1, class_339 var2) {
-      return 1396273817 * client.field_1413 == var1.field_3888 * -284096299 && client.field_1413 * 2142950849 == var2.field_3888 * 507964488?(this.field_2270?var1.method_5999().method_6275(var2.method_5999(), -84560030):var2.method_5999().method_6275(var1.method_5999(), -1885326193)):this.method_3830(var1, var2);
-   }
-
-   // $FF: renamed from: f (lv, lv) int
-   int method_3883(class_339 var1, class_339 var2) {
-      return 1396273817 * client.field_1413 == var1.field_3888 * 1693720149 && client.field_1413 * 1396273817 == var2.field_3888 * 1693720149?(this.field_2270?var1.method_5999().method_6275(var2.method_5999(), -1032702389):var2.method_5999().method_6275(var1.method_5999(), -2012544302)):this.method_3830(var1, var2);
-   }
-
-   public int compare(Object var1, Object var2) {
+    public int compare(Object var1, Object var2) {
       try {
          return this.method_3878((class_339)var1, (class_339)var2, (byte)-69);
       } catch (RuntimeException var3) {
@@ -87,12 +54,7 @@ public class class_187 extends class_181 {
       }
    }
 
-   // $FF: renamed from: r (lv, lv) int
-   int method_3884(class_339 var1, class_339 var2) {
-      return -479724622 * client.field_1413 == var1.field_3888 * 1626591800 && client.field_1413 * -1626127819 == var2.field_3888 * 1693720149?(this.field_2270?var1.method_5999().method_6275(var2.method_5999(), 1696859342):var2.method_5999().method_6275(var1.method_5999(), -342342987)):this.method_3830(var1, var2);
-   }
-
-   // $FF: renamed from: w (int, cf, boolean, int) int
+    // $FF: renamed from: w (int, cf, boolean, int) int
    static int method_3885(int var0, boolean var2, int var3) {
       try {
          String var15;

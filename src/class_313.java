@@ -10,16 +10,9 @@ public class class_313 {
    static final class_313 field_3762;
    // $FF: renamed from: y int
    final int field_3763;
-   // $FF: renamed from: bh int
-   public static final int field_3764 = 81;
 
 
-   // $FF: renamed from: f () jw[]
-   static class_313[] method_5574() {
-      return new class_313[]{field_3762, field_3761};
-   }
-
-   // $FF: renamed from: <clinit> () void
+    // $FF: renamed from: <clinit> () void
    static {
       class_313 var10000 = new class_313(16, 16);
       field_3762 = var10000;
@@ -27,12 +20,7 @@ public class class_313 {
       field_3761 = var10000;
    }
 
-   // $FF: renamed from: n () jw[]
-   static class_313[] method_5576() {
-      return new class_313[]{field_3762, field_3761};
-   }
-
-   // $FF: renamed from: <init> (int, int, int, int, int, int) void
+    // $FF: renamed from: <init> (int, int, int, int, int, int) void
    class_313(int var5, int var6) {
       super();
       try {

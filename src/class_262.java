@@ -8,9 +8,7 @@ public class class_262 {
    byte[] field_2921;
    // $FF: renamed from: b int
    int field_2922;
-   // $FF: renamed from: bt int
-   static final int field_2923 = 68;
-   // $FF: renamed from: p int
+    // $FF: renamed from: p int
    int field_2924;
    // $FF: renamed from: j int
    int field_2925;
@@ -20,9 +18,7 @@ public class class_262 {
    int field_2927;
    // $FF: renamed from: d int
    int field_2928;
-   // $FF: renamed from: qc int
-   static final int field_2929 = 1024;
-   // $FF: renamed from: v byte[]
+    // $FF: renamed from: v byte[]
    byte[] field_2930;
 
 

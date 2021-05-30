@@ -2,13 +2,9 @@
 // $FF: renamed from: gw
 public class class_254 {
 
-   // $FF: renamed from: y gw
-   static final class_254 field_2868;
-   // $FF: renamed from: n gw
+    // $FF: renamed from: n gw
    public static final class_254 field_2869;
-   // $FF: renamed from: c int
-   static final int field_2870 = 11;
-   // $FF: renamed from: f gw
+    // $FF: renamed from: f gw
    public static final class_254 field_2871;
    // $FF: renamed from: p gw
    public static final class_254 field_2872;
@@ -43,8 +39,7 @@ public class class_254 {
       var10000 = new class_254("compositetexture");
       field_2871 = var10000;
       var10000 = new class_254("area");
-      field_2868 = var10000;
-      var10000 = new class_254("labels");
+       var10000 = new class_254("labels");
       field_2872 = var10000;
    }
 

@@ -2,9 +2,7 @@
 // $FF: renamed from: gg
 public class class_244 implements class_6 {
 
-   // $FF: renamed from: cm int
-   static final int field_2701 = 11;
-   // $FF: renamed from: n int
+    // $FF: renamed from: n int
    int field_2702;
    // $FF: renamed from: f int
    int field_2703;
@@ -279,10 +277,7 @@ public class class_244 implements class_6 {
       }
    }
 
-   // $FF: renamed from: w () void
-   void method_4690() {}
-
-   // $FF: renamed from: x (nd) void
+    // $FF: renamed from: x (nd) void
    public void method_28(class_28 var1) {
       this.field_2704 = var1.method_130() * 761506617;
       this.field_2702 = var1.method_130() * 399311255;

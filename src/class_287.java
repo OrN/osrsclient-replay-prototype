@@ -48,37 +48,4 @@ public class class_287 {
       }
    }
 
-   // $FF: renamed from: f (int, int, int) int
-   public static int method_5277(int var0, int var1, int var2) {
-      var2 &= 3;
-      return var2 == 0?var1:(var2 == 1?7 - var0:(var2 == 2?7 - var1:var0));
-   }
-
-   // $FF: renamed from: y (int, int, int) int
-   public static int method_5278(int var0, int var1, int var2) {
-      var2 &= 3;
-      return var2 == 0?var1:(var2 == 1?7 - var0:(var2 == 2?7 - var1:var0));
-   }
-
-   // $FF: renamed from: p (int, int, int, int, int, int) int
-   public static int method_5279(int var0, int var1, int var2, int var3, int var4, int var5) {
-      if((var5 & 1) == 1) {
-         int var6 = var3;
-         var3 = var4;
-         var4 = var6;
-      }
-
-      var2 &= 3;
-      return var2 == 0?var1:(var2 == 1?7 - var0 - (var3 - 1):(2 == var2?7 - var1 - (var4 - 1):var0));
-   }
-
-   // $FF: renamed from: <init> () void
-   class_287() throws Throwable {
-      super();
-      try {
-         throw new Error();
-      } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1);
-      }
-   }
 }

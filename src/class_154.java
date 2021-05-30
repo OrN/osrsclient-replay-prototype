@@ -4,19 +4,11 @@ import java.net.URL;
 // $FF: renamed from: bq
 public class class_154 implements Runnable {
 
-   // $FF: renamed from: aa int
-   static final int field_1927 = 64;
-   // $FF: renamed from: g nd
+    // $FF: renamed from: g nd
    public static class_28 field_1928;
    // $FF: renamed from: gq int
    static int field_1929;
-   // $FF: renamed from: u int
-   static final int field_1930 = 6;
-   // $FF: renamed from: b int
-   static final int field_1931 = 2;
-   // $FF: renamed from: n int
-   static final int field_1932 = -3407872;
-   // $FF: renamed from: bl jd
+    // $FF: renamed from: bl jd
    static class_295 field_1933;
    // $FF: renamed from: v bd[]
    volatile class_139[] field_1934;
@@ -43,37 +35,7 @@ public class class_154 implements Runnable {
       }
    }
 
-   // $FF: renamed from: by () void
-   public void method_3246() {
-      try {
-         for(int var1 = 0; var1 < 2; ++var1) {
-            class_139 var2 = this.field_1934[var1];
-            if(null != var2) {
-               var2.method_2990((byte)45);
-            }
-         }
-      } catch (Exception var3) {
-         class_308.method_5523((String)null, var3, 1889968413);
-      }
-
-   }
-
-   // $FF: renamed from: bc () void
-   public void method_3247() {
-      try {
-         for(int var1 = 0; var1 < 2; ++var1) {
-            class_139 var2 = this.field_1934[var1];
-            if(null != var2) {
-               var2.method_2990((byte)26);
-            }
-         }
-      } catch (Exception var3) {
-         class_308.method_5523((String)null, var3, 1851372101);
-      }
-
-   }
-
-   // $FF: renamed from: u (int, int, int, int, byte) int
+    // $FF: renamed from: u (int, int, int, int, byte) int
    static final int method_3248(int var0, int var1, int var2, int var3) {
       try {
          int var5 = 65536 - class_70.field_559[var2 * 1024 / var3] >> 1;

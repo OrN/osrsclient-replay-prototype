@@ -1,6 +1,4 @@
 import java.math.BigInteger;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.Date;
 
 // $FF: renamed from: cv
@@ -8,23 +6,13 @@ public class class_179 {
 
    // $FF: renamed from: er java.lang.String
    static String host;
-   // $FF: renamed from: l int
-   static final int field_2224 = 7;
-   // $FF: renamed from: y int
-   static final int field_2225 = 1000;
-   // $FF: renamed from: p java.math.BigInteger
+    // $FF: renamed from: p java.math.BigInteger
    static final BigInteger field_2226;
    // $FF: renamed from: j java.math.BigInteger
    static final BigInteger field_2227;
-   // $FF: renamed from: n java.lang.String
-   static final String field_2228 = "services";
-   // $FF: renamed from: o int
-   static final int field_2229 = 2;
-   // $FF: renamed from: v java.lang.String
-   static final String field_2230 = "m=accountappeal/login.ws";
 
 
-   // $FF: renamed from: ad (int, cf, boolean, int) int
+    // $FF: renamed from: ad (int, cf, boolean, int) int
    static int method_3805(int var0, int var3) {
       try {
          String var4;
@@ -351,35 +339,7 @@ public class class_179 {
       field_2227 = new BigInteger("7237300117305667488707183861728052766358166655052137727439795191253340127955075499635575104901523446809299097934591732635674173519120047404024393881551683");
    }
 
-   // $FF: renamed from: n (java.lang.String) boolean
-   static boolean method_3807(String var0) {
-      if(var0 == null) {
-         return false;
-      } else {
-         try {
-            new URL(var0);
-            return true;
-         } catch (MalformedURLException var2) {
-            return false;
-         }
-      }
-   }
-
-   // $FF: renamed from: f (java.lang.String) boolean
-   static boolean method_3808(String var0) {
-      if(var0 == null) {
-         return false;
-      } else {
-         try {
-            new URL(var0);
-            return true;
-         } catch (MalformedURLException var2) {
-            return false;
-         }
-      }
-   }
-
-   // $FF: renamed from: j (int, boolean, short) java.lang.String
+    // $FF: renamed from: j (int, boolean, short) java.lang.String
    public static String method_3809(int var0, boolean var1, short var2) {
       try {
          if(var1) {
@@ -412,13 +372,4 @@ public class class_179 {
       }
    }
 
-   // $FF: renamed from: <init> () void
-   class_179() throws Throwable {
-      super();
-      try {
-         throw new Error();
-      } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1);
-      }
-   }
 }

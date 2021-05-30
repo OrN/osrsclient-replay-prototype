@@ -67,31 +67,7 @@ public class class_36 extends class_27 {
       }
    }
 
-   // $FF: renamed from: n () void
-   void method_395() {
-      this.field_68 = null;
-      this.field_86 = null;
-      this.field_70 = null;
-      this.field_85 = null;
-   }
-
-   // $FF: renamed from: f () void
-   void method_396() {
-      this.field_68 = null;
-      this.field_86 = null;
-      this.field_70 = null;
-      this.field_85 = null;
-   }
-
-   // $FF: renamed from: y () void
-   void method_397() {
-      this.field_68 = null;
-      this.field_86 = null;
-      this.field_70 = null;
-      this.field_85 = null;
-   }
-
-   // $FF: renamed from: f (java.lang.CharSequence, int, boolean, int) boolean
+    // $FF: renamed from: f (java.lang.CharSequence, int, boolean, int) boolean
    static boolean method_398(CharSequence var0, int var1, boolean var2, int var3) {
       try {
          if(var1 >= 2) {

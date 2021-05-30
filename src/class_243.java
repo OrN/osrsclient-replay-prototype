@@ -10,9 +10,7 @@ public class class_243 {
    int field_2696;
    // $FF: renamed from: l jv
    public static class_306 field_2697;
-   // $FF: renamed from: br int
-   public static final int field_2698 = 1011;
-   // $FF: renamed from: n int
+    // $FF: renamed from: n int
    int field_2699;
    // $FF: renamed from: gg int
    static int field_2700;

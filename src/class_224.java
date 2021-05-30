@@ -343,13 +343,7 @@ public class class_224 implements class_6 {
       this.method_4282();
    }
 
-   // $FF: renamed from: w () void
-   void method_4284() {}
-
-   // $FF: renamed from: t () void
-   void method_4285() {}
-
-   // $FF: renamed from: p (int, int, int, int, int) void
+    // $FF: renamed from: p (int, int, int, int, int) void
    static void method_4286(int var0, int var1, int var2, int var3, int var4) {
       try {
          for(class_103 var5 = (class_103)class_103.field_1203.method_5944(); var5 != null; var5 = (class_103)class_103.field_1203.method_5972()) {

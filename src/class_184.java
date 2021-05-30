@@ -4,20 +4,13 @@ public class class_184 extends class_181 {
 
    // $FF: renamed from: v boolean
    final boolean field_2254;
-   // $FF: renamed from: e int
-   static final int field_2255 = 15;
-   // $FF: renamed from: p int
+    // $FF: renamed from: p int
    static int field_2256;
    // $FF: renamed from: g int
    public static int field_2257;
 
 
-   // $FF: renamed from: y (java.lang.Object, java.lang.Object) int
-   public int method_3846(Object var1, Object var2) {
-      return this.method_3847((class_339)var1, (class_339)var2, 2125092763);
-   }
-
-   // $FF: renamed from: v (lv, lv, int) int
+    // $FF: renamed from: v (lv, lv, int) int
    int method_3847(class_339 var1, class_339 var2, int var3) {
       try {
          if(var1.field_3888 * 1693720149 == 1396273817 * client.field_1413) {
@@ -69,12 +62,7 @@ public class class_184 extends class_181 {
       }
    }
 
-   // $FF: renamed from: p (java.lang.Object, java.lang.Object) int
-   public int method_3849(Object var1, Object var2) {
-      return this.method_3847((class_339)var1, (class_339)var2, 1266337461);
-   }
-
-   // $FF: renamed from: v (jv, int) void
+    // $FF: renamed from: v (jv, int) void
    public static void method_3850(class_306 var0) {
       try {
          class_89.field_897 = var0;
@@ -83,12 +71,7 @@ public class class_184 extends class_181 {
       }
    }
 
-   // $FF: renamed from: f (lv, lv) int
-   int method_3851(class_339 var1, class_339 var2) {
-      return var1.field_3888 * 1693720149 == 1396273817 * client.field_1413 && 1396273817 * client.field_1413 == var2.field_3888 * 1693720149?(this.field_2254?var1.field_3885 * -1023710905 - -1023710905 * var2.field_3885:var2.field_3885 * -1023710905 - -1023710905 * var1.field_3885):this.method_3830(var1, var2);
-   }
-
-   // $FF: renamed from: s (char, byte) boolean
+    // $FF: renamed from: s (char, byte) boolean
    public static boolean method_3852(char var0, byte var1) {
       try {
          boolean var10000;
@@ -133,8 +116,4 @@ public class class_184 extends class_181 {
       }
    }
 
-   // $FF: renamed from: n (lv, lv) int
-   int method_3854(class_339 var1, class_339 var2) {
-      return var1.field_3888 * 1693720149 == 1396273817 * client.field_1413 && 1396273817 * client.field_1413 == var2.field_3888 * 1693720149?(this.field_2254?var1.field_3885 * -1023710905 - -1023710905 * var2.field_3885:var2.field_3885 * -1023710905 - -1023710905 * var1.field_3885):this.method_3830(var1, var2);
-   }
 }

@@ -8,26 +8,15 @@ import java.util.Random;
 // $FF: renamed from: ll
 public class class_341 extends class_339 {
 
-   // $FF: renamed from: l int
-   static final int field_3892 = 6;
-   // $FF: renamed from: n lu
+    // $FF: renamed from: n lu
    class_357 field_3893;
    // $FF: renamed from: ea jp
    static class_307 field_3894;
    // $FF: renamed from: v lu
    class_357 field_3895;
-   // $FF: renamed from: af int
-   static final int field_3896 = 5;
-   // $FF: renamed from: cd int
-   static final int field_3897 = 10;
 
 
-   // $FF: renamed from: i () void
-   void method_6028() {
-      this.field_3893 = class_357.field_3980;
-   }
-
-   // $FF: renamed from: v (int) void
+    // $FF: renamed from: v (int) void
    void method_6029() {
       try {
          this.field_3895 = class_357.field_3980;
@@ -84,16 +73,7 @@ public class class_341 extends class_339 {
       }
    }
 
-   // $FF: renamed from: al () boolean
-   public final boolean method_6032() {
-      if(class_357.field_3980 == this.field_3893) {
-         this.method_6033(-1213903563);
-      }
-
-      return this.field_3893 == class_357.field_3979;
-   }
-
-   // $FF: renamed from: e (int) void
+    // $FF: renamed from: e (int) void
    void method_6033(int var1) {
       try {
          class_357 var10001;
@@ -113,16 +93,7 @@ public class class_341 extends class_339 {
       }
    }
 
-   // $FF: renamed from: z () boolean
-   public final boolean method_6034() {
-      if(this.field_3895 == class_357.field_3980) {
-         this.method_6031((short)256);
-      }
-
-      return this.field_3895 == class_357.field_3979;
-   }
-
-   // $FF: renamed from: p (byte) void
+    // $FF: renamed from: p (byte) void
    void method_6035() {
       try {
          this.field_3893 = class_357.field_3980;
@@ -131,55 +102,7 @@ public class class_341 extends class_339 {
       }
    }
 
-   // $FF: renamed from: a () void
-   void method_6036() {
-      this.field_3895 = class_357.field_3980;
-   }
-
-   // $FF: renamed from: k () void
-   void method_6037() {
-      this.field_3895 = class_357.field_3980;
-   }
-
-   // $FF: renamed from: m () void
-   void method_6038() {
-      this.field_3895 = class_357.field_3980;
-   }
-
-   // $FF: renamed from: x () boolean
-   public final boolean method_6039() {
-      if(this.field_3895 == class_357.field_3980) {
-         this.method_6031((short)256);
-      }
-
-      return this.field_3895 == class_357.field_3979;
-   }
-
-   // $FF: renamed from: ae () boolean
-   public final boolean method_6040() {
-      if(class_357.field_3980 == this.field_3893) {
-         this.method_6033(1361593060);
-      }
-
-      return this.field_3893 == class_357.field_3979;
-   }
-
-   // $FF: renamed from: w () void
-   void method_6041() {
-      this.field_3895 = class_208.field_2413.field_1994.method_6063(this.field_3883, -234571238)?class_357.field_3979:class_357.field_3978;
-   }
-
-   // $FF: renamed from: t () void
-   void method_6042() {
-      this.field_3893 = class_357.field_3980;
-   }
-
-   // $FF: renamed from: h () void
-   void method_6043() {
-      this.field_3893 = class_357.field_3980;
-   }
-
-   // $FF: renamed from: f (int) boolean
+    // $FF: renamed from: f (int) boolean
    public final boolean method_6044(int var1) {
       try {
          if(this.field_3895 == class_357.field_3980) {
@@ -207,35 +130,7 @@ public class class_341 extends class_339 {
       }
    }
 
-   // $FF: renamed from: g () void
-   void method_6045() {
-      this.field_3895 = class_357.field_3980;
-   }
-
-   // $FF: renamed from: q () void
-   void method_6046() {
-      this.field_3893 = class_357.field_3980;
-   }
-
-   // $FF: renamed from: ap () boolean
-   public final boolean method_6047() {
-      if(class_357.field_3980 == this.field_3893) {
-         this.method_6033(166887753);
-      }
-
-      return this.field_3893 == class_357.field_3979;
-   }
-
-   // $FF: renamed from: ab () boolean
-   public final boolean method_6048() {
-      if(class_357.field_3980 == this.field_3893) {
-         this.method_6033(286809050);
-      }
-
-      return this.field_3893 == class_357.field_3979;
-   }
-
-   // $FF: renamed from: d (int) void
+    // $FF: renamed from: d (int) void
    static void method_6049(int var0) {
       try {
          class_177.field_2200 = class_177.field_2200.trim();
@@ -561,12 +456,7 @@ public class class_341 extends class_339 {
       }
    }
 
-   // $FF: renamed from: ad () void
-   void method_6050() {
-      this.field_3893 = class_208.field_2413.field_1995.method_6063(this.field_3883, -234571238)?class_357.field_3979:class_357.field_3978;
-   }
-
-   // $FF: renamed from: <init> () void
+    // $FF: renamed from: <init> () void
    class_341() {
       super();
       try {
@@ -577,13 +467,4 @@ public class class_341 extends class_339 {
       }
    }
 
-   // $FF: renamed from: ar () void
-   void method_6051() {
-      this.field_3893 = class_208.field_2413.field_1995.method_6063(this.field_3883, -234571238)?class_357.field_3979:class_357.field_3978;
-   }
-
-   // $FF: renamed from: ai () void
-   void method_6052() {
-      this.field_3893 = class_208.field_2413.field_1995.method_6063(this.field_3883, -234571238)?class_357.field_3979:class_357.field_3978;
-   }
 }

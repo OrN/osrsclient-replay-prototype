@@ -2,11 +2,7 @@
 // $FF: renamed from: ed
 public class class_211 {
 
-   // $FF: renamed from: v int
-   public static final int field_2428 = 1;
-   // $FF: renamed from: n int
-   public static final int field_2429 = 2;
-   // $FF: renamed from: f short[]
+    // $FF: renamed from: f short[]
    public short[] field_2430;
    // $FF: renamed from: y short[]
    public short[] field_2431;

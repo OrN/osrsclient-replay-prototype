@@ -5,20 +5,11 @@ final class class_311 implements Comparator {
 
    // $FF: renamed from: dl jp
    static class_307 field_3749;
-   // $FF: renamed from: f byte
-   public static final byte field_3750 = 2;
-   // $FF: renamed from: bq int
-   static final int field_3751 = 69;
-   // $FF: renamed from: fq long
+    // $FF: renamed from: fq long
    static long field_3752;
 
 
-   // $FF: renamed from: p (java.lang.Object, java.lang.Object) int
-   public int method_5544(Object var1, Object var2) {
-      return this.method_5545((class_310)var1, (class_310)var2, 1241593675);
-   }
-
-   // $FF: renamed from: v (js, js, int) int
+    // $FF: renamed from: v (js, js, int) int
    int method_5545(class_310 var1, class_310 var2, int var3) {
       try {
          int var10000;
@@ -54,17 +45,7 @@ final class class_311 implements Comparator {
       }
    }
 
-   // $FF: renamed from: n (js, js) int
-   int method_5546(class_310 var1, class_310 var2) {
-      return 6451811657459395973L * var1.field_3743 < 6451811657459395973L * var2.field_3743?-1:(var2.field_3743 * 6451811657459395973L == var1.field_3743 * 6451811657459395973L?0:1);
-   }
-
-   // $FF: renamed from: y (java.lang.Object, java.lang.Object) int
-   public int method_5547(Object var1, Object var2) {
-      return this.method_5545((class_310)var1, (class_310)var2, -743752270);
-   }
-
-   // $FF: renamed from: <init> () void
+    // $FF: renamed from: <init> () void
    class_311() {
       super();
    }
@@ -107,17 +88,7 @@ final class class_311 implements Comparator {
       }
    }
 
-   // $FF: renamed from: fl (java.lang.Object) boolean
-   public boolean method_5550(Object var1) {
-      return super.equals(var1);
-   }
-
-   // $FF: renamed from: eo (java.lang.Object) boolean
-   public boolean method_5551(Object var1) {
-      return super.equals(var1);
-   }
-
-   // $FF: renamed from: o (int, int, int) int
+    // $FF: renamed from: o (int, int, int) int
    static final int method_5552(int var0, int var1) {
       try {
          int var3 = var0 + var1 * 57;
@@ -153,8 +124,4 @@ final class class_311 implements Comparator {
       }
    }
 
-   // $FF: renamed from: eg (java.lang.Object) boolean
-   public boolean method_5554(Object var1) {
-      return super.equals(var1);
-   }
 }

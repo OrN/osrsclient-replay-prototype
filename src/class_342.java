@@ -22,11 +22,6 @@ public class class_342 extends class_338 {
       }
    }
 
-   // $FF: renamed from: p (la) int
-   int method_6054(class_342 var1) {
-      return -792451577 * this.field_3899 - -792451577 * var1.field_3899;
-   }
-
    // $FF: renamed from: <init> () void
    class_342() {
       super();
@@ -74,19 +69,9 @@ public class class_342 extends class_338 {
       return this.method_6053((class_342)var1);
    }
 
-   // $FF: renamed from: f (la) int
-   int method_6055(class_342 var1) {
-      return -792451577 * this.field_3899 - -1252807900 * var1.field_3899;
-   }
-
    // $FF: renamed from: s (java.lang.Object) int
    public int method_6005(Object var1) {
       return this.method_6053((class_342)var1);
-   }
-
-   // $FF: renamed from: y (la) int
-   int method_6056(class_342 var1) {
-      return -792451577 * this.field_3899 - -792451577 * var1.field_3899;
    }
 
    // $FF: renamed from: n (lx, int) int
@@ -96,11 +81,6 @@ public class class_342 extends class_338 {
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
       }
-   }
-
-   // $FF: renamed from: c (la) int
-   int method_6057(class_342 var1) {
-      return -792451577 * this.field_3899 - -792451577 * var1.field_3899;
    }
 
    // $FF: renamed from: gy (cy, int, int, int, int, int, int) void

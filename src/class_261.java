@@ -30,11 +30,9 @@ public final class class_261 {
    public long field_2917;
    // $FF: renamed from: v int
    int field_2918;
-   // $FF: renamed from: aj int
-   static final int field_2919 = 38;
 
 
-   // $FF: renamed from: gj (byte) void
+    // $FF: renamed from: gj (byte) void
    static void method_4991(byte var0) {
       try {
          if(845336023 * client.field_1544 >= 0) {

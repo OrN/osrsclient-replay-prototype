@@ -26,20 +26,7 @@ public class class_156 {
    int field_1951;
 
 
-   // $FF: renamed from: b (nd) void
-   final void method_3263(class_28 var1) {
-      this.field_1947 = var1.method_130();
-      this.field_1942 = new int[this.field_1947];
-      this.field_1943 = new int[this.field_1947];
-
-      for(int var2 = 0; var2 < this.field_1947; ++var2) {
-         this.field_1942[var2] = var1.method_132();
-         this.field_1943[var2] = var1.method_132();
-      }
-
-   }
-
-   // $FF: renamed from: v (nd) void
+    // $FF: renamed from: v (nd) void
    final void method_3264(class_28 var1) {
       this.field_1946 = var1.method_130();
       this.field_1944 = var1.method_135();
@@ -87,97 +74,7 @@ public class class_156 {
       return this.field_1945 - this.field_1951 >> 15;
    }
 
-   // $FF: renamed from: d (nd) void
-   final void method_3268(class_28 var1) {
-      this.field_1947 = var1.method_130();
-      this.field_1942 = new int[this.field_1947];
-      this.field_1943 = new int[this.field_1947];
-
-      for(int var2 = 0; var2 < this.field_1947; ++var2) {
-         this.field_1942[var2] = var1.method_132();
-         this.field_1943[var2] = var1.method_132();
-      }
-
-   }
-
-   // $FF: renamed from: j (nd) void
-   final void method_3269(class_28 var1) {
-      this.field_1946 = var1.method_130();
-      this.field_1944 = var1.method_135();
-      this.field_1949 = var1.method_135();
-      this.method_3277(var1);
-   }
-
-   // $FF: renamed from: r (nd) void
-   final void method_3270(class_28 var1) {
-      this.field_1946 = var1.method_130();
-      this.field_1944 = var1.method_135();
-      this.field_1949 = var1.method_135();
-      this.method_3277(var1);
-   }
-
-   // $FF: renamed from: c () void
-   final void method_3271() {
-      this.field_1941 = 0;
-      this.field_1948 = 0;
-      this.field_1951 = 0;
-      this.field_1945 = 0;
-      this.field_1950 = 0;
-   }
-
-   // $FF: renamed from: u (nd) void
-   final void method_3272(class_28 var1) {
-      this.field_1947 = var1.method_130();
-      this.field_1942 = new int[this.field_1947];
-      this.field_1943 = new int[this.field_1947];
-
-      for(int var2 = 0; var2 < this.field_1947; ++var2) {
-         this.field_1942[var2] = var1.method_132();
-         this.field_1943[var2] = var1.method_132();
-      }
-
-   }
-
-   // $FF: renamed from: s (nd) void
-   final void method_3273(class_28 var1) {
-      this.field_1947 = var1.method_130();
-      this.field_1942 = new int[this.field_1947];
-      this.field_1943 = new int[this.field_1947];
-
-      for(int var2 = 0; var2 < this.field_1947; ++var2) {
-         this.field_1942[var2] = var1.method_132();
-         this.field_1943[var2] = var1.method_132();
-      }
-
-   }
-
-   // $FF: renamed from: p (nd) void
-   final void method_3274(class_28 var1) {
-      this.field_1946 = var1.method_130();
-      this.field_1944 = var1.method_135();
-      this.field_1949 = var1.method_135();
-      this.method_3277(var1);
-   }
-
-   // $FF: renamed from: l () void
-   final void method_3275() {
-      this.field_1941 = 0;
-      this.field_1948 = 0;
-      this.field_1951 = 0;
-      this.field_1945 = 0;
-      this.field_1950 = 0;
-   }
-
-   // $FF: renamed from: o () void
-   final void method_3276() {
-      this.field_1941 = 0;
-      this.field_1948 = 0;
-      this.field_1951 = 0;
-      this.field_1945 = 0;
-      this.field_1950 = 0;
-   }
-
-   // $FF: renamed from: n (nd) void
+    // $FF: renamed from: n (nd) void
    final void method_3277(class_28 var1) {
       this.field_1947 = var1.method_130();
       this.field_1942 = new int[this.field_1947];
@@ -190,22 +87,4 @@ public class class_156 {
 
    }
 
-   // $FF: renamed from: e (int) int
-   final int method_3278(int var1) {
-      if(this.field_1950 >= this.field_1941) {
-         this.field_1945 = this.field_1943[this.field_1948++] << 15;
-         if(this.field_1948 >= this.field_1947) {
-            this.field_1948 = this.field_1947 - 1;
-         }
-
-         this.field_1941 = (int)((double)this.field_1942[this.field_1948] / 65536.0D * (double)var1);
-         if(this.field_1941 > this.field_1950) {
-            this.field_1951 = ((this.field_1943[this.field_1948] << 15) - this.field_1945) / (this.field_1941 - this.field_1950);
-         }
-      }
-
-      this.field_1945 += this.field_1951;
-      ++this.field_1950;
-      return this.field_1945 - this.field_1951 >> 15;
-   }
 }

@@ -2,15 +2,11 @@
 // $FF: renamed from: fr
 public class class_234 {
 
-   // $FF: renamed from: m int
-   static final int field_2618 = 21;
-   // $FF: renamed from: n fr
+    // $FF: renamed from: n fr
    static final class_234 field_2619;
    // $FF: renamed from: do ls
    static class_206 field_2620;
-   // $FF: renamed from: o int
-   static final int field_2621 = 1;
-   // $FF: renamed from: v fr
+    // $FF: renamed from: v fr
    static final class_234 field_2622;
    // $FF: renamed from: f int
    final int field_2623;

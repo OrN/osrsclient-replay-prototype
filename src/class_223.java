@@ -6,17 +6,11 @@ public class class_223 {
    final int field_2521;
    // $FF: renamed from: n int
    final int field_2522;
-   // $FF: renamed from: al int
-   static final int field_2523 = 0;
-   // $FF: renamed from: ci int
-   static final int field_2524 = 14;
-   // $FF: renamed from: d int
+    // $FF: renamed from: d int
    static int field_2525;
    // $FF: renamed from: f int
    final int field_2526;
-   // $FF: renamed from: ad int
-   static final int field_2527 = 4;
-   // $FF: renamed from: hf op[]
+    // $FF: renamed from: hf op[]
    static class_66[] field_2528;
    // $FF: renamed from: y int[]
    public static int[] field_2529;

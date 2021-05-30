@@ -10,9 +10,7 @@ public class class_318 {
    public static char[] field_3789;
    // $FF: renamed from: f char[]
    static char[] field_3790;
-   // $FF: renamed from: bl int
-   static final int field_3791 = 71;
-   // $FF: renamed from: y int[]
+    // $FF: renamed from: y int[]
    static int[] field_3792;
 
 
@@ -231,13 +229,4 @@ public class class_318 {
       var1[45] = 63;
    }
 
-   // $FF: renamed from: <init> () void
-   class_318() throws Throwable {
-      super();
-      try {
-         throw new Error();
-      } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1);
-      }
-   }
 }

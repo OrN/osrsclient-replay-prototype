@@ -6,9 +6,7 @@ public class class_239 implements class_6 {
    int field_2653;
    // $FF: renamed from: r int
    int field_2654;
-   // $FF: renamed from: bx int
-   static final int field_2655 = 59;
-   // $FF: renamed from: y int
+    // $FF: renamed from: y int
    int field_2656;
    // $FF: renamed from: p int
    int field_2657;
@@ -369,13 +367,7 @@ public class class_239 implements class_6 {
       }
    }
 
-   // $FF: renamed from: w () void
-   void method_4604() {}
-
-   // $FF: renamed from: t () void
-   void method_4605() {}
-
-   // $FF: renamed from: n (java.lang.CharSequence, int) java.lang.String
+    // $FF: renamed from: n (java.lang.CharSequence, int) java.lang.String
    public static String method_4606(CharSequence var0, int var1) {
       try {
          long var4 = 0L;

@@ -2,39 +2,8 @@
 // $FF: renamed from: lr
 public class class_356 {
 
-   // $FF: renamed from: v int
-   public static final int field_3968 = 2;
-   // $FF: renamed from: f int
-   public static final int field_3969 = 8;
-   // $FF: renamed from: y int
-   public static final int field_3970 = 32;
-   // $FF: renamed from: s int
-   public static final int field_3971 = 8192;
-   // $FF: renamed from: ap int
-   static final int field_3972 = 0;
-   // $FF: renamed from: b int
-   public static final int field_3973 = 128;
-   // $FF: renamed from: j int
-   public static final int field_3974 = 1;
-   // $FF: renamed from: c int
-   public static final int field_3975 = 32;
-   // $FF: renamed from: p int
-   public static final int field_3976 = 16;
-   // $FF: renamed from: g int
-   public static final int field_3977 = 16;
 
-
-   // $FF: renamed from: <init> () void
-   class_356() throws Throwable {
-      super();
-      try {
-         throw new Error();
-      } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1);
-      }
-   }
-
-   // $FF: renamed from: p (int, cf, boolean, byte) int
+    // $FF: renamed from: p (int, cf, boolean, byte) int
    static int method_6243(int var0, boolean var2, byte var3) {
       try {
          int var4 = -1;

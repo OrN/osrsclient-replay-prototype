@@ -8,17 +8,8 @@ import java.net.URL;
 // $FF: renamed from: jq
 public class class_308 {
 
-   // $FF: renamed from: n int
-   static final int field_3735 = 8;
-   // $FF: renamed from: f int
-   public static final int field_3736 = 64;
-   // $FF: renamed from: v int
-   static final int field_3737 = 8;
-   // $FF: renamed from: e int
-   public static final int field_3738 = 18;
 
-
-   // $FF: renamed from: v (java.lang.String, java.lang.Throwable, int) void
+    // $FF: renamed from: v (java.lang.String, java.lang.Throwable, int) void
    public static void method_5523(String var0, Throwable var1, int var2) {
       try {
          try {
@@ -154,13 +145,4 @@ public class class_308 {
 
    }
 
-   // $FF: renamed from: <init> () void
-   class_308() throws Throwable {
-      super();
-      try {
-         throw new Error();
-      } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1);
-      }
-   }
 }

@@ -6,17 +6,11 @@ import java.util.Map;
 // $FF: renamed from: mt
 public class class_371 implements class_17 {
 
-   // $FF: renamed from: s int
-   static final int field_4105 = 5;
-   // $FF: renamed from: n ne
+    // $FF: renamed from: n ne
    final class_21 field_4106;
    // $FF: renamed from: br java.lang.String
    static String field_4107;
-   // $FF: renamed from: a int
-   static final int field_4108 = 18;
-   // $FF: renamed from: x int
-   static final int field_4109 = 2097152;
-   // $FF: renamed from: v java.util.Map
+    // $FF: renamed from: v java.util.Map
    Map field_4110;
 
 
@@ -97,12 +91,7 @@ public class class_371 implements class_17 {
       }
    }
 
-   // $FF: renamed from: aj () java.util.Iterator
-   public Iterator method_6608() {
-      return null == this.field_4110?Collections.emptyList().iterator():this.field_4110.values().iterator();
-   }
-
-   // $FF: renamed from: <init> (ne) void
+    // $FF: renamed from: <init> (ne) void
    public class_371(class_21 var1) {
       super();
       try {

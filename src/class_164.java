@@ -2,25 +2,9 @@
 // $FF: renamed from: cc
 public class class_164 {
 
-   // $FF: renamed from: y int
-   static final int field_2035 = 4;
-   // $FF: renamed from: f int
-   static final int field_2036 = 3;
-   // $FF: renamed from: v int
-   static final int field_2037 = 1;
-   // $FF: renamed from: p int
-   static final int field_2038 = 5;
-   // $FF: renamed from: u int
-   static final int field_2039 = 11;
-   // $FF: renamed from: w int
-   static final int field_2040 = 22;
-   // $FF: renamed from: e nf[]
+    // $FF: renamed from: e nf[]
    public static class_376[] field_2041;
-   // $FF: renamed from: t int
-   static final int field_2042 = 23;
-   // $FF: renamed from: ab int
-   static final int field_2043 = 1;
-   // $FF: renamed from: kr ce
+    // $FF: renamed from: kr ce
    static class_100 field_2044;
 
 
@@ -33,17 +17,7 @@ public class class_164 {
       }
    }
 
-   // $FF: renamed from: <init> () void
-   class_164() throws Throwable {
-      super();
-      try {
-         throw new Error();
-      } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1);
-      }
-   }
-
-   // $FF: renamed from: x (int, cf, boolean, int) int
+    // $FF: renamed from: x (int, cf, boolean, int) int
    static int method_3427(int var0, int var3) {
       try {
          class_37 var7;

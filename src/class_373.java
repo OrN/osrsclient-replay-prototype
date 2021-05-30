@@ -12,13 +12,9 @@ public class class_373 {
    public static final class_373 field_4118;
    // $FF: renamed from: j mv
    public static final class_373 field_4119;
-   // $FF: renamed from: tv int
-   static final int field_4120 = 600;
-   // $FF: renamed from: r java.lang.String
+    // $FF: renamed from: r java.lang.String
    String field_4121;
-   // $FF: renamed from: cq int
-   static final int field_4122 = 105;
-   // $FF: renamed from: eu jp
+    // $FF: renamed from: eu jp
    static class_307 field_4123;
    // $FF: renamed from: n mv
    public static final class_373 field_4124;

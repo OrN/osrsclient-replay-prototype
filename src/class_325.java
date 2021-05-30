@@ -8,9 +8,7 @@ public class class_325 implements class_14 {
    static final class_325 field_3825;
    // $FF: renamed from: j kl
    static final class_325 field_3826;
-   // $FF: renamed from: k int
-   static final int field_3827 = 131072;
-   // $FF: renamed from: o kl
+    // $FF: renamed from: o kl
    static final class_325 field_3828;
    // $FF: renamed from: p kl
    static final class_325 field_3829;
@@ -34,9 +32,7 @@ public class class_325 implements class_14 {
    static final class_325 field_3838;
    // $FF: renamed from: e java.util.Set
    final Set field_3839;
-   // $FF: renamed from: mh int
-   static final int field_3840 = 3;
-   // $FF: renamed from: n kl
+    // $FF: renamed from: n kl
    static final class_325 field_3841;
 
 
@@ -119,17 +115,7 @@ public class class_325 implements class_14 {
       return this.field_3830 * 448487515;
    }
 
-   // $FF: renamed from: j () kl[]
-   static class_325[] method_5777() {
-      return new class_325[]{field_3841, field_3834, field_3836, field_3825, field_3838, field_3835, field_3831, field_3826, field_3837, field_3833, field_3829, field_3832, field_3828};
-   }
-
-   // $FF: renamed from: p () kl[]
-   static class_325[] method_5778() {
-      return new class_325[]{field_3841, field_3834, field_3836, field_3825, field_3838, field_3835, field_3831, field_3826, field_3837, field_3833, field_3829, field_3832, field_3828};
-   }
-
-   // $FF: renamed from: n (int, int, int) io
+    // $FF: renamed from: n (int, int, int) io
    public static class_37 method_5779(int var0, int var1, int var2) {
       try {
          class_37 var3 = class_71.method_1047(var0);

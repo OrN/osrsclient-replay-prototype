@@ -8,17 +8,7 @@ public class class_354 {
    public class_354 field_3964;
 
 
-   // $FF: renamed from: n () void
-   public void method_6236() {
-      if(this.field_3963 != null) {
-         this.field_3963.field_3964 = this.field_3964;
-         this.field_3964.field_3963 = this.field_3963;
-         this.field_3964 = null;
-         this.field_3963 = null;
-      }
-   }
-
-   // $FF: renamed from: v () void
+    // $FF: renamed from: v () void
    public void method_6237() {
       if(this.field_3963 != null) {
          this.field_3963.field_3964 = this.field_3964;
@@ -33,13 +23,4 @@ public class class_354 {
       super();
    }
 
-   // $FF: renamed from: f () void
-   public void method_6239() {
-      if(this.field_3963 != null) {
-         this.field_3963.field_3964 = this.field_3964;
-         this.field_3964.field_3963 = this.field_3963;
-         this.field_3964 = null;
-         this.field_3963 = null;
-      }
-   }
 }

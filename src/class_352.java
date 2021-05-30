@@ -2,35 +2,8 @@
 // $FF: renamed from: lk
 public class class_352 {
 
-   // $FF: renamed from: j int
-   public static final int field_3950 = 7;
-   // $FF: renamed from: n int
-   public static final int field_3951 = 3;
-   // $FF: renamed from: f int
-   public static final int field_3952 = 4;
-   // $FF: renamed from: y int
-   public static final int field_3953 = 5;
-   // $FF: renamed from: v int
-   public static final int field_3954 = 1;
-   // $FF: renamed from: c int
-   public static final int field_3955 = 17;
-   // $FF: renamed from: s int
-   public static final int field_3956 = 12;
-   // $FF: renamed from: u int
-   public static final int field_3957 = 13;
 
-
-   // $FF: renamed from: <init> () void
-   class_352() throws Throwable {
-      super();
-      try {
-         throw new Error();
-      } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1);
-      }
-   }
-
-   // $FF: renamed from: jh (io, int, int, int, int, int, int, int) void
+    // $FF: renamed from: jh (io, int, int, int, int, int, int, int) void
    static final void method_6230(class_37 var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
       try {
          if(client.field_1484) {

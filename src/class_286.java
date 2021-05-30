@@ -4,61 +4,9 @@ public class class_286 {
 
    // $FF: renamed from: dt jp
    static class_307 field_3275;
-   // $FF: renamed from: ax int
-   static final int field_3276 = 40;
 
 
-   // $FF: renamed from: ae (int) boolean
-   public static boolean method_5251(int var0) {
-      return (var0 >> 30 & 1) != 0;
-   }
-
-   // $FF: renamed from: ab (int) boolean
-   public static boolean method_5252(int var0) {
-      return 0 != (var0 >> 31 & 1);
-   }
-
-   // $FF: renamed from: d (int, int) boolean
-   public static boolean method_5253(int var0, int var1) {
-      return (var0 >> var1 + 1 & 1) != 0;
-   }
-
-   // $FF: renamed from: m (int) boolean
-   public static boolean method_5254(int var0) {
-      return (var0 >> 20 & 1) != 0;
-   }
-
-   // $FF: renamed from: u (int) int
-   public static int method_5255(int var0) {
-      return var0 >> 11 & 63;
-   }
-
-   // $FF: renamed from: l (int) int
-   public static int method_5256(int var0) {
-      return var0 >> 11 & 63;
-   }
-
-   // $FF: renamed from: o (int) int
-   public static int method_5257(int var0) {
-      return var0 >> 11 & 63;
-   }
-
-   // $FF: renamed from: a (int) boolean
-   public static boolean method_5258(int var0) {
-      return (var0 >> 20 & 1) != 0;
-   }
-
-   // $FF: renamed from: e (int) int
-   public static int method_5259(int var0) {
-      return var0 >> 17 & 7;
-   }
-
-   // $FF: renamed from: g (int) int
-   public static int method_5260(int var0) {
-      return var0 >> 17 & 7;
-   }
-
-   // $FF: renamed from: hd (int, int, int, int, int, int, int, int) void
+    // $FF: renamed from: hd (int, int, int, int, int, int, int, int) void
    static final void method_5261(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
       try {
          if(var2 >= 1) {
@@ -226,78 +174,4 @@ public class class_286 {
       }
    }
 
-   // $FF: renamed from: k (int) boolean
-   public static boolean method_5262(int var0) {
-      return (var0 >> 20 & 1) != 0;
-   }
-
-   // $FF: renamed from: al (int) boolean
-   public static boolean method_5263(int var0) {
-      return 0 != (var0 >> 31 & 1);
-   }
-
-   // $FF: renamed from: x (int) boolean
-   public static boolean method_5264(int var0) {
-      return (var0 >> 20 & 1) != 0;
-   }
-
-   // $FF: renamed from: z (int) boolean
-   public static boolean method_5265(int var0) {
-      return (var0 >> 20 & 1) != 0;
-   }
-
-   // $FF: renamed from: w (int) boolean
-   public static boolean method_5266(int var0) {
-      return (var0 >> 29 & 1) != 0;
-   }
-
-   // $FF: renamed from: t (int) boolean
-   public static boolean method_5267(int var0) {
-      return (var0 >> 29 & 1) != 0;
-   }
-
-   // $FF: renamed from: h (int) boolean
-   public static boolean method_5268(int var0) {
-      return (var0 >> 29 & 1) != 0;
-   }
-
-   // $FF: renamed from: q (int) boolean
-   public static boolean method_5269(int var0) {
-      return (var0 >> 30 & 1) != 0;
-   }
-
-   // $FF: renamed from: i (int) boolean
-   public static boolean method_5270(int var0) {
-      return (var0 >> 30 & 1) != 0;
-   }
-
-   // $FF: renamed from: s (int, int) boolean
-   public static boolean method_5271(int var0, int var1) {
-      return (var0 >> var1 + 1 & 1) != 0;
-   }
-
-   // $FF: renamed from: ap (int) boolean
-   public static boolean method_5272(int var0) {
-      return 0 != (var0 >> 31 & 1);
-   }
-
-   // $FF: renamed from: b (int, int) boolean
-   public static boolean method_5273(int var0, int var1) {
-      return (var0 >> var1 + 1 & 1) != 0;
-   }
-
-   // $FF: renamed from: <init> () void
-   class_286() throws Throwable {
-      super();
-      try {
-         throw new Error();
-      } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1);
-      }
-   }
-
-   // $FF: renamed from: c (int) int
-   public static int method_5275(int var0) {
-      return var0 >> 17 & 7;
-   }
 }

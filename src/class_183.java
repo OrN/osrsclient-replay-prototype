@@ -11,26 +11,15 @@ import java.lang.reflect.Method;
 // $FF: renamed from: dx
 public class class_183 extends class_181 {
 
-   // $FF: renamed from: u int
-   static final int field_2248 = 70;
-   // $FF: renamed from: tb je
+    // $FF: renamed from: tb je
    public static class_296 field_2249;
-   // $FF: renamed from: ap byte
-   static final byte field_2250 = 126;
-   // $FF: renamed from: fd kt
+    // $FF: renamed from: fd kt
    static class_69 field_2251;
-   // $FF: renamed from: p int
-   public static final int field_2252 = 6;
-   // $FF: renamed from: v boolean
+    // $FF: renamed from: v boolean
    final boolean field_2253;
 
 
-   // $FF: renamed from: p (java.lang.Object, java.lang.Object) int
-   public int method_3839(Object var1, Object var2) {
-      return this.method_3840((class_339)var1, (class_339)var2, 2053904932);
-   }
-
-   // $FF: renamed from: v (lv, lv, int) int
+    // $FF: renamed from: v (lv, lv, int) int
    int method_3840(class_339 var1, class_339 var2, int var3) {
       try {
          if(var2.field_3888 * 1693720149 != 1693720149 * var1.field_3888) {
@@ -66,12 +55,7 @@ public class class_183 extends class_181 {
       }
    }
 
-   // $FF: renamed from: y (java.lang.Object, java.lang.Object) int
-   public int method_3841(Object var1, Object var2) {
-      return this.method_3840((class_339)var1, (class_339)var2, 2053904932);
-   }
-
-   // $FF: renamed from: <init> (boolean) void
+    // $FF: renamed from: <init> (boolean) void
    public class_183(boolean var1) {
       super();
       try {
@@ -81,12 +65,7 @@ public class class_183 extends class_181 {
       }
    }
 
-   // $FF: renamed from: n (lv, lv) int
-   int method_3843(class_339 var1, class_339 var2) {
-      return var2.field_3888 * 1693720149 != 70867274 * var1.field_3888?(this.field_2253?var1.field_3888 * -1928892393 - -1882137375 * var2.field_3888:-1899264904 * var2.field_3888 - 1693720149 * var1.field_3888):this.method_3830(var1, var2);
-   }
-
-   // $FF: renamed from: f (nb, int) void
+    // $FF: renamed from: f (nb, int) void
    public static void method_3844(class_29 var0, int var1) {
       try {
          class_58 var2 = (class_58)class_153.field_1926.method_5700();
