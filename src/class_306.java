@@ -63,7 +63,7 @@ public abstract class class_306 {
                      throw new IllegalStateException();
                   }
 
-                  var5.method_135();
+                  var5.readInt();
                }
 
                int var7 = var5.readUnsignedByte();
@@ -131,7 +131,7 @@ public abstract class class_306 {
                         throw new IllegalStateException();
                      }
 
-                     this.field_3705[this.field_3706[var10]] = var5.method_135();
+                     this.field_3705[this.field_3706[var10]] = var5.readInt();
                   }
 
                   class_402 var10001 = new class_402(this.field_3705);
@@ -143,7 +143,7 @@ public abstract class class_306 {
                      throw new IllegalStateException();
                   }
 
-                  this.field_3708[this.field_3706[var10]] = var5.method_135();
+                  this.field_3708[this.field_3706[var10]] = var5.readInt();
                }
 
                for(var10 = 0; var10 < this.field_3721 * 15338207; ++var10) {
@@ -151,7 +151,7 @@ public abstract class class_306 {
                      throw new IllegalStateException();
                   }
 
-                  this.field_3707[this.field_3706[var10]] = var5.method_135();
+                  this.field_3707[this.field_3706[var10]] = var5.readInt();
                }
 
                for(var10 = 0; var10 < 15338207 * this.field_3721; ++var10) {
@@ -233,7 +233,7 @@ public abstract class class_306 {
                      this.field_3713[var11] = new int[this.field_3716[var11].length];
 
                      for(var13 = 0; var13 < var12; ++var13) {
-                        this.field_3713[var11][this.field_3712[var11][var13]] = var5.method_135();
+                        this.field_3713[var11][this.field_3712[var11][var13]] = var5.readInt();
                      }
 
                      class_402[] var17 = this.field_3714;
@@ -430,14 +430,14 @@ public abstract class class_306 {
       Buffer var10000 = new Buffer(var0);
       Buffer var1 = var10000;
       int var2 = var1.readUnsignedByte();
-      int var3 = var1.method_135();
+      int var3 = var1.readInt();
       if(var3 >= 0 && (0 == 269464329 * field_3711 || var3 <= field_3711 * 269464329)) {
          if(0 == var2) {
             byte[] var6 = new byte[var3];
             var1.method_267(var6, 0, var3, 1018164334);
             return var6;
          } else {
-            int var4 = var1.method_135();
+            int var4 = var1.readInt();
             if(var4 >= 0 && (269464329 * field_3711 == 0 || var4 <= field_3711 * 269464329)) {
                byte[] var5 = new byte[var4];
                if(1 == var2) {
@@ -611,14 +611,14 @@ public abstract class class_306 {
       Buffer var10000 = new Buffer(var0);
       Buffer var1 = var10000;
       int var2 = var1.readUnsignedByte();
-      int var3 = var1.method_135();
+      int var3 = var1.readInt();
       if(var3 >= 0 && (0 == 269464329 * field_3711 || var3 <= field_3711 * 269464329)) {
          if(0 == var2) {
             byte[] var6 = new byte[var3];
             var1.method_267(var6, 0, var3, 1647766328);
             return var6;
          } else {
-            int var4 = var1.method_135();
+            int var4 = var1.readInt();
             if(var4 >= 0 && (269464329 * field_3711 == 0 || var4 <= field_3711 * 269464329)) {
                byte[] var5 = new byte[var4];
                if(1 == var2) {
@@ -779,7 +779,7 @@ public abstract class class_306 {
                            throw new IllegalStateException();
                         }
 
-                        var26 += var23.method_135();
+                        var26 += var23.readInt();
                         var24[var16] += var26;
                      }
                   }
@@ -806,7 +806,7 @@ public abstract class class_306 {
                            throw new IllegalStateException();
                         }
 
-                        var17 += var23.method_135();
+                        var17 += var23.readInt();
                         System.arraycopy(var22, var26, var25[var18], var24[var18], var17);
                         var24[var18] += var17;
                         var26 += var17;
@@ -932,7 +932,7 @@ public abstract class class_306 {
                   var24 = 0;
 
                   for(var15 = 0; var15 < var3; ++var15) {
-                     var24 += var21.method_135();
+                     var24 += var21.readInt();
                      var22[var15] += var24;
                   }
                }
@@ -951,7 +951,7 @@ public abstract class class_306 {
                   var16 = 0;
 
                   for(int var17 = 0; var17 < var3; ++var17) {
-                     var16 += var21.method_135();
+                     var16 += var21.readInt();
                      System.arraycopy(var20, var24, var23[var17], var22[var17], var16);
                      var22[var17] += var16;
                      var24 += var16;
@@ -1093,7 +1093,7 @@ public abstract class class_306 {
       int var5 = var4.readUnsignedByte();
       if(var5 >= 5 && var5 <= 7) {
          if(var5 >= 6) {
-            var4.method_135();
+            var4.readInt();
          }
 
          int var6 = var4.readUnsignedByte();
@@ -1133,7 +1133,7 @@ public abstract class class_306 {
             this.field_3705 = new int[1 + var8];
 
             for(var9 = 0; var9 < 15338207 * this.field_3721; ++var9) {
-               this.field_3705[this.field_3706[var9]] = var4.method_135();
+               this.field_3705[this.field_3706[var9]] = var4.readInt();
             }
 
             class_402 var10001 = new class_402(this.field_3705);
@@ -1141,11 +1141,11 @@ public abstract class class_306 {
          }
 
          for(var9 = 0; var9 < this.field_3721 * 15338207; ++var9) {
-            this.field_3708[this.field_3706[var9]] = var4.method_135();
+            this.field_3708[this.field_3706[var9]] = var4.readInt();
          }
 
          for(var9 = 0; var9 < this.field_3721 * 15338207; ++var9) {
-            this.field_3707[this.field_3706[var9]] = var4.method_135();
+            this.field_3707[this.field_3706[var9]] = var4.readInt();
          }
 
          for(var9 = 0; var9 < 15338207 * this.field_3721; ++var9) {
@@ -1203,7 +1203,7 @@ public abstract class class_306 {
                this.field_3713[var10] = new int[this.field_3716[var10].length];
 
                for(var12 = 0; var12 < var11; ++var12) {
-                  this.field_3713[var10][this.field_3712[var10][var12]] = var4.method_135();
+                  this.field_3713[var10][this.field_3712[var10][var12]] = var4.readInt();
                }
 
                class_402[] var15 = this.field_3714;
@@ -1679,7 +1679,7 @@ public abstract class class_306 {
       int var5 = var4.readUnsignedByte();
       if(var5 >= 5 && var5 <= 7) {
          if(var5 >= 6) {
-            var4.method_135();
+            var4.readInt();
          }
 
          int var6 = var4.readUnsignedByte();
@@ -1719,7 +1719,7 @@ public abstract class class_306 {
             this.field_3705 = new int[1 + var8];
 
             for(var9 = 0; var9 < 15338207 * this.field_3721; ++var9) {
-               this.field_3705[this.field_3706[var9]] = var4.method_135();
+               this.field_3705[this.field_3706[var9]] = var4.readInt();
             }
 
             class_402 var10001 = new class_402(this.field_3705);
@@ -1727,11 +1727,11 @@ public abstract class class_306 {
          }
 
          for(var9 = 0; var9 < this.field_3721 * 15338207; ++var9) {
-            this.field_3708[this.field_3706[var9]] = var4.method_135();
+            this.field_3708[this.field_3706[var9]] = var4.readInt();
          }
 
          for(var9 = 0; var9 < this.field_3721 * 15338207; ++var9) {
-            this.field_3707[this.field_3706[var9]] = var4.method_135();
+            this.field_3707[this.field_3706[var9]] = var4.readInt();
          }
 
          for(var9 = 0; var9 < 15338207 * this.field_3721; ++var9) {
@@ -1789,7 +1789,7 @@ public abstract class class_306 {
                this.field_3713[var10] = new int[this.field_3716[var10].length];
 
                for(var12 = 0; var12 < var11; ++var12) {
-                  this.field_3713[var10][this.field_3712[var10][var12]] = var4.method_135();
+                  this.field_3713[var10][this.field_3712[var10][var12]] = var4.readInt();
                }
 
                class_402[] var15 = this.field_3714;
@@ -1917,7 +1917,7 @@ public abstract class class_306 {
                   var24 = 0;
 
                   for(var15 = 0; var15 < var3; ++var15) {
-                     var24 += var21.method_135();
+                     var24 += var21.readInt();
                      var22[var15] += var24;
                   }
                }
@@ -1936,7 +1936,7 @@ public abstract class class_306 {
                   var16 = 0;
 
                   for(int var17 = 0; var17 < var3; ++var17) {
-                     var16 += var21.method_135();
+                     var16 += var21.readInt();
                      System.arraycopy(var20, var24, var23[var17], var22[var17], var16);
                      var22[var17] += var16;
                      var24 += var16;
@@ -2091,7 +2091,7 @@ public abstract class class_306 {
                   var24 = 0;
 
                   for(var15 = 0; var15 < var3; ++var15) {
-                     var24 += var21.method_135();
+                     var24 += var21.readInt();
                      var22[var15] += var24;
                   }
                }
@@ -2110,7 +2110,7 @@ public abstract class class_306 {
                   var16 = 0;
 
                   for(int var17 = 0; var17 < var3; ++var17) {
-                     var16 += var21.method_135();
+                     var16 += var21.readInt();
                      System.arraycopy(var20, var24, var23[var17], var22[var17], var16);
                      var22[var17] += var16;
                      var24 += var16;
@@ -2221,7 +2221,7 @@ public abstract class class_306 {
                   var24 = 0;
 
                   for(var15 = 0; var15 < var3; ++var15) {
-                     var24 += var21.method_135();
+                     var24 += var21.readInt();
                      var22[var15] += var24;
                   }
                }
@@ -2240,7 +2240,7 @@ public abstract class class_306 {
                   var16 = 0;
 
                   for(int var17 = 0; var17 < var3; ++var17) {
-                     var16 += var21.method_135();
+                     var16 += var21.readInt();
                      System.arraycopy(var20, var24, var23[var17], var22[var17], var16);
                      var22[var17] += var16;
                      var24 += var16;
@@ -2331,7 +2331,7 @@ public abstract class class_306 {
                   var24 = 0;
 
                   for(var15 = 0; var15 < var3; ++var15) {
-                     var24 += var21.method_135();
+                     var24 += var21.readInt();
                      var22[var15] += var24;
                   }
                }
@@ -2350,7 +2350,7 @@ public abstract class class_306 {
                   var16 = 0;
 
                   for(int var17 = 0; var17 < var3; ++var17) {
-                     var16 += var21.method_135();
+                     var16 += var21.readInt();
                      System.arraycopy(var20, var24, var23[var17], var22[var17], var16);
                      var22[var17] += var16;
                      var24 += var16;
@@ -2433,7 +2433,7 @@ public abstract class class_306 {
       int var5 = var4.readUnsignedByte();
       if(var5 >= 5 && var5 <= 7) {
          if(var5 >= 6) {
-            var4.method_135();
+            var4.readInt();
          }
 
          int var6 = var4.readUnsignedByte();
@@ -2473,7 +2473,7 @@ public abstract class class_306 {
             this.field_3705 = new int[1 + var8];
 
             for(var9 = 0; var9 < 2077143444 * this.field_3721; ++var9) {
-               this.field_3705[this.field_3706[var9]] = var4.method_135();
+               this.field_3705[this.field_3706[var9]] = var4.readInt();
             }
 
             class_402 var10001 = new class_402(this.field_3705);
@@ -2481,11 +2481,11 @@ public abstract class class_306 {
          }
 
          for(var9 = 0; var9 < this.field_3721 * 15338207; ++var9) {
-            this.field_3708[this.field_3706[var9]] = var4.method_135();
+            this.field_3708[this.field_3706[var9]] = var4.readInt();
          }
 
          for(var9 = 0; var9 < this.field_3721 * 1214472228; ++var9) {
-            this.field_3707[this.field_3706[var9]] = var4.method_135();
+            this.field_3707[this.field_3706[var9]] = var4.readInt();
          }
 
          for(var9 = 0; var9 < 793810720 * this.field_3721; ++var9) {
@@ -2543,7 +2543,7 @@ public abstract class class_306 {
                this.field_3713[var10] = new int[this.field_3716[var10].length];
 
                for(var12 = 0; var12 < var11; ++var12) {
-                  this.field_3713[var10][this.field_3712[var10][var12]] = var4.method_135();
+                  this.field_3713[var10][this.field_3712[var10][var12]] = var4.readInt();
                }
 
                class_402[] var15 = this.field_3714;
@@ -2594,7 +2594,7 @@ public abstract class class_306 {
       int var5 = var4.readUnsignedByte();
       if(var5 >= 5 && var5 <= 7) {
          if(var5 >= 6) {
-            var4.method_135();
+            var4.readInt();
          }
 
          int var6 = var4.readUnsignedByte();
@@ -2634,7 +2634,7 @@ public abstract class class_306 {
             this.field_3705 = new int[1 + var8];
 
             for(var9 = 0; var9 < 15338207 * this.field_3721; ++var9) {
-               this.field_3705[this.field_3706[var9]] = var4.method_135();
+               this.field_3705[this.field_3706[var9]] = var4.readInt();
             }
 
             class_402 var10001 = new class_402(this.field_3705);
@@ -2642,11 +2642,11 @@ public abstract class class_306 {
          }
 
          for(var9 = 0; var9 < this.field_3721 * 15338207; ++var9) {
-            this.field_3708[this.field_3706[var9]] = var4.method_135();
+            this.field_3708[this.field_3706[var9]] = var4.readInt();
          }
 
          for(var9 = 0; var9 < this.field_3721 * 15338207; ++var9) {
-            this.field_3707[this.field_3706[var9]] = var4.method_135();
+            this.field_3707[this.field_3706[var9]] = var4.readInt();
          }
 
          for(var9 = 0; var9 < 15338207 * this.field_3721; ++var9) {
@@ -2704,7 +2704,7 @@ public abstract class class_306 {
                this.field_3713[var10] = new int[this.field_3716[var10].length];
 
                for(var12 = 0; var12 < var11; ++var12) {
-                  this.field_3713[var10][this.field_3712[var10][var12]] = var4.method_135();
+                  this.field_3713[var10][this.field_3712[var10][var12]] = var4.readInt();
                }
 
                class_402[] var15 = this.field_3714;
@@ -2800,14 +2800,14 @@ public abstract class class_306 {
       Buffer var10000 = new Buffer(var0);
       Buffer var1 = var10000;
       int var2 = var1.readUnsignedByte();
-      int var3 = var1.method_135();
+      int var3 = var1.readInt();
       if(var3 >= 0 && (0 == 269464329 * field_3711 || var3 <= field_3711 * 269464329)) {
          if(0 == var2) {
             byte[] var6 = new byte[var3];
             var1.method_267(var6, 0, var3, 994585740);
             return var6;
          } else {
-            int var4 = var1.method_135();
+            int var4 = var1.readInt();
             if(var4 >= 0 && (269464329 * field_3711 == 0 || var4 <= field_3711 * 269464329)) {
                byte[] var5 = new byte[var4];
                if(1 == var2) {
@@ -2831,14 +2831,14 @@ public abstract class class_306 {
       Buffer var10000 = new Buffer(var0);
       Buffer var1 = var10000;
       int var2 = var1.readUnsignedByte();
-      int var3 = var1.method_135();
+      int var3 = var1.readInt();
       if(var3 >= 0 && (0 == 269464329 * field_3711 || var3 <= field_3711 * 366634365)) {
          if(0 == var2) {
             byte[] var6 = new byte[var3];
             var1.method_267(var6, 0, var3, 1001153849);
             return var6;
          } else {
-            int var4 = var1.method_135();
+            int var4 = var1.readInt();
             if(var4 >= 0 && (269464329 * field_3711 == 0 || var4 <= field_3711 * 269464329)) {
                byte[] var5 = new byte[var4];
                if(1 == var2) {
@@ -2875,14 +2875,14 @@ public abstract class class_306 {
       Buffer var10000 = new Buffer(var0);
       Buffer var1 = var10000;
       int var2 = var1.readUnsignedByte();
-      int var3 = var1.method_135();
+      int var3 = var1.readInt();
       if(var3 >= 0 && (0 == 1247381053 * field_3711 || var3 <= field_3711 * -322104510)) {
          if(0 == var2) {
             byte[] var6 = new byte[var3];
             var1.method_267(var6, 0, var3, 1374768888);
             return var6;
          } else {
-            int var4 = var1.method_135();
+            int var4 = var1.readInt();
             if(var4 >= 0 && (269464329 * field_3711 == 0 || var4 <= field_3711 * 269464329)) {
                byte[] var5 = new byte[var4];
                if(1 == var2) {

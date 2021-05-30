@@ -40,7 +40,7 @@ public class class_275 {
          class_58 var10000 = new class_58();
          class_58 var3 = var10000;
          var3.field_464 = var0.readUnsignedByte() * 1028183917;
-         var3.field_459 = var0.method_135() * 534927143;
+         var3.field_459 = var0.readInt() * 534927143;
          var3.field_458 = new int[var3.field_464 * -637285787];
          var3.field_457 = new int[var3.field_464 * -637285787];
          var3.field_461 = new Field[var3.field_464 * -637285787];
@@ -101,7 +101,7 @@ public class class_275 {
                                  throw new IllegalStateException();
                               }
 
-                              var13 = var0.method_135();
+                              var13 = var0.readInt();
                               var11[var12] = new byte[var13];
                               var0.method_267(var11[var12], 0, var13, 1127537554);
                            }
@@ -191,7 +191,7 @@ public class class_275 {
                var7 = var0.method_139(-391631059);
                var8 = 0;
                if(var5 == 1) {
-                  var8 = var0.method_135();
+                  var8 = var0.readInt();
                }
 
                var3.field_458[var4] = var5;

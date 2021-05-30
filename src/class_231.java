@@ -982,7 +982,7 @@ public class class_231 extends class_230 {
 
       for(int var4 = 0; var4 < var3; ++var4) {
          int var5 = var1.method_147(175216334);
-         class_280 var10000 = new class_280(var1.method_135());
+         class_280 var10000 = new class_280(var1.readInt());
          class_280 var6 = var10000;
          boolean var7 = var1.readUnsignedByte() == 1;
          if(var2 || !var7) {
@@ -1001,7 +1001,7 @@ public class class_231 extends class_230 {
 
       for(int var4 = 0; var4 < var3; ++var4) {
          int var5 = var1.method_147(821647098);
-         class_280 var10000 = new class_280(var1.method_135());
+         class_280 var10000 = new class_280(var1.readInt());
          class_280 var6 = var10000;
          boolean var7 = var1.readUnsignedByte() == 1;
          if(var2 || !var7) {
@@ -1025,7 +1025,7 @@ public class class_231 extends class_230 {
             }
 
             int var6 = var1.method_147(1576289878);
-            class_280 var10000 = new class_280(var1.method_135());
+            class_280 var10000 = new class_280(var1.readInt());
             class_280 var7 = var10000;
             boolean var10;
             if(var1.readUnsignedByte() == 1) {
@@ -1196,7 +1196,7 @@ public class class_231 extends class_230 {
 
       for(int var4 = 0; var4 < var3; ++var4) {
          int var5 = var1.method_147(374015837);
-         class_280 var10000 = new class_280(var1.method_135());
+         class_280 var10000 = new class_280(var1.readInt());
          class_280 var6 = var10000;
          boolean var7 = var1.readUnsignedByte() == 1;
          if(var2 || !var7) {

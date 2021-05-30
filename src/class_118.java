@@ -17,8 +17,8 @@ public class class_118 extends class_111 {
     // $FF: renamed from: v (nd, int) void
    void method_2231(Buffer var1, int var2) {
       try {
-         this.field_1307 = var1.method_135() * 1418693631;
-         this.field_1311 = var1.method_135() * 570133141;
+         this.field_1307 = var1.readInt() * 1418693631;
+         this.field_1311 = var1.readInt() * 570133141;
          this.field_1308 = var1.readUnsignedByte() * -1997102297;
          this.field_1310 = var1.readUnsignedByte() * 157587933;
       } catch (RuntimeException var3) {
@@ -90,16 +90,16 @@ public class class_118 extends class_111 {
 
    // $FF: renamed from: f (nd) void
    void method_2234(Buffer var1) {
-      this.field_1307 = var1.method_135() * 1418693631;
-      this.field_1311 = var1.method_135() * 754056836;
+      this.field_1307 = var1.readInt() * 1418693631;
+      this.field_1311 = var1.readInt() * 754056836;
       this.field_1308 = var1.readUnsignedByte() * -1997102297;
       this.field_1310 = var1.readUnsignedByte() * 157587933;
    }
 
    // $FF: renamed from: y (nd) void
    void method_2233(Buffer var1) {
-      this.field_1307 = var1.method_135() * 1418693631;
-      this.field_1311 = var1.method_135() * 570133141;
+      this.field_1307 = var1.readInt() * 1418693631;
+      this.field_1311 = var1.readInt() * 570133141;
       this.field_1308 = var1.readUnsignedByte() * 1976872843;
       this.field_1310 = var1.readUnsignedByte() * 157587933;
    }

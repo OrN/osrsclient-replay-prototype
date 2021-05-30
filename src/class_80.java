@@ -962,7 +962,7 @@ public class class_80 extends class_59 {
 
             this.field_705 = -1031660485;
          } else if(12 == var2) {
-            this.field_719 = var1.method_135() * 227172335;
+            this.field_719 = var1.readInt() * 227172335;
          } else if(16 == var2) {
             if(var3 == -1311253189) {
                throw new IllegalStateException();

@@ -379,7 +379,7 @@ public class Buffer extends class_27 {
             if(var1 >= 1595879590) {
                throw new IllegalStateException();
             } else {
-               return this.method_135() & Integer.MAX_VALUE;
+               return this.readInt() & Integer.MAX_VALUE;
             }
          } else {
             return this.readShort();
@@ -400,7 +400,7 @@ public class Buffer extends class_27 {
    }
 
    // $FF: renamed from: bv (byte) int
-   public int method_135() {
+   public int readInt() {
       try {
          this.offset += 192201012;
          return ((this.data[this.offset * -442398587 - 2] & 255) << 8) + ((this.data[this.offset * -442398587 - 4] & 255) << 24) + ((this.data[-442398587 * this.offset - 3] & 255) << 16) + (this.data[this.offset * -442398587 - 1] & 255);
@@ -412,8 +412,8 @@ public class Buffer extends class_27 {
    // $FF: renamed from: bm (int) long
    public long method_136() {
       try {
-         long var2 = (long)this.method_135() & 4294967295L;
-         long var4 = (long)this.method_135() & 4294967295L;
+         long var2 = (long)this.readInt() & 4294967295L;
+         long var4 = (long)this.readInt() & 4294967295L;
          return (var2 << 32) + var4;
       } catch (RuntimeException var6) {
          throw class_223.method_4281(var6);
@@ -749,7 +749,7 @@ public class Buffer extends class_27 {
    public int method_147(int var1) {
       try {
          if(this.data[-442398587 * this.offset] < 0) {
-            return this.method_135() & Integer.MAX_VALUE;
+            return this.readInt() & Integer.MAX_VALUE;
          } else {
             int var2 = this.readShort();
             if(32767 == var2) {
@@ -798,8 +798,8 @@ public class Buffer extends class_27 {
                throw new IllegalStateException();
             }
 
-            int var5 = this.method_135();
-            int var6 = this.method_135();
+            int var5 = this.readInt();
+            int var6 = this.readInt();
             int var7 = -957401312;
             int var8 = -1640531527;
 
@@ -826,8 +826,8 @@ public class Buffer extends class_27 {
          int var6 = (var3 - var2) / 8;
 
          for(int var7 = 0; var7 < var6; ++var7) {
-            int var8 = this.method_135();
-            int var9 = this.method_135();
+            int var8 = this.readInt();
+            int var9 = this.readInt();
             int var10 = 0;
             int var11 = -1640531527;
 
@@ -925,7 +925,7 @@ public class Buffer extends class_27 {
       try {
          this.offset -= 192201012;
          int var2 = class_151.method_3216(this.data, 0, this.offset * -442398587);
-         int var3 = this.method_135();
+         int var3 = this.readInt();
          if(var3 == var2) {
             if(var1 >= -1368928781) {
                throw new IllegalStateException();
@@ -1124,7 +1124,7 @@ public class Buffer extends class_27 {
 
    // $FF: renamed from: hw () int
    public int method_174() {
-      return this.data[this.offset * -442398587] < 0?this.method_135() & 386835381:this.readShort();
+      return this.data[this.offset * -442398587] < 0?this.readInt() & 386835381:this.readShort();
    }
 
    // $FF: renamed from: ce (int) int
@@ -1339,7 +1339,7 @@ public class Buffer extends class_27 {
    // $FF: renamed from: hg () int
    public int method_209() {
       if(this.data[-442398587 * this.offset] < 0) {
-         return this.method_135() & Integer.MAX_VALUE;
+         return this.readInt() & Integer.MAX_VALUE;
       } else {
          int var1 = this.readShort();
          return 32767 == var1?-1:var1;
@@ -1576,8 +1576,8 @@ public class Buffer extends class_27 {
                return;
             }
 
-            int var5 = this.method_135();
-            int var6 = this.method_135();
+            int var5 = this.readInt();
+            int var6 = this.readInt();
             int var7 = 0;
             int var8 = -1640531527;
 
@@ -1666,8 +1666,8 @@ public class Buffer extends class_27 {
 
    // $FF: renamed from: gm () long
    public long method_239() {
-      long var1 = (long)this.method_135() & 4294967295L;
-      long var3 = (long)this.method_135() & 4294967295L;
+      long var1 = (long)this.readInt() & 4294967295L;
+      long var3 = (long)this.readInt() & 4294967295L;
       return (var1 << 32) + var3;
    }
 
@@ -2105,17 +2105,17 @@ public class Buffer extends class_27 {
 
    // $FF: renamed from: hb () int
    public int method_278() {
-      return this.data[this.offset * -1873405577] < 0?this.method_135() & Integer.MAX_VALUE:this.readShort();
+      return this.data[this.offset * -1873405577] < 0?this.readInt() & Integer.MAX_VALUE:this.readShort();
    }
 
    // $FF: renamed from: ho () int
    public int method_279() {
-      return this.data[this.offset * -442398587] < 0?this.method_135() & Integer.MAX_VALUE:this.readShort();
+      return this.data[this.offset * -442398587] < 0?this.readInt() & Integer.MAX_VALUE:this.readShort();
    }
 
    // $FF: renamed from: hj () int
    public int method_280() {
-      return this.data[this.offset * -442398587] < 0?this.method_135() & Integer.MAX_VALUE:this.readShort();
+      return this.data[this.offset * -442398587] < 0?this.readInt() & Integer.MAX_VALUE:this.readShort();
    }
 
    // $FF: renamed from: ea (java.lang.String) int
@@ -2142,8 +2142,8 @@ public class Buffer extends class_27 {
       this.offset = 0;
 
       for(int var3 = 0; var3 < var2; ++var3) {
-         int var4 = this.method_135();
-         int var5 = this.method_135();
+         int var4 = this.readInt();
+         int var5 = this.readInt();
          int var6 = 0;
          int var7 = -1640531527;
 
@@ -2165,8 +2165,8 @@ public class Buffer extends class_27 {
       this.offset = 0;
 
       for(int var3 = 0; var3 < var2; ++var3) {
-         int var4 = this.method_135();
-         int var5 = this.method_135();
+         int var4 = this.readInt();
+         int var5 = this.readInt();
          int var6 = -957401312;
          int var7 = -1640531527;
 
@@ -2211,8 +2211,8 @@ public class Buffer extends class_27 {
       this.offset = 0;
 
       for(int var3 = 0; var3 < var2; ++var3) {
-         int var4 = this.method_135();
-         int var5 = this.method_135();
+         int var4 = this.readInt();
+         int var5 = this.readInt();
          int var6 = -957401312;
          int var7 = -1640531527;
 
@@ -2235,8 +2235,8 @@ public class Buffer extends class_27 {
       int var5 = (var3 - var2) / 8;
 
       for(int var6 = 0; var6 < var5; ++var6) {
-         int var7 = this.method_135();
-         int var8 = this.method_135();
+         int var7 = this.readInt();
+         int var8 = this.readInt();
          int var9 = 0;
          int var10 = -1640531527;
 
@@ -2260,8 +2260,8 @@ public class Buffer extends class_27 {
       int var5 = (var3 - var2) / 8;
 
       for(int var6 = 0; var6 < var5; ++var6) {
-         int var7 = this.method_135();
-         int var8 = this.method_135();
+         int var7 = this.readInt();
+         int var8 = this.readInt();
          int var9 = 598319667;
          int var10 = 2928579;
 
@@ -2285,8 +2285,8 @@ public class Buffer extends class_27 {
       int var5 = (var3 - var2) / 8;
 
       for(int var6 = 0; var6 < var5; ++var6) {
-         int var7 = this.method_135();
-         int var8 = this.method_135();
+         int var7 = this.readInt();
+         int var8 = this.readInt();
          int var9 = -957401312;
          int var10 = -1640531527;
 
@@ -2310,8 +2310,8 @@ public class Buffer extends class_27 {
       int var5 = (var3 - var2) / 8;
 
       for(int var6 = 0; var6 < var5; ++var6) {
-         int var7 = this.method_135();
-         int var8 = this.method_135();
+         int var7 = this.readInt();
+         int var8 = this.readInt();
          int var9 = -957401312;
          int var10 = -1640531527;
 
@@ -2379,8 +2379,8 @@ public class Buffer extends class_27 {
          int var6 = (var3 - var2) / 8;
 
          for(int var7 = 0; var7 < var6; ++var7) {
-            int var8 = this.method_135();
-            int var9 = this.method_135();
+            int var8 = this.readInt();
+            int var9 = this.readInt();
             int var10 = -957401312;
             int var11 = -1640531527;
 
@@ -2450,7 +2450,7 @@ public class Buffer extends class_27 {
    public boolean method_298() {
       this.offset -= 171218201;
       int var1 = class_151.method_3216(this.data, 0, this.offset * 714252842);
-      int var2 = this.method_135();
+      int var2 = this.readInt();
       return var2 == var1;
    }
 
@@ -2471,8 +2471,8 @@ public class Buffer extends class_27 {
 
    // $FF: renamed from: go () long
    public long method_302() {
-      long var1 = (long)this.method_135() & 4294967295L;
-      long var3 = (long)this.method_135() & 4294967295L;
+      long var1 = (long)this.readInt() & 4294967295L;
+      long var3 = (long)this.readInt() & 4294967295L;
       return (var1 << 2058340) + var3;
    }
 
@@ -2908,8 +2908,8 @@ public class Buffer extends class_27 {
       this.offset = 0;
 
       for(int var3 = 0; var3 < var2; ++var3) {
-         int var4 = this.method_135();
-         int var5 = this.method_135();
+         int var4 = this.readInt();
+         int var5 = this.readInt();
          int var6 = -957401312;
          int var7 = -1640531527;
 

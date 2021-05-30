@@ -238,16 +238,16 @@ public class class_57 extends class_27 {
    void method_598(byte[] var1) {
       Buffer var10000 = new Buffer(var1);
       Buffer var2 = var10000;
-      this.field_424 = var2.method_135();
-      this.field_425 = var2.method_135();
-      this.field_426 = var2.method_135();
-      this.field_427 = var2.method_135();
+      this.field_424 = var2.readInt();
+      this.field_425 = var2.readInt();
+      this.field_426 = var2.readInt();
+      this.field_427 = var2.readInt();
       if(this.field_427 < 0) {
          this.field_427 = ~this.field_427;
          this.field_428 = true;
       }
 
-      int var3 = var2.method_135();
+      int var3 = var2.readInt();
       this.field_450 = new byte[var3][];
 
       for(int var4 = 0; var4 < var3; ++var4) {
@@ -874,16 +874,16 @@ public class class_57 extends class_27 {
    void method_615(byte[] var1) {
       Buffer var10000 = new Buffer(var1);
       Buffer var2 = var10000;
-      this.field_424 = var2.method_135();
-      this.field_425 = var2.method_135();
-      this.field_426 = var2.method_135();
-      this.field_427 = var2.method_135();
+      this.field_424 = var2.readInt();
+      this.field_425 = var2.readInt();
+      this.field_426 = var2.readInt();
+      this.field_427 = var2.readInt();
       if(this.field_427 < 0) {
          this.field_427 = ~this.field_427;
          this.field_428 = true;
       }
 
-      int var3 = var2.method_135();
+      int var3 = var2.readInt();
       this.field_450 = new byte[var3][];
 
       for(int var4 = 0; var4 < var3; ++var4) {
@@ -906,16 +906,16 @@ public class class_57 extends class_27 {
    void method_616(byte[] var1) {
       Buffer var10000 = new Buffer(var1);
       Buffer var2 = var10000;
-      this.field_424 = var2.method_135();
-      this.field_425 = var2.method_135();
-      this.field_426 = var2.method_135();
-      this.field_427 = var2.method_135();
+      this.field_424 = var2.readInt();
+      this.field_425 = var2.readInt();
+      this.field_426 = var2.readInt();
+      this.field_427 = var2.readInt();
       if(this.field_427 < 0) {
          this.field_427 = ~this.field_427;
          this.field_428 = true;
       }
 
-      int var3 = var2.method_135();
+      int var3 = var2.readInt();
       this.field_450 = new byte[var3][];
 
       for(int var4 = 0; var4 < var3; ++var4) {
@@ -938,16 +938,16 @@ public class class_57 extends class_27 {
    void method_617(byte[] var1) {
       Buffer var10000 = new Buffer(var1);
       Buffer var2 = var10000;
-      this.field_424 = var2.method_135();
-      this.field_425 = var2.method_135();
-      this.field_426 = var2.method_135();
-      this.field_427 = var2.method_135();
+      this.field_424 = var2.readInt();
+      this.field_425 = var2.readInt();
+      this.field_426 = var2.readInt();
+      this.field_427 = var2.readInt();
       if(this.field_427 < 0) {
          this.field_427 = ~this.field_427;
          this.field_428 = true;
       }
 
-      int var3 = var2.method_135();
+      int var3 = var2.readInt();
       this.field_450 = new byte[var3][];
 
       for(int var4 = 0; var4 < var3; ++var4) {
@@ -1465,16 +1465,16 @@ public class class_57 extends class_27 {
    void method_621(byte[] var1) {
       Buffer var10000 = new Buffer(var1);
       Buffer var2 = var10000;
-      this.field_424 = var2.method_135();
-      this.field_425 = var2.method_135();
-      this.field_426 = var2.method_135();
-      this.field_427 = var2.method_135();
+      this.field_424 = var2.readInt();
+      this.field_425 = var2.readInt();
+      this.field_426 = var2.readInt();
+      this.field_427 = var2.readInt();
       if(this.field_427 < 0) {
          this.field_427 = ~this.field_427;
          this.field_428 = true;
       }
 
-      int var3 = var2.method_135();
+      int var3 = var2.readInt();
       this.field_450 = new byte[var3][];
 
       for(int var4 = 0; var4 < var3; ++var4) {

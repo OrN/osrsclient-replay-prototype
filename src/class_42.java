@@ -334,7 +334,7 @@ public class class_42 extends class_27 {
          this.field_309 = new int[var2];
 
          for(var3 = 0; var3 < var2; ++var3) {
-            this.field_309[var3] = var1.method_135();
+            this.field_309[var3] = var1.readInt();
          }
 
          this.field_305 = var1.readUnsignedByte();

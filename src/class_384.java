@@ -25,7 +25,7 @@ final class class_384 implements class_23 {
    // $FF: renamed from: n (nd, int) java.lang.Object
    public Object method_75(Buffer var1) {
       try {
-         return Integer.valueOf(var1.method_135());
+         return Integer.valueOf(var1.readInt());
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
       }
@@ -48,17 +48,17 @@ final class class_384 implements class_23 {
 
    // $FF: renamed from: p (nd) java.lang.Object
    public Object method_70(Buffer var1) {
-      return Integer.valueOf(var1.method_135());
+      return Integer.valueOf(var1.readInt());
    }
 
    // $FF: renamed from: j (nd) java.lang.Object
    public Object method_69(Buffer var1) {
-      return Integer.valueOf(var1.method_135());
+      return Integer.valueOf(var1.readInt());
    }
 
    // $FF: renamed from: r (nd) java.lang.Object
    public Object method_74(Buffer var1) {
-      return Integer.valueOf(var1.method_135());
+      return Integer.valueOf(var1.readInt());
    }
 
    // $FF: renamed from: v (java.lang.Object, nd, int) void

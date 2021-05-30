@@ -1834,7 +1834,7 @@ public final class client extends GameApplet implements class_16 {
             int var36;
             if(class_263.field_2963 == var1.field_2376) {
                var20 = var3.readShort();
-               var21 = var3.method_135();
+               var21 = var3.readInt();
                var6 = var20 >> 10 & 31;
                var28 = var20 >> 5 & 31;
                var29 = var20 & 31;
@@ -1894,11 +1894,11 @@ public final class client extends GameApplet implements class_16 {
                   if(var22.charAt(var6) == 115) {
                      var70[1 + var6] = var3.method_139(-391631059);
                   } else {
-                     var70[var6 + 1] = new Integer(var3.method_135());
+                     var70[var6 + 1] = new Integer(var3.readInt());
                   }
                }
 
-               var70[0] = new Integer(var3.method_135());
+               var70[0] = new Integer(var3.readInt());
                class_45 var90 = new class_45();
                class_45 var69 = var90;
                var69.field_337 = var70;
@@ -2018,7 +2018,7 @@ public final class client extends GameApplet implements class_16 {
 
             class_37 var40;
             if(class_263.field_2948 == var1.field_2376) {
-               var20 = var3.method_135();
+               var20 = var3.readInt();
                var21 = var3.readShort();
                var40 = class_71.method_1047(var20);
                if(946573619 * var40.field_144 != 2 || var21 != var40.field_145 * 1064486253) {
@@ -2196,7 +2196,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(var1.field_2376 == class_263.field_2967) {
-               var20 = var3.method_135();
+               var20 = var3.readInt();
                class_48 var66 = (class_48)field_1578.method_6523((long)var20);
                if(var66 != null) {
                   class_135.method_2943(var66, true, -1175804387);
@@ -2240,7 +2240,7 @@ public final class client extends GameApplet implements class_16 {
 
                class_48 var46;
                for(; var6-- > 0; var46.field_355 = true) {
-                  var28 = var3.method_135();
+                  var28 = var3.readInt();
                   var29 = var3.readShort();
                   var36 = var3.readUnsignedByte();
                   var46 = (class_48)field_1578.method_6523((long)var28);
@@ -2266,10 +2266,10 @@ public final class client extends GameApplet implements class_16 {
                field_1623 = var82;
 
                while(-442398587 * var3.offset < var20) {
-                  var28 = var3.method_135();
+                  var28 = var3.readInt();
                   var29 = var3.readShort();
                   var36 = var3.readShort();
-                  var43 = var3.method_135();
+                  var43 = var3.readInt();
 
                   for(int var52 = var29; var52 <= var36; ++var52) {
                      var55 = ((long)var28 << 32) + (long)var52;
@@ -2382,7 +2382,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(var1.field_2376 == class_263.field_2937) {
-               var20 = var3.method_135();
+               var20 = var3.readInt();
                if(var20 != field_1499 * -315190483) {
                   field_1499 = 711341221 * var20;
                   class_90.method_1605(272503253);
@@ -2403,7 +2403,7 @@ public final class client extends GameApplet implements class_16 {
                class_149 var68 = var86;
                var68.field_1885 = var3.method_139(-391631059);
                var68.field_1894 = var3.readShort() * -1640224087;
-               var21 = var3.method_135();
+               var21 = var3.readInt();
                var68.field_1890 = 1964795281 * var21;
                class_53.method_579(45, (byte)0);
                var2.method_4123(2124402709);
@@ -2503,7 +2503,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(var1.field_2376 == class_263.field_3023) {
-               var20 = var3.method_135();
+               var20 = var3.readInt();
                var21 = var3.readShort();
                if(var20 < -70000) {
                   var21 += '\u8000';
@@ -2522,7 +2522,7 @@ public final class client extends GameApplet implements class_16 {
                   if(var29 != 0) {
                      var36 = var3.readUnsignedByte();
                      if(255 == var36) {
-                        var36 = var3.method_135();
+                        var36 = var3.readInt();
                      }
                   }
 
@@ -2600,8 +2600,8 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(class_263.field_2995 == var1.field_2376) {
-               var20 = var3.method_135();
-               var21 = var3.method_135();
+               var20 = var3.readInt();
+               var21 = var3.readInt();
                var6 = class_135.method_2947(-56748890);
                class_40 var48 = class_112.method_2238(class_266.field_3108, field_1463.field_2384, (byte)8);
                var48.field_263.method_176(var20);
@@ -2994,7 +2994,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(class_263.field_3002 == var1.field_2376) {
-               var20 = var3.method_135();
+               var20 = var3.readInt();
                var21 = var3.readShort();
                if(var20 < -70000) {
                   var21 += '\u8000';
@@ -3552,7 +3552,7 @@ public final class client extends GameApplet implements class_16 {
                                        var10 = class_314.field_3776.readUnsignedByte();
                                        var11 = class_314.field_3776.readShort();
                                        int var12 = class_314.field_3776.readUnsignedByte();
-                                       var13 = class_314.field_3776.method_135();
+                                       var13 = class_314.field_3776.readInt();
                                        long var14 = (long)((var10 << 16) + var11);
                                        class_60 var16 = (class_60)class_314.field_3779.method_6523(var14);
                                        class_123.field_1350 = true;
@@ -3660,8 +3660,8 @@ public final class client extends GameApplet implements class_16 {
                                                 }
 
                                                 class_202.field_2369.offset = 384402024 * var11 + -833490559;
-                                                var13 = class_202.field_2369.method_135();
-                                                int var25 = class_202.field_2369.method_135();
+                                                var13 = class_202.field_2369.readInt();
+                                                int var25 = class_202.field_2369.readInt();
                                                 var24.method_5489(var13, var25, -887756709);
                                              }
                                           }
@@ -4772,7 +4772,7 @@ public final class client extends GameApplet implements class_16 {
                   }
 
                   var22 = var4.readShort();
-                  var23 = var4.method_135();
+                  var23 = var4.readInt();
                   var7 = var22 >> 10 & 31;
                   var30 = var22 >> 5 & 31;
                   var31 = var22 & 31;
@@ -4860,11 +4860,11 @@ public final class client extends GameApplet implements class_16 {
                      if(var24.charAt(var7) == 115) {
                         var71[1 + var7] = var4.method_139(-391631059);
                      } else {
-                        var71[var7 + 1] = new Integer(var4.method_135());
+                        var71[var7 + 1] = new Integer(var4.readInt());
                      }
                   }
 
-                  var71[0] = new Integer(var4.method_135());
+                  var71[0] = new Integer(var4.readInt());
                   class_45 var97 = new class_45();
                   class_45 var70 = var97;
                   var70.field_337 = var71;
@@ -5047,7 +5047,7 @@ public final class client extends GameApplet implements class_16 {
                   }
 
                   label2418: {
-                     var22 = var4.method_135();
+                     var22 = var4.readInt();
                      var23 = var4.readShort();
                      var42 = class_71.method_1047(var22);
                      if(946573619 * var42.field_144 == 2) {
@@ -5344,7 +5344,7 @@ public final class client extends GameApplet implements class_16 {
                      throw new IllegalStateException();
                   }
 
-                  var22 = var4.method_135();
+                  var22 = var4.readInt();
                   class_48 var67 = (class_48)field_1578.method_6523((long)var22);
                   if(var67 != null) {
                      if(var2 >= 477492867) {
@@ -5416,7 +5416,7 @@ public final class client extends GameApplet implements class_16 {
 
                   class_48 var48;
                   for(; var7-- > 0; var48.field_355 = true) {
-                     var30 = var4.method_135();
+                     var30 = var4.readInt();
                      var31 = var4.readShort();
                      var38 = var4.readUnsignedByte();
                      var48 = (class_48)field_1578.method_6523((long)var30);
@@ -5464,10 +5464,10 @@ public final class client extends GameApplet implements class_16 {
                         throw new IllegalStateException();
                      }
 
-                     var30 = var4.method_135();
+                     var30 = var4.readInt();
                      var31 = var4.readShort();
                      var38 = var4.readShort();
-                     var45 = var4.method_135();
+                     var45 = var4.readInt();
 
                      for(int var54 = var31; var54 <= var38; ++var54) {
                         if(var2 >= 477492867) {
@@ -5651,7 +5651,7 @@ public final class client extends GameApplet implements class_16 {
                      throw new IllegalStateException();
                   }
 
-                  var22 = var4.method_135();
+                  var22 = var4.readInt();
                   if(var22 != field_1499 * -315190483) {
                      if(var2 >= 477492867) {
                         throw new IllegalStateException();
@@ -5684,7 +5684,7 @@ public final class client extends GameApplet implements class_16 {
                   class_149 var69 = var93;
                   var69.field_1885 = var4.method_139(-391631059);
                   var69.field_1894 = var4.readShort() * -1640224087;
-                  var23 = var4.method_135();
+                  var23 = var4.readInt();
                   var69.field_1890 = 1964795281 * var23;
                   class_53.method_579(45, (byte)0);
                   var3.method_4123(1695965651);
@@ -5846,7 +5846,7 @@ public final class client extends GameApplet implements class_16 {
                      throw new IllegalStateException();
                   }
 
-                  var22 = var4.method_135();
+                  var22 = var4.readInt();
                   var23 = var4.readShort();
                   if(var22 < -70000) {
                      if(var2 >= 477492867) {
@@ -5877,7 +5877,7 @@ public final class client extends GameApplet implements class_16 {
 
                         var38 = var4.readUnsignedByte();
                         if(255 == var38) {
-                           var38 = var4.method_135();
+                           var38 = var4.readInt();
                         }
                      }
 
@@ -6011,8 +6011,8 @@ public final class client extends GameApplet implements class_16 {
                      throw new IllegalStateException();
                   }
 
-                  var22 = var4.method_135();
-                  var23 = var4.method_135();
+                  var22 = var4.readInt();
+                  var23 = var4.readInt();
                   var7 = class_135.method_2947(-56748890);
                   class_40 var50 = class_112.method_2238(class_266.field_3108, field_1463.field_2384, (byte)8);
                   var50.field_263.method_176(var22);
@@ -6676,7 +6676,7 @@ public final class client extends GameApplet implements class_16 {
                      throw new IllegalStateException();
                   }
 
-                  var22 = var4.method_135();
+                  var22 = var4.readInt();
                   var23 = var4.readShort();
                   if(var22 < -70000) {
                      if(var2 >= 477492867) {
@@ -9785,7 +9785,7 @@ public final class client extends GameApplet implements class_16 {
                                  var9 = class_314.field_3776.readUnsignedByte();
                                  var10 = class_314.field_3776.readShort();
                                  int var11 = class_314.field_3776.readUnsignedByte();
-                                 var12 = class_314.field_3776.method_135();
+                                 var12 = class_314.field_3776.readInt();
                                  long var13 = (long)((var9 << 16) + var10);
                                  class_60 var15 = (class_60)class_314.field_3779.method_6523(var13);
                                  class_123.field_1350 = true;
@@ -9842,8 +9842,8 @@ public final class client extends GameApplet implements class_16 {
                                        class_307 var22 = class_314.field_3765[var10];
                                        if(var22 != null) {
                                           class_202.field_2369.offset = 384402024 * var10 + -833490559;
-                                          var12 = class_202.field_2369.method_135();
-                                          int var23 = class_202.field_2369.method_135();
+                                          var12 = class_202.field_2369.readInt();
+                                          int var23 = class_202.field_2369.readInt();
                                           var22.method_5489(var12, var23, -887756709);
                                        }
                                     }
@@ -10170,7 +10170,7 @@ public final class client extends GameApplet implements class_16 {
                                  var9 = class_314.field_3776.readUnsignedByte();
                                  var10 = class_314.field_3776.readShort();
                                  int var11 = class_314.field_3776.readUnsignedByte();
-                                 var12 = class_314.field_3776.method_135();
+                                 var12 = class_314.field_3776.readInt();
                                  long var13 = (long)((var9 << 16) + var10);
                                  class_60 var15 = (class_60)class_314.field_3779.method_6523(var13);
                                  class_123.field_1350 = true;
@@ -10227,8 +10227,8 @@ public final class client extends GameApplet implements class_16 {
                                        class_307 var22 = class_314.field_3765[var10];
                                        if(var22 != null) {
                                           class_202.field_2369.offset = 384402024 * var10 + -833490559;
-                                          var12 = class_202.field_2369.method_135();
-                                          int var23 = class_202.field_2369.method_135();
+                                          var12 = class_202.field_2369.readInt();
+                                          int var23 = class_202.field_2369.readInt();
                                           var22.method_5489(var12, var23, -887756709);
                                        }
                                     }
@@ -12337,7 +12337,7 @@ public final class client extends GameApplet implements class_16 {
                                  var9 = class_314.field_3776.readUnsignedByte();
                                  var10 = class_314.field_3776.readShort();
                                  int var11 = class_314.field_3776.readUnsignedByte();
-                                 var12 = class_314.field_3776.method_135();
+                                 var12 = class_314.field_3776.readInt();
                                  long var13 = (long)((var9 << 16) + var10);
                                  class_60 var15 = (class_60)class_314.field_3779.method_6523(var13);
                                  class_123.field_1350 = true;
@@ -12394,8 +12394,8 @@ public final class client extends GameApplet implements class_16 {
                                        class_307 var22 = class_314.field_3765[var10];
                                        if(var22 != null) {
                                           class_202.field_2369.offset = 384402024 * var10 + -833490559;
-                                          var12 = class_202.field_2369.method_135();
-                                          int var23 = class_202.field_2369.method_135();
+                                          var12 = class_202.field_2369.readInt();
+                                          int var23 = class_202.field_2369.readInt();
                                           var22.method_5489(var12, var23, -887756709);
                                        }
                                     }
@@ -15118,7 +15118,7 @@ public final class client extends GameApplet implements class_16 {
                                  var9 = class_314.field_3776.readUnsignedByte();
                                  var10 = class_314.field_3776.readShort();
                                  int var11 = class_314.field_3776.readUnsignedByte();
-                                 var12 = class_314.field_3776.method_135();
+                                 var12 = class_314.field_3776.readInt();
                                  long var13 = (long)((var9 << 16) + var10);
                                  class_60 var15 = (class_60)class_314.field_3779.method_6523(var13);
                                  class_123.field_1350 = true;
@@ -15175,8 +15175,8 @@ public final class client extends GameApplet implements class_16 {
                                        class_307 var22 = class_314.field_3765[var10];
                                        if(var22 != null) {
                                           class_202.field_2369.offset = 384402024 * var10 + -833490559;
-                                          var12 = class_202.field_2369.method_135();
-                                          int var23 = class_202.field_2369.method_135();
+                                          var12 = class_202.field_2369.readInt();
+                                          int var23 = class_202.field_2369.readInt();
                                           var22.method_5489(var12, var23, -887756709);
                                        }
                                     }
@@ -23617,7 +23617,7 @@ public final class client extends GameApplet implements class_16 {
             int var36;
             if(class_263.field_2963 == var1.field_2376) {
                var20 = var3.readShort();
-               var21 = var3.method_135();
+               var21 = var3.readInt();
                var6 = var20 >> 10 & 31;
                var28 = var20 >> 5 & -2116385545;
                var29 = var20 & 1960734858;
@@ -23677,11 +23677,11 @@ public final class client extends GameApplet implements class_16 {
                   if(var22.charAt(var6) == 115) {
                      var70[1 + var6] = var3.method_139(-391631059);
                   } else {
-                     var70[var6 + 1] = new Integer(var3.method_135());
+                     var70[var6 + 1] = new Integer(var3.readInt());
                   }
                }
 
-               var70[0] = new Integer(var3.method_135());
+               var70[0] = new Integer(var3.readInt());
                class_45 var90 = new class_45();
                class_45 var69 = var90;
                var69.field_337 = var70;
@@ -23801,7 +23801,7 @@ public final class client extends GameApplet implements class_16 {
 
             class_37 var40;
             if(class_263.field_2948 == var1.field_2376) {
-               var20 = var3.method_135();
+               var20 = var3.readInt();
                var21 = var3.readShort();
                var40 = class_71.method_1047(var20);
                if(-1824567542 * var40.field_144 != 2 || var21 != var40.field_145 * 1064486253) {
@@ -23979,7 +23979,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(var1.field_2376 == class_263.field_2967) {
-               var20 = var3.method_135();
+               var20 = var3.readInt();
                class_48 var66 = (class_48)field_1578.method_6523((long)var20);
                if(var66 != null) {
                   class_135.method_2943(var66, true, -1789268094);
@@ -24023,7 +24023,7 @@ public final class client extends GameApplet implements class_16 {
 
                class_48 var46;
                for(; var6-- > 0; var46.field_355 = true) {
-                  var28 = var3.method_135();
+                  var28 = var3.readInt();
                   var29 = var3.readShort();
                   var36 = var3.readUnsignedByte();
                   var46 = (class_48)field_1578.method_6523((long)var28);
@@ -24049,10 +24049,10 @@ public final class client extends GameApplet implements class_16 {
                field_1623 = var82;
 
                while(-442398587 * var3.offset < var20) {
-                  var28 = var3.method_135();
+                  var28 = var3.readInt();
                   var29 = var3.readShort();
                   var36 = var3.readShort();
-                  var43 = var3.method_135();
+                  var43 = var3.readInt();
 
                   for(int var52 = var29; var52 <= var36; ++var52) {
                      var55 = ((long)var28 << -243016323) + (long)var52;
@@ -24165,7 +24165,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(var1.field_2376 == class_263.field_2937) {
-               var20 = var3.method_135();
+               var20 = var3.readInt();
                if(var20 != field_1499 * 103769661) {
                   field_1499 = 711341221 * var20;
                   class_90.method_1605(809310843);
@@ -24186,7 +24186,7 @@ public final class client extends GameApplet implements class_16 {
                class_149 var68 = var86;
                var68.field_1885 = var3.method_139(-391631059);
                var68.field_1894 = var3.readShort() * 2041769285;
-               var21 = var3.method_135();
+               var21 = var3.readInt();
                var68.field_1890 = 523592001 * var21;
                class_53.method_579(1837046032, (byte)0);
                var2.method_4123(1831757639);
@@ -24286,7 +24286,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(var1.field_2376 == class_263.field_3023) {
-               var20 = var3.method_135();
+               var20 = var3.readInt();
                var21 = var3.readShort();
                if(var20 < -70000) {
                   var21 += -1125805783;
@@ -24305,7 +24305,7 @@ public final class client extends GameApplet implements class_16 {
                   if(var29 != 0) {
                      var36 = var3.readUnsignedByte();
                      if(-1321854976 == var36) {
-                        var36 = var3.method_135();
+                        var36 = var3.readInt();
                      }
                   }
 
@@ -24383,8 +24383,8 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(class_263.field_2995 == var1.field_2376) {
-               var20 = var3.method_135();
-               var21 = var3.method_135();
+               var20 = var3.readInt();
+               var21 = var3.readInt();
                var6 = class_135.method_2947(-56748890);
                class_40 var48 = class_112.method_2238(class_266.field_3108, field_1463.field_2384, (byte)8);
                var48.field_263.method_176(var20);
@@ -24777,7 +24777,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(class_263.field_3002 == var1.field_2376) {
-               var20 = var3.method_135();
+               var20 = var3.readInt();
                var21 = var3.readShort();
                if(var20 < 1448736181) {
                   var21 += 1054371689;
@@ -28836,7 +28836,7 @@ public final class client extends GameApplet implements class_16 {
                                  var9 = class_314.field_3776.readUnsignedByte();
                                  var10 = class_314.field_3776.readShort();
                                  int var11 = class_314.field_3776.readUnsignedByte();
-                                 var12 = class_314.field_3776.method_135();
+                                 var12 = class_314.field_3776.readInt();
                                  long var13 = (long)((var9 << 16) + var10);
                                  class_60 var15 = (class_60)class_314.field_3779.method_6523(var13);
                                  class_123.field_1350 = true;
@@ -28893,8 +28893,8 @@ public final class client extends GameApplet implements class_16 {
                                        class_307 var22 = class_314.field_3765[var10];
                                        if(var22 != null) {
                                           class_202.field_2369.offset = 384402024 * var10 + -833490559;
-                                          var12 = class_202.field_2369.method_135();
-                                          int var23 = class_202.field_2369.method_135();
+                                          var12 = class_202.field_2369.readInt();
+                                          int var23 = class_202.field_2369.readInt();
                                           var22.method_5489(var12, var23, -887756709);
                                        }
                                     }

@@ -111,7 +111,7 @@ public class class_86 extends class_59 {
                throw new IllegalStateException();
             }
 
-            this.field_794 = var1.method_135() * 274622721;
+            this.field_794 = var1.readInt() * 274622721;
          } else if(var2 == 4) {
             this.field_800 = false;
          } else if(var2 == 5) {
@@ -237,7 +237,7 @@ public class class_86 extends class_59 {
          char var3 = (char)var5;
          this.field_793 = var3;
       } else if(2 == var2) {
-         this.field_794 = var1.method_135() * 274622721;
+         this.field_794 = var1.readInt() * 274622721;
       } else if(var2 == 4) {
          this.field_800 = false;
       } else if(var2 == 5) {
@@ -267,7 +267,7 @@ public class class_86 extends class_59 {
          char var3 = (char)var5;
          this.field_793 = var3;
       } else if(2 == var2) {
-         this.field_794 = var1.method_135() * 274622721;
+         this.field_794 = var1.readInt() * 274622721;
       } else if(var2 == 4) {
          this.field_800 = false;
       } else if(var2 == 5) {
@@ -309,7 +309,7 @@ public class class_86 extends class_59 {
          char var3 = (char)var5;
          this.field_793 = var3;
       } else if(2 == var2) {
-         this.field_794 = var1.method_135() * 274622721;
+         this.field_794 = var1.readInt() * 274622721;
       } else if(var2 == 4) {
          this.field_800 = false;
       } else if(var2 == 5) {
@@ -339,7 +339,7 @@ public class class_86 extends class_59 {
          char var3 = (char)var5;
          this.field_793 = var3;
       } else if(2 == var2) {
-         this.field_794 = var1.method_135() * -351273036;
+         this.field_794 = var1.readInt() * -351273036;
       } else if(var2 == 4) {
          this.field_800 = false;
       } else if(var2 == 5) {
@@ -386,7 +386,7 @@ public class class_86 extends class_59 {
          char var3 = (char)var5;
          this.field_793 = var3;
       } else if(2 == var2) {
-         this.field_794 = var1.method_135() * 274622721;
+         this.field_794 = var1.readInt() * 274622721;
       } else if(var2 == 4) {
          this.field_800 = false;
       } else if(var2 == 5) {

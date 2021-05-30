@@ -1662,7 +1662,7 @@ public class class_93 extends class_91 {
          var2.readShort();
          var2.readShort();
          var2.readShort();
-         var2.method_135();
+         var2.readInt();
       }
 
    }
@@ -1986,7 +1986,7 @@ public class class_93 extends class_91 {
          var2.readShort();
          var2.readShort();
          var2.readShort();
-         var2.method_135();
+         var2.readInt();
       }
 
    }
@@ -2311,7 +2311,7 @@ public class class_93 extends class_91 {
          var2.readShort();
          var2.readShort();
          var2.readShort();
-         var2.method_135();
+         var2.readInt();
       }
 
    }
@@ -4148,7 +4148,7 @@ public class class_93 extends class_91 {
          var2.readShort();
          var2.readShort();
          var2.readShort();
-         var2.method_135();
+         var2.readInt();
       }
 
    }

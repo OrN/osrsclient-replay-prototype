@@ -596,7 +596,7 @@ public abstract class class_343 {
          int var4 = var3.readShort();
          int var5 = var3.data.length - 2 - var4 - 12;
          var3.offset = var5 * -1025691571;
-         int var6 = var3.method_135();
+         int var6 = var3.readInt();
          var2.field_904 = var3.readShort() * -341761097;
          var2.field_905 = var3.readShort() * -465592225;
          var2.field_906 = var3.readShort() * 635067323;
@@ -633,8 +633,8 @@ public abstract class class_343 {
                      throw new IllegalStateException();
                   }
 
-                  int var11 = var3.method_135();
-                  int var12 = var3.method_135();
+                  int var11 = var3.readInt();
+                  int var12 = var3.readInt();
                   class_32 var10001 = new class_32(var12);
                   var10.method_6588(var10001, (long)var11);
                }
@@ -675,7 +675,7 @@ public abstract class class_343 {
                            throw new IllegalStateException();
                         }
 
-                        var2.field_902[var8] = var3.method_135();
+                        var2.field_902[var8] = var3.readInt();
                         continue;
                      }
                   }

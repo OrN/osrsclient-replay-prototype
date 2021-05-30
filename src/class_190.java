@@ -138,7 +138,7 @@ public class class_190 {
    // $FF: renamed from: d (byte) void
    void method_3911(byte var1) {
       try {
-         RAFileHandle var2 = this.method_3936(true);
+         RAFileHandle var2 = this.getPreferences2Handle(true);
          boolean var19 = false;
 
          label174: {
@@ -244,7 +244,7 @@ public class class_190 {
    // $FF: renamed from: s (byte) void
    void method_3912(byte var1) {
       try {
-         RAFileHandle var2 = this.method_3936(false);
+         RAFileHandle var2 = this.getPreferences2Handle(false);
          boolean var23 = false;
 
          label317: {
@@ -332,7 +332,7 @@ public class class_190 {
                               }
 
                               var9 = var32.readShort();
-                              var10 = var32.method_135();
+                              var10 = var32.readInt();
                               if(this.field_2281[var9]) {
                                  if(var1 <= 13) {
                                     throw new IllegalStateException();
@@ -436,7 +436,7 @@ public class class_190 {
    }
 
    // $FF: renamed from: b (boolean, int) nm
-   RAFileHandle method_3936(boolean var1) {
+   RAFileHandle getPreferences2Handle(boolean var1) {
       try {
          return class_168.getPreferencesHandle("2", class_154.field_1933.field_3347, var1, 1926052121);
       } catch (RuntimeException var3) {

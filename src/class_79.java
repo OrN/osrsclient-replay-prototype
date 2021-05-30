@@ -73,7 +73,7 @@ public class class_79 extends class_59 {
       } else if(3 == var2) {
          this.field_689 = var1.method_139(-391631059);
       } else if(var2 == 4) {
-         this.field_692 = var1.method_135() * -1084945299;
+         this.field_692 = var1.readInt() * -1084945299;
       } else {
          int var3;
          if(var2 == 5) {
@@ -82,7 +82,7 @@ public class class_79 extends class_59 {
             this.field_687 = new String[this.field_693 * -2113237229];
 
             for(var3 = 0; var3 < -2113237229 * this.field_693; ++var3) {
-               this.field_694[var3] = var1.method_135();
+               this.field_694[var3] = var1.readInt();
                this.field_687[var3] = var1.method_139(-391631059);
             }
          } else if(var2 == 6) {
@@ -91,8 +91,8 @@ public class class_79 extends class_59 {
             this.field_695 = new int[this.field_693 * -2113237229];
 
             for(var3 = 0; var3 < -2113237229 * this.field_693; ++var3) {
-               this.field_694[var3] = var1.method_135();
-               this.field_695[var3] = var1.method_135();
+               this.field_694[var3] = var1.readInt();
+               this.field_695[var3] = var1.readInt();
             }
          }
       }
@@ -154,7 +154,7 @@ public class class_79 extends class_59 {
 
             this.field_689 = var1.method_139(-391631059);
          } else if(var2 == 4) {
-            this.field_692 = var1.method_135() * -1084945299;
+            this.field_692 = var1.readInt() * -1084945299;
          } else {
             int var4;
             if(var2 == 5) {
@@ -171,7 +171,7 @@ public class class_79 extends class_59 {
                      throw new IllegalStateException();
                   }
 
-                  this.field_694[var4] = var1.method_135();
+                  this.field_694[var4] = var1.readInt();
                   this.field_687[var4] = var1.method_139(-391631059);
                }
             } else if(var2 == 6) {
@@ -184,8 +184,8 @@ public class class_79 extends class_59 {
                this.field_695 = new int[this.field_693 * -2113237229];
 
                for(var4 = 0; var4 < -2113237229 * this.field_693; ++var4) {
-                  this.field_694[var4] = var1.method_135();
-                  this.field_695[var4] = var1.method_135();
+                  this.field_694[var4] = var1.readInt();
+                  this.field_695[var4] = var1.readInt();
                }
             }
          }
@@ -228,7 +228,7 @@ public class class_79 extends class_59 {
       } else if(3 == var2) {
          this.field_689 = var1.method_139(-391631059);
       } else if(var2 == 4) {
-         this.field_692 = var1.method_135() * -1084945299;
+         this.field_692 = var1.readInt() * -1084945299;
       } else {
          int var3;
          if(var2 == 5) {
@@ -237,7 +237,7 @@ public class class_79 extends class_59 {
             this.field_687 = new String[this.field_693 * -2113237229];
 
             for(var3 = 0; var3 < -2113237229 * this.field_693; ++var3) {
-               this.field_694[var3] = var1.method_135();
+               this.field_694[var3] = var1.readInt();
                this.field_687[var3] = var1.method_139(-391631059);
             }
          } else if(var2 == 6) {
@@ -246,8 +246,8 @@ public class class_79 extends class_59 {
             this.field_695 = new int[this.field_693 * -2113237229];
 
             for(var3 = 0; var3 < -2113237229 * this.field_693; ++var3) {
-               this.field_694[var3] = var1.method_135();
-               this.field_695[var3] = var1.method_135();
+               this.field_694[var3] = var1.readInt();
+               this.field_695[var3] = var1.readInt();
             }
          }
       }
@@ -263,7 +263,7 @@ public class class_79 extends class_59 {
       } else if(3 == var2) {
          this.field_689 = var1.method_139(-391631059);
       } else if(var2 == 4) {
-         this.field_692 = var1.method_135() * -1084945299;
+         this.field_692 = var1.readInt() * -1084945299;
       } else {
          int var3;
          if(var2 == 5) {
@@ -272,7 +272,7 @@ public class class_79 extends class_59 {
             this.field_687 = new String[this.field_693 * -2113237229];
 
             for(var3 = 0; var3 < -2113237229 * this.field_693; ++var3) {
-               this.field_694[var3] = var1.method_135();
+               this.field_694[var3] = var1.readInt();
                this.field_687[var3] = var1.method_139(-391631059);
             }
          } else if(var2 == 6) {
@@ -281,8 +281,8 @@ public class class_79 extends class_59 {
             this.field_695 = new int[this.field_693 * -2113237229];
 
             for(var3 = 0; var3 < -2113237229 * this.field_693; ++var3) {
-               this.field_694[var3] = var1.method_135();
-               this.field_695[var3] = var1.method_135();
+               this.field_694[var3] = var1.readInt();
+               this.field_695[var3] = var1.readInt();
             }
          }
       }
@@ -298,7 +298,7 @@ public class class_79 extends class_59 {
       } else if(3 == var2) {
          this.field_689 = var1.method_139(-391631059);
       } else if(var2 == 4) {
-         this.field_692 = var1.method_135() * 1794243031;
+         this.field_692 = var1.readInt() * 1794243031;
       } else {
          int var3;
          if(var2 == 5) {
@@ -307,7 +307,7 @@ public class class_79 extends class_59 {
             this.field_687 = new String[this.field_693 * 223195537];
 
             for(var3 = 0; var3 < 1108020597 * this.field_693; ++var3) {
-               this.field_694[var3] = var1.method_135();
+               this.field_694[var3] = var1.readInt();
                this.field_687[var3] = var1.method_139(-391631059);
             }
          } else if(var2 == 6) {
@@ -316,8 +316,8 @@ public class class_79 extends class_59 {
             this.field_695 = new int[this.field_693 * 982270869];
 
             for(var3 = 0; var3 < -1343904899 * this.field_693; ++var3) {
-               this.field_694[var3] = var1.method_135();
-               this.field_695[var3] = var1.method_135();
+               this.field_694[var3] = var1.readInt();
+               this.field_695[var3] = var1.readInt();
             }
          }
       }

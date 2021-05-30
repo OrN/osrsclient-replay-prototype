@@ -9,16 +9,6 @@ public final class class_94 extends class_91 {
    // $FF: renamed from: ro be
    static class_148 field_1025;
 
-
-   // $FF: renamed from: <init> () void
-   class_94() {
-      super();
-      try {
-      } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1);
-      }
-   }
-
    // $FF: renamed from: n (byte) gr
    protected final class_92 method_1609(byte var1) {
       try {

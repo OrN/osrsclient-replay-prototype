@@ -1330,7 +1330,7 @@ public class class_154 implements Runnable {
                byte[] var1 = class_192.field_2298.method_3961();
                Buffer var10000 = new Buffer(var1);
                Buffer var2 = var10000;
-               var2.method_135();
+               var2.readInt();
                class_149.field_1881 = var2.readShort() * 274545041;
                class_166.field_2083 = new class_149[class_149.field_1881 * 1267509105];
 
@@ -1339,7 +1339,7 @@ public class class_154 implements Runnable {
                   class_149 var10002 = new class_149();
                   class_149 var4 = var7[var3] = var10002;
                   var4.field_1894 = var2.readShort() * -1640224087;
-                  var4.field_1890 = var2.method_135() * 1964795281;
+                  var4.field_1890 = var2.readInt() * 1964795281;
                   var4.field_1885 = var2.method_139(-391631059);
                   var4.field_1889 = var2.method_139(-391631059);
                   var4.field_1880 = var2.readUnsignedByte() * -606233165;

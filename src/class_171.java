@@ -1295,8 +1295,8 @@ public class class_171 {
                   this.field_2129 = null;
                }
 
-               this.field_2133 = var1.method_135() * -1106268981;
-               this.field_2153 = var1.method_135() * -720089017;
+               this.field_2133 = var1.readInt() * -1106268981;
+               this.field_2153 = var1.readInt() * -720089017;
                if(var3 <= 3) {
                   if(var2 == 1359138405) {
                      throw new IllegalStateException();
@@ -1319,7 +1319,7 @@ public class class_171 {
                      throw new IllegalStateException();
                   }
 
-                  var1.method_135();
+                  var1.readInt();
                }
 
                this.field_2136 = var1.readUnsignedByte() == 1;
@@ -1450,7 +1450,7 @@ public class class_171 {
                            throw new IllegalStateException();
                         }
 
-                        this.field_2145[var5] = var1.method_135();
+                        this.field_2145[var5] = var1.readInt();
                      }
 
                      if(var3 >= 5) {
@@ -1583,7 +1583,7 @@ public class class_171 {
                            throw new IllegalStateException();
                         }
 
-                        int var6 = var1.method_135();
+                        int var6 = var1.readInt();
                         int var7 = var6 & 1073741823;
                         int var8 = var6 >>> 30;
                         class_369 var15;
@@ -1592,7 +1592,7 @@ public class class_171 {
                               throw new IllegalStateException();
                            }
 
-                           int var9 = var1.method_135();
+                           int var9 = var1.readInt();
                            var15 = this.field_2154;
                            class_32 var16 = new class_32(var9);
                            var15.method_6588(var16, (long)var7);
@@ -2026,8 +2026,8 @@ public class class_171 {
             this.field_2129 = null;
          }
 
-         this.field_2133 = var1.method_135() * -1106268981;
-         this.field_2153 = var1.method_135() * -720089017;
+         this.field_2133 = var1.readInt() * -1106268981;
+         this.field_2153 = var1.readInt() * -720089017;
          if(var2 <= 3 && -2010490505 * this.field_2153 != 0) {
             this.field_2153 += 1838474080;
          }
@@ -2036,7 +2036,7 @@ public class class_171 {
          this.field_2150 = var1.readUnsignedByte() * 306971047;
          this.field_2134 = var1.method_139(-391631059);
          if(var2 >= 4) {
-            var1.method_135();
+            var1.readInt();
          }
 
          this.field_2136 = var1.readUnsignedByte() == 1;
@@ -2081,7 +2081,7 @@ public class class_171 {
 
                this.field_2149[var4] = var1.method_131();
                if(var2 >= 2) {
-                  this.field_2145[var4] = var1.method_135();
+                  this.field_2145[var4] = var1.readInt();
                }
 
                if(var2 >= 5) {
@@ -2127,12 +2127,12 @@ public class class_171 {
                this.field_2154 = var10001;
 
                while(var4-- > 0) {
-                  int var5 = var1.method_135();
+                  int var5 = var1.readInt();
                   int var6 = var5 & 1073741823;
                   int var7 = var5 >>> 30;
                   class_369 var12;
                   if(0 == var7) {
-                     int var8 = var1.method_135();
+                     int var8 = var1.readInt();
                      var12 = this.field_2154;
                      class_32 var13 = new class_32(var8);
                      var12.method_6588(var13, (long)var6);
@@ -2682,8 +2682,8 @@ public class class_171 {
             this.field_2129 = null;
          }
 
-         this.field_2133 = var1.method_135() * -1106268981;
-         this.field_2153 = var1.method_135() * -720089017;
+         this.field_2133 = var1.readInt() * -1106268981;
+         this.field_2153 = var1.readInt() * -720089017;
          if(var2 <= 3 && -2010490505 * this.field_2153 != 0) {
             this.field_2153 += 1838474080;
          }
@@ -2692,7 +2692,7 @@ public class class_171 {
          this.field_2150 = var1.readUnsignedByte() * 306971047;
          this.field_2134 = var1.method_139(-391631059);
          if(var2 >= 4) {
-            var1.method_135();
+            var1.readInt();
          }
 
          this.field_2136 = var1.readUnsignedByte() == 1;
@@ -2737,7 +2737,7 @@ public class class_171 {
 
                this.field_2149[var4] = var1.method_131();
                if(var2 >= 2) {
-                  this.field_2145[var4] = var1.method_135();
+                  this.field_2145[var4] = var1.readInt();
                }
 
                if(var2 >= 5) {
@@ -2783,12 +2783,12 @@ public class class_171 {
                this.field_2154 = var10001;
 
                while(var4-- > 0) {
-                  int var5 = var1.method_135();
+                  int var5 = var1.readInt();
                   int var6 = var5 & 1073741823;
                   int var7 = var5 >>> 30;
                   class_369 var12;
                   if(0 == var7) {
-                     int var8 = var1.method_135();
+                     int var8 = var1.readInt();
                      var12 = this.field_2154;
                      class_32 var13 = new class_32(var8);
                      var12.method_6588(var13, (long)var6);
@@ -2855,8 +2855,8 @@ public class class_171 {
             this.field_2129 = null;
          }
 
-         this.field_2133 = var1.method_135() * 575094551;
-         this.field_2153 = var1.method_135() * -759132496;
+         this.field_2133 = var1.readInt() * 575094551;
+         this.field_2153 = var1.readInt() * -759132496;
          if(var2 <= 3 && -2121158282 * this.field_2153 != 0) {
             this.field_2153 += -1758876806;
          }
@@ -2865,7 +2865,7 @@ public class class_171 {
          this.field_2150 = var1.readUnsignedByte() * 1285697513;
          this.field_2134 = var1.method_139(-391631059);
          if(var2 >= 4) {
-            var1.method_135();
+            var1.readInt();
          }
 
          this.field_2136 = var1.readUnsignedByte() == 1;
@@ -2910,7 +2910,7 @@ public class class_171 {
 
                this.field_2149[var4] = var1.method_131();
                if(var2 >= 2) {
-                  this.field_2145[var4] = var1.method_135();
+                  this.field_2145[var4] = var1.readInt();
                }
 
                if(var2 >= 5) {
@@ -2956,12 +2956,12 @@ public class class_171 {
                this.field_2154 = var10001;
 
                while(var4-- > 0) {
-                  int var5 = var1.method_135();
+                  int var5 = var1.readInt();
                   int var6 = var5 & 1073741823;
                   int var7 = var5 >>> 30;
                   class_369 var12;
                   if(0 == var7) {
-                     int var8 = var1.method_135();
+                     int var8 = var1.readInt();
                      var12 = this.field_2154;
                      class_32 var13 = new class_32(var8);
                      var12.method_6588(var13, (long)var6);

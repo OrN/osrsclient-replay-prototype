@@ -515,7 +515,7 @@ public class class_325 implements class_14 {
                class_34 var10 = new class_34(var0.method_139(-391631059));
                var7 = var10;
             } else {
-               class_32 var11 = new class_32(var0.method_135());
+               class_32 var11 = new class_32(var0.readInt());
                var7 = var11;
             }
 

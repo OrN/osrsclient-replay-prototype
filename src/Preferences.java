@@ -107,8 +107,8 @@ public class Preferences {
                   int var3 = var1.readUnsignedByte();
 
                   for(int var4 = 0; var4 < var3; ++var4) {
-                     int var5 = var1.method_135();
-                     int var6 = var1.method_135();
+                     int var5 = var1.readInt();
+                     int var6 = var1.readInt();
                      this.field_2126.put(Integer.valueOf(var5), Integer.valueOf(var6));
                   }
                }

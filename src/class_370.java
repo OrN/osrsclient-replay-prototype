@@ -32,7 +32,7 @@ public class class_370 implements class_20 {
                      throw new IllegalStateException();
                   }
 
-                  class_231.field_2591[var6][var7] = var1.method_135();
+                  class_231.field_2591[var6][var7] = var1.readInt();
                }
             }
 
@@ -187,7 +187,7 @@ public class class_370 implements class_20 {
                      throw new IllegalStateException();
                   }
 
-                  class_231.field_2591[var7][var8] = var1.method_135();
+                  class_231.field_2591[var7][var8] = var1.readInt();
                }
             }
 

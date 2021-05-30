@@ -47,9 +47,9 @@ public class class_230 {
          this.field_2581 = 1914980669 * var2;
          this.field_2587 = var1.method_139(-391631059);
          this.field_2577 = var1.method_139(-391631059);
-         class_280 var10001 = new class_280(var1.method_135());
+         class_280 var10001 = new class_280(var1.readInt());
          this.field_2580 = var10001;
-         this.field_2578 = var1.method_135() * 476314275;
+         this.field_2578 = var1.readInt() * 476314275;
          var1.readUnsignedByte();
          boolean var7;
          if(var1.readUnsignedByte() == 1) {

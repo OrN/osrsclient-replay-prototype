@@ -215,8 +215,8 @@ public class class_285 {
       int var3;
       int var5;
       for(var3 = 0; var3 < var2; this.field_3274.offset += var5 * -1025691571) {
-         int var4 = this.field_3274.method_135();
-         var5 = this.field_3274.method_135();
+         int var4 = this.field_3274.readInt();
+         var5 = this.field_3274.readInt();
          if(var4 == 1297379947) {
             this.field_3267[var3] = this.field_3274.offset * -442398587;
             ++var3;

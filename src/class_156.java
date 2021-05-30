@@ -29,8 +29,8 @@ public class class_156 {
     // $FF: renamed from: v (nd) void
    final void method_3264(Buffer var1) {
       this.field_1946 = var1.readUnsignedByte();
-      this.field_1944 = var1.method_135();
-      this.field_1949 = var1.method_135();
+      this.field_1944 = var1.readInt();
+      this.field_1949 = var1.readInt();
       this.method_3277(var1);
    }
 

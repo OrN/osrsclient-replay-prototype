@@ -474,7 +474,7 @@ public class class_37 extends class_27 {
                if(var10 == 1) {
                   this.field_97[var9] = var1.method_269(-1542485131);
                   this.field_171[var9] = var1.method_269(-1542485131);
-                  this.field_206[var9] = var1.method_135();
+                  this.field_206[var9] = var1.readInt();
                } else {
                   this.field_206[var9] = -1;
                }
@@ -569,7 +569,7 @@ public class class_37 extends class_27 {
                }
             }
 
-            this.field_245 = var1.method_135() * 1950267181;
+            this.field_245 = var1.readInt() * 1950267181;
          }
 
          label442: {
@@ -583,14 +583,14 @@ public class class_37 extends class_27 {
                }
             }
 
-            this.field_127 = var1.method_135() * -318428731;
-            this.field_128 = var1.method_135() * -2056988493;
-            this.field_230 = var1.method_135() * 1660208245;
+            this.field_127 = var1.readInt() * -318428731;
+            this.field_128 = var1.readInt() * -2056988493;
+            this.field_230 = var1.readInt() * 1660208245;
          }
 
          if(1659206769 * this.field_103 == 5) {
-            this.field_179 = var1.method_135() * -879658487;
-            this.field_236 = var1.method_135() * 1725494073;
+            this.field_179 = var1.readInt() * -879658487;
+            this.field_236 = var1.readInt() * 1725494073;
          }
 
          if(6 == 1659206769 * this.field_103) {
@@ -661,7 +661,7 @@ public class class_37 extends class_27 {
             }
 
             this.field_167 = var10001;
-            this.field_245 = var1.method_135() * 1950267181;
+            this.field_245 = var1.readInt() * 1950267181;
             this.field_124 = var1.method_269(-1542485131) * 4800265;
             this.field_169 = var1.method_269(-1542485131) * 969967081;
             var5 = var1.readUnsignedByte();
@@ -881,7 +881,7 @@ public class class_37 extends class_27 {
                throw new IllegalStateException();
             }
 
-            this.field_179 = var1.method_135() * -879658487;
+            this.field_179 = var1.readInt() * -879658487;
             this.field_138 = var1.readShort() * 1628098669;
             if(var1.readUnsignedByte() == 1) {
                if(var2 == 1691994495) {
@@ -896,7 +896,7 @@ public class class_37 extends class_27 {
             this.field_139 = var10001;
             this.field_132 = var1.readUnsignedByte() * -1652964871;
             this.field_140 = var1.readUnsignedByte() * -1255822637;
-            this.field_141 = var1.method_135() * -1005772953;
+            this.field_141 = var1.readInt() * -1005772953;
             if(var1.readUnsignedByte() == 1) {
                if(var2 == 1691994495) {
                   return;
@@ -1009,7 +1009,7 @@ public class class_37 extends class_27 {
             }
 
             this.field_167 = var10001;
-            this.field_245 = var1.method_135() * 1950267181;
+            this.field_245 = var1.readInt() * 1950267181;
          }
 
          if(3 == this.field_103 * 1659206769) {
@@ -1017,7 +1017,7 @@ public class class_37 extends class_27 {
                throw new IllegalStateException();
             }
 
-            this.field_245 = var1.method_135() * 1950267181;
+            this.field_245 = var1.readInt() * 1950267181;
             if(var1.readUnsignedByte() == 1) {
                if(var2 == 1691994495) {
                   throw new IllegalStateException();
@@ -1038,7 +1038,7 @@ public class class_37 extends class_27 {
             }
 
             this.field_162 = var1.readUnsignedByte() * -1787750353;
-            this.field_245 = var1.method_135() * 1950267181;
+            this.field_245 = var1.readInt() * 1950267181;
             this.field_135 = var1.readUnsignedByte() == 1;
          }
 
@@ -1121,7 +1121,7 @@ public class class_37 extends class_27 {
 
                int var6 = var1.readUnsignedByte();
                if(0 == var6) {
-                  var4[var5] = new Integer(var1.method_135());
+                  var4[var5] = new Integer(var1.readInt());
                } else if(var6 == 1) {
                   if(var2 == -1697794041) {
                      throw new IllegalStateException();
@@ -1705,7 +1705,7 @@ public class class_37 extends class_27 {
                   throw new IllegalStateException();
                }
 
-               var4[var5] = var1.method_135();
+               var4[var5] = var1.readInt();
             }
 
             return var4;

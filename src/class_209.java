@@ -38,7 +38,7 @@ public class class_209 {
             class_34 var7 = new class_34(var0.method_139(-391631059));
             var6 = var7;
          } else {
-            class_32 var8 = new class_32(var0.method_135());
+            class_32 var8 = new class_32(var0.readInt());
             var6 = var8;
          }
 
@@ -66,7 +66,7 @@ public class class_209 {
             class_34 var7 = new class_34(var0.method_139(-391631059));
             var6 = var7;
          } else {
-            class_32 var8 = new class_32(var0.method_135());
+            class_32 var8 = new class_32(var0.readInt());
             var6 = var8;
          }
 

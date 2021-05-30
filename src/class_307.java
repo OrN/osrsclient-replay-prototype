@@ -61,7 +61,7 @@ public class class_307 extends class_306 {
 
          int var8 = 0;
          if(var7 >= 6) {
-            var8 = var6.method_135();
+            var8 = var6.readInt();
          }
 
          if(this.field_3732 * -2140198139 != var8) {
@@ -855,7 +855,7 @@ public class class_307 extends class_306 {
                         throw new IllegalStateException();
                      }
 
-                     var9 = var7.method_135();
+                     var9 = var7.readInt();
                   }
 
                   if(this.field_3732 * -2140198139 != var9) {
@@ -1157,7 +1157,7 @@ public class class_307 extends class_306 {
 
          int var8 = 0;
          if(var7 >= 6) {
-            var8 = var6.method_135();
+            var8 = var6.readInt();
          }
 
          if(this.field_3732 * -2140198139 != var8) {

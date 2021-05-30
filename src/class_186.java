@@ -161,7 +161,7 @@ public class class_186 extends class_181 {
          Buffer var10000 = new Buffer(var0);
          Buffer var2 = var10000;
          int var3 = var2.readUnsignedByte();
-         int var4 = var2.method_135();
+         int var4 = var2.readInt();
          if(var4 >= 0) {
             if(var1 <= 1225130098) {
                throw new IllegalStateException();
@@ -189,7 +189,7 @@ public class class_186 extends class_181 {
                      return var8;
                   }
                } else {
-                  int var5 = var2.method_135();
+                  int var5 = var2.readInt();
                   if(var5 >= 0) {
                      if(var1 <= 1225130098) {
                         throw new IllegalStateException();

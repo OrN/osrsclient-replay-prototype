@@ -81,10 +81,10 @@ public class class_312 {
       try {
          this.field_3755 = var1.method_131();
          this.field_3754 = var1.readShort() * 515671321;
-         this.field_3758 = var1.method_135() * 675729031;
-         this.field_3756 = var1.method_135() * 1613502191;
-         this.field_3753 = var1.method_135() * -1633742323;
-         this.field_3757 = var1.method_135() * 609299645;
+         this.field_3758 = var1.readInt() * 675729031;
+         this.field_3756 = var1.readInt() * 1613502191;
+         this.field_3753 = var1.readInt() * -1633742323;
+         this.field_3757 = var1.readInt() * 609299645;
          if(var2) {
             int var4 = 0;
             boolean var5 = false;
@@ -116,7 +116,7 @@ public class class_312 {
                      throw new IllegalStateException("");
                   }
 
-                  var4 = var1.method_135();
+                  var4 = var1.readInt();
                   var5 = true;
                }
             }

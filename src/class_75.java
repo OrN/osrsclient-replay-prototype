@@ -197,7 +197,7 @@ public class class_75 extends class_59 {
                      this.field_612[var5] = var1.method_269(-1542485131);
                   }
 
-                  var1.method_135();
+                  var1.readInt();
                   var5 = var1.readUnsignedByte();
                   this.field_619 = new int[var5];
 
@@ -207,7 +207,7 @@ public class class_75 extends class_59 {
                         throw new IllegalStateException();
                      }
 
-                     this.field_619[var6] = var1.method_135();
+                     this.field_619[var6] = var1.readInt();
                   }
 
                   this.field_620 = new byte[var4];
@@ -238,9 +238,9 @@ public class class_75 extends class_59 {
 
                   this.field_621 = var1.readShort() * 909096585;
                } else if(var2 == 21) {
-                  var1.method_135();
+                  var1.readInt();
                } else if(var2 == 22) {
-                  var1.method_135();
+                  var1.readInt();
                } else if(var2 == 23) {
                   var1.readUnsignedByte();
                   var1.readUnsignedByte();
@@ -530,13 +530,13 @@ public class class_75 extends class_59 {
                this.field_612[var4] = var1.method_269(-1542485131);
             }
 
-            var1.method_135();
+            var1.readInt();
             var4 = var1.readUnsignedByte();
             this.field_619 = new int[var4];
 
             int var5;
             for(var5 = 0; var5 < this.field_619.length; ++var5) {
-               this.field_619[var5] = var1.method_135();
+               this.field_619[var5] = var1.readInt();
             }
 
             this.field_620 = new byte[var3];
@@ -552,9 +552,9 @@ public class class_75 extends class_59 {
             } else if(var2 == 19) {
                this.field_621 = var1.readShort() * 909096585;
             } else if(var2 == 21) {
-               var1.method_135();
+               var1.readInt();
             } else if(var2 == 22) {
-               var1.method_135();
+               var1.readInt();
             } else if(var2 == 23) {
                var1.readUnsignedByte();
                var1.readUnsignedByte();

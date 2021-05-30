@@ -18,14 +18,14 @@ public class class_117 extends class_111 {
 
    // $FF: renamed from: y (nd) void
    void method_2233(Buffer var1) {
-      this.field_1300 = var1.method_135() * 797652083;
+      this.field_1300 = var1.readInt() * 797652083;
       this.field_1297 = var1.method_139(-391631059);
    }
 
    // $FF: renamed from: v (nd, int) void
    void method_2231(Buffer var1, int var2) {
       try {
-         this.field_1300 = var1.method_135() * 797652083;
+         this.field_1300 = var1.readInt() * 797652083;
          this.field_1297 = var1.method_139(-391631059);
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
@@ -43,7 +43,7 @@ public class class_117 extends class_111 {
 
    // $FF: renamed from: f (nd) void
    void method_2234(Buffer var1) {
-      this.field_1300 = var1.method_135() * 797652083;
+      this.field_1300 = var1.readInt() * 797652083;
       this.field_1297 = var1.method_139(-391631059);
    }
 

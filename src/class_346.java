@@ -35,7 +35,7 @@ public class class_346 extends class_343 {
             if(var6 > 0) {
                var1.method_139(-391631059);
                var1.readUnsignedByte();
-               var1.method_135();
+               var1.readInt();
             }
 
             var1.method_139(-391631059);
@@ -199,7 +199,7 @@ public class class_346 extends class_343 {
 
                var1.method_139(-391631059);
                var1.readUnsignedByte();
-               var1.method_135();
+               var1.readInt();
             }
 
             var1.method_139(-391631059);
@@ -692,7 +692,7 @@ public class class_346 extends class_343 {
             if(var6 > 0) {
                var1.method_139(-391631059);
                var1.readUnsignedByte();
-               var1.method_135();
+               var1.readInt();
             }
 
             var1.method_139(-391631059);
@@ -780,7 +780,7 @@ public class class_346 extends class_343 {
             if(var6 > 0) {
                var1.method_139(-391631059);
                var1.readUnsignedByte();
-               var1.method_135();
+               var1.readInt();
             }
 
             var1.method_139(-391631059);
