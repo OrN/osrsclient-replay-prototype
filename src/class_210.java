@@ -6,7 +6,7 @@ import java.util.Hashtable;
 public class class_210 {
 
    // $FF: renamed from: n java.io.File
-   public static File field_2423;
+   public static File fOldschoolCacheDir;
    // $FF: renamed from: f java.util.Hashtable
    static Hashtable field_2424;
    // $FF: renamed from: v boolean
@@ -42,7 +42,7 @@ public class class_210 {
          if(var1 != null) {
             return var1;
          } else {
-            File var2 = new File(field_2423, var0);
+            File var2 = new File(fOldschoolCacheDir, var0);
             RandomAccessFile var3 = null;
 
             try {
@@ -84,7 +84,7 @@ public class class_210 {
          if(var1 != null) {
             return var1;
          } else {
-            File var2 = new File(field_2423, var0);
+            File var2 = new File(fOldschoolCacheDir, var0);
             RandomAccessFile var3 = null;
 
             try {
@@ -170,7 +170,7 @@ public class class_210 {
          if(var1 != null) {
             return var1;
          } else {
-            File var2 = new File(field_2423, var0);
+            File var2 = new File(fOldschoolCacheDir, var0);
             RandomAccessFile var3 = null;
 
             try {
@@ -276,7 +276,7 @@ public class class_210 {
          if(var1 != null) {
             return var1;
          } else {
-            File var2 = new File(field_2423, var0);
+            File var2 = new File(fOldschoolCacheDir, var0);
             RandomAccessFile var3 = null;
 
             try {

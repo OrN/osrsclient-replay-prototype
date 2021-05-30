@@ -23,7 +23,7 @@ public class class_199 {
 
    // $FF: renamed from: u (java.lang.String, java.lang.String, boolean) nm
    public static class_383 method_4021(String var0, String var1, boolean var2) {
-      File var3 = new File(class_53.field_397, "preferences" + var0 + ".dat");
+      File var3 = new File(class_53.fOldschoolCacheDir, "preferences" + var0 + ".dat");
       class_383 var10000;
       if(var3.exists()) {
          try {
@@ -565,7 +565,7 @@ public class class_199 {
 
    // $FF: renamed from: l (java.lang.String, java.lang.String, boolean) nm
    public static class_383 method_4029(String var0, String var1, boolean var2) {
-      File var3 = new File(class_53.field_397, "preferences" + var0 + ".dat");
+      File var3 = new File(class_53.fOldschoolCacheDir, "preferences" + var0 + ".dat");
       class_383 var10000;
       if(var3.exists()) {
          try {

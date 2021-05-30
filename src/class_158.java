@@ -28,7 +28,7 @@ public class class_158 {
             if(var2 != null) {
                return var2;
             } else {
-               File var3 = new File(class_210.field_2423, var0);
+               File var3 = new File(class_210.fOldschoolCacheDir, var0);
                RandomAccessFile var4 = null;
 
                try {

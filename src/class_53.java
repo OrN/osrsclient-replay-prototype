@@ -16,7 +16,7 @@ public class class_53 extends class_51 {
    // $FF: renamed from: ab int
    static final int field_396 = 2;
    // $FF: renamed from: p java.io.File
-   public static File field_397;
+   public static File fOldschoolCacheDir;
    // $FF: renamed from: j int
    static final int field_398 = 6;
    // $FF: renamed from: b int

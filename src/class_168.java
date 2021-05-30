@@ -65,7 +65,7 @@ public class class_168 {
    // $FF: renamed from: f (java.lang.String, java.lang.String, boolean, int) nm
    public static class_383 method_3613(String var0, String var1, boolean var2, int var3) {
       try {
-         File var4 = new File(class_53.field_397, "preferences" + var0 + ".dat");
+         File var4 = new File(class_53.fOldschoolCacheDir, "preferences" + var0 + ".dat");
          class_383 var10000;
          if(var4.exists()) {
             if(var3 <= 1676173537) {

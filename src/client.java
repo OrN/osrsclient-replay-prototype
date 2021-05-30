@@ -1390,25 +1390,22 @@ public final class client extends GameApplet implements class_16 {
 
                label135:
                while(var17 < 4) {
-                  class_53.field_397 = class_26.method_98("oldschool", var14, var17, 1145652403);
-                  if(!class_53.field_397.exists()) {
-                     class_53.field_397.mkdirs();
+                  class_53.fOldschoolCacheDir = class_26.method_98("oldschool", var14, var17, 1145652403);
+                  if(!class_53.fOldschoolCacheDir.exists()) {
+                     class_53.fOldschoolCacheDir.mkdirs();
                   }
 
-                  File[] var18 = class_53.field_397.listFiles();
-                  if(null == var18) {
-                     break;
-                  }
-
-                  File[] var20 = var18;
+                  File[] fileList = class_53.fOldschoolCacheDir.listFiles();
+                  if(null == fileList)
+                      break;
                   int var21 = 0;
 
                   while(true) {
-                     if(var21 >= var20.length) {
+                     if(var21 >= fileList.length) {
                         break label135;
                      }
 
-                     File var22 = var20[var21];
+                     File var22 = fileList[var21];
                      if(!class_246.method_4711(var22, false, -920183026)) {
                         ++var17;
                         break;
@@ -1418,9 +1415,9 @@ public final class client extends GameApplet implements class_16 {
                   }
                }
 
-               File var19 = class_53.field_397;
-               class_210.field_2423 = var19;
-               if(!class_210.field_2423.exists()) {
+               File var19 = class_53.fOldschoolCacheDir;
+               class_210.fOldschoolCacheDir = class_53.fOldschoolCacheDir;
+               if(!class_210.fOldschoolCacheDir.exists()) {
                   throw new RuntimeException("");
                }
 
@@ -8519,12 +8516,12 @@ public final class client extends GameApplet implements class_16 {
 
             label133:
             while(var16 < 4) {
-               class_53.field_397 = class_26.method_98("oldschool", var13, var16, 1145652403);
-               if(!class_53.field_397.exists()) {
-                  class_53.field_397.mkdirs();
+               class_53.fOldschoolCacheDir = class_26.method_98("oldschool", var13, var16, 1145652403);
+               if(!class_53.fOldschoolCacheDir.exists()) {
+                  class_53.fOldschoolCacheDir.mkdirs();
                }
 
-               File[] var17 = class_53.field_397.listFiles();
+               File[] var17 = class_53.fOldschoolCacheDir.listFiles();
                if(null == var17) {
                   break;
                }
@@ -8547,9 +8544,9 @@ public final class client extends GameApplet implements class_16 {
                }
             }
 
-            File var18 = class_53.field_397;
-            class_210.field_2423 = var18;
-            if(!class_210.field_2423.exists()) {
+            File var18 = class_53.fOldschoolCacheDir;
+            class_210.fOldschoolCacheDir = var18;
+            if(!class_210.fOldschoolCacheDir.exists()) {
                throw new RuntimeException("");
             }
 

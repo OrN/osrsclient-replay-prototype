@@ -560,16 +560,16 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: k (int) boolean
    protected final boolean method_2307(int var1) {
       try {
-         String var2 = this.getDocumentBase().getHost().toLowerCase();
-         if(!var2.equals("jagex.com")) {
+         String hostname = this.getDocumentBase().getHost().toLowerCase();
+         if(!hostname.equals("jagex.com")) {
             if(var1 >= -774112648) {
                throw new IllegalStateException();
             }
 
-            if(!var2.endsWith(".jagex.com")) {
-               if(!var2.equals("runescape.com")) {
-                  if(!var2.endsWith(".runescape.com")) {
-                     if(var2.endsWith("127.0.0.1")) {
+            if(!hostname.endsWith(".jagex.com")) {
+               if(!hostname.equals("runescape.com")) {
+                  if(!hostname.endsWith(".runescape.com")) {
+                     if(hostname.endsWith("127.0.0.1")) {
                         if(var1 >= -774112648) {
                            throw new IllegalStateException();
                         }
@@ -577,12 +577,12 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                         return true;
                      }
 
-                     while(var2.length() > 0) {
+                     while(hostname.length() > 0) {
                         if(var1 >= -774112648) {
                            throw new IllegalStateException();
                         }
 
-                        if(var2.charAt(var2.length() - 1) < 48) {
+                        if(hostname.charAt(hostname.length() - 1) < 48) {
                            break;
                         }
 
@@ -590,7 +590,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                            throw new IllegalStateException();
                         }
 
-                        if(var2.charAt(var2.length() - 1) > 57) {
+                        if(hostname.charAt(hostname.length() - 1) > 57) {
                            break;
                         }
 
@@ -598,10 +598,10 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                            throw new IllegalStateException();
                         }
 
-                        var2 = var2.substring(0, var2.length() - 1);
+                        hostname = hostname.substring(0, hostname.length() - 1);
                      }
 
-                     if(var2.endsWith("192.168.1.")) {
+                     if(hostname.endsWith("192.168.1.")) {
                         if(var1 >= -774112648) {
                            throw new IllegalStateException();
                         }

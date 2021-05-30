@@ -2,15 +2,8 @@
 // $FF: renamed from: av
 public class class_141 implements class_3 {
 
-   // $FF: renamed from: aa int
-   static final int field_1813 = 51;
-   // $FF: renamed from: o int
-   protected static final int field_1814 = 32;
-   // $FF: renamed from: g int
-   public static final int field_1815 = 90;
 
-
-   // $FF: renamed from: s (int, int, int, boolean, int, int) long
+    // $FF: renamed from: s (int, int, int, boolean, int, int) long
    public static long method_3047(int var0, int var1, int var2, boolean var3, int var4, int var5) {
       try {
          long var6 = (long)((var0 & 127) << 0 | (var1 & 127) << 7 | (var2 & 3) << 14) | ((long)var4 & 4294967295L) << 17;
