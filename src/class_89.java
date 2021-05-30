@@ -19,25 +19,6 @@ public class class_89 extends class_59 {
    public static short[][] field_898;
 
 
-   // $FF: renamed from: d (int) ee
-   public static class_89 method_1568(int var0) {
-      class_89 var1 = (class_89)field_893.method_5065((long)var0);
-      if(null != var1) {
-         return var1;
-      } else {
-         byte[] var2 = field_897.method_5381(14, var0);
-         class_89 var10000 = new class_89();
-         var1 = var10000;
-         if(var2 != null) {
-            class_28 var10001 = new class_28(var2);
-            var1.method_1569(var10001);
-         }
-
-         field_893.method_5064(var1, (long)var0);
-         return var1;
-      }
-   }
-
    // $FF: renamed from: f (nd, int) void
    public void method_1569(class_28 var1) {
       try {
@@ -54,25 +35,6 @@ public class class_89 extends class_59 {
       }
    }
 
-   // $FF: renamed from: s (int) ee
-   public static class_89 method_1570(int var0) {
-      class_89 var1 = (class_89)field_893.method_5065((long)var0);
-      if(null != var1) {
-         return var1;
-      } else {
-         byte[] var2 = field_897.method_5381(14, var0);
-         class_89 var10000 = new class_89();
-         var1 = var10000;
-         if(var2 != null) {
-            class_28 var10001 = new class_28(var2);
-            var1.method_1569(var10001);
-         }
-
-         field_893.method_5064(var1, (long)var0);
-         return var1;
-      }
-   }
-
    // $FF: renamed from: <clinit> () void
    static {
       class_272 var10000 = new class_272(64);
@@ -85,26 +47,6 @@ public class class_89 extends class_59 {
          var0 += var0;
       }
 
-   }
-
-   // $FF: renamed from: j (jv) void
-   public static void method_1572(class_306 var0) {
-      field_897 = var0;
-   }
-
-   // $FF: renamed from: c (nd, int) void
-   void method_1573(class_28 var1, int var2) {
-      if(1 == var2) {
-         this.field_894 = var1.method_132() * 1658468423;
-         this.field_896 = var1.method_130() * 138764379;
-         this.field_895 = var1.method_130() * -670060269;
-      }
-
-   }
-
-   // $FF: renamed from: b (jv) void
-   public static void method_1574(class_306 var0) {
-      field_897 = var0;
    }
 
    // $FF: renamed from: fh (int) void
@@ -129,23 +71,6 @@ public class class_89 extends class_59 {
 
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
-      }
-   }
-
-   // $FF: renamed from: r (jv) void
-   public static void method_1576(class_306 var0) {
-      field_897 = var0;
-   }
-
-   // $FF: renamed from: u (nd) void
-   public void method_1577(class_28 var1) {
-      while(true) {
-         int var2 = var1.method_130();
-         if(var2 == 0) {
-            return;
-         }
-
-         this.method_1580(var1, var2);
       }
    }
 
@@ -197,18 +122,6 @@ public class class_89 extends class_59 {
       }
    }
 
-   // $FF: renamed from: o (nd) void
-   public void method_1579(class_28 var1) {
-      while(true) {
-         int var2 = var1.method_130();
-         if(var2 == 0) {
-            return;
-         }
-
-         this.method_1580(var1, var2);
-      }
-   }
-
    // $FF: renamed from: y (nd, int, int) void
    void method_1580(class_28 var1, int var2) {
       try {
@@ -223,61 +136,9 @@ public class class_89 extends class_59 {
       }
    }
 
-   // $FF: renamed from: e (nd, int) void
-   void method_1581(class_28 var1, int var2) {
-      if(1 == var2) {
-         this.field_894 = var1.method_132() * 236848204;
-         this.field_896 = var1.method_130() * 138764379;
-         this.field_895 = var1.method_130() * -670060269;
-      }
-
-   }
-
-   // $FF: renamed from: m () void
-   public static void method_1582() {
-      field_893.method_5074();
-   }
-
-   // $FF: renamed from: a () void
-   public static void method_1583() {
-      field_893.method_5074();
-   }
-
-   // $FF: renamed from: k () void
-   public static void method_1584() {
-      field_893.method_5074();
-   }
-
-   // $FF: renamed from: l (nd) void
-   public void method_1585(class_28 var1) {
-      while(true) {
-         int var2 = var1.method_130();
-         if(var2 == 0) {
-            return;
-         }
-
-         this.method_1580(var1, var2);
-      }
-   }
-
-   // $FF: renamed from: x () void
-   public static void method_1586() {
-      field_893.method_5074();
-   }
-
    // $FF: renamed from: <init> () void
    public class_89() {
       super();
-   }
-
-   // $FF: renamed from: g (nd, int) void
-   void method_1587(class_28 var1, int var2) {
-      if(1 == var2) {
-         this.field_894 = var1.method_132() * -1619307514;
-         this.field_896 = var1.method_130() * 623464285;
-         this.field_895 = var1.method_130() * -2118186650;
-      }
-
    }
 
    // $FF: renamed from: e (int) void

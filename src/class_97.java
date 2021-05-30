@@ -22,8 +22,6 @@ public final class class_97 extends class_91 {
    int field_1072;
    // $FF: renamed from: n int
    int field_1073;
-   // $FF: renamed from: al byte
-   static final byte field_1074 = 0;
 
 
    // $FF: renamed from: v (int, int) void
@@ -441,23 +439,6 @@ public final class class_97 extends class_91 {
       }
    }
 
-   // $FF: renamed from: f (int) void
-   final void method_1785(int var1) {
-      if(!this.field_1065) {
-         this.field_1072 += var1 * -1678894855;
-
-         while(this.field_1072 * -1179440823 > this.field_1070.field_570[this.field_1071 * 1147002155]) {
-            this.field_1072 -= -1678894855 * this.field_1070.field_570[1147002155 * this.field_1071];
-            this.field_1071 += 621541763;
-            if(this.field_1071 * 1147002155 >= this.field_1070.field_568.length) {
-               this.field_1065 = true;
-               break;
-            }
-         }
-
-      }
-   }
-
    // $FF: renamed from: j () gr
    protected final class_92 method_1608() {
       class_78 var1 = class_84.method_1417(-177863619 * this.field_1064, (short)-6228);
@@ -482,23 +463,6 @@ public final class class_97 extends class_91 {
       }
 
       return var2 == null?null:var2;
-   }
-
-   // $FF: renamed from: y (int) void
-   final void method_1786(int var1) {
-      if(!this.field_1065) {
-         this.field_1072 += var1 * -1678894855;
-
-         while(this.field_1072 * -1179440823 > this.field_1070.field_570[this.field_1071 * 1147002155]) {
-            this.field_1072 -= -1678894855 * this.field_1070.field_570[1147002155 * this.field_1071];
-            this.field_1071 += 621541763;
-            if(this.field_1071 * 1147002155 >= this.field_1070.field_568.length) {
-               this.field_1065 = true;
-               break;
-            }
-         }
-
-      }
    }
 
    // $FF: renamed from: <init> (int, int, int, int, int, int, int) void

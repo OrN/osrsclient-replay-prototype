@@ -54,29 +54,6 @@ public final class class_95 extends class_91 {
    double field_1050;
 
 
-   // $FF: renamed from: y (int, int, int, int) void
-   final void method_1772(int var1, int var2, int var3, int var4) {
-      double var5;
-      if(!this.field_1037) {
-         var5 = (double)(var1 - this.field_1028 * -1347198816);
-         double var7 = (double)(var2 - 1770224161 * this.field_1030);
-         double var9 = Math.sqrt(var7 * var7 + var5 * var5);
-         this.field_1038 = (double)(this.field_1035 * -692803357) * var5 / var9 + (double)(1544300146 * this.field_1028);
-         this.field_1039 = (double)(-692803357 * this.field_1035) * var7 / var9 + (double)(-1712598405 * this.field_1030);
-         this.field_1040 = (double)(this.field_1033 * -273914244);
-      }
-
-      var5 = (double)(this.field_1044 * -1817230173 + 1 - var4);
-      this.field_1041 = ((double)var1 - this.field_1038) / var5;
-      this.field_1042 = ((double)var2 - this.field_1039) / var5;
-      this.field_1048 = Math.sqrt(this.field_1041 * this.field_1041 + this.field_1042 * this.field_1042);
-      if(!this.field_1037) {
-         this.field_1050 = -this.field_1048 * Math.tan((double)(this.field_1034 * 1395984447) * 0.02454369D);
-      }
-
-      this.field_1045 = 2.0D * ((double)var3 - this.field_1040 - var5 * this.field_1050) / (var5 * var5);
-   }
-
    // $FF: renamed from: f (int, int) void
    final void method_1773(int var1, int var2) {
       try {
@@ -251,104 +228,6 @@ public final class class_95 extends class_91 {
          var2.method_1631(323071652 * this.field_1047);
          return var2;
       }
-   }
-
-   // $FF: renamed from: b (int, int, int, int) void
-   final void method_1776(int var1, int var2, int var3, int var4) {
-      double var5;
-      if(!this.field_1037) {
-         var5 = (double)(var1 - this.field_1028 * 1975154263);
-         double var7 = (double)(var2 - 1770224161 * this.field_1030);
-         double var9 = Math.sqrt(var7 * var7 + var5 * var5);
-         this.field_1038 = (double)(this.field_1035 * -692803357) * var5 / var9 + (double)(1975154263 * this.field_1028);
-         this.field_1039 = (double)(-692803357 * this.field_1035) * var7 / var9 + (double)(1770224161 * this.field_1030);
-         this.field_1040 = (double)(this.field_1033 * 1880458377);
-      }
-
-      var5 = (double)(this.field_1044 * -1817230173 + 1 - var4);
-      this.field_1041 = ((double)var1 - this.field_1038) / var5;
-      this.field_1042 = ((double)var2 - this.field_1039) / var5;
-      this.field_1048 = Math.sqrt(this.field_1041 * this.field_1041 + this.field_1042 * this.field_1042);
-      if(!this.field_1037) {
-         this.field_1050 = -this.field_1048 * Math.tan((double)(this.field_1034 * 1395984447) * 0.02454369D);
-      }
-
-      this.field_1045 = 2.0D * ((double)var3 - this.field_1040 - var5 * this.field_1050) / (var5 * var5);
-   }
-
-   // $FF: renamed from: d (int, int, int, int) void
-   final void method_1777(int var1, int var2, int var3, int var4) {
-      double var5;
-      if(!this.field_1037) {
-         var5 = (double)(var1 - this.field_1028 * 1975154263);
-         double var7 = (double)(var2 - 1770224161 * this.field_1030);
-         double var9 = Math.sqrt(var7 * var7 + var5 * var5);
-         this.field_1038 = (double)(this.field_1035 * -692803357) * var5 / var9 + (double)(1975154263 * this.field_1028);
-         this.field_1039 = (double)(-692803357 * this.field_1035) * var7 / var9 + (double)(1770224161 * this.field_1030);
-         this.field_1040 = (double)(this.field_1033 * 1880458377);
-      }
-
-      var5 = (double)(this.field_1044 * -1817230173 + 1 - var4);
-      this.field_1041 = ((double)var1 - this.field_1038) / var5;
-      this.field_1042 = ((double)var2 - this.field_1039) / var5;
-      this.field_1048 = Math.sqrt(this.field_1041 * this.field_1041 + this.field_1042 * this.field_1042);
-      if(!this.field_1037) {
-         this.field_1050 = -this.field_1048 * Math.tan((double)(this.field_1034 * 1395984447) * 0.02454369D);
-      }
-
-      this.field_1045 = 2.0D * ((double)var3 - this.field_1040 - var5 * this.field_1050) / (var5 * var5);
-   }
-
-   // $FF: renamed from: s (int) void
-   final void method_1778(int var1) {
-      this.field_1037 = true;
-      this.field_1038 += this.field_1041 * (double)var1;
-      this.field_1039 += (double)var1 * this.field_1042;
-      this.field_1040 += (double)var1 * this.field_1050 + (double)var1 * 0.5D * this.field_1045 * (double)var1;
-      this.field_1050 += this.field_1045 * (double)var1;
-      this.field_1046 = ((int)(Math.atan2(this.field_1041, this.field_1042) * 325.949D) + 1024 & 2047) * 416065089;
-      this.field_1047 = ((int)(Math.atan2(this.field_1050, this.field_1048) * 325.949D) & 2047) * 218880961;
-      if(this.field_1029 != null) {
-         this.field_1049 += var1 * 1849312653;
-
-         while(1812825413 * this.field_1049 > this.field_1029.field_570[this.field_1043 * -774931897]) {
-            this.field_1049 -= 1849312653 * this.field_1029.field_570[this.field_1043 * -774931897];
-            this.field_1043 += 981208951;
-            if(-774931897 * this.field_1043 >= this.field_1029.field_568.length) {
-               this.field_1043 -= 1978056625 * this.field_1029.field_567;
-               if(this.field_1043 * -774931897 < 0 || -774931897 * this.field_1043 >= this.field_1029.field_568.length) {
-                  this.field_1043 = 0;
-               }
-            }
-         }
-      }
-
-   }
-
-   // $FF: renamed from: u (int) void
-   final void method_1779(int var1) {
-      this.field_1037 = true;
-      this.field_1038 += this.field_1041 * (double)var1;
-      this.field_1039 += (double)var1 * this.field_1042;
-      this.field_1040 += (double)var1 * this.field_1050 + (double)var1 * 0.5D * this.field_1045 * (double)var1;
-      this.field_1050 += this.field_1045 * (double)var1;
-      this.field_1046 = ((int)(Math.atan2(this.field_1041, this.field_1042) * 325.949D) + 1305286432 & 2047) * 416065089;
-      this.field_1047 = ((int)(Math.atan2(this.field_1050, this.field_1048) * 325.949D) & 2047) * 218880961;
-      if(this.field_1029 != null) {
-         this.field_1049 += var1 * 1849312653;
-
-         while(1812825413 * this.field_1049 > this.field_1029.field_570[this.field_1043 * -774931897]) {
-            this.field_1049 -= 1849312653 * this.field_1029.field_570[this.field_1043 * -774931897];
-            this.field_1043 += 981208951;
-            if(776363870 * this.field_1043 >= this.field_1029.field_568.length) {
-               this.field_1043 -= 973208124 * this.field_1029.field_567;
-               if(this.field_1043 * 1889149693 < 0 || -774931897 * this.field_1043 >= this.field_1029.field_568.length) {
-                  this.field_1043 = 0;
-               }
-            }
-         }
-      }
-
    }
 
    // $FF: renamed from: v (int, int) ev

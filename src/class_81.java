@@ -2,8 +2,6 @@
 // $FF: renamed from: ep
 public class class_81 extends class_59 {
 
-   // $FF: renamed from: s java.lang.String
-   static final String field_753 = "random.dat";
    // $FF: renamed from: v jv
    static class_306 field_754;
    // $FF: renamed from: f int
@@ -11,14 +9,6 @@ public class class_81 extends class_59 {
    // $FF: renamed from: n hz
    static class_272 field_756;
 
-
-   // $FF: renamed from: g (nd, int) void
-   void method_1339(class_28 var1, int var2) {
-      if(var2 == 2) {
-         this.field_755 = var1.method_132() * 996763343;
-      }
-
-   }
 
    // $FF: renamed from: f (nd, int) void
    void method_1340(class_28 var1) {
@@ -58,26 +48,6 @@ public class class_81 extends class_59 {
       field_756 = var10000;
    }
 
-   // $FF: renamed from: p (jv) void
-   public static void method_1343(class_306 var0) {
-      field_754 = var0;
-   }
-
-   // $FF: renamed from: j (jv) void
-   public static void method_1344(class_306 var0) {
-      field_754 = var0;
-   }
-
-   // $FF: renamed from: r (jv) void
-   public static void method_1345(class_306 var0) {
-      field_754 = var0;
-   }
-
-   // $FF: renamed from: b (jv) void
-   public static void method_1346(class_306 var0) {
-      field_754 = var0;
-   }
-
    // $FF: renamed from: v (jv, int, int) in
    static class_38 method_1347(class_306 var0, int var1, int var2) {
       try {
@@ -105,100 +75,6 @@ public class class_81 extends class_59 {
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1);
       }
-   }
-
-   // $FF: renamed from: u (nd) void
-   void method_1348(class_28 var1) {
-      while(true) {
-         int var2 = var1.method_130();
-         if(0 == var2) {
-            return;
-         }
-
-         this.method_1341(var1, var2, 1819344494);
-      }
-   }
-
-   // $FF: renamed from: d (int) ep
-   public static class_81 method_1349(int var0) {
-      class_81 var1 = (class_81)field_756.method_5065((long)var0);
-      if(null != var1) {
-         return var1;
-      } else {
-         byte[] var2 = field_754.method_5381(5, var0);
-         class_81 var10000 = new class_81();
-         var1 = var10000;
-         if(null != var2) {
-            class_28 var10001 = new class_28(var2);
-            var1.method_1340(var10001);
-         }
-
-         field_756.method_5064(var1, (long)var0);
-         return var1;
-      }
-   }
-
-   // $FF: renamed from: e (nd) void
-   void method_1350(class_28 var1) {
-      while(true) {
-         int var2 = var1.method_130();
-         if(0 == var2) {
-            return;
-         }
-
-         this.method_1341(var1, var2, 1048479994);
-      }
-   }
-
-   // $FF: renamed from: l (nd) void
-   void method_1351(class_28 var1) {
-      while(true) {
-         int var2 = var1.method_130();
-         if(0 == var2) {
-            return;
-         }
-
-         this.method_1341(var1, var2, -1448131678);
-      }
-   }
-
-   // $FF: renamed from: s (int) ep
-   public static class_81 method_1352(int var0) {
-      class_81 var1 = (class_81)field_756.method_5065((long)var0);
-      if(null != var1) {
-         return var1;
-      } else {
-         byte[] var2 = field_754.method_5381(5, var0);
-         class_81 var10000 = new class_81();
-         var1 = var10000;
-         if(null != var2) {
-            class_28 var10001 = new class_28(var2);
-            var1.method_1340(var10001);
-         }
-
-         field_756.method_5064(var1, (long)var0);
-         return var1;
-      }
-   }
-
-   // $FF: renamed from: o (nd) void
-   void method_1353(class_28 var1) {
-      while(true) {
-         int var2 = var1.method_130();
-         if(0 == var2) {
-            return;
-         }
-
-         this.method_1341(var1, var2, 533876215);
-      }
-   }
-
-   // $FF: renamed from: a (nd, int) void
-   void method_1354(class_28 var1, int var2) {
-      if(var2 == 2) {
-         this.field_755 = var1.method_132() * 996763343;
-      }
-
    }
 
    // $FF: renamed from: jo (io, int) boolean
@@ -259,18 +135,6 @@ public class class_81 extends class_59 {
          }
       } catch (RuntimeException var5) {
          throw class_223.method_4281(var5);
-      }
-   }
-
-   // $FF: renamed from: c (nd) void
-   void method_1356(class_28 var1) {
-      while(true) {
-         int var2 = var1.method_130();
-         if(0 == var2) {
-            return;
-         }
-
-         this.method_1341(var1, var2, 2010311368);
       }
    }
 

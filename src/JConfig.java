@@ -68,13 +68,6 @@ public class JConfig {
         return Integer.valueOf(version) <= VERSION && Integer.valueOf(subVersion) <= SUBVERSION;
     }
 
-    public String getString(String key) {
-        if (m_data.containsKey(key))
-            return m_data.get(key);
-        else
-            return null;
-    }
-
     public String getParameter(String key) {
         if (parameters.containsKey(key))
             return parameters.get(key);
@@ -90,9 +83,4 @@ public class JConfig {
         }
     }
 
-    public int getInteger(String key) {
-        String string = m_data.get(key);
-        if (string != null) return Integer.valueOf(string);
-        else return 0;
-    }
 }

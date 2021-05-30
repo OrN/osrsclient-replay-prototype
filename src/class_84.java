@@ -30,38 +30,10 @@ public class class_84 extends class_59 {
       }
    }
 
-   // $FF: renamed from: e (nd, int) void
-   void method_1411(int var2) {
-      if(2 == var2) {
-         this.field_785 = true;
-      }
-
-   }
-
-   // $FF: renamed from: b (jv) void
-   public static void method_1412(class_306 var0) {
-      field_783 = var0;
-   }
-
    // $FF: renamed from: <clinit> () void
    static {
       class_272 var10000 = new class_272(64);
       field_784 = var10000;
-   }
-
-   // $FF: renamed from: p (jv) void
-   public static void method_1414(class_306 var0) {
-      field_783 = var0;
-   }
-
-   // $FF: renamed from: j (jv) void
-   public static void method_1415(class_306 var0) {
-      field_783 = var0;
-   }
-
-   // $FF: renamed from: r (jv) void
-   public static void method_1416(class_306 var0) {
-      field_783 = var0;
    }
 
    // $FF: renamed from: n (int, short) es
@@ -96,49 +68,6 @@ public class class_84 extends class_59 {
       }
    }
 
-   // $FF: renamed from: d (jv) void
-   public static void method_1418(class_306 var0) {
-      field_783 = var0;
-   }
-
-   // $FF: renamed from: s (int) ej
-   public static class_84 method_1419(int var0) {
-      class_84 var1 = (class_84)field_784.method_5065((long)var0);
-      if(null != var1) {
-         return var1;
-      } else {
-         byte[] var2 = field_783.method_5381(19, var0);
-         class_84 var10000 = new class_84();
-         var1 = var10000;
-         if(var2 != null) {
-            class_28 var10001 = new class_28(var2);
-            var1.method_1410(var10001, (byte)-3);
-         }
-
-         field_784.method_5064(var1, (long)var0);
-         return var1;
-      }
-   }
-
-   // $FF: renamed from: u (int) ej
-   public static class_84 method_1420(int var0) {
-      class_84 var1 = (class_84)field_784.method_5065((long)var0);
-      if(null != var1) {
-         return var1;
-      } else {
-         byte[] var2 = field_783.method_5381(19, var0);
-         class_84 var10000 = new class_84();
-         var1 = var10000;
-         if(var2 != null) {
-            class_28 var10001 = new class_28(var2);
-            var1.method_1410(var10001, (byte)-98);
-         }
-
-         field_784.method_5064(var1, (long)var0);
-         return var1;
-      }
-   }
-
    // $FF: renamed from: y (nd, int, byte) void
    void method_1421(int var2, byte var3) {
       try {
@@ -155,49 +84,6 @@ public class class_84 extends class_59 {
       }
    }
 
-   // $FF: renamed from: o (nd) void
-   void method_1422(class_28 var1) {
-      while(true) {
-         int var2 = var1.method_130();
-         if(var2 == 0) {
-            return;
-         }
-
-         this.method_1421(var2, (byte)101);
-      }
-   }
-
-   // $FF: renamed from: c (nd) void
-   void method_1423(class_28 var1) {
-      while(true) {
-         int var2 = var1.method_130();
-         if(var2 == 0) {
-            return;
-         }
-
-         this.method_1421(var2, (byte)26);
-      }
-   }
-
-   // $FF: renamed from: l (int) ej
-   public static class_84 method_1424(int var0) {
-      class_84 var1 = (class_84)field_784.method_5065((long)var0);
-      if(null != var1) {
-         return var1;
-      } else {
-         byte[] var2 = field_783.method_5381(19, var0);
-         class_84 var10000 = new class_84();
-         var1 = var10000;
-         if(var2 != null) {
-            class_28 var10001 = new class_28(var2);
-            var1.method_1410(var10001, (byte)-127);
-         }
-
-         field_784.method_5064(var1, (long)var0);
-         return var1;
-      }
-   }
-
    // $FF: renamed from: <init> () void
    class_84() {
       super();
@@ -206,14 +92,6 @@ public class class_84 extends class_59 {
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1);
       }
-   }
-
-   // $FF: renamed from: a (nd, int) void
-   void method_1425(int var2) {
-      if(2 == var2) {
-         this.field_785 = true;
-      }
-
    }
 
    // $FF: renamed from: jc (io, int, int, byte) void
@@ -267,14 +145,6 @@ public class class_84 extends class_59 {
       } catch (RuntimeException var5) {
          throw class_223.method_4281(var5);
       }
-   }
-
-   // $FF: renamed from: g (nd, int) void
-   void method_1427(int var2) {
-      if(2 == var2) {
-         this.field_785 = true;
-      }
-
    }
 
    // $FF: renamed from: j (int) void

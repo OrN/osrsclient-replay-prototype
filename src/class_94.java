@@ -6,8 +6,6 @@ public final class class_94 extends class_91 {
    int field_1022;
    // $FF: renamed from: n int
    int field_1023;
-   // $FF: renamed from: p int
-   static final int field_1024 = 2;
    // $FF: renamed from: ro be
    static class_148 field_1025;
 

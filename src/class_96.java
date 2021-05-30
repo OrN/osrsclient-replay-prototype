@@ -6,8 +6,6 @@ public class class_96 extends class_91 {
    int field_1051;
    // $FF: renamed from: y int
    int field_1052;
-   // $FF: renamed from: mw int
-   static final int field_1053 = 0;
    // $FF: renamed from: v int
    int field_1054;
    // $FF: renamed from: j int
@@ -20,14 +18,10 @@ public class class_96 extends class_91 {
    int field_1058;
    // $FF: renamed from: p int
    int field_1059;
-   // $FF: renamed from: aw int
-   static final int field_1060 = 47;
    // $FF: renamed from: n int
    int field_1061;
    // $FF: renamed from: ax li
    static class_351 field_1062;
-   // $FF: renamed from: pj int
-   static final int field_1063 = 7680;
 
 
    // $FF: renamed from: j () gr

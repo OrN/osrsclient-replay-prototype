@@ -2,8 +2,6 @@
 // $FF: renamed from: ev
 public class class_76 extends class_59 {
 
-   // $FF: renamed from: br int
-   static final int field_624 = 83;
    // $FF: renamed from: v jv
    public static class_306 field_625;
    // $FF: renamed from: q int[]
@@ -36,8 +34,6 @@ public class class_76 extends class_59 {
    public int field_639;
    // $FF: renamed from: x int
    public int field_640;
-   // $FF: renamed from: r int
-   public static final int field_641 = -1;
    // $FF: renamed from: w java.lang.String
    String field_642;
    // $FF: renamed from: t int
@@ -46,38 +42,13 @@ public class class_76 extends class_59 {
    public int field_644;
    // $FF: renamed from: o int
    public int field_645;
-   // $FF: renamed from: d int
-   public static final int field_646 = 1;
    // $FF: renamed from: ae int
    int field_647;
-   // $FF: renamed from: ap int
-   static final int field_648 = 19136992;
    // $FF: renamed from: z int
    public int field_649;
    // $FF: renamed from: bs op[]
    static class_66[] field_650;
-   // $FF: renamed from: bm int
-   static final int field_651 = 1007;
 
-
-   // $FF: renamed from: ap () oh
-   public class_67 method_1157() {
-      if(this.field_636 * 311873853 < 0) {
-         return null;
-      } else {
-         class_67 var1 = (class_67)field_628.method_5065((long)(311873853 * this.field_636));
-         if(null != var1) {
-            return var1;
-         } else {
-            var1 = class_266.method_5032(field_634, 311873853 * this.field_636, 0, (byte)66);
-            if(null != var1) {
-               field_628.method_5064(var1, (long)(311873853 * this.field_636));
-            }
-
-            return var1;
-         }
-      }
-   }
 
    // $FF: renamed from: n (nd, int) void
    void method_1158(class_28 var1, int var2) {
@@ -337,92 +308,6 @@ public class class_76 extends class_59 {
       }
    }
 
-   // $FF: renamed from: x () ev
-   public final class_76 method_1163() {
-      int var1 = -1;
-      if(1819526357 * this.field_630 != -1) {
-         var1 = class_43.method_496(this.field_630 * 1819526357);
-      } else if(-1 != this.field_647 * 1097710595) {
-         var1 = class_282.field_3246[1097710595 * this.field_647];
-      }
-
-      int var2;
-      if(var1 >= 0 && var1 < this.field_626.length - 1) {
-         var2 = this.field_626[var1];
-      } else {
-         var2 = this.field_626[this.field_626.length - 1];
-      }
-
-      return var2 != -1?class_95.method_1780(var2, 166559330):null;
-   }
-
-   // $FF: renamed from: ar () oh
-   public class_67 method_1164() {
-      if(this.field_638 * -1479453361 < 0) {
-         return null;
-      } else {
-         class_67 var1 = (class_67)field_628.method_5065((long)(-1390371889 * this.field_638));
-         if(var1 != null) {
-            return var1;
-         } else {
-            var1 = class_266.method_5032(field_634, this.field_638 * -2064534724, 0, (byte)20);
-            if(null != var1) {
-               field_628.method_5064(var1, (long)(this.field_638 * 1006193002));
-            }
-
-            return var1;
-         }
-      }
-   }
-
-   // $FF: renamed from: aj () kt
-   public class_69 method_1165() {
-      if(-418995629 * this.field_632 == -1) {
-         return null;
-      } else {
-         class_69 var1 = (class_69)field_629.method_5065((long)(-418995629 * this.field_632));
-         if(var1 != null) {
-            return var1;
-         } else {
-            class_306 var3 = field_634;
-            class_306 var4 = field_633;
-            int var5 = -418995629 * this.field_632;
-            byte[] var7 = var3.method_5381(var5, 0);
-            boolean var6;
-            if(null == var7) {
-               var6 = false;
-            } else {
-               class_253.method_4899(var7, (byte)1);
-               var6 = true;
-            }
-
-            class_69 var2;
-            if(!var6) {
-               var2 = null;
-            } else {
-               byte[] var8 = var4.method_5381(var5, 0);
-               class_69 var10;
-               if(null == var8) {
-                  var10 = null;
-               } else {
-                  class_69 var10000 = new class_69(var8, class_223.field_2529, class_284.field_3260, class_403.field_4278, class_318.field_3787, class_403.field_4279);
-                  class_69 var9 = var10000;
-                  class_192.method_3958();
-                  var10 = var9;
-               }
-
-               var2 = var10;
-            }
-
-            if(null != var2) {
-               field_629.method_5064(var2, (long)(-418995629 * this.field_632));
-            }
-
-            return var2;
-         }
-      }
-   }
-
    // $FF: renamed from: s (int) kt
    public class_69 method_1166(int var1) {
       try {
@@ -495,222 +380,6 @@ public class class_76 extends class_59 {
       }
    }
 
-   // $FF: renamed from: ae () oh
-   public class_67 method_1167() {
-      if(this.field_636 * 311873853 < 0) {
-         return null;
-      } else {
-         class_67 var1 = (class_67)field_628.method_5065((long)(311873853 * this.field_636));
-         if(null != var1) {
-            return var1;
-         } else {
-            var1 = class_266.method_5032(field_634, 311873853 * this.field_636, 0, (byte)48);
-            if(null != var1) {
-               field_628.method_5064(var1, (long)(311873853 * this.field_636));
-            }
-
-            return var1;
-         }
-      }
-   }
-
-   // $FF: renamed from: l (int) ev
-   public static class_76 method_1168(int var0) {
-      class_76 var1 = (class_76)field_627.method_5065((long)var0);
-      if(var1 != null) {
-         return var1;
-      } else {
-         byte[] var2 = field_625.method_5381(1301451976, var0);
-         class_76 var10000 = new class_76();
-         var1 = var10000;
-         if(var2 != null) {
-            class_28 var10001 = new class_28(var2);
-            var1.method_1158(var10001, -2053419189);
-         }
-
-         field_627.method_5064(var1, (long)var0);
-         return var1;
-      }
-   }
-
-   // $FF: renamed from: o (int) ev
-   public static class_76 method_1169(int var0) {
-      class_76 var1 = (class_76)field_627.method_5065((long)var0);
-      if(var1 != null) {
-         return var1;
-      } else {
-         byte[] var2 = field_625.method_5381(32, var0);
-         class_76 var10000 = new class_76();
-         var1 = var10000;
-         if(var2 != null) {
-            class_28 var10001 = new class_28(var2);
-            var1.method_1158(var10001, 1984152799);
-         }
-
-         field_627.method_5064(var1, (long)var0);
-         return var1;
-      }
-   }
-
-   // $FF: renamed from: c (int) ev
-   public static class_76 method_1170(int var0) {
-      class_76 var1 = (class_76)field_627.method_5065((long)var0);
-      if(var1 != null) {
-         return var1;
-      } else {
-         byte[] var2 = field_625.method_5381(32, var0);
-         class_76 var10000 = new class_76();
-         var1 = var10000;
-         if(var2 != null) {
-            class_28 var10001 = new class_28(var2);
-            var1.method_1158(var10001, -857442426);
-         }
-
-         field_627.method_5064(var1, (long)var0);
-         return var1;
-      }
-   }
-
-   // $FF: renamed from: e (int) ev
-   public static class_76 method_1171(int var0) {
-      class_76 var1 = (class_76)field_627.method_5065((long)var0);
-      if(var1 != null) {
-         return var1;
-      } else {
-         byte[] var2 = field_625.method_5381(32, var0);
-         class_76 var10000 = new class_76();
-         var1 = var10000;
-         if(var2 != null) {
-            class_28 var10001 = new class_28(var2);
-            var1.method_1158(var10001, 1904192252);
-         }
-
-         field_627.method_5064(var1, (long)var0);
-         return var1;
-      }
-   }
-
-   // $FF: renamed from: g (nd) void
-   void method_1172(class_28 var1) {
-      while(true) {
-         int var2 = var1.method_130();
-         if(var2 == 0) {
-            return;
-         }
-
-         this.method_1159(var1, var2, 1647125333);
-      }
-   }
-
-   // $FF: renamed from: a (nd, int) void
-   void method_1173(class_28 var1, int var2) {
-      if(var2 == 1) {
-         this.field_632 = var1.method_147(1008993198) * 1829892571;
-      } else if(2 == var2) {
-         this.field_645 = var1.method_134() * 535226611;
-      } else if(var2 == 3) {
-         this.field_635 = var1.method_147(1287575821) * 1262721335;
-      } else if(var2 == 4) {
-         this.field_637 = var1.method_147(657439691) * -1289208417;
-      } else if(var2 == 5) {
-         this.field_636 = var1.method_147(985446767) * -1629123051;
-      } else if(6 == var2) {
-         this.field_638 = var1.method_147(1255199057) * 2059444655;
-      } else if(var2 == 7) {
-         this.field_639 = var1.method_269(-1542485131) * 536947847;
-      } else if(var2 == 8) {
-         this.field_642 = var1.method_140((byte)95);
-      } else if(var2 == 9) {
-         this.field_631 = var1.method_132() * 857620037;
-      } else if(var2 == 10) {
-         this.field_640 = var1.method_269(-1542485131) * 480001211;
-      } else if(var2 == 11) {
-         this.field_649 = 0;
-      } else if(12 == var2) {
-         this.field_643 = var1.method_130() * 744034805;
-      } else if(13 == var2) {
-         this.field_644 = var1.method_269(-1542485131) * -1710249120;
-      } else if(var2 == 14) {
-         this.field_649 = var1.method_132() * -1819860421;
-      } else if(17 == var2 || var2 == 18) {
-         this.field_630 = var1.method_132() * -885804147;
-         if(this.field_630 * 2130652600 == '\uffff') {
-            this.field_630 = -2019956325;
-         }
-
-         this.field_647 = var1.method_132() * 1180116569;
-         if(-1182303922 == this.field_647 * -646578290) {
-            this.field_647 = -62730877;
-         }
-
-         int var3 = -1;
-         if(18 == var2) {
-            var3 = var1.method_132();
-            if('\uffff' == var3) {
-               var3 = -1;
-            }
-         }
-
-         int var4 = var1.method_130();
-         this.field_626 = new int[2 + var4];
-
-         for(int var5 = 0; var5 <= var4; ++var5) {
-            this.field_626[var5] = var1.method_132();
-            if(this.field_626[var5] == '\uffff') {
-               this.field_626[var5] = -1;
-            }
-         }
-
-         this.field_626[var4 + 1] = var3;
-      }
-
-   }
-
-   // $FF: renamed from: k () ev
-   public final class_76 method_1174() {
-      int var1 = -1;
-      if(1819526357 * this.field_630 != -1) {
-         var1 = class_43.method_496(this.field_630 * 1819526357);
-      } else if(-1 != this.field_647 * 584170088) {
-         var1 = class_282.field_3246[1097710595 * this.field_647];
-      }
-
-      int var2;
-      if(var1 >= 0 && var1 < this.field_626.length - 1) {
-         var2 = this.field_626[var1];
-      } else {
-         var2 = this.field_626[this.field_626.length - 1];
-      }
-
-      return var2 != -1?class_95.method_1780(var2, -1983936138):null;
-   }
-
-   // $FF: renamed from: m () ev
-   public final class_76 method_1175() {
-      int var1 = -1;
-      if(1819526357 * this.field_630 != -1) {
-         var1 = class_43.method_496(this.field_630 * 1819526357);
-      } else if(-1 != this.field_647 * 1097710595) {
-         var1 = class_282.field_3246[1097710595 * this.field_647];
-      }
-
-      int var2;
-      if(var1 >= 0 && var1 < this.field_626.length - 1) {
-         var2 = this.field_626[var1];
-      } else {
-         var2 = this.field_626[this.field_626.length - 1];
-      }
-
-      return var2 != -1?class_95.method_1780(var2, -1558393408):null;
-   }
-
-   // $FF: renamed from: az () void
-   public static void method_1176() {
-      field_627.method_5074();
-      field_628.method_5074();
-      field_629.method_5074();
-   }
-
    // $FF: renamed from: r (int) oh
    public class_67 method_1177(int var1) {
       try {
@@ -735,58 +404,6 @@ public class class_76 extends class_59 {
          }
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
-      }
-   }
-
-   // $FF: renamed from: w (int) java.lang.String
-   public String method_1178(int var1) {
-      String var2 = this.field_642;
-
-      while(true) {
-         int var3 = var2.indexOf("%1");
-         if(var3 < 0) {
-            return var2;
-         }
-
-         var2 = var2.substring(0, var3) + class_179.method_3809(var1, false, (short)7104) + var2.substring(2 + var3);
-      }
-   }
-
-   // $FF: renamed from: t () oh
-   public class_67 method_1179() {
-      if(444689543 * this.field_635 < 0) {
-         return null;
-      } else {
-         class_67 var1 = (class_67)field_628.method_5065((long)(this.field_635 * 444689543));
-         if(null != var1) {
-            return var1;
-         } else {
-            var1 = class_266.method_5032(field_634, 444689543 * this.field_635, 0, (byte)98);
-            if(null != var1) {
-               field_628.method_5064(var1, (long)(444689543 * this.field_635));
-            }
-
-            return var1;
-         }
-      }
-   }
-
-   // $FF: renamed from: h () oh
-   public class_67 method_1180() {
-      if(-1364074319 * this.field_635 < 0) {
-         return null;
-      } else {
-         class_67 var1 = (class_67)field_628.method_5065((long)(this.field_635 * 444689543));
-         if(null != var1) {
-            return var1;
-         } else {
-            var1 = class_266.method_5032(field_634, 444689543 * this.field_635, 0, (byte)125);
-            if(null != var1) {
-               field_628.method_5064(var1, (long)(444689543 * this.field_635));
-            }
-
-            return var1;
-         }
       }
    }
 
@@ -822,25 +439,6 @@ public class class_76 extends class_59 {
       field_628 = var10000;
       var10000 = new class_272(20);
       field_629 = var10000;
-   }
-
-   // $FF: renamed from: ad () oh
-   public class_67 method_1182() {
-      if(this.field_637 * 592944735 < 0) {
-         return null;
-      } else {
-         class_67 var1 = (class_67)field_628.method_5065((long)(this.field_637 * 592944735));
-         if(null != var1) {
-            return var1;
-         } else {
-            var1 = class_266.method_5032(field_634, this.field_637 * 592944735, 0, (byte)43);
-            if(null != var1) {
-               field_628.method_5064(var1, (long)(592944735 * this.field_637));
-            }
-
-            return var1;
-         }
-      }
    }
 
    // $FF: renamed from: if (ce, int, int, int, int) void
@@ -1045,153 +643,6 @@ public class class_76 extends class_59 {
       }
    }
 
-   // $FF: renamed from: ab () oh
-   public class_67 method_1184() {
-      if(this.field_636 * -483593234 < 0) {
-         return null;
-      } else {
-         class_67 var1 = (class_67)field_628.method_5065((long)(-885326816 * this.field_636));
-         if(null != var1) {
-            return var1;
-         } else {
-            var1 = class_266.method_5032(field_634, -1514358778 * this.field_636, 0, (byte)73);
-            if(null != var1) {
-               field_628.method_5064(var1, (long)(1421305858 * this.field_636));
-            }
-
-            return var1;
-         }
-      }
-   }
-
-   // $FF: renamed from: al () oh
-   public class_67 method_1185() {
-      if(this.field_637 * -1283152053 < 0) {
-         return null;
-      } else {
-         class_67 var1 = (class_67)field_628.method_5065((long)(this.field_637 * 592944735));
-         if(null != var1) {
-            return var1;
-         } else {
-            var1 = class_266.method_5032(field_634, this.field_637 * 592944735, 0, (byte)106);
-            if(null != var1) {
-               field_628.method_5064(var1, (long)(839978121 * this.field_637));
-            }
-
-            return var1;
-         }
-      }
-   }
-
-   // $FF: renamed from: z (int) java.lang.String
-   public String method_1186(int var1) {
-      String var2 = this.field_642;
-
-      while(true) {
-         int var3 = var2.indexOf("%1");
-         if(var3 < 0) {
-            return var2;
-         }
-
-         var2 = var2.substring(0, var3) + class_179.method_3809(var1, false, (short)7104) + var2.substring(2 + var3);
-      }
-   }
-
-   // $FF: renamed from: ai () oh
-   public class_67 method_1187() {
-      if(this.field_637 * 592944735 < 0) {
-         return null;
-      } else {
-         class_67 var1 = (class_67)field_628.method_5065((long)(this.field_637 * 1893550505));
-         if(null != var1) {
-            return var1;
-         } else {
-            var1 = class_266.method_5032(field_634, this.field_637 * 592944735, 0, (byte)111);
-            if(null != var1) {
-               field_628.method_5064(var1, (long)(592944735 * this.field_637));
-            }
-
-            return var1;
-         }
-      }
-   }
-
-   // $FF: renamed from: q () oh
-   public class_67 method_1188() {
-      if(444689543 * this.field_635 < 0) {
-         return null;
-      } else {
-         class_67 var1 = (class_67)field_628.method_5065((long)(this.field_635 * 444689543));
-         if(null != var1) {
-            return var1;
-         } else {
-            var1 = class_266.method_5032(field_634, 444689543 * this.field_635, 0, (byte)49);
-            if(null != var1) {
-               field_628.method_5064(var1, (long)(444689543 * this.field_635));
-            }
-
-            return var1;
-         }
-      }
-   }
-
-   // $FF: renamed from: ag () oh
-   public class_67 method_1189() {
-      if(this.field_638 * -1479453361 < 0) {
-         return null;
-      } else {
-         class_67 var1 = (class_67)field_628.method_5065((long)(1114777455 * this.field_638));
-         if(var1 != null) {
-            return var1;
-         } else {
-            var1 = class_266.method_5032(field_634, this.field_638 * -1479453361, 0, (byte)82);
-            if(null != var1) {
-               field_628.method_5064(var1, (long)(this.field_638 * -1479453361));
-            }
-
-            return var1;
-         }
-      }
-   }
-
-   // $FF: renamed from: ax () oh
-   public class_67 method_1190() {
-      if(this.field_638 * -1479453361 < 0) {
-         return null;
-      } else {
-         class_67 var1 = (class_67)field_628.method_5065((long)(-1479453361 * this.field_638));
-         if(var1 != null) {
-            return var1;
-         } else {
-            var1 = class_266.method_5032(field_634, this.field_638 * -1479453361, 0, (byte)115);
-            if(null != var1) {
-               field_628.method_5064(var1, (long)(this.field_638 * -1479453361));
-            }
-
-            return var1;
-         }
-      }
-   }
-
-   // $FF: renamed from: as () oh
-   public class_67 method_1191() {
-      if(this.field_638 * 998561976 < 0) {
-         return null;
-      } else {
-         class_67 var1 = (class_67)field_628.method_5065((long)(-1479453361 * this.field_638));
-         if(var1 != null) {
-            return var1;
-         } else {
-            var1 = class_266.method_5032(field_634, this.field_638 * 101257009, 0, (byte)31);
-            if(null != var1) {
-               field_628.method_5064(var1, (long)(this.field_638 * -1479453361));
-            }
-
-            return var1;
-         }
-      }
-   }
-
    // $FF: renamed from: d (byte) oh
    public class_67 method_1192(byte var1) {
       try {
@@ -1221,87 +672,6 @@ public class class_76 extends class_59 {
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
       }
-   }
-
-   // $FF: renamed from: am () kt
-   public class_69 method_1193() {
-      if(-461651752 * this.field_632 == -1) {
-         return null;
-      } else {
-         class_69 var1 = (class_69)field_629.method_5065((long)(126245562 * this.field_632));
-         if(var1 != null) {
-            return var1;
-         } else {
-            class_306 var3 = field_634;
-            class_306 var4 = field_633;
-            int var5 = -1992083806 * this.field_632;
-            byte[] var7 = var3.method_5381(var5, 0);
-            boolean var6;
-            if(null == var7) {
-               var6 = false;
-            } else {
-               class_253.method_4899(var7, (byte)1);
-               var6 = true;
-            }
-
-            class_69 var2;
-            if(!var6) {
-               var2 = null;
-            } else {
-               byte[] var8 = var4.method_5381(var5, 0);
-               class_69 var10;
-               if(null == var8) {
-                  var10 = null;
-               } else {
-                  class_69 var10000 = new class_69(var8, class_223.field_2529, class_284.field_3260, class_403.field_4278, class_318.field_3787, class_403.field_4279);
-                  class_69 var9 = var10000;
-                  class_192.method_3958();
-                  var10 = var9;
-               }
-
-               var2 = var10;
-            }
-
-            if(null != var2) {
-               field_629.method_5064(var2, (long)(-810838018 * this.field_632));
-            }
-
-            return var2;
-         }
-      }
-   }
-
-   // $FF: renamed from: i () oh
-   public class_67 method_1194() {
-      if(this.field_636 * -912516768 < 0) {
-         return null;
-      } else {
-         class_67 var1 = (class_67)field_628.method_5065((long)(311873853 * this.field_636));
-         if(null != var1) {
-            return var1;
-         } else {
-            var1 = class_266.method_5032(field_634, 311873853 * this.field_636, 0, (byte)32);
-            if(null != var1) {
-               field_628.method_5064(var1, (long)(-1774830664 * this.field_636));
-            }
-
-            return var1;
-         }
-      }
-   }
-
-   // $FF: renamed from: av () void
-   public static void method_1195() {
-      field_627.method_5074();
-      field_628.method_5074();
-      field_629.method_5074();
-   }
-
-   // $FF: renamed from: ac () void
-   public static void method_1196() {
-      field_627.method_5074();
-      field_628.method_5074();
-      field_629.method_5074();
    }
 
    // $FF: renamed from: lk (io, int) boolean

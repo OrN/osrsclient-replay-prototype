@@ -14,8 +14,6 @@ public class class_82 extends class_59 {
    public int field_761;
    // $FF: renamed from: f int
    public int field_762;
-   // $FF: renamed from: ak int
-   static final int field_763 = 49;
    // $FF: renamed from: b int
    public int field_764;
    // $FF: renamed from: s int
@@ -24,27 +22,9 @@ public class class_82 extends class_59 {
    public int field_766;
    // $FF: renamed from: l int
    public int field_767;
-   // $FF: renamed from: ab int
-   static final int field_768 = 19136896;
    // $FF: renamed from: d int
    public int field_769;
 
-
-   // $FF: renamed from: s (nd, int, int) void
-   void method_1358(class_28 var1, int var2) {
-      if(var2 == 1) {
-         this.field_762 = var1.method_134() * -1445629043;
-      } else if(var2 == 2) {
-         this.field_759 = var1.method_130() * 765202977;
-      } else if(var2 == 5) {
-         this.field_760 = false;
-      } else if(7 == var2) {
-         this.field_761 = var1.method_134() * -1694989401;
-      } else if(var2 == 8) {
-         ;
-      }
-
-   }
 
    // $FF: renamed from: n (int) void
    void method_1359(int var1) {
@@ -64,22 +44,6 @@ public class class_82 extends class_59 {
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2);
       }
-   }
-
-   // $FF: renamed from: l (nd, int, int) void
-   void method_1360(class_28 var1, int var2) {
-      if(var2 == 1) {
-         this.field_762 = var1.method_134() * -1445629043;
-      } else if(var2 == 2) {
-         this.field_759 = var1.method_130() * 765202977;
-      } else if(var2 == 5) {
-         this.field_760 = false;
-      } else if(7 == var2) {
-         this.field_761 = var1.method_134() * -1954076129;
-      } else if(var2 == 8) {
-         ;
-      }
-
    }
 
    // $FF: renamed from: y (nd, int, int, int) void
@@ -226,78 +190,6 @@ public class class_82 extends class_59 {
       field_757 = var10000;
    }
 
-   // $FF: renamed from: j (int) eo
-   public static class_82 method_1364(int var0) {
-      class_82 var1 = (class_82)field_757.method_5065((long)var0);
-      if(var1 != null) {
-         return var1;
-      } else {
-         byte[] var2 = class_209.field_2421.method_5381(4, var0);
-         class_82 var10000 = new class_82();
-         var1 = var10000;
-         if(null != var2) {
-            class_28 var10001 = new class_28(var2);
-            var1.method_1369(var10001, -1052896488);
-         }
-
-         var1.method_1359(-593078672);
-         field_757.method_5064(var1, (long)var0);
-         return var1;
-      }
-   }
-
-   // $FF: renamed from: r () void
-   void method_1365() {
-      if(-1 != this.field_761 * 1447154143) {
-         this.method_1362(this.field_761 * 1447154143, -666944257);
-         this.field_765 = 739854473 * this.field_758;
-         this.field_766 = this.field_764 * -1362031751;
-         this.field_767 = 1618362335 * this.field_769;
-      }
-
-      this.method_1362(-313850043 * this.field_762, -263070677);
-   }
-
-   // $FF: renamed from: b () void
-   void method_1366() {
-      if(-1 != this.field_761 * 842597193) {
-         this.method_1362(this.field_761 * -771692700, -1627379223);
-         this.field_765 = 739854473 * this.field_758;
-         this.field_766 = this.field_764 * -1310815750;
-         this.field_767 = 643452048 * this.field_769;
-      }
-
-      this.method_1362(733128319 * this.field_762, -41392936);
-   }
-
-   // $FF: renamed from: d (nd, int) void
-   void method_1367(class_28 var1) {
-      while(true) {
-         int var3 = var1.method_130();
-         if(var3 == 0) {
-            return;
-         }
-
-         this.method_1361(var1, var3, 1592315102);
-      }
-   }
-
-   // $FF: renamed from: u (nd, int, int) void
-   void method_1368(class_28 var1, int var2) {
-      if(var2 == 1) {
-         this.field_762 = var1.method_134() * -1445629043;
-      } else if(var2 == 2) {
-         this.field_759 = var1.method_130() * 765202977;
-      } else if(var2 == 5) {
-         this.field_760 = false;
-      } else if(7 == var2) {
-         this.field_761 = var1.method_134() * -1954076129;
-      } else if(var2 == 8) {
-         ;
-      }
-
-   }
-
    // $FF: renamed from: f (nd, int, int) void
    void method_1369(class_28 var1, int var3) {
       try {
@@ -318,68 +210,6 @@ public class class_82 extends class_59 {
       }
    }
 
-   // $FF: renamed from: o (int) void
-   void method_1370(int var1) {
-      double var2 = (double)(var1 >> 16 & 255) / 256.0D;
-      double var4 = (double)(var1 >> 8 & 255) / 256.0D;
-      double var6 = (double)(var1 & 255) / 256.0D;
-      double var8 = var2;
-      if(var4 < var2) {
-         var8 = var4;
-      }
-
-      if(var6 < var8) {
-         var8 = var6;
-      }
-
-      double var10 = var2;
-      if(var4 > var2) {
-         var10 = var4;
-      }
-
-      if(var6 > var10) {
-         var10 = var6;
-      }
-
-      double var12 = 0.0D;
-      double var14 = 0.0D;
-      double var16 = (var10 + var8) / 2.0D;
-      if(var8 != var10) {
-         if(var16 < 0.5D) {
-            var14 = (var10 - var8) / (var8 + var10);
-         }
-
-         if(var16 >= 0.5D) {
-            var14 = (var10 - var8) / (2.0D - var10 - var8);
-         }
-
-         if(var10 == var2) {
-            var12 = (var4 - var6) / (var10 - var8);
-         } else if(var4 == var10) {
-            var12 = (var6 - var2) / (var10 - var8) + 2.0D;
-         } else if(var10 == var6) {
-            var12 = 4.0D + (var2 - var4) / (var10 - var8);
-         }
-      }
-
-      var12 /= 6.0D;
-      this.field_758 = -1065832781 * (int)(256.0D * var12);
-      this.field_764 = -603571783 * (int)(256.0D * var14);
-      this.field_769 = 435737939 * (int)(256.0D * var16);
-      if(this.field_764 * -1490944887 < 0) {
-         this.field_764 = 0;
-      } else if(this.field_764 * -1490944887 > 255) {
-         this.field_764 = 708017991;
-      }
-
-      if(1914058459 * this.field_769 < 0) {
-         this.field_769 = 0;
-      } else if(1914058459 * this.field_769 > 255) {
-         this.field_769 = -555975251;
-      }
-
-   }
-
    // $FF: renamed from: <init> () void
    class_82() {
       super();
@@ -391,192 +221,6 @@ public class class_82 extends class_59 {
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1);
       }
-   }
-
-   // $FF: renamed from: c (int) void
-   void method_1371(int var1) {
-      double var2 = (double)(var1 >> 16 & 255) / 256.0D;
-      double var4 = (double)(var1 >> 8 & 255) / 256.0D;
-      double var6 = (double)(var1 & 255) / 256.0D;
-      double var8 = var2;
-      if(var4 < var2) {
-         var8 = var4;
-      }
-
-      if(var6 < var8) {
-         var8 = var6;
-      }
-
-      double var10 = var2;
-      if(var4 > var2) {
-         var10 = var4;
-      }
-
-      if(var6 > var10) {
-         var10 = var6;
-      }
-
-      double var12 = 0.0D;
-      double var14 = 0.0D;
-      double var16 = (var10 + var8) / 2.0D;
-      if(var8 != var10) {
-         if(var16 < 0.5D) {
-            var14 = (var10 - var8) / (var8 + var10);
-         }
-
-         if(var16 >= 0.5D) {
-            var14 = (var10 - var8) / (2.0D - var10 - var8);
-         }
-
-         if(var10 == var2) {
-            var12 = (var4 - var6) / (var10 - var8);
-         } else if(var4 == var10) {
-            var12 = (var6 - var2) / (var10 - var8) + 2.0D;
-         } else if(var10 == var6) {
-            var12 = 4.0D + (var2 - var4) / (var10 - var8);
-         }
-      }
-
-      var12 /= 6.0D;
-      this.field_758 = -1065832781 * (int)(256.0D * var12);
-      this.field_764 = -603571783 * (int)(256.0D * var14);
-      this.field_769 = 435737939 * (int)(256.0D * var16);
-      if(this.field_764 * -1490944887 < 0) {
-         this.field_764 = 0;
-      } else if(this.field_764 * -1490944887 > 255) {
-         this.field_764 = 708017991;
-      }
-
-      if(1914058459 * this.field_769 < 0) {
-         this.field_769 = 0;
-      } else if(1914058459 * this.field_769 > 255) {
-         this.field_769 = -555975251;
-      }
-
-   }
-
-   // $FF: renamed from: e (int) void
-   void method_1372(int var1) {
-      double var2 = (double)(var1 >> 16 & 255) / 256.0D;
-      double var4 = (double)(var1 >> 8 & 255) / 256.0D;
-      double var6 = (double)(var1 & 255) / 256.0D;
-      double var8 = var2;
-      if(var4 < var2) {
-         var8 = var4;
-      }
-
-      if(var6 < var8) {
-         var8 = var6;
-      }
-
-      double var10 = var2;
-      if(var4 > var2) {
-         var10 = var4;
-      }
-
-      if(var6 > var10) {
-         var10 = var6;
-      }
-
-      double var12 = 0.0D;
-      double var14 = 0.0D;
-      double var16 = (var10 + var8) / 2.0D;
-      if(var8 != var10) {
-         if(var16 < 0.5D) {
-            var14 = (var10 - var8) / (var8 + var10);
-         }
-
-         if(var16 >= 0.5D) {
-            var14 = (var10 - var8) / (2.0D - var10 - var8);
-         }
-
-         if(var10 == var2) {
-            var12 = (var4 - var6) / (var10 - var8);
-         } else if(var4 == var10) {
-            var12 = (var6 - var2) / (var10 - var8) + 2.0D;
-         } else if(var10 == var6) {
-            var12 = 4.0D + (var2 - var4) / (var10 - var8);
-         }
-      }
-
-      var12 /= 6.0D;
-      this.field_758 = -1065832781 * (int)(256.0D * var12);
-      this.field_764 = -603571783 * (int)(256.0D * var14);
-      this.field_769 = 435737939 * (int)(256.0D * var16);
-      if(this.field_764 * -1490944887 < 0) {
-         this.field_764 = 0;
-      } else if(this.field_764 * -1490944887 > 255) {
-         this.field_764 = 708017991;
-      }
-
-      if(1914058459 * this.field_769 < 0) {
-         this.field_769 = 0;
-      } else if(1914058459 * this.field_769 > 255) {
-         this.field_769 = -555975251;
-      }
-
-   }
-
-   // $FF: renamed from: g (int) void
-   void method_1373(int var1) {
-      double var2 = (double)(var1 >> 16 & 255) / 256.0D;
-      double var4 = (double)(var1 >> 8 & 255) / 256.0D;
-      double var6 = (double)(var1 & 255) / 256.0D;
-      double var8 = var2;
-      if(var4 < var2) {
-         var8 = var4;
-      }
-
-      if(var6 < var8) {
-         var8 = var6;
-      }
-
-      double var10 = var2;
-      if(var4 > var2) {
-         var10 = var4;
-      }
-
-      if(var6 > var10) {
-         var10 = var6;
-      }
-
-      double var12 = 0.0D;
-      double var14 = 0.0D;
-      double var16 = (var10 + var8) / 2.0D;
-      if(var8 != var10) {
-         if(var16 < 0.5D) {
-            var14 = (var10 - var8) / (var8 + var10);
-         }
-
-         if(var16 >= 0.5D) {
-            var14 = (var10 - var8) / (2.0D - var10 - var8);
-         }
-
-         if(var10 == var2) {
-            var12 = (var4 - var6) / (var10 - var8);
-         } else if(var4 == var10) {
-            var12 = (var6 - var2) / (var10 - var8) + 2.0D;
-         } else if(var10 == var6) {
-            var12 = 4.0D + (var2 - var4) / (var10 - var8);
-         }
-      }
-
-      var12 /= 6.0D;
-      this.field_758 = -1065832781 * (int)(256.0D * var12);
-      this.field_764 = 1267633287 * (int)(256.0D * var14);
-      this.field_769 = -735153976 * (int)(256.0D * var16);
-      if(this.field_764 * -1490944887 < 0) {
-         this.field_764 = 0;
-      } else if(this.field_764 * 1160202071 > -1957072896) {
-         this.field_764 = 708017991;
-      }
-
-      if(1914058459 * this.field_769 < 0) {
-         this.field_769 = 0;
-      } else if(1002854601 * this.field_769 > 255) {
-         this.field_769 = -880912101;
-      }
-
    }
 
    // $FF: renamed from: y (short) en[]

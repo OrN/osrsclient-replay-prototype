@@ -15,7 +15,6 @@ import java.util.Iterator;
 
 public class launcher extends JFrame implements AppletStub, AppletContext, WindowListener {
     private static launcher instance;
-    private HashMap<String, String> parameters = new HashMap<String, String>();
     private Applet applet;
     JConfig config;
 
