@@ -528,7 +528,7 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
    static final void method_2902() {
       try {
          class_40 var1 = class_112.method_2238(class_266.field_3048, client.field_1463.field_2384, (byte)8);
-         var1.field_263.method_210(0);
+         var1.field_263.writeByte(0);
          client.field_1463.method_4079(var1);
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2);

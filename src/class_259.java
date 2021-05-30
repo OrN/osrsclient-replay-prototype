@@ -49,7 +49,7 @@ public class class_259 extends class_258 implements class_11 {
                throw new IllegalStateException();
             }
 
-            class_28 var10001 = new class_28(var3);
+            Buffer var10001 = new Buffer(var3);
             var4.method_6568(var10001, -1490587397);
          }
 
@@ -156,7 +156,7 @@ public class class_259 extends class_258 implements class_11 {
       class_368 var10000 = new class_368();
       class_368 var3 = var10000;
       if(var2 != null) {
-         class_28 var10001 = new class_28(var2);
+         Buffer var10001 = new Buffer(var2);
          var3.method_6568(var10001, -1626168705);
       }
 
@@ -169,7 +169,7 @@ public class class_259 extends class_258 implements class_11 {
       class_368 var10000 = new class_368();
       class_368 var3 = var10000;
       if(var2 != null) {
-         class_28 var10001 = new class_28(var2);
+         Buffer var10001 = new Buffer(var2);
          var3.method_6568(var10001, 1374663449);
       }
 

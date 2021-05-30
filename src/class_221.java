@@ -62,10 +62,10 @@ public final class class_221 {
             System.nanoTime();
             int var5 = var1.method_5399(class_254.field_2874.field_2873);
             int var6 = var1.method_5400(var5, var2);
-            class_28 var10000 = new class_28(var1.method_5384(class_254.field_2874.field_2873, var2));
-            class_28 var7 = var10000;
-            var10000 = new class_28(var1.method_5384(class_254.field_2869.field_2873, var2));
-            class_28 var8 = var10000;
+            Buffer var10000 = new Buffer(var1.method_5384(class_254.field_2874.field_2873, var2));
+            Buffer var7 = var10000;
+            var10000 = new Buffer(var1.method_5384(class_254.field_2869.field_2873, var2));
+            Buffer var8 = var10000;
             System.nanoTime();
             System.nanoTime();
             class_231 var10001 = new class_231();
@@ -2222,7 +2222,7 @@ public final class class_221 {
                         throw new IllegalStateException();
                      }
 
-                     if(!class_87.field_852.field_2118) {
+                     if(!class_87.preferences.musicEnabled) {
                         if(var1 == 1) {
                            throw new IllegalStateException();
                         }
@@ -2232,9 +2232,9 @@ public final class class_221 {
                         var10001 = false;
                      }
 
-                     class_87.field_852.field_2118 = var10001;
-                     class_94.method_1771(-1655147086);
-                     if(!class_87.field_852.field_2118) {
+                     class_87.preferences.musicEnabled = var10001;
+                     class_94.savePreferences(-1655147086);
+                     if(!class_87.preferences.musicEnabled) {
                         if(var1 == 1) {
                            throw new IllegalStateException();
                         }
@@ -2907,13 +2907,13 @@ public final class class_221 {
                                     return;
                                  }
 
-                                 if(null != class_87.field_852.field_2120) {
+                                 if(null != class_87.preferences.field_2120) {
                                     if(var1 == 1) {
                                        throw new IllegalStateException();
                                     }
 
-                                    class_87.field_852.field_2120 = null;
-                                    class_94.method_1771(-1202671302);
+                                    class_87.preferences.field_2120 = null;
+                                    class_94.savePreferences(-1202671302);
                                  }
                               }
                            }
@@ -2963,7 +2963,7 @@ public final class class_221 {
                                  return;
                               }
 
-                              if(!class_87.field_852.field_2123) {
+                              if(!class_87.preferences.field_2123) {
                                  if(var1 == 1) {
                                     throw new IllegalStateException();
                                  }
@@ -2973,14 +2973,14 @@ public final class class_221 {
                                  var10001 = false;
                               }
 
-                              class_87.field_852.field_2123 = var10001;
-                              if(!class_87.field_852.field_2123) {
+                              class_87.preferences.field_2123 = var10001;
+                              if(!class_87.preferences.field_2123) {
                                  if(var1 == 1) {
                                     throw new IllegalStateException();
                                  }
 
                                  class_177.field_2200 = "";
-                                 class_87.field_852.field_2120 = null;
+                                 class_87.preferences.field_2120 = null;
                                  if(client.field_1453 && null != class_177.field_2200 && class_177.field_2200.length() > 0) {
                                     if(var1 == 1) {
                                        return;
@@ -2992,7 +2992,7 @@ public final class class_221 {
                                  }
                               }
 
-                              class_94.method_1771(-1919231938);
+                              class_94.savePreferences(-1919231938);
                            }
                         }
 

@@ -10,13 +10,13 @@ public class class_132 implements Callable {
     // $FF: renamed from: n ai
    final class_1 field_1727;
     // $FF: renamed from: v nd
-   final class_28 field_1730;
+   final Buffer field_1730;
    // $FF: renamed from: lt int
    static int field_1731;
 
 
     // $FF: renamed from: <init> (as, nd, ai) void
-   class_132(class_138 var1, class_28 var2, class_1 var3) {
+   class_132(class_138 var1, Buffer var2, class_1 var3) {
       super();
       try {
          this.this$0 = var1;

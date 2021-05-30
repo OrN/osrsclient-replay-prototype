@@ -43,7 +43,7 @@ public class class_229 {
       try {
          if(class_202.field_2369 != null) {
             if(var2 < -1093561710) {
-               class_202.field_2369.field_15 = var1 * 384402024 + -833490559;
+               class_202.field_2369.offset = var1 * 384402024 + -833490559;
                int var3 = class_202.field_2369.method_135();
                int var4 = class_202.field_2369.method_135();
                var0.method_5489(var3, var4, -887756709);
@@ -105,7 +105,7 @@ public class class_229 {
             class_282.field_3249 = "";
             class_177.field_2203 = true;
             class_177.field_2202 = false;
-            if(!class_87.field_852.field_2118) {
+            if(!class_87.preferences.musicEnabled) {
                if(var4 == 597563067) {
                   throw new IllegalStateException();
                }

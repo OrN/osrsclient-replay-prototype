@@ -78,7 +78,7 @@ public class class_160 {
                      }
                   } else {
                      class_40 var4 = class_112.method_2238(class_266.field_3096, client.field_1463.field_2384, (byte)8);
-                     var4.field_263.method_210(class_166.method_3598(var1));
+                     var4.field_263.writeByte(class_166.method_3598(var1));
                      var4.field_263.method_120(var1);
                      client.field_1463.method_4079(var4);
                   }
@@ -113,14 +113,14 @@ public class class_160 {
    // $FF: renamed from: bl (java.lang.String, int) void
    static final void method_3320(String var0, int var1) {
       class_40 var2 = class_112.method_2238(class_266.field_3095, client.field_1463.field_2384, (byte)8);
-      var2.field_263.method_210(class_166.method_3598(var0) + 1);
+      var2.field_263.writeByte(class_166.method_3598(var0) + 1);
       var2.field_263.method_120(var0);
       var2.field_263.method_148(var1);
       client.field_1463.method_4079(var2);
    }
 
    // $FF: renamed from: f (nd, int, byte) void
-   final void method_3321(class_28 var1, int var2) {
+   final void method_3321(Buffer var1, int var2) {
       try {
          this.field_1994.method_6171(var1, var2, 1726713479);
          this.field_1991 = 596090502;
@@ -278,7 +278,7 @@ public class class_160 {
 
                   class_148.method_3123();
                   class_40 var4 = class_112.method_2238(class_266.field_3145, client.field_1463.field_2384, (byte)8);
-                  var4.field_263.method_210(class_166.method_3598(var1));
+                  var4.field_263.writeByte(class_166.method_3598(var1));
                   var4.field_263.method_120(var1);
                   client.field_1463.method_4079(var4);
                }
@@ -305,7 +305,7 @@ public class class_160 {
                if(this.field_1995.method_6084(var3, 473835979)) {
                   class_148.method_3123();
                   class_40 var4 = class_112.method_2238(class_266.field_3129, client.field_1463.field_2384, (byte)8);
-                  var4.field_263.method_210(class_166.method_3598(var1));
+                  var4.field_263.writeByte(class_166.method_3598(var1));
                   var4.field_263.method_120(var1);
                   client.field_1463.method_4079(var4);
                }
@@ -369,7 +369,7 @@ public class class_160 {
             if(this.field_1995.method_6084(var2, -1599442958)) {
                class_148.method_3123();
                class_40 var3 = class_112.method_2238(class_266.field_3129, client.field_1463.field_2384, (byte)8);
-               var3.field_263.method_210(class_166.method_3598(var1));
+               var3.field_263.writeByte(class_166.method_3598(var1));
                var3.field_263.method_120(var1);
                client.field_1463.method_4079(var3);
             }
@@ -424,7 +424,7 @@ public class class_160 {
             if(this.field_1994.method_6084(var2, -1673432341)) {
                class_148.method_3123();
                class_40 var3 = class_112.method_2238(class_266.field_3145, client.field_1463.field_2384, (byte)8);
-               var3.field_263.method_210(class_166.method_3598(var1));
+               var3.field_263.writeByte(class_166.method_3598(var1));
                var3.field_263.method_120(var1);
                client.field_1463.method_4079(var3);
             }
@@ -443,7 +443,7 @@ public class class_160 {
             if(this.field_1994.method_6084(var2, 847722659)) {
                class_148.method_3123();
                class_40 var3 = class_112.method_2238(class_266.field_3145, client.field_1463.field_2384, (byte)8);
-               var3.field_263.method_210(class_166.method_3598(var1));
+               var3.field_263.writeByte(class_166.method_3598(var1));
                var3.field_263.method_120(var1);
                client.field_1463.method_4079(var3);
             }
@@ -539,7 +539,7 @@ public class class_160 {
                   class_149.method_3135(30, "", var4);
                } else {
                   class_40 var3 = class_112.method_2238(class_266.field_3138, client.field_1463.field_2384, (byte)8);
-                  var3.field_263.method_210(class_166.method_3598(var1));
+                  var3.field_263.writeByte(class_166.method_3598(var1));
                   var3.field_263.method_120(var1);
                   client.field_1463.method_4079(var3);
                }
@@ -573,7 +573,7 @@ public class class_160 {
                   class_149.method_3135(30, "", var4);
                } else {
                   class_40 var3 = class_112.method_2238(class_266.field_3138, client.field_1463.field_2384, (byte)8);
-                  var3.field_263.method_210(class_166.method_3598(var1));
+                  var3.field_263.writeByte(class_166.method_3598(var1));
                   var3.field_263.method_120(var1);
                   client.field_1463.method_4079(var3);
                }
@@ -629,7 +629,7 @@ public class class_160 {
                   class_149.method_3135(30, "", var6);
                } else {
                   class_40 var4 = class_112.method_2238(class_266.field_3138, client.field_1463.field_2384, (byte)8);
-                  var4.field_263.method_210(class_166.method_3598(var1));
+                  var4.field_263.writeByte(class_166.method_3598(var1));
                   var4.field_263.method_120(var1);
                   client.field_1463.method_4079(var4);
                }
@@ -712,7 +712,7 @@ public class class_160 {
                   class_149.method_3135(30, "", var4);
                } else {
                   class_40 var3 = class_112.method_2238(class_266.field_3096, client.field_1463.field_2384, (byte)8);
-                  var3.field_263.method_210(class_166.method_3598(var1));
+                  var3.field_263.writeByte(class_166.method_3598(var1));
                   var3.field_263.method_120(var1);
                   client.field_1463.method_4079(var3);
                }
@@ -761,7 +761,7 @@ public class class_160 {
                   class_149.method_3135(30, "", var4);
                } else {
                   class_40 var3 = class_112.method_2238(class_266.field_3096, client.field_1463.field_2384, (byte)8);
-                  var3.field_263.method_210(class_166.method_3598(var1));
+                  var3.field_263.writeByte(class_166.method_3598(var1));
                   var3.field_263.method_120(var1);
                   client.field_1463.method_4079(var3);
                }
@@ -813,7 +813,7 @@ public class class_160 {
                   class_149.method_3135(30, "", var4);
                } else {
                   class_40 var3 = class_112.method_2238(class_266.field_3096, client.field_1463.field_2384, (byte)8);
-                  var3.field_263.method_210(class_166.method_3598(var1));
+                  var3.field_263.writeByte(class_166.method_3598(var1));
                   var3.field_263.method_120(var1);
                   client.field_1463.method_4079(var3);
                }
@@ -828,7 +828,7 @@ public class class_160 {
    }
 
    // $FF: renamed from: h (nd, int) void
-   final void method_3367(class_28 var1, int var2) {
+   final void method_3367(Buffer var1, int var2) {
       this.field_1994.method_6171(var1, var2, 2042646793);
       this.field_1991 = 596090502;
       class_282.method_5178((byte)-1);
@@ -843,7 +843,7 @@ public class class_160 {
             if(this.field_1995.method_6084(var2, -676034928)) {
                class_148.method_3123();
                class_40 var3 = class_112.method_2238(class_266.field_3129, client.field_1463.field_2384, (byte)8);
-               var3.field_263.method_210(class_166.method_3598(var1));
+               var3.field_263.writeByte(class_166.method_3598(var1));
                var3.field_263.method_120(var1);
                client.field_1463.method_4079(var3);
             }
@@ -867,7 +867,7 @@ public class class_160 {
             if(this.field_1995.method_6084(var2, -788927024)) {
                class_148.method_3123();
                class_40 var3 = class_112.method_2238(class_266.field_3129, client.field_1463.field_2384, (byte)8);
-               var3.field_263.method_210(class_166.method_3598(var1));
+               var3.field_263.writeByte(class_166.method_3598(var1));
                var3.field_263.method_120(var1);
                client.field_1463.method_4079(var3);
             }
@@ -878,14 +878,14 @@ public class class_160 {
    }
 
    // $FF: renamed from: q (nd, int) void
-   final void method_3371(class_28 var1, int var2) {
+   final void method_3371(Buffer var1, int var2) {
       this.field_1994.method_6171(var1, var2, 1352878720);
       this.field_1991 = 596090502;
       class_282.method_5178((byte)-1);
    }
 
    // $FF: renamed from: t (nd, int) void
-   final void method_3372(class_28 var1, int var2) {
+   final void method_3372(Buffer var1, int var2) {
       this.field_1994.method_6171(var1, var2, 1754972609);
       this.field_1991 = 596090502;
       class_282.method_5178((byte)-1);
@@ -1471,7 +1471,7 @@ public class class_160 {
                   var0.method_869(class_305.field_3529, 180 + class_177.field_2189 * 2130552221 - 110, var26, 16777215, 0);
                   var27 = 200;
                   String var10000;
-                  if(class_87.field_852.field_2123) {
+                  if(class_87.preferences.field_2123) {
                      if(var3 != 0) {
                         return;
                      }
@@ -1680,7 +1680,7 @@ public class class_160 {
                      var31 += var9.field_498 + 5;
                      var1.method_869(class_305.field_3517, var31, 13 + var25, 16776960, 0);
                      var31 = 24 + class_204.field_2391 * 2097206533;
-                     class_66 var12 = class_90.method_1601(class_87.field_852.field_2123, class_177.field_2207, -488222672);
+                     class_66 var12 = class_90.method_1601(class_87.preferences.field_2123, class_177.field_2207, -488222672);
                      var12.method_735(var31, var25);
                      var31 += 5 + var12.field_498;
                      var1.method_869(class_305.field_3696, var31, var25 + 13, 16776960, 0);
@@ -1943,7 +1943,7 @@ public class class_160 {
                class_65.method_690(var47);
             }
 
-            if(class_87.field_852.field_2118) {
+            if(class_87.preferences.musicEnabled) {
                if(var3 != 0) {
                   return;
                }
@@ -2016,7 +2016,7 @@ public class class_160 {
    // $FF: renamed from: n (nb, int, int) void
    static final void method_3378(class_29 var0, int var1, int var2) {
       try {
-         int var3 = -442398587 * var0.field_15;
+         int var3 = -442398587 * var0.offset;
          class_195.field_2320 = 0;
          class_139.method_3008(var0, -1728648073);
 
@@ -2027,9 +2027,9 @@ public class class_160 {
 
             int var5 = class_195.field_2314[var4];
             class_100 var6 = client.field_1605[var5];
-            int var7 = var0.method_130();
+            int var7 = var0.readUnsignedByte();
             if(0 != (var7 & 128)) {
-               var7 += var0.method_130() << 8;
+               var7 += var0.readUnsignedByte() << 8;
             }
 
             byte var8 = -1;
@@ -2038,7 +2038,7 @@ public class class_160 {
                   throw new IllegalStateException();
                }
 
-               var6.field_1128 = var0.method_132() * -187990533;
+               var6.field_1128 = var0.readShort() * -187990533;
                if(var6.field_1128 * 637535539 == '\uffff') {
                   if(var2 >= 1759061042) {
                      throw new IllegalStateException();
@@ -2127,7 +2127,7 @@ public class class_160 {
                   }
                }
 
-               var10 = var0.method_130();
+               var10 = var0.readUnsignedByte();
                if(var10 > 0) {
                   for(var11 = 0; var11 < var10; ++var11) {
                      var12 = var0.method_144();
@@ -2195,7 +2195,7 @@ public class class_160 {
                var6.field_1120 = var0.method_162() * 2120129099;
                var6.field_1109 = var0.method_162() * -260652731;
                var6.field_1078 = var0.method_157() * -280468969;
-               var6.field_1105 = (var0.method_132() + client.field_1425 * -1702273423) * 911678983;
+               var6.field_1105 = (var0.readShort() + client.field_1425 * -1702273423) * 911678983;
                var6.field_1123 = (var0.method_169() + -1702273423 * client.field_1425) * -999940959;
                var6.field_1124 = var0.method_170() * -410013785;
                if(var6.field_1168) {
@@ -2231,7 +2231,7 @@ public class class_160 {
 
                boolean var21 = var10000;
                var12 = var0.method_159();
-               var13 = var0.field_15 * -442398587;
+               var13 = var0.offset * -442398587;
                if(var6.field_1148 != null) {
                   if(var2 >= 1759061042) {
                      return;
@@ -2269,9 +2269,9 @@ public class class_160 {
                               boolean var10001;
                               String var24;
                               label392: {
-                                 class_195.field_2322.field_15 = 0;
-                                 var0.method_243(class_195.field_2322.field_12, 0, var12, (short)17831);
-                                 class_195.field_2322.field_15 = 0;
+                                 class_195.field_2322.offset = 0;
+                                 var0.method_243(class_195.field_2322.data, 0, var12, (short)17831);
+                                 class_195.field_2322.offset = 0;
                                  var24 = class_68.method_868(class_135.method_2942(class_38.method_449(class_195.field_2322), -703044740));
                                  var6.field_1089 = var24.trim();
                                  var6.field_1093 = -424817097 * (var9 >> 8);
@@ -2350,7 +2350,7 @@ public class class_160 {
                   }
                }
 
-               var0.field_15 = (var13 + var12) * -1025691571;
+               var0.offset = (var13 + var12) * -1025691571;
             }
 
             if(0 != (var7 & 2)) {
@@ -2360,8 +2360,8 @@ public class class_160 {
 
                var9 = var0.method_159();
                byte[] var19 = new byte[var9];
-               class_28 var27 = new class_28(var19);
-               class_28 var22 = var27;
+               Buffer var27 = new Buffer(var19);
+               Buffer var22 = var27;
                var0.method_243(var19, 0, var9, (short)21226);
                class_195.field_2312[var5] = var22;
                var6.method_1824(var22, (byte)1);
@@ -2432,9 +2432,9 @@ public class class_160 {
             }
          }
 
-         if(var1 != var0.field_15 * -442398587 - var3) {
+         if(var1 != var0.offset * -442398587 - var3) {
             if(var2 < 1759061042) {
-               throw new RuntimeException(var0.field_15 * -442398587 - var3 + " " + var1);
+               throw new RuntimeException(var0.offset * -442398587 - var3 + " " + var1);
             }
          }
       } catch (RuntimeException var17) {

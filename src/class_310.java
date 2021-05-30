@@ -24,12 +24,12 @@ public class class_310 {
    }
 
     // $FF: renamed from: <init> (nd, byte, int) void
-   class_310(class_28 var1, byte var2, int var3) {
+   class_310(Buffer var1, byte var2, int var3) {
       super();
       try {
          this.field_3742 = var1.method_139(-391631059);
          this.field_3746 = var1.method_139(-391631059);
-         this.field_3745 = var1.method_132() * 976507365;
+         this.field_3745 = var1.readShort() * 976507365;
          this.field_3743 = var1.method_136() * -1523233194100030643L;
          int var4 = var1.method_135();
          int var5 = var1.method_135();

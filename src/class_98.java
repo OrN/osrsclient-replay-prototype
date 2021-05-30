@@ -942,7 +942,7 @@ public abstract class class_98 extends class_91 {
                            }
 
                            var9 = class_112.method_2238(class_266.field_3094, client.field_1463.field_2384, (byte)8);
-                           var9.field_263.method_210(0);
+                           var9.field_263.writeByte(0);
                            var9.field_263.method_167(var4[var7]);
                            client.field_1463.method_4079(var9);
                         }

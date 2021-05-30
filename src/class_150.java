@@ -90,29 +90,29 @@ public class class_150 {
    }
 
     // $FF: renamed from: p (nd, bt) void
-   final void method_3188(class_28 var1, class_156 var2) {
-      int var3 = var1.method_130();
+   final void method_3188(Buffer var1, class_156 var2) {
+      int var3 = var1.readUnsignedByte();
       this.field_1906[0] = var3 >> 4;
       this.field_1906[1] = var3 & 15;
       if(var3 != 0) {
-         this.field_1901[0] = var1.method_132();
-         this.field_1901[1] = var1.method_132();
-         int var4 = var1.method_130();
+         this.field_1901[0] = var1.readShort();
+         this.field_1901[1] = var1.readShort();
+         int var4 = var1.readUnsignedByte();
 
          int var5;
          int var6;
          for(var5 = 0; var5 < 2; ++var5) {
             for(var6 = 0; var6 < this.field_1906[var5]; ++var6) {
-               this.field_1899[var5][0][var6] = var1.method_132();
-               this.field_1908[var5][0][var6] = var1.method_132();
+               this.field_1899[var5][0][var6] = var1.readShort();
+               this.field_1908[var5][0][var6] = var1.readShort();
             }
          }
 
          for(var5 = 0; var5 < 2; ++var5) {
             for(var6 = 0; var6 < this.field_1906[var5]; ++var6) {
                if((var4 & 1 << var5 * 4 << var6) != 0) {
-                  this.field_1899[var5][1][var6] = var1.method_132();
-                  this.field_1908[var5][1][var6] = var1.method_132();
+                  this.field_1899[var5][1][var6] = var1.readShort();
+                  this.field_1908[var5][1][var6] = var1.readShort();
                } else {
                   this.field_1899[var5][1][var6] = this.field_1899[var5][0][var6];
                   this.field_1908[var5][1][var6] = this.field_1908[var5][0][var6];

@@ -43,8 +43,8 @@ public class class_237 {
             }
          }
 
-         class_28 var10000 = new class_28(var0);
-         class_28 var12 = var10000;
+         Buffer var10000 = new Buffer(var0);
+         Buffer var12 = var10000;
 
          for(var8 = 0; var8 < 4; ++var8) {
             if(var6 != 1162395561) {

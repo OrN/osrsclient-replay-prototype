@@ -13,9 +13,9 @@ public class class_114 extends class_111 {
 
 
     // $FF: renamed from: v (nd, int) void
-   void method_2231(class_28 var1, int var2) {
+   void method_2231(Buffer var1, int var2) {
       try {
-         this.field_1282 = var1.method_132() * 46229643;
+         this.field_1282 = var1.readShort() * 46229643;
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
       }
@@ -36,13 +36,13 @@ public class class_114 extends class_111 {
    }
 
    // $FF: renamed from: f (nd) void
-   void method_2234(class_28 var1) {
-      this.field_1282 = var1.method_132() * 46229643;
+   void method_2234(Buffer var1) {
+      this.field_1282 = var1.readShort() * 46229643;
    }
 
    // $FF: renamed from: y (nd) void
-   void method_2233(class_28 var1) {
-      this.field_1282 = var1.method_132() * -1044229845;
+   void method_2233(Buffer var1) {
+      this.field_1282 = var1.readShort() * -1044229845;
    }
 
    // $FF: renamed from: <init> (f) void

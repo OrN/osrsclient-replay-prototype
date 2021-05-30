@@ -45,11 +45,11 @@ public class class_303 {
    }
 
    // $FF: renamed from: <init> (nd, boolean) void
-   public class_303(class_28 var1) {
+   public class_303(Buffer var1) {
       super();
       try {
-         int var3 = var1.method_132();
-         boolean var4 = var1.method_130() == 1;
+         int var3 = var1.readShort();
+         boolean var4 = var1.readUnsignedByte() == 1;
          byte var5;
          if(var4) {
             var5 = 1;
@@ -57,7 +57,7 @@ public class class_303 {
             var5 = 0;
          }
 
-         int var6 = var1.method_132();
+         int var6 = var1.readShort();
          this.field_3392 = new ArrayList(var6);
 
          for(int var7 = 0; var7 < var6; ++var7) {

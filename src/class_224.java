@@ -152,18 +152,18 @@ public class class_224 implements class_6 {
    }
 
    // $FF: renamed from: j (nd, int) void
-   public void method_15(class_28 var1) {
+   public void method_15(Buffer var1) {
       try {
-         this.field_2538 = var1.method_130() * 1130517107;
-         this.field_2531 = var1.method_130() * 1103346787;
-         this.field_2532 = var1.method_132() * -1150744613;
-         this.field_2530 = var1.method_130() * 808104457;
-         this.field_2536 = var1.method_132() * 1525688477;
-         this.field_2537 = var1.method_130() * 1157189217;
-         this.field_2534 = var1.method_132() * 1815574671;
-         this.field_2533 = var1.method_130() * -724355269;
-         this.field_2535 = var1.method_132() * -1000446769;
-         this.field_2539 = var1.method_130() * 7709589;
+         this.field_2538 = var1.readUnsignedByte() * 1130517107;
+         this.field_2531 = var1.readUnsignedByte() * 1103346787;
+         this.field_2532 = var1.readShort() * -1150744613;
+         this.field_2530 = var1.readUnsignedByte() * 808104457;
+         this.field_2536 = var1.readShort() * 1525688477;
+         this.field_2537 = var1.readUnsignedByte() * 1157189217;
+         this.field_2534 = var1.readShort() * 1815574671;
+         this.field_2533 = var1.readUnsignedByte() * -724355269;
+         this.field_2535 = var1.readShort() * -1000446769;
+         this.field_2539 = var1.readUnsignedByte() * 7709589;
          this.method_4282();
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
@@ -314,32 +314,32 @@ public class class_224 implements class_6 {
    }
 
    // $FF: renamed from: x (nd) void
-   public void method_28(class_28 var1) {
-      this.field_2538 = var1.method_130() * 1130517107;
-      this.field_2531 = var1.method_130() * 1103346787;
-      this.field_2532 = var1.method_132() * -1150744613;
-      this.field_2530 = var1.method_130() * -682080498;
-      this.field_2536 = var1.method_132() * 1525688477;
-      this.field_2537 = var1.method_130() * 2098297500;
-      this.field_2534 = var1.method_132() * -745810811;
-      this.field_2533 = var1.method_130() * 754161821;
-      this.field_2535 = var1.method_132() * 10746648;
-      this.field_2539 = var1.method_130() * -1775925895;
+   public void method_28(Buffer var1) {
+      this.field_2538 = var1.readUnsignedByte() * 1130517107;
+      this.field_2531 = var1.readUnsignedByte() * 1103346787;
+      this.field_2532 = var1.readShort() * -1150744613;
+      this.field_2530 = var1.readUnsignedByte() * -682080498;
+      this.field_2536 = var1.readShort() * 1525688477;
+      this.field_2537 = var1.readUnsignedByte() * 2098297500;
+      this.field_2534 = var1.readShort() * -745810811;
+      this.field_2533 = var1.readUnsignedByte() * 754161821;
+      this.field_2535 = var1.readShort() * 10746648;
+      this.field_2539 = var1.readUnsignedByte() * -1775925895;
       this.method_4282();
    }
 
    // $FF: renamed from: z (nd) void
-   public void method_11(class_28 var1) {
-      this.field_2538 = var1.method_130() * 1835974205;
-      this.field_2531 = var1.method_130() * 1103346787;
-      this.field_2532 = var1.method_132() * -1150744613;
-      this.field_2530 = var1.method_130() * 808104457;
-      this.field_2536 = var1.method_132() * -1986608780;
-      this.field_2537 = var1.method_130() * -1387513413;
-      this.field_2534 = var1.method_132() * -1064945484;
-      this.field_2533 = var1.method_130() * -67855614;
-      this.field_2535 = var1.method_132() * -738837839;
-      this.field_2539 = var1.method_130() * 1993030596;
+   public void method_11(Buffer var1) {
+      this.field_2538 = var1.readUnsignedByte() * 1835974205;
+      this.field_2531 = var1.readUnsignedByte() * 1103346787;
+      this.field_2532 = var1.readShort() * -1150744613;
+      this.field_2530 = var1.readUnsignedByte() * 808104457;
+      this.field_2536 = var1.readShort() * -1986608780;
+      this.field_2537 = var1.readUnsignedByte() * -1387513413;
+      this.field_2534 = var1.readShort() * -1064945484;
+      this.field_2533 = var1.readUnsignedByte() * -67855614;
+      this.field_2535 = var1.readShort() * -738837839;
+      this.field_2539 = var1.readUnsignedByte() * 1993030596;
       this.method_4282();
    }
 
@@ -390,7 +390,7 @@ public class class_224 implements class_6 {
                   throw new IllegalStateException();
                }
 
-               if(0 != -1768933319 * class_87.field_852.field_2115) {
+               if(0 != -1768933319 * class_87.preferences.field_2115) {
                   if(var4 != -309944500) {
                      throw new IllegalStateException();
                   }
@@ -405,7 +405,7 @@ public class class_224 implements class_6 {
                         var6 = 0;
                      }
 
-                     int var7 = class_87.field_852.field_2115 * -1768933319 * (var5.field_1194 * 2101998419 - var6) / (var5.field_1194 * 2101998419);
+                     int var7 = class_87.preferences.field_2115 * -1768933319 * (var5.field_1194 * 2101998419 - var6) / (var5.field_1194 * 2101998419);
                      if(null == var5.field_1196) {
                         if(var5.field_1195 * 2113426875 >= 0) {
                            if(var4 != -309944500) {

@@ -249,7 +249,7 @@ public final class class_95 extends class_91 {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28(var3);
+               Buffer var10001 = new Buffer(var3);
                var2.method_1158(var10001, 1040710174);
             }
 

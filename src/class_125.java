@@ -24,14 +24,14 @@ public class class_125 extends class_111 {
    }
 
    // $FF: renamed from: y (nd) void
-   void method_2233(class_28 var1) {
-      this.field_1361 = var1.method_132() * -974130541;
+   void method_2233(Buffer var1) {
+      this.field_1361 = var1.readShort() * -974130541;
    }
 
    // $FF: renamed from: v (nd, int) void
-   void method_2231(class_28 var1, int var2) {
+   void method_2231(Buffer var1, int var2) {
       try {
-         this.field_1361 = var1.method_132() * -974130541;
+         this.field_1361 = var1.readShort() * -974130541;
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
       }
@@ -47,8 +47,8 @@ public class class_125 extends class_111 {
    }
 
    // $FF: renamed from: f (nd) void
-   void method_2234(class_28 var1) {
-      this.field_1361 = var1.method_132() * -974130541;
+   void method_2234(Buffer var1) {
+      this.field_1361 = var1.readShort() * -974130541;
    }
 
    // $FF: renamed from: p (l) void
@@ -358,7 +358,7 @@ public class class_125 extends class_111 {
                      return;
                   }
 
-                  if(0 != class_87.field_852.field_2122 * 1285356667) {
+                  if(0 != class_87.preferences.field_2122 * 1285356667) {
                      if(var1 >= 104) {
                         throw new IllegalStateException();
                      }
@@ -368,7 +368,7 @@ public class class_125 extends class_111 {
                            throw new IllegalStateException();
                         }
 
-                        class_26.method_100(2, class_194.field_2307, var0, 0, class_87.field_852.field_2122 * 1285356667, false);
+                        class_26.method_100(2, class_194.field_2307, var0, 0, class_87.preferences.field_2122 * 1285356667, false);
                      }
                   }
                }

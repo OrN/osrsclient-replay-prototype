@@ -133,7 +133,7 @@ public class class_38 extends class_27 {
    }
 
    // $FF: renamed from: f (nd, int) java.lang.String
-   public static String method_449(class_28 var0) {
+   public static String method_449(Buffer var0) {
       try {
          return class_271.method_5058(var0, 32767, (byte)25);
       } catch (RuntimeException var2) {
@@ -186,11 +186,11 @@ public class class_38 extends class_27 {
          this.field_250 = new class_262[128];
          this.field_256 = new byte[128];
          this.field_257 = new int[128];
-         class_28 var10000 = new class_28(var1);
-         class_28 var2 = var10000;
+         Buffer var10000 = new Buffer(var1);
+         Buffer var2 = var10000;
 
          int var3;
-         for(var3 = 0; var2.field_12[var2.field_15 * -442398587 + var3] != 0; ++var3) {
+         for(var3 = 0; var2.data[var2.offset * -442398587 + var3] != 0; ++var3) {
             ;
          }
 
@@ -201,13 +201,13 @@ public class class_38 extends class_27 {
             var4[var5] = var2.method_131();
          }
 
-         var2.field_15 += -1025691571;
+         var2.offset += -1025691571;
          ++var3;
-         var5 = var2.field_15 * -442398587;
-         var2.field_15 += -1025691571 * var3;
+         var5 = var2.offset * -442398587;
+         var2.offset += -1025691571 * var3;
 
          int var6;
-         for(var6 = 0; var2.field_12[-442398587 * var2.field_15 + var6] != 0; ++var6) {
+         for(var6 = 0; var2.data[-442398587 * var2.offset + var6] != 0; ++var6) {
             ;
          }
 
@@ -218,13 +218,13 @@ public class class_38 extends class_27 {
             var7[var8] = var2.method_131();
          }
 
-         var2.field_15 += -1025691571;
+         var2.offset += -1025691571;
          ++var6;
-         var8 = var2.field_15 * -442398587;
-         var2.field_15 += -1025691571 * var6;
+         var8 = var2.offset * -442398587;
+         var2.offset += -1025691571 * var6;
 
          int var9;
-         for(var9 = 0; 0 != var2.field_12[var9 + var2.field_15 * -442398587]; ++var9) {
+         for(var9 = 0; 0 != var2.data[var9 + var2.offset * -442398587]; ++var9) {
             ;
          }
 
@@ -234,7 +234,7 @@ public class class_38 extends class_27 {
             var10[var11] = var2.method_131();
          }
 
-         var2.field_15 += -1025691571;
+         var2.offset += -1025691571;
          ++var9;
          byte[] var39 = new byte[var9];
          int var12;
@@ -245,7 +245,7 @@ public class class_38 extends class_27 {
             var12 = 2;
 
             for(var14 = 2; var14 < var9; ++var14) {
-               int var15 = var2.method_130();
+               int var15 = var2.readUnsignedByte();
                if(var15 == 0) {
                   var13 = var12++;
                } else {
@@ -268,25 +268,25 @@ public class class_38 extends class_27 {
          for(var14 = 0; var14 < var40.length; ++var14) {
             class_262 var10002 = new class_262();
             var41 = var40[var14] = var10002;
-            int var16 = var2.method_130();
+            int var16 = var2.readUnsignedByte();
             if(var16 > 0) {
                var41.field_2930 = new byte[var16 * 2];
             }
 
-            var16 = var2.method_130();
+            var16 = var2.readUnsignedByte();
             if(var16 > 0) {
                var41.field_2921 = new byte[2 * var16 + 2];
                var41.field_2921[1] = 64;
             }
          }
 
-         var14 = var2.method_130();
+         var14 = var2.readUnsignedByte();
          byte[] var42 = var14 > 0?new byte[var14 * 2]:null;
-         var14 = var2.method_130();
+         var14 = var2.readUnsignedByte();
          byte[] var43 = var14 > 0?new byte[var14 * 2]:null;
 
          int var17;
-         for(var17 = 0; var2.field_12[var17 + -442398587 * var2.field_15] != 0; ++var17) {
+         for(var17 = 0; var2.data[var17 + -442398587 * var2.offset] != 0; ++var17) {
             ;
          }
 
@@ -297,20 +297,20 @@ public class class_38 extends class_27 {
             var18[var19] = var2.method_131();
          }
 
-         var2.field_15 += -1025691571;
+         var2.offset += -1025691571;
          ++var17;
          var19 = 0;
 
          int var20;
          for(var20 = 0; var20 < 128; ++var20) {
-            var19 += var2.method_130();
+            var19 += var2.readUnsignedByte();
             this.field_252[var20] = (short)var19;
          }
 
          var19 = 0;
 
          for(var20 = 0; var20 < 128; ++var20) {
-            var19 += var2.method_130();
+            var19 += var2.readUnsignedByte();
             this.field_252[var20] = (short)(this.field_252[var20] + (var19 << 8));
          }
 
@@ -349,7 +349,7 @@ public class class_38 extends class_27 {
                      var20 = -1;
                   }
 
-                  var23 = var2.field_12[var5++] - 1;
+                  var23 = var2.data[var5++] - 1;
                }
 
                this.field_256[var24] = (byte)var23;
@@ -370,7 +370,7 @@ public class class_38 extends class_27 {
                      var20 = -1;
                   }
 
-                  var24 = var2.field_12[var8++] + 16 << 2;
+                  var24 = var2.data[var8++] + 16 << 2;
                }
 
                this.field_254[var25] = (byte)var24;
@@ -413,7 +413,7 @@ public class class_38 extends class_27 {
                }
 
                if(this.field_257[var27] > 0) {
-                  var26 = var2.method_130() + 1;
+                  var26 = var2.readUnsignedByte() + 1;
                }
             }
 
@@ -421,7 +421,7 @@ public class class_38 extends class_27 {
             --var20;
          }
 
-         this.field_255 = (var2.method_130() + 1) * -952738171;
+         this.field_255 = (var2.readUnsignedByte() + 1) * -952738171;
 
          class_262 var28;
          int var29;
@@ -458,7 +458,7 @@ public class class_38 extends class_27 {
                var19 = 0;
 
                for(var29 = 2; var29 < var28.field_2921.length; var29 += 2) {
-                  var19 = 1 + var19 + var2.method_130();
+                  var19 = 1 + var19 + var2.readUnsignedByte();
                   var28.field_2921[var29] = (byte)var19;
                }
             }
@@ -470,7 +470,7 @@ public class class_38 extends class_27 {
                var19 = 0;
 
                for(var29 = 2; var29 < var28.field_2930.length; var29 += 2) {
-                  var19 = 1 + var19 + var2.method_130();
+                  var19 = 1 + var19 + var2.readUnsignedByte();
                   var28.field_2930[var29] = (byte)var19;
                }
             }
@@ -485,11 +485,11 @@ public class class_38 extends class_27 {
          int var48;
          byte var50;
          if(var42 != null) {
-            var19 = var2.method_130();
+            var19 = var2.readUnsignedByte();
             var42[0] = (byte)var19;
 
             for(var27 = 2; var27 < var42.length; var27 += 2) {
-               var19 = 1 + var19 + var2.method_130();
+               var19 = 1 + var19 + var2.readUnsignedByte();
                var42[var27] = (byte)var19;
             }
 
@@ -525,11 +525,11 @@ public class class_38 extends class_27 {
          }
 
          if(var43 != null) {
-            var19 = var2.method_130();
+            var19 = var2.readUnsignedByte();
             var43[0] = (byte)var19;
 
             for(var27 = 2; var27 < var43.length; var27 += 2) {
-               var19 = 1 + var19 + var2.method_130();
+               var19 = 1 + var19 + var2.readUnsignedByte();
                var43[var27] = (byte)var19;
             }
 
@@ -593,39 +593,39 @@ public class class_38 extends class_27 {
          }
 
          for(var27 = 0; var27 < var12; ++var27) {
-            var40[var27].field_2920 = var2.method_130() * 128145333;
+            var40[var27].field_2920 = var2.readUnsignedByte() * 128145333;
          }
 
          for(var27 = 0; var27 < var12; ++var27) {
             var28 = var40[var27];
             if(null != var28.field_2930) {
-               var28.field_2926 = var2.method_130() * -303334999;
+               var28.field_2926 = var2.readUnsignedByte() * -303334999;
             }
 
             if(var28.field_2921 != null) {
-               var28.field_2924 = var2.method_130() * -1926238117;
+               var28.field_2924 = var2.readUnsignedByte() * -1926238117;
             }
 
             if(var28.field_2920 * -1176756579 > 0) {
-               var28.field_2925 = var2.method_130() * -766722877;
+               var28.field_2925 = var2.readUnsignedByte() * -766722877;
             }
          }
 
          for(var27 = 0; var27 < var12; ++var27) {
-            var40[var27].field_2922 = var2.method_130() * -106685089;
+            var40[var27].field_2922 = var2.readUnsignedByte() * -106685089;
          }
 
          for(var27 = 0; var27 < var12; ++var27) {
             var28 = var40[var27];
             if(-75268449 * var28.field_2922 > 0) {
-               var28.field_2927 = var2.method_130() * -1647703353;
+               var28.field_2927 = var2.readUnsignedByte() * -1647703353;
             }
          }
 
          for(var27 = 0; var27 < var12; ++var27) {
             var28 = var40[var27];
             if(1263113975 * var28.field_2927 > 0) {
-               var28.field_2928 = var2.method_130() * -681495535;
+               var28.field_2928 = var2.readUnsignedByte() * -681495535;
             }
          }
 

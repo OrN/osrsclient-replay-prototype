@@ -122,7 +122,7 @@ public class class_148 {
     // $FF: renamed from: gx (byte) void
    static void method_3120(byte var0) {
       try {
-         if(client.field_1536) {
+         if(client.renderSelf) {
             if(var0 != 5) {
                return;
             }
@@ -157,7 +157,7 @@ public class class_148 {
    static void method_3126(class_72 var0, int var1, int var2, int var3, int var4) {
       try {
          if(-1084759211 * client.field_1642 < 50) {
-            if(0 != -1768933319 * class_87.field_852.field_2115) {
+            if(0 != -1768933319 * class_87.preferences.field_2115) {
                if(null != var0.field_571) {
                   if(var4 == 1531358741) {
                      throw new IllegalStateException();

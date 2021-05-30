@@ -336,8 +336,8 @@ public class class_245 implements class_7 {
          this.field_2714 = new class_42[var1.method_5393(0)];
 
          for(int var9 = 0; var9 < var8; ++var9) {
-            class_28 var10000 = new class_28(var1.method_5381(0, var7[var9]));
-            class_28 var10 = var10000;
+            Buffer var10000 = new Buffer(var1.method_5381(0, var7[var9]));
+            Buffer var10 = var10000;
             class_42[] var12 = this.field_2714;
             int var13 = var7[var9];
             class_42 var10002 = new class_42(var10);

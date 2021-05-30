@@ -114,7 +114,7 @@ public class class_187 extends class_181 {
                if(var0 == 3105) {
                   var15 = class_165.field_2053[(class_165.field_2054 -= 1647125333) * 1824375293];
                   var11 = class_112.method_2238(class_266.field_3069, client.field_1463.field_2384, (byte)8);
-                  var11.field_263.method_210(var15.length() + 1);
+                  var11.field_263.writeByte(var15.length() + 1);
                   var11.field_263.method_120(var15);
                   client.field_1463.method_4079(var11);
                   return 1;
@@ -124,7 +124,7 @@ public class class_187 extends class_181 {
                   } else {
                      var15 = class_165.field_2053[(class_165.field_2054 -= 1647125333) * 1824375293];
                      var11 = class_112.method_2238(class_266.field_3127, client.field_1463.field_2384, (byte)8);
-                     var11.field_263.method_210(var15.length() + 1);
+                     var11.field_263.writeByte(var15.length() + 1);
                      var11.field_263.method_120(var15);
                      client.field_1463.method_4079(var11);
                      return 1;
@@ -204,7 +204,7 @@ public class class_187 extends class_181 {
                            } else {
                               var10000 = class_165.field_2052;
                               var10001 = (class_136.field_1752 += -1087727229) * -26460885 - 1;
-                              if(class_87.field_852.field_2117) {
+                              if(class_87.preferences.roofsHidden) {
                                  if(var3 <= -460481447) {
                                     throw new IllegalStateException();
                                  }
@@ -221,7 +221,7 @@ public class class_187 extends class_181 {
                            if(var3 <= -460481447) {
                               throw new IllegalStateException();
                            } else {
-                              class_170 var21 = class_87.field_852;
+                              Preferences var21 = class_87.preferences;
                               boolean var20;
                               if(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1) {
                                  if(var3 <= -460481447) {
@@ -233,8 +233,8 @@ public class class_187 extends class_181 {
                                  var20 = false;
                               }
 
-                              var21.field_2117 = var20;
-                              class_94.method_1771(-996254306);
+                              var21.roofsHidden = var20;
+                              class_94.savePreferences(-996254306);
                               return 1;
                            }
                         } else if(var0 == 3113) {
@@ -279,7 +279,7 @@ public class class_187 extends class_181 {
                                  var7.field_263.method_333(1 + class_166.method_3598(var5) + class_166.method_3598(var6));
                                  var7.field_263.method_120(var5);
                                  var7.field_263.method_120(var6);
-                                 var7.field_263.method_210(var9);
+                                 var7.field_263.writeByte(var9);
                                  client.field_1463.method_4079(var7);
                                  return 1;
                               }
@@ -311,7 +311,7 @@ public class class_187 extends class_181 {
                                  var19 = false;
                               }
 
-                              client.field_1565 = var19;
+                              client.mouseoverText = var19;
                               return 1;
                            }
                         } else if(var0 == 3119) {
@@ -328,7 +328,7 @@ public class class_187 extends class_181 {
                                  var19 = false;
                               }
 
-                              client.field_1536 = var19;
+                              client.renderSelf = var19;
                               return 1;
                            }
                         } else if(var0 == 3120) {
@@ -562,14 +562,14 @@ public class class_187 extends class_181 {
                                  }
 
                                  var10 = var19;
-                                 class_87.field_852.field_2123 = var10;
-                                 class_94.method_1771(-511329856);
+                                 class_87.preferences.field_2123 = var10;
+                                 class_94.savePreferences(-511329856);
                                  return 1;
                               }
                            } else if(3142 == var0) {
                               var10000 = class_165.field_2052;
                               var10001 = (class_136.field_1752 += -1087727229) * -26460885 - 1;
-                              if(class_87.field_852.field_2123) {
+                              if(class_87.preferences.field_2123) {
                                  if(var3 <= -460481447) {
                                     throw new IllegalStateException();
                                  }
@@ -599,8 +599,8 @@ public class class_187 extends class_181 {
                                     throw new IllegalStateException();
                                  }
 
-                                 class_87.field_852.field_2120 = "";
-                                 class_94.method_1771(-320160331);
+                                 class_87.preferences.field_2120 = "";
+                                 class_94.savePreferences(-320160331);
                               }
 
                               return 1;
@@ -632,13 +632,13 @@ public class class_187 extends class_181 {
                                  }
 
                                  var10 = var19;
-                                 if(class_87.field_852.field_2118 == var10) {
+                                 if(class_87.preferences.musicEnabled == var10) {
                                     if(var3 <= -460481447) {
                                        throw new IllegalStateException();
                                     }
 
-                                    class_87.field_852.field_2118 = !var10;
-                                    class_94.method_1771(-1368111062);
+                                    class_87.preferences.musicEnabled = !var10;
+                                    class_94.savePreferences(-1368111062);
                                  }
 
                                  return 1;
@@ -649,7 +649,7 @@ public class class_187 extends class_181 {
                               } else {
                                  var10000 = class_165.field_2052;
                                  var10001 = (class_136.field_1752 += -1087727229) * -26460885 - 1;
-                                 if(class_87.field_852.field_2118) {
+                                 if(class_87.preferences.musicEnabled) {
                                     if(var3 <= -460481447) {
                                        throw new IllegalStateException();
                                     }
@@ -893,7 +893,7 @@ public class class_187 extends class_181 {
                                  return 1;
                               }
                            } else if(3182 == var0) {
-                              float var4 = 200.0F * ((float)class_87.field_852.field_2128 - 0.5F);
+                              float var4 = 200.0F * ((float)class_87.preferences.field_2128 - 0.5F);
                               class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = 100 - Math.round(var4);
                               return 1;
                            } else {

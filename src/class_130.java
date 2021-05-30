@@ -21,8 +21,8 @@ public class class_130 {
    }
 
    // $FF: renamed from: <init> (nd) void
-   class_130(class_28 var1) {
-      this(var1.method_130(), var1.method_130(), var1.method_139(-391631059));
+   class_130(Buffer var1) {
+      this(var1.readUnsignedByte(), var1.readUnsignedByte(), var1.method_139(-391631059));
    }
 
     // $FF: renamed from: <init> (int, int, java.lang.String) void

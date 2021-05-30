@@ -2628,12 +2628,6 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: dv () void
    public abstract void method_2410();
 
-   // $FF: renamed from: dy () void
-   protected abstract void method_2411();
-
-   // $FF: renamed from: dd () void
-   protected abstract void method_2412();
-
    // $FF: renamed from: al (byte) void
    protected abstract void method_2413(byte var1);
 

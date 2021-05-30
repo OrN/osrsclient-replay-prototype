@@ -10,7 +10,7 @@ public class class_203 {
    // $FF: renamed from: u int
    int field_2372;
    // $FF: renamed from: y nd
-   class_28 field_2373;
+   Buffer field_2373;
    // $FF: renamed from: v ls
    class_206 field_2374;
    // $FF: renamed from: j nb
@@ -52,7 +52,7 @@ public class class_203 {
                   throw new IllegalStateException();
                }
 
-               this.field_2373.field_15 = 0;
+               this.field_2373.offset = 0;
 
                while(true) {
                   class_40 var2 = (class_40)this.field_2371.method_5700();
@@ -63,21 +63,21 @@ public class class_203 {
                      break;
                   }
 
-                  if(var2.field_264 * -2120774193 > this.field_2373.field_12.length - -442398587 * this.field_2373.field_15) {
+                  if(var2.field_264 * -2120774193 > this.field_2373.data.length - -442398587 * this.field_2373.offset) {
                      if(var1 != -1875758370) {
                         throw new IllegalStateException();
                      }
                      break;
                   }
 
-                  this.field_2373.method_161(var2.field_263.field_12, 0, -2120774193 * var2.field_264);
+                  this.field_2373.method_161(var2.field_263.data, 0, -2120774193 * var2.field_264);
                   this.field_2383 -= var2.field_264 * -1686998625;
                   var2.method_108();
                   var2.field_263.method_112((byte)32);
                   var2.method_471((byte)100);
                }
 
-               this.field_2374.method_4132(this.field_2373.field_12, 0, this.field_2373.field_15 * -442398587);
+               this.field_2374.method_4132(this.field_2373.data, 0, this.field_2373.offset * -442398587);
                this.field_2372 = 0;
             }
          }
@@ -110,8 +110,8 @@ public class class_203 {
    public final void method_4079(class_40 var1) {
       try {
          this.field_2371.method_5697(var1);
-         var1.field_264 = var1.field_263.field_15 * 985550187;
-         var1.field_263.field_15 = 0;
+         var1.field_264 = var1.field_263.offset * 985550187;
+         var1.field_263.offset = 0;
          this.field_2383 += var1.field_264 * -1686998625;
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
@@ -169,8 +169,8 @@ public class class_203 {
    // $FF: renamed from: l (hq) void
    public final void method_4086(class_40 var1) {
       this.field_2371.method_5697(var1);
-      var1.field_264 = var1.field_263.field_15 * 985550187;
-      var1.field_263.field_15 = 0;
+      var1.field_264 = var1.field_263.offset * 985550187;
+      var1.field_263.offset = 0;
       this.field_2383 += var1.field_264 * -1686998625;
    }
 
@@ -201,7 +201,7 @@ public class class_203 {
          class_323 var10001 = new class_323();
          this.field_2371 = var10001;
          this.field_2383 = 0;
-         class_28 var2 = new class_28(5000);
+         Buffer var2 = new Buffer(5000);
          this.field_2373 = var2;
          class_29 var3 = new class_29('\u9c40');
          this.field_2375 = var3;
@@ -227,17 +227,17 @@ public class class_203 {
    // $FF: renamed from: u () void
    final void method_4093() throws IOException {
       if(this.field_2374 != null && -432974383 * this.field_2383 > 0) {
-         this.field_2373.field_15 = 0;
+         this.field_2373.offset = 0;
 
          while(true) {
             class_40 var1 = (class_40)this.field_2371.method_5700();
-            if(var1 == null || var1.field_264 * -1952245086 > this.field_2373.field_12.length - -442398587 * this.field_2373.field_15) {
-               this.field_2374.method_4132(this.field_2373.field_12, 0, this.field_2373.field_15 * -442398587);
+            if(var1 == null || var1.field_264 * -1952245086 > this.field_2373.data.length - -442398587 * this.field_2373.offset) {
+               this.field_2374.method_4132(this.field_2373.data, 0, this.field_2373.offset * -442398587);
                this.field_2372 = 0;
                break;
             }
 
-            this.field_2373.method_161(var1.field_263.field_12, 0, -2120774193 * var1.field_264);
+            this.field_2373.method_161(var1.field_263.data, 0, -2120774193 * var1.field_264);
             this.field_2383 -= var1.field_264 * -1686998625;
             var1.method_108();
             var1.field_263.method_112((byte)114);
@@ -255,17 +255,17 @@ public class class_203 {
    // $FF: renamed from: s () void
    final void method_4095() throws IOException {
       if(this.field_2374 != null && -432974383 * this.field_2383 > 0) {
-         this.field_2373.field_15 = 0;
+         this.field_2373.offset = 0;
 
          while(true) {
             class_40 var1 = (class_40)this.field_2371.method_5700();
-            if(var1 == null || var1.field_264 * 656199849 > this.field_2373.field_12.length - -442398587 * this.field_2373.field_15) {
-               this.field_2374.method_4132(this.field_2373.field_12, 0, this.field_2373.field_15 * -442398587);
+            if(var1 == null || var1.field_264 * 656199849 > this.field_2373.data.length - -442398587 * this.field_2373.offset) {
+               this.field_2374.method_4132(this.field_2373.data, 0, this.field_2373.offset * -442398587);
                this.field_2372 = 0;
                break;
             }
 
-            this.field_2373.method_161(var1.field_263.field_12, 0, -1427645537 * var1.field_264);
+            this.field_2373.method_161(var1.field_263.data, 0, -1427645537 * var1.field_264);
             this.field_2383 -= var1.field_264 * -1736269188;
             var1.method_108();
             var1.field_263.method_112((byte)103);
@@ -284,13 +284,13 @@ public class class_203 {
    static final void method_4097(int var0, int var1) {
       try {
          var0 = Math.min(Math.max(var0, 0), 255);
-         if(var0 != class_87.field_852.field_2122 * 1285356667) {
+         if(var0 != class_87.preferences.field_2122 * 1285356667) {
             if(var1 >= 1595817046) {
                throw new IllegalStateException();
             }
 
             label46: {
-               if(0 == 1285356667 * class_87.field_852.field_2122) {
+               if(0 == 1285356667 * class_87.preferences.field_2122) {
                   if(var1 >= 1595817046) {
                      throw new IllegalStateException();
                   }
@@ -326,8 +326,8 @@ public class class_203 {
                }
             }
 
-            class_87.field_852.field_2122 = var0 * -813727053;
-            class_94.method_1771(-958210169);
+            class_87.preferences.field_2122 = var0 * -813727053;
+            class_94.savePreferences(-958210169);
          }
 
       } catch (RuntimeException var2) {

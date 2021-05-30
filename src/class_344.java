@@ -25,7 +25,7 @@ public class class_344 extends class_343 {
 
 
    // $FF: renamed from: c (nd) void
-   public final void method_6143(class_28 var1) {
+   public final void method_6143(Buffer var1) {
       this.method_6145(var1.method_139(-391631059));
       long var2 = var1.method_136();
       long var5 = var2;
@@ -57,14 +57,14 @@ public class class_344 extends class_343 {
 
       this.method_6163(var4);
       this.field_3911 = var1.method_131();
-      var7 = var1.method_130();
+      var7 = var1.readUnsignedByte();
       if(var7 != 255) {
          this.method_6104();
 
          for(int var13 = 0; var13 < var7; ++var13) {
             class_359 var10001 = new class_359(var1.method_139(-391631059), this.field_3915);
             class_341 var9 = (class_341)this.method_6069(var10001);
-            int var14 = var1.method_132();
+            int var14 = var1.readShort();
             var9.method_6016(var14, (this.field_3910 += 1879730295) * -1952190137 - 1);
             var9.field_3887 = var1.method_131() * -694795321;
             var1.method_139(-391631059);
@@ -111,7 +111,7 @@ public class class_344 extends class_343 {
    }
 
    // $FF: renamed from: d (nd, int) void
-   public final void method_6146(class_28 var1, int var2) {
+   public final void method_6146(Buffer var1, int var2) {
       try {
          String var5;
          int var8;
@@ -165,7 +165,7 @@ public class class_344 extends class_343 {
 
          this.method_6163(var5);
          this.field_3911 = var1.method_131();
-         var8 = var1.method_130();
+         var8 = var1.readUnsignedByte();
          if(var8 == 255) {
             if(var2 >= -1173912475) {
                throw new IllegalStateException();
@@ -180,7 +180,7 @@ public class class_344 extends class_343 {
 
                class_359 var10001 = new class_359(var1.method_139(-391631059), this.field_3915);
                class_341 var10 = (class_341)this.method_6069(var10001);
-               int var16 = var1.method_132();
+               int var16 = var1.readShort();
                var10.method_6016(var16, (this.field_3910 += 1879730295) * -1952190137 - 1);
                var10.field_3887 = var1.method_131() * -694795321;
                var1.method_139(-391631059);
@@ -194,10 +194,10 @@ public class class_344 extends class_343 {
    }
 
    // $FF: renamed from: x (nd) void
-   public final void method_6147(class_28 var1) {
+   public final void method_6147(Buffer var1) {
       class_359 var10000 = new class_359(var1.method_139(-391631059), this.field_3915);
       class_359 var2 = var10000;
-      int var3 = var1.method_132();
+      int var3 = var1.readShort();
       byte var4 = var1.method_131();
       boolean var5 = false;
       if(var4 == -128) {
@@ -245,11 +245,11 @@ public class class_344 extends class_343 {
    }
 
    // $FF: renamed from: s (nd, int) void
-   public final void method_6149(class_28 var1, int var2) {
+   public final void method_6149(Buffer var1, int var2) {
       try {
          class_359 var10000 = new class_359(var1.method_139(-391631059), this.field_3915);
          class_359 var3 = var10000;
-         int var4 = var1.method_132();
+         int var4 = var1.readShort();
          byte var5 = var1.method_131();
          boolean var6 = false;
          if(var5 == -128) {
@@ -351,7 +351,7 @@ public class class_344 extends class_343 {
    }
 
    // $FF: renamed from: g (nd) void
-   public final void method_6151(class_28 var1) {
+   public final void method_6151(Buffer var1) {
       this.method_6145(var1.method_139(-391631059));
       long var2 = var1.method_136();
       long var5 = var2;
@@ -383,14 +383,14 @@ public class class_344 extends class_343 {
 
       this.method_6163(var4);
       this.field_3911 = var1.method_131();
-      var7 = var1.method_130();
+      var7 = var1.readUnsignedByte();
       if(var7 != 255) {
          this.method_6104();
 
          for(int var13 = 0; var13 < var7; ++var13) {
             class_359 var10001 = new class_359(var1.method_139(-391631059), this.field_3915);
             class_341 var9 = (class_341)this.method_6069(var10001);
-            int var14 = var1.method_132();
+            int var14 = var1.readShort();
             var9.method_6016(var14, (this.field_3910 += 1879730295) * 2092080294 - 1);
             var9.field_3887 = var1.method_131() * 1350093183;
             var1.method_139(-391631059);
@@ -401,7 +401,7 @@ public class class_344 extends class_343 {
    }
 
    // $FF: renamed from: a (nd) void
-   public final void method_6152(class_28 var1) {
+   public final void method_6152(Buffer var1) {
       this.method_6145(var1.method_139(-391631059));
       long var2 = var1.method_136();
       long var5 = var2;
@@ -433,14 +433,14 @@ public class class_344 extends class_343 {
 
       this.method_6163(var4);
       this.field_3911 = var1.method_131();
-      var7 = var1.method_130();
+      var7 = var1.readUnsignedByte();
       if(var7 != 606732087) {
          this.method_6104();
 
          for(int var13 = 0; var13 < var7; ++var13) {
             class_359 var10001 = new class_359(var1.method_139(-391631059), this.field_3915);
             class_341 var9 = (class_341)this.method_6069(var10001);
-            int var14 = var1.method_132();
+            int var14 = var1.readShort();
             var9.method_6016(var14, (this.field_3910 += -833130731) * -515556316 - 1);
             var9.field_3887 = var1.method_131() * 199386748;
             var1.method_139(-391631059);
@@ -467,7 +467,7 @@ public class class_344 extends class_343 {
    }
 
    // $FF: renamed from: k (nd) void
-   public final void method_6155(class_28 var1) {
+   public final void method_6155(Buffer var1) {
       this.method_6145(var1.method_139(-391631059));
       long var2 = var1.method_136();
       long var5 = var2;
@@ -499,14 +499,14 @@ public class class_344 extends class_343 {
 
       this.method_6163(var4);
       this.field_3911 = var1.method_131();
-      var7 = var1.method_130();
+      var7 = var1.readUnsignedByte();
       if(var7 != 255) {
          this.method_6104();
 
          for(int var13 = 0; var13 < var7; ++var13) {
             class_359 var10001 = new class_359(var1.method_139(-391631059), this.field_3915);
             class_341 var9 = (class_341)this.method_6069(var10001);
-            int var14 = var1.method_132();
+            int var14 = var1.readShort();
             var9.method_6016(var14, (this.field_3910 += 1879730295) * -1952190137 - 1);
             var9.field_3887 = var1.method_131() * -694795321;
             var1.method_139(-391631059);
@@ -517,10 +517,10 @@ public class class_344 extends class_343 {
    }
 
    // $FF: renamed from: m (nd) void
-   public final void method_6156(class_28 var1) {
+   public final void method_6156(Buffer var1) {
       class_359 var10000 = new class_359(var1.method_139(-391631059), this.field_3915);
       class_359 var2 = var10000;
-      int var3 = var1.method_132();
+      int var3 = var1.readShort();
       byte var4 = var1.method_131();
       boolean var5 = false;
       if(var4 == -128) {
@@ -556,7 +556,7 @@ public class class_344 extends class_343 {
    }
 
    // $FF: renamed from: e (nd) void
-   public final void method_6157(class_28 var1) {
+   public final void method_6157(Buffer var1) {
       this.method_6145(var1.method_139(-391631059));
       long var2 = var1.method_136();
       long var5 = var2;
@@ -588,14 +588,14 @@ public class class_344 extends class_343 {
 
       this.method_6163(var4);
       this.field_3911 = var1.method_131();
-      var7 = var1.method_130();
+      var7 = var1.readUnsignedByte();
       if(var7 != 788319611) {
          this.method_6104();
 
          for(int var13 = 0; var13 < var7; ++var13) {
             class_359 var10001 = new class_359(var1.method_139(-391631059), this.field_3915);
             class_341 var9 = (class_341)this.method_6069(var10001);
-            int var14 = var1.method_132();
+            int var14 = var1.readShort();
             var9.method_6016(var14, (this.field_3910 += 1906850304) * -1952190137 - 1);
             var9.field_3887 = var1.method_131() * -694795321;
             var1.method_139(-391631059);

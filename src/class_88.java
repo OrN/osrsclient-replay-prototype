@@ -92,12 +92,12 @@ public class class_88 extends class_59 {
    }
 
    // $FF: renamed from: y (nd, int, byte) void
-   void method_1542(class_28 var1, int var2, byte var3) {
+   void method_1542(Buffer var1, int var2, byte var3) {
       try {
          int var4;
          int var5;
          if(var2 == 1) {
-            var4 = var1.method_130();
+            var4 = var1.readUnsignedByte();
             this.field_866 = new int[var4];
 
             for(var5 = 0; var5 < var4; ++var5) {
@@ -105,7 +105,7 @@ public class class_88 extends class_59 {
                   throw new IllegalStateException();
                }
 
-               this.field_866[var5] = var1.method_132();
+               this.field_866[var5] = var1.readShort();
             }
          } else if(var2 == 2) {
             if(var3 == 7) {
@@ -114,38 +114,38 @@ public class class_88 extends class_59 {
 
             this.field_858 = var1.method_139(-391631059);
          } else if(12 == var2) {
-            this.field_859 = var1.method_130() * 2143888193;
+            this.field_859 = var1.readUnsignedByte() * 2143888193;
          } else if(13 == var2) {
-            this.field_875 = var1.method_132() * 1784073613;
+            this.field_875 = var1.readShort() * 1784073613;
          } else if(14 == var2) {
-            this.field_865 = var1.method_132() * -824174637;
+            this.field_865 = var1.readShort() * -824174637;
          } else if(var2 == 15) {
             if(var3 == 7) {
                return;
             }
 
-            this.field_863 = var1.method_132() * 1081629083;
+            this.field_863 = var1.readShort() * 1081629083;
          } else if(var2 == 16) {
             if(var3 == 7) {
                throw new IllegalStateException();
             }
 
-            this.field_874 = var1.method_132() * 825755253;
+            this.field_874 = var1.readShort() * 825755253;
          } else if(17 == var2) {
             if(var3 == 7) {
                return;
             }
 
-            this.field_865 = var1.method_132() * -824174637;
-            this.field_870 = var1.method_132() * 1636089201;
-            this.field_867 = var1.method_132() * -939915041;
-            this.field_868 = var1.method_132() * -250921021;
+            this.field_865 = var1.readShort() * -824174637;
+            this.field_870 = var1.readShort() * 1636089201;
+            this.field_867 = var1.readShort() * -939915041;
+            this.field_868 = var1.readShort() * -250921021;
          } else if(var2 == 18) {
             if(var3 == 7) {
                return;
             }
 
-            var1.method_132();
+            var1.readShort();
          } else {
             if(var2 >= 30) {
                if(var3 == 7) {
@@ -171,7 +171,7 @@ public class class_88 extends class_59 {
                   throw new IllegalStateException();
                }
 
-               var4 = var1.method_130();
+               var4 = var1.readUnsignedByte();
                this.field_869 = new short[var4];
                this.field_864 = new short[var4];
 
@@ -180,11 +180,11 @@ public class class_88 extends class_59 {
                      throw new IllegalStateException();
                   }
 
-                  this.field_869[var5] = (short)var1.method_132();
-                  this.field_864[var5] = (short)var1.method_132();
+                  this.field_869[var5] = (short)var1.readShort();
+                  this.field_864[var5] = (short)var1.readShort();
                }
             } else if(41 == var2) {
-               var4 = var1.method_130();
+               var4 = var1.readUnsignedByte();
                this.field_860 = new short[var4];
                this.field_872 = new short[var4];
 
@@ -193,36 +193,36 @@ public class class_88 extends class_59 {
                      throw new IllegalStateException();
                   }
 
-                  this.field_860[var5] = (short)var1.method_132();
-                  this.field_872[var5] = (short)var1.method_132();
+                  this.field_860[var5] = (short)var1.readShort();
+                  this.field_872[var5] = (short)var1.readShort();
                }
             } else if(var2 == 60) {
                if(var3 == 7) {
                   return;
                }
 
-               var4 = var1.method_130();
+               var4 = var1.readUnsignedByte();
                this.field_861 = new int[var4];
 
                for(var5 = 0; var5 < var4; ++var5) {
-                  this.field_861[var5] = var1.method_132();
+                  this.field_861[var5] = var1.readShort();
                }
             } else if(93 == var2) {
                this.field_883 = false;
             } else if(var2 == 95) {
-               this.field_853 = var1.method_132() * -1182914317;
+               this.field_853 = var1.readShort() * -1182914317;
             } else if(var2 == 97) {
                if(var3 == 7) {
                   throw new IllegalStateException();
                }
 
-               this.field_855 = var1.method_132() * 82664775;
+               this.field_855 = var1.readShort() * 82664775;
             } else if(98 == var2) {
                if(var3 == 7) {
                   throw new IllegalStateException();
                }
 
-               this.field_877 = var1.method_132() * -1453934407;
+               this.field_877 = var1.readShort() * -1453934407;
             } else if(99 == var2) {
                if(var3 == 7) {
                   throw new IllegalStateException();
@@ -238,13 +238,13 @@ public class class_88 extends class_59 {
                   throw new IllegalStateException();
                }
 
-               this.field_881 = var1.method_132() * 915888573;
+               this.field_881 = var1.readShort() * 915888573;
             } else if(var2 == 103) {
                if(var3 == 7) {
                   throw new IllegalStateException();
                }
 
-               this.field_882 = var1.method_132() * 198576593;
+               this.field_882 = var1.readShort() * 198576593;
             } else {
                if(var2 != 106) {
                   if(var3 == 7) {
@@ -291,12 +291,12 @@ public class class_88 extends class_59 {
                   }
                }
 
-               this.field_854 = var1.method_132() * 217670275;
+               this.field_854 = var1.readShort() * 217670275;
                if('\uffff' == this.field_854 * -17335253) {
                   this.field_854 = -217670275;
                }
 
-               this.field_885 = var1.method_132() * -236114995;
+               this.field_885 = var1.readShort() * -236114995;
                if(-1483491067 * this.field_885 == '\uffff') {
                   if(var3 == 7) {
                      throw new IllegalStateException();
@@ -311,7 +311,7 @@ public class class_88 extends class_59 {
                      throw new IllegalStateException();
                   }
 
-                  var4 = var1.method_132();
+                  var4 = var1.readShort();
                   if(var4 == '\uffff') {
                      if(var3 == 7) {
                         throw new IllegalStateException();
@@ -321,11 +321,11 @@ public class class_88 extends class_59 {
                   }
                }
 
-               var5 = var1.method_130();
+               var5 = var1.readUnsignedByte();
                this.field_862 = new int[var5 + 2];
 
                for(int var6 = 0; var6 <= var5; ++var6) {
-                  this.field_862[var6] = var1.method_132();
+                  this.field_862[var6] = var1.readShort();
                   if(this.field_862[var6] == '\uffff') {
                      if(var3 == 7) {
                         throw new IllegalStateException();
@@ -735,7 +735,7 @@ public class class_88 extends class_59 {
       try {
          if(!var0.equals("")) {
             class_40 var2 = class_112.method_2238(class_266.field_3048, client.field_1463.field_2384, (byte)8);
-            var2.field_263.method_210(class_166.method_3598(var0));
+            var2.field_263.writeByte(class_166.method_3598(var0));
             var2.field_263.method_120(var0);
             client.field_1463.method_4079(var2);
          }
@@ -745,10 +745,10 @@ public class class_88 extends class_59 {
    }
 
    // $FF: renamed from: f (nd, int) void
-   void method_1566(class_28 var1, int var2) {
+   void method_1566(Buffer var1, int var2) {
       try {
          while(true) {
-            int var3 = var1.method_130();
+            int var3 = var1.readUnsignedByte();
             if(var3 == 0) {
                if(var2 != 1170104499) {
                   throw new IllegalStateException();

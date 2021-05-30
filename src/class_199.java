@@ -20,49 +20,6 @@ public class class_199 {
    // $FF: renamed from: v int
    public static final int field_2347 = 1048576000;
 
-
-   // $FF: renamed from: u (java.lang.String, java.lang.String, boolean) nm
-   public static class_383 method_4021(String var0, String var1, boolean var2) {
-      File var3 = new File(class_53.fOldschoolCacheDir, "preferences" + var0 + ".dat");
-      class_383 var10000;
-      if(var3.exists()) {
-         try {
-            var10000 = new class_383(var3, "rw", 10000L);
-            class_383 var10 = var10000;
-            return var10;
-         } catch (IOException var9) {
-            ;
-         }
-      }
-
-      String var4 = "";
-      if(-1703068772 == class_184.field_2257 * 838635259) {
-         var4 = "_rc";
-      } else if(34 == 746327573 * class_184.field_2257) {
-         var4 = "_wip";
-      }
-
-      File var5 = new File(class_115.homeDirectory, "jagex_" + var1 + "_preferences" + var0 + var4 + ".dat");
-      class_383 var6;
-      if(!var2 && var5.exists()) {
-         try {
-            var10000 = new class_383(var5, "rw", 10000L);
-            var6 = var10000;
-            return var6;
-         } catch (IOException var8) {
-            ;
-         }
-      }
-
-      try {
-         var10000 = new class_383(var3, "rw", 10000L);
-         var6 = var10000;
-         return var6;
-      } catch (IOException var7) {
-         throw new RuntimeException();
-      }
-   }
-
    // $FF: renamed from: <clinit> () void
    static {
       field_2344 = null;
@@ -75,10 +32,10 @@ public class class_199 {
       try {
          File var0 = new File(class_115.homeDirectory, "random.dat");
          class_376 var10000;
-         class_383 var10002;
+         RAFileHandle var10002;
          int var2;
          if(var0.exists()) {
-            var10002 = new class_383(var0, "rw", 25L);
+            var10002 = new RAFileHandle(var0, "rw", 25L);
             var10000 = new class_376(var10002, 24, 0);
             field_2344 = var10000;
          } else {
@@ -87,7 +44,7 @@ public class class_199 {
                for(var2 = 0; var2 < class_48.cacheDirectories.length; ++var2) {
                   File var3 = new File(class_48.cacheDirectories[var2] + class_292.field_3333[var1] + File.separatorChar + "random.dat");
                   if(var3.exists()) {
-                     var10002 = new class_383(var3, "rw", 25L);
+                     var10002 = new RAFileHandle(var3, "rw", 25L);
                      var10000 = new class_376(var10002, 24, 0);
                      field_2344 = var10000;
                      break label31;
@@ -103,7 +60,7 @@ public class class_199 {
             var5.write(var2);
             var5.seek(0L);
             var5.close();
-            var10002 = new class_383(var0, "rw", 25L);
+            var10002 = new RAFileHandle(var0, "rw", 25L);
             var10000 = new class_376(var10002, 24, 0);
             field_2344 = var10000;
          }
@@ -120,33 +77,33 @@ public class class_199 {
       String var4 = null;
       String var5 = null;
       boolean var6 = false;
-      class_28 var8;
-      class_383 var10000;
+      Buffer var8;
+      RAFileHandle var10000;
       File var20;
-      class_28 var27;
+      Buffer var27;
       if(class_396.field_4253.exists()) {
          try {
-            var10000 = new class_383(class_396.field_4253, "rw", 10000L);
-            class_383 var7 = var10000;
-            var27 = new class_28((int)var7.method_6688());
+            var10000 = new RAFileHandle(class_396.field_4253, "rw", 10000L);
+            RAFileHandle var7 = var10000;
+            var27 = new Buffer((int)var7.size());
 
             int var9;
-            for(var8 = var27; var8.field_15 * -442398587 < var8.field_12.length; var8.field_15 += -1025691571 * var9) {
-               var9 = var7.method_6689(var8.field_12, -442398587 * var8.field_15, var8.field_12.length - -442398587 * var8.field_15, (byte)-30);
+            for(var8 = var27; var8.offset * -442398587 < var8.data.length; var8.offset += -1025691571 * var9) {
+               var9 = var7.read(var8.data, -442398587 * var8.offset, var8.data.length - -442398587 * var8.offset, (byte)-30);
                if(var9 == -1) {
                   throw new IOException();
                }
             }
 
-            var8.field_15 = 0;
-            var9 = var8.method_130();
+            var8.offset = 0;
+            var9 = var8.readUnsignedByte();
             if(var9 < 1 || var9 > 3) {
                throw new IOException("" + var9);
             }
 
             int var10 = 0;
             if(var9 > 1) {
-               var10 = var8.method_130();
+               var10 = var8.readUnsignedByte();
             }
 
             if(var9 <= 2) {
@@ -161,7 +118,7 @@ public class class_199 {
                }
             }
 
-            var7.method_6701();
+            var7.close();
          } catch (IOException var17) {
             var17.printStackTrace();
          }
@@ -229,20 +186,20 @@ public class class_199 {
          var8 = null;
 
          try {
-            var10000 = new class_383(class_396.field_4253, "rw", 10000L);
-            class_383 var24 = var10000;
-            var27 = new class_28(500);
-            class_28 var26 = var27;
-            var26.method_210(3);
-            var26.method_210(var8 != null?1:0);
+            var10000 = new RAFileHandle(class_396.field_4253, "rw", 10000L);
+            RAFileHandle var24 = var10000;
+            var27 = new Buffer(500);
+            Buffer var26 = var27;
+            var26.writeByte(3);
+            var26.writeByte(var8 != null?1:0);
             var26.method_128(var19.getPath(), 499802318);
             if(var8 != null) {
                // TODO: Originally var8
                var26.method_128(var19.getPath(), 499802318);
             }
 
-            var24.method_6686(var26.field_12, 0, -2075038961 * var26.field_15, (byte)-49);
-            var24.method_6701();
+            var24.write(var26.data, 0, -2075038961 * var26.offset, (byte)-49);
+            var24.close();
          } catch (IOException var15) {
             var15.printStackTrace();
          }
@@ -258,33 +215,33 @@ public class class_199 {
       String var4 = null;
       String var5 = null;
       boolean var6 = false;
-      class_28 var8;
-      class_383 var10000;
+      Buffer var8;
+      RAFileHandle var10000;
       File var20;
-      class_28 var27;
+      Buffer var27;
       if(class_396.field_4253.exists()) {
          try {
-            var10000 = new class_383(class_396.field_4253, "rw", 10000L);
-            class_383 var7 = var10000;
-            var27 = new class_28((int)var7.method_6688());
+            var10000 = new RAFileHandle(class_396.field_4253, "rw", 10000L);
+            RAFileHandle var7 = var10000;
+            var27 = new Buffer((int)var7.size());
 
             int var9;
-            for(var8 = var27; var8.field_15 * -442398587 < var8.field_12.length; var8.field_15 += -1025691571 * var9) {
-               var9 = var7.method_6689(var8.field_12, -442398587 * var8.field_15, var8.field_12.length - -442398587 * var8.field_15, (byte)-31);
+            for(var8 = var27; var8.offset * -442398587 < var8.data.length; var8.offset += -1025691571 * var9) {
+               var9 = var7.read(var8.data, -442398587 * var8.offset, var8.data.length - -442398587 * var8.offset, (byte)-31);
                if(var9 == -1) {
                   throw new IOException();
                }
             }
 
-            var8.field_15 = 0;
-            var9 = var8.method_130();
+            var8.offset = 0;
+            var9 = var8.readUnsignedByte();
             if(var9 < 1 || var9 > 3) {
                throw new IOException("" + var9);
             }
 
             int var10 = 0;
             if(var9 > 1) {
-               var10 = var8.method_130();
+               var10 = var8.readUnsignedByte();
             }
 
             if(var9 <= 2) {
@@ -299,7 +256,7 @@ public class class_199 {
                }
             }
 
-            var7.method_6701();
+            var7.close();
          } catch (IOException var17) {
             var17.printStackTrace();
          }
@@ -367,20 +324,20 @@ public class class_199 {
          var8 = null;
 
          try {
-            var10000 = new class_383(class_396.field_4253, "rw", 10000L);
-            class_383 var24 = var10000;
-            var27 = new class_28(500);
-            class_28 var26 = var27;
-            var26.method_210(3);
-            var26.method_210(var8 != null?1:0);
+            var10000 = new RAFileHandle(class_396.field_4253, "rw", 10000L);
+            RAFileHandle var24 = var10000;
+            var27 = new Buffer(500);
+            Buffer var26 = var27;
+            var26.writeByte(3);
+            var26.writeByte(var8 != null?1:0);
             var26.method_128(var19.getPath(), 499802318);
             if(var8 != null) {
                // TODO: Original var8
                var26.method_128(var19.getPath(), 499802318);
             }
 
-            var24.method_6686(var26.field_12, 0, -442398587 * var26.field_15, (byte)45);
-            var24.method_6701();
+            var24.write(var26.data, 0, -442398587 * var26.offset, (byte)45);
+            var24.close();
          } catch (IOException var15) {
             var15.printStackTrace();
          }
@@ -396,33 +353,33 @@ public class class_199 {
       String var4 = null;
       String var5 = null;
       boolean var6 = false;
-      class_28 var8;
-      class_383 var10000;
+      Buffer var8;
+      RAFileHandle var10000;
       File var20;
-      class_28 var27;
+      Buffer var27;
       if(class_396.field_4253.exists()) {
          try {
-            var10000 = new class_383(class_396.field_4253, "rw", 10000L);
-            class_383 var7 = var10000;
-            var27 = new class_28((int)var7.method_6688());
+            var10000 = new RAFileHandle(class_396.field_4253, "rw", 10000L);
+            RAFileHandle var7 = var10000;
+            var27 = new Buffer((int)var7.size());
 
             int var9;
-            for(var8 = var27; var8.field_15 * 1849884383 < var8.field_12.length; var8.field_15 += -1025691571 * var9) {
-               var9 = var7.method_6689(var8.field_12, -1791856301 * var8.field_15, var8.field_12.length - -715313674 * var8.field_15, (byte)-24);
+            for(var8 = var27; var8.offset * 1849884383 < var8.data.length; var8.offset += -1025691571 * var9) {
+               var9 = var7.read(var8.data, -1791856301 * var8.offset, var8.data.length - -715313674 * var8.offset, (byte)-24);
                if(var9 == -1) {
                   throw new IOException();
                }
             }
 
-            var8.field_15 = 0;
-            var9 = var8.method_130();
+            var8.offset = 0;
+            var9 = var8.readUnsignedByte();
             if(var9 < 1 || var9 > 3) {
                throw new IOException("" + var9);
             }
 
             int var10 = 0;
             if(var9 > 1) {
-               var10 = var8.method_130();
+               var10 = var8.readUnsignedByte();
             }
 
             if(var9 <= 2) {
@@ -437,7 +394,7 @@ public class class_199 {
                }
             }
 
-            var7.method_6701();
+            var7.close();
          } catch (IOException var17) {
             var17.printStackTrace();
          }
@@ -505,20 +462,20 @@ public class class_199 {
          var8 = null;
 
          try {
-            var10000 = new class_383(class_396.field_4253, "rw", 10000L);
-            class_383 var24 = var10000;
-            var27 = new class_28(500);
-            class_28 var26 = var27;
-            var26.method_210(3);
-            var26.method_210(var8 != null?1:0);
+            var10000 = new RAFileHandle(class_396.field_4253, "rw", 10000L);
+            RAFileHandle var24 = var10000;
+            var27 = new Buffer(500);
+            Buffer var26 = var27;
+            var26.writeByte(3);
+            var26.writeByte(var8 != null?1:0);
             var26.method_128(var19.getPath(), 499802318);
             if(var8 != null) {
                // TODO: Originally var8.getPath
                var26.method_128(var19.getPath(), 499802318);
             }
 
-            var24.method_6686(var26.field_12, 0, -2065529096 * var26.field_15, (byte)21);
-            var24.method_6701();
+            var24.write(var26.data, 0, -2065529096 * var26.offset, (byte)21);
+            var24.close();
          } catch (IOException var15) {
             var15.printStackTrace();
          }
@@ -564,13 +521,13 @@ public class class_199 {
    }
 
    // $FF: renamed from: l (java.lang.String, java.lang.String, boolean) nm
-   public static class_383 method_4029(String var0, String var1, boolean var2) {
+   public static RAFileHandle method_4029(String var0, String var1, boolean var2) {
       File var3 = new File(class_53.fOldschoolCacheDir, "preferences" + var0 + ".dat");
-      class_383 var10000;
+      RAFileHandle var10000;
       if(var3.exists()) {
          try {
-            var10000 = new class_383(var3, "rw", 10000L);
-            class_383 var10 = var10000;
+            var10000 = new RAFileHandle(var3, "rw", 10000L);
+            RAFileHandle var10 = var10000;
             return var10;
          } catch (IOException var9) {
             ;
@@ -585,10 +542,10 @@ public class class_199 {
       }
 
       File var5 = new File(class_115.homeDirectory, "jagex_" + var1 + "_preferences" + var0 + var4 + ".dat");
-      class_383 var6;
+      RAFileHandle var6;
       if(!var2 && var5.exists()) {
          try {
-            var10000 = new class_383(var5, "rw", 10000L);
+            var10000 = new RAFileHandle(var5, "rw", 10000L);
             var6 = var10000;
             return var6;
          } catch (IOException var8) {
@@ -597,7 +554,7 @@ public class class_199 {
       }
 
       try {
-         var10000 = new class_383(var3, "rw", 10000L);
+         var10000 = new RAFileHandle(var3, "rw", 10000L);
          var6 = var10000;
          return var6;
       } catch (IOException var7) {
@@ -610,10 +567,10 @@ public class class_199 {
       try {
          File var0 = new File(class_115.homeDirectory, "random.dat");
          class_376 var10000;
-         class_383 var10002;
+         RAFileHandle var10002;
          int var2;
          if(var0.exists()) {
-            var10002 = new class_383(var0, "rw", 25L);
+            var10002 = new RAFileHandle(var0, "rw", 25L);
             var10000 = new class_376(var10002, 24, 0);
             field_2344 = var10000;
          } else {
@@ -622,7 +579,7 @@ public class class_199 {
                for(var2 = 0; var2 < class_48.cacheDirectories.length; ++var2) {
                   File var3 = new File(class_48.cacheDirectories[var2] + class_292.field_3333[var1] + File.separatorChar + "random.dat");
                   if(var3.exists()) {
-                     var10002 = new class_383(var3, "rw", 25L);
+                     var10002 = new RAFileHandle(var3, "rw", 25L);
                      var10000 = new class_376(var10002, 24, 0);
                      field_2344 = var10000;
                      break label31;
@@ -638,7 +595,7 @@ public class class_199 {
             var5.write(var2);
             var5.seek(0L);
             var5.close();
-            var10002 = new class_383(var0, "rw", 25L);
+            var10002 = new RAFileHandle(var0, "rw", 25L);
             var10000 = new class_376(var10002, 24, 0);
             field_2344 = var10000;
          }
@@ -653,10 +610,10 @@ public class class_199 {
       try {
          File var0 = new File(class_115.homeDirectory, "random.dat");
          class_376 var10000;
-         class_383 var10002;
+         RAFileHandle var10002;
          int var2;
          if(var0.exists()) {
-            var10002 = new class_383(var0, "rw", 25L);
+            var10002 = new RAFileHandle(var0, "rw", 25L);
             var10000 = new class_376(var10002, 24, 0);
             field_2344 = var10000;
          } else {
@@ -665,7 +622,7 @@ public class class_199 {
                for(var2 = 0; var2 < class_48.cacheDirectories.length; ++var2) {
                   File var3 = new File(class_48.cacheDirectories[var2] + class_292.field_3333[var1] + File.separatorChar + "random.dat");
                   if(var3.exists()) {
-                     var10002 = new class_383(var3, "rw", 25L);
+                     var10002 = new RAFileHandle(var3, "rw", 25L);
                      var10000 = new class_376(var10002, 24, 0);
                      field_2344 = var10000;
                      break label31;
@@ -681,7 +638,7 @@ public class class_199 {
             var5.write(var2);
             var5.seek(0L);
             var5.close();
-            var10002 = new class_383(var0, "rw", 25L);
+            var10002 = new RAFileHandle(var0, "rw", 25L);
             var10000 = new class_376(var10002, 24, 0);
             field_2344 = var10000;
          }

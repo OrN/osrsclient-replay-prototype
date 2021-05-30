@@ -76,11 +76,11 @@ public class class_312 {
    }
 
     // $FF: renamed from: <init> (nd, boolean) void
-   public class_312(class_28 var1, boolean var2) {
+   public class_312(Buffer var1, boolean var2) {
       super();
       try {
          this.field_3755 = var1.method_131();
-         this.field_3754 = var1.method_132() * 515671321;
+         this.field_3754 = var1.readShort() * 515671321;
          this.field_3758 = var1.method_135() * 675729031;
          this.field_3756 = var1.method_135() * 1613502191;
          this.field_3753 = var1.method_135() * -1633742323;
@@ -90,7 +90,7 @@ public class class_312 {
             boolean var5 = false;
 
             while(true) {
-               int var6 = var1.method_130();
+               int var6 = var1.readUnsignedByte();
                if(255 == var6) {
                   Integer var3 = var5?Integer.valueOf(var4):null;
                   this.method_5555();
@@ -102,13 +102,13 @@ public class class_312 {
                }
 
                while(true) {
-                  int var7 = var1.method_130();
+                  int var7 = var1.readUnsignedByte();
                   if(255 == var7) {
                      break;
                   }
 
-                  var1.field_15 -= -1025691571;
-                  if(var1.method_132() != 0) {
+                  var1.offset -= -1025691571;
+                  if(var1.readShort() != 0) {
                      throw new IllegalStateException("");
                   }
 

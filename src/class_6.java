@@ -6,7 +6,7 @@ public interface class_6 {
    int[] method_10(int var1, int var2, int var3);
 
    // $FF: renamed from: z (nd) void
-   void method_11(class_28 var1);
+   void method_11(Buffer var1);
 
    // $FF: renamed from: b (fo) void
    void method_12(class_230 var1);
@@ -18,7 +18,7 @@ public interface class_6 {
    boolean method_14(int var1, int var2, byte var3);
 
    // $FF: renamed from: j (nd, int) void
-   void method_15(class_28 var1);
+   void method_15(Buffer var1);
 
    // $FF: renamed from: v (fo, int) void
    void method_16(class_230 var1, int var2);
@@ -57,7 +57,7 @@ public interface class_6 {
    class_280 method_27(int var1, int var2);
 
    // $FF: renamed from: x (nd) void
-   void method_28(class_28 var1);
+   void method_28(Buffer var1);
 
    // $FF: renamed from: p (int, int, int) ii
    class_280 method_29(int var1, int var2, int var3);

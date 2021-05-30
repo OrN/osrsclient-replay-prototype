@@ -105,7 +105,7 @@ public class class_87 extends class_59 {
    // $FF: renamed from: k int
    public int field_851;
    // $FF: renamed from: sf cl
-   static class_170 field_852;
+   static Preferences preferences;
 
 
    // $FF: renamed from: n (byte) void
@@ -177,10 +177,10 @@ public class class_87 extends class_59 {
    }
 
    // $FF: renamed from: f (nd, byte) void
-   void method_1484(class_28 var1, byte var2) {
+   void method_1484(Buffer var1, byte var2) {
       try {
          while(true) {
-            int var3 = var1.method_130();
+            int var3 = var1.readUnsignedByte();
             if(0 == var3) {
                if(var2 != 1) {
                   return;
@@ -197,7 +197,7 @@ public class class_87 extends class_59 {
    }
 
    // $FF: renamed from: y (nd, int, int) void
-   void method_1485(class_28 var1, int var2, int var3) {
+   void method_1485(Buffer var1, int var2, int var3) {
       try {
          int var4;
          int var5;
@@ -206,7 +206,7 @@ public class class_87 extends class_59 {
                throw new IllegalStateException();
             }
 
-            var4 = var1.method_130();
+            var4 = var1.readUnsignedByte();
             if(var4 > 0) {
                if(var3 >= -864081678) {
                   return;
@@ -218,7 +218,7 @@ public class class_87 extends class_59 {
                   }
 
                   if(!field_806) {
-                     var1.field_15 += 1217892583 * var4;
+                     var1.offset += 1217892583 * var4;
                      return;
                   }
 
@@ -235,8 +235,8 @@ public class class_87 extends class_59 {
                      throw new IllegalStateException();
                   }
 
-                  this.field_835[var5] = var1.method_132();
-                  this.field_809[var5] = var1.method_130();
+                  this.field_835[var5] = var1.readShort();
+                  this.field_809[var5] = var1.readUnsignedByte();
                }
             }
          } else if(var2 == 2) {
@@ -250,7 +250,7 @@ public class class_87 extends class_59 {
                return;
             }
 
-            var4 = var1.method_130();
+            var4 = var1.readUnsignedByte();
             if(var4 > 0) {
                if(this.field_835 != null) {
                   if(var3 >= -864081678) {
@@ -258,7 +258,7 @@ public class class_87 extends class_59 {
                   }
 
                   if(!field_806) {
-                     var1.field_15 += -2051383142 * var4;
+                     var1.offset += -2051383142 * var4;
                      return;
                   }
 
@@ -275,17 +275,17 @@ public class class_87 extends class_59 {
                      throw new IllegalStateException();
                   }
 
-                  this.field_835[var5] = var1.method_132();
+                  this.field_835[var5] = var1.readShort();
                }
             }
          } else if(14 == var2) {
-            this.field_839 = var1.method_130() * 822501225;
+            this.field_839 = var1.readUnsignedByte() * 822501225;
          } else if(15 == var2) {
             if(var3 >= -864081678) {
                throw new IllegalStateException();
             }
 
-            this.field_851 = var1.method_130() * -2102030313;
+            this.field_851 = var1.readUnsignedByte() * -2102030313;
          } else if(var2 == 17) {
             if(var3 >= -864081678) {
                throw new IllegalStateException();
@@ -304,7 +304,7 @@ public class class_87 extends class_59 {
                throw new IllegalStateException();
             }
 
-            this.field_820 = var1.method_130() * -2085655817;
+            this.field_820 = var1.readUnsignedByte() * -2085655817;
          } else if(21 == var2) {
             if(var3 >= -864081678) {
                throw new IllegalStateException();
@@ -324,7 +324,7 @@ public class class_87 extends class_59 {
                throw new IllegalStateException();
             }
 
-            this.field_824 = var1.method_132() * -1042698627;
+            this.field_824 = var1.readShort() * -1042698627;
             if(91732693 * this.field_824 == '\uffff') {
                this.field_824 = 1042698627;
             }
@@ -339,7 +339,7 @@ public class class_87 extends class_59 {
                throw new IllegalStateException();
             }
 
-            this.field_810 = var1.method_130() * 1012101565;
+            this.field_810 = var1.readUnsignedByte() * 1012101565;
          } else if(var2 == 29) {
             if(var3 >= -864081678) {
                return;
@@ -366,20 +366,20 @@ public class class_87 extends class_59 {
                return;
             }
 
-            var4 = var1.method_130();
+            var4 = var1.readUnsignedByte();
             this.field_812 = new short[var4];
             this.field_801 = new short[var4];
 
             for(var5 = 0; var5 < var4; ++var5) {
-               this.field_812[var5] = (short)var1.method_132();
-               this.field_801[var5] = (short)var1.method_132();
+               this.field_812[var5] = (short)var1.readShort();
+               this.field_801[var5] = (short)var1.readShort();
             }
          } else if(var2 == 41) {
             if(var3 >= -864081678) {
                return;
             }
 
-            var4 = var1.method_130();
+            var4 = var1.readUnsignedByte();
             this.field_814 = new short[var4];
             this.field_833 = new short[var4];
 
@@ -388,8 +388,8 @@ public class class_87 extends class_59 {
                   return;
                }
 
-               this.field_814[var5] = (short)var1.method_132();
-               this.field_833[var5] = (short)var1.method_132();
+               this.field_814[var5] = (short)var1.readShort();
+               this.field_833[var5] = (short)var1.readShort();
             }
          } else if(62 == var2) {
             this.field_831 = true;
@@ -404,27 +404,27 @@ public class class_87 extends class_59 {
                throw new IllegalStateException();
             }
 
-            this.field_836 = var1.method_132() * 1454289911;
+            this.field_836 = var1.readShort() * 1454289911;
          } else if(66 == var2) {
-            this.field_834 = var1.method_132() * -1826017161;
+            this.field_834 = var1.readShort() * -1826017161;
          } else if(var2 == 67) {
             if(var3 >= -864081678) {
                throw new IllegalStateException();
             }
 
-            this.field_804 = var1.method_132() * 1641642293;
+            this.field_804 = var1.readShort() * 1641642293;
          } else if(var2 == 68) {
             if(var3 >= -864081678) {
                throw new IllegalStateException();
             }
 
-            this.field_830 = var1.method_132() * 1440922517;
+            this.field_830 = var1.readShort() * 1440922517;
          } else if(69 == var2) {
             if(var3 >= -864081678) {
                throw new IllegalStateException();
             }
 
-            var1.method_130();
+            var1.readUnsignedByte();
          } else if(70 == var2) {
             if(var3 >= -864081678) {
                return;
@@ -444,7 +444,7 @@ public class class_87 extends class_59 {
                return;
             }
 
-            this.field_841 = var1.method_130() * -1858759757;
+            this.field_841 = var1.readUnsignedByte() * -1858759757;
          } else {
             if(77 != var2) {
                if(var3 >= -864081678) {
@@ -457,18 +457,18 @@ public class class_87 extends class_59 {
                         throw new IllegalStateException();
                      }
 
-                     this.field_829 = var1.method_132() * 1857685779;
-                     this.field_846 = var1.method_130() * -364813997;
+                     this.field_829 = var1.readShort() * 1857685779;
+                     this.field_846 = var1.readUnsignedByte() * -364813997;
                      return;
                   } else if(79 == var2) {
                      if(var3 >= -864081678) {
                         return;
                      }
 
-                     this.field_847 = var1.method_132() * -1446744557;
-                     this.field_848 = var1.method_132() * -2968437;
-                     this.field_846 = var1.method_130() * -364813997;
-                     var4 = var1.method_130();
+                     this.field_847 = var1.readShort() * -1446744557;
+                     this.field_848 = var1.readShort() * -2968437;
+                     this.field_846 = var1.readUnsignedByte() * -364813997;
+                     var4 = var1.readUnsignedByte();
                      this.field_849 = new int[var4];
 
                      for(var5 = 0; var5 < var4; ++var5) {
@@ -476,7 +476,7 @@ public class class_87 extends class_59 {
                            throw new IllegalStateException();
                         }
 
-                        this.field_849[var5] = var1.method_132();
+                        this.field_849[var5] = var1.readShort();
                      }
 
                      return;
@@ -485,14 +485,14 @@ public class class_87 extends class_59 {
                         throw new IllegalStateException();
                      }
 
-                     this.field_821 = var1.method_130() * 1095153920;
+                     this.field_821 = var1.readUnsignedByte() * 1095153920;
                      return;
                   } else if(var2 == 82) {
                      if(var3 >= -864081678) {
                         throw new IllegalStateException();
                      }
 
-                     this.field_815 = var1.method_132() * 551383109;
+                     this.field_815 = var1.readShort() * 551383109;
                      return;
                   } else {
                      if(89 == var2) {
@@ -515,7 +515,7 @@ public class class_87 extends class_59 {
                }
             }
 
-            this.field_825 = var1.method_132() * 1029028887;
+            this.field_825 = var1.readShort() * 1029028887;
             if('\uffff' == this.field_825 * -240174169) {
                if(var3 >= -864081678) {
                   throw new IllegalStateException();
@@ -524,7 +524,7 @@ public class class_87 extends class_59 {
                this.field_825 = -1029028887;
             }
 
-            this.field_844 = var1.method_132() * 1365543255;
+            this.field_844 = var1.readShort() * 1365543255;
             if('\uffff' == this.field_844 * 758936167) {
                this.field_844 = -1365543255;
             }
@@ -535,7 +535,7 @@ public class class_87 extends class_59 {
                   throw new IllegalStateException();
                }
 
-               var4 = var1.method_132();
+               var4 = var1.readShort();
                if(var4 == '\uffff') {
                   if(var3 >= -864081678) {
                      throw new IllegalStateException();
@@ -545,7 +545,7 @@ public class class_87 extends class_59 {
                }
             }
 
-            var5 = var1.method_130();
+            var5 = var1.readUnsignedByte();
             this.field_842 = new int[2 + var5];
 
             for(int var6 = 0; var6 <= var5; ++var6) {
@@ -553,7 +553,7 @@ public class class_87 extends class_59 {
                   throw new IllegalStateException();
                }
 
-               this.field_842[var6] = var1.method_132();
+               this.field_842[var6] = var1.readShort();
                if('\uffff' == this.field_842[var6]) {
                   this.field_842[var6] = -1;
                }
@@ -859,7 +859,7 @@ public class class_87 extends class_59 {
                   return 1;
                }
             } else if(var0 == 3204) {
-               class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = Math.round((float)(field_852.field_2122 * 1285356667) / 2.55F);
+               class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = Math.round((float)(preferences.field_2122 * 1285356667) / 2.55F);
                return 1;
             } else if(3205 == var0) {
                if(var3 <= 1369136416) {
@@ -873,7 +873,7 @@ public class class_87 extends class_59 {
                if(var3 <= 1369136416) {
                   throw new IllegalStateException();
                } else {
-                  class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = Math.round((float)(-140834991 * field_852.field_2121) / 1.27F);
+                  class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = Math.round((float)(-140834991 * preferences.field_2121) / 1.27F);
                   return 1;
                }
             } else if(3207 == var0) {
@@ -884,7 +884,7 @@ public class class_87 extends class_59 {
                if(var3 <= 1369136416) {
                   throw new IllegalStateException();
                } else {
-                  class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = Math.round((float)(-1768933319 * field_852.field_2115) / 1.27F);
+                  class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = Math.round((float)(-1768933319 * preferences.field_2115) / 1.27F);
                   return 1;
                }
             } else {

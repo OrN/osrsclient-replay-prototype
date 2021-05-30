@@ -15,12 +15,12 @@ public class class_118 extends class_111 {
 
 
     // $FF: renamed from: v (nd, int) void
-   void method_2231(class_28 var1, int var2) {
+   void method_2231(Buffer var1, int var2) {
       try {
          this.field_1307 = var1.method_135() * 1418693631;
          this.field_1311 = var1.method_135() * 570133141;
-         this.field_1308 = var1.method_130() * -1997102297;
-         this.field_1310 = var1.method_130() * 157587933;
+         this.field_1308 = var1.readUnsignedByte() * -1997102297;
+         this.field_1310 = var1.readUnsignedByte() * 157587933;
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
       }
@@ -64,8 +64,8 @@ public class class_118 extends class_111 {
                   String var5 = var4.field_2222;
                   class_203 var6 = client.field_1463;
                   class_40 var7 = class_112.method_2238(class_266.field_3125, var6.field_2384, (byte)8);
-                  var7.field_263.method_210(3 + class_166.method_3598(var5));
-                  var7.field_263.method_210(var0);
+                  var7.field_263.writeByte(3 + class_166.method_3598(var5));
+                  var7.field_263.writeByte(var0);
                   var7.field_263.method_333(var1);
                   var7.field_263.method_120(var5);
                   var6.method_4079(var7);
@@ -89,19 +89,19 @@ public class class_118 extends class_111 {
    }
 
    // $FF: renamed from: f (nd) void
-   void method_2234(class_28 var1) {
+   void method_2234(Buffer var1) {
       this.field_1307 = var1.method_135() * 1418693631;
       this.field_1311 = var1.method_135() * 754056836;
-      this.field_1308 = var1.method_130() * -1997102297;
-      this.field_1310 = var1.method_130() * 157587933;
+      this.field_1308 = var1.readUnsignedByte() * -1997102297;
+      this.field_1310 = var1.readUnsignedByte() * 157587933;
    }
 
    // $FF: renamed from: y (nd) void
-   void method_2233(class_28 var1) {
+   void method_2233(Buffer var1) {
       this.field_1307 = var1.method_135() * 1418693631;
       this.field_1311 = var1.method_135() * 570133141;
-      this.field_1308 = var1.method_130() * 1976872843;
-      this.field_1310 = var1.method_130() * 157587933;
+      this.field_1308 = var1.readUnsignedByte() * 1976872843;
+      this.field_1310 = var1.readUnsignedByte() * 157587933;
    }
 
    // $FF: renamed from: hq (byte) void

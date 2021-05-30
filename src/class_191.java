@@ -172,15 +172,15 @@ public abstract class class_191 {
                         class_37 var10002 = new class_37();
                         var10000[var3] = var10002;
                         class_37.field_93[var0][var3].field_101 = 1969535585 * ((var0 << 16) + var3);
-                        class_28 var10001;
+                        Buffer var10001;
                         class_37 var6;
                         if(var4[0] == -1) {
                            var6 = class_37.field_93[var0][var3];
-                           var10001 = new class_28(var4);
+                           var10001 = new Buffer(var4);
                            var6.method_401(var10001, 107425419);
                         } else {
                            var6 = class_37.field_93[var0][var3];
-                           var10001 = new class_28(var4);
+                           var10001 = new Buffer(var4);
                            var6.method_400(var10001, 1748856001);
                         }
                      }

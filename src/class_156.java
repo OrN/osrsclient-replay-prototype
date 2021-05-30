@@ -27,8 +27,8 @@ public class class_156 {
 
 
     // $FF: renamed from: v (nd) void
-   final void method_3264(class_28 var1) {
-      this.field_1946 = var1.method_130();
+   final void method_3264(Buffer var1) {
+      this.field_1946 = var1.readUnsignedByte();
       this.field_1944 = var1.method_135();
       this.field_1949 = var1.method_135();
       this.method_3277(var1);
@@ -75,14 +75,14 @@ public class class_156 {
    }
 
     // $FF: renamed from: n (nd) void
-   final void method_3277(class_28 var1) {
-      this.field_1947 = var1.method_130();
+   final void method_3277(Buffer var1) {
+      this.field_1947 = var1.readUnsignedByte();
       this.field_1942 = new int[this.field_1947];
       this.field_1943 = new int[this.field_1947];
 
       for(int var2 = 0; var2 < this.field_1947; ++var2) {
-         this.field_1942[var2] = var1.method_132();
-         this.field_1943[var2] = var1.method_132();
+         this.field_1942[var2] = var1.readShort();
+         this.field_1943[var2] = var1.readShort();
       }
 
    }

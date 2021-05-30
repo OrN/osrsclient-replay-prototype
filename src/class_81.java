@@ -11,10 +11,10 @@ public class class_81 extends class_59 {
 
 
    // $FF: renamed from: f (nd, int) void
-   void method_1340(class_28 var1) {
+   void method_1340(Buffer var1) {
       try {
          while(true) {
-            int var3 = var1.method_130();
+            int var3 = var1.readUnsignedByte();
             if(0 == var3) {
                return;
             }
@@ -27,14 +27,14 @@ public class class_81 extends class_59 {
    }
 
    // $FF: renamed from: y (nd, int, int) void
-   void method_1341(class_28 var1, int var2, int var3) {
+   void method_1341(Buffer var1, int var2, int var3) {
       try {
          if(var2 == 2) {
             if(var3 <= -1494268527) {
                throw new IllegalStateException();
             }
 
-            this.field_755 = var1.method_132() * 996763343;
+            this.field_755 = var1.readShort() * 996763343;
          }
 
       } catch (RuntimeException var4) {

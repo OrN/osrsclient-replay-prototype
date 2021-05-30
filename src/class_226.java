@@ -88,7 +88,7 @@ public abstract class class_226 {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28(var3);
+               Buffer var10001 = new Buffer(var3);
                this.method_4306(var10001, 1223315238);
                this.field_2558 = true;
                this.field_2559 = true;
@@ -106,9 +106,9 @@ public abstract class class_226 {
    }
 
    // $FF: renamed from: al (int, int, nd, int) void
-   void method_4295(int var1, int var2, class_28 var3, int var4) {
+   void method_4295(int var1, int var2, Buffer var3, int var4) {
       try {
-         int var5 = var3.method_130();
+         int var5 = var3.readUnsignedByte();
          if(0 == var5) {
             if(var4 == -1087727229) {
                throw new IllegalStateException();
@@ -131,7 +131,7 @@ public abstract class class_226 {
    }
 
    // $FF: renamed from: ad (int, int, nd, int, int) void
-   void method_4296(int var1, int var2, class_28 var3, int var4, int var5) {
+   void method_4296(int var1, int var2, Buffer var3, int var4, int var5) {
       try {
          boolean var10000;
          if((var4 & 2) != 0) {
@@ -146,10 +146,10 @@ public abstract class class_226 {
 
          boolean var6 = var10000;
          if(var6) {
-            this.field_2554[0][var1][var2] = (short)var3.method_130();
+            this.field_2554[0][var1][var2] = (short)var3.readUnsignedByte();
          }
 
-         this.field_2553[0][var1][var2] = (short)var3.method_130();
+         this.field_2553[0][var1][var2] = (short)var3.readUnsignedByte();
       } catch (RuntimeException var7) {
          throw class_223.method_4281(var7);
       }
@@ -189,7 +189,7 @@ public abstract class class_226 {
    }
 
    // $FF: renamed from: j (nd) void
-   abstract void method_4301(class_28 var1);
+   abstract void method_4301(Buffer var1);
 
    // $FF: renamed from: ag (byte) int
    int method_4302() {
@@ -215,7 +215,7 @@ public abstract class class_226 {
       if(!this.method_4292((byte)25)) {
          byte[] var2 = var1.method_5381(-630921225 * this.field_2560, -373998791 * this.field_2556);
          if(null != var2) {
-            class_28 var10001 = new class_28(var2);
+            Buffer var10001 = new Buffer(var2);
             this.method_4306(var10001, 1223315238);
             this.field_2558 = true;
             this.field_2559 = true;
@@ -225,14 +225,14 @@ public abstract class class_226 {
    }
 
    // $FF: renamed from: n (nd, int) void
-   abstract void method_4306(class_28 var1, int var2);
+   abstract void method_4306(Buffer var1, int var2);
 
    // $FF: renamed from: av (jv) void
    void method_4307(class_306 var1) {
       if(!this.method_4292((byte)25)) {
          byte[] var2 = var1.method_5381(-630921225 * this.field_2560, -373998791 * this.field_2556);
          if(null != var2) {
-            class_28 var10001 = new class_28(var2);
+            Buffer var10001 = new Buffer(var2);
             this.method_4306(var10001, 1223315238);
             this.field_2558 = true;
             this.field_2559 = true;
@@ -246,7 +246,7 @@ public abstract class class_226 {
       if(!this.method_4292((byte)25)) {
          byte[] var2 = var1.method_5381(-630921225 * this.field_2560, -373998791 * this.field_2556);
          if(null != var2) {
-            class_28 var10001 = new class_28(var2);
+            Buffer var10001 = new Buffer(var2);
             this.method_4306(var10001, 1223315238);
             this.field_2558 = true;
             this.field_2559 = true;
@@ -289,8 +289,8 @@ public abstract class class_226 {
    }
 
    // $FF: renamed from: aq (int, int, nd) void
-   void method_4312(int var1, int var2, class_28 var3) {
-      int var4 = var3.method_130();
+   void method_4312(int var1, int var2, Buffer var3) {
+      int var4 = var3.readUnsignedByte();
       if(0 != var4) {
          if((var4 & 1) != 0) {
             this.method_4296(var1, var2, var3, var4, -300212411);
@@ -302,8 +302,8 @@ public abstract class class_226 {
    }
 
    // $FF: renamed from: aw (int, int, nd) void
-   void method_4313(int var1, int var2, class_28 var3) {
-      int var4 = var3.method_130();
+   void method_4313(int var1, int var2, Buffer var3) {
+      int var4 = var3.readUnsignedByte();
       if(0 != var4) {
          if((var4 & 1) != 0) {
             this.method_4296(var1, var2, var3, var4, -300212411);
@@ -315,37 +315,37 @@ public abstract class class_226 {
    }
 
    // $FF: renamed from: af (int, int, nd, int) void
-   void method_4314(int var1, int var2, class_28 var3, int var4) {
+   void method_4314(int var1, int var2, Buffer var3, int var4) {
       boolean var5 = (var4 & 2) != 0;
       if(var5) {
-         this.field_2554[0][var1][var2] = (short)var3.method_130();
+         this.field_2554[0][var1][var2] = (short)var3.readUnsignedByte();
       }
 
-      this.field_2553[0][var1][var2] = (short)var3.method_130();
+      this.field_2553[0][var1][var2] = (short)var3.readUnsignedByte();
    }
 
    // $FF: renamed from: ak (int, int, nd, int) void
-   void method_4315(int var1, int var2, class_28 var3, int var4) {
+   void method_4315(int var1, int var2, Buffer var3, int var4) {
       boolean var5 = (var4 & 2) != 0;
       if(var5) {
-         this.field_2554[0][var1][var2] = (short)var3.method_130();
+         this.field_2554[0][var1][var2] = (short)var3.readUnsignedByte();
       }
 
-      this.field_2553[0][var1][var2] = (short)var3.method_130();
+      this.field_2553[0][var1][var2] = (short)var3.readUnsignedByte();
    }
 
    // $FF: renamed from: ay (int, int, nd, int) void
-   void method_4316(int var1, int var2, class_28 var3, int var4) {
+   void method_4316(int var1, int var2, Buffer var3, int var4) {
       boolean var5 = (var4 & 2) != 0;
       if(var5) {
-         this.field_2554[0][var1][var2] = (short)var3.method_130();
+         this.field_2554[0][var1][var2] = (short)var3.readUnsignedByte();
       }
 
-      this.field_2553[0][var1][var2] = (short)var3.method_130();
+      this.field_2553[0][var1][var2] = (short)var3.readUnsignedByte();
    }
 
    // $FF: renamed from: ai (int, int, nd, int, int) void
-   void method_4317(int var1, int var2, class_28 var3, int var4, int var5) {
+   void method_4317(int var1, int var2, Buffer var3, int var4, int var5) {
       try {
          int var6 = ((var4 & 24) >> 3) + 1;
          boolean var10000;
@@ -371,7 +371,7 @@ public abstract class class_226 {
          }
 
          boolean var8 = var10000;
-         this.field_2553[0][var1][var2] = (short)var3.method_130();
+         this.field_2553[0][var1][var2] = (short)var3.readUnsignedByte();
          int var9;
          int var10;
          int var12;
@@ -380,21 +380,21 @@ public abstract class class_226 {
                return;
             }
 
-            var9 = var3.method_130();
+            var9 = var3.readUnsignedByte();
 
             for(var10 = 0; var10 < var9; ++var10) {
                if(var5 >= -2122241510) {
                   throw new IllegalStateException();
                }
 
-               int var11 = var3.method_130();
+               int var11 = var3.readUnsignedByte();
                if(var11 != 0) {
                   if(var5 >= -2122241510) {
                      throw new IllegalStateException();
                   }
 
                   this.field_2554[var10][var1][var2] = (short)var11;
-                  var12 = var3.method_130();
+                  var12 = var3.readUnsignedByte();
                   this.field_2557[var10][var1][var2] = (byte)(var12 >> 2);
                   this.field_2555[var10][var1][var2] = (byte)(var12 & 3);
                }
@@ -411,7 +411,7 @@ public abstract class class_226 {
                   throw new IllegalStateException();
                }
 
-               var10 = var3.method_130();
+               var10 = var3.readUnsignedByte();
                if(0 == var10) {
                   if(var5 >= -2122241510) {
                      return;
@@ -425,7 +425,7 @@ public abstract class class_226 {
                      }
 
                      int var13 = var3.method_147(1422664365);
-                     int var14 = var3.method_130();
+                     int var14 = var3.readUnsignedByte();
                      class_223 var10002 = new class_223(var13, var14 >> 2, var14 & 3);
                      var16[var12] = var10002;
                   }
@@ -439,22 +439,22 @@ public abstract class class_226 {
    }
 
    // $FF: renamed from: aa (int, int, nd, int) void
-   void method_4318(int var1, int var2, class_28 var3, int var4) {
+   void method_4318(int var1, int var2, Buffer var3, int var4) {
       int var5 = ((var4 & 24) >> 3) + 1;
       boolean var6 = (var4 & 2) != 0;
       boolean var7 = 0 != (var4 & 4);
-      this.field_2553[0][var1][var2] = (short)var3.method_130();
+      this.field_2553[0][var1][var2] = (short)var3.readUnsignedByte();
       int var8;
       int var9;
       int var11;
       if(var6) {
-         var8 = var3.method_130();
+         var8 = var3.readUnsignedByte();
 
          for(var9 = 0; var9 < var8; ++var9) {
-            int var10 = var3.method_130();
+            int var10 = var3.readUnsignedByte();
             if(var10 != 0) {
                this.field_2554[var9][var1][var2] = (short)var10;
-               var11 = var3.method_130();
+               var11 = var3.readUnsignedByte();
                this.field_2557[var9][var1][var2] = (byte)(var11 >> 2);
                this.field_2555[var9][var1][var2] = (byte)(var11 & 3);
             }
@@ -463,13 +463,13 @@ public abstract class class_226 {
 
       if(var7) {
          for(var8 = 0; var8 < var5; ++var8) {
-            var9 = var3.method_130();
+            var9 = var3.readUnsignedByte();
             if(0 != var9) {
                class_223[] var14 = this.field_2546[var8][var1][var2] = new class_223[var9];
 
                for(var11 = 0; var11 < var9; ++var11) {
                   int var12 = var3.method_147(1018812513);
-                  int var13 = var3.method_130();
+                  int var13 = var3.readUnsignedByte();
                   class_223 var10002 = new class_223(var12, var13 >> 2, var13 & 3);
                   var14[var11] = var10002;
                }
@@ -494,7 +494,7 @@ public abstract class class_226 {
       if(!this.method_4292((byte)25)) {
          byte[] var2 = var1.method_5381(-630921225 * this.field_2560, -1524809937 * this.field_2556);
          if(null != var2) {
-            class_28 var10001 = new class_28(var2);
+            Buffer var10001 = new Buffer(var2);
             this.method_4306(var10001, 1223315238);
             this.field_2558 = true;
             this.field_2559 = true;

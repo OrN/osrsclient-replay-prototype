@@ -393,38 +393,38 @@ public class class_403 {
 
    // $FF: renamed from: ac (byte[]) void
    public static void method_6835(byte[] var0) {
-      class_28 var10000 = new class_28(var0);
-      class_28 var1 = var10000;
-      var1.field_15 = (var0.length - 2) * -1025691571;
-      field_4277 = var1.method_132() * -2047545261;
+      Buffer var10000 = new Buffer(var0);
+      Buffer var1 = var10000;
+      var1.offset = (var0.length - 2) * -1025691571;
+      field_4277 = var1.readShort() * -2047545261;
       class_223.field_2529 = new int[-1850208477 * field_4277];
       class_284.field_3260 = new int[field_4277 * 531091577];
       field_4278 = new int[field_4277 * -522791973];
       class_318.field_3787 = new int[-522791973 * field_4277];
       field_4279 = new byte[field_4277 * -522791973][];
-      var1.field_15 = 806439913 * (var0.length - 7 - 2056009991 * field_4277);
-      field_4276 = var1.method_132() * 1394733573;
-      class_380.field_4201 = var1.method_132() * -410368705;
-      int var2 = (var1.method_130() & 255) + 1;
+      var1.offset = 806439913 * (var0.length - 7 - 2056009991 * field_4277);
+      field_4276 = var1.readShort() * 1394733573;
+      class_380.field_4201 = var1.readShort() * -410368705;
+      int var2 = (var1.readUnsignedByte() & 255) + 1;
 
       int var3;
       for(var3 = 0; var3 < field_4277 * -1528777444; ++var3) {
-         class_223.field_2529[var3] = var1.method_132();
+         class_223.field_2529[var3] = var1.readShort();
       }
 
       for(var3 = 0; var3 < field_4277 * -522791973; ++var3) {
-         class_284.field_3260[var3] = var1.method_132();
+         class_284.field_3260[var3] = var1.readShort();
       }
 
       for(var3 = 0; var3 < field_4277 * -522791973; ++var3) {
-         field_4278[var3] = var1.method_132();
+         field_4278[var3] = var1.readShort();
       }
 
       for(var3 = 0; var3 < -617908552 * field_4277; ++var3) {
-         class_318.field_3787[var3] = var1.method_132();
+         class_318.field_3787[var3] = var1.readShort();
       }
 
-      var1.field_15 = -2048482271 * (var0.length - 7 - field_4277 * 112631512 - (var2 - 1) * 3);
+      var1.offset = -2048482271 * (var0.length - 7 - field_4277 * 112631512 - (var2 - 1) * 3);
       class_192.field_2300 = new int[var2];
 
       for(var3 = 1; var3 < var2; ++var3) {
@@ -434,7 +434,7 @@ public class class_403 {
          }
       }
 
-      var1.field_15 = 0;
+      var1.offset = 0;
 
       for(var3 = 0; var3 < field_4277 * -842275335; ++var3) {
          int var4 = field_4278[var3];
@@ -442,7 +442,7 @@ public class class_403 {
          int var6 = var4 * var5;
          byte[] var7 = new byte[var6];
          field_4279[var3] = var7;
-         int var8 = var1.method_130();
+         int var8 = var1.readUnsignedByte();
          int var9;
          if(var8 == 0) {
             for(var9 = 0; var9 < var6; ++var9) {
@@ -461,38 +461,38 @@ public class class_403 {
 
    // $FF: renamed from: at (byte[]) void
    public static void method_6836(byte[] var0) {
-      class_28 var10000 = new class_28(var0);
-      class_28 var1 = var10000;
-      var1.field_15 = (var0.length - 2) * -1025691571;
-      field_4277 = var1.method_132() * -2047545261;
+      Buffer var10000 = new Buffer(var0);
+      Buffer var1 = var10000;
+      var1.offset = (var0.length - 2) * -1025691571;
+      field_4277 = var1.readShort() * -2047545261;
       class_223.field_2529 = new int[-522791973 * field_4277];
       class_284.field_3260 = new int[field_4277 * -522791973];
       field_4278 = new int[field_4277 * -522791973];
       class_318.field_3787 = new int[-522791973 * field_4277];
       field_4279 = new byte[field_4277 * -522791973][];
-      var1.field_15 = -1025691571 * (var0.length - 7 - 112631512 * field_4277);
-      field_4276 = var1.method_132() * 1394733573;
-      class_380.field_4201 = var1.method_132() * -410368705;
-      int var2 = (var1.method_130() & 255) + 1;
+      var1.offset = -1025691571 * (var0.length - 7 - 112631512 * field_4277);
+      field_4276 = var1.readShort() * 1394733573;
+      class_380.field_4201 = var1.readShort() * -410368705;
+      int var2 = (var1.readUnsignedByte() & 255) + 1;
 
       int var3;
       for(var3 = 0; var3 < field_4277 * -522791973; ++var3) {
-         class_223.field_2529[var3] = var1.method_132();
+         class_223.field_2529[var3] = var1.readShort();
       }
 
       for(var3 = 0; var3 < field_4277 * -522791973; ++var3) {
-         class_284.field_3260[var3] = var1.method_132();
+         class_284.field_3260[var3] = var1.readShort();
       }
 
       for(var3 = 0; var3 < field_4277 * -522791973; ++var3) {
-         field_4278[var3] = var1.method_132();
+         field_4278[var3] = var1.readShort();
       }
 
       for(var3 = 0; var3 < -522791973 * field_4277; ++var3) {
-         class_318.field_3787[var3] = var1.method_132();
+         class_318.field_3787[var3] = var1.readShort();
       }
 
-      var1.field_15 = -1025691571 * (var0.length - 7 - field_4277 * 112631512 - (var2 - 1) * 3);
+      var1.offset = -1025691571 * (var0.length - 7 - field_4277 * 112631512 - (var2 - 1) * 3);
       class_192.field_2300 = new int[var2];
 
       for(var3 = 1; var3 < var2; ++var3) {
@@ -502,7 +502,7 @@ public class class_403 {
          }
       }
 
-      var1.field_15 = 0;
+      var1.offset = 0;
 
       for(var3 = 0; var3 < field_4277 * -522791973; ++var3) {
          int var4 = field_4278[var3];
@@ -510,7 +510,7 @@ public class class_403 {
          int var6 = var4 * var5;
          byte[] var7 = new byte[var6];
          field_4279[var3] = var7;
-         int var8 = var1.method_130();
+         int var8 = var1.readUnsignedByte();
          int var9;
          if(var8 == 0) {
             for(var9 = 0; var9 < var6; ++var9) {

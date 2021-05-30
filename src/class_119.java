@@ -36,11 +36,11 @@ public class class_119 extends class_111 {
    }
 
    // $FF: renamed from: v (nd, int) void
-   void method_2231(class_28 var1, int var2) {
+   void method_2231(Buffer var1, int var2) {
       try {
-         this.field_1321 = var1.method_132() * -845800427;
+         this.field_1321 = var1.readShort() * -845800427;
          boolean var10001;
-         if(var1.method_130() == 1) {
+         if(var1.readUnsignedByte() == 1) {
             if(var2 >= -24934327) {
                throw new IllegalStateException();
             }
@@ -75,9 +75,9 @@ public class class_119 extends class_111 {
    }
 
    // $FF: renamed from: y (nd) void
-   void method_2233(class_28 var1) {
-      this.field_1321 = var1.method_132() * -845800427;
-      this.field_1314 = var1.method_130() == 1;
+   void method_2233(Buffer var1) {
+      this.field_1321 = var1.readShort() * -845800427;
+      this.field_1314 = var1.readUnsignedByte() == 1;
    }
 
    // $FF: renamed from: p (l) void
@@ -98,8 +98,8 @@ public class class_119 extends class_111 {
                   class_178 var4 = (class_178)client.field_1647[var0].field_318.get(var1);
                   class_203 var5 = client.field_1463;
                   class_40 var6 = class_112.method_2238(class_266.field_3081, var5.field_2384, (byte)8);
-                  var6.field_263.method_210(4 + class_166.method_3598(var4.field_2222));
-                  var6.field_263.method_210(var0);
+                  var6.field_263.writeByte(4 + class_166.method_3598(var4.field_2222));
+                  var6.field_263.writeByte(var0);
                   var6.field_263.method_333(var1);
                   var6.field_263.method_250(var2, (short)-15310);
                   var6.field_263.method_120(var4.field_2222);
@@ -119,8 +119,8 @@ public class class_119 extends class_111 {
    }
 
    // $FF: renamed from: f (nd) void
-   void method_2234(class_28 var1) {
-      this.field_1321 = var1.method_132() * -845800427;
-      this.field_1314 = var1.method_130() == 1;
+   void method_2234(Buffer var1) {
+      this.field_1321 = var1.readShort() * -845800427;
+      this.field_1314 = var1.readUnsignedByte() == 1;
    }
 }

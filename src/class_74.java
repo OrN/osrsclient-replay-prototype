@@ -19,9 +19,9 @@ public class class_74 extends class_59 {
 
 
    // $FF: renamed from: u (nd) void
-   void method_1118(class_28 var1) {
+   void method_1118(Buffer var1) {
       while(true) {
-         int var2 = var1.method_130();
+         int var2 = var1.readUnsignedByte();
          if(var2 == 0) {
             return;
          }
@@ -31,10 +31,10 @@ public class class_74 extends class_59 {
    }
 
    // $FF: renamed from: f (nd, int) void
-   void method_1119(class_28 var1, int var2) {
+   void method_1119(Buffer var1, int var2) {
       try {
          while(true) {
-            int var3 = var1.method_130();
+            int var3 = var1.readUnsignedByte();
             if(var3 == 0) {
                if(var2 == 578289169) {
                   throw new IllegalStateException();
@@ -51,14 +51,14 @@ public class class_74 extends class_59 {
    }
 
    // $FF: renamed from: y (nd, int, int) void
-   void method_1120(class_28 var1, int var2, int var3) {
+   void method_1120(Buffer var1, int var2, int var3) {
       try {
          if(var2 == 5) {
             if(var3 == 1115122599) {
                throw new IllegalStateException();
             }
 
-            this.field_597 = var1.method_132() * -823376161;
+            this.field_597 = var1.readShort() * -823376161;
          }
 
       } catch (RuntimeException var4) {
@@ -98,7 +98,7 @@ public class class_74 extends class_59 {
          class_74 var10000 = new class_74();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28(var2);
+            Buffer var10001 = new Buffer(var2);
             var1.method_1119(var10001, -2017757030);
          }
 
@@ -108,9 +108,9 @@ public class class_74 extends class_59 {
    }
 
    // $FF: renamed from: s (nd) void
-   void method_1124(class_28 var1) {
+   void method_1124(Buffer var1) {
       while(true) {
-         int var2 = var1.method_130();
+         int var2 = var1.readUnsignedByte();
          if(var2 == 0) {
             return;
          }
@@ -129,7 +129,7 @@ public class class_74 extends class_59 {
          class_74 var10000 = new class_74();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28(var2);
+            Buffer var10001 = new Buffer(var2);
             var1.method_1119(var10001, 1314405663);
          }
 
@@ -148,7 +148,7 @@ public class class_74 extends class_59 {
          class_74 var10000 = new class_74();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28(var2);
+            Buffer var10001 = new Buffer(var2);
             var1.method_1119(var10001, 557723241);
          }
 

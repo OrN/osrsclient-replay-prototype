@@ -109,9 +109,9 @@ public class class_44 extends class_27 {
    }
 
    // $FF: renamed from: j (nd, int) void
-   void method_503(class_28 var1, int var2) {
+   void method_503(Buffer var1, int var2) {
       try {
-         int var3 = var1.method_130();
+         int var3 = var1.readUnsignedByte();
          if((var3 & 1) != 0) {
             if(var2 <= -631068980) {
                throw new IllegalStateException();
@@ -126,7 +126,7 @@ public class class_44 extends class_27 {
 
          int var4 = 2;
          if((var3 & 4) != 0) {
-            var4 = var1.method_130();
+            var4 = var1.readUnsignedByte();
          }
 
          this.field_9 = var1.method_136();
@@ -135,7 +135,7 @@ public class class_44 extends class_27 {
          var1.method_119(-39963121);
          this.field_316 = var1.method_131();
          this.field_322 = var1.method_131();
-         int var5 = var1.method_132();
+         int var5 = var1.readShort();
          if(var5 > 0) {
             this.field_318 = new ArrayList(var5);
 
@@ -159,7 +159,7 @@ public class class_44 extends class_27 {
                }
 
                var7.field_2221 = var1.method_131();
-               var7.field_2217 = var1.method_132() * -811705383;
+               var7.field_2217 = var1.readShort() * -811705383;
                if(var4 >= 3) {
                   if(var2 <= -631068980) {
                      throw new IllegalStateException();
@@ -246,7 +246,7 @@ public class class_44 extends class_27 {
    }
 
    // $FF: renamed from: <init> (nd) void
-   public class_44(class_28 var1) {
+   public class_44(Buffer var1) {
       super();
       try {
          this.field_317 = true;
@@ -383,8 +383,8 @@ public class class_44 extends class_27 {
    }
 
    // $FF: renamed from: a (nd) void
-   void method_515(class_28 var1) {
-      int var2 = var1.method_130();
+   void method_515(Buffer var1) {
+      int var2 = var1.readUnsignedByte();
       if((var2 & 1) != 0) {
          this.field_320 = true;
       }
@@ -395,7 +395,7 @@ public class class_44 extends class_27 {
 
       int var3 = 2;
       if((var2 & 4) != 0) {
-         var3 = var1.method_130();
+         var3 = var1.readUnsignedByte();
       }
 
       this.field_9 = var1.method_136();
@@ -404,7 +404,7 @@ public class class_44 extends class_27 {
       var1.method_119(1630026748);
       this.field_316 = var1.method_131();
       this.field_322 = var1.method_131();
-      int var4 = var1.method_132();
+      int var4 = var1.readShort();
       if(var4 > 0) {
          this.field_318 = new ArrayList(var4);
 
@@ -420,7 +420,7 @@ public class class_44 extends class_27 {
             }
 
             var6.field_2221 = var1.method_131();
-            var6.field_2217 = var1.method_132() * -811705383;
+            var6.field_2217 = var1.readShort() * -811705383;
             if(var3 >= 3) {
                var1.method_119(1862166750);
             }
@@ -432,8 +432,8 @@ public class class_44 extends class_27 {
    }
 
    // $FF: renamed from: k (nd) void
-   void method_516(class_28 var1) {
-      int var2 = var1.method_130();
+   void method_516(Buffer var1) {
+      int var2 = var1.readUnsignedByte();
       if((var2 & 1) != 0) {
          this.field_320 = true;
       }
@@ -444,7 +444,7 @@ public class class_44 extends class_27 {
 
       int var3 = 2;
       if((var2 & 4) != 0) {
-         var3 = var1.method_130();
+         var3 = var1.readUnsignedByte();
       }
 
       this.field_9 = var1.method_136();
@@ -453,7 +453,7 @@ public class class_44 extends class_27 {
       var1.method_119(625358015);
       this.field_316 = var1.method_131();
       this.field_322 = var1.method_131();
-      int var4 = var1.method_132();
+      int var4 = var1.readShort();
       if(var4 > 0) {
          this.field_318 = new ArrayList(var4);
 
@@ -469,7 +469,7 @@ public class class_44 extends class_27 {
             }
 
             var6.field_2221 = var1.method_131();
-            var6.field_2217 = var1.method_132() * -811705383;
+            var6.field_2217 = var1.readShort() * -811705383;
             if(var3 >= 3) {
                var1.method_119(-759128062);
             }

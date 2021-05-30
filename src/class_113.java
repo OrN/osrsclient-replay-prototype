@@ -20,7 +20,7 @@ public class class_113 extends class_111 {
    }
 
    // $FF: renamed from: v (nd, int) void
-   void method_2231(class_28 var1, int var2) {
+   void method_2231(Buffer var1, int var2) {
       try {
          this.field_1280 = var1.method_135() * -1776364457;
          this.field_1277 = var1.method_136() * -7943130751217824365L;
@@ -30,7 +30,7 @@ public class class_113 extends class_111 {
    }
 
    // $FF: renamed from: f (nd) void
-   void method_2234(class_28 var1) {
+   void method_2234(Buffer var1) {
       this.field_1280 = var1.method_135() * -1776364457;
       this.field_1277 = var1.method_136() * -7943130751217824365L;
    }
@@ -41,7 +41,7 @@ public class class_113 extends class_111 {
    }
 
    // $FF: renamed from: y (nd) void
-   void method_2233(class_28 var1) {
+   void method_2233(Buffer var1) {
       this.field_1280 = var1.method_135() * -1776364457;
       this.field_1277 = var1.method_136() * -7943130751217824365L;
    }

@@ -474,9 +474,9 @@ public class class_325 implements class_14 {
    }
 
    // $FF: renamed from: v (nd, mr, int) mr
-   static final class_369 method_5781(class_28 var0, class_369 var1, int var2) {
+   static final class_369 method_5781(Buffer var0, class_369 var1, int var2) {
       try {
-         int var3 = var0.method_130();
+         int var3 = var0.readUnsignedByte();
          int var4;
          if(var1 == null) {
             if(var2 != -391561047) {
@@ -494,7 +494,7 @@ public class class_325 implements class_14 {
             }
 
             boolean var9;
-            if(var0.method_130() == 1) {
+            if(var0.readUnsignedByte() == 1) {
                if(var2 != -391561047) {
                   throw new IllegalStateException();
                }

@@ -54,7 +54,7 @@ public class class_186 extends class_181 {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28(var3);
+               Buffer var10001 = new Buffer(var3);
                var2.method_1208(var10001, 1613150424);
             }
 
@@ -158,9 +158,9 @@ public class class_186 extends class_181 {
    // $FF: renamed from: bn (byte[], int) byte[]
    static final byte[] method_3876(byte[] var0, int var1) {
       try {
-         class_28 var10000 = new class_28(var0);
-         class_28 var2 = var10000;
-         int var3 = var2.method_130();
+         Buffer var10000 = new Buffer(var0);
+         Buffer var2 = var10000;
+         int var3 = var2.readUnsignedByte();
          int var4 = var2.method_135();
          if(var4 >= 0) {
             if(var1 <= 1225130098) {

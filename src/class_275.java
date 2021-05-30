@@ -35,11 +35,11 @@ public class class_275 {
    }
 
    // $FF: renamed from: y (nd, int, byte) void
-   public static void method_5084(class_28 var0, byte var2) {
+   public static void method_5084(Buffer var0, byte var2) {
       try {
          class_58 var10000 = new class_58();
          class_58 var3 = var10000;
-         var3.field_464 = var0.method_130() * 1028183917;
+         var3.field_464 = var0.readUnsignedByte() * 1028183917;
          var3.field_459 = var0.method_135() * 534927143;
          var3.field_458 = new int[var3.field_464 * -637285787];
          var3.field_457 = new int[var3.field_464 * -637285787];
@@ -50,7 +50,7 @@ public class class_275 {
 
          for(int var4 = 0; var4 < var3.field_464 * -637285787; ++var4) {
             try {
-               int var5 = var0.method_130();
+               int var5 = var0.readUnsignedByte();
                String var6;
                String var7;
                int var8;
@@ -81,7 +81,7 @@ public class class_275 {
 
                         var6 = var0.method_139(-391631059);
                         var7 = var0.method_139(-391631059);
-                        var8 = var0.method_130();
+                        var8 = var0.readUnsignedByte();
                         String[] var9 = new String[var8];
 
                         for(int var10 = 0; var10 < var8; ++var10) {
@@ -465,7 +465,7 @@ public class class_275 {
    }
 
    // $FF: renamed from: j (nd, int) void
-   public void method_5089(class_28 var1, int var2) {
+   public void method_5089(Buffer var1, int var2) {
       try {
          byte var10001;
          if(this.field_3208) {
@@ -478,7 +478,7 @@ public class class_275 {
             var10001 = 0;
          }
 
-         var1.method_210(var10001);
+         var1.writeByte(var10001);
 
          int var3;
          for(var3 = 0; var3 < 7; ++var3) {
@@ -492,9 +492,9 @@ public class class_275 {
                   return;
                }
 
-               var1.method_210(-1);
+               var1.writeByte(-1);
             } else {
-               var1.method_210(var4 - 256);
+               var1.writeByte(var4 - 256);
             }
          }
 
@@ -503,7 +503,7 @@ public class class_275 {
                throw new IllegalStateException();
             }
 
-            var1.method_210(this.field_3212[var3]);
+            var1.writeByte(this.field_3212[var3]);
          }
 
       } catch (RuntimeException var5) {
@@ -1494,81 +1494,81 @@ public class class_275 {
    }
 
    // $FF: renamed from: h (nd) void
-   public void method_5107(class_28 var1) {
-      var1.method_210(this.field_3208?1:0);
+   public void method_5107(Buffer var1) {
+      var1.writeByte(this.field_3208?1:0);
 
       int var2;
       for(var2 = 0; var2 < 7; ++var2) {
          int var3 = this.field_3207[field_3214[var2]];
          if(0 == var3) {
-            var1.method_210(-1);
+            var1.writeByte(-1);
          } else {
-            var1.method_210(var3 - 256);
+            var1.writeByte(var3 - 256);
          }
       }
 
       for(var2 = 0; var2 < 5; ++var2) {
-         var1.method_210(this.field_3212[var2]);
+         var1.writeByte(this.field_3212[var2]);
       }
 
    }
 
    // $FF: renamed from: q (nd) void
-   public void method_5108(class_28 var1) {
-      var1.method_210(this.field_3208?1:0);
+   public void method_5108(Buffer var1) {
+      var1.writeByte(this.field_3208?1:0);
 
       int var2;
       for(var2 = 0; var2 < 7; ++var2) {
          int var3 = this.field_3207[field_3214[var2]];
          if(0 == var3) {
-            var1.method_210(-1);
+            var1.writeByte(-1);
          } else {
-            var1.method_210(var3 - 246408316);
+            var1.writeByte(var3 - 246408316);
          }
       }
 
       for(var2 = 0; var2 < 5; ++var2) {
-         var1.method_210(this.field_3212[var2]);
+         var1.writeByte(this.field_3212[var2]);
       }
 
    }
 
    // $FF: renamed from: i (nd) void
-   public void method_5109(class_28 var1) {
-      var1.method_210(this.field_3208?1:0);
+   public void method_5109(Buffer var1) {
+      var1.writeByte(this.field_3208?1:0);
 
       int var2;
       for(var2 = 0; var2 < 7; ++var2) {
          int var3 = this.field_3207[field_3214[var2]];
          if(0 == var3) {
-            var1.method_210(-1);
+            var1.writeByte(-1);
          } else {
-            var1.method_210(var3 - 256);
+            var1.writeByte(var3 - 256);
          }
       }
 
       for(var2 = 0; var2 < 5; ++var2) {
-         var1.method_210(this.field_3212[var2]);
+         var1.writeByte(this.field_3212[var2]);
       }
 
    }
 
    // $FF: renamed from: ae (nd) void
-   public void method_5110(class_28 var1) {
-      var1.method_210(this.field_3208?1:0);
+   public void method_5110(Buffer var1) {
+      var1.writeByte(this.field_3208?1:0);
 
       int var2;
       for(var2 = 0; var2 < 7; ++var2) {
          int var3 = this.field_3207[field_3214[var2]];
          if(0 == var3) {
-            var1.method_210(-1);
+            var1.writeByte(-1);
          } else {
-            var1.method_210(var3 - 276368822);
+            var1.writeByte(var3 - 276368822);
          }
       }
 
       for(var2 = 0; var2 < 5; ++var2) {
-         var1.method_210(this.field_3212[var2]);
+         var1.writeByte(this.field_3212[var2]);
       }
 
    }

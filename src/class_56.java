@@ -154,7 +154,7 @@ public class class_56 extends class_51 {
    }
 
    // $FF: renamed from: v (nd, int) void
-   void method_571(class_28 var1, int var2) {
+   void method_571(Buffer var1, int var2) {
       try {
          this.field_417 = var1.method_347(-1742345132);
          if(null != this.field_417) {
@@ -162,7 +162,7 @@ public class class_56 extends class_51 {
                throw new IllegalStateException();
             }
 
-            var1.method_130();
+            var1.readUnsignedByte();
             this.field_418 = var1.method_131();
             this.field_419 = var1.method_131();
          }
@@ -173,10 +173,10 @@ public class class_56 extends class_51 {
    }
 
    // $FF: renamed from: f (nd) void
-   void method_570(class_28 var1) {
+   void method_570(Buffer var1) {
       this.field_417 = var1.method_347(-518173250);
       if(null != this.field_417) {
-         var1.method_130();
+         var1.readUnsignedByte();
          this.field_418 = var1.method_131();
          this.field_419 = var1.method_131();
       }
@@ -245,7 +245,7 @@ public class class_56 extends class_51 {
                if(var3 <= -1780215685) {
                   throw new IllegalStateException();
                } else {
-                  class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = -660685365 * class_87.field_852.field_2119;
+                  class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = -660685365 * class_87.preferences.field_2119;
                   return 1;
                }
             } else if(5309 == var0) {
@@ -263,8 +263,8 @@ public class class_56 extends class_51 {
                      }
                   }
 
-                  class_87.field_852.field_2119 = var4 * 511868899;
-                  class_94.method_1771(-411883528);
+                  class_87.preferences.field_2119 = var4 * 511868899;
+                  class_94.savePreferences(-411883528);
                   return 1;
                }
             } else if(5310 == var0) {

@@ -142,7 +142,7 @@ public class class_341 extends class_339 {
             }
          } else {
             long var2;
-            class_28 var10000;
+            Buffer var10000;
             try {
                URL var4 = new URL(class_83.method_1409("services", false, 62678309) + "m=accountappeal/login.ws");
                URLConnection var5 = var4.openConnection();
@@ -154,24 +154,24 @@ public class class_341 extends class_339 {
                var6.write("data1=req");
                var6.flush();
                InputStream var7 = var5.getInputStream();
-               var10000 = new class_28(new byte[1000]);
-               class_28 var8 = var10000;
+               var10000 = new Buffer(new byte[1000]);
+               Buffer var8 = var10000;
 
                while(true) {
-                  int var9 = var7.read(var8.field_12, -442398587 * var8.field_15, 1000 - -442398587 * var8.field_15);
+                  int var9 = var7.read(var8.data, -442398587 * var8.offset, 1000 - -442398587 * var8.offset);
                   if(var9 == -1) {
                      if(var0 != -1024085126) {
                         throw new IllegalStateException();
                      }
 
-                     var8.field_15 = 0;
+                     var8.offset = 0;
                      long var31 = var8.method_136();
                      var2 = var31;
                      break;
                   }
 
-                  var8.field_15 += -1025691571 * var9;
-                  if(-442398587 * var8.field_15 >= 1000) {
+                  var8.offset += -1025691571 * var9;
+                  if(-442398587 * var8.offset >= 1000) {
                      if(var0 != -1024085126) {
                         throw new IllegalStateException();
                      }
@@ -190,12 +190,12 @@ public class class_341 extends class_339 {
             } else {
                String var29 = class_177.field_2200;
                Random var30 = new Random();
-               var10000 = new class_28(128);
-               class_28 var32 = var10000;
-               var10000 = new class_28(128);
-               class_28 var10 = var10000;
+               var10000 = new Buffer(128);
+               Buffer var32 = var10000;
+               var10000 = new Buffer(128);
+               Buffer var10 = var10000;
                int[] var11 = new int[]{var30.nextInt(), var30.nextInt(), (int)(var2 >> 32), (int)var2};
-               var32.method_210(10);
+               var32.writeByte(10);
 
                int var12;
                for(var12 = 0; var12 < 4; ++var12) {
@@ -220,7 +220,7 @@ public class class_341 extends class_339 {
                }
 
                var32.method_153(class_179.field_2226, class_179.field_2227);
-               var10.method_210(10);
+               var10.writeByte(10);
 
                for(var12 = 0; var12 < 3; ++var12) {
                   if(var0 != -1024085126) {
@@ -286,21 +286,21 @@ public class class_341 extends class_339 {
                   var12 += 8 - var12 % 8;
                }
 
-               var10000 = new class_28(var12);
-               class_28 var33 = var10000;
+               var10000 = new Buffer(var12);
+               Buffer var33 = var10000;
                var33.method_120(var29);
-               var33.field_15 = var12 * -1025691571;
+               var33.offset = var12 * -1025691571;
                var33.method_232(var11, -1937738349);
-               var10000 = new class_28(-442398587 * var33.field_15 + 5 + -442398587 * var32.field_15 + -442398587 * var10.field_15);
-               class_28 var34 = var10000;
-               var34.method_210(2);
-               var34.method_210(var32.field_15 * -442398587);
-               var34.method_161(var32.field_12, 0, -442398587 * var32.field_15);
-               var34.method_210(-442398587 * var10.field_15);
-               var34.method_161(var10.field_12, 0, var10.field_15 * -442398587);
-               var34.method_333(var33.field_15 * -442398587);
-               var34.method_161(var33.field_12, 0, -442398587 * var33.field_15);
-               byte[] var16 = var34.field_12;
+               var10000 = new Buffer(-442398587 * var33.offset + 5 + -442398587 * var32.offset + -442398587 * var10.offset);
+               Buffer var34 = var10000;
+               var34.writeByte(2);
+               var34.writeByte(var32.offset * -442398587);
+               var34.method_161(var32.data, 0, -442398587 * var32.offset);
+               var34.writeByte(-442398587 * var10.offset);
+               var34.method_161(var10.data, 0, var10.offset * -442398587);
+               var34.method_333(var33.offset * -442398587);
+               var34.method_161(var33.data, 0, -442398587 * var33.offset);
+               byte[] var16 = var34.data;
                int var18 = var16.length;
                StringBuilder var19 = new StringBuilder();
 
@@ -348,11 +348,11 @@ public class class_341 extends class_339 {
                   var37.write("data2=" + class_73.method_1117(var17, -899515900) + "&dest=" + class_73.method_1117("passwordchoice.ws", -103587308));
                   var37.flush();
                   InputStream var38 = var36.getInputStream();
-                  var10000 = new class_28(new byte[1000]);
+                  var10000 = new Buffer(new byte[1000]);
                   var34 = var10000;
 
                   while(true) {
-                     var22 = var38.read(var34.field_12, -442398587 * var34.field_15, 1000 - var34.field_15 * -442398587);
+                     var22 = var38.read(var34.data, -442398587 * var34.offset, 1000 - var34.offset * -442398587);
                      if(var22 == -1) {
                         if(var0 != -1024085126) {
                            return;
@@ -360,7 +360,7 @@ public class class_341 extends class_339 {
 
                         var37.close();
                         var38.close();
-                        String var39 = new String(var34.field_12);
+                        String var39 = new String(var34.data);
                         if(var39.startsWith("OFFLINE")) {
                            if(var0 != -1024085126) {
                               throw new IllegalStateException();
@@ -384,12 +384,12 @@ public class class_341 extends class_339 {
                         } else {
                            var34.method_150(var11, 1314548709);
 
-                           while(var34.field_15 * -442398587 > 0) {
+                           while(var34.offset * -442398587 > 0) {
                               if(var0 != -1024085126) {
                                  throw new IllegalStateException();
                               }
 
-                              if(var34.field_12[var34.field_15 * -442398587 - 1] != 0) {
+                              if(var34.data[var34.offset * -442398587 - 1] != 0) {
                                  break;
                               }
 
@@ -397,10 +397,10 @@ public class class_341 extends class_339 {
                                  return;
                               }
 
-                              var34.field_15 -= -1025691571;
+                              var34.offset -= -1025691571;
                            }
 
-                           var39 = new String(var34.field_12, 0, var34.field_15 * -442398587);
+                           var39 = new String(var34.data, 0, var34.offset * -442398587);
                            if(class_165.method_3516(var39, (byte)-3)) {
                               if(var0 != -1024085126) {
                                  throw new IllegalStateException();
@@ -415,8 +415,8 @@ public class class_341 extends class_339 {
                         break;
                      }
 
-                     var34.field_15 += -1025691571 * var22;
-                     if(-442398587 * var34.field_15 >= 1000) {
+                     var34.offset += -1025691571 * var22;
+                     if(-442398587 * var34.offset >= 1000) {
                         var28 = 5;
                         break;
                      }

@@ -4,16 +4,16 @@ import java.util.LinkedHashMap;
 import java.util.Map.Entry;
 
 // $FF: renamed from: cl
-public class class_170 {
+public class Preferences {
 
    // $FF: renamed from: u int
    int field_2115;
    // $FF: renamed from: n int
    static final int field_2116 = 10;
    // $FF: renamed from: f boolean
-   boolean field_2117;
+   boolean roofsHidden;
    // $FF: renamed from: y boolean
-   boolean field_2118;
+   boolean musicEnabled;
    // $FF: renamed from: p int
    int field_2119;
    // $FF: renamed from: j java.lang.String
@@ -37,15 +37,15 @@ public class class_170 {
 
 
    // $FF: renamed from: n (int) nd
-   class_28 method_3620(int var1) {
+   Buffer toBuffer(int var1) {
       try {
-         class_28 var10000 = new class_28(100);
-         class_28 var2 = var10000;
-         var2.method_210(-437407307 * field_2124);
-         var2.method_210(this.field_2117?1:0);
-         var2.method_210(this.field_2118?1:0);
-         var2.method_210(this.field_2119 * -660685365);
-         var2.method_210(this.field_2126.size());
+         Buffer var10000 = new Buffer(100);
+         Buffer var2 = var10000;
+         var2.writeByte(-437407307 * field_2124);
+         var2.writeByte(this.roofsHidden ?1:0);
+         var2.writeByte(this.musicEnabled ?1:0);
+         var2.writeByte(this.field_2119 * -660685365);
+         var2.writeByte(this.field_2126.size());
          Iterator var3 = this.field_2126.entrySet().iterator();
 
          while(var3.hasNext()) {
@@ -67,10 +67,10 @@ public class class_170 {
 
          var2.method_120(var10001);
          var2.method_250(this.field_2123, (short)-16479);
-         var2.method_210((int)(100.0D * this.field_2128));
-         var2.method_210(this.field_2122 * 1285356667);
-         var2.method_210(-140834991 * this.field_2121);
-         var2.method_210(-1768933319 * this.field_2115);
+         var2.writeByte((int)(100.0D * this.field_2128));
+         var2.writeByte(this.field_2122 * 1285356667);
+         var2.writeByte(-140834991 * this.field_2121);
+         var2.writeByte(-1768933319 * this.field_2115);
          return var2;
       } catch (RuntimeException var5) {
          throw class_223.method_4281(var5);
@@ -78,8 +78,7 @@ public class class_170 {
    }
 
    // $FF: renamed from: <init> (nd) void
-   class_170(class_28 var1) {
-      super();
+   Preferences(Buffer var1) {
       try {
          this.field_2119 = 511868899;
          this.field_2120 = null;
@@ -89,23 +88,23 @@ public class class_170 {
          this.field_2121 = -1577437489;
          this.field_2115 = 1937297015;
          this.field_2126 = new LinkedHashMap();
-         if(var1 != null && null != var1.field_12) {
-            int var2 = var1.method_130();
+         if(var1 != null && null != var1.data) {
+            int var2 = var1.readUnsignedByte();
             if(var2 >= 0 && var2 <= field_2124 * -437407307) {
-               if(var1.method_130() == 1) {
-                  this.field_2117 = true;
+               if(var1.readUnsignedByte() == 1) {
+                  this.roofsHidden = true;
                }
 
                if(var2 > 1) {
-                  this.field_2118 = var1.method_130() == 1;
+                  this.musicEnabled = var1.readUnsignedByte() == 1;
                }
 
                if(var2 > 3) {
-                  this.field_2119 = var1.method_130() * 511868899;
+                  this.field_2119 = var1.readUnsignedByte() * 511868899;
                }
 
                if(var2 > 2) {
-                  int var3 = var1.method_130();
+                  int var3 = var1.readUnsignedByte();
 
                   for(int var4 = 0; var4 < var3; ++var4) {
                      int var5 = var1.method_135();
@@ -123,16 +122,12 @@ public class class_170 {
                }
 
                if(var2 > 6) {
-                  this.field_2128 = (double)var1.method_130() / 100.0D;
-                  this.field_2122 = var1.method_130() * -813727053;
-                  this.field_2121 = var1.method_130() * 156672433;
-                  this.field_2115 = var1.method_130() * 1570911753;
+                  this.field_2128 = (double)var1.readUnsignedByte() / 100.0D;
+                  this.field_2122 = var1.readUnsignedByte() * -813727053;
+                  this.field_2121 = var1.readUnsignedByte() * 156672433;
+                  this.field_2115 = var1.readUnsignedByte() * 1570911753;
                }
-            } else {
-               this.method_3624();
             }
-         } else {
-            this.method_3624();
          }
 
       } catch (RuntimeException var7) {
@@ -145,30 +140,8 @@ public class class_170 {
       field_2124 = 213856331;
    }
 
-   // $FF: renamed from: v (boolean, int) void
-   void method_3624() {
-      try {
-         ;
-      } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3);
-      }
-   }
-
    // $FF: renamed from: <init> () void
-   class_170() {
-      super();
-      try {
-         this.field_2119 = 511868899;
-         this.field_2120 = null;
-         this.field_2123 = false;
-         this.field_2128 = 0.8D;
-         this.field_2122 = -264120627;
-         this.field_2121 = -1577437489;
-         this.field_2115 = 1937297015;
-         this.field_2126 = new LinkedHashMap();
-         this.method_3624();
-      } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1);
-      }
+   Preferences() {
+      this(null);
    }
 }

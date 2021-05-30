@@ -11,10 +11,10 @@ public class class_85 extends class_59 {
 
 
    // $FF: renamed from: y (nd, int) void
-   void method_1431(class_28 var1, int var2) {
+   void method_1431(Buffer var1, int var2) {
       try {
          while(true) {
-            int var3 = var1.method_130();
+            int var3 = var1.readUnsignedByte();
             if(0 == var3) {
                if(var2 >= 540160928) {
                   throw new IllegalStateException();
@@ -104,7 +104,7 @@ public class class_85 extends class_59 {
             var2 = var10000;
             var2.field_857 = var0 * 1893482329;
             if(var3 != null) {
-               class_28 var10001 = new class_28(var3);
+               Buffer var10001 = new Buffer(var3);
                var2.method_1566(var10001, 1170104499);
             }
 
@@ -118,7 +118,7 @@ public class class_85 extends class_59 {
    }
 
    // $FF: renamed from: p (nd, int, int) void
-   void method_1444(class_28 var1, int var2, int var3) {
+   void method_1444(Buffer var1, int var2, int var3) {
       try {
          if(var2 == 249) {
             if(var3 >= -1034718900) {

@@ -5,7 +5,7 @@ import java.net.URL;
 public class class_154 implements Runnable {
 
     // $FF: renamed from: g nd
-   public static class_28 field_1928;
+   public static Buffer field_1928;
    // $FF: renamed from: gq int
    static int field_1929;
     // $FF: renamed from: bl jd
@@ -82,7 +82,7 @@ public class class_154 implements Runnable {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28(var3);
+               Buffer var10001 = new Buffer(var3);
                var2.method_1369(var10001, -1052896488);
             }
 
@@ -1328,21 +1328,21 @@ public class class_154 implements Runnable {
                class_192.field_2298 = class_263.field_2989.method_4038(new URL(class_116.field_1291));
             } else if(class_192.field_2298.method_3963()) {
                byte[] var1 = class_192.field_2298.method_3961();
-               class_28 var10000 = new class_28(var1);
-               class_28 var2 = var10000;
+               Buffer var10000 = new Buffer(var1);
+               Buffer var2 = var10000;
                var2.method_135();
-               class_149.field_1881 = var2.method_132() * 274545041;
+               class_149.field_1881 = var2.readShort() * 274545041;
                class_166.field_2083 = new class_149[class_149.field_1881 * 1267509105];
 
                for(int var3 = 0; var3 < 1267509105 * class_149.field_1881; ++var3) {
                   class_149[] var7 = class_166.field_2083;
                   class_149 var10002 = new class_149();
                   class_149 var4 = var7[var3] = var10002;
-                  var4.field_1894 = var2.method_132() * -1640224087;
+                  var4.field_1894 = var2.readShort() * -1640224087;
                   var4.field_1890 = var2.method_135() * 1964795281;
                   var4.field_1885 = var2.method_139(-391631059);
                   var4.field_1889 = var2.method_139(-391631059);
-                  var4.field_1880 = var2.method_130() * -606233165;
+                  var4.field_1880 = var2.readUnsignedByte() * -606233165;
                   var4.field_1882 = var2.method_269(-1542485131) * 687282711;
                   var4.field_1891 = 73870975 * var3;
                }
@@ -1609,11 +1609,11 @@ public class class_154 implements Runnable {
                }
             }
 
-            if(-442398587 * var1.field_15 != client.field_1463.field_2380 * -83736147) {
+            if(-442398587 * var1.offset != client.field_1463.field_2380 * -83736147) {
                if(var2 == 549162683) {
                   throw new IllegalStateException();
                } else {
-                  throw new RuntimeException(-442398587 * var1.field_15 + class_205.field_2400 + -83736147 * client.field_1463.field_2380);
+                  throw new RuntimeException(-442398587 * var1.offset + class_205.field_2400 + -83736147 * client.field_1463.field_2380);
                }
             } else {
                for(var14 = 0; var14 < -1300723479 * client.field_1459; ++var14) {

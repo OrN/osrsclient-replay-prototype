@@ -1,6 +1,6 @@
 
 // $FF: renamed from: nb
-public class class_29 extends class_28 {
+public class class_29 extends Buffer {
 
    // $FF: renamed from: f int
    int field_18;
@@ -31,14 +31,14 @@ public class class_29 extends class_28 {
 
    // $FF: renamed from: m () int
    public int method_356() {
-      int var1 = this.field_12[(this.field_15 += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)27) & 255;
-      return var1 < 128?var1:(var1 - 128 << 8) + (this.field_12[(this.field_15 += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)95) & 255);
+      int var1 = this.data[(this.offset += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)27) & 255;
+      return var1 < 128?var1:(var1 - 128 << 8) + (this.data[(this.offset += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)95) & 255);
    }
 
    // $FF: renamed from: f (int, int) void
    public void method_357(int var1) {
       try {
-         this.field_12[(this.field_15 += -1025691571) * -442398587 - 1] = (byte)(var1 + this.field_19.method_6841((byte)81));
+         this.data[(this.offset += -1025691571) * -442398587 - 1] = (byte)(var1 + this.field_19.method_6841((byte)81));
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
       }
@@ -47,7 +47,7 @@ public class class_29 extends class_28 {
    // $FF: renamed from: b (int) void
    public void method_358() {
       try {
-         this.field_18 = 608211864 * this.field_15;
+         this.field_18 = 608211864 * this.offset;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2);
       }
@@ -60,7 +60,7 @@ public class class_29 extends class_28 {
 
    // $FF: renamed from: i () void
    public void method_359() {
-      this.field_18 = 608211864 * this.field_15;
+      this.field_18 = 608211864 * this.offset;
    }
 
    // $FF: renamed from: r (byte[], int, int, short) void
@@ -71,7 +71,7 @@ public class class_29 extends class_28 {
                throw new IllegalStateException();
             }
 
-            var1[var5 + var2] = (byte)(this.field_12[(this.field_15 += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)120));
+            var1[var5 + var2] = (byte)(this.data[(this.offset += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)120));
          }
 
       } catch (RuntimeException var6) {
@@ -100,7 +100,7 @@ public class class_29 extends class_28 {
                throw new IllegalStateException();
             }
 
-            var5 += (this.field_12[var3++] & field_20[var4]) << var1 - var4;
+            var5 += (this.data[var3++] & field_20[var4]) << var1 - var4;
             var1 -= var4;
          }
 
@@ -109,9 +109,9 @@ public class class_29 extends class_28 {
                throw new IllegalStateException();
             }
 
-            var5 += this.field_12[var3] & field_20[var4];
+            var5 += this.data[var3] & field_20[var4];
          } else {
-            var5 += this.field_12[var3] >> var4 - var1 & field_20[var1];
+            var5 += this.data[var3] >> var4 - var1 & field_20[var1];
          }
 
          return var5;
@@ -123,7 +123,7 @@ public class class_29 extends class_28 {
    // $FF: renamed from: s (byte) void
    public void method_362() {
       try {
-         this.field_15 = (-958717145 * this.field_18 + 7) / 8 * -1025691571;
+         this.offset = (-958717145 * this.field_18 + 7) / 8 * -1025691571;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2);
       }
@@ -163,7 +163,7 @@ public class class_29 extends class_28 {
    // $FF: renamed from: p (int) boolean
    public boolean method_368(int var1) {
       try {
-         int var2 = this.field_12[-442398587 * this.field_15] - this.field_19.method_6842((byte)-58) & 255;
+         int var2 = this.data[-442398587 * this.offset] - this.field_19.method_6842((byte)-58) & 255;
          if(var2 < 128) {
             if(var1 == 1501339273) {
                throw new IllegalStateException();
@@ -180,51 +180,51 @@ public class class_29 extends class_28 {
 
    // $FF: renamed from: e () int
    public int method_369() {
-      return this.field_12[(this.field_15 += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)83) & 255;
+      return this.data[(this.offset += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)83) & 255;
    }
 
    // $FF: renamed from: a () boolean
    public boolean method_370() {
-      int var1 = this.field_12[-442398587 * this.field_15] - this.field_19.method_6842((byte)-98) & 255;
+      int var1 = this.data[-442398587 * this.offset] - this.field_19.method_6842((byte)-98) & 255;
       return var1 >= 128;
    }
 
    // $FF: renamed from: k () int
    public int method_371() {
-      int var1 = this.field_12[(this.field_15 += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)11) & 255;
-      return var1 < 128?var1:(var1 - 128 << 8) + (this.field_12[(this.field_15 += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)39) & 255);
+      int var1 = this.data[(this.offset += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)11) & 255;
+      return var1 < 128?var1:(var1 - 128 << 8) + (this.data[(this.offset += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)39) & 255);
    }
 
    // $FF: renamed from: h (byte[], int, int) void
    public void method_372(byte[] var1, int var2, int var3) {
       for(int var4 = 0; var4 < var3; ++var4) {
-         var1[var4 + var2] = (byte)(this.field_12[(this.field_15 += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)74));
+         var1[var4 + var2] = (byte)(this.data[(this.offset += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)74));
       }
 
    }
 
    // $FF: renamed from: x () int
    public int method_373() {
-      int var1 = this.field_12[(this.field_15 += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)42) & 255;
-      return var1 < 128?var1:(var1 - 128 << 8) + (this.field_12[(this.field_15 += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)63) & 255);
+      int var1 = this.data[(this.offset += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)42) & 255;
+      return var1 < 128?var1:(var1 - 128 << 8) + (this.data[(this.offset += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)63) & 255);
    }
 
    // $FF: renamed from: z () int
    public int method_374() {
-      int var1 = this.field_12[(this.field_15 += -1025691571) * 1058608607 - 1] - this.field_19.method_6841((byte)36) & 255;
-      return var1 < -2034336270?var1:(var1 - -533781148 << 8) + (this.field_12[(this.field_15 += 2128572356) * -442398587 - 1] - this.field_19.method_6841((byte)42) & 255);
+      int var1 = this.data[(this.offset += -1025691571) * 1058608607 - 1] - this.field_19.method_6841((byte)36) & 255;
+      return var1 < -2034336270?var1:(var1 - -533781148 << 8) + (this.data[(this.offset += 2128572356) * -442398587 - 1] - this.field_19.method_6841((byte)42) & 255);
    }
 
    // $FF: renamed from: w () int
    public int method_375() {
-      int var1 = this.field_12[(this.field_15 += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)109) & 255;
-      return var1 < 128?var1:(var1 - 128 << 8) + (this.field_12[(this.field_15 += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)43) & 255);
+      int var1 = this.data[(this.offset += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)109) & 255;
+      return var1 < 128?var1:(var1 - 128 << 8) + (this.data[(this.offset += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)43) & 255);
    }
 
    // $FF: renamed from: t (byte[], int, int) void
    public void method_376(byte[] var1, int var2, int var3) {
       for(int var4 = 0; var4 < var3; ++var4) {
-         var1[var4 + var2] = (byte)(this.field_12[(this.field_15 += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)43));
+         var1[var4 + var2] = (byte)(this.data[(this.offset += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)43));
       }
 
    }
@@ -232,7 +232,7 @@ public class class_29 extends class_28 {
    // $FF: renamed from: j (int) int
    public int method_377(int var1) {
       try {
-         int var2 = this.field_12[(this.field_15 += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)32) & 255;
+         int var2 = this.data[(this.offset += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)32) & 255;
          if(var2 < 128) {
             if(var1 <= -1494377253) {
                throw new IllegalStateException();
@@ -240,7 +240,7 @@ public class class_29 extends class_28 {
                return var2;
             }
          } else {
-            return (var2 - 128 << 8) + (this.field_12[(this.field_15 += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)12) & 255);
+            return (var2 - 128 << 8) + (this.data[(this.offset += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)12) & 255);
          }
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
@@ -249,13 +249,13 @@ public class class_29 extends class_28 {
 
    // $FF: renamed from: q () void
    public void method_378() {
-      this.field_18 = 608211864 * this.field_15;
+      this.field_18 = 608211864 * this.offset;
    }
 
    // $FF: renamed from: y (byte) int
    public int method_379() {
       try {
-         return this.field_12[(this.field_15 += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)81) & 255;
+         return this.data[(this.offset += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)81) & 255;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2);
       }
@@ -268,14 +268,14 @@ public class class_29 extends class_28 {
       int var4 = 0;
 
       for(this.field_18 += var1 * -1817568105; var1 > var3; var3 = 8) {
-         var4 += (this.field_12[var2++] & field_20[var3]) << var1 - var3;
+         var4 += (this.data[var2++] & field_20[var3]) << var1 - var3;
          var1 -= var3;
       }
 
       if(var1 == var3) {
-         var4 += this.field_12[var2] & field_20[var3];
+         var4 += this.data[var2] & field_20[var3];
       } else {
-         var4 += this.field_12[var2] >> var3 - var1 & field_20[var1];
+         var4 += this.data[var2] >> var3 - var1 & field_20[var1];
       }
 
       return var4;
@@ -288,14 +288,14 @@ public class class_29 extends class_28 {
       int var4 = 0;
 
       for(this.field_18 += var1 * -1817568105; var1 > var3; var3 = 8) {
-         var4 += (this.field_12[var2++] & field_20[var3]) << var1 - var3;
+         var4 += (this.data[var2++] & field_20[var3]) << var1 - var3;
          var1 -= var3;
       }
 
       if(var1 == var3) {
-         var4 += this.field_12[var2] & field_20[var3];
+         var4 += this.data[var2] & field_20[var3];
       } else {
-         var4 += this.field_12[var2] >> var3 - var1 & field_20[var1];
+         var4 += this.data[var2] >> var3 - var1 & field_20[var1];
       }
 
       return var4;
@@ -308,14 +308,14 @@ public class class_29 extends class_28 {
       int var4 = 0;
 
       for(this.field_18 += var1 * -1817568105; var1 > var3; var3 = 8) {
-         var4 += (this.field_12[var2++] & field_20[var3]) << var1 - var3;
+         var4 += (this.data[var2++] & field_20[var3]) << var1 - var3;
          var1 -= var3;
       }
 
       if(var1 == var3) {
-         var4 += this.field_12[var2] & field_20[var3];
+         var4 += this.data[var2] & field_20[var3];
       } else {
-         var4 += this.field_12[var2] >> var3 - var1 & field_20[var1];
+         var4 += this.data[var2] >> var3 - var1 & field_20[var1];
       }
 
       return var4;
@@ -323,7 +323,7 @@ public class class_29 extends class_28 {
 
    // $FF: renamed from: g () int
    public int method_383() {
-      return this.field_12[(this.field_15 += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)92) & 255;
+      return this.data[(this.offset += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)92) & 255;
    }
 
    // $FF: renamed from: ad (int) int

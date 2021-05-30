@@ -58,8 +58,8 @@ public class class_268 implements class_12 {
    static final void method_5038(int var0) {
       try {
          var0 = Math.min(Math.max(var0, 0), 127);
-         class_87.field_852.field_2115 = var0 * 1570911753;
-         class_94.method_1771(-916329352);
+         class_87.preferences.field_2115 = var0 * 1570911753;
+         class_94.savePreferences(-916329352);
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2);
       }

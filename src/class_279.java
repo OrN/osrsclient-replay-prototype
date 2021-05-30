@@ -17,9 +17,9 @@ public class class_279 {
 
 
    // $FF: renamed from: lq (nd, int, int) void
-   static void method_5149(class_28 var0, int var1, int var2) {
+   static void method_5149(Buffer var0, int var1, int var2) {
       try {
-         class_83.method_1391(var0.field_12, var1, -1641732404);
+         class_83.method_1391(var0.data, var1, -1641732404);
          if(null != class_199.field_2344) {
             if(var2 <= 897280301) {
                throw new IllegalStateException();
@@ -27,7 +27,7 @@ public class class_279 {
 
             try {
                class_199.field_2344.method_6628(0L);
-               class_199.field_2344.method_6633(var0.field_12, var1, 24, 831396562);
+               class_199.field_2344.method_6633(var0.data, var1, 24, 831396562);
             } catch (Exception var4) {
                ;
             }

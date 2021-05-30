@@ -23,7 +23,7 @@ public class class_385 implements class_14 {
 
 
    // $FF: renamed from: j (java.lang.Object, nd, int) void
-   public static void method_6708(Object var0, class_28 var1) {
+   public static void method_6708(Object var0, Buffer var1) {
       try {
          class_23 var3 = method_6712(var0.getClass(), (short)-2594);
          var3.method_73(var0, var1);
@@ -114,7 +114,7 @@ public class class_385 implements class_14 {
    }
 
    // $FF: renamed from: b (nd, int) java.lang.Object
-   public Object method_6714(class_28 var1) {
+   public Object method_6714(Buffer var1) {
       try {
          return this.field_4220.method_75(var1);
       } catch (RuntimeException var3) {
@@ -141,7 +141,7 @@ public class class_385 implements class_14 {
    }
 
    // $FF: renamed from: l (java.lang.Object, nd) void
-   public static void method_6716(Object var0, class_28 var1) {
+   public static void method_6716(Object var0, Buffer var1) {
       class_23 var2 = method_6712(var0.getClass(), (short)-18494);
       var2.method_73(var0, var1);
    }
@@ -190,12 +190,12 @@ public class class_385 implements class_14 {
    }
 
    // $FF: renamed from: c (nd) java.lang.Object
-   public Object method_6720(class_28 var1) {
+   public Object method_6720(Buffer var1) {
       return this.field_4220.method_75(var1);
    }
 
    // $FF: renamed from: u (java.lang.Object, nd) void
-   public static void method_6721(Object var0, class_28 var1) {
+   public static void method_6721(Object var0, Buffer var1) {
       class_23 var2 = method_6712(var0.getClass(), (short)-28940);
       var2.method_73(var0, var1);
    }

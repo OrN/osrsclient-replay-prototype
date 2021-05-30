@@ -99,7 +99,7 @@ public class class_363 {
    // $FF: renamed from: bd int
    int field_4067;
    // $FF: renamed from: bz boolean
-   public boolean field_4068;
+   public boolean showCoords;
    // $FF: renamed from: bu java.util.List
    List field_4069;
    // $FF: renamed from: bl java.util.Iterator
@@ -482,7 +482,7 @@ public class class_363 {
                   throw new IllegalStateException();
                }
 
-               if(this.field_4068) {
+               if(this.showCoords) {
                   if(var6 == 461631309) {
                      throw new IllegalStateException();
                   }
@@ -1160,7 +1160,7 @@ public class class_363 {
       this.field_4063 = new int[]{1008, 1009, 1010, 1011, 1012};
       this.field_4061 = new HashSet();
       this.field_4072 = null;
-      this.field_4068 = false;
+      this.showCoords = false;
       this.field_4076 = 1369572867;
       this.field_4077 = -666577891;
       this.field_4036 = 1193618775;
@@ -1189,8 +1189,8 @@ public class class_363 {
                throw new IllegalStateException();
             }
 
-            class_28 var10000 = new class_28(this.field_4023.method_5381(var8, var9[var10]));
-            class_28 var11 = var10000;
+            Buffer var10000 = new Buffer(this.field_4023.method_5381(var8, var9[var10]));
+            Buffer var11 = var10000;
             class_230 var14 = new class_230();
             class_230 var12 = var14;
             var12.method_4363(var11, var9[var10], -1949118640);

@@ -211,7 +211,7 @@ public class class_90 extends class_59 {
             }
 
             var9 = class_112.method_2238(class_266.field_3147, client.field_1463.field_2384, (byte)8);
-            var9.field_263.method_194(var1);
+            var9.field_263.writeInt(var1);
             var9.field_263.method_167(var0);
             var9.field_263.method_333(var3);
             client.field_1463.method_4079(var9);
@@ -298,7 +298,7 @@ public class class_90 extends class_59 {
                }
 
                var10 = class_112.method_2238(class_266.field_3072, client.field_1463.field_2384, (byte)8);
-               var10.field_263.method_194(var1);
+               var10.field_263.writeInt(var1);
                var10.field_263.method_185(539336237 * var14.field_229);
                var10.field_263.method_165(client.field_1564 * 1424616685);
                var10.field_263.method_116(class_148.field_1875 * 1430642749);
@@ -388,7 +388,7 @@ public class class_90 extends class_59 {
             }
 
             var9 = class_112.method_2238(class_266.field_3050, client.field_1463.field_2384, (byte)8);
-            var9.field_263.method_194(var1);
+            var9.field_263.writeInt(var1);
             var9.field_263.method_165(var0);
             var9.field_263.method_165(var3);
             client.field_1463.method_4079(var9);
@@ -466,7 +466,7 @@ public class class_90 extends class_59 {
 
             var9 = class_112.method_2238(class_266.field_3105, client.field_1463.field_2384, (byte)8);
             var9.field_263.method_116(var1);
-            var9.field_263.method_194(1565845213 * class_100.field_1172);
+            var9.field_263.writeInt(1565845213 * class_100.field_1172);
             var9.field_263.method_185(var0);
             var9.field_263.method_333(var3);
             var9.field_263.method_167(81340013 * class_178.field_2220);
@@ -504,7 +504,7 @@ public class class_90 extends class_59 {
             var9 = class_112.method_2238(class_266.field_3113, client.field_1463.field_2384, (byte)8);
             var9.field_263.method_165(var3);
             var9.field_263.method_185(var0);
-            var9.field_263.method_194(var1);
+            var9.field_263.writeInt(var1);
             client.field_1463.method_4079(var9);
             client.field_1523 = 0;
             class_303.field_3395 = class_71.method_1047(var1);
@@ -683,7 +683,7 @@ public class class_90 extends class_59 {
                client.field_1520 = 819547401 * var0;
                client.field_1562 = 1551872625 * var1;
                var10 = class_112.method_2238(class_266.field_3097, client.field_1463.field_2384, (byte)8);
-               var10.field_263.method_194(class_100.field_1172 * 1565845213);
+               var10.field_263.writeInt(class_100.field_1172 * 1565845213);
                var10.field_263.method_185(class_189.field_2276 * 1854633345);
                if(class_145.field_1840[82]) {
                   if(var8 == 594496727) {
@@ -905,7 +905,7 @@ public class class_90 extends class_59 {
                   var10001 = 0;
                }
 
-               var10.field_263.method_210(var10001);
+               var10.field_263.writeByte(var10001);
                client.field_1463.method_4079(var10);
             }
          }
@@ -959,7 +959,7 @@ public class class_90 extends class_59 {
                      var10001 = 0;
                   }
 
-                  var10.field_263.method_210(var10001);
+                  var10.field_263.writeByte(var10001);
                   client.field_1463.method_4079(var10);
                }
             }
@@ -992,7 +992,7 @@ public class class_90 extends class_59 {
                      var10001 = 0;
                   }
 
-                  var10.field_263.method_210(var10001);
+                  var10.field_263.writeByte(var10001);
                   var10.field_263.method_167(var3);
                   client.field_1463.method_4079(var10);
                }
@@ -1100,7 +1100,7 @@ public class class_90 extends class_59 {
                      var10001 = 0;
                   }
 
-                  var10.field_263.method_210(var10001);
+                  var10.field_263.writeByte(var10001);
                   var10.field_263.method_167(class_189.field_2276 * 1854633345);
                   var10.field_263.method_177(class_100.field_1172 * 1565845213);
                   var10.field_263.method_185(var3);
@@ -1227,7 +1227,7 @@ public class class_90 extends class_59 {
                      var10001 = 0;
                   }
 
-                  var10.field_263.method_210(var10001);
+                  var10.field_263.writeByte(var10001);
                   var10.field_263.method_185(var3);
                   client.field_1463.method_4079(var10);
                }
@@ -1313,7 +1313,7 @@ public class class_90 extends class_59 {
                   client.field_1562 = var1 * 1551872625;
                   var10 = class_112.method_2238(class_266.field_3092, client.field_1463.field_2384, (byte)8);
                   var10.field_263.method_165(var3);
-                  var10.field_263.method_210(class_145.field_1840[82]?1:0);
+                  var10.field_263.writeByte(class_145.field_1840[82]?1:0);
                   client.field_1463.method_4079(var10);
                }
             }
@@ -1521,7 +1521,7 @@ public class class_90 extends class_59 {
 
                   var9 = class_112.method_2238(class_266.field_3053, client.field_1463.field_2384, (byte)8);
                   var9.field_263.method_165(var0);
-                  var9.field_263.method_194(var1);
+                  var9.field_263.writeInt(var1);
                   var9.field_263.method_185(var3);
                   client.field_1463.method_4079(var9);
                   client.field_1523 = 0;

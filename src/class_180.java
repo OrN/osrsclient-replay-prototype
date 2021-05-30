@@ -27,7 +27,7 @@ public class class_180 {
 
 
    // $FF: renamed from: <init> (nd) void
-   public class_180(class_28 var1) {
+   public class_180(Buffer var1) {
       super();
       try {
          this.field_2231 = 7853368797710486943L;
@@ -85,11 +85,11 @@ public class class_180 {
    }
 
    // $FF: renamed from: f (nd) void
-   void method_3815(class_28 var1) {
+   void method_3815(Buffer var1) {
       this.field_2233 = var1.method_136() * -195396748607488393L;
       this.field_2231 = var1.method_136() * -7853368797710486943L;
 
-      for(int var2 = var1.method_130(); 0 != var2; var2 = var1.method_130()) {
+      for(int var2 = var1.readUnsignedByte(); 0 != var2; var2 = var1.readUnsignedByte()) {
          Object var3;
          if(1 == var2) {
             class_53 var10000 = new class_53(this);
@@ -119,12 +119,12 @@ public class class_180 {
    }
 
    // $FF: renamed from: v (nd, int) void
-   void method_3816(class_28 var1, int var2) {
+   void method_3816(Buffer var1, int var2) {
       try {
          this.field_2233 = var1.method_136() * -195396748607488393L;
          this.field_2231 = var1.method_136() * -7853368797710486943L;
 
-         for(int var3 = var1.method_130(); 0 != var3; var3 = var1.method_130()) {
+         for(int var3 = var1.readUnsignedByte(); 0 != var3; var3 = var1.readUnsignedByte()) {
             if(var2 == 1798909345) {
                throw new IllegalStateException();
             }
@@ -173,11 +173,11 @@ public class class_180 {
    }
 
    // $FF: renamed from: p (nd) void
-   void method_3817(class_28 var1) {
+   void method_3817(Buffer var1) {
       this.field_2233 = var1.method_136() * -195396748607488393L;
       this.field_2231 = var1.method_136() * -7853368797710486943L;
 
-      for(int var2 = var1.method_130(); 0 != var2; var2 = var1.method_130()) {
+      for(int var2 = var1.readUnsignedByte(); 0 != var2; var2 = var1.readUnsignedByte()) {
          Object var3;
          if(1 == var2) {
             class_53 var10000 = new class_53(this);
@@ -207,11 +207,11 @@ public class class_180 {
    }
 
    // $FF: renamed from: y (nd) void
-   void method_3818(class_28 var1) {
+   void method_3818(Buffer var1) {
       this.field_2233 = var1.method_136() * -195396748607488393L;
       this.field_2231 = var1.method_136() * -7853368797710486943L;
 
-      for(int var2 = var1.method_130(); 0 != var2; var2 = var1.method_130()) {
+      for(int var2 = var1.readUnsignedByte(); 0 != var2; var2 = var1.readUnsignedByte()) {
          Object var3;
          if(1 == var2) {
             class_53 var10000 = new class_53(this);

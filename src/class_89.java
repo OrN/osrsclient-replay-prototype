@@ -20,10 +20,10 @@ public class class_89 extends class_59 {
 
 
    // $FF: renamed from: f (nd, int) void
-   public void method_1569(class_28 var1) {
+   public void method_1569(Buffer var1) {
       try {
          while(true) {
-            int var3 = var1.method_130();
+            int var3 = var1.readUnsignedByte();
             if(var3 == 0) {
                return;
             }
@@ -91,7 +91,7 @@ public class class_89 extends class_59 {
 
             client.field_1452 = var10000;
          } else {
-            LinkedHashMap var2 = class_87.field_852.field_2126;
+            LinkedHashMap var2 = class_87.preferences.field_2126;
             String var4 = class_177.field_2200;
             int var5 = var4.length();
             int var6 = 0;
@@ -123,12 +123,12 @@ public class class_89 extends class_59 {
    }
 
    // $FF: renamed from: y (nd, int, int) void
-   void method_1580(class_28 var1, int var2) {
+   void method_1580(Buffer var1, int var2) {
       try {
          if(1 == var2) {
-            this.field_894 = var1.method_132() * 1658468423;
-            this.field_896 = var1.method_130() * 138764379;
-            this.field_895 = var1.method_130() * -670060269;
+            this.field_894 = var1.readShort() * 1658468423;
+            this.field_896 = var1.readUnsignedByte() * 138764379;
+            this.field_895 = var1.readUnsignedByte() * -670060269;
          }
 
       } catch (RuntimeException var4) {

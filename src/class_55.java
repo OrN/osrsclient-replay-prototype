@@ -52,26 +52,26 @@ public class class_55 extends class_51 {
    }
 
    // $FF: renamed from: f (nd) void
-   void method_570(class_28 var1) {
-      var1.method_130();
-      this.field_413 = var1.method_132() * -2127816187;
+   void method_570(Buffer var1) {
+      var1.readUnsignedByte();
+      this.field_413 = var1.readShort() * -2127816187;
       this.field_410 = var1.method_131();
-      this.field_414 = var1.method_132() * -827329295;
+      this.field_414 = var1.readShort() * -827329295;
       var1.method_136();
       this.field_412 = var1.method_139(-391631059);
-      var1.method_130();
+      var1.readUnsignedByte();
    }
 
    // $FF: renamed from: v (nd, int) void
-   void method_571(class_28 var1, int var2) {
+   void method_571(Buffer var1, int var2) {
       try {
-         var1.method_130();
-         this.field_413 = var1.method_132() * -188362621;
+         var1.readUnsignedByte();
+         this.field_413 = var1.readShort() * -188362621;
          this.field_410 = var1.method_131();
-         this.field_414 = var1.method_132() * -827329295;
+         this.field_414 = var1.readShort() * -827329295;
          var1.method_136();
          this.field_412 = var1.method_139(-391631059);
-         var1.method_130();
+         var1.readUnsignedByte();
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
       }

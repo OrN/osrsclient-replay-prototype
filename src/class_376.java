@@ -19,7 +19,7 @@ public class class_376 {
    // $FF: renamed from: r long
    long field_4150;
    // $FF: renamed from: n nm
-   class_383 field_4151;
+   RAFileHandle field_4151;
    // $FF: renamed from: d long
    long field_4152;
    // $FF: renamed from: s long
@@ -31,14 +31,14 @@ public class class_376 {
 
 
    // $FF: renamed from: <init> (nm, int, int) void
-   public class_376(class_383 var1, int var2, int var3) throws IOException {
+   public class_376(RAFileHandle var1, int var2, int var3) throws IOException {
       super();
       try {
          this.field_4147 = -4831608611576950975L;
          this.field_4150 = 5152950394296653439L;
          this.field_4145 = 0;
          this.field_4151 = var1;
-         this.field_4149 = (this.field_4153 = var1.method_6688() * -916519798495233385L) * 5721302312268225557L;
+         this.field_4149 = (this.field_4153 = var1.size() * -916519798495233385L) * 5721302312268225557L;
          this.field_4146 = new byte[var2];
          this.field_4155 = new byte[var3];
          this.field_4152 = 0L;
@@ -51,7 +51,7 @@ public class class_376 {
    public void method_6627() throws IOException {
       try {
          this.method_6634(527492841);
-         this.field_4151.method_6701();
+         this.field_4151.close();
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2);
       }
@@ -124,11 +124,11 @@ public class class_376 {
             }
          } else {
             if(1780782613106431365L * this.field_4154 != this.field_4152 * -3326324260793149209L) {
-               this.field_4151.method_6691(-3326324260793149209L * this.field_4152);
+               this.field_4151.seek(-3326324260793149209L * this.field_4152);
                this.field_4154 = this.field_4152 * -802913798240544133L;
             }
 
-            this.field_4151.method_6686(var1, var2, var3, (byte)-18);
+            this.field_4151.write(var1, var2, var3, (byte)-18);
             this.field_4154 += 2766150898359999309L * (long)var3;
             if(1780782613106431365L * this.field_4154 > -6829996619110357721L * this.field_4153) {
                this.field_4153 = -4001343720862100621L * this.field_4154;
@@ -221,14 +221,14 @@ public class class_376 {
                   throw new IllegalStateException();
                }
 
-               this.field_4151.method_6691(this.field_4152 * -3326324260793149209L);
+               this.field_4151.seek(this.field_4152 * -3326324260793149209L);
 
                for(this.field_4154 = this.field_4152 * -802913798240544133L; var3 > 0; var3 -= var9) {
                   if(var4 <= -1878266268) {
                      throw new IllegalStateException();
                   }
 
-                  var9 = this.field_4151.method_6689(var1, var2, var3, (byte)-67);
+                  var9 = this.field_4151.read(var1, var2, var3, (byte)-67);
                   if(-1 == var9) {
                      if(var4 <= -1878266268) {
                         throw new IllegalStateException();
@@ -436,11 +436,11 @@ public class class_376 {
                         return;
                      }
 
-                     this.field_4151.method_6691(-3326324260793149209L * this.field_4152);
+                     this.field_4151.seek(-3326324260793149209L * this.field_4152);
                      this.field_4154 = this.field_4152 * -802913798240544133L;
                   }
 
-                  this.field_4151.method_6686(var1, var2, var3, (byte)-16);
+                  this.field_4151.write(var1, var2, var3, (byte)-16);
                   this.field_4154 += 2766150898359999309L * (long)var3;
                   if(1780782613106431365L * this.field_4154 > -6829996619110357721L * this.field_4153) {
                      if(var4 == -2070257463) {
@@ -563,11 +563,11 @@ public class class_376 {
                   throw new IllegalStateException();
                }
 
-               this.field_4151.method_6691(8737860925507049089L * this.field_4150);
+               this.field_4151.seek(8737860925507049089L * this.field_4150);
                this.field_4154 = -6524887850335379507L * this.field_4150;
             }
 
-            this.field_4151.method_6686(this.field_4155, 0, -97062741 * this.field_4145, (byte)94);
+            this.field_4151.write(this.field_4155, 0, -97062741 * this.field_4145, (byte)94);
             this.field_4154 += (long)this.field_4145 * -4937392111645856657L;
             if(this.field_4154 * 1780782613106431365L > -6829996619110357721L * this.field_4153) {
                if(var1 <= -1576415806) {
@@ -670,7 +670,7 @@ public class class_376 {
    // $FF: renamed from: d () void
    public void method_6635() throws IOException {
       this.method_6634(-376162861);
-      this.field_4151.method_6701();
+      this.field_4151.close();
    }
 
    // $FF: renamed from: s (long) void
@@ -687,7 +687,7 @@ public class class_376 {
       try {
          this.field_4148 = 0;
          if(this.field_4152 * -3326324260793149209L != 1780782613106431365L * this.field_4154) {
-            this.field_4151.method_6691(-3326324260793149209L * this.field_4152);
+            this.field_4151.seek(-3326324260793149209L * this.field_4152);
             this.field_4154 = -802913798240544133L * this.field_4152;
          }
 
@@ -704,7 +704,7 @@ public class class_376 {
                   var2 = 200000000;
                }
 
-               int var3 = this.field_4151.method_6689(this.field_4146, this.field_4148 * -1725800063, var2, (byte)-10);
+               int var3 = this.field_4151.read(this.field_4146, this.field_4148 * -1725800063, var2, (byte)-10);
                if(var3 != -1) {
                   this.field_4154 += 2766150898359999309L * (long)var3;
                   this.field_4148 += 1990188673 * var3;
@@ -741,11 +741,11 @@ public class class_376 {
    void method_6640() throws IOException {
       if(8737860925507049089L * this.field_4150 != -1L) {
          if(this.field_4154 * 1780782613106431365L != 8737860925507049089L * this.field_4150) {
-            this.field_4151.method_6691(8737860925507049089L * this.field_4150);
+            this.field_4151.seek(8737860925507049089L * this.field_4150);
             this.field_4154 = -6524887850335379507L * this.field_4150;
          }
 
-         this.field_4151.method_6686(this.field_4155, 0, -891772299 * this.field_4145, (byte)-19);
+         this.field_4151.write(this.field_4155, 0, -891772299 * this.field_4145, (byte)-19);
          this.field_4154 += (long)this.field_4145 * -4937392111645856657L;
          if(this.field_4154 * 1780782613106431365L > -6829996619110357721L * this.field_4153) {
             this.field_4153 = -4001343720862100621L * this.field_4154;
@@ -815,10 +815,10 @@ public class class_376 {
          }
 
          if(var3 > this.field_4146.length) {
-            this.field_4151.method_6691(this.field_4152 * -3326324260793149209L);
+            this.field_4151.seek(this.field_4152 * -3326324260793149209L);
 
             for(this.field_4154 = this.field_4152 * -802913798240544133L; var3 > 0; var3 -= var8) {
-               var8 = this.field_4151.method_6689(var1, var2, var3, (byte)-95);
+               var8 = this.field_4151.read(var1, var2, var3, (byte)-95);
                if(-1 == var8) {
                   break;
                }
@@ -916,10 +916,10 @@ public class class_376 {
          }
 
          if(var3 > this.field_4146.length) {
-            this.field_4151.method_6691(this.field_4152 * -3326324260793149209L);
+            this.field_4151.seek(this.field_4152 * -3326324260793149209L);
 
             for(this.field_4154 = this.field_4152 * -802913798240544133L; var3 > 0; var3 -= var8) {
-               var8 = this.field_4151.method_6689(var1, var2, var3, (byte)-30);
+               var8 = this.field_4151.read(var1, var2, var3, (byte)-30);
                if(-1 == var8) {
                   break;
                }
@@ -1017,10 +1017,10 @@ public class class_376 {
          }
 
          if(var3 > this.field_4146.length) {
-            this.field_4151.method_6691(this.field_4152 * -3326324260793149209L);
+            this.field_4151.seek(this.field_4152 * -3326324260793149209L);
 
             for(this.field_4154 = this.field_4152 * -802913798240544133L; var3 > 0; var3 -= var8) {
-               var8 = this.field_4151.method_6689(var1, var2, var3, (byte)-75);
+               var8 = this.field_4151.read(var1, var2, var3, (byte)-75);
                if(-1 == var8) {
                   break;
                }
@@ -1118,10 +1118,10 @@ public class class_376 {
          }
 
          if(var3 > this.field_4146.length) {
-            this.field_4151.method_6691(this.field_4152 * -3326324260793149209L);
+            this.field_4151.seek(this.field_4152 * -3326324260793149209L);
 
             for(this.field_4154 = this.field_4152 * -802913798240544133L; var3 > 0; var3 -= var8) {
-               var8 = this.field_4151.method_6689(var1, var2, var3, (byte)-96);
+               var8 = this.field_4151.read(var1, var2, var3, (byte)-96);
                if(-1 == var8) {
                   break;
                }
@@ -1231,11 +1231,11 @@ public class class_376 {
             }
          } else {
             if(1780782613106431365L * this.field_4154 != this.field_4152 * -3326324260793149209L) {
-               this.field_4151.method_6691(-3326324260793149209L * this.field_4152);
+               this.field_4151.seek(-3326324260793149209L * this.field_4152);
                this.field_4154 = this.field_4152 * -802913798240544133L;
             }
 
-            this.field_4151.method_6686(var1, var2, var3, (byte)-33);
+            this.field_4151.write(var1, var2, var3, (byte)-33);
             this.field_4154 += 2766150898359999309L * (long)var3;
             if(1780782613106431365L * this.field_4154 > -6829996619110357721L * this.field_4153) {
                this.field_4153 = -4001343720862100621L * this.field_4154;
@@ -1281,11 +1281,11 @@ public class class_376 {
    void method_6650() throws IOException {
       if(8737860925507049089L * this.field_4150 != -1L) {
          if(this.field_4154 * 1780782613106431365L != 8737860925507049089L * this.field_4150) {
-            this.field_4151.method_6691(8737860925507049089L * this.field_4150);
+            this.field_4151.seek(8737860925507049089L * this.field_4150);
             this.field_4154 = -6524887850335379507L * this.field_4150;
          }
 
-         this.field_4151.method_6686(this.field_4155, 0, -97062741 * this.field_4145, (byte)8);
+         this.field_4151.write(this.field_4155, 0, -97062741 * this.field_4145, (byte)8);
          this.field_4154 += (long)this.field_4145 * -4937392111645856657L;
          if(this.field_4154 * 1780782613106431365L > -6829996619110357721L * this.field_4153) {
             this.field_4153 = -4001343720862100621L * this.field_4154;

@@ -270,16 +270,16 @@ public class class_159 {
    }
 
     // $FF: renamed from: f (nd) void
-   final void method_3308(class_28 var1) {
+   final void method_3308(Buffer var1) {
       class_156 var10001 = new class_156();
       this.field_1975 = var10001;
       this.field_1975.method_3264(var1);
       var10001 = new class_156();
       this.field_1965 = var10001;
       this.field_1965.method_3264(var1);
-      int var2 = var1.method_130();
+      int var2 = var1.readUnsignedByte();
       if(var2 != 0) {
-         var1.field_15 -= -1025691571;
+         var1.offset -= -1025691571;
          var10001 = new class_156();
          this.field_1966 = var10001;
          this.field_1966.method_3264(var1);
@@ -288,9 +288,9 @@ public class class_159 {
          this.field_1967.method_3264(var1);
       }
 
-      var2 = var1.method_130();
+      var2 = var1.readUnsignedByte();
       if(var2 != 0) {
-         var1.field_15 -= -1025691571;
+         var1.offset -= -1025691571;
          var10001 = new class_156();
          this.field_1969 = var10001;
          this.field_1969.method_3264(var1);
@@ -299,9 +299,9 @@ public class class_159 {
          this.field_1964.method_3264(var1);
       }
 
-      var2 = var1.method_130();
+      var2 = var1.readUnsignedByte();
       if(var2 != 0) {
-         var1.field_15 -= -1025691571;
+         var1.offset -= -1025691571;
          var10001 = new class_156();
          this.field_1970 = var10001;
          this.field_1970.method_3264(var1);
@@ -323,8 +323,8 @@ public class class_159 {
 
       this.field_1977 = var1.method_144();
       this.field_1986 = var1.method_144();
-      this.field_1982 = var1.method_132();
-      this.field_1980 = var1.method_132();
+      this.field_1982 = var1.readShort();
+      this.field_1980 = var1.readShort();
       class_150 var5 = new class_150();
       this.field_1968 = var5;
       var10001 = new class_156();

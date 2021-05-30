@@ -44,10 +44,10 @@ public class class_86 extends class_59 {
    }
 
    // $FF: renamed from: f (nd, short) void
-   void method_1462(class_28 var1, short var2) {
+   void method_1462(Buffer var1, short var2) {
       try {
          while(true) {
-            int var3 = var1.method_130();
+            int var3 = var1.readUnsignedByte();
             if(var3 == 0) {
                if(var2 == 2048) {
                   return;
@@ -64,7 +64,7 @@ public class class_86 extends class_59 {
    }
 
    // $FF: renamed from: y (nd, int, byte) void
-   void method_1463(class_28 var1, int var2, byte var3) {
+   void method_1463(Buffer var1, int var2, byte var3) {
       try {
          if(var2 == 1) {
             if(var3 <= 1) {
@@ -159,7 +159,7 @@ public class class_86 extends class_59 {
          class_86 var10000 = new class_86();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28(var2);
+            Buffer var10001 = new Buffer(var2);
             var1.method_1462(var10001, (short)18623);
          }
 
@@ -189,7 +189,7 @@ public class class_86 extends class_59 {
          class_86 var10000 = new class_86();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28(var2);
+            Buffer var10001 = new Buffer(var2);
             var1.method_1462(var10001, (short)-19186);
          }
 
@@ -200,9 +200,9 @@ public class class_86 extends class_59 {
    }
 
    // $FF: renamed from: s (nd) void
-   void method_1468(class_28 var1) {
+   void method_1468(Buffer var1) {
       while(true) {
-         int var2 = var1.method_130();
+         int var2 = var1.readUnsignedByte();
          if(var2 == 0) {
             return;
          }
@@ -217,7 +217,7 @@ public class class_86 extends class_59 {
    }
 
    // $FF: renamed from: l (nd, int) void
-   void method_1470(class_28 var1, int var2) {
+   void method_1470(Buffer var1, int var2) {
       if(var2 == 1) {
          byte var4 = var1.method_131();
          int var5 = var4 & 255;
@@ -247,7 +247,7 @@ public class class_86 extends class_59 {
    }
 
    // $FF: renamed from: o (nd, int) void
-   void method_1471(class_28 var1, int var2) {
+   void method_1471(Buffer var1, int var2) {
       if(var2 == 1) {
          byte var4 = var1.method_131();
          int var5 = var4 & 255;
@@ -277,9 +277,9 @@ public class class_86 extends class_59 {
    }
 
    // $FF: renamed from: d (nd) void
-   void method_1472(class_28 var1) {
+   void method_1472(Buffer var1) {
       while(true) {
-         int var2 = var1.method_130();
+         int var2 = var1.readUnsignedByte();
          if(var2 == 0) {
             return;
          }
@@ -289,7 +289,7 @@ public class class_86 extends class_59 {
    }
 
    // $FF: renamed from: e (nd, int) void
-   void method_1473(class_28 var1, int var2) {
+   void method_1473(Buffer var1, int var2) {
       if(var2 == 1) {
          byte var4 = var1.method_131();
          int var5 = var4 & 255;
@@ -319,7 +319,7 @@ public class class_86 extends class_59 {
    }
 
    // $FF: renamed from: g (nd, int) void
-   void method_1474(class_28 var1, int var2) {
+   void method_1474(Buffer var1, int var2) {
       if(var2 == 1) {
          byte var4 = var1.method_131();
          int var5 = var4 & 1461260145;
@@ -349,9 +349,9 @@ public class class_86 extends class_59 {
    }
 
    // $FF: renamed from: u (nd) void
-   void method_1475(class_28 var1) {
+   void method_1475(Buffer var1) {
       while(true) {
-         int var2 = var1.method_130();
+         int var2 = var1.readUnsignedByte();
          if(var2 == 0) {
             return;
          }
@@ -366,7 +366,7 @@ public class class_86 extends class_59 {
    }
 
    // $FF: renamed from: c (nd, int) void
-   void method_1477(class_28 var1, int var2) {
+   void method_1477(Buffer var1, int var2) {
       if(var2 == 1) {
          byte var4 = var1.method_131();
          int var5 = var4 & 255;
@@ -401,13 +401,13 @@ public class class_86 extends class_59 {
    }
 
    // $FF: renamed from: n (nd, java.lang.String, int) int
-   public static int method_1479(class_28 var0, String var1) {
+   public static int method_1479(Buffer var0, String var1) {
       try {
-         int var3 = var0.field_15 * -442398587;
+         int var3 = var0.offset * -442398587;
          byte[] var4 = class_96.method_1782(var1, (byte)1);
          var0.method_154(var4.length, 1514054821);
-         var0.field_15 += class_283.field_3254.method_5128(var4, 0, var4.length, var0.field_12, -442398587 * var0.field_15, -1771956050) * -1025691571;
-         return -442398587 * var0.field_15 - var3;
+         var0.offset += class_283.field_3254.method_5128(var4, 0, var4.length, var0.data, -442398587 * var0.offset, -1771956050) * -1025691571;
+         return -442398587 * var0.offset - var3;
       } catch (RuntimeException var5) {
          throw class_223.method_4281(var5);
       }

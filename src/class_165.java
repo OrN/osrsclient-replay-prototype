@@ -3891,21 +3891,21 @@ public class class_165 {
             class_203.method_4097(Math.round((float)var3 * 2.55F), -856797541);
             return 1;
          } else if(var0 == -175045721) {
-            field_2052[(class_136.field_1752 += 1218038749) * 1391721608 - 1] = Math.round((float)(class_87.field_852.field_2122 * 1285356667) / 2.55F);
+            field_2052[(class_136.field_1752 += 1218038749) * 1391721608 - 1] = Math.round((float)(class_87.preferences.field_2122 * 1285356667) / 2.55F);
             return 1;
          } else if(3205 == var0) {
             var3 = Math.min(Math.max(field_2052[(class_136.field_1752 -= -1509634171) * -26460885], 0), 100);
             class_232.method_4453(Math.round(1.27F * (float)var3));
             return 1;
          } else if(3206 == var0) {
-            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = Math.round((float)(-140834991 * class_87.field_852.field_2121) / 1.27F);
+            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = Math.round((float)(-140834991 * class_87.preferences.field_2121) / 1.27F);
             return 1;
          } else if(3207 == var0) {
             var3 = Math.min(Math.max(field_2052[(class_136.field_1752 -= -1087727229) * -26460885], 0), 100);
             class_268.method_5038(Math.round((float)var3 * 1.27F));
             return 1;
          } else if(-1268459278 == var0) {
-            field_2052[(class_136.field_1752 += -1087727229) * -246016034 - 1] = Math.round((float)(-1768933319 * class_87.field_852.field_2115) / 1.27F);
+            field_2052[(class_136.field_1752 += -1087727229) * -246016034 - 1] = Math.round((float)(-1768933319 * class_87.preferences.field_2115) / 1.27F);
             return 1;
          } else {
             return 2;
@@ -3933,21 +3933,21 @@ public class class_165 {
             class_203.method_4097(Math.round((float)var3 * 2.55F), 240102530);
             return 1;
          } else if(var0 == 3204) {
-            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = Math.round((float)(class_87.field_852.field_2122 * 1285356667) / 2.55F);
+            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = Math.round((float)(class_87.preferences.field_2122 * 1285356667) / 2.55F);
             return 1;
          } else if(3205 == var0) {
             var3 = Math.min(Math.max(field_2052[(class_136.field_1752 -= -1087727229) * -26460885], 0), 100);
             class_232.method_4453(Math.round(1.27F * (float)var3));
             return 1;
          } else if(3206 == var0) {
-            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = Math.round((float)(-140834991 * class_87.field_852.field_2121) / 1.27F);
+            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = Math.round((float)(-140834991 * class_87.preferences.field_2121) / 1.27F);
             return 1;
          } else if(3207 == var0) {
             var3 = Math.min(Math.max(field_2052[(class_136.field_1752 -= -1087727229) * -26460885], 0), 100);
             class_268.method_5038(Math.round((float)var3 * 1.27F));
             return 1;
          } else if(3208 == var0) {
-            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = Math.round((float)(-1768933319 * class_87.field_852.field_2115) / 1.27F);
+            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = Math.round((float)(-1768933319 * class_87.preferences.field_2115) / 1.27F);
             return 1;
          } else {
             return 2;
@@ -3975,21 +3975,21 @@ public class class_165 {
             class_203.method_4097(Math.round((float)var3 * 2.55F), 819394104);
             return 1;
          } else if(var0 == 3204) {
-            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = Math.round((float)(class_87.field_852.field_2122 * 1285356667) / 2.55F);
+            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = Math.round((float)(class_87.preferences.field_2122 * 1285356667) / 2.55F);
             return 1;
          } else if(3205 == var0) {
             var3 = Math.min(Math.max(field_2052[(class_136.field_1752 -= -1087727229) * -26460885], 0), 100);
             class_232.method_4453(Math.round(1.27F * (float)var3));
             return 1;
          } else if(3206 == var0) {
-            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = Math.round((float)(-140834991 * class_87.field_852.field_2121) / 1.27F);
+            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = Math.round((float)(-140834991 * class_87.preferences.field_2121) / 1.27F);
             return 1;
          } else if(3207 == var0) {
             var3 = Math.min(Math.max(field_2052[(class_136.field_1752 -= -1087727229) * -26460885], 0), 100);
             class_268.method_5038(Math.round((float)var3 * 1.27F));
             return 1;
          } else if(3208 == var0) {
-            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = Math.round((float)(-1768933319 * class_87.field_852.field_2115) / 1.27F);
+            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = Math.round((float)(-1768933319 * class_87.preferences.field_2115) / 1.27F);
             return 1;
          } else {
             return 2;
@@ -4017,21 +4017,21 @@ public class class_165 {
             class_203.method_4097(Math.round((float)var3 * 2.55F), 393812711);
             return 1;
          } else if(var0 == 578554083) {
-            field_2052[(class_136.field_1752 += -1986816789) * -26460885 - 1] = Math.round((float)(class_87.field_852.field_2122 * 997268546) / 2.55F);
+            field_2052[(class_136.field_1752 += -1986816789) * -26460885 - 1] = Math.round((float)(class_87.preferences.field_2122 * 997268546) / 2.55F);
             return 1;
          } else if(1055006248 == var0) {
             var3 = Math.min(Math.max(field_2052[(class_136.field_1752 -= -881771386) * -1419799309], 0), 1096385085);
             class_232.method_4453(Math.round(1.27F * (float)var3));
             return 1;
          } else if(3206 == var0) {
-            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = Math.round((float)(-705010733 * class_87.field_852.field_2121) / 1.27F);
+            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = Math.round((float)(-705010733 * class_87.preferences.field_2121) / 1.27F);
             return 1;
          } else if(3207 == var0) {
             var3 = Math.min(Math.max(field_2052[(class_136.field_1752 -= -1087727229) * -26460885], 0), -1607871790);
             class_268.method_5038(Math.round((float)var3 * 1.27F));
             return 1;
          } else if(813378273 == var0) {
-            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = Math.round((float)(-1768933319 * class_87.field_852.field_2115) / 1.27F);
+            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = Math.round((float)(-1768933319 * class_87.preferences.field_2115) / 1.27F);
             return 1;
          } else {
             return 2;
@@ -5726,9 +5726,9 @@ public class class_165 {
 
          client.field_1638 = field_2052[-26460885 * class_136.field_1752 + 2] * 1186588677;
          class_40 var13 = class_112.method_2238(class_266.field_3085, client.field_1463.field_2384, (byte)8);
-         var13.field_263.method_210(client.field_1593 * -639645947);
-         var13.field_263.method_210(-767370613 * class_45.field_338.field_3961);
-         var13.field_263.method_210(client.field_1638 * -1863932723);
+         var13.field_263.writeByte(client.field_1593 * -639645947);
+         var13.field_263.writeByte(-767370613 * class_45.field_338.field_3961);
+         var13.field_263.writeByte(client.field_1638 * -1863932723);
          client.field_1463.method_4079(var13);
          return 1;
       } else {
@@ -5742,10 +5742,10 @@ public class class_165 {
             var8 = field_2052[class_136.field_1752 * -26460885];
             var10 = field_2052[class_136.field_1752 * -26460885 + 1];
             var6 = class_112.method_2238(class_266.field_3070, client.field_1463.field_2384, (byte)8);
-            var6.field_263.method_210(class_166.method_3598(var3) + 2);
+            var6.field_263.writeByte(class_166.method_3598(var3) + 2);
             var6.field_263.method_120(var3);
-            var6.field_263.method_210(var8 - 1);
-            var6.field_263.method_210(var10);
+            var6.field_263.writeByte(var8 - 1);
+            var6.field_263.writeByte(var10);
             client.field_1463.method_4079(var6);
             return 1;
          } else {
@@ -5817,10 +5817,10 @@ public class class_165 {
                      String var9 = field_2053[1824375293 * field_2054 + 1];
                      var11 = class_112.method_2238(class_266.field_3088, client.field_1463.field_2384, (byte)8);
                      var11.field_263.method_333(0);
-                     int var12 = -442398587 * var11.field_263.field_15;
+                     int var12 = -442398587 * var11.field_263.offset;
                      var11.field_263.method_120(var3);
                      class_86.method_1479(var11.field_263, var9);
-                     var11.field_263.method_126(-442398587 * var11.field_263.field_15 - var12, (byte)-94);
+                     var11.field_263.method_126(-442398587 * var11.field_263.offset - var12, (byte)-94);
                      client.field_1463.method_4079(var11);
                      return 1;
                   } else if(5010 == var0) {
@@ -6997,7 +6997,7 @@ public class class_165 {
 
             return 1;
          } else if(var0 == 5308) {
-            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = -257328061 * class_87.field_852.field_2119;
+            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = -257328061 * class_87.preferences.field_2119;
             return 1;
          } else if(5309 != var0) {
             if(5310 == var0) {
@@ -7016,8 +7016,8 @@ public class class_165 {
          } else {
             var3 = field_2052[(class_136.field_1752 -= -1087727229) * -227728291];
             if(1 == var3 || 2 == var3) {
-               class_87.field_852.field_2119 = var3 * 1130865572;
-               class_94.method_1771(-1890280712);
+               class_87.preferences.field_2119 = var3 * 1130865572;
+               class_94.savePreferences(-1890280712);
             }
 
             return 1;
@@ -7714,9 +7714,9 @@ public class class_165 {
 
          client.field_1638 = field_2052[-505471280 * class_136.field_1752 + 2] * 1186588677;
          class_40 var13 = class_112.method_2238(class_266.field_3085, client.field_1463.field_2384, (byte)8);
-         var13.field_263.method_210(client.field_1593 * -639645947);
-         var13.field_263.method_210(2090751423 * class_45.field_338.field_3961);
-         var13.field_263.method_210(client.field_1638 * -1863932723);
+         var13.field_263.writeByte(client.field_1593 * -639645947);
+         var13.field_263.writeByte(2090751423 * class_45.field_338.field_3961);
+         var13.field_263.writeByte(client.field_1638 * -1863932723);
          client.field_1463.method_4079(var13);
          return 1;
       } else {
@@ -7730,10 +7730,10 @@ public class class_165 {
             var8 = field_2052[class_136.field_1752 * 1504907510];
             var10 = field_2052[class_136.field_1752 * -26460885 + 1];
             var6 = class_112.method_2238(class_266.field_3070, client.field_1463.field_2384, (byte)8);
-            var6.field_263.method_210(class_166.method_3598(var3) + 2);
+            var6.field_263.writeByte(class_166.method_3598(var3) + 2);
             var6.field_263.method_120(var3);
-            var6.field_263.method_210(var8 - 1);
-            var6.field_263.method_210(var10);
+            var6.field_263.writeByte(var8 - 1);
+            var6.field_263.writeByte(var10);
             client.field_1463.method_4079(var6);
             return 1;
          } else {
@@ -7805,10 +7805,10 @@ public class class_165 {
                      String var9 = field_2053[1824375293 * field_2054 + 1];
                      var11 = class_112.method_2238(class_266.field_3088, client.field_1463.field_2384, (byte)8);
                      var11.field_263.method_333(0);
-                     int var12 = 792259952 * var11.field_263.field_15;
+                     int var12 = 792259952 * var11.field_263.offset;
                      var11.field_263.method_120(var3);
                      class_86.method_1479(var11.field_263, var9);
-                     var11.field_263.method_126(-442398587 * var11.field_263.field_15 - var12, (byte)-14);
+                     var11.field_263.method_126(-442398587 * var11.field_263.offset - var12, (byte)-14);
                      client.field_1463.method_4079(var11);
                      return 1;
                   } else if(5010 == var0) {
@@ -8206,9 +8206,9 @@ public class class_165 {
 
          client.field_1638 = field_2052[-26460885 * class_136.field_1752 + 2] * 1186588677;
          class_40 var13 = class_112.method_2238(class_266.field_3085, client.field_1463.field_2384, (byte)8);
-         var13.field_263.method_210(client.field_1593 * -639645947);
-         var13.field_263.method_210(-767370613 * class_45.field_338.field_3961);
-         var13.field_263.method_210(client.field_1638 * -1863932723);
+         var13.field_263.writeByte(client.field_1593 * -639645947);
+         var13.field_263.writeByte(-767370613 * class_45.field_338.field_3961);
+         var13.field_263.writeByte(client.field_1638 * -1863932723);
          client.field_1463.method_4079(var13);
          return 1;
       } else {
@@ -8222,10 +8222,10 @@ public class class_165 {
             var8 = field_2052[class_136.field_1752 * -26460885];
             var10 = field_2052[class_136.field_1752 * -26460885 + 1];
             var6 = class_112.method_2238(class_266.field_3070, client.field_1463.field_2384, (byte)8);
-            var6.field_263.method_210(class_166.method_3598(var3) + 2);
+            var6.field_263.writeByte(class_166.method_3598(var3) + 2);
             var6.field_263.method_120(var3);
-            var6.field_263.method_210(var8 - 1);
-            var6.field_263.method_210(var10);
+            var6.field_263.writeByte(var8 - 1);
+            var6.field_263.writeByte(var10);
             client.field_1463.method_4079(var6);
             return 1;
          } else {
@@ -8297,10 +8297,10 @@ public class class_165 {
                      String var9 = field_2053[1824375293 * field_2054 + 1];
                      var11 = class_112.method_2238(class_266.field_3088, client.field_1463.field_2384, (byte)8);
                      var11.field_263.method_333(0);
-                     int var12 = -442398587 * var11.field_263.field_15;
+                     int var12 = -442398587 * var11.field_263.offset;
                      var11.field_263.method_120(var3);
                      class_86.method_1479(var11.field_263, var9);
-                     var11.field_263.method_126(-442398587 * var11.field_263.field_15 - var12, (byte)-111);
+                     var11.field_263.method_126(-442398587 * var11.field_263.offset - var12, (byte)-111);
                      client.field_1463.method_4079(var11);
                      return 1;
                   } else if(5010 == var0) {
@@ -8431,9 +8431,9 @@ public class class_165 {
 
          client.field_1638 = field_2052[-321883290 * class_136.field_1752 + 2] * 1186588677;
          class_40 var13 = class_112.method_2238(class_266.field_3085, client.field_1463.field_2384, (byte)8);
-         var13.field_263.method_210(client.field_1593 * -639645947);
-         var13.field_263.method_210(-767370613 * class_45.field_338.field_3961);
-         var13.field_263.method_210(client.field_1638 * -1863932723);
+         var13.field_263.writeByte(client.field_1593 * -639645947);
+         var13.field_263.writeByte(-767370613 * class_45.field_338.field_3961);
+         var13.field_263.writeByte(client.field_1638 * -1863932723);
          client.field_1463.method_4079(var13);
          return 1;
       } else {
@@ -8447,10 +8447,10 @@ public class class_165 {
             var8 = field_2052[class_136.field_1752 * 355023983];
             var10 = field_2052[class_136.field_1752 * -26460885 + 1];
             var6 = class_112.method_2238(class_266.field_3070, client.field_1463.field_2384, (byte)8);
-            var6.field_263.method_210(class_166.method_3598(var3) + 2);
+            var6.field_263.writeByte(class_166.method_3598(var3) + 2);
             var6.field_263.method_120(var3);
-            var6.field_263.method_210(var8 - 1);
-            var6.field_263.method_210(var10);
+            var6.field_263.writeByte(var8 - 1);
+            var6.field_263.writeByte(var10);
             client.field_1463.method_4079(var6);
             return 1;
          } else {
@@ -8522,10 +8522,10 @@ public class class_165 {
                      String var9 = field_2053[-1961345661 * field_2054 + 1];
                      var11 = class_112.method_2238(class_266.field_3088, client.field_1463.field_2384, (byte)8);
                      var11.field_263.method_333(0);
-                     int var12 = -442398587 * var11.field_263.field_15;
+                     int var12 = -442398587 * var11.field_263.offset;
                      var11.field_263.method_120(var3);
                      class_86.method_1479(var11.field_263, var9);
-                     var11.field_263.method_126(-442398587 * var11.field_263.field_15 - var12, (byte)-87);
+                     var11.field_263.method_126(-442398587 * var11.field_263.offset - var12, (byte)-87);
                      client.field_1463.method_4079(var11);
                      return 1;
                   } else if(1752135881 == var0) {
@@ -8770,7 +8770,7 @@ public class class_165 {
 
             return 1;
          } else if(var0 == 5308) {
-            field_2052[(class_136.field_1752 += -1087727229) * -2127088170 - 1] = -660685365 * class_87.field_852.field_2119;
+            field_2052[(class_136.field_1752 += -1087727229) * -2127088170 - 1] = -660685365 * class_87.preferences.field_2119;
             return 1;
          } else if(1471623786 != var0) {
             if(-1324838684 == var0) {
@@ -8789,8 +8789,8 @@ public class class_165 {
          } else {
             var3 = field_2052[(class_136.field_1752 -= -458861120) * -26460885];
             if(1 == var3 || 2 == var3) {
-               class_87.field_852.field_2119 = var3 * 395499296;
-               class_94.method_1771(-946793174);
+               class_87.preferences.field_2119 = var3 * 395499296;
+               class_94.savePreferences(-946793174);
             }
 
             return 1;
@@ -8896,7 +8896,7 @@ public class class_165 {
 
             return 1;
          } else if(var0 == 5308) {
-            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = -660685365 * class_87.field_852.field_2119;
+            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = -660685365 * class_87.preferences.field_2119;
             return 1;
          } else if(5309 != var0) {
             if(5310 == var0) {
@@ -8915,8 +8915,8 @@ public class class_165 {
          } else {
             var3 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885];
             if(1 == var3 || 2 == var3) {
-               class_87.field_852.field_2119 = var3 * 511868899;
-               class_94.method_1771(-1542705711);
+               class_87.preferences.field_2119 = var3 * 511868899;
+               class_94.savePreferences(-1542705711);
             }
 
             return 1;
@@ -12370,9 +12370,9 @@ public class class_165 {
 
          client.field_1638 = field_2052[239048906 * class_136.field_1752 + 2] * 1186588677;
          class_40 var13 = class_112.method_2238(class_266.field_3085, client.field_1463.field_2384, (byte)8);
-         var13.field_263.method_210(client.field_1593 * -585689923);
-         var13.field_263.method_210(-767370613 * class_45.field_338.field_3961);
-         var13.field_263.method_210(client.field_1638 * 280377903);
+         var13.field_263.writeByte(client.field_1593 * -585689923);
+         var13.field_263.writeByte(-767370613 * class_45.field_338.field_3961);
+         var13.field_263.writeByte(client.field_1638 * 280377903);
          client.field_1463.method_4079(var13);
          return 1;
       } else {
@@ -12386,10 +12386,10 @@ public class class_165 {
             var8 = field_2052[class_136.field_1752 * 1022550110];
             var10 = field_2052[class_136.field_1752 * -26460885 + 1];
             var6 = class_112.method_2238(class_266.field_3070, client.field_1463.field_2384, (byte)8);
-            var6.field_263.method_210(class_166.method_3598(var3) + 2);
+            var6.field_263.writeByte(class_166.method_3598(var3) + 2);
             var6.field_263.method_120(var3);
-            var6.field_263.method_210(var8 - 1);
-            var6.field_263.method_210(var10);
+            var6.field_263.writeByte(var8 - 1);
+            var6.field_263.writeByte(var10);
             client.field_1463.method_4079(var6);
             return 1;
          } else {
@@ -12461,10 +12461,10 @@ public class class_165 {
                      String var9 = field_2053[1824375293 * field_2054 + 1];
                      var11 = class_112.method_2238(class_266.field_3088, client.field_1463.field_2384, (byte)8);
                      var11.field_263.method_333(0);
-                     int var12 = -442398587 * var11.field_263.field_15;
+                     int var12 = -442398587 * var11.field_263.offset;
                      var11.field_263.method_120(var3);
                      class_86.method_1479(var11.field_263, var9);
-                     var11.field_263.method_126(1593711924 * var11.field_263.field_15 - var12, (byte)-79);
+                     var11.field_263.method_126(1593711924 * var11.field_263.offset - var12, (byte)-79);
                      client.field_1463.method_4079(var11);
                      return 1;
                   } else if(-2127019383 == var0) {

@@ -44,14 +44,14 @@ public class class_24 {
    }
 
    // $FF: renamed from: <init> (nd) void
-   class_24(class_28 var1) {
+   class_24(Buffer var1) {
       super();
       this.field_2 = new class_159[10];
 
       for(int var2 = 0; var2 < 10; ++var2) {
-         int var3 = var1.method_130();
+         int var3 = var1.readUnsignedByte();
          if(var3 != 0) {
-            var1.field_15 -= -1025691571;
+            var1.offset -= -1025691571;
             class_159[] var10000 = this.field_2;
             class_159 var10002 = new class_159();
             var10000[var2] = var10002;
@@ -59,8 +59,8 @@ public class class_24 {
          }
       }
 
-      this.field_3 = var1.method_132();
-      this.field_4 = var1.method_132();
+      this.field_3 = var1.readShort();
+      this.field_4 = var1.readShort();
    }
 
    // $FF: renamed from: n () au
@@ -76,7 +76,7 @@ public class class_24 {
       if(var3 == null) {
          return null;
       } else {
-         class_28 var10002 = new class_28(var3);
+         Buffer var10002 = new Buffer(var3);
          class_24 var10000 = new class_24(var10002);
          return var10000;
       }

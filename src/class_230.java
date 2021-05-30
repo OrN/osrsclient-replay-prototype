@@ -42,7 +42,7 @@ public class class_230 {
    }
 
    // $FF: renamed from: v (nd, int, int) void
-   public void method_4363(class_28 var1, int var2, int var3) {
+   public void method_4363(Buffer var1, int var2, int var3) {
       try {
          this.field_2581 = 1914980669 * var2;
          this.field_2587 = var1.method_139(-391631059);
@@ -50,9 +50,9 @@ public class class_230 {
          class_280 var10001 = new class_280(var1.method_135());
          this.field_2580 = var10001;
          this.field_2578 = var1.method_135() * 476314275;
-         var1.method_130();
+         var1.readUnsignedByte();
          boolean var7;
-         if(var1.method_130() == 1) {
+         if(var1.readUnsignedByte() == 1) {
             if(var3 >= -1808739745) {
                throw new IllegalStateException();
             }
@@ -63,8 +63,8 @@ public class class_230 {
          }
 
          this.field_2585 = var7;
-         this.field_2579 = var1.method_130() * 1699709445;
-         int var4 = var1.method_130();
+         this.field_2579 = var1.readUnsignedByte() * 1699709445;
+         int var4 = var1.readUnsignedByte();
          this.field_2586 = new LinkedList();
 
          for(int var5 = 0; var5 < var4; ++var5) {
@@ -82,9 +82,9 @@ public class class_230 {
    }
 
    // $FF: renamed from: n (nd, int) gi
-   class_6 method_4364(class_28 var1) {
+   class_6 method_4364(Buffer var1) {
       try {
-         int var3 = var1.method_130();
+         int var3 = var1.readUnsignedByte();
          class_238[] var4 = new class_238[]{class_238.field_2647, class_238.field_2649, class_238.field_2648, class_238.field_2646};
          class_238 var5 = (class_238)class_197.method_4016(var4, var3, -611336247);
          Object var6 = null;
@@ -311,8 +311,8 @@ public class class_230 {
    }
 
    // $FF: renamed from: w (nd) gi
-   class_6 method_4384(class_28 var1) {
-      int var2 = var1.method_130();
+   class_6 method_4384(Buffer var1) {
+      int var2 = var1.readUnsignedByte();
       class_238[] var3 = new class_238[]{class_238.field_2647, class_238.field_2649, class_238.field_2648, class_238.field_2646};
       class_238 var4 = (class_238)class_197.method_4016(var3, var2, -611336247);
       Object var5 = null;
@@ -342,8 +342,8 @@ public class class_230 {
    }
 
    // $FF: renamed from: t (nd) gi
-   class_6 method_4385(class_28 var1) {
-      int var2 = var1.method_130();
+   class_6 method_4385(Buffer var1) {
+      int var2 = var1.readUnsignedByte();
       class_238[] var3 = new class_238[]{class_238.field_2647, class_238.field_2649, class_238.field_2648, class_238.field_2646};
       class_238 var4 = (class_238)class_197.method_4016(var3, var2, -611336247);
       Object var5 = null;
@@ -373,8 +373,8 @@ public class class_230 {
    }
 
    // $FF: renamed from: h (nd) gi
-   class_6 method_4386(class_28 var1) {
-      int var2 = var1.method_130();
+   class_6 method_4386(Buffer var1) {
+      int var2 = var1.readUnsignedByte();
       class_238[] var3 = new class_238[]{class_238.field_2647, class_238.field_2649, class_238.field_2648, class_238.field_2646};
       class_238 var4 = (class_238)class_197.method_4016(var3, var2, -611336247);
       Object var5 = null;

@@ -14,7 +14,7 @@ public class class_195 {
    // $FF: renamed from: y byte[]
    static byte[] field_2311;
    // $FF: renamed from: p nd[]
-   static class_28[] field_2312;
+   static Buffer[] field_2312;
    // $FF: renamed from: j int
    static int field_2313;
    // $FF: renamed from: c int[]
@@ -34,7 +34,7 @@ public class class_195 {
    // $FF: renamed from: n int
    static final int field_2321 = 1;
    // $FF: renamed from: e nd
-   static class_28 field_2322;
+   static Buffer field_2322;
 
 
    // $FF: renamed from: k (nb, int) void
@@ -241,7 +241,7 @@ public class class_195 {
    static {
       field_2308 = new byte[2048];
       field_2311 = new byte[2048];
-      field_2312 = new class_28[2048];
+      field_2312 = new Buffer[2048];
       field_2313 = 0;
       field_2318 = new int[2048];
       field_2315 = 0;
@@ -251,7 +251,7 @@ public class class_195 {
       field_2317 = new int[2048];
       field_2320 = 0;
       field_2314 = new int[2048];
-      class_28 var10000 = new class_28(new byte[5000]);
+      Buffer var10000 = new Buffer(new byte[5000]);
       field_2322 = var10000;
    }
 
@@ -542,21 +542,21 @@ public class class_195 {
 
    // $FF: renamed from: l (nb, int) void
    static final void method_3973(class_29 var0, int var1) {
-      int var2 = -1130505350 * var0.field_15;
+      int var2 = -1130505350 * var0.offset;
       field_2320 = 0;
       class_139.method_3008(var0, -1831454192);
 
       for(int var3 = 0; var3 < field_2320 * -1149592963; ++var3) {
          int var4 = field_2314[var3];
          class_100 var5 = client.field_1605[var4];
-         int var6 = var0.method_130();
+         int var6 = var0.readUnsignedByte();
          if(0 != (var6 & -1699177628)) {
-            var6 += var0.method_130() << 8;
+            var6 += var0.readUnsignedByte() << 8;
          }
 
          byte var7 = -1;
          if(0 != (var6 & 8)) {
-            var5.field_1128 = var0.method_132() * -187990533;
+            var5.field_1128 = var0.readShort() * -187990533;
             if(var5.field_1128 * 637535539 == 23886835) {
                var5.field_1128 = 187990533;
             }
@@ -610,7 +610,7 @@ public class class_195 {
                }
             }
 
-            var9 = var0.method_130();
+            var9 = var0.readUnsignedByte();
             if(var9 > 0) {
                for(var10 = 0; var10 < var9; ++var10) {
                   var11 = var0.method_144();
@@ -650,7 +650,7 @@ public class class_195 {
             var5.field_1120 = var0.method_162() * 2120129099;
             var5.field_1109 = var0.method_162() * -1684756142;
             var5.field_1078 = var0.method_157() * -280468969;
-            var5.field_1105 = (var0.method_132() + client.field_1425 * -1702273423) * 2093690946;
+            var5.field_1105 = (var0.readShort() + client.field_1425 * -1702273423) * 2093690946;
             var5.field_1123 = (var0.method_169() + -2086162791 * client.field_1425) * -999940959;
             var5.field_1124 = var0.method_170() * -410013785;
             if(var5.field_1168) {
@@ -675,7 +675,7 @@ public class class_195 {
             class_292 var16 = (class_292)class_197.method_4016(class_391.method_6773(), var0.method_113(), -611336247);
             boolean var19 = var0.method_159() == 1;
             var11 = var0.method_159();
-            var12 = var0.field_15 * -442398587;
+            var12 = var0.offset * -442398587;
             if(var5.field_1148 != null && null != var5.field_1143) {
                boolean var21 = false;
                if(var16.field_3332 && class_208.field_2413.method_3325(var5.field_1148, 279756852)) {
@@ -683,9 +683,9 @@ public class class_195 {
                }
 
                if(!var21 && -267997189 * client.field_1531 == 0 && !var5.field_1154) {
-                  field_2322.field_15 = 0;
-                  var0.method_243(field_2322.field_12, 0, var11, (short)18306);
-                  field_2322.field_15 = 0;
+                  field_2322.offset = 0;
+                  var0.method_243(field_2322.data, 0, var11, (short)18306);
+                  field_2322.offset = 0;
                   String var22 = class_68.method_868(class_135.method_2942(class_38.method_449(field_2322), -847170794));
                   var5.field_1089 = var22.trim();
                   var5.field_1093 = -424817097 * (var8 >> 8);
@@ -707,14 +707,14 @@ public class class_195 {
                }
             }
 
-            var0.field_15 = (var12 + var11) * -1025691571;
+            var0.offset = (var12 + var11) * -1025691571;
          }
 
          if(0 != (var6 & 2)) {
             var8 = var0.method_159();
             byte[] var17 = new byte[var8];
-            class_28 var10000 = new class_28(var17);
-            class_28 var20 = var10000;
+            Buffer var10000 = new Buffer(var17);
+            Buffer var20 = var10000;
             var0.method_243(var17, 0, var8, (short)27365);
             field_2312[var4] = var20;
             var5.method_1824(var20, (byte)1);
@@ -765,28 +765,28 @@ public class class_195 {
          }
       }
 
-      if(var1 != var0.field_15 * -442398587 - var2) {
-         throw new RuntimeException(var0.field_15 * 193015107 - var2 + " " + var1);
+      if(var1 != var0.offset * -442398587 - var2) {
+         throw new RuntimeException(var0.offset * 193015107 - var2 + " " + var1);
       }
    }
 
    // $FF: renamed from: o (nb, int) void
    static final void method_3974(class_29 var0, int var1) {
-      int var2 = -442398587 * var0.field_15;
+      int var2 = -442398587 * var0.offset;
       field_2320 = 0;
       class_139.method_3008(var0, -1775789856);
 
       for(int var3 = 0; var3 < field_2320 * -1149592963; ++var3) {
          int var4 = field_2314[var3];
          class_100 var5 = client.field_1605[var4];
-         int var6 = var0.method_130();
+         int var6 = var0.readUnsignedByte();
          if(0 != (var6 & 128)) {
-            var6 += var0.method_130() << 8;
+            var6 += var0.readUnsignedByte() << 8;
          }
 
          byte var7 = -1;
          if(0 != (var6 & 8)) {
-            var5.field_1128 = var0.method_132() * -187990533;
+            var5.field_1128 = var0.readShort() * -187990533;
             if(var5.field_1128 * 637535539 == '\uffff') {
                var5.field_1128 = 187990533;
             }
@@ -840,7 +840,7 @@ public class class_195 {
                }
             }
 
-            var9 = var0.method_130();
+            var9 = var0.readUnsignedByte();
             if(var9 > 0) {
                for(var10 = 0; var10 < var9; ++var10) {
                   var11 = var0.method_144();
@@ -880,7 +880,7 @@ public class class_195 {
             var5.field_1120 = var0.method_162() * 2120129099;
             var5.field_1109 = var0.method_162() * -260652731;
             var5.field_1078 = var0.method_157() * -280468969;
-            var5.field_1105 = (var0.method_132() + client.field_1425 * -1702273423) * 911678983;
+            var5.field_1105 = (var0.readShort() + client.field_1425 * -1702273423) * 911678983;
             var5.field_1123 = (var0.method_169() + -1702273423 * client.field_1425) * -999940959;
             var5.field_1124 = var0.method_170() * -410013785;
             if(var5.field_1168) {
@@ -905,7 +905,7 @@ public class class_195 {
             class_292 var16 = (class_292)class_197.method_4016(class_391.method_6773(), var0.method_113(), -611336247);
             boolean var19 = var0.method_159() == 1;
             var11 = var0.method_159();
-            var12 = var0.field_15 * -442398587;
+            var12 = var0.offset * -442398587;
             if(var5.field_1148 != null && null != var5.field_1143) {
                boolean var21 = false;
                if(var16.field_3332 && class_208.field_2413.method_3325(var5.field_1148, 279756852)) {
@@ -913,9 +913,9 @@ public class class_195 {
                }
 
                if(!var21 && -267997189 * client.field_1531 == 0 && !var5.field_1154) {
-                  field_2322.field_15 = 0;
-                  var0.method_243(field_2322.field_12, 0, var11, (short)25246);
-                  field_2322.field_15 = 0;
+                  field_2322.offset = 0;
+                  var0.method_243(field_2322.data, 0, var11, (short)25246);
+                  field_2322.offset = 0;
                   String var22 = class_68.method_868(class_135.method_2942(class_38.method_449(field_2322), -1984394636));
                   var5.field_1089 = var22.trim();
                   var5.field_1093 = -424817097 * (var8 >> 8);
@@ -937,14 +937,14 @@ public class class_195 {
                }
             }
 
-            var0.field_15 = (var12 + var11) * -1025691571;
+            var0.offset = (var12 + var11) * -1025691571;
          }
 
          if(0 != (var6 & 2)) {
             var8 = var0.method_159();
             byte[] var17 = new byte[var8];
-            class_28 var10000 = new class_28(var17);
-            class_28 var20 = var10000;
+            Buffer var10000 = new Buffer(var17);
+            Buffer var20 = var10000;
             var0.method_243(var17, 0, var8, (short)15620);
             field_2312[var4] = var20;
             var5.method_1824(var20, (byte)1);
@@ -995,8 +995,8 @@ public class class_195 {
          }
       }
 
-      if(var1 != var0.field_15 * -442398587 - var2) {
-         throw new RuntimeException(var0.field_15 * -442398587 - var2 + " " + var1);
+      if(var1 != var0.offset * -442398587 - var2) {
+         throw new RuntimeException(var0.offset * -442398587 - var2 + " " + var1);
       }
    }
 
@@ -1423,21 +1423,21 @@ public class class_195 {
 
    // $FF: renamed from: c (nb, int) void
    static final void method_3979(class_29 var0, int var1) {
-      int var2 = -442398587 * var0.field_15;
+      int var2 = -442398587 * var0.offset;
       field_2320 = 0;
       class_139.method_3008(var0, -1378072382);
 
       for(int var3 = 0; var3 < field_2320 * -1149592963; ++var3) {
          int var4 = field_2314[var3];
          class_100 var5 = client.field_1605[var4];
-         int var6 = var0.method_130();
+         int var6 = var0.readUnsignedByte();
          if(0 != (var6 & 128)) {
-            var6 += var0.method_130() << 8;
+            var6 += var0.readUnsignedByte() << 8;
          }
 
          byte var7 = -1;
          if(0 != (var6 & 8)) {
-            var5.field_1128 = var0.method_132() * -187990533;
+            var5.field_1128 = var0.readShort() * -187990533;
             if(var5.field_1128 * 637535539 == '\uffff') {
                var5.field_1128 = 187990533;
             }
@@ -1491,7 +1491,7 @@ public class class_195 {
                }
             }
 
-            var9 = var0.method_130();
+            var9 = var0.readUnsignedByte();
             if(var9 > 0) {
                for(var10 = 0; var10 < var9; ++var10) {
                   var11 = var0.method_144();
@@ -1531,7 +1531,7 @@ public class class_195 {
             var5.field_1120 = var0.method_162() * 2120129099;
             var5.field_1109 = var0.method_162() * -260652731;
             var5.field_1078 = var0.method_157() * -280468969;
-            var5.field_1105 = (var0.method_132() + client.field_1425 * -1702273423) * 911678983;
+            var5.field_1105 = (var0.readShort() + client.field_1425 * -1702273423) * 911678983;
             var5.field_1123 = (var0.method_169() + -1702273423 * client.field_1425) * -999940959;
             var5.field_1124 = var0.method_170() * -410013785;
             if(var5.field_1168) {
@@ -1556,7 +1556,7 @@ public class class_195 {
             class_292 var16 = (class_292)class_197.method_4016(class_391.method_6773(), var0.method_113(), -611336247);
             boolean var19 = var0.method_159() == 1;
             var11 = var0.method_159();
-            var12 = var0.field_15 * -442398587;
+            var12 = var0.offset * -442398587;
             if(var5.field_1148 != null && null != var5.field_1143) {
                boolean var21 = false;
                if(var16.field_3332 && class_208.field_2413.method_3325(var5.field_1148, 279756852)) {
@@ -1564,9 +1564,9 @@ public class class_195 {
                }
 
                if(!var21 && -267997189 * client.field_1531 == 0 && !var5.field_1154) {
-                  field_2322.field_15 = 0;
-                  var0.method_243(field_2322.field_12, 0, var11, (short)13155);
-                  field_2322.field_15 = 0;
+                  field_2322.offset = 0;
+                  var0.method_243(field_2322.data, 0, var11, (short)13155);
+                  field_2322.offset = 0;
                   String var22 = class_68.method_868(class_135.method_2942(class_38.method_449(field_2322), -2020943954));
                   var5.field_1089 = var22.trim();
                   var5.field_1093 = -424817097 * (var8 >> 8);
@@ -1588,14 +1588,14 @@ public class class_195 {
                }
             }
 
-            var0.field_15 = (var12 + var11) * -1025691571;
+            var0.offset = (var12 + var11) * -1025691571;
          }
 
          if(0 != (var6 & 2)) {
             var8 = var0.method_159();
             byte[] var17 = new byte[var8];
-            class_28 var10000 = new class_28(var17);
-            class_28 var20 = var10000;
+            Buffer var10000 = new Buffer(var17);
+            Buffer var20 = var10000;
             var0.method_243(var17, 0, var8, (short)25059);
             field_2312[var4] = var20;
             var5.method_1824(var20, (byte)1);
@@ -1646,8 +1646,8 @@ public class class_195 {
          }
       }
 
-      if(var1 != var0.field_15 * -442398587 - var2) {
-         throw new RuntimeException(var0.field_15 * -442398587 - var2 + " " + var1);
+      if(var1 != var0.offset * -442398587 - var2) {
+         throw new RuntimeException(var0.offset * -442398587 - var2 + " " + var1);
       }
    }
 

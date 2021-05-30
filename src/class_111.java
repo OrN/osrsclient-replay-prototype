@@ -10,7 +10,7 @@ public abstract class class_111 extends class_27 {
    abstract void method_2230(class_171 var1);
 
    // $FF: renamed from: v (nd, int) void
-   abstract void method_2231(class_28 var1, int var2);
+   abstract void method_2231(Buffer var1, int var2);
 
    // $FF: renamed from: <init> () void
    class_111() {
@@ -25,10 +25,10 @@ public abstract class class_111 extends class_27 {
    abstract void method_2232(class_171 var1);
 
    // $FF: renamed from: y (nd) void
-   abstract void method_2233(class_28 var1);
+   abstract void method_2233(Buffer var1);
 
    // $FF: renamed from: f (nd) void
-   abstract void method_2234(class_28 var1);
+   abstract void method_2234(Buffer var1);
 
    // $FF: renamed from: v (char, byte) boolean
    public static final boolean method_2235(char var0, byte var1) {

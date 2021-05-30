@@ -17,7 +17,7 @@ public class class_115 extends class_111 {
       try {
          class_40 var3 = class_112.method_2238(class_266.field_3126, client.field_1463.field_2384, (byte)8);
          var3.field_263.method_185(var1);
-         var3.field_263.method_194(var0);
+         var3.field_263.writeInt(var0);
          client.field_1463.method_4079(var3);
       } catch (RuntimeException var4) {
          throw class_223.method_4281(var4);
@@ -25,9 +25,9 @@ public class class_115 extends class_111 {
    }
 
    // $FF: renamed from: v (nd, int) void
-   void method_2231(class_28 var1, int var2) {
+   void method_2231(Buffer var1, int var2) {
       try {
-         this.field_1288 = var1.method_132() * 824813057;
+         this.field_1288 = var1.readShort() * 824813057;
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
       }
@@ -43,8 +43,8 @@ public class class_115 extends class_111 {
    }
 
    // $FF: renamed from: f (nd) void
-   void method_2234(class_28 var1) {
-      this.field_1288 = var1.method_132() * -2005811828;
+   void method_2234(Buffer var1) {
+      this.field_1288 = var1.readShort() * -2005811828;
    }
 
    // $FF: renamed from: <init> (f) void
@@ -59,8 +59,8 @@ public class class_115 extends class_111 {
    }
 
    // $FF: renamed from: y (nd) void
-   void method_2233(class_28 var1) {
-      this.field_1288 = var1.method_132() * 824813057;
+   void method_2233(Buffer var1) {
+      this.field_1288 = var1.readShort() * 824813057;
    }
 
    // $FF: renamed from: n (int) hq

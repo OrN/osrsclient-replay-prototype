@@ -635,7 +635,7 @@ public class class_162 {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28(var3);
+               Buffer var10001 = new Buffer(var3);
                var2.method_1076(var10001, (byte)11);
             }
 

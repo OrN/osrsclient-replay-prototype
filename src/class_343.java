@@ -590,18 +590,18 @@ public abstract class class_343 {
       try {
          class_90 var10000 = new class_90();
          class_90 var2 = var10000;
-         class_28 var14 = new class_28(var0);
-         class_28 var3 = var14;
-         var3.field_15 = -1025691571 * (var3.field_12.length - 2);
-         int var4 = var3.method_132();
-         int var5 = var3.field_12.length - 2 - var4 - 12;
-         var3.field_15 = var5 * -1025691571;
+         Buffer var14 = new Buffer(var0);
+         Buffer var3 = var14;
+         var3.offset = -1025691571 * (var3.data.length - 2);
+         int var4 = var3.readShort();
+         int var5 = var3.data.length - 2 - var4 - 12;
+         var3.offset = var5 * -1025691571;
          int var6 = var3.method_135();
-         var2.field_904 = var3.method_132() * -341761097;
-         var2.field_905 = var3.method_132() * -465592225;
-         var2.field_906 = var3.method_132() * 635067323;
-         var2.field_907 = var3.method_132() * -1949296963;
-         int var7 = var3.method_130();
+         var2.field_904 = var3.readShort() * -341761097;
+         var2.field_905 = var3.readShort() * -465592225;
+         var2.field_906 = var3.readShort() * 635067323;
+         var2.field_907 = var3.readShort() * -1949296963;
+         int var7 = var3.readUnsignedByte();
          int var8;
          int var9;
          if(var7 > 0) {
@@ -612,7 +612,7 @@ public abstract class class_343 {
                   throw new IllegalStateException();
                }
 
-               var9 = var3.method_132();
+               var9 = var3.readShort();
                int var10002;
                if(var9 > 0) {
                   if(var1 != 1132367592) {
@@ -641,18 +641,18 @@ public abstract class class_343 {
             }
          }
 
-         var3.field_15 = 0;
+         var3.offset = 0;
          var2.field_899 = var3.method_347(-1757441309);
          var2.field_903 = new int[var6];
          var2.field_902 = new int[var6];
          var2.field_910 = new String[var6];
 
-         for(var8 = 0; var3.field_15 * -442398587 < var5; var2.field_903[var8++] = var9) {
+         for(var8 = 0; var3.offset * -442398587 < var5; var2.field_903[var8++] = var9) {
             if(var1 != 1132367592) {
                throw new IllegalStateException();
             }
 
-            var9 = var3.method_132();
+            var9 = var3.readShort();
             if(var9 == 3) {
                if(var1 != 1132367592) {
                   throw new IllegalStateException();
@@ -681,7 +681,7 @@ public abstract class class_343 {
                   }
                }
 
-               var2.field_902[var8] = var3.method_130();
+               var2.field_902[var8] = var3.readUnsignedByte();
             }
          }
 

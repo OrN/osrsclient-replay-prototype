@@ -8,14 +8,14 @@ public class class_398 {
 
 
    // $FF: renamed from: v (nd, byte[], byte) void
-   public void method_6794(class_28 var1, byte[] var2, byte var3) {
+   public void method_6794(Buffer var1, byte[] var2, byte var3) {
       try {
-         if(31 == var1.field_12[-442398587 * var1.field_15]) {
+         if(31 == var1.data[-442398587 * var1.offset]) {
             if(var3 <= 1) {
                throw new IllegalStateException();
             }
 
-            if(var1.field_12[-442398587 * var1.field_15 + 1] == -117) {
+            if(var1.data[-442398587 * var1.offset + 1] == -117) {
                if(null == this.field_4257) {
                   if(var3 <= 1) {
                      throw new IllegalStateException();
@@ -25,7 +25,7 @@ public class class_398 {
                }
 
                try {
-                  this.field_4257.setInput(var1.field_12, 10 + -442398587 * var1.field_15, var1.field_12.length - (10 + -442398587 * var1.field_15 + 8));
+                  this.field_4257.setInput(var1.data, 10 + -442398587 * var1.offset, var1.data.length - (10 + -442398587 * var1.offset + 8));
                   this.field_4257.inflate(var2);
                } catch (Exception var5) {
                   this.field_4257.reset();
@@ -54,14 +54,14 @@ public class class_398 {
    }
 
    // $FF: renamed from: n (nd, byte[]) void
-   public void method_6796(class_28 var1, byte[] var2) {
-      if(31 == var1.field_12[-442398587 * var1.field_15] && var1.field_12[-442398587 * var1.field_15 + 1] == -117) {
+   public void method_6796(Buffer var1, byte[] var2) {
+      if(31 == var1.data[-442398587 * var1.offset] && var1.data[-442398587 * var1.offset + 1] == -117) {
          if(null == this.field_4257) {
             this.field_4257 = new Inflater(true);
          }
 
          try {
-            this.field_4257.setInput(var1.field_12, 10 + -442398587 * var1.field_15, var1.field_12.length - (10 + -442398587 * var1.field_15 + 8));
+            this.field_4257.setInput(var1.data, 10 + -442398587 * var1.offset, var1.data.length - (10 + -442398587 * var1.offset + 8));
             this.field_4257.inflate(var2);
          } catch (Exception var4) {
             this.field_4257.reset();

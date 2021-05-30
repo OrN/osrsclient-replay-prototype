@@ -811,10 +811,10 @@ public class class_192 extends class_191 {
                      } else {
                         var10006 = 128;
                      }
-                     class_245 var39 = new class_245(class_240.field_2680, class_311.field_3749, 20, class_87.field_852.field_2128, var10006);
+                     class_245 var39 = new class_245(class_240.field_2680, class_311.field_3749, 20, class_87.preferences.field_2128, var10006);
                      class_149.field_1892 = var39;
                      class_70.method_1028(class_149.field_1892);
-                     class_70.method_973(class_87.field_852.field_2128);
+                     class_70.method_973(class_87.preferences.field_2128);
                      client.field_1444 = -363199684;
                   }
                } else if(-1127540073 * client.field_1444 == 100) {

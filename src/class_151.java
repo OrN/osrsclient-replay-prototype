@@ -223,7 +223,7 @@ public class class_151 implements Comparator {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28(var3);
+               Buffer var10001 = new Buffer(var3);
                var2.method_1340(var10001);
             }
 
@@ -249,7 +249,7 @@ public class class_151 implements Comparator {
          int var4 = -1;
 
          for(int var5 = var1; var5 < var2; ++var5) {
-            var4 = var4 >>> 8 ^ class_28.field_16[(var4 ^ var0[var5]) & 255];
+            var4 = var4 >>> 8 ^ Buffer.field_16[(var4 ^ var0[var5]) & 255];
          }
 
          var4 = ~var4;

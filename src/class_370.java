@@ -19,7 +19,7 @@ public class class_370 implements class_20 {
          if(!client.field_1476) {
             var3 = var1.method_170();
             var4 = var1.method_168();
-            int var5 = var1.method_132();
+            int var5 = var1.readShort();
             class_231.field_2591 = new int[var5][4];
 
             for(var6 = 0; var6 < var5; ++var6) {
@@ -146,10 +146,10 @@ public class class_370 implements class_20 {
 
             class_26.method_96(var4, var3, true, -786826616);
          } else {
-            var3 = var1.method_132();
+            var3 = var1.readShort();
             var4 = var1.method_168();
             boolean var17 = var1.method_113() == 1;
-            var6 = var1.method_132();
+            var6 = var1.readShort();
             var1.method_358();
 
             int var10;

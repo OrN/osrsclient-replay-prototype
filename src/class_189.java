@@ -165,7 +165,7 @@ public class class_189 extends class_181 {
                   }
 
                   class_75 var6 = class_75.field_614[var3];
-                  class_28 var10001 = new class_28(var4);
+                  Buffer var10001 = new Buffer(var4);
                   var6.method_1138(var10001, -1509060370);
                   class_75.field_614[var3].method_1133(-505496297);
                }

@@ -75,13 +75,13 @@ public class class_231 extends class_230 {
 
             int var4;
             int var5;
-            class_28 var9;
+            Buffer var9;
             int var10;
             int var11;
             int var12;
             int var14;
             int var15;
-            class_28 var10000;
+            Buffer var10000;
             int var16;
             int var17;
             int var18;
@@ -105,7 +105,7 @@ public class class_231 extends class_230 {
                   }
 
                   boolean var8 = true;
-                  var10000 = new class_28(var3);
+                  var10000 = new Buffer(var3);
                   var9 = var10000;
                   var10 = -1;
 
@@ -134,7 +134,7 @@ public class class_231 extends class_230 {
                            var12 += var14 - 1;
                            var15 = var12 & 63;
                            var16 = var12 >> 6 & 63;
-                           var17 = var9.method_130() >> 2;
+                           var17 = var9.readUnsignedByte() >> 2;
                            var18 = var16 + var4;
                            var19 = var5 + var15;
                            if(var18 > 0) {
@@ -214,7 +214,7 @@ public class class_231 extends class_230 {
                            break;
                         }
 
-                        var9.method_130();
+                        var9.readUnsignedByte();
                      }
                   }
                }
@@ -333,7 +333,7 @@ public class class_231 extends class_230 {
                         class_46.method_536(-1808857292);
                         class_251 var7 = class_206.field_2401;
                         class_240[] var37 = client.field_1475;
-                        var10000 = new class_28(var33);
+                        var10000 = new Buffer(var33);
                         var9 = var10000;
                         var10 = -1;
 
@@ -362,7 +362,7 @@ public class class_231 extends class_230 {
                               var14 = var12 & 63;
                               var15 = var12 >> 6 & 63;
                               var16 = var12 >> 12;
-                              var17 = var9.method_130();
+                              var17 = var9.readUnsignedByte();
                               var18 = var17 >> 2;
                               var19 = var17 & 3;
                               var45 = var5 + var15;
@@ -496,8 +496,8 @@ public class class_231 extends class_230 {
                                           }
                                        }
 
-                                       var10000 = new class_28(var43);
-                                       class_28 var46 = var10000;
+                                       var10000 = new Buffer(var43);
+                                       Buffer var46 = var10000;
 
                                        for(var21 = 0; var21 < 4; ++var21) {
                                           if(var0 != 0) {
@@ -808,10 +808,10 @@ public class class_231 extends class_230 {
    }
 
    // $FF: renamed from: ba (nd, nd, int, boolean, int) void
-   void method_4428(class_28 var1, class_28 var2, int var3, boolean var4, int var5) {
+   void method_4428(Buffer var1, Buffer var2, int var3, boolean var4, int var5) {
       try {
          this.method_4363(var1, var3, -1928943401);
-         int var6 = var2.method_132();
+         int var6 = var2.readShort();
          this.field_2593 = new HashSet(var6);
 
          int var7;
@@ -832,7 +832,7 @@ public class class_231 extends class_230 {
             this.field_2593.add(var8);
          }
 
-         var7 = var2.method_132();
+         var7 = var2.readShort();
          this.field_2590 = new HashSet(var7);
 
          for(int var14 = 0; var14 < var7; ++var14) {
@@ -859,9 +859,9 @@ public class class_231 extends class_230 {
    }
 
    // $FF: renamed from: bj (nd, nd, int, boolean) void
-   void method_4429(class_28 var1, class_28 var2, int var3, boolean var4) {
+   void method_4429(Buffer var1, Buffer var2, int var3, boolean var4) {
       this.method_4363(var1, var3, -1948786332);
-      int var5 = var2.method_132();
+      int var5 = var2.readShort();
       this.field_2593 = new HashSet(var5);
 
       int var6;
@@ -878,7 +878,7 @@ public class class_231 extends class_230 {
          this.field_2593.add(var7);
       }
 
-      var6 = var2.method_132();
+      var6 = var2.readShort();
       this.field_2590 = new HashSet(var6);
 
       for(int var12 = 0; var12 < var6; ++var12) {
@@ -898,9 +898,9 @@ public class class_231 extends class_230 {
    }
 
    // $FF: renamed from: bx (nd, nd, int, boolean) void
-   void method_4430(class_28 var1, class_28 var2, int var3, boolean var4) {
+   void method_4430(Buffer var1, Buffer var2, int var3, boolean var4) {
       this.method_4363(var1, var3, -1955589150);
-      int var5 = var2.method_132();
+      int var5 = var2.readShort();
       this.field_2593 = new HashSet(var5);
 
       int var6;
@@ -917,7 +917,7 @@ public class class_231 extends class_230 {
          this.field_2593.add(var7);
       }
 
-      var6 = var2.method_132();
+      var6 = var2.readShort();
       this.field_2590 = new HashSet(var6);
 
       for(int var12 = 0; var12 < var6; ++var12) {
@@ -937,9 +937,9 @@ public class class_231 extends class_230 {
    }
 
    // $FF: renamed from: bp (nd, nd, int, boolean) void
-   void method_4431(class_28 var1, class_28 var2, int var3, boolean var4) {
+   void method_4431(Buffer var1, Buffer var2, int var3, boolean var4) {
       this.method_4363(var1, var3, -2007496695);
-      int var5 = var2.method_132();
+      int var5 = var2.readShort();
       this.field_2593 = new HashSet(var5);
 
       int var6;
@@ -956,7 +956,7 @@ public class class_231 extends class_230 {
          this.field_2593.add(var7);
       }
 
-      var6 = var2.method_132();
+      var6 = var2.readShort();
       this.field_2590 = new HashSet(var6);
 
       for(int var12 = 0; var12 < var6; ++var12) {
@@ -976,15 +976,15 @@ public class class_231 extends class_230 {
    }
 
    // $FF: renamed from: bn (nd, boolean) void
-   void method_4432(class_28 var1, boolean var2) {
+   void method_4432(Buffer var1, boolean var2) {
       this.field_2592 = new LinkedList();
-      int var3 = var1.method_132();
+      int var3 = var1.readShort();
 
       for(int var4 = 0; var4 < var3; ++var4) {
          int var5 = var1.method_147(175216334);
          class_280 var10000 = new class_280(var1.method_135());
          class_280 var6 = var10000;
-         boolean var7 = var1.method_130() == 1;
+         boolean var7 = var1.readUnsignedByte() == 1;
          if(var2 || !var7) {
             List var8 = this.field_2592;
             class_219 var10001 = new class_219((class_280)null, var6, var5, (class_237)null);
@@ -995,15 +995,15 @@ public class class_231 extends class_230 {
    }
 
    // $FF: renamed from: bo (nd, boolean) void
-   void method_4433(class_28 var1, boolean var2) {
+   void method_4433(Buffer var1, boolean var2) {
       this.field_2592 = new LinkedList();
-      int var3 = var1.method_132();
+      int var3 = var1.readShort();
 
       for(int var4 = 0; var4 < var3; ++var4) {
          int var5 = var1.method_147(821647098);
          class_280 var10000 = new class_280(var1.method_135());
          class_280 var6 = var10000;
-         boolean var7 = var1.method_130() == 1;
+         boolean var7 = var1.readUnsignedByte() == 1;
          if(var2 || !var7) {
             List var8 = this.field_2592;
             class_219 var10001 = new class_219((class_280)null, var6, var5, (class_237)null);
@@ -1014,10 +1014,10 @@ public class class_231 extends class_230 {
    }
 
    // $FF: renamed from: be (nd, boolean, int) void
-   void method_4434(class_28 var1, boolean var2, int var3) {
+   void method_4434(Buffer var1, boolean var2, int var3) {
       try {
          this.field_2592 = new LinkedList();
-         int var4 = var1.method_132();
+         int var4 = var1.readShort();
 
          for(int var5 = 0; var5 < var4; ++var5) {
             if(var3 == -1764619255) {
@@ -1028,7 +1028,7 @@ public class class_231 extends class_230 {
             class_280 var10000 = new class_280(var1.method_135());
             class_280 var7 = var10000;
             boolean var10;
-            if(var1.method_130() == 1) {
+            if(var1.readUnsignedByte() == 1) {
                if(var3 == -1764619255) {
                   throw new IllegalStateException();
                }
@@ -1064,7 +1064,7 @@ public class class_231 extends class_230 {
    }
 
    // $FF: renamed from: j (nd, int, int, int, int, int, int, byte) void
-   static final void method_4435(class_28 var0, int var1, int var2, int var3, int var4, int var5, int var6, byte var7) {
+   static final void method_4435(Buffer var0, int var1, int var2, int var3, int var4, int var5, int var6, byte var7) {
       try {
          int var8;
          if(var2 >= 0) {
@@ -1085,7 +1085,7 @@ public class class_231 extends class_230 {
                   class_166.field_2069[var1][var2][var3] = 0;
 
                   while(true) {
-                     var8 = var0.method_130();
+                     var8 = var0.readUnsignedByte();
                      if(0 == var8) {
                         if(0 == var1) {
                            if(var7 == 1) {
@@ -1120,7 +1120,7 @@ public class class_231 extends class_230 {
                            throw new IllegalStateException();
                         }
 
-                        int var9 = var0.method_130();
+                        int var9 = var0.readUnsignedByte();
                         if(var9 == 1) {
                            if(var7 == 1) {
                               throw new IllegalStateException();
@@ -1161,7 +1161,7 @@ public class class_231 extends class_230 {
          }
 
          while(true) {
-            var8 = var0.method_130();
+            var8 = var0.readUnsignedByte();
             if(var8 == 0) {
                break;
             }
@@ -1171,7 +1171,7 @@ public class class_231 extends class_230 {
                   throw new IllegalStateException();
                }
 
-               var0.method_130();
+               var0.readUnsignedByte();
                break;
             }
 
@@ -1180,7 +1180,7 @@ public class class_231 extends class_230 {
                   return;
                }
 
-               var0.method_130();
+               var0.readUnsignedByte();
             }
          }
 
@@ -1190,15 +1190,15 @@ public class class_231 extends class_230 {
    }
 
    // $FF: renamed from: bw (nd, boolean) void
-   void method_4436(class_28 var1, boolean var2) {
+   void method_4436(Buffer var1, boolean var2) {
       this.field_2592 = new LinkedList();
-      int var3 = var1.method_132();
+      int var3 = var1.readShort();
 
       for(int var4 = 0; var4 < var3; ++var4) {
          int var5 = var1.method_147(374015837);
          class_280 var10000 = new class_280(var1.method_135());
          class_280 var6 = var10000;
-         boolean var7 = var1.method_130() == 1;
+         boolean var7 = var1.readUnsignedByte() == 1;
          if(var2 || !var7) {
             List var8 = this.field_2592;
             class_219 var10001 = new class_219((class_280)null, var6, var5, (class_237)null);

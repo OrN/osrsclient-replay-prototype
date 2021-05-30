@@ -43,24 +43,24 @@ public class class_43 extends class_27 {
       super();
       try {
          this.field_314 = var1 * -1802035127;
-         class_28 var10000 = new class_28(var2);
-         class_28 var3 = var10000;
-         this.field_310 = var3.method_130() * 951375625;
+         Buffer var10000 = new Buffer(var2);
+         Buffer var3 = var10000;
+         this.field_310 = var3.readUnsignedByte() * 951375625;
          this.field_312 = new int[this.field_310 * -1780750535];
          this.field_313 = new int[-1780750535 * this.field_310][];
 
          int var4;
          for(var4 = 0; var4 < this.field_310 * -1780750535; ++var4) {
-            this.field_312[var4] = var3.method_130();
+            this.field_312[var4] = var3.readUnsignedByte();
          }
 
          for(var4 = 0; var4 < -1780750535 * this.field_310; ++var4) {
-            this.field_313[var4] = new int[var3.method_130()];
+            this.field_313[var4] = new int[var3.readUnsignedByte()];
          }
 
          for(var4 = 0; var4 < this.field_310 * -1780750535; ++var4) {
             for(int var5 = 0; var5 < this.field_313[var4].length; ++var5) {
-               this.field_313[var4][var5] = var3.method_130();
+               this.field_313[var4][var5] = var3.readUnsignedByte();
             }
          }
 

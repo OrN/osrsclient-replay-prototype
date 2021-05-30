@@ -75,7 +75,7 @@ final class class_294 implements Comparator {
    // $FF: renamed from: fu (int, int, int) void
    static void method_5314(int var0, int var2) {
       try {
-         if(1285356667 * class_87.field_852.field_2122 != 0) {
+         if(1285356667 * class_87.preferences.field_2122 != 0) {
             if(var2 >= 2078964271) {
                return;
             }
@@ -85,7 +85,7 @@ final class class_294 implements Comparator {
                   throw new IllegalStateException();
                }
 
-               class_162.method_3399(class_221.field_2516, var0, 0, class_87.field_852.field_2122 * 1285356667, false);
+               class_162.method_3399(class_221.field_2516, var0, 0, class_87.preferences.field_2122 * 1285356667, false);
                client.field_1657 = true;
             }
          }

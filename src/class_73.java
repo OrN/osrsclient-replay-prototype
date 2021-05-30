@@ -32,7 +32,7 @@ public class class_73 extends class_59 {
          class_73 var10000 = new class_73();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28(var2);
+            Buffer var10001 = new Buffer(var2);
             var1.method_1095(var10001, (byte)101);
          }
 
@@ -48,10 +48,10 @@ public class class_73 extends class_59 {
    }
 
    // $FF: renamed from: y (nd, int, byte) void
-   void method_1095(class_28 var1, byte var3) {
+   void method_1095(Buffer var1, byte var3) {
       try {
          while(true) {
-            int var4 = var1.method_130();
+            int var4 = var1.readUnsignedByte();
             if(0 == var4) {
                if(var3 <= 1) {
                   throw new IllegalStateException();
@@ -68,7 +68,7 @@ public class class_73 extends class_59 {
    }
 
    // $FF: renamed from: p (nd, int, int, int) void
-   void method_1096(class_28 var1, int var2, int var4) {
+   void method_1096(Buffer var1, int var2, int var4) {
       try {
          if(var2 == 1) {
             if(var4 != -1482547443) {
@@ -236,9 +236,9 @@ public class class_73 extends class_59 {
    }
 
    // $FF: renamed from: x (nd, int) void
-   void method_1101(class_28 var1) {
+   void method_1101(Buffer var1) {
       while(true) {
-         int var3 = var1.method_130();
+         int var3 = var1.readUnsignedByte();
          if(0 == var3) {
             return;
          }
@@ -262,7 +262,7 @@ public class class_73 extends class_59 {
          class_73 var10000 = new class_73();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28(var2);
+            Buffer var10001 = new Buffer(var2);
             var1.method_1095(var10001, (byte)68);
          }
 
@@ -282,7 +282,7 @@ public class class_73 extends class_59 {
          class_73 var10000 = new class_73();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28(var2);
+            Buffer var10001 = new Buffer(var2);
             var1.method_1095(var10001, (byte)10);
          }
 
@@ -379,7 +379,7 @@ public class class_73 extends class_59 {
          class_73 var10000 = new class_73();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28(var2);
+            Buffer var10001 = new Buffer(var2);
             var1.method_1095(var10001, (byte)26);
          }
 
@@ -390,7 +390,7 @@ public class class_73 extends class_59 {
    }
 
    // $FF: renamed from: w (nd, int, int) void
-   void method_1108(class_28 var1, int var2) {
+   void method_1108(Buffer var1, int var2) {
       if(var2 == 1) {
          this.field_584 = var1.method_134() * 66870217;
       }
@@ -426,7 +426,7 @@ public class class_73 extends class_59 {
          class_73 var10000 = new class_73();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28(var2);
+            Buffer var10001 = new Buffer(var2);
             var1.method_1095(var10001, (byte)6);
          }
 
@@ -447,7 +447,7 @@ public class class_73 extends class_59 {
    }
 
    // $FF: renamed from: t (nd, int, int) void
-   void method_1113(class_28 var1, int var2) {
+   void method_1113(Buffer var1, int var2) {
       if(var2 == 1) {
          this.field_584 = var1.method_134() * 66870217;
       }
@@ -455,9 +455,9 @@ public class class_73 extends class_59 {
    }
 
    // $FF: renamed from: z (nd, int) void
-   void method_1114(class_28 var1) {
+   void method_1114(Buffer var1) {
       while(true) {
-         int var3 = var1.method_130();
+         int var3 = var1.readUnsignedByte();
          if(0 == var3) {
             return;
          }

@@ -138,7 +138,7 @@ public class class_190 {
    // $FF: renamed from: d (byte) void
    void method_3911(byte var1) {
       try {
-         class_383 var2 = this.method_3936(true);
+         RAFileHandle var2 = this.method_3936(true);
          boolean var19 = false;
 
          label174: {
@@ -181,9 +181,9 @@ public class class_190 {
                      }
                   }
 
-                  class_28 var10000 = new class_28(var3);
-                  class_28 var26 = var10000;
-                  var26.method_210(2);
+                  Buffer var10000 = new Buffer(var3);
+                  Buffer var26 = var10000;
+                  var26.writeByte(2);
                   var26.method_333(var4);
                   Iterator var27 = this.field_2282.entrySet().iterator();
 
@@ -198,12 +198,12 @@ public class class_190 {
                         var26.method_333(var29);
                         Object var9 = var28.getValue();
                         class_385 var10 = class_385.method_6713(var9.getClass(), (byte)-16);
-                        var26.method_210(618578037 * var10.field_4222);
+                        var26.writeByte(618578037 * var10.field_4222);
                         class_385.method_6708(var9, var26);
                      }
                   }
 
-                  var2.method_6686(var26.field_12, 0, -442398587 * var26.field_15, (byte)-94);
+                  var2.write(var26.data, 0, -442398587 * var26.offset, (byte)-94);
                   var19 = false;
                   break label173;
                } catch (Exception var23) {
@@ -211,7 +211,7 @@ public class class_190 {
                } finally {
                   if(var19) {
                      try {
-                        var2.method_6701();
+                        var2.close();
                      } catch (Exception var20) {
                         ;
                      }
@@ -220,7 +220,7 @@ public class class_190 {
                }
 
                try {
-                  var2.method_6701();
+                  var2.close();
                } catch (Exception var21) {
                   ;
                }
@@ -228,7 +228,7 @@ public class class_190 {
             }
 
             try {
-               var2.method_6701();
+               var2.close();
             } catch (Exception var22) {
                ;
             }
@@ -244,7 +244,7 @@ public class class_190 {
    // $FF: renamed from: s (byte) void
    void method_3912(byte var1) {
       try {
-         class_383 var2 = this.method_3936(false);
+         RAFileHandle var2 = this.method_3936(false);
          boolean var23 = false;
 
          label317: {
@@ -253,11 +253,11 @@ public class class_190 {
                   label309: {
                      try {
                         var23 = true;
-                        byte[] var3 = new byte[(int)var2.method_6688()];
+                        byte[] var3 = new byte[(int)var2.size()];
 
                         int var5;
                         for(int var4 = 0; var4 < var3.length; var4 += var5) {
-                           var5 = var2.method_6689(var3, var4, var3.length - var4, (byte)-73);
+                           var5 = var2.read(var3, var4, var3.length - var4, (byte)-73);
                            if(var5 == -1) {
                               if(var1 <= 13) {
                                  return;
@@ -267,9 +267,9 @@ public class class_190 {
                            }
                         }
 
-                        class_28 var10000 = new class_28(var3);
-                        class_28 var32 = var10000;
-                        if(var32.field_12.length - -442398587 * var32.field_15 < 1) {
+                        Buffer var10000 = new Buffer(var3);
+                        Buffer var32 = var10000;
+                        if(var32.data.length - -442398587 * var32.offset < 1) {
                            if(var1 <= 13) {
                               throw new IllegalStateException();
                            }
@@ -278,7 +278,7 @@ public class class_190 {
                            break label317;
                         }
 
-                        int var6 = var32.method_130();
+                        int var6 = var32.readUnsignedByte();
                         if(var6 < 0) {
                            var23 = false;
                            break label311;
@@ -302,15 +302,15 @@ public class class_190 {
                               return;
                            }
 
-                           var7 = var32.method_132();
+                           var7 = var32.readShort();
 
                            for(var8 = 0; var8 < var7; ++var8) {
                               if(var1 <= 13) {
                                  return;
                               }
 
-                              var9 = var32.method_132();
-                              var10 = var32.method_130();
+                              var9 = var32.readShort();
+                              var10 = var32.readUnsignedByte();
                               class_385 var11 = (class_385)class_197.method_4016(class_385.method_6710(), var10, -611336247);
                               Object var12 = var11.method_6714(var32);
                               if(this.field_2281[var9]) {
@@ -324,14 +324,14 @@ public class class_190 {
 
                            var23 = false;
                         } else {
-                           var7 = var32.method_132();
+                           var7 = var32.readShort();
 
                            for(var8 = 0; var8 < var7; ++var8) {
                               if(var1 <= 13) {
                                  throw new IllegalStateException();
                               }
 
-                              var9 = var32.method_132();
+                              var9 = var32.readShort();
                               var10 = var32.method_135();
                               if(this.field_2281[var9]) {
                                  if(var1 <= 13) {
@@ -342,14 +342,14 @@ public class class_190 {
                               }
                            }
 
-                           var8 = var32.method_132();
+                           var8 = var32.readShort();
 
                            for(var9 = 0; var9 < var8; ++var9) {
                               if(var1 <= 13) {
                                  throw new IllegalStateException();
                               }
 
-                              var32.method_132();
+                              var32.readShort();
                               var32.method_139(-391631059);
                            }
 
@@ -361,7 +361,7 @@ public class class_190 {
                      } finally {
                         if(var23) {
                            try {
-                              var2.method_6701();
+                              var2.close();
                            } catch (Exception var24) {
                               ;
                            }
@@ -370,7 +370,7 @@ public class class_190 {
                      }
 
                      try {
-                        var2.method_6701();
+                        var2.close();
                      } catch (Exception var26) {
                         ;
                      }
@@ -378,7 +378,7 @@ public class class_190 {
                   }
 
                   try {
-                     var2.method_6701();
+                     var2.close();
                   } catch (Exception var27) {
                      ;
                   }
@@ -389,7 +389,7 @@ public class class_190 {
             }
 
             try {
-               var2.method_6701();
+               var2.close();
             } catch (Exception var28) {
                ;
             }
@@ -398,7 +398,7 @@ public class class_190 {
          }
 
          try {
-            var2.method_6701();
+            var2.close();
          } catch (Exception var25) {
             ;
          }
@@ -436,9 +436,9 @@ public class class_190 {
    }
 
    // $FF: renamed from: b (boolean, int) nm
-   class_383 method_3936(boolean var1) {
+   RAFileHandle method_3936(boolean var1) {
       try {
-         return class_168.method_3613("2", class_154.field_1933.field_3347, var1, 1926052121);
+         return class_168.getPreferencesHandle("2", class_154.field_1933.field_3347, var1, 1926052121);
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
       }
@@ -472,7 +472,7 @@ public class class_190 {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28(var3);
+               Buffer var10001 = new Buffer(var3);
                var2.method_1462(var10001, (short)-22209);
             }
 

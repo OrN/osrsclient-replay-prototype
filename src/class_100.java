@@ -66,10 +66,10 @@ public final class class_100 extends class_98 {
    static int field_1172;
 
    // $FF: renamed from: v (nd, byte) void
-   final void method_1824(class_28 var1, byte var2) {
+   final void method_1824(Buffer var1, byte var2) {
       try {
-         var1.field_15 = 0;
-         int var3 = var1.method_130();
+         var1.offset = 0;
+         int var3 = var1.readUnsignedByte();
          this.field_1166 = var1.method_131() * -725606113;
          this.field_1145 = var1.method_131() * 249069277;
          int var4 = -1;
@@ -84,7 +84,7 @@ public final class class_100 extends class_98 {
                throw new IllegalStateException();
             }
 
-            var7 = var1.method_130();
+            var7 = var1.readUnsignedByte();
             if(0 == var7) {
                if(var2 != 1) {
                   return;
@@ -92,7 +92,7 @@ public final class class_100 extends class_98 {
 
                var5[var6] = 0;
             } else {
-               var8 = var1.method_130();
+               var8 = var1.readUnsignedByte();
                var5[var6] = var8 + (var7 << 8);
                if(0 == var6) {
                   if(var2 != 1) {
@@ -104,7 +104,7 @@ public final class class_100 extends class_98 {
                         throw new IllegalStateException();
                      }
 
-                     var4 = var1.method_132();
+                     var4 = var1.readShort();
                      break;
                   }
                }
@@ -134,7 +134,7 @@ public final class class_100 extends class_98 {
             }
 
             label349: {
-               var8 = var1.method_130();
+               var8 = var1.readUnsignedByte();
                if(var8 >= 0) {
                   if(var2 != 1) {
                      return;
@@ -155,7 +155,7 @@ public final class class_100 extends class_98 {
             var26[var7] = var8;
          }
 
-         this.field_1081 = var1.method_132() * 1248675989;
+         this.field_1081 = var1.readShort() * 1248675989;
          if('\uffff' == this.field_1081 * -932232515) {
             if(var2 != 1) {
                throw new IllegalStateException();
@@ -164,7 +164,7 @@ public final class class_100 extends class_98 {
             this.field_1081 = -1248675989;
          }
 
-         this.field_1121 = var1.method_132() * 153727073;
+         this.field_1121 = var1.readShort() * 153727073;
          if('\uffff' == 2010968993 * this.field_1121) {
             if(var2 != 1) {
                throw new IllegalStateException();
@@ -174,7 +174,7 @@ public final class class_100 extends class_98 {
          }
 
          this.field_1083 = 1624512185 * this.field_1121;
-         this.field_1084 = var1.method_132() * 1875923127;
+         this.field_1084 = var1.readShort() * 1875923127;
          if('\uffff' == -152072953 * this.field_1084) {
             if(var2 != 1) {
                throw new IllegalStateException();
@@ -183,7 +183,7 @@ public final class class_100 extends class_98 {
             this.field_1084 = -1875923127;
          }
 
-         this.field_1107 = var1.method_132() * 1397049979;
+         this.field_1107 = var1.readShort() * 1397049979;
          if(this.field_1107 * -1808202573 == '\uffff') {
             if(var2 != 1) {
                throw new IllegalStateException();
@@ -192,7 +192,7 @@ public final class class_100 extends class_98 {
             this.field_1107 = -1397049979;
          }
 
-         this.field_1132 = var1.method_132() * -1521376955;
+         this.field_1132 = var1.readShort() * -1521376955;
          if(this.field_1132 * 1341114765 == '\uffff') {
             if(var2 != 1) {
                return;
@@ -201,7 +201,7 @@ public final class class_100 extends class_98 {
             this.field_1132 = 1521376955;
          }
 
-         this.field_1087 = var1.method_132() * 1879253007;
+         this.field_1087 = var1.readShort() * 1879253007;
          if('\uffff' == -1993879825 * this.field_1087) {
             if(var2 != 1) {
                throw new IllegalStateException();
@@ -210,7 +210,7 @@ public final class class_100 extends class_98 {
             this.field_1087 = -1879253007;
          }
 
-         this.field_1133 = var1.method_132() * -1757135961;
+         this.field_1133 = var1.readShort() * -1757135961;
          if('\uffff' == -1401897961 * this.field_1133) {
             if(var2 != 1) {
                return;
@@ -231,10 +231,10 @@ public final class class_100 extends class_98 {
             class_405.field_4289 = this.field_1148.method_6272();
          }
 
-         this.field_1147 = var1.method_130() * 365980665;
-         this.field_1165 = var1.method_132() * -1590182533;
+         this.field_1147 = var1.readUnsignedByte() * 365980665;
+         this.field_1165 = var1.readShort() * -1590182533;
          boolean var29;
-         if(var1.method_130() == 1) {
+         if(var1.readUnsignedByte() == 1) {
             if(var2 != 1) {
                return;
             }
@@ -255,12 +255,12 @@ public final class class_100 extends class_98 {
 
          class_211[] var27 = null;
          boolean var28 = false;
-         if(var1.field_15 * -442398587 < var1.field_12.length) {
+         if(var1.offset * -442398587 < var1.data.length) {
             if(var2 != 1) {
                throw new IllegalStateException();
             }
 
-            var9 = var1.method_132();
+            var9 = var1.readShort();
             boolean var10000;
             if((var9 >> 15 & 1) == 1) {
                if(var2 != 1) {
@@ -285,7 +285,7 @@ public final class class_100 extends class_98 {
                      int var11 = var9 >> 12 - var10 & 1;
                      if(1 == var11) {
                         int var15 = var5[var10] - 512;
-                        int var16 = var1.method_130();
+                        int var16 = var1.readUnsignedByte();
                         if((var16 & 1) != 0) {
                            if(var2 != 1) {
                               throw new IllegalStateException();
@@ -306,7 +306,7 @@ public final class class_100 extends class_98 {
                         short var24;
                         if(var17) {
                            label310: {
-                              var20 = var1.method_130();
+                              var20 = var1.readUnsignedByte();
                               var21 = new int[]{var20 & 15, var20 >> 4 & 15};
                               if(var19.field_2430 != null) {
                                  if(var2 != 1) {
@@ -338,7 +338,7 @@ public final class class_100 extends class_98 {
                                     throw new IllegalStateException();
                                  }
 
-                                 var24 = (short)var1.method_132();
+                                 var24 = (short)var1.readShort();
                                  if(var22) {
                                     if(var2 != 1) {
                                        throw new IllegalStateException();
@@ -355,7 +355,7 @@ public final class class_100 extends class_98 {
                               throw new IllegalStateException();
                            }
 
-                           var20 = var1.method_130();
+                           var20 = var1.readUnsignedByte();
                            var21 = new int[]{var20 & 15, var20 >> 4 & 15};
                            if(var19.field_2431 != null && var21.length == var19.field_2431.length) {
                               if(var2 != 1) {
@@ -379,7 +379,7 @@ public final class class_100 extends class_98 {
                                     return;
                                  }
 
-                                 var24 = (short)var1.method_132();
+                                 var24 = (short)var1.readShort();
                                  if(var22) {
                                     if(var2 != 1) {
                                        return;

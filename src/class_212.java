@@ -37,7 +37,7 @@ public class class_212 implements class_14 {
    static final void method_4177(String var0, int var1) {
       try {
          class_40 var3 = class_112.method_2238(class_266.field_3095, client.field_1463.field_2384, (byte)8);
-         var3.field_263.method_210(class_166.method_3598(var0) + 1);
+         var3.field_263.writeByte(class_166.method_3598(var0) + 1);
          var3.field_263.method_120(var0);
          var3.field_263.method_148(var1);
          client.field_1463.method_4079(var3);

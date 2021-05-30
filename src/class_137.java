@@ -96,7 +96,7 @@ public final class class_137 {
     // $FF: renamed from: gk (byte) int
    static final int method_2971(byte var0) {
       try {
-         if(class_87.field_852.field_2117) {
+         if(class_87.preferences.roofsHidden) {
             if(var0 <= 1) {
                throw new IllegalStateException();
             } else {

@@ -52,9 +52,9 @@ public class class_307 extends class_306 {
             return;
          }
 
-         class_28 var10000 = new class_28(class_186.method_3876(var3, 1448871300));
-         class_28 var6 = var10000;
-         int var7 = var6.method_130();
+         Buffer var10000 = new Buffer(class_186.method_3876(var3, 1448871300));
+         Buffer var6 = var10000;
+         int var7 = var6.readUnsignedByte();
          if(5 != var7 && 6 != var7) {
             throw new RuntimeException(var7 + "," + 1695957245 * this.field_3726 + "," + var2);
          }
@@ -832,9 +832,9 @@ public class class_307 extends class_306 {
                if(this.field_3733 * -1472783963 != var6) {
                   class_278.method_5146(this, 255, this.field_3726 * 1695957245, this.field_3733 * -1472783963, (byte)0, true, (byte)-82);
                } else {
-                  class_28 var10000 = new class_28(class_186.method_3876(var3, 1275679316));
-                  class_28 var7 = var10000;
-                  int var8 = var7.method_130();
+                  Buffer var10000 = new Buffer(class_186.method_3876(var3, 1275679316));
+                  Buffer var7 = var10000;
+                  int var8 = var7.readUnsignedByte();
                   if(5 != var8) {
                      if(var5 == 14) {
                         throw new IllegalStateException();
@@ -1148,9 +1148,9 @@ public class class_307 extends class_306 {
             return;
          }
 
-         class_28 var10000 = new class_28(class_186.method_3876(var3, 1864120560));
-         class_28 var6 = var10000;
-         int var7 = var6.method_130();
+         Buffer var10000 = new Buffer(class_186.method_3876(var3, 1864120560));
+         Buffer var6 = var10000;
+         int var7 = var6.readUnsignedByte();
          if(5 != var7 && 6 != var7) {
             throw new RuntimeException(var7 + "," + 1695957245 * this.field_3726 + "," + var2);
          }

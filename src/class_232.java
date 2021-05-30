@@ -939,8 +939,8 @@ public class class_232 {
    static final void method_4453(int var0) {
       try {
          var0 = Math.min(Math.max(var0, 0), 127);
-         class_87.field_852.field_2121 = var0 * 156672433;
-         class_94.method_1771(-1433770094);
+         class_87.preferences.field_2121 = var0 * 156672433;
+         class_94.savePreferences(-1433770094);
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2);
       }

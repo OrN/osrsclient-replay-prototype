@@ -28,10 +28,10 @@ public class class_83 extends class_59 {
 
 
    // $FF: renamed from: f (nd, int) void
-   void method_1378(class_28 var1, int var2) {
+   void method_1378(Buffer var1, int var2) {
       try {
          while(true) {
-            int var3 = var1.method_130();
+            int var3 = var1.readUnsignedByte();
             if(var3 == 0) {
                if(var2 <= -746072584) {
                   throw new IllegalStateException();
@@ -254,15 +254,15 @@ public class class_83 extends class_59 {
    }
 
    // $FF: renamed from: y (nd, int, int) void
-   void method_1392(class_28 var1, int var2, int var3) {
+   void method_1392(Buffer var1, int var2, int var3) {
       try {
          if(1 == var2) {
-            this.field_772 = var1.method_130() * 1902278511;
+            this.field_772 = var1.readUnsignedByte() * 1902278511;
          } else {
             int var4;
             int var5;
             if(var2 == 2) {
-               var4 = var1.method_130();
+               var4 = var1.readUnsignedByte();
                this.field_779 = new int[var4];
 
                for(var5 = 0; var5 < var4; ++var5) {
@@ -270,7 +270,7 @@ public class class_83 extends class_59 {
                      return;
                   }
 
-                  this.field_779[var5] = var1.method_132();
+                  this.field_779[var5] = var1.readShort();
                }
             } else if(var2 == 3) {
                if(var3 != -662659008) {
@@ -283,20 +283,20 @@ public class class_83 extends class_59 {
                   throw new IllegalStateException();
                }
 
-               var4 = var1.method_130();
+               var4 = var1.readUnsignedByte();
                this.field_774 = new short[var4];
                this.field_775 = new short[var4];
 
                for(var5 = 0; var5 < var4; ++var5) {
-                  this.field_774[var5] = (short)var1.method_132();
-                  this.field_775[var5] = (short)var1.method_132();
+                  this.field_774[var5] = (short)var1.readShort();
+                  this.field_775[var5] = (short)var1.readShort();
                }
             } else if(var2 == 41) {
                if(var3 != -662659008) {
                   throw new IllegalStateException();
                }
 
-               var4 = var1.method_130();
+               var4 = var1.readUnsignedByte();
                this.field_781 = new short[var4];
                this.field_777 = new short[var4];
 
@@ -305,8 +305,8 @@ public class class_83 extends class_59 {
                      throw new IllegalStateException();
                   }
 
-                  this.field_781[var5] = (short)var1.method_132();
-                  this.field_777[var5] = (short)var1.method_132();
+                  this.field_781[var5] = (short)var1.readShort();
+                  this.field_777[var5] = (short)var1.readShort();
                }
             } else if(var2 >= 60) {
                if(var3 != -662659008) {
@@ -318,7 +318,7 @@ public class class_83 extends class_59 {
                      return;
                   }
 
-                  this.field_778[var2 - 60] = var1.method_132();
+                  this.field_778[var2 - 60] = var1.readShort();
                }
             }
          }

@@ -17,7 +17,7 @@ public class class_202 implements class_14 {
    // $FF: renamed from: ec jp
    static class_307 field_2368;
    // $FF: renamed from: x nd
-   public static class_28 field_2369;
+   public static Buffer field_2369;
 
 
    // $FF: renamed from: <clinit> () void
@@ -61,7 +61,7 @@ public class class_202 implements class_14 {
             }
 
             if(var3 == class_185.field_2260.field_9) {
-               return -847787153 * class_154.field_1928.field_15 / (class_154.field_1928.field_12.length - class_185.field_2260.field_472) + 1;
+               return -847787153 * class_154.field_1928.offset / (class_154.field_1928.data.length - class_185.field_2260.field_472) + 1;
             }
 
             if(var2 >= 7) {

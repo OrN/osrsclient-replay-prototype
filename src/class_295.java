@@ -78,8 +78,8 @@ public class class_295 implements class_14 {
             }
          } else {
             try {
-               class_28 var10000 = new class_28(4);
-               class_28 var2 = var10000;
+               Buffer var10000 = new Buffer(4);
+               Buffer var2 = var10000;
                byte var10001;
                if(var0) {
                   if(var1 <= 16) {
@@ -91,9 +91,9 @@ public class class_295 implements class_14 {
                   var10001 = 3;
                }
 
-               var2.method_210(var10001);
+               var2.writeByte(var10001);
                var2.method_115(0);
-               class_314.field_3771.method_4132(var2.field_12, 0, 4);
+               class_314.field_3771.method_4132(var2.data, 0, 4);
             } catch (IOException var5) {
                try {
                   class_314.field_3771.method_4123(1650867413);

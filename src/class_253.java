@@ -101,19 +101,19 @@ public final class class_253 {
    // $FF: renamed from: c (byte[], byte) void
    public static void method_4899(byte[] var0, byte var1) {
       try {
-         class_28 var10000 = new class_28(var0);
-         class_28 var2 = var10000;
-         var2.field_15 = (var0.length - 2) * -1025691571;
-         class_403.field_4277 = var2.method_132() * -2047545261;
+         Buffer var10000 = new Buffer(var0);
+         Buffer var2 = var10000;
+         var2.offset = (var0.length - 2) * -1025691571;
+         class_403.field_4277 = var2.readShort() * -2047545261;
          class_223.field_2529 = new int[-522791973 * class_403.field_4277];
          class_284.field_3260 = new int[class_403.field_4277 * -522791973];
          class_403.field_4278 = new int[class_403.field_4277 * -522791973];
          class_318.field_3787 = new int[-522791973 * class_403.field_4277];
          class_403.field_4279 = new byte[class_403.field_4277 * -522791973][];
-         var2.field_15 = -1025691571 * (var0.length - 7 - 112631512 * class_403.field_4277);
-         class_403.field_4276 = var2.method_132() * 1394733573;
-         class_380.field_4201 = var2.method_132() * -410368705;
-         int var3 = (var2.method_130() & 255) + 1;
+         var2.offset = -1025691571 * (var0.length - 7 - 112631512 * class_403.field_4277);
+         class_403.field_4276 = var2.readShort() * 1394733573;
+         class_380.field_4201 = var2.readShort() * -410368705;
+         int var3 = (var2.readUnsignedByte() & 255) + 1;
 
          int var4;
          for(var4 = 0; var4 < class_403.field_4277 * -522791973; ++var4) {
@@ -121,7 +121,7 @@ public final class class_253 {
                throw new IllegalStateException();
             }
 
-            class_223.field_2529[var4] = var2.method_132();
+            class_223.field_2529[var4] = var2.readShort();
          }
 
          for(var4 = 0; var4 < class_403.field_4277 * -522791973; ++var4) {
@@ -129,11 +129,11 @@ public final class class_253 {
                throw new IllegalStateException();
             }
 
-            class_284.field_3260[var4] = var2.method_132();
+            class_284.field_3260[var4] = var2.readShort();
          }
 
          for(var4 = 0; var4 < class_403.field_4277 * -522791973; ++var4) {
-            class_403.field_4278[var4] = var2.method_132();
+            class_403.field_4278[var4] = var2.readShort();
          }
 
          for(var4 = 0; var4 < -522791973 * class_403.field_4277; ++var4) {
@@ -141,10 +141,10 @@ public final class class_253 {
                throw new IllegalStateException();
             }
 
-            class_318.field_3787[var4] = var2.method_132();
+            class_318.field_3787[var4] = var2.readShort();
          }
 
-         var2.field_15 = -1025691571 * (var0.length - 7 - class_403.field_4277 * 112631512 - (var3 - 1) * 3);
+         var2.offset = -1025691571 * (var0.length - 7 - class_403.field_4277 * 112631512 - (var3 - 1) * 3);
          class_192.field_2300 = new int[var3];
 
          for(var4 = 1; var4 < var3; ++var4) {
@@ -162,7 +162,7 @@ public final class class_253 {
             }
          }
 
-         var2.field_15 = 0;
+         var2.offset = 0;
 
          for(var4 = 0; var4 < class_403.field_4277 * -522791973; ++var4) {
             if(var1 != 1) {
@@ -174,7 +174,7 @@ public final class class_253 {
             int var7 = var5 * var6;
             byte[] var8 = new byte[var7];
             class_403.field_4279[var4] = var8;
-            int var9 = var2.method_130();
+            int var9 = var2.readUnsignedByte();
             int var10;
             if(var9 == 0) {
                if(var1 != 1) {

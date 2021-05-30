@@ -19,22 +19,22 @@ public class class_346 extends class_343 {
 
 
    // $FF: renamed from: o (nd, int) void
-   public void method_6169(class_28 var1, int var2) {
+   public void method_6169(Buffer var1, int var2) {
       while(true) {
-         if(2125169906 * var1.field_15 < var2) {
-            boolean var3 = var1.method_130() == 1;
+         if(2125169906 * var1.offset < var2) {
+            boolean var3 = var1.readUnsignedByte() == 1;
             class_359 var10000 = new class_359(var1.method_139(-391631059), this.field_3923);
             class_359 var4 = var10000;
             var10000 = new class_359(var1.method_139(-391631059), this.field_3923);
             class_359 var5 = var10000;
-            int var6 = var1.method_132();
-            int var7 = var1.method_130();
-            int var8 = var1.method_130();
+            int var6 = var1.readShort();
+            int var7 = var1.readUnsignedByte();
+            int var8 = var1.readUnsignedByte();
             boolean var9 = 0 != (var8 & 2);
             boolean var10 = (var8 & 1) != 0;
             if(var6 > 0) {
                var1.method_139(-391631059);
-               var1.method_130();
+               var1.readUnsignedByte();
                var1.method_135();
             }
 
@@ -154,21 +154,21 @@ public class class_346 extends class_343 {
    }
 
    // $FF: renamed from: b (nd, int, int) void
-   public void method_6171(class_28 var1, int var2, int var3) {
+   public void method_6171(Buffer var1, int var2, int var3) {
       try {
-         while(-442398587 * var1.field_15 < var2) {
+         while(-442398587 * var1.offset < var2) {
             if(var3 <= 1146060145) {
                throw new IllegalStateException();
             }
 
-            boolean var4 = var1.method_130() == 1;
+            boolean var4 = var1.readUnsignedByte() == 1;
             class_359 var10000 = new class_359(var1.method_139(-391631059), this.field_3923);
             class_359 var5 = var10000;
             var10000 = new class_359(var1.method_139(-391631059), this.field_3923);
             class_359 var6 = var10000;
-            int var7 = var1.method_132();
-            int var8 = var1.method_130();
-            int var9 = var1.method_130();
+            int var7 = var1.readShort();
+            int var8 = var1.readUnsignedByte();
+            int var9 = var1.readUnsignedByte();
             boolean var17;
             if(0 != (var9 & 2)) {
                if(var3 <= 1146060145) {
@@ -198,7 +198,7 @@ public class class_346 extends class_343 {
                }
 
                var1.method_139(-391631059);
-               var1.method_130();
+               var1.readUnsignedByte();
                var1.method_135();
             }
 
@@ -676,22 +676,22 @@ public class class_346 extends class_343 {
    }
 
    // $FF: renamed from: e (nd, int) void
-   public void method_6178(class_28 var1, int var2) {
+   public void method_6178(Buffer var1, int var2) {
       while(true) {
-         if(-442398587 * var1.field_15 < var2) {
-            boolean var3 = var1.method_130() == 1;
+         if(-442398587 * var1.offset < var2) {
+            boolean var3 = var1.readUnsignedByte() == 1;
             class_359 var10000 = new class_359(var1.method_139(-391631059), this.field_3923);
             class_359 var4 = var10000;
             var10000 = new class_359(var1.method_139(-391631059), this.field_3923);
             class_359 var5 = var10000;
-            int var6 = var1.method_132();
-            int var7 = var1.method_130();
-            int var8 = var1.method_130();
+            int var6 = var1.readShort();
+            int var7 = var1.readUnsignedByte();
+            int var8 = var1.readUnsignedByte();
             boolean var9 = 0 != (var8 & 2);
             boolean var10 = (var8 & 1) != 0;
             if(var6 > 0) {
                var1.method_139(-391631059);
-               var1.method_130();
+               var1.readUnsignedByte();
                var1.method_135();
             }
 
@@ -764,22 +764,22 @@ public class class_346 extends class_343 {
    }
 
    // $FF: renamed from: c (nd, int) void
-   public void method_6179(class_28 var1, int var2) {
+   public void method_6179(Buffer var1, int var2) {
       while(true) {
-         if(-442398587 * var1.field_15 < var2) {
-            boolean var3 = var1.method_130() == 1;
+         if(-442398587 * var1.offset < var2) {
+            boolean var3 = var1.readUnsignedByte() == 1;
             class_359 var10000 = new class_359(var1.method_139(-391631059), this.field_3923);
             class_359 var4 = var10000;
             var10000 = new class_359(var1.method_139(-391631059), this.field_3923);
             class_359 var5 = var10000;
-            int var6 = var1.method_132();
-            int var7 = var1.method_130();
-            int var8 = var1.method_130();
+            int var6 = var1.readShort();
+            int var7 = var1.readUnsignedByte();
+            int var8 = var1.readUnsignedByte();
             boolean var9 = 0 != (var8 & 2);
             boolean var10 = (var8 & 1) != 0;
             if(var6 > 0) {
                var1.method_139(-391631059);
-               var1.method_130();
+               var1.readUnsignedByte();
                var1.method_135();
             }
 

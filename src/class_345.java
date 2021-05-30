@@ -21,15 +21,15 @@ public class class_345 extends class_343 {
    }
 
    // $FF: renamed from: f (nd, int, short) void
-   public void method_6164(class_28 var1, int var2, short var3) {
+   public void method_6164(Buffer var1, int var2, short var3) {
       try {
          while(true) {
-            if(-442398587 * var1.field_15 < var2) {
+            if(-442398587 * var1.offset < var2) {
                if(var3 == 255) {
                   throw new IllegalStateException();
                }
 
-               int var4 = var1.method_130();
+               int var4 = var1.readUnsignedByte();
                boolean var10000;
                if((var4 & 1) == 1) {
                   if(var3 == 255) {
@@ -158,10 +158,10 @@ public class class_345 extends class_343 {
    }
 
    // $FF: renamed from: b (nd, int) void
-   public void method_6166(class_28 var1, int var2) {
+   public void method_6166(Buffer var1, int var2) {
       while(true) {
-         if(-442398587 * var1.field_15 < var2) {
-            int var3 = var1.method_130();
+         if(-442398587 * var1.offset < var2) {
+            int var3 = var1.readUnsignedByte();
             boolean var4 = (var3 & 1) == 1;
             class_359 var10000 = new class_359(var1.method_139(-391631059), this.field_3918);
             class_359 var5 = var10000;
@@ -202,10 +202,10 @@ public class class_345 extends class_343 {
    }
 
    // $FF: renamed from: d (nd, int) void
-   public void method_6167(class_28 var1, int var2) {
+   public void method_6167(Buffer var1, int var2) {
       while(true) {
-         if(-442398587 * var1.field_15 < var2) {
-            int var3 = var1.method_130();
+         if(-442398587 * var1.offset < var2) {
+            int var3 = var1.readUnsignedByte();
             boolean var4 = (var3 & 1) == 1;
             class_359 var10000 = new class_359(var1.method_139(-391631059), this.field_3918);
             class_359 var5 = var10000;

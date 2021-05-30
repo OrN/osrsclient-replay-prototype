@@ -1328,7 +1328,7 @@ public final class class_329 {
                         return;
                      }
 
-                     if(client.field_1431) {
+                     if(client.showFPS) {
                         var14 += 15;
                         class_183.field_2251.method_947("Fps:" + client.field_1382 * -1080528073, 1163271639 * var11.field_104 + var13, var14, 16776960, -1);
                         var14 += 15;

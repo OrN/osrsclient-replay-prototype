@@ -236,8 +236,8 @@ public class class_57 extends class_27 {
 
    // $FF: renamed from: p (byte[]) void
    void method_598(byte[] var1) {
-      class_28 var10000 = new class_28(var1);
-      class_28 var2 = var10000;
+      Buffer var10000 = new Buffer(var1);
+      Buffer var2 = var10000;
       this.field_424 = var2.method_135();
       this.field_425 = var2.method_135();
       this.field_426 = var2.method_135();
@@ -255,7 +255,7 @@ public class class_57 extends class_27 {
 
          int var6;
          do {
-            var6 = var2.method_130();
+            var6 = var2.readUnsignedByte();
             var5 += var6;
          } while(var6 >= 255);
 
@@ -872,8 +872,8 @@ public class class_57 extends class_27 {
 
    // $FF: renamed from: x (byte[]) void
    void method_615(byte[] var1) {
-      class_28 var10000 = new class_28(var1);
-      class_28 var2 = var10000;
+      Buffer var10000 = new Buffer(var1);
+      Buffer var2 = var10000;
       this.field_424 = var2.method_135();
       this.field_425 = var2.method_135();
       this.field_426 = var2.method_135();
@@ -891,7 +891,7 @@ public class class_57 extends class_27 {
 
          int var6;
          do {
-            var6 = var2.method_130();
+            var6 = var2.readUnsignedByte();
             var5 += var6;
          } while(var6 >= 255);
 
@@ -904,8 +904,8 @@ public class class_57 extends class_27 {
 
    // $FF: renamed from: z (byte[]) void
    void method_616(byte[] var1) {
-      class_28 var10000 = new class_28(var1);
-      class_28 var2 = var10000;
+      Buffer var10000 = new Buffer(var1);
+      Buffer var2 = var10000;
       this.field_424 = var2.method_135();
       this.field_425 = var2.method_135();
       this.field_426 = var2.method_135();
@@ -923,7 +923,7 @@ public class class_57 extends class_27 {
 
          int var6;
          do {
-            var6 = var2.method_130();
+            var6 = var2.readUnsignedByte();
             var5 += var6;
          } while(var6 >= -1811845834);
 
@@ -936,8 +936,8 @@ public class class_57 extends class_27 {
 
    // $FF: renamed from: w (byte[]) void
    void method_617(byte[] var1) {
-      class_28 var10000 = new class_28(var1);
-      class_28 var2 = var10000;
+      Buffer var10000 = new Buffer(var1);
+      Buffer var2 = var10000;
       this.field_424 = var2.method_135();
       this.field_425 = var2.method_135();
       this.field_426 = var2.method_135();
@@ -955,7 +955,7 @@ public class class_57 extends class_27 {
 
          int var6;
          do {
-            var6 = var2.method_130();
+            var6 = var2.readUnsignedByte();
             var5 += var6;
          } while(var6 >= 255);
 
@@ -1463,8 +1463,8 @@ public class class_57 extends class_27 {
 
    // $FF: renamed from: m (byte[]) void
    void method_621(byte[] var1) {
-      class_28 var10000 = new class_28(var1);
-      class_28 var2 = var10000;
+      Buffer var10000 = new Buffer(var1);
+      Buffer var2 = var10000;
       this.field_424 = var2.method_135();
       this.field_425 = var2.method_135();
       this.field_426 = var2.method_135();
@@ -1482,7 +1482,7 @@ public class class_57 extends class_27 {
 
          int var6;
          do {
-            var6 = var2.method_130();
+            var6 = var2.readUnsignedByte();
             var5 += var6;
          } while(var6 >= 255);
 

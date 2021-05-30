@@ -48,13 +48,13 @@ public class class_116 extends class_111 {
    }
 
    // $FF: renamed from: y (nd) void
-   void method_2233(class_28 var1) {
+   void method_2233(Buffer var1) {
       this.field_1293 = var1.method_135() * 231412607;
       this.field_1292 = var1.method_135() * 62071863;
    }
 
    // $FF: renamed from: v (nd, int) void
-   void method_2231(class_28 var1, int var2) {
+   void method_2231(Buffer var1, int var2) {
       try {
          this.field_1293 = var1.method_135() * 231412607;
          this.field_1292 = var1.method_135() * 62071863;
@@ -90,7 +90,7 @@ public class class_116 extends class_111 {
    }
 
    // $FF: renamed from: f (nd) void
-   void method_2234(class_28 var1) {
+   void method_2234(Buffer var1) {
       this.field_1293 = var1.method_135() * -891848324;
       this.field_1292 = var1.method_135() * 62071863;
    }

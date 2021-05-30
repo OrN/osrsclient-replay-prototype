@@ -44,14 +44,14 @@ public final class class_94 extends class_91 {
    }
 
    // $FF: renamed from: f (int) void
-   static void method_1771(int var0) {
+   static void savePreferences(int var0) {
       try {
-         class_383 var1 = null;
+         RAFileHandle var1 = null;
 
          try {
-            var1 = class_168.method_3613("", class_154.field_1933.field_3347, true, 1832690448);
-            class_28 var2 = class_87.field_852.method_3620(2063389348);
-            var1.method_6686(var2.field_12, 0, var2.field_15 * -442398587, (byte)-22);
+            var1 = class_168.getPreferencesHandle("", class_154.field_1933.field_3347, true, 1832690448);
+            Buffer var2 = class_87.preferences.toBuffer(2063389348);
+            var1.write(var2.data, 0, var2.offset * -442398587, (byte)-22);
          } catch (Exception var4) {
             ;
          }
@@ -62,7 +62,7 @@ public final class class_94 extends class_91 {
                   throw new IllegalStateException();
                }
 
-               var1.method_6687(true, 948582110);
+               var1.closeSync(true, 948582110);
             }
          } catch (Exception var3) {
             ;

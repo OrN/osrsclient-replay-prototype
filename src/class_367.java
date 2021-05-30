@@ -12,10 +12,10 @@ public abstract class class_367 implements class_9 {
    }
 
    // $FF: renamed from: f (nd, int) void
-   public void method_6568(class_28 var1, int var2) {
+   public void method_6568(Buffer var1, int var2) {
       try {
          while(true) {
-            int var3 = var1.method_130();
+            int var3 = var1.readUnsignedByte();
             if(var3 == 0) {
                if(var2 <= -1688948348) {
                   throw new IllegalStateException();
@@ -32,10 +32,10 @@ public abstract class class_367 implements class_9 {
 
                switch(1709225651 * var4.field_4088) {
                case 0:
-                  class_197.method_4016(class_291.method_5294(), var1.method_130(), -611336247);
+                  class_197.method_4016(class_291.method_5294(), var1.readUnsignedByte(), -611336247);
                   break;
                case 1:
-                  int var5 = var1.method_130();
+                  int var5 = var1.readUnsignedByte();
                   int var7 = class_391.field_4245[var5];
                   class_385 var6;
                   if(var7 == 1) {
@@ -138,9 +138,9 @@ public abstract class class_367 implements class_9 {
    }
 
    // $FF: renamed from: r (nd) void
-   public void method_6574(class_28 var1) {
+   public void method_6574(Buffer var1) {
       while(true) {
-         int var2 = var1.method_130();
+         int var2 = var1.readUnsignedByte();
          if(var2 == 0) {
             return;
          }
@@ -149,10 +149,10 @@ public abstract class class_367 implements class_9 {
          if(var3 != null) {
             switch(1709225651 * var3.field_4088) {
             case 0:
-               class_197.method_4016(class_291.method_5294(), var1.method_130(), -611336247);
+               class_197.method_4016(class_291.method_5294(), var1.readUnsignedByte(), -611336247);
                break;
             case 1:
-               int var4 = var1.method_130();
+               int var4 = var1.readUnsignedByte();
                int var6 = class_391.field_4245[var4];
                class_385 var5;
                if(var6 == 1) {
@@ -215,9 +215,9 @@ public abstract class class_367 implements class_9 {
    }
 
    // $FF: renamed from: j (nd) void
-   public void method_6579(class_28 var1) {
+   public void method_6579(Buffer var1) {
       while(true) {
-         int var2 = var1.method_130();
+         int var2 = var1.readUnsignedByte();
          if(var2 == 0) {
             return;
          }
@@ -226,10 +226,10 @@ public abstract class class_367 implements class_9 {
          if(var3 != null) {
             switch(1709225651 * var3.field_4088) {
             case 0:
-               class_197.method_4016(class_291.method_5294(), var1.method_130(), -611336247);
+               class_197.method_4016(class_291.method_5294(), var1.readUnsignedByte(), -611336247);
                break;
             case 1:
-               int var4 = var1.method_130();
+               int var4 = var1.readUnsignedByte();
                int var6 = class_391.field_4245[var4];
                class_385 var5;
                if(var6 == 1) {

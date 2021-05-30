@@ -89,7 +89,7 @@ public final class class_41 extends class_27 {
             var4 = 1575841489 * class_247.field_2745 + (var3 >> 4 & 7);
             var5 = (var3 & 7) + -1125497563 * class_153.field_1924;
             var6 = var2.method_159();
-            var7 = var2.method_130();
+            var7 = var2.readUnsignedByte();
             var8 = var7 >> 4 & 15;
             var9 = var7 & 7;
             var10 = var2.method_168();
@@ -129,7 +129,7 @@ public final class class_41 extends class_27 {
                                     throw new IllegalStateException();
                                  }
 
-                                 if(0 != -1768933319 * class_87.field_852.field_2115) {
+                                 if(0 != -1768933319 * class_87.preferences.field_2115) {
                                     if(var1 != 236848204) {
                                        throw new IllegalStateException();
                                     }
@@ -198,7 +198,7 @@ public final class class_41 extends class_27 {
                var3 = var2.method_168();
                var4 = var2.method_169();
                var5 = var2.method_168();
-               var6 = var2.method_130();
+               var6 = var2.readUnsignedByte();
                var7 = 1575841489 * class_247.field_2745 + (var6 >> 4 & 7);
                var8 = (var6 & 7) + class_153.field_1924 * -1125497563;
                if(var7 >= 0) {
@@ -445,7 +445,7 @@ public final class class_41 extends class_27 {
                   if(var1 != 236848204) {
                      throw new IllegalStateException();
                   } else {
-                     var3 = var2.method_132();
+                     var3 = var2.readShort();
                      var4 = var2.method_159();
                      var5 = class_247.field_2745 * 1575841489 + (var4 >> 4 & 7);
                      var6 = -1125497563 * class_153.field_1924 + (var4 & 7);
@@ -521,7 +521,7 @@ public final class class_41 extends class_27 {
                         var11 = var2.method_169();
                         byte var43 = var2.method_123();
                         var13 = var2.method_170();
-                        var14 = var2.method_132();
+                        var14 = var2.readShort();
                         var15 = var2.method_159();
                         var12 = var43 + var8;
                         var5 = var34 + var9;
@@ -581,7 +581,7 @@ public final class class_41 extends class_27 {
                         var4 = var2.method_169();
                         var5 = var2.method_168();
                         byte var35 = var2.method_162();
-                        var7 = var2.method_132();
+                        var7 = var2.readShort();
                         var8 = var2.method_168();
                         byte var38 = var2.method_157();
                         var10 = var2.method_113();
@@ -673,8 +673,8 @@ public final class class_41 extends class_27 {
 
                      if(var0 == class_256.field_2895) {
                         var3 = var2.method_170();
-                        var4 = var2.method_132();
-                        var5 = var2.method_130();
+                        var4 = var2.readShort();
+                        var5 = var2.readUnsignedByte();
                         var6 = class_247.field_2745 * 1575841489 + (var5 >> 4 & 7);
                         var7 = -1125497563 * class_153.field_1924 + (var5 & 7);
                         if(var6 >= 0 && var7 >= 0) {
@@ -713,7 +713,7 @@ public final class class_41 extends class_27 {
                         }
 
                      } else if(class_256.field_2897 == var0) {
-                        var3 = var2.method_132();
+                        var3 = var2.readShort();
                         var4 = var2.method_159();
                         var5 = var2.method_159();
                         var6 = (var5 >> 4 & 7) + class_247.field_2745 * 1575841489;

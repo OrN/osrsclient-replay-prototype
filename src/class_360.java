@@ -30,11 +30,11 @@ public class class_360 {
    public void method_6293(class_306 var1) {
       try {
          byte[] var3 = var1.method_5388(-1567646551 * class_349.field_3935.field_3936, (byte)-116);
-         class_28 var10000 = new class_28(var3);
-         class_28 var4 = var10000;
+         Buffer var10000 = new Buffer(var3);
+         Buffer var4 = var10000;
 
          while(true) {
-            int var5 = var4.method_130();
+            int var5 = var4.readUnsignedByte();
             if(var5 == 0) {
                return;
             }

@@ -33,11 +33,11 @@ public class class_167 {
 
 
    // $FF: renamed from: f (nd) void
-   void method_3599(class_28 var1) {
+   void method_3599(Buffer var1) {
       this.field_2094 = var1.method_136() * -686052109729941307L;
       this.field_2086 = var1.method_135() * -1656381045;
 
-      for(int var2 = var1.method_130(); 0 != var2; var2 = var1.method_130()) {
+      for(int var2 = var1.readUnsignedByte(); 0 != var2; var2 = var1.readUnsignedByte()) {
          Object var3;
          if(3 == var2) {
             class_124 var10000 = new class_124(this);
@@ -138,11 +138,11 @@ public class class_167 {
    }
 
    // $FF: renamed from: p (nd) void
-   void method_3602(class_28 var1) {
+   void method_3602(Buffer var1) {
       this.field_2094 = var1.method_136() * -686052109729941307L;
       this.field_2086 = var1.method_135() * 1654488779;
 
-      for(int var2 = var1.method_130(); 0 != var2; var2 = var1.method_130()) {
+      for(int var2 = var1.readUnsignedByte(); 0 != var2; var2 = var1.readUnsignedByte()) {
          Object var3;
          if(3 == var2) {
             class_124 var10000 = new class_124(this);
@@ -202,11 +202,11 @@ public class class_167 {
    }
 
    // $FF: renamed from: y (nd) void
-   void method_3603(class_28 var1) {
+   void method_3603(Buffer var1) {
       this.field_2094 = var1.method_136() * -686052109729941307L;
       this.field_2086 = var1.method_135() * 1654488779;
 
-      for(int var2 = var1.method_130(); 0 != var2; var2 = var1.method_130()) {
+      for(int var2 = var1.readUnsignedByte(); 0 != var2; var2 = var1.readUnsignedByte()) {
          Object var3;
          if(3 == var2) {
             class_124 var10000 = new class_124(this);
@@ -266,12 +266,12 @@ public class class_167 {
    }
 
    // $FF: renamed from: v (nd, int) void
-   void method_3604(class_28 var1, int var2) {
+   void method_3604(Buffer var1, int var2) {
       try {
          this.field_2094 = var1.method_136() * -686052109729941307L;
          this.field_2086 = var1.method_135() * 1654488779;
 
-         for(int var3 = var1.method_130(); 0 != var3; var3 = var1.method_130()) {
+         for(int var3 = var1.readUnsignedByte(); 0 != var3; var3 = var1.readUnsignedByte()) {
             if(var2 == 1539387343) {
                throw new IllegalStateException();
             }
@@ -398,7 +398,7 @@ public class class_167 {
    }
 
    // $FF: renamed from: <init> (nd) void
-   public class_167(class_28 var1) {
+   public class_167(Buffer var1) {
       super();
       try {
          this.field_2086 = -1654488779;

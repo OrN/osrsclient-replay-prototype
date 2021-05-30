@@ -74,7 +74,7 @@ public class class_183 extends class_181 {
                ;
             }
          } else {
-            int var3 = var0.field_15 * -442398587;
+            int var3 = var0.offset * -442398587;
             var0.method_116(var2.field_459 * -848582505);
 
             for(int var4 = 0; var4 < var2.field_464 * -637285787; ++var4) {
@@ -87,7 +87,7 @@ public class class_183 extends class_181 {
                      throw new IllegalStateException();
                   }
 
-                  var0.method_210(var2.field_457[var4]);
+                  var0.writeByte(var2.field_457[var4]);
                } else {
                   try {
                      int var5 = var2.field_458[var4];
@@ -100,7 +100,7 @@ public class class_183 extends class_181 {
 
                         var6 = var2.field_461[var4];
                         var7 = var6.getInt((Object)null);
-                        var0.method_210(0);
+                        var0.writeByte(0);
                         var0.method_116(var7);
                      } else if(1 == var5) {
                         if(var1 <= 1148722603) {
@@ -109,7 +109,7 @@ public class class_183 extends class_181 {
 
                         var6 = var2.field_461[var4];
                         var6.setInt((Object)null, var2.field_462[var4]);
-                        var0.method_210(0);
+                        var0.writeByte(0);
                      } else if(2 == var5) {
                         if(var1 <= 1148722603) {
                            throw new IllegalStateException();
@@ -117,7 +117,7 @@ public class class_183 extends class_181 {
 
                         var6 = var2.field_461[var4];
                         var7 = var6.getModifiers();
-                        var0.method_210(0);
+                        var0.writeByte(0);
                         var0.method_116(var7);
                      }
 
@@ -146,19 +146,19 @@ public class class_183 extends class_181 {
                               throw new IllegalStateException();
                            }
 
-                           var0.method_210(0);
+                           var0.writeByte(0);
                         } else if(var26 instanceof Number) {
                            if(var1 <= 1148722603) {
                               throw new IllegalStateException();
                            }
 
-                           var0.method_210(1);
+                           var0.writeByte(1);
                            var0.method_341(((Number)var26).longValue());
                         } else if(var26 instanceof String) {
-                           var0.method_210(2);
+                           var0.writeByte(2);
                            var0.method_120((String)var26);
                         } else {
-                           var0.method_210(4);
+                           var0.writeByte(4);
                         }
                      } else if(4 == var5) {
                         if(var1 <= 1148722603) {
@@ -167,33 +167,33 @@ public class class_183 extends class_181 {
 
                         var24 = var2.field_463[var4];
                         var7 = var24.getModifiers();
-                        var0.method_210(0);
+                        var0.writeByte(0);
                         var0.method_116(var7);
                      }
                   } catch (ClassNotFoundException var11) {
-                     var0.method_210(-10);
+                     var0.writeByte(-10);
                   } catch (InvalidClassException var12) {
-                     var0.method_210(-11);
+                     var0.writeByte(-11);
                   } catch (StreamCorruptedException var13) {
-                     var0.method_210(-12);
+                     var0.writeByte(-12);
                   } catch (OptionalDataException var14) {
-                     var0.method_210(-13);
+                     var0.writeByte(-13);
                   } catch (IllegalAccessException var15) {
-                     var0.method_210(-14);
+                     var0.writeByte(-14);
                   } catch (IllegalArgumentException var16) {
-                     var0.method_210(-15);
+                     var0.writeByte(-15);
                   } catch (InvocationTargetException var17) {
-                     var0.method_210(-16);
+                     var0.writeByte(-16);
                   } catch (SecurityException var18) {
-                     var0.method_210(-17);
+                     var0.writeByte(-17);
                   } catch (IOException var19) {
-                     var0.method_210(-18);
+                     var0.writeByte(-18);
                   } catch (NullPointerException var20) {
-                     var0.method_210(-19);
+                     var0.writeByte(-19);
                   } catch (Exception var21) {
-                     var0.method_210(-20);
+                     var0.writeByte(-20);
                   } catch (Throwable var22) {
-                     var0.method_210(-21);
+                     var0.writeByte(-21);
                   }
                }
             }

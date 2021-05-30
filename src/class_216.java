@@ -172,18 +172,18 @@ public class class_216 implements class_6 {
    }
 
    // $FF: renamed from: j (nd, int) void
-   public void method_15(class_28 var1) {
+   public void method_15(Buffer var1) {
       try {
-         this.field_2469 = var1.method_130() * -1625292611;
-         this.field_2464 = var1.method_130() * 2075227853;
-         this.field_2470 = var1.method_132() * 7204251;
-         this.field_2465 = var1.method_132() * 1429943961;
-         this.field_2466 = var1.method_132() * 2011144087;
-         this.field_2467 = var1.method_132() * -940466199;
-         this.field_2468 = var1.method_132() * 730158353;
-         this.field_2463 = var1.method_132() * 1798273193;
-         this.field_2462 = var1.method_132() * 2100491597;
-         this.field_2471 = var1.method_132() * -792676639;
+         this.field_2469 = var1.readUnsignedByte() * -1625292611;
+         this.field_2464 = var1.readUnsignedByte() * 2075227853;
+         this.field_2470 = var1.readShort() * 7204251;
+         this.field_2465 = var1.readShort() * 1429943961;
+         this.field_2466 = var1.readShort() * 2011144087;
+         this.field_2467 = var1.readShort() * -940466199;
+         this.field_2468 = var1.readShort() * 730158353;
+         this.field_2463 = var1.readShort() * 1798273193;
+         this.field_2462 = var1.readShort() * 2100491597;
+         this.field_2471 = var1.readShort() * -792676639;
          this.method_4195();
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
@@ -542,32 +542,32 @@ public class class_216 implements class_6 {
    }
 
    // $FF: renamed from: x (nd) void
-   public void method_28(class_28 var1) {
-      this.field_2469 = var1.method_130() * -1625292611;
-      this.field_2464 = var1.method_130() * 2075227853;
-      this.field_2470 = var1.method_132() * 7204251;
-      this.field_2465 = var1.method_132() * 1429943961;
-      this.field_2466 = var1.method_132() * 2011144087;
-      this.field_2467 = var1.method_132() * -940466199;
-      this.field_2468 = var1.method_132() * 730158353;
-      this.field_2463 = var1.method_132() * 1798273193;
-      this.field_2462 = var1.method_132() * 2100491597;
-      this.field_2471 = var1.method_132() * -792676639;
+   public void method_28(Buffer var1) {
+      this.field_2469 = var1.readUnsignedByte() * -1625292611;
+      this.field_2464 = var1.readUnsignedByte() * 2075227853;
+      this.field_2470 = var1.readShort() * 7204251;
+      this.field_2465 = var1.readShort() * 1429943961;
+      this.field_2466 = var1.readShort() * 2011144087;
+      this.field_2467 = var1.readShort() * -940466199;
+      this.field_2468 = var1.readShort() * 730158353;
+      this.field_2463 = var1.readShort() * 1798273193;
+      this.field_2462 = var1.readShort() * 2100491597;
+      this.field_2471 = var1.readShort() * -792676639;
       this.method_4195();
    }
 
    // $FF: renamed from: z (nd) void
-   public void method_11(class_28 var1) {
-      this.field_2469 = var1.method_130() * -1625292611;
-      this.field_2464 = var1.method_130() * 2075227853;
-      this.field_2470 = var1.method_132() * 7204251;
-      this.field_2465 = var1.method_132() * 1429943961;
-      this.field_2466 = var1.method_132() * 2011144087;
-      this.field_2467 = var1.method_132() * -940466199;
-      this.field_2468 = var1.method_132() * 730158353;
-      this.field_2463 = var1.method_132() * 1798273193;
-      this.field_2462 = var1.method_132() * 2100491597;
-      this.field_2471 = var1.method_132() * -792676639;
+   public void method_11(Buffer var1) {
+      this.field_2469 = var1.readUnsignedByte() * -1625292611;
+      this.field_2464 = var1.readUnsignedByte() * 2075227853;
+      this.field_2470 = var1.readShort() * 7204251;
+      this.field_2465 = var1.readShort() * 1429943961;
+      this.field_2466 = var1.readShort() * 2011144087;
+      this.field_2467 = var1.readShort() * -940466199;
+      this.field_2468 = var1.readShort() * 730158353;
+      this.field_2463 = var1.readShort() * 1798273193;
+      this.field_2462 = var1.readShort() * 2100491597;
+      this.field_2471 = var1.readShort() * -792676639;
       this.method_4195();
    }
 

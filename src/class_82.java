@@ -47,7 +47,7 @@ public class class_82 extends class_59 {
    }
 
    // $FF: renamed from: y (nd, int, int, int) void
-   void method_1361(class_28 var1, int var2, int var4) {
+   void method_1361(Buffer var1, int var2, int var4) {
       try {
          if(var2 == 1) {
             if(var4 >= 2052212375) {
@@ -60,7 +60,7 @@ public class class_82 extends class_59 {
                return;
             }
 
-            this.field_759 = var1.method_130() * 765202977;
+            this.field_759 = var1.readUnsignedByte() * 765202977;
          } else if(var2 == 5) {
             if(var4 >= 2052212375) {
                throw new IllegalStateException();
@@ -191,10 +191,10 @@ public class class_82 extends class_59 {
    }
 
    // $FF: renamed from: f (nd, int, int) void
-   void method_1369(class_28 var1, int var3) {
+   void method_1369(Buffer var1, int var3) {
       try {
          while(true) {
-            int var4 = var1.method_130();
+            int var4 = var1.readUnsignedByte();
             if(var4 == 0) {
                if(var3 != -1052896488) {
                   throw new IllegalStateException();

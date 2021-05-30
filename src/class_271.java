@@ -11,7 +11,7 @@ public class class_271 {
 
 
    // $FF: renamed from: y (nd, int, byte) java.lang.String
-   static String method_5058(class_28 var0, int var1, byte var2) {
+   static String method_5058(Buffer var0, int var1, byte var2) {
       try {
          try {
             int var3 = var0.method_144();
@@ -24,7 +24,7 @@ public class class_271 {
             }
 
             byte[] var4 = new byte[var3];
-            var0.field_15 += class_283.field_3254.method_5130(var0.field_12, var0.field_15 * -442398587, var4, 0, var3, 2146568122) * -1025691571;
+            var0.offset += class_283.field_3254.method_5130(var0.data, var0.offset * -442398587, var4, 0, var3, 2146568122) * -1025691571;
             String var5 = class_135.method_2948(var4, 0, var3, (byte)92);
             return var5;
          } catch (Exception var6) {

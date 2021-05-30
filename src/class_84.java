@@ -11,10 +11,10 @@ public class class_84 extends class_59 {
 
 
    // $FF: renamed from: f (nd, byte) void
-   void method_1410(class_28 var1, byte var2) {
+   void method_1410(Buffer var1, byte var2) {
       try {
          while(true) {
-            int var3 = var1.method_130();
+            int var3 = var1.readUnsignedByte();
             if(var3 == 0) {
                if(var2 >= 0) {
                   return;
@@ -56,7 +56,7 @@ public class class_84 extends class_59 {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28(var3);
+               Buffer var10001 = new Buffer(var3);
                var2.method_1224(var10001, -929011134);
             }
 

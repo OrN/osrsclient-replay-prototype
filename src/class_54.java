@@ -75,11 +75,11 @@ public class class_54 extends class_51 {
    }
 
    // $FF: renamed from: f (nd) void
-   void method_570(class_28 var1) {
-      this.field_408 = var1.method_132() * -1560714953;
-      var1.method_130();
-      if(var1.method_130() != 255) {
-         var1.field_15 -= -1025691571;
+   void method_570(Buffer var1) {
+      this.field_408 = var1.readShort() * -1560714953;
+      var1.readUnsignedByte();
+      if(var1.readUnsignedByte() != 255) {
+         var1.offset -= -1025691571;
          var1.method_136();
       }
 
@@ -166,16 +166,16 @@ public class class_54 extends class_51 {
    }
 
    // $FF: renamed from: v (nd, int) void
-   void method_571(class_28 var1, int var2) {
+   void method_571(Buffer var1, int var2) {
       try {
-         this.field_408 = var1.method_132() * -1560714953;
-         var1.method_130();
-         if(var1.method_130() != 255) {
+         this.field_408 = var1.readShort() * -1560714953;
+         var1.readUnsignedByte();
+         if(var1.readUnsignedByte() != 255) {
             if(var2 >= 778749602) {
                throw new IllegalStateException();
             }
 
-            var1.field_15 -= -1025691571;
+            var1.offset -= -1025691571;
             var1.method_136();
          }
 

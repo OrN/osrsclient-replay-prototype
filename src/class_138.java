@@ -10,7 +10,7 @@ public class class_138 {
    // $FF: renamed from: n java.util.concurrent.Future
    Future field_1770;
    // $FF: renamed from: f nd
-   final class_28 field_1771;
+   final Buffer field_1771;
    // $FF: renamed from: v java.util.concurrent.ExecutorService
    ExecutorService field_1772;
    // $FF: renamed from: ga oh[]
@@ -336,10 +336,10 @@ public class class_138 {
    }
 
    // $FF: renamed from: f (int) nd
-   public class_28 method_2975() {
+   public Buffer method_2975() {
       try {
          try {
-            return (class_28)this.field_1770.get();
+            return (Buffer)this.field_1770.get();
          } catch (Exception var3) {
             return null;
          }
@@ -349,7 +349,7 @@ public class class_138 {
    }
 
    // $FF: renamed from: <init> (nd, ai) void
-   public class_138(class_28 var1, class_1 var2) {
+   public class_138(Buffer var1, class_1 var2) {
       super();
       try {
          this.field_1772 = Executors.newSingleThreadExecutor();

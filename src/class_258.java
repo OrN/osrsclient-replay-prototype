@@ -53,9 +53,9 @@ public abstract class class_258 extends class_257 implements class_21 {
    protected abstract class_367 method_4952(int var1);
 
    // $FF: renamed from: y (nd, byte) oc
-   public class_396 method_4953(class_28 var1, byte var2) {
+   public class_396 method_4953(Buffer var1, byte var2) {
       try {
-         int var3 = var1.method_132();
+         int var3 = var1.readShort();
          class_367 var4 = this.method_4958(var3, 1996028065);
          class_396 var10000 = new class_396(var3);
          class_396 var5 = var10000;
@@ -147,8 +147,8 @@ public abstract class class_258 extends class_257 implements class_21 {
    }
 
    // $FF: renamed from: e (nd) oc
-   public class_396 method_4960(class_28 var1) {
-      int var2 = var1.method_132();
+   public class_396 method_4960(Buffer var1) {
+      int var2 = var1.readShort();
       class_367 var3 = this.method_4958(var2, 1185225265);
       class_396 var10000 = new class_396(var2);
       class_396 var4 = var10000;

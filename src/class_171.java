@@ -1251,16 +1251,16 @@ public class class_171 {
    }
 
    // $FF: renamed from: x (nd, int) void
-   void method_3665(class_28 var1, int var2) {
+   void method_3665(Buffer var1, int var2) {
       try {
-         int var3 = var1.method_130();
+         int var3 = var1.readUnsignedByte();
          if(var3 >= 1) {
             if(var2 == 1359138405) {
                throw new IllegalStateException();
             }
 
             if(var3 <= 6) {
-               int var4 = var1.method_130();
+               int var4 = var1.readUnsignedByte();
                if(0 != (var4 & 1)) {
                   if(var2 == 1359138405) {
                      throw new IllegalStateException();
@@ -1311,8 +1311,8 @@ public class class_171 {
                   }
                }
 
-               this.field_2141 = var1.method_132() * 1332970801;
-               this.field_2150 = var1.method_130() * 306971047;
+               this.field_2141 = var1.readShort() * 1332970801;
+               this.field_2150 = var1.readUnsignedByte() * 306971047;
                this.field_2134 = var1.method_139(-391631059);
                if(var3 >= 4) {
                   if(var2 == 1359138405) {
@@ -1322,7 +1322,7 @@ public class class_171 {
                   var1.method_135();
                }
 
-               this.field_2136 = var1.method_130() == 1;
+               this.field_2136 = var1.readUnsignedByte() == 1;
                this.field_2142 = var1.method_131();
                this.field_2152 = var1.method_131();
                this.field_2137 = var1.method_131();
@@ -1458,7 +1458,7 @@ public class class_171 {
                            throw new IllegalStateException();
                         }
 
-                        this.field_2140[var5] = var1.method_132();
+                        this.field_2140[var5] = var1.readShort();
                      } else {
                         this.field_2140[var5] = 0;
                      }
@@ -1470,7 +1470,7 @@ public class class_171 {
 
                         boolean[] var10000 = this.field_2147;
                         boolean var10002;
-                        if(var1.method_130() == 1) {
+                        if(var1.readUnsignedByte() == 1) {
                            if(var2 == 1359138405) {
                               return;
                            }
@@ -1562,7 +1562,7 @@ public class class_171 {
                }
 
                if(var3 >= 3) {
-                  var5 = var1.method_132();
+                  var5 = var1.readShort();
                   if(var5 > 0) {
                      int var10003;
                      if(var5 < 16) {
@@ -2004,10 +2004,10 @@ public class class_171 {
    }
 
    // $FF: renamed from: ba (nd) void
-   void method_3678(class_28 var1) {
-      int var2 = var1.method_130();
+   void method_3678(Buffer var1) {
+      int var2 = var1.readUnsignedByte();
       if(var2 >= 1 && var2 <= 6) {
-         int var3 = var1.method_130();
+         int var3 = var1.readUnsignedByte();
          if(0 != (var3 & 1)) {
             this.field_2130 = true;
          }
@@ -2032,14 +2032,14 @@ public class class_171 {
             this.field_2153 += 1838474080;
          }
 
-         this.field_2141 = var1.method_132() * 1332970801;
-         this.field_2150 = var1.method_130() * 306971047;
+         this.field_2141 = var1.readShort() * 1332970801;
+         this.field_2150 = var1.readUnsignedByte() * 306971047;
          this.field_2134 = var1.method_139(-391631059);
          if(var2 >= 4) {
             var1.method_135();
          }
 
-         this.field_2136 = var1.method_130() == 1;
+         this.field_2136 = var1.readUnsignedByte() == 1;
          this.field_2142 = var1.method_131();
          this.field_2152 = var1.method_131();
          this.field_2137 = var1.method_131();
@@ -2085,13 +2085,13 @@ public class class_171 {
                }
 
                if(var2 >= 5) {
-                  this.field_2140[var4] = var1.method_132();
+                  this.field_2140[var4] = var1.readShort();
                } else {
                   this.field_2140[var4] = 0;
                }
 
                if(var2 >= 6) {
-                  this.field_2147[var4] = var1.method_130() == 1;
+                  this.field_2147[var4] = var1.readUnsignedByte() == 1;
                } else {
                   this.field_2147[var4] = false;
                }
@@ -2121,7 +2121,7 @@ public class class_171 {
          }
 
          if(var2 >= 3) {
-            var4 = var1.method_132();
+            var4 = var1.readShort();
             if(var4 > 0) {
                class_369 var10001 = new class_369(var4 < 16?class_100.method_1845(var4):16);
                this.field_2154 = var10001;
@@ -2340,7 +2340,7 @@ public class class_171 {
    }
 
    // $FF: renamed from: <init> (nd) void
-   public class_171(class_28 var1) {
+   public class_171(Buffer var1) {
       super();
       try {
          this.field_2133 = 0;
@@ -2660,10 +2660,10 @@ public class class_171 {
    }
 
    // $FF: renamed from: bf (nd) void
-   void method_3698(class_28 var1) {
-      int var2 = var1.method_130();
+   void method_3698(Buffer var1) {
+      int var2 = var1.readUnsignedByte();
       if(var2 >= 1 && var2 <= 6) {
-         int var3 = var1.method_130();
+         int var3 = var1.readUnsignedByte();
          if(0 != (var3 & 1)) {
             this.field_2130 = true;
          }
@@ -2688,14 +2688,14 @@ public class class_171 {
             this.field_2153 += 1838474080;
          }
 
-         this.field_2141 = var1.method_132() * 1332970801;
-         this.field_2150 = var1.method_130() * 306971047;
+         this.field_2141 = var1.readShort() * 1332970801;
+         this.field_2150 = var1.readUnsignedByte() * 306971047;
          this.field_2134 = var1.method_139(-391631059);
          if(var2 >= 4) {
             var1.method_135();
          }
 
-         this.field_2136 = var1.method_130() == 1;
+         this.field_2136 = var1.readUnsignedByte() == 1;
          this.field_2142 = var1.method_131();
          this.field_2152 = var1.method_131();
          this.field_2137 = var1.method_131();
@@ -2741,13 +2741,13 @@ public class class_171 {
                }
 
                if(var2 >= 5) {
-                  this.field_2140[var4] = var1.method_132();
+                  this.field_2140[var4] = var1.readShort();
                } else {
                   this.field_2140[var4] = 0;
                }
 
                if(var2 >= 6) {
-                  this.field_2147[var4] = var1.method_130() == 1;
+                  this.field_2147[var4] = var1.readUnsignedByte() == 1;
                } else {
                   this.field_2147[var4] = false;
                }
@@ -2777,7 +2777,7 @@ public class class_171 {
          }
 
          if(var2 >= 3) {
-            var4 = var1.method_132();
+            var4 = var1.readShort();
             if(var4 > 0) {
                class_369 var10001 = new class_369(var4 < 16?class_100.method_1845(var4):16);
                this.field_2154 = var10001;
@@ -2833,10 +2833,10 @@ public class class_171 {
    }
 
    // $FF: renamed from: be (nd) void
-   void method_3700(class_28 var1) {
-      int var2 = var1.method_130();
+   void method_3700(Buffer var1) {
+      int var2 = var1.readUnsignedByte();
       if(var2 >= 1 && var2 <= 6) {
-         int var3 = var1.method_130();
+         int var3 = var1.readUnsignedByte();
          if(0 != (var3 & 1)) {
             this.field_2130 = true;
          }
@@ -2861,14 +2861,14 @@ public class class_171 {
             this.field_2153 += -1758876806;
          }
 
-         this.field_2141 = var1.method_132() * 1332970801;
-         this.field_2150 = var1.method_130() * 1285697513;
+         this.field_2141 = var1.readShort() * 1332970801;
+         this.field_2150 = var1.readUnsignedByte() * 1285697513;
          this.field_2134 = var1.method_139(-391631059);
          if(var2 >= 4) {
             var1.method_135();
          }
 
-         this.field_2136 = var1.method_130() == 1;
+         this.field_2136 = var1.readUnsignedByte() == 1;
          this.field_2142 = var1.method_131();
          this.field_2152 = var1.method_131();
          this.field_2137 = var1.method_131();
@@ -2914,13 +2914,13 @@ public class class_171 {
                }
 
                if(var2 >= 5) {
-                  this.field_2140[var4] = var1.method_132();
+                  this.field_2140[var4] = var1.readShort();
                } else {
                   this.field_2140[var4] = 0;
                }
 
                if(var2 >= 6) {
-                  this.field_2147[var4] = var1.method_130() == 1;
+                  this.field_2147[var4] = var1.readUnsignedByte() == 1;
                } else {
                   this.field_2147[var4] = false;
                }
@@ -2950,7 +2950,7 @@ public class class_171 {
          }
 
          if(var2 >= 3) {
-            var4 = var1.method_132();
+            var4 = var1.readShort();
             if(var4 > 0) {
                class_369 var10001 = new class_369(var4 < 16?class_100.method_1845(var4):16);
                this.field_2154 = var10001;
@@ -3023,7 +3023,7 @@ public class class_171 {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28(var3);
+               Buffer var10001 = new Buffer(var3);
                var2.method_1119(var10001, 1856210017);
             }
 

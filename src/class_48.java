@@ -37,7 +37,7 @@ public class class_48 extends class_27 {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28(var3);
+               Buffer var10001 = new Buffer(var3);
                var2.method_1241(var10001, 1467910885);
             }
 
@@ -65,8 +65,8 @@ public class class_48 extends class_27 {
          class_70.method_973(var0);
          ((class_245)class_70.field_555).method_4692(var0);
          class_148.method_3125();
-         class_87.field_852.field_2128 = var0;
-         class_94.method_1771(-1248407362);
+         class_87.preferences.field_2128 = var0;
+         class_94.savePreferences(-1248407362);
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2);
       }

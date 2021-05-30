@@ -505,7 +505,7 @@ public class class_358 implements Runnable {
    // $FF: renamed from: fx (int, int, int, int) void
    static void method_6259(int var0, int var1, int var2, int var3) {
       try {
-         if(0 != class_87.field_852.field_2121 * -140834991 && 0 != var1) {
+         if(0 != class_87.preferences.field_2121 * -140834991 && 0 != var1) {
             if(var3 == -365459320) {
                throw new IllegalStateException();
             }

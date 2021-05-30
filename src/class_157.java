@@ -212,14 +212,14 @@ public class class_157 {
          try {
             File fRandom = new File(class_115.homeDirectory, "random.dat");
             class_376 var10000;
-            class_383 var10002;
+            RAFileHandle var10002;
             int var3;
             if(fRandom.exists()) {
                if(var0 <= 607273756) {
                   throw new IllegalStateException();
                }
 
-               var10002 = new class_383(fRandom, "rw", 25L);
+               var10002 = new RAFileHandle(fRandom, "rw", 25L);
                var10000 = new class_376(var10002, 24, 0);
                class_199.field_2344 = var10000;
             } else {
@@ -236,7 +236,7 @@ public class class_157 {
                            throw new IllegalStateException();
                         }
 
-                        var10002 = new class_383(var4, "rw", 25L);
+                        var10002 = new RAFileHandle(var4, "rw", 25L);
                         var10000 = new class_376(var10002, 24, 0);
                         class_199.field_2344 = var10000;
                         break label49;
@@ -256,7 +256,7 @@ public class class_157 {
                var7.write(var3);
                var7.seek(0L);
                var7.close();
-               var10002 = new class_383(fRandom, "rw", 25L);
+               var10002 = new RAFileHandle(fRandom, "rw", 25L);
                var10000 = new class_376(var10002, 24, 0);
                class_199.field_2344 = var10000;
             }

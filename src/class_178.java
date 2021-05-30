@@ -37,8 +37,8 @@ public class class_178 {
                }
             }
 
-            if(null != class_87.field_852.field_2120) {
-               class_177.field_2200 = class_87.field_852.field_2120;
+            if(null != class_87.preferences.field_2120) {
+               class_177.field_2200 = class_87.preferences.field_2120;
                client.field_1453 = true;
             } else {
                client.field_1453 = false;

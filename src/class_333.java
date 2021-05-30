@@ -146,7 +146,7 @@ public class class_333 {
    }
 
    // $FF: renamed from: r (nd, int) void
-   public void method_5903(class_28 var1, int var2) {
+   public void method_5903(Buffer var1, int var2) {
       try {
          long var3 = this.field_3864 * -1942511866147941553L;
          var3 /= 10L;
@@ -431,7 +431,7 @@ public class class_333 {
    }
 
    // $FF: renamed from: t (nd) void
-   public void method_5916(class_28 var1) {
+   public void method_5916(Buffer var1) {
       long var2 = this.field_3864 * -1942511866147941553L;
       var2 /= 10L;
       if(var2 < 0L) {
@@ -471,7 +471,7 @@ public class class_333 {
    }
 
    // $FF: renamed from: h (nd) void
-   public void method_5918(class_28 var1) {
+   public void method_5918(Buffer var1) {
       long var2 = this.field_3864 * -1942511866147941553L;
       var2 /= 10L;
       if(var2 < 0L) {

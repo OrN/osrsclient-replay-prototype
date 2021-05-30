@@ -43,8 +43,8 @@ public class class_373 {
    // $FF: renamed from: r (byte[], int, int, int, int, int, int, int, gt, fz[], int) void
    static final void method_6614(byte[] var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, class_251 var8, class_240[] var9, int var10) {
       try {
-         class_28 var10000 = new class_28(var0);
-         class_28 var11 = var10000;
+         Buffer var10000 = new Buffer(var0);
+         Buffer var11 = var10000;
          int var12 = -1;
 
          while(true) {
@@ -69,7 +69,7 @@ public class class_373 {
                int var16 = var14 & 63;
                int var17 = var14 >> 6 & 63;
                int var18 = var14 >> 12;
-               int var19 = var11.method_130();
+               int var19 = var11.readUnsignedByte();
                int var20 = var19 >> 2;
                int var21 = var19 & 3;
                if(var18 == var4) {
@@ -345,7 +345,7 @@ public class class_373 {
             class_89 var10000 = new class_89();
             var2 = var10000;
             if(var3 != null) {
-               class_28 var10001 = new class_28(var3);
+               Buffer var10001 = new Buffer(var3);
                var2.method_1569(var10001);
             }
 

@@ -24,8 +24,8 @@ public abstract class class_51 extends class_27 {
    abstract void method_569(class_44 var1, int var2);
 
    // $FF: renamed from: f (nd) void
-   abstract void method_570(class_28 var1);
+   abstract void method_570(Buffer var1);
 
    // $FF: renamed from: v (nd, int) void
-   abstract void method_571(class_28 var1, int var2);
+   abstract void method_571(Buffer var1, int var2);
 }

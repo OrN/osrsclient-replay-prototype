@@ -357,7 +357,7 @@ public class class_158 {
                throw new IllegalStateException();
             }
 
-            if(class_87.field_852.field_2117) {
+            if(class_87.preferences.roofsHidden) {
                if(var4 == -1785462492) {
                   return;
                }

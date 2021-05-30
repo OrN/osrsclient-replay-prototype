@@ -141,8 +141,8 @@ public final class class_166 {
          }
       }
 
-      class_28 var10000 = new class_28(var0);
-      class_28 var10 = var10000;
+      Buffer var10000 = new Buffer(var0);
+      Buffer var10 = var10000;
 
       for(var7 = 0; var7 < 4; ++var7) {
          for(var8 = 0; var8 < 1769502927; ++var8) {
@@ -188,8 +188,8 @@ public final class class_166 {
 
    // $FF: renamed from: ai (byte[], int, int, int, int, int, int, int, gt, fz[]) void
    static final void method_3567(byte[] var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, class_251 var8, class_240[] var9) {
-      class_28 var10000 = new class_28(var0);
-      class_28 var10 = var10000;
+      Buffer var10000 = new Buffer(var0);
+      Buffer var10 = var10000;
       int var11 = -1;
 
       while(true) {
@@ -211,7 +211,7 @@ public final class class_166 {
             int var15 = var13 & 63;
             int var16 = var13 >> 6 & 63;
             int var17 = var13 >> 12;
-            int var18 = var10.method_130();
+            int var18 = var10.readUnsignedByte();
             int var19 = var18 >> 2;
             int var20 = var18 & 3;
             if(var17 == var4 && var16 >= var5 && var16 < 8 + var5 && var15 >= var6 && var15 < 8 + var6) {
@@ -383,13 +383,13 @@ public final class class_166 {
    }
 
    // $FF: renamed from: al (nd, int, int, int, int, int, int) void
-   static final void method_3573(class_28 var0, int var1, int var2, int var3, int var4, int var5, int var6) {
+   static final void method_3573(Buffer var0, int var1, int var2, int var3, int var4, int var5, int var6) {
       int var7;
       if(var2 >= 0 && var2 < 104 && var3 >= 0 && var3 < 104) {
          field_2069[var1][var2][var3] = 0;
 
          while(true) {
-            var7 = var0.method_130();
+            var7 = var0.readUnsignedByte();
             if(0 == var7) {
                if(0 == var1) {
                   int[] var14 = field_2078[0][var2];
@@ -411,7 +411,7 @@ public final class class_166 {
             }
 
             if(1 == var7) {
-               int var8 = var0.method_130();
+               int var8 = var0.readUnsignedByte();
                if(var8 == 1) {
                   var8 = 0;
                }
@@ -436,18 +436,18 @@ public final class class_166 {
          }
       } else {
          while(true) {
-            var7 = var0.method_130();
+            var7 = var0.readUnsignedByte();
             if(var7 == 0) {
                break;
             }
 
             if(var7 == 1) {
-               var0.method_130();
+               var0.readUnsignedByte();
                break;
             }
 
             if(var7 <= 49) {
-               var0.method_130();
+               var0.readUnsignedByte();
             }
          }
       }
@@ -455,13 +455,13 @@ public final class class_166 {
    }
 
    // $FF: renamed from: ad (nd, int, int, int, int, int, int) void
-   static final void method_3574(class_28 var0, int var1, int var2, int var3, int var4, int var5, int var6) {
+   static final void method_3574(Buffer var0, int var1, int var2, int var3, int var4, int var5, int var6) {
       int var7;
       if(var2 >= 0 && var2 < 104 && var3 >= 0 && var3 < 104) {
          field_2069[var1][var2][var3] = 0;
 
          while(true) {
-            var7 = var0.method_130();
+            var7 = var0.readUnsignedByte();
             if(0 == var7) {
                if(0 == var1) {
                   int[] var14 = field_2078[0][var2];
@@ -483,7 +483,7 @@ public final class class_166 {
             }
 
             if(1 == var7) {
-               int var8 = var0.method_130();
+               int var8 = var0.readUnsignedByte();
                if(var8 == 1) {
                   var8 = 0;
                }
@@ -508,18 +508,18 @@ public final class class_166 {
          }
       } else {
          while(true) {
-            var7 = var0.method_130();
+            var7 = var0.readUnsignedByte();
             if(var7 == 0) {
                break;
             }
 
             if(var7 == 1) {
-               var0.method_130();
+               var0.readUnsignedByte();
                break;
             }
 
             if(var7 <= 49) {
-               var0.method_130();
+               var0.readUnsignedByte();
             }
          }
       }
@@ -546,8 +546,8 @@ public final class class_166 {
 
    // $FF: renamed from: ar (byte[], int, int, int, int, int, int, int, gt, fz[]) void
    static final void method_3576(byte[] var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, class_251 var8, class_240[] var9) {
-      class_28 var10000 = new class_28(var0);
-      class_28 var10 = var10000;
+      Buffer var10000 = new Buffer(var0);
+      Buffer var10 = var10000;
       int var11 = -1;
 
       while(true) {
@@ -569,7 +569,7 @@ public final class class_166 {
             int var15 = var13 & 63;
             int var16 = var13 >> 6 & 63;
             int var17 = var13 >> 12;
-            int var18 = var10.method_130();
+            int var18 = var10.readUnsignedByte();
             int var19 = var18 >> 2;
             int var20 = var18 & 3;
             if(var17 == var4 && var16 >= var5 && var16 < 8 + var5 && var15 >= var6 && var15 < 8 + var6) {
@@ -2843,8 +2843,8 @@ public final class class_166 {
          }
       }
 
-      class_28 var10000 = new class_28(var0);
-      class_28 var10 = var10000;
+      Buffer var10000 = new Buffer(var0);
+      Buffer var10 = var10000;
 
       for(var7 = 0; var7 < 4; ++var7) {
          for(var8 = 0; var8 < 64; ++var8) {

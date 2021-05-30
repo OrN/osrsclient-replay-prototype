@@ -52,7 +52,7 @@ public class class_45 extends class_27 {
    static String method_521(int var0) {
       try {
          String var10000;
-         if(class_87.field_852.field_2123) {
+         if(class_87.preferences.field_2123) {
             if(var0 >= 266649486) {
                throw new IllegalStateException();
             }
@@ -174,7 +174,7 @@ public class class_45 extends class_27 {
          for(int var2 = 0; var2 < client.field_1461 * 1045404765; ++var2) {
             int var3 = client.field_1462[var2];
             class_99 var4 = client.field_1458[var3];
-            int var5 = var0.method_130();
+            int var5 = var0.readUnsignedByte();
             int var6;
             int var7;
             int var8;
@@ -260,7 +260,7 @@ public class class_45 extends class_27 {
             if(0 != (var5 & 8)) {
                label240: {
                   var6 = var0.method_170();
-                  var7 = var0.method_132();
+                  var7 = var0.readShort();
                   var8 = var4.field_1077 * -130212619 - 64 * (var6 - 697161691 * class_243.field_2700 - 697161691 * class_243.field_2700);
                   var9 = var4.field_1076 * 1248597615 - (var7 - -27903763 * class_154.field_1929 - -27903763 * class_154.field_1929) * 64;
                   if(var8 == 0) {

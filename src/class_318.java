@@ -15,11 +15,11 @@ public class class_318 {
 
 
    // $FF: renamed from: fn (java.lang.String, int) void
-   static final void method_5656(String var0, int var1) {
+   static final void method_5656(String command, int var1) {
       try {
          boolean var10001;
-         if(var0.equalsIgnoreCase("toggleroof")) {
-            if(!class_87.field_852.field_2117) {
+         if(command.equalsIgnoreCase("toggleroof")) {
+            if(!class_87.preferences.roofsHidden) {
                if(var1 <= -61946015) {
                   throw new IllegalStateException();
                }
@@ -29,9 +29,9 @@ public class class_318 {
                var10001 = false;
             }
 
-            class_87.field_852.field_2117 = var10001;
-            class_94.method_1771(-1829875279);
-            if(class_87.field_852.field_2117) {
+            class_87.preferences.roofsHidden = var10001;
+            class_94.savePreferences(-1829875279);
+            if(class_87.preferences.roofsHidden) {
                if(var1 <= -61946015) {
                   throw new IllegalStateException();
                }
@@ -43,12 +43,12 @@ public class class_318 {
          }
 
          boolean var10000;
-         if(var0.equalsIgnoreCase("displayfps")) {
+         if(command.equalsIgnoreCase("displayfps")) {
             if(var1 <= -61946015) {
                throw new IllegalStateException();
             }
 
-            if(!client.field_1431) {
+            if(!client.showFPS) {
                if(var1 <= -61946015) {
                   throw new IllegalStateException();
                }
@@ -58,15 +58,15 @@ public class class_318 {
                var10000 = false;
             }
 
-            client.field_1431 = var10000;
+            client.showFPS = var10000;
          }
 
-         if(var0.equalsIgnoreCase("renderself")) {
+         if(command.equalsIgnoreCase("renderself")) {
             if(var1 <= -61946015) {
                throw new IllegalStateException();
             }
 
-            if(!client.field_1536) {
+            if(!client.renderSelf) {
                if(var1 <= -61946015) {
                   return;
                }
@@ -76,23 +76,23 @@ public class class_318 {
                var10000 = false;
             }
 
-            client.field_1536 = var10000;
+            client.renderSelf = var10000;
          }
 
-         if(var0.equalsIgnoreCase("mouseovertext")) {
+         if(command.equalsIgnoreCase("mouseovertext")) {
             if(var1 <= -61946015) {
                throw new IllegalStateException();
             }
 
-            client.field_1565 = !client.field_1565;
+            client.mouseoverText = !client.mouseoverText;
          }
 
-         if(-816484905 * client.field_1586 >= 2) {
+         if(true) {
             if(var1 <= -61946015) {
                throw new IllegalStateException();
             }
 
-            if(var0.equalsIgnoreCase("errortest")) {
+            if(command.equalsIgnoreCase("errortest")) {
                if(var1 <= -61946015) {
                   return;
                }
@@ -100,12 +100,12 @@ public class class_318 {
                throw new RuntimeException();
             }
 
-            if(var0.equalsIgnoreCase("showcoord")) {
+            if(command.equalsIgnoreCase("showcoord")) {
                if(var1 <= -61946015) {
                   throw new IllegalStateException();
                }
 
-               if(!class_287.field_3278.field_4068) {
+               if(!class_287.field_3278.showCoords) {
                   if(var1 <= -61946015) {
                      return;
                   }
@@ -115,18 +115,18 @@ public class class_318 {
                   var10001 = false;
                }
 
-               class_287.field_3278.field_4068 = var10001;
+               class_287.field_3278.showCoords = var10001;
             }
 
-            if(var0.equalsIgnoreCase("fpson")) {
-               client.field_1431 = true;
+            if(command.equalsIgnoreCase("fpson")) {
+               client.showFPS = true;
             }
 
-            if(var0.equalsIgnoreCase("fpsoff")) {
-               client.field_1431 = false;
+            if(command.equalsIgnoreCase("fpsoff")) {
+               client.showFPS = false;
             }
 
-            if(var0.equalsIgnoreCase("gc")) {
+            if(command.equalsIgnoreCase("gc")) {
                if(var1 <= -61946015) {
                   throw new IllegalStateException();
                }
@@ -134,7 +134,7 @@ public class class_318 {
                System.gc();
             }
 
-            if(var0.equalsIgnoreCase("clientdrop")) {
+            if(command.equalsIgnoreCase("clientdrop")) {
                if(var1 <= -61946015) {
                   throw new IllegalStateException();
                }
@@ -144,8 +144,8 @@ public class class_318 {
          }
 
          class_40 var2 = class_112.method_2238(class_266.field_3084, client.field_1463.field_2384, (byte)8);
-         var2.field_263.method_210(var0.length() + 1);
-         var2.field_263.method_120(var0);
+         var2.field_263.writeByte(command.length() + 1);
+         var2.field_263.method_120(command);
          client.field_1463.method_4079(var2);
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);

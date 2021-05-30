@@ -63,18 +63,18 @@ public class class_168 {
    }
 
    // $FF: renamed from: f (java.lang.String, java.lang.String, boolean, int) nm
-   public static class_383 method_3613(String var0, String var1, boolean var2, int var3) {
+   public static RAFileHandle getPreferencesHandle(String var0, String var1, boolean var2, int var3) {
       try {
-         File var4 = new File(class_53.fOldschoolCacheDir, "preferences" + var0 + ".dat");
-         class_383 var10000;
-         if(var4.exists()) {
+         File f = new File(class_53.fOldschoolCacheDir, "preferences" + var0 + ".dat");
+         RAFileHandle var10000;
+         if(f.exists()) {
             if(var3 <= 1676173537) {
                throw new IllegalStateException();
             }
 
             try {
-               var10000 = new class_383(var4, "rw", 10000L);
-               class_383 var12 = var10000;
+               var10000 = new RAFileHandle(f, "rw", 10000L);
+               RAFileHandle var12 = var10000;
                return var12;
             } catch (IOException var10) {
                ;
@@ -97,7 +97,7 @@ public class class_168 {
          }
 
          File var6 = new File(class_115.homeDirectory, "jagex_" + var1 + "_preferences" + var0 + var5 + ".dat");
-         class_383 var7;
+         RAFileHandle var7;
          if(!var2) {
             if(var3 <= 1676173537) {
                throw new IllegalStateException();
@@ -105,7 +105,7 @@ public class class_168 {
 
             if(var6.exists()) {
                try {
-                  var10000 = new class_383(var6, "rw", 10000L);
+                  var10000 = new RAFileHandle(var6, "rw", 10000L);
                   var7 = var10000;
                   return var7;
                } catch (IOException var9) {
@@ -115,7 +115,7 @@ public class class_168 {
          }
 
          try {
-            var10000 = new class_383(var4, "rw", 10000L);
+            var10000 = new RAFileHandle(f, "rw", 10000L);
             var7 = var10000;
             return var7;
          } catch (IOException var8) {

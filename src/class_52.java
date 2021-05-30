@@ -46,11 +46,11 @@ public class class_52 extends class_51 {
    }
 
    // $FF: renamed from: v (nd, int) void
-   void method_571(class_28 var1, int var2) {
+   void method_571(Buffer var1, int var2) {
       try {
-         this.field_385 = var1.method_132() * 1736473067;
+         this.field_385 = var1.readShort() * 1736473067;
          this.field_379 = var1.method_131();
-         this.field_380 = var1.method_132() * 2098216711;
+         this.field_380 = var1.readShort() * 2098216711;
          var1.method_136();
          this.field_381 = var1.method_139(-391631059);
       } catch (RuntimeException var3) {
@@ -67,10 +67,10 @@ public class class_52 extends class_51 {
    }
 
    // $FF: renamed from: f (nd) void
-   void method_570(class_28 var1) {
-      this.field_385 = var1.method_132() * 44094436;
+   void method_570(Buffer var1) {
+      this.field_385 = var1.readShort() * 44094436;
       this.field_379 = var1.method_131();
-      this.field_380 = var1.method_132() * -606450979;
+      this.field_380 = var1.readShort() * -606450979;
       var1.method_136();
       this.field_381 = var1.method_139(-391631059);
    }

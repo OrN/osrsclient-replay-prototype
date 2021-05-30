@@ -26,7 +26,7 @@ public class class_314 {
    // $FF: renamed from: l int
    public static int field_3775;
    // $FF: renamed from: e nd
-   public static class_28 field_3776;
+   public static Buffer field_3776;
    // $FF: renamed from: a int
    public static int field_3777;
    // $FF: renamed from: t int
@@ -60,7 +60,7 @@ public class class_314 {
       var10000 = new class_364(4096);
       field_3769 = var10000;
       field_3775 = 0;
-      class_28 var1 = new class_28(8);
+      Buffer var1 = new Buffer(8);
       field_3776 = var1;
       field_3777 = 0;
       field_3770 = new CRC32();
@@ -118,7 +118,7 @@ public class class_314 {
             class_342.method_6058((class_98)var11, var10, var0, var1, var2, var3, -1004493175);
          }
 
-         if(client.field_1536 && var7 != -1) {
+         if(client.renderSelf && var7 != -1) {
             class_342.method_6058(class_164.field_2044, var7, var0, var1, var2, var3, -82802445);
          }
 

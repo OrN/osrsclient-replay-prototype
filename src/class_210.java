@@ -210,7 +210,7 @@ public class class_210 {
             if(var2 == -1956353066) {
                throw new IllegalStateException();
             }
-         } else if(client.field_1565) {
+         } else if(client.mouseoverText) {
             String var4;
             label68: {
                int var3 = class_192.method_3959();

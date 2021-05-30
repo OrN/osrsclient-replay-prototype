@@ -21,8 +21,8 @@ public class class_209 {
    }
 
    // $FF: renamed from: y (nd, mr) mr
-   static final class_369 method_4152(class_28 var0, class_369 var1) {
-      int var2 = var0.method_130();
+   static final class_369 method_4152(Buffer var0, class_369 var1) {
+      int var2 = var0.readUnsignedByte();
       int var3;
       if(var1 == null) {
          var3 = class_100.method_1845(var2);
@@ -31,7 +31,7 @@ public class class_209 {
       }
 
       for(var3 = 0; var3 < var2; ++var3) {
-         boolean var4 = var0.method_130() == 1;
+         boolean var4 = var0.readUnsignedByte() == 1;
          int var5 = var0.method_134();
          Object var6;
          if(var4) {
@@ -49,8 +49,8 @@ public class class_209 {
    }
 
    // $FF: renamed from: p (nd, mr) mr
-   static final class_369 method_4153(class_28 var0, class_369 var1) {
-      int var2 = var0.method_130();
+   static final class_369 method_4153(Buffer var0, class_369 var1) {
+      int var2 = var0.readUnsignedByte();
       int var3;
       if(var1 == null) {
          var3 = class_100.method_1845(var2);
@@ -59,7 +59,7 @@ public class class_209 {
       }
 
       for(var3 = 0; var3 < var2; ++var3) {
-         boolean var4 = var0.method_130() == 1;
+         boolean var4 = var0.readUnsignedByte() == 1;
          int var5 = var0.method_134();
          Object var6;
          if(var4) {

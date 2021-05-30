@@ -19,10 +19,10 @@ public class class_120 extends class_111 {
 
 
     // $FF: renamed from: v (nd, int) void
-   void method_2231(class_28 var1, int var2) {
+   void method_2231(Buffer var1, int var2) {
       try {
          boolean var10001;
-         if(var1.method_130() == 1) {
+         if(var1.readUnsignedByte() == 1) {
             if(var2 >= -24934327) {
                return;
             }
@@ -43,8 +43,8 @@ public class class_120 extends class_111 {
    }
 
    // $FF: renamed from: f (nd) void
-   void method_2234(class_28 var1) {
-      this.field_1327 = var1.method_130() == 1;
+   void method_2234(Buffer var1) {
+      this.field_1327 = var1.readUnsignedByte() == 1;
       this.field_1324 = var1.method_131();
       this.field_1325 = var1.method_131();
       this.field_1326 = var1.method_131();
@@ -83,7 +83,7 @@ public class class_120 extends class_111 {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28(var3);
+               Buffer var10001 = new Buffer(var3);
                var2.method_1095(var10001, (byte)44);
             }
 
@@ -97,8 +97,8 @@ public class class_120 extends class_111 {
    }
 
    // $FF: renamed from: y (nd) void
-   void method_2233(class_28 var1) {
-      this.field_1327 = var1.method_130() == 1;
+   void method_2233(Buffer var1) {
+      this.field_1327 = var1.readUnsignedByte() == 1;
       this.field_1324 = var1.method_131();
       this.field_1325 = var1.method_131();
       this.field_1326 = var1.method_131();

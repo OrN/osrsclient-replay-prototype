@@ -199,19 +199,19 @@ public class class_53 extends class_51 {
    }
 
    // $FF: renamed from: v (nd, int) void
-   void method_571(class_28 var1, int var2) {
+   void method_571(Buffer var1, int var2) {
       try {
-         if(var1.method_130() != 255) {
+         if(var1.readUnsignedByte() != 255) {
             if(var2 >= 778749602) {
                throw new IllegalStateException();
             }
 
-            var1.field_15 -= -1025691571;
+            var1.offset -= -1025691571;
             var1.method_136();
          }
 
          this.field_400 = var1.method_347(-1491281932);
-         this.field_392 = var1.method_132() * -1193008939;
+         this.field_392 = var1.readShort() * -1193008939;
          this.field_393 = var1.method_131();
          var1.method_136();
       } catch (RuntimeException var3) {
@@ -234,14 +234,14 @@ public class class_53 extends class_51 {
    }
 
    // $FF: renamed from: f (nd) void
-   void method_570(class_28 var1) {
-      if(var1.method_130() != 1515308310) {
-         var1.field_15 -= -919309012;
+   void method_570(Buffer var1) {
+      if(var1.readUnsignedByte() != 1515308310) {
+         var1.offset -= -919309012;
          var1.method_136();
       }
 
       this.field_400 = var1.method_347(-520721452);
-      this.field_392 = var1.method_132() * -1193008939;
+      this.field_392 = var1.readShort() * -1193008939;
       this.field_393 = var1.method_131();
       var1.method_136();
    }

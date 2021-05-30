@@ -459,10 +459,10 @@ public final class class_26 extends Canvas {
          String var5 = null;
          String var6 = null;
          boolean var7 = false;
-         class_28 var9;
-         class_383 var10000;
+         Buffer var9;
+         RAFileHandle var10000;
          File var22;
-         class_28 var29;
+         Buffer var29;
          if(class_396.field_4253.exists()) {
             if(var3 != 1145652403) {
                throw new IllegalStateException();
@@ -470,17 +470,17 @@ public final class class_26 extends Canvas {
 
             try {
                label249: {
-                  var10000 = new class_383(class_396.field_4253, "rw", 10000L);
-                  class_383 var8 = var10000;
-                  var29 = new class_28((int)var8.method_6688());
+                  var10000 = new RAFileHandle(class_396.field_4253, "rw", 10000L);
+                  RAFileHandle var8 = var10000;
+                  var29 = new Buffer((int)var8.size());
 
                   int var10;
-                  for(var9 = var29; var9.field_15 * -442398587 < var9.field_12.length; var9.field_15 += -1025691571 * var10) {
+                  for(var9 = var29; var9.offset * -442398587 < var9.data.length; var9.offset += -1025691571 * var10) {
                      if(var3 != 1145652403) {
                         throw new IllegalStateException();
                      }
 
-                     var10 = var8.method_6689(var9.field_12, -442398587 * var9.field_15, var9.field_12.length - -442398587 * var9.field_15, (byte)-3);
+                     var10 = var8.read(var9.data, -442398587 * var9.offset, var9.data.length - -442398587 * var9.offset, (byte)-3);
                      if(var10 == -1) {
                         if(var3 != 1145652403) {
                            throw new IllegalStateException();
@@ -490,8 +490,8 @@ public final class class_26 extends Canvas {
                      }
                   }
 
-                  var9.field_15 = 0;
-                  var10 = var9.method_130();
+                  var9.offset = 0;
+                  var10 = var9.readUnsignedByte();
                   if(var10 >= 1) {
                      if(var3 != 1145652403) {
                         throw new IllegalStateException();
@@ -504,7 +504,7 @@ public final class class_26 extends Canvas {
                               throw new IllegalStateException();
                            }
 
-                           var11 = var9.method_130();
+                           var11 = var9.readUnsignedByte();
                         }
 
                         if(var10 <= 2) {
@@ -527,7 +527,7 @@ public final class class_26 extends Canvas {
                            }
                         }
 
-                        var8.method_6701();
+                        var8.close();
                         break label249;
                      }
 
@@ -661,11 +661,11 @@ public final class class_26 extends Canvas {
             var9 = null;
 
             try {
-               var10000 = new class_383(class_396.field_4253, "rw", 10000L);
-               class_383 var26 = var10000;
-               var29 = new class_28(500);
-               class_28 var28 = var29;
-               var28.method_210(3);
+               var10000 = new RAFileHandle(class_396.field_4253, "rw", 10000L);
+               RAFileHandle var26 = var10000;
+               var29 = new Buffer(500);
+               Buffer var28 = var29;
+               var28.writeByte(3);
                byte var10001;
                if(var9 != null) {
                   if(var3 != 1145652403) {
@@ -677,7 +677,7 @@ public final class class_26 extends Canvas {
                   var10001 = 0;
                }
 
-               var28.method_210(var10001);
+               var28.writeByte(var10001);
                var28.method_128(var21.getPath(), 499802318);
                if(var9 != null) {
                   if(var3 != 1145652403) {
@@ -688,8 +688,8 @@ public final class class_26 extends Canvas {
                   var28.method_128(var21.getPath(), 499802318);
                }
 
-               var26.method_6686(var28.field_12, 0, -442398587 * var28.field_15, (byte)29);
-               var26.method_6701();
+               var26.write(var28.data, 0, -442398587 * var28.offset, (byte)29);
+               var26.close();
             } catch (IOException var16) {
                var16.printStackTrace();
             }

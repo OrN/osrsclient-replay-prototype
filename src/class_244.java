@@ -102,14 +102,14 @@ public class class_244 implements class_6 {
    }
 
    // $FF: renamed from: j (nd, int) void
-   public void method_15(class_28 var1) {
+   public void method_15(Buffer var1) {
       try {
-         this.field_2704 = var1.method_130() * 761506617;
-         this.field_2702 = var1.method_130() * 399311255;
-         this.field_2703 = var1.method_132() * 173974275;
-         this.field_2707 = var1.method_132() * -143809907;
-         this.field_2705 = var1.method_132() * 1098209729;
-         this.field_2706 = var1.method_132() * -1602338477;
+         this.field_2704 = var1.readUnsignedByte() * 761506617;
+         this.field_2702 = var1.readUnsignedByte() * 399311255;
+         this.field_2703 = var1.readShort() * 173974275;
+         this.field_2707 = var1.readShort() * -143809907;
+         this.field_2705 = var1.readShort() * 1098209729;
+         this.field_2706 = var1.readShort() * -1602338477;
          this.method_4689();
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
@@ -117,13 +117,13 @@ public class class_244 implements class_6 {
    }
 
    // $FF: renamed from: z (nd) void
-   public void method_11(class_28 var1) {
-      this.field_2704 = var1.method_130() * 896131215;
-      this.field_2702 = var1.method_130() * -396182926;
-      this.field_2703 = var1.method_132() * -2050052174;
-      this.field_2707 = var1.method_132() * -143809907;
-      this.field_2705 = var1.method_132() * -786791825;
-      this.field_2706 = var1.method_132() * -1602338477;
+   public void method_11(Buffer var1) {
+      this.field_2704 = var1.readUnsignedByte() * 896131215;
+      this.field_2702 = var1.readUnsignedByte() * -396182926;
+      this.field_2703 = var1.readShort() * -2050052174;
+      this.field_2707 = var1.readShort() * -143809907;
+      this.field_2705 = var1.readShort() * -786791825;
+      this.field_2706 = var1.readShort() * -1602338477;
       this.method_4689();
    }
 
@@ -278,13 +278,13 @@ public class class_244 implements class_6 {
    }
 
     // $FF: renamed from: x (nd) void
-   public void method_28(class_28 var1) {
-      this.field_2704 = var1.method_130() * 761506617;
-      this.field_2702 = var1.method_130() * 399311255;
-      this.field_2703 = var1.method_132() * 173974275;
-      this.field_2707 = var1.method_132() * -143809907;
-      this.field_2705 = var1.method_132() * 1098209729;
-      this.field_2706 = var1.method_132() * -1602338477;
+   public void method_28(Buffer var1) {
+      this.field_2704 = var1.readUnsignedByte() * 761506617;
+      this.field_2702 = var1.readUnsignedByte() * 399311255;
+      this.field_2703 = var1.readShort() * 173974275;
+      this.field_2707 = var1.readShort() * -143809907;
+      this.field_2705 = var1.readShort() * 1098209729;
+      this.field_2706 = var1.readShort() * -1602338477;
       this.method_4689();
    }
 

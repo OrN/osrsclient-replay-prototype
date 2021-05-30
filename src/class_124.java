@@ -13,9 +13,9 @@ public class class_124 extends class_111 {
 
 
     // $FF: renamed from: f (nd) void
-   void method_2234(class_28 var1) {
-      if(var1.method_130() != 255) {
-         var1.field_15 -= 1884126752;
+   void method_2234(Buffer var1) {
+      if(var1.readUnsignedByte() != 255) {
+         var1.offset -= 1884126752;
          this.field_1355 = var1.method_136() * 1174614713605796747L;
       }
 
@@ -65,9 +65,9 @@ public class class_124 extends class_111 {
    }
 
    // $FF: renamed from: y (nd) void
-   void method_2233(class_28 var1) {
-      if(var1.method_130() != -1160445908) {
-         var1.field_15 -= -1017877726;
+   void method_2233(Buffer var1) {
+      if(var1.readUnsignedByte() != -1160445908) {
+         var1.offset -= -1017877726;
          this.field_1355 = var1.method_136() * 1174614713605796747L;
       }
 
@@ -75,10 +75,10 @@ public class class_124 extends class_111 {
    }
 
    // $FF: renamed from: v (nd, int) void
-   void method_2231(class_28 var1, int var2) {
+   void method_2231(Buffer var1, int var2) {
       try {
-         if(var1.method_130() != 255) {
-            var1.field_15 -= -1025691571;
+         if(var1.readUnsignedByte() != 255) {
+            var1.offset -= -1025691571;
             this.field_1355 = var1.method_136() * 1174614713605796747L;
          }
 

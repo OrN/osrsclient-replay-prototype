@@ -34,10 +34,10 @@ public class class_79 extends class_59 {
    }
 
    // $FF: renamed from: f (nd, int) void
-   void method_1241(class_28 var1, int var2) {
+   void method_1241(Buffer var1, int var2) {
       try {
          while(true) {
-            int var3 = var1.method_130();
+            int var3 = var1.readUnsignedByte();
             if(0 == var3) {
                if(var2 == -1529946437) {
                   throw new IllegalStateException();
@@ -65,11 +65,11 @@ public class class_79 extends class_59 {
    }
 
    // $FF: renamed from: g (nd, int) void
-   void method_1242(class_28 var1, int var2) {
+   void method_1242(Buffer var1, int var2) {
       if(1 == var2) {
-         this.field_696 = (char)var1.method_130();
+         this.field_696 = (char)var1.readUnsignedByte();
       } else if(var2 == 2) {
-         this.field_691 = (char)var1.method_130();
+         this.field_691 = (char)var1.readUnsignedByte();
       } else if(3 == var2) {
          this.field_689 = var1.method_139(-391631059);
       } else if(var2 == 4) {
@@ -77,7 +77,7 @@ public class class_79 extends class_59 {
       } else {
          int var3;
          if(var2 == 5) {
-            this.field_693 = var1.method_132() * 1555665691;
+            this.field_693 = var1.readShort() * 1555665691;
             this.field_694 = new int[-2113237229 * this.field_693];
             this.field_687 = new String[this.field_693 * -2113237229];
 
@@ -86,7 +86,7 @@ public class class_79 extends class_59 {
                this.field_687[var3] = var1.method_139(-391631059);
             }
          } else if(var2 == 6) {
-            this.field_693 = var1.method_132() * 1555665691;
+            this.field_693 = var1.readShort() * 1555665691;
             this.field_694 = new int[this.field_693 * -2113237229];
             this.field_695 = new int[this.field_693 * -2113237229];
 
@@ -121,9 +121,9 @@ public class class_79 extends class_59 {
    }
 
    // $FF: renamed from: d (nd) void
-   void method_1247(class_28 var1) {
+   void method_1247(Buffer var1) {
       while(true) {
-         int var2 = var1.method_130();
+         int var2 = var1.readUnsignedByte();
          if(0 == var2) {
             return;
          }
@@ -133,20 +133,20 @@ public class class_79 extends class_59 {
    }
 
    // $FF: renamed from: y (nd, int, byte) void
-   void method_1248(class_28 var1, int var2, byte var3) {
+   void method_1248(Buffer var1, int var2, byte var3) {
       try {
          if(1 == var2) {
             if(var3 == 1) {
                throw new IllegalStateException();
             }
 
-            this.field_696 = (char)var1.method_130();
+            this.field_696 = (char)var1.readUnsignedByte();
          } else if(var2 == 2) {
             if(var3 == 1) {
                return;
             }
 
-            this.field_691 = (char)var1.method_130();
+            this.field_691 = (char)var1.readUnsignedByte();
          } else if(3 == var2) {
             if(var3 == 1) {
                throw new IllegalStateException();
@@ -162,7 +162,7 @@ public class class_79 extends class_59 {
                   throw new IllegalStateException();
                }
 
-               this.field_693 = var1.method_132() * 1555665691;
+               this.field_693 = var1.readShort() * 1555665691;
                this.field_694 = new int[-2113237229 * this.field_693];
                this.field_687 = new String[this.field_693 * -2113237229];
 
@@ -179,7 +179,7 @@ public class class_79 extends class_59 {
                   throw new IllegalStateException();
                }
 
-               this.field_693 = var1.method_132() * 1555665691;
+               this.field_693 = var1.readShort() * 1555665691;
                this.field_694 = new int[this.field_693 * -2113237229];
                this.field_695 = new int[this.field_693 * -2113237229];
 
@@ -196,9 +196,9 @@ public class class_79 extends class_59 {
    }
 
    // $FF: renamed from: l (nd) void
-   void method_1249(class_28 var1) {
+   void method_1249(Buffer var1) {
       while(true) {
-         int var2 = var1.method_130();
+         int var2 = var1.readUnsignedByte();
          if(0 == var2) {
             return;
          }
@@ -208,9 +208,9 @@ public class class_79 extends class_59 {
    }
 
    // $FF: renamed from: s (nd) void
-   void method_1250(class_28 var1) {
+   void method_1250(Buffer var1) {
       while(true) {
-         int var2 = var1.method_130();
+         int var2 = var1.readUnsignedByte();
          if(0 == var2) {
             return;
          }
@@ -220,11 +220,11 @@ public class class_79 extends class_59 {
    }
 
    // $FF: renamed from: o (nd, int) void
-   void method_1251(class_28 var1, int var2) {
+   void method_1251(Buffer var1, int var2) {
       if(1 == var2) {
-         this.field_696 = (char)var1.method_130();
+         this.field_696 = (char)var1.readUnsignedByte();
       } else if(var2 == 2) {
-         this.field_691 = (char)var1.method_130();
+         this.field_691 = (char)var1.readUnsignedByte();
       } else if(3 == var2) {
          this.field_689 = var1.method_139(-391631059);
       } else if(var2 == 4) {
@@ -232,7 +232,7 @@ public class class_79 extends class_59 {
       } else {
          int var3;
          if(var2 == 5) {
-            this.field_693 = var1.method_132() * 1555665691;
+            this.field_693 = var1.readShort() * 1555665691;
             this.field_694 = new int[-2113237229 * this.field_693];
             this.field_687 = new String[this.field_693 * -2113237229];
 
@@ -241,7 +241,7 @@ public class class_79 extends class_59 {
                this.field_687[var3] = var1.method_139(-391631059);
             }
          } else if(var2 == 6) {
-            this.field_693 = var1.method_132() * 1555665691;
+            this.field_693 = var1.readShort() * 1555665691;
             this.field_694 = new int[this.field_693 * -2113237229];
             this.field_695 = new int[this.field_693 * -2113237229];
 
@@ -255,11 +255,11 @@ public class class_79 extends class_59 {
    }
 
    // $FF: renamed from: c (nd, int) void
-   void method_1252(class_28 var1, int var2) {
+   void method_1252(Buffer var1, int var2) {
       if(1 == var2) {
-         this.field_696 = (char)var1.method_130();
+         this.field_696 = (char)var1.readUnsignedByte();
       } else if(var2 == 2) {
-         this.field_691 = (char)var1.method_130();
+         this.field_691 = (char)var1.readUnsignedByte();
       } else if(3 == var2) {
          this.field_689 = var1.method_139(-391631059);
       } else if(var2 == 4) {
@@ -267,7 +267,7 @@ public class class_79 extends class_59 {
       } else {
          int var3;
          if(var2 == 5) {
-            this.field_693 = var1.method_132() * 1555665691;
+            this.field_693 = var1.readShort() * 1555665691;
             this.field_694 = new int[-2113237229 * this.field_693];
             this.field_687 = new String[this.field_693 * -2113237229];
 
@@ -276,7 +276,7 @@ public class class_79 extends class_59 {
                this.field_687[var3] = var1.method_139(-391631059);
             }
          } else if(var2 == 6) {
-            this.field_693 = var1.method_132() * 1555665691;
+            this.field_693 = var1.readShort() * 1555665691;
             this.field_694 = new int[this.field_693 * -2113237229];
             this.field_695 = new int[this.field_693 * -2113237229];
 
@@ -290,11 +290,11 @@ public class class_79 extends class_59 {
    }
 
    // $FF: renamed from: e (nd, int) void
-   void method_1253(class_28 var1, int var2) {
+   void method_1253(Buffer var1, int var2) {
       if(1 == var2) {
-         this.field_696 = (char)var1.method_130();
+         this.field_696 = (char)var1.readUnsignedByte();
       } else if(var2 == 2) {
-         this.field_691 = (char)var1.method_130();
+         this.field_691 = (char)var1.readUnsignedByte();
       } else if(3 == var2) {
          this.field_689 = var1.method_139(-391631059);
       } else if(var2 == 4) {
@@ -302,7 +302,7 @@ public class class_79 extends class_59 {
       } else {
          int var3;
          if(var2 == 5) {
-            this.field_693 = var1.method_132() * 684257681;
+            this.field_693 = var1.readShort() * 684257681;
             this.field_694 = new int[-2113237229 * this.field_693];
             this.field_687 = new String[this.field_693 * 223195537];
 
@@ -311,7 +311,7 @@ public class class_79 extends class_59 {
                this.field_687[var3] = var1.method_139(-391631059);
             }
          } else if(var2 == 6) {
-            this.field_693 = var1.method_132() * 1910502704;
+            this.field_693 = var1.readShort() * 1910502704;
             this.field_694 = new int[this.field_693 * -2113237229];
             this.field_695 = new int[this.field_693 * 982270869];
 
@@ -325,9 +325,9 @@ public class class_79 extends class_59 {
    }
 
    // $FF: renamed from: u (nd) void
-   void method_1254(class_28 var1) {
+   void method_1254(Buffer var1) {
       while(true) {
-         int var2 = var1.method_130();
+         int var2 = var1.readUnsignedByte();
          if(0 == var2) {
             return;
          }

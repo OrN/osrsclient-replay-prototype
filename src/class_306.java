@@ -49,9 +49,9 @@ public abstract class class_306 {
          int var4 = var1.length;
          int var3 = class_151.method_3216(var1, 0, var4);
          this.field_3718 = -848786671 * var3;
-         class_28 var10000 = new class_28(class_186.method_3876(var1, 1410541122));
-         class_28 var5 = var10000;
-         int var6 = var5.method_130();
+         Buffer var10000 = new Buffer(class_186.method_3876(var1, 1410541122));
+         Buffer var5 = var10000;
+         int var6 = var5.readUnsignedByte();
          if(var6 >= 5) {
             if(var2 == 1649650644) {
                throw new IllegalStateException();
@@ -66,7 +66,7 @@ public abstract class class_306 {
                   var5.method_135();
                }
 
-               int var7 = var5.method_130();
+               int var7 = var5.readUnsignedByte();
                if(var6 >= 7) {
                   if(var2 == 1649650644) {
                      return;
@@ -74,7 +74,7 @@ public abstract class class_306 {
 
                   this.field_3721 = var5.method_133(-1043655096) * 787231007;
                } else {
-                  this.field_3721 = var5.method_132() * 787231007;
+                  this.field_3721 = var5.readShort() * 787231007;
                }
 
                int var8 = 0;
@@ -102,7 +102,7 @@ public abstract class class_306 {
                         return;
                      }
 
-                     this.field_3706[var10] = var8 += var5.method_132();
+                     this.field_3706[var10] = var8 += var5.readShort();
                      if(this.field_3706[var10] > var9) {
                         if(var2 == 1649650644) {
                            throw new IllegalStateException();
@@ -159,7 +159,7 @@ public abstract class class_306 {
                      throw new IllegalStateException();
                   }
 
-                  this.field_3710[this.field_3706[var10]] = var5.method_132();
+                  this.field_3710[this.field_3706[var10]] = var5.readShort();
                }
 
                int var11;
@@ -209,7 +209,7 @@ public abstract class class_306 {
                            throw new IllegalStateException();
                         }
 
-                        var15 = this.field_3712[var11][var14] = var8 += var5.method_132();
+                        var15 = this.field_3712[var11][var14] = var8 += var5.readShort();
                         if(var15 > var13) {
                            var13 = var15;
                         }
@@ -427,9 +427,9 @@ public abstract class class_306 {
 
    // $FF: renamed from: ex (byte[]) byte[]
    static final byte[] method_5386(byte[] var0) {
-      class_28 var10000 = new class_28(var0);
-      class_28 var1 = var10000;
-      int var2 = var1.method_130();
+      Buffer var10000 = new Buffer(var0);
+      Buffer var1 = var10000;
+      int var2 = var1.readUnsignedByte();
       int var3 = var1.method_135();
       if(var3 >= 0 && (0 == 269464329 * field_3711 || var3 <= field_3711 * 269464329)) {
          if(0 == var2) {
@@ -608,9 +608,9 @@ public abstract class class_306 {
 
    // $FF: renamed from: el (byte[]) byte[]
    static final byte[] method_5397(byte[] var0) {
-      class_28 var10000 = new class_28(var0);
-      class_28 var1 = var10000;
-      int var2 = var1.method_130();
+      Buffer var10000 = new Buffer(var0);
+      Buffer var1 = var10000;
+      int var2 = var1.readUnsignedByte();
       int var3 = var1.method_135();
       if(var3 >= 0 && (0 == 269464329 * field_3711 || var3 <= field_3711 * 269464329)) {
          if(0 == var2) {
@@ -674,7 +674,7 @@ public abstract class class_306 {
                   return true;
                }
             } else {
-               class_28 var10000;
+               Buffer var10000;
                byte[] var21;
                label189: {
                   if(var2 != null) {
@@ -706,9 +706,9 @@ public abstract class class_306 {
                         }
 
                         var21 = class_319.method_5659(this.field_3709[var1], true, (byte)47);
-                        var10000 = new class_28(var21);
-                        class_28 var9 = var10000;
-                        var9.method_294(var2, 5, var9.field_12.length, 141901592);
+                        var10000 = new Buffer(var21);
+                        Buffer var9 = var10000;
+                        var9.method_294(var2, 5, var9.data.length, 141901592);
                         break label189;
                      }
                   }
@@ -761,10 +761,10 @@ public abstract class class_306 {
                   --var10;
                   int var11 = var22[var10] & 255;
                   var10 -= var11 * var4 * 4;
-                  var10000 = new class_28(var22);
-                  class_28 var23 = var10000;
+                  var10000 = new Buffer(var22);
+                  Buffer var23 = var10000;
                   int[] var24 = new int[var4];
-                  var23.field_15 = -1025691571 * var10;
+                  var23.offset = -1025691571 * var10;
 
                   int var26;
                   for(var14 = 0; var14 < var11; ++var14) {
@@ -795,7 +795,7 @@ public abstract class class_306 {
                      var24[var26] = 0;
                   }
 
-                  var23.field_15 = -1025691571 * var10;
+                  var23.offset = -1025691571 * var10;
                   var26 = 0;
 
                   for(var16 = 0; var16 < var11; ++var16) {
@@ -886,13 +886,13 @@ public abstract class class_306 {
          if(var6) {
             return true;
          } else {
-            class_28 var10000;
+            Buffer var10000;
             byte[] var19;
             if(var2 != null && (0 != var2[0] || 0 != var2[1] || 0 != var2[2] || 0 != var2[3])) {
                var19 = class_319.method_5659(this.field_3709[var1], true, (byte)3);
-               var10000 = new class_28(var19);
-               class_28 var8 = var10000;
-               var8.method_294(var2, 5, var8.field_12.length, 141901592);
+               var10000 = new Buffer(var19);
+               Buffer var8 = var10000;
+               var8.method_294(var2, 5, var8.data.length, 141901592);
             } else {
                var19 = class_319.method_5659(this.field_3709[var1], false, (byte)84);
             }
@@ -922,10 +922,10 @@ public abstract class class_306 {
                --var9;
                int var10 = var20[var9] & 255;
                var9 -= var10 * var3 * 4;
-               var10000 = new class_28(var20);
-               class_28 var21 = var10000;
+               var10000 = new Buffer(var20);
+               Buffer var21 = var10000;
                int[] var22 = new int[var3];
-               var21.field_15 = -1025691571 * var9;
+               var21.offset = -1025691571 * var9;
 
                int var24;
                for(var13 = 0; var13 < var10; ++var13) {
@@ -944,7 +944,7 @@ public abstract class class_306 {
                   var22[var24] = 0;
                }
 
-               var21.field_15 = -1025691571 * var9;
+               var21.offset = -1025691571 * var9;
                var24 = 0;
 
                for(var15 = 0; var15 < var10; ++var15) {
@@ -1088,19 +1088,19 @@ public abstract class class_306 {
       int var3 = var1.length;
       int var2 = class_151.method_3216(var1, 0, var3);
       this.field_3718 = -848786671 * var2;
-      class_28 var10000 = new class_28(class_186.method_3876(var1, 1880620260));
-      class_28 var4 = var10000;
-      int var5 = var4.method_130();
+      Buffer var10000 = new Buffer(class_186.method_3876(var1, 1880620260));
+      Buffer var4 = var10000;
+      int var5 = var4.readUnsignedByte();
       if(var5 >= 5 && var5 <= 7) {
          if(var5 >= 6) {
             var4.method_135();
          }
 
-         int var6 = var4.method_130();
+         int var6 = var4.readUnsignedByte();
          if(var5 >= 7) {
             this.field_3721 = var4.method_133(-498469375) * 787231007;
          } else {
-            this.field_3721 = var4.method_132() * 787231007;
+            this.field_3721 = var4.readShort() * 787231007;
          }
 
          int var7 = 0;
@@ -1116,7 +1116,7 @@ public abstract class class_306 {
             }
          } else {
             for(var9 = 0; var9 < 15338207 * this.field_3721; ++var9) {
-               this.field_3706[var9] = var7 += var4.method_132();
+               this.field_3706[var9] = var7 += var4.readShort();
                if(this.field_3706[var9] > var8) {
                   var8 = this.field_3706[var9];
                }
@@ -1149,7 +1149,7 @@ public abstract class class_306 {
          }
 
          for(var9 = 0; var9 < 15338207 * this.field_3721; ++var9) {
-            this.field_3710[this.field_3706[var9]] = var4.method_132();
+            this.field_3710[this.field_3706[var9]] = var4.readShort();
          }
 
          int var10;
@@ -1183,7 +1183,7 @@ public abstract class class_306 {
                this.field_3712[var10] = new int[var11];
 
                for(var13 = 0; var13 < var11; ++var13) {
-                  var14 = this.field_3712[var10][var13] = var7 += var4.method_132();
+                  var14 = this.field_3712[var10][var13] = var7 += var4.readShort();
                   if(var14 > var12) {
                      var12 = var14;
                   }
@@ -1674,19 +1674,19 @@ public abstract class class_306 {
       int var3 = var1.length;
       int var2 = class_151.method_3216(var1, 0, var3);
       this.field_3718 = -848786671 * var2;
-      class_28 var10000 = new class_28(class_186.method_3876(var1, 1855958190));
-      class_28 var4 = var10000;
-      int var5 = var4.method_130();
+      Buffer var10000 = new Buffer(class_186.method_3876(var1, 1855958190));
+      Buffer var4 = var10000;
+      int var5 = var4.readUnsignedByte();
       if(var5 >= 5 && var5 <= 7) {
          if(var5 >= 6) {
             var4.method_135();
          }
 
-         int var6 = var4.method_130();
+         int var6 = var4.readUnsignedByte();
          if(var5 >= 7) {
             this.field_3721 = var4.method_133(-1146665658) * 787231007;
          } else {
-            this.field_3721 = var4.method_132() * 787231007;
+            this.field_3721 = var4.readShort() * 787231007;
          }
 
          int var7 = 0;
@@ -1702,7 +1702,7 @@ public abstract class class_306 {
             }
          } else {
             for(var9 = 0; var9 < 15338207 * this.field_3721; ++var9) {
-               this.field_3706[var9] = var7 += var4.method_132();
+               this.field_3706[var9] = var7 += var4.readShort();
                if(this.field_3706[var9] > var8) {
                   var8 = this.field_3706[var9];
                }
@@ -1735,7 +1735,7 @@ public abstract class class_306 {
          }
 
          for(var9 = 0; var9 < 15338207 * this.field_3721; ++var9) {
-            this.field_3710[this.field_3706[var9]] = var4.method_132();
+            this.field_3710[this.field_3706[var9]] = var4.readShort();
          }
 
          int var10;
@@ -1769,7 +1769,7 @@ public abstract class class_306 {
                this.field_3712[var10] = new int[var11];
 
                for(var13 = 0; var13 < var11; ++var13) {
-                  var14 = this.field_3712[var10][var13] = var7 += var4.method_132();
+                  var14 = this.field_3712[var10][var13] = var7 += var4.readShort();
                   if(var14 > var12) {
                      var12 = var14;
                   }
@@ -1871,13 +1871,13 @@ public abstract class class_306 {
          if(var6) {
             return true;
          } else {
-            class_28 var10000;
+            Buffer var10000;
             byte[] var19;
             if(var2 != null && (0 != var2[0] || 0 != var2[1] || 0 != var2[2] || 0 != var2[3])) {
                var19 = class_319.method_5659(this.field_3709[var1], true, (byte)-52);
-               var10000 = new class_28(var19);
-               class_28 var8 = var10000;
-               var8.method_294(var2, 5, var8.field_12.length, 141901592);
+               var10000 = new Buffer(var19);
+               Buffer var8 = var10000;
+               var8.method_294(var2, 5, var8.data.length, 141901592);
             } else {
                var19 = class_319.method_5659(this.field_3709[var1], false, (byte)-104);
             }
@@ -1907,10 +1907,10 @@ public abstract class class_306 {
                --var9;
                int var10 = var20[var9] & -399436190;
                var9 -= var10 * var3 * 4;
-               var10000 = new class_28(var20);
-               class_28 var21 = var10000;
+               var10000 = new Buffer(var20);
+               Buffer var21 = var10000;
                int[] var22 = new int[var3];
-               var21.field_15 = 184428995 * var9;
+               var21.offset = 184428995 * var9;
 
                int var24;
                for(var13 = 0; var13 < var10; ++var13) {
@@ -1929,7 +1929,7 @@ public abstract class class_306 {
                   var22[var24] = 0;
                }
 
-               var21.field_15 = 453711844 * var9;
+               var21.offset = 453711844 * var9;
                var24 = 0;
 
                for(var15 = 0; var15 < var10; ++var15) {
@@ -2045,13 +2045,13 @@ public abstract class class_306 {
          if(var6) {
             return true;
          } else {
-            class_28 var10000;
+            Buffer var10000;
             byte[] var19;
             if(var2 != null && (0 != var2[0] || 0 != var2[1] || 0 != var2[2] || 0 != var2[3])) {
                var19 = class_319.method_5659(this.field_3709[var1], true, (byte)-29);
-               var10000 = new class_28(var19);
-               class_28 var8 = var10000;
-               var8.method_294(var2, 5, var8.field_12.length, 141901592);
+               var10000 = new Buffer(var19);
+               Buffer var8 = var10000;
+               var8.method_294(var2, 5, var8.data.length, 141901592);
             } else {
                var19 = class_319.method_5659(this.field_3709[var1], false, (byte)2);
             }
@@ -2081,10 +2081,10 @@ public abstract class class_306 {
                --var9;
                int var10 = var20[var9] & 255;
                var9 -= var10 * var3 * 4;
-               var10000 = new class_28(var20);
-               class_28 var21 = var10000;
+               var10000 = new Buffer(var20);
+               Buffer var21 = var10000;
                int[] var22 = new int[var3];
-               var21.field_15 = -1025691571 * var9;
+               var21.offset = -1025691571 * var9;
 
                int var24;
                for(var13 = 0; var13 < var10; ++var13) {
@@ -2103,7 +2103,7 @@ public abstract class class_306 {
                   var22[var24] = 0;
                }
 
-               var21.field_15 = -1025691571 * var9;
+               var21.offset = -1025691571 * var9;
                var24 = 0;
 
                for(var15 = 0; var15 < var10; ++var15) {
@@ -2175,13 +2175,13 @@ public abstract class class_306 {
          if(var6) {
             return true;
          } else {
-            class_28 var10000;
+            Buffer var10000;
             byte[] var19;
             if(var2 != null && (0 != var2[0] || 0 != var2[1] || 0 != var2[2] || 0 != var2[3])) {
                var19 = class_319.method_5659(this.field_3709[var1], true, (byte)-10);
-               var10000 = new class_28(var19);
-               class_28 var8 = var10000;
-               var8.method_294(var2, 5, var8.field_12.length, 141901592);
+               var10000 = new Buffer(var19);
+               Buffer var8 = var10000;
+               var8.method_294(var2, 5, var8.data.length, 141901592);
             } else {
                var19 = class_319.method_5659(this.field_3709[var1], false, (byte)-50);
             }
@@ -2211,10 +2211,10 @@ public abstract class class_306 {
                --var9;
                int var10 = var20[var9] & 255;
                var9 -= var10 * var3 * 4;
-               var10000 = new class_28(var20);
-               class_28 var21 = var10000;
+               var10000 = new Buffer(var20);
+               Buffer var21 = var10000;
                int[] var22 = new int[var3];
-               var21.field_15 = -584882146 * var9;
+               var21.offset = -584882146 * var9;
 
                int var24;
                for(var13 = 0; var13 < var10; ++var13) {
@@ -2233,7 +2233,7 @@ public abstract class class_306 {
                   var22[var24] = 0;
                }
 
-               var21.field_15 = -1025691571 * var9;
+               var21.offset = -1025691571 * var9;
                var24 = 0;
 
                for(var15 = 0; var15 < var10; ++var15) {
@@ -2285,13 +2285,13 @@ public abstract class class_306 {
          if(var6) {
             return true;
          } else {
-            class_28 var10000;
+            Buffer var10000;
             byte[] var19;
             if(var2 != null && (0 != var2[0] || 0 != var2[1] || 0 != var2[2] || 0 != var2[3])) {
                var19 = class_319.method_5659(this.field_3709[var1], true, (byte)13);
-               var10000 = new class_28(var19);
-               class_28 var8 = var10000;
-               var8.method_294(var2, 5, var8.field_12.length, 141901592);
+               var10000 = new Buffer(var19);
+               Buffer var8 = var10000;
+               var8.method_294(var2, 5, var8.data.length, 141901592);
             } else {
                var19 = class_319.method_5659(this.field_3709[var1], false, (byte)-19);
             }
@@ -2321,10 +2321,10 @@ public abstract class class_306 {
                --var9;
                int var10 = var20[var9] & 255;
                var9 -= var10 * var3 * 4;
-               var10000 = new class_28(var20);
-               class_28 var21 = var10000;
+               var10000 = new Buffer(var20);
+               Buffer var21 = var10000;
                int[] var22 = new int[var3];
-               var21.field_15 = -1025691571 * var9;
+               var21.offset = -1025691571 * var9;
 
                int var24;
                for(var13 = 0; var13 < var10; ++var13) {
@@ -2343,7 +2343,7 @@ public abstract class class_306 {
                   var22[var24] = 0;
                }
 
-               var21.field_15 = -1025691571 * var9;
+               var21.offset = -1025691571 * var9;
                var24 = 0;
 
                for(var15 = 0; var15 < var10; ++var15) {
@@ -2428,19 +2428,19 @@ public abstract class class_306 {
       int var3 = var1.length;
       int var2 = class_151.method_3216(var1, 0, var3);
       this.field_3718 = -1678290958 * var2;
-      class_28 var10000 = new class_28(class_186.method_3876(var1, 1937221977));
-      class_28 var4 = var10000;
-      int var5 = var4.method_130();
+      Buffer var10000 = new Buffer(class_186.method_3876(var1, 1937221977));
+      Buffer var4 = var10000;
+      int var5 = var4.readUnsignedByte();
       if(var5 >= 5 && var5 <= 7) {
          if(var5 >= 6) {
             var4.method_135();
          }
 
-         int var6 = var4.method_130();
+         int var6 = var4.readUnsignedByte();
          if(var5 >= 7) {
             this.field_3721 = var4.method_133(943539789) * 787231007;
          } else {
-            this.field_3721 = var4.method_132() * 1526024549;
+            this.field_3721 = var4.readShort() * 1526024549;
          }
 
          int var7 = 0;
@@ -2456,7 +2456,7 @@ public abstract class class_306 {
             }
          } else {
             for(var9 = 0; var9 < -501892557 * this.field_3721; ++var9) {
-               this.field_3706[var9] = var7 += var4.method_132();
+               this.field_3706[var9] = var7 += var4.readShort();
                if(this.field_3706[var9] > var8) {
                   var8 = this.field_3706[var9];
                }
@@ -2489,7 +2489,7 @@ public abstract class class_306 {
          }
 
          for(var9 = 0; var9 < 793810720 * this.field_3721; ++var9) {
-            this.field_3710[this.field_3706[var9]] = var4.method_132();
+            this.field_3710[this.field_3706[var9]] = var4.readShort();
          }
 
          int var10;
@@ -2523,7 +2523,7 @@ public abstract class class_306 {
                this.field_3712[var10] = new int[var11];
 
                for(var13 = 0; var13 < var11; ++var13) {
-                  var14 = this.field_3712[var10][var13] = var7 += var4.method_132();
+                  var14 = this.field_3712[var10][var13] = var7 += var4.readShort();
                   if(var14 > var12) {
                      var12 = var14;
                   }
@@ -2589,19 +2589,19 @@ public abstract class class_306 {
       int var3 = var1.length;
       int var2 = class_151.method_3216(var1, 0, var3);
       this.field_3718 = 612528621 * var2;
-      class_28 var10000 = new class_28(class_186.method_3876(var1, 1908452011));
-      class_28 var4 = var10000;
-      int var5 = var4.method_130();
+      Buffer var10000 = new Buffer(class_186.method_3876(var1, 1908452011));
+      Buffer var4 = var10000;
+      int var5 = var4.readUnsignedByte();
       if(var5 >= 5 && var5 <= 7) {
          if(var5 >= 6) {
             var4.method_135();
          }
 
-         int var6 = var4.method_130();
+         int var6 = var4.readUnsignedByte();
          if(var5 >= 7) {
             this.field_3721 = var4.method_133(1386469108) * 77320269;
          } else {
-            this.field_3721 = var4.method_132() * 631352146;
+            this.field_3721 = var4.readShort() * 631352146;
          }
 
          int var7 = 0;
@@ -2617,7 +2617,7 @@ public abstract class class_306 {
             }
          } else {
             for(var9 = 0; var9 < -1408654283 * this.field_3721; ++var9) {
-               this.field_3706[var9] = var7 += var4.method_132();
+               this.field_3706[var9] = var7 += var4.readShort();
                if(this.field_3706[var9] > var8) {
                   var8 = this.field_3706[var9];
                }
@@ -2650,7 +2650,7 @@ public abstract class class_306 {
          }
 
          for(var9 = 0; var9 < 15338207 * this.field_3721; ++var9) {
-            this.field_3710[this.field_3706[var9]] = var4.method_132();
+            this.field_3710[this.field_3706[var9]] = var4.readShort();
          }
 
          int var10;
@@ -2684,7 +2684,7 @@ public abstract class class_306 {
                this.field_3712[var10] = new int[var11];
 
                for(var13 = 0; var13 < var11; ++var13) {
-                  var14 = this.field_3712[var10][var13] = var7 += var4.method_132();
+                  var14 = this.field_3712[var10][var13] = var7 += var4.readShort();
                   if(var14 > var12) {
                      var12 = var14;
                   }
@@ -2797,9 +2797,9 @@ public abstract class class_306 {
 
    // $FF: renamed from: ew (byte[]) byte[]
    static final byte[] method_5481(byte[] var0) {
-      class_28 var10000 = new class_28(var0);
-      class_28 var1 = var10000;
-      int var2 = var1.method_130();
+      Buffer var10000 = new Buffer(var0);
+      Buffer var1 = var10000;
+      int var2 = var1.readUnsignedByte();
       int var3 = var1.method_135();
       if(var3 >= 0 && (0 == 269464329 * field_3711 || var3 <= field_3711 * 269464329)) {
          if(0 == var2) {
@@ -2828,9 +2828,9 @@ public abstract class class_306 {
 
    // $FF: renamed from: ej (byte[]) byte[]
    static final byte[] method_5482(byte[] var0) {
-      class_28 var10000 = new class_28(var0);
-      class_28 var1 = var10000;
-      int var2 = var1.method_130();
+      Buffer var10000 = new Buffer(var0);
+      Buffer var1 = var10000;
+      int var2 = var1.readUnsignedByte();
       int var3 = var1.method_135();
       if(var3 >= 0 && (0 == 269464329 * field_3711 || var3 <= field_3711 * 366634365)) {
          if(0 == var2) {
@@ -2872,9 +2872,9 @@ public abstract class class_306 {
 
    // $FF: renamed from: et (byte[]) byte[]
    static final byte[] method_5484(byte[] var0) {
-      class_28 var10000 = new class_28(var0);
-      class_28 var1 = var10000;
-      int var2 = var1.method_130();
+      Buffer var10000 = new Buffer(var0);
+      Buffer var1 = var10000;
+      int var2 = var1.readUnsignedByte();
       int var3 = var1.method_135();
       if(var3 >= 0 && (0 == 1247381053 * field_3711 || var3 <= field_3711 * -322104510)) {
          if(0 == var2) {
