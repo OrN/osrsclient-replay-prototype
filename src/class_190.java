@@ -775,21 +775,6 @@ public class class_190 {
 
    }
 
-   // $FF: renamed from: ad (boolean) nm
-   class_383 method_3933(boolean var1) {
-      return class_168.method_3613("2", class_154.field_1933.field_3347, var1, 1800896978);
-   }
-
-   // $FF: renamed from: ai (boolean) nm
-   class_383 method_3934(boolean var1) {
-      return class_168.method_3613("2", class_154.field_1933.field_3347, var1, 1933408742);
-   }
-
-   // $FF: renamed from: ar (boolean) nm
-   class_383 method_3935(boolean var1) {
-      return class_168.method_3613("2", class_154.field_1933.field_3347, var1, 2105533929);
-   }
-
    // $FF: renamed from: b (boolean, int) nm
    class_383 method_3936(boolean var1) {
       try {
