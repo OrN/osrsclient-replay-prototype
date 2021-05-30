@@ -7,11 +7,9 @@ public class class_128 implements class_0 {
 
    // $FF: renamed from: v java.security.MessageDigest
    final MessageDigest field_1696;
-   // $FF: renamed from: n java.lang.String
-   static final String field_1697 = "SHA-256";
 
 
-   // $FF: renamed from: <init> (aj) void
+    // $FF: renamed from: <init> (aj) void
    class_128(class_130 var1) {
       super();
       this.field_1696 = this.method_2848();
@@ -69,104 +67,6 @@ public class class_128 implements class_0 {
       return this.field_1696.digest();
    }
 
-   // $FF: renamed from: r (int, java.lang.String, long) boolean
-   boolean method_2838(int var1, String var2, long var3) {
-      byte[] var5 = this.method_2837(var2, var3);
-      return method_2835(var5) >= var1;
-   }
-
-   // $FF: renamed from: j (int, java.lang.String, long) boolean
-   boolean method_2839(int var1, String var2, long var3) {
-      byte[] var5 = this.method_2837(var2, var3);
-      return method_2835(var5) >= var1;
-   }
-
-   // $FF: renamed from: u (byte) int
-   static int method_2840(byte var0) {
-      int var1 = 0;
-      if(var0 == 0) {
-         var1 = 8;
-      } else {
-         for(int var2 = var0 & 255; (var2 & 128) == 0; var2 <<= 1) {
-            ++var1;
-         }
-      }
-
-      return var1;
-   }
-
-   // $FF: renamed from: b (byte[]) int
-   static int method_2841(byte[] var0) {
-      int var1 = 0;
-      byte[] var2 = var0;
-
-      for(int var3 = 0; var3 < var2.length; ++var3) {
-         byte var4 = var2[var3];
-         int var5 = method_2836(var4);
-         var1 += var5;
-         if(var5 != 8) {
-            break;
-         }
-      }
-
-      return var1;
-   }
-
-   // $FF: renamed from: d (byte[]) int
-   static int method_2842(byte[] var0) {
-      int var1 = 0;
-      byte[] var2 = var0;
-
-      for(int var3 = 0; var3 < var2.length; ++var3) {
-         byte var4 = var2[var3];
-         int var5 = method_2836(var4);
-         var1 += var5;
-         if(var5 != 8) {
-            break;
-         }
-      }
-
-      return var1;
-   }
-
-   // $FF: renamed from: s (byte) int
-   static int method_2843(byte var0) {
-      int var1 = 0;
-      if(var0 == 0) {
-         var1 = 8;
-      } else {
-         for(int var2 = var0 & 255; (var2 & -1270513696) == 0; var2 <<= 1) {
-            ++var1;
-         }
-      }
-
-      return var1;
-   }
-
-   // $FF: renamed from: e () java.security.MessageDigest
-   MessageDigest method_2844() {
-      try {
-         return MessageDigest.getInstance("SHA-256");
-      } catch (NoSuchAlgorithmException var2) {
-         var2.printStackTrace();
-         return null;
-      }
-   }
-
-   // $FF: renamed from: l (byte) int
-   static int method_2845(byte var0) {
-      int var1 = 0;
-      if(var0 == 0) {
-         var1 = 8;
-      } else {
-         for(int var2 = var0 & 255; (var2 & 753310534) == 0; var2 <<= 1) {
-            ++var1;
-         }
-      }
-
-      return var1;
-   }
-
    // $FF: renamed from: o (java.lang.String, long) byte[]
    byte[] method_2846(String var1, long var2) {
       StringBuilder var4 = new StringBuilder();
@@ -207,23 +107,4 @@ public class class_128 implements class_0 {
       }
    }
 
-   // $FF: renamed from: g () java.security.MessageDigest
-   MessageDigest method_2849() {
-      try {
-         return MessageDigest.getInstance("SHA-256");
-      } catch (NoSuchAlgorithmException var2) {
-         var2.printStackTrace();
-         return null;
-      }
-   }
-
-   // $FF: renamed from: a () java.security.MessageDigest
-   MessageDigest method_2850() {
-      try {
-         return MessageDigest.getInstance("SHA-256");
-      } catch (NoSuchAlgorithmException var2) {
-         var2.printStackTrace();
-         return null;
-      }
-   }
 }

@@ -321,53 +321,7 @@ public class class_105 extends class_104 {
 
    }
 
-   // $FF: renamed from: f (iq, int[], int, int, int) void
-   void method_1957(class_36 var1, int[] var2, int var3, int var4, int var5) {
-      if(0 != (this.field_1212.field_1226[-1025207361 * var1.field_81] & 4) && 1951740649 * var1.field_71 < 0) {
-         int var6 = this.field_1212.field_1231[var1.field_81 * -1025207361] / (-888257726 * class_139.field_1793);
-
-         while(true) {
-            int var7 = (var6 + 1048575 - -576530835 * var1.field_80) / var6;
-            if(var7 > var4) {
-               var1.field_80 += 1692574565 * var4 * var6;
-               break;
-            }
-
-            var1.field_85.method_1943(var2, var3, var7);
-            var3 += var7;
-            var4 -= var7;
-            var1.field_80 += (var6 * var7 - 1048576) * 1692574565;
-            int var8 = class_139.field_1793 * 1631160541 / -1159170570;
-            int var9 = -928286476 / var6;
-            if(var9 < var8) {
-               var8 = var9;
-            }
-
-            class_107 var10 = var1.field_85;
-            if(0 == this.field_1212.field_1216[-702567433 * var1.field_81]) {
-               var1.field_85 = class_107.method_2072(var1.field_86, var10.method_2085(), var10.method_2126(), var10.method_2183());
-            } else {
-               var1.field_85 = class_107.method_2072(var1.field_86, var10.method_2085(), 0, var10.method_2183());
-               this.field_1212.method_1974(var1, var1.field_68.field_252[var1.field_72 * -723940785] < 0, (byte)-39);
-               var1.field_85.method_2082(var8, var10.method_2126());
-            }
-
-            if(var1.field_68.field_252[var1.field_72 * 393648763] < 0) {
-               var1.field_85.method_2074(-1);
-            }
-
-            var10.method_2083(var8);
-            var10.method_1943(var2, var3, var5 - var3);
-            if(var10.method_2087()) {
-               this.field_1211.method_2198(var10);
-            }
-         }
-      }
-
-      var1.field_85.method_1943(var2, var3, var4);
-   }
-
-   // $FF: renamed from: aj (int) void
+    // $FF: renamed from: aj (int) void
    protected void method_1950(int var1) {
       this.field_1211.method_1933(var1);
 
@@ -442,78 +396,7 @@ public class class_105 extends class_104 {
       return (class_104)(null == var1?null:(var1.field_85 != null?var1.field_85:this.method_1947()));
    }
 
-   // $FF: renamed from: y (iq, int[], int, int, int) void
-   void method_1958(class_36 var1, int[] var2, int var3, int var4, int var5) {
-      if(0 != (this.field_1212.field_1226[-1025207361 * var1.field_81] & 4) && 1951740649 * var1.field_71 < 0) {
-         int var6 = this.field_1212.field_1231[var1.field_81 * -1025207361] / (1631160541 * class_139.field_1793);
-
-         while(true) {
-            int var7 = (var6 + 1048575 - -576530835 * var1.field_80) / var6;
-            if(var7 > var4) {
-               var1.field_80 += 1692574565 * var4 * var6;
-               break;
-            }
-
-            var1.field_85.method_1943(var2, var3, var7);
-            var3 += var7;
-            var4 -= var7;
-            var1.field_80 += (var6 * var7 - 1048576) * 1692574565;
-            int var8 = class_139.field_1793 * 1631160541 / 100;
-            int var9 = 262144 / var6;
-            if(var9 < var8) {
-               var8 = var9;
-            }
-
-            class_107 var10 = var1.field_85;
-            if(0 == this.field_1212.field_1216[-1025207361 * var1.field_81]) {
-               var1.field_85 = class_107.method_2072(var1.field_86, var10.method_2085(), var10.method_2126(), var10.method_2183());
-            } else {
-               var1.field_85 = class_107.method_2072(var1.field_86, var10.method_2085(), 0, var10.method_2183());
-               this.field_1212.method_1974(var1, var1.field_68.field_252[var1.field_72 * -723940785] < 0, (byte)-51);
-               var1.field_85.method_2082(var8, var10.method_2126());
-            }
-
-            if(var1.field_68.field_252[var1.field_72 * -723940785] < 0) {
-               var1.field_85.method_2074(-1);
-            }
-
-            var10.method_2083(var8);
-            var10.method_1943(var2, var3, var5 - var3);
-            if(var10.method_2087()) {
-               this.field_1211.method_2198(var10);
-            }
-         }
-      }
-
-      var1.field_85.method_1943(var2, var3, var4);
-   }
-
-   // $FF: renamed from: p (iq, int) void
-   void method_1959(class_36 var1, int var2) {
-      if(0 != (this.field_1212.field_1226[-1247183542 * var1.field_81] & 4) && 1951740649 * var1.field_71 < 0) {
-         int var3 = this.field_1212.field_1231[var1.field_81 * -1952087731] / (class_139.field_1793 * 759107453);
-         int var4 = (1048575 + var3 - -1826857511 * var1.field_80) / var3;
-         var1.field_80 = (var3 * var2 + var1.field_80 * -576530835 & 1811671200) * 1692574565;
-         if(var4 <= var2) {
-            if(0 == this.field_1212.field_1216[-1025207361 * var1.field_81]) {
-               var1.field_85 = class_107.method_2072(var1.field_86, var1.field_85.method_2085(), var1.field_85.method_2126(), var1.field_85.method_2183());
-            } else {
-               var1.field_85 = class_107.method_2072(var1.field_86, var1.field_85.method_2085(), 0, var1.field_85.method_2183());
-               this.field_1212.method_1974(var1, var1.field_68.field_252[-723940785 * var1.field_72] < 0, (byte)-42);
-            }
-
-            if(var1.field_68.field_252[var1.field_72 * 1080191754] < 0) {
-               var1.field_85.method_2074(-1);
-            }
-
-            var2 = 773165478 * var1.field_80 / var3;
-         }
-      }
-
-      var1.field_85.method_1933(var2);
-   }
-
-   // $FF: renamed from: f (char, byte) char
+    // $FF: renamed from: f (char, byte) char
    static char method_1960(char var0, byte var1) {
       try {
          if(var0 == 198) {

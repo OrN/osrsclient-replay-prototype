@@ -19,11 +19,6 @@ public final class class_133 implements class_5, MouseWheelListener {
       }
    }
 
-   // $FF: renamed from: p (java.awt.Component) void
-   void method_2907(Component var1) {
-      var1.addMouseWheelListener(this);
-   }
-
    // $FF: renamed from: n (java.awt.Component, int) void
    void method_2908(Component var1, int var2) {
       try {
@@ -52,17 +47,7 @@ public final class class_133 implements class_5, MouseWheelListener {
       }
    }
 
-   // $FF: renamed from: y (java.awt.Component) void
-   void method_2909(Component var1) {
-      var1.addMouseWheelListener(this);
-   }
-
-   // $FF: renamed from: j (java.awt.Component) void
-   void method_2910(Component var1) {
-      var1.removeMouseWheelListener(this);
-   }
-
-   // $FF: renamed from: v (java.awt.Component, int) void
+    // $FF: renamed from: v (java.awt.Component, int) void
    void method_2911(Component var1, int var2) {
       try {
          var1.addMouseWheelListener(this);

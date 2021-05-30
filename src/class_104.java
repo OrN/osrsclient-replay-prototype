@@ -89,33 +89,4 @@ public abstract class class_104 extends class_27 {
    // $FF: renamed from: aj (int) void
    protected abstract void method_1950(int var1);
 
-   // $FF: renamed from: eh (int[], int, int) void
-   final void method_1951(int[] var1, int var2, int var3) {
-      if(this.field_1208) {
-         this.method_1943(var1, var2, var3);
-      } else {
-         this.method_1933(var3);
-      }
-
-   }
-
-   // $FF: renamed from: ei (int[], int, int) void
-   final void method_1952(int[] var1, int var2, int var3) {
-      if(this.field_1208) {
-         this.method_1943(var1, var2, var3);
-      } else {
-         this.method_1933(var3);
-      }
-
-   }
-
-   // $FF: renamed from: ev (int[], int, int) void
-   final void method_1953(int[] var1, int var2, int var3) {
-      if(this.field_1208) {
-         this.method_1943(var1, var2, var3);
-      } else {
-         this.method_1933(var3);
-      }
-
-   }
 }

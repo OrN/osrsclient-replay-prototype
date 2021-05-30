@@ -6,17 +6,13 @@ public class class_114 extends class_111 {
    int field_1282;
    // $FF: synthetic field
    final class_167 this$0;
-   // $FF: renamed from: ci int
-   static final int field_1283 = 103;
-   // $FF: renamed from: gc op[]
+    // $FF: renamed from: gc op[]
    static class_66[] field_1284;
    // $FF: renamed from: sl my
    static class_30 field_1285;
-   // $FF: renamed from: bv int
-   static final int field_1286 = 8;
 
 
-   // $FF: renamed from: v (nd, int) void
+    // $FF: renamed from: v (nd, int) void
    void method_2231(class_28 var1, int var2) {
       try {
          this.field_1282 = var1.method_132((byte)-59) * 46229643;

@@ -2,27 +2,19 @@
 // $FF: renamed from: h
 public class class_121 extends class_111 {
 
-   // $FF: renamed from: y int
-   public static final int field_1331 = 1400;
-   // $FF: renamed from: n byte
+    // $FF: renamed from: n byte
    byte field_1332;
    // $FF: renamed from: v int
    int field_1333;
-   // $FF: renamed from: pu int
-   static final int field_1334 = 100;
-   // $FF: renamed from: u int[]
+    // $FF: renamed from: u int[]
    static int[] field_1335;
-   // $FF: renamed from: av int
-   public static final int field_1336 = 49;
-   // $FF: renamed from: au client
+    // $FF: renamed from: au client
    static client field_1337;
    // $FF: synthetic field
    final class_167 this$0;
-   // $FF: renamed from: bc int
-   public static final int field_1338 = 98;
 
 
-   // $FF: renamed from: v (nd, int) void
+    // $FF: renamed from: v (nd, int) void
    void method_2231(class_28 var1, int var2) {
       try {
          this.field_1333 = var1.method_132((byte)-76) * -443567941;

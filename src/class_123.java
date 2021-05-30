@@ -6,17 +6,11 @@ public class class_123 extends class_111 {
    static class_307 field_1345;
    // $FF: renamed from: n java.lang.String
    String field_1346;
-   // $FF: renamed from: c int
-   static final int field_1347 = 14;
-   // $FF: renamed from: dx jp
+    // $FF: renamed from: dx jp
    static class_307 field_1348;
-   // $FF: renamed from: f int
-   static final int field_1349 = 2;
-   // $FF: renamed from: o boolean
+    // $FF: renamed from: o boolean
    public static boolean field_1350;
-   // $FF: renamed from: z int
-   static final int field_1351 = 21;
-   // $FF: synthetic field
+    // $FF: synthetic field
    final class_167 this$0;
    // $FF: renamed from: v long
    long field_1352;

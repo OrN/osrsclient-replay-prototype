@@ -4,17 +4,11 @@ import java.util.concurrent.TimeUnit;
 // $FF: renamed from: bd
 public class class_139 {
 
-   // $FF: renamed from: bi int
-   static final int field_1780 = 4;
-   // $FF: renamed from: j boolean
+    // $FF: renamed from: j boolean
    public static boolean field_1781;
-   // $FF: renamed from: r int
-   static final int field_1782 = 10;
-   // $FF: renamed from: d int
+    // $FF: renamed from: d int
    public static int field_1783;
-   // $FF: renamed from: u int
-   protected static final int field_1784 = 256;
-   // $FF: renamed from: c int[]
+    // $FF: renamed from: c int[]
    protected int[] field_1785;
    // $FF: renamed from: e bm
    class_104 field_1786;
@@ -32,9 +26,7 @@ public class class_139 {
    long field_1792;
    // $FF: renamed from: p int
    public static int field_1793;
-   // $FF: renamed from: am int
-   static final int field_1794 = 39;
-   // $FF: renamed from: h int
+    // $FF: renamed from: h int
    int field_1795;
    // $FF: renamed from: q long
    long field_1796;
@@ -48,36 +40,11 @@ public class class_139 {
    int field_1800;
    // $FF: renamed from: w int
    int field_1801;
-   // $FF: renamed from: ic int
-   static final int field_1802 = 16;
-   // $FF: renamed from: al int
-   public static final int field_1803 = 35;
-   // $FF: renamed from: ag bm[]
+    // $FF: renamed from: ag bm[]
    class_104[] field_1804;
-   // $FF: renamed from: bf int
-   public static final int field_1805 = 1012;
-   // $FF: renamed from: o int
-   static final int field_1806 = 7;
-   // $FF: renamed from: aw int
-   static final int field_1807 = 500;
-   // $FF: renamed from: ts int
-   static final int field_1808 = 14;
 
 
-   // $FF: renamed from: ak () void
-   public final synchronized void method_2988() {
-      this.field_1797 = true;
-
-      try {
-         this.method_3002(-2070498959);
-      } catch (Exception var2) {
-         this.method_3001((short)1217);
-         this.field_1792 = (class_87.method_1516((byte)1) + 2000L) * 9154890315640078629L;
-      }
-
-   }
-
-   // $FF: renamed from: i (bm, byte) void
+    // $FF: renamed from: i (bm, byte) void
    public final synchronized void method_2989(class_104 var1, byte var2) {
       try {
          this.field_1786 = var1;
@@ -288,19 +255,6 @@ public class class_139 {
       }
    }
 
-   // $FF: renamed from: au (int) void
-   final void method_2994(int var1) {
-      this.field_1798 -= 630272627 * var1;
-      if(this.field_1798 * -1875393861 < 0) {
-         this.field_1798 = 0;
-      }
-
-      if(null != this.field_1786) {
-         this.field_1786.method_1933(var1);
-      }
-
-   }
-
    // $FF: renamed from: z () void
    protected void method_2995() throws Exception {}
 
@@ -324,11 +278,6 @@ public class class_139 {
       } catch (RuntimeException var6) {
          throw class_223.method_4281(var6, "bd.ag(" + ')');
       }
-   }
-
-   // $FF: renamed from: aq () void
-   public final void method_2997() {
-      this.field_1797 = true;
    }
 
    // $FF: renamed from: n (int, short) void
@@ -924,205 +873,6 @@ public class class_139 {
 
    // $FF: renamed from: x () void
    protected void method_3018() {}
-
-   // $FF: renamed from: ah () void
-   public final synchronized void method_3019() {
-      if(this.field_1785 != null) {
-         long var1 = class_87.method_1516((byte)1);
-
-         try {
-            if(0L != 7200649757382554285L * this.field_1792) {
-               if(var1 < 7200649757382554285L * this.field_1792) {
-                  return;
-               }
-
-               this.method_2998(1181152315 * this.field_1789, (short)-5541);
-               this.field_1792 = 0L;
-               this.field_1797 = true;
-            }
-
-            int var3 = this.method_2999((byte)23);
-            if(-70989363 * this.field_1795 - var3 > this.field_1801 * -847045713) {
-               this.field_1801 = 907090767 * (-70989363 * this.field_1795 - var3);
-            }
-
-            int var4 = this.field_1791 * 1178073075 + this.field_1790 * -908602587;
-            if(256 + var4 > 16384) {
-               var4 = 16128;
-            }
-
-            if(256 + var4 > this.field_1789 * 1181152315) {
-               this.field_1789 += 789826560;
-               if(this.field_1789 * 1181152315 > 16384) {
-                  this.field_1789 = -247676928;
-               }
-
-               this.method_3001((short)3684);
-               this.method_2998(this.field_1789 * 1181152315, (short)-4014);
-               var3 = 0;
-               this.field_1797 = true;
-               if(var4 + 256 > this.field_1789 * 1181152315) {
-                  var4 = 1181152315 * this.field_1789 - 256;
-                  this.field_1791 = (var4 - this.field_1790 * -908602587) * 293108027;
-               }
-            }
-
-            while(var3 < var4) {
-               this.method_3033(this.field_1785, 256);
-               this.method_3000();
-               var3 += 256;
-            }
-
-            if(var1 > this.field_1796 * -1818884622277911111L) {
-               if(!this.field_1797) {
-                  if(-847045713 * this.field_1801 == 0 && this.field_1787 * 1580986367 == 0) {
-                     this.method_3001((short)3561);
-                     this.field_1792 = 9154890315640078629L * (2000L + var1);
-                     return;
-                  }
-
-                  this.field_1791 = Math.min(this.field_1787 * 1580986367, -847045713 * this.field_1801) * 293108027;
-                  this.field_1787 = this.field_1801 * 1983108177;
-               } else {
-                  this.field_1797 = false;
-               }
-
-               this.field_1801 = 0;
-               this.field_1796 = (2000L + var1) * -3931617280022767479L;
-            }
-
-            this.field_1795 = -919778555 * var3;
-         } catch (Exception var6) {
-            this.method_3001((short)-16405);
-            this.field_1792 = 9154890315640078629L * (var1 + 2000L);
-         }
-
-         try {
-            if(var1 > 2377200656236085237L * this.field_1788 + 500000L) {
-               var1 = this.field_1788 * 2377200656236085237L;
-            }
-
-            while(var1 > 5000L + this.field_1788 * 2377200656236085237L) {
-               this.method_3038(256, 615510464);
-               this.field_1788 += (long)(256000 / (field_1793 * 1631160541)) * -5018830713457052579L;
-            }
-         } catch (Exception var5) {
-            this.field_1788 = -5018830713457052579L * var1;
-         }
-
-      }
-   }
-
-   // $FF: renamed from: bd (int[], int) void
-   final void method_3020(int[] var1, int var2) {
-      int var3 = var2;
-      if(field_1781) {
-         var3 = var2 << 1;
-      }
-
-      class_317.method_5628(var1, 0, var3);
-      this.field_1798 -= var2 * 240602240;
-      if(this.field_1786 != null && 116290983 * this.field_1798 <= 0) {
-         this.field_1798 += (185523893 * field_1793 >> 4) * 1652016053;
-         class_82.method_1376(this.field_1786, (short)-11626);
-         this.method_2996(this.field_1786, this.field_1786.method_1932(), -1876727608);
-         int var4 = 0;
-         int var5 = 988172781;
-
-         int var6;
-         class_104 var10;
-         label133:
-         for(var6 = 7; var5 != 0; --var6) {
-            int var7;
-            int var8;
-            if(var6 < 0) {
-               var7 = var6 & 3;
-               var8 = -(var6 >> 2);
-            } else {
-               var7 = var6;
-               var8 = 0;
-            }
-
-            for(int var9 = var5 >>> var7 & 286331153; 0 != var9; var9 >>>= 4) {
-               if((var9 & 1) != 0) {
-                  var5 &= ~(1 << var7);
-                  var10 = null;
-                  class_104 var11 = this.field_1799[var7];
-
-                  while(null != var11) {
-                     class_109 var12 = var11.field_1205;
-                     if(null != var12 && var12.field_1261 > var8) {
-                        var5 |= 1 << var7;
-                        var10 = var11;
-                        var11 = var11.field_1207;
-                     } else {
-                        var11.field_1208 = true;
-                        int var13 = var11.method_1935();
-                        var4 += var13;
-                        if(var12 != null) {
-                           var12.field_1261 += var13;
-                        }
-
-                        if(var4 >= 881118859 * this.field_1800) {
-                           break label133;
-                        }
-
-                        class_104 var14 = var11.method_1931();
-                        if(null != var14) {
-                           for(int var15 = var11.field_1206; null != var14; var14 = var11.method_1947()) {
-                              this.method_2996(var14, var15 * var14.method_1932() >> 8, -1757943153);
-                           }
-                        }
-
-                        class_104 var18 = var11.field_1207;
-                        var11.field_1207 = null;
-                        if(var10 == null) {
-                           this.field_1799[var7] = var18;
-                        } else {
-                           var10.field_1207 = var18;
-                        }
-
-                        if(var18 == null) {
-                           this.field_1804[var7] = var10;
-                        }
-
-                        var11 = var18;
-                     }
-                  }
-               }
-
-               var7 += 4;
-               ++var8;
-            }
-         }
-
-         for(var6 = 0; var6 < 8; ++var6) {
-            class_104 var16 = this.field_1799[var6];
-            class_104[] var17 = this.field_1799;
-            this.field_1804[var6] = null;
-
-            for(var17[var6] = null; var16 != null; var16 = var10) {
-               var10 = var16.field_1207;
-               var16.field_1207 = null;
-            }
-         }
-      }
-
-      if(-1875393861 * this.field_1798 < 0) {
-         this.field_1798 = 0;
-      }
-
-      if(this.field_1786 != null) {
-         this.field_1786.method_1943(var1, 0, var2);
-      }
-
-      this.field_1788 = class_87.method_1516((byte)1) * -5018830713457052579L;
-   }
-
-   // $FF: renamed from: as (bh) void
-   public static final void method_3021(class_3 var0) {
-      class_126.field_1372 = var0;
-   }
 
    // $FF: renamed from: aj (dp, int, int) bd
    public static final class_139 method_3022(class_201 var0, int var1, int var2) {

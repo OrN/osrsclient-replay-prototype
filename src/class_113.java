@@ -4,19 +4,13 @@ public class class_113 extends class_111 {
 
    // $FF: renamed from: n long
    long field_1277;
-   // $FF: renamed from: b int
-   public static final int field_1278 = 1073741824;
-   // $FF: synthetic field
+    // $FF: synthetic field
    final class_167 this$0;
-   // $FF: renamed from: lg int
-   static final int field_1279 = 2000;
-   // $FF: renamed from: v int
+    // $FF: renamed from: v int
    int field_1280;
-   // $FF: renamed from: a int
-   static final int field_1281 = 14;
 
 
-   // $FF: renamed from: n (l, byte) void
+    // $FF: renamed from: n (l, byte) void
    void method_2232(class_171 var1, byte var2) {
       try {
          var1.method_3660(1588156263 * this.field_1280, this.field_1277 * -2287605941349640037L);

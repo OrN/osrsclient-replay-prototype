@@ -4,46 +4,13 @@ public final class class_137 {
 
    // $FF: renamed from: r int
    public static int field_1760;
-   // $FF: renamed from: bo int
-   static final int field_1761 = 2;
-   // $FF: renamed from: du jp
+    // $FF: renamed from: du jp
    static class_307 field_1762;
-   // $FF: renamed from: od int
-   static final int field_1763 = 100;
-   // $FF: renamed from: y int
-   public static final int field_1764 = 3;
-   // $FF: renamed from: ao int
-   static final int field_1765 = 53;
-   // $FF: renamed from: h int
+    // $FF: renamed from: h int
    public static int field_1766;
-   // $FF: renamed from: my int
-   static final int field_1767 = 2;
-   // $FF: renamed from: j int
-   static final int field_1768 = 32;
 
 
-   // $FF: renamed from: <init> () void
-   class_137() throws Throwable {
-      super();
-      try {
-         throw new Error();
-      } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ar.<init>(" + ')');
-      }
-   }
-
-   // $FF: renamed from: n (ax) ai
-   public static class_1 method_2965(class_144 var0) {
-      switch(var0.field_1822 * -537510065) {
-      case 0:
-         class_25 var10000 = new class_25();
-         return var10000;
-      default:
-         throw new IllegalArgumentException();
-      }
-   }
-
-   // $FF: renamed from: jf (int, int, int, int, int, int, int, byte) void
+    // $FF: renamed from: jf (int, int, int, int, int, int, int, byte) void
    static final void method_2966(int var0, int var1, int var2, int var3, int var4, int var5, int var6, byte var7) {
       try {
          if(!class_191.method_3957(var0, (byte)-88)) {
@@ -58,29 +25,7 @@ public final class class_137 {
       }
    }
 
-   // $FF: renamed from: y (ax) ai
-   public static class_1 method_2967(class_144 var0) {
-      switch(var0.field_1822 * -537510065) {
-      case 0:
-         class_25 var10000 = new class_25();
-         return var10000;
-      default:
-         throw new IllegalArgumentException();
-      }
-   }
-
-   // $FF: renamed from: p (ax) ai
-   public static class_1 method_2968(class_144 var0) {
-      switch(var0.field_1822 * -537510065) {
-      case 0:
-         class_25 var10000 = new class_25();
-         return var10000;
-      default:
-         throw new IllegalArgumentException();
-      }
-   }
-
-   // $FF: renamed from: gz (ce, int, int, byte) void
+    // $FF: renamed from: gz (ce, int, int, byte) void
    static void method_2969(class_100 var0, int var1, int var2, byte var3) {
       try {
          if(var1 == -1762760413 * var0.field_1108) {
@@ -148,18 +93,7 @@ public final class class_137 {
       }
    }
 
-   // $FF: renamed from: f (ax) ai
-   public static class_1 method_2970(class_144 var0) {
-      switch(var0.field_1822 * -981361300) {
-      case 0:
-         class_25 var10000 = new class_25();
-         return var10000;
-      default:
-         throw new IllegalArgumentException();
-      }
-   }
-
-   // $FF: renamed from: gk (byte) int
+    // $FF: renamed from: gk (byte) int
    static final int method_2971(byte var0) {
       try {
          if(class_87.field_852.field_2117) {

@@ -10,15 +10,9 @@ public class class_116 extends class_111 {
    int field_1292;
    // $FF: renamed from: v int
    int field_1293;
-   // $FF: renamed from: w int
-   static final int field_1294 = 23;
-   // $FF: renamed from: g int
-   static final int field_1295 = 10;
-   // $FF: renamed from: k int
-   static final int field_1296 = 20;
 
 
-   // $FF: renamed from: f (int, jv, java.lang.String, java.lang.String, int, boolean, int) void
+    // $FF: renamed from: f (int, jv, java.lang.String, java.lang.String, int, boolean, int) void
    public static void method_2246(int var0, class_306 var1, String var2, String var3, int var4, boolean var5, int var6) {
       try {
          int var7 = var1.method_5399(var2, -1943814089);

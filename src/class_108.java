@@ -133,50 +133,12 @@ public class class_108 extends class_104 {
 
    }
 
-   // $FF: renamed from: t (bf) void
-   void method_2202(class_102 var1) {
-      var1.method_108();
-      var1.method_1913();
-      class_27 var2 = this.field_1258.field_3875.field_10;
-      if(var2 == this.field_1258.field_3875) {
-         this.field_1257 = -1;
-      } else {
-         this.field_1257 = ((class_102)var2).field_1187;
-      }
-
-   }
-
-   // $FF: renamed from: k (mw, bf) void
-   void method_2203(class_27 var1, class_102 var2) {
-      while(var1 != this.field_1258.field_3875 && ((class_102)var1).field_1187 <= var2.field_1187) {
-         var1 = var1.field_10;
-      }
-
-      class_335.method_5941(var2, var1);
-      this.field_1257 = ((class_102)this.field_1258.field_3875.field_10).field_1187;
-   }
-
    // $FF: renamed from: l (int) void
    void method_2204(int var1) {
       for(class_104 var2 = (class_104)this.field_1260.method_5944(); var2 != null; var2 = (class_104)this.field_1260.method_5972()) {
          var2.method_1933(var1);
       }
 
-   }
-
-   // $FF: renamed from: o (bm) void
-   public final synchronized void method_2205(class_104 var1) {
-      this.field_1260.method_5970(var1);
-   }
-
-   // $FF: renamed from: c (bm) void
-   public final synchronized void method_2206(class_104 var1) {
-      this.field_1260.method_5970(var1);
-   }
-
-   // $FF: renamed from: e (bm) void
-   public final synchronized void method_2207(class_104 var1) {
-      var1.method_108();
    }
 
    // $FF: renamed from: <init> () void
@@ -188,11 +150,6 @@ public class class_108 extends class_104 {
       this.field_1258 = var10001;
       this.field_1259 = 0;
       this.field_1257 = -1;
-   }
-
-   // $FF: renamed from: a (bm) void
-   public final synchronized void method_2208(class_104 var1) {
-      var1.method_108();
    }
 
    // $FF: renamed from: f () void
@@ -208,69 +165,10 @@ public class class_108 extends class_104 {
 
    }
 
-   // $FF: renamed from: m (mw, bf) void
-   void method_2210(class_27 var1, class_102 var2) {
-      while(var1 != this.field_1258.field_3875 && ((class_102)var1).field_1187 <= var2.field_1187) {
-         var1 = var1.field_10;
-      }
-
-      class_335.method_5941(var2, var1);
-      this.field_1257 = ((class_102)this.field_1258.field_3875.field_10).field_1187;
-   }
-
-   // $FF: renamed from: x (mw, bf) void
-   void method_2211(class_27 var1, class_102 var2) {
-      while(var1 != this.field_1258.field_3875 && ((class_102)var1).field_1187 <= var2.field_1187) {
-         var1 = var1.field_10;
-      }
-
-      class_335.method_5941(var2, var1);
-      this.field_1257 = ((class_102)this.field_1258.field_3875.field_10).field_1187;
-   }
-
-   // $FF: renamed from: z (bf) void
-   void method_2212(class_102 var1) {
-      var1.method_108();
-      var1.method_1913();
-      class_27 var2 = this.field_1258.field_3875.field_10;
-      if(var2 == this.field_1258.field_3875) {
-         this.field_1257 = -1;
-      } else {
-         this.field_1257 = ((class_102)var2).field_1187;
-      }
-
-   }
-
-   // $FF: renamed from: w (bf) void
-   void method_2213(class_102 var1) {
-      var1.method_108();
-      var1.method_1913();
-      class_27 var2 = this.field_1258.field_3875.field_10;
-      if(var2 == this.field_1258.field_3875) {
-         this.field_1257 = -1;
-      } else {
-         this.field_1257 = ((class_102)var2).field_1187;
-      }
-
-   }
-
    // $FF: renamed from: s (int[], int, int) void
    void method_2214(int[] var1, int var2, int var3) {
       for(class_104 var4 = (class_104)this.field_1260.method_5944(); var4 != null; var4 = (class_104)this.field_1260.method_5972()) {
          var4.method_1936(var1, var2, var3);
-      }
-
-   }
-
-   // $FF: renamed from: h (bf) void
-   void method_2215(class_102 var1) {
-      var1.method_108();
-      var1.method_1913();
-      class_27 var2 = this.field_1258.field_3875.field_10;
-      if(var2 == this.field_1258.field_3875) {
-         this.field_1257 = -1;
-      } else {
-         this.field_1257 = ((class_102)var2).field_1187;
       }
 
    }
@@ -313,11 +211,6 @@ public class class_108 extends class_104 {
          }
       } while(var3 != 0);
 
-   }
-
-   // $FF: renamed from: g (bm) void
-   public final synchronized void method_2216(class_104 var1) {
-      var1.method_108();
    }
 
    // $FF: renamed from: ap () bm
@@ -374,22 +267,6 @@ public class class_108 extends class_104 {
 
    }
 
-   // $FF: renamed from: ax (int[], int, int) void
-   void method_2217(int[] var1, int var2, int var3) {
-      for(class_104 var4 = (class_104)this.field_1260.method_5944(); var4 != null; var4 = (class_104)this.field_1260.method_5972()) {
-         var4.method_1936(var1, var2, var3);
-      }
-
-   }
-
-   // $FF: renamed from: ag (int[], int, int) void
-   void method_2218(int[] var1, int var2, int var3) {
-      for(class_104 var4 = (class_104)this.field_1260.method_5944(); var4 != null; var4 = (class_104)this.field_1260.method_5972()) {
-         var4.method_1936(var1, var2, var3);
-      }
-
-   }
-
    // $FF: renamed from: ai (int[], int, int) void
    public final synchronized void method_1945(int[] var1, int var2, int var3) {
       do {
@@ -422,14 +299,6 @@ public class class_108 extends class_104 {
             }
          }
       } while(var3 != 0);
-
-   }
-
-   // $FF: renamed from: as (int[], int, int) void
-   void method_2219(int[] var1, int var2, int var3) {
-      for(class_104 var4 = (class_104)this.field_1260.method_5944(); var4 != null; var4 = (class_104)this.field_1260.method_5972()) {
-         var4.method_1936(var1, var2, var3);
-      }
 
    }
 
@@ -507,27 +376,4 @@ public class class_108 extends class_104 {
       return 0;
    }
 
-   // $FF: renamed from: av (int) void
-   void method_2220(int var1) {
-      for(class_104 var2 = (class_104)this.field_1260.method_5944(); var2 != null; var2 = (class_104)this.field_1260.method_5972()) {
-         var2.method_1933(var1);
-      }
-
-   }
-
-   // $FF: renamed from: ac (int) void
-   void method_2221(int var1) {
-      for(class_104 var2 = (class_104)this.field_1260.method_5944(); var2 != null; var2 = (class_104)this.field_1260.method_5972()) {
-         var2.method_1933(var1);
-      }
-
-   }
-
-   // $FF: renamed from: at (int) void
-   void method_2222(int var1) {
-      for(class_104 var2 = (class_104)this.field_1260.method_5944(); var2 != null; var2 = (class_104)this.field_1260.method_5972()) {
-         var2.method_1933(var1);
-      }
-
-   }
 }

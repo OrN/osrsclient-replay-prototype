@@ -16,11 +16,9 @@ public class class_120 extends class_111 {
    byte field_1328;
    // $FF: renamed from: ie int
    static int field_1329;
-   // $FF: renamed from: d int
-   public static final int field_1330 = 10;
 
 
-   // $FF: renamed from: v (nd, int) void
+    // $FF: renamed from: v (nd, int) void
    void method_2231(class_28 var1, int var2) {
       try {
          boolean var10001;

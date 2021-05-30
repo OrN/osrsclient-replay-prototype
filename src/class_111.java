@@ -4,11 +4,9 @@ public abstract class class_111 extends class_27 {
 
    // $FF: renamed from: lc int
    static int field_1267;
-   // $FF: renamed from: e int
-   public static final int field_1268 = 19;
 
 
-   // $FF: renamed from: p (l) void
+    // $FF: renamed from: p (l) void
    abstract void method_2230(class_171 var1);
 
    // $FF: renamed from: v (nd, int) void

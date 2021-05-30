@@ -4,21 +4,11 @@ public class class_117 extends class_111 {
 
    // $FF: renamed from: n java.lang.String
    String field_1297;
-   // $FF: renamed from: ai int
-   static final int field_1298 = 4;
-   // $FF: synthetic field
+    // $FF: synthetic field
    final class_167 this$0;
-   // $FF: renamed from: ft int
-   static final int field_1299 = 14;
-   // $FF: renamed from: v int
+    // $FF: renamed from: v int
    int field_1300;
-   // $FF: renamed from: a int
-   static final int field_1301 = 65536;
-   // $FF: renamed from: b int
-   public static final int field_1302 = 10;
-   // $FF: renamed from: j int
-   public static final int field_1303 = 5;
-   // $FF: renamed from: rk int
+    // $FF: renamed from: rk int
    static int field_1304;
    // $FF: renamed from: mf int
    static int field_1305;

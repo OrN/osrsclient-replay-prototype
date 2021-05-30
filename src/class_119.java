@@ -4,9 +4,7 @@ public class class_119 extends class_111 {
 
    // $FF: renamed from: n boolean
    boolean field_1314;
-   // $FF: renamed from: bj int
-   public static final int field_1315 = 87;
-   // $FF: synthetic field
+    // $FF: synthetic field
    final class_167 this$0;
    // $FF: renamed from: gj byte[][]
    static byte[][] field_1316;

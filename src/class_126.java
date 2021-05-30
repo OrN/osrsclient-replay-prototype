@@ -12,14 +12,10 @@ public class class_126 extends class_111 {
    static class_171 field_1369;
    // $FF: renamed from: ac oe
    public static class_142 field_1370;
-   // $FF: renamed from: r java.lang.String
-   public static final String field_1371 = "main_file_cache.dat2";
    // $FF: synthetic field
    final class_167 this$0;
    // $FF: renamed from: o bh
    static class_3 field_1372;
-   // $FF: renamed from: s int
-   static final int field_1373 = 16777215;
 
 
    // $FF: renamed from: n (l, byte) void

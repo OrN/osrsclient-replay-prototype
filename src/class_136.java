@@ -1,8 +1,4 @@
 import java.applet.Applet;
-import java.awt.Desktop;
-import java.awt.Desktop.Action;
-import java.net.URI;
-import java.net.URL;
 
 // $FF: renamed from: aq
 public class class_136 {
@@ -11,31 +7,9 @@ public class class_136 {
    public static String field_1751;
    // $FF: renamed from: u int
    static int field_1752;
-   // $FF: renamed from: f int
-   static final int field_1753 = 0;
-   // $FF: renamed from: w int
-   static final int field_1754 = 19136899;
-   // $FF: renamed from: v java.applet.Applet
+    // $FF: renamed from: v java.applet.Applet
    public static Applet field_1755;
-   // $FF: renamed from: bd int
-   static final int field_1756 = 1001;
-   // $FF: renamed from: y int
-   static final int field_1757 = 1;
-   // $FF: renamed from: ql int
-   static final int field_1758 = 24624;
-   // $FF: renamed from: j int
-   static final int field_1759 = 50;
 
-
-   // $FF: renamed from: <init> () void
-   class_136() throws Throwable {
-      super();
-      try {
-         throw new Error();
-      } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "aq.<init>(" + ')');
-      }
-   }
 
    // $FF: renamed from: n (int, int, int) void
    static void method_2953(int var0, int var1, int var2) {
@@ -70,157 +44,12 @@ public class class_136 {
       }
    }
 
-   // $FF: renamed from: y (java.lang.String, boolean, boolean) void
-   public static void method_2954(String var0, boolean var1, boolean var2) {
-      if(var1) {
-         if(!var2 && Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Action.BROWSE)) {
-            try {
-               Desktop.getDesktop().browse(new URI(var0));
-               return;
-            } catch (Exception var4) {
-               ;
-            }
-         }
-
-         if(field_1751.startsWith("win") && !var2) {
-            class_283.method_5183(var0, 0, (byte)0);
-         } else if(field_1751.startsWith("mac")) {
-            class_90.method_1602(var0, 1, "openjs", -337365207);
-         } else {
-            class_283.method_5183(var0, 2, (byte)0);
-         }
-      } else {
-         class_283.method_5183(var0, 3, (byte)0);
-      }
-
-   }
-
-   // $FF: renamed from: b (java.lang.String, int, java.lang.String) boolean
-   static boolean method_2955(String var0, int var1, String var2) {
-      if(var1 == 0) {
-         try {
-            if(!field_1751.startsWith("win")) {
-               throw new Exception();
-            } else if(!var0.startsWith("http://") && !var0.startsWith("https://")) {
-               throw new Exception();
-            } else {
-               String var10 = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789?&=,.%+-_#:/*";
-
-               for(int var4 = 0; var4 < var0.length(); ++var4) {
-                  if(var10.indexOf(var0.charAt(var4)) == -1) {
-                     throw new Exception();
-                  }
-               }
-
-               Runtime.getRuntime().exec("cmd /c start \"j\" \"" + var0 + "\"");
-               return true;
-            }
-         } catch (Throwable var5) {
-            return false;
-         }
-      } else if(var1 == 1) {
-         try {
-            Object var3 = class_129.method_2854(field_1755, var2, new Object[]{(new URL(field_1755.getCodeBase(), var0)).toString()}, (short)-25906);
-            return var3 != null;
-         } catch (Throwable var6) {
-            return false;
-         }
-      } else if(2 == var1) {
-         try {
-            field_1755.getAppletContext().showDocument(new URL(field_1755.getCodeBase(), var0), "_blank");
-            return true;
-         } catch (Exception var7) {
-            return false;
-         }
-      } else if(3 == var1) {
-         try {
-            class_129.method_2853(field_1755, "loggedout", 901657187);
-         } catch (Throwable var9) {
-            ;
-         }
-
-         try {
-            field_1755.getAppletContext().showDocument(new URL(field_1755.getCodeBase(), var0), "_top");
-            return true;
-         } catch (Exception var8) {
-            return false;
-         }
-      } else {
-         throw new IllegalArgumentException();
-      }
-   }
-
-   // $FF: renamed from: j (java.lang.String, int) boolean
-   static boolean method_2956(String var0, int var1) {
-      return class_90.method_1602(var0, var1, "openjs", 1962766571);
-   }
-
-   // $FF: renamed from: r (java.lang.String, int) boolean
-   static boolean method_2957(String var0, int var1) {
-      return class_90.method_1602(var0, var1, "openjs", 258121915);
-   }
-
-   // $FF: renamed from: n (int, int) java.lang.String
+    // $FF: renamed from: n (int, int) java.lang.String
    static String method_2958(int var0, int var1) {
       try {
          return "<col=" + Integer.toHexString(var0) + ">";
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "aq.n(" + ')');
-      }
-   }
-
-   // $FF: renamed from: d (java.lang.String, int, java.lang.String) boolean
-   static boolean method_2959(String var0, int var1, String var2) {
-      if(var1 == 0) {
-         try {
-            if(!field_1751.startsWith("win")) {
-               throw new Exception();
-            } else if(!var0.startsWith("http://") && !var0.startsWith("https://")) {
-               throw new Exception();
-            } else {
-               String var10 = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789?&=,.%+-_#:/*";
-
-               for(int var4 = 0; var4 < var0.length(); ++var4) {
-                  if(var10.indexOf(var0.charAt(var4)) == -1) {
-                     throw new Exception();
-                  }
-               }
-
-               Runtime.getRuntime().exec("cmd /c start \"j\" \"" + var0 + "\"");
-               return true;
-            }
-         } catch (Throwable var5) {
-            return false;
-         }
-      } else if(var1 == 1) {
-         try {
-            Object var3 = class_129.method_2854(field_1755, var2, new Object[]{(new URL(field_1755.getCodeBase(), var0)).toString()}, (short)-4888);
-            return var3 != null;
-         } catch (Throwable var6) {
-            return false;
-         }
-      } else if(2 == var1) {
-         try {
-            field_1755.getAppletContext().showDocument(new URL(field_1755.getCodeBase(), var0), "_blank");
-            return true;
-         } catch (Exception var7) {
-            return false;
-         }
-      } else if(3 == var1) {
-         try {
-            class_129.method_2853(field_1755, "loggedout", 901657187);
-         } catch (Throwable var9) {
-            ;
-         }
-
-         try {
-            field_1755.getAppletContext().showDocument(new URL(field_1755.getCodeBase(), var0), "_top");
-            return true;
-         } catch (Exception var8) {
-            return false;
-         }
-      } else {
-         throw new IllegalArgumentException();
       }
    }
 
@@ -481,11 +310,6 @@ public class class_136 {
       } catch (RuntimeException var4) {
          throw class_223.method_4281(var4, "aq.gi(" + ')');
       }
-   }
-
-   // $FF: renamed from: p (java.lang.String, int) boolean
-   static boolean method_2961(String var0, int var1) {
-      return class_90.method_1602(var0, var1, "openjs", 219637408);
    }
 
    // $FF: renamed from: <clinit> () void

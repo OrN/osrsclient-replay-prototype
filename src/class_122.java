@@ -2,18 +2,12 @@
 // $FF: renamed from: g
 public class class_122 extends class_111 {
 
-   // $FF: renamed from: r int
-   public static final int field_1339 = 9;
    // $FF: synthetic field
    final class_167 this$0;
    // $FF: renamed from: v java.lang.String
    String field_1340;
    // $FF: renamed from: s short[][]
    public static short[][] field_1341;
-   // $FF: renamed from: j int
-   public static final int field_1342 = 8;
-   // $FF: renamed from: ch int
-   public static final int field_1343 = 2;
    // $FF: renamed from: l int
    static int field_1344;
 

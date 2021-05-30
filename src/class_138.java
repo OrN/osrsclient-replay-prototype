@@ -17,24 +17,11 @@ public class class_138 {
    static class_67[] field_1773;
    // $FF: renamed from: ra int
    static int field_1774;
-   // $FF: renamed from: ae int
-   static final int field_1775 = 19136800;
-   // $FF: renamed from: nh int
-   static final int field_1776 = 32;
-   // $FF: renamed from: bf int
-   public static final int field_1777 = 84;
-   // $FF: renamed from: y ai
+    // $FF: renamed from: y ai
    final class_1 field_1778;
-   // $FF: renamed from: at int
-   static final int field_1779 = 43;
 
 
-   // $FF: renamed from: p () boolean
-   public boolean method_2973() {
-      return this.field_1770.isDone();
-   }
-
-   // $FF: renamed from: ip (ef, int, int, int, int) void
+    // $FF: renamed from: ip (ef, int, int, int, int) void
    static final void method_2974(class_88 var0, int var1, int var2, int var3, int var4) {
       try {
          if(673512273 * client.field_1554 < 400) {
@@ -384,17 +371,6 @@ public class class_138 {
       }
    }
 
-   // $FF: renamed from: r () void
-   public void method_2978() {
-      this.field_1772.shutdown();
-      this.field_1772 = null;
-   }
-
-   // $FF: renamed from: j () boolean
-   public boolean method_2979() {
-      return this.field_1770.isDone();
-   }
-
    // $FF: renamed from: y (byte) void
    void method_2980(byte var1) {
       try {
@@ -404,47 +380,6 @@ public class class_138 {
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "as.y(" + ')');
       }
-   }
-
-   // $FF: renamed from: b () void
-   public void method_2981() {
-      this.field_1772.shutdown();
-      this.field_1772 = null;
-   }
-
-   // $FF: renamed from: d () void
-   public void method_2982() {
-      this.field_1772.shutdown();
-      this.field_1772 = null;
-   }
-
-   // $FF: renamed from: s () void
-   public void method_2983() {
-      this.field_1772.shutdown();
-      this.field_1772 = null;
-   }
-
-   // $FF: renamed from: u () nd
-   public class_28 method_2984() {
-      try {
-         return (class_28)this.field_1770.get();
-      } catch (Exception var2) {
-         return null;
-      }
-   }
-
-   // $FF: renamed from: l () void
-   void method_2985() {
-      ExecutorService var10001 = this.field_1772;
-      class_132 var10002 = new class_132(this, this.field_1771, this.field_1778);
-      this.field_1770 = var10001.submit(var10002);
-   }
-
-   // $FF: renamed from: o () void
-   void method_2986() {
-      ExecutorService var10001 = this.field_1772;
-      class_132 var10002 = new class_132(this, this.field_1771, this.field_1778);
-      this.field_1770 = var10001.submit(var10002);
    }
 
    // $FF: renamed from: v (byte) boolean

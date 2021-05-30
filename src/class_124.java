@@ -2,23 +2,17 @@
 // $FF: renamed from: c
 public class class_124 extends class_111 {
 
-   // $FF: renamed from: bz int
-   public static final int field_1353 = 80;
-   // $FF: renamed from: n java.lang.String
+    // $FF: renamed from: n java.lang.String
    String field_1354;
    // $FF: synthetic field
    final class_167 this$0;
    // $FF: renamed from: v long
    long field_1355;
-   // $FF: renamed from: tp int
-   static final int field_1356 = -2;
-   // $FF: renamed from: a io
+    // $FF: renamed from: a io
    static class_37 field_1357;
-   // $FF: renamed from: r float
-   static final float field_1358 = 3.0F;
 
 
-   // $FF: renamed from: f (nd) void
+    // $FF: renamed from: f (nd) void
    void method_2234(class_28 var1) {
       if(var1.method_130(1802918292) != 255) {
          var1.field_15 -= 1884126752;

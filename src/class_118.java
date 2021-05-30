@@ -6,21 +6,15 @@ public class class_118 extends class_111 {
    int field_1307;
    // $FF: renamed from: n int
    int field_1308;
-   // $FF: renamed from: cv int
-   static final int field_1309 = 12;
-   // $FF: renamed from: f int
+    // $FF: renamed from: f int
    int field_1310;
    // $FF: renamed from: y int
    int field_1311;
-   // $FF: renamed from: j int
-   static final int field_1312 = 3;
-   // $FF: synthetic field
+    // $FF: synthetic field
    final class_167 this$0;
-   // $FF: renamed from: g int
-   static final int field_1313 = 16;
 
 
-   // $FF: renamed from: v (nd, int) void
+    // $FF: renamed from: v (nd, int) void
    void method_2231(class_28 var1, int var2) {
       try {
          this.field_1307 = var1.method_135((byte)-69) * 1418693631;

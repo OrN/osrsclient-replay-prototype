@@ -1,7 +1,3 @@
-import java.awt.image.BufferedImage;
-import java.awt.image.PixelGrabber;
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
 import java.lang.management.GarbageCollectorMXBean;
 import java.lang.management.ManagementFactory;
 import java.util.Iterator;
@@ -10,74 +6,16 @@ import javax.imageio.ImageIO;
 // $FF: renamed from: ao
 public class class_135 {
 
-   // $FF: renamed from: n int
-   static final int field_1745 = 1;
-   // $FF: renamed from: bg int
-   public static final int field_1746 = 96;
-   // $FF: renamed from: fr int
-   static final int field_1747 = 104;
-   // $FF: renamed from: bi int
-   static final int field_1748 = 89;
-   // $FF: renamed from: sx lh
+    // $FF: renamed from: sx lh
    static class_350 field_1749;
-   // $FF: renamed from: b int
-   public static final int field_1750 = 9;
 
 
-   // $FF: renamed from: n (byte[]) oh
-   public static final class_67 method_2939(byte[] var0) {
-      BufferedImage var1 = null;
-
-      class_67 var10000;
-      try {
-         var1 = ImageIO.read(new ByteArrayInputStream(var0));
-         int var2 = var1.getWidth();
-         int var3 = var1.getHeight();
-         int[] var4 = new int[var2 * var3];
-         PixelGrabber var5 = new PixelGrabber(var1, 0, 0, var2, var3, var4, 0, var2);
-         var5.grabPixels();
-         var10000 = new class_67(var4, var2, var3);
-         return var10000;
-      } catch (IOException var6) {
-         ;
-      } catch (InterruptedException var7) {
-         ;
-      }
-
-      var10000 = new class_67(0, 0);
-      return var10000;
-   }
-
-   // $FF: renamed from: <clinit> () void
+    // $FF: renamed from: <clinit> () void
    static {
       ImageIO.setUseCache(false);
    }
 
-   // $FF: renamed from: f (byte[]) oh
-   public static final class_67 method_2941(byte[] var0) {
-      BufferedImage var1 = null;
-
-      class_67 var10000;
-      try {
-         var1 = ImageIO.read(new ByteArrayInputStream(var0));
-         int var2 = var1.getWidth();
-         int var3 = var1.getHeight();
-         int[] var4 = new int[var2 * var3];
-         PixelGrabber var5 = new PixelGrabber(var1, 0, 0, var2, var3, var4, 0, var2);
-         var5.grabPixels();
-         var10000 = new class_67(var4, var2, var3);
-         return var10000;
-      } catch (IOException var6) {
-         ;
-      } catch (InterruptedException var7) {
-         ;
-      }
-
-      var10000 = new class_67(0, 0);
-      return var10000;
-   }
-
-   // $FF: renamed from: l (java.lang.String, int) java.lang.String
+    // $FF: renamed from: l (java.lang.String, int) java.lang.String
    public static String method_2942(String var0, int var1) {
       try {
          int var2 = var0.length();
@@ -554,17 +492,7 @@ public class class_135 {
       }
    }
 
-   // $FF: renamed from: <init> () void
-   class_135() throws Throwable {
-      super();
-      try {
-         throw new Error();
-      } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ao.<init>(" + ')');
-      }
-   }
-
-   // $FF: renamed from: n (int, int, int, byte) cf
+    // $FF: renamed from: n (int, int, int, byte) cf
    static class_90 method_2951(int var0, int var1, int var2, byte var3) {
       try {
          int var4 = var0 + (var1 << 8);

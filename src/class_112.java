@@ -10,15 +10,9 @@ public class class_112 extends class_111 {
    int field_1270;
    // $FF: renamed from: y int
    int field_1271;
-   // $FF: renamed from: kq int
-   static final int field_1272 = 2;
-   // $FF: renamed from: am int
-   static final int field_1273 = 43;
-   // $FF: renamed from: qi boolean
+    // $FF: renamed from: qi boolean
    static boolean field_1274;
-   // $FF: renamed from: l int
-   public static final int field_1275 = 41;
-   // $FF: renamed from: v int
+    // $FF: renamed from: v int
    int field_1276;
 
 

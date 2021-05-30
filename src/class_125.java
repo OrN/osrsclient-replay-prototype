@@ -2,21 +2,13 @@
 // $FF: renamed from: ap
 public class class_125 extends class_111 {
 
-   // $FF: renamed from: k int
-   public static final int field_1359 = 2;
-   // $FF: synthetic field
+    // $FF: synthetic field
    final class_167 this$0;
    // $FF: renamed from: da jp
    static class_307 field_1360;
    // $FF: renamed from: v int
    int field_1361;
-   // $FF: renamed from: bn int
-   static final int field_1362 = 20;
-   // $FF: renamed from: ad int
-   static final int field_1363 = 286331153;
-   // $FF: renamed from: ap int
-   public static final int field_1364 = 33;
-   // $FF: renamed from: eh int
+    // $FF: renamed from: eh int
    static int field_1365;
 
 

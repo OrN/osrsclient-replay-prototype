@@ -2,9 +2,7 @@
 // $FF: renamed from: t
 public class class_115 extends class_111 {
 
-   // $FF: renamed from: an int
-   public static final int field_1287 = 66;
-   // $FF: renamed from: v int
+    // $FF: renamed from: v int
    int field_1288;
    // $FF: synthetic field
    final class_167 this$0;

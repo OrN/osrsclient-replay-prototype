@@ -9,9 +9,7 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
 
    // $FF: renamed from: m int
    public static int field_1701;
-   // $FF: renamed from: f int
-   static final int field_1702 = 4;
-   // $FF: renamed from: o int
+    // $FF: renamed from: o int
    public static int field_1703;
    // $FF: renamed from: p ak
    public static class_131 field_1704;
@@ -25,9 +23,7 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
    static volatile long field_1708;
    // $FF: renamed from: u int
    public static int field_1709;
-   // $FF: renamed from: v int
-   static final int field_1710 = 1;
-   // $FF: renamed from: x int
+    // $FF: renamed from: x int
    public static int field_1711;
    // $FF: renamed from: y long
    public static long field_1712;
@@ -47,12 +43,8 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
    static int field_1719;
    // $FF: renamed from: z long
    public static long field_1720;
-   // $FF: renamed from: pf int
-   static final int field_1721 = 1;
    // $FF: renamed from: l int
    public static int field_1722;
-   // $FF: renamed from: n int
-   public static final int field_1723 = 200;
 
 
    // $FF: renamed from: v (double) double
@@ -62,17 +54,6 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "ak.v(" + ')');
       }
-   }
-
-   // $FF: renamed from: ab (java.awt.event.MouseEvent) void
-   public final synchronized void method_2875(MouseEvent var1) {
-      if(null != field_1704) {
-         field_1718 = 0;
-         field_1706 = -494421185;
-         field_1707 = -1569435391;
-         field_1708 = var1.getWhen() * 6626452511999439039L;
-      }
-
    }
 
    public final synchronized void mousePressed(MouseEvent var1) {
@@ -141,12 +122,6 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
       } catch (RuntimeException var4) {
          throw class_223.method_4281(var4, "ak.f(" + ')');
       }
-   }
-
-   // $FF: renamed from: b (java.awt.event.MouseEvent) int
-   final int method_2877(MouseEvent var1) {
-      int var2 = var1.getButton();
-      return !var1.isAltDown() && 2 != var2?(!var1.isMetaDown() && 3 != var2?1:2):4;
    }
 
    public final synchronized void mouseExited(MouseEvent var1) {
@@ -230,25 +205,6 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
    // $FF: renamed from: t (java.awt.event.FocusEvent) void
    public final void method_2881(FocusEvent var1) {}
 
-   // $FF: renamed from: u (java.awt.event.MouseEvent) void
-   public final synchronized void method_2882(MouseEvent var1) {
-      if(null != field_1704) {
-         field_1718 = 0;
-         field_1714 = var1.getX() * 1537867177;
-         field_1715 = var1.getY() * 1303582181;
-         field_1716 = class_87.method_1516((byte)1) * 5733810010149540283L;
-         field_1713 = this.method_2876(var1, 2038612362) * -621965751;
-         if(field_1713 * -1156070407 != 0) {
-            field_1705 = -1604755989 * field_1713;
-         }
-      }
-
-      if(var1.isPopupTrigger()) {
-         var1.consume();
-      }
-
-   }
-
    // $FF: renamed from: p () void
    public static void method_2883() {
       class_131 var0 = field_1704;
@@ -274,19 +230,6 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
       }
    }
 
-   // $FF: renamed from: l (java.awt.event.MouseEvent) void
-   public final synchronized void method_2885(MouseEvent var1) {
-      if(null != field_1704) {
-         field_1718 = 0;
-         field_1705 = 0;
-      }
-
-      if(var1.isPopupTrigger()) {
-         var1.consume();
-      }
-
-   }
-
    // $FF: renamed from: j () void
    public static void method_2886() {
       class_131 var0 = field_1704;
@@ -301,49 +244,6 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
          field_1720 = field_1716 * -52424837630769195L;
          field_1713 = 0;
       }
-   }
-
-   // $FF: renamed from: r (int) void
-   public static void method_2887(int var0) {
-      field_1718 = var0 * 457540795;
-   }
-
-   // $FF: renamed from: s (java.awt.event.MouseEvent) void
-   public final synchronized void method_2888(MouseEvent var1) {
-      if(null != field_1704) {
-         field_1718 = 0;
-         field_1714 = var1.getX() * 1537867177;
-         field_1715 = var1.getY() * 1303582181;
-         field_1716 = class_87.method_1516((byte)1) * 5733810010149540283L;
-         field_1713 = this.method_2876(var1, 1207513966) * -621965751;
-         if(field_1713 * -1156070407 != 0) {
-            field_1705 = -1604755989 * field_1713;
-         }
-      }
-
-      if(var1.isPopupTrigger()) {
-         var1.consume();
-      }
-
-   }
-
-   // $FF: renamed from: d (java.awt.event.MouseEvent) void
-   public final synchronized void method_2889(MouseEvent var1) {
-      if(null != field_1704) {
-         field_1718 = 0;
-         field_1714 = var1.getX() * 1537867177;
-         field_1715 = var1.getY() * 1303582181;
-         field_1716 = class_87.method_1516((byte)1) * 5733810010149540283L;
-         field_1713 = this.method_2876(var1, 1173205899) * -621965751;
-         if(field_1713 * -1156070407 != 0) {
-            field_1705 = -1604755989 * field_1713;
-         }
-      }
-
-      if(var1.isPopupTrigger()) {
-         var1.consume();
-      }
-
    }
 
    public final void mouseClicked(MouseEvent var1) {
@@ -383,41 +283,6 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
       }
    }
 
-   // $FF: renamed from: i (java.awt.event.MouseEvent) void
-   public final synchronized void method_2892(MouseEvent var1) {
-      if(null != field_1704) {
-         field_1718 = 0;
-         field_1705 = 0;
-      }
-
-      if(var1.isPopupTrigger()) {
-         var1.consume();
-      }
-
-   }
-
-   // $FF: renamed from: ae (java.awt.event.MouseEvent) void
-   public final synchronized void method_2893(MouseEvent var1) {
-      if(null != field_1704) {
-         field_1718 = 0;
-         field_1706 = -494421185;
-         field_1707 = 1295926359;
-         field_1708 = var1.getWhen() * 6626452511999439039L;
-      }
-
-   }
-
-   // $FF: renamed from: ap (java.awt.event.MouseEvent) void
-   public final synchronized void method_2894(MouseEvent var1) {
-      if(null != field_1704) {
-         field_1718 = 0;
-         field_1706 = -494421185;
-         field_1707 = -932244074;
-         field_1708 = var1.getWhen() * 6626452511999439039L;
-      }
-
-   }
-
    public final synchronized void mouseMoved(MouseEvent var1) {
       try {
          if(null != field_1704) {
@@ -430,38 +295,6 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "ak.mouseMoved(" + ')');
       }
-   }
-
-   // $FF: renamed from: al (java.awt.event.MouseEvent) void
-   public final synchronized void method_2895(MouseEvent var1) {
-      this.mouseMoved(var1);
-   }
-
-   // $FF: renamed from: ad (java.awt.event.MouseEvent) void
-   public final synchronized void method_2896(MouseEvent var1) {
-      this.mouseMoved(var1);
-   }
-
-   // $FF: renamed from: ai (java.awt.event.MouseEvent) void
-   public final synchronized void method_2897(MouseEvent var1) {
-      if(null != field_1704) {
-         field_1718 = 0;
-         field_1706 = var1.getX() * 494421185;
-         field_1707 = var1.getY() * -47493745;
-         field_1708 = var1.getWhen() * 6626452511999439039L;
-      }
-
-   }
-
-   // $FF: renamed from: ar (java.awt.event.MouseEvent) void
-   public final synchronized void method_2898(MouseEvent var1) {
-      if(null != field_1704) {
-         field_1718 = 0;
-         field_1706 = var1.getX() * 494421185;
-         field_1707 = var1.getY() * 1569435391;
-         field_1708 = var1.getWhen() * 6626452511999439039L;
-      }
-
    }
 
    // $FF: renamed from: fo (int, int) void
