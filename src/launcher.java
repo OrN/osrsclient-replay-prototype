@@ -19,7 +19,13 @@ public class launcher extends JFrame implements AppletStub, AppletContext, Windo
     private Applet applet;
     JConfig config;
 
+    // Settings
+    public static int world = 1;
+
     public static void main(String[] args) {
+        if (args.length > 0)
+            world = Integer.valueOf(args[0]);
+
         instance = new launcher();
     }
 
@@ -39,7 +45,7 @@ public class launcher extends JFrame implements AppletStub, AppletContext, Windo
         System.setProperty("user.home", ".");
 
         config = new JConfig();
-        if (config.fetch("http://oldschool190.runescape.com/jav_config.ws") && config.isSupported()) {
+        if (config.fetch("http://oldschool" + world + ".runescape.com/jav_config.ws") && config.isSupported()) {
             applet.init();
             applet.start();
         }
