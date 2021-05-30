@@ -34,7 +34,7 @@ public class class_405 extends RuntimeException {
          this.field_4293 = var2;
          this.field_4294 = var1;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "oz.<init>(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 

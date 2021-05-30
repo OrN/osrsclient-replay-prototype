@@ -24,7 +24,7 @@ public class class_358 implements Runnable {
 
 
    // $FF: renamed from: p (int) void
-   void method_6246(int var1) {
+   void method_6246() {
       try {
          synchronized(this) {
             if(null == this.field_3984) {
@@ -41,7 +41,7 @@ public class class_358 implements Runnable {
          }
 
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "lw.p(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -120,7 +120,7 @@ public class class_358 implements Runnable {
             throw new IOException();
          }
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "lw.v(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
@@ -147,7 +147,7 @@ public class class_358 implements Runnable {
             }
          }
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "lw.n(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -200,7 +200,7 @@ public class class_358 implements Runnable {
             }
          }
       } catch (RuntimeException var12) {
-         throw class_223.method_4281(var12, "lw.run(" + ')');
+         throw class_223.method_4281(var12);
       }
    }
 
@@ -268,7 +268,7 @@ public class class_358 implements Runnable {
 
          throw new IOException();
       } catch (RuntimeException var10) {
-         throw class_223.method_4281(var10, "lw.y(" + ')');
+         throw class_223.method_4281(var10);
       }
    }
 
@@ -325,7 +325,7 @@ public class class_358 implements Runnable {
             }
          }
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "lw.f(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -450,7 +450,7 @@ public class class_358 implements Runnable {
          this.field_3982.setDaemon(true);
          this.field_3982.start();
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "lw.<init>(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -525,7 +525,7 @@ public class class_358 implements Runnable {
          }
 
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "lw.fx(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 

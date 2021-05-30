@@ -113,7 +113,7 @@ public class class_340 extends class_339 {
             }
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "lp.v(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -122,16 +122,16 @@ public class class_340 extends class_339 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "lp.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: n (lx, int) int
-   public int method_6000(class_338 var1, int var2) {
+   public int method_6000(class_338 var1) {
       try {
          return this.method_6024((class_340)var1, -1023710905);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "lp.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -169,7 +169,7 @@ public class class_340 extends class_339 {
       try {
          return this.method_6024((class_340)var1, -1023710905);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "lp.compareTo(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 

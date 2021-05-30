@@ -31,7 +31,7 @@ public class class_262 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "hk.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

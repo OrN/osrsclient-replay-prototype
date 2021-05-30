@@ -22,7 +22,7 @@ public class class_130 {
 
    // $FF: renamed from: <init> (nd) void
    class_130(class_28 var1) {
-      this(var1.method_130(-1596380039), var1.method_130(127747120), var1.method_139(-391631059));
+      this(var1.method_130(), var1.method_130(), var1.method_139(-391631059));
    }
 
     // $FF: renamed from: <init> (int, int, java.lang.String) void

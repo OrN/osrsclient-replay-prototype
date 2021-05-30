@@ -24,11 +24,11 @@ public class class_365 implements class_14 {
    }
 
    // $FF: renamed from: v (int) int
-   public int method_50(int var1) {
+   public int method_50() {
       try {
          return this.field_4089 * 1076676609;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "mi.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -56,7 +56,7 @@ public class class_365 implements class_14 {
          this.field_4088 = -1515001733 * var1;
          this.field_4089 = var2 * 471021569;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "mi.<init>(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 

@@ -304,22 +304,22 @@ public class class_42 extends class_27 {
    class_42(class_28 var1) {
       super();
       this.field_308 = false;
-      this.field_299 = var1.method_132((byte)-65);
-      this.field_306 = var1.method_130(155585777) == 1;
-      int var2 = var1.method_130(-1542146265);
+      this.field_299 = var1.method_132();
+      this.field_306 = var1.method_130() == 1;
+      int var2 = var1.method_130();
       if(var2 >= 1 && var2 <= 4) {
          this.field_301 = new int[var2];
 
          int var3;
          for(var3 = 0; var3 < var2; ++var3) {
-            this.field_301[var3] = var1.method_132((byte)-50);
+            this.field_301[var3] = var1.method_132();
          }
 
          if(var2 > 1) {
             this.field_302 = new int[var2 - 1];
 
             for(var3 = 0; var3 < var2 - 1; ++var3) {
-               this.field_302[var3] = var1.method_130(954185700);
+               this.field_302[var3] = var1.method_130();
             }
          }
 
@@ -327,18 +327,18 @@ public class class_42 extends class_27 {
             this.field_303 = new int[var2 - 1];
 
             for(var3 = 0; var3 < var2 - 1; ++var3) {
-               this.field_303[var3] = var1.method_130(2070275433);
+               this.field_303[var3] = var1.method_130();
             }
          }
 
          this.field_309 = new int[var2];
 
          for(var3 = 0; var3 < var2; ++var3) {
-            this.field_309[var3] = var1.method_135((byte)-82);
+            this.field_309[var3] = var1.method_135();
          }
 
-         this.field_305 = var1.method_130(582778028);
-         this.field_297 = var1.method_130(-507914727);
+         this.field_305 = var1.method_130();
+         this.field_297 = var1.method_130();
          this.field_307 = null;
       } else {
          throw new RuntimeException();

@@ -29,7 +29,7 @@ public class class_164 {
       try {
          return (int)(var0 >>> 17 & 4294967295L);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "cc.d(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -39,19 +39,19 @@ public class class_164 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "cc.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: x (int, cf, boolean, int) int
-   static int method_3427(int var0, class_90 var1, boolean var2, int var3) {
+   static int method_3427(int var0, int var3) {
       try {
          class_37 var7;
          if(2700 == var0) {
             if(var3 <= -634330132) {
                throw new IllegalStateException();
             } else {
-               var7 = class_71.method_1047(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885], 1049508520);
+               var7 = class_71.method_1047(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = 539336237 * var7.field_229;
                return 1;
             }
@@ -59,7 +59,7 @@ public class class_164 {
             if(var3 <= -634330132) {
                throw new IllegalStateException();
             } else {
-               var7 = class_71.method_1047(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885], 392316299);
+               var7 = class_71.method_1047(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                if(-1 != 539336237 * var7.field_229) {
                   if(var3 <= -634330132) {
                      throw new IllegalStateException();
@@ -101,7 +101,7 @@ public class class_164 {
             return 2;
          }
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "cc.x(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 }

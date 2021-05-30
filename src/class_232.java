@@ -30,17 +30,17 @@ public class class_232 {
    }
 
    // $FF: renamed from: p (byte) int
-   public static int method_4438(byte var0) {
+   public static int method_4438() {
       try {
          return class_145.field_1845 * 1384960375;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "fp.p(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: s (int) fp
    static class_232 method_4439(int var0) {
-      class_232[] var1 = method_4454(-605388644);
+      class_232[] var1 = method_4454();
 
       for(int var2 = 0; var2 < var1.length; ++var2) {
          class_232 var3 = var1[var2];
@@ -53,9 +53,9 @@ public class class_232 {
    }
 
    // $FF: renamed from: f (int, int) fp
-   static class_232 method_4440(int var0, int var1) {
+   static class_232 method_4440(int var0) {
       try {
-         class_232[] var2 = method_4454(368638280);
+         class_232[] var2 = method_4454();
 
          for(int var3 = 0; var3 < var2.length; ++var3) {
             class_232 var4 = var2[var3];
@@ -66,7 +66,7 @@ public class class_232 {
 
          return null;
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "fp.f(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -78,12 +78,12 @@ public class class_232 {
          this.field_2600 = -1921038959 * var2;
          this.field_2599 = -44193917 * var3;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "fp.<init>(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: ai (int, cf, boolean, byte) int
-   static int method_4442(int var0, class_90 var1, boolean var2, byte var3) {
+   static int method_4442(int var0, byte var3) {
       try {
          int var8;
          if(var0 == 4200) {
@@ -352,7 +352,7 @@ public class class_232 {
             }
          }
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "fp.ai(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
@@ -378,7 +378,7 @@ public class class_232 {
 
    // $FF: renamed from: d (int) fp
    static class_232 method_4447(int var0) {
-      class_232[] var1 = method_4454(-1023027290);
+      class_232[] var1 = method_4454();
 
       for(int var2 = 0; var2 < var1.length; ++var2) {
          class_232 var3 = var1[var2];
@@ -406,13 +406,13 @@ public class class_232 {
 
          return var10000;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "fp.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: u (int) fp
    static class_232 method_4449(int var0) {
-      class_232[] var1 = method_4454(-420133779);
+      class_232[] var1 = method_4454();
 
       for(int var2 = 0; var2 < var1.length; ++var2) {
          class_232 var3 = var1[var2];
@@ -425,7 +425,7 @@ public class class_232 {
    }
 
    // $FF: renamed from: q (int, cf, boolean, int) int
-   static int method_4450(int var0, class_90 var1, boolean var2, int var3) {
+   static int method_4450(int var0, int var3) {
       try {
          int var4;
          int var5;
@@ -475,7 +475,7 @@ public class class_232 {
                } else {
                   var4 = class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885];
                   class_79 var11 = class_48.method_549(var4, -647978763);
-                  class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = var11.method_1240(-149949948);
+                  class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = var11.method_1240();
                   return 1;
                }
             } else {
@@ -552,22 +552,22 @@ public class class_232 {
             return 1;
          }
       } catch (RuntimeException var10) {
-         throw class_223.method_4281(var10, "fp.q(" + ')');
+         throw class_223.method_4281(var10);
       }
    }
 
    // $FF: renamed from: a (int) void
-   static void method_4451(int var0) {
+   static void method_4451() {
       try {
          class_177.field_2194 = -1648450872;
-         class_299.method_5348(class_305.field_3461, class_305.field_3581, class_305.field_3643, (byte)-121);
+         class_299.method_5348(class_305.field_3461, class_305.field_3581, class_305.field_3643);
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "fp.a(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: ap (int, cf, boolean, short) int
-   static int method_4452(int var0, class_90 var1, boolean var2, short var3) {
+   static int method_4452(int var0, short var3) {
       try {
          if(3800 == var0) {
             if(var3 >= 180) {
@@ -855,7 +855,7 @@ public class class_232 {
                         if(var3 >= 180) {
                            throw new IllegalStateException();
                         } else {
-                           class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_169.field_2113.method_501((byte)-27);
+                           class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_169.field_2113.method_501();
                            return 1;
                         }
                      } else if(var0 == 3856) {
@@ -931,27 +931,27 @@ public class class_232 {
             }
          }
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "fp.ap(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
    // $FF: renamed from: kj (int, int) void
-   static final void method_4453(int var0, int var1) {
+   static final void method_4453(int var0) {
       try {
          var0 = Math.min(Math.max(var0, 0), 127);
          class_87.field_852.field_2121 = var0 * 156672433;
          class_94.method_1771(-1433770094);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "fp.kj(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: v (int) fp[]
-   static class_232[] method_4454(int var0) {
+   static class_232[] method_4454() {
       try {
          return new class_232[]{field_2595, field_2596, field_2594};
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "fp.v(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -1005,7 +1005,7 @@ public class class_232 {
 
          return var3;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "fp.y(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 }

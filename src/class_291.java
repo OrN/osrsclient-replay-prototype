@@ -30,16 +30,16 @@ public class class_291 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "iy.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: y (int) jn[]
-   public static class_304[] method_5294(int var0) {
+   public static class_304[] method_5294() {
       try {
          return new class_304[]{class_304.field_3400, class_304.field_3397, class_304.field_3398, class_304.field_3399};
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "iy.y(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -107,7 +107,7 @@ public class class_291 {
             }
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "iy.kl(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -145,7 +145,7 @@ public class class_291 {
             return null;
          }
       } catch (RuntimeException var10) {
-         throw class_223.method_4281(var10, "iy.v(" + ')');
+         throw class_223.method_4281(var10);
       }
    }
 }

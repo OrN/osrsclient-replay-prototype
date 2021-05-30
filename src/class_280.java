@@ -25,25 +25,25 @@ public class class_280 {
          this.field_3236 = 1 * var1.field_3236;
          this.field_3235 = var1.field_3235 * 1;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ii.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: f (java.lang.String, int) java.lang.String
-   String method_5155(String var1, int var2) {
+   String method_5155(String var1) {
       try {
          return -1820038389 * this.field_3234 + var1 + (this.field_3236 * -2092998769 >> 6) + var1 + (349527629 * this.field_3235 >> 6) + var1 + (this.field_3236 * -2092998769 & 63) + var1 + (349527629 * this.field_3235 & 63);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ii.f(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: v (int) int
-   public int method_5156(int var1) {
+   public int method_5156() {
       try {
          return this.field_3234 * -1820038389 << 28 | -2092998769 * this.field_3236 << 14 | this.field_3235 * 349527629;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ii.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -51,27 +51,27 @@ public class class_280 {
       try {
          return this == var1?true:(!(var1 instanceof class_280)?false:this.method_5166((class_280)var1, (byte)-43));
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ii.equals(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    public String acv() {
-      return this.method_5155(",", -906196732);
+      return this.method_5155(",");
    }
 
    public int hashCode() {
       try {
-         return this.method_5156(-738811910);
+         return this.method_5156();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ii.hashCode(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    public String toString() {
       try {
-         return this.method_5155(",", 36531623);
+         return this.method_5155(",");
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ii.toString(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -91,7 +91,7 @@ public class class_280 {
    }
 
    public String acx() {
-      return this.method_5155(",", 590589764);
+      return this.method_5155(",");
    }
 
    // $FF: renamed from: j (ii) boolean
@@ -100,11 +100,11 @@ public class class_280 {
    }
 
    public String acm() {
-      return this.method_5155(",", -1139078056);
+      return this.method_5155(",");
    }
 
    public int aco() {
-      return this.method_5156(-738811910);
+      return this.method_5156();
    }
 
    // $FF: renamed from: hm (int, int, int, int, int, int) void
@@ -431,7 +431,7 @@ public class class_280 {
          }
 
       } catch (RuntimeException var20) {
-         throw class_223.method_4281(var20, "ii.hm(" + ')');
+         throw class_223.method_4281(var20);
       }
    }
 
@@ -453,7 +453,7 @@ public class class_280 {
          }
 
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ii.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -470,7 +470,7 @@ public class class_280 {
          this.field_3236 = var2 * 1144577903;
          this.field_3235 = var3 * -1764554107;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "ii.<init>(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -499,16 +499,16 @@ public class class_280 {
             return true;
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ii.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    public int abl() {
-      return this.method_5156(-738811910);
+      return this.method_5156();
    }
 
    public int abu() {
-      return this.method_5156(-738811910);
+      return this.method_5156();
    }
 
    // $FF: renamed from: b (java.lang.String) java.lang.String
@@ -517,13 +517,13 @@ public class class_280 {
    }
 
    public String aci() {
-      return this.method_5155(",", 811489585);
+      return this.method_5155(",");
    }
 
    // $FF: renamed from: v (nb, byte) void
    static final void method_5168(class_29 var0, byte var1) {
       try {
-         var0.method_358(-201706662);
+         var0.method_358();
          int var2 = 929092845 * client.field_1534;
          class_100[] var10000 = client.field_1605;
          class_100 var10002 = new class_100();
@@ -569,9 +569,9 @@ public class class_280 {
             }
          }
 
-         var0.method_362((byte)-32);
+         var0.method_362();
       } catch (RuntimeException var13) {
-         throw class_223.method_4281(var13, "ii.v(" + ')');
+         throw class_223.method_4281(var13);
       }
    }
 }

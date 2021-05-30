@@ -19,30 +19,30 @@ public class class_339 extends class_338 {
    }
 
    // $FF: renamed from: ao (int, int, int) void
-   void method_6016(int var1, int var2, int var3) {
+   void method_6016(int var1, int var2) {
       try {
          this.field_3888 = var1 * -245371139;
          this.field_3885 = var2 * -2116718473;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "lv.ao(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: aq (int) int
-   public int method_6017(int var1) {
+   public int method_6017() {
       try {
          return 1693720149 * this.field_3888;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "lv.aq(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: aw (int) boolean
-   public boolean method_6018(int var1) {
+   public boolean method_6018() {
       try {
          return 1693720149 * this.field_3888 > 0;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "lv.aw(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -68,7 +68,7 @@ public class class_339 extends class_338 {
       try {
          this.field_3888 = 245371139;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "lv.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 

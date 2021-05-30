@@ -63,17 +63,17 @@ public class class_333 {
          }
 
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "kv.n(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: f (int, int) void
-   public void method_5896(int var1, int var2) {
+   public void method_5896(int var1) {
       try {
          this.field_3863 = class_87.method_1516((byte)1) * 7307109831716981347L;
          this.field_3869 = -1031648661 * var1;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "kv.f(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -92,26 +92,26 @@ public class class_333 {
          this.field_3871 += -1760075993;
          this.field_3866 = true;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "kv.y(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: p (int) void
-   public void method_5898(int var1) {
+   public void method_5898() {
       try {
          this.field_3866 = false;
          this.field_3870 = 0;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "kv.p(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: j (int) void
-   public void method_5899(int var1) {
+   public void method_5899() {
       try {
          this.method_5897((byte)11);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "kv.j(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -131,7 +131,7 @@ public class class_333 {
             return 1017616665 * ((class_101)var2.field_471).field_1183;
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "kv.b(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -164,7 +164,7 @@ public class class_333 {
             var3 = 65535L;
          }
 
-         var1.method_333((int)var3, -1864769552);
+         var1.method_333((int)var3);
          long var5 = this.field_3867 * -8039422533561910721L;
          var5 /= 10L;
          if(var5 < 0L) {
@@ -181,7 +181,7 @@ public class class_333 {
             var5 = 65535L;
          }
 
-         var1.method_333((int)var5, 117959691);
+         var1.method_333((int)var5);
          long var7 = this.field_3868 * -6788679505704133641L;
          var7 /= 10L;
          if(var7 < 0L) {
@@ -198,13 +198,13 @@ public class class_333 {
             var7 = 65535L;
          }
 
-         var1.method_333((int)var7, 1686454041);
-         var1.method_333(this.field_3869 * 2093027907, -183245974);
-         var1.method_333(this.field_3870 * 2015708795, 235141234);
-         var1.method_333(this.field_3871 * -211935081, -1981964330);
-         var1.method_333(this.field_3872 * -1004054843, -1534730703);
+         var1.method_333((int)var7);
+         var1.method_333(this.field_3869 * 2093027907);
+         var1.method_333(this.field_3870 * 2015708795);
+         var1.method_333(this.field_3871 * -211935081);
+         var1.method_333(this.field_3872 * -1004054843);
       } catch (RuntimeException var9) {
-         throw class_223.method_4281(var9, "kv.r(" + ')');
+         throw class_223.method_4281(var9);
       }
    }
 
@@ -218,7 +218,7 @@ public class class_333 {
    }
 
    // $FF: renamed from: c (int, cf, boolean, int) int
-   static int method_5905(int var0, class_90 var1, boolean var2, int var3) {
+   static int method_5905(int var0, boolean var2, int var3) {
       try {
          class_37 var10000;
          if(var2) {
@@ -316,7 +316,7 @@ public class class_333 {
             class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = -681284339 * var4.field_127;
             return 1;
          } else if(var0 == 1613) {
-            class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = var4.field_131.method_50(-1333005005);
+            class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = var4.field_131.method_50();
             return 1;
          } else if(var0 == 1614) {
             int[] var6 = class_165.field_2052;
@@ -353,7 +353,7 @@ public class class_333 {
             return 1;
          }
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "kv.c(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -369,11 +369,11 @@ public class class_333 {
    }
 
    // $FF: renamed from: v (int) void
-   public void method_5907(int var1) {
+   public void method_5907() {
       try {
          this.field_3865 = class_87.method_1516((byte)1) * 746359096303538669L;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "kv.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -440,7 +440,7 @@ public class class_333 {
          var2 = 65535L;
       }
 
-      var1.method_333((int)var2, 718698676);
+      var1.method_333((int)var2);
       long var4 = this.field_3867 * -8039422533561910721L;
       var4 /= 10L;
       if(var4 < 0L) {
@@ -449,7 +449,7 @@ public class class_333 {
          var4 = 65535L;
       }
 
-      var1.method_333((int)var4, 1103089060);
+      var1.method_333((int)var4);
       long var6 = this.field_3868 * -6788679505704133641L;
       var6 /= 10L;
       if(var6 < 0L) {
@@ -458,11 +458,11 @@ public class class_333 {
          var6 = 65535L;
       }
 
-      var1.method_333((int)var6, 1682973449);
-      var1.method_333(this.field_3869 * 2093027907, 871705464);
-      var1.method_333(this.field_3870 * 2015708795, -1405366715);
-      var1.method_333(this.field_3871 * -211935081, 1668994325);
-      var1.method_333(this.field_3872 * -1004054843, -531874281);
+      var1.method_333((int)var6);
+      var1.method_333(this.field_3869 * 2093027907);
+      var1.method_333(this.field_3870 * 2015708795);
+      var1.method_333(this.field_3871 * -211935081);
+      var1.method_333(this.field_3872 * -1004054843);
    }
 
    // $FF: renamed from: s () void
@@ -480,7 +480,7 @@ public class class_333 {
          var2 = 65535L;
       }
 
-      var1.method_333((int)var2, 1370871525);
+      var1.method_333((int)var2);
       long var4 = this.field_3867 * -8039422533561910721L;
       var4 /= 10L;
       if(var4 < 0L) {
@@ -489,7 +489,7 @@ public class class_333 {
          var4 = 65535L;
       }
 
-      var1.method_333((int)var4, 1838002490);
+      var1.method_333((int)var4);
       long var6 = this.field_3868 * -6788679505704133641L;
       var6 /= 10L;
       if(var6 < 0L) {
@@ -498,11 +498,11 @@ public class class_333 {
          var6 = 65535L;
       }
 
-      var1.method_333((int)var6, 325924773);
-      var1.method_333(this.field_3869 * 2093027907, -1411160764);
-      var1.method_333(this.field_3870 * -275877178, 1818962108);
-      var1.method_333(this.field_3871 * -211935081, -586709124);
-      var1.method_333(this.field_3872 * -1004054843, -203494526);
+      var1.method_333((int)var6);
+      var1.method_333(this.field_3869 * 2093027907);
+      var1.method_333(this.field_3870 * -275877178);
+      var1.method_333(this.field_3871 * -211935081);
+      var1.method_333(this.field_3872 * -1004054843);
    }
 
    // $FF: renamed from: n (char, int) boolean
@@ -547,7 +547,7 @@ public class class_333 {
             return true;
          }
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "kv.n(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 

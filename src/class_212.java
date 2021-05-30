@@ -22,11 +22,11 @@ public class class_212 implements class_14 {
    }
 
    // $FF: renamed from: v (int) int
-   public int method_50(int var1) {
+   public int method_50() {
       try {
          return 76672001 * this.field_2434;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "em.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -41,15 +41,15 @@ public class class_212 implements class_14 {
    }
 
    // $FF: renamed from: g (java.lang.String, int, int) void
-   static final void method_4177(String var0, int var1, int var2) {
+   static final void method_4177(String var0, int var1) {
       try {
          class_40 var3 = class_112.method_2238(class_266.field_3095, client.field_1463.field_2384, (byte)8);
-         var3.field_263.method_210(class_166.method_3598(var0, 1909284506) + 1, 303066737);
-         var3.field_263.method_120(var0, -427478981);
-         var3.field_263.method_148(var1, 362589205);
-         client.field_1463.method_4079(var3, -1731465980);
+         var3.field_263.method_210(class_166.method_3598(var0) + 1);
+         var3.field_263.method_120(var0);
+         var3.field_263.method_148(var1);
+         client.field_1463.method_4079(var3);
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "em.g(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -80,16 +80,16 @@ public class class_212 implements class_14 {
          this.field_2436 = var1 * 389708817;
          this.field_2434 = var2 * 1828590593;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "em.<init>(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: v (jv, int, int, int) op[]
-   public static class_66[] method_4182(class_306 var0, int var1, int var2, int var3) {
+   public static class_66[] method_4182(class_306 var0, int var1, int var2) {
       try {
          return !class_370.method_6606(var0, var1, var2, (byte)47)?null:class_176.method_3749((short)-29644);
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "em.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 }

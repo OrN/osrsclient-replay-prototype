@@ -22,7 +22,7 @@ public class class_284 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ip.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -193,7 +193,7 @@ public class class_284 {
             }
          }
       } catch (RuntimeException var15) {
-         throw class_223.method_4281(var15, "ip.v(" + ')');
+         throw class_223.method_4281(var15);
       }
    }
 
@@ -418,7 +418,7 @@ public class class_284 {
             return var0;
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ip.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 }

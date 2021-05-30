@@ -215,7 +215,7 @@ public class class_87 extends class_59 {
          }
 
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "eg.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -223,7 +223,7 @@ public class class_87 extends class_59 {
    void method_1484(class_28 var1, byte var2) {
       try {
          while(true) {
-            int var3 = var1.method_130(1479210804);
+            int var3 = var1.method_130();
             if(0 == var3) {
                if(var2 != 1) {
                   return;
@@ -235,7 +235,7 @@ public class class_87 extends class_59 {
             this.method_1485(var1, var3, -1041207607);
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "eg.f(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -249,7 +249,7 @@ public class class_87 extends class_59 {
                throw new IllegalStateException();
             }
 
-            var4 = var1.method_130(24821995);
+            var4 = var1.method_130();
             if(var4 > 0) {
                if(var3 >= -864081678) {
                   return;
@@ -278,8 +278,8 @@ public class class_87 extends class_59 {
                      throw new IllegalStateException();
                   }
 
-                  this.field_835[var5] = var1.method_132((byte)-75);
-                  this.field_809[var5] = var1.method_130(1789184191);
+                  this.field_835[var5] = var1.method_132();
+                  this.field_809[var5] = var1.method_130();
                }
             }
          } else if(var2 == 2) {
@@ -293,7 +293,7 @@ public class class_87 extends class_59 {
                return;
             }
 
-            var4 = var1.method_130(608409993);
+            var4 = var1.method_130();
             if(var4 > 0) {
                if(this.field_835 != null) {
                   if(var3 >= -864081678) {
@@ -318,17 +318,17 @@ public class class_87 extends class_59 {
                      throw new IllegalStateException();
                   }
 
-                  this.field_835[var5] = var1.method_132((byte)-83);
+                  this.field_835[var5] = var1.method_132();
                }
             }
          } else if(14 == var2) {
-            this.field_839 = var1.method_130(252541043) * 822501225;
+            this.field_839 = var1.method_130() * 822501225;
          } else if(15 == var2) {
             if(var3 >= -864081678) {
                throw new IllegalStateException();
             }
 
-            this.field_851 = var1.method_130(899488124) * -2102030313;
+            this.field_851 = var1.method_130() * -2102030313;
          } else if(var2 == 17) {
             if(var3 >= -864081678) {
                throw new IllegalStateException();
@@ -347,7 +347,7 @@ public class class_87 extends class_59 {
                throw new IllegalStateException();
             }
 
-            this.field_820 = var1.method_130(-1543438219) * -2085655817;
+            this.field_820 = var1.method_130() * -2085655817;
          } else if(21 == var2) {
             if(var3 >= -864081678) {
                throw new IllegalStateException();
@@ -367,7 +367,7 @@ public class class_87 extends class_59 {
                throw new IllegalStateException();
             }
 
-            this.field_824 = var1.method_132((byte)-48) * -1042698627;
+            this.field_824 = var1.method_132() * -1042698627;
             if(91732693 * this.field_824 == '\uffff') {
                this.field_824 = 1042698627;
             }
@@ -382,19 +382,19 @@ public class class_87 extends class_59 {
                throw new IllegalStateException();
             }
 
-            this.field_810 = var1.method_130(1409557902) * 1012101565;
+            this.field_810 = var1.method_130() * 1012101565;
          } else if(var2 == 29) {
             if(var3 >= -864081678) {
                return;
             }
 
-            this.field_826 = var1.method_131((byte)-89) * -2118336885;
+            this.field_826 = var1.method_131() * -2118336885;
          } else if(39 == var2) {
             if(var3 >= -864081678) {
                throw new IllegalStateException();
             }
 
-            this.field_845 = var1.method_131((byte)-126) * 1911142931;
+            this.field_845 = var1.method_131() * 1911142931;
          } else if(var2 >= 30 && var2 < 35) {
             this.field_828[var2 - 30] = var1.method_139(-391631059);
             if(this.field_828[var2 - 30].equalsIgnoreCase(class_305.field_3405)) {
@@ -409,20 +409,20 @@ public class class_87 extends class_59 {
                return;
             }
 
-            var4 = var1.method_130(1033312679);
+            var4 = var1.method_130();
             this.field_812 = new short[var4];
             this.field_801 = new short[var4];
 
             for(var5 = 0; var5 < var4; ++var5) {
-               this.field_812[var5] = (short)var1.method_132((byte)-4);
-               this.field_801[var5] = (short)var1.method_132((byte)-120);
+               this.field_812[var5] = (short)var1.method_132();
+               this.field_801[var5] = (short)var1.method_132();
             }
          } else if(var2 == 41) {
             if(var3 >= -864081678) {
                return;
             }
 
-            var4 = var1.method_130(-250965161);
+            var4 = var1.method_130();
             this.field_814 = new short[var4];
             this.field_833 = new short[var4];
 
@@ -431,8 +431,8 @@ public class class_87 extends class_59 {
                   return;
                }
 
-               this.field_814[var5] = (short)var1.method_132((byte)-113);
-               this.field_833[var5] = (short)var1.method_132((byte)-6);
+               this.field_814[var5] = (short)var1.method_132();
+               this.field_833[var5] = (short)var1.method_132();
             }
          } else if(62 == var2) {
             this.field_831 = true;
@@ -447,27 +447,27 @@ public class class_87 extends class_59 {
                throw new IllegalStateException();
             }
 
-            this.field_836 = var1.method_132((byte)-8) * 1454289911;
+            this.field_836 = var1.method_132() * 1454289911;
          } else if(66 == var2) {
-            this.field_834 = var1.method_132((byte)-42) * -1826017161;
+            this.field_834 = var1.method_132() * -1826017161;
          } else if(var2 == 67) {
             if(var3 >= -864081678) {
                throw new IllegalStateException();
             }
 
-            this.field_804 = var1.method_132((byte)-68) * 1641642293;
+            this.field_804 = var1.method_132() * 1641642293;
          } else if(var2 == 68) {
             if(var3 >= -864081678) {
                throw new IllegalStateException();
             }
 
-            this.field_830 = var1.method_132((byte)-26) * 1440922517;
+            this.field_830 = var1.method_132() * 1440922517;
          } else if(69 == var2) {
             if(var3 >= -864081678) {
                throw new IllegalStateException();
             }
 
-            var1.method_130(1170621191);
+            var1.method_130();
          } else if(70 == var2) {
             if(var3 >= -864081678) {
                return;
@@ -487,7 +487,7 @@ public class class_87 extends class_59 {
                return;
             }
 
-            this.field_841 = var1.method_130(1983793418) * -1858759757;
+            this.field_841 = var1.method_130() * -1858759757;
          } else {
             if(77 != var2) {
                if(var3 >= -864081678) {
@@ -500,18 +500,18 @@ public class class_87 extends class_59 {
                         throw new IllegalStateException();
                      }
 
-                     this.field_829 = var1.method_132((byte)-109) * 1857685779;
-                     this.field_846 = var1.method_130(621840967) * -364813997;
+                     this.field_829 = var1.method_132() * 1857685779;
+                     this.field_846 = var1.method_130() * -364813997;
                      return;
                   } else if(79 == var2) {
                      if(var3 >= -864081678) {
                         return;
                      }
 
-                     this.field_847 = var1.method_132((byte)-88) * -1446744557;
-                     this.field_848 = var1.method_132((byte)-31) * -2968437;
-                     this.field_846 = var1.method_130(473243525) * -364813997;
-                     var4 = var1.method_130(-1368178196);
+                     this.field_847 = var1.method_132() * -1446744557;
+                     this.field_848 = var1.method_132() * -2968437;
+                     this.field_846 = var1.method_130() * -364813997;
+                     var4 = var1.method_130();
                      this.field_849 = new int[var4];
 
                      for(var5 = 0; var5 < var4; ++var5) {
@@ -519,7 +519,7 @@ public class class_87 extends class_59 {
                            throw new IllegalStateException();
                         }
 
-                        this.field_849[var5] = var1.method_132((byte)-23);
+                        this.field_849[var5] = var1.method_132();
                      }
 
                      return;
@@ -528,14 +528,14 @@ public class class_87 extends class_59 {
                         throw new IllegalStateException();
                      }
 
-                     this.field_821 = var1.method_130(-1393568045) * 1095153920;
+                     this.field_821 = var1.method_130() * 1095153920;
                      return;
                   } else if(var2 == 82) {
                      if(var3 >= -864081678) {
                         throw new IllegalStateException();
                      }
 
-                     this.field_815 = var1.method_132((byte)-53) * 551383109;
+                     this.field_815 = var1.method_132() * 551383109;
                      return;
                   } else {
                      if(89 == var2) {
@@ -558,7 +558,7 @@ public class class_87 extends class_59 {
                }
             }
 
-            this.field_825 = var1.method_132((byte)-85) * 1029028887;
+            this.field_825 = var1.method_132() * 1029028887;
             if('\uffff' == this.field_825 * -240174169) {
                if(var3 >= -864081678) {
                   throw new IllegalStateException();
@@ -567,7 +567,7 @@ public class class_87 extends class_59 {
                this.field_825 = -1029028887;
             }
 
-            this.field_844 = var1.method_132((byte)-72) * 1365543255;
+            this.field_844 = var1.method_132() * 1365543255;
             if('\uffff' == this.field_844 * 758936167) {
                this.field_844 = -1365543255;
             }
@@ -578,7 +578,7 @@ public class class_87 extends class_59 {
                   throw new IllegalStateException();
                }
 
-               var4 = var1.method_132((byte)-41);
+               var4 = var1.method_132();
                if(var4 == '\uffff') {
                   if(var3 >= -864081678) {
                      throw new IllegalStateException();
@@ -588,7 +588,7 @@ public class class_87 extends class_59 {
                }
             }
 
-            var5 = var1.method_130(1416490484);
+            var5 = var1.method_130();
             this.field_842 = new int[2 + var5];
 
             for(int var6 = 0; var6 <= var5; ++var6) {
@@ -596,7 +596,7 @@ public class class_87 extends class_59 {
                   throw new IllegalStateException();
                }
 
-               this.field_842[var6] = var1.method_132((byte)-82);
+               this.field_842[var6] = var1.method_132();
                if('\uffff' == this.field_842[var6]) {
                   this.field_842[var6] = -1;
                }
@@ -606,7 +606,7 @@ public class class_87 extends class_59 {
          }
 
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "eg.y(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
@@ -659,16 +659,16 @@ public class class_87 extends class_59 {
             return true;
          }
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "eg.p(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
    // $FF: renamed from: l (int, int, int) int
-   public int method_1487(int var1, int var2, int var3) {
+   public int method_1487(int var1, int var2) {
       try {
          return class_174.method_3723(this.field_823, var1, var2, -1602148320);
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "eg.l(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -747,7 +747,7 @@ public class class_87 extends class_59 {
 
          return (class_91)var10;
       } catch (RuntimeException var12) {
-         throw class_223.method_4281(var12, "eg.r(" + ')');
+         throw class_223.method_4281(var12);
       }
    }
 
@@ -790,7 +790,7 @@ public class class_87 extends class_59 {
 
          return var10;
       } catch (RuntimeException var12) {
-         throw class_223.method_4281(var12, "eg.b(" + ')');
+         throw class_223.method_4281(var12);
       }
    }
 
@@ -832,7 +832,7 @@ public class class_87 extends class_59 {
                throw new IllegalStateException();
             }
 
-            var2 = class_43.method_496(-240174169 * this.field_825, -1938601997);
+            var2 = class_43.method_496(-240174169 * this.field_825);
          } else if(758936167 * this.field_844 != -1) {
             if(var1 <= -682773644) {
                throw new IllegalStateException();
@@ -871,7 +871,7 @@ public class class_87 extends class_59 {
             return null;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "eg.u(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -881,7 +881,7 @@ public class class_87 extends class_59 {
       if(var1 != null) {
          return var1;
       } else {
-         byte[] var2 = field_802.method_5381(6, var0, -26460885);
+         byte[] var2 = field_802.method_5381(6, var0);
          class_87 var10000 = new class_87();
          var1 = var10000;
          var1.field_808 = -1899720995 * var0;
@@ -902,16 +902,16 @@ public class class_87 extends class_59 {
    }
 
    // $FF: renamed from: o (int, java.lang.String, int) java.lang.String
-   public String method_1494(int var1, String var2, int var3) {
+   public String method_1494(int var1, String var2) {
       try {
          return class_346.method_6180(this.field_823, var1, var2, (byte)85);
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "eg.o(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: t (int, cf, boolean, int) int
-   static int method_1495(int var0, class_90 var1, boolean var2, int var3) {
+   static int method_1495(int var0, int var3) {
       try {
          if(var0 == 3200) {
             if(var3 <= 1369136416) {
@@ -929,7 +929,7 @@ public class class_87 extends class_59 {
                throw new IllegalStateException();
             } else {
                class_136.field_1752 -= 2119512838;
-               class_294.method_5314(class_165.field_2052[-26460885 * class_136.field_1752], class_165.field_2052[1 + class_136.field_1752 * -26460885], -1577344558);
+               class_294.method_5314(class_165.field_2052[-26460885 * class_136.field_1752], -1577344558);
                return 1;
             }
          } else {
@@ -950,7 +950,7 @@ public class class_87 extends class_59 {
                   throw new IllegalStateException();
                } else {
                   var4 = Math.min(Math.max(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885], 0), 100);
-                  class_232.method_4453(Math.round(1.27F * (float)var4), 2074566150);
+                  class_232.method_4453(Math.round(1.27F * (float)var4));
                   return 1;
                }
             } else if(3206 == var0) {
@@ -962,7 +962,7 @@ public class class_87 extends class_59 {
                }
             } else if(3207 == var0) {
                var4 = Math.min(Math.max(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885], 0), 100);
-               class_268.method_5038(Math.round((float)var4 * 1.27F), -1853838229);
+               class_268.method_5038(Math.round((float)var4 * 1.27F));
                return 1;
             } else if(3208 == var0) {
                if(var3 <= 1369136416) {
@@ -976,7 +976,7 @@ public class class_87 extends class_59 {
             }
          }
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "eg.t(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -1046,7 +1046,7 @@ public class class_87 extends class_59 {
             return true;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "eg.e(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -1056,7 +1056,7 @@ public class class_87 extends class_59 {
       if(var1 != null) {
          return var1;
       } else {
-         byte[] var2 = field_802.method_5381(6, var0, -26460885);
+         byte[] var2 = field_802.method_5381(6, var0);
          class_87 var10000 = new class_87();
          var1 = var10000;
          var1.field_808 = 139564951 * var0;
@@ -1082,7 +1082,7 @@ public class class_87 extends class_59 {
       if(var1 != null) {
          return var1;
       } else {
-         byte[] var2 = field_802.method_5381(6, var0, -26460885);
+         byte[] var2 = field_802.method_5381(6, var0);
          class_87 var10000 = new class_87();
          var1 = var10000;
          var1.field_808 = 139564951 * var0;
@@ -1179,7 +1179,7 @@ public class class_87 extends class_59 {
          short[] var12 = class_191.field_2289;
          class_40.method_477(var10, var12, 0, var10.length - 1, 1137110463);
       } catch (RuntimeException var9) {
-         throw class_223.method_4281(var9, "eg.lt(" + ')');
+         throw class_223.method_4281(var9);
       }
    }
 
@@ -1189,7 +1189,7 @@ public class class_87 extends class_59 {
       if(var1 != null) {
          return var1;
       } else {
-         byte[] var2 = field_802.method_5381(6, var0, -26460885);
+         byte[] var2 = field_802.method_5381(6, var0);
          class_87 var10000 = new class_87();
          var1 = var10000;
          var1.field_808 = 139564951 * var0;
@@ -1238,7 +1238,7 @@ public class class_87 extends class_59 {
    // $FF: renamed from: w (nd) void
    void method_1503(class_28 var1) {
       while(true) {
-         int var2 = var1.method_130(40835301);
+         int var2 = var1.method_130();
          if(0 == var2) {
             return;
          }
@@ -1250,7 +1250,7 @@ public class class_87 extends class_59 {
    // $FF: renamed from: t (nd) void
    void method_1504(class_28 var1) {
       while(true) {
-         int var2 = var1.method_130(1125288014);
+         int var2 = var1.method_130();
          if(0 == var2) {
             return;
          }
@@ -1264,7 +1264,7 @@ public class class_87 extends class_59 {
       int var3;
       int var4;
       if(1 == var2) {
-         var3 = var1.method_130(1733437945);
+         var3 = var1.method_130();
          if(var3 > 0) {
             if(this.field_835 != null && !field_806) {
                var1.field_15 += 1217892583 * var3;
@@ -1273,15 +1273,15 @@ public class class_87 extends class_59 {
                this.field_835 = new int[var3];
 
                for(var4 = 0; var4 < var3; ++var4) {
-                  this.field_835[var4] = var1.method_132((byte)-87);
-                  this.field_809[var4] = var1.method_130(1256193545);
+                  this.field_835[var4] = var1.method_132();
+                  this.field_809[var4] = var1.method_130();
                }
             }
          }
       } else if(var2 == 2) {
          this.field_811 = var1.method_139(-391631059);
       } else if(var2 == 5) {
-         var3 = var1.method_130(-263970148);
+         var3 = var1.method_130();
          if(var3 > 0) {
             if(this.field_835 != null && !field_806) {
                var1.field_15 += -2051383142 * var3;
@@ -1290,21 +1290,21 @@ public class class_87 extends class_59 {
                this.field_835 = new int[var3];
 
                for(var4 = 0; var4 < var3; ++var4) {
-                  this.field_835[var4] = var1.method_132((byte)-114);
+                  this.field_835[var4] = var1.method_132();
                }
             }
          }
       } else if(14 == var2) {
-         this.field_839 = var1.method_130(1517481230) * 822501225;
+         this.field_839 = var1.method_130() * 822501225;
       } else if(15 == var2) {
-         this.field_851 = var1.method_130(-1458986814) * -2102030313;
+         this.field_851 = var1.method_130() * -2102030313;
       } else if(var2 == 17) {
          this.field_818 = 0;
          this.field_837 = false;
       } else if(18 == var2) {
          this.field_837 = false;
       } else if(19 == var2) {
-         this.field_820 = var1.method_130(881430444) * -2085655817;
+         this.field_820 = var1.method_130() * -2085655817;
       } else if(21 == var2) {
          this.field_821 = 0;
       } else if(var2 == 22) {
@@ -1312,55 +1312,55 @@ public class class_87 extends class_59 {
       } else if(23 == var2) {
          this.field_816 = true;
       } else if(24 == var2) {
-         this.field_824 = var1.method_132((byte)-88) * -1042698627;
+         this.field_824 = var1.method_132() * -1042698627;
          if(91732693 * this.field_824 == '\uffff') {
             this.field_824 = 1042698627;
          }
       } else if(var2 == 27) {
          this.field_818 = -2058267547;
       } else if(28 == var2) {
-         this.field_810 = var1.method_130(-846357080) * 1012101565;
+         this.field_810 = var1.method_130() * 1012101565;
       } else if(var2 == 29) {
-         this.field_826 = var1.method_131((byte)-126) * -2118336885;
+         this.field_826 = var1.method_131() * -2118336885;
       } else if(39 == var2) {
-         this.field_845 = var1.method_131((byte)3) * 1911142931;
+         this.field_845 = var1.method_131() * 1911142931;
       } else if(var2 >= 30 && var2 < 35) {
          this.field_828[var2 - 30] = var1.method_139(-391631059);
          if(this.field_828[var2 - 30].equalsIgnoreCase(class_305.field_3405)) {
             this.field_828[var2 - 30] = null;
          }
       } else if(var2 == 40) {
-         var3 = var1.method_130(1007588550);
+         var3 = var1.method_130();
          this.field_812 = new short[var3];
          this.field_801 = new short[var3];
 
          for(var4 = 0; var4 < var3; ++var4) {
-            this.field_812[var4] = (short)var1.method_132((byte)-85);
-            this.field_801[var4] = (short)var1.method_132((byte)-94);
+            this.field_812[var4] = (short)var1.method_132();
+            this.field_801[var4] = (short)var1.method_132();
          }
       } else if(var2 == 41) {
-         var3 = var1.method_130(-2073774678);
+         var3 = var1.method_130();
          this.field_814 = new short[var3];
          this.field_833 = new short[var3];
 
          for(var4 = 0; var4 < var3; ++var4) {
-            this.field_814[var4] = (short)var1.method_132((byte)-71);
-            this.field_833[var4] = (short)var1.method_132((byte)-10);
+            this.field_814[var4] = (short)var1.method_132();
+            this.field_833[var4] = (short)var1.method_132();
          }
       } else if(62 == var2) {
          this.field_831 = true;
       } else if(64 == var2) {
          this.field_832 = false;
       } else if(65 == var2) {
-         this.field_836 = var1.method_132((byte)-105) * 1454289911;
+         this.field_836 = var1.method_132() * 1454289911;
       } else if(66 == var2) {
-         this.field_834 = var1.method_132((byte)-90) * -1826017161;
+         this.field_834 = var1.method_132() * -1826017161;
       } else if(var2 == 67) {
-         this.field_804 = var1.method_132((byte)-64) * 1641642293;
+         this.field_804 = var1.method_132() * 1641642293;
       } else if(var2 == 68) {
-         this.field_830 = var1.method_132((byte)-52) * 1440922517;
+         this.field_830 = var1.method_132() * 1440922517;
       } else if(69 == var2) {
-         var1.method_130(1119859748);
+         var1.method_130();
       } else if(70 == var2) {
          this.field_819 = var1.method_269(-1542485131) * 491527025;
       } else if(var2 == 71) {
@@ -1372,54 +1372,54 @@ public class class_87 extends class_59 {
       } else if(var2 == 74) {
          this.field_813 = true;
       } else if(var2 == 75) {
-         this.field_841 = var1.method_130(15408402) * -1858759757;
+         this.field_841 = var1.method_130() * -1858759757;
       } else if(77 != var2 && 92 != var2) {
          if(78 == var2) {
-            this.field_829 = var1.method_132((byte)-126) * 1857685779;
-            this.field_846 = var1.method_130(-1462038043) * -364813997;
+            this.field_829 = var1.method_132() * 1857685779;
+            this.field_846 = var1.method_130() * -364813997;
          } else if(79 == var2) {
-            this.field_847 = var1.method_132((byte)-29) * -1446744557;
-            this.field_848 = var1.method_132((byte)-59) * -2968437;
-            this.field_846 = var1.method_130(253938214) * -364813997;
-            var3 = var1.method_130(-1488545099);
+            this.field_847 = var1.method_132() * -1446744557;
+            this.field_848 = var1.method_132() * -2968437;
+            this.field_846 = var1.method_130() * -364813997;
+            var3 = var1.method_130();
             this.field_849 = new int[var3];
 
             for(var4 = 0; var4 < var3; ++var4) {
-               this.field_849[var4] = var1.method_132((byte)-99);
+               this.field_849[var4] = var1.method_132();
             }
          } else if(var2 == 81) {
-            this.field_821 = var1.method_130(1023859108) * 1095153920;
+            this.field_821 = var1.method_130() * 1095153920;
          } else if(var2 == 82) {
-            this.field_815 = var1.method_132((byte)-80) * 551383109;
+            this.field_815 = var1.method_132() * 551383109;
          } else if(89 == var2) {
             this.field_850 = false;
          } else if(var2 == 249) {
             this.field_823 = class_325.method_5781(var1, this.field_823, -391561047);
          }
       } else {
-         this.field_825 = var1.method_132((byte)-1) * 1029028887;
+         this.field_825 = var1.method_132() * 1029028887;
          if('\uffff' == this.field_825 * -240174169) {
             this.field_825 = -1029028887;
          }
 
-         this.field_844 = var1.method_132((byte)-58) * 1365543255;
+         this.field_844 = var1.method_132() * 1365543255;
          if('\uffff' == this.field_844 * 758936167) {
             this.field_844 = -1365543255;
          }
 
          var3 = -1;
          if(var2 == 92) {
-            var3 = var1.method_132((byte)-90);
+            var3 = var1.method_132();
             if(var3 == '\uffff') {
                var3 = -1;
             }
          }
 
-         var4 = var1.method_130(-1056491581);
+         var4 = var1.method_130();
          this.field_842 = new int[2 + var4];
 
          for(int var5 = 0; var5 <= var4; ++var5) {
-            this.field_842[var5] = var1.method_132((byte)-71);
+            this.field_842[var5] = var1.method_132();
             if('\uffff' == this.field_842[var5]) {
                this.field_842[var5] = -1;
             }
@@ -1435,7 +1435,7 @@ public class class_87 extends class_59 {
       int var3;
       int var4;
       if(1 == var2) {
-         var3 = var1.method_130(-658742669);
+         var3 = var1.method_130();
          if(var3 > 0) {
             if(this.field_835 != null && !field_806) {
                var1.field_15 += 1217892583 * var3;
@@ -1444,15 +1444,15 @@ public class class_87 extends class_59 {
                this.field_835 = new int[var3];
 
                for(var4 = 0; var4 < var3; ++var4) {
-                  this.field_835[var4] = var1.method_132((byte)-108);
-                  this.field_809[var4] = var1.method_130(202563770);
+                  this.field_835[var4] = var1.method_132();
+                  this.field_809[var4] = var1.method_130();
                }
             }
          }
       } else if(var2 == 2) {
          this.field_811 = var1.method_139(-391631059);
       } else if(var2 == 5) {
-         var3 = var1.method_130(-1626570436);
+         var3 = var1.method_130();
          if(var3 > 0) {
             if(this.field_835 != null && !field_806) {
                var1.field_15 += -2051383142 * var3;
@@ -1461,21 +1461,21 @@ public class class_87 extends class_59 {
                this.field_835 = new int[var3];
 
                for(var4 = 0; var4 < var3; ++var4) {
-                  this.field_835[var4] = var1.method_132((byte)-115);
+                  this.field_835[var4] = var1.method_132();
                }
             }
          }
       } else if(14 == var2) {
-         this.field_839 = var1.method_130(144696153) * 822501225;
+         this.field_839 = var1.method_130() * 822501225;
       } else if(15 == var2) {
-         this.field_851 = var1.method_130(731841064) * -2102030313;
+         this.field_851 = var1.method_130() * -2102030313;
       } else if(var2 == 17) {
          this.field_818 = 0;
          this.field_837 = false;
       } else if(18 == var2) {
          this.field_837 = false;
       } else if(19 == var2) {
-         this.field_820 = var1.method_130(-692621002) * -2085655817;
+         this.field_820 = var1.method_130() * -2085655817;
       } else if(21 == var2) {
          this.field_821 = 0;
       } else if(var2 == 22) {
@@ -1483,55 +1483,55 @@ public class class_87 extends class_59 {
       } else if(23 == var2) {
          this.field_816 = true;
       } else if(24 == var2) {
-         this.field_824 = var1.method_132((byte)-1) * -1042698627;
+         this.field_824 = var1.method_132() * -1042698627;
          if(91732693 * this.field_824 == '\uffff') {
             this.field_824 = 1042698627;
          }
       } else if(var2 == 27) {
          this.field_818 = -2058267547;
       } else if(28 == var2) {
-         this.field_810 = var1.method_130(983234080) * 1012101565;
+         this.field_810 = var1.method_130() * 1012101565;
       } else if(var2 == 29) {
-         this.field_826 = var1.method_131((byte)-19) * -2118336885;
+         this.field_826 = var1.method_131() * -2118336885;
       } else if(39 == var2) {
-         this.field_845 = var1.method_131((byte)-43) * 1911142931;
+         this.field_845 = var1.method_131() * 1911142931;
       } else if(var2 >= 30 && var2 < 35) {
          this.field_828[var2 - 30] = var1.method_139(-391631059);
          if(this.field_828[var2 - 30].equalsIgnoreCase(class_305.field_3405)) {
             this.field_828[var2 - 30] = null;
          }
       } else if(var2 == 40) {
-         var3 = var1.method_130(-908690146);
+         var3 = var1.method_130();
          this.field_812 = new short[var3];
          this.field_801 = new short[var3];
 
          for(var4 = 0; var4 < var3; ++var4) {
-            this.field_812[var4] = (short)var1.method_132((byte)-53);
-            this.field_801[var4] = (short)var1.method_132((byte)-22);
+            this.field_812[var4] = (short)var1.method_132();
+            this.field_801[var4] = (short)var1.method_132();
          }
       } else if(var2 == 41) {
-         var3 = var1.method_130(-331750489);
+         var3 = var1.method_130();
          this.field_814 = new short[var3];
          this.field_833 = new short[var3];
 
          for(var4 = 0; var4 < var3; ++var4) {
-            this.field_814[var4] = (short)var1.method_132((byte)-63);
-            this.field_833[var4] = (short)var1.method_132((byte)-12);
+            this.field_814[var4] = (short)var1.method_132();
+            this.field_833[var4] = (short)var1.method_132();
          }
       } else if(62 == var2) {
          this.field_831 = true;
       } else if(64 == var2) {
          this.field_832 = false;
       } else if(65 == var2) {
-         this.field_836 = var1.method_132((byte)-98) * 1454289911;
+         this.field_836 = var1.method_132() * 1454289911;
       } else if(66 == var2) {
-         this.field_834 = var1.method_132((byte)-89) * -1826017161;
+         this.field_834 = var1.method_132() * -1826017161;
       } else if(var2 == 67) {
-         this.field_804 = var1.method_132((byte)-45) * 1641642293;
+         this.field_804 = var1.method_132() * 1641642293;
       } else if(var2 == 68) {
-         this.field_830 = var1.method_132((byte)-20) * 1440922517;
+         this.field_830 = var1.method_132() * 1440922517;
       } else if(69 == var2) {
-         var1.method_130(2021939520);
+         var1.method_130();
       } else if(70 == var2) {
          this.field_819 = var1.method_269(-1542485131) * 491527025;
       } else if(var2 == 71) {
@@ -1543,54 +1543,54 @@ public class class_87 extends class_59 {
       } else if(var2 == 74) {
          this.field_813 = true;
       } else if(var2 == 75) {
-         this.field_841 = var1.method_130(294675373) * -1858759757;
+         this.field_841 = var1.method_130() * -1858759757;
       } else if(77 != var2 && 92 != var2) {
          if(78 == var2) {
-            this.field_829 = var1.method_132((byte)-5) * 1857685779;
-            this.field_846 = var1.method_130(1540471649) * -364813997;
+            this.field_829 = var1.method_132() * 1857685779;
+            this.field_846 = var1.method_130() * -364813997;
          } else if(79 == var2) {
-            this.field_847 = var1.method_132((byte)-70) * -1446744557;
-            this.field_848 = var1.method_132((byte)-68) * -2968437;
-            this.field_846 = var1.method_130(-1834740528) * -364813997;
-            var3 = var1.method_130(-1247722755);
+            this.field_847 = var1.method_132() * -1446744557;
+            this.field_848 = var1.method_132() * -2968437;
+            this.field_846 = var1.method_130() * -364813997;
+            var3 = var1.method_130();
             this.field_849 = new int[var3];
 
             for(var4 = 0; var4 < var3; ++var4) {
-               this.field_849[var4] = var1.method_132((byte)-3);
+               this.field_849[var4] = var1.method_132();
             }
          } else if(var2 == 81) {
-            this.field_821 = var1.method_130(-486630811) * 1095153920;
+            this.field_821 = var1.method_130() * 1095153920;
          } else if(var2 == 82) {
-            this.field_815 = var1.method_132((byte)-115) * 551383109;
+            this.field_815 = var1.method_132() * 551383109;
          } else if(89 == var2) {
             this.field_850 = false;
          } else if(var2 == 249) {
             this.field_823 = class_325.method_5781(var1, this.field_823, -391561047);
          }
       } else {
-         this.field_825 = var1.method_132((byte)-40) * 1029028887;
+         this.field_825 = var1.method_132() * 1029028887;
          if('\uffff' == this.field_825 * -240174169) {
             this.field_825 = -1029028887;
          }
 
-         this.field_844 = var1.method_132((byte)-106) * 1365543255;
+         this.field_844 = var1.method_132() * 1365543255;
          if('\uffff' == this.field_844 * 758936167) {
             this.field_844 = -1365543255;
          }
 
          var3 = -1;
          if(var2 == 92) {
-            var3 = var1.method_132((byte)-119);
+            var3 = var1.method_132();
             if(var3 == '\uffff') {
                var3 = -1;
             }
          }
 
-         var4 = var1.method_130(515582083);
+         var4 = var1.method_130();
          this.field_842 = new int[2 + var4];
 
          for(int var5 = 0; var5 <= var4; ++var5) {
-            this.field_842[var5] = var1.method_132((byte)-22);
+            this.field_842[var5] = var1.method_132();
             if('\uffff' == this.field_842[var5]) {
                this.field_842[var5] = -1;
             }
@@ -1606,7 +1606,7 @@ public class class_87 extends class_59 {
       int var3;
       int var4;
       if(1 == var2) {
-         var3 = var1.method_130(-1033803367);
+         var3 = var1.method_130();
          if(var3 > 0) {
             if(this.field_835 != null && !field_806) {
                var1.field_15 += 1217892583 * var3;
@@ -1615,15 +1615,15 @@ public class class_87 extends class_59 {
                this.field_835 = new int[var3];
 
                for(var4 = 0; var4 < var3; ++var4) {
-                  this.field_835[var4] = var1.method_132((byte)-33);
-                  this.field_809[var4] = var1.method_130(1387214890);
+                  this.field_835[var4] = var1.method_132();
+                  this.field_809[var4] = var1.method_130();
                }
             }
          }
       } else if(var2 == 2) {
          this.field_811 = var1.method_139(-391631059);
       } else if(var2 == 5) {
-         var3 = var1.method_130(-56809990);
+         var3 = var1.method_130();
          if(var3 > 0) {
             if(this.field_835 != null && !field_806) {
                var1.field_15 += -2051383142 * var3;
@@ -1632,21 +1632,21 @@ public class class_87 extends class_59 {
                this.field_835 = new int[var3];
 
                for(var4 = 0; var4 < var3; ++var4) {
-                  this.field_835[var4] = var1.method_132((byte)-92);
+                  this.field_835[var4] = var1.method_132();
                }
             }
          }
       } else if(14 == var2) {
-         this.field_839 = var1.method_130(2120668405) * 822501225;
+         this.field_839 = var1.method_130() * 822501225;
       } else if(15 == var2) {
-         this.field_851 = var1.method_130(-274357150) * -2102030313;
+         this.field_851 = var1.method_130() * -2102030313;
       } else if(var2 == 17) {
          this.field_818 = 0;
          this.field_837 = false;
       } else if(18 == var2) {
          this.field_837 = false;
       } else if(19 == var2) {
-         this.field_820 = var1.method_130(-1793512987) * -2085655817;
+         this.field_820 = var1.method_130() * -2085655817;
       } else if(21 == var2) {
          this.field_821 = 0;
       } else if(var2 == 22) {
@@ -1654,55 +1654,55 @@ public class class_87 extends class_59 {
       } else if(23 == var2) {
          this.field_816 = true;
       } else if(24 == var2) {
-         this.field_824 = var1.method_132((byte)-109) * -1042698627;
+         this.field_824 = var1.method_132() * -1042698627;
          if(91732693 * this.field_824 == '\uffff') {
             this.field_824 = 1042698627;
          }
       } else if(var2 == 27) {
          this.field_818 = -2058267547;
       } else if(28 == var2) {
-         this.field_810 = var1.method_130(508232031) * 1012101565;
+         this.field_810 = var1.method_130() * 1012101565;
       } else if(var2 == 29) {
-         this.field_826 = var1.method_131((byte)-43) * -2118336885;
+         this.field_826 = var1.method_131() * -2118336885;
       } else if(39 == var2) {
-         this.field_845 = var1.method_131((byte)-41) * 1911142931;
+         this.field_845 = var1.method_131() * 1911142931;
       } else if(var2 >= 30 && var2 < 35) {
          this.field_828[var2 - 30] = var1.method_139(-391631059);
          if(this.field_828[var2 - 30].equalsIgnoreCase(class_305.field_3405)) {
             this.field_828[var2 - 30] = null;
          }
       } else if(var2 == 40) {
-         var3 = var1.method_130(2131591599);
+         var3 = var1.method_130();
          this.field_812 = new short[var3];
          this.field_801 = new short[var3];
 
          for(var4 = 0; var4 < var3; ++var4) {
-            this.field_812[var4] = (short)var1.method_132((byte)-68);
-            this.field_801[var4] = (short)var1.method_132((byte)-2);
+            this.field_812[var4] = (short)var1.method_132();
+            this.field_801[var4] = (short)var1.method_132();
          }
       } else if(var2 == 41) {
-         var3 = var1.method_130(-1372331618);
+         var3 = var1.method_130();
          this.field_814 = new short[var3];
          this.field_833 = new short[var3];
 
          for(var4 = 0; var4 < var3; ++var4) {
-            this.field_814[var4] = (short)var1.method_132((byte)-45);
-            this.field_833[var4] = (short)var1.method_132((byte)-13);
+            this.field_814[var4] = (short)var1.method_132();
+            this.field_833[var4] = (short)var1.method_132();
          }
       } else if(62 == var2) {
          this.field_831 = true;
       } else if(64 == var2) {
          this.field_832 = false;
       } else if(65 == var2) {
-         this.field_836 = var1.method_132((byte)-67) * 1454289911;
+         this.field_836 = var1.method_132() * 1454289911;
       } else if(66 == var2) {
-         this.field_834 = var1.method_132((byte)-12) * -1826017161;
+         this.field_834 = var1.method_132() * -1826017161;
       } else if(var2 == 67) {
-         this.field_804 = var1.method_132((byte)-105) * 1641642293;
+         this.field_804 = var1.method_132() * 1641642293;
       } else if(var2 == 68) {
-         this.field_830 = var1.method_132((byte)-56) * 1440922517;
+         this.field_830 = var1.method_132() * 1440922517;
       } else if(69 == var2) {
-         var1.method_130(-1095099158);
+         var1.method_130();
       } else if(70 == var2) {
          this.field_819 = var1.method_269(-1542485131) * 491527025;
       } else if(var2 == 71) {
@@ -1714,54 +1714,54 @@ public class class_87 extends class_59 {
       } else if(var2 == 74) {
          this.field_813 = true;
       } else if(var2 == 75) {
-         this.field_841 = var1.method_130(298104502) * -1858759757;
+         this.field_841 = var1.method_130() * -1858759757;
       } else if(77 != var2 && 92 != var2) {
          if(78 == var2) {
-            this.field_829 = var1.method_132((byte)-70) * 1857685779;
-            this.field_846 = var1.method_130(-1497071360) * -364813997;
+            this.field_829 = var1.method_132() * 1857685779;
+            this.field_846 = var1.method_130() * -364813997;
          } else if(79 == var2) {
-            this.field_847 = var1.method_132((byte)-74) * -1446744557;
-            this.field_848 = var1.method_132((byte)-120) * -2968437;
-            this.field_846 = var1.method_130(-1679930770) * -364813997;
-            var3 = var1.method_130(1660542556);
+            this.field_847 = var1.method_132() * -1446744557;
+            this.field_848 = var1.method_132() * -2968437;
+            this.field_846 = var1.method_130() * -364813997;
+            var3 = var1.method_130();
             this.field_849 = new int[var3];
 
             for(var4 = 0; var4 < var3; ++var4) {
-               this.field_849[var4] = var1.method_132((byte)-37);
+               this.field_849[var4] = var1.method_132();
             }
          } else if(var2 == 81) {
-            this.field_821 = var1.method_130(743831599) * 1095153920;
+            this.field_821 = var1.method_130() * 1095153920;
          } else if(var2 == 82) {
-            this.field_815 = var1.method_132((byte)-94) * 551383109;
+            this.field_815 = var1.method_132() * 551383109;
          } else if(89 == var2) {
             this.field_850 = false;
          } else if(var2 == 249) {
             this.field_823 = class_325.method_5781(var1, this.field_823, -391561047);
          }
       } else {
-         this.field_825 = var1.method_132((byte)-40) * 1029028887;
+         this.field_825 = var1.method_132() * 1029028887;
          if('\uffff' == this.field_825 * -240174169) {
             this.field_825 = -1029028887;
          }
 
-         this.field_844 = var1.method_132((byte)-67) * 1365543255;
+         this.field_844 = var1.method_132() * 1365543255;
          if('\uffff' == this.field_844 * 758936167) {
             this.field_844 = -1365543255;
          }
 
          var3 = -1;
          if(var2 == 92) {
-            var3 = var1.method_132((byte)-59);
+            var3 = var1.method_132();
             if(var3 == '\uffff') {
                var3 = -1;
             }
          }
 
-         var4 = var1.method_130(927959908);
+         var4 = var1.method_130();
          this.field_842 = new int[2 + var4];
 
          for(int var5 = 0; var5 <= var4; ++var5) {
-            this.field_842[var5] = var1.method_132((byte)-17);
+            this.field_842[var5] = var1.method_132();
             if('\uffff' == this.field_842[var5]) {
                this.field_842[var5] = -1;
             }
@@ -1777,7 +1777,7 @@ public class class_87 extends class_59 {
       int var3;
       int var4;
       if(1 == var2) {
-         var3 = var1.method_130(-824691191);
+         var3 = var1.method_130();
          if(var3 > 0) {
             if(this.field_835 != null && !field_806) {
                var1.field_15 += -1504500522 * var3;
@@ -1786,15 +1786,15 @@ public class class_87 extends class_59 {
                this.field_835 = new int[var3];
 
                for(var4 = 0; var4 < var3; ++var4) {
-                  this.field_835[var4] = var1.method_132((byte)-10);
-                  this.field_809[var4] = var1.method_130(-129864714);
+                  this.field_835[var4] = var1.method_132();
+                  this.field_809[var4] = var1.method_130();
                }
             }
          }
       } else if(var2 == 2) {
          this.field_811 = var1.method_139(-391631059);
       } else if(var2 == 5) {
-         var3 = var1.method_130(637653367);
+         var3 = var1.method_130();
          if(var3 > 0) {
             if(this.field_835 != null && !field_806) {
                var1.field_15 += -2051383142 * var3;
@@ -1803,21 +1803,21 @@ public class class_87 extends class_59 {
                this.field_835 = new int[var3];
 
                for(var4 = 0; var4 < var3; ++var4) {
-                  this.field_835[var4] = var1.method_132((byte)-97);
+                  this.field_835[var4] = var1.method_132();
                }
             }
          }
       } else if(14 == var2) {
-         this.field_839 = var1.method_130(-685767806) * 822501225;
+         this.field_839 = var1.method_130() * 822501225;
       } else if(15 == var2) {
-         this.field_851 = var1.method_130(-1159679474) * -2102030313;
+         this.field_851 = var1.method_130() * -2102030313;
       } else if(var2 == 17) {
          this.field_818 = 0;
          this.field_837 = false;
       } else if(18 == var2) {
          this.field_837 = false;
       } else if(19 == var2) {
-         this.field_820 = var1.method_130(-1469745830) * -2085655817;
+         this.field_820 = var1.method_130() * -2085655817;
       } else if(21 == var2) {
          this.field_821 = 0;
       } else if(var2 == 22) {
@@ -1825,55 +1825,55 @@ public class class_87 extends class_59 {
       } else if(23 == var2) {
          this.field_816 = true;
       } else if(24 == var2) {
-         this.field_824 = var1.method_132((byte)-66) * -1378334943;
+         this.field_824 = var1.method_132() * -1378334943;
          if(91732693 * this.field_824 == '\uffff') {
             this.field_824 = 2122192810;
          }
       } else if(var2 == 27) {
          this.field_818 = 2050122112;
       } else if(28 == var2) {
-         this.field_810 = var1.method_130(-1159400442) * 1012101565;
+         this.field_810 = var1.method_130() * 1012101565;
       } else if(var2 == 29) {
-         this.field_826 = var1.method_131((byte)-87) * 224884073;
+         this.field_826 = var1.method_131() * 224884073;
       } else if(39 == var2) {
-         this.field_845 = var1.method_131((byte)8) * 1911142931;
+         this.field_845 = var1.method_131() * 1911142931;
       } else if(var2 >= 30 && var2 < -1006102450) {
          this.field_828[var2 - 30] = var1.method_139(-391631059);
          if(this.field_828[var2 - 30].equalsIgnoreCase(class_305.field_3405)) {
             this.field_828[var2 - 30] = null;
          }
       } else if(var2 == 40) {
-         var3 = var1.method_130(-1896450022);
+         var3 = var1.method_130();
          this.field_812 = new short[var3];
          this.field_801 = new short[var3];
 
          for(var4 = 0; var4 < var3; ++var4) {
-            this.field_812[var4] = (short)var1.method_132((byte)-20);
-            this.field_801[var4] = (short)var1.method_132((byte)-57);
+            this.field_812[var4] = (short)var1.method_132();
+            this.field_801[var4] = (short)var1.method_132();
          }
       } else if(var2 == 41) {
-         var3 = var1.method_130(152342064);
+         var3 = var1.method_130();
          this.field_814 = new short[var3];
          this.field_833 = new short[var3];
 
          for(var4 = 0; var4 < var3; ++var4) {
-            this.field_814[var4] = (short)var1.method_132((byte)-101);
-            this.field_833[var4] = (short)var1.method_132((byte)-74);
+            this.field_814[var4] = (short)var1.method_132();
+            this.field_833[var4] = (short)var1.method_132();
          }
       } else if(62 == var2) {
          this.field_831 = true;
       } else if(-1516975155 == var2) {
          this.field_832 = false;
       } else if(209037051 == var2) {
-         this.field_836 = var1.method_132((byte)-32) * 1454289911;
+         this.field_836 = var1.method_132() * 1454289911;
       } else if(66 == var2) {
-         this.field_834 = var1.method_132((byte)-71) * -1826017161;
+         this.field_834 = var1.method_132() * -1826017161;
       } else if(var2 == 67) {
-         this.field_804 = var1.method_132((byte)-127) * 151613065;
+         this.field_804 = var1.method_132() * 151613065;
       } else if(var2 == 1742601050) {
-         this.field_830 = var1.method_132((byte)-48) * -1472731894;
+         this.field_830 = var1.method_132() * -1472731894;
       } else if(69 == var2) {
-         var1.method_130(1637322433);
+         var1.method_130();
       } else if(70 == var2) {
          this.field_819 = var1.method_269(-1542485131) * 491527025;
       } else if(var2 == 71) {
@@ -1885,54 +1885,54 @@ public class class_87 extends class_59 {
       } else if(var2 == 74) {
          this.field_813 = true;
       } else if(var2 == -446635899) {
-         this.field_841 = var1.method_130(-1048232240) * 443972753;
+         this.field_841 = var1.method_130() * 443972753;
       } else if(-487965332 != var2 && 92 != var2) {
          if(78 == var2) {
-            this.field_829 = var1.method_132((byte)-37) * 1716223131;
-            this.field_846 = var1.method_130(-1760135838) * -1992043098;
+            this.field_829 = var1.method_132() * 1716223131;
+            this.field_846 = var1.method_130() * -1992043098;
          } else if(79 == var2) {
-            this.field_847 = var1.method_132((byte)-98) * -1446744557;
-            this.field_848 = var1.method_132((byte)-112) * -619553085;
-            this.field_846 = var1.method_130(53366433) * -364813997;
-            var3 = var1.method_130(-363984527);
+            this.field_847 = var1.method_132() * -1446744557;
+            this.field_848 = var1.method_132() * -619553085;
+            this.field_846 = var1.method_130() * -364813997;
+            var3 = var1.method_130();
             this.field_849 = new int[var3];
 
             for(var4 = 0; var4 < var3; ++var4) {
-               this.field_849[var4] = var1.method_132((byte)-114);
+               this.field_849[var4] = var1.method_132();
             }
          } else if(var2 == 81) {
-            this.field_821 = var1.method_130(1865445539) * -1816107402;
+            this.field_821 = var1.method_130() * -1816107402;
          } else if(var2 == 82) {
-            this.field_815 = var1.method_132((byte)-99) * 1108915122;
+            this.field_815 = var1.method_132() * 1108915122;
          } else if(89 == var2) {
             this.field_850 = false;
          } else if(var2 == -1792998354) {
             this.field_823 = class_325.method_5781(var1, this.field_823, -391561047);
          }
       } else {
-         this.field_825 = var1.method_132((byte)-103) * 1029028887;
+         this.field_825 = var1.method_132() * 1029028887;
          if(-838481661 == this.field_825 * -240174169) {
             this.field_825 = -1029028887;
          }
 
-         this.field_844 = var1.method_132((byte)-123) * 1365543255;
+         this.field_844 = var1.method_132() * 1365543255;
          if('\uffff' == this.field_844 * -846350131) {
             this.field_844 = -1365543255;
          }
 
          var3 = -1;
          if(var2 == 92) {
-            var3 = var1.method_132((byte)-45);
+            var3 = var1.method_132();
             if(var3 == '\uffff') {
                var3 = -1;
             }
          }
 
-         var4 = var1.method_130(1764772358);
+         var4 = var1.method_130();
          this.field_842 = new int[2 + var4];
 
          for(int var5 = 0; var5 <= var4; ++var5) {
-            this.field_842[var5] = var1.method_132((byte)-5);
+            this.field_842[var5] = var1.method_132();
             if(-1275320895 == this.field_842[var5]) {
                this.field_842[var5] = -1;
             }
@@ -1948,7 +1948,7 @@ public class class_87 extends class_59 {
       int var3;
       int var4;
       if(1 == var2) {
-         var3 = var1.method_130(1368886886);
+         var3 = var1.method_130();
          if(var3 > 0) {
             if(this.field_835 != null && !field_806) {
                var1.field_15 += 1217892583 * var3;
@@ -1957,15 +1957,15 @@ public class class_87 extends class_59 {
                this.field_835 = new int[var3];
 
                for(var4 = 0; var4 < var3; ++var4) {
-                  this.field_835[var4] = var1.method_132((byte)-28);
-                  this.field_809[var4] = var1.method_130(-666487872);
+                  this.field_835[var4] = var1.method_132();
+                  this.field_809[var4] = var1.method_130();
                }
             }
          }
       } else if(var2 == 2) {
          this.field_811 = var1.method_139(-391631059);
       } else if(var2 == 5) {
-         var3 = var1.method_130(1028854868);
+         var3 = var1.method_130();
          if(var3 > 0) {
             if(this.field_835 != null && !field_806) {
                var1.field_15 += -2051383142 * var3;
@@ -1974,21 +1974,21 @@ public class class_87 extends class_59 {
                this.field_835 = new int[var3];
 
                for(var4 = 0; var4 < var3; ++var4) {
-                  this.field_835[var4] = var1.method_132((byte)-92);
+                  this.field_835[var4] = var1.method_132();
                }
             }
          }
       } else if(14 == var2) {
-         this.field_839 = var1.method_130(-1065025375) * 822501225;
+         this.field_839 = var1.method_130() * 822501225;
       } else if(15 == var2) {
-         this.field_851 = var1.method_130(706553295) * -2102030313;
+         this.field_851 = var1.method_130() * -2102030313;
       } else if(var2 == 17) {
          this.field_818 = 0;
          this.field_837 = false;
       } else if(18 == var2) {
          this.field_837 = false;
       } else if(19 == var2) {
-         this.field_820 = var1.method_130(-562471116) * -2085655817;
+         this.field_820 = var1.method_130() * -2085655817;
       } else if(21 == var2) {
          this.field_821 = 0;
       } else if(var2 == 22) {
@@ -1996,55 +1996,55 @@ public class class_87 extends class_59 {
       } else if(23 == var2) {
          this.field_816 = true;
       } else if(24 == var2) {
-         this.field_824 = var1.method_132((byte)-31) * -1042698627;
+         this.field_824 = var1.method_132() * -1042698627;
          if(91732693 * this.field_824 == '\uffff') {
             this.field_824 = 1042698627;
          }
       } else if(var2 == 27) {
          this.field_818 = -2058267547;
       } else if(28 == var2) {
-         this.field_810 = var1.method_130(-24718669) * 1012101565;
+         this.field_810 = var1.method_130() * 1012101565;
       } else if(var2 == 29) {
-         this.field_826 = var1.method_131((byte)-35) * -2118336885;
+         this.field_826 = var1.method_131() * -2118336885;
       } else if(39 == var2) {
-         this.field_845 = var1.method_131((byte)-56) * 1911142931;
+         this.field_845 = var1.method_131() * 1911142931;
       } else if(var2 >= 30 && var2 < 35) {
          this.field_828[var2 - 30] = var1.method_139(-391631059);
          if(this.field_828[var2 - 30].equalsIgnoreCase(class_305.field_3405)) {
             this.field_828[var2 - 30] = null;
          }
       } else if(var2 == 40) {
-         var3 = var1.method_130(202343934);
+         var3 = var1.method_130();
          this.field_812 = new short[var3];
          this.field_801 = new short[var3];
 
          for(var4 = 0; var4 < var3; ++var4) {
-            this.field_812[var4] = (short)var1.method_132((byte)-107);
-            this.field_801[var4] = (short)var1.method_132((byte)-32);
+            this.field_812[var4] = (short)var1.method_132();
+            this.field_801[var4] = (short)var1.method_132();
          }
       } else if(var2 == 41) {
-         var3 = var1.method_130(470915070);
+         var3 = var1.method_130();
          this.field_814 = new short[var3];
          this.field_833 = new short[var3];
 
          for(var4 = 0; var4 < var3; ++var4) {
-            this.field_814[var4] = (short)var1.method_132((byte)-15);
-            this.field_833[var4] = (short)var1.method_132((byte)-33);
+            this.field_814[var4] = (short)var1.method_132();
+            this.field_833[var4] = (short)var1.method_132();
          }
       } else if(62 == var2) {
          this.field_831 = true;
       } else if(64 == var2) {
          this.field_832 = false;
       } else if(65 == var2) {
-         this.field_836 = var1.method_132((byte)-12) * 1454289911;
+         this.field_836 = var1.method_132() * 1454289911;
       } else if(66 == var2) {
-         this.field_834 = var1.method_132((byte)-74) * -1826017161;
+         this.field_834 = var1.method_132() * -1826017161;
       } else if(var2 == 67) {
-         this.field_804 = var1.method_132((byte)-81) * 1641642293;
+         this.field_804 = var1.method_132() * 1641642293;
       } else if(var2 == 68) {
-         this.field_830 = var1.method_132((byte)-75) * 1440922517;
+         this.field_830 = var1.method_132() * 1440922517;
       } else if(69 == var2) {
-         var1.method_130(1123257957);
+         var1.method_130();
       } else if(70 == var2) {
          this.field_819 = var1.method_269(-1542485131) * 491527025;
       } else if(var2 == 71) {
@@ -2056,54 +2056,54 @@ public class class_87 extends class_59 {
       } else if(var2 == 74) {
          this.field_813 = true;
       } else if(var2 == 75) {
-         this.field_841 = var1.method_130(-2102397799) * -1858759757;
+         this.field_841 = var1.method_130() * -1858759757;
       } else if(77 != var2 && 92 != var2) {
          if(78 == var2) {
-            this.field_829 = var1.method_132((byte)-112) * 1857685779;
-            this.field_846 = var1.method_130(659061543) * -364813997;
+            this.field_829 = var1.method_132() * 1857685779;
+            this.field_846 = var1.method_130() * -364813997;
          } else if(79 == var2) {
-            this.field_847 = var1.method_132((byte)-100) * -1446744557;
-            this.field_848 = var1.method_132((byte)-79) * -2968437;
-            this.field_846 = var1.method_130(206263561) * -364813997;
-            var3 = var1.method_130(365310174);
+            this.field_847 = var1.method_132() * -1446744557;
+            this.field_848 = var1.method_132() * -2968437;
+            this.field_846 = var1.method_130() * -364813997;
+            var3 = var1.method_130();
             this.field_849 = new int[var3];
 
             for(var4 = 0; var4 < var3; ++var4) {
-               this.field_849[var4] = var1.method_132((byte)-15);
+               this.field_849[var4] = var1.method_132();
             }
          } else if(var2 == 81) {
-            this.field_821 = var1.method_130(1717621087) * 1095153920;
+            this.field_821 = var1.method_130() * 1095153920;
          } else if(var2 == 82) {
-            this.field_815 = var1.method_132((byte)-16) * 551383109;
+            this.field_815 = var1.method_132() * 551383109;
          } else if(89 == var2) {
             this.field_850 = false;
          } else if(var2 == 249) {
             this.field_823 = class_325.method_5781(var1, this.field_823, -391561047);
          }
       } else {
-         this.field_825 = var1.method_132((byte)-62) * 1029028887;
+         this.field_825 = var1.method_132() * 1029028887;
          if('\uffff' == this.field_825 * -240174169) {
             this.field_825 = -1029028887;
          }
 
-         this.field_844 = var1.method_132((byte)-57) * 1365543255;
+         this.field_844 = var1.method_132() * 1365543255;
          if('\uffff' == this.field_844 * 758936167) {
             this.field_844 = -1365543255;
          }
 
          var3 = -1;
          if(var2 == 92) {
-            var3 = var1.method_132((byte)-59);
+            var3 = var1.method_132();
             if(var3 == '\uffff') {
                var3 = -1;
             }
          }
 
-         var4 = var1.method_130(1075748361);
+         var4 = var1.method_130();
          this.field_842 = new int[2 + var4];
 
          for(int var5 = 0; var5 <= var4; ++var5) {
-            this.field_842[var5] = var1.method_132((byte)-67);
+            this.field_842[var5] = var1.method_132();
             if('\uffff' == this.field_842[var5]) {
                this.field_842[var5] = -1;
             }
@@ -2239,7 +2239,7 @@ public class class_87 extends class_59 {
          class_377.field_4156 = var1 * 7137263162597843881L;
          return class_377.field_4157 * 1841679994680013491L + var1;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "eg.v(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -2417,7 +2417,7 @@ public class class_87 extends class_59 {
    public final class_87 method_1523() {
       int var1 = -1;
       if(this.field_825 * -240174169 != -1) {
-         var1 = class_43.method_496(-240174169 * this.field_825, -1131962378);
+         var1 = class_43.method_496(-240174169 * this.field_825);
       } else if(758936167 * this.field_844 != -1) {
          var1 = class_282.field_3246[758936167 * this.field_844];
       }
@@ -2436,7 +2436,7 @@ public class class_87 extends class_59 {
    public final class_87 method_1524() {
       int var1 = -1;
       if(this.field_825 * -240174169 != -1) {
-         var1 = class_43.method_496(-240174169 * this.field_825, -1928188644);
+         var1 = class_43.method_496(-240174169 * this.field_825);
       } else if(758936167 * this.field_844 != -1) {
          var1 = class_282.field_3246[758936167 * this.field_844];
       }
@@ -2490,7 +2490,7 @@ public class class_87 extends class_59 {
          this.field_848 = 0;
          this.field_850 = true;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "eg.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -2644,7 +2644,7 @@ public class class_87 extends class_59 {
       if(var1 != null) {
          return var1;
       } else {
-         byte[] var2 = field_802.method_5381(6, var0, -26460885);
+         byte[] var2 = field_802.method_5381(6, var0);
          class_87 var10000 = new class_87();
          var1 = var10000;
          var1.field_808 = 139564951 * var0;
@@ -2752,7 +2752,7 @@ public class class_87 extends class_59 {
 
          return var12;
       } catch (RuntimeException var14) {
-         throw class_223.method_4281(var14, "eg.d(" + ')');
+         throw class_223.method_4281(var14);
       }
    }
 
@@ -2829,7 +2829,7 @@ public class class_87 extends class_59 {
             }
          }
       } catch (RuntimeException var13) {
-         throw class_223.method_4281(var13, "eg.ko(" + ')');
+         throw class_223.method_4281(var13);
       }
    }
 
@@ -3193,7 +3193,7 @@ public class class_87 extends class_59 {
 
          return var13;
       } catch (RuntimeException var9) {
-         throw class_223.method_4281(var9, "eg.s(" + ')');
+         throw class_223.method_4281(var9);
       }
    }
 
@@ -3216,7 +3216,7 @@ public class class_87 extends class_59 {
             return var2;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "eg.j(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 }

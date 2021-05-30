@@ -51,7 +51,7 @@ public class class_24 {
       this.field_2 = new class_159[10];
 
       for(int var2 = 0; var2 < 10; ++var2) {
-         int var3 = var1.method_130(-220672004);
+         int var3 = var1.method_130();
          if(var3 != 0) {
             var1.field_15 -= -1025691571;
             class_159[] var10000 = this.field_2;
@@ -61,8 +61,8 @@ public class class_24 {
          }
       }
 
-      this.field_3 = var1.method_132((byte)-56);
-      this.field_4 = var1.method_132((byte)-108);
+      this.field_3 = var1.method_132();
+      this.field_4 = var1.method_132();
    }
 
    // $FF: renamed from: n () au
@@ -74,7 +74,7 @@ public class class_24 {
 
    // $FF: renamed from: v (jv, int, int) aa
    public static class_24 method_79(class_306 var0, int var1, int var2) {
-      byte[] var3 = var0.method_5381(var1, var2, -26460885);
+      byte[] var3 = var0.method_5381(var1, var2);
       if(var3 == null) {
          return null;
       } else {
@@ -124,7 +124,7 @@ public class class_24 {
 
    // $FF: renamed from: p (jv, int, int) aa
    public static class_24 method_81(class_306 var0, int var1, int var2) {
-      byte[] var3 = var0.method_5381(var1, var2, -26460885);
+      byte[] var3 = var0.method_5381(var1, var2);
       if(var3 == null) {
          return null;
       } else {

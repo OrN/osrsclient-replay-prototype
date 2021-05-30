@@ -95,7 +95,7 @@ public class class_225 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "fk.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

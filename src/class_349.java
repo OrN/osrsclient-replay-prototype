@@ -25,7 +25,7 @@ public class class_349 {
       try {
          this.field_3936 = var1 * -1530607719;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "lf.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 }

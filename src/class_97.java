@@ -51,12 +51,12 @@ public final class class_97 extends class_91 {
 
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "cm.v(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: av (int, cf, boolean, int) int
-   static int method_1784(int var0, class_90 var1, boolean var2, int var3) {
+   static int method_1784(int var0, int var3) {
       try {
          int[] var10000;
          int var10001;
@@ -67,7 +67,7 @@ public final class class_97 extends class_91 {
             } else {
                var10000 = class_165.field_2052;
                var10001 = (class_136.field_1752 += -1087727229) * -26460885 - 1;
-               if(class_154.method_3251(1487931183)) {
+               if(class_154.method_3251()) {
                   if(var3 == -237530228) {
                      throw new IllegalStateException();
                   }
@@ -86,7 +86,7 @@ public final class class_97 extends class_91 {
                if(var3 == -237530228) {
                   throw new IllegalStateException();
                } else {
-                  var9 = class_78.method_1237(395857864);
+                  var9 = class_78.method_1237();
                   if(var9 != null) {
                      class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = var9.field_1894 * -1428153959;
                      class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = 264436593 * var9.field_1890;
@@ -271,9 +271,9 @@ public final class class_97 extends class_91 {
                                  throw new IllegalStateException();
                               }
 
-                              class_165.field_2053[(class_165.field_2054 += 1647125333) * 1824375293 - 1] = class_85.method_1443(var4, 1340246132).method_1548(var5, var6.field_791, -614305753);
+                              class_165.field_2053[(class_165.field_2054 += 1647125333) * 1824375293 - 1] = class_85.method_1443(var4, 1340246132).method_1548(var5, var6.field_791);
                            } else {
-                              class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_85.method_1443(var4, 2093585329).method_1547(var5, var6.field_794 * 1035114241, 506916452);
+                              class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_85.method_1443(var4, 2093585329).method_1547(var5, var6.field_794 * 1035114241);
                            }
 
                            return 1;
@@ -291,9 +291,9 @@ public final class class_97 extends class_91 {
                                  throw new IllegalStateException();
                               }
 
-                              class_165.field_2053[(class_165.field_2054 += 1647125333) * 1824375293 - 1] = class_121.method_2269(var4, -1019790703).method_1494(var5, var6.field_791, 110294181);
+                              class_165.field_2053[(class_165.field_2054 += 1647125333) * 1824375293 - 1] = class_121.method_2269(var4, -1019790703).method_1494(var5, var6.field_791);
                            } else {
-                              class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_121.method_2269(var4, 662942822).method_1487(var5, var6.field_794 * 1035114241, -1270474150);
+                              class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_121.method_2269(var4, 662942822).method_1487(var5, var6.field_794 * 1035114241);
                            }
 
                            return 1;
@@ -308,9 +308,9 @@ public final class class_97 extends class_91 {
                               throw new IllegalStateException();
                            }
 
-                           class_165.field_2053[(class_165.field_2054 += 1647125333) * 1824375293 - 1] = class_299.method_5347(var4, -1013820387).method_1284(var5, var6.field_791, (short)239);
+                           class_165.field_2053[(class_165.field_2054 += 1647125333) * 1824375293 - 1] = class_299.method_5347(var4, -1013820387).method_1284(var5, var6.field_791);
                         } else {
-                           class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_299.method_5347(var4, 22793792).method_1271(var5, 1035114241 * var6.field_794, (byte)117);
+                           class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_299.method_5347(var4, 22793792).method_1271(var5, 1035114241 * var6.field_794);
                         }
 
                         return 1;
@@ -327,9 +327,9 @@ public final class class_97 extends class_91 {
                                  throw new IllegalStateException();
                               }
 
-                              class_165.field_2053[(class_165.field_2054 += 1647125333) * 1824375293 - 1] = class_169.method_3618(var4, 598444391).method_1434(var5, var6.field_791, 1932867603);
+                              class_165.field_2053[(class_165.field_2054 += 1647125333) * 1824375293 - 1] = class_169.method_3618(var4, 598444391).method_1434(var5, var6.field_791);
                            } else {
-                              class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_169.method_3618(var4, -1639208897).method_1433(var5, 1035114241 * var6.field_794, 1766165302);
+                              class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_169.method_3618(var4, -1639208897).method_1433(var5, 1035114241 * var6.field_794);
                            }
 
                            return 1;
@@ -408,7 +408,7 @@ public final class class_97 extends class_91 {
             }
          }
       } catch (RuntimeException var8) {
-         throw class_223.method_4281(var8, "cm.av(" + ')');
+         throw class_223.method_4281(var8);
       }
    }
 
@@ -437,7 +437,7 @@ public final class class_97 extends class_91 {
             return var3;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "cm.n(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -523,7 +523,7 @@ public final class class_97 extends class_91 {
          }
 
       } catch (RuntimeException var9) {
-         throw class_223.method_4281(var9, "cm.<init>(" + ')');
+         throw class_223.method_4281(var9);
       }
    }
 
@@ -540,7 +540,7 @@ public final class class_97 extends class_91 {
             return null;
          }
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "cm.b(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -664,9 +664,9 @@ public final class class_97 extends class_91 {
             }
          }
 
-         class_126.field_1370.method_3053(872029974);
+         class_126.field_1370.method_3053();
       } catch (RuntimeException var12) {
-         throw class_223.method_4281(var12, "cm.ht(" + ')');
+         throw class_223.method_4281(var12);
       }
    }
 
@@ -686,7 +686,7 @@ public final class class_97 extends class_91 {
 
          return var3;
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "cm.b(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 

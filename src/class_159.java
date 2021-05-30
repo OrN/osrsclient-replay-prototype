@@ -481,7 +481,7 @@ public class class_159 {
       var10001 = new class_156();
       this.field_1965 = var10001;
       this.field_1965.method_3264(var1);
-      int var2 = var1.method_130(-491238564);
+      int var2 = var1.method_130();
       if(var2 != 0) {
          var1.field_15 -= -1025691571;
          var10001 = new class_156();
@@ -492,7 +492,7 @@ public class class_159 {
          this.field_1967.method_3264(var1);
       }
 
-      var2 = var1.method_130(-205366611);
+      var2 = var1.method_130();
       if(var2 != 0) {
          var1.field_15 -= -1025691571;
          var10001 = new class_156();
@@ -503,7 +503,7 @@ public class class_159 {
          this.field_1964.method_3264(var1);
       }
 
-      var2 = var1.method_130(-1694357461);
+      var2 = var1.method_130();
       if(var2 != 0) {
          var1.field_15 -= -1025691571;
          var10001 = new class_156();
@@ -515,20 +515,20 @@ public class class_159 {
       }
 
       for(int var3 = 0; var3 < 10; ++var3) {
-         int var4 = var1.method_144((byte)21);
+         int var4 = var1.method_144();
          if(var4 == 0) {
             break;
          }
 
          this.field_1972[var3] = var4;
          this.field_1973[var3] = var1.method_143((byte)88);
-         this.field_1974[var3] = var1.method_144((byte)-29);
+         this.field_1974[var3] = var1.method_144();
       }
 
-      this.field_1977 = var1.method_144((byte)-28);
-      this.field_1986 = var1.method_144((byte)-27);
-      this.field_1982 = var1.method_132((byte)-40);
-      this.field_1980 = var1.method_132((byte)-24);
+      this.field_1977 = var1.method_144();
+      this.field_1986 = var1.method_144();
+      this.field_1982 = var1.method_132();
+      this.field_1980 = var1.method_132();
       class_150 var5 = new class_150();
       this.field_1968 = var5;
       var10001 = new class_156();
@@ -1184,7 +1184,7 @@ public class class_159 {
       var10001 = new class_156();
       this.field_1965 = var10001;
       this.field_1965.method_3264(var1);
-      int var2 = var1.method_130(-1775171999);
+      int var2 = var1.method_130();
       if(var2 != 0) {
          var1.field_15 -= -1025691571;
          var10001 = new class_156();
@@ -1195,7 +1195,7 @@ public class class_159 {
          this.field_1967.method_3264(var1);
       }
 
-      var2 = var1.method_130(-238955827);
+      var2 = var1.method_130();
       if(var2 != 0) {
          var1.field_15 -= -708323921;
          var10001 = new class_156();
@@ -1206,7 +1206,7 @@ public class class_159 {
          this.field_1964.method_3264(var1);
       }
 
-      var2 = var1.method_130(-1385355184);
+      var2 = var1.method_130();
       if(var2 != 0) {
          var1.field_15 -= -1025691571;
          var10001 = new class_156();
@@ -1218,20 +1218,20 @@ public class class_159 {
       }
 
       for(int var3 = 0; var3 < 10; ++var3) {
-         int var4 = var1.method_144((byte)3);
+         int var4 = var1.method_144();
          if(var4 == 0) {
             break;
          }
 
          this.field_1972[var3] = var4;
          this.field_1973[var3] = var1.method_143((byte)13);
-         this.field_1974[var3] = var1.method_144((byte)-3);
+         this.field_1974[var3] = var1.method_144();
       }
 
-      this.field_1977 = var1.method_144((byte)-14);
-      this.field_1986 = var1.method_144((byte)-47);
-      this.field_1982 = var1.method_132((byte)-58);
-      this.field_1980 = var1.method_132((byte)-89);
+      this.field_1977 = var1.method_144();
+      this.field_1986 = var1.method_144();
+      this.field_1982 = var1.method_132();
+      this.field_1980 = var1.method_132();
       class_150 var5 = new class_150();
       this.field_1968 = var5;
       var10001 = new class_156();
@@ -1247,7 +1247,7 @@ public class class_159 {
       var10001 = new class_156();
       this.field_1965 = var10001;
       this.field_1965.method_3264(var1);
-      int var2 = var1.method_130(349839628);
+      int var2 = var1.method_130();
       if(var2 != 0) {
          var1.field_15 -= -1025691571;
          var10001 = new class_156();
@@ -1258,7 +1258,7 @@ public class class_159 {
          this.field_1967.method_3264(var1);
       }
 
-      var2 = var1.method_130(1897428687);
+      var2 = var1.method_130();
       if(var2 != 0) {
          var1.field_15 -= -1025691571;
          var10001 = new class_156();
@@ -1269,7 +1269,7 @@ public class class_159 {
          this.field_1964.method_3264(var1);
       }
 
-      var2 = var1.method_130(-584305092);
+      var2 = var1.method_130();
       if(var2 != 0) {
          var1.field_15 -= -1025691571;
          var10001 = new class_156();
@@ -1281,20 +1281,20 @@ public class class_159 {
       }
 
       for(int var3 = 0; var3 < 10; ++var3) {
-         int var4 = var1.method_144((byte)1);
+         int var4 = var1.method_144();
          if(var4 == 0) {
             break;
          }
 
          this.field_1972[var3] = var4;
          this.field_1973[var3] = var1.method_143((byte)119);
-         this.field_1974[var3] = var1.method_144((byte)-97);
+         this.field_1974[var3] = var1.method_144();
       }
 
-      this.field_1977 = var1.method_144((byte)21);
-      this.field_1986 = var1.method_144((byte)80);
-      this.field_1982 = var1.method_132((byte)-39);
-      this.field_1980 = var1.method_132((byte)-43);
+      this.field_1977 = var1.method_144();
+      this.field_1986 = var1.method_144();
+      this.field_1982 = var1.method_132();
+      this.field_1980 = var1.method_132();
       class_150 var5 = new class_150();
       this.field_1968 = var5;
       var10001 = new class_156();
@@ -1310,7 +1310,7 @@ public class class_159 {
       var10001 = new class_156();
       this.field_1965 = var10001;
       this.field_1965.method_3264(var1);
-      int var2 = var1.method_130(-1073109568);
+      int var2 = var1.method_130();
       if(var2 != 0) {
          var1.field_15 -= -1025691571;
          var10001 = new class_156();
@@ -1321,7 +1321,7 @@ public class class_159 {
          this.field_1967.method_3264(var1);
       }
 
-      var2 = var1.method_130(52213380);
+      var2 = var1.method_130();
       if(var2 != 0) {
          var1.field_15 -= 1348412136;
          var10001 = new class_156();
@@ -1332,7 +1332,7 @@ public class class_159 {
          this.field_1964.method_3264(var1);
       }
 
-      var2 = var1.method_130(1559204453);
+      var2 = var1.method_130();
       if(var2 != 0) {
          var1.field_15 -= -1025691571;
          var10001 = new class_156();
@@ -1344,20 +1344,20 @@ public class class_159 {
       }
 
       for(int var3 = 0; var3 < 10; ++var3) {
-         int var4 = var1.method_144((byte)25);
+         int var4 = var1.method_144();
          if(var4 == 0) {
             break;
          }
 
          this.field_1972[var3] = var4;
          this.field_1973[var3] = var1.method_143((byte)30);
-         this.field_1974[var3] = var1.method_144((byte)94);
+         this.field_1974[var3] = var1.method_144();
       }
 
-      this.field_1977 = var1.method_144((byte)-16);
-      this.field_1986 = var1.method_144((byte)33);
-      this.field_1982 = var1.method_132((byte)-123);
-      this.field_1980 = var1.method_132((byte)-41);
+      this.field_1977 = var1.method_144();
+      this.field_1986 = var1.method_144();
+      this.field_1982 = var1.method_132();
+      this.field_1980 = var1.method_132();
       class_150 var5 = new class_150();
       this.field_1968 = var5;
       var10001 = new class_156();

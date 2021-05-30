@@ -23,7 +23,7 @@ public class class_210 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ec.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -157,7 +157,7 @@ public class class_210 {
             class_147.field_1864 = Math.abs(-1885485519 * class_278.field_3224) * -368785127;
          }
       } catch (RuntimeException var12) {
-         throw class_223.method_4281(var12, "ec.g(" + ')');
+         throw class_223.method_4281(var12);
       }
    }
 
@@ -213,7 +213,7 @@ public class class_210 {
          } else if(client.field_1565) {
             String var4;
             label68: {
-               int var3 = class_192.method_3959(-1594517863);
+               int var3 = class_192.method_3959();
                if(1 == -438265211 * client.field_1570) {
                   if(var2 == -1956353066) {
                      return;
@@ -248,22 +248,22 @@ public class class_210 {
             }
 
             if(client.field_1554 * 673512273 > 2) {
-               var4 = var4 + class_136.method_2958(16777215, -1966582053) + " " + '/' + " " + (client.field_1554 * 673512273 - 2) + class_305.field_3444;
+               var4 = var4 + class_136.method_2958(16777215) + " " + '/' + " " + (client.field_1554 * 673512273 - 2) + class_305.field_3444;
             }
 
             class_37.field_241.method_877(var4, var0 + 4, var1 + 15, 16777215, 0, -1702273423 * client.field_1425 / 1000);
          }
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "ec.hv(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
    // $FF: renamed from: j (int) void
-   public static void method_4170(int var0) {
+   public static void method_4170() {
       try {
          class_86.field_792.method_5074();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ec.j(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 

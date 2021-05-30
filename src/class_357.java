@@ -25,7 +25,7 @@ public class class_357 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "lu.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

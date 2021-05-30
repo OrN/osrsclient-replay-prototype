@@ -26,7 +26,7 @@ public class class_229 {
       try {
          this.field_2567 = 193399743 * var1;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "fn.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -44,8 +44,8 @@ public class class_229 {
          if(class_202.field_2369 != null) {
             if(var2 < -1093561710) {
                class_202.field_2369.field_15 = var1 * 384402024 + -833490559;
-               int var3 = class_202.field_2369.method_135((byte)-128);
-               int var4 = class_202.field_2369.method_135((byte)-47);
+               int var3 = class_202.field_2369.method_135();
+               int var4 = class_202.field_2369.method_135();
                var0.method_5489(var3, var4, -887756709);
             }
          } else {
@@ -53,7 +53,7 @@ public class class_229 {
             class_314.field_3765[var1] = var0;
          }
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "fn.n(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -74,24 +74,24 @@ public class class_229 {
          } else {
             class_177.field_2194 = var3 * 2078798195;
             class_65.method_662();
-            byte[] var5 = var0.method_5384("title.jpg", "", -1574556179);
-            class_177.field_2186 = class_86.method_1480(var5, (byte)116);
+            byte[] var5 = var0.method_5384("title.jpg", "");
+            class_177.field_2186 = class_86.method_1480(var5);
             class_52.field_378 = class_177.field_2186.method_856();
             class_311.method_5553(var1, client.field_1414 * 1088533541, (byte)26);
-            class_299.field_3369 = class_79.method_1257(var1, "titlebox", "", -1883030071);
-            class_177.field_2185 = class_79.method_1257(var1, "titlebutton", "", -1943795237);
-            int var7 = var1.method_5399("runes", -216080393);
-            int var8 = var1.method_5400(var7, "", -1238248645);
-            class_66[] var6 = class_212.method_4182(var1, var7, var8, -1354146458);
+            class_299.field_3369 = class_79.method_1257(var1, "titlebox", "");
+            class_177.field_2185 = class_79.method_1257(var1, "titlebutton", "");
+            int var7 = var1.method_5399("runes");
+            int var8 = var1.method_5400(var7, "");
+            class_66[] var6 = class_212.method_4182(var1, var7, var8);
             class_177.field_2184 = var6;
-            var8 = var1.method_5399("title_mute", -805633924);
-            int var9 = var1.method_5400(var8, "", -1806554484);
-            class_66[] var11 = class_212.method_4182(var1, var8, var9, -649051157);
+            var8 = var1.method_5399("title_mute");
+            int var9 = var1.method_5400(var8, "");
+            class_66[] var11 = class_212.method_4182(var1, var8, var9);
             class_148.field_1872 = var11;
-            class_160.field_2001 = class_79.method_1257(var1, "options_radio_buttons,0", "", -1863901484);
-            class_148.field_1876 = class_79.method_1257(var1, "options_radio_buttons,4", "", -1858139018);
-            class_312.field_3759 = class_79.method_1257(var1, "options_radio_buttons,2", "", -2049493752);
-            class_44.field_323 = class_79.method_1257(var1, "options_radio_buttons,6", "", -1898295222);
+            class_160.field_2001 = class_79.method_1257(var1, "options_radio_buttons,0", "");
+            class_148.field_1876 = class_79.method_1257(var1, "options_radio_buttons,4", "");
+            class_312.field_3759 = class_79.method_1257(var1, "options_radio_buttons,2", "");
+            class_44.field_323 = class_79.method_1257(var1, "options_radio_buttons,6", "");
             class_43.field_311 = 1495272685 * class_160.field_2001.field_498;
             class_220.field_2491 = -1878338039 * class_160.field_2001.field_492;
             class_162 var10000 = new class_162(class_177.field_2184);
@@ -110,9 +110,9 @@ public class class_229 {
                   throw new IllegalStateException();
                }
 
-               class_116.method_2246(2, class_194.field_2307, "scape main", "", 255, false, -908016568);
+               class_116.method_2246(2, class_194.field_2307, "scape main", "", 255, false);
             } else {
-               class_215.method_4193(2, -2024076274);
+               class_215.method_4193(2);
             }
 
             class_295.method_5317(false, (byte)78);
@@ -125,7 +125,7 @@ public class class_229 {
             class_372.field_4114.method_735(751544539 * class_177.field_2183 + 382 - class_372.field_4114.field_498 / 2, 18);
          }
       } catch (RuntimeException var10) {
-         throw class_223.method_4281(var10, "fn.n(" + ')');
+         throw class_223.method_4281(var10);
       }
    }
 
@@ -149,7 +149,7 @@ public class class_229 {
             return var2 == 1?7 - var0 - (var3 - 1):(2 == var2?7 - var1 - (var4 - 1):var0);
          }
       } catch (RuntimeException var8) {
-         throw class_223.method_4281(var8, "fn.n(" + ')');
+         throw class_223.method_4281(var8);
       }
    }
 }

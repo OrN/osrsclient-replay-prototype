@@ -28,22 +28,22 @@ public class class_156 {
 
    // $FF: renamed from: b (nd) void
    final void method_3263(class_28 var1) {
-      this.field_1947 = var1.method_130(1048869499);
+      this.field_1947 = var1.method_130();
       this.field_1942 = new int[this.field_1947];
       this.field_1943 = new int[this.field_1947];
 
       for(int var2 = 0; var2 < this.field_1947; ++var2) {
-         this.field_1942[var2] = var1.method_132((byte)-80);
-         this.field_1943[var2] = var1.method_132((byte)-90);
+         this.field_1942[var2] = var1.method_132();
+         this.field_1943[var2] = var1.method_132();
       }
 
    }
 
    // $FF: renamed from: v (nd) void
    final void method_3264(class_28 var1) {
-      this.field_1946 = var1.method_130(400725309);
-      this.field_1944 = var1.method_135((byte)-42);
-      this.field_1949 = var1.method_135((byte)-83);
+      this.field_1946 = var1.method_130();
+      this.field_1944 = var1.method_135();
+      this.field_1949 = var1.method_135();
       this.method_3277(var1);
    }
 
@@ -89,30 +89,30 @@ public class class_156 {
 
    // $FF: renamed from: d (nd) void
    final void method_3268(class_28 var1) {
-      this.field_1947 = var1.method_130(-1556345344);
+      this.field_1947 = var1.method_130();
       this.field_1942 = new int[this.field_1947];
       this.field_1943 = new int[this.field_1947];
 
       for(int var2 = 0; var2 < this.field_1947; ++var2) {
-         this.field_1942[var2] = var1.method_132((byte)-43);
-         this.field_1943[var2] = var1.method_132((byte)-59);
+         this.field_1942[var2] = var1.method_132();
+         this.field_1943[var2] = var1.method_132();
       }
 
    }
 
    // $FF: renamed from: j (nd) void
    final void method_3269(class_28 var1) {
-      this.field_1946 = var1.method_130(-1157978509);
-      this.field_1944 = var1.method_135((byte)-43);
-      this.field_1949 = var1.method_135((byte)-94);
+      this.field_1946 = var1.method_130();
+      this.field_1944 = var1.method_135();
+      this.field_1949 = var1.method_135();
       this.method_3277(var1);
    }
 
    // $FF: renamed from: r (nd) void
    final void method_3270(class_28 var1) {
-      this.field_1946 = var1.method_130(1367213334);
-      this.field_1944 = var1.method_135((byte)-93);
-      this.field_1949 = var1.method_135((byte)-87);
+      this.field_1946 = var1.method_130();
+      this.field_1944 = var1.method_135();
+      this.field_1949 = var1.method_135();
       this.method_3277(var1);
    }
 
@@ -127,35 +127,35 @@ public class class_156 {
 
    // $FF: renamed from: u (nd) void
    final void method_3272(class_28 var1) {
-      this.field_1947 = var1.method_130(1365140530);
+      this.field_1947 = var1.method_130();
       this.field_1942 = new int[this.field_1947];
       this.field_1943 = new int[this.field_1947];
 
       for(int var2 = 0; var2 < this.field_1947; ++var2) {
-         this.field_1942[var2] = var1.method_132((byte)-109);
-         this.field_1943[var2] = var1.method_132((byte)-121);
+         this.field_1942[var2] = var1.method_132();
+         this.field_1943[var2] = var1.method_132();
       }
 
    }
 
    // $FF: renamed from: s (nd) void
    final void method_3273(class_28 var1) {
-      this.field_1947 = var1.method_130(264122862);
+      this.field_1947 = var1.method_130();
       this.field_1942 = new int[this.field_1947];
       this.field_1943 = new int[this.field_1947];
 
       for(int var2 = 0; var2 < this.field_1947; ++var2) {
-         this.field_1942[var2] = var1.method_132((byte)-65);
-         this.field_1943[var2] = var1.method_132((byte)-103);
+         this.field_1942[var2] = var1.method_132();
+         this.field_1943[var2] = var1.method_132();
       }
 
    }
 
    // $FF: renamed from: p (nd) void
    final void method_3274(class_28 var1) {
-      this.field_1946 = var1.method_130(1387518778);
-      this.field_1944 = var1.method_135((byte)-37);
-      this.field_1949 = var1.method_135((byte)-2);
+      this.field_1946 = var1.method_130();
+      this.field_1944 = var1.method_135();
+      this.field_1949 = var1.method_135();
       this.method_3277(var1);
    }
 
@@ -179,13 +179,13 @@ public class class_156 {
 
    // $FF: renamed from: n (nd) void
    final void method_3277(class_28 var1) {
-      this.field_1947 = var1.method_130(-1426987541);
+      this.field_1947 = var1.method_130();
       this.field_1942 = new int[this.field_1947];
       this.field_1943 = new int[this.field_1947];
 
       for(int var2 = 0; var2 < this.field_1947; ++var2) {
-         this.field_1942[var2] = var1.method_132((byte)-44);
-         this.field_1943[var2] = var1.method_132((byte)-116);
+         this.field_1942[var2] = var1.method_132();
+         this.field_1943[var2] = var1.method_132();
       }
 
    }

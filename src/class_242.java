@@ -112,7 +112,7 @@ public class class_242 {
 
          this.field_2693[0][3] = var2;
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "gb.p(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -143,7 +143,7 @@ public class class_242 {
          }
 
       } catch (RuntimeException var10) {
-         throw class_223.method_4281(var10, "gb.v(" + ')');
+         throw class_223.method_4281(var10);
       }
    }
 
@@ -251,7 +251,7 @@ public class class_242 {
 
          this.field_2693[6][3] = var2;
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "gb.u(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -278,7 +278,7 @@ public class class_242 {
 
          return 1;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "gb.f(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -288,7 +288,7 @@ public class class_242 {
       try {
          this.field_2690 = -35900281 * var1;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "gb.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -390,7 +390,7 @@ public class class_242 {
 
          this.field_2693[4][3] = var2;
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "gb.d(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -487,7 +487,7 @@ public class class_242 {
 
          this.field_2693[1][3] = var2;
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "gb.j(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -597,7 +597,7 @@ public class class_242 {
 
          this.field_2693[2][3] = var2;
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "gb.r(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -708,7 +708,7 @@ public class class_242 {
 
          this.field_2693[3][3] = var2;
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "gb.b(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -816,7 +816,7 @@ public class class_242 {
 
          this.field_2693[5][3] = var2;
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "gb.s(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -929,7 +929,7 @@ public class class_242 {
 
          this.field_2693[7][3] = var2;
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "gb.l(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -971,7 +971,7 @@ public class class_242 {
 
          return var1;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "gb.n(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -1533,7 +1533,7 @@ public class class_242 {
    }
 
    // $FF: renamed from: y (byte) void
-   void method_4678(byte var1) {
+   void method_4678() {
       try {
          if(this.field_2693 == null) {
             this.field_2693 = new byte[8][4][];
@@ -1547,7 +1547,7 @@ public class class_242 {
             this.method_4662((byte)83);
          }
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "gb.y(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 

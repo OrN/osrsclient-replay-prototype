@@ -59,12 +59,12 @@ public class class_44 extends class_27 {
                var2[var3] = ((class_178)this.field_318.get(var3)).field_2222;
             }
 
-            class_175.method_3740(var2, this.field_325, -652699785);
+            class_175.method_3740(var2, this.field_325);
          }
 
          return this.field_325;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "y.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -78,28 +78,28 @@ public class class_44 extends class_27 {
             var1[var2] = ((class_178)this.field_318.get(var2)).field_2222;
          }
 
-         class_175.method_3740(var1, this.field_325, -652699785);
+         class_175.method_3740(var1, this.field_325);
       }
 
       return this.field_325;
    }
 
    // $FF: renamed from: f (int, byte) void
-   void method_500(int var1, byte var2) {
+   void method_500(int var1) {
       try {
          this.field_318.remove(var1);
          this.field_325 = null;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "y.f(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: y (byte) int
-   public int method_501(byte var1) {
+   public int method_501() {
       try {
          return this.field_318.size();
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "y.y(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -111,7 +111,7 @@ public class class_44 extends class_27 {
    // $FF: renamed from: j (nd, int) void
    void method_503(class_28 var1, int var2) {
       try {
-         int var3 = var1.method_130(225566519);
+         int var3 = var1.method_130();
          if((var3 & 1) != 0) {
             if(var2 <= -631068980) {
                throw new IllegalStateException();
@@ -126,16 +126,16 @@ public class class_44 extends class_27 {
 
          int var4 = 2;
          if((var3 & 4) != 0) {
-            var4 = var1.method_130(-1981567585);
+            var4 = var1.method_130();
          }
 
-         this.field_9 = var1.method_136(844558003);
-         this.field_319 = var1.method_136(235760502) * 1641196620496598251L;
+         this.field_9 = var1.method_136();
+         this.field_319 = var1.method_136() * 1641196620496598251L;
          this.field_321 = var1.method_139(-391631059);
          var1.method_119(-39963121);
-         this.field_316 = var1.method_131((byte)-112);
-         this.field_322 = var1.method_131((byte)-12);
-         int var5 = var1.method_132((byte)-76);
+         this.field_316 = var1.method_131();
+         this.field_322 = var1.method_131();
+         int var5 = var1.method_132();
          if(var5 > 0) {
             this.field_318 = new ArrayList(var5);
 
@@ -147,7 +147,7 @@ public class class_44 extends class_27 {
                      throw new IllegalStateException();
                   }
 
-                  var1.method_136(2036188252);
+                  var1.method_136();
                }
 
                if(this.field_317) {
@@ -158,8 +158,8 @@ public class class_44 extends class_27 {
                   var7.field_2222 = var1.method_139(-391631059);
                }
 
-               var7.field_2221 = var1.method_131((byte)4);
-               var7.field_2217 = var1.method_132((byte)-79) * -811705383;
+               var7.field_2221 = var1.method_131();
+               var7.field_2217 = var1.method_132() * -811705383;
                if(var4 >= 3) {
                   if(var2 <= -631068980) {
                      throw new IllegalStateException();
@@ -173,7 +173,7 @@ public class class_44 extends class_27 {
          }
 
       } catch (RuntimeException var8) {
-         throw class_223.method_4281(var8, "y.j(" + ')');
+         throw class_223.method_4281(var8);
       }
    }
 
@@ -204,7 +204,7 @@ public class class_44 extends class_27 {
             return -1;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "y.p(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -218,7 +218,7 @@ public class class_44 extends class_27 {
             var1[var2] = ((class_178)this.field_318.get(var2)).field_2222;
          }
 
-         class_175.method_3740(var1, this.field_325, -652699785);
+         class_175.method_3740(var1, this.field_325);
       }
 
       return this.field_325;
@@ -239,7 +239,7 @@ public class class_44 extends class_27 {
             var1[var2] = ((class_178)this.field_318.get(var2)).field_2222;
          }
 
-         class_175.method_3740(var1, this.field_325, -652699785);
+         class_175.method_3740(var1, this.field_325);
       }
 
       return this.field_325;
@@ -253,7 +253,7 @@ public class class_44 extends class_27 {
          this.field_321 = null;
          this.method_503(var1, -104022179);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "y.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -343,7 +343,7 @@ public class class_44 extends class_27 {
             class_70.method_1042(var22, var24, var25, var18, var20, var21, var4);
          }
       } catch (RuntimeException var26) {
-         throw class_223.method_4281(var26, "y.ix(" + ')');
+         throw class_223.method_4281(var26);
       }
    }
 
@@ -384,7 +384,7 @@ public class class_44 extends class_27 {
 
    // $FF: renamed from: a (nd) void
    void method_515(class_28 var1) {
-      int var2 = var1.method_130(1211941844);
+      int var2 = var1.method_130();
       if((var2 & 1) != 0) {
          this.field_320 = true;
       }
@@ -395,16 +395,16 @@ public class class_44 extends class_27 {
 
       int var3 = 2;
       if((var2 & 4) != 0) {
-         var3 = var1.method_130(-264335268);
+         var3 = var1.method_130();
       }
 
-      this.field_9 = var1.method_136(-166859647);
-      this.field_319 = var1.method_136(-1349745992) * 1641196620496598251L;
+      this.field_9 = var1.method_136();
+      this.field_319 = var1.method_136() * 1641196620496598251L;
       this.field_321 = var1.method_139(-391631059);
       var1.method_119(1630026748);
-      this.field_316 = var1.method_131((byte)-72);
-      this.field_322 = var1.method_131((byte)-27);
-      int var4 = var1.method_132((byte)-78);
+      this.field_316 = var1.method_131();
+      this.field_322 = var1.method_131();
+      int var4 = var1.method_132();
       if(var4 > 0) {
          this.field_318 = new ArrayList(var4);
 
@@ -412,15 +412,15 @@ public class class_44 extends class_27 {
             class_178 var10000 = new class_178();
             class_178 var6 = var10000;
             if(this.field_320) {
-               var1.method_136(1193917737);
+               var1.method_136();
             }
 
             if(this.field_317) {
                var6.field_2222 = var1.method_139(-391631059);
             }
 
-            var6.field_2221 = var1.method_131((byte)-101);
-            var6.field_2217 = var1.method_132((byte)-91) * -811705383;
+            var6.field_2221 = var1.method_131();
+            var6.field_2217 = var1.method_132() * -811705383;
             if(var3 >= 3) {
                var1.method_119(1862166750);
             }
@@ -433,7 +433,7 @@ public class class_44 extends class_27 {
 
    // $FF: renamed from: k (nd) void
    void method_516(class_28 var1) {
-      int var2 = var1.method_130(-200845339);
+      int var2 = var1.method_130();
       if((var2 & 1) != 0) {
          this.field_320 = true;
       }
@@ -444,16 +444,16 @@ public class class_44 extends class_27 {
 
       int var3 = 2;
       if((var2 & 4) != 0) {
-         var3 = var1.method_130(-1041968337);
+         var3 = var1.method_130();
       }
 
-      this.field_9 = var1.method_136(1674837972);
-      this.field_319 = var1.method_136(1124276533) * 1641196620496598251L;
+      this.field_9 = var1.method_136();
+      this.field_319 = var1.method_136() * 1641196620496598251L;
       this.field_321 = var1.method_139(-391631059);
       var1.method_119(625358015);
-      this.field_316 = var1.method_131((byte)-127);
-      this.field_322 = var1.method_131((byte)-34);
-      int var4 = var1.method_132((byte)-35);
+      this.field_316 = var1.method_131();
+      this.field_322 = var1.method_131();
+      int var4 = var1.method_132();
       if(var4 > 0) {
          this.field_318 = new ArrayList(var4);
 
@@ -461,15 +461,15 @@ public class class_44 extends class_27 {
             class_178 var10000 = new class_178();
             class_178 var6 = var10000;
             if(this.field_320) {
-               var1.method_136(-272472803);
+               var1.method_136();
             }
 
             if(this.field_317) {
                var6.field_2222 = var1.method_139(-391631059);
             }
 
-            var6.field_2221 = var1.method_131((byte)-94);
-            var6.field_2217 = var1.method_132((byte)-93) * -811705383;
+            var6.field_2221 = var1.method_131();
+            var6.field_2217 = var1.method_132() * -811705383;
             if(var3 >= 3) {
                var1.method_119(-759128062);
             }
@@ -481,7 +481,7 @@ public class class_44 extends class_27 {
    }
 
    // $FF: renamed from: ae (int, cf, boolean, int) int
-   static int method_517(int var0, class_90 var1, boolean var2, int var3) {
+   static int method_517(int var0, int var3) {
       try {
          if(3700 != var0) {
             if(var3 <= -883278895) {
@@ -510,17 +510,17 @@ public class class_44 extends class_27 {
          class_165.field_2054 -= 1647125333;
          return 1;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "y.ae(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: n (s, int) void
-   void method_518(class_178 var1, int var2) {
+   void method_518(class_178 var1) {
       try {
          this.field_318.add(var1);
          this.field_325 = null;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "y.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 }

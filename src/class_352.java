@@ -26,7 +26,7 @@ public class class_352 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "lk.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -181,12 +181,12 @@ public class class_352 {
          }
 
       } catch (RuntimeException var11) {
-         throw class_223.method_4281(var11, "lk.jh(" + ')');
+         throw class_223.method_4281(var11);
       }
    }
 
    // $FF: renamed from: ji (io[], io, boolean, int) void
-   static void method_6231(class_37[] var0, class_37 var1, boolean var2, int var3) {
+   static void method_6231(class_37[] var0, class_37 var1, boolean var2) {
       try {
          int var4 = 1489642403 * var1.field_219 != 0?1489642403 * var1.field_219:var1.field_104 * 1163271639;
          int var5 = 0 != var1.field_125 * 1577090123?var1.field_125 * 1577090123:-571887853 * var1.field_117;
@@ -205,7 +205,7 @@ public class class_352 {
          }
 
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "lk.ji(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 }

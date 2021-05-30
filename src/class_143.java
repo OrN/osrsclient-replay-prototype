@@ -25,11 +25,11 @@ public final class class_143 extends class_142 {
    }
 
    // $FF: renamed from: v (java.awt.Component, int) void
-   final void method_3066(Component var1, int var2) {
+   final void method_3066(Component var1) {
       try {
          this.field_1819 = var1;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "aw.v(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -47,16 +47,16 @@ public final class class_143 extends class_142 {
    }
 
    // $FF: renamed from: f (int, int, int, int, int) void
-   public final void method_3057(int var1, int var2, int var3, int var4, int var5) {
+   public final void method_3057(int var1, int var2, int var3, int var4) {
       try {
-         this.method_3069(this.field_1819.getGraphics(), var1, var2, var3, var4, (byte)51);
+         this.method_3069(this.field_1819.getGraphics(), var1, var2, var3, var4);
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "aw.f(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
    // $FF: renamed from: y (java.awt.Graphics, int, int, int) void
-   final void method_3068(Graphics var1, int var2, int var3, int var4) {
+   final void method_3068(Graphics var1, int var2, int var3) {
       try {
          try {
             var1.drawImage(this.field_1820, var2, var3, this.field_1819);
@@ -65,12 +65,12 @@ public final class class_143 extends class_142 {
          }
 
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "aw.y(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
    // $FF: renamed from: p (java.awt.Graphics, int, int, int, int, byte) void
-   final void method_3069(Graphics var1, int var2, int var3, int var4, int var5, byte var6) {
+   final void method_3069(Graphics var1, int var2, int var3, int var4, int var5) {
       try {
          try {
             Shape var7 = var1.getClip();
@@ -82,7 +82,7 @@ public final class class_143 extends class_142 {
          }
 
       } catch (RuntimeException var9) {
-         throw class_223.method_4281(var9, "aw.p(" + ')');
+         throw class_223.method_4281(var9);
       }
    }
 
@@ -97,10 +97,10 @@ public final class class_143 extends class_142 {
          DirectColorModel var5 = new DirectColorModel(32, 16711680, '\uff00', 255);
          WritableRaster var6 = Raster.createWritableRaster(var5.createCompatibleSampleModel(-740510445 * this.field_1816, this.field_1818 * 460788765), var4, (Point)null);
          this.field_1820 = new BufferedImage(var5, var6, false, new Hashtable());
-         this.method_3066(var3, 1641802499);
-         this.method_3053(872029974);
+         this.method_3066(var3);
+         this.method_3053();
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "aw.<init>(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
@@ -129,27 +129,27 @@ public final class class_143 extends class_142 {
 
    // $FF: renamed from: s (int, int) void
    public final void method_3056(int var1, int var2) {
-      this.method_3068(this.field_1819.getGraphics(), var1, var2, 449663578);
+      this.method_3068(this.field_1819.getGraphics(), var1, var2);
    }
 
    // $FF: renamed from: u (int, int) void
    public final void method_3062(int var1, int var2) {
-      this.method_3068(this.field_1819.getGraphics(), var1, var2, -1522589377);
+      this.method_3068(this.field_1819.getGraphics(), var1, var2);
    }
 
    // $FF: renamed from: l (int, int, int, int) void
    public final void method_3058(int var1, int var2, int var3, int var4) {
-      this.method_3069(this.field_1819.getGraphics(), var1, var2, var3, var4, (byte)29);
+      this.method_3069(this.field_1819.getGraphics(), var1, var2, var3, var4);
    }
 
    // $FF: renamed from: o (int, int, int, int) void
    public final void method_3054(int var1, int var2, int var3, int var4) {
-      this.method_3069(this.field_1819.getGraphics(), var1, var2, var3, var4, (byte)71);
+      this.method_3069(this.field_1819.getGraphics(), var1, var2, var3, var4);
    }
 
    // $FF: renamed from: c (int, int, int, int) void
    public final void method_3060(int var1, int var2, int var3, int var4) {
-      this.method_3069(this.field_1819.getGraphics(), var1, var2, var3, var4, (byte)40);
+      this.method_3069(this.field_1819.getGraphics(), var1, var2, var3, var4);
    }
 
    // $FF: renamed from: e (java.awt.Graphics, int, int) void
@@ -191,11 +191,11 @@ public final class class_143 extends class_142 {
    }
 
    // $FF: renamed from: n (int, int, int) void
-   public final void method_3059(int var1, int var2, int var3) {
+   public final void method_3059(int var1, int var2) {
       try {
-         this.method_3068(this.field_1819.getGraphics(), var1, var2, 1867252423);
+         this.method_3068(this.field_1819.getGraphics(), var1, var2);
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "aw.n(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 }

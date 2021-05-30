@@ -53,7 +53,7 @@ public abstract class class_206 {
    public abstract int method_4131() throws IOException;
 
    // $FF: renamed from: r (byte[], int, int, int) void
-   public abstract void method_4132(byte[] var1, int var2, int var3, int var4) throws IOException;
+   public abstract void method_4132(byte[] var1, int var2, int var3) throws IOException;
 
    // $FF: renamed from: a (int) boolean
    public abstract boolean method_4133(int var1) throws IOException;
@@ -66,7 +66,7 @@ public abstract class class_206 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ls.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -83,22 +83,22 @@ public abstract class class_206 {
    public abstract void method_4139(byte[] var1, int var2, int var3) throws IOException;
 
    // $FF: renamed from: b (jv, jv, java.lang.String, java.lang.String, byte) kt
-   public static class_69 method_4140(class_306 var0, class_306 var1, String var2, String var3, byte var4) {
+   public static class_69 method_4140(class_306 var0, class_306 var1, String var2, String var3) {
       try {
-         int var5 = var0.method_5399(var2, -397557984);
-         int var6 = var0.method_5400(var5, var3, -1815968159);
+         int var5 = var0.method_5399(var2);
+         int var6 = var0.method_5400(var5, var3);
          return class_306.method_5485(var0, var1, var5, var6, (byte)7);
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "ls.b(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
    // $FF: renamed from: v (int) int
-   static int method_4141(int var0) {
+   static int method_4141() {
       try {
          return 12;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ls.v(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

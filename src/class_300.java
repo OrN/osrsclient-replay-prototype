@@ -17,7 +17,7 @@ final class class_300 implements Comparator {
       try {
          return this.method_5349((class_310)var1, (class_310)var2, 78911903);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "jj.compare(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -37,7 +37,7 @@ final class class_300 implements Comparator {
 
          return var10000;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "jj.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -50,7 +50,7 @@ final class class_300 implements Comparator {
       try {
          return super.equals(var1);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "jj.equals(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -99,7 +99,7 @@ final class class_300 implements Comparator {
             } else {
                class_278 var10000 = new class_278();
                class_278 var3 = var10000;
-               var3.method_5134(var0, (byte)43);
+               var3.method_5134(var0);
                return var3;
             }
          } else if(var1) {
@@ -115,7 +115,7 @@ final class class_300 implements Comparator {
             return var0;
          }
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "jj.v(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 }

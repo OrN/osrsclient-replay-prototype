@@ -131,7 +131,7 @@ public class class_276 {
 
          return (7 + var8 >> 3) - var5;
       } catch (RuntimeException var15) {
-         throw class_223.method_4281(var15, "id.v(" + ')');
+         throw class_223.method_4281(var15);
       }
    }
 
@@ -220,7 +220,7 @@ public class class_276 {
          }
 
       } catch (RuntimeException var15) {
-         throw class_223.method_4281(var15, "id.<init>(" + ')');
+         throw class_223.method_4281(var15);
       }
    }
 
@@ -422,7 +422,7 @@ public class class_276 {
             return 1 + var8 - var2;
          }
       } catch (RuntimeException var11) {
-         throw class_223.method_4281(var11, "id.n(" + ')');
+         throw class_223.method_4281(var11);
       }
    }
 

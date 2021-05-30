@@ -25,25 +25,25 @@ public class class_101 extends class_59 {
 
 
    // $FF: renamed from: v (int, java.lang.String, java.lang.String, java.lang.String, int) void
-   void method_1883(int var1, String var2, String var3, String var4, int var5) {
+   void method_1883(int var1, String var2, String var3, String var4) {
       try {
          int var6 = (class_197.field_2337 += 300746265) * 543094313 - 1;
          this.field_1183 = var6 * -1719880919;
          this.field_1174 = client.field_1425 * 612436449;
          this.field_1175 = var1 * 626007683;
          this.field_1180 = var2;
-         this.method_1884(1824375293);
+         this.method_1884();
          this.field_1176 = var3;
          this.field_1181 = var4;
-         this.method_1907(1400910895);
-         this.method_1890(1063727257);
+         this.method_1907();
+         this.method_1890();
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "bi.v(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
    // $FF: renamed from: b (int) void
-   final void method_1884(int var1) {
+   final void method_1884() {
       try {
          if(null != this.field_1180) {
             class_359 var10001 = new class_359(class_122.method_2271(this.field_1180, (byte)16), class_239.field_2659);
@@ -53,7 +53,7 @@ public class class_101 extends class_59 {
          }
 
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "bi.b(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -63,9 +63,9 @@ public class class_101 extends class_59 {
       try {
          this.field_1173 = class_357.field_3980;
          this.field_1179 = class_357.field_3980;
-         this.method_1883(var1, var2, var3, var4, 2082804570);
+         this.method_1883(var1, var2, var3, var4);
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "bi.<init>(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -73,7 +73,7 @@ public class class_101 extends class_59 {
    final boolean method_1888(int var1) {
       try {
          if(this.field_1179 == class_357.field_3980) {
-            this.method_1889((byte)-2);
+            this.method_1889();
          }
 
          boolean var10000;
@@ -89,34 +89,34 @@ public class class_101 extends class_59 {
 
          return var10000;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "bi.j(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: r (byte) void
-   void method_1889(byte var1) {
+   void method_1889() {
       try {
          this.field_1179 = class_208.field_2413.field_1995.method_6063(this.field_1184, -234571238)?class_357.field_3979:class_357.field_3978;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "bi.r(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: p (int) void
-   void method_1890(int var1) {
+   void method_1890() {
       try {
          this.field_1179 = class_357.field_3980;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "bi.p(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: y (byte) void
-   void method_1897(byte var1) {
+   void method_1897() {
       try {
          this.field_1173 = class_208.field_2413.field_1994.method_6063(this.field_1184, -234571238)?class_357.field_3979:class_357.field_3978;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "bi.y(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -128,7 +128,7 @@ public class class_101 extends class_59 {
                throw new IllegalStateException();
             }
 
-            this.method_1897((byte)118);
+            this.method_1897();
          }
 
          boolean var10000;
@@ -144,16 +144,16 @@ public class class_101 extends class_59 {
 
          return var10000;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "bi.f(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: n (int) void
-   void method_1907(int var1) {
+   void method_1907() {
       try {
          this.field_1173 = class_357.field_3980;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "bi.n(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 

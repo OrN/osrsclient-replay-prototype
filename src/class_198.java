@@ -10,21 +10,21 @@ public class class_198 implements class_4 {
 
 
    // $FF: renamed from: kw (byte) void
-   static final void method_4017(byte var0) {
+   static final void method_4017() {
       try {
          client.field_1430 = -616469433 * client.field_1602;
          class_112.field_1274 = true;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "dl.kw(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: y (int, int) bi
-   static class_101 method_4018(int var0, int var1) {
+   static class_101 method_4018(int var0) {
       try {
          return (class_101)class_197.field_2334.method_6586((long)var0);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "dl.y(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -56,7 +56,7 @@ public class class_198 implements class_4 {
 
          return null;
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "dl.v(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 }

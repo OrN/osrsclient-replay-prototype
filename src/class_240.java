@@ -31,13 +31,13 @@ public class class_240 {
 
 
    // $FF: renamed from: s (int, int, int) void
-   public void method_4608(int var1, int var2, int var3) {
+   public void method_4608(int var1, int var2) {
       try {
          var1 -= 280751135 * this.field_2674;
          var2 -= -992681321 * this.field_2681;
          this.field_2679[var1][var2] &= -262145;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "fz.s(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -72,7 +72,7 @@ public class class_240 {
          }
 
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "fz.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -82,142 +82,142 @@ public class class_240 {
       var2 -= -992681321 * this.field_2681;
       if(var3 == 0) {
          if(0 == var4) {
-            this.method_4617(var1, var2, 128, -308385855);
-            this.method_4617(var1 - 1, var2, 8, -308385855);
+            this.method_4617(var1, var2, 128);
+            this.method_4617(var1 - 1, var2, 8);
          }
 
          if(var4 == 1) {
-            this.method_4617(var1, var2, 2, -308385855);
-            this.method_4617(var1, 1 + var2, 32, -308385855);
+            this.method_4617(var1, var2, 2);
+            this.method_4617(var1, 1 + var2, 32);
          }
 
          if(var4 == 2) {
-            this.method_4617(var1, var2, 8, -308385855);
-            this.method_4617(1 + var1, var2, 128, -308385855);
+            this.method_4617(var1, var2, 8);
+            this.method_4617(1 + var1, var2, 128);
          }
 
          if(var4 == 3) {
-            this.method_4617(var1, var2, 32, -308385855);
-            this.method_4617(var1, var2 - 1, 2, -308385855);
+            this.method_4617(var1, var2, 32);
+            this.method_4617(var1, var2 - 1, 2);
          }
       }
 
       if(var3 == 1 || var3 == 3) {
          if(0 == var4) {
-            this.method_4617(var1, var2, 1, -308385855);
-            this.method_4617(var1 - 1, var2 + 1, 16, -308385855);
+            this.method_4617(var1, var2, 1);
+            this.method_4617(var1 - 1, var2 + 1, 16);
          }
 
          if(1 == var4) {
-            this.method_4617(var1, var2, 4, -308385855);
-            this.method_4617(1 + var1, var2 + 1, 64, -308385855);
+            this.method_4617(var1, var2, 4);
+            this.method_4617(1 + var1, var2 + 1, 64);
          }
 
          if(var4 == 2) {
-            this.method_4617(var1, var2, 16, -308385855);
-            this.method_4617(var1 + 1, var2 - 1, 1, -308385855);
+            this.method_4617(var1, var2, 16);
+            this.method_4617(var1 + 1, var2 - 1, 1);
          }
 
          if(var4 == 3) {
-            this.method_4617(var1, var2, 64, -308385855);
-            this.method_4617(var1 - 1, var2 - 1, 4, -308385855);
+            this.method_4617(var1, var2, 64);
+            this.method_4617(var1 - 1, var2 - 1, 4);
          }
       }
 
       if(2 == var3) {
          if(var4 == 0) {
-            this.method_4617(var1, var2, 130, -308385855);
-            this.method_4617(var1 - 1, var2, 8, -308385855);
-            this.method_4617(var1, 1 + var2, 32, -308385855);
+            this.method_4617(var1, var2, 130);
+            this.method_4617(var1 - 1, var2, 8);
+            this.method_4617(var1, 1 + var2, 32);
          }
 
          if(1 == var4) {
-            this.method_4617(var1, var2, 10, -308385855);
-            this.method_4617(var1, var2 + 1, 32, -308385855);
-            this.method_4617(1 + var1, var2, 128, -308385855);
+            this.method_4617(var1, var2, 10);
+            this.method_4617(var1, var2 + 1, 32);
+            this.method_4617(1 + var1, var2, 128);
          }
 
          if(var4 == 2) {
-            this.method_4617(var1, var2, 40, -308385855);
-            this.method_4617(var1 + 1, var2, 128, -308385855);
-            this.method_4617(var1, var2 - 1, 2, -308385855);
+            this.method_4617(var1, var2, 40);
+            this.method_4617(var1 + 1, var2, 128);
+            this.method_4617(var1, var2 - 1, 2);
          }
 
          if(3 == var4) {
-            this.method_4617(var1, var2, 160, -308385855);
-            this.method_4617(var1, var2 - 1, 2, -308385855);
-            this.method_4617(var1 - 1, var2, 8, -308385855);
+            this.method_4617(var1, var2, 160);
+            this.method_4617(var1, var2 - 1, 2);
+            this.method_4617(var1 - 1, var2, 8);
          }
       }
 
       if(var5) {
          if(var3 == 0) {
             if(0 == var4) {
-               this.method_4617(var1, var2, 65536, -308385855);
-               this.method_4617(var1 - 1, var2, 4096, -308385855);
+               this.method_4617(var1, var2, 65536);
+               this.method_4617(var1 - 1, var2, 4096);
             }
 
             if(var4 == 1) {
-               this.method_4617(var1, var2, 1024, -308385855);
-               this.method_4617(var1, 1 + var2, 16384, -308385855);
+               this.method_4617(var1, var2, 1024);
+               this.method_4617(var1, 1 + var2, 16384);
             }
 
             if(var4 == 2) {
-               this.method_4617(var1, var2, 4096, -308385855);
-               this.method_4617(1 + var1, var2, 65536, -308385855);
+               this.method_4617(var1, var2, 4096);
+               this.method_4617(1 + var1, var2, 65536);
             }
 
             if(var4 == 3) {
-               this.method_4617(var1, var2, 16384, -308385855);
-               this.method_4617(var1, var2 - 1, 1024, -308385855);
+               this.method_4617(var1, var2, 16384);
+               this.method_4617(var1, var2 - 1, 1024);
             }
          }
 
          if(1 == var3 || var3 == 3) {
             if(var4 == 0) {
-               this.method_4617(var1, var2, 512, -308385855);
-               this.method_4617(var1 - 1, var2 + 1, 8192, -308385855);
+               this.method_4617(var1, var2, 512);
+               this.method_4617(var1 - 1, var2 + 1, 8192);
             }
 
             if(1 == var4) {
-               this.method_4617(var1, var2, 2048, -308385855);
-               this.method_4617(1 + var1, 1 + var2, '\u8000', -308385855);
+               this.method_4617(var1, var2, 2048);
+               this.method_4617(1 + var1, 1 + var2, '\u8000');
             }
 
             if(2 == var4) {
-               this.method_4617(var1, var2, 8192, -308385855);
-               this.method_4617(var1 + 1, var2 - 1, 512, -308385855);
+               this.method_4617(var1, var2, 8192);
+               this.method_4617(var1 + 1, var2 - 1, 512);
             }
 
             if(3 == var4) {
-               this.method_4617(var1, var2, '\u8000', -308385855);
-               this.method_4617(var1 - 1, var2 - 1, 2048, -308385855);
+               this.method_4617(var1, var2, '\u8000');
+               this.method_4617(var1 - 1, var2 - 1, 2048);
             }
          }
 
          if(var3 == 2) {
             if(0 == var4) {
-               this.method_4617(var1, var2, 66560, -308385855);
-               this.method_4617(var1 - 1, var2, 4096, -308385855);
-               this.method_4617(var1, 1 + var2, 16384, -308385855);
+               this.method_4617(var1, var2, 66560);
+               this.method_4617(var1 - 1, var2, 4096);
+               this.method_4617(var1, 1 + var2, 16384);
             }
 
             if(1 == var4) {
-               this.method_4617(var1, var2, 5120, -308385855);
-               this.method_4617(var1, 1 + var2, 16384, -308385855);
-               this.method_4617(1 + var1, var2, 65536, -308385855);
+               this.method_4617(var1, var2, 5120);
+               this.method_4617(var1, 1 + var2, 16384);
+               this.method_4617(1 + var1, var2, 65536);
             }
 
             if(2 == var4) {
-               this.method_4617(var1, var2, 20480, -308385855);
-               this.method_4617(var1 + 1, var2, 65536, -308385855);
-               this.method_4617(var1, var2 - 1, 1024, -308385855);
+               this.method_4617(var1, var2, 20480);
+               this.method_4617(var1 + 1, var2, 65536);
+               this.method_4617(var1, var2 - 1, 1024);
             }
 
             if(var4 == 3) {
-               this.method_4617(var1, var2, 81920, -308385855);
-               this.method_4617(var1, var2 - 1, 1024, -308385855);
-               this.method_4617(var1 - 1, var2, 4096, -308385855);
+               this.method_4617(var1, var2, 81920);
+               this.method_4617(var1, var2 - 1, 1024);
+               this.method_4617(var1 - 1, var2, 4096);
             }
          }
       }
@@ -264,7 +264,7 @@ public class class_240 {
                            throw new IllegalStateException();
                         }
 
-                        this.method_4626(var8, var9, var7, 1796762342);
+                        this.method_4626(var8, var9, var7);
                      }
                   }
                }
@@ -272,7 +272,7 @@ public class class_240 {
          }
 
       } catch (RuntimeException var10) {
-         throw class_223.method_4281(var10, "fz.f(" + ')');
+         throw class_223.method_4281(var10);
       }
    }
 
@@ -290,7 +290,7 @@ public class class_240 {
          if(var7 >= 0 && var7 < this.field_2677 * 960002853) {
             for(int var8 = var2; var8 < var2 + var4; ++var8) {
                if(var8 >= 0 && var8 < this.field_2678 * 1646122993) {
-                  this.method_4626(var7, var8, var6, -321907959);
+                  this.method_4626(var7, var8, var6);
                }
             }
          }
@@ -299,12 +299,12 @@ public class class_240 {
    }
 
    // $FF: renamed from: kp (byte) void
-   static final void method_4613(byte var0) {
+   static final void method_4613() {
       try {
          client.field_1620 = client.field_1602 * 553007447;
          class_38.field_258 = true;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "fz.kp(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -319,7 +319,7 @@ public class class_240 {
          this.field_2679 = new int[this.field_2677 * 960002853][this.field_2678 * 1646122993];
          this.method_4609(1916620252);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "fz.<init>(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -334,8 +334,8 @@ public class class_240 {
             }
 
             if(0 == var4) {
-               this.method_4617(var1, var2, 128, -308385855);
-               this.method_4617(var1 - 1, var2, 8, -308385855);
+               this.method_4617(var1, var2, 128);
+               this.method_4617(var1 - 1, var2, 8);
             }
 
             if(var4 == 1) {
@@ -343,8 +343,8 @@ public class class_240 {
                   throw new IllegalStateException();
                }
 
-               this.method_4617(var1, var2, 2, -308385855);
-               this.method_4617(var1, 1 + var2, 32, -308385855);
+               this.method_4617(var1, var2, 2);
+               this.method_4617(var1, 1 + var2, 32);
             }
 
             if(var4 == 2) {
@@ -352,8 +352,8 @@ public class class_240 {
                   throw new IllegalStateException();
                }
 
-               this.method_4617(var1, var2, 8, -308385855);
-               this.method_4617(1 + var1, var2, 128, -308385855);
+               this.method_4617(var1, var2, 8);
+               this.method_4617(1 + var1, var2, 128);
             }
 
             if(var4 == 3) {
@@ -361,8 +361,8 @@ public class class_240 {
                   throw new IllegalStateException();
                }
 
-               this.method_4617(var1, var2, 32, -308385855);
-               this.method_4617(var1, var2 - 1, 2, -308385855);
+               this.method_4617(var1, var2, 32);
+               this.method_4617(var1, var2 - 1, 2);
             }
          }
 
@@ -386,8 +386,8 @@ public class class_240 {
                   throw new IllegalStateException();
                }
 
-               this.method_4617(var1, var2, 1, -308385855);
-               this.method_4617(var1 - 1, var2 + 1, 16, -308385855);
+               this.method_4617(var1, var2, 1);
+               this.method_4617(var1 - 1, var2 + 1, 16);
             }
 
             if(1 == var4) {
@@ -395,8 +395,8 @@ public class class_240 {
                   throw new IllegalStateException();
                }
 
-               this.method_4617(var1, var2, 4, -308385855);
-               this.method_4617(1 + var1, var2 + 1, 64, -308385855);
+               this.method_4617(var1, var2, 4);
+               this.method_4617(1 + var1, var2 + 1, 64);
             }
 
             if(var4 == 2) {
@@ -404,8 +404,8 @@ public class class_240 {
                   throw new IllegalStateException();
                }
 
-               this.method_4617(var1, var2, 16, -308385855);
-               this.method_4617(var1 + 1, var2 - 1, 1, -308385855);
+               this.method_4617(var1, var2, 16);
+               this.method_4617(var1 + 1, var2 - 1, 1);
             }
 
             if(var4 == 3) {
@@ -413,8 +413,8 @@ public class class_240 {
                   return;
                }
 
-               this.method_4617(var1, var2, 64, -308385855);
-               this.method_4617(var1 - 1, var2 - 1, 4, -308385855);
+               this.method_4617(var1, var2, 64);
+               this.method_4617(var1 - 1, var2 - 1, 4);
             }
          }
 
@@ -428,9 +428,9 @@ public class class_240 {
                   return;
                }
 
-               this.method_4617(var1, var2, 130, -308385855);
-               this.method_4617(var1 - 1, var2, 8, -308385855);
-               this.method_4617(var1, 1 + var2, 32, -308385855);
+               this.method_4617(var1, var2, 130);
+               this.method_4617(var1 - 1, var2, 8);
+               this.method_4617(var1, 1 + var2, 32);
             }
 
             if(1 == var4) {
@@ -438,9 +438,9 @@ public class class_240 {
                   return;
                }
 
-               this.method_4617(var1, var2, 10, -308385855);
-               this.method_4617(var1, var2 + 1, 32, -308385855);
-               this.method_4617(1 + var1, var2, 128, -308385855);
+               this.method_4617(var1, var2, 10);
+               this.method_4617(var1, var2 + 1, 32);
+               this.method_4617(1 + var1, var2, 128);
             }
 
             if(var4 == 2) {
@@ -448,9 +448,9 @@ public class class_240 {
                   throw new IllegalStateException();
                }
 
-               this.method_4617(var1, var2, 40, -308385855);
-               this.method_4617(var1 + 1, var2, 128, -308385855);
-               this.method_4617(var1, var2 - 1, 2, -308385855);
+               this.method_4617(var1, var2, 40);
+               this.method_4617(var1 + 1, var2, 128);
+               this.method_4617(var1, var2 - 1, 2);
             }
 
             if(3 == var4) {
@@ -458,9 +458,9 @@ public class class_240 {
                   throw new IllegalStateException();
                }
 
-               this.method_4617(var1, var2, 160, -308385855);
-               this.method_4617(var1, var2 - 1, 2, -308385855);
-               this.method_4617(var1 - 1, var2, 8, -308385855);
+               this.method_4617(var1, var2, 160);
+               this.method_4617(var1, var2 - 1, 2);
+               this.method_4617(var1 - 1, var2, 8);
             }
          }
 
@@ -479,8 +479,8 @@ public class class_240 {
                      throw new IllegalStateException();
                   }
 
-                  this.method_4617(var1, var2, 65536, -308385855);
-                  this.method_4617(var1 - 1, var2, 4096, -308385855);
+                  this.method_4617(var1, var2, 65536);
+                  this.method_4617(var1 - 1, var2, 4096);
                }
 
                if(var4 == 1) {
@@ -488,8 +488,8 @@ public class class_240 {
                      throw new IllegalStateException();
                   }
 
-                  this.method_4617(var1, var2, 1024, -308385855);
-                  this.method_4617(var1, 1 + var2, 16384, -308385855);
+                  this.method_4617(var1, var2, 1024);
+                  this.method_4617(var1, 1 + var2, 16384);
                }
 
                if(var4 == 2) {
@@ -497,13 +497,13 @@ public class class_240 {
                      return;
                   }
 
-                  this.method_4617(var1, var2, 4096, -308385855);
-                  this.method_4617(1 + var1, var2, 65536, -308385855);
+                  this.method_4617(var1, var2, 4096);
+                  this.method_4617(1 + var1, var2, 65536);
                }
 
                if(var4 == 3) {
-                  this.method_4617(var1, var2, 16384, -308385855);
-                  this.method_4617(var1, var2 - 1, 1024, -308385855);
+                  this.method_4617(var1, var2, 16384);
+                  this.method_4617(var1, var2 - 1, 1024);
                }
             }
 
@@ -527,8 +527,8 @@ public class class_240 {
                      throw new IllegalStateException();
                   }
 
-                  this.method_4617(var1, var2, 512, -308385855);
-                  this.method_4617(var1 - 1, var2 + 1, 8192, -308385855);
+                  this.method_4617(var1, var2, 512);
+                  this.method_4617(var1 - 1, var2 + 1, 8192);
                }
 
                if(1 == var4) {
@@ -536,8 +536,8 @@ public class class_240 {
                      return;
                   }
 
-                  this.method_4617(var1, var2, 2048, -308385855);
-                  this.method_4617(1 + var1, 1 + var2, '\u8000', -308385855);
+                  this.method_4617(var1, var2, 2048);
+                  this.method_4617(1 + var1, 1 + var2, '\u8000');
                }
 
                if(2 == var4) {
@@ -545,8 +545,8 @@ public class class_240 {
                      return;
                   }
 
-                  this.method_4617(var1, var2, 8192, -308385855);
-                  this.method_4617(var1 + 1, var2 - 1, 512, -308385855);
+                  this.method_4617(var1, var2, 8192);
+                  this.method_4617(var1 + 1, var2 - 1, 512);
                }
 
                if(3 == var4) {
@@ -554,8 +554,8 @@ public class class_240 {
                      throw new IllegalStateException();
                   }
 
-                  this.method_4617(var1, var2, '\u8000', -308385855);
-                  this.method_4617(var1 - 1, var2 - 1, 2048, -308385855);
+                  this.method_4617(var1, var2, '\u8000');
+                  this.method_4617(var1 - 1, var2 - 1, 2048);
                }
             }
 
@@ -565,9 +565,9 @@ public class class_240 {
                      throw new IllegalStateException();
                   }
 
-                  this.method_4617(var1, var2, 66560, -308385855);
-                  this.method_4617(var1 - 1, var2, 4096, -308385855);
-                  this.method_4617(var1, 1 + var2, 16384, -308385855);
+                  this.method_4617(var1, var2, 66560);
+                  this.method_4617(var1 - 1, var2, 4096);
+                  this.method_4617(var1, 1 + var2, 16384);
                }
 
                if(1 == var4) {
@@ -575,9 +575,9 @@ public class class_240 {
                      throw new IllegalStateException();
                   }
 
-                  this.method_4617(var1, var2, 5120, -308385855);
-                  this.method_4617(var1, 1 + var2, 16384, -308385855);
-                  this.method_4617(1 + var1, var2, 65536, -308385855);
+                  this.method_4617(var1, var2, 5120);
+                  this.method_4617(var1, 1 + var2, 16384);
+                  this.method_4617(1 + var1, var2, 65536);
                }
 
                if(2 == var4) {
@@ -585,9 +585,9 @@ public class class_240 {
                      return;
                   }
 
-                  this.method_4617(var1, var2, 20480, -308385855);
-                  this.method_4617(var1 + 1, var2, 65536, -308385855);
-                  this.method_4617(var1, var2 - 1, 1024, -308385855);
+                  this.method_4617(var1, var2, 20480);
+                  this.method_4617(var1 + 1, var2, 65536);
+                  this.method_4617(var1, var2 - 1, 1024);
                }
 
                if(var4 == 3) {
@@ -595,15 +595,15 @@ public class class_240 {
                      throw new IllegalStateException();
                   }
 
-                  this.method_4617(var1, var2, 81920, -308385855);
-                  this.method_4617(var1, var2 - 1, 1024, -308385855);
-                  this.method_4617(var1 - 1, var2, 4096, -308385855);
+                  this.method_4617(var1, var2, 81920);
+                  this.method_4617(var1, var2 - 1, 1024);
+                  this.method_4617(var1 - 1, var2, 4096);
                }
             }
          }
 
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "fz.r(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
@@ -672,7 +672,7 @@ public class class_240 {
                               throw new IllegalStateException();
                            }
 
-                           this.method_4617(var9, var10, var8, -308385855);
+                           this.method_4617(var9, var10, var8);
                         }
                      }
                   }
@@ -681,16 +681,16 @@ public class class_240 {
          }
 
       } catch (RuntimeException var11) {
-         throw class_223.method_4281(var11, "fz.b(" + ')');
+         throw class_223.method_4281(var11);
       }
    }
 
    // $FF: renamed from: d (int, int, int, int) void
-   void method_4617(int var1, int var2, int var3, int var4) {
+   void method_4617(int var1, int var2, int var3) {
       try {
          this.field_2679[var1][var2] &= ~var3;
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "fz.d(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -726,142 +726,142 @@ public class class_240 {
       var2 -= -992681321 * this.field_2681;
       if(var3 == 0) {
          if(var4 == 0) {
-            this.method_4626(var1, var2, 128, 9668469);
-            this.method_4626(var1 - 1, var2, 8, 332534735);
+            this.method_4626(var1, var2, 128);
+            this.method_4626(var1 - 1, var2, 8);
          }
 
          if(var4 == 1) {
-            this.method_4626(var1, var2, 2, 714917570);
-            this.method_4626(var1, var2 + 1, 32, 1778721701);
+            this.method_4626(var1, var2, 2);
+            this.method_4626(var1, var2 + 1, 32);
          }
 
          if(2 == var4) {
-            this.method_4626(var1, var2, 8, -302880423);
-            this.method_4626(1 + var1, var2, 128, 37849559);
+            this.method_4626(var1, var2, 8);
+            this.method_4626(1 + var1, var2, 128);
          }
 
          if(3 == var4) {
-            this.method_4626(var1, var2, 32, 1527225913);
-            this.method_4626(var1, var2 - 1, 2, -733107289);
+            this.method_4626(var1, var2, 32);
+            this.method_4626(var1, var2 - 1, 2);
          }
       }
 
       if(1 == var3 || var3 == 3) {
          if(0 == var4) {
-            this.method_4626(var1, var2, 1, 1835723346);
-            this.method_4626(var1 - 1, 1 + var2, 16, 968966514);
+            this.method_4626(var1, var2, 1);
+            this.method_4626(var1 - 1, 1 + var2, 16);
          }
 
          if(var4 == 1) {
-            this.method_4626(var1, var2, 4, 442304875);
-            this.method_4626(var1 + 1, 1 + var2, 64, 1568522781);
+            this.method_4626(var1, var2, 4);
+            this.method_4626(var1 + 1, 1 + var2, 64);
          }
 
          if(2 == var4) {
-            this.method_4626(var1, var2, 16, 1809859053);
-            this.method_4626(var1 + 1, var2 - 1, 1, 319533201);
+            this.method_4626(var1, var2, 16);
+            this.method_4626(var1 + 1, var2 - 1, 1);
          }
 
          if(var4 == 3) {
-            this.method_4626(var1, var2, 64, 1648668445);
-            this.method_4626(var1 - 1, var2 - 1, 4, 2105388152);
+            this.method_4626(var1, var2, 64);
+            this.method_4626(var1 - 1, var2 - 1, 4);
          }
       }
 
       if(var3 == 2) {
          if(var4 == 0) {
-            this.method_4626(var1, var2, 130, 355224268);
-            this.method_4626(var1 - 1, var2, 8, 1726180213);
-            this.method_4626(var1, var2 + 1, 32, 676110818);
+            this.method_4626(var1, var2, 130);
+            this.method_4626(var1 - 1, var2, 8);
+            this.method_4626(var1, var2 + 1, 32);
          }
 
          if(var4 == 1) {
-            this.method_4626(var1, var2, 10, 218150891);
-            this.method_4626(var1, 1 + var2, 32, -652400590);
-            this.method_4626(var1 + 1, var2, 128, -249954854);
+            this.method_4626(var1, var2, 10);
+            this.method_4626(var1, 1 + var2, 32);
+            this.method_4626(var1 + 1, var2, 128);
          }
 
          if(2 == var4) {
-            this.method_4626(var1, var2, 40, 253154008);
-            this.method_4626(var1 + 1, var2, 128, -649420427);
-            this.method_4626(var1, var2 - 1, 2, -325776490);
+            this.method_4626(var1, var2, 40);
+            this.method_4626(var1 + 1, var2, 128);
+            this.method_4626(var1, var2 - 1, 2);
          }
 
          if(var4 == 3) {
-            this.method_4626(var1, var2, 160, -244337264);
-            this.method_4626(var1, var2 - 1, 2, -531753212);
-            this.method_4626(var1 - 1, var2, 8, -754813090);
+            this.method_4626(var1, var2, 160);
+            this.method_4626(var1, var2 - 1, 2);
+            this.method_4626(var1 - 1, var2, 8);
          }
       }
 
       if(var5) {
          if(var3 == 0) {
             if(var4 == 0) {
-               this.method_4626(var1, var2, 65536, 1250143718);
-               this.method_4626(var1 - 1, var2, 4096, 924730556);
+               this.method_4626(var1, var2, 65536);
+               this.method_4626(var1 - 1, var2, 4096);
             }
 
             if(1 == var4) {
-               this.method_4626(var1, var2, 1024, 944922714);
-               this.method_4626(var1, var2 + 1, 16384, 1522513224);
+               this.method_4626(var1, var2, 1024);
+               this.method_4626(var1, var2 + 1, 16384);
             }
 
             if(2 == var4) {
-               this.method_4626(var1, var2, 4096, 1082650303);
-               this.method_4626(var1 + 1, var2, 65536, -614362299);
+               this.method_4626(var1, var2, 4096);
+               this.method_4626(var1 + 1, var2, 65536);
             }
 
             if(3 == var4) {
-               this.method_4626(var1, var2, 16384, 223785058);
-               this.method_4626(var1, var2 - 1, 1024, 1669069884);
+               this.method_4626(var1, var2, 16384);
+               this.method_4626(var1, var2 - 1, 1024);
             }
          }
 
          if(var3 == 1 || 3 == var3) {
             if(0 == var4) {
-               this.method_4626(var1, var2, 512, 1219407054);
-               this.method_4626(var1 - 1, var2 + 1, 8192, 1198892424);
+               this.method_4626(var1, var2, 512);
+               this.method_4626(var1 - 1, var2 + 1, 8192);
             }
 
             if(1 == var4) {
-               this.method_4626(var1, var2, 2048, 1477876663);
-               this.method_4626(var1 + 1, var2 + 1, '\u8000', 984769520);
+               this.method_4626(var1, var2, 2048);
+               this.method_4626(var1 + 1, var2 + 1, '\u8000');
             }
 
             if(var4 == 2) {
-               this.method_4626(var1, var2, 8192, 1996641069);
-               this.method_4626(var1 + 1, var2 - 1, 512, 618125659);
+               this.method_4626(var1, var2, 8192);
+               this.method_4626(var1 + 1, var2 - 1, 512);
             }
 
             if(3 == var4) {
-               this.method_4626(var1, var2, '\u8000', -33907914);
-               this.method_4626(var1 - 1, var2 - 1, 2048, 979656524);
+               this.method_4626(var1, var2, '\u8000');
+               this.method_4626(var1 - 1, var2 - 1, 2048);
             }
          }
 
          if(2 == var3) {
             if(var4 == 0) {
-               this.method_4626(var1, var2, 66560, 45840434);
-               this.method_4626(var1 - 1, var2, 4096, 1403816117);
-               this.method_4626(var1, var2 + 1, 16384, 801921189);
+               this.method_4626(var1, var2, 66560);
+               this.method_4626(var1 - 1, var2, 4096);
+               this.method_4626(var1, var2 + 1, 16384);
             }
 
             if(var4 == 1) {
-               this.method_4626(var1, var2, 5120, -348876964);
-               this.method_4626(var1, 1 + var2, 16384, -810730036);
-               this.method_4626(var1 + 1, var2, 65536, 322813402);
+               this.method_4626(var1, var2, 5120);
+               this.method_4626(var1, 1 + var2, 16384);
+               this.method_4626(var1 + 1, var2, 65536);
             }
 
             if(2 == var4) {
-               this.method_4626(var1, var2, 20480, 1595960023);
-               this.method_4626(1 + var1, var2, 65536, 833875450);
-               this.method_4626(var1, var2 - 1, 1024, -195918295);
+               this.method_4626(var1, var2, 20480);
+               this.method_4626(1 + var1, var2, 65536);
+               this.method_4626(var1, var2 - 1, 1024);
             }
 
             if(var4 == 3) {
-               this.method_4626(var1, var2, 81920, 924552825);
-               this.method_4626(var1, var2 - 1, 1024, -334992273);
-               this.method_4626(var1 - 1, var2, 4096, 1562035343);
+               this.method_4626(var1, var2, 81920);
+               this.method_4626(var1, var2 - 1, 1024);
+               this.method_4626(var1 - 1, var2, 4096);
             }
          }
       }
@@ -882,7 +882,7 @@ public class class_240 {
          if(var7 >= 0 && var7 < this.field_2677 * 960002853) {
             for(int var8 = var2; var8 < var2 + var4; ++var8) {
                if(var8 >= 0 && var8 < this.field_2678 * 1646122993) {
-                  this.method_4626(var7, var8, var6, 330387270);
+                  this.method_4626(var7, var8, var6);
                }
             }
          }
@@ -905,8 +905,8 @@ public class class_240 {
                   throw new IllegalStateException();
                }
 
-               this.method_4626(var1, var2, 128, 1715659368);
-               this.method_4626(var1 - 1, var2, 8, 1563744352);
+               this.method_4626(var1, var2, 128);
+               this.method_4626(var1 - 1, var2, 8);
             }
 
             if(var4 == 1) {
@@ -914,8 +914,8 @@ public class class_240 {
                   throw new IllegalStateException();
                }
 
-               this.method_4626(var1, var2, 2, -106860642);
-               this.method_4626(var1, var2 + 1, 32, -133558977);
+               this.method_4626(var1, var2, 2);
+               this.method_4626(var1, var2 + 1, 32);
             }
 
             if(2 == var4) {
@@ -923,13 +923,13 @@ public class class_240 {
                   return;
                }
 
-               this.method_4626(var1, var2, 8, 1867803916);
-               this.method_4626(1 + var1, var2, 128, 2070148055);
+               this.method_4626(var1, var2, 8);
+               this.method_4626(1 + var1, var2, 128);
             }
 
             if(3 == var4) {
-               this.method_4626(var1, var2, 32, 1895152463);
-               this.method_4626(var1, var2 - 1, 2, -351000480);
+               this.method_4626(var1, var2, 32);
+               this.method_4626(var1, var2 - 1, 2);
             }
          }
 
@@ -949,8 +949,8 @@ public class class_240 {
                   throw new IllegalStateException();
                }
 
-               this.method_4626(var1, var2, 1, 1251266484);
-               this.method_4626(var1 - 1, 1 + var2, 16, 275112364);
+               this.method_4626(var1, var2, 1);
+               this.method_4626(var1 - 1, 1 + var2, 16);
             }
 
             if(var4 == 1) {
@@ -958,13 +958,13 @@ public class class_240 {
                   throw new IllegalStateException();
                }
 
-               this.method_4626(var1, var2, 4, -570944664);
-               this.method_4626(var1 + 1, 1 + var2, 64, 995756539);
+               this.method_4626(var1, var2, 4);
+               this.method_4626(var1 + 1, 1 + var2, 64);
             }
 
             if(2 == var4) {
-               this.method_4626(var1, var2, 16, 808577643);
-               this.method_4626(var1 + 1, var2 - 1, 1, 507812497);
+               this.method_4626(var1, var2, 16);
+               this.method_4626(var1 + 1, var2 - 1, 1);
             }
 
             if(var4 == 3) {
@@ -972,8 +972,8 @@ public class class_240 {
                   return;
                }
 
-               this.method_4626(var1, var2, 64, 1758833161);
-               this.method_4626(var1 - 1, var2 - 1, 4, 904110552);
+               this.method_4626(var1, var2, 64);
+               this.method_4626(var1 - 1, var2 - 1, 4);
             }
          }
 
@@ -987,9 +987,9 @@ public class class_240 {
                   throw new IllegalStateException();
                }
 
-               this.method_4626(var1, var2, 130, 1874043981);
-               this.method_4626(var1 - 1, var2, 8, 932608545);
-               this.method_4626(var1, var2 + 1, 32, 1466767828);
+               this.method_4626(var1, var2, 130);
+               this.method_4626(var1 - 1, var2, 8);
+               this.method_4626(var1, var2 + 1, 32);
             }
 
             if(var4 == 1) {
@@ -997,9 +997,9 @@ public class class_240 {
                   throw new IllegalStateException();
                }
 
-               this.method_4626(var1, var2, 10, 408221940);
-               this.method_4626(var1, 1 + var2, 32, 1594713043);
-               this.method_4626(var1 + 1, var2, 128, 1489041558);
+               this.method_4626(var1, var2, 10);
+               this.method_4626(var1, 1 + var2, 32);
+               this.method_4626(var1 + 1, var2, 128);
             }
 
             if(2 == var4) {
@@ -1007,9 +1007,9 @@ public class class_240 {
                   return;
                }
 
-               this.method_4626(var1, var2, 40, 1980697067);
-               this.method_4626(var1 + 1, var2, 128, 1911089819);
-               this.method_4626(var1, var2 - 1, 2, 300911483);
+               this.method_4626(var1, var2, 40);
+               this.method_4626(var1 + 1, var2, 128);
+               this.method_4626(var1, var2 - 1, 2);
             }
 
             if(var4 == 3) {
@@ -1017,9 +1017,9 @@ public class class_240 {
                   return;
                }
 
-               this.method_4626(var1, var2, 160, 416215498);
-               this.method_4626(var1, var2 - 1, 2, 465648186);
-               this.method_4626(var1 - 1, var2, 8, 1780441805);
+               this.method_4626(var1, var2, 160);
+               this.method_4626(var1, var2 - 1, 2);
+               this.method_4626(var1 - 1, var2, 8);
             }
          }
 
@@ -1034,8 +1034,8 @@ public class class_240 {
                      throw new IllegalStateException();
                   }
 
-                  this.method_4626(var1, var2, 65536, 1161749986);
-                  this.method_4626(var1 - 1, var2, 4096, 1148725369);
+                  this.method_4626(var1, var2, 65536);
+                  this.method_4626(var1 - 1, var2, 4096);
                }
 
                if(1 == var4) {
@@ -1043,8 +1043,8 @@ public class class_240 {
                      return;
                   }
 
-                  this.method_4626(var1, var2, 1024, 856199491);
-                  this.method_4626(var1, var2 + 1, 16384, 1347131635);
+                  this.method_4626(var1, var2, 1024);
+                  this.method_4626(var1, var2 + 1, 16384);
                }
 
                if(2 == var4) {
@@ -1052,13 +1052,13 @@ public class class_240 {
                      throw new IllegalStateException();
                   }
 
-                  this.method_4626(var1, var2, 4096, -781146355);
-                  this.method_4626(var1 + 1, var2, 65536, 1368885946);
+                  this.method_4626(var1, var2, 4096);
+                  this.method_4626(var1 + 1, var2, 65536);
                }
 
                if(3 == var4) {
-                  this.method_4626(var1, var2, 16384, -615109501);
-                  this.method_4626(var1, var2 - 1, 1024, -509214086);
+                  this.method_4626(var1, var2, 16384);
+                  this.method_4626(var1, var2 - 1, 1024);
                }
             }
 
@@ -1078,8 +1078,8 @@ public class class_240 {
                }
 
                if(0 == var4) {
-                  this.method_4626(var1, var2, 512, 2042009452);
-                  this.method_4626(var1 - 1, var2 + 1, 8192, -337781624);
+                  this.method_4626(var1, var2, 512);
+                  this.method_4626(var1 - 1, var2 + 1, 8192);
                }
 
                if(1 == var4) {
@@ -1087,18 +1087,18 @@ public class class_240 {
                      throw new IllegalStateException();
                   }
 
-                  this.method_4626(var1, var2, 2048, -226726235);
-                  this.method_4626(var1 + 1, var2 + 1, '\u8000', 309733201);
+                  this.method_4626(var1, var2, 2048);
+                  this.method_4626(var1 + 1, var2 + 1, '\u8000');
                }
 
                if(var4 == 2) {
-                  this.method_4626(var1, var2, 8192, 1592285720);
-                  this.method_4626(var1 + 1, var2 - 1, 512, 127062086);
+                  this.method_4626(var1, var2, 8192);
+                  this.method_4626(var1 + 1, var2 - 1, 512);
                }
 
                if(3 == var4) {
-                  this.method_4626(var1, var2, '\u8000', 376080645);
-                  this.method_4626(var1 - 1, var2 - 1, 2048, 1306127974);
+                  this.method_4626(var1, var2, '\u8000');
+                  this.method_4626(var1 - 1, var2 - 1, 2048);
                }
             }
 
@@ -1112,9 +1112,9 @@ public class class_240 {
                      throw new IllegalStateException();
                   }
 
-                  this.method_4626(var1, var2, 66560, 312684292);
-                  this.method_4626(var1 - 1, var2, 4096, -474924687);
-                  this.method_4626(var1, var2 + 1, 16384, 758840635);
+                  this.method_4626(var1, var2, 66560);
+                  this.method_4626(var1 - 1, var2, 4096);
+                  this.method_4626(var1, var2 + 1, 16384);
                }
 
                if(var4 == 1) {
@@ -1122,9 +1122,9 @@ public class class_240 {
                      throw new IllegalStateException();
                   }
 
-                  this.method_4626(var1, var2, 5120, 1791229432);
-                  this.method_4626(var1, 1 + var2, 16384, 1817264937);
-                  this.method_4626(var1 + 1, var2, 65536, 2108780091);
+                  this.method_4626(var1, var2, 5120);
+                  this.method_4626(var1, 1 + var2, 16384);
+                  this.method_4626(var1 + 1, var2, 65536);
                }
 
                if(2 == var4) {
@@ -1132,9 +1132,9 @@ public class class_240 {
                      throw new IllegalStateException();
                   }
 
-                  this.method_4626(var1, var2, 20480, 2005916182);
-                  this.method_4626(1 + var1, var2, 65536, 1074471431);
-                  this.method_4626(var1, var2 - 1, 1024, 2067120645);
+                  this.method_4626(var1, var2, 20480);
+                  this.method_4626(1 + var1, var2, 65536);
+                  this.method_4626(var1, var2 - 1, 1024);
                }
 
                if(var4 == 3) {
@@ -1142,26 +1142,26 @@ public class class_240 {
                      throw new IllegalStateException();
                   }
 
-                  this.method_4626(var1, var2, 81920, 757747681);
-                  this.method_4626(var1, var2 - 1, 1024, 1199363329);
-                  this.method_4626(var1 - 1, var2, 4096, 1032487519);
+                  this.method_4626(var1, var2, 81920);
+                  this.method_4626(var1, var2 - 1, 1024);
+                  this.method_4626(var1 - 1, var2, 4096);
                }
             }
          }
 
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "fz.n(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
    // $FF: renamed from: p (int, int, int) void
-   public void method_4624(int var1, int var2, int var3) {
+   public void method_4624(int var1, int var2) {
       try {
          var1 -= 280751135 * this.field_2674;
          var2 -= -992681321 * this.field_2681;
          this.field_2679[var1][var2] |= 262144;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "fz.p(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -1173,11 +1173,11 @@ public class class_240 {
    }
 
    // $FF: renamed from: j (int, int, int, int) void
-   void method_4626(int var1, int var2, int var3, int var4) {
+   void method_4626(int var1, int var2, int var3) {
       try {
          this.field_2679[var1][var2] |= var3;
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "fz.j(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -1224,7 +1224,7 @@ public class class_240 {
          if(var7 >= 0 && var7 < this.field_2677 * 1845638257) {
             for(int var8 = var2; var8 < var2 + var4; ++var8) {
                if(var8 >= 0 && var8 < this.field_2678 * 1646122993) {
-                  this.method_4626(var7, var8, var6, 776095509);
+                  this.method_4626(var7, var8, var6);
                }
             }
          }
@@ -1238,142 +1238,142 @@ public class class_240 {
       var2 -= -992681321 * this.field_2681;
       if(var3 == 0) {
          if(0 == var4) {
-            this.method_4617(var1, var2, 128, -308385855);
-            this.method_4617(var1 - 1, var2, 8, -308385855);
+            this.method_4617(var1, var2, 128);
+            this.method_4617(var1 - 1, var2, 8);
          }
 
          if(var4 == 1) {
-            this.method_4617(var1, var2, 2, -308385855);
-            this.method_4617(var1, 1 + var2, 32, -308385855);
+            this.method_4617(var1, var2, 2);
+            this.method_4617(var1, 1 + var2, 32);
          }
 
          if(var4 == 2) {
-            this.method_4617(var1, var2, 8, -308385855);
-            this.method_4617(1 + var1, var2, 128, -308385855);
+            this.method_4617(var1, var2, 8);
+            this.method_4617(1 + var1, var2, 128);
          }
 
          if(var4 == 3) {
-            this.method_4617(var1, var2, 32, -308385855);
-            this.method_4617(var1, var2 - 1, 2, -308385855);
+            this.method_4617(var1, var2, 32);
+            this.method_4617(var1, var2 - 1, 2);
          }
       }
 
       if(var3 == 1 || var3 == 3) {
          if(0 == var4) {
-            this.method_4617(var1, var2, 1, -308385855);
-            this.method_4617(var1 - 1, var2 + 1, 16, -308385855);
+            this.method_4617(var1, var2, 1);
+            this.method_4617(var1 - 1, var2 + 1, 16);
          }
 
          if(1 == var4) {
-            this.method_4617(var1, var2, 4, -308385855);
-            this.method_4617(1 + var1, var2 + 1, 64, -308385855);
+            this.method_4617(var1, var2, 4);
+            this.method_4617(1 + var1, var2 + 1, 64);
          }
 
          if(var4 == 2) {
-            this.method_4617(var1, var2, 16, -308385855);
-            this.method_4617(var1 + 1, var2 - 1, 1, -308385855);
+            this.method_4617(var1, var2, 16);
+            this.method_4617(var1 + 1, var2 - 1, 1);
          }
 
          if(var4 == 3) {
-            this.method_4617(var1, var2, 64, -308385855);
-            this.method_4617(var1 - 1, var2 - 1, 4, -308385855);
+            this.method_4617(var1, var2, 64);
+            this.method_4617(var1 - 1, var2 - 1, 4);
          }
       }
 
       if(2 == var3) {
          if(var4 == 0) {
-            this.method_4617(var1, var2, 130, -308385855);
-            this.method_4617(var1 - 1, var2, 8, -308385855);
-            this.method_4617(var1, 1 + var2, 32, -308385855);
+            this.method_4617(var1, var2, 130);
+            this.method_4617(var1 - 1, var2, 8);
+            this.method_4617(var1, 1 + var2, 32);
          }
 
          if(1 == var4) {
-            this.method_4617(var1, var2, 10, -308385855);
-            this.method_4617(var1, var2 + 1, 32, -308385855);
-            this.method_4617(1 + var1, var2, 128, -308385855);
+            this.method_4617(var1, var2, 10);
+            this.method_4617(var1, var2 + 1, 32);
+            this.method_4617(1 + var1, var2, 128);
          }
 
          if(var4 == 2) {
-            this.method_4617(var1, var2, 40, -308385855);
-            this.method_4617(var1 + 1, var2, 128, -308385855);
-            this.method_4617(var1, var2 - 1, 2, -308385855);
+            this.method_4617(var1, var2, 40);
+            this.method_4617(var1 + 1, var2, 128);
+            this.method_4617(var1, var2 - 1, 2);
          }
 
          if(3 == var4) {
-            this.method_4617(var1, var2, 160, -308385855);
-            this.method_4617(var1, var2 - 1, 2, -308385855);
-            this.method_4617(var1 - 1, var2, 8, -308385855);
+            this.method_4617(var1, var2, 160);
+            this.method_4617(var1, var2 - 1, 2);
+            this.method_4617(var1 - 1, var2, 8);
          }
       }
 
       if(var5) {
          if(var3 == 0) {
             if(0 == var4) {
-               this.method_4617(var1, var2, 65536, -308385855);
-               this.method_4617(var1 - 1, var2, 4096, -308385855);
+               this.method_4617(var1, var2, 65536);
+               this.method_4617(var1 - 1, var2, 4096);
             }
 
             if(var4 == 1) {
-               this.method_4617(var1, var2, 1024, -308385855);
-               this.method_4617(var1, 1 + var2, 16384, -308385855);
+               this.method_4617(var1, var2, 1024);
+               this.method_4617(var1, 1 + var2, 16384);
             }
 
             if(var4 == 2) {
-               this.method_4617(var1, var2, 4096, -308385855);
-               this.method_4617(1 + var1, var2, 65536, -308385855);
+               this.method_4617(var1, var2, 4096);
+               this.method_4617(1 + var1, var2, 65536);
             }
 
             if(var4 == 3) {
-               this.method_4617(var1, var2, 16384, -308385855);
-               this.method_4617(var1, var2 - 1, 1024, -308385855);
+               this.method_4617(var1, var2, 16384);
+               this.method_4617(var1, var2 - 1, 1024);
             }
          }
 
          if(1 == var3 || var3 == 3) {
             if(var4 == 0) {
-               this.method_4617(var1, var2, 512, -308385855);
-               this.method_4617(var1 - 1, var2 + 1, 8192, -308385855);
+               this.method_4617(var1, var2, 512);
+               this.method_4617(var1 - 1, var2 + 1, 8192);
             }
 
             if(1 == var4) {
-               this.method_4617(var1, var2, 2048, -308385855);
-               this.method_4617(1 + var1, 1 + var2, '\u8000', -308385855);
+               this.method_4617(var1, var2, 2048);
+               this.method_4617(1 + var1, 1 + var2, '\u8000');
             }
 
             if(2 == var4) {
-               this.method_4617(var1, var2, 8192, -308385855);
-               this.method_4617(var1 + 1, var2 - 1, 512, -308385855);
+               this.method_4617(var1, var2, 8192);
+               this.method_4617(var1 + 1, var2 - 1, 512);
             }
 
             if(3 == var4) {
-               this.method_4617(var1, var2, '\u8000', -308385855);
-               this.method_4617(var1 - 1, var2 - 1, 2048, -308385855);
+               this.method_4617(var1, var2, '\u8000');
+               this.method_4617(var1 - 1, var2 - 1, 2048);
             }
          }
 
          if(var3 == 2) {
             if(0 == var4) {
-               this.method_4617(var1, var2, 66560, -308385855);
-               this.method_4617(var1 - 1, var2, 4096, -308385855);
-               this.method_4617(var1, 1 + var2, 16384, -308385855);
+               this.method_4617(var1, var2, 66560);
+               this.method_4617(var1 - 1, var2, 4096);
+               this.method_4617(var1, 1 + var2, 16384);
             }
 
             if(1 == var4) {
-               this.method_4617(var1, var2, 5120, -308385855);
-               this.method_4617(var1, 1 + var2, 16384, -308385855);
-               this.method_4617(1 + var1, var2, 65536, -308385855);
+               this.method_4617(var1, var2, 5120);
+               this.method_4617(var1, 1 + var2, 16384);
+               this.method_4617(1 + var1, var2, 65536);
             }
 
             if(2 == var4) {
-               this.method_4617(var1, var2, 20480, -308385855);
-               this.method_4617(var1 + 1, var2, 65536, -308385855);
-               this.method_4617(var1, var2 - 1, 1024, -308385855);
+               this.method_4617(var1, var2, 20480);
+               this.method_4617(var1 + 1, var2, 65536);
+               this.method_4617(var1, var2 - 1, 1024);
             }
 
             if(var4 == 3) {
-               this.method_4617(var1, var2, 81920, -308385855);
-               this.method_4617(var1, var2 - 1, 1024, -308385855);
-               this.method_4617(var1 - 1, var2, 4096, -308385855);
+               this.method_4617(var1, var2, 81920);
+               this.method_4617(var1, var2 - 1, 1024);
+               this.method_4617(var1 - 1, var2, 4096);
             }
          }
       }
@@ -1410,142 +1410,142 @@ public class class_240 {
       var2 -= -697614727 * this.field_2681;
       if(var3 == 0) {
          if(0 == var4) {
-            this.method_4617(var1, var2, -959781936, -308385855);
-            this.method_4617(var1 - 1, var2, 8, -308385855);
+            this.method_4617(var1, var2, -959781936);
+            this.method_4617(var1 - 1, var2, 8);
          }
 
          if(var4 == 1) {
-            this.method_4617(var1, var2, 2, -308385855);
-            this.method_4617(var1, 1 + var2, 32, -308385855);
+            this.method_4617(var1, var2, 2);
+            this.method_4617(var1, 1 + var2, 32);
          }
 
          if(var4 == 2) {
-            this.method_4617(var1, var2, 8, -308385855);
-            this.method_4617(1 + var1, var2, -254110452, -308385855);
+            this.method_4617(var1, var2, 8);
+            this.method_4617(1 + var1, var2, -254110452);
          }
 
          if(var4 == 3) {
-            this.method_4617(var1, var2, 32, -308385855);
-            this.method_4617(var1, var2 - 1, 2, -308385855);
+            this.method_4617(var1, var2, 32);
+            this.method_4617(var1, var2 - 1, 2);
          }
       }
 
       if(var3 == 1 || var3 == 3) {
          if(0 == var4) {
-            this.method_4617(var1, var2, 1, -308385855);
-            this.method_4617(var1 - 1, var2 + 1, 16, -308385855);
+            this.method_4617(var1, var2, 1);
+            this.method_4617(var1 - 1, var2 + 1, 16);
          }
 
          if(1 == var4) {
-            this.method_4617(var1, var2, 4, -308385855);
-            this.method_4617(1 + var1, var2 + 1, -1363735808, -308385855);
+            this.method_4617(var1, var2, 4);
+            this.method_4617(1 + var1, var2 + 1, -1363735808);
          }
 
          if(var4 == 2) {
-            this.method_4617(var1, var2, 16, -308385855);
-            this.method_4617(var1 + 1, var2 - 1, 1, -308385855);
+            this.method_4617(var1, var2, 16);
+            this.method_4617(var1 + 1, var2 - 1, 1);
          }
 
          if(var4 == 3) {
-            this.method_4617(var1, var2, 64, -308385855);
-            this.method_4617(var1 - 1, var2 - 1, 4, -308385855);
+            this.method_4617(var1, var2, 64);
+            this.method_4617(var1 - 1, var2 - 1, 4);
          }
       }
 
       if(2 == var3) {
          if(var4 == 0) {
-            this.method_4617(var1, var2, 130, -308385855);
-            this.method_4617(var1 - 1, var2, 8, -308385855);
-            this.method_4617(var1, 1 + var2, -1340729713, -308385855);
+            this.method_4617(var1, var2, 130);
+            this.method_4617(var1 - 1, var2, 8);
+            this.method_4617(var1, 1 + var2, -1340729713);
          }
 
          if(1 == var4) {
-            this.method_4617(var1, var2, 10, -308385855);
-            this.method_4617(var1, var2 + 1, 32, -308385855);
-            this.method_4617(1 + var1, var2, -91776715, -308385855);
+            this.method_4617(var1, var2, 10);
+            this.method_4617(var1, var2 + 1, 32);
+            this.method_4617(1 + var1, var2, -91776715);
          }
 
          if(var4 == 2) {
-            this.method_4617(var1, var2, 40, -308385855);
-            this.method_4617(var1 + 1, var2, 128, -308385855);
-            this.method_4617(var1, var2 - 1, 2, -308385855);
+            this.method_4617(var1, var2, 40);
+            this.method_4617(var1 + 1, var2, 128);
+            this.method_4617(var1, var2 - 1, 2);
          }
 
          if(3 == var4) {
-            this.method_4617(var1, var2, 771587571, -308385855);
-            this.method_4617(var1, var2 - 1, 2, -308385855);
-            this.method_4617(var1 - 1, var2, 8, -308385855);
+            this.method_4617(var1, var2, 771587571);
+            this.method_4617(var1, var2 - 1, 2);
+            this.method_4617(var1 - 1, var2, 8);
          }
       }
 
       if(var5) {
          if(var3 == 0) {
             if(0 == var4) {
-               this.method_4617(var1, var2, 440227387, -308385855);
-               this.method_4617(var1 - 1, var2, 4096, -308385855);
+               this.method_4617(var1, var2, 440227387);
+               this.method_4617(var1 - 1, var2, 4096);
             }
 
             if(var4 == 1) {
-               this.method_4617(var1, var2, 1024, -308385855);
-               this.method_4617(var1, 1 + var2, 309503732, -308385855);
+               this.method_4617(var1, var2, 1024);
+               this.method_4617(var1, 1 + var2, 309503732);
             }
 
             if(var4 == 2) {
-               this.method_4617(var1, var2, 4096, -308385855);
-               this.method_4617(1 + var1, var2, 65536, -308385855);
+               this.method_4617(var1, var2, 4096);
+               this.method_4617(1 + var1, var2, 65536);
             }
 
             if(var4 == 3) {
-               this.method_4617(var1, var2, 16384, -308385855);
-               this.method_4617(var1, var2 - 1, 1024, -308385855);
+               this.method_4617(var1, var2, 16384);
+               this.method_4617(var1, var2 - 1, 1024);
             }
          }
 
          if(1 == var3 || var3 == 3) {
             if(var4 == 0) {
-               this.method_4617(var1, var2, 512, -308385855);
-               this.method_4617(var1 - 1, var2 + 1, 1739558829, -308385855);
+               this.method_4617(var1, var2, 512);
+               this.method_4617(var1 - 1, var2 + 1, 1739558829);
             }
 
             if(1 == var4) {
-               this.method_4617(var1, var2, 2048, -308385855);
-               this.method_4617(1 + var1, 1 + var2, '\u8000', -308385855);
+               this.method_4617(var1, var2, 2048);
+               this.method_4617(1 + var1, 1 + var2, '\u8000');
             }
 
             if(2 == var4) {
-               this.method_4617(var1, var2, 2054374635, -308385855);
-               this.method_4617(var1 + 1, var2 - 1, -169638712, -308385855);
+               this.method_4617(var1, var2, 2054374635);
+               this.method_4617(var1 + 1, var2 - 1, -169638712);
             }
 
             if(3 == var4) {
-               this.method_4617(var1, var2, 602765004, -308385855);
-               this.method_4617(var1 - 1, var2 - 1, 1882490987, -308385855);
+               this.method_4617(var1, var2, 602765004);
+               this.method_4617(var1 - 1, var2 - 1, 1882490987);
             }
          }
 
          if(var3 == 2) {
             if(0 == var4) {
-               this.method_4617(var1, var2, -2090561345, -308385855);
-               this.method_4617(var1 - 1, var2, 1537330995, -308385855);
-               this.method_4617(var1, 1 + var2, 16384, -308385855);
+               this.method_4617(var1, var2, -2090561345);
+               this.method_4617(var1 - 1, var2, 1537330995);
+               this.method_4617(var1, 1 + var2, 16384);
             }
 
             if(1 == var4) {
-               this.method_4617(var1, var2, -1635258090, -308385855);
-               this.method_4617(var1, 1 + var2, 16384, -308385855);
-               this.method_4617(1 + var1, var2, 1904640386, -308385855);
+               this.method_4617(var1, var2, -1635258090);
+               this.method_4617(var1, 1 + var2, 16384);
+               this.method_4617(1 + var1, var2, 1904640386);
             }
 
             if(2 == var4) {
-               this.method_4617(var1, var2, -816220578, -308385855);
-               this.method_4617(var1 + 1, var2, 65536, -308385855);
-               this.method_4617(var1, var2 - 1, 1024, -308385855);
+               this.method_4617(var1, var2, -816220578);
+               this.method_4617(var1 + 1, var2, 65536);
+               this.method_4617(var1, var2 - 1, 1024);
             }
 
             if(var4 == 3) {
-               this.method_4617(var1, var2, 81920, -308385855);
-               this.method_4617(var1, var2 - 1, 1024, -308385855);
-               this.method_4617(var1 - 1, var2, -1134662699, -308385855);
+               this.method_4617(var1, var2, 81920);
+               this.method_4617(var1, var2 - 1, 1024);
+               this.method_4617(var1 - 1, var2, -1134662699);
             }
          }
       }
@@ -1572,13 +1572,13 @@ public class class_240 {
    }
 
    // $FF: renamed from: y (int, int, int) void
-   public void method_4641(int var1, int var2, int var3) {
+   public void method_4641(int var1, int var2) {
       try {
          var1 -= 280751135 * this.field_2674;
          var2 -= this.field_2681 * -992681321;
          this.field_2679[var1][var2] |= 2097152;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "fz.y(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -1640,7 +1640,7 @@ public class class_240 {
 
          return var0 + var2;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "fz.r(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -1652,11 +1652,11 @@ public class class_240 {
    }
 
    // $FF: renamed from: n (int, int) int
-   public static int method_4644(int var0, int var1) {
+   public static int method_4644(int var0) {
       try {
          return class_260.field_2904[var0];
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "fz.n(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -1686,14 +1686,14 @@ public class class_240 {
             }
 
             class_40 var2 = class_112.method_2238(class_266.field_3136, client.field_1463.field_2384, (byte)8);
-            var2.field_263.method_210(class_78.method_1223(702215999), 303066737);
-            var2.field_263.method_333(class_137.field_1766 * 646214551, -1826329058);
-            var2.field_263.method_333(class_58.field_460 * -1538307343, 1653266263);
-            client.field_1463.method_4079(var2, -2081373116);
+            var2.field_263.method_210(class_78.method_1223(702215999));
+            var2.field_263.method_333(class_137.field_1766 * 646214551);
+            var2.field_263.method_333(class_58.field_460 * -1538307343);
+            client.field_1463.method_4079(var2);
          }
 
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "fz.gs(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 }

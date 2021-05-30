@@ -58,7 +58,7 @@ public final class class_208 extends class_206 implements Runnable {
          this.field_2408 = this.field_2407.getInputStream();
          this.field_2406 = this.field_2407.getOutputStream();
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "ea.<init>(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -75,7 +75,7 @@ public final class class_208 extends class_206 implements Runnable {
             return this.field_2408.available();
          }
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ea.f(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -83,7 +83,7 @@ public final class class_208 extends class_206 implements Runnable {
       try {
          this.method_4123(1654713390);
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ea.finalize(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -100,7 +100,7 @@ public final class class_208 extends class_206 implements Runnable {
             return this.field_2408.read();
          }
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ea.n(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -191,7 +191,7 @@ public final class class_208 extends class_206 implements Runnable {
                                     var0.field_1160 = false;
                                     var0.field_1149 = class_205.method_4113(-130212619 * var0.field_1077, var0.field_1076 * 1248597615, class_115.field_1289 * 1115122599, 1127602993) * -1225750221;
                                     var0.field_1080 = -690346567 * client.field_1425;
-                                    class_206.field_2401.method_4735(1115122599 * class_115.field_1289, var0.field_1077 * -130212619, 1248597615 * var0.field_1076, var0.field_1149 * -483485189, 60, var0, var0.field_1119 * -1073291133, var5, var0.field_1156 * -1119093931, 1402081485 * var0.field_1157, var0.field_1158 * 482792791, var0.field_1159 * -1028292805);
+                                    class_206.field_2401.method_4735(1115122599 * class_115.field_1289, var0.field_1077 * -130212619, 1248597615 * var0.field_1076, var0.field_1149 * -483485189, var0, var0.field_1119 * -1073291133, var5, var0.field_1156 * -1119093931, 1402081485 * var0.field_1157, var0.field_1158 * 482792791, var0.field_1159 * -1028292805);
                                     return;
                                  }
                               }
@@ -220,7 +220,7 @@ public final class class_208 extends class_206 implements Runnable {
          }
 
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "ea.gt(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
@@ -265,14 +265,14 @@ public final class class_208 extends class_206 implements Runnable {
                      return;
                   }
 
-                  this.field_2405 = this.field_2409.method_4058(this, 3, (byte)-10);
+                  this.field_2405 = this.field_2409.method_4058(this, 3);
                }
 
                this.notifyAll();
             }
          }
       } catch (RuntimeException var9) {
-         throw class_223.method_4281(var9, "ea.j(" + ')');
+         throw class_223.method_4281(var9);
       }
    }
 
@@ -385,16 +385,16 @@ public final class class_208 extends class_206 implements Runnable {
             }
          }
       } catch (RuntimeException var12) {
-         throw class_223.method_4281(var12, "ea.run(" + ')');
+         throw class_223.method_4281(var12);
       }
    }
 
    // $FF: renamed from: r (byte[], int, int, int) void
-   public void method_4132(byte[] var1, int var2, int var3, int var4) throws IOException {
+   public void method_4132(byte[] var1, int var2, int var3) throws IOException {
       try {
          this.method_4145(var1, var2, var3, (byte)12);
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "ea.r(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -649,7 +649,7 @@ public final class class_208 extends class_206 implements Runnable {
             return var10000;
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ea.y(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -775,7 +775,7 @@ public final class class_208 extends class_206 implements Runnable {
             return var5;
          }
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "ea.p(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
@@ -800,7 +800,7 @@ public final class class_208 extends class_206 implements Runnable {
                }
 
                if(this.field_2405 == null) {
-                  this.field_2405 = this.field_2409.method_4058(this, 3, (byte)-30);
+                  this.field_2405 = this.field_2409.method_4058(this, 3);
                }
 
                this.notifyAll();
@@ -830,7 +830,7 @@ public final class class_208 extends class_206 implements Runnable {
                }
 
                if(this.field_2405 == null) {
-                  this.field_2405 = this.field_2409.method_4058(this, 3, (byte)117);
+                  this.field_2405 = this.field_2409.method_4058(this, 3);
                }
 
                this.notifyAll();
@@ -887,12 +887,12 @@ public final class class_208 extends class_206 implements Runnable {
             this.field_2405 = null;
          }
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "ea.v(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
    // $FF: renamed from: hl (int) void
-   static void method_4150(int var0) {
+   static void method_4150() {
       try {
          client.field_1554 = 0;
          client.field_1553 = false;
@@ -902,7 +902,7 @@ public final class class_208 extends class_206 implements Runnable {
          client.field_1492[0] = false;
          client.field_1554 = -135189071;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ea.hl(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

@@ -21,7 +21,7 @@ public class class_234 {
 
 
    // $FF: renamed from: v (jv, jv, jv, hp, int) boolean
-   public static boolean method_4590(class_306 var0, class_306 var1, class_306 var2, class_106 var3, int var4) {
+   public static boolean method_4590(class_306 var0, class_306 var1, class_306 var2, class_106 var3) {
       try {
          class_270.field_3182 = var0;
          class_270.field_3184 = var1;
@@ -29,7 +29,7 @@ public class class_234 {
          class_198.field_2339 = var3;
          return true;
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "fr.v(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -47,7 +47,7 @@ public class class_234 {
       try {
          this.field_2623 = 122410317 * var1;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "fr.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 }

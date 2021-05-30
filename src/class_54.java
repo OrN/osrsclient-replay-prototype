@@ -52,42 +52,42 @@ public class class_54 extends class_51 {
             }
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "j.ih(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: f (int, short) byte[]
-   public static synchronized byte[] method_582(int var0, short var1) {
+   public static synchronized byte[] method_582(int var0) {
       try {
          return class_319.method_5660(var0, false, (byte)100);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "j.f(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: n (y, int) void
    void method_569(class_44 var1, int var2) {
       try {
-         var1.method_500(-625073017 * this.field_408, (byte)85);
+         var1.method_500(-625073017 * this.field_408);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "j.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: f (nd) void
    void method_570(class_28 var1) {
-      this.field_408 = var1.method_132((byte)-79) * -1560714953;
-      var1.method_130(-1277732156);
-      if(var1.method_130(276553961) != 255) {
+      this.field_408 = var1.method_132() * -1560714953;
+      var1.method_130();
+      if(var1.method_130() != 255) {
          var1.field_15 -= -1025691571;
-         var1.method_136(-2143144625);
+         var1.method_136();
       }
 
    }
 
    // $FF: renamed from: y (y) void
    void method_568(class_44 var1) {
-      var1.method_500(-625073017 * this.field_408, (byte)103);
+      var1.method_500(-625073017 * this.field_408);
    }
 
    // $FF: renamed from: ik (int) void
@@ -109,7 +109,7 @@ public class class_54 extends class_51 {
                   class_45 var2 = var10000;
                   var2.field_332 = var1;
                   var2.field_337 = var1.field_199;
-                  class_203.method_4099(var2, (byte)1);
+                  class_203.method_4099(var2);
                }
             }
 
@@ -118,7 +118,7 @@ public class class_54 extends class_51 {
             class_254.method_4900(var1, (byte)54);
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "j.ik(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -129,7 +129,7 @@ public class class_54 extends class_51 {
          this.this$0 = var1;
          this.field_408 = 1560714953;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "j.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -152,35 +152,35 @@ public class class_54 extends class_51 {
          class_197.field_2336.method_5797(var6);
          client.field_1611 = -625396947 * client.field_1602;
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "j.n(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
    // $FF: renamed from: y (int, byte) int
-   public static int method_586(int var0, byte var1) {
+   public static int method_586(int var0) {
       try {
          return class_74.method_1129(class_255.field_2883[var0]);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "j.y(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: v (nd, int) void
    void method_571(class_28 var1, int var2) {
       try {
-         this.field_408 = var1.method_132((byte)-41) * -1560714953;
-         var1.method_130(761639776);
-         if(var1.method_130(-475080713) != 255) {
+         this.field_408 = var1.method_132() * -1560714953;
+         var1.method_130();
+         if(var1.method_130() != 255) {
             if(var2 >= 778749602) {
                throw new IllegalStateException();
             }
 
             var1.field_15 -= -1025691571;
-            var1.method_136(-462417725);
+            var1.method_136();
          }
 
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "j.v(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 }

@@ -688,7 +688,7 @@ public final class class_389 {
    }
 
    // $FF: renamed from: s (byte[], int, byte[], int, int) int
-   public static int method_6748(byte[] var0, int var1, byte[] var2, int var3, int var4) {
+   public static int method_6748(byte[] var0, int var1, byte[] var2, int var4) {
       class_378 var5 = field_4237;
       synchronized(field_4237) {
          field_4237.field_4172 = var2;
@@ -715,7 +715,7 @@ public final class class_389 {
    }
 
    // $FF: renamed from: d (byte[], int, byte[], int, int) int
-   public static int method_6750(byte[] var0, int var1, byte[] var2, int var3, int var4) {
+   public static int method_6750(byte[] var0, int var1, byte[] var2, int var4) {
       class_378 var5 = field_4237;
       synchronized(field_4237) {
          field_4237.field_4172 = var2;
@@ -1942,7 +1942,7 @@ public final class class_389 {
    }
 
    // $FF: renamed from: v (byte[], int, byte[], int, int) int
-   public static int method_6767(byte[] var0, int var1, byte[] var2, int var3, int var4) {
+   public static int method_6767(byte[] var0, int var1, byte[] var2, int var4) {
       class_378 var5 = field_4237;
       synchronized(field_4237) {
          field_4237.field_4172 = var2;

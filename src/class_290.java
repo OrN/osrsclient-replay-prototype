@@ -73,61 +73,61 @@ public class class_290 implements class_14 {
 
    // $FF: renamed from: <clinit> () void
    static {
-      class_290 var10000 = new class_290(0, 0);
+      class_290 var10000 = new class_290(0);
       field_3293 = var10000;
-      var10000 = new class_290(1, 0);
+      var10000 = new class_290(1);
       field_3287 = var10000;
-      var10000 = new class_290(2, 0);
+      var10000 = new class_290(2);
       field_3311 = var10000;
-      var10000 = new class_290(3, 0);
+      var10000 = new class_290(3);
       field_3289 = var10000;
-      var10000 = new class_290(9, 2);
+      var10000 = new class_290(9);
       field_3290 = var10000;
-      var10000 = new class_290(4, 1);
+      var10000 = new class_290(4);
       field_3291 = var10000;
-      var10000 = new class_290(5, 1);
+      var10000 = new class_290(5);
       field_3292 = var10000;
-      var10000 = new class_290(6, 1);
+      var10000 = new class_290(6);
       field_3308 = var10000;
-      var10000 = new class_290(7, 1);
+      var10000 = new class_290(7);
       field_3294 = var10000;
-      var10000 = new class_290(8, 1);
+      var10000 = new class_290(8);
       field_3295 = var10000;
-      var10000 = new class_290(12, 2);
+      var10000 = new class_290(12);
       field_3286 = var10000;
-      var10000 = new class_290(13, 2);
+      var10000 = new class_290(13);
       field_3300 = var10000;
-      var10000 = new class_290(14, 2);
+      var10000 = new class_290(14);
       field_3307 = var10000;
-      var10000 = new class_290(15, 2);
+      var10000 = new class_290(15);
       field_3299 = var10000;
-      var10000 = new class_290(16, 2);
+      var10000 = new class_290(16);
       field_3310 = var10000;
-      var10000 = new class_290(17, 2);
+      var10000 = new class_290(17);
       field_3301 = var10000;
-      var10000 = new class_290(18, 2);
+      var10000 = new class_290(18);
       field_3302 = var10000;
-      var10000 = new class_290(19, 2);
+      var10000 = new class_290(19);
       field_3303 = var10000;
-      var10000 = new class_290(20, 2);
+      var10000 = new class_290(20);
       field_3296 = var10000;
-      var10000 = new class_290(21, 2);
+      var10000 = new class_290(21);
       field_3305 = var10000;
-      var10000 = new class_290(10, 2);
+      var10000 = new class_290(10);
       field_3306 = var10000;
-      var10000 = new class_290(11, 2);
+      var10000 = new class_290(11);
       field_3288 = var10000;
-      var10000 = new class_290(22, 3);
+      var10000 = new class_290(22);
       field_3298 = var10000;
    }
 
    // $FF: renamed from: <init> (int, int) void
-   class_290(int var1, int var2) {
+   class_290(int var1) {
       super();
       try {
          this.field_3309 = -1791833721 * var1;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ix.<init>(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -142,11 +142,11 @@ public class class_290 implements class_14 {
    }
 
    // $FF: renamed from: v (int) int
-   public int method_50(int var1) {
+   public int method_50() {
       try {
          return -2083476425 * this.field_3309;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ix.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -161,7 +161,7 @@ public class class_290 implements class_14 {
    }
 
    // $FF: renamed from: y (int, cf, boolean, byte) int
-   static int method_5291(int var0, class_90 var1, boolean var2, byte var3) {
+   static int method_5291(int var0, boolean var2, byte var3) {
       try {
          int var5;
          int var11;
@@ -178,7 +178,7 @@ public class class_290 implements class_14 {
                   throw new RuntimeException();
                }
             } else {
-               class_37 var7 = class_71.method_1047(var11, 1516626286);
+               class_37 var7 = class_71.method_1047(var11);
                if(var7.field_233 == null) {
                   if(var3 <= -1) {
                      throw new IllegalStateException();
@@ -249,7 +249,7 @@ public class class_290 implements class_14 {
                }
 
                var4 = var10000;
-               class_37 var12 = class_71.method_1047(var4.field_101 * -1722455647, 1326736785);
+               class_37 var12 = class_71.method_1047(var4.field_101 * -1722455647);
                var12.field_233[41180389 * var4.field_102] = null;
                class_254.method_4900(var12, (byte)91);
                return 1;
@@ -257,7 +257,7 @@ public class class_290 implements class_14 {
                if(var3 <= -1) {
                   throw new IllegalStateException();
                } else {
-                  var4 = class_71.method_1047(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885], 1109078867);
+                  var4 = class_71.method_1047(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                   var4.field_233 = null;
                   class_254.method_4900(var4, (byte)10);
                   return 1;
@@ -316,7 +316,7 @@ public class class_290 implements class_14 {
                if(var3 <= -1) {
                   throw new IllegalStateException();
                } else {
-                  var4 = class_71.method_1047(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885], 1488178901);
+                  var4 = class_71.method_1047(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                   if(null != var4) {
                      if(var3 <= -1) {
                         throw new IllegalStateException();
@@ -349,7 +349,7 @@ public class class_290 implements class_14 {
             }
          }
       } catch (RuntimeException var10) {
-         throw class_223.method_4281(var10, "ix.y(" + ')');
+         throw class_223.method_4281(var10);
       }
    }
 
@@ -361,12 +361,12 @@ public class class_290 implements class_14 {
                throw new IllegalStateException();
             }
 
-            class_241.method_4648(1239056485);
+            class_241.method_4648();
             class_49.field_363 = var0;
          }
 
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ix.z(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 }

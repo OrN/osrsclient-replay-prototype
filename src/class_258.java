@@ -13,19 +13,19 @@ public abstract class class_258 extends class_257 implements class_21 {
 
    // $FF: renamed from: <init> (jd, kk, int) void
    protected class_258(class_295 var1, class_324 var2, int var3) {
-      super(var1, var2, var3);
+      super(var3);
       try {
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "me.<init>(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: n (int) int
-   public int method_4951(int var1) {
+   public int method_4951() {
       try {
          return -1948210145 * this.field_2898;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "me.n(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -45,7 +45,7 @@ public abstract class class_258 extends class_257 implements class_21 {
 
          return null;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "me.f(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -55,7 +55,7 @@ public abstract class class_258 extends class_257 implements class_21 {
    // $FF: renamed from: y (nd, byte) oc
    public class_396 method_4953(class_28 var1, byte var2) {
       try {
-         int var3 = var1.method_132((byte)-44);
+         int var3 = var1.method_132();
          class_367 var4 = this.method_4958(var3, 1996028065);
          class_396 var10000 = new class_396(var3);
          class_396 var5 = var10000;
@@ -65,13 +65,13 @@ public abstract class class_258 extends class_257 implements class_21 {
                throw new IllegalStateException();
             }
 
-            var5.field_4254 = Integer.valueOf(var1.method_135((byte)-2));
+            var5.field_4254 = Integer.valueOf(var1.method_135());
          } else if(Long.class == var6) {
             if(var2 <= 8) {
                throw new IllegalStateException();
             }
 
-            var5.field_4254 = Long.valueOf(var1.method_136(968094448));
+            var5.field_4254 = Long.valueOf(var1.method_136());
          } else if(var6 == String.class) {
             if(var2 <= 8) {
                throw new IllegalStateException();
@@ -100,7 +100,7 @@ public abstract class class_258 extends class_257 implements class_21 {
 
          return var5;
       } catch (RuntimeException var10) {
-         throw class_223.method_4281(var10, "me.y(" + ')');
+         throw class_223.method_4281(var10);
       }
    }
 
@@ -148,15 +148,15 @@ public abstract class class_258 extends class_257 implements class_21 {
 
    // $FF: renamed from: e (nd) oc
    public class_396 method_4960(class_28 var1) {
-      int var2 = var1.method_132((byte)-105);
+      int var2 = var1.method_132();
       class_367 var3 = this.method_4958(var2, 1185225265);
       class_396 var10000 = new class_396(var2);
       class_396 var4 = var10000;
       Class var5 = var3.field_4095.field_4214;
       if(var5 == Integer.class) {
-         var4.field_4254 = Integer.valueOf(var1.method_135((byte)-92));
+         var4.field_4254 = Integer.valueOf(var1.method_135());
       } else if(Long.class == var5) {
-         var4.field_4254 = Long.valueOf(var1.method_136(-2066441738));
+         var4.field_4254 = Long.valueOf(var1.method_136());
       } else if(var5 == String.class) {
          var4.field_4254 = var1.method_140((byte)9);
       } else {

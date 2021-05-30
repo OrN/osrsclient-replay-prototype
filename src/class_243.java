@@ -23,7 +23,7 @@ public class class_243 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "gc.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -36,16 +36,16 @@ public class class_243 {
          this.field_2696 = var1.field_2696 * 1;
          this.field_2694 = 1 * var1.field_2694;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "gc.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: y (int) on[]
-   public static class_399[] method_4687(int var0) {
+   public static class_399[] method_4687() {
       try {
          return new class_399[]{class_399.field_4261, class_399.field_4259, class_399.field_4260};
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "gc.y(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

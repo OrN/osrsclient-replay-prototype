@@ -16,11 +16,11 @@ public class class_204 implements Comparator {
 
 
    // $FF: renamed from: jg (boolean, byte) void
-   static void method_4100(boolean var0, byte var1) {
+   static void method_4100(boolean var0) {
       try {
          client.field_1498 = var0;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "dv.jg(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -40,7 +40,7 @@ public class class_204 implements Comparator {
 
          return var10000;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "dv.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -48,7 +48,7 @@ public class class_204 implements Comparator {
       try {
          return this.method_4101((class_339)var1, (class_339)var2, -903246659);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "dv.compare(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -63,7 +63,7 @@ public class class_204 implements Comparator {
       try {
          this.field_2389 = var1;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "dv.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -81,7 +81,7 @@ public class class_204 implements Comparator {
       try {
          return super.equals(var1);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "dv.equals(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 

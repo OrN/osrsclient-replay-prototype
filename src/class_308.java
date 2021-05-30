@@ -131,7 +131,7 @@ public class class_308 {
          }
 
       } catch (RuntimeException var18) {
-         throw class_223.method_4281(var18, "jq.v(" + ')');
+         throw class_223.method_4281(var18);
       }
    }
 
@@ -139,7 +139,7 @@ public class class_308 {
    static {
       int var0 = 0;
       int var1 = 0;
-      class_313[] var2 = class_227.method_4349(1606153053);
+      class_313[] var2 = class_227.method_4349();
 
       for(int var3 = 0; var3 < var2.length; ++var3) {
          class_313 var4 = var2[var3];
@@ -160,7 +160,7 @@ public class class_308 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "jq.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

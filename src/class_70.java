@@ -1009,8 +1009,8 @@ public class class_70 extends class_65 {
          var20 = field_555.method_31(var18, -734610298);
          method_977(var0, var1, var2, var3, var4, var5, method_1004(var20, var6), method_1004(var20, var7), method_1004(var20, var8));
       } else {
-         field_535 = field_555.method_33(var18, 847072255);
-         field_534 = field_555.method_41(var18, (byte)28);
+         field_535 = field_555.method_33(847072255);
+         field_534 = field_555.method_41(var18);
          var20 = var4 - var3;
          int var21 = var1 - var0;
          int var22 = var5 - var3;
@@ -1815,7 +1815,7 @@ public class class_70 extends class_65 {
       field_547 = var3 - var1;
       method_972();
       if(field_553.length < field_547) {
-         field_553 = new int[class_100.method_1845(field_547, 790668672)];
+         field_553 = new int[class_100.method_1845(field_547)];
       }
 
       int var4 = var1 * field_484 + var0;
@@ -1833,7 +1833,7 @@ public class class_70 extends class_65 {
       field_547 = var3 - var1;
       method_972();
       if(field_553.length < field_547) {
-         field_553 = new int[class_100.method_1845(field_547, 1946731831)];
+         field_553 = new int[class_100.method_1845(field_547)];
       }
 
       int var4 = var1 * field_484 + var0;
@@ -2183,8 +2183,8 @@ public class class_70 extends class_65 {
          var20 = field_555.method_31(var18, 1761512738);
          method_977(var0, var1, var2, var3, var4, var5, method_1004(var20, var6), method_1004(var20, var7), method_1004(var20, var8));
       } else {
-         field_535 = field_555.method_33(var18, 1780944645);
-         field_534 = field_555.method_41(var18, (byte)28);
+         field_535 = field_555.method_33(1780944645);
+         field_534 = field_555.method_41(var18);
          var20 = var4 - var3;
          int var21 = var1 - var0;
          int var22 = var5 - var3;
@@ -3493,7 +3493,7 @@ public class class_70 extends class_65 {
       field_547 = var3 - var1;
       method_972();
       if(field_553.length < field_547) {
-         field_553 = new int[class_100.method_1845(field_547, 1078589056)];
+         field_553 = new int[class_100.method_1845(field_547)];
       }
 
       int var4 = var1 * field_484 + var0;
@@ -5349,8 +5349,8 @@ public class class_70 extends class_65 {
          var20 = field_555.method_31(var18, -2055637864);
          method_977(var0, var1, var2, var3, var4, var5, method_1004(var20, var6), method_1004(var20, var7), method_1004(var20, var8));
       } else {
-         field_535 = field_555.method_33(var18, -403995611);
-         field_534 = field_555.method_41(var18, (byte)28);
+         field_535 = field_555.method_33(-403995611);
+         field_534 = field_555.method_41(var18);
          var20 = var4 - var3;
          int var21 = var1 - var0;
          int var22 = var5 - var3;
@@ -6395,8 +6395,8 @@ public class class_70 extends class_65 {
          var20 = field_555.method_31(var18, -2052515749);
          method_977(var0, var1, var2, var3, var4, var5, method_1004(var20, var6), method_1004(var20, var7), method_1004(var20, var8));
       } else {
-         field_535 = field_555.method_33(var18, 742235658);
-         field_534 = field_555.method_41(var18, (byte)28);
+         field_535 = field_555.method_33(742235658);
+         field_534 = field_555.method_41(var18);
          var20 = var4 - var3;
          int var21 = var1 - var0;
          int var22 = var5 - var3;
@@ -7016,8 +7016,8 @@ public class class_70 extends class_65 {
          var20 = field_555.method_31(var18, 564498851);
          method_977(var0, var1, var2, var3, var4, var5, method_1004(var20, var6), method_1004(var20, var7), method_1004(var20, var8));
       } else {
-         field_535 = field_555.method_33(var18, 1970472044);
-         field_534 = field_555.method_41(var18, (byte)28);
+         field_535 = field_555.method_33(1970472044);
+         field_534 = field_555.method_41(var18);
          var20 = var4 - var3;
          int var21 = var1 - var0;
          int var22 = var5 - var3;
@@ -7637,8 +7637,8 @@ public class class_70 extends class_65 {
          var20 = field_555.method_31(var18, -1952615175);
          method_977(var0, var1, var2, var3, var4, var5, method_1004(var20, var6), method_1004(var20, var7), method_1004(var20, var8));
       } else {
-         field_535 = field_555.method_33(var18, 1424236755);
-         field_534 = field_555.method_41(var18, (byte)28);
+         field_535 = field_555.method_33(1424236755);
+         field_534 = field_555.method_41(var18);
          var20 = var4 - var3;
          int var21 = var1 - var0;
          int var22 = var5 - var3;

@@ -19,7 +19,7 @@ public final class class_241 {
 
 
    // $FF: renamed from: o (int, cf, boolean, byte) int
-   static int method_4646(int var0, class_90 var1, boolean var2, byte var3) {
+   static int method_4646(int var0, boolean var2, byte var3) {
       try {
          class_37 var10000;
          if(var2) {
@@ -79,7 +79,7 @@ public final class class_241 {
             return 2;
          }
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "ga.o(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -96,23 +96,23 @@ public final class class_241 {
          this.field_2688 = var6 * 347146035;
          this.field_2683 = var7;
       } catch (RuntimeException var8) {
-         throw class_223.method_4281(var8, "ga.<init>(" + ')');
+         throw class_223.method_4281(var8);
       }
    }
 
    // $FF: renamed from: m (int) void
-   public static void method_4648(int var0) {
+   public static void method_4648() {
       try {
          class_80.field_702.method_5074();
          class_80.field_703.method_5074();
          class_80.field_704.method_5074();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ga.m(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: aq (int, cf, boolean, int) int
-   static int method_4649(int var0, class_90 var1, boolean var2, int var3) {
+   static int method_4649(int var0, int var3) {
       try {
          if(7000 != var0) {
             if(var3 >= -1557522956) {
@@ -379,7 +379,7 @@ public final class class_241 {
          class_136.field_1752 -= -1143668849;
          return 1;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "ga.aq(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 }

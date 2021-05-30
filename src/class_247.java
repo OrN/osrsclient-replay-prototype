@@ -43,11 +43,11 @@ public final class class_247 {
 
 
    // $FF: renamed from: ig (java.lang.String, java.lang.String, int, int, int, int, int) void
-   public static final void method_4712(String var0, String var1, int var2, int var3, int var4, int var5, int var6) {
+   public static final void method_4712(String var0, String var1, int var2, int var3, int var4, int var5) {
       try {
          class_269.method_5041(var0, var1, var2, var3, var4, var5, false, -2076246411);
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "gn.ig(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
@@ -56,31 +56,31 @@ public final class class_247 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "gn.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: l (int, int, byte) int
-   static final int method_4714(int var0, int var1, byte var2) {
+   static final int method_4714(int var0, int var1) {
       try {
-         int var3 = class_311.method_5552(var0 - 1, var1 - 1, -324437873) + class_311.method_5552(1 + var0, var1 - 1, -324437873) + class_311.method_5552(var0 - 1, 1 + var1, -324437873) + class_311.method_5552(1 + var0, 1 + var1, -324437873);
-         int var4 = class_311.method_5552(var0 - 1, var1, -324437873) + class_311.method_5552(var0 + 1, var1, -324437873) + class_311.method_5552(var0, var1 - 1, -324437873) + class_311.method_5552(var0, var1 + 1, -324437873);
-         int var5 = class_311.method_5552(var0, var1, -324437873);
+         int var3 = class_311.method_5552(var0 - 1, var1 - 1) + class_311.method_5552(1 + var0, var1 - 1) + class_311.method_5552(var0 - 1, 1 + var1) + class_311.method_5552(1 + var0, 1 + var1);
+         int var4 = class_311.method_5552(var0 - 1, var1) + class_311.method_5552(var0 + 1, var1) + class_311.method_5552(var0, var1 - 1) + class_311.method_5552(var0, var1 + 1);
+         int var5 = class_311.method_5552(var0, var1);
          return var5 / 4 + var4 / 8 + var3 / 16;
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "gn.l(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
    // $FF: renamed from: z (int, cf, boolean, int) int
-   static int method_4715(int var0, class_90 var1, boolean var2, int var3) {
+   static int method_4715(int var0, int var3) {
       try {
-         class_37 var4 = class_71.method_1047(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885], 737236467);
+         class_37 var4 = class_71.method_1047(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
          if(var0 == 2800) {
             if(var3 >= -509169958) {
                throw new IllegalStateException();
             } else {
-               class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_196.method_3989(class_112.method_2236(var4, 2134538939), (byte)-49);
+               class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_196.method_3989(class_112.method_2236(var4, 2134538939));
                return 1;
             }
          } else if(var0 == 2801) {
@@ -125,7 +125,7 @@ public final class class_247 {
             return 2;
          }
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "gn.z(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 }

@@ -46,7 +46,7 @@ public class class_393 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "nz.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -182,7 +182,7 @@ public class class_393 {
          }
 
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "nz.ic(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 }

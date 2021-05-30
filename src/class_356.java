@@ -30,12 +30,12 @@ public class class_356 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "lr.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: p (int, cf, boolean, byte) int
-   static int method_6243(int var0, class_90 var1, boolean var2, byte var3) {
+   static int method_6243(int var0, boolean var2, byte var3) {
       try {
          int var4 = -1;
          class_37 var5;
@@ -46,7 +46,7 @@ public class class_356 {
 
             var0 -= 1000;
             var4 = class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885];
-            var5 = class_71.method_1047(var4, 1801624401);
+            var5 = class_71.method_1047(var4);
          } else {
             class_37 var10000;
             if(var2) {
@@ -78,7 +78,7 @@ public class class_356 {
                      throw new IllegalStateException();
                   }
 
-                  class_352.method_6231(class_37.field_93[var4 >> 16], var5, false, 189390986);
+                  class_352.method_6231(class_37.field_93[var4 >> 16], var5, false);
                }
 
                return 1;
@@ -104,7 +104,7 @@ public class class_356 {
                         throw new IllegalStateException();
                      }
 
-                     class_352.method_6231(class_37.field_93[var4 >> 16], var5, false, 2103972286);
+                     class_352.method_6231(class_37.field_93[var4 >> 16], var5, false);
                   }
                }
 
@@ -167,7 +167,7 @@ public class class_356 {
             }
          }
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "lr.p(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 }

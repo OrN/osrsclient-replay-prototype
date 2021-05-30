@@ -39,7 +39,7 @@ public class class_400 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "oo.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

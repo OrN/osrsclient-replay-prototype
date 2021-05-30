@@ -24,17 +24,17 @@ public class class_293 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "jb.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: v (jv, int) void
-   public static void method_5303(class_306 var0, int var1) {
+   public static void method_5303(class_306 var0) {
       try {
          class_74.field_594 = var0;
-         class_74.field_591 = class_74.field_594.method_5393(16, 834510232) * -1720246611;
+         class_74.field_591 = class_74.field_594.method_5393(16) * -1720246611;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "jb.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -51,7 +51,7 @@ public class class_293 {
             class_314.field_3774.method_5610(var5);
          }
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "jb.y(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 }

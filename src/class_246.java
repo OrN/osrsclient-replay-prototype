@@ -23,7 +23,7 @@ public class class_246 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "gk.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -50,7 +50,7 @@ public class class_246 {
             return false;
          }
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "gk.n(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 }

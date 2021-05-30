@@ -16,14 +16,14 @@ public class class_388 implements Comparator {
                throw new IllegalStateException();
             }
 
-            var10000 = var1.method_6000(var2, 67709032);
+            var10000 = var1.method_6000(var2);
          } else {
-            var10000 = var2.method_6000(var1, 768339332);
+            var10000 = var2.method_6000(var1);
          }
 
          return var10000;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "ns.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -31,20 +31,20 @@ public class class_388 implements Comparator {
       try {
          return this.method_6730((class_338)var1, (class_338)var2, -4111631);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ns.compare(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: j (lx, lx) int
    int method_6731(class_338 var1, class_338 var2) {
-      return this.field_4232?var1.method_6000(var2, -383271964):var2.method_6000(var1, 867765793);
+      return this.field_4232?var1.method_6000(var2):var2.method_6000(var1);
    }
 
    public boolean equals(Object var1) {
       try {
          return super.equals(var1);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ns.equals(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -59,7 +59,7 @@ public class class_388 implements Comparator {
       try {
          this.field_4232 = var1;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ns.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -80,12 +80,12 @@ public class class_388 implements Comparator {
 
    // $FF: renamed from: n (lx, lx) int
    int method_6737(class_338 var1, class_338 var2) {
-      return this.field_4232?var1.method_6000(var2, -45250245):var2.method_6000(var1, 655363083);
+      return this.field_4232?var1.method_6000(var2):var2.method_6000(var1);
    }
 
    // $FF: renamed from: f (lx, lx) int
    int method_6738(class_338 var1, class_338 var2) {
-      return this.field_4232?var1.method_6000(var2, 1878179534):var2.method_6000(var1, 1801928070);
+      return this.field_4232?var1.method_6000(var2):var2.method_6000(var1);
    }
 
    // $FF: renamed from: eo (java.lang.Object) boolean

@@ -34,7 +34,7 @@ public class class_402 {
          }
 
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "ou.<init>(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -65,7 +65,7 @@ public class class_402 {
             var4 = 1 + var4 & var3;
          }
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "ou.v(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 }

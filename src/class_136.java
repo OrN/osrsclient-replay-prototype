@@ -40,16 +40,16 @@ public class class_136 {
          class_149.field_1883 = var4;
          class_157.method_3300(class_166.field_2083, 0, class_166.field_2083.length - 1, class_149.field_1884, class_149.field_1883, -408447852);
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "aq.n(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
     // $FF: renamed from: n (int, int) java.lang.String
-   static String method_2958(int var0, int var1) {
+   static String method_2958(int var0) {
       try {
          return "<col=" + Integer.toHexString(var0) + ">";
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "aq.n(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -308,7 +308,7 @@ public class class_136 {
          }
 
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "aq.gi(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -319,11 +319,11 @@ public class class_136 {
    }
 
    // $FF: renamed from: gh (byte) boolean
-   static boolean method_2963(byte var0) {
+   static boolean method_2963() {
       try {
          return 0 != (client.field_1584 * -1493328845 & 2);
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "aq.gh(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

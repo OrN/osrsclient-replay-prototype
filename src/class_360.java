@@ -29,21 +29,21 @@ public class class_360 {
 
 
    // $FF: renamed from: v (jv, byte) void
-   public void method_6293(class_306 var1, byte var2) {
+   public void method_6293(class_306 var1) {
       try {
          byte[] var3 = var1.method_5388(-1567646551 * class_349.field_3935.field_3936, (byte)-116);
          class_28 var10000 = new class_28(var3);
          class_28 var4 = var10000;
 
          while(true) {
-            int var5 = var4.method_130(364997165);
+            int var5 = var4.method_130();
             if(var5 == 0) {
                return;
             }
 
             switch(var5) {
             case 1:
-               var4.method_134((byte)-108);
+               var4.method_134();
                break;
             case 2:
                this.field_3997 = var4.method_147(1957977001) * -1286622151;
@@ -60,7 +60,7 @@ public class class_360 {
             }
          }
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "lz.v(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -87,14 +87,14 @@ public class class_360 {
       class_28 var3 = var10000;
 
       while(true) {
-         int var4 = var3.method_130(633535384);
+         int var4 = var3.method_130();
          if(var4 == 0) {
             return;
          }
 
          switch(var4) {
          case 1:
-            var3.method_134((byte)-98);
+            var3.method_134();
             break;
          case 2:
             this.field_3997 = var3.method_147(1058472655) * -1286622151;
@@ -119,14 +119,14 @@ public class class_360 {
       class_28 var3 = var10000;
 
       while(true) {
-         int var4 = var3.method_130(-2051654597);
+         int var4 = var3.method_130();
          if(var4 == 0) {
             return;
          }
 
          switch(var4) {
          case 1:
-            var3.method_134((byte)-72);
+            var3.method_134();
             break;
          case 2:
             this.field_3997 = var3.method_147(804118123) * -1286622151;

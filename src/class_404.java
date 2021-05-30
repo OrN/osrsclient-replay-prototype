@@ -165,7 +165,7 @@ public final class class_404 {
 
          return this.field_4280[(this.field_4283 -= -297382187) * -21857667];
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "oy.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -183,7 +183,7 @@ public final class class_404 {
 
          return this.field_4280[this.field_4283 * -21857667 - 1];
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "oy.n(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -201,7 +201,7 @@ public final class class_404 {
             var0.field_222[var1] = var3;
          }
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "oy.s(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -342,7 +342,7 @@ public final class class_404 {
          this.method_6846(919752243);
          this.field_4283 = 1179571456;
       } catch (RuntimeException var11) {
-         throw class_223.method_4281(var11, "oy.y(" + ')');
+         throw class_223.method_4281(var11);
       }
    }
 
@@ -513,7 +513,7 @@ public final class class_404 {
          }
 
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "oy.f(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -689,7 +689,7 @@ public final class class_404 {
 
          this.method_6844((short)128);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "oy.<init>(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 }

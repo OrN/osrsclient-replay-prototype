@@ -16,7 +16,7 @@ public class class_193 extends class_191 {
       try {
          this.field_2301 = System.nanoTime() * 4914803548099444557L;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "de.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -96,7 +96,7 @@ public class class_193 extends class_191 {
 
          return var12;
       } catch (RuntimeException var16) {
-         throw class_223.method_4281(var16, "de.n(" + ')');
+         throw class_223.method_4281(var16);
       }
    }
 
@@ -154,7 +154,7 @@ public class class_193 extends class_191 {
       try {
          this.field_2301 = System.nanoTime() * 4914803548099444557L;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "de.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 

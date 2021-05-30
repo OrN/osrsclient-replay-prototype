@@ -12,7 +12,7 @@ public class class_338 implements Comparable {
 
    // $FF: renamed from: u (java.lang.Object) int
    public int method_5995(Object var1) {
-      return this.method_6000((class_338)var1, 1656574940);
+      return this.method_6000((class_338)var1);
    }
 
    // $FF: renamed from: am () ly
@@ -30,45 +30,45 @@ public class class_338 implements Comparable {
                return "";
             }
          } else {
-            return this.field_3883.method_6272(2105817014);
+            return this.field_3883.method_6272();
          }
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "lx.ax(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: as (int) java.lang.String
-   public String method_5998(int var1) {
+   public String method_5998() {
       try {
-         return null == this.field_3882?"":this.field_3882.method_6272(2124030292);
+         return null == this.field_3882?"":this.field_3882.method_6272();
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "lx.as(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: ag (int) ly
-   public class_359 method_5999(int var1) {
+   public class_359 method_5999() {
       try {
          return this.field_3883;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "lx.ag(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: n (lx, int) int
-   public int method_6000(class_338 var1, int var2) {
+   public int method_6000(class_338 var1) {
       try {
          return this.field_3883.method_6275(var1.field_3883, -2072914472);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "lx.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    public int compareTo(Object var1) {
       try {
-         return this.method_6000((class_338)var1, 539732409);
+         return this.method_6000((class_338)var1);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "lx.compareTo(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -96,7 +96,7 @@ public class class_338 implements Comparable {
             this.field_3882 = var2;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "lx.aj(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -107,7 +107,7 @@ public class class_338 implements Comparable {
 
    // $FF: renamed from: s (java.lang.Object) int
    public int method_6005(Object var1) {
-      return this.method_6000((class_338)var1, 62836503);
+      return this.method_6000((class_338)var1);
    }
 
    // $FF: renamed from: d (lx) int
@@ -117,12 +117,12 @@ public class class_338 implements Comparable {
 
    // $FF: renamed from: l (java.lang.Object) int
    public int method_6007(Object var1) {
-      return this.method_6000((class_338)var1, 1442888933);
+      return this.method_6000((class_338)var1);
    }
 
    // $FF: renamed from: o (java.lang.Object) int
    public int method_6008(Object var1) {
-      return this.method_6000((class_338)var1, 320061779);
+      return this.method_6000((class_338)var1);
    }
 
    // $FF: renamed from: az () ly
@@ -140,13 +140,13 @@ public class class_338 implements Comparable {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "lx.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: ac () java.lang.String
    public String method_6012() {
-      return this.field_3883 == null?"":this.field_3883.method_6272(2136058793);
+      return this.field_3883 == null?"":this.field_3883.method_6272();
    }
 
    // $FF: renamed from: at (ly, ly) void

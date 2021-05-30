@@ -19,11 +19,11 @@ public class class_312 {
 
 
    // $FF: renamed from: v (java.lang.Integer, int) void
-   void method_5555(Integer var1, int var2) {
+   void method_5555() {
       try {
          ;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ju.v(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -42,11 +42,11 @@ public class class_312 {
    }
 
    // $FF: renamed from: n (int) int
-   public int method_5558(int var1) {
+   public int method_5558() {
       try {
          return this.field_3755 & 7;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ju.n(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -66,17 +66,17 @@ public class class_312 {
 
          return var10000;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ju.f(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: y (int, int) void
-   void method_5560(int var1, int var2) {
+   void method_5560(int var1) {
       try {
          this.field_3755 &= -8;
          this.field_3755 = (byte)(this.field_3755 | var1 & 7);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ju.y(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -85,12 +85,12 @@ public class class_312 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ju.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: j (java.lang.Integer) void
-   void method_5562(Integer var1) {}
+   void method_5562() {}
 
    // $FF: renamed from: o (int) void
    void method_5563(int var1) {
@@ -121,27 +121,27 @@ public class class_312 {
    }
 
    // $FF: renamed from: r (java.lang.Integer) void
-   void method_5568(Integer var1) {}
+   void method_5568() {}
 
    // $FF: renamed from: <init> (nd, boolean) void
    public class_312(class_28 var1, boolean var2) {
       super();
       try {
-         this.field_3755 = var1.method_131((byte)-23);
-         this.field_3754 = var1.method_132((byte)-29) * 515671321;
-         this.field_3758 = var1.method_135((byte)-46) * 675729031;
-         this.field_3756 = var1.method_135((byte)-41) * 1613502191;
-         this.field_3753 = var1.method_135((byte)-29) * -1633742323;
-         this.field_3757 = var1.method_135((byte)-10) * 609299645;
+         this.field_3755 = var1.method_131();
+         this.field_3754 = var1.method_132() * 515671321;
+         this.field_3758 = var1.method_135() * 675729031;
+         this.field_3756 = var1.method_135() * 1613502191;
+         this.field_3753 = var1.method_135() * -1633742323;
+         this.field_3757 = var1.method_135() * 609299645;
          if(var2) {
             int var4 = 0;
             boolean var5 = false;
 
             while(true) {
-               int var6 = var1.method_130(-1315296240);
+               int var6 = var1.method_130();
                if(255 == var6) {
                   Integer var3 = var5?Integer.valueOf(var4):null;
-                  this.method_5555(var3, -1715033760);
+                  this.method_5555();
                   break;
                }
 
@@ -150,13 +150,13 @@ public class class_312 {
                }
 
                while(true) {
-                  int var7 = var1.method_130(-32551694);
+                  int var7 = var1.method_130();
                   if(255 == var7) {
                      break;
                   }
 
                   var1.field_15 -= -1025691571;
-                  if(var1.method_132((byte)-76) != 0) {
+                  if(var1.method_132() != 0) {
                      throw new IllegalStateException("");
                   }
 
@@ -164,14 +164,14 @@ public class class_312 {
                      throw new IllegalStateException("");
                   }
 
-                  var4 = var1.method_135((byte)-56);
+                  var4 = var1.method_135();
                   var5 = true;
                }
             }
          }
 
       } catch (RuntimeException var8) {
-         throw class_223.method_4281(var8, "ju.<init>(" + ')');
+         throw class_223.method_4281(var8);
       }
    }
 
@@ -206,7 +206,7 @@ public class class_312 {
          }
 
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ju.p(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 

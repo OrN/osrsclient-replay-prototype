@@ -831,7 +831,7 @@ public class class_305 {
 
          }
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "jo.gw(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -1148,7 +1148,7 @@ public class class_305 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "jo.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

@@ -96,7 +96,7 @@ public class class_148 {
 
          return var1;
       } catch (RuntimeException var11) {
-         throw class_223.method_4281(var11, "be.v(" + ')');
+         throw class_223.method_4281(var11);
       }
    }
 
@@ -113,7 +113,7 @@ public class class_148 {
 
          return var1;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "be.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -130,7 +130,7 @@ public class class_148 {
 
          return var1;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "be.f(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -237,7 +237,7 @@ public class class_148 {
          }
 
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "be.gx(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -260,11 +260,11 @@ public class class_148 {
    }
 
    // $FF: renamed from: kd (int) void
-   static final void method_3123(int var0) {
+   static final void method_3123() {
       try {
          client.field_1612 = 141937247 * client.field_1602;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "be.kd(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -278,11 +278,11 @@ public class class_148 {
    }
 
    // $FF: renamed from: x (int) void
-   public static void method_3125(int var0) {
+   public static void method_3125() {
       try {
          class_80.field_704.method_5074();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "be.x(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -330,7 +330,7 @@ public class class_148 {
          }
 
       } catch (RuntimeException var11) {
-         throw class_223.method_4281(var11, "be.fy(" + ')');
+         throw class_223.method_4281(var11);
       }
    }
 
@@ -373,7 +373,7 @@ public class class_148 {
 
          }
       } catch (RuntimeException var16) {
-         throw class_223.method_4281(var16, "be.<init>(" + ')');
+         throw class_223.method_4281(var16);
       }
    }
 
@@ -392,7 +392,7 @@ public class class_148 {
             return true;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "be.o(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 }

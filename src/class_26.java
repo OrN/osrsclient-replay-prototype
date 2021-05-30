@@ -28,7 +28,7 @@ public final class class_26 extends Canvas {
       try {
          this.field_6 = var1;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ac.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -36,7 +36,7 @@ public final class class_26 extends Canvas {
       try {
          this.field_6.paint(var1);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ac.paint(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -59,7 +59,7 @@ public final class class_26 extends Canvas {
       try {
          this.field_6.update(var1);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ac.update(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -282,7 +282,7 @@ public final class class_26 extends Canvas {
          }
 
       } catch (RuntimeException var19) {
-         throw class_223.method_4281(var19, "ac.hj(" + ')');
+         throw class_223.method_4281(var19);
       }
    }
 
@@ -305,7 +305,7 @@ public final class class_26 extends Canvas {
                      return;
                   }
 
-                  if(class_76.method_1197(var4, 2130552221)) {
+                  if(class_76.method_1197(var4)) {
                      if(var2 == -1874976982) {
                         throw new IllegalStateException();
                      }
@@ -324,7 +324,7 @@ public final class class_26 extends Canvas {
                         return;
                      }
 
-                     if(class_76.method_1197(var4, 2130552221)) {
+                     if(class_76.method_1197(var4)) {
                         if(var2 == -1874976982) {
                            throw new IllegalStateException();
                         }
@@ -447,7 +447,7 @@ public final class class_26 extends Canvas {
          }
 
       } catch (RuntimeException var8) {
-         throw class_223.method_4281(var8, "ac.jz(" + ')');
+         throw class_223.method_4281(var8);
       }
    }
 
@@ -472,7 +472,7 @@ public final class class_26 extends Canvas {
                label249: {
                   var10000 = new class_383(class_396.field_4253, "rw", 10000L);
                   class_383 var8 = var10000;
-                  var29 = new class_28((int)var8.method_6688(1727641981));
+                  var29 = new class_28((int)var8.method_6688());
 
                   int var10;
                   for(var9 = var29; var9.field_15 * -442398587 < var9.field_12.length; var9.field_15 += -1025691571 * var10) {
@@ -491,7 +491,7 @@ public final class class_26 extends Canvas {
                   }
 
                   var9.field_15 = 0;
-                  var10 = var9.method_130(-236245275);
+                  var10 = var9.method_130();
                   if(var10 >= 1) {
                      if(var3 != 1145652403) {
                         throw new IllegalStateException();
@@ -504,7 +504,7 @@ public final class class_26 extends Canvas {
                               throw new IllegalStateException();
                            }
 
-                           var11 = var9.method_130(1410405609);
+                           var11 = var9.method_130();
                         }
 
                         if(var10 <= 2) {
@@ -527,7 +527,7 @@ public final class class_26 extends Canvas {
                            }
                         }
 
-                        var8.method_6701(-2133508273);
+                        var8.method_6701();
                         break label249;
                      }
 
@@ -665,7 +665,7 @@ public final class class_26 extends Canvas {
                class_383 var26 = var10000;
                var29 = new class_28(500);
                class_28 var28 = var29;
-               var28.method_210(3, 303066737);
+               var28.method_210(3);
                byte var10001;
                if(var9 != null) {
                   if(var3 != 1145652403) {
@@ -677,7 +677,7 @@ public final class class_26 extends Canvas {
                   var10001 = 0;
                }
 
-               var28.method_210(var10001, 303066737);
+               var28.method_210(var10001);
                var28.method_128(var21.getPath(), 499802318);
                if(var9 != null) {
                   if(var3 != 1145652403) {
@@ -689,7 +689,7 @@ public final class class_26 extends Canvas {
                }
 
                var26.method_6686(var28.field_12, 0, -442398587 * var28.field_15, (byte)29);
-               var26.method_6701(-526516363);
+               var26.method_6701();
             } catch (IOException var16) {
                var16.printStackTrace();
             }
@@ -697,21 +697,21 @@ public final class class_26 extends Canvas {
 
          return new File(var5);
       } catch (RuntimeException var19) {
-         throw class_223.method_4281(var19, "ac.v(" + ')');
+         throw class_223.method_4281(var19);
       }
    }
 
    // $FF: renamed from: p (int, int) boolean
-   public static boolean method_99(int var0, int var1) {
+   public static boolean method_99(int var0) {
       try {
          return (var0 >> 29 & 1) != 0;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ac.p(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: y (int, jv, int, int, int, boolean, int) void
-   public static void method_100(int var0, class_306 var1, int var2, int var3, int var4, boolean var5, int var6) {
+   public static void method_100(int var0, class_306 var1, int var2, int var3, int var4, boolean var5) {
       try {
          class_270.field_3180 = 1262412465;
          class_271.field_3186 = var1;
@@ -721,7 +721,7 @@ public final class class_26 extends Canvas {
          class_270.field_3179 = var5;
          class_270.field_3183 = -230768741 * var0;
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "ac.y(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 }

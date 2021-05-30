@@ -22,7 +22,7 @@ public final class class_382 {
                var7.field_335 = 352588625 * var0;
                var7.field_339 = var4;
                var7.field_337 = var6.field_164;
-               class_203.method_4099(var7, (byte)1);
+               class_203.method_4099(var7);
             }
 
             boolean var10 = true;
@@ -43,10 +43,10 @@ public final class class_382 {
                      }
 
                      var8 = class_112.method_2238(class_266.field_3078, client.field_1463.field_2384, (byte)8);
-                     var8.field_263.method_116(var1, -1100297277);
-                     var8.field_263.method_333(var2, -659028417);
-                     var8.field_263.method_333(var3, 1622523615);
-                     client.field_1463.method_4079(var8, -1811732365);
+                     var8.field_263.method_116(var1);
+                     var8.field_263.method_333(var2);
+                     var8.field_263.method_333(var3);
+                     client.field_1463.method_4079(var8);
                   }
 
                   if(var0 == 2) {
@@ -55,10 +55,10 @@ public final class class_382 {
                      }
 
                      var8 = class_112.method_2238(class_266.field_3077, client.field_1463.field_2384, (byte)8);
-                     var8.field_263.method_116(var1, 452891542);
-                     var8.field_263.method_333(var2, -895342612);
-                     var8.field_263.method_333(var3, 867867984);
-                     client.field_1463.method_4079(var8, -2091078154);
+                     var8.field_263.method_116(var1);
+                     var8.field_263.method_333(var2);
+                     var8.field_263.method_333(var3);
+                     client.field_1463.method_4079(var8);
                   }
 
                   if(var0 == 3) {
@@ -67,10 +67,10 @@ public final class class_382 {
                      }
 
                      var8 = class_112.method_2238(class_266.field_3090, client.field_1463.field_2384, (byte)8);
-                     var8.field_263.method_116(var1, -1899666400);
-                     var8.field_263.method_333(var2, 1577702745);
-                     var8.field_263.method_333(var3, -831900032);
-                     client.field_1463.method_4079(var8, -1932011366);
+                     var8.field_263.method_116(var1);
+                     var8.field_263.method_333(var2);
+                     var8.field_263.method_333(var3);
+                     client.field_1463.method_4079(var8);
                   }
 
                   if(4 == var0) {
@@ -79,10 +79,10 @@ public final class class_382 {
                      }
 
                      var8 = class_112.method_2238(class_266.field_3152, client.field_1463.field_2384, (byte)8);
-                     var8.field_263.method_116(var1, 1715503279);
-                     var8.field_263.method_333(var2, -863676264);
-                     var8.field_263.method_333(var3, 1188795248);
-                     client.field_1463.method_4079(var8, -1876992229);
+                     var8.field_263.method_116(var1);
+                     var8.field_263.method_333(var2);
+                     var8.field_263.method_333(var3);
+                     client.field_1463.method_4079(var8);
                   }
 
                   if(var0 == 5) {
@@ -91,10 +91,10 @@ public final class class_382 {
                      }
 
                      var8 = class_112.method_2238(class_266.field_3066, client.field_1463.field_2384, (byte)8);
-                     var8.field_263.method_116(var1, -168597646);
-                     var8.field_263.method_333(var2, 706714104);
-                     var8.field_263.method_333(var3, 369690156);
-                     client.field_1463.method_4079(var8, -1843917315);
+                     var8.field_263.method_116(var1);
+                     var8.field_263.method_333(var2);
+                     var8.field_263.method_333(var3);
+                     client.field_1463.method_4079(var8);
                   }
 
                   if(6 == var0) {
@@ -103,10 +103,10 @@ public final class class_382 {
                      }
 
                      var8 = class_112.method_2238(class_266.field_3124, client.field_1463.field_2384, (byte)8);
-                     var8.field_263.method_116(var1, 1697533505);
-                     var8.field_263.method_333(var2, -522803504);
-                     var8.field_263.method_333(var3, 2113508629);
-                     client.field_1463.method_4079(var8, -2014386293);
+                     var8.field_263.method_116(var1);
+                     var8.field_263.method_333(var2);
+                     var8.field_263.method_333(var3);
+                     client.field_1463.method_4079(var8);
                   }
 
                   if(7 == var0) {
@@ -115,10 +115,10 @@ public final class class_382 {
                      }
 
                      var8 = class_112.method_2238(class_266.field_3122, client.field_1463.field_2384, (byte)8);
-                     var8.field_263.method_116(var1, -1796502021);
-                     var8.field_263.method_333(var2, -1278618276);
-                     var8.field_263.method_333(var3, 1393806126);
-                     client.field_1463.method_4079(var8, -2124481883);
+                     var8.field_263.method_116(var1);
+                     var8.field_263.method_333(var2);
+                     var8.field_263.method_333(var3);
+                     client.field_1463.method_4079(var8);
                   }
 
                   if(var0 == 8) {
@@ -127,18 +127,18 @@ public final class class_382 {
                      }
 
                      var8 = class_112.method_2238(class_266.field_3087, client.field_1463.field_2384, (byte)8);
-                     var8.field_263.method_116(var1, -1992160771);
-                     var8.field_263.method_333(var2, -330017410);
-                     var8.field_263.method_333(var3, 329989487);
-                     client.field_1463.method_4079(var8, -2032501261);
+                     var8.field_263.method_116(var1);
+                     var8.field_263.method_333(var2);
+                     var8.field_263.method_333(var3);
+                     client.field_1463.method_4079(var8);
                   }
 
                   if(9 == var0) {
                      var8 = class_112.method_2238(class_266.field_3067, client.field_1463.field_2384, (byte)8);
-                     var8.field_263.method_116(var1, 290220642);
-                     var8.field_263.method_333(var2, -934412647);
-                     var8.field_263.method_333(var3, 379524376);
-                     client.field_1463.method_4079(var8, -1732176375);
+                     var8.field_263.method_116(var1);
+                     var8.field_263.method_333(var2);
+                     var8.field_263.method_333(var3);
+                     client.field_1463.method_4079(var8);
                   }
 
                   if(10 == var0) {
@@ -147,17 +147,17 @@ public final class class_382 {
                      }
 
                      var8 = class_112.method_2238(class_266.field_3106, client.field_1463.field_2384, (byte)8);
-                     var8.field_263.method_116(var1, 1991667879);
-                     var8.field_263.method_333(var2, -394712485);
-                     var8.field_263.method_333(var3, 1861545724);
-                     client.field_1463.method_4079(var8, -1756102375);
+                     var8.field_263.method_116(var1);
+                     var8.field_263.method_333(var2);
+                     var8.field_263.method_333(var3);
+                     client.field_1463.method_4079(var8);
                   }
 
                }
             }
          }
       } catch (RuntimeException var9) {
-         throw class_223.method_4281(var9, "nl.iu(" + ')');
+         throw class_223.method_4281(var9);
       }
    }
 
@@ -167,7 +167,7 @@ public final class class_382 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "nl.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

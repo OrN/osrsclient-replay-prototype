@@ -29,7 +29,7 @@ public class class_48 extends class_27 {
                return var2;
             }
          } else {
-            byte[] var3 = class_79.field_690.method_5381(8, var0, -26460885);
+            byte[] var3 = class_79.field_690.method_5381(8, var0);
             class_79 var10000 = new class_79();
             var2 = var10000;
             if(var3 != null) {
@@ -45,7 +45,7 @@ public class class_48 extends class_27 {
             return var2;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "cu.n(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -55,7 +55,7 @@ public class class_48 extends class_27 {
       try {
          this.field_355 = false;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "cu.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -64,11 +64,11 @@ public class class_48 extends class_27 {
       try {
          class_70.method_973(var0);
          ((class_245)class_70.field_555).method_4692(var0);
-         class_148.method_3125(-1064690457);
+         class_148.method_3125();
          class_87.field_852.field_2128 = var0;
          class_94.method_1771(-1248407362);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "cu.je(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -423,7 +423,7 @@ public class class_48 extends class_27 {
 
          }
       } catch (RuntimeException var11) {
-         throw class_223.method_4281(var11, "cu.gq(" + ')');
+         throw class_223.method_4281(var11);
       }
    }
 }

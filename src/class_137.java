@@ -21,7 +21,7 @@ public final class class_137 {
             class_221.method_4271(class_37.field_93[var0], -1, var1, var2, var3, var4, var5, var6, 1695957245);
          }
       } catch (RuntimeException var8) {
-         throw class_223.method_4281(var8, "ar.jf(" + ')');
+         throw class_223.method_4281(var8);
       }
    }
 
@@ -89,7 +89,7 @@ public final class class_137 {
          var0.field_1085 = 0;
          var0.field_1114 = -673018793 * var0.field_1130;
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "ar.gz(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -121,7 +121,7 @@ public final class class_137 {
             return 3;
          }
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ar.gk(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -151,7 +151,7 @@ public final class class_137 {
          class_65.method_726(var0, var7 + 15 + var1 + var6, 16, client.field_1482 * 1820360451);
          class_65.method_726(1 + var0, var7 + 14 + var1 + var6, 15, 1820360451 * client.field_1482);
       } catch (RuntimeException var8) {
-         throw class_223.method_4281(var8, "ar.jq(" + ')');
+         throw class_223.method_4281(var8);
       }
    }
 }

@@ -42,7 +42,7 @@ public class class_40 extends class_27 {
             field_268[(field_266 += 1843709903) * -227614929 - 1] = this;
          }
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "hq.f(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -57,7 +57,7 @@ public class class_40 extends class_27 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "hq.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -91,8 +91,8 @@ public class class_40 extends class_27 {
          var2.field_263 = var10001;
       }
 
-      var2.field_263.method_354(var1, (byte)23);
-      var2.field_263.method_357(-1958588669 * var2.field_267.field_3091, 985835263);
+      var2.field_263.method_354(var1);
+      var2.field_263.method_357(-1958588669 * var2.field_267.field_3091);
       var2.field_264 = 0;
       return var2;
    }
@@ -127,8 +127,8 @@ public class class_40 extends class_27 {
          var2.field_263 = var10001;
       }
 
-      var2.field_263.method_354(var1, (byte)17);
-      var2.field_263.method_357(-1958588669 * var2.field_267.field_3091, -11794128);
+      var2.field_263.method_354(var1);
+      var2.field_263.method_357(-1958588669 * var2.field_267.field_3091);
       var2.field_264 = 0;
       return var2;
    }
@@ -180,8 +180,8 @@ public class class_40 extends class_27 {
          var2.field_263 = var10001;
       }
 
-      var2.field_263.method_354(var1, (byte)59);
-      var2.field_263.method_357(-1958588669 * var2.field_267.field_3091, -227815491);
+      var2.field_263.method_354(var1);
+      var2.field_263.method_357(-1958588669 * var2.field_267.field_3091);
       var2.field_264 = 0;
       return var2;
    }
@@ -239,7 +239,7 @@ public class class_40 extends class_27 {
          }
 
       } catch (RuntimeException var12) {
-         throw class_223.method_4281(var12, "hq.v(" + ')');
+         throw class_223.method_4281(var12);
       }
    }
 
@@ -282,7 +282,7 @@ public class class_40 extends class_27 {
          var10000 = false;
          return var10000;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "hq.p(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 

@@ -13,13 +13,13 @@ public class class_116 extends class_111 {
 
 
     // $FF: renamed from: f (int, jv, java.lang.String, java.lang.String, int, boolean, int) void
-   public static void method_2246(int var0, class_306 var1, String var2, String var3, int var4, boolean var5, int var6) {
+   public static void method_2246(int var0, class_306 var1, String var2, String var3, int var4, boolean var5) {
       try {
-         int var7 = var1.method_5399(var2, -1943814089);
-         int var8 = var1.method_5400(var7, var3, -448955157);
-         class_26.method_100(var0, var1, var7, var8, var4, var5, 1003938789);
+         int var7 = var1.method_5399(var2);
+         int var8 = var1.method_5400(var7, var3);
+         class_26.method_100(var0, var1, var7, var8, var4, var5);
       } catch (RuntimeException var9) {
-         throw class_223.method_4281(var9, "r.f(" + ')');
+         throw class_223.method_4281(var9);
       }
    }
 
@@ -29,11 +29,11 @@ public class class_116 extends class_111 {
    }
 
    // $FF: renamed from: n (l, byte) void
-   void method_2232(class_171 var1, byte var2) {
+   void method_2232(class_171 var1) {
       try {
          var1.method_3696(this.field_1293 * -1126650753, this.field_1292 * 910283143, -677454143);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "r.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -43,23 +43,23 @@ public class class_116 extends class_111 {
       try {
          this.this$0 = var1;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "r.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: y (nd) void
    void method_2233(class_28 var1) {
-      this.field_1293 = var1.method_135((byte)-40) * 231412607;
-      this.field_1292 = var1.method_135((byte)-41) * 62071863;
+      this.field_1293 = var1.method_135() * 231412607;
+      this.field_1292 = var1.method_135() * 62071863;
    }
 
    // $FF: renamed from: v (nd, int) void
    void method_2231(class_28 var1, int var2) {
       try {
-         this.field_1293 = var1.method_135((byte)-23) * 231412607;
-         this.field_1292 = var1.method_135((byte)-56) * 62071863;
+         this.field_1293 = var1.method_135() * 231412607;
+         this.field_1292 = var1.method_135() * 62071863;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "r.v(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -85,18 +85,18 @@ public class class_116 extends class_111 {
          class_75 var10000 = new class_75(var0);
          return var10000;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "r.n(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: f (nd) void
    void method_2234(class_28 var1) {
-      this.field_1293 = var1.method_135((byte)-94) * -891848324;
-      this.field_1292 = var1.method_135((byte)-73) * 62071863;
+      this.field_1293 = var1.method_135() * -891848324;
+      this.field_1292 = var1.method_135() * 62071863;
    }
 
    // $FF: renamed from: o (java.lang.CharSequence, int) java.lang.String
-   public static String method_2249(CharSequence var0, int var1) {
+   public static String method_2249(CharSequence var0) {
       try {
          int var3 = var0.length();
          char[] var4 = new char[var3];
@@ -108,7 +108,7 @@ public class class_116 extends class_111 {
          String var2 = new String(var4);
          return var2;
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "r.o(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 }

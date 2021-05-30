@@ -20,21 +20,21 @@ public class class_174 {
    }
 
    // $FF: renamed from: v (byte) void
-   void method_3714(byte var1) {
+   void method_3714() {
       try {
          this.field_2168.shutdown();
          this.field_2168 = null;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "cr.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: n (int) boolean
-   boolean method_3715(int var1) {
+   boolean method_3715() {
       try {
          return this.field_2167.isDone();
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "cr.n(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -43,20 +43,20 @@ public class class_174 {
       try {
          return (SecureRandom)this.field_2167.get();
       } catch (Exception var2) {
-         return class_275.method_5124(-1526667717);
+         return class_275.method_5124();
       }
    }
 
    // $FF: renamed from: f (byte) java.security.SecureRandom
-   SecureRandom method_3717(byte var1) {
+   SecureRandom method_3717() {
       try {
          try {
             return (SecureRandom)this.field_2167.get();
          } catch (Exception var3) {
-            return class_275.method_5124(-1490609257);
+            return class_275.method_5124();
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "cr.f(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -77,7 +77,7 @@ public class class_174 {
       try {
          return (SecureRandom)this.field_2167.get();
       } catch (Exception var2) {
-         return class_275.method_5124(-1896047539);
+         return class_275.method_5124();
       }
    }
 
@@ -114,7 +114,7 @@ public class class_174 {
             }
          }
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "cr.n(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -123,7 +123,7 @@ public class class_174 {
       try {
          return (SecureRandom)this.field_2167.get();
       } catch (Exception var2) {
-         return class_275.method_5124(-2062025323);
+         return class_275.method_5124();
       }
    }
 
@@ -142,16 +142,16 @@ public class class_174 {
          class_172 var10002 = new class_172();
          this.field_2167 = var10001.submit(var10002);
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "cr.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: fa (int, int) int
-   static int method_3727(int var0, int var1) {
+   static int method_3727(int var0) {
       try {
          return var0 * 3 + 600;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "cr.fa(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -184,16 +184,16 @@ public class class_174 {
          class_319.field_3800 = null;
          class_52.field_390 = (byte[][][])null;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "cr.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: v (int, int) java.lang.String
-   static String method_3729(int var0, int var1) {
+   static String method_3729(int var0) {
       try {
          return "<img=" + var0 + ">";
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "cr.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -202,7 +202,7 @@ public class class_174 {
       try {
          return (SecureRandom)this.field_2167.get();
       } catch (Exception var2) {
-         return class_275.method_5124(-1920099772);
+         return class_275.method_5124();
       }
    }
 }

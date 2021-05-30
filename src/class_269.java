@@ -27,7 +27,7 @@ public final class class_269 {
    // $FF: renamed from: lo (io, int) java.lang.String
    static String method_5039(class_37 var0, int var1) {
       try {
-         if(class_196.method_3989(class_112.method_2236(var0, 2134269821), (byte)-55) == 0) {
+         if(class_196.method_3989(class_112.method_2236(var0, 2134269821)) == 0) {
             if(var1 <= -1105343720) {
                throw new IllegalStateException();
             } else {
@@ -51,7 +51,7 @@ public final class class_269 {
             return null;
          }
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "hw.lo(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -62,7 +62,7 @@ public final class class_269 {
          this.field_3169 = 0L;
          this.field_3177 = 0;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "hw.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -91,7 +91,7 @@ public final class class_269 {
 
          }
       } catch (RuntimeException var8) {
-         throw class_223.method_4281(var8, "hw.io(" + ')');
+         throw class_223.method_4281(var8);
       }
    }
 }

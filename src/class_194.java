@@ -18,11 +18,11 @@ public class class_194 {
 
 
    // $FF: renamed from: n (byte) byte[]
-   public byte[] method_3961(byte var1) {
+   public byte[] method_3961() {
       try {
          return this.field_2304;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "df.n(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -32,16 +32,16 @@ public class class_194 {
       try {
          this.field_2306 = var1;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "df.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: v (int) boolean
-   public boolean method_3963(int var1) {
+   public boolean method_3963() {
       try {
          return this.field_2303;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "df.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 

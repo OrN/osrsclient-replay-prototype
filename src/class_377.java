@@ -51,7 +51,7 @@ public final class class_377 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ng.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

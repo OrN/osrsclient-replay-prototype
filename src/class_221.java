@@ -65,11 +65,11 @@ public final class class_221 {
             this.field_2509 = false;
             this.field_2501 = true;
             System.nanoTime();
-            int var5 = var1.method_5399(class_254.field_2874.field_2873, -1103829848);
-            int var6 = var1.method_5400(var5, var2, -1234442515);
-            class_28 var10000 = new class_28(var1.method_5384(class_254.field_2874.field_2873, var2, -438637203));
+            int var5 = var1.method_5399(class_254.field_2874.field_2873);
+            int var6 = var1.method_5400(var5, var2);
+            class_28 var10000 = new class_28(var1.method_5384(class_254.field_2874.field_2873, var2));
             class_28 var7 = var10000;
-            var10000 = new class_28(var1.method_5384(class_254.field_2869.field_2873, var2, -696480148));
+            var10000 = new class_28(var1.method_5384(class_254.field_2869.field_2873, var2));
             class_28 var8 = var10000;
             System.nanoTime();
             System.nanoTime();
@@ -82,15 +82,15 @@ public final class class_221 {
                return;
             }
 
-            this.field_2502.method_4380(1494845552);
-            this.field_2502.method_4381(266140389);
-            this.field_2502.method_4366(-251218942);
-            this.field_2511 = this.field_2502.method_4376(1057202329) * 810825536;
-            this.field_2508 = this.field_2502.method_4378((byte)-44) * 2042332736;
-            this.field_2505 = (this.field_2502.method_4424(-1999024779) - this.field_2502.method_4376(1057202329) + 1) * -31867200;
-            this.field_2514 = (this.field_2502.method_4402(916220483) - this.field_2502.method_4378((byte)-13) + 1) * 1725863232;
-            int var9 = this.field_2502.method_4424(-599457129) - this.field_2502.method_4376(1057202329) + 1;
-            int var10 = this.field_2502.method_4402(-1584717972) - this.field_2502.method_4378((byte)-57) + 1;
+            this.field_2502.method_4380();
+            this.field_2502.method_4381();
+            this.field_2502.method_4366();
+            this.field_2511 = this.field_2502.method_4376() * 810825536;
+            this.field_2508 = this.field_2502.method_4378() * 2042332736;
+            this.field_2505 = (this.field_2502.method_4424() - this.field_2502.method_4376() + 1) * -31867200;
+            this.field_2514 = (this.field_2502.method_4402() - this.field_2502.method_4378() + 1) * 1725863232;
+            int var9 = this.field_2502.method_4424() - this.field_2502.method_4376() + 1;
+            int var10 = this.field_2502.method_4402() - this.field_2502.method_4378() + 1;
             System.nanoTime();
             System.nanoTime();
             class_233.field_2604.method_5008();
@@ -107,12 +107,12 @@ public final class class_221 {
                class_228 var12 = (class_228)var11.next();
                int var13 = var12.field_2547 * 1253594293;
                int var14 = 174092143 * var12.field_2548;
-               int var15 = var13 - this.field_2502.method_4376(1057202329);
-               int var16 = var14 - this.field_2502.method_4378((byte)-115);
+               int var15 = var13 - this.field_2502.method_4376();
+               int var16 = var14 - this.field_2502.method_4378();
                var22 = this.field_2507[var15];
-               var10002 = new class_233(var13, var14, this.field_2502.method_4374(897083194), this.field_2512);
+               var10002 = new class_233(var13, var14, this.field_2502.method_4374(), this.field_2512);
                var22[var16] = var10002;
-               this.field_2507[var15][var16].method_4459(var12, this.field_2502.field_2592, -1081431828);
+               this.field_2507[var15][var16].method_4459(var12, this.field_2502.field_2592);
             }
 
             for(int var19 = 0; var19 < var9; ++var19) {
@@ -131,7 +131,7 @@ public final class class_221 {
                      }
 
                      var22 = this.field_2507[var19];
-                     var10002 = new class_233(this.field_2502.method_4376(1057202329) + var19, this.field_2502.method_4378((byte)-49) + var21, this.field_2502.method_4374(705494109), this.field_2512);
+                     var10002 = new class_233(this.field_2502.method_4376() + var19, this.field_2502.method_4378() + var21, this.field_2502.method_4374(), this.field_2512);
                      var22[var21] = var10002;
                      this.field_2507[var19][var21].method_4460(this.field_2502.field_2590, this.field_2502.field_2592, -1864841845);
                   }
@@ -145,31 +145,31 @@ public final class class_221 {
                   throw new IllegalStateException();
                }
 
-               byte[] var20 = var1.method_5384(class_254.field_2871.field_2873, var2, -115713332);
-               this.field_2510 = class_86.method_1480(var20, (byte)64);
+               byte[] var20 = var1.method_5384(class_254.field_2871.field_2873, var2);
+               this.field_2510 = class_86.method_1480(var20);
             }
 
             System.nanoTime();
-            var1.method_5395((byte)2);
+            var1.method_5395();
             var1.method_5450((byte)120);
             this.field_2509 = true;
          }
       } catch (RuntimeException var18) {
-         throw class_223.method_4281(var18, "ff.v(" + ')');
+         throw class_223.method_4281(var18);
       }
    }
 
    // $FF: renamed from: n (short) void
-   public final void method_4239(short var1) {
+   public final void method_4239() {
       try {
          this.field_2504 = null;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ff.n(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: f (int, int, int, int, int, int, int, int, int) void
-   public final void method_4240(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9) {
+   public final void method_4240(int var1, int var2, int var3, int var4, int var5, int var7, int var8, int var9) {
       try {
          int[] var10 = class_65.field_490;
          int var11 = class_65.field_484;
@@ -187,7 +187,7 @@ public final class class_221 {
 
             class_242 var10000 = new class_242(var16);
             class_242 var17 = var10000;
-            var17.method_4678((byte)123);
+            var17.method_4678();
             this.field_2506.put(Integer.valueOf(var16), var17);
          }
 
@@ -231,7 +231,7 @@ public final class class_221 {
          }
 
       } catch (RuntimeException var24) {
-         throw class_223.method_4281(var24, "ff.f(" + ')');
+         throw class_223.method_4281(var24);
       }
    }
 
@@ -250,8 +250,8 @@ public final class class_221 {
          int var14 = var10 / 64;
          var6.field_2637 = (1 + (var13 - var11)) * -1942758589;
          var6.field_2634 = 1785199947 * (1 + (var14 - var12));
-         var6.field_2633 = (var11 - this.field_2502.method_4376(1057202329)) * -134124431;
-         var6.field_2636 = (var12 - this.field_2502.method_4378((byte)-126)) * 1321325969;
+         var6.field_2633 = (var11 - this.field_2502.method_4376()) * -134124431;
+         var6.field_2636 = (var12 - this.field_2502.method_4378()) * 1321325969;
          if(var6.field_2633 * 1906627729 < 0) {
             if(var5 >= 0) {
                throw new IllegalStateException();
@@ -290,7 +290,7 @@ public final class class_221 {
          var6.field_2634 = Math.min(946840675 * var6.field_2634, this.field_2507[0].length) * 1785199947;
          return var6;
       } catch (RuntimeException var15) {
-         throw class_223.method_4281(var15, "ff.r(" + ')');
+         throw class_223.method_4281(var15);
       }
    }
 
@@ -352,7 +352,7 @@ public final class class_221 {
 
          }
       } catch (RuntimeException var16) {
-         throw class_223.method_4281(var16, "ff.p(" + ')');
+         throw class_223.method_4281(var16);
       }
    }
 
@@ -399,26 +399,26 @@ public final class class_221 {
             return var12;
          }
       } catch (RuntimeException var21) {
-         throw class_223.method_4281(var21, "ff.j(" + ')');
+         throw class_223.method_4281(var21);
       }
    }
 
    // $FF: renamed from: b (int) boolean
-   public boolean method_4245(int var1) {
+   public boolean method_4245() {
       try {
          return this.field_2509;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ff.b(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: d (int) java.util.HashMap
-   public HashMap method_4246(int var1) {
+   public HashMap method_4246() {
       try {
          this.method_4247(365934980);
          return this.field_2504;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ff.d(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -445,7 +445,7 @@ public final class class_221 {
                   return;
                }
 
-               List var4 = this.field_2507[var2][var3].method_4539(-983336809);
+               List var4 = this.field_2507[var2][var3].method_4539();
                Iterator var5 = var4.iterator();
 
                while(var5.hasNext()) {
@@ -459,7 +459,7 @@ public final class class_221 {
                         throw new IllegalStateException();
                      }
                   } else {
-                     int var7 = var6.method_4205(2147460179);
+                     int var7 = var6.method_4205();
                      if(!this.field_2504.containsKey(Integer.valueOf(var7))) {
                         if(var1 >= 1219799062) {
                            return;
@@ -478,7 +478,7 @@ public final class class_221 {
          }
 
       } catch (RuntimeException var9) {
-         throw class_223.method_4281(var9, "ff.s(" + ')');
+         throw class_223.method_4281(var9);
       }
    }
 
@@ -518,11 +518,11 @@ public final class class_221 {
          this.field_2509 = false;
          this.field_2501 = true;
          System.nanoTime();
-         int var4 = var1.method_5399(class_254.field_2874.field_2873, -817001760);
-         int var5 = var1.method_5400(var4, var2, -484818046);
-         class_28 var10000 = new class_28(var1.method_5384(class_254.field_2874.field_2873, var2, -953770850));
+         int var4 = var1.method_5399(class_254.field_2874.field_2873);
+         int var5 = var1.method_5400(var4, var2);
+         class_28 var10000 = new class_28(var1.method_5384(class_254.field_2874.field_2873, var2));
          class_28 var6 = var10000;
-         var10000 = new class_28(var1.method_5384(class_254.field_2869.field_2873, var2, 241463841));
+         var10000 = new class_28(var1.method_5384(class_254.field_2869.field_2873, var2));
          class_28 var7 = var10000;
          System.nanoTime();
          System.nanoTime();
@@ -535,15 +535,15 @@ public final class class_221 {
             return;
          }
 
-         this.field_2502.method_4380(1531278993);
-         this.field_2502.method_4381(553996304);
-         this.field_2502.method_4366(-1085758755);
-         this.field_2511 = this.field_2502.method_4376(1057202329) * 810825536;
-         this.field_2508 = this.field_2502.method_4378((byte)-16) * 2042332736;
-         this.field_2505 = (this.field_2502.method_4424(555784175) - this.field_2502.method_4376(1057202329) + 1) * -31867200;
-         this.field_2514 = (this.field_2502.method_4402(370510533) - this.field_2502.method_4378((byte)-86) + 1) * 1725863232;
-         int var8 = this.field_2502.method_4424(-133042283) - this.field_2502.method_4376(1057202329) + 1;
-         int var9 = this.field_2502.method_4402(-2086747212) - this.field_2502.method_4378((byte)-101) + 1;
+         this.field_2502.method_4380();
+         this.field_2502.method_4381();
+         this.field_2502.method_4366();
+         this.field_2511 = this.field_2502.method_4376() * 810825536;
+         this.field_2508 = this.field_2502.method_4378() * 2042332736;
+         this.field_2505 = (this.field_2502.method_4424() - this.field_2502.method_4376() + 1) * -31867200;
+         this.field_2514 = (this.field_2502.method_4402() - this.field_2502.method_4378() + 1) * 1725863232;
+         int var8 = this.field_2502.method_4424() - this.field_2502.method_4376() + 1;
+         int var9 = this.field_2502.method_4402() - this.field_2502.method_4378() + 1;
          System.nanoTime();
          System.nanoTime();
          class_233.field_2604.method_5008();
@@ -556,19 +556,19 @@ public final class class_221 {
             class_228 var11 = (class_228)var10.next();
             int var12 = var11.field_2547 * 1253594293;
             int var13 = 174092143 * var11.field_2548;
-            int var14 = var12 - this.field_2502.method_4376(1057202329);
-            int var15 = var13 - this.field_2502.method_4378((byte)-82);
+            int var14 = var12 - this.field_2502.method_4376();
+            int var15 = var13 - this.field_2502.method_4378();
             var20 = this.field_2507[var14];
-            var10002 = new class_233(var12, var13, this.field_2502.method_4374(508426374), this.field_2512);
+            var10002 = new class_233(var12, var13, this.field_2502.method_4374(), this.field_2512);
             var20[var15] = var10002;
-            this.field_2507[var14][var15].method_4459(var11, this.field_2502.field_2592, -1081431828);
+            this.field_2507[var14][var15].method_4459(var11, this.field_2502.field_2592);
          }
 
          for(int var17 = 0; var17 < var8; ++var17) {
             for(int var19 = 0; var19 < var9; ++var19) {
                if(this.field_2507[var17][var19] == null) {
                   var20 = this.field_2507[var17];
-                  var10002 = new class_233(this.field_2502.method_4376(1057202329) + var17, this.field_2502.method_4378((byte)-86) + var19, this.field_2502.method_4374(-478030224), this.field_2512);
+                  var10002 = new class_233(this.field_2502.method_4376() + var17, this.field_2502.method_4378() + var19, this.field_2502.method_4374(), this.field_2512);
                   var20[var19] = var10002;
                   this.field_2507[var17][var19].method_4460(this.field_2502.field_2590, this.field_2502.field_2592, 3672672);
                }
@@ -578,12 +578,12 @@ public final class class_221 {
          System.nanoTime();
          System.nanoTime();
          if(var1.method_5420(class_254.field_2871.field_2873, var2, (byte)0)) {
-            byte[] var18 = var1.method_5384(class_254.field_2871.field_2873, var2, -371372716);
-            this.field_2510 = class_86.method_1480(var18, (byte)7);
+            byte[] var18 = var1.method_5384(class_254.field_2871.field_2873, var2);
+            this.field_2510 = class_86.method_1480(var18);
          }
 
          System.nanoTime();
-         var1.method_5395((byte)2);
+         var1.method_5395();
          var1.method_5450((byte)106);
          this.field_2509 = true;
       }
@@ -608,8 +608,8 @@ public final class class_221 {
       int var13 = var9 / 294260991;
       var5.field_2637 = (1 + (var12 - var10)) * -780253878;
       var5.field_2634 = 1785199947 * (1 + (var13 - var11));
-      var5.field_2633 = (var10 - this.field_2502.method_4376(1057202329)) * -134124431;
-      var5.field_2636 = (var11 - this.field_2502.method_4378((byte)-83)) * 1321325969;
+      var5.field_2633 = (var10 - this.field_2502.method_4376()) * -134124431;
+      var5.field_2636 = (var11 - this.field_2502.method_4378()) * 1321325969;
       if(var5.field_2633 * -1136111273 < 0) {
          var5.field_2637 += var5.field_2633 * 1692314867;
          var5.field_2633 = 0;
@@ -639,7 +639,7 @@ public final class class_221 {
    }
 
    // $FF: renamed from: y (int, int, int, int, int, int, int, int, java.util.HashSet, java.util.HashSet, int, int, boolean, int) void
-   public final void method_4253(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, HashSet var9, HashSet var10, int var11, int var12, boolean var13, int var14) {
+   public final void method_4253(int var1, int var2, int var3, int var4, int var5, int var7, int var8, HashSet var9, HashSet var10, int var11, int var12, boolean var13, int var14) {
       try {
          class_236 var15 = this.method_4241(var1, var2, var3, var4, (byte)-82);
          float var16 = this.method_4254(var7 - var5, var3 - var1, (byte)20);
@@ -688,7 +688,7 @@ public final class class_221 {
          }
 
       } catch (RuntimeException var22) {
-         throw class_223.method_4281(var22, "ff.y(" + ')');
+         throw class_223.method_4281(var22);
       }
    }
 
@@ -721,12 +721,12 @@ public final class class_221 {
             }
          }
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "ff.u(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
    // $FF: renamed from: k (int, int, int, int, int, int, int, int) void
-   public final void method_4255(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
+   public final void method_4255(int var1, int var2, int var3, int var4, int var5, int var7, int var8) {
       int[] var9 = class_65.field_490;
       int var10 = class_65.field_484;
       int var11 = class_65.field_486;
@@ -739,7 +739,7 @@ public final class class_221 {
       if(!this.field_2506.containsKey(Integer.valueOf(var15))) {
          class_242 var10000 = new class_242(var15);
          class_242 var16 = var10000;
-         var16.method_4678((byte)13);
+         var16.method_4678();
          this.field_2506.put(Integer.valueOf(var15), var16);
       }
 
@@ -769,7 +769,7 @@ public final class class_221 {
    }
 
    // $FF: renamed from: m (int, int, int, int, int, int, int, int) void
-   public final void method_4256(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8) {
+   public final void method_4256(int var1, int var2, int var3, int var4, int var5, int var7, int var8) {
       int[] var9 = class_65.field_490;
       int var10 = class_65.field_484;
       int var11 = class_65.field_486;
@@ -782,7 +782,7 @@ public final class class_221 {
       if(!this.field_2506.containsKey(Integer.valueOf(var15))) {
          class_242 var10000 = new class_242(var15);
          class_242 var16 = var10000;
-         var16.method_4678((byte)103);
+         var16.method_4678();
          this.field_2506.put(Integer.valueOf(var15), var16);
       }
 
@@ -812,7 +812,7 @@ public final class class_221 {
    }
 
    // $FF: renamed from: x (int, int, int, int, int, int, int, int, java.util.HashSet, java.util.HashSet, int, int, boolean) void
-   public final void method_4257(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, HashSet var9, HashSet var10, int var11, int var12, boolean var13) {
+   public final void method_4257(int var1, int var2, int var3, int var4, int var5, int var7, int var8, HashSet var9, HashSet var10, int var11, int var12, boolean var13) {
       class_236 var14 = this.method_4241(var1, var2, var3, var4, (byte)-65);
       float var15 = this.method_4254(var7 - var5, var3 - var1, (byte)20);
       int var16 = (int)(var15 * 64.0F);
@@ -915,8 +915,8 @@ public final class class_221 {
       int var13 = var9 / 64;
       var5.field_2637 = (1 + (var12 - var10)) * -1942758589;
       var5.field_2634 = 1024641108 * (1 + (var13 - var11));
-      var5.field_2633 = (var10 - this.field_2502.method_4376(1057202329)) * -1956143082;
-      var5.field_2636 = (var11 - this.field_2502.method_4378((byte)-78)) * 1321325969;
+      var5.field_2633 = (var10 - this.field_2502.method_4376()) * -1956143082;
+      var5.field_2636 = (var11 - this.field_2502.method_4378()) * 1321325969;
       if(var5.field_2633 * -782226782 < 0) {
          var5.field_2637 += var5.field_2633 * 2019779609;
          var5.field_2633 = 0;
@@ -955,13 +955,13 @@ public final class class_221 {
 
       for(int var1 = 0; var1 < this.field_2507.length; ++var1) {
          for(int var2 = 0; var2 < this.field_2507[var1].length; ++var2) {
-            List var3 = this.field_2507[var1][var2].method_4539(1497746675);
+            List var3 = this.field_2507[var1][var2].method_4539();
             Iterator var4 = var3.iterator();
 
             while(var4.hasNext()) {
                class_218 var5 = (class_218)var4.next();
                if(var5.method_4209(-92677166)) {
-                  int var6 = var5.method_4205(2146724285);
+                  int var6 = var5.method_4205();
                   if(!this.field_2504.containsKey(Integer.valueOf(var6))) {
                      LinkedList var7 = new LinkedList();
                      var7.add(var5);
@@ -983,11 +983,11 @@ public final class class_221 {
          this.field_2509 = false;
          this.field_2501 = true;
          System.nanoTime();
-         int var4 = var1.method_5399(class_254.field_2874.field_2873, -316455879);
-         int var5 = var1.method_5400(var4, var2, 943290661);
-         class_28 var10000 = new class_28(var1.method_5384(class_254.field_2874.field_2873, var2, -1093632981));
+         int var4 = var1.method_5399(class_254.field_2874.field_2873);
+         int var5 = var1.method_5400(var4, var2);
+         class_28 var10000 = new class_28(var1.method_5384(class_254.field_2874.field_2873, var2));
          class_28 var6 = var10000;
-         var10000 = new class_28(var1.method_5384(class_254.field_2869.field_2873, var2, -1017412788));
+         var10000 = new class_28(var1.method_5384(class_254.field_2869.field_2873, var2));
          class_28 var7 = var10000;
          System.nanoTime();
          System.nanoTime();
@@ -1000,15 +1000,15 @@ public final class class_221 {
             return;
          }
 
-         this.field_2502.method_4380(1436711024);
-         this.field_2502.method_4381(1859650989);
-         this.field_2502.method_4366(-1148621824);
-         this.field_2511 = this.field_2502.method_4376(1057202329) * 810825536;
-         this.field_2508 = this.field_2502.method_4378((byte)-32) * 2042332736;
-         this.field_2505 = (this.field_2502.method_4424(888310846) - this.field_2502.method_4376(1057202329) + 1) * -31867200;
-         this.field_2514 = (this.field_2502.method_4402(-768331926) - this.field_2502.method_4378((byte)-5) + 1) * 1725863232;
-         int var8 = this.field_2502.method_4424(23904820) - this.field_2502.method_4376(1057202329) + 1;
-         int var9 = this.field_2502.method_4402(-574299403) - this.field_2502.method_4378((byte)-116) + 1;
+         this.field_2502.method_4380();
+         this.field_2502.method_4381();
+         this.field_2502.method_4366();
+         this.field_2511 = this.field_2502.method_4376() * 810825536;
+         this.field_2508 = this.field_2502.method_4378() * 2042332736;
+         this.field_2505 = (this.field_2502.method_4424() - this.field_2502.method_4376() + 1) * -31867200;
+         this.field_2514 = (this.field_2502.method_4402() - this.field_2502.method_4378() + 1) * 1725863232;
+         int var8 = this.field_2502.method_4424() - this.field_2502.method_4376() + 1;
+         int var9 = this.field_2502.method_4402() - this.field_2502.method_4378() + 1;
          System.nanoTime();
          System.nanoTime();
          class_233.field_2604.method_5008();
@@ -1021,19 +1021,19 @@ public final class class_221 {
             class_228 var11 = (class_228)var10.next();
             int var12 = var11.field_2547 * 1253594293;
             int var13 = 174092143 * var11.field_2548;
-            int var14 = var12 - this.field_2502.method_4376(1057202329);
-            int var15 = var13 - this.field_2502.method_4378((byte)-104);
+            int var14 = var12 - this.field_2502.method_4376();
+            int var15 = var13 - this.field_2502.method_4378();
             var20 = this.field_2507[var14];
-            var10002 = new class_233(var12, var13, this.field_2502.method_4374(-1646270210), this.field_2512);
+            var10002 = new class_233(var12, var13, this.field_2502.method_4374(), this.field_2512);
             var20[var15] = var10002;
-            this.field_2507[var14][var15].method_4459(var11, this.field_2502.field_2592, -1081431828);
+            this.field_2507[var14][var15].method_4459(var11, this.field_2502.field_2592);
          }
 
          for(int var17 = 0; var17 < var8; ++var17) {
             for(int var19 = 0; var19 < var9; ++var19) {
                if(this.field_2507[var17][var19] == null) {
                   var20 = this.field_2507[var17];
-                  var10002 = new class_233(this.field_2502.method_4376(1057202329) + var17, this.field_2502.method_4378((byte)-4) + var19, this.field_2502.method_4374(-2116038412), this.field_2512);
+                  var10002 = new class_233(this.field_2502.method_4376() + var17, this.field_2502.method_4378() + var19, this.field_2502.method_4374(), this.field_2512);
                   var20[var19] = var10002;
                   this.field_2507[var17][var19].method_4460(this.field_2502.field_2590, this.field_2502.field_2592, 469971373);
                }
@@ -1043,12 +1043,12 @@ public final class class_221 {
          System.nanoTime();
          System.nanoTime();
          if(var1.method_5420(class_254.field_2871.field_2873, var2, (byte)0)) {
-            byte[] var18 = var1.method_5384(class_254.field_2871.field_2873, var2, -2098077985);
-            this.field_2510 = class_86.method_1480(var18, (byte)100);
+            byte[] var18 = var1.method_5384(class_254.field_2871.field_2873, var2);
+            this.field_2510 = class_86.method_1480(var18);
          }
 
          System.nanoTime();
-         var1.method_5395((byte)2);
+         var1.method_5395();
          var1.method_5450((byte)72);
          this.field_2509 = true;
       }
@@ -1060,11 +1060,11 @@ public final class class_221 {
          this.field_2509 = false;
          this.field_2501 = true;
          System.nanoTime();
-         int var4 = var1.method_5399(class_254.field_2874.field_2873, -1061591117);
-         int var5 = var1.method_5400(var4, var2, -510590976);
-         class_28 var10000 = new class_28(var1.method_5384(class_254.field_2874.field_2873, var2, -1274781898));
+         int var4 = var1.method_5399(class_254.field_2874.field_2873);
+         int var5 = var1.method_5400(var4, var2);
+         class_28 var10000 = new class_28(var1.method_5384(class_254.field_2874.field_2873, var2));
          class_28 var6 = var10000;
-         var10000 = new class_28(var1.method_5384(class_254.field_2869.field_2873, var2, 188226648));
+         var10000 = new class_28(var1.method_5384(class_254.field_2869.field_2873, var2));
          class_28 var7 = var10000;
          System.nanoTime();
          System.nanoTime();
@@ -1077,15 +1077,15 @@ public final class class_221 {
             return;
          }
 
-         this.field_2502.method_4380(1610732952);
-         this.field_2502.method_4381(-1771889400);
-         this.field_2502.method_4366(-1404998336);
-         this.field_2511 = this.field_2502.method_4376(1057202329) * 1693200959;
-         this.field_2508 = this.field_2502.method_4378((byte)-115) * 629118582;
-         this.field_2505 = (this.field_2502.method_4424(-309406320) - this.field_2502.method_4376(1057202329) + 1) * 2134394157;
-         this.field_2514 = (this.field_2502.method_4402(-1394748336) - this.field_2502.method_4378((byte)-28) + 1) * 1725863232;
-         int var8 = this.field_2502.method_4424(-1191155007) - this.field_2502.method_4376(1057202329) + 1;
-         int var9 = this.field_2502.method_4402(1819571585) - this.field_2502.method_4378((byte)-128) + 1;
+         this.field_2502.method_4380();
+         this.field_2502.method_4381();
+         this.field_2502.method_4366();
+         this.field_2511 = this.field_2502.method_4376() * 1693200959;
+         this.field_2508 = this.field_2502.method_4378() * 629118582;
+         this.field_2505 = (this.field_2502.method_4424() - this.field_2502.method_4376() + 1) * 2134394157;
+         this.field_2514 = (this.field_2502.method_4402() - this.field_2502.method_4378() + 1) * 1725863232;
+         int var8 = this.field_2502.method_4424() - this.field_2502.method_4376() + 1;
+         int var9 = this.field_2502.method_4402() - this.field_2502.method_4378() + 1;
          System.nanoTime();
          System.nanoTime();
          class_233.field_2604.method_5008();
@@ -1098,19 +1098,19 @@ public final class class_221 {
             class_228 var11 = (class_228)var10.next();
             int var12 = var11.field_2547 * -18732758;
             int var13 = 174092143 * var11.field_2548;
-            int var14 = var12 - this.field_2502.method_4376(1057202329);
-            int var15 = var13 - this.field_2502.method_4378((byte)-17);
+            int var14 = var12 - this.field_2502.method_4376();
+            int var15 = var13 - this.field_2502.method_4378();
             var20 = this.field_2507[var14];
-            var10002 = new class_233(var12, var13, this.field_2502.method_4374(182052305), this.field_2512);
+            var10002 = new class_233(var12, var13, this.field_2502.method_4374(), this.field_2512);
             var20[var15] = var10002;
-            this.field_2507[var14][var15].method_4459(var11, this.field_2502.field_2592, -1081431828);
+            this.field_2507[var14][var15].method_4459(var11, this.field_2502.field_2592);
          }
 
          for(int var17 = 0; var17 < var8; ++var17) {
             for(int var19 = 0; var19 < var9; ++var19) {
                if(this.field_2507[var17][var19] == null) {
                   var20 = this.field_2507[var17];
-                  var10002 = new class_233(this.field_2502.method_4376(1057202329) + var17, this.field_2502.method_4378((byte)-69) + var19, this.field_2502.method_4374(-1696939924), this.field_2512);
+                  var10002 = new class_233(this.field_2502.method_4376() + var17, this.field_2502.method_4378() + var19, this.field_2502.method_4374(), this.field_2512);
                   var20[var19] = var10002;
                   this.field_2507[var17][var19].method_4460(this.field_2502.field_2590, this.field_2502.field_2592, 498636166);
                }
@@ -1120,12 +1120,12 @@ public final class class_221 {
          System.nanoTime();
          System.nanoTime();
          if(var1.method_5420(class_254.field_2871.field_2873, var2, (byte)0)) {
-            byte[] var18 = var1.method_5384(class_254.field_2871.field_2873, var2, 993607425);
-            this.field_2510 = class_86.method_1480(var18, (byte)13);
+            byte[] var18 = var1.method_5384(class_254.field_2871.field_2873, var2);
+            this.field_2510 = class_86.method_1480(var18);
          }
 
          System.nanoTime();
-         var1.method_5395((byte)2);
+         var1.method_5395();
          var1.method_5450((byte)63);
          this.field_2509 = true;
       }
@@ -1156,7 +1156,7 @@ public final class class_221 {
          this.field_2513 = var3;
          this.field_2500 = var4;
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "ff.<init>(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -1174,14 +1174,14 @@ public final class class_221 {
    }
 
    // $FF: renamed from: s (java.lang.String, byte) void
-   static final void method_4270(String var0, byte var1) {
+   static final void method_4270(String var0) {
       try {
          StringBuilder var10000 = (new StringBuilder()).append(var0);
          class_305 var10001 = (class_305)null;
          String var2 = var10000.append(class_305.field_3505).toString();
-         class_149.method_3135(30, "", var2, -1399523869);
+         class_149.method_3135(30, "", var2);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ff.s(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -1239,7 +1239,7 @@ public final class class_221 {
                      throw new IllegalStateException();
                   }
 
-                  if(class_76.method_1197(var10, 2130552221)) {
+                  if(class_76.method_1197(var10)) {
                      continue;
                   }
                } else if(1659206769 * var10.field_103 == 0) {
@@ -1252,7 +1252,7 @@ public final class class_221 {
                         return;
                      }
 
-                     if(class_76.method_1197(var10, 2130552221)) {
+                     if(class_76.method_1197(var10)) {
                         continue;
                      }
                   }
@@ -1513,7 +1513,7 @@ public final class class_221 {
                               }
 
                               if(!client.field_1553) {
-                                 class_208.method_4150(-586606589);
+                                 class_208.method_4150();
                               }
                            }
                         }
@@ -1802,7 +1802,7 @@ public final class class_221 {
                               }
 
                               class_54.method_583(-1370378668);
-                              class_162.method_3415(-1722455647 * var10.field_101, 41180389 * var10.field_102, class_196.method_3989(class_112.method_2236(var10, 2133450322), (byte)-41), 539336237 * var10.field_229, -2147472010);
+                              class_162.method_3415(-1722455647 * var10.field_101, 41180389 * var10.field_102, class_196.method_3989(class_112.method_2236(var10, 2133450322)), 539336237 * var10.field_229, -2147472010);
                               client.field_1575 = class_269.method_5039(var10, 1267634256);
                               if(null == client.field_1575) {
                                  if(var8 != 1695957245) {
@@ -1812,7 +1812,7 @@ public final class class_221 {
                                  client.field_1575 = class_305.field_3410;
                               }
 
-                              client.field_1545 = var10.field_91 + class_136.method_2958(16777215, -1966582053);
+                              client.field_1545 = var10.field_91 + class_136.method_2958(16777215);
                            }
 
                            var24 = var10.field_178[var21];
@@ -2755,7 +2755,7 @@ public final class class_221 {
                                                 throw new IllegalStateException();
                                              }
 
-                                             class_208.method_4150(-1555577320);
+                                             class_208.method_4150();
                                           }
                                        }
                                     }
@@ -2772,7 +2772,7 @@ public final class class_221 {
          }
 
       } catch (RuntimeException var27) {
-         throw class_223.method_4281(var27, "ff.jv(" + ')');
+         throw class_223.method_4281(var27);
       }
    }
 
@@ -2783,7 +2783,7 @@ public final class class_221 {
             if(var1 == 1) {
                throw new IllegalStateException();
             } else {
-               class_52.method_573(var0, (byte)-93);
+               class_52.method_573((byte)-93);
             }
          } else {
             boolean var10001;
@@ -2838,11 +2838,11 @@ public final class class_221 {
                         }
 
                         class_307 var2 = class_194.field_2307;
-                        int var3 = var2.method_5399("scape main", -1575580840);
-                        int var4 = var2.method_5400(var3, "", 1997157248);
-                        class_162.method_3399(var2, var3, var4, 255, false, 1103817184);
+                        int var3 = var2.method_5399("scape main");
+                        int var4 = var2.method_5400(var3, "");
+                        class_162.method_3399(var2, var3, var4, 255, false);
                      } else {
-                        class_198.field_2339.method_1962(-1687162029);
+                        class_198.field_2339.method_1962();
                         class_270.field_3180 = 1262412465;
                         class_271.field_3186 = null;
                      }
@@ -3362,7 +3362,7 @@ public final class class_221 {
                                        if(var29 < var32) {
                                           switch(-519325819 * class_177.field_2199) {
                                           case 1:
-                                             class_299.method_5348(class_305.field_3669, class_305.field_3670, class_305.field_3641, (byte)-74);
+                                             class_299.method_5348(class_305.field_3669, class_305.field_3670, class_305.field_3641);
                                              class_177.field_2194 = 1804056383;
                                              return;
                                           case 2:
@@ -3403,7 +3403,7 @@ public final class class_221 {
                                           throw new IllegalStateException();
                                        }
 
-                                       class_299.method_5348(class_305.field_3522, class_305.field_3458, class_305.field_3524, (byte)-60);
+                                       class_299.method_5348(class_305.field_3522, class_305.field_3458, class_305.field_3524);
                                        return;
                                     }
 
@@ -3412,11 +3412,11 @@ public final class class_221 {
                                           throw new IllegalStateException();
                                        }
 
-                                       class_299.method_5348(class_305.field_3435, class_305.field_3526, class_305.field_3527, (byte)-103);
+                                       class_299.method_5348(class_305.field_3435, class_305.field_3526, class_305.field_3527);
                                        return;
                                     }
 
-                                    class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637, (byte)-111);
+                                    class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637);
                                     class_89.method_1578(false, (byte)-21);
                                     class_53.method_579(20, (byte)0);
                                     return;
@@ -3707,7 +3707,7 @@ public final class class_221 {
 
                                     class_177.field_2200 = class_177.field_2200.trim();
                                     if(class_177.field_2200.length() == 0) {
-                                       class_299.method_5348(class_305.field_3522, class_305.field_3458, class_305.field_3524, (byte)-125);
+                                       class_299.method_5348(class_305.field_3522, class_305.field_3458, class_305.field_3524);
                                        return;
                                     }
 
@@ -3716,11 +3716,11 @@ public final class class_221 {
                                           throw new IllegalStateException();
                                        }
 
-                                       class_299.method_5348(class_305.field_3435, class_305.field_3526, class_305.field_3527, (byte)-75);
+                                       class_299.method_5348(class_305.field_3435, class_305.field_3526, class_305.field_3527);
                                        return;
                                     }
 
-                                    class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637, (byte)-23);
+                                    class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637);
                                     class_89.method_1578(false, (byte)21);
                                     class_53.method_579(20, (byte)0);
                                     return;
@@ -4004,7 +4004,7 @@ public final class class_221 {
                                           return;
                                        }
 
-                                       class_299.method_5348(class_305.field_3669, class_305.field_3670, class_305.field_3641, (byte)-66);
+                                       class_299.method_5348(class_305.field_3669, class_305.field_3670, class_305.field_3641);
                                        class_177.field_2194 = 1804056383;
                                        return;
                                     }
@@ -4048,14 +4048,14 @@ public final class class_221 {
 
                                           class_282.field_3249.trim();
                                           if(class_282.field_3249.length() != 6) {
-                                             class_299.method_5348(class_305.field_3441, class_305.field_3442, class_305.field_3443, (byte)-103);
+                                             class_299.method_5348(class_305.field_3441, class_305.field_3442, class_305.field_3443);
                                              return;
                                           }
 
                                           class_54.field_405 = Integer.parseInt(class_282.field_3249) * -2113447877;
                                           class_282.field_3249 = "";
                                           class_89.method_1578(true, (byte)-103);
-                                          class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637, (byte)-9);
+                                          class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637);
                                           class_53.method_579(20, (byte)0);
                                           return;
                                        }
@@ -4223,14 +4223,14 @@ public final class class_221 {
                                           throw new IllegalStateException();
                                        }
 
-                                       class_299.method_5348(class_305.field_3441, class_305.field_3442, class_305.field_3443, (byte)-125);
+                                       class_299.method_5348(class_305.field_3441, class_305.field_3442, class_305.field_3443);
                                        return;
                                     }
 
                                     class_54.field_405 = Integer.parseInt(class_282.field_3249) * -2113447877;
                                     class_282.field_3249 = "";
                                     class_89.method_1578(true, (byte)-1);
-                                    class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637, (byte)-53);
+                                    class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637);
                                     class_53.method_579(20, (byte)0);
                                     return;
                                  }
@@ -4431,7 +4431,7 @@ public final class class_221 {
 
                                     if(var29 <= 20 + var33) {
                                        class_195.method_3988(class_83.method_1409("secure", true, 348637301) + "m=dob/set_dob.ws", true, false, -796568451);
-                                       class_299.method_5348(class_305.field_3666, class_305.field_3628, class_305.field_3668, (byte)-18);
+                                       class_299.method_5348(class_305.field_3666, class_305.field_3628, class_305.field_3668);
                                        class_177.field_2194 = -412112718;
                                        return;
                                     }
@@ -4504,7 +4504,7 @@ public final class class_221 {
                                           }
 
                                           class_195.method_3988("https://www.jagex.com/terms/privacy", true, false, 1007000975);
-                                          class_299.method_5348(class_305.field_3666, class_305.field_3628, class_305.field_3668, (byte)-105);
+                                          class_299.method_5348(class_305.field_3666, class_305.field_3628, class_305.field_3668);
                                           class_177.field_2194 = -412112718;
                                           return;
                                        }
@@ -4585,7 +4585,7 @@ public final class class_221 {
                                        }
 
                                        class_195.method_3988(var42, true, false, 145508550);
-                                       class_299.method_5348(class_305.field_3666, class_305.field_3628, class_305.field_3668, (byte)-17);
+                                       class_299.method_5348(class_305.field_3666, class_305.field_3628, class_305.field_3668);
                                        class_177.field_2194 = -412112718;
                                        return;
                                     }
@@ -4660,7 +4660,7 @@ public final class class_221 {
             }
          }
       } catch (RuntimeException var24) {
-         throw class_223.method_4281(var24, "ff.j(" + ')');
+         throw class_223.method_4281(var24);
       }
    }
 }

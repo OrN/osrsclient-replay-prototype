@@ -25,7 +25,7 @@ public class class_179 {
 
 
    // $FF: renamed from: ad (int, cf, boolean, int) int
-   static int method_3805(int var0, class_90 var1, boolean var2, int var3) {
+   static int method_3805(int var0, int var3) {
       try {
          String var4;
          int var11;
@@ -123,7 +123,7 @@ public class class_179 {
                         class_136.field_1752 -= 2119512838;
                         var11 = class_165.field_2052[-26460885 * class_136.field_1752];
                         var6 = class_165.field_2052[class_136.field_1752 * -26460885 + 1];
-                        var15 = class_148.field_1869.method_5381(var6, 0, -26460885);
+                        var15 = class_148.field_1869.method_5381(var6, 0);
                         var19 = new class_69(var15);
                         var17 = var19;
                         class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = var17.method_867(var4, var11);
@@ -137,7 +137,7 @@ public class class_179 {
                         class_136.field_1752 -= 2119512838;
                         var11 = class_165.field_2052[-26460885 * class_136.field_1752];
                         var6 = class_165.field_2052[1 + -26460885 * class_136.field_1752];
-                        var15 = class_148.field_1869.method_5381(var6, 0, -26460885);
+                        var15 = class_148.field_1869.method_5381(var6, 0);
                         var19 = new class_69(var15);
                         var17 = var19;
                         class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = var17.method_866(var4, var11);
@@ -341,7 +341,7 @@ public class class_179 {
             }
          }
       } catch (RuntimeException var10) {
-         throw class_223.method_4281(var10, "cv.ad(" + ')');
+         throw class_223.method_4281(var10);
       }
    }
 
@@ -398,17 +398,17 @@ public class class_179 {
 
          return Integer.toString(var0);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "cv.j(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: l (int) void
-   public static final void method_3810(int var0) {
+   public static final void method_3810() {
       try {
          class_255.field_2876 = false;
          class_255.field_2882 = 0;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "cv.l(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -418,7 +418,7 @@ public class class_179 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "cv.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

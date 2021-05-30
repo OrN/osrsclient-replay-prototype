@@ -10,15 +10,15 @@ public class class_342 extends class_338 {
 
    // $FF: renamed from: b (lx) int
    public int method_6010(class_338 var1) {
-      return this.method_6053((class_342)var1, -2110191963);
+      return this.method_6053((class_342)var1);
    }
 
    // $FF: renamed from: v (la, int) int
-   int method_6053(class_342 var1, int var2) {
+   int method_6053(class_342 var1) {
       try {
          return -792451577 * this.field_3899 - -792451577 * var1.field_3899;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "la.v(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -32,46 +32,46 @@ public class class_342 extends class_338 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "la.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: j (lx) int
    public int method_6002(class_338 var1) {
-      return this.method_6053((class_342)var1, 1805678020);
+      return this.method_6053((class_342)var1);
    }
 
    // $FF: renamed from: r (lx) int
    public int method_6004(class_338 var1) {
-      return this.method_6053((class_342)var1, 525484606);
+      return this.method_6053((class_342)var1);
    }
 
    public int compareTo(Object var1) {
       try {
-         return this.method_6053((class_342)var1, -208555214);
+         return this.method_6053((class_342)var1);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "la.compareTo(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: d (lx) int
    public int method_6006(class_338 var1) {
-      return this.method_6053((class_342)var1, 496192593);
+      return this.method_6053((class_342)var1);
    }
 
    // $FF: renamed from: o (java.lang.Object) int
    public int method_6008(Object var1) {
-      return this.method_6053((class_342)var1, 64543851);
+      return this.method_6053((class_342)var1);
    }
 
    // $FF: renamed from: u (java.lang.Object) int
    public int method_5995(Object var1) {
-      return this.method_6053((class_342)var1, 1372734593);
+      return this.method_6053((class_342)var1);
    }
 
    // $FF: renamed from: l (java.lang.Object) int
    public int method_6007(Object var1) {
-      return this.method_6053((class_342)var1, -445218535);
+      return this.method_6053((class_342)var1);
    }
 
    // $FF: renamed from: f (la) int
@@ -81,7 +81,7 @@ public class class_342 extends class_338 {
 
    // $FF: renamed from: s (java.lang.Object) int
    public int method_6005(Object var1) {
-      return this.method_6053((class_342)var1, 732079390);
+      return this.method_6053((class_342)var1);
    }
 
    // $FF: renamed from: y (la) int
@@ -90,11 +90,11 @@ public class class_342 extends class_338 {
    }
 
    // $FF: renamed from: n (lx, int) int
-   public int method_6000(class_338 var1, int var2) {
+   public int method_6000(class_338 var1) {
       try {
-         return this.method_6053((class_342)var1, -1936760082);
+         return this.method_6053((class_342)var1);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "la.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -156,7 +156,7 @@ public class class_342 extends class_338 {
                            class_303.method_5369(-130212619 * var0.field_1077, 1248597615 * var0.field_1076, var11, -1158444411);
                            class_68 var12 = (class_68)client.field_1532.get(class_373.field_4124);
                            byte var13 = 9;
-                           var12.method_872(var10.field_1148.method_6272(2095570617), 1057202329 * client.field_1434 + var2, var3 + -1775322899 * client.field_1517 - var13, 16777215, 0);
+                           var12.method_872(var10.field_1148.method_6272(), 1057202329 * client.field_1434 + var2, var3 + -1775322899 * client.field_1517 - var13, 16777215, 0);
                            var9 = 18;
                         }
                      }
@@ -315,7 +315,7 @@ public class class_342 extends class_338 {
                         }
 
                         var79 += 2;
-                     } else if(var82.method_541(1762138493)) {
+                     } else if(var82.method_541()) {
                         if(var6 == 1953998553) {
                            throw new IllegalStateException();
                         }
@@ -1224,7 +1224,7 @@ public class class_342 extends class_338 {
          }
 
       } catch (RuntimeException var77) {
-         throw class_223.method_4281(var77, "la.gy(" + ')');
+         throw class_223.method_4281(var77);
       }
    }
 }

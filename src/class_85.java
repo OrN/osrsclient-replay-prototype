@@ -26,7 +26,7 @@ public class class_85 extends class_59 {
    void method_1431(class_28 var1, int var2) {
       try {
          while(true) {
-            int var3 = var1.method_130(1499923951);
+            int var3 = var1.method_130();
             if(0 == var3) {
                if(var2 >= 540160928) {
                   throw new IllegalStateException();
@@ -38,14 +38,14 @@ public class class_85 extends class_59 {
             this.method_1444(var1, var3, -1568797940);
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "ei.y(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: m (nd) void
    void method_1432(class_28 var1) {
       while(true) {
-         int var2 = var1.method_130(1329460103);
+         int var2 = var1.method_130();
          if(0 == var2) {
             return;
          }
@@ -55,20 +55,20 @@ public class class_85 extends class_59 {
    }
 
    // $FF: renamed from: j (int, int, int) int
-   public int method_1433(int var1, int var2, int var3) {
+   public int method_1433(int var1, int var2) {
       try {
          return class_174.method_3723(this.field_788, var1, var2, -1832389513);
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "ei.j(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: r (int, java.lang.String, int) java.lang.String
-   public String method_1434(int var1, String var2, int var3) {
+   public String method_1434(int var1, String var2) {
       try {
          return class_346.method_6180(this.field_788, var1, var2, (byte)63);
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "ei.r(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -84,7 +84,7 @@ public class class_85 extends class_59 {
       if(var1 != null) {
          return var1;
       } else {
-         byte[] var2 = field_786.method_5381(-632632986, var0, -26460885);
+         byte[] var2 = field_786.method_5381(-632632986, var0);
          class_85 var10000 = new class_85();
          var1 = var10000;
          if(var2 != null) {
@@ -92,7 +92,7 @@ public class class_85 extends class_59 {
             var1.method_1431(var10001, -1257817770);
          }
 
-         var1.method_1450(1000000);
+         var1.method_1450();
          field_787.method_5064(var1, (long)var0);
          return var1;
       }
@@ -119,7 +119,7 @@ public class class_85 extends class_59 {
       if(var1 != null) {
          return var1;
       } else {
-         byte[] var2 = field_786.method_5381(-1256045377, var0, -26460885);
+         byte[] var2 = field_786.method_5381(-1256045377, var0);
          class_85 var10000 = new class_85();
          var1 = var10000;
          if(var2 != null) {
@@ -127,7 +127,7 @@ public class class_85 extends class_59 {
             var1.method_1431(var10001, -1107575965);
          }
 
-         var1.method_1450(1000000);
+         var1.method_1450();
          field_787.method_5064(var1, (long)var0);
          return var1;
       }
@@ -138,14 +138,14 @@ public class class_85 extends class_59 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ei.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: lr (io, int) io
    static class_37 method_1441(class_37 var0, int var1) {
       try {
-         int var2 = class_119.method_2259(class_112.method_2236(var0, 2146562809), (byte)-52);
+         int var2 = class_119.method_2259(class_112.method_2236(var0, 2146562809));
          if(0 == var2) {
             if(var1 <= 66590305) {
                throw new IllegalStateException();
@@ -154,7 +154,7 @@ public class class_85 extends class_59 {
             }
          } else {
             for(int var3 = 0; var3 < var2; ++var3) {
-               var0 = class_71.method_1047(var0.field_152 * -1338646279, 278361857);
+               var0 = class_71.method_1047(var0.field_152 * -1338646279);
                if(null == var0) {
                   return null;
                }
@@ -163,7 +163,7 @@ public class class_85 extends class_59 {
             return var0;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "ei.lr(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -173,7 +173,7 @@ public class class_85 extends class_59 {
       if(var1 != null) {
          return var1;
       } else {
-         byte[] var2 = field_786.method_5381(-1829853252, var0, -26460885);
+         byte[] var2 = field_786.method_5381(-1829853252, var0);
          class_85 var10000 = new class_85();
          var1 = var10000;
          if(var2 != null) {
@@ -181,7 +181,7 @@ public class class_85 extends class_59 {
             var1.method_1431(var10001, -1249307505);
          }
 
-         var1.method_1450(1000000);
+         var1.method_1450();
          field_787.method_5064(var1, (long)var0);
          return var1;
       }
@@ -198,7 +198,7 @@ public class class_85 extends class_59 {
                return var2;
             }
          } else {
-            byte[] var3 = class_88.field_890.method_5381(9, var0, -26460885);
+            byte[] var3 = class_88.field_890.method_5381(9, var0);
             class_88 var10000 = new class_88();
             var2 = var10000;
             var2.field_857 = var0 * 1893482329;
@@ -207,12 +207,12 @@ public class class_85 extends class_59 {
                var2.method_1566(var10001, 1170104499);
             }
 
-            var2.method_1540(-260686681);
+            var2.method_1540();
             class_88.field_884.method_5064(var2, (long)var0);
             return var2;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "ei.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -228,7 +228,7 @@ public class class_85 extends class_59 {
          }
 
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "ei.p(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -243,7 +243,7 @@ public class class_85 extends class_59 {
    // $FF: renamed from: x (nd) void
    void method_1447(class_28 var1) {
       while(true) {
-         int var2 = var1.method_130(-1082113394);
+         int var2 = var1.method_130();
          if(0 == var2) {
             return;
          }
@@ -269,11 +269,11 @@ public class class_85 extends class_59 {
    }
 
    // $FF: renamed from: f (int) void
-   void method_1450(int var1) {
+   void method_1450() {
       try {
          ;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ei.f(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -314,7 +314,7 @@ public class class_85 extends class_59 {
       if(var1 != null) {
          return var1;
       } else {
-         byte[] var2 = field_786.method_5381(34, var0, -26460885);
+         byte[] var2 = field_786.method_5381(34, var0);
          class_85 var10000 = new class_85();
          var1 = var10000;
          if(var2 != null) {
@@ -322,18 +322,18 @@ public class class_85 extends class_59 {
             var1.method_1431(var10001, 37527850);
          }
 
-         var1.method_1450(1000000);
+         var1.method_1450();
          field_787.method_5064(var1, (long)var0);
          return var1;
       }
    }
 
    // $FF: renamed from: r (int, int) boolean
-   public static boolean method_1457(int var0, int var1) {
+   public static boolean method_1457(int var0) {
       try {
          return 0 != (var0 >> 31 & 1);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ei.r(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 

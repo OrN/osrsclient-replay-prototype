@@ -151,7 +151,7 @@ public class class_297 implements Runnable {
             class_308.method_5523((String)null, var15, 1980565479);
          }
       } catch (RuntimeException var16) {
-         throw class_223.method_4281(var16, "jg.run(" + ')');
+         throw class_223.method_4281(var16);
       }
    }
 
@@ -160,7 +160,7 @@ public class class_297 implements Runnable {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "jg.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -277,11 +277,11 @@ public class class_297 implements Runnable {
    }
 
    // $FF: renamed from: n (int, byte) void
-   public static void method_5342(int var0, byte var1) {
+   public static void method_5342(int var0) {
       try {
          class_131.field_1718 = var0 * 457540795;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "jg.n(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 }

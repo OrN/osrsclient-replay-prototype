@@ -21,23 +21,23 @@ public abstract class class_146 {
 
 
    // $FF: renamed from: v (int, int, int, fz, int) boolean
-   protected abstract boolean method_3106(int var1, int var2, int var3, class_240 var4, int var5);
+   protected abstract boolean method_3106(int var2, int var3, int var5);
 
    // $FF: renamed from: f (int, int, int, fz) boolean
-   protected abstract boolean method_3107(int var1, int var2, int var3, class_240 var4);
+   protected abstract boolean method_3107(int var2, int var3);
 
    // $FF: renamed from: n (int, int, int, fz) boolean
-   protected abstract boolean method_3108(int var1, int var2, int var3, class_240 var4);
+   protected abstract boolean method_3108(int var2, int var3);
 
    // $FF: renamed from: <init> () void
    protected class_146() {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "fc.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: y (int, int, int, fz) boolean
-   protected abstract boolean method_3110(int var1, int var2, int var3, class_240 var4);
+   protected abstract boolean method_3110(int var2, int var3);
 }

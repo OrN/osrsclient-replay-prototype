@@ -23,7 +23,7 @@ public class class_380 implements Comparator {
       try {
          return this.method_6675((class_338)var1, (class_338)var2, (byte)-9);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "nj.compare(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -31,7 +31,7 @@ public class class_380 implements Comparator {
       try {
          return super.equals(var1);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "nj.equals(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -42,7 +42,7 @@ public class class_380 implements Comparator {
 
    // $FF: renamed from: n (lx, lx) int
    int method_6671(class_338 var1, class_338 var2) {
-      return this.field_4202?var1.method_5999(1750928708).method_6275(var2.method_5999(1311553808), 1184937971):var2.method_5999(597560356).method_6275(var1.method_5999(1823183661), -554276327);
+      return this.field_4202?var1.method_5999().method_6275(var2.method_5999(), 1184937971):var2.method_5999().method_6275(var1.method_5999(), -554276327);
    }
 
    // $FF: renamed from: <init> (boolean) void
@@ -51,7 +51,7 @@ public class class_380 implements Comparator {
       try {
          this.field_4202 = var1;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "nj.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -74,19 +74,19 @@ public class class_380 implements Comparator {
                throw new IllegalStateException();
             }
 
-            var10000 = var1.method_5999(1857071806).method_6275(var2.method_5999(1971015184), -1034402672);
+            var10000 = var1.method_5999().method_6275(var2.method_5999(), -1034402672);
          } else {
-            var10000 = var2.method_5999(1430059031).method_6275(var1.method_5999(2141529201), 464325492);
+            var10000 = var2.method_5999().method_6275(var1.method_5999(), 464325492);
          }
 
          return var10000;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "nj.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: f (lx, lx) int
    int method_6676(class_338 var1, class_338 var2) {
-      return this.field_4202?var1.method_5999(988996523).method_6275(var2.method_5999(1902223176), 445025675):var2.method_5999(566389662).method_6275(var1.method_5999(1344793202), -960531070);
+      return this.field_4202?var1.method_5999().method_6275(var2.method_5999(), 445025675):var2.method_5999().method_6275(var1.method_5999(), -960531070);
    }
 }

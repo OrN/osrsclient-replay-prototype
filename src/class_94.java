@@ -17,7 +17,7 @@ public final class class_94 extends class_91 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "dr.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -26,7 +26,7 @@ public final class class_94 extends class_91 {
       try {
          return class_299.method_5347(this.field_1022 * -467972035, -1176159180).method_1267(this.field_1023 * 223075527, -293142901);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "dr.n(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -71,7 +71,7 @@ public final class class_94 extends class_91 {
          }
 
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "dr.f(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 }

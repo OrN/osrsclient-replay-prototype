@@ -27,11 +27,11 @@ public class class_196 implements class_14 {
 
 
    // $FF: renamed from: n (int, byte) int
-   public static int method_3989(int var0, byte var1) {
+   public static int method_3989(int var0) {
       try {
          return var0 >> 11 & 63;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "dj.n(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -46,7 +46,7 @@ public class class_196 implements class_14 {
       try {
          this.field_2323 = var1 * -245024135;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "dj.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -68,11 +68,11 @@ public class class_196 implements class_14 {
    }
 
    // $FF: renamed from: v (int) int
-   public int method_50(int var1) {
+   public int method_50() {
       try {
          return 198709193 * this.field_2323;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "dj.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 }

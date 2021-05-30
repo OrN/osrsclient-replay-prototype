@@ -24,7 +24,7 @@ public class class_250 {
          this.field_2777 = var2;
          this.field_2779 = var3;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "gs.<init>(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 }

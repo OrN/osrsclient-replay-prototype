@@ -134,11 +134,11 @@ public class class_88 extends class_59 {
    }
 
    // $FF: renamed from: n (int) void
-   void method_1540(int var1) {
+   void method_1540() {
       try {
          ;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ef.n(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -218,7 +218,7 @@ public class class_88 extends class_59 {
          int var4;
          int var5;
          if(var2 == 1) {
-            var4 = var1.method_130(788266055);
+            var4 = var1.method_130();
             this.field_866 = new int[var4];
 
             for(var5 = 0; var5 < var4; ++var5) {
@@ -226,7 +226,7 @@ public class class_88 extends class_59 {
                   throw new IllegalStateException();
                }
 
-               this.field_866[var5] = var1.method_132((byte)-97);
+               this.field_866[var5] = var1.method_132();
             }
          } else if(var2 == 2) {
             if(var3 == 7) {
@@ -235,38 +235,38 @@ public class class_88 extends class_59 {
 
             this.field_858 = var1.method_139(-391631059);
          } else if(12 == var2) {
-            this.field_859 = var1.method_130(1747192605) * 2143888193;
+            this.field_859 = var1.method_130() * 2143888193;
          } else if(13 == var2) {
-            this.field_875 = var1.method_132((byte)-30) * 1784073613;
+            this.field_875 = var1.method_132() * 1784073613;
          } else if(14 == var2) {
-            this.field_865 = var1.method_132((byte)-105) * -824174637;
+            this.field_865 = var1.method_132() * -824174637;
          } else if(var2 == 15) {
             if(var3 == 7) {
                return;
             }
 
-            this.field_863 = var1.method_132((byte)-90) * 1081629083;
+            this.field_863 = var1.method_132() * 1081629083;
          } else if(var2 == 16) {
             if(var3 == 7) {
                throw new IllegalStateException();
             }
 
-            this.field_874 = var1.method_132((byte)-99) * 825755253;
+            this.field_874 = var1.method_132() * 825755253;
          } else if(17 == var2) {
             if(var3 == 7) {
                return;
             }
 
-            this.field_865 = var1.method_132((byte)-87) * -824174637;
-            this.field_870 = var1.method_132((byte)-24) * 1636089201;
-            this.field_867 = var1.method_132((byte)-84) * -939915041;
-            this.field_868 = var1.method_132((byte)-71) * -250921021;
+            this.field_865 = var1.method_132() * -824174637;
+            this.field_870 = var1.method_132() * 1636089201;
+            this.field_867 = var1.method_132() * -939915041;
+            this.field_868 = var1.method_132() * -250921021;
          } else if(var2 == 18) {
             if(var3 == 7) {
                return;
             }
 
-            var1.method_132((byte)-52);
+            var1.method_132();
          } else {
             if(var2 >= 30) {
                if(var3 == 7) {
@@ -292,7 +292,7 @@ public class class_88 extends class_59 {
                   throw new IllegalStateException();
                }
 
-               var4 = var1.method_130(-493986425);
+               var4 = var1.method_130();
                this.field_869 = new short[var4];
                this.field_864 = new short[var4];
 
@@ -301,11 +301,11 @@ public class class_88 extends class_59 {
                      throw new IllegalStateException();
                   }
 
-                  this.field_869[var5] = (short)var1.method_132((byte)-61);
-                  this.field_864[var5] = (short)var1.method_132((byte)-103);
+                  this.field_869[var5] = (short)var1.method_132();
+                  this.field_864[var5] = (short)var1.method_132();
                }
             } else if(41 == var2) {
-               var4 = var1.method_130(-790859881);
+               var4 = var1.method_130();
                this.field_860 = new short[var4];
                this.field_872 = new short[var4];
 
@@ -314,36 +314,36 @@ public class class_88 extends class_59 {
                      throw new IllegalStateException();
                   }
 
-                  this.field_860[var5] = (short)var1.method_132((byte)-60);
-                  this.field_872[var5] = (short)var1.method_132((byte)-12);
+                  this.field_860[var5] = (short)var1.method_132();
+                  this.field_872[var5] = (short)var1.method_132();
                }
             } else if(var2 == 60) {
                if(var3 == 7) {
                   return;
                }
 
-               var4 = var1.method_130(733577724);
+               var4 = var1.method_130();
                this.field_861 = new int[var4];
 
                for(var5 = 0; var5 < var4; ++var5) {
-                  this.field_861[var5] = var1.method_132((byte)-109);
+                  this.field_861[var5] = var1.method_132();
                }
             } else if(93 == var2) {
                this.field_883 = false;
             } else if(var2 == 95) {
-               this.field_853 = var1.method_132((byte)-57) * -1182914317;
+               this.field_853 = var1.method_132() * -1182914317;
             } else if(var2 == 97) {
                if(var3 == 7) {
                   throw new IllegalStateException();
                }
 
-               this.field_855 = var1.method_132((byte)-57) * 82664775;
+               this.field_855 = var1.method_132() * 82664775;
             } else if(98 == var2) {
                if(var3 == 7) {
                   throw new IllegalStateException();
                }
 
-               this.field_877 = var1.method_132((byte)-93) * -1453934407;
+               this.field_877 = var1.method_132() * -1453934407;
             } else if(99 == var2) {
                if(var3 == 7) {
                   throw new IllegalStateException();
@@ -351,21 +351,21 @@ public class class_88 extends class_59 {
 
                this.field_871 = true;
             } else if(var2 == 100) {
-               this.field_879 = var1.method_131((byte)-66) * 288347979;
+               this.field_879 = var1.method_131() * 288347979;
             } else if(101 == var2) {
-               this.field_880 = var1.method_131((byte)-48) * -1536154543;
+               this.field_880 = var1.method_131() * -1536154543;
             } else if(var2 == 102) {
                if(var3 == 7) {
                   throw new IllegalStateException();
                }
 
-               this.field_881 = var1.method_132((byte)-106) * 915888573;
+               this.field_881 = var1.method_132() * 915888573;
             } else if(var2 == 103) {
                if(var3 == 7) {
                   throw new IllegalStateException();
                }
 
-               this.field_882 = var1.method_132((byte)-121) * 198576593;
+               this.field_882 = var1.method_132() * 198576593;
             } else {
                if(var2 != 106) {
                   if(var3 == 7) {
@@ -412,12 +412,12 @@ public class class_88 extends class_59 {
                   }
                }
 
-               this.field_854 = var1.method_132((byte)-18) * 217670275;
+               this.field_854 = var1.method_132() * 217670275;
                if('\uffff' == this.field_854 * -17335253) {
                   this.field_854 = -217670275;
                }
 
-               this.field_885 = var1.method_132((byte)-26) * -236114995;
+               this.field_885 = var1.method_132() * -236114995;
                if(-1483491067 * this.field_885 == '\uffff') {
                   if(var3 == 7) {
                      throw new IllegalStateException();
@@ -432,7 +432,7 @@ public class class_88 extends class_59 {
                      throw new IllegalStateException();
                   }
 
-                  var4 = var1.method_132((byte)-122);
+                  var4 = var1.method_132();
                   if(var4 == '\uffff') {
                      if(var3 == 7) {
                         throw new IllegalStateException();
@@ -442,11 +442,11 @@ public class class_88 extends class_59 {
                   }
                }
 
-               var5 = var1.method_130(-1338062671);
+               var5 = var1.method_130();
                this.field_862 = new int[var5 + 2];
 
                for(int var6 = 0; var6 <= var5; ++var6) {
-                  this.field_862[var6] = var1.method_132((byte)-24);
+                  this.field_862[var6] = var1.method_132();
                   if(this.field_862[var6] == '\uffff') {
                      if(var3 == 7) {
                         throw new IllegalStateException();
@@ -461,7 +461,7 @@ public class class_88 extends class_59 {
          }
 
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "ef.y(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
@@ -613,7 +613,7 @@ public class class_88 extends class_59 {
             return var12;
          }
       } catch (RuntimeException var11) {
-         throw class_223.method_4281(var11, "ef.p(" + ')');
+         throw class_223.method_4281(var11);
       }
    }
 
@@ -712,7 +712,7 @@ public class class_88 extends class_59 {
             }
          }
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "ef.j(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -725,7 +725,7 @@ public class class_88 extends class_59 {
                throw new IllegalStateException();
             }
 
-            var2 = class_43.method_496(this.field_854 * -17335253, 1078304144);
+            var2 = class_43.method_496(this.field_854 * -17335253);
          } else if(this.field_885 * -1483491067 != -1) {
             if(var1 == 1) {
                throw new IllegalStateException();
@@ -764,7 +764,7 @@ public class class_88 extends class_59 {
             return null;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "ef.r(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -784,7 +784,7 @@ public class class_88 extends class_59 {
                   throw new IllegalStateException();
                }
 
-               var2 = class_43.method_496(this.field_854 * -17335253, -811372337);
+               var2 = class_43.method_496(this.field_854 * -17335253);
             } else if(-1 != this.field_885 * -1483491067) {
                if(var1 >= 1070699805) {
                   throw new IllegalStateException();
@@ -821,25 +821,25 @@ public class class_88 extends class_59 {
             return this.field_862[this.field_862.length - 1] != -1;
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ef.b(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: d (int, int, int) int
-   public int method_1547(int var1, int var2, int var3) {
+   public int method_1547(int var1, int var2) {
       try {
          return class_174.method_3723(this.field_889, var1, var2, -1327945264);
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "ef.d(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: s (int, java.lang.String, int) java.lang.String
-   public String method_1548(int var1, String var2, int var3) {
+   public String method_1548(int var1, String var2) {
       try {
          return class_346.method_6180(this.field_889, var1, var2, (byte)98);
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "ef.s(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -857,7 +857,7 @@ public class class_88 extends class_59 {
       if(null != var1) {
          return var1;
       } else {
-         byte[] var2 = field_890.method_5381(9, var0, -26460885);
+         byte[] var2 = field_890.method_5381(9, var0);
          class_88 var10000 = new class_88();
          var1 = var10000;
          var1.field_857 = var0 * 1893482329;
@@ -866,7 +866,7 @@ public class class_88 extends class_59 {
             var1.method_1566(var10001, 1170104499);
          }
 
-         var1.method_1540(-1110153624);
+         var1.method_1540();
          field_884.method_5064(var1, (long)var0);
          return var1;
       }
@@ -875,7 +875,7 @@ public class class_88 extends class_59 {
    // $FF: renamed from: l (nd) void
    void method_1551(class_28 var1) {
       while(true) {
-         int var2 = var1.method_130(437068569);
+         int var2 = var1.method_130();
          if(var2 == 0) {
             return;
          }
@@ -891,7 +891,7 @@ public class class_88 extends class_59 {
       } else {
          int var1 = -1;
          if(-1 != this.field_854 * -17335253) {
-            var1 = class_43.method_496(this.field_854 * -99777828, -2062373051);
+            var1 = class_43.method_496(this.field_854 * -99777828);
          } else if(-1 != this.field_885 * 277889017) {
             var1 = class_282.field_3246[this.field_885 * -1483491067];
          }
@@ -905,79 +905,79 @@ public class class_88 extends class_59 {
       int var3;
       int var4;
       if(var2 == 1) {
-         var3 = var1.method_130(230341802);
+         var3 = var1.method_130();
          this.field_866 = new int[var3];
 
          for(var4 = 0; var4 < var3; ++var4) {
-            this.field_866[var4] = var1.method_132((byte)-76);
+            this.field_866[var4] = var1.method_132();
          }
       } else if(var2 == 2) {
          this.field_858 = var1.method_139(-391631059);
       } else if(12 == var2) {
-         this.field_859 = var1.method_130(-465511847) * -1124041450;
+         this.field_859 = var1.method_130() * -1124041450;
       } else if(13 == var2) {
-         this.field_875 = var1.method_132((byte)-54) * 1784073613;
+         this.field_875 = var1.method_132() * 1784073613;
       } else if(14 == var2) {
-         this.field_865 = var1.method_132((byte)-28) * -481012047;
+         this.field_865 = var1.method_132() * -481012047;
       } else if(var2 == 15) {
-         this.field_863 = var1.method_132((byte)-42) * 82130600;
+         this.field_863 = var1.method_132() * 82130600;
       } else if(var2 == 16) {
-         this.field_874 = var1.method_132((byte)-82) * 825755253;
+         this.field_874 = var1.method_132() * 825755253;
       } else if(17 == var2) {
-         this.field_865 = var1.method_132((byte)-30) * -824174637;
-         this.field_870 = var1.method_132((byte)-73) * 1636089201;
-         this.field_867 = var1.method_132((byte)-10) * -939915041;
-         this.field_868 = var1.method_132((byte)-84) * 323171326;
+         this.field_865 = var1.method_132() * -824174637;
+         this.field_870 = var1.method_132() * 1636089201;
+         this.field_867 = var1.method_132() * -939915041;
+         this.field_868 = var1.method_132() * 323171326;
       } else if(var2 == 18) {
-         var1.method_132((byte)-81);
+         var1.method_132();
       } else if(var2 >= 30 && var2 < 35) {
          this.field_873[var2 - 30] = var1.method_139(-391631059);
          if(this.field_873[var2 - 30].equalsIgnoreCase(class_305.field_3405)) {
             this.field_873[var2 - 30] = null;
          }
       } else if(var2 == 40) {
-         var3 = var1.method_130(347801036);
+         var3 = var1.method_130();
          this.field_869 = new short[var3];
          this.field_864 = new short[var3];
 
          for(var4 = 0; var4 < var3; ++var4) {
-            this.field_869[var4] = (short)var1.method_132((byte)-28);
-            this.field_864[var4] = (short)var1.method_132((byte)-6);
+            this.field_869[var4] = (short)var1.method_132();
+            this.field_864[var4] = (short)var1.method_132();
          }
       } else if(-566421194 == var2) {
-         var3 = var1.method_130(-89129845);
+         var3 = var1.method_130();
          this.field_860 = new short[var3];
          this.field_872 = new short[var3];
 
          for(var4 = 0; var4 < var3; ++var4) {
-            this.field_860[var4] = (short)var1.method_132((byte)-20);
-            this.field_872[var4] = (short)var1.method_132((byte)-62);
+            this.field_860[var4] = (short)var1.method_132();
+            this.field_872[var4] = (short)var1.method_132();
          }
       } else if(var2 == -842523885) {
-         var3 = var1.method_130(-33323457);
+         var3 = var1.method_130();
          this.field_861 = new int[var3];
 
          for(var4 = 0; var4 < var3; ++var4) {
-            this.field_861[var4] = var1.method_132((byte)-87);
+            this.field_861[var4] = var1.method_132();
          }
       } else if(93 == var2) {
          this.field_883 = false;
       } else if(var2 == 95) {
-         this.field_853 = var1.method_132((byte)-29) * -1182914317;
+         this.field_853 = var1.method_132() * -1182914317;
       } else if(var2 == 495119271) {
-         this.field_855 = var1.method_132((byte)-8) * 1031349239;
+         this.field_855 = var1.method_132() * 1031349239;
       } else if(1312735192 == var2) {
-         this.field_877 = var1.method_132((byte)-85) * 1108634674;
+         this.field_877 = var1.method_132() * 1108634674;
       } else if(957766296 == var2) {
          this.field_871 = true;
       } else if(var2 == 100) {
-         this.field_879 = var1.method_131((byte)2) * 288347979;
+         this.field_879 = var1.method_131() * 288347979;
       } else if(101 == var2) {
-         this.field_880 = var1.method_131((byte)-90) * -1536154543;
+         this.field_880 = var1.method_131() * -1536154543;
       } else if(var2 == -1147019909) {
-         this.field_881 = var1.method_132((byte)-91) * 845029350;
+         this.field_881 = var1.method_132() * 845029350;
       } else if(var2 == 103) {
-         this.field_882 = var1.method_132((byte)-63) * 1245285155;
+         this.field_882 = var1.method_132() * 1245285155;
       } else if(var2 != 106 && 1005306346 != var2) {
          if(1200708576 == var2) {
             this.field_886 = false;
@@ -989,29 +989,29 @@ public class class_88 extends class_59 {
             this.field_889 = class_325.method_5781(var1, this.field_889, -391561047);
          }
       } else {
-         this.field_854 = var1.method_132((byte)-38) * 217670275;
+         this.field_854 = var1.method_132() * 217670275;
          if('\uffff' == this.field_854 * 1384300198) {
             this.field_854 = -217670275;
          }
 
-         this.field_885 = var1.method_132((byte)-88) * -236114995;
+         this.field_885 = var1.method_132() * -236114995;
          if(-1495282998 * this.field_885 == '\uffff') {
             this.field_885 = 236114995;
          }
 
          var3 = -1;
          if(var2 == 118) {
-            var3 = var1.method_132((byte)-43);
+            var3 = var1.method_132();
             if(var3 == '\uffff') {
                var3 = -1;
             }
          }
 
-         var4 = var1.method_130(431348261);
+         var4 = var1.method_130();
          this.field_862 = new int[var4 + 2];
 
          for(int var5 = 0; var5 <= var4; ++var5) {
-            this.field_862[var5] = var1.method_132((byte)-4);
+            this.field_862[var5] = var1.method_132();
             if(this.field_862[var5] == -1234849221) {
                this.field_862[var5] = -1;
             }
@@ -1208,7 +1208,7 @@ public class class_88 extends class_59 {
    public final class_88 method_1559() {
       int var1 = -1;
       if(-1 != this.field_854 * -17335253) {
-         var1 = class_43.method_496(this.field_854 * -17335253, 1772021951);
+         var1 = class_43.method_496(this.field_854 * -17335253);
       } else if(this.field_885 * -1483491067 != -1) {
          var1 = class_282.field_3246[this.field_885 * -1483491067];
       }
@@ -1227,7 +1227,7 @@ public class class_88 extends class_59 {
    public final class_88 method_1560() {
       int var1 = -1;
       if(-1 != this.field_854 * -17335253) {
-         var1 = class_43.method_496(this.field_854 * -17335253, -1982651271);
+         var1 = class_43.method_496(this.field_854 * -17335253);
       } else if(this.field_885 * -1483491067 != -1) {
          var1 = class_282.field_3246[this.field_885 * -1483491067];
       }
@@ -1319,7 +1319,7 @@ public class class_88 extends class_59 {
       } else {
          int var1 = -1;
          if(-1 != this.field_854 * -17335253) {
-            var1 = class_43.method_496(this.field_854 * -17335253, 2112563994);
+            var1 = class_43.method_496(this.field_854 * -17335253);
          } else if(-1 != this.field_885 * -1483491067) {
             var1 = class_282.field_3246[this.field_885 * -1483491067];
          }
@@ -1335,7 +1335,7 @@ public class class_88 extends class_59 {
       } else {
          int var1 = -1;
          if(-1 != this.field_854 * -17335253) {
-            var1 = class_43.method_496(this.field_854 * 75872287, 1472168655);
+            var1 = class_43.method_496(this.field_854 * 75872287);
          } else if(-1 != this.field_885 * -1483491067) {
             var1 = class_282.field_3246[this.field_885 * 1470501354];
          }
@@ -1345,16 +1345,16 @@ public class class_88 extends class_59 {
    }
 
    // $FF: renamed from: kb (java.lang.String, short) void
-   static final void method_1564(String var0, short var1) {
+   static final void method_1564(String var0) {
       try {
          if(!var0.equals("")) {
             class_40 var2 = class_112.method_2238(class_266.field_3048, client.field_1463.field_2384, (byte)8);
-            var2.field_263.method_210(class_166.method_3598(var0, 1554265109), 303066737);
-            var2.field_263.method_120(var0, -427478981);
-            client.field_1463.method_4079(var2, -1813785027);
+            var2.field_263.method_210(class_166.method_3598(var0));
+            var2.field_263.method_120(var0);
+            client.field_1463.method_4079(var2);
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ef.kb(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -1367,7 +1367,7 @@ public class class_88 extends class_59 {
    void method_1566(class_28 var1, int var2) {
       try {
          while(true) {
-            int var3 = var1.method_130(2064749124);
+            int var3 = var1.method_130();
             if(var3 == 0) {
                if(var2 != 1170104499) {
                   throw new IllegalStateException();
@@ -1379,7 +1379,7 @@ public class class_88 extends class_59 {
             this.method_1542(var1, var3, (byte)-16);
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "ef.f(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -1412,7 +1412,7 @@ public class class_88 extends class_59 {
          this.field_887 = true;
          this.field_888 = false;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ef.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -1466,7 +1466,7 @@ public class class_88 extends class_59 {
          }
 
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "ef.lu(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 }

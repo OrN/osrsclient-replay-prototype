@@ -41,13 +41,13 @@ public class class_355 extends class_354 {
                var4 = var5 + var6 + "; Max-Age=" + 94608000L;
             }
 
-            class_129.method_2852(class_121.field_1337, "document.cookie=\"" + var4 + "\"", -2125796670);
+            class_129.method_2852(class_121.field_1337, "document.cookie=\"" + var4 + "\"");
          } catch (Throwable var16) {
             ;
          }
 
       } catch (RuntimeException var17) {
-         throw class_223.method_4281(var17, "lq.lb(" + ')');
+         throw class_223.method_4281(var17);
       }
    }
 
@@ -59,7 +59,7 @@ public class class_355 extends class_354 {
          this.field_3965 = var1;
          this.field_3966 = (short)var2;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "lq.<init>(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 }

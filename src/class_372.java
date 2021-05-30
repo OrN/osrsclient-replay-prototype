@@ -21,7 +21,7 @@ public class class_372 {
          this.field_4112 = var2;
          this.field_4113 = new HashMap();
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "mu.<init>(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -44,7 +44,7 @@ public class class_372 {
 
                var3.put(var6, this.field_4113.get(var6));
             } else {
-               class_69 var7 = class_206.method_4140(this.field_4111, this.field_4112, var6.field_4121, "", (byte)88);
+               class_69 var7 = class_206.method_4140(this.field_4111, this.field_4112, var6.field_4121, "");
                if(null != var7) {
                   if(var2 == -987560303) {
                      throw new IllegalStateException();
@@ -58,7 +58,7 @@ public class class_372 {
 
          return var3;
       } catch (RuntimeException var8) {
-         throw class_223.method_4281(var8, "mu.v(" + ')');
+         throw class_223.method_4281(var8);
       }
    }
 
@@ -72,7 +72,7 @@ public class class_372 {
          if(this.field_4113.containsKey(var5)) {
             var2.put(var5, this.field_4113.get(var5));
          } else {
-            class_69 var6 = class_206.method_4140(this.field_4111, this.field_4112, var5.field_4121, "", (byte)43);
+            class_69 var6 = class_206.method_4140(this.field_4111, this.field_4112, var5.field_4121, "");
             if(null != var6) {
                this.field_4113.put(var5, var6);
                var2.put(var5, var6);

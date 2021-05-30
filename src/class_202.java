@@ -33,11 +33,11 @@ public class class_202 implements class_14 {
    }
 
    // $FF: renamed from: v (int) int
-   public int method_50(int var1) {
+   public int method_50() {
       try {
          return -1949743275 * this.field_2367;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "dq.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -71,7 +71,7 @@ public class class_202 implements class_14 {
 
          return 0;
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "dq.p(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -143,12 +143,12 @@ public class class_202 implements class_14 {
                   throw new IllegalStateException();
                }
 
-               class_269.method_5041(var8, class_136.method_2958(16748608, -1966582053) + var1.field_707, var7, -882422617 * var1.field_748, var2, var0.field_101 * -1722455647, var4, -2076246411);
+               class_269.method_5041(var8, class_136.method_2958(16748608) + var1.field_707, var7, -882422617 * var1.field_748, var2, var0.field_101 * -1722455647, var4, -2076246411);
             }
          }
 
       } catch (RuntimeException var9) {
-         throw class_223.method_4281(var9, "dq.ja(" + ')');
+         throw class_223.method_4281(var9);
       }
    }
 
@@ -159,16 +159,16 @@ public class class_202 implements class_14 {
          this.field_2366 = var1 * 1084839573;
          this.field_2367 = -918520323 * var2;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "dq.<init>(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: c (int) int
-   static final int method_4075(int var0) {
+   static final int method_4075() {
       try {
          return class_255.field_2881 * 836373803;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "dq.c(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

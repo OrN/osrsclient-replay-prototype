@@ -22,7 +22,7 @@ class class_379 implements Iterator {
       try {
          throw new UnsupportedOperationException();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ni.remove(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -32,7 +32,7 @@ class class_379 implements Iterator {
          class_368 var2 = (class_368)this.this$0.field_2902.method_5002((long)var1);
          return var2 != null?var2:this.this$0.method_4962(var1, 1323866848);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ni.next(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -52,7 +52,7 @@ class class_379 implements Iterator {
 
    // $FF: renamed from: c () boolean
    public boolean method_6660() {
-      return this.field_4199 * 425017273 < this.this$0.method_4951(-1126578481);
+      return this.field_4199 * 425017273 < this.this$0.method_4951();
    }
 
    // $FF: renamed from: e () void
@@ -69,19 +69,19 @@ class class_379 implements Iterator {
 
    // $FF: renamed from: l () boolean
    public boolean method_6663() {
-      return this.field_4199 * 425017273 < this.this$0.method_4951(-945373256);
+      return this.field_4199 * 425017273 < this.this$0.method_4951();
    }
 
    // $FF: renamed from: o () boolean
    public boolean method_6664() {
-      return this.field_4199 * 425017273 < this.this$0.method_4951(-1463766493);
+      return this.field_4199 * 425017273 < this.this$0.method_4951();
    }
 
    public boolean hasNext() {
       try {
-         return this.field_4199 * 425017273 < this.this$0.method_4951(-1710884845);
+         return this.field_4199 * 425017273 < this.this$0.method_4951();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ni.hasNext(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 

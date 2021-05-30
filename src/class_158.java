@@ -64,7 +64,7 @@ public class class_158 {
             }
          }
       } catch (RuntimeException var9) {
-         throw class_223.method_4281(var9, "bw.v(" + ')');
+         throw class_223.method_4281(var9);
       }
    }
 
@@ -74,7 +74,7 @@ public class class_158 {
       try {
          this.field_1961 = 815362225;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "bw.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -279,7 +279,7 @@ public class class_158 {
             var7 = -1113352723 * class_146.field_1861;
             var8 = 769722653 * class_120.field_1329;
             var9 = -145310383 * class_271.field_3188;
-            var10 = class_174.method_3727(var21, 353118952);
+            var10 = class_174.method_3727(var21);
             var10 = class_223.method_4280(var10, var3, -1091351445);
             var11 = 2048 - var21 & 2047;
             var12 = 2048 - var23 & 2047;
@@ -709,14 +709,14 @@ public class class_158 {
                            return;
                         }
 
-                        class_211.method_4173(var11 - var0, var12 - var1, (byte)-54);
+                        class_211.method_4173(var11 - var0, var12 - var1);
                         break label579;
                      }
                   }
                }
             }
 
-            class_179.method_3810(1650201726);
+            class_179.method_3810();
          }
 
          class_46.method_536(-1808857292);
@@ -731,7 +731,7 @@ public class class_158 {
          class_314.method_5587(var0, var1, var2, var3, 1592550546);
          class_175.method_3741(var0, var1, 694193640);
          ((class_245)class_70.field_555).method_4694(613265553 * client.field_1689, -451757246);
-         class_125.method_2287(var0, var1, var2, var3, -630332055);
+         class_125.method_2287(-630332055);
          class_131.field_1719 = -1739220461 * var23;
          class_172.field_2159 = -1768191443 * var7;
          class_205.field_2393 = -989203669 * var8;
@@ -763,7 +763,7 @@ public class class_158 {
          }
 
       } catch (RuntimeException var19) {
-         throw class_223.method_4281(var19, "bw.gf(" + ')');
+         throw class_223.method_4281(var19);
       }
    }
 }

@@ -103,16 +103,16 @@ public class class_38 extends class_27 {
 
          return var5;
       } catch (RuntimeException var10) {
-         throw class_223.method_4281(var10, "in.n(" + ')');
+         throw class_223.method_4281(var10);
       }
    }
 
    // $FF: renamed from: f (int) void
-   void method_446(int var1) {
+   void method_446() {
       try {
          this.field_257 = null;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "in.f(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -133,11 +133,11 @@ public class class_38 extends class_27 {
    }
 
    // $FF: renamed from: f (nd, int) java.lang.String
-   public static String method_449(class_28 var0, int var1) {
+   public static String method_449(class_28 var0) {
       try {
          return class_271.method_5058(var0, 32767, (byte)25);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "in.f(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -198,7 +198,7 @@ public class class_38 extends class_27 {
 
          int var5;
          for(var5 = 0; var5 < var3; ++var5) {
-            var4[var5] = var2.method_131((byte)-11);
+            var4[var5] = var2.method_131();
          }
 
          var2.field_15 += -1025691571;
@@ -215,7 +215,7 @@ public class class_38 extends class_27 {
 
          int var8;
          for(var8 = 0; var8 < var6; ++var8) {
-            var7[var8] = var2.method_131((byte)-97);
+            var7[var8] = var2.method_131();
          }
 
          var2.field_15 += -1025691571;
@@ -231,7 +231,7 @@ public class class_38 extends class_27 {
          byte[] var10 = new byte[var9];
 
          for(int var11 = 0; var11 < var9; ++var11) {
-            var10[var11] = var2.method_131((byte)-1);
+            var10[var11] = var2.method_131();
          }
 
          var2.field_15 += -1025691571;
@@ -245,7 +245,7 @@ public class class_38 extends class_27 {
             var12 = 2;
 
             for(var14 = 2; var14 < var9; ++var14) {
-               int var15 = var2.method_130(755914209);
+               int var15 = var2.method_130();
                if(var15 == 0) {
                   var13 = var12++;
                } else {
@@ -268,21 +268,21 @@ public class class_38 extends class_27 {
          for(var14 = 0; var14 < var40.length; ++var14) {
             class_262 var10002 = new class_262();
             var41 = var40[var14] = var10002;
-            int var16 = var2.method_130(811306751);
+            int var16 = var2.method_130();
             if(var16 > 0) {
                var41.field_2930 = new byte[var16 * 2];
             }
 
-            var16 = var2.method_130(-1695637968);
+            var16 = var2.method_130();
             if(var16 > 0) {
                var41.field_2921 = new byte[2 * var16 + 2];
                var41.field_2921[1] = 64;
             }
          }
 
-         var14 = var2.method_130(-1409599266);
+         var14 = var2.method_130();
          byte[] var42 = var14 > 0?new byte[var14 * 2]:null;
-         var14 = var2.method_130(-1254513385);
+         var14 = var2.method_130();
          byte[] var43 = var14 > 0?new byte[var14 * 2]:null;
 
          int var17;
@@ -294,7 +294,7 @@ public class class_38 extends class_27 {
 
          int var19;
          for(var19 = 0; var19 < var17; ++var19) {
-            var18[var19] = var2.method_131((byte)-22);
+            var18[var19] = var2.method_131();
          }
 
          var2.field_15 += -1025691571;
@@ -303,14 +303,14 @@ public class class_38 extends class_27 {
 
          int var20;
          for(var20 = 0; var20 < 128; ++var20) {
-            var19 += var2.method_130(974512696);
+            var19 += var2.method_130();
             this.field_252[var20] = (short)var19;
          }
 
          var19 = 0;
 
          for(var20 = 0; var20 < 128; ++var20) {
-            var19 += var2.method_130(474879151);
+            var19 += var2.method_130();
             this.field_252[var20] = (short)(this.field_252[var20] + (var19 << 8));
          }
 
@@ -413,7 +413,7 @@ public class class_38 extends class_27 {
                }
 
                if(this.field_257[var27] > 0) {
-                  var26 = var2.method_130(-615367441) + 1;
+                  var26 = var2.method_130() + 1;
                }
             }
 
@@ -421,7 +421,7 @@ public class class_38 extends class_27 {
             --var20;
          }
 
-         this.field_255 = (var2.method_130(-715403590) + 1) * -952738171;
+         this.field_255 = (var2.method_130() + 1) * -952738171;
 
          class_262 var28;
          int var29;
@@ -429,26 +429,26 @@ public class class_38 extends class_27 {
             var28 = var40[var27];
             if(var28.field_2930 != null) {
                for(var29 = 1; var29 < var28.field_2930.length; var29 += 2) {
-                  var28.field_2930[var29] = var2.method_131((byte)-68);
+                  var28.field_2930[var29] = var2.method_131();
                }
             }
 
             if(var28.field_2921 != null) {
                for(var29 = 3; var29 < var28.field_2921.length - 2; var29 += 2) {
-                  var28.field_2921[var29] = var2.method_131((byte)-96);
+                  var28.field_2921[var29] = var2.method_131();
                }
             }
          }
 
          if(var42 != null) {
             for(var27 = 1; var27 < var42.length; var27 += 2) {
-               var42[var27] = var2.method_131((byte)-36);
+               var42[var27] = var2.method_131();
             }
          }
 
          if(null != var43) {
             for(var27 = 1; var27 < var43.length; var27 += 2) {
-               var43[var27] = var2.method_131((byte)-77);
+               var43[var27] = var2.method_131();
             }
          }
 
@@ -458,7 +458,7 @@ public class class_38 extends class_27 {
                var19 = 0;
 
                for(var29 = 2; var29 < var28.field_2921.length; var29 += 2) {
-                  var19 = 1 + var19 + var2.method_130(-1691118883);
+                  var19 = 1 + var19 + var2.method_130();
                   var28.field_2921[var29] = (byte)var19;
                }
             }
@@ -470,7 +470,7 @@ public class class_38 extends class_27 {
                var19 = 0;
 
                for(var29 = 2; var29 < var28.field_2930.length; var29 += 2) {
-                  var19 = 1 + var19 + var2.method_130(937204349);
+                  var19 = 1 + var19 + var2.method_130();
                   var28.field_2930[var29] = (byte)var19;
                }
             }
@@ -485,11 +485,11 @@ public class class_38 extends class_27 {
          int var48;
          byte var50;
          if(var42 != null) {
-            var19 = var2.method_130(459485217);
+            var19 = var2.method_130();
             var42[0] = (byte)var19;
 
             for(var27 = 2; var27 < var42.length; var27 += 2) {
-               var19 = 1 + var19 + var2.method_130(181919621);
+               var19 = 1 + var19 + var2.method_130();
                var42[var27] = (byte)var19;
             }
 
@@ -525,11 +525,11 @@ public class class_38 extends class_27 {
          }
 
          if(var43 != null) {
-            var19 = var2.method_130(-2017189266);
+            var19 = var2.method_130();
             var43[0] = (byte)var19;
 
             for(var27 = 2; var27 < var43.length; var27 += 2) {
-               var19 = 1 + var19 + var2.method_130(1685405055);
+               var19 = 1 + var19 + var2.method_130();
                var43[var27] = (byte)var19;
             }
 
@@ -593,44 +593,44 @@ public class class_38 extends class_27 {
          }
 
          for(var27 = 0; var27 < var12; ++var27) {
-            var40[var27].field_2920 = var2.method_130(830578011) * 128145333;
+            var40[var27].field_2920 = var2.method_130() * 128145333;
          }
 
          for(var27 = 0; var27 < var12; ++var27) {
             var28 = var40[var27];
             if(null != var28.field_2930) {
-               var28.field_2926 = var2.method_130(-1328623357) * -303334999;
+               var28.field_2926 = var2.method_130() * -303334999;
             }
 
             if(var28.field_2921 != null) {
-               var28.field_2924 = var2.method_130(-1610787912) * -1926238117;
+               var28.field_2924 = var2.method_130() * -1926238117;
             }
 
             if(var28.field_2920 * -1176756579 > 0) {
-               var28.field_2925 = var2.method_130(-1322191512) * -766722877;
+               var28.field_2925 = var2.method_130() * -766722877;
             }
          }
 
          for(var27 = 0; var27 < var12; ++var27) {
-            var40[var27].field_2922 = var2.method_130(-1383590443) * -106685089;
+            var40[var27].field_2922 = var2.method_130() * -106685089;
          }
 
          for(var27 = 0; var27 < var12; ++var27) {
             var28 = var40[var27];
             if(-75268449 * var28.field_2922 > 0) {
-               var28.field_2927 = var2.method_130(402805646) * -1647703353;
+               var28.field_2927 = var2.method_130() * -1647703353;
             }
          }
 
          for(var27 = 0; var27 < var12; ++var27) {
             var28 = var40[var27];
             if(1263113975 * var28.field_2927 > 0) {
-               var28.field_2928 = var2.method_130(1478755546) * -681495535;
+               var28.field_2928 = var2.method_130() * -681495535;
             }
          }
 
       } catch (RuntimeException var38) {
-         throw class_223.method_4281(var38, "in.<init>(" + ')');
+         throw class_223.method_4281(var38);
       }
    }
 

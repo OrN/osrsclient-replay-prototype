@@ -98,7 +98,7 @@ public class class_135 {
 
          return new String(var3);
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "ao.l(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
@@ -173,7 +173,7 @@ public class class_135 {
             }
          }
 
-         class_37 var9 = class_71.method_1047(var4, 1407289296);
+         class_37 var9 = class_71.method_1047(var4);
          if(null != var9) {
             if(var2 >= -16163958) {
                return;
@@ -192,12 +192,12 @@ public class class_135 {
          }
 
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "ao.kx(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
    // $FF: renamed from: r (int, cf, boolean, int) int
-   static int method_2944(int var0, class_90 var1, boolean var2, int var3) {
+   static int method_2944(int var0, boolean var2, int var3) {
       try {
          class_37 var4;
          if(var0 >= 2000) {
@@ -206,7 +206,7 @@ public class class_135 {
             }
 
             var0 -= 1000;
-            var4 = class_71.method_1047(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885], 401041671);
+            var4 = class_71.method_1047(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
          } else {
             class_37 var10000;
             if(var2) {
@@ -311,28 +311,28 @@ public class class_135 {
 
          return 1;
       } catch (RuntimeException var8) {
-         throw class_223.method_4281(var8, "ao.r(" + ')');
+         throw class_223.method_4281(var8);
       }
    }
 
    // $FF: renamed from: aj (int, short) int
-   static int method_2945(int var0, short var1) {
+   static int method_2945(int var0) {
       try {
          return (int)Math.pow(2.0D, (double)(7.0F + (float)var0 / 256.0F));
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ao.aj(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: j (int) void
-   static void method_2946(int var0) {
+   static void method_2946() {
       try {
          class_197.field_2338.clear();
          class_197.field_2334.method_6596();
          class_197.field_2336.method_5807();
          class_197.field_2337 = 0;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ao.j(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -409,7 +409,7 @@ public class class_135 {
 
          return var1;
       } catch (RuntimeException var11) {
-         throw class_223.method_4281(var11, "ao.az(" + ')');
+         throw class_223.method_4281(var11);
       }
    }
 
@@ -459,7 +459,7 @@ public class class_135 {
 
          return new String(var4, 0, var5);
       } catch (RuntimeException var9) {
-         throw class_223.method_4281(var9, "ao.j(" + ')');
+         throw class_223.method_4281(var9);
       }
    }
 
@@ -488,7 +488,7 @@ public class class_135 {
 
          return 10000;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ao.fc(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -506,7 +506,7 @@ public class class_135 {
             var6 = var7;
          } else {
             String var8 = String.valueOf(var4);
-            int var9 = class_189.field_2275.method_5399(var8, -1476545611);
+            int var9 = class_189.field_2275.method_5399(var8);
             if(var9 == -1) {
                if(var3 >= 1) {
                   throw new IllegalStateException();
@@ -565,7 +565,7 @@ public class class_135 {
                var16 = var17;
             } else {
                String var11 = String.valueOf(var15);
-               int var12 = class_189.field_2275.method_5399(var11, -1543379294);
+               int var12 = class_189.field_2275.method_5399(var11);
                if(var12 == -1) {
                   if(var3 >= 1) {
                      throw new IllegalStateException();
@@ -613,7 +613,7 @@ public class class_135 {
             }
          }
       } catch (RuntimeException var14) {
-         throw class_223.method_4281(var14, "ao.n(" + ')');
+         throw class_223.method_4281(var14);
       }
    }
 }

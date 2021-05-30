@@ -195,7 +195,7 @@ public class class_286 {
                            return;
                         }
 
-                        client.field_1475[var0].method_4608(var2, var3, -118708245);
+                        client.field_1475[var0].method_4608(var2, var3);
                      }
                   }
                }
@@ -222,7 +222,7 @@ public class class_286 {
          }
 
       } catch (RuntimeException var15) {
-         throw class_223.method_4281(var15, "is.hd(" + ')');
+         throw class_223.method_4281(var15);
       }
    }
 
@@ -292,7 +292,7 @@ public class class_286 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "is.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 

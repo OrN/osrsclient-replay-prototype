@@ -35,7 +35,7 @@ public class class_180 {
          this.field_2234 = var10001;
          this.method_3816(var1, -1275623765);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "x.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -67,7 +67,7 @@ public class class_180 {
 
          throw new RuntimeException("");
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "x.n(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -86,10 +86,10 @@ public class class_180 {
 
    // $FF: renamed from: f (nd) void
    void method_3815(class_28 var1) {
-      this.field_2233 = var1.method_136(-905344249) * -195396748607488393L;
-      this.field_2231 = var1.method_136(1357639512) * -7853368797710486943L;
+      this.field_2233 = var1.method_136() * -195396748607488393L;
+      this.field_2231 = var1.method_136() * -7853368797710486943L;
 
-      for(int var2 = var1.method_130(1352282261); 0 != var2; var2 = var1.method_130(807660986)) {
+      for(int var2 = var1.method_130(); 0 != var2; var2 = var1.method_130()) {
          Object var3;
          if(1 == var2) {
             class_53 var10000 = new class_53(this);
@@ -121,10 +121,10 @@ public class class_180 {
    // $FF: renamed from: v (nd, int) void
    void method_3816(class_28 var1, int var2) {
       try {
-         this.field_2233 = var1.method_136(732361460) * -195396748607488393L;
-         this.field_2231 = var1.method_136(-1140775925) * -7853368797710486943L;
+         this.field_2233 = var1.method_136() * -195396748607488393L;
+         this.field_2231 = var1.method_136() * -7853368797710486943L;
 
-         for(int var3 = var1.method_130(524213772); 0 != var3; var3 = var1.method_130(-1194256044)) {
+         for(int var3 = var1.method_130(); 0 != var3; var3 = var1.method_130()) {
             if(var2 == 1798909345) {
                throw new IllegalStateException();
             }
@@ -168,16 +168,16 @@ public class class_180 {
          }
 
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "x.v(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
    // $FF: renamed from: p (nd) void
    void method_3817(class_28 var1) {
-      this.field_2233 = var1.method_136(1365315955) * -195396748607488393L;
-      this.field_2231 = var1.method_136(1251624342) * -7853368797710486943L;
+      this.field_2233 = var1.method_136() * -195396748607488393L;
+      this.field_2231 = var1.method_136() * -7853368797710486943L;
 
-      for(int var2 = var1.method_130(11109013); 0 != var2; var2 = var1.method_130(277572493)) {
+      for(int var2 = var1.method_130(); 0 != var2; var2 = var1.method_130()) {
          Object var3;
          if(1 == var2) {
             class_53 var10000 = new class_53(this);
@@ -208,10 +208,10 @@ public class class_180 {
 
    // $FF: renamed from: y (nd) void
    void method_3818(class_28 var1) {
-      this.field_2233 = var1.method_136(1200374915) * -195396748607488393L;
-      this.field_2231 = var1.method_136(-209752796) * -7853368797710486943L;
+      this.field_2233 = var1.method_136() * -195396748607488393L;
+      this.field_2231 = var1.method_136() * -7853368797710486943L;
 
-      for(int var2 = var1.method_130(-292545383); 0 != var2; var2 = var1.method_130(-171285393)) {
+      for(int var2 = var1.method_130(); 0 != var2; var2 = var1.method_130()) {
          Object var3;
          if(1 == var2) {
             class_53 var10000 = new class_53(this);
@@ -254,11 +254,11 @@ public class class_180 {
    }
 
    // $FF: renamed from: h (bh, int) void
-   public static final void method_3820(class_3 var0, int var1) {
+   public static final void method_3820(class_3 var0) {
       try {
          class_126.field_1372 = var0;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "x.h(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 }

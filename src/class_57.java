@@ -78,7 +78,7 @@ public class class_57 extends class_27 {
          var0.method_5383(var1, var2, (byte)38);
          return null;
       } else {
-         byte[] var3 = var0.method_5381(var1, var2, -26460885);
+         byte[] var3 = var0.method_5381(var1, var2);
          if(var3 == null) {
             return null;
          } else {
@@ -222,7 +222,7 @@ public class class_57 extends class_27 {
    // $FF: renamed from: ad (jv) boolean
    static boolean method_597(class_306 var0) {
       if(!field_442) {
-         byte[] var1 = var0.method_5381(0, 0, -26460885);
+         byte[] var1 = var0.method_5381(0, 0);
          if(var1 == null) {
             return false;
          }
@@ -238,16 +238,16 @@ public class class_57 extends class_27 {
    void method_598(byte[] var1) {
       class_28 var10000 = new class_28(var1);
       class_28 var2 = var10000;
-      this.field_424 = var2.method_135((byte)-102);
-      this.field_425 = var2.method_135((byte)-110);
-      this.field_426 = var2.method_135((byte)-107);
-      this.field_427 = var2.method_135((byte)-47);
+      this.field_424 = var2.method_135();
+      this.field_425 = var2.method_135();
+      this.field_426 = var2.method_135();
+      this.field_427 = var2.method_135();
       if(this.field_427 < 0) {
          this.field_427 = ~this.field_427;
          this.field_428 = true;
       }
 
-      int var3 = var2.method_135((byte)-55);
+      int var3 = var2.method_135();
       this.field_450 = new byte[var3][];
 
       for(int var4 = 0; var4 < var3; ++var4) {
@@ -255,7 +255,7 @@ public class class_57 extends class_27 {
 
          int var6;
          do {
-            var6 = var2.method_130(521275496);
+            var6 = var2.method_130();
             var5 += var6;
          } while(var6 >= 255);
 
@@ -635,7 +635,7 @@ public class class_57 extends class_27 {
          var0.method_5383(var1, var2, (byte)32);
          return null;
       } else {
-         byte[] var3 = var0.method_5381(var1, var2, -26460885);
+         byte[] var3 = var0.method_5381(var1, var2);
          if(var3 == null) {
             return null;
          } else {
@@ -858,7 +858,7 @@ public class class_57 extends class_27 {
    // $FF: renamed from: b (jv) boolean
    static boolean method_614(class_306 var0) {
       if(!field_442) {
-         byte[] var1 = var0.method_5381(0, 0, -26460885);
+         byte[] var1 = var0.method_5381(0, 0);
          if(var1 == null) {
             return false;
          }
@@ -874,16 +874,16 @@ public class class_57 extends class_27 {
    void method_615(byte[] var1) {
       class_28 var10000 = new class_28(var1);
       class_28 var2 = var10000;
-      this.field_424 = var2.method_135((byte)-94);
-      this.field_425 = var2.method_135((byte)-83);
-      this.field_426 = var2.method_135((byte)-53);
-      this.field_427 = var2.method_135((byte)-89);
+      this.field_424 = var2.method_135();
+      this.field_425 = var2.method_135();
+      this.field_426 = var2.method_135();
+      this.field_427 = var2.method_135();
       if(this.field_427 < 0) {
          this.field_427 = ~this.field_427;
          this.field_428 = true;
       }
 
-      int var3 = var2.method_135((byte)-18);
+      int var3 = var2.method_135();
       this.field_450 = new byte[var3][];
 
       for(int var4 = 0; var4 < var3; ++var4) {
@@ -891,7 +891,7 @@ public class class_57 extends class_27 {
 
          int var6;
          do {
-            var6 = var2.method_130(-1882205474);
+            var6 = var2.method_130();
             var5 += var6;
          } while(var6 >= 255);
 
@@ -906,16 +906,16 @@ public class class_57 extends class_27 {
    void method_616(byte[] var1) {
       class_28 var10000 = new class_28(var1);
       class_28 var2 = var10000;
-      this.field_424 = var2.method_135((byte)-71);
-      this.field_425 = var2.method_135((byte)-31);
-      this.field_426 = var2.method_135((byte)-28);
-      this.field_427 = var2.method_135((byte)-115);
+      this.field_424 = var2.method_135();
+      this.field_425 = var2.method_135();
+      this.field_426 = var2.method_135();
+      this.field_427 = var2.method_135();
       if(this.field_427 < 0) {
          this.field_427 = ~this.field_427;
          this.field_428 = true;
       }
 
-      int var3 = var2.method_135((byte)-57);
+      int var3 = var2.method_135();
       this.field_450 = new byte[var3][];
 
       for(int var4 = 0; var4 < var3; ++var4) {
@@ -923,7 +923,7 @@ public class class_57 extends class_27 {
 
          int var6;
          do {
-            var6 = var2.method_130(1124619704);
+            var6 = var2.method_130();
             var5 += var6;
          } while(var6 >= -1811845834);
 
@@ -938,16 +938,16 @@ public class class_57 extends class_27 {
    void method_617(byte[] var1) {
       class_28 var10000 = new class_28(var1);
       class_28 var2 = var10000;
-      this.field_424 = var2.method_135((byte)-70);
-      this.field_425 = var2.method_135((byte)-57);
-      this.field_426 = var2.method_135((byte)-114);
-      this.field_427 = var2.method_135((byte)-124);
+      this.field_424 = var2.method_135();
+      this.field_425 = var2.method_135();
+      this.field_426 = var2.method_135();
+      this.field_427 = var2.method_135();
       if(this.field_427 < 0) {
          this.field_427 = ~this.field_427;
          this.field_428 = true;
       }
 
-      int var3 = var2.method_135((byte)-49);
+      int var3 = var2.method_135();
       this.field_450 = new byte[var3][];
 
       for(int var4 = 0; var4 < var3; ++var4) {
@@ -955,7 +955,7 @@ public class class_57 extends class_27 {
 
          int var6;
          do {
-            var6 = var2.method_130(-1249072993);
+            var6 = var2.method_130();
             var5 += var6;
          } while(var6 >= 255);
 
@@ -1465,16 +1465,16 @@ public class class_57 extends class_27 {
    void method_621(byte[] var1) {
       class_28 var10000 = new class_28(var1);
       class_28 var2 = var10000;
-      this.field_424 = var2.method_135((byte)-123);
-      this.field_425 = var2.method_135((byte)-71);
-      this.field_426 = var2.method_135((byte)-113);
-      this.field_427 = var2.method_135((byte)-20);
+      this.field_424 = var2.method_135();
+      this.field_425 = var2.method_135();
+      this.field_426 = var2.method_135();
+      this.field_427 = var2.method_135();
       if(this.field_427 < 0) {
          this.field_427 = ~this.field_427;
          this.field_428 = true;
       }
 
-      int var3 = var2.method_135((byte)-4);
+      int var3 = var2.method_135();
       this.field_450 = new byte[var3][];
 
       for(int var4 = 0; var4 < var3; ++var4) {
@@ -1482,7 +1482,7 @@ public class class_57 extends class_27 {
 
          int var6;
          do {
-            var6 = var2.method_130(1455623965);
+            var6 = var2.method_130();
             var5 += var6;
          } while(var6 >= 255);
 
@@ -1630,7 +1630,7 @@ public class class_57 extends class_27 {
    // $FF: renamed from: ab (jv) boolean
    static boolean method_624(class_306 var0) {
       if(!field_442) {
-         byte[] var1 = var0.method_5381(0, 0, -26460885);
+         byte[] var1 = var0.method_5381(0, 0);
          if(var1 == null) {
             return false;
          }
@@ -1645,7 +1645,7 @@ public class class_57 extends class_27 {
    // $FF: renamed from: al (jv) boolean
    static boolean method_625(class_306 var0) {
       if(!field_442) {
-         byte[] var1 = var0.method_5381(0, 0, -26460885);
+         byte[] var1 = var0.method_5381(0, 0);
          if(var1 == null) {
             return false;
          }
@@ -1785,7 +1785,7 @@ public class class_57 extends class_27 {
          var0.method_5383(var1, var2, (byte)8);
          return null;
       } else {
-         byte[] var3 = var0.method_5381(var1, var2, -26460885);
+         byte[] var3 = var0.method_5381(var1, var2);
          if(var3 == null) {
             return null;
          } else {

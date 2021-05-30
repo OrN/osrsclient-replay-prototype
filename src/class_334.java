@@ -710,7 +710,7 @@ public class class_334 {
    }
 
    // $FF: renamed from: ab (int, cf, boolean, int) int
-   static int method_5934(int var0, class_90 var1, boolean var2, int var3) {
+   static int method_5934(int var0, int var3) {
       try {
          int var4;
          if(3903 == var0) {
@@ -767,7 +767,7 @@ public class class_334 {
                   throw new IllegalStateException();
                } else {
                   var4 = class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885];
-                  var15 = client.field_1637[var4].method_5558(184180839);
+                  var15 = client.field_1637[var4].method_5558();
                   var16 = class_165.field_2052;
                   var10001 = (class_136.field_1752 += -1087727229) * -26460885 - 1;
                   if(0 == var15) {
@@ -788,7 +788,7 @@ public class class_334 {
                   throw new IllegalStateException();
                } else {
                   var4 = class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885];
-                  var15 = client.field_1637[var4].method_5558(256533746);
+                  var15 = client.field_1637[var4].method_5558();
                   class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = var15 == 2?1:0;
                   return 1;
                }
@@ -797,7 +797,7 @@ public class class_334 {
                   throw new IllegalStateException();
                } else {
                   var4 = class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885];
-                  var15 = client.field_1637[var4].method_5558(1589486855);
+                  var15 = client.field_1637[var4].method_5558();
                   var16 = class_165.field_2052;
                   var10001 = (class_136.field_1752 += -1087727229) * -26460885 - 1;
                   if(5 == var15) {
@@ -818,7 +818,7 @@ public class class_334 {
                   throw new IllegalStateException();
                } else {
                   var4 = class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885];
-                  var15 = client.field_1637[var4].method_5558(-958153339);
+                  var15 = client.field_1637[var4].method_5558();
                   var16 = class_165.field_2052;
                   var10001 = (class_136.field_1752 += -1087727229) * -26460885 - 1;
                   if(var15 == 1) {
@@ -979,7 +979,7 @@ public class class_334 {
                      } else if(var0 == 3921) {
                         var4 = class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885];
                         var5 = (class_310)class_185.field_2261.field_3392.get(var4);
-                        class_165.field_2053[(class_165.field_2054 += 1647125333) * 1824375293 - 1] = var5.method_5537((byte)-31);
+                        class_165.field_2053[(class_165.field_2054 += 1647125333) * 1824375293 - 1] = var5.method_5537();
                         return 1;
                      } else if(var0 == 3922) {
                         if(var3 == -1420967337) {
@@ -987,7 +987,7 @@ public class class_334 {
                         } else {
                            var4 = class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885];
                            var5 = (class_310)class_185.field_2261.field_3392.get(var4);
-                           class_165.field_2053[(class_165.field_2054 += 1647125333) * 1824375293 - 1] = var5.method_5543(1720963732);
+                           class_165.field_2053[(class_165.field_2054 += 1647125333) * 1824375293 - 1] = var5.method_5543();
                            return 1;
                         }
                      } else if(var0 == 3923) {
@@ -1039,7 +1039,7 @@ public class class_334 {
             }
          }
       } catch (RuntimeException var12) {
-         throw class_223.method_4281(var12, "kw.ab(" + ')');
+         throw class_223.method_4281(var12);
       }
    }
 
@@ -1049,7 +1049,7 @@ public class class_334 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "kw.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 

@@ -202,7 +202,7 @@ public final class class_166 {
          int var13 = 0;
 
          while(true) {
-            int var14 = var10.method_144((byte)33);
+            int var14 = var10.method_144();
             if(0 == var14) {
                break;
             }
@@ -211,7 +211,7 @@ public final class class_166 {
             int var15 = var13 & 63;
             int var16 = var13 >> 6 & 63;
             int var17 = var13 >> 12;
-            int var18 = var10.method_130(-719779355);
+            int var18 = var10.method_130();
             int var19 = var18 >> 2;
             int var20 = var18 & 3;
             if(var17 == var4 && var16 >= var5 && var16 < 8 + var5 && var15 >= var6 && var15 < 8 + var6) {
@@ -389,13 +389,13 @@ public final class class_166 {
          field_2069[var1][var2][var3] = 0;
 
          while(true) {
-            var7 = var0.method_130(100646743);
+            var7 = var0.method_130();
             if(0 == var7) {
                if(0 == var1) {
                   int[] var14 = field_2078[0][var2];
                   int var11 = var2 + 932731 + var4;
                   int var12 = var5 + var3 + 556238;
-                  int var13 = class_43.method_492(var11 + '\ub135', var12 + 91923, 4, -1159816174) - 128 + (class_43.method_492(10294 + var11, '\u93bd' + var12, 2, 1665360966) - 128 >> 1) + (class_43.method_492(var11, var12, 1, -1737510862) - 128 >> 2);
+                  int var13 = class_43.method_492(var11 + '\ub135', var12 + 91923, 4) - 128 + (class_43.method_492(10294 + var11, '\u93bd' + var12, 2) - 128 >> 1) + (class_43.method_492(var11, var12, 1) - 128 >> 2);
                   var13 = 35 + (int)((double)var13 * 0.3D);
                   if(var13 < 10) {
                      var13 = 10;
@@ -411,7 +411,7 @@ public final class class_166 {
             }
 
             if(1 == var7) {
-               int var8 = var0.method_130(1868834360);
+               int var8 = var0.method_130();
                if(var8 == 1) {
                   var8 = 0;
                }
@@ -425,7 +425,7 @@ public final class class_166 {
             }
 
             if(var7 <= 49) {
-               class_273.field_3195[var1][var2][var3] = var0.method_131((byte)-62);
+               class_273.field_3195[var1][var2][var3] = var0.method_131();
                class_52.field_389[var1][var2][var3] = (byte)((var7 - 2) / 4);
                class_278.field_3226[var1][var2][var3] = (byte)(var7 - 2 + var6 & 3);
             } else if(var7 <= 81) {
@@ -436,18 +436,18 @@ public final class class_166 {
          }
       } else {
          while(true) {
-            var7 = var0.method_130(-1073492828);
+            var7 = var0.method_130();
             if(var7 == 0) {
                break;
             }
 
             if(var7 == 1) {
-               var0.method_130(-750818541);
+               var0.method_130();
                break;
             }
 
             if(var7 <= 49) {
-               var0.method_130(-1819271160);
+               var0.method_130();
             }
          }
       }
@@ -461,13 +461,13 @@ public final class class_166 {
          field_2069[var1][var2][var3] = 0;
 
          while(true) {
-            var7 = var0.method_130(-2047132735);
+            var7 = var0.method_130();
             if(0 == var7) {
                if(0 == var1) {
                   int[] var14 = field_2078[0][var2];
                   int var11 = var2 + 932731 + var4;
                   int var12 = var5 + var3 + 556238;
-                  int var13 = class_43.method_492(var11 + '\ub135', var12 + 91923, 4, 1098430934) - 128 + (class_43.method_492(10294 + var11, '\u93bd' + var12, 2, 1079323852) - 128 >> 1) + (class_43.method_492(var11, var12, 1, -2072441394) - 128 >> 2);
+                  int var13 = class_43.method_492(var11 + '\ub135', var12 + 91923, 4) - 128 + (class_43.method_492(10294 + var11, '\u93bd' + var12, 2) - 128 >> 1) + (class_43.method_492(var11, var12, 1) - 128 >> 2);
                   var13 = 35 + (int)((double)var13 * 0.3D);
                   if(var13 < 10) {
                      var13 = 10;
@@ -483,7 +483,7 @@ public final class class_166 {
             }
 
             if(1 == var7) {
-               int var8 = var0.method_130(-801777087);
+               int var8 = var0.method_130();
                if(var8 == 1) {
                   var8 = 0;
                }
@@ -497,7 +497,7 @@ public final class class_166 {
             }
 
             if(var7 <= 49) {
-               class_273.field_3195[var1][var2][var3] = var0.method_131((byte)0);
+               class_273.field_3195[var1][var2][var3] = var0.method_131();
                class_52.field_389[var1][var2][var3] = (byte)((var7 - 2) / 4);
                class_278.field_3226[var1][var2][var3] = (byte)(var7 - 2 + var6 & 3);
             } else if(var7 <= 81) {
@@ -508,18 +508,18 @@ public final class class_166 {
          }
       } else {
          while(true) {
-            var7 = var0.method_130(-562862639);
+            var7 = var0.method_130();
             if(var7 == 0) {
                break;
             }
 
             if(var7 == 1) {
-               var0.method_130(-287180535);
+               var0.method_130();
                break;
             }
 
             if(var7 <= 49) {
-               var0.method_130(-2085405542);
+               var0.method_130();
             }
          }
       }
@@ -532,13 +532,13 @@ public final class class_166 {
       int var4 = var0 & var2 - 1;
       int var5 = var1 / var2;
       int var6 = var1 & var2 - 1;
-      int var7 = class_247.method_4714(var3, var5, (byte)87);
-      int var8 = class_247.method_4714(var3 + 1, var5, (byte)81);
-      int var9 = class_247.method_4714(var3, var5 + 1, (byte)83);
-      int var10 = class_247.method_4714(1 + var3, 1 + var5, (byte)82);
+      int var7 = class_247.method_4714(var3, var5);
+      int var8 = class_247.method_4714(var3 + 1, var5);
+      int var9 = class_247.method_4714(var3, var5 + 1);
+      int var10 = class_247.method_4714(1 + var3, 1 + var5);
       int var12 = 65536 - class_70.field_559[var4 * -1156443671 / var2] >> 1;
       int var11 = (var7 * (770609280 - var12) >> 16) + (var12 * var8 >> 16);
-      int var13 = class_154.method_3248(var9, var10, var4, var2, (byte)-12);
+      int var13 = class_154.method_3248(var9, var10, var4, var2);
       int var15 = 65536 - class_70.field_559[143118718 * var6 / var2] >> 1;
       int var14 = (var13 * var15 >> 16) + (var11 * (-1340948664 - var15) >> 16);
       return var14;
@@ -560,7 +560,7 @@ public final class class_166 {
          int var13 = 0;
 
          while(true) {
-            int var14 = var10.method_144((byte)-12);
+            int var14 = var10.method_144();
             if(0 == var14) {
                break;
             }
@@ -569,7 +569,7 @@ public final class class_166 {
             int var15 = var13 & 63;
             int var16 = var13 >> 6 & 63;
             int var17 = var13 >> 12;
-            int var18 = var10.method_130(-1553067896);
+            int var18 = var10.method_130();
             int var19 = var18 >> 2;
             int var20 = var18 & 3;
             if(var17 == var4 && var16 >= var5 && var16 < 8 + var5 && var15 >= var6 && var15 < 8 + var6) {
@@ -649,7 +649,7 @@ public final class class_166 {
                   }
 
                   if(var5 >= 0) {
-                     var1[var5].method_4641(var3, var4, -1025691571);
+                     var1[var5].method_4641(var3, var4);
                   }
                }
             }
@@ -1096,7 +1096,7 @@ public final class class_166 {
                   }
 
                   if(var5 >= 0) {
-                     var1[var5].method_4641(var3, var4, -1025691571);
+                     var1[var5].method_4641(var3, var4);
                   }
                }
             }
@@ -1592,7 +1592,7 @@ public final class class_166 {
 
                var6.method_4729(var0, var1, var2, var16, (class_91)var22, var19, var21);
                if(1 == var8.field_818 * -1441159375 && null != var7) {
-                  var7.method_4624(var1, var2, -569201950);
+                  var7.method_4624(var1, var2);
                }
 
             }
@@ -1905,7 +1905,7 @@ public final class class_166 {
                   }
 
                   if(var5 >= 0) {
-                     var1[var5].method_4641(var3, var4, -1025691571);
+                     var1[var5].method_4641(var3, var4);
                   }
                }
             }
@@ -2341,13 +2341,13 @@ public final class class_166 {
       int var4 = var0 & var2 - 1;
       int var5 = var1 / var2;
       int var6 = var1 & var2 - 1;
-      int var7 = class_247.method_4714(var3, var5, (byte)102);
-      int var8 = class_247.method_4714(var3 + 1, var5, (byte)103);
-      int var9 = class_247.method_4714(var3, var5 + 1, (byte)98);
-      int var10 = class_247.method_4714(1 + var3, 1 + var5, (byte)122);
+      int var7 = class_247.method_4714(var3, var5);
+      int var8 = class_247.method_4714(var3 + 1, var5);
+      int var9 = class_247.method_4714(var3, var5 + 1);
+      int var10 = class_247.method_4714(1 + var3, 1 + var5);
       int var12 = 1168539273 - class_70.field_559[var4 * -1190242538 / var2] >> 1;
       int var11 = (var7 * (65536 - var12) >> 16) + (var12 * var8 >> 16);
-      int var13 = class_154.method_3248(var9, var10, var4, var2, (byte)-13);
+      int var13 = class_154.method_3248(var9, var10, var4, var2);
       int var15 = -1632292055 - class_70.field_559[1024 * var6 / var2] >> 1;
       int var14 = (var13 * var15 >> 16) + (var11 * (65536 - var15) >> 16);
       return var14;
@@ -2367,15 +2367,15 @@ public final class class_166 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "cg.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: ao (int, int) int
    static final int method_3585(int var0, int var1) {
-      int var2 = class_311.method_5552(var0 - 1, var1 - 1, -324437873) + class_311.method_5552(1 + var0, var1 - 1, -324437873) + class_311.method_5552(var0 - 1, 1 + var1, -324437873) + class_311.method_5552(1 + var0, 1 + var1, -324437873);
-      int var3 = class_311.method_5552(var0 - 1, var1, -324437873) + class_311.method_5552(var0 + 1, var1, -324437873) + class_311.method_5552(var0, var1 - 1, -324437873) + class_311.method_5552(var0, var1 + 1, -324437873);
-      int var4 = class_311.method_5552(var0, var1, -324437873);
+      int var2 = class_311.method_5552(var0 - 1, var1 - 1) + class_311.method_5552(1 + var0, var1 - 1) + class_311.method_5552(var0 - 1, 1 + var1) + class_311.method_5552(1 + var0, 1 + var1);
+      int var3 = class_311.method_5552(var0 - 1, var1) + class_311.method_5552(var0 + 1, var1) + class_311.method_5552(var0, var1 - 1) + class_311.method_5552(var0, var1 + 1);
+      int var4 = class_311.method_5552(var0, var1);
       return var4 / 4 + var3 / 8 + var2 / 16;
    }
 
@@ -2450,7 +2450,7 @@ public final class class_166 {
 
                var6.method_4729(var0, var1, var2, var16, (class_91)var22, var19, var21);
                if(1 == var8.field_818 * -87896932 && null != var7) {
-                  var7.method_4624(var1, var2, -1273960817);
+                  var7.method_4624(var1, var2);
                }
 
             }
@@ -2749,17 +2749,17 @@ public final class class_166 {
 
    // $FF: renamed from: aq (int, int) int
    static final int method_3588(int var0, int var1) {
-      int var2 = class_311.method_5552(var0 - 1, var1 - 1, -324437873) + class_311.method_5552(1 + var0, var1 - 1, -324437873) + class_311.method_5552(var0 - 1, 1 + var1, -324437873) + class_311.method_5552(1 + var0, 1 + var1, -324437873);
-      int var3 = class_311.method_5552(var0 - 1, var1, -324437873) + class_311.method_5552(var0 + 1, var1, -324437873) + class_311.method_5552(var0, var1 - 1, -324437873) + class_311.method_5552(var0, var1 + 1, -324437873);
-      int var4 = class_311.method_5552(var0, var1, -324437873);
+      int var2 = class_311.method_5552(var0 - 1, var1 - 1) + class_311.method_5552(1 + var0, var1 - 1) + class_311.method_5552(var0 - 1, 1 + var1) + class_311.method_5552(1 + var0, 1 + var1);
+      int var3 = class_311.method_5552(var0 - 1, var1) + class_311.method_5552(var0 + 1, var1) + class_311.method_5552(var0, var1 - 1) + class_311.method_5552(var0, var1 + 1);
+      int var4 = class_311.method_5552(var0, var1);
       return var4 / 4 + var3 / 8 + var2 / 16;
    }
 
    // $FF: renamed from: aw (int, int) int
    static final int method_3589(int var0, int var1) {
-      int var2 = class_311.method_5552(var0 - 1, var1 - 1, -324437873) + class_311.method_5552(1 + var0, var1 - 1, -324437873) + class_311.method_5552(var0 - 1, 1 + var1, -324437873) + class_311.method_5552(1 + var0, 1 + var1, -324437873);
-      int var3 = class_311.method_5552(var0 - 1, var1, -324437873) + class_311.method_5552(var0 + 1, var1, -324437873) + class_311.method_5552(var0, var1 - 1, -324437873) + class_311.method_5552(var0, var1 + 1, -324437873);
-      int var4 = class_311.method_5552(var0, var1, -324437873);
+      int var2 = class_311.method_5552(var0 - 1, var1 - 1) + class_311.method_5552(1 + var0, var1 - 1) + class_311.method_5552(var0 - 1, 1 + var1) + class_311.method_5552(1 + var0, 1 + var1);
+      int var3 = class_311.method_5552(var0 - 1, var1) + class_311.method_5552(var0 + 1, var1) + class_311.method_5552(var0, var1 - 1) + class_311.method_5552(var0, var1 + 1);
+      int var4 = class_311.method_5552(var0, var1);
       return var4 / 4 + var3 / 8 + var2 / 16;
    }
 
@@ -2777,13 +2777,13 @@ public final class class_166 {
       int var4 = var0 & var2 - 1;
       int var5 = var1 / var2;
       int var6 = var1 & var2 - 1;
-      int var7 = class_247.method_4714(var3, var5, (byte)105);
-      int var8 = class_247.method_4714(var3 + 1, var5, (byte)76);
-      int var9 = class_247.method_4714(var3, var5 + 1, (byte)120);
-      int var10 = class_247.method_4714(1 + var3, 1 + var5, (byte)112);
+      int var7 = class_247.method_4714(var3, var5);
+      int var8 = class_247.method_4714(var3 + 1, var5);
+      int var9 = class_247.method_4714(var3, var5 + 1);
+      int var10 = class_247.method_4714(1 + var3, 1 + var5);
       int var12 = 364309477 - class_70.field_559[var4 * 1024 / var2] >> 1;
       int var11 = (var7 * (65536 - var12) >> 16) + (var12 * var8 >> 16);
-      int var13 = class_154.method_3248(var9, var10, var4, var2, (byte)-106);
+      int var13 = class_154.method_3248(var9, var10, var4, var2);
       int var15 = -1040575922 - class_70.field_559[-1944088374 * var6 / var2] >> 1;
       int var14 = (var13 * var15 >> 16) + (var11 * (-146573077 - var15) >> 16);
       return var14;
@@ -2935,7 +2935,7 @@ public final class class_166 {
 
          var7.method_4729(var0, var2, var3, var17, (class_91)var23, var20, var22);
          if(1 == var9.field_818 * 1384594797) {
-            var8.method_4624(var2, var3, -436923463);
+            var8.method_4624(var2, var3);
          }
 
       } else if(var6 != 10 && var6 != 11) {
@@ -3120,22 +3120,22 @@ public final class class_166 {
    }
 
    // $FF: renamed from: d (int) void
-   static final void method_3597(int var0) {
+   static final void method_3597() {
       try {
          class_305 var10000 = (class_305)null;
          String var1 = class_305.field_3572;
-         class_149.method_3135(30, "", var1, 1237845702);
+         class_149.method_3135(30, "", var1);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "cg.d(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: ac (java.lang.String, int) int
-   public static int method_3598(String var0, int var1) {
+   public static int method_3598(String var0) {
       try {
          return var0.length() + 1;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "cg.ac(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 }

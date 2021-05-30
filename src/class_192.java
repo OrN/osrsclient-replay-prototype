@@ -139,7 +139,7 @@ public class class_192 extends class_191 {
          this.field_2296 = (this.field_2296 * 543039723 & 255) * -359430205;
          return var16;
       } catch (RuntimeException var14) {
-         throw class_223.method_4281(var14, "ek.n(" + ')');
+         throw class_223.method_4281(var14);
       }
    }
 
@@ -158,7 +158,7 @@ public class class_192 extends class_191 {
          }
 
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ek.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -257,12 +257,12 @@ public class class_192 extends class_191 {
          }
 
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ek.v(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: e (int) void
-   public static void method_3958(int var0) {
+   public static void method_3958() {
       try {
          class_223.field_2529 = null;
          class_284.field_3260 = null;
@@ -271,16 +271,16 @@ public class class_192 extends class_191 {
          field_2300 = null;
          class_403.field_4279 = (byte[][])null;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ek.e(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: is (int) int
-   static final int method_3959(int var0) {
+   static final int method_3959() {
       try {
          return client.field_1554 * 673512273 - 1;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ek.is(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -363,7 +363,7 @@ public class class_192 extends class_191 {
                   var25 += class_229.field_2573.method_5488((byte)27) * 1 / 100;
                   var25 += class_373.field_4123.method_5488((byte)87) * 1 / 100;
                   var25 += class_54.field_406.method_5488((byte)85) * 1 / 100;
-                  if(class_123.field_1345.method_5487(212573310)) {
+                  if(class_123.field_1345.method_5487()) {
                      if(var0 == 0) {
                         throw new IllegalStateException();
                      }
@@ -391,22 +391,22 @@ public class class_192 extends class_191 {
                      class_177.field_2190 = 1737731022;
                   }
                } else {
-                  class_124.method_2278(class_314.field_3783, "Animations", -1436949198);
-                  class_124.method_2278(class_125.field_1360, "Skeletons", -185144993);
-                  class_124.method_2278(class_137.field_1762, "Sound FX", 856496117);
-                  class_124.method_2278(class_286.field_3275, "Maps", 18860509);
-                  class_124.method_2278(class_194.field_2307, "Music Tracks", -1610335587);
-                  class_124.method_2278(class_148.field_1871, "Models", 1127077735);
-                  class_124.method_2278(class_311.field_3749, "Sprites", -1748948932);
-                  class_124.method_2278(class_221.field_2516, "Music Jingles", 782283581);
-                  class_124.method_2278(class_202.field_2368, "Music Samples", 642221908);
-                  class_124.method_2278(class_341.field_3894, "Music Patches", -670650284);
-                  class_124.method_2278(class_229.field_2573, "World Map", -512560222);
-                  class_124.method_2278(class_373.field_4123, "World Map Geography", 670439845);
-                  class_124.method_2278(class_54.field_406, "World Map Ground", 737408242);
+                  class_124.method_2278(class_314.field_3783, "Animations");
+                  class_124.method_2278(class_125.field_1360, "Skeletons");
+                  class_124.method_2278(class_137.field_1762, "Sound FX");
+                  class_124.method_2278(class_286.field_3275, "Maps");
+                  class_124.method_2278(class_194.field_2307, "Music Tracks");
+                  class_124.method_2278(class_148.field_1871, "Models");
+                  class_124.method_2278(class_311.field_3749, "Sprites");
+                  class_124.method_2278(class_221.field_2516, "Music Jingles");
+                  class_124.method_2278(class_202.field_2368, "Music Samples");
+                  class_124.method_2278(class_341.field_3894, "Music Patches");
+                  class_124.method_2278(class_229.field_2573, "World Map");
+                  class_124.method_2278(class_373.field_4123, "World Map Geography");
+                  class_124.method_2278(class_54.field_406, "World Map Ground");
                   class_360 var47 = new class_360();
                   class_201.field_2360 = var47;
-                  class_201.field_2360.method_6293(class_123.field_1345, (byte)-61);
+                  class_201.field_2360.method_6293(class_123.field_1345);
                   class_177.loadProgressText = class_305.strLoadedUpdateList;
                   class_177.field_2190 = 1737731022;
                   client.field_1444 = 51308507;
@@ -430,14 +430,14 @@ public class class_192 extends class_191 {
             class_139.field_1783 = -1615649818;
             class_106 var43 = new class_106();
             class_106 var27 = var43;
-            var27.method_2038(9, 128, 1570912029);
-            class_362.field_4017 = class_213.method_4188(client.field_1392, 0, 22050, (byte)1);
-            class_362.field_4017.method_2989(var27, (byte)46);
-            class_234.method_4590(class_341.field_3894, class_202.field_2368, class_137.field_1762, var27, -670462193);
-            class_163.field_2034 = class_213.method_4188(client.field_1392, 1, 2048, (byte)1);
+            var27.method_2038(9, 128);
+            class_362.field_4017 = class_213.method_4188(0, 22050, (byte)1);
+            class_362.field_4017.method_2989(var27);
+            class_234.method_4590(class_341.field_3894, class_202.field_2368, class_137.field_1762, var27);
+            class_163.field_2034 = class_213.method_4188(1, 2048, (byte)1);
             class_108 var44 = new class_108();
             class_320.field_3804 = var44;
-            class_163.field_2034.method_2989(class_320.field_3804, (byte)-39);
+            class_163.field_2034.method_2989(class_320.field_3804);
             class_148 var45 = new class_148(22050, class_139.field_1793 * 1631160541);
             class_94.field_1025 = var45;
             class_177.loadProgressText = class_305.strPreparedSoundEngine;
@@ -481,11 +481,11 @@ public class class_192 extends class_191 {
                      var26 = class_157.field_1956;
                      var28 = class_311.field_3749;
                      var4 = 0;
-                     if(var26.method_5403("title.jpg", "", -1619143397)) {
+                     if(var26.method_5403("title.jpg", "")) {
                         ++var4;
                      }
 
-                     if(var28.method_5403("logo", "", -221388640)) {
+                     if(var28.method_5403("logo", "")) {
                         if(var0 == 0) {
                            return;
                         }
@@ -493,7 +493,7 @@ public class class_192 extends class_191 {
                         ++var4;
                      }
 
-                     if(var28.method_5403("logo_deadman_mode", "", -794454625)) {
+                     if(var28.method_5403("logo_deadman_mode", "")) {
                         if(var0 == 0) {
                            return;
                         }
@@ -501,7 +501,7 @@ public class class_192 extends class_191 {
                         ++var4;
                      }
 
-                     if(var28.method_5403("logo_seasonal_mode", "", -1493314573)) {
+                     if(var28.method_5403("logo_seasonal_mode", "")) {
                         if(var0 == 0) {
                            throw new IllegalStateException();
                         }
@@ -509,11 +509,11 @@ public class class_192 extends class_191 {
                         ++var4;
                      }
 
-                     if(var28.method_5403("titlebox", "", -922321857)) {
+                     if(var28.method_5403("titlebox", "")) {
                         ++var4;
                      }
 
-                     if(var28.method_5403("titlebutton", "", -188611812)) {
+                     if(var28.method_5403("titlebutton", "")) {
                         if(var0 == 0) {
                            throw new IllegalStateException();
                         }
@@ -521,11 +521,11 @@ public class class_192 extends class_191 {
                         ++var4;
                      }
 
-                     if(var28.method_5403("runes", "", -368172006)) {
+                     if(var28.method_5403("runes", "")) {
                         ++var4;
                      }
 
-                     if(var28.method_5403("title_mute", "", -1552048772)) {
+                     if(var28.method_5403("title_mute", "")) {
                         if(var0 == 0) {
                            throw new IllegalStateException();
                         }
@@ -533,7 +533,7 @@ public class class_192 extends class_191 {
                         ++var4;
                      }
 
-                     if(var28.method_5403("options_radio_buttons,0", "", -1270842979)) {
+                     if(var28.method_5403("options_radio_buttons,0", "")) {
                         if(var0 == 0) {
                            return;
                         }
@@ -541,7 +541,7 @@ public class class_192 extends class_191 {
                         ++var4;
                      }
 
-                     if(var28.method_5403("options_radio_buttons,2", "", -631798583)) {
+                     if(var28.method_5403("options_radio_buttons,2", "")) {
                         if(var0 == 0) {
                            throw new IllegalStateException();
                         }
@@ -549,7 +549,7 @@ public class class_192 extends class_191 {
                         ++var4;
                      }
 
-                     if(var28.method_5403("options_radio_buttons,4", "", -1911767463)) {
+                     if(var28.method_5403("options_radio_buttons,4", "")) {
                         if(var0 == 0) {
                            return;
                         }
@@ -557,7 +557,7 @@ public class class_192 extends class_191 {
                         ++var4;
                      }
 
-                     if(var28.method_5403("options_radio_buttons,6", "", -2145868979)) {
+                     if(var28.method_5403("options_radio_buttons,6", "")) {
                         if(var0 == 0) {
                            throw new IllegalStateException();
                         }
@@ -565,12 +565,12 @@ public class class_192 extends class_191 {
                         ++var4;
                      }
 
-                     var28.method_5403("sl_back", "", -514048106);
-                     var28.method_5403("sl_flags", "", -1402283960);
-                     var28.method_5403("sl_arrows", "", -1728870883);
-                     var28.method_5403("sl_stars", "", -1585333884);
-                     var28.method_5403("sl_button", "", -1782820345);
-                     var5 = class_206.method_4141(-1943221493);
+                     var28.method_5403("sl_back", "");
+                     var28.method_5403("sl_flags", "");
+                     var28.method_5403("sl_arrows", "");
+                     var28.method_5403("sl_stars", "");
+                     var28.method_5403("sl_button", "");
+                     var5 = class_206.method_4141();
                      if(var4 < var5) {
                         if(var0 != 0) {
                            class_177.loadProgressText = class_305.field_3501 + var4 * 100 / var5 + "%";
@@ -596,8 +596,8 @@ public class class_192 extends class_191 {
                   } else {
                      class_307 var32 = class_123.field_1348;
                      class_209.field_2421 = var32;
-                     class_125.method_2284(class_123.field_1348, -1597980436);
-                     class_175.method_3739(class_123.field_1348, class_148.field_1871, -1209366980);
+                     class_125.method_2284(class_123.field_1348);
+                     class_175.method_3739(class_123.field_1348, class_148.field_1871);
                      var26 = class_123.field_1348;
                      var28 = class_148.field_1871;
                      boolean var30 = client.field_1417;
@@ -608,7 +608,7 @@ public class class_192 extends class_191 {
                      class_307 var6 = class_148.field_1871;
                      class_88.field_890 = var31;
                      class_88.field_878 = var6;
-                     class_124.method_2281(class_123.field_1348, (byte)-4);
+                     class_124.method_2281(class_123.field_1348);
                      class_307 var7 = class_123.field_1348;
                      class_307 var8 = class_148.field_1871;
                      boolean var9 = client.field_1416;
@@ -616,7 +616,7 @@ public class class_192 extends class_191 {
                      class_368.field_4096 = var7;
                      class_331.field_3859 = var8;
                      class_49.field_363 = var9;
-                     class_80.field_701 = class_368.field_4096.method_5393(10, 997984533) * 1504295717;
+                     class_80.field_701 = class_368.field_4096.method_5393(10) * 1504295717;
                      class_322.field_3809 = var10;
                      class_307 var11 = class_123.field_1348;
                      class_307 var12 = class_314.field_3783;
@@ -624,9 +624,9 @@ public class class_192 extends class_191 {
                      class_72.field_563 = var11;
                      class_72.field_579 = var12;
                      class_72.field_564 = var13;
-                     class_118.method_2257(class_123.field_1348, class_148.field_1871, (byte)10);
-                     class_184.method_3850(class_123.field_1348, 2118947714);
-                     class_293.method_5303(class_123.field_1348, 236508743);
+                     class_118.method_2257(class_123.field_1348, class_148.field_1871);
+                     class_184.method_3850(class_123.field_1348);
+                     class_293.method_5303(class_123.field_1348);
                      class_307 var14 = class_44.field_326;
                      class_307 var15 = class_148.field_1871;
                      class_307 var16 = class_311.field_3749;
@@ -635,11 +635,11 @@ public class class_192 extends class_191 {
                      class_61.field_480 = var15;
                      class_279.field_3227 = var16;
                      class_243.field_2697 = var17;
-                     class_37.field_93 = new class_37[class_46.field_343.method_5457(756558186)][];
-                     class_37.field_94 = new boolean[class_46.field_343.method_5457(1060263234)];
-                     class_162.method_3390(class_123.field_1348, 1926363806);
-                     class_315.method_5603(class_123.field_1348, (byte)55);
-                     class_203.method_4078(class_123.field_1348, (byte)0);
+                     class_37.field_93 = new class_37[class_46.field_343.method_5457()][];
+                     class_37.field_94 = new boolean[class_46.field_343.method_5457()];
+                     class_162.method_3390(class_123.field_1348);
+                     class_315.method_5603(class_123.field_1348);
+                     class_203.method_4078(class_123.field_1348);
                      class_307 var18 = class_123.field_1348;
                      class_86.field_796 = var18;
                      class_259 var40 = new class_259(class_154.field_1933, 54, class_387.field_4226, class_123.field_1348);
@@ -690,7 +690,7 @@ public class class_192 extends class_191 {
                         throw new IllegalStateException();
                      }
 
-                     class_114.field_1284 = class_212.method_4182(class_311.field_3749, class_201.field_2360.field_3994 * 791427789, 0, -178534371);
+                     class_114.field_1284 = class_212.method_4182(class_311.field_3749, class_201.field_2360.field_3994 * 791427789, 0);
                   } else {
                      ++var25;
                   }
@@ -700,7 +700,7 @@ public class class_192 extends class_191 {
                         return;
                      }
 
-                     class_138.field_1773 = class_80.method_1338(class_311.field_3749, class_201.field_2360.field_4000 * -14842639, 0, -1895539355);
+                     class_138.field_1773 = class_80.method_1338(class_311.field_3749, class_201.field_2360.field_4000 * -14842639, 0);
                   } else {
                      ++var25;
                   }
@@ -710,7 +710,7 @@ public class class_192 extends class_191 {
                         throw new IllegalStateException();
                      }
 
-                     class_245.field_2718 = class_80.method_1338(class_311.field_3749, class_201.field_2360.field_3998 * 765584361, 0, -1264314377);
+                     class_245.field_2718 = class_80.method_1338(class_311.field_3749, class_201.field_2360.field_3998 * 765584361, 0);
                   } else {
                      ++var25;
                   }
@@ -720,7 +720,7 @@ public class class_192 extends class_191 {
                         throw new IllegalStateException();
                      }
 
-                     class_40.field_270 = class_80.method_1338(class_311.field_3749, class_201.field_2360.field_3999 * -1577822991, 0, -284689013);
+                     class_40.field_270 = class_80.method_1338(class_311.field_3749, class_201.field_2360.field_3999 * -1577822991, 0);
                   } else {
                      ++var25;
                   }
@@ -730,7 +730,7 @@ public class class_192 extends class_191 {
                         throw new IllegalStateException();
                      }
 
-                     class_230.field_2576 = class_80.method_1338(class_311.field_3749, class_201.field_2360.field_4003 * -1223274063, 0, -570017620);
+                     class_230.field_2576 = class_80.method_1338(class_311.field_3749, class_201.field_2360.field_4003 * -1223274063, 0);
                   } else {
                      ++var25;
                   }
@@ -740,7 +740,7 @@ public class class_192 extends class_191 {
                         throw new IllegalStateException();
                      }
 
-                     class_169.field_2114 = class_80.method_1338(class_311.field_3749, -1228774673 * class_201.field_2360.field_4001, 0, -1471974469);
+                     class_169.field_2114 = class_80.method_1338(class_311.field_3749, -1228774673 * class_201.field_2360.field_4001, 0);
                   } else {
                      ++var25;
                   }
@@ -750,7 +750,7 @@ public class class_192 extends class_191 {
                         throw new IllegalStateException();
                      }
 
-                     class_222.field_2518 = class_80.method_1338(class_311.field_3749, class_201.field_2360.field_4002 * -353348843, 0, -1042014246);
+                     class_222.field_2518 = class_80.method_1338(class_311.field_3749, class_201.field_2360.field_4002 * -353348843, 0);
                   } else {
                      ++var25;
                   }
@@ -760,13 +760,13 @@ public class class_192 extends class_191 {
                         throw new IllegalStateException();
                      }
 
-                     class_100.field_1151 = class_212.method_4182(class_311.field_3749, 1865970227 * class_201.field_2360.field_3996, 0, -482384102);
+                     class_100.field_1151 = class_212.method_4182(class_311.field_3749, 1865970227 * class_201.field_2360.field_3996, 0);
                   } else {
                      ++var25;
                   }
 
                   if(class_223.field_2528 == null) {
-                     class_223.field_2528 = class_212.method_4182(class_311.field_3749, class_201.field_2360.field_4004 * 1606283035, 0, -1878594826);
+                     class_223.field_2528 = class_212.method_4182(class_311.field_3749, class_201.field_2360.field_4004 * 1606283035, 0);
                   } else {
                      ++var25;
                   }
@@ -834,12 +834,12 @@ public class class_192 extends class_191 {
                } else if(-1127540073 * client.field_1444 == 110) {
                   class_163 var38 = new class_163();
                   class_289.field_3284 = var38;
-                  client.field_1392.method_4058(class_289.field_3284, 10, (byte)25);
+                  client.field_1392.method_4058(class_289.field_3284, 10);
                   class_177.loadProgressText = class_305.field_3457;
                   class_177.field_2190 = 1893067964;
                   client.field_1444 = -1294833080;
                } else if(client.field_1444 * -1127540073 == 120) {
-                  if(!class_157.field_1956.method_5403("huffman", "", -240181646)) {
+                  if(!class_157.field_1956.method_5403("huffman", "")) {
                      if(var0 == 0) {
                         throw new IllegalStateException();
                      } else {
@@ -847,9 +847,9 @@ public class class_192 extends class_191 {
                         class_177.field_2190 = -1427057138;
                      }
                   } else {
-                     class_276 var37 = new class_276(class_157.field_1956.method_5384("huffman", "", -2113660686));
+                     class_276 var37 = new class_276(class_157.field_1956.method_5384("huffman", ""));
                      class_276 var1 = var37;
-                     class_178.method_3801(var1, -2073984636);
+                     class_178.method_3801(var1);
                      class_177.loadProgressText = class_305.field_3429;
                      class_177.field_2190 = -1427057138;
                      client.field_1444 = -1760649778;
@@ -884,8 +884,8 @@ public class class_192 extends class_191 {
                      throw new IllegalStateException();
                   } else {
                      class_177.field_2190 = 1497469444;
-                     if(!class_229.field_2573.method_5404(class_254.field_2874.field_2873, 1308287337)) {
-                        class_177.loadProgressText = class_305.strLoadMap + class_229.field_2573.method_5410(class_254.field_2874.field_2873, -469747920) / 10 + "%";
+                     if(!class_229.field_2573.method_5404(class_254.field_2874.field_2873)) {
+                        class_177.loadProgressText = class_305.strLoadMap + class_229.field_2573.method_5410(class_254.field_2874.field_2873) / 10 + "%";
                      } else {
                         if(null == class_287.field_3278) {
                            if(var0 == 0) {
@@ -911,7 +911,7 @@ public class class_192 extends class_191 {
             }
          }
       } catch (RuntimeException var24) {
-         throw class_223.method_4281(var24, "ek.fs(" + ')');
+         throw class_223.method_4281(var24);
       }
    }
 

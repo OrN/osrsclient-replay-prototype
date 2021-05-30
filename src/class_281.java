@@ -28,11 +28,11 @@ public class class_281 implements class_14 {
    }
 
    // $FF: renamed from: v (int) int
-   public int method_50(int var1) {
+   public int method_50() {
       try {
          return -709027953 * this.field_3237;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ij.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -68,7 +68,7 @@ public class class_281 implements class_14 {
          var10000 = true;
          return var10000;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ij.y(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -83,7 +83,7 @@ public class class_281 implements class_14 {
       try {
          this.field_3237 = var1 * -556521617;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ij.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 

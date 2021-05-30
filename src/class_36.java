@@ -51,19 +51,19 @@ public class class_36 extends class_27 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "iq.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: v (byte) void
-   void method_394(byte var1) {
+   void method_394() {
       try {
          this.field_68 = null;
          this.field_86 = null;
          this.field_70 = null;
          this.field_85 = null;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "iq.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -230,7 +230,7 @@ public class class_36 extends class_27 {
 
          throw new IllegalArgumentException("" + var1);
       } catch (RuntimeException var11) {
-         throw class_223.method_4281(var11, "iq.f(" + ')');
+         throw class_223.method_4281(var11);
       }
    }
 }

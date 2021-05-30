@@ -15,12 +15,12 @@ public class class_172 implements Callable {
 
 
    // $FF: renamed from: u (byte) void
-   public static void method_3706(byte var0) {
+   public static void method_3706() {
       try {
          class_72.field_577.method_5074();
          class_72.field_566.method_5074();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "co.u(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -29,7 +29,7 @@ public class class_172 implements Callable {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "co.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -46,7 +46,7 @@ public class class_172 implements Callable {
          var2.nextInt();
          return var2;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "co.call(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 

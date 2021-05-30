@@ -17,7 +17,7 @@ public class class_267 {
       try {
          return (int)(var0 >>> 7 & 127L);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "hu.r(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -27,7 +27,7 @@ public class class_267 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "hu.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

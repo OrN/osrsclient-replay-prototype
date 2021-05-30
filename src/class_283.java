@@ -39,11 +39,11 @@ public class class_283 {
    }
 
    // $FF: renamed from: n (java.lang.String, int, byte) boolean
-   static boolean method_5183(String var0, int var1, byte var2) {
+   static boolean method_5183(String var0, int var1) {
       try {
          return class_90.method_1602(var0, var1, "openjs", 595739519);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "il.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -53,14 +53,14 @@ public class class_283 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "il.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: s (nd, int) java.lang.String
    static String method_5185(class_28 var0, int var1) {
       try {
-         int var2 = var0.method_144((byte)30);
+         int var2 = var0.method_144();
          if(var2 > var1) {
             var2 = var1;
          }
@@ -77,7 +77,7 @@ public class class_283 {
    // $FF: renamed from: d (nd, int) java.lang.String
    static String method_5186(class_28 var0, int var1) {
       try {
-         int var2 = var0.method_144((byte)72);
+         int var2 = var0.method_144();
          if(var2 > var1) {
             var2 = var1;
          }

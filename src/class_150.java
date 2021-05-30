@@ -106,28 +106,28 @@ public class class_150 {
 
    // $FF: renamed from: p (nd, bt) void
    final void method_3188(class_28 var1, class_156 var2) {
-      int var3 = var1.method_130(576802570);
+      int var3 = var1.method_130();
       this.field_1906[0] = var3 >> 4;
       this.field_1906[1] = var3 & 15;
       if(var3 != 0) {
-         this.field_1901[0] = var1.method_132((byte)-35);
-         this.field_1901[1] = var1.method_132((byte)-73);
-         int var4 = var1.method_130(-300946236);
+         this.field_1901[0] = var1.method_132();
+         this.field_1901[1] = var1.method_132();
+         int var4 = var1.method_130();
 
          int var5;
          int var6;
          for(var5 = 0; var5 < 2; ++var5) {
             for(var6 = 0; var6 < this.field_1906[var5]; ++var6) {
-               this.field_1899[var5][0][var6] = var1.method_132((byte)-36);
-               this.field_1908[var5][0][var6] = var1.method_132((byte)-41);
+               this.field_1899[var5][0][var6] = var1.method_132();
+               this.field_1908[var5][0][var6] = var1.method_132();
             }
          }
 
          for(var5 = 0; var5 < 2; ++var5) {
             for(var6 = 0; var6 < this.field_1906[var5]; ++var6) {
                if((var4 & 1 << var5 * 4 << var6) != 0) {
-                  this.field_1899[var5][1][var6] = var1.method_132((byte)-29);
-                  this.field_1908[var5][1][var6] = var1.method_132((byte)-18);
+                  this.field_1899[var5][1][var6] = var1.method_132();
+                  this.field_1908[var5][1][var6] = var1.method_132();
                } else {
                   this.field_1899[var5][1][var6] = this.field_1899[var5][0][var6];
                   this.field_1908[var5][1][var6] = this.field_1908[var5][0][var6];
@@ -209,28 +209,28 @@ public class class_150 {
 
    // $FF: renamed from: a (nd, bt) void
    final void method_3198(class_28 var1, class_156 var2) {
-      int var3 = var1.method_130(-1104759116);
+      int var3 = var1.method_130();
       this.field_1906[0] = var3 >> 4;
       this.field_1906[1] = var3 & 15;
       if(var3 != 0) {
-         this.field_1901[0] = var1.method_132((byte)-114);
-         this.field_1901[1] = var1.method_132((byte)-4);
-         int var4 = var1.method_130(2062906491);
+         this.field_1901[0] = var1.method_132();
+         this.field_1901[1] = var1.method_132();
+         int var4 = var1.method_130();
 
          int var5;
          int var6;
          for(var5 = 0; var5 < 2; ++var5) {
             for(var6 = 0; var6 < this.field_1906[var5]; ++var6) {
-               this.field_1899[var5][0][var6] = var1.method_132((byte)-126);
-               this.field_1908[var5][0][var6] = var1.method_132((byte)-122);
+               this.field_1899[var5][0][var6] = var1.method_132();
+               this.field_1908[var5][0][var6] = var1.method_132();
             }
          }
 
          for(var5 = 0; var5 < 2; ++var5) {
             for(var6 = 0; var6 < this.field_1906[var5]; ++var6) {
                if((var4 & 1 << var5 * 4 << var6) != 0) {
-                  this.field_1899[var5][1][var6] = var1.method_132((byte)-28);
-                  this.field_1908[var5][1][var6] = var1.method_132((byte)-45);
+                  this.field_1899[var5][1][var6] = var1.method_132();
+                  this.field_1908[var5][1][var6] = var1.method_132();
                } else {
                   this.field_1899[var5][1][var6] = this.field_1899[var5][0][var6];
                   this.field_1908[var5][1][var6] = this.field_1908[var5][0][var6];
@@ -352,28 +352,28 @@ public class class_150 {
 
    // $FF: renamed from: k (nd, bt) void
    final void method_3202(class_28 var1, class_156 var2) {
-      int var3 = var1.method_130(733222341);
+      int var3 = var1.method_130();
       this.field_1906[0] = var3 >> 4;
       this.field_1906[1] = var3 & 15;
       if(var3 != 0) {
-         this.field_1901[0] = var1.method_132((byte)-97);
-         this.field_1901[1] = var1.method_132((byte)-102);
-         int var4 = var1.method_130(-629056103);
+         this.field_1901[0] = var1.method_132();
+         this.field_1901[1] = var1.method_132();
+         int var4 = var1.method_130();
 
          int var5;
          int var6;
          for(var5 = 0; var5 < 2; ++var5) {
             for(var6 = 0; var6 < this.field_1906[var5]; ++var6) {
-               this.field_1899[var5][0][var6] = var1.method_132((byte)-38);
-               this.field_1908[var5][0][var6] = var1.method_132((byte)-92);
+               this.field_1899[var5][0][var6] = var1.method_132();
+               this.field_1908[var5][0][var6] = var1.method_132();
             }
          }
 
          for(var5 = 0; var5 < 2; ++var5) {
             for(var6 = 0; var6 < this.field_1906[var5]; ++var6) {
                if((var4 & 1 << var5 * 4 << var6) != 0) {
-                  this.field_1899[var5][1][var6] = var1.method_132((byte)-39);
-                  this.field_1908[var5][1][var6] = var1.method_132((byte)-8);
+                  this.field_1899[var5][1][var6] = var1.method_132();
+                  this.field_1908[var5][1][var6] = var1.method_132();
                } else {
                   this.field_1899[var5][1][var6] = this.field_1899[var5][0][var6];
                   this.field_1908[var5][1][var6] = this.field_1908[var5][0][var6];

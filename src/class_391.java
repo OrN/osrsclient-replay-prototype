@@ -11,7 +11,7 @@ public class class_391 {
 
 
    // $FF: renamed from: ha (int, int, int) fc
-   static class_146 method_6772(int var0, int var1, int var2) {
+   static class_146 method_6772(int var0, int var1) {
       try {
          client.field_1561.field_1859 = 1861457073 * var0;
          client.field_1561.field_1857 = var1 * -1161741669;
@@ -19,16 +19,16 @@ public class class_391 {
          client.field_1561.field_1858 = 749260657;
          return client.field_1561;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "nx.ha(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: y (byte) ja[]
-   public static class_292[] method_6773(byte var0) {
+   public static class_292[] method_6773() {
       try {
          return new class_292[]{class_292.field_3328, class_292.field_3323, class_292.field_3322, class_292.field_3324, class_292.field_3325, class_292.field_3327, class_292.field_3326};
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "nx.y(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -38,7 +38,7 @@ public class class_391 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "nx.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 

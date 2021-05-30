@@ -12,13 +12,13 @@ public interface class_7 {
    int[] method_32(int var1);
 
    // $FF: renamed from: j (int, int) boolean
-   boolean method_33(int var1, int var2);
+   boolean method_33(int var2);
 
    // $FF: renamed from: a (int) int
    int method_34(int var1);
 
    // $FF: renamed from: w (int) boolean
-   boolean method_35(int var1);
+   boolean method_35();
 
    // $FF: renamed from: g (int) int[]
    int[] method_36(int var1);
@@ -36,11 +36,11 @@ public interface class_7 {
    boolean method_40(int var1);
 
    // $FF: renamed from: p (int, byte) boolean
-   boolean method_41(int var1, byte var2);
+   boolean method_41(int var1);
 
    // $FF: renamed from: f (int, int) int[]
    int[] method_42(int var1, int var2);
 
    // $FF: renamed from: t (int) boolean
-   boolean method_43(int var1);
+   boolean method_43();
 }

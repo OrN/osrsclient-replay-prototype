@@ -32,7 +32,7 @@ public class class_215 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "fa.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -95,7 +95,7 @@ public class class_215 {
             var13 = var11 - var15;
             var19 = var10 - 280751135 * var4.field_2674;
             var20 = var11 - var4.field_2681 * -992681321;
-            if(var3.method_3106(1, var10, var11, var4, 496202097)) {
+            if(var3.method_3106(var10, var11, 496202097)) {
                class_184.field_2256 = var10 * 106386816;
                class_246.field_2724 = var11 * -1038382576;
                var28 = true;
@@ -200,7 +200,7 @@ public class class_215 {
             var13 = var11 - var15;
             var19 = var10 - 280751135 * var4.field_2674;
             var20 = var11 - -1129467327 * var4.field_2681;
-            if(var3.method_3106(2, var10, var11, var4, 496202097)) {
+            if(var3.method_3106(var10, var11, 496202097)) {
                class_184.field_2256 = -1358178356 * var10;
                class_246.field_2724 = var11 * 2102953142;
                var28 = true;
@@ -306,7 +306,7 @@ public class class_215 {
             var13 = var11 - var15;
             var19 = var10 - 280751135 * var4.field_2674;
             var20 = var11 - 1257044534 * var4.field_2681;
-            if(var3.method_3106(var2, var10, var11, var4, 496202097)) {
+            if(var3.method_3106(var10, var11, 496202097)) {
                class_184.field_2256 = var10 * -1699937188;
                class_246.field_2724 = var11 * -1284385059;
                var28 = true;
@@ -574,7 +574,7 @@ public class class_215 {
    }
 
    // $FF: renamed from: p (int, int) void
-   public static void method_4193(int var0, int var1) {
+   public static void method_4193(int var0) {
       try {
          class_270.field_3180 = 1262412465;
          class_271.field_3186 = null;
@@ -584,7 +584,7 @@ public class class_215 {
          class_270.field_3179 = false;
          class_270.field_3183 = -230768741 * var0;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "fa.p(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 }

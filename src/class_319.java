@@ -49,12 +49,12 @@ public class class_319 {
             }
          } else if(var0 instanceof class_277) {
             class_277 var3 = (class_277)var0;
-            return var3.method_5132((byte)74);
+            return var3.method_5132();
          } else {
             throw new IllegalArgumentException();
          }
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "ke.n(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
@@ -221,7 +221,7 @@ public class class_319 {
 
          return new byte[var0];
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "ke.n(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -485,7 +485,7 @@ public class class_319 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ke.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 

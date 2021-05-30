@@ -38,7 +38,7 @@ final class class_309 implements Comparator {
 
          return var10000;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "jr.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -51,7 +51,7 @@ final class class_309 implements Comparator {
       try {
          return this.method_5527((class_310)var1, (class_310)var2, 1946951772);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "jr.compare(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -74,7 +74,7 @@ final class class_309 implements Comparator {
       try {
          return super.equals(var1);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "jr.equals(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 

@@ -106,7 +106,7 @@ public final class class_145 implements KeyListener, FocusListener {
          }
 
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "az.keyPressed(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -131,7 +131,7 @@ public final class class_145 implements KeyListener, FocusListener {
 
          var1.consume();
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "az.keyReleased(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -156,7 +156,7 @@ public final class class_145 implements KeyListener, FocusListener {
          }
 
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "az.focusLost(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -248,7 +248,7 @@ public final class class_145 implements KeyListener, FocusListener {
    }
 
    // $FF: renamed from: af (int, cf, boolean, int) int
-   static int method_3089(int var0, class_90 var1, boolean var2, int var3) {
+   static int method_3089(int var0, int var3) {
       try {
          if(var0 >= 7200) {
             if(var3 <= -1450187478) {
@@ -309,7 +309,7 @@ public final class class_145 implements KeyListener, FocusListener {
             }
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "az.af(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -341,12 +341,12 @@ public final class class_145 implements KeyListener, FocusListener {
 
          var1.consume();
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "az.keyTyped(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: h (java.awt.event.FocusEvent) void
-   public final synchronized void method_3092(FocusEvent var1) {
+   public final synchronized void method_3092() {
       if(null != field_1846) {
          field_1843 = -1023229263;
       }
@@ -474,7 +474,7 @@ public final class class_145 implements KeyListener, FocusListener {
       try {
          ;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "az.focusGained(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -496,25 +496,25 @@ public final class class_145 implements KeyListener, FocusListener {
    }
 
    // $FF: renamed from: z (java.awt.event.FocusEvent) void
-   public final void method_3099(FocusEvent var1) {}
+   public final void method_3099() {}
 
    // $FF: renamed from: w (java.awt.event.FocusEvent) void
-   public final void method_3100(FocusEvent var1) {}
+   public final void method_3100() {}
 
    // $FF: renamed from: t (java.awt.event.FocusEvent) void
-   public final void method_3101(FocusEvent var1) {}
+   public final void method_3101() {}
 
    // $FF: renamed from: <init> () void
    class_145() {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "az.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: q (java.awt.event.FocusEvent) void
-   public final synchronized void method_3103(FocusEvent var1) {
+   public final synchronized void method_3103() {
       if(null != field_1846) {
          field_1843 = -1023229263;
       }
@@ -522,12 +522,12 @@ public final class class_145 implements KeyListener, FocusListener {
    }
 
    // $FF: renamed from: j (int) void
-   public static void method_3104(int var0) {
+   public static void method_3104() {
       try {
          class_77.field_666.method_5074();
          class_77.field_655.method_5074();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "az.j(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 

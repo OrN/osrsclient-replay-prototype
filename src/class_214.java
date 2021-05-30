@@ -28,7 +28,7 @@ public class class_214 {
       try {
          this.field_2446 = 0;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "eu.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

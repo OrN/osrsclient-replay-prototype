@@ -74,7 +74,7 @@ public class class_178 {
 
          class_177.field_2204 = 0;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "s.b(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -87,11 +87,11 @@ public class class_178 {
             }
 
             class_100 var2 = client.field_1605[class_195.field_2318[var1]];
-            var2.method_1828((byte)4);
+            var2.method_1828();
          }
 
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "s.kz(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -111,7 +111,7 @@ public class class_178 {
             return var2 == 2?7 - var1:var0;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "s.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -134,16 +134,16 @@ public class class_178 {
             }
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "s.y(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: v (id, int) void
-   public static void method_3801(class_276 var0, int var1) {
+   public static void method_3801(class_276 var0) {
       try {
          class_283.field_3254 = var0;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "s.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -152,7 +152,7 @@ public class class_178 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "s.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -325,7 +325,7 @@ public class class_178 {
                         throw new IllegalStateException();
                      }
 
-                     var7.method_4624(var1, var2, -323601081);
+                     var7.method_4624(var1, var2);
                   }
                }
 
@@ -1044,17 +1044,17 @@ public class class_178 {
 
          }
       } catch (RuntimeException var29) {
-         throw class_223.method_4281(var29, "s.b(" + ')');
+         throw class_223.method_4281(var29);
       }
    }
 
    // $FF: renamed from: f (int, int, byte) bi
-   static class_101 method_3804(int var0, int var1, byte var2) {
+   static class_101 method_3804(int var0, int var1) {
       try {
          class_175 var3 = (class_175)class_197.field_2338.get(Integer.valueOf(var0));
          return var3.method_3733(var1, -94614591);
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "s.f(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 }

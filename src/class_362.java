@@ -24,9 +24,9 @@ public class class_362 implements class_18 {
    // $FF: renamed from: b (java.lang.String) void
    void method_6310(String var1) {
       if(var1.startsWith("1.")) {
-         this.method_6312(var1, (byte)112);
+         this.method_6312(var1);
       } else {
-         this.method_6325(var1, -973414389);
+         this.method_6325(var1);
       }
 
    }
@@ -275,7 +275,7 @@ public class class_362 implements class_18 {
          class_30 var10000 = new class_30(var2, var7, var8, var9, this.field_4019 * -1520925295, this.field_4013 * -1280779565, this.field_4018 * 1746870345, false, var11, var12, var13, 0, var14, var15, var16, var17, 0, 0, 0, 0, var18, var19, var24, 0, "");
          return var10000;
       } catch (RuntimeException var28) {
-         throw class_223.method_4281(var28, "mb.v(" + ')');
+         throw class_223.method_4281(var28);
       }
    }
 
@@ -287,18 +287,18 @@ public class class_362 implements class_18 {
                throw new IllegalStateException();
             }
 
-            this.method_6312(var1, (byte)94);
+            this.method_6312(var1);
          } else {
-            this.method_6325(var1, -1652585717);
+            this.method_6325(var1);
          }
 
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "mb.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: f (java.lang.String, byte) void
-   void method_6312(String var1, byte var2) {
+   void method_6312(String var1) {
       try {
          String[] var3 = var1.split("\\.");
 
@@ -312,16 +312,16 @@ public class class_362 implements class_18 {
          }
 
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "mb.f(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
    // $FF: renamed from: s (java.lang.String) void
    void method_6313(String var1) {
       if(var1.startsWith("1.")) {
-         this.method_6312(var1, (byte)93);
+         this.method_6312(var1);
       } else {
-         this.method_6325(var1, -1499135324);
+         this.method_6325(var1);
       }
 
    }
@@ -349,9 +349,9 @@ public class class_362 implements class_18 {
    // $FF: renamed from: r (java.lang.String) void
    void method_6316(String var1) {
       if(var1.startsWith("1.")) {
-         this.method_6312(var1, (byte)103);
+         this.method_6312(var1);
       } else {
-         this.method_6325(var1, -1943067595);
+         this.method_6325(var1);
       }
 
    }
@@ -367,11 +367,11 @@ public class class_362 implements class_18 {
             }
 
             class_101 var2 = (class_101)var1.next();
-            var2.method_1890(1764151140);
+            var2.method_1890();
          }
 
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "mb.r(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -520,9 +520,9 @@ public class class_362 implements class_18 {
    // $FF: renamed from: d (java.lang.String) void
    void method_6319(String var1) {
       if(var1.startsWith("1.")) {
-         this.method_6312(var1, (byte)109);
+         this.method_6312(var1);
       } else {
-         this.method_6325(var1, -1778320114);
+         this.method_6325(var1);
       }
 
    }
@@ -784,12 +784,12 @@ public class class_362 implements class_18 {
          }
 
       } catch (RuntimeException var15) {
-         throw class_223.method_4281(var15, "mb.p(" + ')');
+         throw class_223.method_4281(var15);
       }
    }
 
    // $FF: renamed from: y (java.lang.String, int) void
-   void method_6325(String var1, int var2) {
+   void method_6325(String var1) {
       try {
          String[] var3 = var1.split("\\.");
 
@@ -802,7 +802,7 @@ public class class_362 implements class_18 {
          }
 
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "mb.y(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 }

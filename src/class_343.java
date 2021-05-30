@@ -44,16 +44,16 @@ public abstract class class_343 {
          }
 
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "lj.ao(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: ap (int) int
-   public int method_6061(int var1) {
+   public int method_6061() {
       try {
          return this.field_3900 * -1892768295;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "lj.ap(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -88,17 +88,17 @@ public abstract class class_343 {
             return this.field_3904.containsKey(var1);
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "lj.al(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: ad (ly, int) lx
-   public class_338 method_6064(class_359 var1, int var2) {
+   public class_338 method_6064(class_359 var1) {
       try {
          class_338 var3 = this.method_6065(var1, (byte)7);
          return null != var3?var3:this.method_6066(var1, (byte)1);
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "lj.ad(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -115,7 +115,7 @@ public abstract class class_343 {
             return (class_338)this.field_3903.get(var1);
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "lj.ai(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -132,7 +132,7 @@ public abstract class class_343 {
             return (class_338)this.field_3904.get(var1);
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "lj.ar(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -160,16 +160,16 @@ public abstract class class_343 {
             this.method_6105(var1, 1618016496);
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "lj.ax(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: as (ly, int) lx
-   class_338 method_6069(class_359 var1, int var2) {
+   class_338 method_6069(class_359 var1) {
       try {
          return this.method_6070(var1, (class_359)null, -656990705);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "lj.as(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -183,14 +183,14 @@ public abstract class class_343 {
                throw new IllegalStateException();
             }
          } else {
-            class_338 var4 = this.method_6079((byte)126);
+            class_338 var4 = this.method_6079();
             var4.method_6003(var1, var2, 2108784704);
-            this.method_6128(var4, -1533955349);
+            this.method_6128(var4);
             this.method_6060(var4, 16776960);
             return var4;
          }
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "lj.aj(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -213,7 +213,7 @@ public abstract class class_343 {
 
          throw new ArrayIndexOutOfBoundsException(var1);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "lj.am(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -228,13 +228,13 @@ public abstract class class_343 {
    }
 
    // $FF: renamed from: av (lx, ly, ly, byte) void
-   final void method_6073(class_338 var1, class_359 var2, class_359 var3, byte var4) {
+   final void method_6073(class_338 var1, class_359 var2, class_359 var3) {
       try {
          this.method_6105(var1, -186276678);
          var1.method_6003(var2, var3, 2126754295);
          this.method_6060(var1, 16776960);
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "lj.av(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -253,7 +253,7 @@ public abstract class class_343 {
 
          return -1;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "lj.ac(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -289,22 +289,22 @@ public abstract class class_343 {
          }
 
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "lj.aq(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: v (byte) lx
-   abstract class_338 method_6079(byte var1);
+   abstract class_338 method_6079();
 
    // $FF: renamed from: n (int, int) lx[]
-   abstract class_338[] method_6080(int var1, int var2);
+   abstract class_338[] method_6080(int var1);
 
    // $FF: renamed from: aw (int) void
-   public final void method_6081(int var1) {
+   public final void method_6081() {
       try {
          this.field_3902 = null;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "lj.aw(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -325,11 +325,11 @@ public abstract class class_343 {
          this.field_3900 = 0;
          this.field_3902 = null;
          this.field_3901 = 1132480583 * var1;
-         this.field_3905 = this.method_6080(var1, 1924184817);
+         this.field_3905 = this.method_6080(var1);
          this.field_3903 = new HashMap(var1 / 8);
          this.field_3904 = new HashMap(var1 / 8);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "lj.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -348,7 +348,7 @@ public abstract class class_343 {
             return true;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "lj.ag(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -465,14 +465,14 @@ public abstract class class_343 {
    abstract class_338[] method_6103(int var1);
 
    // $FF: renamed from: ae (int) void
-   public void method_6104(int var1) {
+   public void method_6104() {
       try {
          this.field_3900 = 0;
          Arrays.fill(this.field_3905, (Object)null);
          this.field_3903.clear();
          this.field_3904.clear();
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "lj.ae(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -492,7 +492,7 @@ public abstract class class_343 {
 
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "lj.at(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -555,9 +555,9 @@ public abstract class class_343 {
       if(this.method_6065(var1, (byte)7) != null) {
          throw new IllegalStateException();
       } else {
-         class_338 var3 = this.method_6079((byte)7);
+         class_338 var3 = this.method_6079();
          var3.method_6003(var1, var2, 1876683000);
-         this.method_6128(var3, -1655977206);
+         this.method_6128(var3);
          this.method_6060(var3, 16776960);
          return var3;
       }
@@ -568,9 +568,9 @@ public abstract class class_343 {
       if(this.method_6065(var1, (byte)7) != null) {
          throw new IllegalStateException();
       } else {
-         class_338 var3 = this.method_6079((byte)112);
+         class_338 var3 = this.method_6079();
          var3.method_6003(var1, var2, 1952231447);
-         this.method_6128(var3, -1649725125);
+         this.method_6128(var3);
          this.method_6060(var3, 16776960);
          return var3;
       }
@@ -593,33 +593,33 @@ public abstract class class_343 {
          class_28 var14 = new class_28(var0);
          class_28 var3 = var14;
          var3.field_15 = -1025691571 * (var3.field_12.length - 2);
-         int var4 = var3.method_132((byte)-68);
+         int var4 = var3.method_132();
          int var5 = var3.field_12.length - 2 - var4 - 12;
          var3.field_15 = var5 * -1025691571;
-         int var6 = var3.method_135((byte)-78);
-         var2.field_904 = var3.method_132((byte)-89) * -341761097;
-         var2.field_905 = var3.method_132((byte)-70) * -465592225;
-         var2.field_906 = var3.method_132((byte)-79) * 635067323;
-         var2.field_907 = var3.method_132((byte)-106) * -1949296963;
-         int var7 = var3.method_130(-1011507626);
+         int var6 = var3.method_135();
+         var2.field_904 = var3.method_132() * -341761097;
+         var2.field_905 = var3.method_132() * -465592225;
+         var2.field_906 = var3.method_132() * 635067323;
+         var2.field_907 = var3.method_132() * -1949296963;
+         int var7 = var3.method_130();
          int var8;
          int var9;
          if(var7 > 0) {
-            var2.field_908 = var2.method_1592(var7, 920031088);
+            var2.field_908 = var2.method_1592(var7);
 
             for(var8 = 0; var8 < var7; ++var8) {
                if(var1 != 1132367592) {
                   throw new IllegalStateException();
                }
 
-               var9 = var3.method_132((byte)-27);
+               var9 = var3.method_132();
                int var10002;
                if(var9 > 0) {
                   if(var1 != 1132367592) {
                      throw new IllegalStateException();
                   }
 
-                  var10002 = class_100.method_1845(var9, -422495742);
+                  var10002 = class_100.method_1845(var9);
                } else {
                   var10002 = 1;
                }
@@ -633,8 +633,8 @@ public abstract class class_343 {
                      throw new IllegalStateException();
                   }
 
-                  int var11 = var3.method_135((byte)-33);
-                  int var12 = var3.method_135((byte)-123);
+                  int var11 = var3.method_135();
+                  int var12 = var3.method_135();
                   class_32 var10001 = new class_32(var12);
                   var10.method_6588(var10001, (long)var11);
                }
@@ -652,7 +652,7 @@ public abstract class class_343 {
                throw new IllegalStateException();
             }
 
-            var9 = var3.method_132((byte)-28);
+            var9 = var3.method_132();
             if(var9 == 3) {
                if(var1 != 1132367592) {
                   throw new IllegalStateException();
@@ -675,19 +675,19 @@ public abstract class class_343 {
                            throw new IllegalStateException();
                         }
 
-                        var2.field_902[var8] = var3.method_135((byte)-60);
+                        var2.field_902[var8] = var3.method_135();
                         continue;
                      }
                   }
                }
 
-               var2.field_902[var8] = var3.method_130(201385015);
+               var2.field_902[var8] = var3.method_130();
             }
          }
 
          return var2;
       } catch (RuntimeException var13) {
-         throw class_223.method_4281(var13, "lj.f(" + ')');
+         throw class_223.method_4281(var13);
       }
    }
 
@@ -702,7 +702,7 @@ public abstract class class_343 {
    }
 
    // $FF: renamed from: az (int) void
-   public final void method_6118(int var1) {
+   public final void method_6118() {
       try {
          if(this.field_3902 == null) {
             Arrays.sort(this.field_3905, 0, this.field_3900 * -1892768295);
@@ -711,7 +711,7 @@ public abstract class class_343 {
          }
 
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "lj.az(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -772,7 +772,7 @@ public abstract class class_343 {
          }
 
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "lj.af(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -800,11 +800,11 @@ public abstract class class_343 {
    }
 
    // $FF: renamed from: ah (lx, int) void
-   final void method_6128(class_338 var1, int var2) {
+   final void method_6128(class_338 var1) {
       try {
          this.field_3905[(this.field_3900 += 1993312873) * -1892768295 - 1] = var1;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "lj.ah(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -865,7 +865,7 @@ public abstract class class_343 {
 
          return var10000;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "lj.ab(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 

@@ -128,7 +128,7 @@ public class class_199 {
          try {
             var10000 = new class_383(class_396.field_4253, "rw", 10000L);
             class_383 var7 = var10000;
-            var27 = new class_28((int)var7.method_6688(1371646188));
+            var27 = new class_28((int)var7.method_6688());
 
             int var9;
             for(var8 = var27; var8.field_15 * -442398587 < var8.field_12.length; var8.field_15 += -1025691571 * var9) {
@@ -139,14 +139,14 @@ public class class_199 {
             }
 
             var8.field_15 = 0;
-            var9 = var8.method_130(-566876242);
+            var9 = var8.method_130();
             if(var9 < 1 || var9 > 3) {
                throw new IOException("" + var9);
             }
 
             int var10 = 0;
             if(var9 > 1) {
-               var10 = var8.method_130(-424602177);
+               var10 = var8.method_130();
             }
 
             if(var9 <= 2) {
@@ -161,7 +161,7 @@ public class class_199 {
                }
             }
 
-            var7.method_6701(-644627756);
+            var7.method_6701();
          } catch (IOException var17) {
             var17.printStackTrace();
          }
@@ -233,8 +233,8 @@ public class class_199 {
             class_383 var24 = var10000;
             var27 = new class_28(500);
             class_28 var26 = var27;
-            var26.method_210(3, 303066737);
-            var26.method_210(var8 != null?1:0, 303066737);
+            var26.method_210(3);
+            var26.method_210(var8 != null?1:0);
             var26.method_128(var19.getPath(), 499802318);
             if(var8 != null) {
                // TODO: Originally var8
@@ -242,7 +242,7 @@ public class class_199 {
             }
 
             var24.method_6686(var26.field_12, 0, -2075038961 * var26.field_15, (byte)-49);
-            var24.method_6701(-1832177990);
+            var24.method_6701();
          } catch (IOException var15) {
             var15.printStackTrace();
          }
@@ -266,7 +266,7 @@ public class class_199 {
          try {
             var10000 = new class_383(class_396.field_4253, "rw", 10000L);
             class_383 var7 = var10000;
-            var27 = new class_28((int)var7.method_6688(1487816724));
+            var27 = new class_28((int)var7.method_6688());
 
             int var9;
             for(var8 = var27; var8.field_15 * -442398587 < var8.field_12.length; var8.field_15 += -1025691571 * var9) {
@@ -277,14 +277,14 @@ public class class_199 {
             }
 
             var8.field_15 = 0;
-            var9 = var8.method_130(1861121461);
+            var9 = var8.method_130();
             if(var9 < 1 || var9 > 3) {
                throw new IOException("" + var9);
             }
 
             int var10 = 0;
             if(var9 > 1) {
-               var10 = var8.method_130(2133670102);
+               var10 = var8.method_130();
             }
 
             if(var9 <= 2) {
@@ -299,7 +299,7 @@ public class class_199 {
                }
             }
 
-            var7.method_6701(-1495978365);
+            var7.method_6701();
          } catch (IOException var17) {
             var17.printStackTrace();
          }
@@ -371,8 +371,8 @@ public class class_199 {
             class_383 var24 = var10000;
             var27 = new class_28(500);
             class_28 var26 = var27;
-            var26.method_210(3, 303066737);
-            var26.method_210(var8 != null?1:0, 303066737);
+            var26.method_210(3);
+            var26.method_210(var8 != null?1:0);
             var26.method_128(var19.getPath(), 499802318);
             if(var8 != null) {
                // TODO: Original var8
@@ -380,7 +380,7 @@ public class class_199 {
             }
 
             var24.method_6686(var26.field_12, 0, -442398587 * var26.field_15, (byte)45);
-            var24.method_6701(-821047718);
+            var24.method_6701();
          } catch (IOException var15) {
             var15.printStackTrace();
          }
@@ -404,7 +404,7 @@ public class class_199 {
          try {
             var10000 = new class_383(class_396.field_4253, "rw", 10000L);
             class_383 var7 = var10000;
-            var27 = new class_28((int)var7.method_6688(1015847562));
+            var27 = new class_28((int)var7.method_6688());
 
             int var9;
             for(var8 = var27; var8.field_15 * 1849884383 < var8.field_12.length; var8.field_15 += -1025691571 * var9) {
@@ -415,14 +415,14 @@ public class class_199 {
             }
 
             var8.field_15 = 0;
-            var9 = var8.method_130(-1615180215);
+            var9 = var8.method_130();
             if(var9 < 1 || var9 > 3) {
                throw new IOException("" + var9);
             }
 
             int var10 = 0;
             if(var9 > 1) {
-               var10 = var8.method_130(1781594469);
+               var10 = var8.method_130();
             }
 
             if(var9 <= 2) {
@@ -437,7 +437,7 @@ public class class_199 {
                }
             }
 
-            var7.method_6701(-1697201877);
+            var7.method_6701();
          } catch (IOException var17) {
             var17.printStackTrace();
          }
@@ -509,8 +509,8 @@ public class class_199 {
             class_383 var24 = var10000;
             var27 = new class_28(500);
             class_28 var26 = var27;
-            var26.method_210(3, 303066737);
-            var26.method_210(var8 != null?1:0, 303066737);
+            var26.method_210(3);
+            var26.method_210(var8 != null?1:0);
             var26.method_128(var19.getPath(), 499802318);
             if(var8 != null) {
                // TODO: Originally var8.getPath
@@ -518,7 +518,7 @@ public class class_199 {
             }
 
             var24.method_6686(var26.field_12, 0, -2065529096 * var26.field_15, (byte)21);
-            var24.method_6701(-1060625626);
+            var24.method_6701();
          } catch (IOException var15) {
             var15.printStackTrace();
          }
@@ -549,14 +549,14 @@ public class class_199 {
    // $FF: renamed from: a () void
    public static void method_4028() {
       try {
-         field_2346.method_6627((byte)49);
+         field_2346.method_6627();
 
          for(int var0 = 0; var0 < 264174683 * class_157.field_1958; ++var0) {
-            class_164.field_2041[var0].method_6627((byte)84);
+            class_164.field_2041[var0].method_6627();
          }
 
-         field_2341.method_6627((byte)26);
-         field_2344.method_6627((byte)70);
+         field_2341.method_6627();
+         field_2344.method_6627();
       } catch (Exception var1) {
          ;
       }
@@ -697,21 +697,21 @@ public class class_199 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "dm.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: g () void
    public static void method_4033() {
       try {
-         field_2346.method_6627((byte)11);
+         field_2346.method_6627();
 
          for(int var0 = 0; var0 < 264174683 * class_157.field_1958; ++var0) {
-            class_164.field_2041[var0].method_6627((byte)80);
+            class_164.field_2041[var0].method_6627();
          }
 
-         field_2341.method_6627((byte)58);
-         field_2344.method_6627((byte)44);
+         field_2341.method_6627();
+         field_2344.method_6627();
       } catch (Exception var1) {
          ;
       }
@@ -779,7 +779,7 @@ public class class_199 {
 
          return var0;
       } catch (RuntimeException var8) {
-         throw class_223.method_4281(var8, "dm.iw(" + ')');
+         throw class_223.method_4281(var8);
       }
    }
 }

@@ -57,7 +57,7 @@ public class class_224 implements class_6 {
          }
 
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "fj.v(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -109,16 +109,16 @@ public class class_224 implements class_6 {
 
          return false;
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "fj.n(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
    // $FF: renamed from: r (int) void
-   void method_4282(int var1) {
+   void method_4282() {
       try {
          ;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "fj.r(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -127,7 +127,7 @@ public class class_224 implements class_6 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "fj.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -147,26 +147,26 @@ public class class_224 implements class_6 {
             return var10000;
          }
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "fj.p(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
    // $FF: renamed from: j (nd, int) void
-   public void method_15(class_28 var1, int var2) {
+   public void method_15(class_28 var1) {
       try {
-         this.field_2538 = var1.method_130(382392354) * 1130517107;
-         this.field_2531 = var1.method_130(978333271) * 1103346787;
-         this.field_2532 = var1.method_132((byte)-111) * -1150744613;
-         this.field_2530 = var1.method_130(347334850) * 808104457;
-         this.field_2536 = var1.method_132((byte)-7) * 1525688477;
-         this.field_2537 = var1.method_130(-266300693) * 1157189217;
-         this.field_2534 = var1.method_132((byte)-6) * 1815574671;
-         this.field_2533 = var1.method_130(1691319357) * -724355269;
-         this.field_2535 = var1.method_132((byte)-65) * -1000446769;
-         this.field_2539 = var1.method_130(936190743) * 7709589;
-         this.method_4282(-186236256);
+         this.field_2538 = var1.method_130() * 1130517107;
+         this.field_2531 = var1.method_130() * 1103346787;
+         this.field_2532 = var1.method_132() * -1150744613;
+         this.field_2530 = var1.method_130() * 808104457;
+         this.field_2536 = var1.method_132() * 1525688477;
+         this.field_2537 = var1.method_130() * 1157189217;
+         this.field_2534 = var1.method_132() * 1815574671;
+         this.field_2533 = var1.method_130() * -724355269;
+         this.field_2535 = var1.method_132() * -1000446769;
+         this.field_2539 = var1.method_130() * 7709589;
+         this.method_4282();
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "fj.j(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -225,7 +225,7 @@ public class class_224 implements class_6 {
             return var5;
          }
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "fj.y(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -253,7 +253,7 @@ public class class_224 implements class_6 {
          var10000 = false;
          return var10000;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "fj.f(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -315,32 +315,32 @@ public class class_224 implements class_6 {
 
    // $FF: renamed from: x (nd) void
    public void method_28(class_28 var1) {
-      this.field_2538 = var1.method_130(635945867) * 1130517107;
-      this.field_2531 = var1.method_130(617321217) * 1103346787;
-      this.field_2532 = var1.method_132((byte)-48) * -1150744613;
-      this.field_2530 = var1.method_130(-988076360) * -682080498;
-      this.field_2536 = var1.method_132((byte)-87) * 1525688477;
-      this.field_2537 = var1.method_130(-1591541648) * 2098297500;
-      this.field_2534 = var1.method_132((byte)-59) * -745810811;
-      this.field_2533 = var1.method_130(1579974964) * 754161821;
-      this.field_2535 = var1.method_132((byte)-113) * 10746648;
-      this.field_2539 = var1.method_130(-290467951) * -1775925895;
-      this.method_4282(-1881547780);
+      this.field_2538 = var1.method_130() * 1130517107;
+      this.field_2531 = var1.method_130() * 1103346787;
+      this.field_2532 = var1.method_132() * -1150744613;
+      this.field_2530 = var1.method_130() * -682080498;
+      this.field_2536 = var1.method_132() * 1525688477;
+      this.field_2537 = var1.method_130() * 2098297500;
+      this.field_2534 = var1.method_132() * -745810811;
+      this.field_2533 = var1.method_130() * 754161821;
+      this.field_2535 = var1.method_132() * 10746648;
+      this.field_2539 = var1.method_130() * -1775925895;
+      this.method_4282();
    }
 
    // $FF: renamed from: z (nd) void
    public void method_11(class_28 var1) {
-      this.field_2538 = var1.method_130(1962464036) * 1835974205;
-      this.field_2531 = var1.method_130(257328340) * 1103346787;
-      this.field_2532 = var1.method_132((byte)-88) * -1150744613;
-      this.field_2530 = var1.method_130(-1663780942) * 808104457;
-      this.field_2536 = var1.method_132((byte)-127) * -1986608780;
-      this.field_2537 = var1.method_130(-1359451213) * -1387513413;
-      this.field_2534 = var1.method_132((byte)-70) * -1064945484;
-      this.field_2533 = var1.method_130(-899092386) * -67855614;
-      this.field_2535 = var1.method_132((byte)-56) * -738837839;
-      this.field_2539 = var1.method_130(-765863289) * 1993030596;
-      this.method_4282(1474665024);
+      this.field_2538 = var1.method_130() * 1835974205;
+      this.field_2531 = var1.method_130() * 1103346787;
+      this.field_2532 = var1.method_132() * -1150744613;
+      this.field_2530 = var1.method_130() * 808104457;
+      this.field_2536 = var1.method_132() * -1986608780;
+      this.field_2537 = var1.method_130() * -1387513413;
+      this.field_2534 = var1.method_132() * -1064945484;
+      this.field_2533 = var1.method_130() * -67855614;
+      this.field_2535 = var1.method_132() * -738837839;
+      this.field_2539 = var1.method_130() * 1993030596;
+      this.method_4282();
    }
 
    // $FF: renamed from: w () void
@@ -491,7 +491,7 @@ public class class_224 implements class_6 {
          }
 
       } catch (RuntimeException var12) {
-         throw class_223.method_4281(var12, "fj.p(" + ')');
+         throw class_223.method_4281(var12);
       }
    }
 }

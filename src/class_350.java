@@ -29,7 +29,7 @@ public final class class_350 {
          synchronized(this.field_3940) {
             try {
                Object var10000;
-               if(this.field_3941.method_6629((byte)17) < (long)(6 + 6 * var1)) {
+               if(this.field_3941.method_6629() < (long)(6 + 6 * var1)) {
                   var10000 = null;
                   return (byte[])var10000;
                } else {
@@ -44,7 +44,7 @@ public final class class_350 {
 
                      if(var4 <= this.field_3939 * 322921177) {
                         if(var5 > 0) {
-                           if((long)var5 <= this.field_3940.method_6629((byte)73) / 520L) {
+                           if((long)var5 <= this.field_3940.method_6629() / 520L) {
                               byte[] var6 = new byte[var4];
                               int var7 = 0;
                               int var8 = 0;
@@ -123,7 +123,7 @@ public final class class_350 {
                                                    throw new IllegalStateException();
                                                 }
 
-                                                if((long)var12 <= this.field_3940.method_6629((byte)85) / 520L) {
+                                                if((long)var12 <= this.field_3940.method_6629() / 520L) {
                                                    int var15 = var9 + var14;
 
                                                    for(int var16 = var14; var16 < var15; ++var16) {
@@ -185,7 +185,7 @@ public final class class_350 {
             }
          }
       } catch (RuntimeException var20) {
-         throw class_223.method_4281(var20, "lh.v(" + ')');
+         throw class_223.method_4281(var20);
       }
    }
 
@@ -216,7 +216,7 @@ public final class class_350 {
             throw new IllegalArgumentException("" + this.field_3942 * 1496779987 + ',' + var1 + ',' + var3);
          }
       } catch (RuntimeException var9) {
-         throw class_223.method_4281(var9, "lh.n(" + ')');
+         throw class_223.method_4281(var9);
       }
    }
 
@@ -236,7 +236,7 @@ public final class class_350 {
                               throw new IllegalStateException();
                            }
 
-                           if(this.field_3941.method_6629((byte)98) < (long)(6 + var1 * 6)) {
+                           if(this.field_3941.method_6629() < (long)(6 + var1 * 6)) {
                               var10000 = false;
                               return var10000;
                            }
@@ -249,7 +249,7 @@ public final class class_350 {
                                  throw new IllegalStateException();
                               }
 
-                              if((long)var7 <= this.field_3940.method_6629((byte)96) / 520L) {
+                              if((long)var7 <= this.field_3940.method_6629() / 520L) {
                                  break label244;
                               }
 
@@ -262,7 +262,7 @@ public final class class_350 {
                            return var10000;
                         }
                      } else {
-                        var7 = (int)((this.field_3940.method_6629((byte)58) + 519L) / 520L);
+                        var7 = (int)((this.field_3940.method_6629() + 519L) / 520L);
                         if(var7 == 0) {
                            if(var5 == 1190619178) {
                               throw new IllegalStateException();
@@ -357,7 +357,7 @@ public final class class_350 {
                               throw new IllegalStateException();
                            }
 
-                           if((long)var10 > this.field_3940.method_6629((byte)60) / 520L) {
+                           if((long)var10 > this.field_3940.method_6629() / 520L) {
                               if(var5 == 1190619178) {
                                  throw new IllegalStateException();
                               }
@@ -371,7 +371,7 @@ public final class class_350 {
                            }
 
                            var4 = false;
-                           var10 = (int)((this.field_3940.method_6629((byte)106) + 519L) / 520L);
+                           var10 = (int)((this.field_3940.method_6629() + 519L) / 520L);
                            if(0 == var10) {
                               if(var5 == 1190619178) {
                                  throw new IllegalStateException();
@@ -477,7 +477,7 @@ public final class class_350 {
             return var10000;
          }
       } catch (RuntimeException var20) {
-         throw class_223.method_4281(var20, "lh.f(" + ')');
+         throw class_223.method_4281(var20);
       }
    }
 
@@ -485,7 +485,7 @@ public final class class_350 {
       try {
          return "" + 1496779987 * this.field_3942;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "lh.toString(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -502,7 +502,7 @@ public final class class_350 {
             int var6;
             boolean var10000;
             if(var4) {
-               if(this.field_3941.method_6629((byte)124) < (long)(6 + var1 * 6)) {
+               if(this.field_3941.method_6629() < (long)(6 + var1 * 6)) {
                   var10000 = false;
                   return var10000;
                }
@@ -510,12 +510,12 @@ public final class class_350 {
                this.field_3941.method_6628((long)(var1 * 6));
                this.field_3941.method_6632(field_3943, 0, 6, 310646277);
                var6 = ((field_3943[4] & 398715668) << 8) + ((field_3943[3] & 255) << 16) + (field_3943[5] & -1887529813);
-               if(var6 <= 0 || (long)var6 > this.field_3940.method_6629((byte)115) / 520L) {
+               if(var6 <= 0 || (long)var6 > this.field_3940.method_6629() / 520L) {
                   var10000 = false;
                   return var10000;
                }
             } else {
-               var6 = (int)((this.field_3940.method_6629((byte)19) + 519L) / 520L);
+               var6 = (int)((this.field_3940.method_6629() + 519L) / 520L);
                if(var6 == 0) {
                   var6 = 1;
                }
@@ -570,7 +570,7 @@ public final class class_350 {
                            return var10000;
                         }
 
-                        if(var9 < 0 || (long)var9 > this.field_3940.method_6629((byte)38) / 520L) {
+                        if(var9 < 0 || (long)var9 > this.field_3940.method_6629() / 520L) {
                            var10000 = false;
                            return var10000;
                         }
@@ -578,7 +578,7 @@ public final class class_350 {
 
                      if(0 == var9) {
                         var4 = false;
-                        var9 = (int)((this.field_3940.method_6629((byte)21) + 519L) / 520L);
+                        var9 = (int)((this.field_3940.method_6629() + 519L) / 520L);
                         if(0 == var9) {
                            ++var9;
                         }
@@ -667,7 +667,7 @@ public final class class_350 {
          this.field_3941 = var3;
          this.field_3939 = var4 * -1764688535;
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "lh.<init>(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 

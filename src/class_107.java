@@ -139,7 +139,7 @@ public class class_107 extends class_104 {
    }
 
    // $FF: renamed from: dy (int, byte[], int[], int, int, int, int, int, int, int, bv) int
-   static int method_2080(int var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, class_107 var10) {
+   static int method_2080(byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, class_107 var10) {
       var3 >>= 8;
       var9 >>= 8;
       var5 <<= 2;
@@ -687,14 +687,14 @@ public class class_107 extends class_104 {
             this.field_1253 += var2;
             if(this.field_1243 == 256 && (this.field_1244 & 255) == 0) {
                if(class_139.field_1781) {
-                  var2 = method_2100(0, ((class_110)this.field_1205).field_1266, var1, this.field_1244, var2, this.field_1247, this.field_1248, this.field_1255, this.field_1256, 0, var6, var3, this);
+                  var2 = method_2100(((class_110)this.field_1205).field_1266, var1, this.field_1244, var2, this.field_1247, this.field_1248, this.field_1255, this.field_1256, 0, var6, var3, this);
                } else {
                   var2 = method_2099(((class_110)this.field_1205).field_1266, var1, this.field_1244, var2, this.field_1252, this.field_1254, 0, var6, var3, this);
                }
             } else if(class_139.field_1781) {
                var2 = method_2174(0, 0, ((class_110)this.field_1205).field_1266, var1, this.field_1244, var2, this.field_1247, this.field_1248, this.field_1255, this.field_1256, 0, var6, var3, this, this.field_1243, var5);
             } else {
-               var2 = method_2178(0, 0, ((class_110)this.field_1205).field_1266, var1, this.field_1244, var2, this.field_1252, this.field_1254, 0, var6, var3, this, this.field_1243, var5);
+               var2 = method_2178(0, ((class_110)this.field_1205).field_1266, var1, this.field_1244, var2, this.field_1252, this.field_1254, 0, var6, var3, this, this.field_1243, var5);
             }
 
             this.field_1253 -= var2;
@@ -711,7 +711,7 @@ public class class_107 extends class_104 {
 
          if(this.field_1243 == 256 && (this.field_1244 & 255) == 0) {
             if(class_139.field_1781) {
-               return method_2092(0, ((class_110)this.field_1205).field_1266, var1, this.field_1244, var2, this.field_1247, this.field_1248, 0, var4, var3, this);
+               return method_2092(((class_110)this.field_1205).field_1266, var1, this.field_1244, var2, this.field_1247, this.field_1248, 0, var4, var3, this);
             }
 
             return method_2091(((class_110)this.field_1205).field_1266, var1, this.field_1244, var2, this.field_1252, 0, var4, var3, this);
@@ -721,7 +721,7 @@ public class class_107 extends class_104 {
             return method_2096(0, 0, ((class_110)this.field_1205).field_1266, var1, this.field_1244, var2, this.field_1247, this.field_1248, 0, var4, var3, this, this.field_1243, var5);
          }
 
-         return method_2095(0, 0, ((class_110)this.field_1205).field_1266, var1, this.field_1244, var2, this.field_1252, 0, var4, var3, this, this.field_1243, var5);
+         return method_2095(0, ((class_110)this.field_1205).field_1266, var1, this.field_1244, var2, this.field_1252, 0, var4, var3, this, this.field_1243, var5);
       }
    }
 
@@ -737,7 +737,7 @@ public class class_107 extends class_104 {
             this.field_1253 += var2;
             if(this.field_1243 == -256 && (this.field_1244 & 255) == 0) {
                if(class_139.field_1781) {
-                  var2 = method_2102(0, ((class_110)this.field_1205).field_1266, var1, this.field_1244, var2, this.field_1247, this.field_1248, this.field_1255, this.field_1256, 0, var6, var3, this);
+                  var2 = method_2102(((class_110)this.field_1205).field_1266, var1, this.field_1244, var2, this.field_1247, this.field_1248, this.field_1255, this.field_1256, 0, var6, var3, this);
                } else {
                   var2 = method_2101(((class_110)this.field_1205).field_1266, var1, this.field_1244, var2, this.field_1252, this.field_1254, 0, var6, var3, this);
                }
@@ -761,7 +761,7 @@ public class class_107 extends class_104 {
 
          if(this.field_1243 == -256 && (this.field_1244 & 255) == 0) {
             if(class_139.field_1781) {
-               return method_2094(0, ((class_110)this.field_1205).field_1266, var1, this.field_1244, var2, this.field_1247, this.field_1248, 0, var4, var3, this);
+               return method_2094(((class_110)this.field_1205).field_1266, var1, this.field_1244, var2, this.field_1247, this.field_1248, 0, var4, var3, this);
             }
 
             return method_2093(((class_110)this.field_1205).field_1266, var1, this.field_1244, var2, this.field_1252, 0, var4, var3, this);
@@ -873,7 +873,7 @@ public class class_107 extends class_104 {
    }
 
    // $FF: renamed from: ao (int, byte[], int[], int, int, int, int, int, int, int, bv) int
-   static int method_2092(int var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, class_107 var10) {
+   static int method_2092(byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, class_107 var10) {
       var3 >>= 8;
       var9 >>= 8;
       var5 <<= 2;
@@ -949,7 +949,7 @@ public class class_107 extends class_104 {
    }
 
    // $FF: renamed from: aw (int, byte[], int[], int, int, int, int, int, int, int, bv) int
-   static int method_2094(int var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, class_107 var10) {
+   static int method_2094(byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, class_107 var10) {
       var3 >>= 8;
       var9 >>= 8;
       var5 <<= 2;
@@ -997,7 +997,7 @@ public class class_107 extends class_104 {
    }
 
    // $FF: renamed from: af (int, int, byte[], int[], int, int, int, int, int, int, bv, int, int) int
-   static int method_2095(int var0, int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, class_107 var10, int var11, int var12) {
+   static int method_2095(int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, class_107 var10, int var11, int var12) {
       if(var11 == 0 || (var7 = var5 + (var9 - var4 + var11 - 257) / var11) > var8) {
          var7 = var8;
       }
@@ -1141,7 +1141,7 @@ public class class_107 extends class_104 {
    }
 
    // $FF: renamed from: an (int, byte[], int[], int, int, int, int, int, int, int, int, int, bv) int
-   static int method_2100(int var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, class_107 var12) {
+   static int method_2100(byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, class_107 var12) {
       var3 >>= 8;
       var11 >>= 8;
       var5 <<= 2;
@@ -1242,7 +1242,7 @@ public class class_107 extends class_104 {
    }
 
    // $FF: renamed from: bt (int, byte[], int[], int, int, int, int, int, int, int, int, int, bv) int
-   static int method_2102(int var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, class_107 var12) {
+   static int method_2102(byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, class_107 var12) {
       var3 >>= 8;
       var11 >>= 8;
       var5 <<= 2;
@@ -1486,7 +1486,7 @@ public class class_107 extends class_104 {
    }
 
    // $FF: renamed from: eu (int, byte[], int[], int, int, int, int, int, int, int, int, int, bv) int
-   static int method_2104(int var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, class_107 var12) {
+   static int method_2104(byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, class_107 var12) {
       var3 >>= 8;
       var11 >>= 8;
       var5 <<= 2;
@@ -1549,7 +1549,7 @@ public class class_107 extends class_104 {
    }
 
    // $FF: renamed from: dk (int, byte[], int[], int, int, int, int, int, int, int, bv) int
-   static int method_2105(int var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, class_107 var10) {
+   static int method_2105(byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, class_107 var10) {
       var3 >>= 8;
       var9 >>= 8;
       var5 <<= 2;
@@ -2389,7 +2389,7 @@ public class class_107 extends class_104 {
    }
 
    // $FF: renamed from: et (int, int, byte[], int[], int, int, int, int, int, int, int, bv, int, int) int
-   static int method_2124(int var0, int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, class_107 var11, int var12, int var13) {
+   static int method_2124(int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, class_107 var11, int var12, int var13) {
       var11.field_1247 -= var11.field_1255 * var5;
       var11.field_1248 -= var11.field_1256 * var5;
       if(var12 == 0 || (var8 = var5 + (var10 - var4 + var12 - 1513308860) / var12) > var9) {
@@ -2477,7 +2477,7 @@ public class class_107 extends class_104 {
    }
 
    // $FF: renamed from: dc (int, byte[], int[], int, int, int, int, int, int, int, bv) int
-   static int method_2159(int var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, class_107 var10) {
+   static int method_2159(byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, class_107 var10) {
       var3 >>= 8;
       var9 >>= 8;
       var5 <<= 2;
@@ -2530,7 +2530,7 @@ public class class_107 extends class_104 {
    }
 
    // $FF: renamed from: df (int, byte[], int[], int, int, int, int, int, int, int, bv) int
-   static int method_2163(int var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, class_107 var10) {
+   static int method_2163(byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, class_107 var10) {
       var3 >>= 8;
       var9 >>= 8;
       var5 <<= 2;
@@ -2578,7 +2578,7 @@ public class class_107 extends class_104 {
    }
 
    // $FF: renamed from: dv (int, byte[], int[], int, int, int, int, int, int, int, bv) int
-   static int method_2164(int var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, class_107 var10) {
+   static int method_2164(byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, class_107 var10) {
       var3 >>= 8;
       var9 >>= 8;
       var5 <<= 2;
@@ -2626,7 +2626,7 @@ public class class_107 extends class_104 {
    }
 
    // $FF: renamed from: dd (int, byte[], int[], int, int, int, int, int, int, int, bv) int
-   static int method_2166(int var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, class_107 var10) {
+   static int method_2166(byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, class_107 var10) {
       var3 >>= 8;
       var9 >>= 8;
       var5 <<= 2;
@@ -2674,7 +2674,7 @@ public class class_107 extends class_104 {
    }
 
    // $FF: renamed from: da (int, byte[], int[], int, int, int, int, int, int, int, bv) int
-   static int method_2167(int var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, class_107 var10) {
+   static int method_2167(byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, class_107 var10) {
       var3 >>= 8;
       var9 >>= 8;
       var5 <<= 2;
@@ -2722,7 +2722,7 @@ public class class_107 extends class_104 {
    }
 
    // $FF: renamed from: dx (int, int, byte[], int[], int, int, int, int, int, int, bv, int, int) int
-   static int method_2168(int var0, int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, class_107 var10, int var11, int var12) {
+   static int method_2168(int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, class_107 var10, int var11, int var12) {
       if(var11 == 0 || (var7 = var5 + (var9 - var4 + var11 - 2013145321) / var11) > var8) {
          var7 = var8;
       }
@@ -2810,7 +2810,7 @@ public class class_107 extends class_104 {
    }
 
    // $FF: renamed from: bq (int, int, byte[], int[], int, int, int, int, int, int, int, bv, int, int) int
-   static int method_2178(int var0, int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, class_107 var11, int var12, int var13) {
+   static int method_2178(int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, class_107 var11, int var12, int var13) {
       var11.field_1247 -= var11.field_1255 * var5;
       var11.field_1248 -= var11.field_1256 * var5;
       if(var12 == 0 || (var8 = var5 + (var10 - var4 + var12 - 257) / var12) > var9) {
@@ -2847,7 +2847,7 @@ public class class_107 extends class_104 {
    }
 
    // $FF: renamed from: ej (int, int, byte[], int[], int, int, int, int, int, int, int, bv, int, int) int
-   static int method_2180(int var0, int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, class_107 var11, int var12, int var13) {
+   static int method_2180(int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, class_107 var11, int var12, int var13) {
       var11.field_1247 -= var11.field_1255 * var5;
       var11.field_1248 -= var11.field_1256 * var5;
       if(var12 == 0 || (var8 = var5 + (var10 - var4 + var12 - 257) / var12) > var9) {
@@ -2884,7 +2884,7 @@ public class class_107 extends class_104 {
    }
 
    // $FF: renamed from: ek (int, byte[], int[], int, int, int, int, int, int, int, int, int, bv) int
-   static int method_2182(int var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, class_107 var12) {
+   static int method_2182(byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, class_107 var12) {
       var3 >>= 8;
       var11 >>= 8;
       var5 <<= 2;
@@ -2957,7 +2957,7 @@ public class class_107 extends class_104 {
    }
 
    // $FF: renamed from: ed (int, byte[], int[], int, int, int, int, int, int, int, int, int, bv) int
-   static int method_2184(int var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, class_107 var12) {
+   static int method_2184(byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, class_107 var12) {
       var3 >>= 8;
       var11 >>= 8;
       var5 <<= 2;
@@ -3020,7 +3020,7 @@ public class class_107 extends class_104 {
    }
 
    // $FF: renamed from: ep (int, byte[], int[], int, int, int, int, int, int, int, int, int, bv) int
-   static int method_2185(int var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, class_107 var12) {
+   static int method_2185(byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, class_107 var12) {
       var3 >>= 8;
       var11 >>= 8;
       var5 <<= 2;
@@ -3083,7 +3083,7 @@ public class class_107 extends class_104 {
    }
 
    // $FF: renamed from: ex (int, byte[], int[], int, int, int, int, int, int, int, int, int, bv) int
-   static int method_2186(int var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, class_107 var12) {
+   static int method_2186(byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, class_107 var12) {
       var3 >>= 8;
       var11 >>= 8;
       var5 <<= 2;
@@ -3146,7 +3146,7 @@ public class class_107 extends class_104 {
    }
 
    // $FF: renamed from: ew (int, byte[], int[], int, int, int, int, int, int, int, int, int, bv) int
-   static int method_2187(int var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, class_107 var12) {
+   static int method_2187(byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, class_107 var12) {
       var3 >>= 8;
       var11 >>= 8;
       var5 <<= 2;
@@ -3209,7 +3209,7 @@ public class class_107 extends class_104 {
    }
 
    // $FF: renamed from: el (int, int, byte[], int[], int, int, int, int, int, int, int, bv, int, int) int
-   static int method_2189(int var0, int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, class_107 var11, int var12, int var13) {
+   static int method_2189(int var1, byte[] var2, int[] var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, class_107 var11, int var12, int var13) {
       var11.field_1247 -= var11.field_1255 * var5;
       var11.field_1248 -= var11.field_1256 * var5;
       if(var12 == 0 || (var8 = var5 + (var10 - var4 + var12 - 759126595) / var12) > var9) {
@@ -3260,7 +3260,7 @@ public class class_107 extends class_104 {
    }
 
    // $FF: renamed from: ez (int, byte[], int[], int, int, int, int, int, int, int, int, int, bv) int
-   static int method_2193(int var0, byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, class_107 var12) {
+   static int method_2193(byte[] var1, int[] var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, class_107 var12) {
       var3 >>= 8;
       var11 >>= 8;
       var5 <<= 2;

@@ -14,7 +14,7 @@ public final class class_332 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ku.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -140,7 +140,7 @@ public final class class_332 {
                   throw new IllegalStateException();
                }
 
-               if(var1 < client.field_1647[var0].method_501((byte)17)) {
+               if(var1 < client.field_1647[var0].method_501()) {
                   class_178 var3 = (class_178)client.field_1647[var0].field_318.get(var1);
                   if(var3.field_2221 != -1) {
                      return;
@@ -148,11 +148,11 @@ public final class class_332 {
 
                   class_203 var4 = client.field_1463;
                   class_40 var5 = class_112.method_2238(class_266.field_3086, var4.field_2384, (byte)8);
-                  var5.field_263.method_210(3 + class_166.method_3598(var3.field_2222, 24519255), 303066737);
-                  var5.field_263.method_210(var0, 303066737);
-                  var5.field_263.method_333(var1, 1583115657);
-                  var5.field_263.method_120(var3.field_2222, -427478981);
-                  var4.method_4079(var5, -1660823226);
+                  var5.field_263.method_210(3 + class_166.method_3598(var3.field_2222));
+                  var5.field_263.method_210(var0);
+                  var5.field_263.method_333(var1);
+                  var5.field_263.method_120(var3.field_2222);
+                  var4.method_4079(var5);
                   return;
                }
 
@@ -163,7 +163,7 @@ public final class class_332 {
 
          }
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "ku.kv(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 

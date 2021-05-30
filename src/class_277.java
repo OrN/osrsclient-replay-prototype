@@ -9,13 +9,13 @@ public abstract class class_277 {
 
 
    // $FF: renamed from: f (byte) byte[]
-   abstract byte[] method_5132(byte var1);
+   abstract byte[] method_5132();
 
    // $FF: renamed from: l () byte[]
    abstract byte[] method_5133();
 
    // $FF: renamed from: y (byte[], byte) void
-   abstract void method_5134(byte[] var1, byte var2);
+   abstract void method_5134(byte[] var1);
 
    // $FF: renamed from: p (byte[], boolean) java.lang.Object
    public static Object method_5135(byte[] var0, boolean var1) {
@@ -24,7 +24,7 @@ public abstract class class_277 {
       } else if(var0.length > 136) {
          class_278 var10000 = new class_278();
          class_278 var2 = var10000;
-         var2.method_5134(var0, (byte)-73);
+         var2.method_5134(var0);
          return var2;
       } else if(var1) {
          int var3 = var0.length;
@@ -43,7 +43,7 @@ public abstract class class_277 {
       } else if(var0.length > 136) {
          class_278 var10000 = new class_278();
          class_278 var2 = var10000;
-         var2.method_5134(var0, (byte)-16);
+         var2.method_5134(var0);
          return var2;
       } else if(var1) {
          int var3 = var0.length;
@@ -60,7 +60,7 @@ public abstract class class_277 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "im.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -80,7 +80,7 @@ public abstract class class_277 {
          }
       } else if(var0 instanceof class_277) {
          class_277 var2 = (class_277)var0;
-         return var2.method_5132((byte)115);
+         return var2.method_5132();
       } else {
          throw new IllegalArgumentException();
       }
@@ -102,7 +102,7 @@ public abstract class class_277 {
          }
       } else if(var0 instanceof class_277) {
          class_277 var2 = (class_277)var0;
-         return var2.method_5132((byte)69);
+         return var2.method_5132();
       } else {
          throw new IllegalArgumentException();
       }
@@ -128,11 +128,11 @@ public abstract class class_277 {
             var5.field_492 = class_318.field_3787[0];
             var5.field_491 = class_192.field_2300;
             var5.field_493 = class_403.field_4279[0];
-            class_192.method_3958(179304235);
+            class_192.method_3958();
             return var5;
          }
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "im.n(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -152,7 +152,7 @@ public abstract class class_277 {
       } else if(var0.length > 136) {
          class_278 var10000 = new class_278();
          class_278 var2 = var10000;
-         var2.method_5134(var0, (byte)18);
+         var2.method_5134(var0);
          return var2;
       } else if(var1) {
          int var3 = var0.length;

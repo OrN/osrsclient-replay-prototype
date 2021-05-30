@@ -67,7 +67,7 @@ public class class_256 {
 
          }
       } catch (RuntimeException var10) {
-         throw class_223.method_4281(var10, "ha.ia(" + ')');
+         throw class_223.method_4281(var10);
       }
    }
 
@@ -78,34 +78,34 @@ public class class_256 {
 
    // $FF: renamed from: <clinit> () void
    static {
-      class_256 var10000 = new class_256(15);
+      class_256 var10000 = new class_256();
       field_2894 = var10000;
-      var10000 = new class_256(7);
+      var10000 = new class_256();
       field_2888 = var10000;
-      var10000 = new class_256(2);
+      var10000 = new class_256();
       field_2890 = var10000;
-      var10000 = new class_256(5);
+      var10000 = new class_256();
       field_2891 = var10000;
-      var10000 = new class_256(14);
+      var10000 = new class_256();
       field_2889 = var10000;
-      var10000 = new class_256(3);
+      var10000 = new class_256();
       field_2893 = var10000;
-      var10000 = new class_256(5);
+      var10000 = new class_256();
       field_2895 = var10000;
-      var10000 = new class_256(4);
+      var10000 = new class_256();
       field_2892 = var10000;
-      var10000 = new class_256(4);
+      var10000 = new class_256();
       field_2896 = var10000;
-      var10000 = new class_256(6);
+      var10000 = new class_256();
       field_2897 = var10000;
    }
 
    // $FF: renamed from: <init> (int) void
-   class_256(int var1) {
+   class_256() {
       super();
       try {
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ha.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 }

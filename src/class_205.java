@@ -38,7 +38,7 @@ public class class_205 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "dz.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -93,7 +93,7 @@ public class class_205 {
 
          return 0;
       } catch (RuntimeException var11) {
-         throw class_223.method_4281(var11, "dz.hw(" + ')');
+         throw class_223.method_4281(var11);
       }
    }
 
@@ -123,12 +123,12 @@ public class class_205 {
             }
          } else {
             class_40 var2 = class_112.method_2238(class_266.field_3139, client.field_1463.field_2384, (byte)8);
-            var2.field_263.method_210(class_166.method_3598(var0, -1728397010), 303066737);
-            var2.field_263.method_120(var0, -427478981);
-            client.field_1463.method_4079(var2, -2135069247);
+            var2.field_263.method_210(class_166.method_3598(var0));
+            var2.field_263.method_120(var0);
+            client.field_1463.method_4079(var2);
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "dz.ku(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 }

@@ -35,7 +35,7 @@ public class class_58 extends class_27 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "bo.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -88,7 +88,7 @@ public class class_58 extends class_27 {
                      var7 = var10000;
                      var7.field_332 = var4;
                      var7.field_337 = var4.field_216;
-                     class_203.method_4099(var7, (byte)1);
+                     class_203.method_4099(var7);
                   }
                }
 
@@ -107,7 +107,7 @@ public class class_58 extends class_27 {
                            throw new IllegalStateException();
                         }
 
-                        class_37 var8 = class_71.method_1047(-1722455647 * var4.field_101, 2053441299);
+                        class_37 var8 = class_71.method_1047(-1722455647 * var4.field_101);
                         if(null == var8) {
                            continue;
                         }
@@ -133,14 +133,14 @@ public class class_58 extends class_27 {
                      var7 = var10000;
                      var7.field_332 = var4;
                      var7.field_337 = var4.field_217;
-                     class_203.method_4099(var7, (byte)1);
+                     class_203.method_4099(var7);
                   }
                }
             }
          }
 
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "bo.jr(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -191,7 +191,7 @@ public class class_58 extends class_27 {
          class_132.field_1731 = -1406348549 * var3;
          class_176.field_2180 = 54437270 + -664979073 * client.field_1554;
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "bo.in(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 }

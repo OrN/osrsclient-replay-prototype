@@ -28,12 +28,12 @@ public class class_211 {
          }
 
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ed.<init>(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: u (int, int, byte) void
-   public static final void method_4173(int var0, int var1, byte var2) {
+   public static final void method_4173(int var0, int var1) {
       try {
          class_255.field_2881 = 1040075139 * var0;
          class_255.field_2877 = -1626986243 * var1;
@@ -41,12 +41,12 @@ public class class_211 {
          class_255.field_2882 = 0;
          class_255.field_2878 = false;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ed.u(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: l (int, cf, boolean, int) int
-   static int method_4174(int var0, class_90 var1, boolean var2, int var3) {
+   static int method_4174(int var0, boolean var2, int var3) {
       try {
          class_37 var4;
          if(var0 >= 2000) {
@@ -55,7 +55,7 @@ public class class_211 {
             }
 
             var0 -= 1000;
-            var4 = class_71.method_1047(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885], 1536588781);
+            var4 = class_71.method_1047(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
          } else {
             class_37 var10000;
             if(var2) {
@@ -298,16 +298,16 @@ public class class_211 {
          var4.field_187 = true;
          return 1;
       } catch (RuntimeException var9) {
-         throw class_223.method_4281(var9, "ed.l(" + ')');
+         throw class_223.method_4281(var9);
       }
    }
 
    // $FF: renamed from: d (int) void
-   public static void method_4175(int var0) {
+   public static void method_4175() {
       try {
          class_83.field_770.method_5074();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ed.d(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

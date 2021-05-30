@@ -25,7 +25,7 @@ public final class class_248 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "go.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -56,16 +56,16 @@ public final class class_248 {
 
          }
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "go.ak(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
    // $FF: renamed from: y (int) mi[]
-   static class_365[] method_4718(int var0) {
+   static class_365[] method_4718() {
       try {
          return new class_365[]{class_365.field_4084, class_365.field_4086, class_365.field_4085, class_365.field_4087};
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "go.y(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

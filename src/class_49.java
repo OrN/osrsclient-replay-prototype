@@ -25,7 +25,7 @@ public class class_49 extends class_27 {
          this.field_360 = new int[]{-1};
          this.field_362 = new int[]{0};
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "cj.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 

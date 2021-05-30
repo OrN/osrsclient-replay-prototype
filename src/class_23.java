@@ -15,11 +15,11 @@ public interface class_23 {
    void method_72(Object var1, class_28 var2);
 
    // $FF: renamed from: v (java.lang.Object, nd, int) void
-   void method_73(Object var1, class_28 var2, int var3);
+   void method_73(Object var1, class_28 var2);
 
    // $FF: renamed from: r (nd) java.lang.Object
    Object method_74(class_28 var1);
 
    // $FF: renamed from: n (nd, int) java.lang.Object
-   Object method_75(class_28 var1, int var2);
+   Object method_75(class_28 var1);
 }

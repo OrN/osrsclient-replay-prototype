@@ -79,14 +79,14 @@ public class class_30 extends class_27 {
    // $FF: renamed from: v (nd, int) void
    public void method_385(class_28 var1, int var2) {
       try {
-         var1.method_210(8, 303066737);
-         var1.method_210(this.field_35 * -1738879851, 303066737);
-         var1.method_210(this.field_33?1:0, 303066737);
-         var1.method_333(this.field_45 * -841564613, -535348157);
-         var1.method_210(-1817348859 * this.field_38, 303066737);
-         var1.method_210(this.field_36 * -664826965, 303066737);
-         var1.method_210(743323425 * this.field_50, 303066737);
-         var1.method_210(this.field_40 * -1340740659, 303066737);
+         var1.method_210(8);
+         var1.method_210(this.field_35 * -1738879851);
+         var1.method_210(this.field_33?1:0);
+         var1.method_333(this.field_45 * -841564613);
+         var1.method_210(-1817348859 * this.field_38);
+         var1.method_210(this.field_36 * -664826965);
+         var1.method_210(743323425 * this.field_50);
+         var1.method_210(this.field_40 * -1340740659);
          byte var10001;
          if(this.field_39) {
             if(var2 <= -860793651) {
@@ -98,94 +98,94 @@ public class class_30 extends class_27 {
             var10001 = 0;
          }
 
-         var1.method_210(var10001, 303066737);
-         var1.method_333(this.field_34 * -862865125, 598392126);
-         var1.method_210(-669385777 * this.field_54, 303066737);
-         var1.method_115(this.field_21 * 1636879871, -1756916961);
-         var1.method_333(-741619897 * this.field_43, -1085293411);
+         var1.method_210(var10001);
+         var1.method_333(this.field_34 * -862865125);
+         var1.method_210(-669385777 * this.field_54);
+         var1.method_115(this.field_21 * 1636879871);
+         var1.method_333(-741619897 * this.field_43);
          var1.method_121(this.field_44, (byte)-39);
          var1.method_121(this.field_55, (byte)-49);
          var1.method_121(this.field_46, (byte)3);
          var1.method_121(this.field_49, (byte)-13);
-         var1.method_210(611587281 * this.field_47, 303066737);
-         var1.method_333(945045113 * this.field_48, -854199456);
+         var1.method_210(611587281 * this.field_47);
+         var1.method_333(945045113 * this.field_48);
          var1.method_121(this.field_52, (byte)-32);
          var1.method_121(this.field_53, (byte)-41);
-         var1.method_210(this.field_29 * 942702701, 303066737);
-         var1.method_210(-2113690795 * this.field_51, 303066737);
+         var1.method_210(this.field_29 * 942702701);
+         var1.method_210(-2113690795 * this.field_51);
 
          for(int var3 = 0; var3 < this.field_37.length; ++var3) {
-            var1.method_116(this.field_37[var3], -626539323);
+            var1.method_116(this.field_37[var3]);
          }
 
-         var1.method_116(this.field_56 * 1352170779, 682013063);
+         var1.method_116(this.field_56 * 1352170779);
          var1.method_121(this.field_25, (byte)78);
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "my.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: n (int) int
-   public int method_386(int var1) {
+   public int method_386() {
       try {
          byte var2 = 39;
-         int var4 = var2 + class_376.method_6649(this.field_44, -387323412);
-         var4 += class_376.method_6649(this.field_55, -1421915291);
-         var4 += class_376.method_6649(this.field_46, -1676306998);
-         var4 += class_376.method_6649(this.field_49, -1198140584);
-         var4 += class_376.method_6649(this.field_52, -1391466388);
-         var4 += class_376.method_6649(this.field_53, -1383234843);
-         var4 += class_376.method_6649(this.field_25, -1820805436);
+         int var4 = var2 + class_376.method_6649(this.field_44);
+         var4 += class_376.method_6649(this.field_55);
+         var4 += class_376.method_6649(this.field_46);
+         var4 += class_376.method_6649(this.field_49);
+         var4 += class_376.method_6649(this.field_52);
+         var4 += class_376.method_6649(this.field_53);
+         var4 += class_376.method_6649(this.field_25);
          return var4;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "my.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: y () int
    public int method_387() {
       byte var1 = 39;
-      int var2 = var1 + class_376.method_6649(this.field_44, -1614013250);
-      var2 += class_376.method_6649(this.field_55, -350759495);
-      var2 += class_376.method_6649(this.field_46, -429295627);
-      var2 += class_376.method_6649(this.field_49, -1210127327);
-      var2 += class_376.method_6649(this.field_52, -1147679722);
-      var2 += class_376.method_6649(this.field_53, -591752856);
-      var2 += class_376.method_6649(this.field_25, -424743096);
+      int var2 = var1 + class_376.method_6649(this.field_44);
+      var2 += class_376.method_6649(this.field_55);
+      var2 += class_376.method_6649(this.field_46);
+      var2 += class_376.method_6649(this.field_49);
+      var2 += class_376.method_6649(this.field_52);
+      var2 += class_376.method_6649(this.field_53);
+      var2 += class_376.method_6649(this.field_25);
       return var2;
    }
 
    // $FF: renamed from: f (nd) void
    public void method_388(class_28 var1) {
-      var1.method_210(8, 303066737);
-      var1.method_210(this.field_35 * -1738879851, 303066737);
-      var1.method_210(this.field_33?1:0, 303066737);
-      var1.method_333(this.field_45 * -841564613, 1764427063);
-      var1.method_210(-1817348859 * this.field_38, 303066737);
-      var1.method_210(this.field_36 * -664826965, 303066737);
-      var1.method_210(743323425 * this.field_50, 303066737);
-      var1.method_210(this.field_40 * -1340740659, 303066737);
-      var1.method_210(this.field_39?1:0, 303066737);
-      var1.method_333(this.field_34 * -862865125, -1527075932);
-      var1.method_210(-669385777 * this.field_54, 303066737);
-      var1.method_115(this.field_21 * 1636879871, -1756916961);
-      var1.method_333(-741619897 * this.field_43, 1488966899);
+      var1.method_210(8);
+      var1.method_210(this.field_35 * -1738879851);
+      var1.method_210(this.field_33?1:0);
+      var1.method_333(this.field_45 * -841564613);
+      var1.method_210(-1817348859 * this.field_38);
+      var1.method_210(this.field_36 * -664826965);
+      var1.method_210(743323425 * this.field_50);
+      var1.method_210(this.field_40 * -1340740659);
+      var1.method_210(this.field_39?1:0);
+      var1.method_333(this.field_34 * -862865125);
+      var1.method_210(-669385777 * this.field_54);
+      var1.method_115(this.field_21 * 1636879871);
+      var1.method_333(-741619897 * this.field_43);
       var1.method_121(this.field_44, (byte)-10);
       var1.method_121(this.field_55, (byte)15);
       var1.method_121(this.field_46, (byte)26);
       var1.method_121(this.field_49, (byte)-15);
-      var1.method_210(611587281 * this.field_47, 303066737);
-      var1.method_333(945045113 * this.field_48, 443551022);
+      var1.method_210(611587281 * this.field_47);
+      var1.method_333(945045113 * this.field_48);
       var1.method_121(this.field_52, (byte)-86);
       var1.method_121(this.field_53, (byte)-25);
-      var1.method_210(this.field_29 * 942702701, 303066737);
-      var1.method_210(-2113690795 * this.field_51, 303066737);
+      var1.method_210(this.field_29 * 942702701);
+      var1.method_210(-2113690795 * this.field_51);
 
       for(int var2 = 0; var2 < this.field_37.length; ++var2) {
-         var1.method_116(this.field_37[var2], -667670201);
+         var1.method_116(this.field_37[var2]);
       }
 
-      var1.method_116(this.field_56 * 1352170779, -577104683);
+      var1.method_116(this.field_56 * 1352170779);
       var1.method_121(this.field_25, (byte)-28);
    }
 
@@ -220,7 +220,7 @@ public class class_30 extends class_27 {
          this.field_56 = var24 * 1064998163;
          this.field_25 = var25;
       } catch (RuntimeException var26) {
-         throw class_223.method_4281(var26, "my.<init>(" + ')');
+         throw class_223.method_4281(var26);
       }
    }
 }

@@ -25,7 +25,7 @@ public final class class_217 {
       try {
          this.field_2475 = new int[4096];
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "fd.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -35,16 +35,16 @@ public final class class_217 {
       try {
          this.field_2475 = var1;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "fd.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: n (int, int, int) int
-   final int method_4201(int var1, int var2, int var3) {
+   final int method_4201(int var1, int var2) {
       try {
          return this.field_2475[var2 * 64 + var1];
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "fd.n(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -77,7 +77,7 @@ public final class class_217 {
 
          class_103.field_1203.method_5966();
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "fd.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 }

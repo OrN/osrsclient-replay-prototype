@@ -45,7 +45,7 @@ public class class_353 {
       try {
          this.field_3961 = var1 * 914046243;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "lm.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 

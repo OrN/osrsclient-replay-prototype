@@ -238,7 +238,7 @@ public class class_266 implements class_12 {
          }
 
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "hs.n(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -249,14 +249,14 @@ public class class_266 implements class_12 {
          this.field_3091 = -230157397 * var1;
          this.field_3153 = var2 * -275856261;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "hs.<init>(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: y (jv, int, int, byte) oh
    public static class_67 method_5032(class_306 var0, int var1, int var2, byte var3) {
       try {
-         byte[] var5 = var0.method_5381(var1, var2, -26460885);
+         byte[] var5 = var0.method_5381(var1, var2);
          boolean var4;
          if(var5 == null) {
             if(var3 <= 1) {
@@ -296,11 +296,11 @@ public class class_266 implements class_12 {
                var6.field_502[var9] = class_192.field_2300[var8[var9] & 255];
             }
 
-            class_192.method_3958(179304235);
+            class_192.method_3958();
             return var6;
          }
       } catch (RuntimeException var10) {
-         throw class_223.method_4281(var10, "hs.y(" + ')');
+         throw class_223.method_4281(var10);
       }
    }
 

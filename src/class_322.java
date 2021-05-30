@@ -13,7 +13,7 @@ public class class_322 {
 
       for(int var3 = 0; var3 < var2.length; ++var3) {
          class_14 var4 = var2[var3];
-         if(var1 == var4.method_50(1154353031)) {
+         if(var1 == var4.method_50()) {
             return var4;
          }
       }
@@ -32,7 +32,7 @@ public class class_322 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "kh.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -42,7 +42,7 @@ public class class_322 {
 
       for(int var3 = 0; var3 < var2.length; ++var3) {
          class_14 var4 = var2[var3];
-         if(var1 == var4.method_50(-1930828913)) {
+         if(var1 == var4.method_50()) {
             return var4;
          }
       }
@@ -56,7 +56,7 @@ public class class_322 {
 
       for(int var3 = 0; var3 < var2.length; ++var3) {
          class_14 var4 = var2[var3];
-         if(var1 == var4.method_50(-1381598741)) {
+         if(var1 == var4.method_50()) {
             return var4;
          }
       }
@@ -70,7 +70,7 @@ public class class_322 {
 
       for(int var3 = 0; var3 < var2.length; ++var3) {
          class_14 var4 = var2[var3];
-         if(var1 == var4.method_50(-259333897)) {
+         if(var1 == var4.method_50()) {
             return var4;
          }
       }

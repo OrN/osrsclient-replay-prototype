@@ -27,7 +27,7 @@ public final class class_99 extends class_98 {
 
          return false;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "db.jx(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -124,7 +124,7 @@ public final class class_99 extends class_98 {
          this.field_1126[0] = var5;
          this.field_1086[0] = var2;
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "db.v(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
@@ -194,7 +194,7 @@ public final class class_99 extends class_98 {
          this.field_1077 = this.field_1112[0] * 785886848 + 1267070784 * this.field_1079;
          this.field_1076 = 1775993792 * this.field_1079 + this.field_1126[0] * -368818304;
       } catch (RuntimeException var8) {
-         throw class_223.method_4281(var8, "db.f(" + ')');
+         throw class_223.method_4281(var8);
       }
    }
 
@@ -306,7 +306,7 @@ public final class class_99 extends class_98 {
             }
          }
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "db.n(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
@@ -315,7 +315,7 @@ public final class class_99 extends class_98 {
       try {
          return this.field_1141 != null;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "db.m(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -493,7 +493,7 @@ public final class class_99 extends class_98 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "db.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -744,7 +744,7 @@ public final class class_99 extends class_98 {
          var10000 = true;
          return var10000;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "db.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 }

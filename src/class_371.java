@@ -40,7 +40,7 @@ public class class_371 implements class_17 {
 
          return ((Integer)this.field_4106.method_62(var1, -1572379722)).intValue();
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "mt.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -85,7 +85,7 @@ public class class_371 implements class_17 {
          }
 
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "mt.n(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -93,7 +93,7 @@ public class class_371 implements class_17 {
       try {
          return null == this.field_4110?Collections.emptyList().iterator():this.field_4110.values().iterator();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "mt.iterator(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -108,7 +108,7 @@ public class class_371 implements class_17 {
       try {
          this.field_4106 = var1;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "mt.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 

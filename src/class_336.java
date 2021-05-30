@@ -29,7 +29,7 @@ public class class_336 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ky.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

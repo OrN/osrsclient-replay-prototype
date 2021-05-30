@@ -11,28 +11,28 @@ public class class_113 extends class_111 {
 
 
     // $FF: renamed from: n (l, byte) void
-   void method_2232(class_171 var1, byte var2) {
+   void method_2232(class_171 var1) {
       try {
          var1.method_3660(1588156263 * this.field_1280, this.field_1277 * -2287605941349640037L);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "v.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: v (nd, int) void
    void method_2231(class_28 var1, int var2) {
       try {
-         this.field_1280 = var1.method_135((byte)-102) * -1776364457;
-         this.field_1277 = var1.method_136(-1260035371) * -7943130751217824365L;
+         this.field_1280 = var1.method_135() * -1776364457;
+         this.field_1277 = var1.method_136() * -7943130751217824365L;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "v.v(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: f (nd) void
    void method_2234(class_28 var1) {
-      this.field_1280 = var1.method_135((byte)-33) * -1776364457;
-      this.field_1277 = var1.method_136(-878255941) * -7943130751217824365L;
+      this.field_1280 = var1.method_135() * -1776364457;
+      this.field_1277 = var1.method_136() * -7943130751217824365L;
    }
 
    // $FF: renamed from: p (l) void
@@ -42,8 +42,8 @@ public class class_113 extends class_111 {
 
    // $FF: renamed from: y (nd) void
    void method_2233(class_28 var1) {
-      this.field_1280 = var1.method_135((byte)-22) * -1776364457;
-      this.field_1277 = var1.method_136(-1755972490) * -7943130751217824365L;
+      this.field_1280 = var1.method_135() * -1776364457;
+      this.field_1277 = var1.method_136() * -7943130751217824365L;
    }
 
    // $FF: renamed from: <init> (f) void
@@ -52,7 +52,7 @@ public class class_113 extends class_111 {
       try {
          this.this$0 = var1;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "v.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -105,7 +105,7 @@ public class class_113 extends class_111 {
          class_309.field_3741 = var10000 * -1518998617;
          class_362.field_4020 = class_232.field_2597 * 1024747149;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "v.o(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 }

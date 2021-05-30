@@ -34,7 +34,7 @@ public class class_279 {
          }
 
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "ig.lq(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -52,7 +52,7 @@ public class class_279 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ig.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -111,7 +111,7 @@ public class class_279 {
 
          return true;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ig.c(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 }

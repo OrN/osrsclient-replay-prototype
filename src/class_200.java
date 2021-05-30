@@ -42,7 +42,7 @@ public class class_200 implements Runnable {
    }
 
    // $FF: renamed from: v (java.net.URL, int) df
-   public class_194 method_4038(URL var1, int var2) {
+   public class_194 method_4038(URL var1) {
       try {
          class_194 var10000 = new class_194(var1);
          class_194 var3 = var10000;
@@ -52,12 +52,12 @@ public class class_200 implements Runnable {
             return var3;
          }
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "do.v(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
    // $FF: renamed from: n (int) void
-   public void method_4039(int var1) {
+   public void method_4039() {
       try {
          this.field_2349 = true;
 
@@ -72,7 +72,7 @@ public class class_200 implements Runnable {
          }
 
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "do.n(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -237,7 +237,7 @@ public class class_200 implements Runnable {
          }
 
       } catch (RuntimeException var18) {
-         throw class_223.method_4281(var18, "do.run(" + ')');
+         throw class_223.method_4281(var18);
       }
    }
 
@@ -352,7 +352,7 @@ public class class_200 implements Runnable {
          client.field_1680 = 432296879 * var2;
          client.field_1681 = -1936905817 * var3;
       } catch (RuntimeException var11) {
-         throw class_223.method_4281(var11, "do.gu(" + ')');
+         throw class_223.method_4281(var11);
       }
    }
 
@@ -478,19 +478,19 @@ public class class_200 implements Runnable {
          this.field_2348.setPriority(1);
          this.field_2348.start();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "do.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: az (int, cf, boolean, int) int
-   static int method_4052(int var0, class_90 var1, boolean var2, int var3) {
+   static int method_4052(int var0, int var3) {
       try {
          if(var0 == 6200) {
             if(var3 != 1175355119) {
                throw new IllegalStateException();
             } else {
                class_136.field_1752 -= 2119512838;
-               client.field_1670 = (short)class_135.method_2945(class_165.field_2052[-26460885 * class_136.field_1752], (short)323);
+               client.field_1670 = (short)class_135.method_2945(class_165.field_2052[-26460885 * class_136.field_1752]);
                if(client.field_1670 <= 0) {
                   if(var3 != 1175355119) {
                      throw new IllegalStateException();
@@ -499,7 +499,7 @@ public class class_200 implements Runnable {
                   client.field_1670 = 256;
                }
 
-               client.field_1671 = (short)class_135.method_2945(class_165.field_2052[class_136.field_1752 * -26460885 + 1], (short)7571);
+               client.field_1671 = (short)class_135.method_2945(class_165.field_2052[class_136.field_1752 * -26460885 + 1]);
                if(client.field_1671 <= 0) {
                   if(var3 != 1175355119) {
                      throw new IllegalStateException();
@@ -606,8 +606,8 @@ public class class_200 implements Runnable {
                return 1;
             }
          } else if(var0 == 6205) {
-            class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_187.method_3886(client.field_1670, 70996791);
-            class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_187.method_3886(client.field_1671, 600371185);
+            class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_187.method_3886(client.field_1670);
+            class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_187.method_3886(client.field_1671);
             return 1;
          } else if(var0 == 6220) {
             class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = 0;
@@ -637,7 +637,7 @@ public class class_200 implements Runnable {
             return 2;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "do.az(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 }

@@ -13,11 +13,11 @@ public class class_298 {
 
 
    // $FF: renamed from: r (byte) void
-   public static void method_5343(byte var0) {
+   public static void method_5343() {
       try {
          class_73.field_588.method_5074();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "jh.r(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -27,7 +27,7 @@ public class class_298 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "jh.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

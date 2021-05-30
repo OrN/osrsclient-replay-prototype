@@ -194,28 +194,28 @@ public class class_53 extends class_51 {
             }
          }
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "o.j(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
    // $FF: renamed from: v (nd, int) void
    void method_571(class_28 var1, int var2) {
       try {
-         if(var1.method_130(1780757709) != 255) {
+         if(var1.method_130() != 255) {
             if(var2 >= 778749602) {
                throw new IllegalStateException();
             }
 
             var1.field_15 -= -1025691571;
-            var1.method_136(1648970535);
+            var1.method_136();
          }
 
          this.field_400 = var1.method_347(-1491281932);
-         this.field_392 = var1.method_132((byte)-125) * -1193008939;
-         this.field_393 = var1.method_131((byte)-32);
-         var1.method_136(-1174323630);
+         this.field_392 = var1.method_132() * -1193008939;
+         this.field_393 = var1.method_131();
+         var1.method_136();
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "o.v(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -227,23 +227,23 @@ public class class_53 extends class_51 {
          var3.field_2222 = this.field_400;
          var3.field_2217 = this.field_392 * -1810419467;
          var3.field_2221 = this.field_393;
-         var1.method_518(var3, -1843980816);
+         var1.method_518(var3);
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "o.n(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: f (nd) void
    void method_570(class_28 var1) {
-      if(var1.method_130(-2049162028) != 1515308310) {
+      if(var1.method_130() != 1515308310) {
          var1.field_15 -= -919309012;
-         var1.method_136(1399517049);
+         var1.method_136();
       }
 
       this.field_400 = var1.method_347(-520721452);
-      this.field_392 = var1.method_132((byte)-63) * -1193008939;
-      this.field_393 = var1.method_131((byte)-9);
-      var1.method_136(-510924858);
+      this.field_392 = var1.method_132() * -1193008939;
+      this.field_393 = var1.method_131();
+      var1.method_136();
    }
 
    // $FF: renamed from: y (y) void
@@ -253,7 +253,7 @@ public class class_53 extends class_51 {
       var2.field_2222 = this.field_400;
       var2.field_2217 = this.field_392 * -1810419467;
       var2.field_2221 = this.field_393;
-      var1.method_518(var2, -1287584526);
+      var1.method_518(var2);
    }
 
    // $FF: renamed from: <init> (x) void
@@ -263,7 +263,7 @@ public class class_53 extends class_51 {
          this.this$0 = var1;
          this.field_400 = null;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "o.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -280,7 +280,7 @@ public class class_53 extends class_51 {
                   throw new IllegalStateException();
                }
 
-               class_121.field_1337.method_2323((byte)82);
+               class_121.field_1337.method_2323();
             }
 
             label124: {
@@ -303,7 +303,7 @@ public class class_53 extends class_51 {
                client.field_1448 = 0;
                client.field_1449 = 0;
                client.field_1621 = 0;
-               client.field_1468.method_5896(var0, 1638200135);
+               client.field_1468.method_5896(var0);
                if(20 != var0) {
                   if(var1 != 0) {
                      throw new IllegalStateException();
@@ -385,8 +385,8 @@ public class class_53 extends class_51 {
                         class_76.field_650 = null;
                         class_119.field_1318 = null;
                         class_153.field_1925 = null;
-                        class_176.field_2181.method_3382((short)7298);
-                        class_215.method_4193(2, -1685265527);
+                        class_176.field_2181.method_3382();
+                        class_215.method_4193(2);
                         class_295.method_5317(true, (byte)93);
                         class_177.field_2206 = false;
                      }
@@ -400,12 +400,12 @@ public class class_53 extends class_51 {
             client.field_1421 = var0 * -1216711561;
          }
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "o.eh(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: ax (int, cf, boolean, byte) int
-   static int method_580(int var0, class_90 var1, boolean var2, byte var3) {
+   static int method_580(int var0, byte var3) {
       try {
          int var4;
          if(5504 == var0) {
@@ -463,7 +463,7 @@ public class class_53 extends class_51 {
             return 2;
          }
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "o.ax(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 }

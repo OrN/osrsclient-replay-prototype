@@ -8,7 +8,7 @@ public class class_260 {
 
    // $FF: renamed from: a (int, int, int) int
    public static int method_4970(int var0, int var1, int var2) {
-      int var3 = class_240.method_4644(var2 - var1 + 1, 1306725260);
+      int var3 = class_240.method_4644(var2 - var1 + 1);
       var3 <<= var1;
       var0 |= var3;
       return var0;
@@ -30,7 +30,7 @@ public class class_260 {
 
    // $FF: renamed from: k (int, int, int) int
    public static int method_4972(int var0, int var1, int var2) {
-      int var3 = class_240.method_4644(var2 - var1 + 1, 1403813853);
+      int var3 = class_240.method_4644(var2 - var1 + 1);
       var3 <<= var1;
       var0 |= var3;
       return var0;
@@ -42,7 +42,7 @@ public class class_260 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "hi.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -58,7 +58,7 @@ public class class_260 {
 
    // $FF: renamed from: x (int, int, int) int
    public static int method_4975(int var0, int var1, int var2) {
-      int var3 = class_240.method_4644(var2 - var1 + 1, 1914543075);
+      int var3 = class_240.method_4644(var2 - var1 + 1);
       var3 <<= var1;
       var0 |= var3;
       return var0;
@@ -81,7 +81,7 @@ public class class_260 {
 
    // $FF: renamed from: m (int, int, int) int
    public static int method_4978(int var0, int var1, int var2) {
-      int var3 = class_240.method_4644(var2 - var1 + 1, 1012631188);
+      int var3 = class_240.method_4644(var2 - var1 + 1);
       var3 <<= var1;
       var0 |= var3;
       return var0;
@@ -89,7 +89,7 @@ public class class_260 {
 
    // $FF: renamed from: e (int, int, int) int
    public static int method_4979(int var0, int var1, int var2) {
-      int var3 = class_240.method_4644(var2 - var1 + 1, 1826217235);
+      int var3 = class_240.method_4644(var2 - var1 + 1);
       var3 <<= var1;
       return var0 & ~var3;
    }
@@ -106,14 +106,14 @@ public class class_260 {
 
    // $FF: renamed from: g (int, int, int) int
    public static int method_4981(int var0, int var1, int var2) {
-      int var3 = class_240.method_4644(var2 - var1 + 1, 1314870539);
+      int var3 = class_240.method_4644(var2 - var1 + 1);
       var3 <<= var1;
       return var0 & ~var3;
    }
 
    // $FF: renamed from: c (int, int, int) int
    public static int method_4982(int var0, int var1, int var2) {
-      int var3 = class_240.method_4644(var2 - var1 + 1, 2120984523);
+      int var3 = class_240.method_4644(var2 - var1 + 1);
       var3 <<= var1;
       return var0 & ~var3;
    }

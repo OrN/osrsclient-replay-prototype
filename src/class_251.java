@@ -480,7 +480,7 @@ public class class_251 {
    }
 
    // $FF: renamed from: o (int, int, int, int, int, gl, int, long, int, int, int, int) boolean
-   public boolean method_4735(int var1, int var2, int var3, int var4, int var5, class_91 var6, int var7, long var8, int var10, int var11, int var12, int var13) {
+   public boolean method_4735(int var1, int var2, int var3, int var4, class_91 var6, int var7, long var8, int var10, int var11, int var12, int var13) {
       return var6 == null?true:this.method_4736(var1, var10, var11, var12 - var10 + 1, var13 - var11 + 1, var2, var3, var4, var6, var7, true, var8, 0);
    }
 
@@ -3124,12 +3124,12 @@ public class class_251 {
    }
 
    // $FF: renamed from: by (int, int, int, int, int, gl, int, long, int, int, int, int) boolean
-   public boolean method_4800(int var1, int var2, int var3, int var4, int var5, class_91 var6, int var7, long var8, int var10, int var11, int var12, int var13) {
+   public boolean method_4800(int var1, int var2, int var3, int var4, class_91 var6, int var7, long var8, int var10, int var11, int var12, int var13) {
       return var6 == null?true:this.method_4736(var1, var10, var11, var12 - var10 + 1, var13 - var11 + 1, var2, var3, var4, var6, var7, true, var8, 0);
    }
 
    // $FF: renamed from: bc (int, int, int, int, int, gl, int, long, int, int, int, int) boolean
-   public boolean method_4801(int var1, int var2, int var3, int var4, int var5, class_91 var6, int var7, long var8, int var10, int var11, int var12, int var13) {
+   public boolean method_4801(int var1, int var2, int var3, int var4, class_91 var6, int var7, long var8, int var10, int var11, int var12, int var13) {
       return var6 == null?true:this.method_4736(var1, var10, var11, var12 - var10 + 1, var13 - var11 + 1, var2, var3, var4, var6, var7, true, var8, 0);
    }
 

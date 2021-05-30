@@ -52,12 +52,12 @@ public class class_140 extends class_139 {
 
          this.field_1812 = new byte[256 << var10002];
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "at.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: n (int, short) void
-   protected void method_2998(int var1, short var2) throws LineUnavailableException {
+   protected void method_2998(int var1) throws LineUnavailableException {
       try {
          try {
             Info var3 = new Info(SourceDataLine.class, this.field_1809, var1 << (field_1781?2:1));
@@ -66,15 +66,15 @@ public class class_140 extends class_139 {
             this.field_1810.start();
             this.field_1811 = var1 * -875476967;
          } catch (LineUnavailableException var4) {
-            if(class_72.method_1092(var1, 2003025544) != 1) {
-               this.method_2998(class_100.method_1845(var1, 130039632), (short)-20094);
+            if(class_72.method_1092(var1) != 1) {
+               this.method_2998(class_100.method_1845(var1));
             } else {
                this.field_1810 = null;
                throw var4;
             }
          }
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "at.n(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -108,7 +108,7 @@ public class class_140 extends class_139 {
    }
 
    // $FF: renamed from: p (short) void
-   protected void method_3001(short var1) {
+   protected void method_3001() {
       try {
          if(this.field_1810 != null) {
             this.field_1810.close();
@@ -116,16 +116,16 @@ public class class_140 extends class_139 {
          }
 
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "at.p(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: j (int) void
-   protected void method_3002(int var1) {
+   protected void method_3002() {
       try {
          this.field_1810.flush();
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "at.j(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -163,7 +163,7 @@ public class class_140 extends class_139 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "at.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -176,8 +176,8 @@ public class class_140 extends class_139 {
          this.field_1810.start();
          this.field_1811 = var1 * -875476967;
       } catch (LineUnavailableException var3) {
-         if(class_72.method_1092(var1, 2124390633) != 1) {
-            this.method_2998(class_100.method_1845(var1, 1719464707), (short)-17060);
+         if(class_72.method_1092(var1) != 1) {
+            this.method_2998(class_100.method_1845(var1));
          } else {
             this.field_1810 = null;
             throw var3;
@@ -259,8 +259,8 @@ public class class_140 extends class_139 {
          this.field_1810.start();
          this.field_1811 = var1 * -875476967;
       } catch (LineUnavailableException var3) {
-         if(class_72.method_1092(var1, 663002296) != 1) {
-            this.method_2998(class_100.method_1845(var1, -1523874617), (short)-30453);
+         if(class_72.method_1092(var1) != 1) {
+            this.method_2998(class_100.method_1845(var1));
          } else {
             this.field_1810 = null;
             throw var3;
@@ -326,7 +326,7 @@ public class class_140 extends class_139 {
 
          return var10000 - (var10001 >> var10002);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "at.f(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 

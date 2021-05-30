@@ -67,7 +67,7 @@ public class class_237 {
          }
 
       } catch (RuntimeException var11) {
-         throw class_223.method_4281(var11, "fv.y(" + ')');
+         throw class_223.method_4281(var11);
       }
    }
 
@@ -80,7 +80,7 @@ public class class_237 {
          this.field_2641 = var3 * 718860175;
          this.field_2643 = var4;
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "fv.<init>(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 }

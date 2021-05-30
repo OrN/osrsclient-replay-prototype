@@ -15,7 +15,7 @@ public abstract class class_191 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ez.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -123,7 +123,7 @@ public abstract class class_191 {
          }
 
       } catch (RuntimeException var8) {
-         throw class_223.method_4281(var8, "ez.jd(" + ')');
+         throw class_223.method_4281(var8);
       }
    }
 
@@ -139,7 +139,7 @@ public abstract class class_191 {
          } else if(!class_46.field_343.method_5411(var0, (byte)102)) {
             return false;
          } else {
-            int var2 = class_46.field_343.method_5393(var0, 1291246750);
+            int var2 = class_46.field_343.method_5393(var0);
             if(0 == var2) {
                class_37.field_94[var0] = true;
                return true;
@@ -162,7 +162,7 @@ public abstract class class_191 {
                         throw new IllegalStateException();
                      }
 
-                     byte[] var4 = class_46.field_343.method_5381(var0, var3, -26460885);
+                     byte[] var4 = class_46.field_343.method_5381(var0, var3);
                      if(var4 != null) {
                         if(var1 >= 0) {
                            throw new IllegalStateException();
@@ -192,7 +192,7 @@ public abstract class class_191 {
             }
          }
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "ez.f(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 }

@@ -23,7 +23,7 @@ public class class_132 implements Callable {
          this.field_1730 = var2;
          this.field_1727 = var3;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "al.<init>(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -31,7 +31,7 @@ public class class_132 implements Callable {
       try {
          return this.field_1727.method_3(this.field_1730);
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "al.call(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

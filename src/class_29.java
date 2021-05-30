@@ -11,21 +11,21 @@ public class class_29 extends class_28 {
 
 
    // $FF: renamed from: n (oy, byte) void
-   public void method_354(class_404 var1, byte var2) {
+   public void method_354(class_404 var1) {
       try {
          this.field_19 = var1;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "nb.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: v (int[], int) void
-   public void method_355(int[] var1, int var2) {
+   public void method_355(int[] var1) {
       try {
          class_404 var10001 = new class_404(var1);
          this.field_19 = var10001;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "nb.v(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -36,20 +36,20 @@ public class class_29 extends class_28 {
    }
 
    // $FF: renamed from: f (int, int) void
-   public void method_357(int var1, int var2) {
+   public void method_357(int var1) {
       try {
          this.field_12[(this.field_15 += -1025691571) * -442398587 - 1] = (byte)(var1 + this.field_19.method_6841((byte)81));
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "nb.f(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: b (int) void
-   public void method_358(int var1) {
+   public void method_358() {
       try {
          this.field_18 = 608211864 * this.field_15;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "nb.b(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -75,7 +75,7 @@ public class class_29 extends class_28 {
          }
 
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "nb.r(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -84,7 +84,7 @@ public class class_29 extends class_28 {
       super(var1);
       try {
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "nb.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -116,25 +116,25 @@ public class class_29 extends class_28 {
 
          return var5;
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "nb.d(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
    // $FF: renamed from: s (byte) void
-   public void method_362(byte var1) {
+   public void method_362() {
       try {
          this.field_15 = (-958717145 * this.field_18 + 7) / 8 * -1025691571;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "nb.s(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: u (int, byte) int
-   public int method_363(int var1, byte var2) {
+   public int method_363(int var1) {
       try {
          return 8 * var1 - -958717145 * this.field_18;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "nb.u(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -174,7 +174,7 @@ public class class_29 extends class_28 {
             return true;
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "nb.p(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -243,7 +243,7 @@ public class class_29 extends class_28 {
             return (var2 - 128 << 8) + (this.field_12[(this.field_15 += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)12) & 255);
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "nb.j(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -253,11 +253,11 @@ public class class_29 extends class_28 {
    }
 
    // $FF: renamed from: y (byte) int
-   public int method_379(byte var1) {
+   public int method_379() {
       try {
          return this.field_12[(this.field_15 += -1025691571) * -442398587 - 1] - this.field_19.method_6841((byte)81) & 255;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "nb.y(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 

@@ -44,7 +44,7 @@ public class class_287 {
          }
 
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "iu.v(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -78,7 +78,7 @@ public class class_287 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "iu.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

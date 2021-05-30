@@ -185,7 +185,7 @@ public class class_96 extends class_91 {
             return var14.method_1531(-1002371349 * this.field_1061, 1337909425 * this.field_1056, var9, var11, var10, var12, this.field_1057, -1176341893 * this.field_1058, 1200809976);
          }
       } catch (RuntimeException var13) {
-         throw class_223.method_4281(var13, "cn.n(" + ')');
+         throw class_223.method_4281(var13);
       }
    }
 
@@ -272,7 +272,7 @@ public class class_96 extends class_91 {
          }
 
       } catch (RuntimeException var11) {
-         throw class_223.method_4281(var11, "cn.<init>(" + ')');
+         throw class_223.method_4281(var11);
       }
    }
 
@@ -500,7 +500,7 @@ public class class_96 extends class_91 {
 
          return var3;
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "cn.y(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 }

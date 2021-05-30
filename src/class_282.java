@@ -22,12 +22,12 @@ public class class_282 {
       if(var3 != null) {
          var2 = var3;
       } else {
-         byte[] var4 = class_89.field_897.method_5381(14, var0, -26460885);
+         byte[] var4 = class_89.field_897.method_5381(14, var0);
          class_89 var10000 = new class_89();
          var3 = var10000;
          if(var4 != null) {
             class_28 var10001 = new class_28(var4);
-            var3.method_1569(var10001, 659571256);
+            var3.method_1569(var10001);
          }
 
          class_89.field_893.method_5064(var3, (long)var0);
@@ -66,7 +66,7 @@ public class class_282 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ik.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -77,12 +77,12 @@ public class class_282 {
       if(var3 != null) {
          var2 = var3;
       } else {
-         byte[] var4 = class_89.field_897.method_5381(14, var0, -26460885);
+         byte[] var4 = class_89.field_897.method_5381(14, var0);
          class_89 var10000 = new class_89();
          var3 = var10000;
          if(var4 != null) {
             class_28 var10001 = new class_28(var4);
-            var3.method_1569(var10001, -942699285);
+            var3.method_1569(var10001);
          }
 
          class_89.field_893.method_5064(var3, (long)var0);
@@ -118,12 +118,12 @@ public class class_282 {
       if(var3 != null) {
          var2 = var3;
       } else {
-         byte[] var4 = class_89.field_897.method_5381(14, var0, -26460885);
+         byte[] var4 = class_89.field_897.method_5381(14, var0);
          class_89 var10000 = new class_89();
          var3 = var10000;
          if(var4 != null) {
             class_28 var10001 = new class_28(var4);
-            var3.method_1569(var10001, 318753339);
+            var3.method_1569(var10001);
          }
 
          class_89.field_893.method_5064(var3, (long)var0);
@@ -151,7 +151,7 @@ public class class_282 {
             }
 
             class_100 var2 = client.field_1605[class_195.field_2318[var1]];
-            var2.method_1826((byte)11);
+            var2.method_1826();
          }
 
          Iterator var4 = class_197.field_2334.iterator();
@@ -162,7 +162,7 @@ public class class_282 {
             }
 
             class_101 var5 = (class_101)var4.next();
-            var5.method_1907(1400910895);
+            var5.method_1907();
          }
 
          if(class_233.field_2617 != null) {
@@ -170,11 +170,11 @@ public class class_282 {
                throw new IllegalStateException();
             }
 
-            class_233.field_2617.method_6148(308669829);
+            class_233.field_2617.method_6148();
          }
 
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ik.kt(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 }

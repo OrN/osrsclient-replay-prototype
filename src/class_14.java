@@ -6,7 +6,7 @@ public interface class_14 {
    int method_49();
 
    // $FF: renamed from: v (int) int
-   int method_50(int var1);
+   int method_50();
 
    // $FF: renamed from: f () int
    int method_51();

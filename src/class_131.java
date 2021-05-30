@@ -52,7 +52,7 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
       try {
          return Math.exp(-var0 * var0 / 2.0D) / Math.sqrt(6.283185307179586D);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ak.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -74,7 +74,7 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
          }
 
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ak.mousePressed(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -90,7 +90,7 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
          }
 
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ak.mouseReleased(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -120,7 +120,7 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
 
          return 4;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "ak.f(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -134,7 +134,7 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
          }
 
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ak.mouseExited(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -142,7 +142,7 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
       try {
          this.mouseMoved(var1);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ak.mouseDragged(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -150,7 +150,7 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
       try {
          this.mouseMoved(var1);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ak.mouseEntered(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -158,7 +158,7 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
       try {
          ;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ak.focusGained(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -169,7 +169,7 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
          }
 
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ak.focusLost(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -197,13 +197,13 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
    }
 
    // $FF: renamed from: z (java.awt.event.FocusEvent) void
-   public final void method_2879(FocusEvent var1) {}
+   public final void method_2879() {}
 
    // $FF: renamed from: w (java.awt.event.FocusEvent) void
-   public final void method_2880(FocusEvent var1) {}
+   public final void method_2880() {}
 
    // $FF: renamed from: t (java.awt.event.FocusEvent) void
-   public final void method_2881(FocusEvent var1) {}
+   public final void method_2881() {}
 
    // $FF: renamed from: p () void
    public static void method_2883() {
@@ -226,7 +226,7 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ak.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -253,17 +253,17 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
          }
 
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ak.mouseClicked(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: la (int) void
-   static void method_2890(int var0) {
+   static void method_2890() {
       try {
-         client.field_1463.method_4079(class_112.method_2238(class_266.field_3082, client.field_1463.field_2384, (byte)8), -1871678030);
+         client.field_1463.method_4079(class_112.method_2238(class_266.field_3082, client.field_1463.field_2384, (byte)8));
          client.field_1660 = 0;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ak.la(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -293,7 +293,7 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
          }
 
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ak.mouseMoved(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -305,19 +305,19 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
                throw new IllegalStateException();
             }
 
-            class_299.method_5348(class_305.field_3469, class_305.field_3451, class_305.field_3449, (byte)-50);
+            class_299.method_5348(class_305.field_3469, class_305.field_3451, class_305.field_3449);
          } else if(-2 == var0) {
             if(var1 == -1888868577) {
                throw new IllegalStateException();
             }
 
-            class_299.method_5348(class_305.field_3450, class_305.field_3671, class_305.field_3452, (byte)-101);
+            class_299.method_5348(class_305.field_3450, class_305.field_3671, class_305.field_3452);
          } else if(var0 == -1) {
             if(var1 == -1888868577) {
                throw new IllegalStateException();
             }
 
-            class_299.method_5348(class_305.field_3453, class_305.field_3454, class_305.field_3455, (byte)-52);
+            class_299.method_5348(class_305.field_3453, class_305.field_3454, class_305.field_3455);
          } else if(3 == var0) {
             class_177.field_2194 = 1941427289;
             class_177.field_2199 = 452438349;
@@ -326,14 +326,14 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
                throw new IllegalStateException();
             }
 
-            GameApplet.method_2396(0, -2043539672);
+            GameApplet.method_2396(0);
          } else if(5 == var0) {
             if(var1 == -1888868577) {
                throw new IllegalStateException();
             }
 
             class_177.field_2199 = 904876698;
-            class_299.method_5348(class_305.field_3459, class_305.field_3460, class_305.field_3560, (byte)-2);
+            class_299.method_5348(class_305.field_3459, class_305.field_3460, class_305.field_3560);
          } else {
             label228: {
                if(var0 != 68) {
@@ -356,111 +356,111 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
                      }
 
                      if(var0 == 7) {
-                        class_299.method_5348(class_305.field_3570, class_305.field_3667, class_305.field_3467, (byte)-70);
+                        class_299.method_5348(class_305.field_3570, class_305.field_3667, class_305.field_3467);
                      } else if(var0 == 8) {
                         if(var1 == -1888868577) {
                            throw new IllegalStateException();
                         }
 
-                        class_299.method_5348(class_305.field_3468, class_305.field_3471, class_305.field_3470, (byte)-86);
+                        class_299.method_5348(class_305.field_3468, class_305.field_3471, class_305.field_3470);
                      } else if(9 == var0) {
-                        class_299.method_5348(class_305.field_3615, class_305.field_3700, class_305.field_3473, (byte)-4);
+                        class_299.method_5348(class_305.field_3615, class_305.field_3700, class_305.field_3473);
                      } else if(10 == var0) {
                         if(var1 == -1888868577) {
                            throw new IllegalStateException();
                         }
 
-                        class_299.method_5348(class_305.field_3474, class_305.field_3642, class_305.field_3476, (byte)-93);
+                        class_299.method_5348(class_305.field_3474, class_305.field_3642, class_305.field_3476);
                      } else if(var0 == 11) {
                         if(var1 == -1888868577) {
                            throw new IllegalStateException();
                         }
 
-                        class_299.method_5348(class_305.field_3480, class_305.field_3478, class_305.field_3479, (byte)-44);
+                        class_299.method_5348(class_305.field_3480, class_305.field_3478, class_305.field_3479);
                      } else if(12 == var0) {
                         if(var1 == -1888868577) {
                            return;
                         }
 
-                        class_299.method_5348(class_305.field_3606, class_305.field_3623, class_305.field_3690, (byte)-82);
+                        class_299.method_5348(class_305.field_3606, class_305.field_3623, class_305.field_3690);
                      } else if(13 == var0) {
-                        class_299.method_5348(class_305.field_3483, class_305.field_3484, class_305.field_3485, (byte)-55);
+                        class_299.method_5348(class_305.field_3483, class_305.field_3484, class_305.field_3485);
                      } else if(var0 == 14) {
-                        class_299.method_5348(class_305.field_3520, class_305.field_3487, class_305.field_3488, (byte)-65);
+                        class_299.method_5348(class_305.field_3520, class_305.field_3487, class_305.field_3488);
                      } else if(var0 == 16) {
-                        class_299.method_5348(class_305.field_3489, class_305.field_3490, class_305.field_3652, (byte)-3);
+                        class_299.method_5348(class_305.field_3489, class_305.field_3490, class_305.field_3652);
                      } else if(17 == var0) {
-                        class_299.method_5348(class_305.field_3492, class_305.field_3493, class_305.field_3689, (byte)-91);
+                        class_299.method_5348(class_305.field_3492, class_305.field_3493, class_305.field_3689);
                      } else if(18 == var0) {
                         if(var1 == -1888868577) {
                            throw new IllegalStateException();
                         }
 
-                        GameApplet.method_2396(1, -2043539672);
+                        GameApplet.method_2396(1);
                      } else if(19 == var0) {
                         if(var1 == -1888868577) {
                            throw new IllegalStateException();
                         }
 
-                        class_299.method_5348(class_305.field_3692, class_305.field_3437, class_305.field_3500, (byte)-51);
+                        class_299.method_5348(class_305.field_3692, class_305.field_3437, class_305.field_3500);
                      } else if(var0 == 20) {
                         if(var1 == -1888868577) {
                            throw new IllegalStateException();
                         }
 
-                        class_299.method_5348(class_305.field_3578, class_305.field_3558, class_305.field_3503, (byte)-81);
+                        class_299.method_5348(class_305.field_3578, class_305.field_3558, class_305.field_3503);
                      } else if(var0 == 22) {
                         if(var1 == -1888868577) {
                            throw new IllegalStateException();
                         }
 
-                        class_299.method_5348(class_305.field_3577, class_305.field_3482, class_305.field_3506, (byte)-82);
+                        class_299.method_5348(class_305.field_3577, class_305.field_3482, class_305.field_3506);
                      } else if(var0 == 23) {
-                        class_299.method_5348(class_305.field_3554, class_305.field_3466, class_305.field_3432, (byte)-124);
+                        class_299.method_5348(class_305.field_3554, class_305.field_3466, class_305.field_3432);
                      } else if(24 == var0) {
                         if(var1 == -1888868577) {
                            return;
                         }
 
-                        class_299.method_5348(class_305.field_3679, class_305.field_3511, class_305.field_3512, (byte)-78);
+                        class_299.method_5348(class_305.field_3679, class_305.field_3511, class_305.field_3512);
                      } else if(25 == var0) {
                         if(var1 == -1888868577) {
                            return;
                         }
 
-                        class_299.method_5348(class_305.field_3424, class_305.field_3465, class_305.field_3515, (byte)-8);
+                        class_299.method_5348(class_305.field_3424, class_305.field_3465, class_305.field_3515);
                      } else if(26 == var0) {
                         if(var1 == -1888868577) {
                            return;
                         }
 
-                        class_299.method_5348(class_305.field_3477, class_305.field_3533, class_305.field_3518, (byte)-82);
+                        class_299.method_5348(class_305.field_3477, class_305.field_3533, class_305.field_3518);
                      } else if(var0 == 27) {
-                        class_299.method_5348(class_305.field_3519, class_305.field_3564, class_305.field_3521, (byte)-64);
+                        class_299.method_5348(class_305.field_3519, class_305.field_3564, class_305.field_3521);
                      } else if(var0 == 31) {
                         if(var1 == -1888868577) {
                            throw new IllegalStateException();
                         }
 
-                        class_299.method_5348(class_305.field_3658, class_305.field_3509, class_305.field_3530, (byte)-92);
+                        class_299.method_5348(class_305.field_3658, class_305.field_3509, class_305.field_3530);
                      } else if(var0 == 32) {
                         if(var1 == -1888868577) {
                            throw new IllegalStateException();
                         }
 
-                        class_299.method_5348(class_305.field_3531, class_305.field_3532, class_305.field_3693, (byte)-62);
+                        class_299.method_5348(class_305.field_3531, class_305.field_3532, class_305.field_3693);
                      } else if(var0 == 37) {
                         if(var1 == -1888868577) {
                            return;
                         }
 
-                        class_299.method_5348(class_305.field_3542, class_305.field_3535, class_305.field_3536, (byte)-119);
+                        class_299.method_5348(class_305.field_3542, class_305.field_3535, class_305.field_3536);
                      } else if(var0 == 38) {
                         if(var1 == -1888868577) {
                            throw new IllegalStateException();
                         }
 
-                        class_299.method_5348(class_305.field_3537, class_305.field_3538, class_305.field_3539, (byte)-20);
+                        class_299.method_5348(class_305.field_3537, class_305.field_3538, class_305.field_3539);
                      } else if(var0 == 55) {
                         if(var1 == -1888868577) {
                            throw new IllegalStateException();
@@ -473,7 +473,7 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
                               throw new IllegalStateException();
                            }
 
-                           class_299.method_5348(class_305.field_3544, class_305.field_3545, class_305.field_3557, (byte)-27);
+                           class_299.method_5348(class_305.field_3544, class_305.field_3545, class_305.field_3557);
                            class_53.method_579(11, (byte)0);
                            return;
                         }
@@ -483,7 +483,7 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
                               throw new IllegalStateException();
                            }
 
-                           class_299.method_5348(class_305.field_3547, class_305.field_3510, class_305.field_3549, (byte)-31);
+                           class_299.method_5348(class_305.field_3547, class_305.field_3510, class_305.field_3549);
                            class_53.method_579(11, (byte)0);
                            return;
                         }
@@ -491,25 +491,25 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
                         if(61 == var0) {
                            class_177.field_2194 = 1666685477;
                         } else {
-                           class_299.method_5348(class_305.field_3550, class_305.field_3551, class_305.field_3627, (byte)-96);
+                           class_299.method_5348(class_305.field_3550, class_305.field_3551, class_305.field_3627);
                         }
                      }
                      break label228;
                   }
                }
 
-               class_299.method_5348(class_305.field_3462, class_305.field_3688, class_305.field_3464, (byte)-57);
+               class_299.method_5348(class_305.field_3462, class_305.field_3688, class_305.field_3464);
             }
          }
 
          class_53.method_579(10, (byte)0);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ak.fo(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: h (java.awt.event.FocusEvent) void
-   public final synchronized void method_2900(FocusEvent var1) {
+   public final synchronized void method_2900() {
       if(field_1704 != null) {
          field_1705 = 0;
       }
@@ -517,7 +517,7 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
    }
 
    // $FF: renamed from: q (java.awt.event.FocusEvent) void
-   public final synchronized void method_2901(FocusEvent var1) {
+   public final synchronized void method_2901() {
       if(field_1704 != null) {
          field_1705 = 0;
       }
@@ -525,13 +525,13 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
    }
 
    // $FF: renamed from: ke (byte) void
-   static final void method_2902(byte var0) {
+   static final void method_2902() {
       try {
          class_40 var1 = class_112.method_2238(class_266.field_3048, client.field_1463.field_2384, (byte)8);
-         var1.field_263.method_210(0, 303066737);
-         client.field_1463.method_4079(var1, -1679766952);
+         var1.field_263.method_210(0);
+         client.field_1463.method_4079(var1);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ak.ke(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -555,11 +555,11 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
             var4.field_492 = class_318.field_3787[0];
             var4.field_491 = class_192.field_2300;
             var4.field_493 = class_403.field_4279[0];
-            class_192.method_3958(179304235);
+            class_192.method_3958();
             return var4;
          }
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "ak.d(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 }

@@ -33,7 +33,7 @@ public final class class_265 {
          this.field_3035 = 0L;
          this.field_3045 = 0;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ho.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

@@ -84,36 +84,36 @@ public class class_56 extends class_51 {
             }
          }
 
-         class_122.method_2274((short)-5074);
+         class_122.method_2274();
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "b.id(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
    // $FF: renamed from: fq (byte) void
    static final void method_589(byte var0) {
       try {
-         client.field_1463.method_4098((byte)-96);
+         client.field_1463.method_4098();
          class_82.field_757.method_5074();
-         class_298.method_5343((byte)54);
-         class_211.method_4175(660073374);
-         class_176.method_3746(-355325275);
+         class_298.method_5343();
+         class_211.method_4175();
+         class_176.method_3746();
          class_88.field_884.method_5074();
          class_88.field_876.method_5074();
-         class_241.method_4648(1201682368);
-         class_172.method_3706((byte)61);
+         class_241.method_4648();
+         class_172.method_3706();
          class_78.field_671.method_5074();
          class_78.field_672.method_5074();
-         class_46.method_535((short)-1591);
+         class_46.method_535();
          class_74.field_593.method_5074();
-         class_151.field_1912.method_4963(-174176415);
-         class_255.field_2887.method_4963(-174176415);
-         class_186.method_3865(1210061532);
-         class_145.method_3104(-1154026076);
+         class_151.field_1912.method_4963();
+         class_255.field_2887.method_4963();
+         class_186.method_3865();
+         class_145.method_3104();
          class_85.field_787.method_5074();
-         class_210.method_4170(383441651);
+         class_210.method_4170();
          class_75.field_598.method_5074();
-         class_175.method_3742(1145228216);
+         class_175.method_3742();
          class_37.field_224.method_5074();
          class_37.field_189.method_5074();
          class_37.field_158.method_5074();
@@ -143,13 +143,13 @@ public class class_56 extends class_51 {
          }
 
          System.gc();
-         class_215.method_4193(2, 1917234733);
+         class_215.method_4193(2);
          client.field_1656 = 600017041;
          client.field_1657 = false;
          class_217.method_4202(1365123489);
          class_53.method_579(10, (byte)0);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "b.fq(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -162,13 +162,13 @@ public class class_56 extends class_51 {
                throw new IllegalStateException();
             }
 
-            var1.method_130(1451994);
-            this.field_418 = var1.method_131((byte)-119);
-            this.field_419 = var1.method_131((byte)-74);
+            var1.method_130();
+            this.field_418 = var1.method_131();
+            this.field_419 = var1.method_131();
          }
 
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "b.v(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -176,9 +176,9 @@ public class class_56 extends class_51 {
    void method_570(class_28 var1) {
       this.field_417 = var1.method_347(-518173250);
       if(null != this.field_417) {
-         var1.method_130(-301974227);
-         this.field_418 = var1.method_131((byte)7);
-         this.field_419 = var1.method_131((byte)-60);
+         var1.method_130();
+         this.field_418 = var1.method_131();
+         this.field_419 = var1.method_131();
       }
 
    }
@@ -207,12 +207,12 @@ public class class_56 extends class_51 {
          }
 
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "b.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: ag (int, cf, boolean, int) int
-   static int method_590(int var0, class_90 var1, boolean var2, int var3) {
+   static int method_590(int var0, int var3) {
       try {
          if(5306 == var0) {
             if(var3 <= -1780215685) {
@@ -286,7 +286,7 @@ public class class_56 extends class_51 {
             }
          }
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "b.ag(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -296,12 +296,12 @@ public class class_56 extends class_51 {
       try {
          this.this$0 = var1;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "b.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: fk (cy, int, int) void
-   static final void method_592(class_98 var0, int var1, int var2) {
+   static final void method_592(class_98 var0, int var2) {
       try {
          if(-611848265 * var0.field_1105 >= -1702273423 * client.field_1425) {
             if(var2 == 758766436) {
@@ -342,7 +342,7 @@ public class class_56 extends class_51 {
             var0.field_1123 = 0;
             var0.field_1077 = 1267070784 * var0.field_1079 + var0.field_1112[0] * 785886848;
             var0.field_1076 = -368818304 * var0.field_1126[0] + var0.field_1079 * 1775993792;
-            var0.method_1792(-1557316570);
+            var0.method_1792();
          }
 
          if(var0 == class_164.field_2044) {
@@ -383,25 +383,25 @@ public class class_56 extends class_51 {
                var0.field_1123 = 0;
                var0.field_1077 = var0.field_1112[0] * 785886848 + 1267070784 * var0.field_1079;
                var0.field_1076 = 1775993792 * var0.field_1079 + -368818304 * var0.field_1126[0];
-               var0.method_1792(-1557316570);
+               var0.method_1792();
             }
          }
 
          class_305.method_5375(var0, -1661416870);
          class_136.method_2960(var0, 1230539063);
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "b.fk(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
    // $FF: renamed from: v (int, int, int, int) oh
-   static class_67 method_593(int var0, int var1, int var2, int var3) {
+   static class_67 method_593(int var0, int var1, int var2) {
       try {
          class_264 var4 = class_233.field_2604;
          long var5 = (long)(var2 << 16 | var0 << 8 | var1);
          return (class_67)var4.method_5002(var5);
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "b.v(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 }

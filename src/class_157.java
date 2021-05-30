@@ -24,12 +24,12 @@ public class class_157 {
 
 
    // $FF: renamed from: v (int) void
-   public static void method_3279(int var0) {
+   public static void method_3279() {
       try {
          class_323 var10000 = new class_323();
          class_153.field_1926 = var10000;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "bu.v(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -83,20 +83,20 @@ public class class_157 {
             }
          }
       } catch (RuntimeException var10) {
-         throw class_223.method_4281(var10, "bu.v(" + ')');
+         throw class_223.method_4281(var10);
       }
    }
 
    // $FF: renamed from: f (int, int[], byte) au
    public class_110 method_3281(int var1, int[] var2, byte var3) {
       try {
-         if(this.field_1954.method_5457(-1793164899) == 1) {
+         if(this.field_1954.method_5457() == 1) {
             if(var3 == 1) {
                throw new IllegalStateException();
             } else {
                return this.method_3280(0, var1, var2, (byte)22);
             }
-         } else if(this.field_1954.method_5393(var1, 1740801909) == 1) {
+         } else if(this.field_1954.method_5393(var1) == 1) {
             if(var3 == 1) {
                throw new IllegalStateException();
             } else {
@@ -106,15 +106,15 @@ public class class_157 {
             throw new RuntimeException();
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "bu.f(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: e (int, int[]) au
    public class_110 method_3282(int var1, int[] var2) {
-      if(this.field_1954.method_5457(129785536) == 1) {
+      if(this.field_1954.method_5457() == 1) {
          return this.method_3280(0, var1, var2, (byte)-41);
-      } else if(this.field_1954.method_5393(var1, 2078322333) == 1) {
+      } else if(this.field_1954.method_5393(var1) == 1) {
          return this.method_3280(var1, 0, var2, (byte)-94);
       } else {
          throw new RuntimeException();
@@ -150,13 +150,13 @@ public class class_157 {
    // $FF: renamed from: y (int, int[], int) au
    public class_110 method_3284(int var1, int[] var2, int var3) {
       try {
-         if(this.field_1959.method_5457(-421457649) == 1) {
+         if(this.field_1959.method_5457() == 1) {
             if(var3 <= 1858423015) {
                throw new IllegalStateException();
             } else {
                return this.method_3295(0, var1, var2, (byte)83);
             }
-         } else if(this.field_1959.method_5393(var1, 1272893706) == 1) {
+         } else if(this.field_1959.method_5393(var1) == 1) {
             if(var3 <= 1858423015) {
                throw new IllegalStateException();
             } else {
@@ -166,7 +166,7 @@ public class class_157 {
             throw new RuntimeException();
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "bu.y(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -256,9 +256,9 @@ public class class_157 {
 
    // $FF: renamed from: m (int, int[]) au
    public class_110 method_3288(int var1, int[] var2) {
-      if(this.field_1959.method_5457(-568341644) == 1) {
+      if(this.field_1959.method_5457() == 1) {
          return this.method_3295(0, var1, var2, (byte)-45);
-      } else if(this.field_1959.method_5393(var1, 1870551592) == 1) {
+      } else if(this.field_1959.method_5393(var1) == 1) {
          return this.method_3295(var1, 0, var2, (byte)-108);
       } else {
          throw new RuntimeException();
@@ -331,9 +331,9 @@ public class class_157 {
 
    // $FF: renamed from: l (int, int[]) au
    public class_110 method_3291(int var1, int[] var2) {
-      if(this.field_1954.method_5457(-113538453) == 1) {
+      if(this.field_1954.method_5457() == 1) {
          return this.method_3280(0, var1, var2, (byte)4);
-      } else if(this.field_1954.method_5393(var1, 1214768676) == 1) {
+      } else if(this.field_1954.method_5393(var1) == 1) {
          return this.method_3280(var1, 0, var2, (byte)2);
       } else {
          throw new RuntimeException();
@@ -342,9 +342,9 @@ public class class_157 {
 
    // $FF: renamed from: o (int, int[]) au
    public class_110 method_3292(int var1, int[] var2) {
-      if(this.field_1954.method_5457(822344278) == 1) {
+      if(this.field_1954.method_5457() == 1) {
          return this.method_3280(0, var1, var2, (byte)85);
-      } else if(this.field_1954.method_5393(var1, 2035305017) == 1) {
+      } else if(this.field_1954.method_5393(var1) == 1) {
          return this.method_3280(var1, 0, var2, (byte)-36);
       } else {
          throw new RuntimeException();
@@ -353,9 +353,9 @@ public class class_157 {
 
    // $FF: renamed from: c (int, int[]) au
    public class_110 method_3293(int var1, int[] var2) {
-      if(this.field_1954.method_5457(1038675023) == 1) {
+      if(this.field_1954.method_5457() == 1) {
          return this.method_3280(0, var1, var2, (byte)-63);
-      } else if(this.field_1954.method_5393(var1, 933327131) == 1) {
+      } else if(this.field_1954.method_5393(var1) == 1) {
          return this.method_3280(var1, 0, var2, (byte)41);
       } else {
          throw new RuntimeException();
@@ -364,9 +364,9 @@ public class class_157 {
 
    // $FF: renamed from: g (int, int[]) au
    public class_110 method_3294(int var1, int[] var2) {
-      if(this.field_1959.method_5457(-704803765) == 1) {
+      if(this.field_1959.method_5457() == 1) {
          return this.method_3295(0, var1, var2, (byte)76);
-      } else if(this.field_1959.method_5393(var1, 1811504555) == 1) {
+      } else if(this.field_1959.method_5393(var1) == 1) {
          return this.method_3295(var1, 0, var2, (byte)-27);
       } else {
          throw new RuntimeException();
@@ -429,15 +429,15 @@ public class class_157 {
             }
          }
       } catch (RuntimeException var10) {
-         throw class_223.method_4281(var10, "bu.n(" + ')');
+         throw class_223.method_4281(var10);
       }
    }
 
    // $FF: renamed from: a (int, int[]) au
    public class_110 method_3296(int var1, int[] var2) {
-      if(this.field_1959.method_5457(-1733718533) == 1) {
+      if(this.field_1959.method_5457() == 1) {
          return this.method_3295(0, var1, var2, (byte)-39);
-      } else if(this.field_1959.method_5393(var1, 958217329) == 1) {
+      } else if(this.field_1959.method_5393(var1) == 1) {
          return this.method_3295(var1, 0, var2, (byte)-11);
       } else {
          throw new RuntimeException();
@@ -446,9 +446,9 @@ public class class_157 {
 
    // $FF: renamed from: k (int, int[]) au
    public class_110 method_3297(int var1, int[] var2) {
-      if(this.field_1959.method_5457(1091820283) == 1) {
+      if(this.field_1959.method_5457() == 1) {
          return this.method_3295(0, var1, var2, (byte)40);
-      } else if(this.field_1959.method_5393(var1, 794497840) == 1) {
+      } else if(this.field_1959.method_5393(var1) == 1) {
          return this.method_3295(var1, 0, var2, (byte)-49);
       } else {
          throw new RuntimeException();
@@ -466,7 +466,7 @@ public class class_157 {
          this.field_1954 = var1;
          this.field_1959 = var2;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "bu.<init>(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -529,7 +529,7 @@ public class class_157 {
          }
 
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "bu.y(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -772,7 +772,7 @@ public class class_157 {
          }
 
       } catch (RuntimeException var14) {
-         throw class_223.method_4281(var14, "bu.f(" + ')');
+         throw class_223.method_4281(var14);
       }
    }
 

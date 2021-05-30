@@ -49,7 +49,7 @@ public class class_47 extends class_27 {
                   throw new IllegalStateException();
                }
 
-               var8.method_533(var1, var2, var3, var4, -629620630);
+               var8.method_533(var1, var2, var3, var4);
                return;
             }
 
@@ -82,7 +82,7 @@ public class class_47 extends class_27 {
 
          }
       } catch (RuntimeException var9) {
-         throw class_223.method_4281(var9, "cw.v(" + ')');
+         throw class_223.method_4281(var9);
       }
    }
 
@@ -128,16 +128,16 @@ public class class_47 extends class_27 {
 
          return null;
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "cw.n(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
    // $FF: renamed from: f (int) boolean
-   boolean method_541(int var1) {
+   boolean method_541() {
       try {
          return this.field_351.method_5704();
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "cw.f(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -149,7 +149,7 @@ public class class_47 extends class_27 {
          this.field_351 = var10001;
          this.field_350 = var1;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "cw.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -161,7 +161,7 @@ public class class_47 extends class_27 {
       for(class_46 var7 = (class_46)this.field_351.method_5700(); var7 != null; var7 = (class_46)this.field_351.method_5702()) {
          ++var6;
          if(var1 == -1296042187 * var7.field_344) {
-            var7.method_533(var1, var2, var3, var4, -1078076921);
+            var7.method_533(var1, var2, var3, var4);
             return;
          }
 
@@ -195,7 +195,7 @@ public class class_47 extends class_27 {
       for(class_46 var7 = (class_46)this.field_351.method_5700(); var7 != null; var7 = (class_46)this.field_351.method_5702()) {
          ++var6;
          if(var1 == -859723449 * var7.field_344) {
-            var7.method_533(var1, var2, var3, var4, -1430063725);
+            var7.method_533(var1, var2, var3, var4);
             return;
          }
 
@@ -249,7 +249,7 @@ public class class_47 extends class_27 {
       for(class_46 var7 = (class_46)this.field_351.method_5700(); var7 != null; var7 = (class_46)this.field_351.method_5702()) {
          ++var6;
          if(var1 == -859723449 * var7.field_344) {
-            var7.method_533(var1, var2, var3, var4, -398607549);
+            var7.method_533(var1, var2, var3, var4);
             return;
          }
 

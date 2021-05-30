@@ -61,24 +61,24 @@ public class class_106 extends class_104 {
 
 
    // $FF: renamed from: ct (int, int, int) void
-   void method_1961(int var1, int var2, int var3) {}
+   void method_1961() {}
 
    // $FF: renamed from: l (int) void
-   public synchronized void method_1962(int var1) {
+   public synchronized void method_1962() {
       try {
          this.field_1220.method_5226();
          this.method_1982(1017241688);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "hp.l(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: n (int) int
-   int method_1963(int var1) {
+   int method_1963() {
       try {
          return -386188103 * this.field_1214;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "hp.n(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -136,7 +136,7 @@ public class class_106 extends class_104 {
 
          return var6;
       } catch (RuntimeException var11) {
-         throw class_223.method_4281(var11, "hp.f(" + ')');
+         throw class_223.method_4281(var11);
       }
    }
 
@@ -152,14 +152,14 @@ public class class_106 extends class_104 {
          }
 
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "hp.p(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: s (ie, boolean, int) void
    public synchronized void method_1967(class_39 var1, boolean var2, int var3) {
       try {
-         this.method_1962(-1600803049);
+         this.method_1962();
          this.field_1220.method_5233(var1.field_259);
          this.field_1235 = var2;
          this.field_1238 = 0L;
@@ -179,7 +179,7 @@ public class class_106 extends class_104 {
          this.field_1237 = this.field_1220.field_3263[this.field_1236 * -398624825] * 100570539;
          this.field_1239 = this.field_1220.method_5216(this.field_1237 * 495959299) * 3686421231377222827L;
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "hp.s(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -236,21 +236,21 @@ public class class_106 extends class_104 {
 
          return var10000;
       } catch (RuntimeException var9) {
-         throw class_223.method_4281(var9, "hp.ao(" + ')');
+         throw class_223.method_4281(var9);
       }
    }
 
    // $FF: renamed from: o (int) boolean
-   public synchronized boolean method_1969(int var1) {
+   public synchronized boolean method_1969() {
       try {
          return this.field_1220.method_5195();
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "hp.o(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: m (int, int, int, byte) void
-   void method_1971(int var1, int var2, int var3, byte var4) {
+   void method_1971(int var1, int var2, byte var4) {
       try {
          class_36 var5 = this.field_1227[var1][var2];
          if(var5 == null) {
@@ -296,7 +296,7 @@ public class class_106 extends class_104 {
 
          }
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "hp.m(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
@@ -316,14 +316,14 @@ public class class_106 extends class_104 {
          }
 
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "hp.g(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
    // $FF: renamed from: a (int, int, int, int) void
    void method_1973(int var1, int var2, int var3, int var4) {
       try {
-         this.method_1971(var1, var2, 64, (byte)123);
+         this.method_1971(var1, var2, (byte)123);
          if(0 != (this.field_1226[var1] & 2)) {
             if(var4 != 1345766655) {
                return;
@@ -425,7 +425,7 @@ public class class_106 extends class_104 {
             }
          }
       } catch (RuntimeException var9) {
-         throw class_223.method_4281(var9, "hp.a(" + ')');
+         throw class_223.method_4281(var9);
       }
    }
 
@@ -465,25 +465,25 @@ public class class_106 extends class_104 {
 
          var1.field_85.method_2113(var5);
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "hp.k(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
    // $FF: renamed from: x (int, int, int, int) void
-   void method_1976(int var1, int var2, int var3, int var4) {
+   void method_1976() {
       try {
          ;
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "hp.x(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
    // $FF: renamed from: w (int, int, byte) void
-   void method_1978(int var1, int var2, byte var3) {
+   void method_1978(int var1, int var2) {
       try {
          this.field_1222[var1] = var2;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "hp.w(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -515,7 +515,7 @@ public class class_106 extends class_104 {
                   this.field_1240.field_1211.method_2198(var3.field_85);
                }
 
-               var3.method_394((byte)-83);
+               var3.method_394();
             }
 
             if(1951740649 * var3.field_71 < 0) {
@@ -530,12 +530,12 @@ public class class_106 extends class_104 {
          }
 
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "hp.t(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: ci (int, int, int) void
-   void method_1980(int var1, int var2, int var3) {}
+   void method_1980() {}
 
    // $FF: renamed from: ax (int) void
    void method_1982(int var1) {
@@ -557,7 +557,7 @@ public class class_106 extends class_104 {
          }
 
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "hp.ax(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -585,16 +585,16 @@ public class class_106 extends class_104 {
          }
 
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "hp.av(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: v (int, int) void
-   public synchronized void method_1985(int var1, int var2) {
+   public synchronized void method_1985(int var1) {
       try {
          this.field_1214 = var1 * 1320814985;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "hp.v(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -614,7 +614,7 @@ public class class_106 extends class_104 {
             this.field_1224[var1] = 32767;
             this.field_1228[var1] = 256;
             this.field_1216[var1] = 0;
-            this.method_2013(var1, 8192, 498737337);
+            this.method_2013(var1, 8192);
          } else if(var2 != -1043884473) {
             throw new IllegalStateException();
          } else {
@@ -624,7 +624,7 @@ public class class_106 extends class_104 {
 
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "hp.h(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -659,7 +659,7 @@ public class class_106 extends class_104 {
          this.field_1213 = var3;
          this.method_1982(1700163653);
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "hp.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -727,7 +727,7 @@ public class class_106 extends class_104 {
 
          return var4;
       } catch (RuntimeException var9) {
-         throw class_223.method_4281(var9, "hp.aq(" + ')');
+         throw class_223.method_4281(var9);
       }
    }
 
@@ -745,7 +745,7 @@ public class class_106 extends class_104 {
             return 16384 - ((16384 - var3) * (128 - var1.field_74 * 970092925) + 32 >> 6);
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "hp.aw(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -778,7 +778,7 @@ public class class_106 extends class_104 {
          }
 
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "hp.ag(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -787,7 +787,7 @@ public class class_106 extends class_104 {
       try {
          return null;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "hp.r(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -827,7 +827,7 @@ public class class_106 extends class_104 {
          }
 
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "hp.as(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -855,7 +855,7 @@ public class class_106 extends class_104 {
 
          this.field_1240.method_1943(var1, var2, var3);
       } catch (RuntimeException var8) {
-         throw class_223.method_4281(var8, "hp.d(" + ')');
+         throw class_223.method_4281(var8);
       }
    }
 
@@ -882,7 +882,7 @@ public class class_106 extends class_104 {
 
          this.field_1240.method_1933(var1);
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "hp.u(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -966,7 +966,7 @@ public class class_106 extends class_104 {
          this.method_1982(1820956261);
          this.field_1220.method_5226();
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "hp.af(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
@@ -1004,7 +1004,7 @@ public class class_106 extends class_104 {
             return false;
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "hp.ak(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -1028,7 +1028,7 @@ public class class_106 extends class_104 {
                   }
                }
 
-               var1.method_394((byte)-88);
+               var1.method_394();
                var1.method_108();
                if(var1.field_69 * -2143225367 > 0) {
                   if(var5 >= -1474932203) {
@@ -1215,7 +1215,7 @@ public class class_106 extends class_104 {
                   this.field_1240.field_1211.method_2198(var1.field_85);
                }
 
-               var1.method_394((byte)-86);
+               var1.method_394();
                if(1951740649 * var1.field_71 >= 0) {
                   if(var5 >= -1474932203) {
                      throw new IllegalStateException();
@@ -1244,7 +1244,7 @@ public class class_106 extends class_104 {
             return false;
          }
       } catch (RuntimeException var11) {
-         throw class_223.method_4281(var11, "hp.ay(" + ')');
+         throw class_223.method_4281(var11);
       }
    }
 
@@ -1269,7 +1269,7 @@ public class class_106 extends class_104 {
 
          return var10000;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "hp.gp(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -1333,7 +1333,7 @@ public class class_106 extends class_104 {
             var4 = var1 & 15;
             var5 = var1 >> 8 & 127;
             var6 = var1 >> 16 & 127;
-            this.method_1971(var4, var5, var6, (byte)58);
+            this.method_1971(var4, var5, (byte)58);
          } else if(var3 == 144) {
             if(var2 == 1) {
                var4 = var1 & 15;
@@ -1342,7 +1342,7 @@ public class class_106 extends class_104 {
                if(var6 > 0) {
                   this.method_1973(var4, var5, var6, 1345766655);
                } else {
-                  this.method_1971(var4, var5, 64, (byte)91);
+                  this.method_1971(var4, var5, (byte)91);
                }
 
             }
@@ -1353,7 +1353,7 @@ public class class_106 extends class_104 {
                var4 = var1 & 15;
                var5 = var1 >> 8 & 127;
                var6 = var1 >> 16 & 127;
-               this.method_1976(var4, var5, var6, -366047626);
+               this.method_1976();
             }
          } else if(176 == var3) {
             if(var2 != 1) {
@@ -1588,7 +1588,7 @@ public class class_106 extends class_104 {
                      return;
                   }
 
-                  this.method_2013(var4, (var6 << 7) + (this.field_1230[var4] & -16257), 498737337);
+                  this.method_2013(var4, (var6 << 7) + (this.field_1230[var4] & -16257));
                }
 
                if(var5 == 49) {
@@ -1596,7 +1596,7 @@ public class class_106 extends class_104 {
                      return;
                   }
 
-                  this.method_2013(var4, (this.field_1230[var4] & -128) + var6, 498737337);
+                  this.method_2013(var4, (this.field_1230[var4] & -128) + var6);
                }
 
             }
@@ -1612,7 +1612,7 @@ public class class_106 extends class_104 {
             if(var2 == 1) {
                var4 = var1 & 15;
                var5 = var1 >> 8 & 127;
-               this.method_2037(var4, var5, 852353128);
+               this.method_2037();
             }
          } else if(var3 == 224) {
             if(var2 != 1) {
@@ -1620,7 +1620,7 @@ public class class_106 extends class_104 {
             } else {
                var4 = var1 & 15;
                var5 = (var1 >> 8 & 127) + (var1 >> 9 & 16256);
-               this.method_1978(var4, var5, (byte)-5);
+               this.method_1978(var4, var5);
             }
          } else {
             var3 = var1 & 255;
@@ -1629,7 +1629,7 @@ public class class_106 extends class_104 {
             }
          }
       } catch (RuntimeException var8) {
-         throw class_223.method_4281(var8, "hp.ac(" + ')');
+         throw class_223.method_4281(var8);
       }
    }
 
@@ -1703,24 +1703,24 @@ public class class_106 extends class_104 {
    }
 
    // $FF: renamed from: cp (int, int, int) void
-   void method_2005(int var1, int var2, int var3) {}
+   void method_2005() {}
 
    // $FF: renamed from: j () bm
    protected synchronized class_104 method_1931() {
       try {
          return this.field_1240;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "hp.j(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: at (int, int, int) void
-   void method_2013(int var1, int var2, int var3) {
+   void method_2013(int var1, int var2) {
       try {
          this.field_1230[var1] = var2;
          this.field_1231[var1] = (int)(2097152.0D * Math.pow(2.0D, (double)var2 * 5.4931640625E-4D) + 0.5D);
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "hp.at(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -1749,7 +1749,7 @@ public class class_106 extends class_104 {
    }
 
    // $FF: renamed from: by (int, int, int) void
-   void method_2020(int var1, int var2, int var3) {
+   void method_2020(int var1, int var2) {
       class_36 var4 = this.field_1227[var1][var2];
       if(var4 != null) {
          this.field_1227[var1][var2] = null;
@@ -1768,7 +1768,7 @@ public class class_106 extends class_104 {
    }
 
    // $FF: renamed from: bc (int, int, int) void
-   void method_2021(int var1, int var2, int var3) {
+   void method_2021(int var1, int var2) {
       class_36 var4 = this.field_1227[var1][var2];
       if(var4 != null) {
          this.field_1227[var1][var2] = null;
@@ -1787,7 +1787,7 @@ public class class_106 extends class_104 {
    }
 
    // $FF: renamed from: cd (int, int, int) void
-   void method_2022(int var1, int var2, int var3) {
+   void method_2022(int var1, int var2) {
       class_36 var4 = this.field_1227[var1][var2];
       if(var4 != null) {
          this.field_1227[var1][var2] = null;
@@ -1806,7 +1806,7 @@ public class class_106 extends class_104 {
    }
 
    // $FF: renamed from: cm (int, int, int) void
-   void method_2023(int var1, int var2, int var3) {
+   void method_2023(int var1, int var2) {
       class_36 var4 = this.field_1227[var1][var2];
       if(var4 != null) {
          this.field_1227[var1][var2] = null;
@@ -1825,25 +1825,25 @@ public class class_106 extends class_104 {
    }
 
    // $FF: renamed from: cv (int, int, int) void
-   void method_2024(int var1, int var2, int var3) {}
+   void method_2024() {}
 
    // $FF: renamed from: cr (int, int) void
-   void method_2025(int var1, int var2) {}
+   void method_2025() {}
 
    // $FF: renamed from: cq (int, int, int) void
-   void method_2028(int var1, int var2, int var3) {}
+   void method_2028() {}
 
    // $FF: renamed from: b () int
    protected synchronized int method_1935() {
       try {
          return 0;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "hp.b(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: cf (int, int) void
-   void method_2033(int var1, int var2) {}
+   void method_2033() {}
 
    // $FF: renamed from: i () bm
    protected synchronized class_104 method_1937() {
@@ -1851,31 +1851,31 @@ public class class_106 extends class_104 {
    }
 
    // $FF: renamed from: z (int, int, int) void
-   void method_2037(int var1, int var2, int var3) {
+   void method_2037() {
       try {
          ;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "hp.z(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: c (int, int, int) void
-   public synchronized void method_2038(int var1, int var2, int var3) {
+   public synchronized void method_2038(int var1, int var2) {
       try {
-         this.method_2048(var1, var2, (byte)-75);
+         this.method_2048(var1, var2);
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "hp.c(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: e (int, int, byte) void
-   void method_2048(int var1, int var2, byte var3) {
+   void method_2048(int var1, int var2) {
       try {
          this.field_1219[var1] = var2;
          this.field_1221[var1] = var2 & -128;
          this.method_1972(var1, var2, -81134935);
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "hp.e(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -1887,11 +1887,11 @@ public class class_106 extends class_104 {
                return;
             }
 
-            var2.method_446(1514154807);
+            var2.method_446();
          }
 
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "hp.y(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 }

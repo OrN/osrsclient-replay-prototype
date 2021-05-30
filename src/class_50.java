@@ -35,7 +35,7 @@ public final class class_50 extends class_27 {
          this.field_374 = 0;
          this.field_375 = -1875645291;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ch.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

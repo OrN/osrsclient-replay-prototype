@@ -21,7 +21,7 @@ public abstract class class_181 implements Comparator {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ln.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -39,7 +39,7 @@ public abstract class class_181 implements Comparator {
          }
 
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ln.d(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -47,7 +47,7 @@ public abstract class class_181 implements Comparator {
       try {
          return super.equals(var1);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ln.equals(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -97,11 +97,11 @@ public abstract class class_181 implements Comparator {
    }
 
    // $FF: renamed from: s (lx, lx, byte) int
-   protected final int method_3830(class_338 var1, class_338 var2, byte var3) {
+   protected final int method_3830(class_338 var1, class_338 var2) {
       try {
          return this.field_2242 == null?0:this.field_2242.compare(var1, var2);
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "ln.s(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 }

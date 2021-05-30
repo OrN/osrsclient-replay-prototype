@@ -59,7 +59,7 @@ public class class_213 implements class_14 {
          this.field_2441 = var1 * -484963161;
          this.field_2442 = 654482243 * var2;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "en.<init>(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -69,7 +69,7 @@ public class class_213 implements class_14 {
    }
 
    // $FF: renamed from: q (dp, int, int, byte) bd
-   public static final class_139 method_4188(class_201 var0, int var1, int var2, byte var3) {
+   public static final class_139 method_4188(int var1, int var2, byte var3) {
       try {
          if(0 == 1631160541 * class_139.field_1793) {
             if(var3 != 1) {
@@ -93,7 +93,7 @@ public class class_213 implements class_14 {
                   }
 
                   try {
-                     class_139 var4 = class_126.field_1372.method_5(-597712139);
+                     class_139 var4 = class_126.field_1372.method_5();
                      var4.field_1785 = new int[256 * (class_139.field_1781?2:1)];
                      var4.field_1790 = 602149037 * var2;
                      var4.method_3006((byte)4);
@@ -102,7 +102,7 @@ public class class_213 implements class_14 {
                         var4.field_1789 = -247676928;
                      }
 
-                     var4.method_2998(1181152315 * var4.field_1789, (short)-24303);
+                     var4.method_2998(1181152315 * var4.field_1789);
                      if(class_139.field_1783 * -1797165253 > 0) {
                         if(var3 != 1) {
                            throw new IllegalStateException();
@@ -143,16 +143,16 @@ public class class_213 implements class_14 {
             throw new IllegalArgumentException();
          }
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "en.q(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
    // $FF: renamed from: v (int) int
-   public int method_50(int var1) {
+   public int method_50() {
       try {
          return 1344358763 * this.field_2442;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "en.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 }

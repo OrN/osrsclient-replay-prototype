@@ -41,20 +41,20 @@ public class class_52 extends class_51 {
          this.this$0 = var1;
          this.field_385 = -1736473067;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "z.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: v (nd, int) void
    void method_571(class_28 var1, int var2) {
       try {
-         this.field_385 = var1.method_132((byte)-3) * 1736473067;
-         this.field_379 = var1.method_131((byte)-119);
-         this.field_380 = var1.method_132((byte)-56) * 2098216711;
-         var1.method_136(109427535);
+         this.field_385 = var1.method_132() * 1736473067;
+         this.field_379 = var1.method_131();
+         this.field_380 = var1.method_132() * 2098216711;
+         var1.method_136();
          this.field_381 = var1.method_139(-391631059);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "z.v(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -68,10 +68,10 @@ public class class_52 extends class_51 {
 
    // $FF: renamed from: f (nd) void
    void method_570(class_28 var1) {
-      this.field_385 = var1.method_132((byte)-24) * 44094436;
-      this.field_379 = var1.method_131((byte)16);
-      this.field_380 = var1.method_132((byte)-30) * -606450979;
-      var1.method_136(-1825190337);
+      this.field_385 = var1.method_132() * 44094436;
+      this.field_379 = var1.method_131();
+      this.field_380 = var1.method_132() * -606450979;
+      var1.method_136();
       this.field_381 = var1.method_139(-391631059);
    }
 
@@ -83,12 +83,12 @@ public class class_52 extends class_51 {
          var3.field_2217 = this.field_380 * -440732129;
          var3.field_2222 = this.field_381;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "z.n(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: l (af, byte) void
-   static void method_573(GameApplet var0, byte var1) {
+   static void method_573(byte var1) {
       try {
          while(class_178.method_3800(-1385459044)) {
             if(var1 == 0) {
@@ -440,7 +440,7 @@ public class class_52 extends class_51 {
 
          }
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "z.l(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
@@ -458,16 +458,16 @@ public class class_52 extends class_51 {
             return true;
          }
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "z.n(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: n (java.lang.CharSequence, int) boolean
-   public static boolean method_575(CharSequence var0, int var1) {
+   public static boolean method_575(CharSequence var0) {
       try {
          return class_36.method_398(var0, 10, true, -387650050);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "z.n(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -499,7 +499,7 @@ public class class_52 extends class_51 {
             return 0;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "z.n(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 }

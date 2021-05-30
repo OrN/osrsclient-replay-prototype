@@ -48,14 +48,14 @@ public final class class_383 {
             this.field_4209 += 2621632103171946095L * (long)var3;
          }
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "nm.n(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
    protected void abm() throws Throwable {
       if(this.field_4211 != null) {
          System.out.println("");
-         this.method_6701(-1125712384);
+         this.method_6701();
       }
 
    }
@@ -81,16 +81,16 @@ public final class class_383 {
          }
 
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "nm.y(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
    // $FF: renamed from: p (int) long
-   public final long method_6688(int var1) throws IOException {
+   public final long method_6688() throws IOException {
       try {
          return this.field_4211.length();
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "nm.p(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -108,7 +108,7 @@ public final class class_383 {
 
          return var5;
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "nm.j(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -116,11 +116,11 @@ public final class class_383 {
       try {
          if(this.field_4211 != null) {
             System.out.println("");
-            this.method_6701(-520775983);
+            this.method_6701();
          }
 
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "nm.finalize(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -147,14 +147,14 @@ public final class class_383 {
 
          this.field_4211.seek(0L);
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "nm.<init>(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
    protected void abr() throws Throwable {
       if(this.field_4211 != null) {
          System.out.println("");
-         this.method_6701(-1855435807);
+         this.method_6701();
       }
 
    }
@@ -165,7 +165,7 @@ public final class class_383 {
          this.field_4211.seek(var1);
          this.field_4209 = 2621632103171946095L * var1;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "nm.v(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -249,17 +249,17 @@ public final class class_383 {
    protected void abj() throws Throwable {
       if(this.field_4211 != null) {
          System.out.println("");
-         this.method_6701(-1900787857);
+         this.method_6701();
       }
 
    }
 
    // $FF: renamed from: f (int) void
-   public final void method_6701(int var1) throws IOException {
+   public final void method_6701() throws IOException {
       try {
          this.method_6687(false, -891531898);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "nm.f(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 }

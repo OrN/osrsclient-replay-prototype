@@ -165,13 +165,13 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                }
             }
 
-            this.method_2312(531481106);
+            this.method_2312();
          }
 
          this.field_1394 = var1 * -1004683489;
          this.field_1384 = var2 * -605552423;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "af.p(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -205,7 +205,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
          }
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "af.j(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -219,12 +219,12 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
             class_133 var10001 = new class_133();
             this.field_1411 = var10001;
-            this.field_1411.method_2911(this.field_1397, -1721881715);
+            this.field_1411.method_2911(this.field_1397);
          }
 
          return this.field_1411;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "af.r(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -297,12 +297,12 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    }
 
    // $FF: renamed from: s (int) void
-   protected final void method_2299(int var1) {
+   protected final void method_2299() {
       try {
          class_287.method_5276(754026835);
-         class_162.method_3417(this.field_1397, -1738532871);
+         class_162.method_3417(this.field_1397);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "af.s(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -394,25 +394,25 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
          }
 
       } catch (RuntimeException var11) {
-         throw class_223.method_4281(var11, "af.c(" + ')');
+         throw class_223.method_4281(var11);
       }
    }
 
    // $FF: renamed from: e (byte) void
    final void method_2304(byte var1) {
       try {
-         class_154.method_3245(this.field_1397, (byte)-28);
+         class_154.method_3245(this.field_1397);
          Canvas var2 = this.field_1397;
          var2.removeMouseListener(class_131.field_1704);
          var2.removeMouseMotionListener(class_131.field_1704);
          var2.removeFocusListener(class_131.field_1704);
          class_131.field_1705 = 0;
          if(this.field_1411 != null) {
-            this.field_1411.method_2908(this.field_1397, 1850795023);
+            this.field_1411.method_2908(this.field_1397);
          }
 
          this.method_2306(-1567592382);
-         class_162.method_3417(this.field_1397, 736130948);
+         class_162.method_3417(this.field_1397);
          Canvas var3 = this.field_1397;
          var3.addMouseListener(class_131.field_1704);
          var3.addMouseMotionListener(class_131.field_1704);
@@ -422,12 +422,12 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                throw new IllegalStateException();
             }
 
-            this.field_1411.method_2911(this.field_1397, -462192332);
+            this.field_1411.method_2911(this.field_1397);
          }
 
-         this.method_2312(1998261621);
+         this.method_2312();
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "af.e(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -464,14 +464,14 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                field_1392 = var10000;
             }
 
-            field_1392.method_4058(this, 1, (byte)20);
+            field_1392.method_4058(this, 1);
          } catch (Exception var6) {
             class_308.method_5523((String)null, var6, 1876892877);
             this.method_2324("crash", (byte)-1);
          }
 
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "af.g(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
@@ -539,8 +539,8 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                         return;
                      }
 
-                     ((class_143)class_126.field_1370).method_3066(this.field_1397, -401885377);
-                     class_126.field_1370.method_3059(0, 0, -974946505);
+                     ((class_143)class_126.field_1370).method_3066(this.field_1397);
+                     class_126.field_1370.method_3059(0, 0);
                      break label64;
                   }
                }
@@ -553,7 +553,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
          this.field_1376 = false;
          this.field_1408 = class_87.method_1516((byte)1) * 1457858577470444969L;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "af.a(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -628,7 +628,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
          return true;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "af.k(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -672,7 +672,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
          this.method_2413((byte)68);
       } catch (RuntimeException var9) {
-         throw class_223.method_4281(var9, "af.m(" + ')');
+         throw class_223.method_4281(var9);
       }
    }
 
@@ -736,7 +736,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
          this.field_1409 = false;
       } catch (RuntimeException var8) {
-         throw class_223.method_4281(var8, "af.x(" + ')');
+         throw class_223.method_4281(var8);
       }
    }
 
@@ -776,8 +776,8 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       this.field_1397.requestFocus();
       this.field_1409 = true;
       if(class_126.field_1370 != null && -740510445 * class_126.field_1370.field_1816 == class_137.field_1766 * 646214551 && -1538307343 * class_58.field_460 == class_126.field_1370.field_1818 * 460788765) {
-         ((class_143)class_126.field_1370).method_3066(this.field_1397, 1179291480);
-         class_126.field_1370.method_3059(0, 0, -1896303856);
+         ((class_143)class_126.field_1370).method_3066(this.field_1397);
+         class_126.field_1370.method_3059(0, 0);
       } else {
          class_143 var10000 = new class_143(646214551 * class_137.field_1766, class_58.field_460 * -1538307343, this.field_1397);
          class_126.field_1370 = var10000;
@@ -788,11 +788,11 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    }
 
    // $FF: renamed from: ae (int) void
-   final void method_2312(int var1) {
+   final void method_2312() {
       try {
          this.field_1401 = true;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "af.ae(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -832,16 +832,16 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                }
 
                try {
-                  field_1392.method_4067((byte)57);
+                  field_1392.method_4067();
                } catch (Exception var3) {
                   ;
                }
             }
 
-            this.method_2328(-992375266);
+            this.method_2328();
          }
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "af.ap(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
@@ -851,7 +851,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             field_1377 = 0L;
          }
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "af.start(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -861,7 +861,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             field_1377 = (class_87.method_1516((byte)1) + 4000L) * -8724334031026931673L;
          }
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "af.stop(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -886,7 +886,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             this.method_2313(928825308);
          }
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "af.destroy(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -894,7 +894,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       try {
          this.paint(var1);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "af.update(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -911,7 +911,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "af.paint(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -920,7 +920,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
          field_1391 = true;
          this.field_1409 = true;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "af.focusGained(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -928,7 +928,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       try {
          field_1391 = false;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "af.focusLost(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -954,7 +954,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                      }
 
                      String var4 = var2.substring(6, var3);
-                     if(class_52.method_575(var4, -253899282) && class_168.method_3609(var4, -409366221) < 10) {
+                     if(class_52.method_575(var4) && class_168.method_3609(var4) < 10) {
                         this.method_2324("wrongjava", (byte)-1);
                         return;
                      }
@@ -996,7 +996,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
          this.method_2313(1052097273);
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "af.run(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
@@ -1017,7 +1017,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
          this.method_2342(1759538265);
          this.field_1401 = false;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "af.i(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -1025,18 +1025,18 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       try {
          ;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "af.windowDeactivated(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: dj (java.awt.event.WindowEvent) void
-   public final void method_2316(WindowEvent var1) {}
+   public final void method_2316() {}
 
    public final void windowIconified(WindowEvent var1) {
       try {
          ;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "af.windowIconified(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -1044,19 +1044,19 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       try {
          ;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "af.windowClosed(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: u (byte) void
-   protected final void method_2317(byte var1) {
+   protected final void method_2317() {
       try {
          Canvas var2 = this.field_1397;
          var2.addMouseListener(class_131.field_1704);
          var2.addMouseMotionListener(class_131.field_1704);
          var2.addFocusListener(class_131.field_1704);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "af.u(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -1087,7 +1087,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             field_1392 = var10000;
          }
 
-         field_1392.method_4058(this, 1, (byte)42);
+         field_1392.method_4058(this, 1);
       } catch (Exception var5) {
          class_308.method_5523((String)null, var5, 1926738018);
          this.method_2324("crash", (byte)-1);
@@ -1160,18 +1160,18 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
          }
 
       } catch (RuntimeException var12) {
-         throw class_223.method_4281(var12, "af.ar(" + ')');
+         throw class_223.method_4281(var12);
       }
    }
 
    // $FF: renamed from: ag (byte) void
-   protected final void method_2323(byte var1) {
+   protected final void method_2323() {
       try {
          field_1399 = null;
          class_83.field_780 = null;
          class_349.field_3938 = null;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "af.ag(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -1194,7 +1194,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
          }
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "af.ax(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -1211,7 +1211,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             return this;
          }
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "af.as(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -1234,7 +1234,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
          class_351 var10000 = new class_351(var3, var4);
          return var10000;
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "af.aj(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -1244,7 +1244,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    }
 
    // $FF: renamed from: av (int) void
-   protected abstract void method_2328(int var1);
+   protected abstract void method_2328();
 
    // $FF: renamed from: <clinit> () void
    static {
@@ -1264,13 +1264,13 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    }
 
    // $FF: renamed from: z (java.awt.event.FocusEvent) void
-   public final void method_2330(FocusEvent var1) {
+   public final void method_2330() {
       field_1391 = true;
       this.field_1409 = true;
    }
 
    // $FF: renamed from: ca (java.awt.event.WindowEvent) void
-   public final void method_2331(WindowEvent var1) {}
+   public final void method_2331() {}
 
    // $FF: renamed from: cu () void
    public final void method_2332() {
@@ -1280,12 +1280,12 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    }
 
    // $FF: renamed from: h (java.awt.event.FocusEvent) void
-   public final void method_2333(FocusEvent var1) {
+   public final void method_2333() {
       field_1391 = false;
    }
 
    // $FF: renamed from: cx (java.awt.event.WindowEvent) void
-   public final void method_2334(WindowEvent var1) {}
+   public final void method_2334() {}
 
    // $FF: renamed from: bh () void
    final void method_2335() {
@@ -1336,7 +1336,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    }
 
    // $FF: renamed from: w (java.awt.event.FocusEvent) void
-   public final void method_2337(FocusEvent var1) {
+   public final void method_2337() {
       field_1391 = true;
       this.field_1409 = true;
    }
@@ -1358,7 +1358,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: ac (int, int) void
    protected final void method_2339(int var1, int var2) {
       if(this.field_1394 * -995873918 != var1 || this.field_1384 * -45318295 != var2) {
-         this.method_2312(229399936);
+         this.method_2312();
       }
 
       this.field_1394 = var1 * -1119817117;
@@ -1368,7 +1368,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: at (int, int) void
    protected final void method_2340(int var1, int var2) {
       if(this.field_1394 * 59571423 != var1 || this.field_1384 * -45318295 != var2) {
-         this.method_2312(556810800);
+         this.method_2312();
       }
 
       this.field_1394 = var1 * -1004683489;
@@ -1378,7 +1378,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: ah (int, int) void
    protected final void method_2341(int var1, int var2) {
       if(this.field_1394 * 59571423 != var1 || this.field_1384 * -45318295 != var2) {
-         this.method_2312(-842532089);
+         this.method_2312();
       }
 
       this.field_1394 = var1 * -1004683489;
@@ -1431,7 +1431,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             this.method_2302((byte)50);
          }
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "af.l(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -1463,7 +1463,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       if(null == this.field_1411) {
          class_133 var10001 = new class_133();
          this.field_1411 = var10001;
-         this.field_1411.method_2911(this.field_1397, -286997893);
+         this.field_1411.method_2911(this.field_1397);
       }
 
       return this.field_1411;
@@ -1503,7 +1503,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    }
 
    // $FF: renamed from: dk (java.awt.event.WindowEvent) void
-   public final void method_2351(WindowEvent var1) {}
+   public final void method_2351() {}
 
    // $FF: renamed from: bv () void
    protected final void method_2352() {
@@ -1590,7 +1590,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       try {
          this.destroy();
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "af.windowClosing(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -1720,7 +1720,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             return -1;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "af.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -1824,27 +1824,27 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
    // $FF: renamed from: bn () void
    final void method_2367() {
-      class_154.method_3245(this.field_1397, (byte)-12);
+      class_154.method_3245(this.field_1397);
       Canvas var1 = this.field_1397;
       var1.removeMouseListener(class_131.field_1704);
       var1.removeMouseMotionListener(class_131.field_1704);
       var1.removeFocusListener(class_131.field_1704);
       class_131.field_1705 = 0;
       if(this.field_1411 != null) {
-         this.field_1411.method_2908(this.field_1397, 1204193171);
+         this.field_1411.method_2908(this.field_1397);
       }
 
       this.method_2306(-270674896);
-      class_162.method_3417(this.field_1397, -1189377900);
+      class_162.method_3417(this.field_1397);
       Canvas var2 = this.field_1397;
       var2.addMouseListener(class_131.field_1704);
       var2.addMouseMotionListener(class_131.field_1704);
       var2.addFocusListener(class_131.field_1704);
       if(this.field_1411 != null) {
-         this.field_1411.method_2911(this.field_1397, 1555550845);
+         this.field_1411.method_2911(this.field_1397);
       }
 
-      this.method_2312(-617039624);
+      this.method_2312();
    }
 
    // $FF: renamed from: <init> () void
@@ -1868,9 +1868,9 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
          this.field_1402 = var1;
          class_141 var10000 = new class_141();
-         class_180.method_3820(var10000, 229174712);
+         class_180.method_3820(var10000);
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "af.<init>(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -1928,8 +1928,8 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       this.field_1397.requestFocus();
       this.field_1409 = true;
       if(class_126.field_1370 != null && -38164928 * class_126.field_1370.field_1816 == class_137.field_1766 * 646214551 && -1538307343 * class_58.field_460 == class_126.field_1370.field_1818 * -317262549) {
-         ((class_143)class_126.field_1370).method_3066(this.field_1397, 1335329828);
-         class_126.field_1370.method_3059(0, 0, -1104759174);
+         ((class_143)class_126.field_1370).method_3066(this.field_1397);
+         class_126.field_1370.method_3059(0, 0);
       } else {
          class_143 var10000 = new class_143(1120109090 * class_137.field_1766, class_58.field_460 * -587809659, this.field_1397);
          class_126.field_1370 = var10000;
@@ -1997,7 +1997,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       try {
          ;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "af.windowActivated(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -2020,7 +2020,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                   }
 
                   String var4 = var2.substring(6, var3);
-                  if(class_52.method_575(var4, 1520083225) && class_168.method_3609(var4, -605764003) < 10) {
+                  if(class_52.method_575(var4) && class_168.method_3609(var4) < 10) {
                      this.method_2324("wrongjava", (byte)-1);
                      return;
                   }
@@ -2082,7 +2082,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                   }
 
                   String var4 = var2.substring(6, var3);
-                  if(class_52.method_575(var4, -1665832383) && class_168.method_3609(var4, -673244559) < 10) {
+                  if(class_52.method_575(var4) && class_168.method_3609(var4) < 10) {
                      this.method_2324("wrongjava", (byte)-1);
                      return;
                   }
@@ -2129,7 +2129,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       try {
          ;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "af.windowOpened(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -2282,7 +2282,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    }
 
    // $FF: renamed from: dc (java.awt.event.WindowEvent) void
-   public final void method_2379(WindowEvent var1) {}
+   public final void method_2379() {}
 
    // $FF: renamed from: cq () void
    final void method_2380() {
@@ -2341,13 +2341,13 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
          if(null != field_1392) {
             try {
-               field_1392.method_4067((byte)65);
+               field_1392.method_4067();
             } catch (Exception var2) {
                ;
             }
          }
 
-         this.method_2328(1797148147);
+         this.method_2328();
       }
    }
 
@@ -2378,13 +2378,13 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
          if(null != field_1392) {
             try {
-               field_1392.method_4067((byte)28);
+               field_1392.method_4067();
             } catch (Exception var2) {
                ;
             }
          }
 
-         this.method_2328(476902240);
+         this.method_2328();
       }
    }
 
@@ -2415,13 +2415,13 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
          if(null != field_1392) {
             try {
-               field_1392.method_4067((byte)54);
+               field_1392.method_4067();
             } catch (Exception var2) {
                ;
             }
          }
 
-         this.method_2328(-1154560220);
+         this.method_2328();
       }
    }
 
@@ -2453,11 +2453,11 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    }
 
    // $FF: renamed from: d (java.lang.String, int) void
-   protected void method_2390(String var1, int var2) {
+   protected void method_2390(String var1) {
       try {
          this.field_1405.setContents(new StringSelection(var1), (ClipboardOwner)null);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "af.d(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -2518,15 +2518,15 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    }
 
    // $FF: renamed from: cy (java.awt.event.WindowEvent) void
-   public final void method_2395(WindowEvent var1) {}
+   public final void method_2395() {}
 
    // $FF: renamed from: c (int, int) void
-   static void method_2396(int var0, int var1) {
+   static void method_2396(int var0) {
       try {
          class_177.field_2194 = -824225436;
          class_177.field_2192 = -174778505 * var0;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "af.c(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -2536,18 +2536,18 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    }
 
    // $FF: renamed from: cl (java.awt.event.WindowEvent) void
-   public final void method_2398(WindowEvent var1) {}
+   public final void method_2398() {}
 
    // $FF: renamed from: df (java.awt.event.WindowEvent) void
-   public final void method_2399(WindowEvent var1) {}
+   public final void method_2399() {}
 
    // $FF: renamed from: db (java.awt.event.WindowEvent) void
-   public final void method_2400(WindowEvent var1) {
+   public final void method_2400() {
       this.destroy();
    }
 
    // $FF: renamed from: dz (java.awt.event.WindowEvent) void
-   public final void method_2401(WindowEvent var1) {
+   public final void method_2401() {
       this.destroy();
    }
 
@@ -2590,10 +2590,10 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    }
 
    // $FF: renamed from: dr (java.awt.event.WindowEvent) void
-   public final void method_2403(WindowEvent var1) {}
+   public final void method_2403() {}
 
    // $FF: renamed from: di (java.awt.event.WindowEvent) void
-   public final void method_2404(WindowEvent var1) {}
+   public final void method_2404() {}
 
    // $FF: renamed from: eb () boolean
    protected final boolean method_2405() {
@@ -2615,13 +2615,13 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    }
 
    // $FF: renamed from: ds (java.awt.event.WindowEvent) void
-   public final void method_2407(WindowEvent var1) {}
+   public final void method_2407() {}
 
    // $FF: renamed from: do (java.awt.event.WindowEvent) void
-   public final void method_2408(WindowEvent var1) {}
+   public final void method_2408() {}
 
    // $FF: renamed from: q (java.awt.event.FocusEvent) void
-   public final void method_2409(FocusEvent var1) {
+   public final void method_2409() {
       field_1391 = false;
    }
 
@@ -2698,7 +2698,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    protected abstract void method_2420();
 
    // $FF: renamed from: t (java.awt.event.FocusEvent) void
-   public final void method_2421(FocusEvent var1) {
+   public final void method_2421() {
       field_1391 = true;
       this.field_1409 = true;
    }
@@ -2871,7 +2871,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: bl () void
    protected final void method_2431() {
       class_287.method_5276(754026835);
-      class_162.method_3417(this.field_1397, -1405559130);
+      class_162.method_3417(this.field_1397);
    }
 
    // $FF: renamed from: ex () li
@@ -2907,7 +2907,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: ao (int, int) void
    protected final void method_2434(int var1, int var2) {
       if(this.field_1394 * 59571423 != var1 || this.field_1384 * -45318295 != var2) {
-         this.method_2312(-1370470422);
+         this.method_2312();
       }
 
       this.field_1394 = var1 * -1004683489;
@@ -2921,12 +2921,12 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       try {
          ;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "af.windowDeiconified(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: cw (java.awt.event.WindowEvent) void
-   public final void method_2436(WindowEvent var1) {}
+   public final void method_2436() {}
 
    // $FF: renamed from: er () int
    protected static int method_2437() {
@@ -2967,11 +2967,11 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    }
 
    // $FF: renamed from: b (int) void
-   protected void method_2438(int var1) {
+   protected void method_2438() {
       try {
          this.field_1405 = this.getToolkit().getSystemClipboard();
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "af.b(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -2991,7 +2991,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
          return var10000;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "af.am(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -3008,7 +3008,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: bu () void
    protected final void method_2442() {
       class_287.method_5276(754026835);
-      class_162.method_3417(this.field_1397, 520850567);
+      class_162.method_3417(this.field_1397);
    }
 
    // $FF: renamed from: v (java.awt.Graphics) void

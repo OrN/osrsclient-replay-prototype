@@ -31,20 +31,20 @@ public class class_45 extends class_27 {
 
 
    // $FF: renamed from: n (int, int) void
-   public void method_519(int var1, int var2) {
+   public void method_519(int var1) {
       try {
          this.field_341 = 1994087857 * var1;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "cz.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: v (java.lang.Object[], int) void
-   public void method_520(Object[] var1, int var2) {
+   public void method_520(Object[] var1) {
       try {
          this.field_337 = var1;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "cz.v(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -57,14 +57,14 @@ public class class_45 extends class_27 {
                throw new IllegalStateException();
             }
 
-            var10000 = class_116.method_2249(class_177.field_2200, -1349600224);
+            var10000 = class_116.method_2249(class_177.field_2200);
          } else {
             var10000 = class_177.field_2200;
          }
 
          return var10000;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "cz.y(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -99,7 +99,7 @@ public class class_45 extends class_27 {
    }
 
    // $FF: renamed from: g (int, cf, boolean, byte) int
-   static int method_528(int var0, class_90 var1, boolean var2, byte var3) {
+   static int method_528(int var0, boolean var2, byte var3) {
       try {
          class_37 var10000;
          if(var2) {
@@ -117,7 +117,7 @@ public class class_45 extends class_27 {
             if(var3 != 0) {
                throw new IllegalStateException();
             } else {
-               class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_196.method_3989(class_112.method_2236(var4, 2133639461), (byte)-54);
+               class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_196.method_3989(class_112.method_2236(var4, 2133639461));
                return 1;
             }
          } else if(1801 != var0) {
@@ -164,7 +164,7 @@ public class class_45 extends class_27 {
             return 1;
          }
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "cz.g(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -174,7 +174,7 @@ public class class_45 extends class_27 {
          for(int var2 = 0; var2 < client.field_1461 * 1045404765; ++var2) {
             int var3 = client.field_1462[var2];
             class_99 var4 = client.field_1458[var3];
-            int var5 = var0.method_130(1076690960);
+            int var5 = var0.method_130();
             int var6;
             int var7;
             int var8;
@@ -184,7 +184,7 @@ public class class_45 extends class_27 {
                      throw new IllegalStateException();
                   }
 
-                  var6 = var0.method_168(1291698460);
+                  var6 = var0.method_168();
                   if(var6 == '\uffff') {
                      if(var1 != -1497241252) {
                         throw new IllegalStateException();
@@ -193,7 +193,7 @@ public class class_45 extends class_27 {
                      var6 = -1;
                   }
 
-                  var7 = var0.method_113(1754698307);
+                  var7 = var0.method_113();
                   if(var6 == var4.field_1108 * -1762760413) {
                      if(var1 != -1497241252) {
                         throw new IllegalStateException();
@@ -259,8 +259,8 @@ public class class_45 extends class_27 {
             int var9;
             if(0 != (var5 & 8)) {
                label240: {
-                  var6 = var0.method_170(-704137332);
-                  var7 = var0.method_132((byte)-23);
+                  var6 = var0.method_170();
+                  var7 = var0.method_132();
                   var8 = var4.field_1077 * -130212619 - 64 * (var6 - 697161691 * class_243.field_2700 - 697161691 * class_243.field_2700);
                   var9 = var4.field_1076 * 1248597615 - (var7 - -27903763 * class_154.field_1929 - -27903763 * class_154.field_1929) * 64;
                   if(var8 == 0) {
@@ -282,7 +282,7 @@ public class class_45 extends class_27 {
             }
 
             if(0 != (var5 & 2)) {
-               var4.field_1141 = class_85.method_1443(var0.method_168(158935765), 1129288870);
+               var4.field_1141 = class_85.method_1443(var0.method_168(), 1129288870);
                var4.field_1079 = var4.field_1141.field_859 * 400673345;
                var4.field_1129 = var4.field_1141.field_882 * -310470265;
                var4.field_1084 = 1103534349 * var4.field_1141.field_865;
@@ -299,7 +299,7 @@ public class class_45 extends class_27 {
                   throw new IllegalStateException();
                }
 
-               var4.field_1128 = var0.method_168(1879319807) * -187990533;
+               var4.field_1128 = var0.method_168() * -187990533;
                if(var4.field_1128 * 637535539 == '\uffff') {
                   if(var1 != -1497241252) {
                      return;
@@ -310,13 +310,13 @@ public class class_45 extends class_27 {
             }
 
             if((var5 & 128) != 0) {
-               var4.field_1118 = var0.method_162(-1820772017) * -64437987;
-               var4.field_1120 = var0.method_162(-1755233231) * 2120129099;
-               var4.field_1109 = var0.method_123(-1269563921) * -260652731;
-               var4.field_1078 = var0.method_157((byte)0) * -280468969;
-               var4.field_1105 = (var0.method_169(777271421) + -1702273423 * client.field_1425) * 911678983;
-               var4.field_1123 = (var0.method_168(2102827358) + -1702273423 * client.field_1425) * -999940959;
-               var4.field_1124 = var0.method_169(777271421) * -410013785;
+               var4.field_1118 = var0.method_162() * -64437987;
+               var4.field_1120 = var0.method_162() * 2120129099;
+               var4.field_1109 = var0.method_123() * -260652731;
+               var4.field_1078 = var0.method_157() * -280468969;
+               var4.field_1105 = (var0.method_169() + -1702273423 * client.field_1425) * 911678983;
+               var4.field_1123 = (var0.method_168() + -1702273423 * client.field_1425) * -999940959;
+               var4.field_1124 = var0.method_169() * -410013785;
                var4.field_1130 = -2139872387;
                var4.field_1114 = 0;
                var4.field_1118 += -64437987 * var4.field_1112[0];
@@ -326,7 +326,7 @@ public class class_45 extends class_27 {
             }
 
             if(0 != (var5 & 64)) {
-               var6 = var0.method_113(2036900546);
+               var6 = var0.method_113();
                int var10;
                int var11;
                int var12;
@@ -343,50 +343,50 @@ public class class_45 extends class_27 {
                      var9 = -1;
                      var10 = -1;
                      var11 = -1;
-                     var8 = var0.method_144((byte)9);
+                     var8 = var0.method_144();
                      if(32767 == var8) {
                         if(var1 != -1497241252) {
                            throw new IllegalStateException();
                         }
 
-                        var8 = var0.method_144((byte)43);
-                        var10 = var0.method_144((byte)-38);
-                        var9 = var0.method_144((byte)9);
-                        var11 = var0.method_144((byte)-36);
+                        var8 = var0.method_144();
+                        var10 = var0.method_144();
+                        var9 = var0.method_144();
+                        var11 = var0.method_144();
                      } else if(32766 != var8) {
                         if(var1 != -1497241252) {
                            throw new IllegalStateException();
                         }
 
-                        var10 = var0.method_144((byte)-107);
+                        var10 = var0.method_144();
                      } else {
                         var8 = -1;
                      }
 
-                     var12 = var0.method_144((byte)24);
+                     var12 = var0.method_144();
                      var4.method_1794(var8, var10, var9, var11, -1702273423 * client.field_1425, var12, (byte)111);
                   }
                }
 
-               var7 = var0.method_237(-834329867);
+               var7 = var0.method_237();
                if(var7 > 0) {
                   for(var8 = 0; var8 < var7; ++var8) {
                      if(var1 != -1497241252) {
                         throw new IllegalStateException();
                      }
 
-                     var9 = var0.method_144((byte)45);
-                     var10 = var0.method_144((byte)79);
+                     var9 = var0.method_144();
+                     var10 = var0.method_144();
                      if(32767 != var10) {
-                        var11 = var0.method_144((byte)9);
-                        var12 = var0.method_237(-834329867);
+                        var11 = var0.method_144();
+                        var12 = var0.method_237();
                         int var10000;
                         if(var10 > 0) {
                            if(var1 != -1497241252) {
                               throw new IllegalStateException();
                            }
 
-                           var10000 = var0.method_113(1657546916);
+                           var10000 = var0.method_113();
                         } else {
                            var10000 = var12;
                         }
@@ -405,8 +405,8 @@ public class class_45 extends class_27 {
                   throw new IllegalStateException();
                }
 
-               var4.field_1113 = var0.method_170(-1287124133) * 1634941531;
-               var6 = var0.method_163(332290195);
+               var4.field_1113 = var0.method_170() * 1634941531;
+               var6 = var0.method_163();
                var4.field_1117 = 1296170927 * (var6 >> 16);
                var4.field_1127 = (client.field_1425 * -1702273423 + (var6 & '\uffff')) * -2033842497;
                var4.field_1102 = 0;
@@ -439,7 +439,7 @@ public class class_45 extends class_27 {
          }
 
       } catch (RuntimeException var14) {
-         throw class_223.method_4281(var14, "cz.hs(" + ')');
+         throw class_223.method_4281(var14);
       }
    }
 

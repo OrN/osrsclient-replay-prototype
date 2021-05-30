@@ -145,18 +145,18 @@ public class class_93 extends class_91 {
       var10000 = new class_28(var1);
       class_28 var8 = var10000;
       var4.field_15 = (var1.length - 18) * -1025691571;
-      int var9 = var4.method_132((byte)-45);
-      int var10 = var4.method_132((byte)-97);
-      int var11 = var4.method_130(-2052233298);
-      int var12 = var4.method_130(-1883995429);
-      int var13 = var4.method_130(-127680153);
-      int var14 = var4.method_130(-464328935);
-      int var15 = var4.method_130(-558246500);
-      int var16 = var4.method_130(549816208);
-      int var17 = var4.method_132((byte)-101);
-      int var18 = var4.method_132((byte)-125);
-      int var19 = var4.method_132((byte)-28);
-      int var20 = var4.method_132((byte)-49);
+      int var9 = var4.method_132();
+      int var10 = var4.method_132();
+      int var11 = var4.method_130();
+      int var12 = var4.method_130();
+      int var13 = var4.method_130();
+      int var14 = var4.method_130();
+      int var15 = var4.method_130();
+      int var16 = var4.method_130();
+      int var17 = var4.method_132();
+      int var18 = var4.method_132();
+      int var19 = var4.method_132();
+      int var20 = var4.method_132();
       byte var21 = 0;
       int var46 = var21 + var9;
       int var23 = var46;
@@ -253,7 +253,7 @@ public class class_93 extends class_91 {
       int var41;
       int var42;
       for(var38 = 0; var38 < var9; ++var38) {
-         var39 = var4.method_130(-445534394);
+         var39 = var4.method_130();
          var40 = 0;
          if((var39 & 1) != 0) {
             var40 = var5.method_143((byte)54);
@@ -276,7 +276,7 @@ public class class_93 extends class_91 {
          var36 = this.field_1015[var38];
          var37 = this.field_985[var38];
          if(var16 == 1) {
-            this.field_989[var38] = var8.method_130(28213860);
+            this.field_989[var38] = var8.method_130();
          }
       }
 
@@ -287,9 +287,9 @@ public class class_93 extends class_91 {
       var8.field_15 = var25 * -1025691571;
 
       for(var38 = 0; var38 < var10; ++var38) {
-         this.field_994[var38] = (short)var4.method_132((byte)-46);
+         this.field_994[var38] = (short)var4.method_132();
          if(var12 == 1) {
-            var39 = var5.method_130(1493512300);
+            var39 = var5.method_130();
             if((var39 & 1) == 1) {
                this.field_990[var38] = 1;
                var2 = true;
@@ -311,15 +311,15 @@ public class class_93 extends class_91 {
          }
 
          if(var13 == 255) {
-            this.field_999[var38] = var6.method_131((byte)-14);
+            this.field_999[var38] = var6.method_131();
          }
 
          if(var14 == 1) {
-            this.field_992[var38] = var7.method_131((byte)-50);
+            this.field_992[var38] = var7.method_131();
          }
 
          if(var15 == 1) {
-            this.field_1003[var38] = var8.method_130(1616772956);
+            this.field_1003[var38] = var8.method_130();
          }
       }
 
@@ -333,7 +333,7 @@ public class class_93 extends class_91 {
       int var43;
       int var44;
       for(var42 = 0; var42 < var10; ++var42) {
-         var43 = var5.method_130(345001603);
+         var43 = var5.method_130();
          if(var43 == 1) {
             var38 = var4.method_143((byte)51) + var41;
             var39 = var4.method_143((byte)98) + var38;
@@ -378,9 +378,9 @@ public class class_93 extends class_91 {
 
       for(var42 = 0; var42 < var11; ++var42) {
          this.field_998[var42] = 0;
-         this.field_986[var42] = (short)var4.method_132((byte)-54);
-         this.field_1000[var42] = (short)var4.method_132((byte)-6);
-         this.field_1001[var42] = (short)var4.method_132((byte)-11);
+         this.field_986[var42] = (short)var4.method_132();
+         this.field_1000[var42] = (short)var4.method_132();
+         this.field_1001[var42] = (short)var4.method_132();
       }
 
       if(this.field_993 != null) {
@@ -706,7 +706,7 @@ public class class_93 extends class_91 {
 
    // $FF: renamed from: ab (jv, int, int) gm
    public static class_93 method_1702(class_306 var0, int var1, int var2) {
-      byte[] var3 = var0.method_5381(var1, var2, -26460885);
+      byte[] var3 = var0.method_5381(var1, var2);
       if(var3 == null) {
          return null;
       } else {
@@ -985,7 +985,7 @@ public class class_93 extends class_91 {
 
    // $FF: renamed from: v (jv, int, int) gm
    public static class_93 method_1708(class_306 var0, int var1, int var2) {
-      byte[] var3 = var0.method_5381(var1, var2, -26460885);
+      byte[] var3 = var0.method_5381(var1, var2);
       if(var3 == null) {
          return null;
       } else {
@@ -1371,20 +1371,20 @@ public class class_93 extends class_91 {
       var10000 = new class_28(var1);
       class_28 var8 = var10000;
       var2.field_15 = (var1.length - 23) * -1025691571;
-      int var9 = var2.method_132((byte)-24);
-      int var10 = var2.method_132((byte)-109);
-      int var11 = var2.method_130(-448674304);
-      int var12 = var2.method_130(-1252239544);
-      int var13 = var2.method_130(641201679);
-      int var14 = var2.method_130(181866257);
-      int var15 = var2.method_130(685003314);
-      int var16 = var2.method_130(-435451702);
-      int var17 = var2.method_130(1105754118);
-      int var18 = var2.method_132((byte)-58);
-      int var19 = var2.method_132((byte)-110);
-      int var20 = var2.method_132((byte)-107);
-      int var21 = var2.method_132((byte)-110);
-      int var22 = var2.method_132((byte)-99);
+      int var9 = var2.method_132();
+      int var10 = var2.method_132();
+      int var11 = var2.method_130();
+      int var12 = var2.method_130();
+      int var13 = var2.method_130();
+      int var14 = var2.method_130();
+      int var15 = var2.method_130();
+      int var16 = var2.method_130();
+      int var17 = var2.method_130();
+      int var18 = var2.method_132();
+      int var19 = var2.method_132();
+      int var20 = var2.method_132();
+      int var21 = var2.method_132();
+      int var22 = var2.method_132();
       int var23 = 0;
       int var24 = 0;
       int var25 = 0;
@@ -1394,7 +1394,7 @@ public class class_93 extends class_91 {
          var2.field_15 = 0;
 
          for(var26 = 0; var26 < var11; ++var26) {
-            byte var27 = this.field_998[var26] = var2.method_131((byte)-24);
+            byte var27 = this.field_998[var26] = var2.method_131();
             if(var27 == 0) {
                ++var23;
             }
@@ -1527,7 +1527,7 @@ public class class_93 extends class_91 {
       int var54;
       int var55;
       for(var51 = 0; var51 < var9; ++var51) {
-         var52 = var2.method_130(-372670597);
+         var52 = var2.method_130();
          var53 = 0;
          if((var52 & 1) != 0) {
             var53 = var3.method_143((byte)86);
@@ -1550,7 +1550,7 @@ public class class_93 extends class_91 {
          var49 = this.field_1015[var51];
          var50 = this.field_985[var51];
          if(var17 == 1) {
-            this.field_989[var51] = var6.method_130(1364488467);
+            this.field_989[var51] = var6.method_130();
          }
       }
 
@@ -1563,29 +1563,29 @@ public class class_93 extends class_91 {
       var8.field_15 = var36 * -1025691571;
 
       for(var51 = 0; var51 < var10; ++var51) {
-         this.field_994[var51] = (short)var2.method_132((byte)-67);
+         this.field_994[var51] = (short)var2.method_132();
          if(var12 == 1) {
-            this.field_990[var51] = var3.method_131((byte)-92);
+            this.field_990[var51] = var3.method_131();
          }
 
          if(var13 == 255) {
-            this.field_999[var51] = var4.method_131((byte)-55);
+            this.field_999[var51] = var4.method_131();
          }
 
          if(var14 == 1) {
-            this.field_992[var51] = var5.method_131((byte)-46);
+            this.field_992[var51] = var5.method_131();
          }
 
          if(var15 == 1) {
-            this.field_1003[var51] = var6.method_130(1860318306);
+            this.field_1003[var51] = var6.method_130();
          }
 
          if(var16 == 1) {
-            this.field_1004[var51] = (short)(var7.method_132((byte)-108) - 1);
+            this.field_1004[var51] = (short)(var7.method_132() - 1);
          }
 
          if(this.field_993 != null && this.field_1004[var51] != -1) {
-            this.field_993[var51] = (byte)(var8.method_130(-2068421473) - 1);
+            this.field_993[var51] = (byte)(var8.method_130() - 1);
          }
       }
 
@@ -1598,7 +1598,7 @@ public class class_93 extends class_91 {
 
       int var56;
       for(var55 = 0; var55 < var10; ++var55) {
-         var56 = var3.method_130(690650433);
+         var56 = var3.method_130();
          if(var56 == 1) {
             var51 = var2.method_143((byte)61) + var54;
             var52 = var2.method_143((byte)72) + var51;
@@ -1649,27 +1649,27 @@ public class class_93 extends class_91 {
       for(var55 = 0; var55 < var11; ++var55) {
          var56 = this.field_998[var55] & 255;
          if(var56 == 0) {
-            this.field_986[var55] = (short)var2.method_132((byte)-52);
-            this.field_1000[var55] = (short)var2.method_132((byte)-33);
-            this.field_1001[var55] = (short)var2.method_132((byte)-81);
+            this.field_986[var55] = (short)var2.method_132();
+            this.field_1000[var55] = (short)var2.method_132();
+            this.field_1001[var55] = (short)var2.method_132();
          }
       }
 
       var2.field_15 = var26 * -1025691571;
-      var55 = var2.method_130(-1211001220);
+      var55 = var2.method_130();
       if(var55 != 0) {
          new class_271();
-         var2.method_132((byte)-68);
-         var2.method_132((byte)-103);
-         var2.method_132((byte)-63);
-         var2.method_135((byte)-119);
+         var2.method_132();
+         var2.method_132();
+         var2.method_132();
+         var2.method_135();
       }
 
    }
 
    // $FF: renamed from: al (jv, int, int) gm
    public static class_93 method_1717(class_306 var0, int var1, int var2) {
-      byte[] var3 = var0.method_5381(var1, var2, -26460885);
+      byte[] var3 = var0.method_5381(var1, var2);
       if(var3 == null) {
          return null;
       } else {
@@ -1695,20 +1695,20 @@ public class class_93 extends class_91 {
       var10000 = new class_28(var1);
       class_28 var8 = var10000;
       var2.field_15 = (var1.length - 23) * 1355962192;
-      int var9 = var2.method_132((byte)-72);
-      int var10 = var2.method_132((byte)-40);
-      int var11 = var2.method_130(893389992);
-      int var12 = var2.method_130(-645872724);
-      int var13 = var2.method_130(702118069);
-      int var14 = var2.method_130(-20085484);
-      int var15 = var2.method_130(1059485950);
-      int var16 = var2.method_130(776818233);
-      int var17 = var2.method_130(1435168219);
-      int var18 = var2.method_132((byte)-109);
-      int var19 = var2.method_132((byte)-102);
-      int var20 = var2.method_132((byte)-80);
-      int var21 = var2.method_132((byte)-3);
-      int var22 = var2.method_132((byte)-116);
+      int var9 = var2.method_132();
+      int var10 = var2.method_132();
+      int var11 = var2.method_130();
+      int var12 = var2.method_130();
+      int var13 = var2.method_130();
+      int var14 = var2.method_130();
+      int var15 = var2.method_130();
+      int var16 = var2.method_130();
+      int var17 = var2.method_130();
+      int var18 = var2.method_132();
+      int var19 = var2.method_132();
+      int var20 = var2.method_132();
+      int var21 = var2.method_132();
+      int var22 = var2.method_132();
       int var23 = 0;
       int var24 = 0;
       int var25 = 0;
@@ -1718,7 +1718,7 @@ public class class_93 extends class_91 {
          var2.field_15 = 0;
 
          for(var26 = 0; var26 < var11; ++var26) {
-            byte var27 = this.field_998[var26] = var2.method_131((byte)11);
+            byte var27 = this.field_998[var26] = var2.method_131();
             if(var27 == 0) {
                ++var23;
             }
@@ -1851,7 +1851,7 @@ public class class_93 extends class_91 {
       int var54;
       int var55;
       for(var51 = 0; var51 < var9; ++var51) {
-         var52 = var2.method_130(921211200);
+         var52 = var2.method_130();
          var53 = 0;
          if((var52 & 1) != 0) {
             var53 = var3.method_143((byte)82);
@@ -1874,7 +1874,7 @@ public class class_93 extends class_91 {
          var49 = this.field_1015[var51];
          var50 = this.field_985[var51];
          if(var17 == 1) {
-            this.field_989[var51] = var6.method_130(-1263463598);
+            this.field_989[var51] = var6.method_130();
          }
       }
 
@@ -1887,29 +1887,29 @@ public class class_93 extends class_91 {
       var8.field_15 = var36 * -1025691571;
 
       for(var51 = 0; var51 < var10; ++var51) {
-         this.field_994[var51] = (short)var2.method_132((byte)-86);
+         this.field_994[var51] = (short)var2.method_132();
          if(var12 == 1) {
-            this.field_990[var51] = var3.method_131((byte)-87);
+            this.field_990[var51] = var3.method_131();
          }
 
          if(var13 == 255) {
-            this.field_999[var51] = var4.method_131((byte)-32);
+            this.field_999[var51] = var4.method_131();
          }
 
          if(var14 == 1) {
-            this.field_992[var51] = var5.method_131((byte)-73);
+            this.field_992[var51] = var5.method_131();
          }
 
          if(var15 == 1) {
-            this.field_1003[var51] = var6.method_130(131603523);
+            this.field_1003[var51] = var6.method_130();
          }
 
          if(var16 == 1) {
-            this.field_1004[var51] = (short)(var7.method_132((byte)-126) - 1);
+            this.field_1004[var51] = (short)(var7.method_132() - 1);
          }
 
          if(this.field_993 != null && this.field_1004[var51] != -1) {
-            this.field_993[var51] = (byte)(var8.method_130(-927961373) - 1);
+            this.field_993[var51] = (byte)(var8.method_130() - 1);
          }
       }
 
@@ -1922,7 +1922,7 @@ public class class_93 extends class_91 {
 
       int var56;
       for(var55 = 0; var55 < var10; ++var55) {
-         var56 = var3.method_130(954647455);
+         var56 = var3.method_130();
          if(var56 == 1) {
             var51 = var2.method_143((byte)127) + var54;
             var52 = var2.method_143((byte)107) + var51;
@@ -1973,20 +1973,20 @@ public class class_93 extends class_91 {
       for(var55 = 0; var55 < var11; ++var55) {
          var56 = this.field_998[var55] & 255;
          if(var56 == 0) {
-            this.field_986[var55] = (short)var2.method_132((byte)-44);
-            this.field_1000[var55] = (short)var2.method_132((byte)-114);
-            this.field_1001[var55] = (short)var2.method_132((byte)-94);
+            this.field_986[var55] = (short)var2.method_132();
+            this.field_1000[var55] = (short)var2.method_132();
+            this.field_1001[var55] = (short)var2.method_132();
          }
       }
 
       var2.field_15 = var26 * -1021868162;
-      var55 = var2.method_130(-1281111458);
+      var55 = var2.method_130();
       if(var55 != 0) {
          new class_271();
-         var2.method_132((byte)-30);
-         var2.method_132((byte)-31);
-         var2.method_132((byte)-65);
-         var2.method_135((byte)-66);
+         var2.method_132();
+         var2.method_132();
+         var2.method_132();
+         var2.method_135();
       }
 
    }
@@ -2020,20 +2020,20 @@ public class class_93 extends class_91 {
       var10000 = new class_28(var1);
       class_28 var8 = var10000;
       var2.field_15 = (var1.length - 23) * -1025691571;
-      int var9 = var2.method_132((byte)-73);
-      int var10 = var2.method_132((byte)-61);
-      int var11 = var2.method_130(-1133881687);
-      int var12 = var2.method_130(-293632066);
-      int var13 = var2.method_130(-1508778306);
-      int var14 = var2.method_130(-440569604);
-      int var15 = var2.method_130(1961163674);
-      int var16 = var2.method_130(-2113794345);
-      int var17 = var2.method_130(15212735);
-      int var18 = var2.method_132((byte)-74);
-      int var19 = var2.method_132((byte)-104);
-      int var20 = var2.method_132((byte)-19);
-      int var21 = var2.method_132((byte)-110);
-      int var22 = var2.method_132((byte)-54);
+      int var9 = var2.method_132();
+      int var10 = var2.method_132();
+      int var11 = var2.method_130();
+      int var12 = var2.method_130();
+      int var13 = var2.method_130();
+      int var14 = var2.method_130();
+      int var15 = var2.method_130();
+      int var16 = var2.method_130();
+      int var17 = var2.method_130();
+      int var18 = var2.method_132();
+      int var19 = var2.method_132();
+      int var20 = var2.method_132();
+      int var21 = var2.method_132();
+      int var22 = var2.method_132();
       int var23 = 0;
       int var24 = 0;
       int var25 = 0;
@@ -2043,7 +2043,7 @@ public class class_93 extends class_91 {
          var2.field_15 = 0;
 
          for(var26 = 0; var26 < var11; ++var26) {
-            byte var27 = this.field_998[var26] = var2.method_131((byte)-95);
+            byte var27 = this.field_998[var26] = var2.method_131();
             if(var27 == 0) {
                ++var23;
             }
@@ -2176,7 +2176,7 @@ public class class_93 extends class_91 {
       int var54;
       int var55;
       for(var51 = 0; var51 < var9; ++var51) {
-         var52 = var2.method_130(1815202115);
+         var52 = var2.method_130();
          var53 = 0;
          if((var52 & 1) != 0) {
             var53 = var3.method_143((byte)92);
@@ -2199,7 +2199,7 @@ public class class_93 extends class_91 {
          var49 = this.field_1015[var51];
          var50 = this.field_985[var51];
          if(var17 == 1) {
-            this.field_989[var51] = var6.method_130(-199784726);
+            this.field_989[var51] = var6.method_130();
          }
       }
 
@@ -2212,29 +2212,29 @@ public class class_93 extends class_91 {
       var8.field_15 = var36 * -1025691571;
 
       for(var51 = 0; var51 < var10; ++var51) {
-         this.field_994[var51] = (short)var2.method_132((byte)-34);
+         this.field_994[var51] = (short)var2.method_132();
          if(var12 == 1) {
-            this.field_990[var51] = var3.method_131((byte)-12);
+            this.field_990[var51] = var3.method_131();
          }
 
          if(var13 == 255) {
-            this.field_999[var51] = var4.method_131((byte)-8);
+            this.field_999[var51] = var4.method_131();
          }
 
          if(var14 == 1) {
-            this.field_992[var51] = var5.method_131((byte)-66);
+            this.field_992[var51] = var5.method_131();
          }
 
          if(var15 == 1) {
-            this.field_1003[var51] = var6.method_130(-194686919);
+            this.field_1003[var51] = var6.method_130();
          }
 
          if(var16 == 1) {
-            this.field_1004[var51] = (short)(var7.method_132((byte)-35) - 1);
+            this.field_1004[var51] = (short)(var7.method_132() - 1);
          }
 
          if(this.field_993 != null && this.field_1004[var51] != -1) {
-            this.field_993[var51] = (byte)(var8.method_130(496050918) - 1);
+            this.field_993[var51] = (byte)(var8.method_130() - 1);
          }
       }
 
@@ -2247,7 +2247,7 @@ public class class_93 extends class_91 {
 
       int var56;
       for(var55 = 0; var55 < var10; ++var55) {
-         var56 = var3.method_130(-1614547190);
+         var56 = var3.method_130();
          if(var56 == 1) {
             var51 = var2.method_143((byte)41) + var54;
             var52 = var2.method_143((byte)24) + var51;
@@ -2298,20 +2298,20 @@ public class class_93 extends class_91 {
       for(var55 = 0; var55 < var11; ++var55) {
          var56 = this.field_998[var55] & 255;
          if(var56 == 0) {
-            this.field_986[var55] = (short)var2.method_132((byte)-96);
-            this.field_1000[var55] = (short)var2.method_132((byte)-80);
-            this.field_1001[var55] = (short)var2.method_132((byte)-15);
+            this.field_986[var55] = (short)var2.method_132();
+            this.field_1000[var55] = (short)var2.method_132();
+            this.field_1001[var55] = (short)var2.method_132();
          }
       }
 
       var2.field_15 = var26 * -1025691571;
-      var55 = var2.method_130(-1514849955);
+      var55 = var2.method_130();
       if(var55 != 0) {
          new class_271();
-         var2.method_132((byte)-75);
-         var2.method_132((byte)-63);
-         var2.method_132((byte)-11);
-         var2.method_135((byte)-48);
+         var2.method_132();
+         var2.method_132();
+         var2.method_132();
+         var2.method_135();
       }
 
    }
@@ -2331,18 +2331,18 @@ public class class_93 extends class_91 {
       var10000 = new class_28(var1);
       class_28 var8 = var10000;
       var4.field_15 = (var1.length - 18) * -1025691571;
-      int var9 = var4.method_132((byte)-4);
-      int var10 = var4.method_132((byte)-112);
-      int var11 = var4.method_130(2108060842);
-      int var12 = var4.method_130(-1293262944);
-      int var13 = var4.method_130(-234661629);
-      int var14 = var4.method_130(-357647996);
-      int var15 = var4.method_130(-1075083454);
-      int var16 = var4.method_130(-1184021466);
-      int var17 = var4.method_132((byte)-117);
-      int var18 = var4.method_132((byte)-92);
-      int var19 = var4.method_132((byte)-49);
-      int var20 = var4.method_132((byte)-96);
+      int var9 = var4.method_132();
+      int var10 = var4.method_132();
+      int var11 = var4.method_130();
+      int var12 = var4.method_130();
+      int var13 = var4.method_130();
+      int var14 = var4.method_130();
+      int var15 = var4.method_130();
+      int var16 = var4.method_130();
+      int var17 = var4.method_132();
+      int var18 = var4.method_132();
+      int var19 = var4.method_132();
+      int var20 = var4.method_132();
       byte var21 = 0;
       int var46 = var21 + var9;
       int var23 = var46;
@@ -2439,7 +2439,7 @@ public class class_93 extends class_91 {
       int var41;
       int var42;
       for(var38 = 0; var38 < var9; ++var38) {
-         var39 = var4.method_130(586286379);
+         var39 = var4.method_130();
          var40 = 0;
          if((var39 & 1) != 0) {
             var40 = var5.method_143((byte)57);
@@ -2462,7 +2462,7 @@ public class class_93 extends class_91 {
          var36 = this.field_1015[var38];
          var37 = this.field_985[var38];
          if(var16 == 1) {
-            this.field_989[var38] = var8.method_130(-903152190);
+            this.field_989[var38] = var8.method_130();
          }
       }
 
@@ -2473,9 +2473,9 @@ public class class_93 extends class_91 {
       var8.field_15 = var25 * -643287636;
 
       for(var38 = 0; var38 < var10; ++var38) {
-         this.field_994[var38] = (short)var4.method_132((byte)-10);
+         this.field_994[var38] = (short)var4.method_132();
          if(var12 == 1) {
-            var39 = var5.method_130(-692097179);
+            var39 = var5.method_130();
             if((var39 & 1) == 1) {
                this.field_990[var38] = 1;
                var2 = true;
@@ -2497,15 +2497,15 @@ public class class_93 extends class_91 {
          }
 
          if(var13 == -2089125597) {
-            this.field_999[var38] = var6.method_131((byte)11);
+            this.field_999[var38] = var6.method_131();
          }
 
          if(var14 == 1) {
-            this.field_992[var38] = var7.method_131((byte)-60);
+            this.field_992[var38] = var7.method_131();
          }
 
          if(var15 == 1) {
-            this.field_1003[var38] = var8.method_130(-1030964607);
+            this.field_1003[var38] = var8.method_130();
          }
       }
 
@@ -2519,7 +2519,7 @@ public class class_93 extends class_91 {
       int var43;
       int var44;
       for(var42 = 0; var42 < var10; ++var42) {
-         var43 = var5.method_130(2110153424);
+         var43 = var5.method_130();
          if(var43 == 1) {
             var38 = var4.method_143((byte)35) + var41;
             var39 = var4.method_143((byte)114) + var38;
@@ -2564,9 +2564,9 @@ public class class_93 extends class_91 {
 
       for(var42 = 0; var42 < var11; ++var42) {
          this.field_998[var42] = 0;
-         this.field_986[var42] = (short)var4.method_132((byte)-81);
-         this.field_1000[var42] = (short)var4.method_132((byte)-42);
-         this.field_1001[var42] = (short)var4.method_132((byte)-65);
+         this.field_986[var42] = (short)var4.method_132();
+         this.field_1000[var42] = (short)var4.method_132();
+         this.field_1001[var42] = (short)var4.method_132();
       }
 
       if(this.field_993 != null) {
@@ -2613,18 +2613,18 @@ public class class_93 extends class_91 {
       var10000 = new class_28(var1);
       class_28 var8 = var10000;
       var4.field_15 = (var1.length - 18) * -80733636;
-      int var9 = var4.method_132((byte)-27);
-      int var10 = var4.method_132((byte)-95);
-      int var11 = var4.method_130(754153034);
-      int var12 = var4.method_130(-1340921140);
-      int var13 = var4.method_130(1182397326);
-      int var14 = var4.method_130(780534929);
-      int var15 = var4.method_130(-964987106);
-      int var16 = var4.method_130(-1435744389);
-      int var17 = var4.method_132((byte)-86);
-      int var18 = var4.method_132((byte)-43);
-      int var19 = var4.method_132((byte)-58);
-      int var20 = var4.method_132((byte)-37);
+      int var9 = var4.method_132();
+      int var10 = var4.method_132();
+      int var11 = var4.method_130();
+      int var12 = var4.method_130();
+      int var13 = var4.method_130();
+      int var14 = var4.method_130();
+      int var15 = var4.method_130();
+      int var16 = var4.method_130();
+      int var17 = var4.method_132();
+      int var18 = var4.method_132();
+      int var19 = var4.method_132();
+      int var20 = var4.method_132();
       byte var21 = 0;
       int var46 = var21 + var9;
       int var23 = var46;
@@ -2721,7 +2721,7 @@ public class class_93 extends class_91 {
       int var41;
       int var42;
       for(var38 = 0; var38 < var9; ++var38) {
-         var39 = var4.method_130(368603382);
+         var39 = var4.method_130();
          var40 = 0;
          if((var39 & 1) != 0) {
             var40 = var5.method_143((byte)52);
@@ -2744,7 +2744,7 @@ public class class_93 extends class_91 {
          var36 = this.field_1015[var38];
          var37 = this.field_985[var38];
          if(var16 == 1) {
-            this.field_989[var38] = var8.method_130(-94256548);
+            this.field_989[var38] = var8.method_130();
          }
       }
 
@@ -2755,9 +2755,9 @@ public class class_93 extends class_91 {
       var8.field_15 = var25 * -860604781;
 
       for(var38 = 0; var38 < var10; ++var38) {
-         this.field_994[var38] = (short)var4.method_132((byte)-10);
+         this.field_994[var38] = (short)var4.method_132();
          if(var12 == 1) {
-            var39 = var5.method_130(195748369);
+            var39 = var5.method_130();
             if((var39 & 1) == 1) {
                this.field_990[var38] = 1;
                var2 = true;
@@ -2779,15 +2779,15 @@ public class class_93 extends class_91 {
          }
 
          if(var13 == 255) {
-            this.field_999[var38] = var6.method_131((byte)-50);
+            this.field_999[var38] = var6.method_131();
          }
 
          if(var14 == 1) {
-            this.field_992[var38] = var7.method_131((byte)-52);
+            this.field_992[var38] = var7.method_131();
          }
 
          if(var15 == 1) {
-            this.field_1003[var38] = var8.method_130(2024316363);
+            this.field_1003[var38] = var8.method_130();
          }
       }
 
@@ -2801,7 +2801,7 @@ public class class_93 extends class_91 {
       int var43;
       int var44;
       for(var42 = 0; var42 < var10; ++var42) {
-         var43 = var5.method_130(719933237);
+         var43 = var5.method_130();
          if(var43 == 1) {
             var38 = var4.method_143((byte)91) + var41;
             var39 = var4.method_143((byte)106) + var38;
@@ -2846,9 +2846,9 @@ public class class_93 extends class_91 {
 
       for(var42 = 0; var42 < var11; ++var42) {
          this.field_998[var42] = 0;
-         this.field_986[var42] = (short)var4.method_132((byte)-94);
-         this.field_1000[var42] = (short)var4.method_132((byte)-104);
-         this.field_1001[var42] = (short)var4.method_132((byte)-121);
+         this.field_986[var42] = (short)var4.method_132();
+         this.field_1000[var42] = (short)var4.method_132();
+         this.field_1001[var42] = (short)var4.method_132();
       }
 
       if(this.field_993 != null) {
@@ -2895,18 +2895,18 @@ public class class_93 extends class_91 {
       var10000 = new class_28(var1);
       class_28 var8 = var10000;
       var4.field_15 = (var1.length - 18) * -1025691571;
-      int var9 = var4.method_132((byte)-14);
-      int var10 = var4.method_132((byte)-32);
-      int var11 = var4.method_130(-105180302);
-      int var12 = var4.method_130(1955860677);
-      int var13 = var4.method_130(-255899039);
-      int var14 = var4.method_130(-1086992493);
-      int var15 = var4.method_130(-407197601);
-      int var16 = var4.method_130(-1019412820);
-      int var17 = var4.method_132((byte)-115);
-      int var18 = var4.method_132((byte)-6);
-      int var19 = var4.method_132((byte)-41);
-      int var20 = var4.method_132((byte)-90);
+      int var9 = var4.method_132();
+      int var10 = var4.method_132();
+      int var11 = var4.method_130();
+      int var12 = var4.method_130();
+      int var13 = var4.method_130();
+      int var14 = var4.method_130();
+      int var15 = var4.method_130();
+      int var16 = var4.method_130();
+      int var17 = var4.method_132();
+      int var18 = var4.method_132();
+      int var19 = var4.method_132();
+      int var20 = var4.method_132();
       byte var21 = 0;
       int var46 = var21 + var9;
       int var23 = var46;
@@ -3003,7 +3003,7 @@ public class class_93 extends class_91 {
       int var41;
       int var42;
       for(var38 = 0; var38 < var9; ++var38) {
-         var39 = var4.method_130(-1343821773);
+         var39 = var4.method_130();
          var40 = 0;
          if((var39 & 1) != 0) {
             var40 = var5.method_143((byte)58);
@@ -3026,7 +3026,7 @@ public class class_93 extends class_91 {
          var36 = this.field_1015[var38];
          var37 = this.field_985[var38];
          if(var16 == 1) {
-            this.field_989[var38] = var8.method_130(-557768148);
+            this.field_989[var38] = var8.method_130();
          }
       }
 
@@ -3037,9 +3037,9 @@ public class class_93 extends class_91 {
       var8.field_15 = var25 * -1025691571;
 
       for(var38 = 0; var38 < var10; ++var38) {
-         this.field_994[var38] = (short)var4.method_132((byte)-106);
+         this.field_994[var38] = (short)var4.method_132();
          if(var12 == 1) {
-            var39 = var5.method_130(811615488);
+            var39 = var5.method_130();
             if((var39 & 1) == 1) {
                this.field_990[var38] = 1;
                var2 = true;
@@ -3061,15 +3061,15 @@ public class class_93 extends class_91 {
          }
 
          if(var13 == 255) {
-            this.field_999[var38] = var6.method_131((byte)-92);
+            this.field_999[var38] = var6.method_131();
          }
 
          if(var14 == 1) {
-            this.field_992[var38] = var7.method_131((byte)-66);
+            this.field_992[var38] = var7.method_131();
          }
 
          if(var15 == 1) {
-            this.field_1003[var38] = var8.method_130(648262410);
+            this.field_1003[var38] = var8.method_130();
          }
       }
 
@@ -3083,7 +3083,7 @@ public class class_93 extends class_91 {
       int var43;
       int var44;
       for(var42 = 0; var42 < var10; ++var42) {
-         var43 = var5.method_130(1669925514);
+         var43 = var5.method_130();
          if(var43 == 1) {
             var38 = var4.method_143((byte)31) + var41;
             var39 = var4.method_143((byte)51) + var38;
@@ -3128,9 +3128,9 @@ public class class_93 extends class_91 {
 
       for(var42 = 0; var42 < var11; ++var42) {
          this.field_998[var42] = 0;
-         this.field_986[var42] = (short)var4.method_132((byte)-78);
-         this.field_1000[var42] = (short)var4.method_132((byte)-67);
-         this.field_1001[var42] = (short)var4.method_132((byte)-107);
+         this.field_986[var42] = (short)var4.method_132();
+         this.field_1000[var42] = (short)var4.method_132();
+         this.field_1001[var42] = (short)var4.method_132();
       }
 
       if(this.field_993 != null) {
@@ -3857,20 +3857,20 @@ public class class_93 extends class_91 {
       var10000 = new class_28(var1);
       class_28 var8 = var10000;
       var2.field_15 = (var1.length - 23) * -1025691571;
-      int var9 = var2.method_132((byte)-95);
-      int var10 = var2.method_132((byte)-114);
-      int var11 = var2.method_130(-356425400);
-      int var12 = var2.method_130(1819413422);
-      int var13 = var2.method_130(1841658134);
-      int var14 = var2.method_130(435861932);
-      int var15 = var2.method_130(1920193046);
-      int var16 = var2.method_130(705953262);
-      int var17 = var2.method_130(1370576092);
-      int var18 = var2.method_132((byte)-13);
-      int var19 = var2.method_132((byte)-26);
-      int var20 = var2.method_132((byte)-36);
-      int var21 = var2.method_132((byte)-66);
-      int var22 = var2.method_132((byte)-98);
+      int var9 = var2.method_132();
+      int var10 = var2.method_132();
+      int var11 = var2.method_130();
+      int var12 = var2.method_130();
+      int var13 = var2.method_130();
+      int var14 = var2.method_130();
+      int var15 = var2.method_130();
+      int var16 = var2.method_130();
+      int var17 = var2.method_130();
+      int var18 = var2.method_132();
+      int var19 = var2.method_132();
+      int var20 = var2.method_132();
+      int var21 = var2.method_132();
+      int var22 = var2.method_132();
       int var23 = 0;
       int var24 = 0;
       int var25 = 0;
@@ -3880,7 +3880,7 @@ public class class_93 extends class_91 {
          var2.field_15 = 0;
 
          for(var26 = 0; var26 < var11; ++var26) {
-            byte var27 = this.field_998[var26] = var2.method_131((byte)-74);
+            byte var27 = this.field_998[var26] = var2.method_131();
             if(var27 == 0) {
                ++var23;
             }
@@ -4013,7 +4013,7 @@ public class class_93 extends class_91 {
       int var54;
       int var55;
       for(var51 = 0; var51 < var9; ++var51) {
-         var52 = var2.method_130(450163606);
+         var52 = var2.method_130();
          var53 = 0;
          if((var52 & 1) != 0) {
             var53 = var3.method_143((byte)26);
@@ -4036,7 +4036,7 @@ public class class_93 extends class_91 {
          var49 = this.field_1015[var51];
          var50 = this.field_985[var51];
          if(var17 == 1) {
-            this.field_989[var51] = var6.method_130(1364557517);
+            this.field_989[var51] = var6.method_130();
          }
       }
 
@@ -4049,29 +4049,29 @@ public class class_93 extends class_91 {
       var8.field_15 = var36 * -1025691571;
 
       for(var51 = 0; var51 < var10; ++var51) {
-         this.field_994[var51] = (short)var2.method_132((byte)-44);
+         this.field_994[var51] = (short)var2.method_132();
          if(var12 == 1) {
-            this.field_990[var51] = var3.method_131((byte)-27);
+            this.field_990[var51] = var3.method_131();
          }
 
          if(var13 == 255) {
-            this.field_999[var51] = var4.method_131((byte)-79);
+            this.field_999[var51] = var4.method_131();
          }
 
          if(var14 == 1) {
-            this.field_992[var51] = var5.method_131((byte)0);
+            this.field_992[var51] = var5.method_131();
          }
 
          if(var15 == 1) {
-            this.field_1003[var51] = var6.method_130(-1484516570);
+            this.field_1003[var51] = var6.method_130();
          }
 
          if(var16 == 1) {
-            this.field_1004[var51] = (short)(var7.method_132((byte)-21) - 1);
+            this.field_1004[var51] = (short)(var7.method_132() - 1);
          }
 
          if(this.field_993 != null && this.field_1004[var51] != -1) {
-            this.field_993[var51] = (byte)(var8.method_130(271235703) - 1);
+            this.field_993[var51] = (byte)(var8.method_130() - 1);
          }
       }
 
@@ -4084,7 +4084,7 @@ public class class_93 extends class_91 {
 
       int var56;
       for(var55 = 0; var55 < var10; ++var55) {
-         var56 = var3.method_130(1982761801);
+         var56 = var3.method_130();
          if(var56 == 1) {
             var51 = var2.method_143((byte)16) + var54;
             var52 = var2.method_143((byte)118) + var51;
@@ -4135,20 +4135,20 @@ public class class_93 extends class_91 {
       for(var55 = 0; var55 < var11; ++var55) {
          var56 = this.field_998[var55] & 255;
          if(var56 == 0) {
-            this.field_986[var55] = (short)var2.method_132((byte)-21);
-            this.field_1000[var55] = (short)var2.method_132((byte)-123);
-            this.field_1001[var55] = (short)var2.method_132((byte)-16);
+            this.field_986[var55] = (short)var2.method_132();
+            this.field_1000[var55] = (short)var2.method_132();
+            this.field_1001[var55] = (short)var2.method_132();
          }
       }
 
       var2.field_15 = var26 * -1025691571;
-      var55 = var2.method_130(813296859);
+      var55 = var2.method_130();
       if(var55 != 0) {
          new class_271();
-         var2.method_132((byte)-87);
-         var2.method_132((byte)-29);
-         var2.method_132((byte)-97);
-         var2.method_135((byte)-31);
+         var2.method_132();
+         var2.method_132();
+         var2.method_132();
+         var2.method_135();
       }
 
    }
@@ -4271,7 +4271,7 @@ public class class_93 extends class_91 {
 
    // $FF: renamed from: ap (jv, int, int) gm
    public static class_93 method_1748(class_306 var0, int var1, int var2) {
-      byte[] var3 = var0.method_5381(var1, var2, -26460885);
+      byte[] var3 = var0.method_5381(var1, var2);
       if(var3 == null) {
          return null;
       } else {

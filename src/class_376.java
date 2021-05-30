@@ -38,22 +38,22 @@ public class class_376 {
          this.field_4150 = 5152950394296653439L;
          this.field_4145 = 0;
          this.field_4151 = var1;
-         this.field_4149 = (this.field_4153 = var1.method_6688(1429458258) * -916519798495233385L) * 5721302312268225557L;
+         this.field_4149 = (this.field_4153 = var1.method_6688() * -916519798495233385L) * 5721302312268225557L;
          this.field_4146 = new byte[var2];
          this.field_4155 = new byte[var3];
          this.field_4152 = 0L;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "nf.<init>(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: v (byte) void
-   public void method_6627(byte var1) throws IOException {
+   public void method_6627() throws IOException {
       try {
          this.method_6634(527492841);
-         this.field_4151.method_6701(-857004459);
+         this.field_4151.method_6701();
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "nf.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -66,25 +66,25 @@ public class class_376 {
             this.field_4152 = -6430708139981374761L * var1;
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "nf.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: f (byte) long
-   public long method_6629(byte var1) {
+   public long method_6629() {
       try {
          return this.field_4149 * 3454228653685997387L;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "nf.f(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: y (byte[], byte) void
-   public void method_6630(byte[] var1, byte var2) throws IOException {
+   public void method_6630(byte[] var1) throws IOException {
       try {
          this.method_6632(var1, 0, var1.length, 785149036);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "nf.y(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -389,7 +389,7 @@ public class class_376 {
             }
          }
       } catch (RuntimeException var15) {
-         throw class_223.method_4281(var15, "nf.p(" + ')');
+         throw class_223.method_4281(var15);
       }
    }
 
@@ -546,7 +546,7 @@ public class class_376 {
             throw var10;
          }
       } catch (RuntimeException var11) {
-         throw class_223.method_4281(var11, "nf.r(" + ')');
+         throw class_223.method_4281(var11);
       }
    }
 
@@ -663,14 +663,14 @@ public class class_376 {
          }
 
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "nf.b(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
    // $FF: renamed from: d () void
    public void method_6635() throws IOException {
       this.method_6634(-376162861);
-      this.field_4151.method_6701(-577615347);
+      this.field_4151.method_6701();
    }
 
    // $FF: renamed from: s (long) void
@@ -719,7 +719,7 @@ public class class_376 {
             return;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "nf.j(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -1269,11 +1269,11 @@ public class class_376 {
    }
 
    // $FF: renamed from: ah (java.lang.String, int) int
-   public static int method_6649(String var0, int var1) {
+   public static int method_6649(String var0) {
       try {
          return var0.length() + 2;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "nf.ah(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 

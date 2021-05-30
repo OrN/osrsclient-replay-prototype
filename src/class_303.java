@@ -45,11 +45,11 @@ public class class_303 {
    }
 
    // $FF: renamed from: <init> (nd, boolean) void
-   public class_303(class_28 var1, boolean var2) {
+   public class_303(class_28 var1) {
       super();
       try {
-         int var3 = var1.method_132((byte)-50);
-         boolean var4 = var1.method_130(1337840952) == 1;
+         int var3 = var1.method_132();
+         boolean var4 = var1.method_130() == 1;
          byte var5;
          if(var4) {
             var5 = 1;
@@ -57,7 +57,7 @@ public class class_303 {
             var5 = 0;
          }
 
-         int var6 = var1.method_132((byte)-1);
+         int var6 = var1.method_132();
          this.field_3392 = new ArrayList(var6);
 
          for(int var7 = 0; var7 < var6; ++var7) {
@@ -67,7 +67,7 @@ public class class_303 {
          }
 
       } catch (RuntimeException var8) {
-         throw class_223.method_4281(var8, "jm.<init>(" + ')');
+         throw class_223.method_4281(var8);
       }
    }
 
@@ -118,7 +118,7 @@ public class class_303 {
          }
 
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "jm.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -179,7 +179,7 @@ public class class_303 {
          client.field_1434 = -164672425;
          client.field_1517 = 522689307;
       } catch (RuntimeException var10) {
-         throw class_223.method_4281(var10, "jm.hy(" + ')');
+         throw class_223.method_4281(var10);
       }
    }
 }

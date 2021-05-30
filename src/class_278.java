@@ -19,25 +19,25 @@ public class class_278 extends class_277 {
    }
 
    // $FF: renamed from: f (byte) byte[]
-   byte[] method_5132(byte var1) {
+   byte[] method_5132() {
       try {
          byte[] var2 = new byte[this.field_3225.capacity()];
          this.field_3225.position(0);
          this.field_3225.get(var2);
          return var2;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "if.f(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: y (byte[], byte) void
-   void method_5134(byte[] var1, byte var2) {
+   void method_5134(byte[] var1) {
       try {
          this.field_3225 = ByteBuffer.allocateDirect(var1.length);
          this.field_3225.position(0);
          this.field_3225.put(var1);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "if.y(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -54,7 +54,7 @@ public class class_278 extends class_277 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "if.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -148,7 +148,7 @@ public class class_278 extends class_277 {
             }
          }
       } catch (RuntimeException var10) {
-         throw class_223.method_4281(var10, "if.f(" + ')');
+         throw class_223.method_4281(var10);
       }
    }
 
@@ -164,7 +164,7 @@ public class class_278 extends class_277 {
          }
 
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "if.y(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -206,14 +206,14 @@ public class class_278 extends class_277 {
             }
 
             if(var1) {
-               class_126.field_1370.method_3059(0, 0, -1124511389);
+               class_126.field_1370.method_3059(0, 0);
             } else {
                class_139.method_3045(var4, var5, var6, var7, -572457964);
             }
 
          }
       } catch (RuntimeException var13) {
-         throw class_223.method_4281(var13, "if.go(" + ')');
+         throw class_223.method_4281(var13);
       }
    }
 }

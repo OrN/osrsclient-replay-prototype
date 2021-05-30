@@ -56,7 +56,7 @@ public class class_105 extends class_104 {
 
          return var1.field_85;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ih.r(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -66,7 +66,7 @@ public class class_105 extends class_104 {
          class_36 var1 = (class_36)this.field_1210.method_5944();
          return (class_104)(null == var1?null:(var1.field_85 != null?var1.field_85:this.method_1947()));
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ih.j(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -95,7 +95,7 @@ public class class_105 extends class_104 {
          }
 
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "ih.d(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
@@ -122,7 +122,7 @@ public class class_105 extends class_104 {
          }
 
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "ih.u(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -188,7 +188,7 @@ public class class_105 extends class_104 {
 
          var1.field_85.method_1943(var2, var3, var4);
       } catch (RuntimeException var12) {
-         throw class_223.method_4281(var12, "ih.v(" + ')');
+         throw class_223.method_4281(var12);
       }
    }
 
@@ -235,7 +235,7 @@ public class class_105 extends class_104 {
 
          var1.field_85.method_1933(var2);
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "ih.n(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -255,7 +255,7 @@ public class class_105 extends class_104 {
          this.field_1211 = var3;
          this.field_1212 = var1;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ih.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -279,7 +279,7 @@ public class class_105 extends class_104 {
       try {
          return 0;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ih.b(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -429,7 +429,7 @@ public class class_105 extends class_104 {
             return '\u0000';
          }
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ih.f(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 }

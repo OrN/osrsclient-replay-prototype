@@ -70,12 +70,12 @@ public class class_348 implements Runnable {
             return false;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "le.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: f (byte) void
-   void method_6188(byte var1) {
+   void method_6188() {
       try {
          synchronized(this) {
             this.field_3934 = true;
@@ -89,7 +89,7 @@ public class class_348 implements Runnable {
          }
 
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "le.f(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -192,7 +192,7 @@ public class class_348 implements Runnable {
 
          throw new IOException();
       } catch (RuntimeException var10) {
-         throw class_223.method_4281(var10, "le.n(" + ')');
+         throw class_223.method_4281(var10);
       }
    }
 
@@ -368,7 +368,7 @@ public class class_348 implements Runnable {
          this.field_3931.setDaemon(true);
          this.field_3931.start();
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "le.<init>(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -433,7 +433,7 @@ public class class_348 implements Runnable {
          } while(!this.method_6187((byte)1));
 
       } catch (RuntimeException var13) {
-         throw class_223.method_4281(var13, "le.run(" + ')');
+         throw class_223.method_4281(var13);
       }
    }
 

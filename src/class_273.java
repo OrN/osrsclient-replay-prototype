@@ -22,7 +22,7 @@ public class class_273 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ia.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -72,7 +72,7 @@ public class class_273 {
 
          var0.field_177[var1] = var3;
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "ia.d(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 }

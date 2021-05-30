@@ -12,7 +12,7 @@ public class class_394 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "oa.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

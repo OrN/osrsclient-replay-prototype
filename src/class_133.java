@@ -15,16 +15,16 @@ public final class class_133 implements class_5, MouseWheelListener {
       try {
          this.field_1732 = 0;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "am.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: n (java.awt.Component, int) void
-   void method_2908(Component var1, int var2) {
+   void method_2908(Component var1) {
       try {
          var1.removeMouseWheelListener(this);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "am.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -32,27 +32,27 @@ public final class class_133 implements class_5, MouseWheelListener {
       try {
          this.field_1732 += var1.getWheelRotation() * -721792881;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "am.mouseWheelMoved(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: f (int) int
-   public synchronized int method_8(int var1) {
+   public synchronized int method_8() {
       try {
          int var2 = this.field_1732 * 1696386671;
          this.field_1732 = 0;
          return var2;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "am.f(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
     // $FF: renamed from: v (java.awt.Component, int) void
-   void method_2911(Component var1, int var2) {
+   void method_2911(Component var1) {
       try {
          var1.addMouseWheelListener(this);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "am.v(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 

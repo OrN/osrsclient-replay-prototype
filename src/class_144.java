@@ -38,7 +38,7 @@ public class class_144 implements class_14 {
          this.field_1822 = var1 * 1706260399;
          this.field_1823 = -554369649 * var2;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ax.<init>(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -48,16 +48,16 @@ public class class_144 implements class_14 {
    }
 
    // $FF: renamed from: v (int) int
-   public int method_50(int var1) {
+   public int method_50() {
       try {
          return this.field_1823 * -1586527889;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ax.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: v (int) void
-   static void method_3080(int var0) {
+   static void method_3080() {
       try {
          class_166.field_2070 = 185062409;
          class_166.field_2071 = new byte[4][104][104];
@@ -73,12 +73,12 @@ public class class_144 implements class_14 {
          class_86.field_795 = new int[104];
          class_349.field_3937 = new int[104];
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ax.v(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: n (byte) void
-   static void method_3081(byte var0) {
+   static void method_3081() {
       try {
          class_166.field_2071 = (byte[][][])null;
          class_273.field_3195 = (byte[][][])null;
@@ -93,7 +93,7 @@ public class class_144 implements class_14 {
          class_86.field_795 = null;
          class_349.field_3937 = null;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ax.n(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

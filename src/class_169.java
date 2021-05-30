@@ -77,7 +77,7 @@ public class class_169 {
             return true;
          }
       } catch (RuntimeException var9) {
-         throw class_223.method_4281(var9, "ck.a(" + ')');
+         throw class_223.method_4281(var9);
       }
    }
 
@@ -96,7 +96,7 @@ public class class_169 {
                   throw new IllegalStateException();
                }
 
-               if(!this.field_2105.method_5500(var2, 510058915)) {
+               if(!this.field_2105.method_5500(var2)) {
                   continue;
                }
 
@@ -121,19 +121,19 @@ public class class_169 {
 
          return var10000;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ck.v(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: <init> (jp, java.lang.String) void
-   class_169(class_307 var1, String var2) {
+   class_169(class_307 var1) {
       super();
       try {
          this.field_2107 = 0;
          this.field_2105 = var1;
-         this.field_2106 = var1.method_5457(585354532) * -296342647;
+         this.field_2106 = var1.method_5457() * -296342647;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ck.<init>(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -142,7 +142,7 @@ public class class_169 {
       this.field_2107 = 0;
 
       for(int var1 = 0; var1 < -398395974 * this.field_2106; ++var1) {
-         if(!this.field_2105.method_5503(var1, -1677083054) || this.field_2105.method_5500(var1, 14775761)) {
+         if(!this.field_2105.method_5503(var1, -1677083054) || this.field_2105.method_5500(var1)) {
             this.field_2107 += -529113033;
          }
       }
@@ -157,7 +157,7 @@ public class class_169 {
          if(var2 != null) {
             return var2;
          } else {
-            byte[] var3 = class_85.field_786.method_5381(34, var0, -26460885);
+            byte[] var3 = class_85.field_786.method_5381(34, var0);
             class_85 var10000 = new class_85();
             var2 = var10000;
             if(var3 != null) {
@@ -169,12 +169,12 @@ public class class_169 {
                var2.method_1431(var10001, -32029901);
             }
 
-            var2.method_1450(1000000);
+            var2.method_1450();
             class_85.field_787.method_5064(var2, (long)var0);
             return var2;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "ck.n(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -183,7 +183,7 @@ public class class_169 {
       this.field_2107 = 0;
 
       for(int var1 = 0; var1 < 605141689 * this.field_2106; ++var1) {
-         if(!this.field_2105.method_5503(var1, -1677083054) || this.field_2105.method_5500(var1, -1365488340)) {
+         if(!this.field_2105.method_5503(var1, -1677083054) || this.field_2105.method_5500(var1)) {
             this.field_2107 += -529113033;
          }
       }

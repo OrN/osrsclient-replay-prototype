@@ -95,11 +95,11 @@ public class class_201 implements Runnable {
 
    // $FF: renamed from: d (java.lang.String, int) eu
    public final class_214 method_4055(String var1, int var2) {
-      return this.method_4056(1, var2, 0, var1, 943820878);
+      return this.method_4056(1, var2, var1, 943820878);
    }
 
    // $FF: renamed from: n (int, int, int, java.lang.Object, int) eu
-   final class_214 method_4056(int var1, int var2, int var3, Object var4, int var5) {
+   final class_214 method_4056(int var1, int var2, Object var4, int var5) {
       try {
          class_214 var10000 = new class_214();
          class_214 var6 = var10000;
@@ -122,25 +122,25 @@ public class class_201 implements Runnable {
             return var6;
          }
       } catch (RuntimeException var10) {
-         throw class_223.method_4281(var10, "dp.n(" + ')');
+         throw class_223.method_4281(var10);
       }
    }
 
    // $FF: renamed from: f (java.lang.String, int, byte) eu
-   public final class_214 method_4057(String var1, int var2, byte var3) {
+   public final class_214 method_4057(String var1, int var2) {
       try {
-         return this.method_4056(1, var2, 0, var1, 2094219759);
+         return this.method_4056(1, var2, var1, 2094219759);
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "dp.f(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: y (java.lang.Runnable, int, byte) eu
-   public final class_214 method_4058(Runnable var1, int var2, byte var3) {
+   public final class_214 method_4058(Runnable var1, int var2) {
       try {
-         return this.method_4056(2, var2, 0, var1, -46619903);
+         return this.method_4056(2, var2, var1, -46619903);
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "dp.y(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -243,7 +243,7 @@ public class class_201 implements Runnable {
             }
          }
       } catch (RuntimeException var9) {
-         throw class_223.method_4281(var9, "dp.run(" + ')');
+         throw class_223.method_4281(var9);
       }
    }
 
@@ -300,12 +300,12 @@ public class class_201 implements Runnable {
          }
 
       } catch (RuntimeException var12) {
-         throw class_223.method_4281(var12, "dp.f(" + ')');
+         throw class_223.method_4281(var12);
       }
    }
 
    // $FF: renamed from: j (int, int, int, java.lang.Object) eu
-   final class_214 method_4061(int var1, int var2, int var3, Object var4) {
+   final class_214 method_4061(int var1, int var2, Object var4) {
       class_214 var10000 = new class_214();
       class_214 var5 = var10000;
       var5.field_2450 = -1398399643 * var1;
@@ -325,7 +325,7 @@ public class class_201 implements Runnable {
    }
 
    // $FF: renamed from: r (int, int, int, java.lang.Object) eu
-   final class_214 method_4062(int var1, int var2, int var3, Object var4) {
+   final class_214 method_4062(int var1, int var2, Object var4) {
       class_214 var10000 = new class_214();
       class_214 var5 = var10000;
       var5.field_2450 = 548150565 * var1;
@@ -345,7 +345,7 @@ public class class_201 implements Runnable {
    }
 
    // $FF: renamed from: b (int, int, int, java.lang.Object) eu
-   final class_214 method_4063(int var1, int var2, int var3, Object var4) {
+   final class_214 method_4063(int var1, int var2, Object var4) {
       class_214 var10000 = new class_214();
       class_214 var5 = var10000;
       var5.field_2450 = 548150565 * var1;
@@ -366,12 +366,12 @@ public class class_201 implements Runnable {
 
    // $FF: renamed from: l (java.lang.String, int) eu
    public final class_214 method_4064(String var1, int var2) {
-      return this.method_4056(1, var2, 0, var1, 1664192045);
+      return this.method_4056(1, var2, var1, 1664192045);
    }
 
    // $FF: renamed from: s (java.lang.String, int) eu
    public final class_214 method_4065(String var1, int var2) {
-      return this.method_4056(1, var2, 0, var1, 1591396315);
+      return this.method_4056(1, var2, var1, 1591396315);
    }
 
    // $FF: renamed from: <init> () void
@@ -397,12 +397,12 @@ public class class_201 implements Runnable {
          this.field_2356.setDaemon(true);
          this.field_2356.start();
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "dp.<init>(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: v (byte) void
-   public final void method_4067(byte var1) {
+   public final void method_4067() {
       try {
          synchronized(this) {
             this.field_2358 = true;
@@ -416,22 +416,22 @@ public class class_201 implements Runnable {
          }
 
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "dp.v(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
    // $FF: renamed from: o (java.lang.Runnable, int) eu
    public final class_214 method_4068(Runnable var1, int var2) {
-      return this.method_4056(2, var2, 0, var1, 621516851);
+      return this.method_4056(2, var2, var1, 621516851);
    }
 
    // $FF: renamed from: c (java.lang.Runnable, int) eu
    public final class_214 method_4069(Runnable var1, int var2) {
-      return this.method_4056(2, var2, 0, var1, -1981665603);
+      return this.method_4056(2, var2, var1, -1981665603);
    }
 
    // $FF: renamed from: u (java.lang.String, int) eu
    public final class_214 method_4070(String var1, int var2) {
-      return this.method_4056(1, var2, 0, var1, -925684790);
+      return this.method_4056(1, var2, var1, -925684790);
    }
 }

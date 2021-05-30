@@ -37,11 +37,11 @@ public class class_374 implements class_14 {
    }
 
    // $FF: renamed from: v (int) int
-   public int method_50(int var1) {
+   public int method_50() {
       try {
          return this.field_4125 * -1356390723;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "na.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -52,7 +52,7 @@ public class class_374 implements class_14 {
          this.field_4131 = var1 * -1003897275;
          this.field_4125 = var2 * -659075947;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "na.<init>(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -83,7 +83,7 @@ public class class_374 implements class_14 {
 
          return var0;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "na.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 

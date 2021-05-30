@@ -38,9 +38,9 @@ public class class_318 {
                   throw new IllegalStateException();
                }
 
-               class_149.method_3135(99, "", "Roofs are now all hidden", -1649069914);
+               class_149.method_3135(99, "", "Roofs are now all hidden");
             } else {
-               class_149.method_3135(99, "", "Roofs will only be removed selectively", 1419302464);
+               class_149.method_3135(99, "", "Roofs will only be removed selectively");
             }
          }
 
@@ -146,11 +146,11 @@ public class class_318 {
          }
 
          class_40 var2 = class_112.method_2238(class_266.field_3084, client.field_1463.field_2384, (byte)8);
-         var2.field_263.method_210(var0.length() + 1, 303066737);
-         var2.field_263.method_120(var0, -427478981);
-         client.field_1463.method_4079(var2, -1857662082);
+         var2.field_263.method_210(var0.length() + 1);
+         var2.field_263.method_120(var0);
+         client.field_1463.method_4079(var2);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "kd.fn(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -237,7 +237,7 @@ public class class_318 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "kd.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

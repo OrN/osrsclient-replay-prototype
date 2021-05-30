@@ -42,7 +42,7 @@ public class class_61 extends class_59 {
 
          return false;
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "it.v(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -71,7 +71,7 @@ public class class_61 extends class_59 {
    }
 
    // $FF: renamed from: <init> (int, int, int[], int[], int) void
-   class_61(int var1, int var2, int[] var3, int[] var4, int var5) {
+   class_61(int var1, int var2, int[] var3, int[] var4) {
       super();
       try {
          this.field_479 = var1 * 1644910949;
@@ -79,7 +79,7 @@ public class class_61 extends class_59 {
          this.field_478 = var3;
          this.field_476 = var4;
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "it.<init>(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 

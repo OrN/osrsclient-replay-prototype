@@ -22,7 +22,7 @@ public class class_207 extends class_206 {
       try {
          return this.field_2402.method_6248(var1, (byte)6);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "lg.y(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -31,13 +31,13 @@ public class class_207 extends class_206 {
       try {
          return this.field_2402.method_6249(-2046252752);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "lg.f(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: b () void
    public void method_4124() {
-      this.field_2404.method_6188((byte)-116);
+      this.field_2404.method_6188();
 
       try {
          this.field_2403.close();
@@ -45,7 +45,7 @@ public class class_207 extends class_206 {
          ;
       }
 
-      this.field_2402.method_6246(118502592);
+      this.field_2402.method_6246();
    }
 
    // $FF: renamed from: x (byte[], int, int) int
@@ -57,7 +57,7 @@ public class class_207 extends class_206 {
       try {
          this.method_4123(2057029315);
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "lg.finalize(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -66,16 +66,16 @@ public class class_207 extends class_206 {
       try {
          return this.field_2402.method_6252(963599553);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "lg.n(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: r (byte[], int, int, int) void
-   public void method_4132(byte[] var1, int var2, int var3, int var4) throws IOException {
+   public void method_4132(byte[] var1, int var2, int var3) throws IOException {
       try {
          this.field_2404.method_6190(var1, var2, var3, 1271901026);
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "lg.r(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -97,13 +97,13 @@ public class class_207 extends class_206 {
          class_348 var5 = new class_348(this.field_2403.getOutputStream(), var3);
          this.field_2404 = var5;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "lg.<init>(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: s () void
    public void method_4126() {
-      this.field_2404.method_6188((byte)84);
+      this.field_2404.method_6188();
 
       try {
          this.field_2403.close();
@@ -111,7 +111,7 @@ public class class_207 extends class_206 {
          ;
       }
 
-      this.field_2402.method_6246(-1169497696);
+      this.field_2402.method_6246();
    }
 
    protected void abj() {
@@ -123,7 +123,7 @@ public class class_207 extends class_206 {
       try {
          return this.field_2402.method_6250(var1, var2, var3, -989264976);
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "lg.p(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -153,7 +153,7 @@ public class class_207 extends class_206 {
 
    // $FF: renamed from: d () void
    public void method_4125() {
-      this.field_2404.method_6188((byte)-71);
+      this.field_2404.method_6188();
 
       try {
          this.field_2403.close();
@@ -161,7 +161,7 @@ public class class_207 extends class_206 {
          ;
       }
 
-      this.field_2402.method_6246(1653794583);
+      this.field_2402.method_6246();
    }
 
    // $FF: renamed from: g (int) boolean
@@ -192,7 +192,7 @@ public class class_207 extends class_206 {
    // $FF: renamed from: v (int) void
    public void method_4123(int var1) {
       try {
-         this.field_2404.method_6188((byte)21);
+         this.field_2404.method_6188();
 
          try {
             this.field_2403.close();
@@ -200,9 +200,9 @@ public class class_207 extends class_206 {
             ;
          }
 
-         this.field_2402.method_6246(715878078);
+         this.field_2402.method_6246();
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "lg.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 

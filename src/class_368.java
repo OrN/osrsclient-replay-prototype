@@ -7,23 +7,23 @@ public class class_368 extends class_367 {
 
 
    // $FF: renamed from: n (nd, int) void
-   void method_6572(class_28 var1, int var2) {}
+   void method_6572() {}
 
    // $FF: renamed from: <init> (int) void
    public class_368(int var1) {
-      super(var1);
+      super();
       try {
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "mq.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: v (nd, int, int) void
-   void method_6569(class_28 var1, int var2, int var3) {
+   void method_6569() {
       try {
          ;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "mq.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 }

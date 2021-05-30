@@ -24,11 +24,11 @@ public class class_60 extends class_59 {
          } else {
             client.field_1468.method_5895((byte)-1);
             class_53.method_579(40, (byte)0);
-            client.field_1464 = client.field_1463.method_4083(-1573442291);
-            client.field_1463.method_4082(-329279812);
+            client.field_1464 = client.field_1463.method_4083();
+            client.field_1463.method_4082();
          }
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "jf.fw(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -37,7 +37,7 @@ public class class_60 extends class_59 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "jf.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

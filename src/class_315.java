@@ -36,7 +36,7 @@ final class class_315 implements Comparator {
 
          return var10000;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "jz.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -44,7 +44,7 @@ final class class_315 implements Comparator {
       try {
          return this.method_5599((class_310)var1, (class_310)var2, 2126049073);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "jz.compare(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -52,7 +52,7 @@ final class class_315 implements Comparator {
       try {
          return super.equals(var1);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "jz.equals(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -72,11 +72,11 @@ final class class_315 implements Comparator {
    }
 
    // $FF: renamed from: v (jv, byte) void
-   public static void method_5603(class_306 var0, byte var1) {
+   public static void method_5603(class_306 var0) {
       try {
          class_79.field_690 = var0;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "jz.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 

@@ -26,7 +26,7 @@ public class class_197 {
    // $FF: renamed from: x (int) int
    static int method_3993(int var0) {
       class_175 var1 = (class_175)field_2338.get(Integer.valueOf(var0));
-      return null == var1?0:var1.method_3731((byte)-84);
+      return null == var1?0:var1.method_3731();
    }
 
    // $FF: renamed from: <clinit> () void
@@ -107,7 +107,7 @@ public class class_197 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "dk.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -122,19 +122,19 @@ public class class_197 {
    // $FF: renamed from: m (int) int
    static int method_4003(int var0) {
       class_175 var1 = (class_175)field_2338.get(Integer.valueOf(var0));
-      return null == var1?0:var1.method_3731((byte)-37);
+      return null == var1?0:var1.method_3731();
    }
 
    // $FF: renamed from: k (int) int
    static int method_4004(int var0) {
       class_175 var1 = (class_175)field_2338.get(Integer.valueOf(var0));
-      return null == var1?0:var1.method_3731((byte)-5);
+      return null == var1?0:var1.method_3731();
    }
 
    // $FF: renamed from: z (int) int
    static int method_4005(int var0) {
       class_175 var1 = (class_175)field_2338.get(Integer.valueOf(var0));
-      return null == var1?0:var1.method_3731((byte)-73);
+      return null == var1?0:var1.method_3731();
    }
 
    // $FF: renamed from: s (int, java.lang.String, java.lang.String) void
@@ -170,7 +170,7 @@ public class class_197 {
 
       while(var0.hasNext()) {
          class_101 var1 = (class_101)var0.next();
-         var1.method_1890(2052079508);
+         var1.method_1890();
       }
 
    }
@@ -215,7 +215,7 @@ public class class_197 {
             }
 
             class_14 var5 = var3[var4];
-            if(var1 == var5.method_50(-907662946)) {
+            if(var1 == var5.method_50()) {
                if(var2 != -611336247) {
                   throw new IllegalStateException();
                }
@@ -226,7 +226,7 @@ public class class_197 {
 
          return null;
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "dk.v(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 }

@@ -27,21 +27,21 @@ public class class_259 extends class_258 implements class_11 {
 
    // $FF: renamed from: <init> (jd, int, kk, jv) void
    public class_259(class_295 var1, int var2, class_324 var3, class_306 var4) {
-      super(var1, var3, var4 != null?var4.method_5393(var2, 1910338018):0);
+      super(var1, var3, var4 != null?var4.method_5393(var2):0);
       try {
          class_264 var10001 = new class_264(64);
          this.field_2902 = var10001;
          this.field_2903 = var4;
          this.field_2901 = var2 * 2024001031;
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "nu.<init>(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
    // $FF: renamed from: g (int, int) mq
    class_368 method_4962(int var1, int var2) {
       try {
-         byte[] var3 = this.field_2903.method_5381(640434103 * this.field_2901, var1, -26460885);
+         byte[] var3 = this.field_2903.method_5381(640434103 * this.field_2901, var1);
          class_368 var10000 = new class_368(var1);
          class_368 var4 = var10000;
          if(var3 != null) {
@@ -55,19 +55,19 @@ public class class_259 extends class_258 implements class_11 {
 
          return var4;
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "nu.g(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
    // $FF: renamed from: a (int) void
-   public void method_4963(int var1) {
+   public void method_4963() {
       try {
          class_264 var2 = this.field_2902;
          synchronized(this.field_2902) {
             this.field_2902.method_5008();
          }
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "nu.a(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -89,7 +89,7 @@ public class class_259 extends class_258 implements class_11 {
             return var3;
          }
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "nu.v(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
@@ -146,13 +146,13 @@ public class class_259 extends class_258 implements class_11 {
          class_379 var10000 = new class_379(this);
          return var10000;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "nu.iterator(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: k (int) mq
    class_368 method_4965(int var1) {
-      byte[] var2 = this.field_2903.method_5381(640434103 * this.field_2901, var1, -26460885);
+      byte[] var2 = this.field_2903.method_5381(640434103 * this.field_2901, var1);
       class_368 var10000 = new class_368(var1);
       class_368 var3 = var10000;
       if(var2 != null) {
@@ -165,7 +165,7 @@ public class class_259 extends class_258 implements class_11 {
 
    // $FF: renamed from: m (int) mq
    class_368 method_4966(int var1) {
-      byte[] var2 = this.field_2903.method_5381(640434103 * this.field_2901, var1, -26460885);
+      byte[] var2 = this.field_2903.method_5381(640434103 * this.field_2901, var1);
       class_368 var10000 = new class_368(var1);
       class_368 var3 = var10000;
       if(var2 != null) {
@@ -193,13 +193,13 @@ public class class_259 extends class_258 implements class_11 {
    }
 
    // $FF: renamed from: r (jv, java.lang.String, java.lang.String, byte) oh[]
-   public static class_67[] method_4969(class_306 var0, String var1, String var2, byte var3) {
+   public static class_67[] method_4969(class_306 var0, String var1, String var2) {
       try {
-         int var4 = var0.method_5399(var1, -692312681);
-         int var5 = var0.method_5400(var4, var2, -2121666611);
-         return class_80.method_1338(var0, var4, var5, -820829293);
+         int var4 = var0.method_5399(var1);
+         int var5 = var0.method_5400(var4, var2);
+         return class_80.method_1338(var0, var4, var5);
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "nu.r(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 }

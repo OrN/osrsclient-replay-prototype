@@ -14,55 +14,55 @@ final class class_390 implements class_23 {
    }
 
    // $FF: renamed from: b (java.lang.Long, nd, int) void
-   void method_6769(Long var1, class_28 var2, int var3) {
+   void method_6769(Long var1, class_28 var2) {
       try {
          var2.method_341(var1.longValue());
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "nw.b(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: n (nd, int) java.lang.Object
-   public Object method_75(class_28 var1, int var2) {
+   public Object method_75(class_28 var1) {
       try {
-         return Long.valueOf(var1.method_136(-405209203));
+         return Long.valueOf(var1.method_136());
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "nw.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: v (java.lang.Object, nd, int) void
-   public void method_73(Object var1, class_28 var2, int var3) {
+   public void method_73(Object var1, class_28 var2) {
       try {
-         this.method_6769((Long)var1, var2, -1988673452);
+         this.method_6769((Long)var1, var2);
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "nw.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: f (java.lang.Object, nd) void
    public void method_71(Object var1, class_28 var2) {
-      this.method_6769((Long)var1, var2, 1317716229);
+      this.method_6769((Long)var1, var2);
    }
 
    // $FF: renamed from: y (java.lang.Object, nd) void
    public void method_72(Object var1, class_28 var2) {
-      this.method_6769((Long)var1, var2, 323448793);
+      this.method_6769((Long)var1, var2);
    }
 
    // $FF: renamed from: p (nd) java.lang.Object
    public Object method_70(class_28 var1) {
-      return Long.valueOf(var1.method_136(1017277254));
+      return Long.valueOf(var1.method_136());
    }
 
    // $FF: renamed from: j (nd) java.lang.Object
    public Object method_69(class_28 var1) {
-      return Long.valueOf(var1.method_136(1163263687));
+      return Long.valueOf(var1.method_136());
    }
 
    // $FF: renamed from: r (nd) java.lang.Object
    public Object method_74(class_28 var1) {
-      return Long.valueOf(var1.method_136(-1110889468));
+      return Long.valueOf(var1.method_136());
    }
 
    // $FF: renamed from: d (java.lang.Long, nd) void
@@ -97,7 +97,7 @@ final class class_390 implements class_23 {
          }
 
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "nw.ge(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 }

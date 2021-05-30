@@ -24,17 +24,17 @@ public class class_141 implements class_3 {
 
          return var6;
       } catch (RuntimeException var8) {
-         throw class_223.method_4281(var8, "av.s(" + ')');
+         throw class_223.method_4281(var8);
       }
    }
 
    // $FF: renamed from: v (int) bd
-   public class_139 method_5(int var1) {
+   public class_139 method_5() {
       try {
          class_140 var10000 = new class_140();
          return var10000;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "av.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -103,7 +103,7 @@ public class class_141 implements class_3 {
          var10.field_374 = var7 * 1452904947;
          var10.field_375 = var8 * 1875645291;
       } catch (RuntimeException var12) {
-         throw class_223.method_4281(var12, "av.hc(" + ')');
+         throw class_223.method_4281(var12);
       }
    }
 
@@ -123,7 +123,7 @@ public class class_141 implements class_3 {
 
          return var10000;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "av.r(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -232,7 +232,7 @@ public class class_141 implements class_3 {
                      throw new IllegalStateException();
                   }
 
-                  var8.method_4624(var2, var3, -1301877938);
+                  var8.method_4624(var2, var3);
                }
 
             }
@@ -685,7 +685,7 @@ public class class_141 implements class_3 {
 
          }
       } catch (RuntimeException var30) {
-         throw class_223.method_4281(var30, "av.a(" + ')');
+         throw class_223.method_4281(var30);
       }
    }
 
@@ -694,7 +694,7 @@ public class class_141 implements class_3 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "av.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

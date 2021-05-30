@@ -16,7 +16,7 @@ public abstract class class_51 extends class_27 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "a.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 

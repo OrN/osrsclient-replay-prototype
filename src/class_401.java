@@ -11,9 +11,9 @@ public class class_401 {
    // $FF: renamed from: n (int, java.lang.String, kk, int) hq
    public static class_40 method_6803(int var0, String var1, class_324 var2, int var3) {
       class_40 var4 = class_112.method_2238(class_266.field_3134, client.field_1463.field_2384, (byte)8);
-      var4.field_263.method_210(0, 303066737);
+      var4.field_263.method_210(0);
       int var5 = var4.field_263.field_15 * -824284167;
-      var4.field_263.method_210(var0, 303066737);
+      var4.field_263.method_210(var0);
       String var6 = var1.toLowerCase();
       byte var7 = 0;
       if(var6.startsWith(class_305.field_3582)) {
@@ -128,11 +128,11 @@ public class class_401 {
          }
       }
 
-      var4.field_263.method_210(var7, 303066737);
-      var4.field_263.method_210(var8, 303066737);
-      class_86.method_1479(var4.field_263, var1, 596376440);
-      if(var0 == class_281.field_3240.method_50(293613569)) {
-         var4.field_263.method_210(var3, 303066737);
+      var4.field_263.method_210(var7);
+      var4.field_263.method_210(var8);
+      class_86.method_1479(var4.field_263, var1);
+      if(var0 == class_281.field_3240.method_50()) {
+         var4.field_263.method_210(var3);
       }
 
       var4.field_263.method_317(-796349658 * var4.field_263.field_15 - var5, -1355578498);
@@ -142,9 +142,9 @@ public class class_401 {
    // $FF: renamed from: y (int, java.lang.String, kk, int) hq
    public static class_40 method_6804(int var0, String var1, class_324 var2, int var3) {
       class_40 var4 = class_112.method_2238(class_266.field_3134, client.field_1463.field_2384, (byte)8);
-      var4.field_263.method_210(0, 303066737);
+      var4.field_263.method_210(0);
       int var5 = var4.field_263.field_15 * -1605689697;
-      var4.field_263.method_210(var0, 303066737);
+      var4.field_263.method_210(var0);
       String var6 = var1.toLowerCase();
       byte var7 = 0;
       if(var6.startsWith(class_305.field_3582)) {
@@ -259,11 +259,11 @@ public class class_401 {
          }
       }
 
-      var4.field_263.method_210(var7, 303066737);
-      var4.field_263.method_210(var8, 303066737);
-      class_86.method_1479(var4.field_263, var1, -1776101926);
-      if(var0 == class_281.field_3240.method_50(1927159144)) {
-         var4.field_263.method_210(var3, 303066737);
+      var4.field_263.method_210(var7);
+      var4.field_263.method_210(var8);
+      class_86.method_1479(var4.field_263, var1);
+      if(var0 == class_281.field_3240.method_50()) {
+         var4.field_263.method_210(var3);
       }
 
       var4.field_263.method_317(-442398587 * var4.field_263.field_15 - var5, -1206294765);
@@ -276,16 +276,16 @@ public class class_401 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "os.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: f (int, java.lang.String, kk, int) hq
    public static class_40 method_6806(int var0, String var1, class_324 var2, int var3) {
       class_40 var4 = class_112.method_2238(class_266.field_3134, client.field_1463.field_2384, (byte)8);
-      var4.field_263.method_210(0, 303066737);
+      var4.field_263.method_210(0);
       int var5 = var4.field_263.field_15 * -442398587;
-      var4.field_263.method_210(var0, 303066737);
+      var4.field_263.method_210(var0);
       String var6 = var1.toLowerCase();
       byte var7 = 0;
       if(var6.startsWith(class_305.field_3582)) {
@@ -400,11 +400,11 @@ public class class_401 {
          }
       }
 
-      var4.field_263.method_210(var7, 303066737);
-      var4.field_263.method_210(var8, 303066737);
-      class_86.method_1479(var4.field_263, var1, -846536587);
-      if(var0 == class_281.field_3240.method_50(527236502)) {
-         var4.field_263.method_210(var3, 303066737);
+      var4.field_263.method_210(var7);
+      var4.field_263.method_210(var8);
+      class_86.method_1479(var4.field_263, var1);
+      if(var0 == class_281.field_3240.method_50()) {
+         var4.field_263.method_210(var3);
       }
 
       var4.field_263.method_317(-442398587 * var4.field_263.field_15 - var5, -466674390);

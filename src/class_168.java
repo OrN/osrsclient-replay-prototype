@@ -18,11 +18,11 @@ public class class_168 {
 
 
    // $FF: renamed from: y (java.lang.CharSequence, int) int
-   public static int method_3609(CharSequence var0, int var1) {
+   public static int method_3609(CharSequence var0) {
       try {
          return class_176.method_3747(var0, 10, true, (byte)-105);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ci.y(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -44,11 +44,11 @@ public class class_168 {
                return var10000;
             }
          } else {
-            var10000 = new class_217(class_86.method_1480(var0, (byte)92).field_502);
+            var10000 = new class_217(class_86.method_1480(var0).field_502);
             return var10000;
          }
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ci.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -58,7 +58,7 @@ public class class_168 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ci.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -122,7 +122,7 @@ public class class_168 {
             throw new RuntimeException();
          }
       } catch (RuntimeException var11) {
-         throw class_223.method_4281(var11, "ci.f(" + ')');
+         throw class_223.method_4281(var11);
       }
    }
 }

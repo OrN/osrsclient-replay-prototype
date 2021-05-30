@@ -30,7 +30,7 @@ public class class_223 {
          this.field_2522 = 725393889 * var2;
          this.field_2526 = -1937775429 * var3;
       } catch (RuntimeException var4) {
-         throw method_4281(var4, "fh.<init>(" + ')');
+         throw method_4281(var4);
       }
    }
 
@@ -55,12 +55,12 @@ public class class_223 {
          int var4 = client.field_1672 + (client.field_1673 - client.field_1672) * var3 / 100;
          return var0 * var4 / 256;
       } catch (RuntimeException var5) {
-         throw method_4281(var5, "fh.hb(" + ')');
+         throw method_4281(var5);
       }
    }
 
    // $FF: renamed from: n (java.lang.Throwable, java.lang.String) oz
-   public static class_405 method_4281(Throwable var0, String var1) {
+   public static class_405 method_4281(Throwable var0) {
       /*try {
          class_405 var2;
          if(var0 instanceof class_405) {

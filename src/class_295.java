@@ -29,27 +29,27 @@ public class class_295 implements class_14 {
    }
 
    // $FF: renamed from: v (int) int
-   public int method_50(int var1) {
+   public int method_50() {
       try {
          return 1213598965 * this.field_3349;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "jd.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: <clinit> () void
    static {
-      class_295 var10000 = new class_295("runescape", "RuneScape", 0);
+      class_295 var10000 = new class_295("runescape", 0);
       field_3343 = var10000;
-      var10000 = new class_295("stellardawn", "Stellar Dawn", 1);
+      var10000 = new class_295("stellardawn", 1);
       field_3348 = var10000;
-      var10000 = new class_295("game3", "Game 3", 2);
+      var10000 = new class_295("game3", 2);
       field_3344 = var10000;
-      var10000 = new class_295("game4", "Game 4", 3);
+      var10000 = new class_295("game4", 3);
       field_3345 = var10000;
-      var10000 = new class_295("game5", "Game 5", 4);
+      var10000 = new class_295("game5", 4);
       field_3346 = var10000;
-      var10000 = new class_295("oldscape", "RuneScape 2007", 5);
+      var10000 = new class_295("oldscape", 5);
       field_3342 = var10000;
    }
 
@@ -59,13 +59,13 @@ public class class_295 implements class_14 {
    }
 
    // $FF: renamed from: <init> (java.lang.String, java.lang.String, int) void
-   class_295(String var1, String var2, int var3) {
+   class_295(String var1, int var3) {
       super();
       try {
          this.field_3347 = var1;
          this.field_3349 = 1698250589 * var3;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "jd.<init>(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -91,9 +91,9 @@ public class class_295 implements class_14 {
                   var10001 = 3;
                }
 
-               var2.method_210(var10001, 303066737);
-               var2.method_115(0, -1756916961);
-               class_314.field_3771.method_4132(var2.field_12, 0, 4, -749700647);
+               var2.method_210(var10001);
+               var2.method_115(0);
+               class_314.field_3771.method_4132(var2.field_12, 0, 4);
             } catch (IOException var5) {
                try {
                   class_314.field_3771.method_4123(1650867413);
@@ -107,7 +107,7 @@ public class class_295 implements class_14 {
 
          }
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "jd.v(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 }

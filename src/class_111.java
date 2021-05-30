@@ -17,12 +17,12 @@ public abstract class class_111 extends class_27 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "e.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: n (l, byte) void
-   abstract void method_2232(class_171 var1, byte var2);
+   abstract void method_2232(class_171 var1);
 
    // $FF: renamed from: y (nd) void
    abstract void method_2233(class_28 var1);
@@ -81,7 +81,7 @@ public abstract class class_111 extends class_27 {
             return false;
          }
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "e.v(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 }

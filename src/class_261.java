@@ -52,7 +52,7 @@ public final class class_261 {
          }
 
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "hj.gj(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -63,7 +63,7 @@ public final class class_261 {
          this.field_2917 = 0L;
          this.field_2905 = 0;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "hj.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

@@ -14,7 +14,7 @@ public class class_271 {
    static String method_5058(class_28 var0, int var1, byte var2) {
       try {
          try {
-            int var3 = var0.method_144((byte)-63);
+            int var3 = var0.method_144();
             if(var3 > var1) {
                if(var2 == 1) {
                   throw new IllegalStateException();
@@ -31,7 +31,7 @@ public class class_271 {
             return "Cabbage";
          }
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "hy.y(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
@@ -40,7 +40,7 @@ public class class_271 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "hy.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -300,7 +300,7 @@ public class class_271 {
             return var9;
          }
       } catch (RuntimeException var22) {
-         throw class_223.method_4281(var22, "hy.u(" + ')');
+         throw class_223.method_4281(var22);
       }
    }
 }

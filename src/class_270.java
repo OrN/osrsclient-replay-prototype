@@ -45,9 +45,9 @@ public class class_270 {
 
    // $FF: renamed from: l (int, jv, java.lang.String, java.lang.String, int, boolean) void
    public static void method_5045(int var0, class_306 var1, String var2, String var3, int var4, boolean var5) {
-      int var6 = var1.method_5399(var2, -296404722);
-      int var7 = var1.method_5400(var6, var3, -462959566);
-      class_26.method_100(var0, var1, var6, var7, var4, var5, 1003938789);
+      int var6 = var1.method_5399(var2);
+      int var7 = var1.method_5400(var6, var3);
+      class_26.method_100(var0, var1, var6, var7, var4, var5);
    }
 
    // $FF: renamed from: d (jv, jv, jv, hp) boolean
@@ -65,7 +65,7 @@ public class class_270 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "hx.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -84,18 +84,18 @@ public class class_270 {
    public static void method_5049() {
       try {
          if(1 == -1481365935 * field_3180) {
-            int var0 = class_198.field_2339.method_1963(-1796230784);
-            if(var0 > 0 && class_198.field_2339.method_1969(-645293539)) {
+            int var0 = class_198.field_2339.method_1963();
+            if(var0 > 0 && class_198.field_2339.method_1969()) {
                var0 -= 1646494872 * field_3183;
                if(var0 < 0) {
                   var0 = 0;
                }
 
-               class_198.field_2339.method_1985(var0, -1578170255);
+               class_198.field_2339.method_1985(var0);
                return;
             }
 
-            class_198.field_2339.method_1962(212198267);
+            class_198.field_2339.method_1962();
             class_198.field_2339.method_1966(211295362);
             if(class_271.field_3186 != null) {
                field_3180 = 1398011642;
@@ -108,7 +108,7 @@ public class class_270 {
          }
       } catch (Exception var1) {
          var1.printStackTrace();
-         class_198.field_2339.method_1962(-1642549476);
+         class_198.field_2339.method_1962();
          field_3180 = 0;
          class_167.field_2098 = null;
          class_197.field_2335 = null;
@@ -119,16 +119,16 @@ public class class_270 {
 
    // $FF: renamed from: o (int, jv, java.lang.String, java.lang.String, int, boolean) void
    public static void method_5050(int var0, class_306 var1, String var2, String var3, int var4, boolean var5) {
-      int var6 = var1.method_5399(var2, -1856216917);
-      int var7 = var1.method_5400(var6, var3, -1359745146);
-      class_26.method_100(var0, var1, var6, var7, var4, var5, 1003938789);
+      int var6 = var1.method_5399(var2);
+      int var7 = var1.method_5400(var6, var3);
+      class_26.method_100(var0, var1, var6, var7, var4, var5);
    }
 
    // $FF: renamed from: c (int, jv, java.lang.String, java.lang.String, int, boolean) void
    public static void method_5051(int var0, class_306 var1, String var2, String var3, int var4, boolean var5) {
-      int var6 = var1.method_5399(var2, -275741862);
-      int var7 = var1.method_5400(var6, var3, -784583614);
-      class_26.method_100(var0, var1, var6, var7, var4, var5, 1003938789);
+      int var6 = var1.method_5399(var2);
+      int var7 = var1.method_5400(var6, var3);
+      class_26.method_100(var0, var1, var6, var7, var4, var5);
    }
 
    // $FF: renamed from: s (jv, int, int, int, boolean) void
@@ -177,18 +177,18 @@ public class class_270 {
    public static void method_5056() {
       try {
          if(1 == -1481365935 * field_3180) {
-            int var0 = class_198.field_2339.method_1963(-1796230784);
-            if(var0 > 0 && class_198.field_2339.method_1969(-2139259614)) {
+            int var0 = class_198.field_2339.method_1963();
+            if(var0 > 0 && class_198.field_2339.method_1969()) {
                var0 -= 974163603 * field_3183;
                if(var0 < 0) {
                   var0 = 0;
                }
 
-               class_198.field_2339.method_1985(var0, -1266318110);
+               class_198.field_2339.method_1985(var0);
                return;
             }
 
-            class_198.field_2339.method_1962(-427563919);
+            class_198.field_2339.method_1962();
             class_198.field_2339.method_1966(826921222);
             if(class_271.field_3186 != null) {
                field_3180 = -1770142366;
@@ -201,7 +201,7 @@ public class class_270 {
          }
       } catch (Exception var1) {
          var1.printStackTrace();
-         class_198.field_2339.method_1962(-1459722530);
+         class_198.field_2339.method_1962();
          field_3180 = 0;
          class_167.field_2098 = null;
          class_197.field_2335 = null;

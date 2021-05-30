@@ -16,11 +16,11 @@ final class class_386 implements class_23 {
    }
 
    // $FF: renamed from: b (java.lang.String, nd, byte) void
-   void method_6722(String var1, class_28 var2, byte var3) {
+   void method_6722(String var1, class_28 var2) {
       try {
-         var2.method_120(var1, -427478981);
+         var2.method_120(var1);
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "nq.b(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -30,22 +30,22 @@ final class class_386 implements class_23 {
    }
 
    // $FF: renamed from: v (java.lang.Object, nd, int) void
-   public void method_73(Object var1, class_28 var2, int var3) {
+   public void method_73(Object var1, class_28 var2) {
       try {
-         this.method_6722((String)var1, var2, (byte)-43);
+         this.method_6722((String)var1, var2);
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "nq.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: f (java.lang.Object, nd) void
    public void method_71(Object var1, class_28 var2) {
-      this.method_6722((String)var1, var2, (byte)10);
+      this.method_6722((String)var1, var2);
    }
 
    // $FF: renamed from: y (java.lang.Object, nd) void
    public void method_72(Object var1, class_28 var2) {
-      this.method_6722((String)var1, var2, (byte)-14);
+      this.method_6722((String)var1, var2);
    }
 
    // $FF: renamed from: <init> () void
@@ -55,7 +55,7 @@ final class class_386 implements class_23 {
 
    // $FF: renamed from: u (java.lang.String, nd) void
    void method_6724(String var1, class_28 var2) {
-      var2.method_120(var1, -427478981);
+      var2.method_120(var1);
    }
 
    // $FF: renamed from: j (nd) java.lang.Object
@@ -65,20 +65,20 @@ final class class_386 implements class_23 {
 
    // $FF: renamed from: d (java.lang.String, nd) void
    void method_6725(String var1, class_28 var2) {
-      var2.method_120(var1, -427478981);
+      var2.method_120(var1);
    }
 
    // $FF: renamed from: s (java.lang.String, nd) void
    void method_6726(String var1, class_28 var2) {
-      var2.method_120(var1, -427478981);
+      var2.method_120(var1);
    }
 
    // $FF: renamed from: n (nd, int) java.lang.Object
-   public Object method_75(class_28 var1, int var2) {
+   public Object method_75(class_28 var1) {
       try {
          return var1.method_139(-391631059);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "nq.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 }

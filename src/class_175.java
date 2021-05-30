@@ -21,11 +21,11 @@ public class class_175 {
 
 
    // $FF: renamed from: f (byte) int
-   int method_3731(byte var1) {
+   int method_3731() {
       try {
          return -1182640923 * this.field_2171;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "cs.f(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -54,7 +54,7 @@ public class class_175 {
          } else {
             var6.method_108();
             var6.method_635();
-            var6.method_1883(var1, var2, var4, var3, -449593753);
+            var6.method_1883(var1, var2, var4, var3);
          }
 
          this.field_2174[0] = var6;
@@ -68,7 +68,7 @@ public class class_175 {
 
          return var6;
       } catch (RuntimeException var8) {
-         throw class_223.method_4281(var8, "cs.v(" + ')');
+         throw class_223.method_4281(var8);
       }
    }
 
@@ -91,7 +91,7 @@ public class class_175 {
 
          return null;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "cs.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -101,7 +101,7 @@ public class class_175 {
       try {
          this.field_2174 = new class_101[100];
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "cs.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -121,7 +121,7 @@ public class class_175 {
       } else {
          var5.method_108();
          var5.method_635();
-         var5.method_1883(var1, var2, var4, var3, 877871781);
+         var5.method_1883(var1, var2, var4, var3);
       }
 
       this.field_2174[0] = var5;
@@ -133,7 +133,7 @@ public class class_175 {
    }
 
    // $FF: renamed from: b (int, cf, boolean, byte) int
-   static int method_3736(int var0, class_90 var1, boolean var2, byte var3) {
+   static int method_3736(int var0, boolean var2, byte var3) {
       try {
          boolean var4 = true;
          class_37 var5;
@@ -143,7 +143,7 @@ public class class_175 {
             }
 
             var0 -= 1000;
-            var5 = class_71.method_1047(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885], 1732711476);
+            var5 = class_71.method_1047(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
             var4 = false;
          } else {
             class_37 var10000;
@@ -417,7 +417,7 @@ public class class_175 {
             }
          }
       } catch (RuntimeException var9) {
-         throw class_223.method_4281(var9, "cs.b(" + ')');
+         throw class_223.method_4281(var9);
       }
    }
 
@@ -432,22 +432,22 @@ public class class_175 {
    }
 
    // $FF: renamed from: v (jv, jv, int) void
-   public static void method_3739(class_306 var0, class_306 var1, int var2) {
+   public static void method_3739(class_306 var0, class_306 var1) {
       try {
          class_394.field_4247 = var0;
          class_83.field_782 = var1;
-         class_271.field_3187 = class_394.field_4247.method_5393(3, 933813720) * 376939071;
+         class_271.field_3187 = class_394.field_4247.method_5393(3) * 376939071;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "cs.v(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: n (java.lang.String[], int[], int) void
-   public static void method_3740(String[] var0, int[] var1, int var2) {
+   public static void method_3740(String[] var0, int[] var1) {
       try {
          class_201.method_4060(var0, var1, 0, var0.length - 1, (byte)121);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "cs.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -466,16 +466,16 @@ public class class_175 {
 
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "cs.gd(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: u (int) void
-   public static void method_3742(int var0) {
+   public static void method_3742() {
       try {
          class_275.field_3213.method_5074();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "cs.u(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -495,7 +495,7 @@ public class class_175 {
       } else {
          var5.method_108();
          var5.method_635();
-         var5.method_1883(var1, var2, var4, var3, -511168425);
+         var5.method_1883(var1, var2, var4, var3);
       }
 
       this.field_2174[0] = var5;

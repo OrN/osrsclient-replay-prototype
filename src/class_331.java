@@ -20,7 +20,7 @@ public class class_331 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ks.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

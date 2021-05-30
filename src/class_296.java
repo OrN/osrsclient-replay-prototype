@@ -65,7 +65,7 @@ public class class_296 {
          class_67 var19 = var10000;
          this.field_3352.put(Integer.valueOf(var1), var19);
       } catch (RuntimeException var15) {
-         throw class_223.method_4281(var15, "je.v(" + ')');
+         throw class_223.method_4281(var15);
       }
    }
 
@@ -78,7 +78,7 @@ public class class_296 {
       class_351 var8 = var10000;
       var10000 = new class_351(0, 0);
       class_351 var9 = var10000;
-      this.field_3351.method_6210(var7, var7, 284108596);
+      this.field_3351.method_6210(var7, var7);
       System.nanoTime();
 
       int var10;
@@ -89,8 +89,8 @@ public class class_296 {
          var12 = this.field_3354[var10];
          int var13 = (int)((float)(var11 - var1) * var4) - var5;
          int var14 = (int)((float)var3.field_500 - var4 * (float)(var12 - var2)) - var5;
-         this.field_3351.method_6209(var13, var14, 906846377);
-         this.field_3351.method_6207(var8, var9, (byte)-95);
+         this.field_3351.method_6209(var13, var14);
+         this.field_3351.method_6207(var8, var9);
          this.method_5323(var6, var3, var9, 528376815);
       }
 
@@ -131,7 +131,7 @@ public class class_296 {
 
          return (class_67)this.field_3352.get(Integer.valueOf(var1));
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "je.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -145,7 +145,7 @@ public class class_296 {
          class_351 var9 = var10000;
          var10000 = new class_351(0, 0);
          class_351 var10 = var10000;
-         this.field_3351.method_6210(var8, var8, 566817349);
+         this.field_3351.method_6210(var8, var8);
          System.nanoTime();
 
          int var11;
@@ -160,8 +160,8 @@ public class class_296 {
             var13 = this.field_3354[var11];
             int var14 = (int)((float)(var12 - var1) * var4) - var6;
             int var15 = (int)((float)var3.field_500 - var4 * (float)(var13 - var2)) - var6;
-            this.field_3351.method_6209(var14, var15, 961693590);
-            this.field_3351.method_6207(var9, var10, (byte)-80);
+            this.field_3351.method_6209(var14, var15);
+            this.field_3351.method_6207(var9, var10);
             this.method_5323(var7, var3, var10, 1348286634);
          }
 
@@ -200,7 +200,7 @@ public class class_296 {
 
          System.nanoTime();
       } catch (RuntimeException var16) {
-         throw class_223.method_4281(var16, "je.p(" + ')');
+         throw class_223.method_4281(var16);
       }
    }
 
@@ -217,7 +217,7 @@ public class class_296 {
             this.field_3355 += 845278265;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "je.f(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -278,7 +278,7 @@ public class class_296 {
          }
 
       } catch (RuntimeException var11) {
-         throw class_223.method_4281(var11, "je.j(" + ')');
+         throw class_223.method_4281(var11);
       }
    }
 
@@ -408,11 +408,11 @@ public class class_296 {
    }
 
    // $FF: renamed from: y (int) void
-   public final void method_5331(int var1) {
+   public final void method_5331() {
       try {
          this.field_3355 = 0;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "je.y(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -425,7 +425,7 @@ public class class_296 {
       class_351 var8 = var10000;
       var10000 = new class_351(0, 0);
       class_351 var9 = var10000;
-      this.field_3351.method_6210(var7, var7, 1487102328);
+      this.field_3351.method_6210(var7, var7);
       System.nanoTime();
 
       int var10;
@@ -436,8 +436,8 @@ public class class_296 {
          var12 = this.field_3354[var10];
          int var13 = (int)((float)(var11 - var1) * var4) - var5;
          int var14 = (int)((float)var3.field_500 - var4 * (float)(var12 - var2)) - var5;
-         this.field_3351.method_6209(var13, var14, 631205785);
-         this.field_3351.method_6207(var8, var9, (byte)-104);
+         this.field_3351.method_6209(var13, var14);
+         this.field_3351.method_6207(var8, var9);
          this.method_5323(var6, var3, var9, 594501823);
       }
 
@@ -497,7 +497,7 @@ public class class_296 {
          }
 
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "je.<init>(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 

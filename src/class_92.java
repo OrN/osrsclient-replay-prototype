@@ -943,8 +943,8 @@ public class class_92 extends class_91 {
                      }
 
                      boolean var26 = var25 || this.field_932 > 0;
-                     int var27 = class_202.method_4075(2118107095);
-                     int var28 = class_195.method_3987(2094559510);
+                     int var27 = class_202.method_4075();
+                     int var28 = class_195.method_3987();
                      boolean var29 = class_255.field_2876;
                      boolean var32 = var9 != 0L;
                      boolean var33;
@@ -1559,8 +1559,8 @@ public class class_92 extends class_91 {
                      }
 
                      boolean var26 = var25 || this.field_932 > 0;
-                     int var27 = class_202.method_4075(2118107095);
-                     int var28 = class_195.method_3987(2060392277);
+                     int var27 = class_202.method_4075();
+                     int var28 = class_195.method_3987();
                      boolean var29 = class_255.field_2876;
                      boolean var32 = var9 != 0L;
                      boolean var33;
@@ -1791,8 +1791,8 @@ public class class_92 extends class_91 {
                      }
 
                      boolean var26 = var25 || this.field_932 > 0;
-                     int var27 = class_202.method_4075(2118107095);
-                     int var28 = class_195.method_3987(1987121682);
+                     int var27 = class_202.method_4075();
+                     int var28 = class_195.method_3987();
                      boolean var29 = class_255.field_2876;
                      boolean var32 = var9 != 0L;
                      boolean var33;
@@ -2077,8 +2077,8 @@ public class class_92 extends class_91 {
                      }
 
                      boolean var26 = var25 || this.field_932 > 0;
-                     int var27 = class_202.method_4075(2118107095);
-                     int var28 = class_195.method_3987(2146980448);
+                     int var27 = class_202.method_4075();
+                     int var28 = class_195.method_3987();
                      boolean var29 = class_255.field_2876;
                      boolean var32 = var9 != 0L;
                      boolean var33;

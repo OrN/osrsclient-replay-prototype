@@ -11,7 +11,7 @@ public class class_323 implements Iterable, Collection {
 
 
    // $FF: renamed from: bq (java.util.Collection) boolean
-   public boolean method_5695(Collection var1) {
+   public boolean method_5695() {
       throw new RuntimeException();
    }
 
@@ -221,7 +221,7 @@ public class class_323 implements Iterable, Collection {
       try {
          return super.equals(var1);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ki.equals(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -229,7 +229,7 @@ public class class_323 implements Iterable, Collection {
       try {
          return super.hashCode();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ki.hashCode(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -367,7 +367,7 @@ public class class_323 implements Iterable, Collection {
    }
 
    // $FF: renamed from: bl (java.util.Collection) boolean
-   public boolean method_5725(Collection var1) {
+   public boolean method_5725() {
       throw new RuntimeException();
    }
 
@@ -394,7 +394,7 @@ public class class_323 implements Iterable, Collection {
    }
 
    // $FF: renamed from: ao (java.lang.Object) boolean
-   public boolean method_5727(Object var1) {
+   public boolean method_5727() {
       throw new RuntimeException();
    }
 
@@ -494,12 +494,12 @@ public class class_323 implements Iterable, Collection {
    }
 
    // $FF: renamed from: at (java.lang.Object) boolean
-   public boolean method_5741(Object var1) {
+   public boolean method_5741() {
       throw new RuntimeException();
    }
 
    // $FF: renamed from: ah (java.lang.Object) boolean
-   public boolean method_5742(Object var1) {
+   public boolean method_5742() {
       throw new RuntimeException();
    }
 
@@ -537,7 +537,7 @@ public class class_323 implements Iterable, Collection {
    }
 
    // $FF: renamed from: bt (java.lang.Object) boolean
-   public boolean method_5747(Object var1) {
+   public boolean method_5747() {
       throw new RuntimeException();
    }
 
@@ -605,7 +605,7 @@ public class class_323 implements Iterable, Collection {
    }
 
    // $FF: renamed from: bu (java.util.Collection) boolean
-   public boolean method_5754(Collection var1) {
+   public boolean method_5754() {
       throw new RuntimeException();
    }
 
@@ -616,22 +616,22 @@ public class class_323 implements Iterable, Collection {
    }
 
    // $FF: renamed from: bv (java.util.Collection) boolean
-   public boolean method_5756(Collection var1) {
+   public boolean method_5756() {
       throw new RuntimeException();
    }
 
    // $FF: renamed from: bm (java.util.Collection) boolean
-   public boolean method_5757(Collection var1) {
+   public boolean method_5757() {
       throw new RuntimeException();
    }
 
    // $FF: renamed from: bz (java.util.Collection) boolean
-   public boolean method_5758(Collection var1) {
+   public boolean method_5758() {
       throw new RuntimeException();
    }
 
    // $FF: renamed from: bh (java.util.Collection) boolean
-   public boolean method_5759(Collection var1) {
+   public boolean method_5759() {
       throw new RuntimeException();
    }
 
@@ -641,7 +641,7 @@ public class class_323 implements Iterable, Collection {
    }
 
    // $FF: renamed from: bd (java.lang.Object) boolean
-   public boolean method_5761(Object var1) {
+   public boolean method_5761() {
       throw new RuntimeException();
    }
 }

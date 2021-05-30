@@ -22,23 +22,23 @@ public class class_209 {
 
    // $FF: renamed from: y (nd, mr) mr
    static final class_369 method_4152(class_28 var0, class_369 var1) {
-      int var2 = var0.method_130(1996523265);
+      int var2 = var0.method_130();
       int var3;
       if(var1 == null) {
-         var3 = class_100.method_1845(var2, -2031794167);
+         var3 = class_100.method_1845(var2);
          class_369 var10000 = new class_369(var3);
          var1 = var10000;
       }
 
       for(var3 = 0; var3 < var2; ++var3) {
-         boolean var4 = var0.method_130(-609178169) == 1;
-         int var5 = var0.method_134((byte)-66);
+         boolean var4 = var0.method_130() == 1;
+         int var5 = var0.method_134();
          Object var6;
          if(var4) {
             class_34 var7 = new class_34(var0.method_139(-391631059));
             var6 = var7;
          } else {
-            class_32 var8 = new class_32(var0.method_135((byte)-51));
+            class_32 var8 = new class_32(var0.method_135());
             var6 = var8;
          }
 
@@ -50,23 +50,23 @@ public class class_209 {
 
    // $FF: renamed from: p (nd, mr) mr
    static final class_369 method_4153(class_28 var0, class_369 var1) {
-      int var2 = var0.method_130(-1436748719);
+      int var2 = var0.method_130();
       int var3;
       if(var1 == null) {
-         var3 = class_100.method_1845(var2, 636296412);
+         var3 = class_100.method_1845(var2);
          class_369 var10000 = new class_369(var3);
          var1 = var10000;
       }
 
       for(var3 = 0; var3 < var2; ++var3) {
-         boolean var4 = var0.method_130(1603280338) == 1;
-         int var5 = var0.method_134((byte)-109);
+         boolean var4 = var0.method_130() == 1;
+         int var5 = var0.method_134();
          Object var6;
          if(var4) {
             class_34 var7 = new class_34(var0.method_139(-391631059));
             var6 = var7;
          } else {
-            class_32 var8 = new class_32(var0.method_135((byte)-29));
+            class_32 var8 = new class_32(var0.method_135());
             var6 = var8;
          }
 
@@ -142,7 +142,7 @@ public class class_209 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "eb.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -187,10 +187,10 @@ public class class_209 {
             }
          }
 
-         class_192.method_3958(179304235);
+         class_192.method_3958();
          return var1;
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "eb.u(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 }

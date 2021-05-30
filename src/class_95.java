@@ -127,7 +127,7 @@ public final class class_95 extends class_91 {
          }
 
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "cq.f(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -158,7 +158,7 @@ public final class class_95 extends class_91 {
          }
 
       } catch (RuntimeException var13) {
-         throw class_223.method_4281(var13, "cq.<init>(" + ')');
+         throw class_223.method_4281(var13);
       }
    }
 
@@ -178,7 +178,7 @@ public final class class_95 extends class_91 {
             return var3;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "cq.n(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -237,7 +237,7 @@ public final class class_95 extends class_91 {
 
          this.field_1045 = 2.0D * ((double)var3 - this.field_1040 - var6 * this.field_1050) / (var6 * var6);
       } catch (RuntimeException var12) {
-         throw class_223.method_4281(var12, "cq.v(" + ')');
+         throw class_223.method_4281(var12);
       }
    }
 
@@ -362,7 +362,7 @@ public final class class_95 extends class_91 {
                return var2;
             }
          } else {
-            byte[] var3 = class_76.field_625.method_5381(32, var0, -26460885);
+            byte[] var3 = class_76.field_625.method_5381(32, var0);
             class_76 var10000 = new class_76();
             var2 = var10000;
             if(var3 != null) {
@@ -378,7 +378,7 @@ public final class class_95 extends class_91 {
             return var2;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "cq.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 }

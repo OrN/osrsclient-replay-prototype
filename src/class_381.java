@@ -57,7 +57,7 @@ public class class_381 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "nk.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 

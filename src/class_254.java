@@ -30,7 +30,7 @@ public class class_254 {
          }
 
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "gw.jb(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -54,7 +54,7 @@ public class class_254 {
       try {
          this.field_2873 = var1;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "gw.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 }

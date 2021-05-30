@@ -80,17 +80,17 @@ public class class_222 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "fg.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: g (byte) void
-   static void method_4275(byte var0) {
+   static void method_4275() {
       try {
          class_177.field_2194 = -1648450872;
-         class_299.method_5348(class_305.field_3638, class_305.field_3644, class_305.field_3640, (byte)-20);
+         class_299.method_5348(class_305.field_3638, class_305.field_3644, class_305.field_3640);
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "fg.g(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -110,7 +110,7 @@ public class class_222 {
 
          return var10000;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "fg.y(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -211,7 +211,7 @@ public class class_222 {
                   }
 
                   var5 = (int)var1.field_9;
-                  class_37 var6 = class_71.method_1047(var5, 1379405263);
+                  class_37 var6 = class_71.method_1047(var5);
                   if(null != var6) {
                      if(var0 <= 668516800) {
                         return;
@@ -224,7 +224,7 @@ public class class_222 {
          }
 
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "fg.jj(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 }

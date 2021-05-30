@@ -7,7 +7,7 @@ public abstract class class_257 implements class_11 {
 
 
    // $FF: renamed from: ah (int, cf, boolean, int) int
-   static int method_4948(int var0, class_90 var1, boolean var2, int var3) {
+   static int method_4948(int var0, int var3) {
       try {
          if(var0 == 6800) {
             class_165.field_2054 += 1647125333;
@@ -51,17 +51,17 @@ public abstract class class_257 implements class_11 {
             return 1;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "hf.ah(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: <init> (jd, kk, int) void
-   protected class_257(class_295 var1, class_324 var2, int var3) {
+   protected class_257(int var3) {
       super();
       try {
          this.field_2898 = -1874604065 * var3;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "hf.<init>(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 }

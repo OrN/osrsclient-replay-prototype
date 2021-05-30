@@ -26,7 +26,7 @@ public final class class_274 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ib.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

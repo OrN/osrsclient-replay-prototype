@@ -107,7 +107,7 @@ public final class class_378 {
          this.field_4160 = new int[6][258];
          this.field_4196 = new int[6];
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "nh.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

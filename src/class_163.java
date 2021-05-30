@@ -51,16 +51,16 @@ public class class_163 implements Runnable {
          }
 
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "cb.run(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
    // $FF: renamed from: y (int) em[]
-   static class_212[] method_3418(int var0) {
+   static class_212[] method_3418() {
       try {
          return new class_212[]{class_212.field_2435, class_212.field_2432, class_212.field_2433};
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "cb.y(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -139,7 +139,7 @@ public class class_163 implements Runnable {
             return client.field_1631[var0];
          }
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "cb.il(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -240,7 +240,7 @@ public class class_163 implements Runnable {
          }
 
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "cb.p(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -257,7 +257,7 @@ public class class_163 implements Runnable {
          }
 
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "cb.kc(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -272,7 +272,7 @@ public class class_163 implements Runnable {
          this.field_2030 = new int[500];
          this.field_2029 = new long[500];
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "cb.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 }

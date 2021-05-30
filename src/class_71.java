@@ -11,11 +11,11 @@ public class class_71 extends class_59 {
 
 
    // $FF: renamed from: v (int, byte) boolean
-   public boolean method_1043(int var1, byte var2) {
+   public boolean method_1043(int var1) {
       try {
          return this.field_562[var1].field_2859;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "gd.v(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -35,13 +35,13 @@ public class class_71 extends class_59 {
       try {
          class_335 var10000 = new class_335();
          class_335 var5 = var10000;
-         int var6 = var1.method_5393(var3, 1125151323);
+         int var6 = var1.method_5393(var3);
          this.field_562 = new class_252[var6];
          int[] var7 = var1.method_5392(var3, (byte)8);
          int var8 = 0;
 
          while(var8 < var7.length) {
-            byte[] var9 = var1.method_5381(var3, var7[var8], -26460885);
+            byte[] var9 = var1.method_5381(var3, var7[var8]);
             class_43 var10 = null;
             int var11 = (var9[0] & 255) << 8 | var9[1] & 255;
             class_43 var12 = (class_43)var5.method_5944();
@@ -79,12 +79,12 @@ public class class_71 extends class_59 {
          }
 
       } catch (RuntimeException var14) {
-         throw class_223.method_4281(var14, "gd.<init>(" + ')');
+         throw class_223.method_4281(var14);
       }
    }
 
    // $FF: renamed from: v (int, int) io
-   public static class_37 method_1047(int var0, int var1) {
+   public static class_37 method_1047(int var0) {
       try {
          int var2 = var0 >> 16;
          int var3 = var0 & '\uffff';
@@ -97,7 +97,7 @@ public class class_71 extends class_59 {
 
          return class_37.field_93[var2][var3];
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "gd.v(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 }

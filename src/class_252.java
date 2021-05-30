@@ -46,14 +46,14 @@ public class class_252 {
       var10000 = new class_28(var1);
       class_28 var4 = var10000;
       var3.field_15 = -2051383142;
-      int var5 = var3.method_130(1984145292);
+      int var5 = var3.method_130();
       int var6 = -1;
       int var7 = 0;
       var4.field_15 = (var3.field_15 * -442398587 + var5) * -1025691571;
 
       int var8;
       for(var8 = 0; var8 < var5; ++var8) {
-         int var9 = var3.method_130(-1015093870);
+         int var9 = var3.method_130();
          if(var9 > 0) {
             if(this.field_2852.field_312[var8] != 0) {
                for(int var10 = var8 - 1; var10 > var6; --var10) {

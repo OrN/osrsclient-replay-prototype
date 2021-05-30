@@ -153,7 +153,7 @@ public class class_177 {
    }
 
    // $FF: renamed from: az (af) void
-   static void method_3755(GameApplet var0) {
+   static void method_3755() {
       while(class_178.method_3800(-1385459044)) {
          if(644081785 * class_80.field_752 == 13) {
             field_2202 = false;
@@ -259,11 +259,11 @@ public class class_177 {
    // $FF: renamed from: i (jv, int) void
    static void method_3758(class_306 var0, int var1) {
       if(0 != (var1 & 536870912)) {
-         class_372.field_4114 = class_79.method_1257(var0, "logo_deadman_mode", "", -1936664318);
+         class_372.field_4114 = class_79.method_1257(var0, "logo_deadman_mode", "");
       } else if(0 != (var1 & 1073741824)) {
-         class_372.field_4114 = class_79.method_1257(var0, "logo_seasonal_mode", "", -1984104301);
+         class_372.field_4114 = class_79.method_1257(var0, "logo_seasonal_mode", "");
       } else {
-         class_372.field_4114 = class_79.method_1257(var0, "logo", "", -1861554822);
+         class_372.field_4114 = class_79.method_1257(var0, "logo", "");
       }
 
    }
@@ -276,11 +276,11 @@ public class class_177 {
    // $FF: renamed from: q (jv, int) void
    static void method_3760(class_306 var0, int var1) {
       if(0 != (var1 & 536870912)) {
-         class_372.field_4114 = class_79.method_1257(var0, "logo_deadman_mode", "", -2037175438);
+         class_372.field_4114 = class_79.method_1257(var0, "logo_deadman_mode", "");
       } else if(0 != (var1 & 1073741824)) {
-         class_372.field_4114 = class_79.method_1257(var0, "logo_seasonal_mode", "", -2099908554);
+         class_372.field_4114 = class_79.method_1257(var0, "logo_seasonal_mode", "");
       } else {
-         class_372.field_4114 = class_79.method_1257(var0, "logo", "", -1994651527);
+         class_372.field_4114 = class_79.method_1257(var0, "logo", "");
       }
 
    }
@@ -296,7 +296,7 @@ public class class_177 {
             class_58.method_632(class_37.field_93[var0], var1, 2064427541);
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ct.jm(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -308,7 +308,7 @@ public class class_177 {
 
    // $FF: renamed from: ay () void
    static void method_3763() {
-      if(class_154.method_3251(560410796)) {
+      if(class_154.method_3251()) {
          field_2202 = true;
          field_2195 = 0;
          field_2193 = 0;
@@ -325,7 +325,7 @@ public class class_177 {
    static void method_3765() {
       field_2200 = field_2200.trim();
       if(field_2200.length() == 0) {
-         class_299.method_5348(class_305.field_3669, class_305.field_3670, class_305.field_3641, (byte)-115);
+         class_299.method_5348(class_305.field_3669, class_305.field_3670, class_305.field_3641);
       } else {
          long var1;
          class_28 var10000;
@@ -347,7 +347,7 @@ public class class_177 {
                int var8 = var6.read(var7.field_12, -442398587 * var7.field_15, 1000 - -767585000 * var7.field_15);
                if(var8 == -1) {
                   var7.field_15 = 0;
-                  long var29 = var7.method_136(1575462309);
+                  long var29 = var7.method_136();
                   var1 = var29;
                   break;
                }
@@ -373,39 +373,39 @@ public class class_177 {
             var10000 = new class_28(128);
             class_28 var9 = var10000;
             int[] var10 = new int[]{var28.nextInt(), var28.nextInt(), (int)(var1 >> 32), (int)var1};
-            var30.method_210(10, 303066737);
+            var30.method_210(10);
 
             int var11;
             for(var11 = 0; var11 < 4; ++var11) {
-               var30.method_116(var28.nextInt(), -1113163487);
+               var30.method_116(var28.nextInt());
             }
 
-            var30.method_116(var10[0], 342307712);
-            var30.method_116(var10[1], -1217949291);
+            var30.method_116(var10[0]);
+            var30.method_116(var10[1]);
             var30.method_341(var1);
             var30.method_341(0L);
 
             for(var11 = 0; var11 < 4; ++var11) {
-               var30.method_116(var28.nextInt(), 755207129);
+               var30.method_116(var28.nextInt());
             }
 
-            var30.method_153(class_179.field_2226, class_179.field_2227, 1042321826);
-            var9.method_210(10, 303066737);
+            var30.method_153(class_179.field_2226, class_179.field_2227);
+            var9.method_210(10);
 
             for(var11 = 0; var11 < 3; ++var11) {
-               var9.method_116(var28.nextInt(), -811828913);
+               var9.method_116(var28.nextInt());
             }
 
             var9.method_341(var28.nextLong());
             var9.method_117(var28.nextLong());
             if(client.field_1457 != null) {
-               var9.method_161(client.field_1457, 0, client.field_1457.length, 154536747);
+               var9.method_161(client.field_1457, 0, client.field_1457.length);
             } else {
                byte[] var12 = new byte[24];
 
                try {
                   class_199.field_2344.method_6628(0L);
-                  class_199.field_2344.method_6630(var12, (byte)-50);
+                  class_199.field_2344.method_6630(var12);
 
                   int var13;
                   for(var13 = 0; var13 < 24 && 0 == var12[var13]; ++var13) {
@@ -421,30 +421,30 @@ public class class_177 {
                   }
                }
 
-               var9.method_161(var12, 0, var12.length, 935523896);
+               var9.method_161(var12, 0, var12.length);
             }
 
             var9.method_341(var28.nextLong());
-            var9.method_153(class_179.field_2226, class_179.field_2227, -440353861);
-            var11 = class_166.method_3598(var27, 1967510067);
+            var9.method_153(class_179.field_2226, class_179.field_2227);
+            var11 = class_166.method_3598(var27);
             if(var11 % 8 != 0) {
                var11 += 8 - var11 % 8;
             }
 
             var10000 = new class_28(var11);
             class_28 var31 = var10000;
-            var31.method_120(var27, -427478981);
+            var31.method_120(var27);
             var31.field_15 = var11 * 1142895679;
             var31.method_232(var10, -1937738349);
             var10000 = new class_28(464565865 * var31.field_15 + 5 + 914724747 * var30.field_15 + -1319323502 * var9.field_15);
             class_28 var32 = var10000;
-            var32.method_210(2, 303066737);
-            var32.method_210(var30.field_15 * 1234096125, 303066737);
-            var32.method_161(var30.field_12, 0, -442398587 * var30.field_15, 1019397387);
-            var32.method_210(161690094 * var9.field_15, 303066737);
-            var32.method_161(var9.field_12, 0, var9.field_15 * -442398587, 832490278);
-            var32.method_333(var31.field_15 * -688696776, 455077880);
-            var32.method_161(var31.field_12, 0, 959453344 * var31.field_15, 521169744);
+            var32.method_210(2);
+            var32.method_210(var30.field_15 * 1234096125);
+            var32.method_161(var30.field_12, 0, -442398587 * var30.field_15);
+            var32.method_210(161690094 * var9.field_15);
+            var32.method_161(var9.field_12, 0, var9.field_15 * -442398587);
+            var32.method_333(var31.field_15 * -688696776);
+            var32.method_161(var31.field_12, 0, 959453344 * var31.field_15);
             byte[] var15 = var32.field_12;
             int var17 = var15.length;
             StringBuilder var18 = new StringBuilder();
@@ -532,23 +532,23 @@ public class class_177 {
 
          switch(var0) {
          case 2:
-            class_299.method_5348(class_305.field_3672, class_305.field_3673, class_305.field_3674, (byte)-22);
+            class_299.method_5348(class_305.field_3672, class_305.field_3673, class_305.field_3674);
             field_2194 = -412112718;
             break;
          case 3:
-            class_299.method_5348(class_305.field_3675, class_305.field_3676, class_305.field_3677, (byte)-25);
+            class_299.method_5348(class_305.field_3675, class_305.field_3676, class_305.field_3677);
             break;
          case 4:
-            class_299.method_5348(class_305.field_3678, class_305.field_3528, class_305.field_3680, (byte)-107);
+            class_299.method_5348(class_305.field_3678, class_305.field_3528, class_305.field_3680);
             break;
          case 5:
-            class_299.method_5348(class_305.field_3436, class_305.field_3541, class_305.field_3683, (byte)-50);
+            class_299.method_5348(class_305.field_3436, class_305.field_3541, class_305.field_3683);
             break;
          case 6:
-            class_299.method_5348(class_305.field_3684, class_305.field_3685, class_305.field_3686, (byte)-29);
+            class_299.method_5348(class_305.field_3684, class_305.field_3685, class_305.field_3686);
             break;
          case 7:
-            class_299.method_5348(class_305.field_3687, class_305.field_3516, class_305.field_3508, (byte)-14);
+            class_299.method_5348(class_305.field_3687, class_305.field_3516, class_305.field_3508);
          }
 
       }
@@ -585,7 +585,7 @@ public class class_177 {
    static void method_3767() {
       field_2200 = field_2200.trim();
       if(field_2200.length() == 0) {
-         class_299.method_5348(class_305.field_3669, class_305.field_3670, class_305.field_3641, (byte)-102);
+         class_299.method_5348(class_305.field_3669, class_305.field_3670, class_305.field_3641);
       } else {
          long var1;
          class_28 var10000;
@@ -607,7 +607,7 @@ public class class_177 {
                int var8 = var6.read(var7.field_12, -442398587 * var7.field_15, 1574303103 - 1655238967 * var7.field_15);
                if(var8 == -1) {
                   var7.field_15 = 0;
-                  long var29 = var7.method_136(825334504);
+                  long var29 = var7.method_136();
                   var1 = var29;
                   break;
                }
@@ -633,39 +633,39 @@ public class class_177 {
             var10000 = new class_28(-1195749798);
             class_28 var9 = var10000;
             int[] var10 = new int[]{var28.nextInt(), var28.nextInt(), (int)(var1 >> 1498519647), (int)var1};
-            var30.method_210(10, 303066737);
+            var30.method_210(10);
 
             int var11;
             for(var11 = 0; var11 < 4; ++var11) {
-               var30.method_116(var28.nextInt(), 1641214752);
+               var30.method_116(var28.nextInt());
             }
 
-            var30.method_116(var10[0], -2132407368);
-            var30.method_116(var10[1], -1603941562);
+            var30.method_116(var10[0]);
+            var30.method_116(var10[1]);
             var30.method_341(var1);
             var30.method_341(0L);
 
             for(var11 = 0; var11 < 4; ++var11) {
-               var30.method_116(var28.nextInt(), -1948303006);
+               var30.method_116(var28.nextInt());
             }
 
-            var30.method_153(class_179.field_2226, class_179.field_2227, -1348408025);
-            var9.method_210(10, 303066737);
+            var30.method_153(class_179.field_2226, class_179.field_2227);
+            var9.method_210(10);
 
             for(var11 = 0; var11 < 3; ++var11) {
-               var9.method_116(var28.nextInt(), -2094040900);
+               var9.method_116(var28.nextInt());
             }
 
             var9.method_341(var28.nextLong());
             var9.method_117(var28.nextLong());
             if(client.field_1457 != null) {
-               var9.method_161(client.field_1457, 0, client.field_1457.length, 410727331);
+               var9.method_161(client.field_1457, 0, client.field_1457.length);
             } else {
                byte[] var12 = new byte[24];
 
                try {
                   class_199.field_2344.method_6628(0L);
-                  class_199.field_2344.method_6630(var12, (byte)-40);
+                  class_199.field_2344.method_6630(var12);
 
                   int var13;
                   for(var13 = 0; var13 < 24 && 0 == var12[var13]; ++var13) {
@@ -681,30 +681,30 @@ public class class_177 {
                   }
                }
 
-               var9.method_161(var12, 0, var12.length, 505794296);
+               var9.method_161(var12, 0, var12.length);
             }
 
             var9.method_341(var28.nextLong());
-            var9.method_153(class_179.field_2226, class_179.field_2227, 307844562);
-            var11 = class_166.method_3598(var27, -1448908669);
+            var9.method_153(class_179.field_2226, class_179.field_2227);
+            var11 = class_166.method_3598(var27);
             if(var11 % 8 != 0) {
                var11 += 8 - var11 % 8;
             }
 
             var10000 = new class_28(var11);
             class_28 var31 = var10000;
-            var31.method_120(var27, -427478981);
+            var31.method_120(var27);
             var31.field_15 = var11 * -1025691571;
             var31.method_232(var10, -1937738349);
             var10000 = new class_28(-442398587 * var31.field_15 + 5 + 1656954662 * var30.field_15 + -442398587 * var9.field_15);
             class_28 var32 = var10000;
-            var32.method_210(2, 303066737);
-            var32.method_210(var30.field_15 * -442398587, 303066737);
-            var32.method_161(var30.field_12, 0, -442398587 * var30.field_15, -779781178);
-            var32.method_210(-442398587 * var9.field_15, 303066737);
-            var32.method_161(var9.field_12, 0, var9.field_15 * 938278949, -1640596163);
-            var32.method_333(var31.field_15 * -442398587, -417549480);
-            var32.method_161(var31.field_12, 0, 575197855 * var31.field_15, 1607187579);
+            var32.method_210(2);
+            var32.method_210(var30.field_15 * -442398587);
+            var32.method_161(var30.field_12, 0, -442398587 * var30.field_15);
+            var32.method_210(-442398587 * var9.field_15);
+            var32.method_161(var9.field_12, 0, var9.field_15 * 938278949);
+            var32.method_333(var31.field_15 * -442398587);
+            var32.method_161(var31.field_12, 0, 575197855 * var31.field_15);
             byte[] var15 = var32.field_12;
             int var17 = var15.length;
             StringBuilder var18 = new StringBuilder();
@@ -792,23 +792,23 @@ public class class_177 {
 
          switch(var0) {
          case 2:
-            class_299.method_5348(class_305.field_3672, class_305.field_3673, class_305.field_3674, (byte)-18);
+            class_299.method_5348(class_305.field_3672, class_305.field_3673, class_305.field_3674);
             field_2194 = -476979133;
             break;
          case 3:
-            class_299.method_5348(class_305.field_3675, class_305.field_3676, class_305.field_3677, (byte)-128);
+            class_299.method_5348(class_305.field_3675, class_305.field_3676, class_305.field_3677);
             break;
          case 4:
-            class_299.method_5348(class_305.field_3678, class_305.field_3528, class_305.field_3680, (byte)-19);
+            class_299.method_5348(class_305.field_3678, class_305.field_3528, class_305.field_3680);
             break;
          case 5:
-            class_299.method_5348(class_305.field_3436, class_305.field_3541, class_305.field_3683, (byte)-8);
+            class_299.method_5348(class_305.field_3436, class_305.field_3541, class_305.field_3683);
             break;
          case 6:
-            class_299.method_5348(class_305.field_3684, class_305.field_3685, class_305.field_3686, (byte)-59);
+            class_299.method_5348(class_305.field_3684, class_305.field_3685, class_305.field_3686);
             break;
          case 7:
-            class_299.method_5348(class_305.field_3687, class_305.field_3516, class_305.field_3508, (byte)-121);
+            class_299.method_5348(class_305.field_3687, class_305.field_3516, class_305.field_3508);
          }
 
       }
@@ -820,18 +820,18 @@ public class class_177 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ct.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: bd () void
    static void method_3769() {
       field_2194 = -1648450872;
-      class_299.method_5348(class_305.field_3638, class_305.field_3644, class_305.field_3640, (byte)-127);
+      class_299.method_5348(class_305.field_3638, class_305.field_3644, class_305.field_3640);
    }
 
    // $FF: renamed from: av (af) void
-   static void method_3770(GameApplet var0) {
+   static void method_3770() {
       while(class_178.method_3800(-1385459044)) {
          if(1062299005 * class_80.field_752 == 13) {
             field_2202 = false;
@@ -937,41 +937,41 @@ public class class_177 {
       int var31;
       if(field_2202) {
          if(null == class_347.field_3926) {
-            class_347.field_3926 = class_259.method_4969(class_311.field_3749, "sl_back", "", (byte)74);
+            class_347.field_3926 = class_259.method_4969(class_311.field_3749, "sl_back", "");
          }
 
          class_307 var38;
          class_66[] var45;
          if(null == class_55.field_411) {
             var38 = class_311.field_3749;
-            var27 = var38.method_5399("sl_flags", -1509445596);
-            var31 = var38.method_5400(var27, "", -864973657);
-            var45 = class_212.method_4182(var38, var27, var31, -696210094);
+            var27 = var38.method_5399("sl_flags");
+            var31 = var38.method_5400(var27, "");
+            var45 = class_212.method_4182(var38, var27, var31);
             class_55.field_411 = var45;
          }
 
          if(class_76.field_650 == null) {
             var38 = class_311.field_3749;
-            var27 = var38.method_5399("sl_arrows", -2030814693);
-            var31 = var38.method_5400(var27, "", 1009709479);
-            var45 = class_212.method_4182(var38, var27, var31, -1805039477);
+            var27 = var38.method_5399("sl_arrows");
+            var31 = var38.method_5400(var27, "");
+            var45 = class_212.method_4182(var38, var27, var31);
             class_76.field_650 = var45;
          }
 
          if(class_119.field_1318 == null) {
             var38 = class_311.field_3749;
-            var27 = var38.method_5399("sl_stars", -362929266);
-            var31 = var38.method_5400(var27, "", 263399491);
-            var45 = class_212.method_4182(var38, var27, var31, -1995483808);
+            var27 = var38.method_5399("sl_stars");
+            var31 = var38.method_5400(var27, "");
+            var45 = class_212.method_4182(var38, var27, var31);
             class_119.field_1318 = var45;
          }
 
          if(null == class_180.field_2238) {
-            class_180.field_2238 = class_79.method_1257(class_311.field_3749, "leftarrow", "", -2104699670);
+            class_180.field_2238 = class_79.method_1257(class_311.field_3749, "leftarrow", "");
          }
 
          if(class_234.field_2625 == null) {
-            class_234.field_2625 = class_79.method_1257(class_311.field_3749, "rightarrow", "", -1938910852);
+            class_234.field_2625 = class_79.method_1257(class_311.field_3749, "rightarrow", "");
          }
 
          class_65.method_681(751544539 * field_2183, 23, -1263395965, 813261587, 0);
@@ -1184,7 +1184,7 @@ public class class_177 {
             }
          }
 
-         class_126.field_1370.method_3059(0, 0, -1501607827);
+         class_126.field_1370.method_3059(0, 0);
       } else {
          field_2186.method_765(2135431676 * field_2183, 0);
          class_52.field_378.method_765(field_2183 * 751544539 + 382, 0);
@@ -1217,7 +1217,7 @@ public class class_177 {
             if(-677995589 * field_2194 != 4) {
                var0.method_869(class_305.field_3529, 180 + field_2189 * -857067523 - 809290984, var24, 16777215, 0);
                var25 = 200;
-               var5 = class_87.field_852.field_2123?class_116.method_2249(field_2200, -1806557004):field_2200;
+               var5 = class_87.field_852.field_2123?class_116.method_2249(field_2200):field_2200;
 
                for(var6 = var5; var0.method_885(var6) > var25; var6 = var6.substring(0, var6.length() - 1)) {
                   ;
@@ -1227,7 +1227,7 @@ public class class_177 {
                var24 += 15;
 
                String var7;
-               for(var7 = class_116.method_2249(field_2212, 200671983); var0.method_885(var7) > var25; var7 = var7.substring(1)) {
+               for(var7 = class_116.method_2249(field_2212); var0.method_885(var7) > var25; var7 = var7.substring(1)) {
                   ;
                }
 
@@ -1282,14 +1282,14 @@ public class class_177 {
                   ;
                }
 
-               var0.method_869(class_68.method_868(var5) + (field_2204 * 354186555 == 0 & -1702273423 * client.field_1425 % -1405304303 < 20?class_136.method_2958(124603341, -1966582053) + class_205.field_2394:""), class_204.field_2391 * 1430634194 - 2012111943, var24, 1223134458, 0);
+               var0.method_869(class_68.method_868(var5) + (field_2204 * 354186555 == 0 & -1702273423 * client.field_1425 % -1405304303 < 20?class_136.method_2958(124603341) + class_205.field_2394:""), class_204.field_2391 * 1430634194 - 2012111943, var24, 1223134458, 0);
                var24 += 15;
 
-               for(var6 = class_116.method_2249(field_2212, 1018478269); var0.method_885(var6) > var25; var6 = var6.substring(1)) {
+               for(var6 = class_116.method_2249(field_2212); var0.method_885(var6) > var25; var6 = var6.substring(1)) {
                   ;
                }
 
-               var0.method_869(class_305.field_3645 + var6 + (-1482820819 * field_2204 == 1 & -741116259 * client.field_1425 % 40 < 20?class_136.method_2958(-57065681, -1966582053) + class_205.field_2394:""), -287470748 * class_204.field_2391 - 108, var24, 16777215, 0);
+               var0.method_869(class_305.field_3645 + var6 + (-1482820819 * field_2204 == 1 & -741116259 * client.field_1425 % 40 < 20?class_136.method_2958(-57065681) + class_205.field_2394:""), -287470748 * class_204.field_2391 - 108, var24, 16777215, 0);
                var24 += 15;
                var24 = -1947578665;
                var29 = 277944411 * class_204.field_2391 + -1696228908;
@@ -1353,7 +1353,7 @@ public class class_177 {
                   var24 += 15;
                   var0.method_872(field_2213, 180 + 2130552221 * field_2189, var24, -1168153358, 0);
                   var24 += 15;
-                  var0.method_869(class_305.field_3646 + class_116.method_2249(class_282.field_3249, -1352662872) + (804858747 * client.field_1425 % 40 < 20?class_136.method_2958(16776960, -1966582053) + class_205.field_2394:""), -1854990667 + 2130552221 * field_2189 - 1486101277, var24, 16777215, 0);
+                  var0.method_869(class_305.field_3646 + class_116.method_2249(class_282.field_3249) + (804858747 * client.field_1425 % 40 < 20?class_136.method_2958(16776960) + class_205.field_2394:""), -1854990667 + 2130552221 * field_2189 - 1486101277, var24, 16777215, 0);
                   var24 -= 8;
                   var0.method_869(class_305.field_3593, 180 + 2130552221 * field_2189 - 9, var24, 16776960, 0);
                   var24 += 15;
@@ -1394,7 +1394,7 @@ public class class_177 {
                      ;
                   }
 
-                  var0.method_869(class_68.method_868(var5) + (client.field_1425 * -1702273423 % -1570523845 < 20?class_136.method_2958(-1066854885, -1966582053) + class_205.field_2394:""), field_2189 * 2130552221 + 180 - 34, var24, 16777215, 0);
+                  var0.method_869(class_68.method_868(var5) + (client.field_1425 * -1702273423 % -1570523845 < 20?class_136.method_2958(-1066854885) + class_205.field_2394:""), field_2189 * 2130552221 + 180 - 34, var24, 16777215, 0);
                   var24 += 15;
                   var31 = 180 + field_2189 * 1540244924 - 80;
                   short var35 = 321;
@@ -1521,7 +1521,7 @@ public class class_177 {
                   var1.method_872(class_305.field_3704, var37 / 2 + var24, 12 + var31 / 2 + var25, 16777215, 0);
                }
             } else {
-               class_153.field_1925 = class_79.method_1257(class_311.field_3749, "sl_button", "", -2090869583);
+               class_153.field_1925 = class_79.method_1257(class_311.field_3749, "sl_button", "");
             }
          }
 
@@ -1565,7 +1565,7 @@ public class class_177 {
    static void method_3775() {
       field_2200 = field_2200.trim();
       if(field_2200.length() == 0) {
-         class_299.method_5348(class_305.field_3669, class_305.field_3670, class_305.field_3641, (byte)-97);
+         class_299.method_5348(class_305.field_3669, class_305.field_3670, class_305.field_3641);
       } else {
          long var1;
          class_28 var10000;
@@ -1587,7 +1587,7 @@ public class class_177 {
                int var8 = var6.read(var7.field_12, 758467531 * var7.field_15, -1463935588 - -937614064 * var7.field_15);
                if(var8 == -1) {
                   var7.field_15 = 0;
-                  long var29 = var7.method_136(228750781);
+                  long var29 = var7.method_136();
                   var1 = var29;
                   break;
                }
@@ -1613,39 +1613,39 @@ public class class_177 {
             var10000 = new class_28(128);
             class_28 var9 = var10000;
             int[] var10 = new int[]{var28.nextInt(), var28.nextInt(), (int)(var1 >> -1478583710), (int)var1};
-            var30.method_210(10, 303066737);
+            var30.method_210(10);
 
             int var11;
             for(var11 = 0; var11 < 4; ++var11) {
-               var30.method_116(var28.nextInt(), 2113865189);
+               var30.method_116(var28.nextInt());
             }
 
-            var30.method_116(var10[0], 591699171);
-            var30.method_116(var10[1], 1348525614);
+            var30.method_116(var10[0]);
+            var30.method_116(var10[1]);
             var30.method_341(var1);
             var30.method_341(0L);
 
             for(var11 = 0; var11 < 4; ++var11) {
-               var30.method_116(var28.nextInt(), -1490344464);
+               var30.method_116(var28.nextInt());
             }
 
-            var30.method_153(class_179.field_2226, class_179.field_2227, -202015483);
-            var9.method_210(10, 303066737);
+            var30.method_153(class_179.field_2226, class_179.field_2227);
+            var9.method_210(10);
 
             for(var11 = 0; var11 < 3; ++var11) {
-               var9.method_116(var28.nextInt(), 1065584438);
+               var9.method_116(var28.nextInt());
             }
 
             var9.method_341(var28.nextLong());
             var9.method_117(var28.nextLong());
             if(client.field_1457 != null) {
-               var9.method_161(client.field_1457, 0, client.field_1457.length, 582333582);
+               var9.method_161(client.field_1457, 0, client.field_1457.length);
             } else {
                byte[] var12 = new byte[24];
 
                try {
                   class_199.field_2344.method_6628(0L);
-                  class_199.field_2344.method_6630(var12, (byte)-98);
+                  class_199.field_2344.method_6630(var12);
 
                   int var13;
                   for(var13 = 0; var13 < 24 && 0 == var12[var13]; ++var13) {
@@ -1661,30 +1661,30 @@ public class class_177 {
                   }
                }
 
-               var9.method_161(var12, 0, var12.length, 278687922);
+               var9.method_161(var12, 0, var12.length);
             }
 
             var9.method_341(var28.nextLong());
-            var9.method_153(class_179.field_2226, class_179.field_2227, -516051946);
-            var11 = class_166.method_3598(var27, -865940465);
+            var9.method_153(class_179.field_2226, class_179.field_2227);
+            var11 = class_166.method_3598(var27);
             if(var11 % 8 != 0) {
                var11 += 8 - var11 % 8;
             }
 
             var10000 = new class_28(var11);
             class_28 var31 = var10000;
-            var31.method_120(var27, -427478981);
+            var31.method_120(var27);
             var31.field_15 = var11 * -1025691571;
             var31.method_232(var10, -1937738349);
             var10000 = new class_28(-442398587 * var31.field_15 + 5 + -442398587 * var30.field_15 + -442398587 * var9.field_15);
             class_28 var32 = var10000;
-            var32.method_210(2, 303066737);
-            var32.method_210(var30.field_15 * 1546440447, 303066737);
-            var32.method_161(var30.field_12, 0, 1896668925 * var30.field_15, 188360210);
-            var32.method_210(-552797158 * var9.field_15, 303066737);
-            var32.method_161(var9.field_12, 0, var9.field_15 * -663628400, -1990217613);
-            var32.method_333(var31.field_15 * -442398587, 170436904);
-            var32.method_161(var31.field_12, 0, -442398587 * var31.field_15, 466181911);
+            var32.method_210(2);
+            var32.method_210(var30.field_15 * 1546440447);
+            var32.method_161(var30.field_12, 0, 1896668925 * var30.field_15);
+            var32.method_210(-552797158 * var9.field_15);
+            var32.method_161(var9.field_12, 0, var9.field_15 * -663628400);
+            var32.method_333(var31.field_15 * -442398587);
+            var32.method_161(var31.field_12, 0, -442398587 * var31.field_15);
             byte[] var15 = var32.field_12;
             int var17 = var15.length;
             StringBuilder var18 = new StringBuilder();
@@ -1772,30 +1772,30 @@ public class class_177 {
 
          switch(var0) {
          case 2:
-            class_299.method_5348(class_305.field_3672, class_305.field_3673, class_305.field_3674, (byte)-126);
+            class_299.method_5348(class_305.field_3672, class_305.field_3673, class_305.field_3674);
             field_2194 = -412112718;
             break;
          case 3:
-            class_299.method_5348(class_305.field_3675, class_305.field_3676, class_305.field_3677, (byte)-18);
+            class_299.method_5348(class_305.field_3675, class_305.field_3676, class_305.field_3677);
             break;
          case 4:
-            class_299.method_5348(class_305.field_3678, class_305.field_3528, class_305.field_3680, (byte)-127);
+            class_299.method_5348(class_305.field_3678, class_305.field_3528, class_305.field_3680);
             break;
          case 5:
-            class_299.method_5348(class_305.field_3436, class_305.field_3541, class_305.field_3683, (byte)-52);
+            class_299.method_5348(class_305.field_3436, class_305.field_3541, class_305.field_3683);
             break;
          case 6:
-            class_299.method_5348(class_305.field_3684, class_305.field_3685, class_305.field_3686, (byte)-90);
+            class_299.method_5348(class_305.field_3684, class_305.field_3685, class_305.field_3686);
             break;
          case 7:
-            class_299.method_5348(class_305.field_3687, class_305.field_3516, class_305.field_3508, (byte)-70);
+            class_299.method_5348(class_305.field_3687, class_305.field_3516, class_305.field_3508);
          }
 
       }
    }
 
    // $FF: renamed from: ac (af) void
-   static void method_3776(GameApplet var0) {
+   static void method_3776() {
       while(class_178.method_3800(-1385459044)) {
          if(-505378479 * class_80.field_752 == 13) {
             field_2202 = false;
@@ -1927,7 +1927,7 @@ public class class_177 {
    }
 
    // $FF: renamed from: ao (int, cf, boolean, int) int
-   static int method_3779(int var0, class_90 var1, boolean var2, int var3) {
+   static int method_3779(int var0, int var3) {
       try {
          if(6900 == var0) {
             if(var3 != -1087727229) {
@@ -1947,7 +1947,7 @@ public class class_177 {
             return 2;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "ct.ao(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -1959,18 +1959,18 @@ public class class_177 {
    // $FF: renamed from: ap (af) void
    static void method_3781(GameApplet var0) {
       if(field_2202) {
-         class_52.method_573(var0, (byte)24);
+         class_52.method_573((byte)24);
       } else {
          if((1 == class_131.field_1717 * -265253353 || !client.field_1441 && class_131.field_1717 * -265253353 == 4) && 1003938789 * class_131.field_1701 >= 751544539 * field_2183 + 1293801205 - 2012142124 && 110477814 * class_131.field_1711 >= 453) {
             class_87.field_852.field_2118 = !class_87.field_852.field_2118;
             class_94.method_1771(-1523975758);
             if(!class_87.field_852.field_2118) {
                class_307 var1 = class_194.field_2307;
-               int var2 = var1.method_5399("scape main", -855586990);
-               int var3 = var1.method_5400(var2, "", 1476254982);
-               class_162.method_3399(var1, var2, var3, 255, false, 257342678);
+               int var2 = var1.method_5399("scape main");
+               int var3 = var1.method_5400(var2, "");
+               class_162.method_3399(var1, var2, var3, 255, false);
             } else {
-               class_198.field_2339.method_1962(-1663156843);
+               class_198.field_2339.method_1962();
                class_270.field_3180 = 1262412465;
                class_271.field_3186 = null;
             }
@@ -2149,7 +2149,7 @@ public class class_177 {
                            if(1 == var25 && var26 >= -1774637825 * class_96.field_1062.field_3946 - var8 && var26 <= var8 + class_96.field_1062.field_3946 * -1774637825 && var27 >= var29 - 15 && var27 < var29) {
                               switch(-1315065837 * field_2199) {
                               case 1:
-                                 class_299.method_5348(class_305.field_3669, class_305.field_3670, class_305.field_3641, (byte)-97);
+                                 class_299.method_5348(class_305.field_3669, class_305.field_3670, class_305.field_3641);
                                  field_2194 = 1804056383;
                                  return;
                               case 2:
@@ -2163,16 +2163,16 @@ public class class_177 {
                         if(var25 == 1 && var26 >= var8 - 75 && var26 <= var8 + 75 && var27 >= var31 - 20 && var27 <= 20 + var31) {
                            field_2200 = field_2200.trim();
                            if(field_2200.length() == 0) {
-                              class_299.method_5348(class_305.field_3522, class_305.field_3458, class_305.field_3524, (byte)-17);
+                              class_299.method_5348(class_305.field_3522, class_305.field_3458, class_305.field_3524);
                               return;
                            }
 
                            if(field_2212.length() == 0) {
-                              class_299.method_5348(class_305.field_3435, class_305.field_3526, class_305.field_3527, (byte)-92);
+                              class_299.method_5348(class_305.field_3435, class_305.field_3526, class_305.field_3527);
                               return;
                            }
 
-                           class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637, (byte)-117);
+                           class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637);
                            class_89.method_1578(false, (byte)49);
                            class_53.method_579(20, (byte)0);
                            return;
@@ -2251,16 +2251,16 @@ public class class_177 {
                                  if(84 == class_80.field_752 * 644081785) {
                                     field_2200 = field_2200.trim();
                                     if(field_2200.length() == 0) {
-                                       class_299.method_5348(class_305.field_3522, class_305.field_3458, class_305.field_3524, (byte)-70);
+                                       class_299.method_5348(class_305.field_3522, class_305.field_3458, class_305.field_3524);
                                        return;
                                     }
 
                                     if(field_2212.length() == 0) {
-                                       class_299.method_5348(class_305.field_3435, class_305.field_3526, class_305.field_3527, (byte)-75);
+                                       class_299.method_5348(class_305.field_3435, class_305.field_3526, class_305.field_3527);
                                        return;
                                     }
 
-                                    class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637, (byte)-57);
+                                    class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637);
                                     class_89.method_1578(false, (byte)-16);
                                     class_53.method_579(20, (byte)0);
                                     return;
@@ -2357,7 +2357,7 @@ public class class_177 {
                         var7 = 2130552221 * field_2189 + 180;
                         var8 = 2121905467;
                         if(1 == var25 && var26 >= var7 - 75 && var26 <= 1137237629 + var7 && var27 >= var8 - 20 && var27 <= var8 + 20) {
-                           class_299.method_5348(class_305.field_3669, class_305.field_3670, class_305.field_3641, (byte)-55);
+                           class_299.method_5348(class_305.field_3669, class_305.field_3670, class_305.field_3641);
                            field_2194 = -398096606;
                            return;
                         }
@@ -2369,14 +2369,14 @@ public class class_177 {
                            if(1 == var25 && var26 >= var7 - 683178377 && var26 <= var7 + -818570863 && var27 >= var8 - 20 && var27 <= var8 + 20) {
                               class_282.field_3249.trim();
                               if(class_282.field_3249.length() != 6) {
-                                 class_299.method_5348(class_305.field_3441, class_305.field_3442, class_305.field_3443, (byte)-87);
+                                 class_299.method_5348(class_305.field_3441, class_305.field_3442, class_305.field_3443);
                                  return;
                               }
 
                               class_54.field_405 = Integer.parseInt(class_282.field_3249) * -2113447877;
                               class_282.field_3249 = "";
                               class_89.method_1578(true, (byte)-94);
-                              class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637, (byte)-121);
+                              class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637);
                               class_53.method_579(20, (byte)0);
                               return;
                            }
@@ -2422,14 +2422,14 @@ public class class_177 {
                                  if(1612629932 == -371250156 * class_80.field_752) {
                                     class_282.field_3249.trim();
                                     if(class_282.field_3249.length() != 6) {
-                                       class_299.method_5348(class_305.field_3441, class_305.field_3442, class_305.field_3443, (byte)-123);
+                                       class_299.method_5348(class_305.field_3441, class_305.field_3442, class_305.field_3443);
                                        return;
                                     }
 
                                     class_54.field_405 = Integer.parseInt(class_282.field_3249) * 5333962;
                                     class_282.field_3249 = "";
                                     class_89.method_1578(true, (byte)45);
-                                    class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637, (byte)-26);
+                                    class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637);
                                     class_53.method_579(20, (byte)0);
                                     return;
                                  }
@@ -2503,7 +2503,7 @@ public class class_177 {
                            var30 = 321;
                            if(1 == var25 && var26 >= var7 - 75 && var26 <= var7 + 2113969623 && var27 >= var30 - 20 && var27 <= 20 + var30) {
                               class_195.method_3988(class_83.method_1409("secure", true, -1096861135) + "m=dob/set_dob.ws", true, false, -1857062511);
-                              class_299.method_5348(class_305.field_3666, class_305.field_3628, class_305.field_3668, (byte)-106);
+                              class_299.method_5348(class_305.field_3666, class_305.field_3628, class_305.field_3668);
                               field_2194 = 12140063;
                               return;
                            }
@@ -2517,7 +2517,7 @@ public class class_177 {
                            var30 = 321;
                            if(var25 == 1 && var26 >= var7 - -1223286895 && var26 <= -1480184873 + var7 && var27 >= var30 - 20 && var27 <= var30 + 20) {
                               class_195.method_3988("https://www.jagex.com/terms/privacy", true, false, 1919634050);
-                              class_299.method_5348(class_305.field_3666, class_305.field_3628, class_305.field_3668, (byte)-65);
+                              class_299.method_5348(class_305.field_3666, class_305.field_3628, class_305.field_3668);
                               field_2194 = -1988188916;
                               return;
                            }
@@ -2543,7 +2543,7 @@ public class class_177 {
                            var31 = 276;
                            if(var25 == 1 && var26 >= var8 - 75 && var26 <= var8 + -1717421085 && var27 >= var31 - 20 && var27 <= var31 + 20) {
                               class_195.method_3988(var40, true, false, 64726216);
-                              class_299.method_5348(class_305.field_3666, class_305.field_3628, class_305.field_3668, (byte)-26);
+                              class_299.method_5348(class_305.field_3666, class_305.field_3628, class_305.field_3668);
                               field_2194 = -412112718;
                               return;
                            }
@@ -2571,7 +2571,7 @@ public class class_177 {
 
    // $FF: renamed from: af () void
    static void method_3782() {
-      if(class_154.method_3251(1556351)) {
+      if(class_154.method_3251()) {
          field_2202 = true;
          field_2195 = 0;
          field_2193 = 0;
@@ -2580,20 +2580,20 @@ public class class_177 {
    }
 
    // $FF: renamed from: j (int, byte) void
-   static void method_3783(int var0, byte var1) {
+   static void method_3783(int var0) {
       try {
          class_49 var2 = (class_49)class_49.field_361.method_6523((long)var0);
          if(null != var2) {
             var2.method_108();
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ct.j(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: ak () void
    static void method_3784() {
-      if(class_154.method_3251(1247674503)) {
+      if(class_154.method_3251()) {
          field_2202 = true;
          field_2195 = 0;
          field_2193 = 0;
@@ -2603,7 +2603,7 @@ public class class_177 {
 
    // $FF: renamed from: aa () void
    static void method_3785() {
-      if(class_154.method_3251(1856501108)) {
+      if(class_154.method_3251()) {
          field_2202 = true;
          field_2195 = 0;
          field_2193 = 0;
@@ -2614,13 +2614,13 @@ public class class_177 {
    // $FF: renamed from: au () void
    static void method_3786() {
       field_2194 = 1679262762;
-      class_299.method_5348(class_305.field_3638, class_305.field_3644, class_305.field_3640, (byte)-34);
+      class_299.method_5348(class_305.field_3638, class_305.field_3644, class_305.field_3640);
    }
 
    // $FF: renamed from: an () void
    static void method_3787() {
       field_2194 = -1648450872;
-      class_299.method_5348(class_305.field_3638, class_305.field_3644, class_305.field_3640, (byte)-28);
+      class_299.method_5348(class_305.field_3638, class_305.field_3644, class_305.field_3640);
    }
 
    // $FF: renamed from: aq (bg) void
@@ -2645,36 +2645,36 @@ public class class_177 {
    // $FF: renamed from: bt () void
    static void method_3789() {
       field_2194 = -1648450872;
-      class_299.method_5348(class_305.field_3461, class_305.field_3581, class_305.field_3643, (byte)-1);
+      class_299.method_5348(class_305.field_3461, class_305.field_3581, class_305.field_3643);
    }
 
    // $FF: renamed from: bq () void
    static void method_3790() {
       field_2194 = -1648450872;
-      class_299.method_5348(class_305.field_3461, class_305.field_3581, class_305.field_3643, (byte)-51);
+      class_299.method_5348(class_305.field_3461, class_305.field_3581, class_305.field_3643);
    }
 
    // $FF: renamed from: bu () void
    static void method_3791() {
       field_2194 = -1023359601;
-      class_299.method_5348(class_305.field_3461, class_305.field_3581, class_305.field_3643, (byte)-10);
+      class_299.method_5348(class_305.field_3461, class_305.field_3581, class_305.field_3643);
    }
 
    // $FF: renamed from: ae (af) void
    static void method_3792(GameApplet var0) {
       if(field_2202) {
-         class_52.method_573(var0, (byte)-28);
+         class_52.method_573((byte)-28);
       } else {
          if((1 == class_131.field_1717 * -822731220 || !client.field_1441 && class_131.field_1717 * -265253353 == 4) && 1003938789 * class_131.field_1701 >= 751544539 * field_2183 + 765 - 50 && 339791065 * class_131.field_1711 >= 453) {
             class_87.field_852.field_2118 = !class_87.field_852.field_2118;
             class_94.method_1771(-750472094);
             if(!class_87.field_852.field_2118) {
                class_307 var1 = class_194.field_2307;
-               int var2 = var1.method_5399("scape main", -1153767991);
-               int var3 = var1.method_5400(var2, "", 823867425);
-               class_162.method_3399(var1, var2, var3, 255, false, 581535617);
+               int var2 = var1.method_5399("scape main");
+               int var3 = var1.method_5400(var2, "");
+               class_162.method_3399(var1, var2, var3, 255, false);
             } else {
-               class_198.field_2339.method_1962(250569113);
+               class_198.field_2339.method_1962();
                class_270.field_3180 = 1262412465;
                class_271.field_3186 = null;
             }
@@ -2852,7 +2852,7 @@ public class class_177 {
                            if(1 == var25 && var26 >= -1774637825 * class_96.field_1062.field_3946 - var8 && var26 <= var8 + class_96.field_1062.field_3946 * -1774637825 && var27 >= var29 - 15 && var27 < var29) {
                               switch(-519325819 * field_2199) {
                               case 1:
-                                 class_299.method_5348(class_305.field_3669, class_305.field_3670, class_305.field_3641, (byte)-11);
+                                 class_299.method_5348(class_305.field_3669, class_305.field_3670, class_305.field_3641);
                                  field_2194 = 1729954884;
                                  return;
                               case 2:
@@ -2866,16 +2866,16 @@ public class class_177 {
                         if(var25 == 1 && var26 >= var8 - 2069859312 && var26 <= var8 + -899294634 && var27 >= var31 - 20 && var27 <= 20 + var31) {
                            field_2200 = field_2200.trim();
                            if(field_2200.length() == 0) {
-                              class_299.method_5348(class_305.field_3522, class_305.field_3458, class_305.field_3524, (byte)-65);
+                              class_299.method_5348(class_305.field_3522, class_305.field_3458, class_305.field_3524);
                               return;
                            }
 
                            if(field_2212.length() == 0) {
-                              class_299.method_5348(class_305.field_3435, class_305.field_3526, class_305.field_3527, (byte)-44);
+                              class_299.method_5348(class_305.field_3435, class_305.field_3526, class_305.field_3527);
                               return;
                            }
 
-                           class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637, (byte)-35);
+                           class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637);
                            class_89.method_1578(false, (byte)-83);
                            class_53.method_579(20, (byte)0);
                            return;
@@ -2954,16 +2954,16 @@ public class class_177 {
                                  if(1321955683 == class_80.field_752 * -1732820414) {
                                     field_2200 = field_2200.trim();
                                     if(field_2200.length() == 0) {
-                                       class_299.method_5348(class_305.field_3522, class_305.field_3458, class_305.field_3524, (byte)-17);
+                                       class_299.method_5348(class_305.field_3522, class_305.field_3458, class_305.field_3524);
                                        return;
                                     }
 
                                     if(field_2212.length() == 0) {
-                                       class_299.method_5348(class_305.field_3435, class_305.field_3526, class_305.field_3527, (byte)-48);
+                                       class_299.method_5348(class_305.field_3435, class_305.field_3526, class_305.field_3527);
                                        return;
                                     }
 
-                                    class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637, (byte)-111);
+                                    class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637);
                                     class_89.method_1578(false, (byte)-32);
                                     class_53.method_579(20, (byte)0);
                                     return;
@@ -3060,7 +3060,7 @@ public class class_177 {
                         var29 = -249024105 * field_2189 + 180;
                         var8 = -1438369560;
                         if(1 == var25 && var26 >= var29 - 1467536810 && var26 <= 210385073 + var29 && var27 >= var8 - 20 && var27 <= var8 + 20) {
-                           class_299.method_5348(class_305.field_3669, class_305.field_3670, class_305.field_3641, (byte)-97);
+                           class_299.method_5348(class_305.field_3669, class_305.field_3670, class_305.field_3641);
                            field_2194 = 1804056383;
                            return;
                         }
@@ -3073,14 +3073,14 @@ public class class_177 {
                            if(1 == var25 && var26 >= var29 - 2050086198 && var26 <= var29 + 75 && var27 >= var33 - 20 && var27 <= var33 + 20) {
                               class_282.field_3249.trim();
                               if(class_282.field_3249.length() != 6) {
-                                 class_299.method_5348(class_305.field_3441, class_305.field_3442, class_305.field_3443, (byte)-17);
+                                 class_299.method_5348(class_305.field_3441, class_305.field_3442, class_305.field_3443);
                                  return;
                               }
 
                               class_54.field_405 = Integer.parseInt(class_282.field_3249) * -320825404;
                               class_282.field_3249 = "";
                               class_89.method_1578(true, (byte)-62);
-                              class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637, (byte)-99);
+                              class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637);
                               class_53.method_579(20, (byte)0);
                               return;
                            }
@@ -3126,14 +3126,14 @@ public class class_177 {
                                  if(545373332 == 464829926 * class_80.field_752) {
                                     class_282.field_3249.trim();
                                     if(class_282.field_3249.length() != 6) {
-                                       class_299.method_5348(class_305.field_3441, class_305.field_3442, class_305.field_3443, (byte)-31);
+                                       class_299.method_5348(class_305.field_3441, class_305.field_3442, class_305.field_3443);
                                        return;
                                     }
 
                                     class_54.field_405 = Integer.parseInt(class_282.field_3249) * 965287959;
                                     class_282.field_3249 = "";
                                     class_89.method_1578(true, (byte)-44);
-                                    class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637, (byte)-50);
+                                    class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637);
                                     class_53.method_579(20, (byte)0);
                                     return;
                                  }
@@ -3207,7 +3207,7 @@ public class class_177 {
                            var33 = 321;
                            if(1 == var25 && var26 >= var29 - 75 && var26 <= var29 + 75 && var27 >= var33 - 20 && var27 <= 20 + var33) {
                               class_195.method_3988(class_83.method_1409("secure", true, 495725204) + "m=dob/set_dob.ws", true, false, 293402812);
-                              class_299.method_5348(class_305.field_3666, class_305.field_3628, class_305.field_3668, (byte)-110);
+                              class_299.method_5348(class_305.field_3666, class_305.field_3628, class_305.field_3668);
                               field_2194 = -412112718;
                               return;
                            }
@@ -3221,7 +3221,7 @@ public class class_177 {
                            var33 = 321;
                            if(var25 == 1 && var26 >= var29 - 75 && var26 <= 75 + var29 && var27 >= var33 - 20 && var27 <= var33 + 20) {
                               class_195.method_3988("https://www.jagex.com/terms/privacy", true, false, 2011128769);
-                              class_299.method_5348(class_305.field_3666, class_305.field_3628, class_305.field_3668, (byte)-15);
+                              class_299.method_5348(class_305.field_3666, class_305.field_3628, class_305.field_3668);
                               field_2194 = -412112718;
                               return;
                            }
@@ -3247,7 +3247,7 @@ public class class_177 {
                            var31 = 571572635;
                            if(var25 == 1 && var26 >= var8 - 75 && var26 <= var8 + -1366671421 && var27 >= var31 - 20 && var27 <= var31 + 20) {
                               class_195.method_3988(var41, true, false, -1542568593);
-                              class_299.method_5348(class_305.field_3666, class_305.field_3628, class_305.field_3668, (byte)-75);
+                              class_299.method_5348(class_305.field_3666, class_305.field_3628, class_305.field_3668);
                               field_2194 = -173135744;
                               return;
                            }
@@ -3285,7 +3285,7 @@ public class class_177 {
 
             var3 = var4;
          } else {
-            byte[] var5 = class_89.field_897.method_5381(14, var0, -26460885);
+            byte[] var5 = class_89.field_897.method_5381(14, var0);
             class_89 var10000 = new class_89();
             var4 = var10000;
             if(var5 != null) {
@@ -3294,7 +3294,7 @@ public class class_177 {
                }
 
                class_28 var10001 = new class_28(var5);
-               var4.method_1569(var10001, -683331130);
+               var4.method_1569(var10001);
             }
 
             class_89.field_893.method_5064(var4, (long)var0);
@@ -3329,7 +3329,7 @@ public class class_177 {
          var8 <<= var6;
          class_282.field_3246[var10] = class_282.field_3246[var10] & ~var8 | var1 << var6 & var8;
       } catch (RuntimeException var9) {
-         throw class_223.method_4281(var9, "ct.n(" + ')');
+         throw class_223.method_4281(var9);
       }
    }
 
@@ -3337,7 +3337,7 @@ public class class_177 {
    static void method_3794() {
       field_2200 = field_2200.trim();
       if(field_2200.length() == 0) {
-         class_299.method_5348(class_305.field_3669, class_305.field_3670, class_305.field_3641, (byte)-40);
+         class_299.method_5348(class_305.field_3669, class_305.field_3670, class_305.field_3641);
       } else {
          long var1;
          class_28 var10000;
@@ -3359,7 +3359,7 @@ public class class_177 {
                int var8 = var6.read(var7.field_12, -442398587 * var7.field_15, 1000 - -2085441145 * var7.field_15);
                if(var8 == -1) {
                   var7.field_15 = 0;
-                  long var29 = var7.method_136(-539650757);
+                  long var29 = var7.method_136();
                   var1 = var29;
                   break;
                }
@@ -3385,39 +3385,39 @@ public class class_177 {
             var10000 = new class_28(128);
             class_28 var9 = var10000;
             int[] var10 = new int[]{var28.nextInt(), var28.nextInt(), (int)(var1 >> 32), (int)var1};
-            var30.method_210(10, 303066737);
+            var30.method_210(10);
 
             int var11;
             for(var11 = 0; var11 < 4; ++var11) {
-               var30.method_116(var28.nextInt(), -1514661059);
+               var30.method_116(var28.nextInt());
             }
 
-            var30.method_116(var10[0], 1159426054);
-            var30.method_116(var10[1], -1485213249);
+            var30.method_116(var10[0]);
+            var30.method_116(var10[1]);
             var30.method_341(var1);
             var30.method_341(0L);
 
             for(var11 = 0; var11 < 4; ++var11) {
-               var30.method_116(var28.nextInt(), 437887939);
+               var30.method_116(var28.nextInt());
             }
 
-            var30.method_153(class_179.field_2226, class_179.field_2227, 189022505);
-            var9.method_210(10, 303066737);
+            var30.method_153(class_179.field_2226, class_179.field_2227);
+            var9.method_210(10);
 
             for(var11 = 0; var11 < 3; ++var11) {
-               var9.method_116(var28.nextInt(), 542252716);
+               var9.method_116(var28.nextInt());
             }
 
             var9.method_341(var28.nextLong());
             var9.method_117(var28.nextLong());
             if(client.field_1457 != null) {
-               var9.method_161(client.field_1457, 0, client.field_1457.length, 681205116);
+               var9.method_161(client.field_1457, 0, client.field_1457.length);
             } else {
                byte[] var12 = new byte[24];
 
                try {
                   class_199.field_2344.method_6628(0L);
-                  class_199.field_2344.method_6630(var12, (byte)-112);
+                  class_199.field_2344.method_6630(var12);
 
                   int var13;
                   for(var13 = 0; var13 < 24 && 0 == var12[var13]; ++var13) {
@@ -3433,30 +3433,30 @@ public class class_177 {
                   }
                }
 
-               var9.method_161(var12, 0, var12.length, -1271968311);
+               var9.method_161(var12, 0, var12.length);
             }
 
             var9.method_341(var28.nextLong());
-            var9.method_153(class_179.field_2226, class_179.field_2227, -508338501);
-            var11 = class_166.method_3598(var27, -995262249);
+            var9.method_153(class_179.field_2226, class_179.field_2227);
+            var11 = class_166.method_3598(var27);
             if(var11 % 8 != 0) {
                var11 += 8 - var11 % 8;
             }
 
             var10000 = new class_28(var11);
             class_28 var31 = var10000;
-            var31.method_120(var27, -427478981);
+            var31.method_120(var27);
             var31.field_15 = var11 * 443621567;
             var31.method_232(var10, -1937738349);
             var10000 = new class_28(-442398587 * var31.field_15 + 5 + 931522923 * var30.field_15 + -442398587 * var9.field_15);
             class_28 var32 = var10000;
-            var32.method_210(2, 303066737);
-            var32.method_210(var30.field_15 * 123150873, 303066737);
-            var32.method_161(var30.field_12, 0, -442398587 * var30.field_15, -1466314737);
-            var32.method_210(-442398587 * var9.field_15, 303066737);
-            var32.method_161(var9.field_12, 0, var9.field_15 * -442398587, 2032493093);
-            var32.method_333(var31.field_15 * -442398587, -1304902314);
-            var32.method_161(var31.field_12, 0, -442398587 * var31.field_15, 144320260);
+            var32.method_210(2);
+            var32.method_210(var30.field_15 * 123150873);
+            var32.method_161(var30.field_12, 0, -442398587 * var30.field_15);
+            var32.method_210(-442398587 * var9.field_15);
+            var32.method_161(var9.field_12, 0, var9.field_15 * -442398587);
+            var32.method_333(var31.field_15 * -442398587);
+            var32.method_161(var31.field_12, 0, -442398587 * var31.field_15);
             byte[] var15 = var32.field_12;
             int var17 = var15.length;
             StringBuilder var18 = new StringBuilder();
@@ -3544,23 +3544,23 @@ public class class_177 {
 
          switch(var0) {
          case 2:
-            class_299.method_5348(class_305.field_3672, class_305.field_3673, class_305.field_3674, (byte)-10);
+            class_299.method_5348(class_305.field_3672, class_305.field_3673, class_305.field_3674);
             field_2194 = -1082272954;
             break;
          case 3:
-            class_299.method_5348(class_305.field_3675, class_305.field_3676, class_305.field_3677, (byte)-91);
+            class_299.method_5348(class_305.field_3675, class_305.field_3676, class_305.field_3677);
             break;
          case 4:
-            class_299.method_5348(class_305.field_3678, class_305.field_3528, class_305.field_3680, (byte)-88);
+            class_299.method_5348(class_305.field_3678, class_305.field_3528, class_305.field_3680);
             break;
          case 5:
-            class_299.method_5348(class_305.field_3436, class_305.field_3541, class_305.field_3683, (byte)-127);
+            class_299.method_5348(class_305.field_3436, class_305.field_3541, class_305.field_3683);
             break;
          case 6:
-            class_299.method_5348(class_305.field_3684, class_305.field_3685, class_305.field_3686, (byte)-111);
+            class_299.method_5348(class_305.field_3684, class_305.field_3685, class_305.field_3686);
             break;
          case 7:
-            class_299.method_5348(class_305.field_3687, class_305.field_3516, class_305.field_3508, (byte)-101);
+            class_299.method_5348(class_305.field_3687, class_305.field_3516, class_305.field_3508);
          }
 
       }
@@ -3615,7 +3615,7 @@ public class class_177 {
          var10000 = true;
          return var10000;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ct.u(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 

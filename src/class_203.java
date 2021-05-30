@@ -70,60 +70,60 @@ public class class_203 {
                      break;
                   }
 
-                  this.field_2373.method_161(var2.field_263.field_12, 0, -2120774193 * var2.field_264, 2043381999);
+                  this.field_2373.method_161(var2.field_263.field_12, 0, -2120774193 * var2.field_264);
                   this.field_2383 -= var2.field_264 * -1686998625;
                   var2.method_108();
                   var2.field_263.method_112((byte)32);
                   var2.method_471((byte)100);
                }
 
-               this.field_2374.method_4132(this.field_2373.field_12, 0, this.field_2373.field_15 * -442398587, -1050464521);
+               this.field_2374.method_4132(this.field_2373.field_12, 0, this.field_2373.field_15 * -442398587);
                this.field_2372 = 0;
             }
          }
 
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ds.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: v (int) void
-   final void method_4077(int var1) {
+   final void method_4077() {
       try {
          this.field_2371.method_5696();
          this.field_2383 = 0;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ds.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: v (jv, byte) void
-   public static void method_4078(class_306 var0, byte var1) {
+   public static void method_4078(class_306 var0) {
       try {
          class_84.field_783 = var0;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ds.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: f (hq, int) void
-   public final void method_4079(class_40 var1, int var2) {
+   public final void method_4079(class_40 var1) {
       try {
          this.field_2371.method_5697(var1);
          var1.field_264 = var1.field_263.field_15 * 985550187;
          var1.field_263.field_15 = 0;
          this.field_2383 += var1.field_264 * -1686998625;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ds.f(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: y (ls, int) void
-   void method_4080(class_206 var1, int var2) {
+   void method_4080(class_206 var1) {
       try {
          this.field_2374 = var1;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ds.y(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -137,20 +137,20 @@ public class class_203 {
    }
 
    // $FF: renamed from: j (int) void
-   void method_4082(int var1) {
+   void method_4082() {
       try {
          this.field_2374 = null;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ds.j(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: r (int) ls
-   class_206 method_4083(int var1) {
+   class_206 method_4083() {
       try {
          return this.field_2374;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ds.r(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -211,7 +211,7 @@ public class class_203 {
          this.field_2379 = 0;
          this.field_2372 = 0;
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ds.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -232,12 +232,12 @@ public class class_203 {
          while(true) {
             class_40 var1 = (class_40)this.field_2371.method_5700();
             if(var1 == null || var1.field_264 * -1952245086 > this.field_2373.field_12.length - -442398587 * this.field_2373.field_15) {
-               this.field_2374.method_4132(this.field_2373.field_12, 0, this.field_2373.field_15 * -442398587, -2068740490);
+               this.field_2374.method_4132(this.field_2373.field_12, 0, this.field_2373.field_15 * -442398587);
                this.field_2372 = 0;
                break;
             }
 
-            this.field_2373.method_161(var1.field_263.field_12, 0, -2120774193 * var1.field_264, 599105613);
+            this.field_2373.method_161(var1.field_263.field_12, 0, -2120774193 * var1.field_264);
             this.field_2383 -= var1.field_264 * -1686998625;
             var1.method_108();
             var1.field_263.method_112((byte)114);
@@ -260,12 +260,12 @@ public class class_203 {
          while(true) {
             class_40 var1 = (class_40)this.field_2371.method_5700();
             if(var1 == null || var1.field_264 * 656199849 > this.field_2373.field_12.length - -442398587 * this.field_2373.field_15) {
-               this.field_2374.method_4132(this.field_2373.field_12, 0, this.field_2373.field_15 * -442398587, -2010965285);
+               this.field_2374.method_4132(this.field_2373.field_12, 0, this.field_2373.field_15 * -442398587);
                this.field_2372 = 0;
                break;
             }
 
-            this.field_2373.method_161(var1.field_263.field_12, 0, -1427645537 * var1.field_264, 1775521337);
+            this.field_2373.method_161(var1.field_263.field_12, 0, -1427645537 * var1.field_264);
             this.field_2383 -= var1.field_264 * -1736269188;
             var1.method_108();
             var1.field_263.method_112((byte)103);
@@ -300,7 +300,7 @@ public class class_203 {
                         throw new IllegalStateException();
                      }
 
-                     class_162.method_3399(class_194.field_2307, 2076100495 * client.field_1656, 0, var0, false, 477349829);
+                     class_162.method_3399(class_194.field_2307, 2076100495 * client.field_1656, 0, var0, false);
                      client.field_1657 = false;
                      break label46;
                   }
@@ -311,7 +311,7 @@ public class class_203 {
                      throw new IllegalStateException();
                   }
 
-                  class_198.field_2339.method_1962(376420382);
+                  class_198.field_2339.method_1962();
                   class_270.field_3180 = 1262412465;
                   class_271.field_3186 = null;
                   client.field_1657 = false;
@@ -322,7 +322,7 @@ public class class_203 {
 
                   class_270.field_3181 = 2118204629 * var0;
                } else {
-                  class_198.field_2339.method_1985(var0, -253434825);
+                  class_198.field_2339.method_1985(var0);
                }
             }
 
@@ -331,12 +331,12 @@ public class class_203 {
          }
 
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ds.ky(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: p (byte) void
-   void method_4098(byte var1) {
+   void method_4098() {
       try {
          if(this.field_2374 != null) {
             this.field_2374.method_4123(2121257738);
@@ -344,16 +344,16 @@ public class class_203 {
          }
 
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ds.p(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: v (cz, byte) void
-   public static void method_4099(class_45 var0, byte var1) {
+   public static void method_4099(class_45 var0) {
       try {
          class_149.method_3180(var0, 500000, 475000, 704254621);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ds.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 }

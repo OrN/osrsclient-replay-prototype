@@ -81,7 +81,7 @@ public abstract class class_68 extends class_65 {
                      if(!var8.equals("gt")) {
                         if(var8.startsWith("img=")) {
                            try {
-                              var9 = class_168.method_3609(var8.substring(4), -583266233);
+                              var9 = class_168.method_3609(var8.substring(4));
                               class_66 var13 = field_527[var9];
                               var13.method_735(var2, var3 + this.field_522 - var13.field_494);
                               var2 += var13.field_497;
@@ -251,7 +251,7 @@ public abstract class class_68 extends class_65 {
                      var11 = 62;
                   } else if(var16.startsWith("img=")) {
                      try {
-                        int var17 = class_168.method_3609(var16.substring(4), -1675797610);
+                        int var17 = class_168.method_3609(var16.substring(4));
                         var4 += field_527[var17].field_497;
                         var11 = 0;
                      } catch (Exception var18) {
@@ -638,7 +638,7 @@ public abstract class class_68 extends class_65 {
    }
 
    // $FF: renamed from: <init> (byte[], int[], int[], int[], int[], int[], byte[][]) void
-   class_68(byte[] var1, int[] var2, int[] var3, int[] var4, int[] var5, int[] var6, byte[][] var7) {
+   class_68(byte[] var1, int[] var2, int[] var3, int[] var4, int[] var5, byte[][] var7) {
       super();
       this.field_512 = new byte[256][];
       this.field_522 = 0;
@@ -806,7 +806,7 @@ public abstract class class_68 extends class_65 {
                      if(!var7.equals("gt")) {
                         if(var7.startsWith("img=")) {
                            try {
-                              int var8 = class_168.method_3609(var7.substring(4), -586971577);
+                              int var8 = class_168.method_3609(var7.substring(4));
                               var4 += field_527[var8].field_497;
                               var3 = -1;
                            } catch (Exception var9) {
@@ -1318,7 +1318,7 @@ public abstract class class_68 extends class_65 {
                               }
 
                               ++var8;
-                              var14 = class_168.method_3609(var11.substring(4), -1328197558);
+                              var14 = class_168.method_3609(var11.substring(4));
                               class_66 var18 = field_527[var14];
                               var18.method_735(var2 + var12, var3 + this.field_522 - var18.field_494 + var13);
                               var2 += var18.field_497;
@@ -1457,7 +1457,7 @@ public abstract class class_68 extends class_65 {
                      var11 = 62;
                   } else if(var16.startsWith("img=")) {
                      try {
-                        int var17 = class_168.method_3609(var16.substring(4), 443732833);
+                        int var17 = class_168.method_3609(var16.substring(4));
                         var4 += field_527[var17].field_497;
                         var11 = 0;
                      } catch (Exception var18) {
@@ -1550,7 +1550,7 @@ public abstract class class_68 extends class_65 {
                               }
 
                               ++var8;
-                              var14 = class_168.method_3609(var11.substring(4), 368269235);
+                              var14 = class_168.method_3609(var11.substring(4));
                               class_66 var18 = field_527[var14];
                               var18.method_735(var2 + var12, var3 + this.field_522 - var18.field_494 + var13);
                               var2 += var18.field_497;
@@ -1680,7 +1680,7 @@ public abstract class class_68 extends class_65 {
                      var11 = 62;
                   } else if(var16.startsWith("img=")) {
                      try {
-                        int var17 = class_168.method_3609(var16.substring(4), -1002762515);
+                        int var17 = class_168.method_3609(var16.substring(4));
                         var4 += field_527[var17].field_497;
                         var11 = 0;
                      } catch (Exception var18) {
@@ -1883,7 +1883,7 @@ public abstract class class_68 extends class_65 {
                               }
 
                               ++var8;
-                              var14 = class_168.method_3609(var11.substring(4), -1283618694);
+                              var14 = class_168.method_3609(var11.substring(4));
                               class_66 var18 = field_527[var14];
                               var18.method_735(var2 + var12, var3 + this.field_522 - var18.field_494 + var13);
                               var2 += var18.field_497;
@@ -2333,7 +2333,7 @@ public abstract class class_68 extends class_65 {
                      if(!var8.equals("gt")) {
                         if(var8.startsWith("img=")) {
                            try {
-                              var9 = class_168.method_3609(var8.substring(4), -1583649419);
+                              var9 = class_168.method_3609(var8.substring(4));
                               class_66 var13 = field_527[var9];
                               var13.method_735(var2, var3 + this.field_522 - var13.field_494);
                               var2 += var13.field_497;
@@ -2743,7 +2743,7 @@ public abstract class class_68 extends class_65 {
                      if(!var8.equals("gt")) {
                         if(var8.startsWith("img=")) {
                            try {
-                              var9 = class_168.method_3609(var8.substring(4), -404304888);
+                              var9 = class_168.method_3609(var8.substring(4));
                               class_66 var13 = field_527[var9];
                               var13.method_735(var2, var3 + this.field_522 - var13.field_494);
                               var2 += var13.field_497;
@@ -2848,7 +2848,7 @@ public abstract class class_68 extends class_65 {
                               }
 
                               ++var8;
-                              var14 = class_168.method_3609(var11.substring(4), -751295828);
+                              var14 = class_168.method_3609(var11.substring(4));
                               class_66 var18 = field_527[var14];
                               var18.method_735(var2 + var12, var3 + this.field_522 - var18.field_494 + var13);
                               var2 += var18.field_497;
@@ -2966,7 +2966,7 @@ public abstract class class_68 extends class_65 {
                               }
 
                               ++var8;
-                              var14 = class_168.method_3609(var11.substring(4), -650790314);
+                              var14 = class_168.method_3609(var11.substring(4));
                               class_66 var18 = field_527[var14];
                               var18.method_735(var2 + var12, var3 + this.field_522 - var18.field_494 + var13);
                               var2 += var18.field_497;
@@ -3176,7 +3176,7 @@ public abstract class class_68 extends class_65 {
                      var11 = 62;
                   } else if(var16.startsWith("img=")) {
                      try {
-                        int var17 = class_168.method_3609(var16.substring(4), 941449862);
+                        int var17 = class_168.method_3609(var16.substring(4));
                         var4 += field_527[var17].field_497;
                         var11 = 0;
                      } catch (Exception var18) {

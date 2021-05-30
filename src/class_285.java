@@ -80,16 +80,16 @@ public class class_285 {
    void method_5198(byte[] var1) {
       this.field_3274.field_12 = var1;
       this.field_3274.field_15 = -1666981118;
-      int var2 = this.field_3274.method_132((byte)-127);
-      this.field_3262 = this.field_3274.method_132((byte)-89);
+      int var2 = this.field_3274.method_132();
+      this.field_3262 = this.field_3274.method_132();
       this.field_3266 = 500000;
       this.field_3267 = new int[var2];
 
       int var3;
       int var5;
       for(var3 = 0; var3 < var2; this.field_3274.field_15 += var5 * -1025691571) {
-         int var4 = this.field_3274.method_135((byte)-5);
-         var5 = this.field_3274.method_135((byte)-23);
+         int var4 = this.field_3274.method_135();
+         var5 = this.field_3274.method_135();
          if(var4 == 1297379947) {
             this.field_3267[var3] = this.field_3274.field_15 * -442398587;
             ++var3;
@@ -116,16 +116,16 @@ public class class_285 {
    void method_5200(byte[] var1) {
       this.field_3274.field_12 = var1;
       this.field_3274.field_15 = 309253258;
-      int var2 = this.field_3274.method_132((byte)-102);
-      this.field_3262 = this.field_3274.method_132((byte)-98);
+      int var2 = this.field_3274.method_132();
+      this.field_3262 = this.field_3274.method_132();
       this.field_3266 = 310338422;
       this.field_3267 = new int[var2];
 
       int var3;
       int var5;
       for(var3 = 0; var3 < var2; this.field_3274.field_15 += var5 * 1601354144) {
-         int var4 = this.field_3274.method_135((byte)-78);
-         var5 = this.field_3274.method_135((byte)-11);
+         int var4 = this.field_3274.method_135();
+         var5 = this.field_3274.method_135();
          if(var4 == -1018235204) {
             this.field_3267[var3] = this.field_3274.field_15 * -442398587;
             ++var3;
@@ -183,13 +183,13 @@ public class class_285 {
    int method_5203(int var1, int var2) {
       int var4;
       if(var2 == 255) {
-         int var7 = this.field_3274.method_130(920763810);
+         int var7 = this.field_3274.method_130();
          var4 = this.field_3274.method_127(126843636);
          if(var7 == 47) {
             this.field_3274.field_15 += var4 * -1025691571;
             return 1;
          } else if(var7 == 81) {
-            int var5 = this.field_3274.method_134((byte)-80);
+            int var5 = this.field_3274.method_134();
             var4 -= 3;
             int var6 = this.field_3263[var1];
             this.field_3269 += (long)var6 * (long)(this.field_3266 - var5);
@@ -204,11 +204,11 @@ public class class_285 {
          byte var3 = field_3270[var2 - 128];
          var4 = var2;
          if(var3 >= 1) {
-            var4 = var2 | this.field_3274.method_130(1867947493) << 8;
+            var4 = var2 | this.field_3274.method_130() << 8;
          }
 
          if(var3 >= 2) {
-            var4 |= this.field_3274.method_130(-2109008778) << 16;
+            var4 |= this.field_3274.method_130() << 16;
          }
 
          return var4;
@@ -266,16 +266,16 @@ public class class_285 {
    void method_5209(byte[] var1) {
       this.field_3274.field_12 = var1;
       this.field_3274.field_15 = -1666981118;
-      int var2 = this.field_3274.method_132((byte)-65);
-      this.field_3262 = this.field_3274.method_132((byte)-46);
+      int var2 = this.field_3274.method_132();
+      this.field_3262 = this.field_3274.method_132();
       this.field_3266 = 500000;
       this.field_3267 = new int[var2];
 
       int var3;
       int var5;
       for(var3 = 0; var3 < var2; this.field_3274.field_15 += var5 * -1025691571) {
-         int var4 = this.field_3274.method_135((byte)-13);
-         var5 = this.field_3274.method_135((byte)-63);
+         int var4 = this.field_3274.method_135();
+         var5 = this.field_3274.method_135();
          if(var4 == 1297379947) {
             this.field_3267[var3] = this.field_3274.field_15 * -442398587;
             ++var3;
@@ -304,16 +304,16 @@ public class class_285 {
    void method_5211(byte[] var1) {
       this.field_3274.field_12 = var1;
       this.field_3274.field_15 = -1666981118;
-      int var2 = this.field_3274.method_132((byte)-1);
-      this.field_3262 = this.field_3274.method_132((byte)-47);
+      int var2 = this.field_3274.method_132();
+      this.field_3262 = this.field_3274.method_132();
       this.field_3266 = 2062277242;
       this.field_3267 = new int[var2];
 
       int var3;
       int var5;
       for(var3 = 0; var3 < var2; this.field_3274.field_15 += var5 * -716187887) {
-         int var4 = this.field_3274.method_135((byte)-127);
-         var5 = this.field_3274.method_135((byte)-121);
+         int var4 = this.field_3274.method_135();
+         var5 = this.field_3274.method_135();
          if(var4 == 1110475943) {
             this.field_3267[var3] = this.field_3274.field_15 * -1551845898;
             ++var3;
@@ -510,16 +510,16 @@ public class class_285 {
    void method_5233(byte[] var1) {
       this.field_3274.field_12 = var1;
       this.field_3274.field_15 = -1666981118;
-      int var2 = this.field_3274.method_132((byte)-27);
-      this.field_3262 = this.field_3274.method_132((byte)-50);
+      int var2 = this.field_3274.method_132();
+      this.field_3262 = this.field_3274.method_132();
       this.field_3266 = 500000;
       this.field_3267 = new int[var2];
 
       int var3;
       int var5;
       for(var3 = 0; var3 < var2; this.field_3274.field_15 += var5 * -1025691571) {
-         int var4 = this.field_3274.method_135((byte)-67);
-         var5 = this.field_3274.method_135((byte)-61);
+         int var4 = this.field_3274.method_135();
+         var5 = this.field_3274.method_135();
          if(var4 == 1297379947) {
             this.field_3267[var3] = this.field_3274.field_15 * -442398587;
             ++var3;
@@ -616,13 +616,13 @@ public class class_285 {
    int method_5237(int var1, int var2) {
       int var4;
       if(var2 == 255) {
-         int var7 = this.field_3274.method_130(-1933430444);
+         int var7 = this.field_3274.method_130();
          var4 = this.field_3274.method_127(-502415018);
          if(var7 == 47) {
             this.field_3274.field_15 += var4 * -1025691571;
             return 1;
          } else if(var7 == 81) {
-            int var5 = this.field_3274.method_134((byte)-98);
+            int var5 = this.field_3274.method_134();
             var4 -= 3;
             int var6 = this.field_3263[var1];
             this.field_3269 += (long)var6 * (long)(this.field_3266 - var5);
@@ -637,11 +637,11 @@ public class class_285 {
          byte var3 = field_3270[var2 - 128];
          var4 = var2;
          if(var3 >= 1) {
-            var4 = var2 | this.field_3274.method_130(-1855831891) << 8;
+            var4 = var2 | this.field_3274.method_130() << 8;
          }
 
          if(var3 >= 2) {
-            var4 |= this.field_3274.method_130(-359856232) << 16;
+            var4 |= this.field_3274.method_130() << 16;
          }
 
          return var4;
@@ -652,13 +652,13 @@ public class class_285 {
    int method_5238(int var1, int var2) {
       int var4;
       if(var2 == 255) {
-         int var7 = this.field_3274.method_130(1499466345);
+         int var7 = this.field_3274.method_130();
          var4 = this.field_3274.method_127(158930);
          if(var7 == 47) {
             this.field_3274.field_15 += var4 * -1025691571;
             return 1;
          } else if(var7 == 81) {
-            int var5 = this.field_3274.method_134((byte)-81);
+            int var5 = this.field_3274.method_134();
             var4 -= 3;
             int var6 = this.field_3263[var1];
             this.field_3269 += (long)var6 * (long)(this.field_3266 - var5);
@@ -673,11 +673,11 @@ public class class_285 {
          byte var3 = field_3270[var2 - 128];
          var4 = var2;
          if(var3 >= 1) {
-            var4 = var2 | this.field_3274.method_130(666929328) << 8;
+            var4 = var2 | this.field_3274.method_130() << 8;
          }
 
          if(var3 >= 2) {
-            var4 |= this.field_3274.method_130(1120798744) << 16;
+            var4 |= this.field_3274.method_130() << 16;
          }
 
          return var4;

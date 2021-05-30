@@ -6,7 +6,7 @@ public class class_25 implements class_1 {
    void method_87(class_28 var1, class_28 var2) {
       class_130 var10000 = new class_130(var1);
       class_130 var3 = var10000;
-      class_128 var7 = new class_128(var3);
+      class_128 var7 = new class_128();
       class_128 var4 = var7;
 
       long var5;
@@ -66,7 +66,7 @@ public class class_25 implements class_1 {
    void method_89(class_28 var1, class_28 var2) {
       class_130 var10000 = new class_130(var1);
       class_130 var3 = var10000;
-      class_128 var7 = new class_128(var3);
+      class_128 var7 = new class_128();
       class_128 var4 = var7;
 
       long var5;
@@ -81,7 +81,7 @@ public class class_25 implements class_1 {
    void method_90(class_28 var1, class_28 var2) {
       class_130 var10000 = new class_130(var1);
       class_130 var3 = var10000;
-      class_128 var7 = new class_128(var3);
+      class_128 var7 = new class_128();
       class_128 var4 = var7;
 
       long var5;

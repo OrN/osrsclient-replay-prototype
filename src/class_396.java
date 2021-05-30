@@ -21,7 +21,7 @@ public class class_396 {
       try {
          this.field_4255 = var1 * -2055733865;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "oc.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -29,7 +29,7 @@ public class class_396 {
       try {
          return super.hashCode();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "oc.hashCode(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -40,7 +40,7 @@ public class class_396 {
          this.field_4255 = -2055733865 * var1;
          this.field_4254 = var2;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "oc.<init>(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -87,7 +87,7 @@ public class class_396 {
             return null == var2.field_4254 && null != this.field_4254?false:(this.field_4254 == null && var2.field_4254 != null?false:1815237159 * var2.field_4255 == 1815237159 * this.field_4255 && var2.field_4254.equals(this.field_4254));
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "oc.equals(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 

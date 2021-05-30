@@ -18,7 +18,7 @@ public interface class_6 {
    boolean method_14(int var1, int var2, byte var3);
 
    // $FF: renamed from: j (nd, int) void
-   void method_15(class_28 var1, int var2);
+   void method_15(class_28 var1);
 
    // $FF: renamed from: v (fo, int) void
    void method_16(class_230 var1, int var2);

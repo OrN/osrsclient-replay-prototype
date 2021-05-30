@@ -74,16 +74,16 @@ public class class_304 implements class_14 {
          }
 
       } catch (RuntimeException var9) {
-         throw class_223.method_4281(var9, "jn.y(" + ')');
+         throw class_223.method_4281(var9);
       }
    }
 
    // $FF: renamed from: v (int) int
-   public int method_50(int var1) {
+   public int method_50() {
       try {
          return -1451177967 * this.field_3396;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "jn.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -120,7 +120,7 @@ public class class_304 implements class_14 {
       try {
          this.field_3396 = 259074289 * var1;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "jn.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 

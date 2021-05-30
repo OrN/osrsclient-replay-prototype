@@ -69,7 +69,7 @@ public final class class_103 extends class_27 {
          }
 
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "bc.f(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -338,7 +338,7 @@ public final class class_103 extends class_27 {
             client.field_1556[var3] = true;
          }
       } catch (RuntimeException var15) {
-         throw class_223.method_4281(var15, "bc.ki(" + ')');
+         throw class_223.method_4281(var15);
       }
    }
 
@@ -347,7 +347,7 @@ public final class class_103 extends class_27 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "bc.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -366,7 +366,7 @@ public final class class_103 extends class_27 {
             }
 
             client.field_1493 = client.field_1425 * -146799985;
-            class_183.field_2249.method_5331(-2075850075);
+            class_183.field_2249.method_5331();
 
             for(int var1 = 0; var1 < client.field_1605.length; ++var1) {
                if(var0 >= -891996540) {
@@ -384,7 +384,7 @@ public final class class_103 extends class_27 {
          }
 
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "bc.ls(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 }

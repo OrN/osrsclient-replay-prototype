@@ -27,28 +27,28 @@ public class class_268 implements class_12 {
 
 
    // $FF: renamed from: <init> (int, int) void
-   class_268(int var1, int var2) {
+   class_268(int var1) {
       super();
       try {
          this.field_3164 = var1 * -1120447945;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "hv.<init>(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: <clinit> () void
    static {
-      class_268 var10000 = new class_268(14, 0);
+      class_268 var10000 = new class_268(14);
       field_3165 = var10000;
-      var10000 = new class_268(15, 4);
+      var10000 = new class_268(15);
       field_3159 = var10000;
-      var10000 = new class_268(16, -2);
+      var10000 = new class_268(16);
       field_3161 = var10000;
-      var10000 = new class_268(18, -2);
+      var10000 = new class_268(18);
       field_3158 = var10000;
-      var10000 = new class_268(19, -2);
+      var10000 = new class_268(19);
       field_3162 = var10000;
-      var10000 = new class_268(27, 0);
+      var10000 = new class_268(27);
       field_3163 = var10000;
       field_3160 = new class_268[32];
       class_268[] var0 = new class_268[]{field_3163, field_3165, field_3162, field_3158, field_3159, field_3161};
@@ -61,13 +61,13 @@ public class class_268 implements class_12 {
    }
 
    // $FF: renamed from: kh (int, int) void
-   static final void method_5038(int var0, int var1) {
+   static final void method_5038(int var0) {
       try {
          var0 = Math.min(Math.max(var0, 0), 127);
          class_87.field_852.field_2115 = var0 * 1570911753;
          class_94.method_1771(-916329352);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "hv.kh(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 }

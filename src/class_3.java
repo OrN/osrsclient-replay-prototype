@@ -3,7 +3,7 @@
 public interface class_3 {
 
    // $FF: renamed from: v (int) bd
-   class_139 method_5(int var1);
+   class_139 method_5();
 
    // $FF: renamed from: n () bd
    class_139 method_6();

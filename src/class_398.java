@@ -39,16 +39,17 @@ public class class_398 {
 
          throw new RuntimeException("");
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "og.v(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
    // $FF: renamed from: <init> (int, int, int) void
-   class_398(int var1, int var2, int var3) {
+   // $FF: renamed from: <init> () void
+   class_398() {
       super();
       try {
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "og.<init>(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -70,15 +71,6 @@ public class class_398 {
          this.field_4257.reset();
       } else {
          throw new RuntimeException("");
-      }
-   }
-
-   // $FF: renamed from: <init> () void
-   public class_398() {
-      this(-1, 1000000, 1000000);
-      try {
-      } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "og.<init>(" + ')');
       }
    }
 }

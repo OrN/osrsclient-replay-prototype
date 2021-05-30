@@ -19,11 +19,11 @@ public class class_361 {
 
 
    // $FF: renamed from: f (int) boolean
-   boolean method_6297(int var1) {
+   boolean method_6297() {
       try {
          return this.field_4010;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ma.f(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -47,7 +47,7 @@ public class class_361 {
                throw new IllegalStateException();
             }
 
-            if(!this.field_4011.method_5403(class_254.field_2869.field_2873, this.field_4009, -164696218)) {
+            if(!this.field_4011.method_5403(class_254.field_2869.field_2873, this.field_4009)) {
                if(var1 >= 0) {
                   throw new IllegalStateException();
                }
@@ -68,7 +68,7 @@ public class class_361 {
                   throw new IllegalStateException();
                }
 
-               if(!this.field_4011.method_5403(class_254.field_2871.field_2873, this.field_4009, -1497379272)) {
+               if(!this.field_4011.method_5403(class_254.field_2871.field_2873, this.field_4009)) {
                   return 134811513 * this.field_4012;
                }
             }
@@ -81,7 +81,7 @@ public class class_361 {
                throw new IllegalStateException();
             }
 
-            if(!this.field_4011.method_5403(this.field_4009, class_254.field_2872.field_2873, -1002520564)) {
+            if(!this.field_4011.method_5403(this.field_4009, class_254.field_2872.field_2873)) {
                if(var1 >= 0) {
                   throw new IllegalStateException();
                }
@@ -95,14 +95,14 @@ public class class_361 {
 
          return this.field_4012 * 134811513;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ma.n(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: r () int
    int method_6300() {
       if(this.field_4012 * 134811513 < 33) {
-         if(!this.field_4011.method_5403(class_254.field_2869.field_2873, this.field_4009, -1567099561)) {
+         if(!this.field_4011.method_5403(class_254.field_2869.field_2873, this.field_4009)) {
             return 134811513 * this.field_4012;
          }
 
@@ -110,7 +110,7 @@ public class class_361 {
       }
 
       if(33 == 134811513 * this.field_4012) {
-         if(this.field_4011.method_5420(class_254.field_2871.field_2873, this.field_4009, (byte)0) && !this.field_4011.method_5403(class_254.field_2871.field_2873, this.field_4009, -684627701)) {
+         if(this.field_4011.method_5420(class_254.field_2871.field_2873, this.field_4009, (byte)0) && !this.field_4011.method_5403(class_254.field_2871.field_2873, this.field_4009)) {
             return 134811513 * this.field_4012;
          }
 
@@ -118,7 +118,7 @@ public class class_361 {
       }
 
       if(this.field_4012 * 134811513 == 66) {
-         if(!this.field_4011.method_5403(this.field_4009, class_254.field_2872.field_2873, -981543282)) {
+         if(!this.field_4011.method_5403(this.field_4009, class_254.field_2872.field_2873)) {
             return this.field_4012 * 134811513;
          }
 
@@ -135,11 +135,11 @@ public class class_361 {
    }
 
    // $FF: renamed from: y (int) int
-   int method_6302(int var1) {
+   int method_6302() {
       try {
          return 134811513 * this.field_4012;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ma.y(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -163,14 +163,14 @@ public class class_361 {
          this.field_4010 = false;
          this.field_4011 = var1;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ma.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: b () int
    int method_6305() {
       if(this.field_4012 * 134811513 < 33) {
-         if(!this.field_4011.method_5403(class_254.field_2869.field_2873, this.field_4009, -1076048339)) {
+         if(!this.field_4011.method_5403(class_254.field_2869.field_2873, this.field_4009)) {
             return 134811513 * this.field_4012;
          }
 
@@ -178,7 +178,7 @@ public class class_361 {
       }
 
       if(33 == 134811513 * this.field_4012) {
-         if(this.field_4011.method_5420(class_254.field_2871.field_2873, this.field_4009, (byte)0) && !this.field_4011.method_5403(class_254.field_2871.field_2873, this.field_4009, -1177582938)) {
+         if(this.field_4011.method_5420(class_254.field_2871.field_2873, this.field_4009, (byte)0) && !this.field_4011.method_5403(class_254.field_2871.field_2873, this.field_4009)) {
             return 134811513 * this.field_4012;
          }
 
@@ -186,7 +186,7 @@ public class class_361 {
       }
 
       if(this.field_4012 * 134811513 == 66) {
-         if(!this.field_4011.method_5403(this.field_4009, class_254.field_2872.field_2873, -2082170645)) {
+         if(!this.field_4011.method_5403(this.field_4009, class_254.field_2872.field_2873)) {
             return this.field_4012 * 134811513;
          }
 
@@ -228,7 +228,7 @@ public class class_361 {
          }
 
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "ma.v(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 

@@ -27,7 +27,7 @@ public class class_299 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "ji.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -42,7 +42,7 @@ public class class_299 {
                return var2;
             }
          } else {
-            byte[] var3 = class_368.field_4096.method_5381(10, var0, -26460885);
+            byte[] var3 = class_368.field_4096.method_5381(10, var0);
             class_80 var10000 = new class_80();
             var2 = var10000;
             var2.field_748 = -31876329 * var0;
@@ -55,13 +55,13 @@ public class class_299 {
                var2.method_1260(var10001, 2116753290);
             }
 
-            var2.method_1259(1352174221);
+            var2.method_1259();
             if(-1 != 168192755 * var2.field_743) {
                if(var1 >= 708619469) {
                   throw new IllegalStateException();
                }
 
-               var2.method_1262(method_5347(var2.field_743 * 168192755, -1769840830), method_5347(1027633359 * var2.field_698, -793497659), (byte)107);
+               var2.method_1262(method_5347(var2.field_743 * 168192755, -1769840830), method_5347(1027633359 * var2.field_698, -793497659));
             }
 
             if(-1893254845 * var2.field_749 != -1) {
@@ -73,7 +73,7 @@ public class class_299 {
             }
 
             if(var2.field_751 * 1689317723 != -1) {
-               var2.method_1301(method_5347(var2.field_751 * 1689317723, -1815715576), method_5347(var2.field_750 * 1563500305, -349401918), 555956610);
+               var2.method_1301(method_5347(var2.field_751 * 1689317723, -1815715576), method_5347(var2.field_750 * 1563500305, -349401918));
             }
 
             if(!class_49.field_363) {
@@ -123,18 +123,18 @@ public class class_299 {
             return var2;
          }
       } catch (RuntimeException var7) {
-         throw class_223.method_4281(var7, "ji.v(" + ')');
+         throw class_223.method_4281(var7);
       }
    }
 
    // $FF: renamed from: u (java.lang.String, java.lang.String, java.lang.String, byte) void
-   static void method_5348(String var0, String var1, String var2, byte var3) {
+   static void method_5348(String var0, String var1, String var2) {
       try {
          class_177.field_2196 = var0;
          class_177.field_2197 = var1;
          class_177.field_2213 = var2;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "ji.u(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 }

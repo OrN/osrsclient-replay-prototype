@@ -609,7 +609,7 @@ public class class_263 {
          var2 = (byte)var0;
          return var2;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "hl.v(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -627,7 +627,7 @@ public class class_263 {
          this.field_2964 = var1 * 1593533807;
          this.field_3027 = var2 * 194205827;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "hl.<init>(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 

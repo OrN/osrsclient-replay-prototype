@@ -34,7 +34,7 @@ final class class_311 implements Comparator {
 
          return var10000;
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "jt.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -42,7 +42,7 @@ final class class_311 implements Comparator {
       try {
          return this.method_5545((class_310)var1, (class_310)var2, 119350129);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "jt.compare(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -50,7 +50,7 @@ final class class_311 implements Comparator {
       try {
          return super.equals(var1);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "jt.equals(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -70,7 +70,7 @@ final class class_311 implements Comparator {
    }
 
    // $FF: renamed from: e (int, cf, boolean, int) int
-   static int method_5549(int var0, class_90 var1, boolean var2, int var3) {
+   static int method_5549(int var0, boolean var2, int var3) {
       try {
          class_37 var4 = var2?class_124.field_1357:class_165.field_2064;
          if(var0 == 1700) {
@@ -103,7 +103,7 @@ final class class_311 implements Comparator {
             return 2;
          }
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "jt.e(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -118,14 +118,14 @@ final class class_311 implements Comparator {
    }
 
    // $FF: renamed from: o (int, int, int) int
-   static final int method_5552(int var0, int var1, int var2) {
+   static final int method_5552(int var0, int var1) {
       try {
          int var3 = var0 + var1 * 57;
          var3 ^= var3 << 13;
          int var4 = var3 * (15731 * var3 * var3 + 789221) + 1376312589 & Integer.MAX_VALUE;
          return var4 >> 19 & 255;
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "jt.o(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -137,19 +137,19 @@ final class class_311 implements Comparator {
                throw new IllegalStateException();
             }
 
-            class_372.field_4114 = class_79.method_1257(var0, "logo_deadman_mode", "", -1896190200);
+            class_372.field_4114 = class_79.method_1257(var0, "logo_deadman_mode", "");
          } else if(0 != (var1 & 1073741824)) {
             if(var2 <= 4) {
                throw new IllegalStateException();
             }
 
-            class_372.field_4114 = class_79.method_1257(var0, "logo_seasonal_mode", "", -1971882123);
+            class_372.field_4114 = class_79.method_1257(var0, "logo_seasonal_mode", "");
          } else {
-            class_372.field_4114 = class_79.method_1257(var0, "logo", "", -1962376396);
+            class_372.field_4114 = class_79.method_1257(var0, "logo", "");
          }
 
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "jt.p(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 

@@ -129,7 +129,7 @@ public class class_314 {
       try {
          throw new Error();
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "jx.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -137,8 +137,8 @@ public class class_314 {
    static void method_5583(class_307 var0, int var1) {
       if(class_202.field_2369 != null) {
          class_202.field_2369.field_15 = var1 * 926753600 + -833490559;
-         int var2 = class_202.field_2369.method_135((byte)-78);
-         int var3 = class_202.field_2369.method_135((byte)-16);
+         int var2 = class_202.field_2369.method_135();
+         int var3 = class_202.field_2369.method_135();
          var0.method_5489(var2, var3, -887756709);
       } else {
          class_278.method_5146((class_307)null, 255, -973826600, 0, (byte)0, true, (byte)-120);
@@ -150,8 +150,8 @@ public class class_314 {
    static void method_5584(class_307 var0, int var1) {
       if(class_202.field_2369 != null) {
          class_202.field_2369.field_15 = var1 * 384402024 + -833490559;
-         int var2 = class_202.field_2369.method_135((byte)-28);
-         int var3 = class_202.field_2369.method_135((byte)-126);
+         int var2 = class_202.field_2369.method_135();
+         int var3 = class_202.field_2369.method_135();
          var0.method_5489(var2, var3, -887756709);
       } else {
          class_278.method_5146((class_307)null, 255, 255, 0, (byte)0, true, (byte)-56);
@@ -165,9 +165,9 @@ public class class_314 {
          try {
             class_28 var10000 = new class_28(4);
             class_28 var1 = var10000;
-            var1.method_210(var0?2:3, 303066737);
-            var1.method_115(0, -1756916961);
-            field_3771.method_4132(var1.field_12, 0, 4, -1566493111);
+            var1.method_210(var0?2:3);
+            var1.method_115(0);
+            field_3771.method_4132(var1.field_12, 0, 4);
          } catch (IOException var4) {
             try {
                field_3771.method_4123(1703282081);
@@ -517,7 +517,7 @@ public class class_314 {
          }
 
       } catch (RuntimeException var20) {
-         throw class_223.method_4281(var20, "jx.gc(" + ')');
+         throw class_223.method_4281(var20);
       }
    }
 
@@ -591,9 +591,9 @@ public class class_314 {
          try {
             class_28 var10000 = new class_28(4);
             class_28 var1 = var10000;
-            var1.method_210(var0?2:3, 303066737);
-            var1.method_115(0, -1756916961);
-            field_3771.method_4132(var1.field_12, 0, 4, -1262732830);
+            var1.method_210(var0?2:3);
+            var1.method_115(0);
+            field_3771.method_4132(var1.field_12, 0, 4);
          } catch (IOException var4) {
             try {
                field_3771.method_4123(2095441109);

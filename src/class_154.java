@@ -28,18 +28,18 @@ public class class_154 implements Runnable {
       try {
          this.field_1934 = new class_139[2];
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "bq.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
    // $FF: renamed from: f (java.awt.Component, byte) void
-   static void method_3245(Component var0, byte var1) {
+   static void method_3245(Component var0) {
       try {
          var0.removeKeyListener(class_145.field_1846);
          var0.removeFocusListener(class_145.field_1846);
          class_145.field_1843 = -1023229263;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "bq.f(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -74,12 +74,12 @@ public class class_154 implements Runnable {
    }
 
    // $FF: renamed from: u (int, int, int, int, byte) int
-   static final int method_3248(int var0, int var1, int var2, int var3, byte var4) {
+   static final int method_3248(int var0, int var1, int var2, int var3) {
       try {
          int var5 = 65536 - class_70.field_559[var2 * 1024 / var3] >> 1;
          return ((65536 - var5) * var0 >> 16) + (var5 * var1 >> 16);
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "bq.u(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -97,7 +97,7 @@ public class class_154 implements Runnable {
          }
 
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "bq.run(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -112,7 +112,7 @@ public class class_154 implements Runnable {
                return var2;
             }
          } else {
-            byte[] var3 = class_209.field_2421.method_5381(4, var0, -26460885);
+            byte[] var3 = class_209.field_2421.method_5381(4, var0);
             class_82 var10000 = new class_82();
             var2 = var10000;
             if(null != var3) {
@@ -129,7 +129,7 @@ public class class_154 implements Runnable {
             return var2;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "bq.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -209,7 +209,7 @@ public class class_154 implements Runnable {
                var32 = var12 - var16;
                var20 = var11 - 280751135 * var4.field_2674;
                var21 = var12 - var4.field_2681 * -992681321;
-               if(var3.method_3106(1, var11, var12, var4, 496202097)) {
+               if(var3.method_3106(var11, var12, 496202097)) {
                   class_184.field_2256 = var11 * 1890198089;
                   class_246.field_2724 = var12 * -1284385059;
                   var30 = true;
@@ -488,7 +488,7 @@ public class class_154 implements Runnable {
                var32 = var12 - var16;
                var20 = var11 - 280751135 * var4.field_2674;
                var21 = var12 - -992681321 * var4.field_2681;
-               if(var3.method_3106(2, var11, var12, var4, 496202097)) {
+               if(var3.method_3106(var11, var12, 496202097)) {
                   if(var8 == -2006230823) {
                      throw new IllegalStateException();
                   }
@@ -770,7 +770,7 @@ public class class_154 implements Runnable {
                var32 = var12 - var16;
                var20 = var11 - 280751135 * var4.field_2674;
                var21 = var12 - -992681321 * var4.field_2681;
-               if(var3.method_3106(var2, var11, var12, var4, 496202097)) {
+               if(var3.method_3106(var11, var12, 496202097)) {
                   class_184.field_2256 = var11 * 1890198089;
                   class_246.field_2724 = var12 * -1284385059;
                   var30 = true;
@@ -1354,33 +1354,33 @@ public class class_154 implements Runnable {
             var15 = class_215.field_2457[var12 - var10][var31 - var11];
          }
       } catch (RuntimeException var28) {
-         throw class_223.method_4281(var28, "bq.v(" + ')');
+         throw class_223.method_4281(var28);
       }
    }
 
    // $FF: renamed from: v (int) boolean
-   static boolean method_3251(int var0) {
+   static boolean method_3251() {
       try {
          try {
             if(class_192.field_2298 == null) {
-               class_192.field_2298 = class_263.field_2989.method_4038(new URL(class_116.field_1291), -1811269491);
-            } else if(class_192.field_2298.method_3963(-754673345)) {
-               byte[] var1 = class_192.field_2298.method_3961((byte)83);
+               class_192.field_2298 = class_263.field_2989.method_4038(new URL(class_116.field_1291));
+            } else if(class_192.field_2298.method_3963()) {
+               byte[] var1 = class_192.field_2298.method_3961();
                class_28 var10000 = new class_28(var1);
                class_28 var2 = var10000;
-               var2.method_135((byte)-81);
-               class_149.field_1881 = var2.method_132((byte)-6) * 274545041;
+               var2.method_135();
+               class_149.field_1881 = var2.method_132() * 274545041;
                class_166.field_2083 = new class_149[class_149.field_1881 * 1267509105];
 
                for(int var3 = 0; var3 < 1267509105 * class_149.field_1881; ++var3) {
                   class_149[] var7 = class_166.field_2083;
                   class_149 var10002 = new class_149();
                   class_149 var4 = var7[var3] = var10002;
-                  var4.field_1894 = var2.method_132((byte)-105) * -1640224087;
-                  var4.field_1890 = var2.method_135((byte)-117) * 1964795281;
+                  var4.field_1894 = var2.method_132() * -1640224087;
+                  var4.field_1890 = var2.method_135() * 1964795281;
                   var4.field_1885 = var2.method_139(-391631059);
                   var4.field_1889 = var2.method_139(-391631059);
-                  var4.field_1880 = var2.method_130(947321042) * -606233165;
+                  var4.field_1880 = var2.method_130() * -606233165;
                   var4.field_1882 = var2.method_269(-1542485131) * 687282711;
                   var4.field_1891 = 73870975 * var3;
                }
@@ -1396,7 +1396,7 @@ public class class_154 implements Runnable {
 
          return false;
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "bq.v(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -1406,7 +1406,7 @@ public class class_154 implements Runnable {
          client.field_1538 = 0;
          client.field_1461 = 0;
          class_29 var3 = client.field_1463.field_2375;
-         var3.method_358(1270485985);
+         var3.method_358();
          int var4 = var3.method_361(8, (byte)-48);
          int var5;
          if(var4 < client.field_1459 * -1300723479) {
@@ -1496,7 +1496,7 @@ public class class_154 implements Runnable {
 
             int var14;
             while(true) {
-               if(var1.method_363(-83736147 * client.field_1463.field_2380, (byte)41) < 27) {
+               if(var1.method_363(-83736147 * client.field_1463.field_2380) < 27) {
                   if(var2 == 549162683) {
                      throw new IllegalStateException();
                   }
@@ -1636,7 +1636,7 @@ public class class_154 implements Runnable {
                var16.method_1816(var10001, var20, var10003, -660093008);
             }
 
-            var1.method_362((byte)-43);
+            var1.method_362();
             class_45.method_529(var1, -1497241252);
 
             for(var14 = 0; var14 < client.field_1538 * 1717996379; ++var14) {
@@ -1671,7 +1671,7 @@ public class class_154 implements Runnable {
             }
          }
       } catch (RuntimeException var13) {
-         throw class_223.method_4281(var13, "bq.hr(" + ')');
+         throw class_223.method_4281(var13);
       }
    }
 }

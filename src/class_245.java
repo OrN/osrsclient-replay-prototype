@@ -30,7 +30,7 @@ public class class_245 implements class_7 {
 
 
    // $FF: renamed from: t (int) boolean
-   public boolean method_43(int var1) {
+   public boolean method_43() {
       return 861354963 * this.field_2711 == 64;
    }
 
@@ -76,7 +76,7 @@ public class class_245 implements class_7 {
             return 100 * var3 / var2;
          }
       } catch (RuntimeException var10) {
-         throw class_223.method_4281(var10, "gh.v(" + ')');
+         throw class_223.method_4281(var10);
       }
    }
 
@@ -86,7 +86,7 @@ public class class_245 implements class_7 {
          this.field_2715 = var1;
          this.method_4703((short)128);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "gh.n(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -130,7 +130,7 @@ public class class_245 implements class_7 {
 
          return null;
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "gh.f(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
@@ -147,21 +147,21 @@ public class class_245 implements class_7 {
             return 0;
          }
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "gh.y(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: p (int, byte) boolean
-   public boolean method_41(int var1, byte var2) {
+   public boolean method_41(int var1) {
       try {
          return this.field_2714[var1].field_306;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "gh.p(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: j (int, int) boolean
-   public boolean method_33(int var1, int var2) {
+   public boolean method_33(int var2) {
       try {
          boolean var10000;
          if(861354963 * this.field_2711 == 64) {
@@ -176,7 +176,7 @@ public class class_245 implements class_7 {
 
          return var10000;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "gh.j(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -225,7 +225,7 @@ public class class_245 implements class_7 {
          }
 
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "gh.b(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
@@ -405,7 +405,7 @@ public class class_245 implements class_7 {
    }
 
    // $FF: renamed from: w (int) boolean
-   public boolean method_35(int var1) {
+   public boolean method_35() {
       return -1356026801 * this.field_2711 == 310300792;
    }
 
@@ -425,10 +425,10 @@ public class class_245 implements class_7 {
          this.field_2711 = -1696476069 * var6;
          int[] var7 = var1.method_5392(0, (byte)8);
          int var8 = var7.length;
-         this.field_2714 = new class_42[var1.method_5393(0, 1621055233)];
+         this.field_2714 = new class_42[var1.method_5393(0)];
 
          for(int var9 = 0; var9 < var8; ++var9) {
-            class_28 var10000 = new class_28(var1.method_5381(0, var7[var9], -26460885));
+            class_28 var10000 = new class_28(var1.method_5381(0, var7[var9]));
             class_28 var10 = var10000;
             class_42[] var12 = this.field_2714;
             int var13 = var7[var9];
@@ -437,7 +437,7 @@ public class class_245 implements class_7 {
          }
 
       } catch (RuntimeException var11) {
-         throw class_223.method_4281(var11, "gh.<init>(" + ')');
+         throw class_223.method_4281(var11);
       }
    }
 
@@ -474,7 +474,7 @@ public class class_245 implements class_7 {
          this.field_2710 = var10001;
          this.field_2712 = this.field_2709 * 117958777;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "gh.r(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -564,7 +564,7 @@ public class class_245 implements class_7 {
 
          return var10000;
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "gh.v(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -588,13 +588,13 @@ public class class_245 implements class_7 {
          }
 
          client.field_1463.field_2372 = 0;
-         if(!client.field_1522 && client.field_1463.method_4083(-973204745) != null) {
+         if(!client.field_1522 && client.field_1463.method_4083() != null) {
             if(var1 >= 1580986367) {
                throw new IllegalStateException();
             }
 
             class_40 var2 = class_112.method_2238(class_266.field_3064, client.field_1463.field_2384, (byte)8);
-            client.field_1463.method_4079(var2, -1944406010);
+            client.field_1463.method_4079(var2);
 
             try {
                client.field_1463.method_4076(-1875758370);
@@ -604,7 +604,7 @@ public class class_245 implements class_7 {
          }
 
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "gh.hg(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 }

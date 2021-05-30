@@ -58,16 +58,16 @@ public class class_151 implements Comparator {
             return var10000;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "bk.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: j (int, int) int
-   public static int method_3205(int var0, int var1) {
+   public static int method_3205(int var0) {
       try {
          return class_267.method_5034(class_255.field_2883[var0]);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "bk.j(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -75,7 +75,7 @@ public class class_151 implements Comparator {
       try {
          return super.equals(var1);
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "bk.equals(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -84,7 +84,7 @@ public class class_151 implements Comparator {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "bk.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -239,7 +239,7 @@ public class class_151 implements Comparator {
          }
 
       } catch (RuntimeException var8) {
-         throw class_223.method_4281(var8, "bk.gl(" + ')');
+         throw class_223.method_4281(var8);
       }
    }
 
@@ -263,7 +263,7 @@ public class class_151 implements Comparator {
 
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "bk.p(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -278,7 +278,7 @@ public class class_151 implements Comparator {
                return var2;
             }
          } else {
-            byte[] var3 = class_81.field_754.method_5381(5, var0, -26460885);
+            byte[] var3 = class_81.field_754.method_5381(5, var0);
             class_81 var10000 = new class_81();
             var2 = var10000;
             if(null != var3) {
@@ -287,14 +287,14 @@ public class class_151 implements Comparator {
                }
 
                class_28 var10001 = new class_28(var3);
-               var2.method_1340(var10001, 1433861399);
+               var2.method_1340(var10001);
             }
 
             class_81.field_756.method_5064(var2, (long)var0);
             return var2;
          }
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "bk.n(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -302,12 +302,12 @@ public class class_151 implements Comparator {
       try {
          return this.method_3204((class_310)var1, (class_310)var2, -1562146243);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "bk.compare(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: ai (byte[], int, int, int) int
-   public static int method_3216(byte[] var0, int var1, int var2, int var3) {
+   public static int method_3216(byte[] var0, int var1, int var2) {
       try {
          int var4 = -1;
 
@@ -318,7 +318,7 @@ public class class_151 implements Comparator {
          var4 = ~var4;
          return var4;
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "bk.ai(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 }

@@ -45,9 +45,9 @@ public class class_184 extends class_181 {
             }
          }
 
-         return this.method_3830(var1, var2, (byte)0);
+         return this.method_3830(var1, var2);
       } catch (RuntimeException var4) {
-         throw class_223.method_4281(var4, "du.v(" + ')');
+         throw class_223.method_4281(var4);
       }
    }
 
@@ -55,7 +55,7 @@ public class class_184 extends class_181 {
       try {
          return this.method_3847((class_339)var1, (class_339)var2, 254646745);
       } catch (RuntimeException var3) {
-         throw class_223.method_4281(var3, "du.compare(" + ')');
+         throw class_223.method_4281(var3);
       }
    }
 
@@ -65,7 +65,7 @@ public class class_184 extends class_181 {
       try {
          this.field_2254 = var1;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "du.<init>(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -75,17 +75,17 @@ public class class_184 extends class_181 {
    }
 
    // $FF: renamed from: v (jv, int) void
-   public static void method_3850(class_306 var0, int var1) {
+   public static void method_3850(class_306 var0) {
       try {
          class_89.field_897 = var0;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "du.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: f (lv, lv) int
    int method_3851(class_339 var1, class_339 var2) {
-      return var1.field_3888 * 1693720149 == 1396273817 * client.field_1413 && 1396273817 * client.field_1413 == var2.field_3888 * 1693720149?(this.field_2254?var1.field_3885 * -1023710905 - -1023710905 * var2.field_3885:var2.field_3885 * -1023710905 - -1023710905 * var1.field_3885):this.method_3830(var1, var2, (byte)0);
+      return var1.field_3888 * 1693720149 == 1396273817 * client.field_1413 && 1396273817 * client.field_1413 == var2.field_3888 * 1693720149?(this.field_2254?var1.field_3885 * -1023710905 - -1023710905 * var2.field_3885:var2.field_3885 * -1023710905 - -1023710905 * var1.field_3885):this.method_3830(var1, var2);
    }
 
    // $FF: renamed from: s (char, byte) boolean
@@ -110,7 +110,7 @@ public class class_184 extends class_181 {
          var10000 = false;
          return var10000;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "du.s(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
@@ -129,12 +129,12 @@ public class class_184 extends class_181 {
             return 0;
          }
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "du.e(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 
    // $FF: renamed from: n (lv, lv) int
    int method_3854(class_339 var1, class_339 var2) {
-      return var1.field_3888 * 1693720149 == 1396273817 * client.field_1413 && 1396273817 * client.field_1413 == var2.field_3888 * 1693720149?(this.field_2254?var1.field_3885 * -1023710905 - -1023710905 * var2.field_3885:var2.field_3885 * -1023710905 - -1023710905 * var1.field_3885):this.method_3830(var1, var2, (byte)0);
+      return var1.field_3888 * 1693720149 == 1396273817 * client.field_1413 && 1396273817 * client.field_1413 == var2.field_3888 * 1693720149?(this.field_2254?var1.field_3885 * -1023710905 - -1023710905 * var2.field_3885:var2.field_3885 * -1023710905 - -1023710905 * var1.field_3885):this.method_3830(var1, var2);
    }
 }

@@ -39,12 +39,12 @@ public class class_292 implements class_14 {
             class_125.method_2286(class_37.field_93[var0], -1, var1, var2, var3, 2063222533);
          }
       } catch (RuntimeException var5) {
-         throw class_223.method_4281(var5, "ja.jw(" + ')');
+         throw class_223.method_4281(var5);
       }
    }
 
    // $FF: renamed from: <init> (int, int, boolean, boolean, boolean) void
-   class_292(int var1, int var2, boolean var3, boolean var4, boolean var5) {
+   class_292(int var1, int var2, boolean var4, boolean var5) {
       super();
       try {
          this.field_3329 = 23546595 * var1;
@@ -52,25 +52,25 @@ public class class_292 implements class_14 {
          this.field_3331 = var4;
          this.field_3332 = var5;
       } catch (RuntimeException var6) {
-         throw class_223.method_4281(var6, "ja.<init>(" + ')');
+         throw class_223.method_4281(var6);
       }
    }
 
    // $FF: renamed from: <clinit> () void
    static {
-      class_292 var10000 = new class_292(0, -1, true, false, true);
+      class_292 var10000 = new class_292(0, -1, false, true);
       field_3326 = var10000;
-      var10000 = new class_292(1, 0, true, true, true);
+      var10000 = new class_292(1, 0, true, true);
       field_3323 = var10000;
-      var10000 = new class_292(2, 1, true, true, false);
+      var10000 = new class_292(2, 1, true, false);
       field_3324 = var10000;
-      var10000 = new class_292(3, 2, false, false, true);
+      var10000 = new class_292(3, 2, false, true);
       field_3325 = var10000;
-      var10000 = new class_292(4, 3, false, false, true);
+      var10000 = new class_292(4, 3, false, true);
       field_3327 = var10000;
-      var10000 = new class_292(5, 10, false, false, true);
+      var10000 = new class_292(5, 10, false, true);
       field_3322 = var10000;
-      var10000 = new class_292(6, 22, false, false, true);
+      var10000 = new class_292(6, 22, false, true);
       field_3328 = var10000;
    }
 
@@ -85,11 +85,11 @@ public class class_292 implements class_14 {
    }
 
    // $FF: renamed from: v (int) int
-   public int method_50(int var1) {
+   public int method_50() {
       try {
          return this.field_3329 * -614053173;
       } catch (RuntimeException var2) {
-         throw class_223.method_4281(var2, "ja.v(" + ')');
+         throw class_223.method_4281(var2);
       }
    }
 

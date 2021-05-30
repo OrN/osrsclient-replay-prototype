@@ -21,7 +21,7 @@ public class class_173 {
       super();
       try {
       } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1, "cp.<init>(" + ')');
+         throw class_223.method_4281(var1);
       }
    }
 
@@ -56,7 +56,7 @@ public class class_173 {
 
          class_87.method_1535(var0, var1, var2, var3, var4, var5, -1287867325);
       } catch (RuntimeException var19) {
-         throw class_223.method_4281(var19, "cp.kg(" + ')');
+         throw class_223.method_4281(var19);
       }
    }
 }
