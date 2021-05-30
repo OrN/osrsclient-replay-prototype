@@ -60,9 +60,6 @@ public class class_106 extends class_104 {
    int[] field_1241;
 
 
-   // $FF: renamed from: ct (int, int, int) void
-   void method_1961() {}
-
    // $FF: renamed from: l (int) void
    public synchronized void method_1962() {
       try {
@@ -533,9 +530,6 @@ public class class_106 extends class_104 {
          throw class_223.method_4281(var4);
       }
    }
-
-   // $FF: renamed from: ci (int, int, int) void
-   void method_1980() {}
 
    // $FF: renamed from: ax (int) void
    void method_1982(int var1) {
@@ -1702,9 +1696,6 @@ public class class_106 extends class_104 {
       this.field_1240.method_1933(var1);
    }
 
-   // $FF: renamed from: cp (int, int, int) void
-   void method_2005() {}
-
    // $FF: renamed from: j () bm
    protected synchronized class_104 method_1931() {
       try {
@@ -1748,91 +1739,6 @@ public class class_106 extends class_104 {
       this.field_1240.method_1943(var1, var2, var3);
    }
 
-   // $FF: renamed from: by (int, int, int) void
-   void method_2020(int var1, int var2) {
-      class_36 var4 = this.field_1227[var1][var2];
-      if(var4 != null) {
-         this.field_1227[var1][var2] = null;
-         if(0 != (this.field_1226[var1] & 2)) {
-            for(class_36 var5 = (class_36)this.field_1240.field_1210.method_5944(); null != var5; var5 = (class_36)this.field_1240.field_1210.method_5972()) {
-               if(-1025207361 * var5.field_81 == var4.field_81 * -2042570608 && var5.field_71 * 1951740649 < 0 && var4 != var5) {
-                  var4.field_71 = 0;
-                  break;
-               }
-            }
-         } else {
-            var4.field_71 = 0;
-         }
-
-      }
-   }
-
-   // $FF: renamed from: bc (int, int, int) void
-   void method_2021(int var1, int var2) {
-      class_36 var4 = this.field_1227[var1][var2];
-      if(var4 != null) {
-         this.field_1227[var1][var2] = null;
-         if(0 != (this.field_1226[var1] & 2)) {
-            for(class_36 var5 = (class_36)this.field_1240.field_1210.method_5944(); null != var5; var5 = (class_36)this.field_1240.field_1210.method_5972()) {
-               if(-1025207361 * var5.field_81 == var4.field_81 * -1025207361 && var5.field_71 * 1951740649 < 0 && var4 != var5) {
-                  var4.field_71 = 0;
-                  break;
-               }
-            }
-         } else {
-            var4.field_71 = 0;
-         }
-
-      }
-   }
-
-   // $FF: renamed from: cd (int, int, int) void
-   void method_2022(int var1, int var2) {
-      class_36 var4 = this.field_1227[var1][var2];
-      if(var4 != null) {
-         this.field_1227[var1][var2] = null;
-         if(0 != (this.field_1226[var1] & 2)) {
-            for(class_36 var5 = (class_36)this.field_1240.field_1210.method_5944(); null != var5; var5 = (class_36)this.field_1240.field_1210.method_5972()) {
-               if(-401012906 * var5.field_81 == var4.field_81 * -1025207361 && var5.field_71 * 1951740649 < 0 && var4 != var5) {
-                  var4.field_71 = 0;
-                  break;
-               }
-            }
-         } else {
-            var4.field_71 = 0;
-         }
-
-      }
-   }
-
-   // $FF: renamed from: cm (int, int, int) void
-   void method_2023(int var1, int var2) {
-      class_36 var4 = this.field_1227[var1][var2];
-      if(var4 != null) {
-         this.field_1227[var1][var2] = null;
-         if(0 != (this.field_1226[var1] & 2)) {
-            for(class_36 var5 = (class_36)this.field_1240.field_1210.method_5944(); null != var5; var5 = (class_36)this.field_1240.field_1210.method_5972()) {
-               if(-1025207361 * var5.field_81 == var4.field_81 * -1025207361 && var5.field_71 * 1951740649 < 0 && var4 != var5) {
-                  var4.field_71 = 0;
-                  break;
-               }
-            }
-         } else {
-            var4.field_71 = 0;
-         }
-
-      }
-   }
-
-   // $FF: renamed from: cv (int, int, int) void
-   void method_2024() {}
-
-   // $FF: renamed from: cr (int, int) void
-   void method_2025() {}
-
-   // $FF: renamed from: cq (int, int, int) void
-   void method_2028() {}
-
    // $FF: renamed from: b () int
    protected synchronized int method_1935() {
       try {
@@ -1841,9 +1747,6 @@ public class class_106 extends class_104 {
          throw class_223.method_4281(var1);
       }
    }
-
-   // $FF: renamed from: cf (int, int) void
-   void method_2033() {}
 
    // $FF: renamed from: i () bm
    protected synchronized class_104 method_1937() {
