@@ -121,7 +121,7 @@ public class class_154 implements Runnable {
                }
 
                class_28 var10001 = new class_28(var3);
-               var2.method_1369(var10001, var0, -1052896488);
+               var2.method_1369(var10001, -1052896488);
             }
 
             var2.method_1359(-593078672);

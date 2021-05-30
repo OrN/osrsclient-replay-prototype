@@ -2929,7 +2929,7 @@ public abstract class class_306 {
             if(null == var7) {
                var10 = null;
             } else {
-               class_69 var10000 = new class_69(var7, class_223.field_2529, class_284.field_3260, class_403.field_4278, class_318.field_3787, class_192.field_2300, class_403.field_4279);
+               class_69 var10000 = new class_69(var7, class_223.field_2529, class_284.field_3260, class_403.field_4278, class_318.field_3787, class_403.field_4279);
                class_69 var8 = var10000;
                class_192.method_3958();
                var10 = var8;

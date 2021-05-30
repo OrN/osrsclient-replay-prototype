@@ -405,7 +405,7 @@ public class class_76 extends class_59 {
                if(null == var8) {
                   var10 = null;
                } else {
-                  class_69 var10000 = new class_69(var8, class_223.field_2529, class_284.field_3260, class_403.field_4278, class_318.field_3787, class_192.field_2300, class_403.field_4279);
+                  class_69 var10000 = new class_69(var8, class_223.field_2529, class_284.field_3260, class_403.field_4278, class_318.field_3787, class_403.field_4279);
                   class_69 var9 = var10000;
                   class_192.method_3958();
                   var10 = var9;
@@ -474,7 +474,7 @@ public class class_76 extends class_59 {
 
                      var12 = null;
                   } else {
-                     class_69 var10000 = new class_69(var9, class_223.field_2529, class_284.field_3260, class_403.field_4278, class_318.field_3787, class_192.field_2300, class_403.field_4279);
+                     class_69 var10000 = new class_69(var9, class_223.field_2529, class_284.field_3260, class_403.field_4278, class_318.field_3787, class_403.field_4279);
                      class_69 var10 = var10000;
                      class_192.method_3958();
                      var12 = var10;
@@ -1253,7 +1253,7 @@ public class class_76 extends class_59 {
                if(null == var8) {
                   var10 = null;
                } else {
-                  class_69 var10000 = new class_69(var8, class_223.field_2529, class_284.field_3260, class_403.field_4278, class_318.field_3787, class_192.field_2300, class_403.field_4279);
+                  class_69 var10000 = new class_69(var8, class_223.field_2529, class_284.field_3260, class_403.field_4278, class_318.field_3787, class_403.field_4279);
                   class_69 var9 = var10000;
                   class_192.method_3958();
                   var10 = var9;

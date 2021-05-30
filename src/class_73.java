@@ -33,7 +33,7 @@ public class class_73 extends class_59 {
          var1 = var10000;
          if(var2 != null) {
             class_28 var10001 = new class_28(var2);
-            var1.method_1095(var10001, var0, (byte)101);
+            var1.method_1095(var10001, (byte)101);
          }
 
          var1.method_1109();
@@ -48,7 +48,7 @@ public class class_73 extends class_59 {
    }
 
    // $FF: renamed from: y (nd, int, byte) void
-   void method_1095(class_28 var1, int var2, byte var3) {
+   void method_1095(class_28 var1, byte var3) {
       try {
          while(true) {
             int var4 = var1.method_130();
@@ -236,7 +236,7 @@ public class class_73 extends class_59 {
    }
 
    // $FF: renamed from: x (nd, int) void
-   void method_1101(class_28 var1, int var2) {
+   void method_1101(class_28 var1) {
       while(true) {
          int var3 = var1.method_130();
          if(0 == var3) {
@@ -263,7 +263,7 @@ public class class_73 extends class_59 {
          var1 = var10000;
          if(var2 != null) {
             class_28 var10001 = new class_28(var2);
-            var1.method_1095(var10001, var0, (byte)68);
+            var1.method_1095(var10001, (byte)68);
          }
 
          var1.method_1109();
@@ -283,7 +283,7 @@ public class class_73 extends class_59 {
          var1 = var10000;
          if(var2 != null) {
             class_28 var10001 = new class_28(var2);
-            var1.method_1095(var10001, var0, (byte)10);
+            var1.method_1095(var10001, (byte)10);
          }
 
          var1.method_1109();
@@ -380,7 +380,7 @@ public class class_73 extends class_59 {
          var1 = var10000;
          if(var2 != null) {
             class_28 var10001 = new class_28(var2);
-            var1.method_1095(var10001, var0, (byte)26);
+            var1.method_1095(var10001, (byte)26);
          }
 
          var1.method_1109();
@@ -427,7 +427,7 @@ public class class_73 extends class_59 {
          var1 = var10000;
          if(var2 != null) {
             class_28 var10001 = new class_28(var2);
-            var1.method_1095(var10001, var0, (byte)6);
+            var1.method_1095(var10001, (byte)6);
          }
 
          var1.method_1109();
@@ -455,7 +455,7 @@ public class class_73 extends class_59 {
    }
 
    // $FF: renamed from: z (nd, int) void
-   void method_1114(class_28 var1, int var2) {
+   void method_1114(class_28 var1) {
       while(true) {
          int var3 = var1.method_130();
          if(0 == var3) {

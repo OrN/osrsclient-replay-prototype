@@ -1957,7 +1957,7 @@ public class class_177 {
    }
 
    // $FF: renamed from: ap (af) void
-   static void method_3781(GameApplet var0) {
+   static void method_3781() {
       if(field_2202) {
          class_52.method_573((byte)24);
       } else {
@@ -2661,7 +2661,7 @@ public class class_177 {
    }
 
    // $FF: renamed from: ae (af) void
-   static void method_3792(GameApplet var0) {
+   static void method_3792() {
       if(field_2202) {
          class_52.method_573((byte)-28);
       } else {

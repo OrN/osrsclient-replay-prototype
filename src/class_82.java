@@ -237,7 +237,7 @@ public class class_82 extends class_59 {
          var1 = var10000;
          if(null != var2) {
             class_28 var10001 = new class_28(var2);
-            var1.method_1369(var10001, var0, -1052896488);
+            var1.method_1369(var10001, -1052896488);
          }
 
          var1.method_1359(-593078672);
@@ -271,7 +271,7 @@ public class class_82 extends class_59 {
    }
 
    // $FF: renamed from: d (nd, int) void
-   void method_1367(class_28 var1, int var2) {
+   void method_1367(class_28 var1) {
       while(true) {
          int var3 = var1.method_130();
          if(var3 == 0) {
@@ -299,7 +299,7 @@ public class class_82 extends class_59 {
    }
 
    // $FF: renamed from: f (nd, int, int) void
-   void method_1369(class_28 var1, int var2, int var3) {
+   void method_1369(class_28 var1, int var3) {
       try {
          while(true) {
             int var4 = var1.method_130();

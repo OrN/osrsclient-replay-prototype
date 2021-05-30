@@ -2777,7 +2777,7 @@ public final class class_221 {
    }
 
    // $FF: renamed from: j (af, byte) void
-   static void method_4272(GameApplet var0, byte var1) {
+   static void method_4272(byte var1) {
       try {
          if(class_177.field_2202) {
             if(var1 == 1) {

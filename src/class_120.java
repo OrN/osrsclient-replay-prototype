@@ -84,7 +84,7 @@ public class class_120 extends class_111 {
                }
 
                class_28 var10001 = new class_28(var3);
-               var2.method_1095(var10001, var0, (byte)44);
+               var2.method_1095(var10001, (byte)44);
             }
 
             var2.method_1109();

@@ -147,7 +147,7 @@ public class class_403 {
          if(null == var6) {
             var8 = null;
          } else {
-            class_69 var10000 = new class_69(var6, class_223.field_2529, class_284.field_3260, field_4278, class_318.field_3787, class_192.field_2300, field_4279);
+            class_69 var10000 = new class_69(var6, class_223.field_2529, class_284.field_3260, field_4278, class_318.field_3787, field_4279);
             class_69 var7 = var10000;
             class_192.method_3958();
             var8 = var7;
@@ -183,7 +183,7 @@ public class class_403 {
          if(null == var6) {
             var8 = null;
          } else {
-            class_69 var10000 = new class_69(var6, class_223.field_2529, class_284.field_3260, field_4278, class_318.field_3787, class_192.field_2300, field_4279);
+            class_69 var10000 = new class_69(var6, class_223.field_2529, class_284.field_3260, field_4278, class_318.field_3787, field_4279);
             class_69 var7 = var10000;
             class_192.method_3958();
             var8 = var7;
@@ -212,7 +212,7 @@ public class class_403 {
          if(null == var6) {
             var8 = null;
          } else {
-            class_69 var10000 = new class_69(var6, class_223.field_2529, class_284.field_3260, field_4278, class_318.field_3787, class_192.field_2300, field_4279);
+            class_69 var10000 = new class_69(var6, class_223.field_2529, class_284.field_3260, field_4278, class_318.field_3787, field_4279);
             class_69 var7 = var10000;
             class_192.method_3958();
             var8 = var7;

@@ -10,7 +10,7 @@ public class class_368 extends class_367 {
    void method_6572() {}
 
    // $FF: renamed from: <init> (int) void
-   public class_368(int var1) {
+   public class_368() {
       super();
       try {
       } catch (RuntimeException var2) {

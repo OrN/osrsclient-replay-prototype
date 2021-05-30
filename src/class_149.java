@@ -1774,7 +1774,7 @@ public class class_149 {
                                     var37 = false;
                                  }
 
-                                 var15 = class_345.method_6168(var28, var5, var37, 369567526);
+                                 var15 = class_345.method_6168(var28, var37, 369567526);
                                  switch(var15) {
                                  case 0:
                                     var23 = false;

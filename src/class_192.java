@@ -391,19 +391,19 @@ public class class_192 extends class_191 {
                      class_177.field_2190 = 1737731022;
                   }
                } else {
-                  class_124.method_2278(class_314.field_3783, "Animations");
-                  class_124.method_2278(class_125.field_1360, "Skeletons");
-                  class_124.method_2278(class_137.field_1762, "Sound FX");
-                  class_124.method_2278(class_286.field_3275, "Maps");
-                  class_124.method_2278(class_194.field_2307, "Music Tracks");
-                  class_124.method_2278(class_148.field_1871, "Models");
-                  class_124.method_2278(class_311.field_3749, "Sprites");
-                  class_124.method_2278(class_221.field_2516, "Music Jingles");
-                  class_124.method_2278(class_202.field_2368, "Music Samples");
-                  class_124.method_2278(class_341.field_3894, "Music Patches");
-                  class_124.method_2278(class_229.field_2573, "World Map");
-                  class_124.method_2278(class_373.field_4123, "World Map Geography");
-                  class_124.method_2278(class_54.field_406, "World Map Ground");
+                  class_124.method_2278(class_314.field_3783);
+                  class_124.method_2278(class_125.field_1360);
+                  class_124.method_2278(class_137.field_1762);
+                  class_124.method_2278(class_286.field_3275);
+                  class_124.method_2278(class_194.field_2307);
+                  class_124.method_2278(class_148.field_1871);
+                  class_124.method_2278(class_311.field_3749);
+                  class_124.method_2278(class_221.field_2516);
+                  class_124.method_2278(class_202.field_2368);
+                  class_124.method_2278(class_341.field_3894);
+                  class_124.method_2278(class_229.field_2573);
+                  class_124.method_2278(class_373.field_4123);
+                  class_124.method_2278(class_54.field_406);
                   class_360 var47 = new class_360();
                   class_201.field_2360 = var47;
                   class_201.field_2360.method_6293(class_123.field_1345);
@@ -642,9 +642,9 @@ public class class_192 extends class_191 {
                      class_203.method_4078(class_123.field_1348);
                      class_307 var18 = class_123.field_1348;
                      class_86.field_796 = var18;
-                     class_259 var40 = new class_259(class_154.field_1933, 54, class_387.field_4226, class_123.field_1348);
+                     class_259 var40 = new class_259(54, class_123.field_1348);
                      class_151.field_1912 = var40;
-                     var40 = new class_259(class_154.field_1933, 47, class_387.field_4226, class_123.field_1348);
+                     var40 = new class_259(47, class_123.field_1348);
                      class_255.field_2887 = var40;
                      class_190 var41 = new class_190();
                      class_151.field_1913 = var41;

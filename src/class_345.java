@@ -246,7 +246,7 @@ public class class_345 extends class_343 {
    }
 
    // $FF: renamed from: f (int, cf, boolean, int) int
-   static int method_6168(int var0, class_90 var1, boolean var2, int var3) {
+   static int method_6168(int var0, boolean var2, int var3) {
       try {
          if(var0 < 1000) {
             if(var3 <= -1598725575) {

@@ -12,7 +12,7 @@ public abstract class class_258 extends class_257 implements class_21 {
    protected abstract class_367 method_4950(int var1);
 
    // $FF: renamed from: <init> (jd, kk, int) void
-   protected class_258(class_295 var1, class_324 var2, int var3) {
+   protected class_258(int var3) {
       super(var3);
       try {
       } catch (RuntimeException var4) {

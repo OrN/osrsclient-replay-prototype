@@ -1674,7 +1674,7 @@ public final class client extends GameApplet implements class_16 {
                      throw new IllegalStateException();
                   }
 
-                  class_221.method_4272(this, (byte)-51);
+                  class_221.method_4272((byte)-51);
                   class_192.method_3960((byte)30);
                   field_1383.method_3950(-1887937791);
 
@@ -1704,7 +1704,7 @@ public final class client extends GameApplet implements class_16 {
 
                         if(11 != field_1421 * -888167097) {
                            if(20 == -888167097 * field_1421) {
-                              class_221.method_4272(this, (byte)11);
+                              class_221.method_4272((byte)11);
                               this.method_2793(-607645058);
                            } else if(25 == field_1421 * -888167097) {
                               if(var1 <= 0) {
@@ -1721,7 +1721,7 @@ public final class client extends GameApplet implements class_16 {
                         }
                      }
 
-                     class_221.method_4272(this, (byte)53);
+                     class_221.method_4272((byte)53);
                   }
                }
 
@@ -8797,7 +8797,7 @@ public final class client extends GameApplet implements class_16 {
 
                class_299.field_3366 = 0;
             } else if(-888167097 * field_1421 == 5) {
-               class_221.method_4272(this, (byte)-46);
+               class_221.method_4272((byte)-46);
                class_192.method_3960((byte)-17);
                field_1383.method_3950(-1887937791);
 
@@ -8812,13 +8812,13 @@ public final class client extends GameApplet implements class_16 {
                class_299.field_3366 = 0;
             } else if(-888167097 * field_1421 != 10 && 11 != field_1421 * -888167097) {
                if(20 == -888167097 * field_1421) {
-                  class_221.method_4272(this, (byte)-121);
+                  class_221.method_4272((byte)-121);
                   this.method_2793(-607645058);
                } else if(25 == field_1421 * -888167097) {
                   class_231.method_4427((byte)0);
                }
             } else {
-               class_221.method_4272(this, (byte)-61);
+               class_221.method_4272((byte)-61);
             }
 
             if(-888167097 * field_1421 == 30) {
@@ -11095,7 +11095,7 @@ public final class client extends GameApplet implements class_16 {
    }
 
    // $FF: renamed from: mp (jp, java.lang.String) void
-   static void method_2484(class_307 var0, String var1) {
+   static void method_2484(class_307 var0) {
       class_169 var10000 = new class_169(var0);
       class_169 var2 = var10000;
       field_1690.add(var2);
@@ -11103,7 +11103,7 @@ public final class client extends GameApplet implements class_16 {
    }
 
    // $FF: renamed from: mz (jp, java.lang.String) void
-   static void method_2485(class_307 var0, String var1) {
+   static void method_2485(class_307 var0) {
       class_169 var10000 = new class_169(var0);
       class_169 var2 = var10000;
       field_1690.add(var2);
@@ -11395,9 +11395,9 @@ public final class client extends GameApplet implements class_16 {
                      class_203.method_4078(class_123.field_1348);
                      class_307 var17 = class_123.field_1348;
                      class_86.field_796 = var17;
-                     class_259 var39 = new class_259(class_154.field_1933, 54, class_387.field_4226, class_123.field_1348);
+                     class_259 var39 = new class_259(54, class_123.field_1348);
                      class_151.field_1912 = var39;
-                     var39 = new class_259(class_154.field_1933, 47, class_387.field_4226, class_123.field_1348);
+                     var39 = new class_259(47, class_123.field_1348);
                      class_255.field_2887 = var39;
                      class_190 var40 = new class_190();
                      class_151.field_1913 = var40;
@@ -11602,19 +11602,19 @@ public final class client extends GameApplet implements class_16 {
 
             class_177.field_2190 = 1737731022;
          } else {
-            class_124.method_2278(class_314.field_3783, "Animations");
-            class_124.method_2278(class_125.field_1360, "Skeletons");
-            class_124.method_2278(class_137.field_1762, "Sound FX");
-            class_124.method_2278(class_286.field_3275, "Maps");
-            class_124.method_2278(class_194.field_2307, "Music Tracks");
-            class_124.method_2278(class_148.field_1871, "Models");
-            class_124.method_2278(class_311.field_3749, "Sprites");
-            class_124.method_2278(class_221.field_2516, "Music Jingles");
-            class_124.method_2278(class_202.field_2368, "Music Samples");
-            class_124.method_2278(class_341.field_3894, "Music Patches");
-            class_124.method_2278(class_229.field_2573, "World Map");
-            class_124.method_2278(class_373.field_4123, "World Map Geography");
-            class_124.method_2278(class_54.field_406, "World Map Ground");
+            class_124.method_2278(class_314.field_3783);
+            class_124.method_2278(class_125.field_1360);
+            class_124.method_2278(class_137.field_1762);
+            class_124.method_2278(class_286.field_3275);
+            class_124.method_2278(class_194.field_2307);
+            class_124.method_2278(class_148.field_1871);
+            class_124.method_2278(class_311.field_3749);
+            class_124.method_2278(class_221.field_2516);
+            class_124.method_2278(class_202.field_2368);
+            class_124.method_2278(class_341.field_3894);
+            class_124.method_2278(class_229.field_2573);
+            class_124.method_2278(class_373.field_4123);
+            class_124.method_2278(class_54.field_406);
             class_360 var10000 = new class_360();
             class_201.field_2360 = var10000;
             class_201.field_2360.method_6293(class_123.field_1345);
@@ -11839,9 +11839,9 @@ public final class client extends GameApplet implements class_16 {
                      class_203.method_4078(class_123.field_1348);
                      class_307 var17 = class_123.field_1348;
                      class_86.field_796 = var17;
-                     class_259 var39 = new class_259(class_154.field_1933, -1381508437, class_387.field_4226, class_123.field_1348);
+                     class_259 var39 = new class_259(-1381508437, class_123.field_1348);
                      class_151.field_1912 = var39;
-                     var39 = new class_259(class_154.field_1933, -837164440, class_387.field_4226, class_123.field_1348);
+                     var39 = new class_259(-837164440, class_123.field_1348);
                      class_255.field_2887 = var39;
                      class_190 var40 = new class_190();
                      class_151.field_1913 = var40;
@@ -12046,19 +12046,19 @@ public final class client extends GameApplet implements class_16 {
 
             class_177.field_2190 = 1737731022;
          } else {
-            class_124.method_2278(class_314.field_3783, "Animations");
-            class_124.method_2278(class_125.field_1360, "Skeletons");
-            class_124.method_2278(class_137.field_1762, "Sound FX");
-            class_124.method_2278(class_286.field_3275, "Maps");
-            class_124.method_2278(class_194.field_2307, "Music Tracks");
-            class_124.method_2278(class_148.field_1871, "Models");
-            class_124.method_2278(class_311.field_3749, "Sprites");
-            class_124.method_2278(class_221.field_2516, "Music Jingles");
-            class_124.method_2278(class_202.field_2368, "Music Samples");
-            class_124.method_2278(class_341.field_3894, "Music Patches");
-            class_124.method_2278(class_229.field_2573, "World Map");
-            class_124.method_2278(class_373.field_4123, "World Map Geography");
-            class_124.method_2278(class_54.field_406, "World Map Ground");
+            class_124.method_2278(class_314.field_3783);
+            class_124.method_2278(class_125.field_1360);
+            class_124.method_2278(class_137.field_1762);
+            class_124.method_2278(class_286.field_3275);
+            class_124.method_2278(class_194.field_2307);
+            class_124.method_2278(class_148.field_1871);
+            class_124.method_2278(class_311.field_3749);
+            class_124.method_2278(class_221.field_2516);
+            class_124.method_2278(class_202.field_2368);
+            class_124.method_2278(class_341.field_3894);
+            class_124.method_2278(class_229.field_2573);
+            class_124.method_2278(class_373.field_4123);
+            class_124.method_2278(class_54.field_406);
             class_360 var10000 = new class_360();
             class_201.field_2360 = var10000;
             class_201.field_2360.method_6293(class_123.field_1345);
@@ -16884,7 +16884,7 @@ public final class client extends GameApplet implements class_16 {
    }
 
    // $FF: renamed from: mf (jp, java.lang.String) void
-   static void method_2548(class_307 var0, String var1) {
+   static void method_2548(class_307 var0) {
       class_169 var10000 = new class_169(var0);
       class_169 var2 = var10000;
       field_1690.add(var2);
@@ -23411,7 +23411,7 @@ public final class client extends GameApplet implements class_16 {
 
                class_299.field_3366 = 0;
             } else if(-888167097 * field_1421 == 5) {
-               class_221.method_4272(this, (byte)18);
+               class_221.method_4272((byte)18);
                class_192.method_3960((byte)24);
                field_1383.method_3950(-1887937791);
 
@@ -23426,13 +23426,13 @@ public final class client extends GameApplet implements class_16 {
                class_299.field_3366 = 0;
             } else if(-888167097 * field_1421 != 10 && 11 != field_1421 * -133787639) {
                if(20 == -888167097 * field_1421) {
-                  class_221.method_4272(this, (byte)31);
+                  class_221.method_4272((byte)31);
                   this.method_2793(-607645058);
                } else if(25 == field_1421 * -1440706066) {
                   class_231.method_4427((byte)0);
                }
             } else {
-               class_221.method_4272(this, (byte)11);
+               class_221.method_4272((byte)11);
             }
 
             if(-888167097 * field_1421 == 30) {
