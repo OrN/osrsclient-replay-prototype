@@ -156,9 +156,9 @@ public class class_361 {
    }
 
    // $FF: renamed from: <init> (jv) void
-   void method_6304(class_306 var1) {
+   class_361(class_306 var1) {
+      super();
       try {
-         super();
          this.field_4012 = 0;
          this.field_4010 = false;
          this.field_4011 = var1;

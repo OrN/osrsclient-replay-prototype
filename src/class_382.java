@@ -16,8 +16,7 @@ public final class class_382 {
                   throw new IllegalStateException();
                }
 
-               class_45 var10000 = new class_45;
-               var10000.method_105();
+               class_45 var10000 = new class_45();
                class_45 var7 = var10000;
                var7.field_332 = var6;
                var7.field_335 = 352588625 * var0;
@@ -163,9 +162,9 @@ public final class class_382 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_6683() throws Throwable {
+   class_382() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "nl.<init>(" + ')');

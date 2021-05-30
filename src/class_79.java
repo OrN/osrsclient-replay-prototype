@@ -54,9 +54,9 @@ public class class_79 extends class_59 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_105() {
+   class_79() {
+      super();
       try {
-         super.method_105();
          this.field_689 = class_305.field_3410;
          this.field_693 = 0;
       } catch (RuntimeException var1) {
@@ -100,9 +100,8 @@ public class class_79 extends class_59 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_1243() {
-      class_272 var10000 = new class_272;
-      var10000.method_5063(64);
+   static {
+      class_272 var10000 = new class_272(64);
       field_688 = var10000;
    }
 

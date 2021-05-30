@@ -69,7 +69,7 @@ public class class_177 {
    // $FF: renamed from: bj int
    static int field_2208;
    // $FF: renamed from: t java.lang.String
-   static String field_2209;
+   static String loadProgressText;
    // $FF: renamed from: bo long
    static long field_2210;
    // $FF: renamed from: bl java.lang.String
@@ -112,11 +112,11 @@ public class class_177 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_3752() {
+   static {
       field_2183 = 0;
       field_2189 = -1366237486 + field_2183 * 322976471;
       field_2190 = 579243674;
-      field_2209 = "";
+      loadProgressText = "";
       field_2192 = 174778505;
       field_2199 = 452438349;
       field_2194 = 0;
@@ -137,7 +137,7 @@ public class class_177 {
       field_2195 = 0;
       field_2193 = 0;
       new DecimalFormat("##0.00");
-      (new class_198).method_4019();
+      new class_198();
       field_2210 = 5255609284130545837L;
       field_2182 = -5452267809792871095L;
    }
@@ -153,7 +153,7 @@ public class class_177 {
    }
 
    // $FF: renamed from: az (af) void
-   static void method_3755(class_127 var0) {
+   static void method_3755(GameApplet var0) {
       while(class_178.method_3800(-1385459044)) {
          if(644081785 * class_80.field_752 == 13) {
             field_2202 = false;
@@ -340,8 +340,7 @@ public class class_177 {
             var5.write("data1=req");
             var5.flush();
             InputStream var6 = var4.getInputStream();
-            var10000 = new class_28;
-            var10000.method_178(new byte[149973148]);
+            var10000 = new class_28(new byte[149973148]);
             class_28 var7 = var10000;
 
             while(true) {
@@ -369,11 +368,9 @@ public class class_177 {
          } else {
             String var27 = field_2200;
             Random var28 = new Random();
-            var10000 = new class_28;
-            var10000.method_160(-2071923665);
+            var10000 = new class_28(-2071923665);
             class_28 var30 = var10000;
-            var10000 = new class_28;
-            var10000.method_160(128);
+            var10000 = new class_28(128);
             class_28 var9 = var10000;
             int[] var10 = new int[]{var28.nextInt(), var28.nextInt(), (int)(var1 >> 32), (int)var1};
             var30.method_210(10, 303066737);
@@ -434,14 +431,12 @@ public class class_177 {
                var11 += 8 - var11 % 8;
             }
 
-            var10000 = new class_28;
-            var10000.method_160(var11);
+            var10000 = new class_28(var11);
             class_28 var31 = var10000;
             var31.method_120(var27, -427478981);
             var31.field_15 = var11 * 1142895679;
             var31.method_232(var10, -1937738349);
-            var10000 = new class_28;
-            var10000.method_160(464565865 * var31.field_15 + 5 + 914724747 * var30.field_15 + -1319323502 * var9.field_15);
+            var10000 = new class_28(464565865 * var31.field_15 + 5 + 914724747 * var30.field_15 + -1319323502 * var9.field_15);
             class_28 var32 = var10000;
             var32.method_210(2, 303066737);
             var32.method_210(var30.field_15 * 1234096125, 303066737);
@@ -486,8 +481,7 @@ public class class_177 {
                var35.write("data2=" + class_73.method_1117(var16, 389570702) + "&dest=" + class_73.method_1117("passwordchoice.ws", -1037831297));
                var35.flush();
                InputStream var36 = var34.getInputStream();
-               var10000 = new class_28;
-               var10000.method_178(new byte[-1343336349]);
+               var10000 = new class_28(new byte[-1343336349]);
                var32 = var10000;
 
                while(true) {
@@ -606,8 +600,7 @@ public class class_177 {
             var5.write("data1=req");
             var5.flush();
             InputStream var6 = var4.getInputStream();
-            var10000 = new class_28;
-            var10000.method_178(new byte[1529586592]);
+            var10000 = new class_28(new byte[1529586592]);
             class_28 var7 = var10000;
 
             while(true) {
@@ -635,11 +628,9 @@ public class class_177 {
          } else {
             String var27 = field_2200;
             Random var28 = new Random();
-            var10000 = new class_28;
-            var10000.method_160(-2105588848);
+            var10000 = new class_28(-2105588848);
             class_28 var30 = var10000;
-            var10000 = new class_28;
-            var10000.method_160(-1195749798);
+            var10000 = new class_28(-1195749798);
             class_28 var9 = var10000;
             int[] var10 = new int[]{var28.nextInt(), var28.nextInt(), (int)(var1 >> 1498519647), (int)var1};
             var30.method_210(10, 303066737);
@@ -700,14 +691,12 @@ public class class_177 {
                var11 += 8 - var11 % 8;
             }
 
-            var10000 = new class_28;
-            var10000.method_160(var11);
+            var10000 = new class_28(var11);
             class_28 var31 = var10000;
             var31.method_120(var27, -427478981);
             var31.field_15 = var11 * -1025691571;
             var31.method_232(var10, -1937738349);
-            var10000 = new class_28;
-            var10000.method_160(-442398587 * var31.field_15 + 5 + 1656954662 * var30.field_15 + -442398587 * var9.field_15);
+            var10000 = new class_28(-442398587 * var31.field_15 + 5 + 1656954662 * var30.field_15 + -442398587 * var9.field_15);
             class_28 var32 = var10000;
             var32.method_210(2, 303066737);
             var32.method_210(var30.field_15 * -442398587, 303066737);
@@ -752,8 +741,7 @@ public class class_177 {
                var35.write("data2=" + class_73.method_1117(var16, 432727850) + "&dest=" + class_73.method_1117("passwordchoice.ws", 803785593));
                var35.flush();
                InputStream var36 = var34.getInputStream();
-               var10000 = new class_28;
-               var10000.method_178(new byte[1288222521]);
+               var10000 = new class_28(new byte[1288222521]);
                var32 = var10000;
 
                while(true) {
@@ -827,9 +815,9 @@ public class class_177 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_3768() throws Throwable {
+   class_177() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "ct.<init>(" + ')');
@@ -843,7 +831,7 @@ public class class_177 {
    }
 
    // $FF: renamed from: av (af) void
-   static void method_3770(class_127 var0) {
+   static void method_3770(GameApplet var0) {
       while(class_178.method_3800(-1385459044)) {
          if(1062299005 * class_80.field_752 == 13) {
             field_2202 = false;
@@ -1209,7 +1197,7 @@ public class class_177 {
             class_65.method_670(180 + field_2189 * 1762296954 - 151, 1 + var4, 292087805, -1452269783, 0);
             class_65.method_681(field_2189 * -953097817 + 180 - -1409741681, 2 + var4, 308328271 * field_2190, 30, -475942682);
             class_65.method_681(field_2190 * 1837684646 + (180 + 2130552221 * field_2189 - 150), 2 + var4, -1157422931 - field_2190 * -318357612, 30, 0);
-            var0.method_872(field_2209, field_2189 * -2113928640 + 968522202, 78336766 - var3, 16777215, -1);
+            var0.method_872(loadProgressText, field_2189 * -2113928640 + 968522202, 78336766 - var3, 16777215, -1);
          }
 
          String var5;
@@ -1333,11 +1321,9 @@ public class class_177 {
                   class_105.field_1209 = class_305.field_3663;
                }
 
-               class_351 var10000 = new class_351;
-               var10000.method_6208(1107321627 * class_204.field_2391, var23, var1.method_885(class_105.field_1209), 11);
+               class_351 var10000 = new class_351(1107321627 * class_204.field_2391, var23, var1.method_885(class_105.field_1209), 11);
                class_96.field_1062 = var10000;
-               var10000 = new class_351;
-               var10000.method_6208(2097206533 * class_204.field_2391, var23, var1.method_885(class_305.field_3664), 11);
+               var10000 = new class_351(2097206533 * class_204.field_2391, var23, var1.method_885(class_305.field_3664), 11);
                class_151.field_1909 = var10000;
                var1.method_872(class_105.field_1209, 2097206533 * class_204.field_2391, var23, 1064101758, 0);
             } else if(3 == -677995589 * field_2194) {
@@ -1567,7 +1553,7 @@ public class class_177 {
          class_311.method_5553(class_311.field_3749, 327046162 * var0.field_1890, (byte)47);
       }
 
-      class_179.field_2223 = var0.field_1885;
+      class_179.host = var0.field_1885;
       client.field_1413 = var0.field_1894 * 1391148801;
       client.field_1414 = var0.field_1890 * 1175929437;
       class_232.field_2597 = 2004911356 * (0 == 645063691 * client.field_1626?-464280358:-1490465858 * var0.field_1894 + '\u9c40');
@@ -1594,8 +1580,7 @@ public class class_177 {
             var5.write("data1=req");
             var5.flush();
             InputStream var6 = var4.getInputStream();
-            var10000 = new class_28;
-            var10000.method_178(new byte[1000]);
+            var10000 = new class_28(new byte[1000]);
             class_28 var7 = var10000;
 
             while(true) {
@@ -1623,11 +1608,9 @@ public class class_177 {
          } else {
             String var27 = field_2200;
             Random var28 = new Random();
-            var10000 = new class_28;
-            var10000.method_160(128);
+            var10000 = new class_28(128);
             class_28 var30 = var10000;
-            var10000 = new class_28;
-            var10000.method_160(128);
+            var10000 = new class_28(128);
             class_28 var9 = var10000;
             int[] var10 = new int[]{var28.nextInt(), var28.nextInt(), (int)(var1 >> -1478583710), (int)var1};
             var30.method_210(10, 303066737);
@@ -1688,14 +1671,12 @@ public class class_177 {
                var11 += 8 - var11 % 8;
             }
 
-            var10000 = new class_28;
-            var10000.method_160(var11);
+            var10000 = new class_28(var11);
             class_28 var31 = var10000;
             var31.method_120(var27, -427478981);
             var31.field_15 = var11 * -1025691571;
             var31.method_232(var10, -1937738349);
-            var10000 = new class_28;
-            var10000.method_160(-442398587 * var31.field_15 + 5 + -442398587 * var30.field_15 + -442398587 * var9.field_15);
+            var10000 = new class_28(-442398587 * var31.field_15 + 5 + -442398587 * var30.field_15 + -442398587 * var9.field_15);
             class_28 var32 = var10000;
             var32.method_210(2, 303066737);
             var32.method_210(var30.field_15 * 1546440447, 303066737);
@@ -1740,8 +1721,7 @@ public class class_177 {
                var35.write("data2=" + class_73.method_1117(var16, 268522866) + "&dest=" + class_73.method_1117("passwordchoice.ws", -1246578735));
                var35.flush();
                InputStream var36 = var34.getInputStream();
-               var10000 = new class_28;
-               var10000.method_178(new byte[1061007041]);
+               var10000 = new class_28(new byte[1061007041]);
                var32 = var10000;
 
                while(true) {
@@ -1815,7 +1795,7 @@ public class class_177 {
    }
 
    // $FF: renamed from: ac (af) void
-   static void method_3776(class_127 var0) {
+   static void method_3776(GameApplet var0) {
       while(class_178.method_3800(-1385459044)) {
          if(-505378479 * class_80.field_752 == 13) {
             field_2202 = false;
@@ -1919,7 +1899,7 @@ public class class_177 {
          class_311.method_5553(class_311.field_3749, 264436593 * var0.field_1890, (byte)60);
       }
 
-      class_179.field_2223 = var0.field_1885;
+      class_179.host = var0.field_1885;
       client.field_1413 = var0.field_1894 * 1391148801;
       client.field_1414 = var0.field_1890 * 1175929437;
       class_232.field_2597 = 1092536587 * (0 == 60643507 * client.field_1626?'\uaa4a':-1428153959 * var0.field_1894 + '\u9c40');
@@ -1938,7 +1918,7 @@ public class class_177 {
          class_311.method_5553(class_311.field_3749, -2095383920 * var0.field_1890, (byte)123);
       }
 
-      class_179.field_2223 = var0.field_1885;
+      class_179.host = var0.field_1885;
       client.field_1413 = var0.field_1894 * 537530062;
       client.field_1414 = var0.field_1890 * 1175929437;
       class_232.field_2597 = 1092536587 * (0 == -2020700333 * client.field_1626?'\uaa4a':932695000 * var0.field_1894 + '\u9c40');
@@ -1977,7 +1957,7 @@ public class class_177 {
    }
 
    // $FF: renamed from: ap (af) void
-   static void method_3781(class_127 var0) {
+   static void method_3781(GameApplet var0) {
       if(field_2202) {
          class_52.method_573(var0, (byte)24);
       } else {
@@ -2654,7 +2634,7 @@ public class class_177 {
          class_311.method_5553(class_311.field_3749, 264436593 * var0.field_1890, (byte)11);
       }
 
-      class_179.field_2223 = var0.field_1885;
+      class_179.host = var0.field_1885;
       client.field_1413 = var0.field_1894 * 1391148801;
       client.field_1414 = var0.field_1890 * 1175929437;
       class_232.field_2597 = 1092536587 * (0 == 60643507 * client.field_1626?'\uaa4a':-1428153959 * var0.field_1894 + '\u9c40');
@@ -2681,7 +2661,7 @@ public class class_177 {
    }
 
    // $FF: renamed from: ae (af) void
-   static void method_3792(class_127 var0) {
+   static void method_3792(GameApplet var0) {
       if(field_2202) {
          class_52.method_573(var0, (byte)-28);
       } else {
@@ -3306,16 +3286,14 @@ public class class_177 {
             var3 = var4;
          } else {
             byte[] var5 = class_89.field_897.method_5381(14, var0, -26460885);
-            class_89 var10000 = new class_89;
-            var10000.method_105();
+            class_89 var10000 = new class_89();
             var4 = var10000;
             if(var5 != null) {
                if(var2 >= 117690189) {
                   return;
                }
 
-               class_28 var10001 = new class_28;
-               var10001.method_178(var5);
+               class_28 var10001 = new class_28(var5);
                var4.method_1569(var10001, -683331130);
             }
 
@@ -3374,8 +3352,7 @@ public class class_177 {
             var5.write("data1=req");
             var5.flush();
             InputStream var6 = var4.getInputStream();
-            var10000 = new class_28;
-            var10000.method_178(new byte[1164463204]);
+            var10000 = new class_28(new byte[1164463204]);
             class_28 var7 = var10000;
 
             while(true) {
@@ -3403,11 +3380,9 @@ public class class_177 {
          } else {
             String var27 = field_2200;
             Random var28 = new Random();
-            var10000 = new class_28;
-            var10000.method_160(1235920362);
+            var10000 = new class_28(1235920362);
             class_28 var30 = var10000;
-            var10000 = new class_28;
-            var10000.method_160(128);
+            var10000 = new class_28(128);
             class_28 var9 = var10000;
             int[] var10 = new int[]{var28.nextInt(), var28.nextInt(), (int)(var1 >> 32), (int)var1};
             var30.method_210(10, 303066737);
@@ -3468,14 +3443,12 @@ public class class_177 {
                var11 += 8 - var11 % 8;
             }
 
-            var10000 = new class_28;
-            var10000.method_160(var11);
+            var10000 = new class_28(var11);
             class_28 var31 = var10000;
             var31.method_120(var27, -427478981);
             var31.field_15 = var11 * 443621567;
             var31.method_232(var10, -1937738349);
-            var10000 = new class_28;
-            var10000.method_160(-442398587 * var31.field_15 + 5 + 931522923 * var30.field_15 + -442398587 * var9.field_15);
+            var10000 = new class_28(-442398587 * var31.field_15 + 5 + 931522923 * var30.field_15 + -442398587 * var9.field_15);
             class_28 var32 = var10000;
             var32.method_210(2, 303066737);
             var32.method_210(var30.field_15 * 123150873, 303066737);
@@ -3520,8 +3493,7 @@ public class class_177 {
                var35.write("data2=" + class_73.method_1117(var16, 1008529296) + "&dest=" + class_73.method_1117("passwordchoice.ws", -1214316458));
                var35.flush();
                InputStream var36 = var34.getInputStream();
-               var10000 = new class_28;
-               var10000.method_178(new byte[-145734011]);
+               var10000 = new class_28(new byte[-145734011]);
                var32 = var10000;
 
                while(true) {

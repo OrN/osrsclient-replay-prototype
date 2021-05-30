@@ -42,8 +42,7 @@ public class class_244 implements class_6 {
          } else {
             int var4 = var1 + (this.field_2703 * -967316800 - this.field_2705 * -1452437440);
             int var5 = var2 + (-1023667904 * this.field_2707 - this.field_2706 * 334149312);
-            class_280 var10000 = new class_280;
-            var10000.method_5165(this.field_2704 * -1722297591, var4, var5);
+            class_280 var10000 = new class_280(this.field_2704 * -1722297591, var4, var5);
             return var10000;
          }
       } catch (RuntimeException var6) {
@@ -52,9 +51,9 @@ public class class_244 implements class_6 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_4688() {
+   class_244() {
+      super();
       try {
-         super();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "gg.<init>(" + ')');
       }
@@ -146,8 +145,7 @@ public class class_244 implements class_6 {
       } else {
          int var3 = var1 + (this.field_2703 * -967316800 - this.field_2705 * -1452437440);
          int var4 = var2 + (-1023667904 * this.field_2707 - this.field_2706 * 334149312);
-         class_280 var10000 = new class_280;
-         var10000.method_5165(this.field_2704 * -1722297591, var3, var4);
+         class_280 var10000 = new class_280(this.field_2704 * -1722297591, var3, var4);
          return var10000;
       }
    }
@@ -264,8 +262,7 @@ public class class_244 implements class_6 {
       } else {
          int var3 = var1 + (this.field_2703 * 274351343 - this.field_2705 * -1577208233);
          int var4 = var2 + (-1354203530 * this.field_2707 - this.field_2706 * 1915434030);
-         class_280 var10000 = new class_280;
-         var10000.method_5165(this.field_2704 * -1137695398, var3, var4);
+         class_280 var10000 = new class_280(this.field_2704 * -1137695398, var3, var4);
          return var10000;
       }
    }
@@ -277,8 +274,7 @@ public class class_244 implements class_6 {
       } else {
          int var3 = var1 + (this.field_2703 * -967316800 - this.field_2705 * -1452437440);
          int var4 = var2 + (-1023667904 * this.field_2707 - this.field_2706 * 334149312);
-         class_280 var10000 = new class_280;
-         var10000.method_5165(this.field_2704 * -1722297591, var3, var4);
+         class_280 var10000 = new class_280(this.field_2704 * -1722297591, var3, var4);
          return var10000;
       }
    }

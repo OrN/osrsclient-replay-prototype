@@ -35,13 +35,11 @@ public final class class_272 {
    }
 
    // $FF: renamed from: <init> (int) void
-   public void method_5063(int var1) {
+   public class_272(int var1) {
       super();
-      class_59 var10001 = new class_59;
-      var10001.method_105();
+      class_59 var10001 = new class_59();
       this.field_3190 = var10001;
-      class_328 var3 = new class_328;
-      var3.method_5803();
+      class_328 var3 = new class_328();
       this.field_3193 = var3;
       this.field_3189 = var1;
       this.field_3191 = var1;
@@ -51,8 +49,7 @@ public final class class_272 {
          ;
       }
 
-      class_369 var4 = new class_369;
-      var4.method_6590(var2);
+      class_369 var4 = new class_369(var2);
       this.field_3192 = var4;
    }
 
@@ -89,8 +86,7 @@ public final class class_272 {
    public void method_5066() {
       this.field_3193.method_5807();
       this.field_3192.method_6596();
-      class_59 var10001 = new class_59;
-      var10001.method_105();
+      class_59 var10001 = new class_59();
       this.field_3190 = var10001;
       this.field_3191 = this.field_3189;
    }
@@ -188,8 +184,7 @@ public final class class_272 {
    public void method_5074() {
       this.field_3193.method_5807();
       this.field_3192.method_6596();
-      class_59 var10001 = new class_59;
-      var10001.method_105();
+      class_59 var10001 = new class_59();
       this.field_3190 = var10001;
       this.field_3191 = this.field_3189;
    }
@@ -198,8 +193,7 @@ public final class class_272 {
    public void method_5075() {
       this.field_3193.method_5807();
       this.field_3192.method_6596();
-      class_59 var10001 = new class_59;
-      var10001.method_105();
+      class_59 var10001 = new class_59();
       this.field_3190 = var10001;
       this.field_3191 = this.field_3189;
    }
@@ -208,8 +202,7 @@ public final class class_272 {
    public void method_5076() {
       this.field_3193.method_5807();
       this.field_3192.method_6596();
-      class_59 var10001 = new class_59;
-      var10001.method_105();
+      class_59 var10001 = new class_59();
       this.field_3190 = var10001;
       this.field_3191 = this.field_3189;
    }
@@ -218,8 +211,7 @@ public final class class_272 {
    public void method_5077() {
       this.field_3193.method_5807();
       this.field_3192.method_6596();
-      class_59 var10001 = new class_59;
-      var10001.method_105();
+      class_59 var10001 = new class_59();
       this.field_3190 = var10001;
       this.field_3191 = this.field_3189;
    }
@@ -228,8 +220,7 @@ public final class class_272 {
    public void method_5078() {
       this.field_3193.method_5807();
       this.field_3192.method_6596();
-      class_59 var10001 = new class_59;
-      var10001.method_105();
+      class_59 var10001 = new class_59();
       this.field_3190 = var10001;
       this.field_3191 = this.field_3189;
    }

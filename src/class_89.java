@@ -26,12 +26,10 @@ public class class_89 extends class_59 {
          return var1;
       } else {
          byte[] var2 = field_897.method_5381(14, var0, -26460885);
-         class_89 var10000 = new class_89;
-         var10000.method_105();
+         class_89 var10000 = new class_89();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1569(var10001, -1305193629);
          }
 
@@ -63,12 +61,10 @@ public class class_89 extends class_59 {
          return var1;
       } else {
          byte[] var2 = field_897.method_5381(14, var0, -26460885);
-         class_89 var10000 = new class_89;
-         var10000.method_105();
+         class_89 var10000 = new class_89();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1569(var10001, 976576355);
          }
 
@@ -78,9 +74,8 @@ public class class_89 extends class_59 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_1571() {
-      class_272 var10000 = new class_272;
-      var10000.method_5063(64);
+   static {
+      class_272 var10000 = new class_272(64);
       field_893 = var10000;
       field_892 = new int[32];
       int var0 = 2;
@@ -271,8 +266,8 @@ public class class_89 extends class_59 {
    }
 
    // $FF: renamed from: <init> () void
-   public void method_105() {
-      super.method_105();
+   public class_89() {
+      super();
    }
 
    // $FF: renamed from: g (nd, int) void

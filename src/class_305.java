@@ -13,7 +13,7 @@ public class class_305 {
    // $FF: renamed from: kq java.lang.String
    public static String field_3406;
    // $FF: renamed from: ap java.lang.String
-   public static String field_3407;
+   public static String strLoadingSprites;
    // $FF: renamed from: r java.lang.String
    public static String field_3408;
    // $FF: renamed from: fq java.lang.String
@@ -31,19 +31,19 @@ public class class_305 {
    // $FF: renamed from: c java.lang.String
    public static String field_3415;
    // $FF: renamed from: e java.lang.String
-   public static String field_3416;
+   public static String strStartEngine;
    // $FF: renamed from: g java.lang.String
-   public static String field_3417;
+   public static String strLoadVisibilityMap;
    // $FF: renamed from: j java.lang.String
    public static String field_3418;
    // $FF: renamed from: k java.lang.String
-   public static String field_3419;
+   public static String strCheckingUpdates;
    // $FF: renamed from: m java.lang.String
-   public static String field_3420;
+   public static String strLoadedUpdateList;
    // $FF: renamed from: ax java.lang.String
    public static String field_3421;
    // $FF: renamed from: z java.lang.String
-   public static String field_3422;
+   public static String strLoadingFonts;
    // $FF: renamed from: w java.lang.String
    public static String field_3423;
    // $FF: renamed from: ds java.lang.String
@@ -61,7 +61,7 @@ public class class_305 {
    // $FF: renamed from: ir java.lang.String
    public static String field_3430;
    // $FF: renamed from: al java.lang.String
-   public static String field_3431;
+   public static String strLoadedTextures;
    // $FF: renamed from: dr java.lang.String
    public static String field_3432;
    // $FF: renamed from: l java.lang.String
@@ -75,9 +75,9 @@ public class class_305 {
    // $FF: renamed from: ce java.lang.String
    public static String field_3437;
    // $FF: renamed from: aj java.lang.String
-   public static String field_3438;
+   public static String strLoadedMap;
    // $FF: renamed from: am java.lang.String
-   static String field_3439;
+   static String strVisitSupport;
    // $FF: renamed from: az java.lang.String
    public static String field_3440;
    // $FF: renamed from: av java.lang.String
@@ -181,7 +181,7 @@ public class class_305 {
    // $FF: renamed from: cs java.lang.String
    public static String field_3490;
    // $FF: renamed from: a java.lang.String
-   public static String field_3491;
+   public static String strConnectingUpdate;
    // $FF: renamed from: co java.lang.String
    public static String field_3492;
    // $FF: renamed from: ck java.lang.String
@@ -197,7 +197,7 @@ public class class_305 {
    // $FF: renamed from: ae java.lang.String
    public static String field_3498;
    // $FF: renamed from: ab java.lang.String
-   public static String field_3499;
+   public static String strLoadingTextures;
    // $FF: renamed from: ch java.lang.String
    public static String field_3500;
    // $FF: renamed from: t java.lang.String
@@ -333,7 +333,7 @@ public class class_305 {
    // $FF: renamed from: fb java.lang.String
    public static String field_3566;
    // $FF: renamed from: x java.lang.String
-   public static String field_3567;
+   public static String strPreparedSoundEngine;
    // $FF: renamed from: gb java.lang.String
    public static String field_3568;
    // $FF: renamed from: ff java.lang.String
@@ -441,7 +441,7 @@ public class class_305 {
    // $FF: renamed from: id java.lang.String
    public static String field_3620;
    // $FF: renamed from: v java.lang.String
-   public static String field_3621;
+   public static String strMembersObject;
    // $FF: renamed from: hz java.lang.String
    public static String field_3622;
    // $FF: renamed from: cm java.lang.String
@@ -463,7 +463,7 @@ public class class_305 {
    // $FF: renamed from: fh java.lang.String
    public static String field_3631;
    // $FF: renamed from: as java.lang.String
-   public static String field_3632;
+   public static String strLoadMap;
    // $FF: renamed from: hk java.lang.String
    public static String field_3633;
    // $FF: renamed from: hx java.lang.String
@@ -836,8 +836,8 @@ public class class_305 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_5376() {
-      field_3621 = "Members object";
+   static {
+      strMembersObject = "Members object";
       field_3403 = "Take";
       field_3404 = "Drop";
       field_3405 = "Hidden";
@@ -851,30 +851,30 @@ public class class_305 {
       field_3433 = "Loading - please wait.";
       field_3414 = "Connection lost";
       field_3415 = "Please wait - attempting to reestablish";
-      field_3416 = "Starting game engine...";
-      field_3417 = "Prepared visibility map";
-      field_3491 = "Connecting to update server";
-      field_3419 = "Checking for updates - ";
-      field_3420 = "Loaded update list";
-      field_3567 = "Prepared sound engine";
-      field_3422 = "Loading fonts - ";
+      strStartEngine = "Starting game engine...";
+      strLoadVisibilityMap = "Prepared visibility map";
+      strConnectingUpdate = "Connecting to update server";
+      strCheckingUpdates = "Checking for updates - ";
+      strLoadedUpdateList = "Loaded update list";
+      strPreparedSoundEngine = "Prepared sound engine";
+      strLoadingFonts = "Loading fonts - ";
       field_3423 = "Loaded fonts";
       field_3501 = "Loading title screen - ";
       field_3425 = "Loaded title screen";
       field_3426 = "Loading config - ";
       field_3427 = "Loaded config";
       field_3498 = "Loading sprites - ";
-      field_3407 = "Loaded sprites";
-      field_3499 = "Loading textures - ";
-      field_3431 = "Loaded textures";
+      strLoadingSprites = "Loaded sprites";
+      strLoadingTextures = "Loading textures - ";
+      strLoadedTextures = "Loaded textures";
       field_3457 = "Loaded input handler";
       field_3525 = "Loading wordpack - ";
       field_3429 = "Loaded wordpack";
       field_3699 = "Loading interfaces - ";
       field_3421 = "Loaded interfaces";
-      field_3632 = "Loading world map - ";
-      field_3438 = "Loaded world map";
-      field_3439 = "Please visit the support page for assistance.";
+      strLoadMap = "Loading world map - ";
+      strLoadedMap = "Loaded world map";
+      strVisitSupport = "Please visit the support page for assistance.";
       field_3440 = "Support Page";
       field_3441 = "";
       field_3442 = "Please enter a 6-digit PIN.";
@@ -892,7 +892,7 @@ public class class_305 {
       field_3454 = "Please try using a different world.";
       field_3455 = "";
       field_3456 = "Your account has been disabled.";
-      field_3475 = field_3439;
+      field_3475 = strVisitSupport;
       field_3472 = "";
       field_3459 = "Your account has not logged out from its last";
       field_3460 = "session or the server is too busy right now.";
@@ -931,7 +931,7 @@ public class class_305 {
       field_3493 = "To play on this world move to a free area first";
       field_3689 = "";
       field_3691 = "Account locked as we suspect it has been stolen.";
-      field_3496 = field_3439;
+      field_3496 = strVisitSupport;
       field_3497 = "";
       field_3692 = "This world is running a closed Beta.";
       field_3437 = "Sorry invited players only.";
@@ -1143,9 +1143,9 @@ public class class_305 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_5377() throws Throwable {
+   class_305() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "jo.<init>(" + ')');

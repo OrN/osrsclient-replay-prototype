@@ -53,8 +53,7 @@ public abstract class class_68 extends class_65 {
    abstract void method_859(byte[] var1, int var2, int var3, int var4, int var5, int var6, int var7);
 
    // $FF: renamed from: <init> (byte[]) void
-   void method_860(byte[] var1) {
-      super.method_105();
+   class_68(byte[] var1) {
       this.field_512 = new byte[256][];
       this.field_522 = 0;
       this.method_915(var1);
@@ -639,8 +638,8 @@ public abstract class class_68 extends class_65 {
    }
 
    // $FF: renamed from: <init> (byte[], int[], int[], int[], int[], int[], byte[][]) void
-   void method_881(byte[] var1, int[] var2, int[] var3, int[] var4, int[] var5, int[] var6, byte[][] var7) {
-      super.method_105();
+   class_68(byte[] var1, int[] var2, int[] var3, int[] var4, int[] var5, int[] var6, byte[][] var7) {
+      super();
       this.field_512 = new byte[256][];
       this.field_522 = 0;
       this.field_515 = var2;
@@ -950,7 +949,7 @@ public abstract class class_68 extends class_65 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_683() {
+   static {
       field_514 = -1;
       field_516 = -1;
       field_530 = -1;

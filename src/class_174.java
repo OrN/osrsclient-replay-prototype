@@ -134,13 +134,12 @@ public class class_174 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_3726() {
+   class_174() {
+      super();
       try {
-         super();
          this.field_2168 = Executors.newSingleThreadExecutor();
          ExecutorService var10001 = this.field_2168;
-         class_172 var10002 = new class_172;
-         var10002.method_3707();
+         class_172 var10002 = new class_172();
          this.field_2167 = var10001.submit(var10002);
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "cr.<init>(" + ')');

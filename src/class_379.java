@@ -86,9 +86,9 @@ class class_379 implements Iterator {
    }
 
    // $FF: renamed from: <init> (nu) void
-   void method_6665(class_259 var1) {
-      this.this$0 = var1;
+   class_379(class_259 var1) {
       super();
+      this.this$0 = var1;
    }
 
    // $FF: renamed from: b () java.lang.Object

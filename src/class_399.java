@@ -25,15 +25,12 @@ public class class_399 implements class_14 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_6799() {
-      class_399 var10000 = new class_399;
-      var10000.method_6800(0, 0);
+   static {
+      class_399 var10000 = new class_399(0, 0);
       field_4259 = var10000;
-      var10000 = new class_399;
-      var10000.method_6800(1, 1);
+      var10000 = new class_399(1, 1);
       field_4261 = var10000;
-      var10000 = new class_399;
-      var10000.method_6800(2, 2);
+      var10000 = new class_399(2, 2);
       field_4260 = var10000;
    }
 
@@ -52,9 +49,9 @@ public class class_399 implements class_14 {
    }
 
    // $FF: renamed from: <init> (int, int) void
-   void method_6800(int var1, int var2) {
+   class_399(int var1, int var2) {
+      super();
       try {
-         super();
          this.field_4258 = -1922717743 * var1;
          this.field_4262 = var2 * -212120923;
       } catch (RuntimeException var3) {

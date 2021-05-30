@@ -22,7 +22,7 @@ public class class_155 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_3254() {
+   class_155() {
       super();
       class_57.method_599(24);
       this.field_1937 = class_57.method_599(16);

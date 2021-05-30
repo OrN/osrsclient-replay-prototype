@@ -52,9 +52,9 @@ public final class class_247 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_4713() {
+   class_247() {
+      super();
       try {
-         super();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "gn.<init>(" + ')');
       }

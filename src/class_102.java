@@ -13,8 +13,8 @@ public abstract class class_102 extends class_27 {
    abstract void method_1913();
 
    // $FF: renamed from: <init> () void
-   void method_105() throws Throwable {
-      super.method_105();
+   class_102() throws Throwable {
+      super();
       throw new Error();
    }
 

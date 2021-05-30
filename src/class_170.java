@@ -39,8 +39,7 @@ public class class_170 {
    // $FF: renamed from: n (int) nd
    class_28 method_3620(int var1) {
       try {
-         class_28 var10000 = new class_28;
-         var10000.method_160(100);
+         class_28 var10000 = new class_28(100);
          class_28 var2 = var10000;
          var2.method_210(-437407307 * field_2124, 303066737);
          var2.method_210(this.field_2117?1:0, 303066737);
@@ -79,9 +78,9 @@ public class class_170 {
    }
 
    // $FF: renamed from: <init> (nd) void
-   void method_3621(class_28 var1) {
+   class_170(class_28 var1) {
+      super();
       try {
-         super();
          this.field_2119 = 511868899;
          this.field_2120 = null;
          this.field_2123 = false;
@@ -143,8 +142,7 @@ public class class_170 {
 
    // $FF: renamed from: b () nd
    class_28 method_3622() {
-      class_28 var10000 = new class_28;
-      var10000.method_160(100);
+      class_28 var10000 = new class_28(100);
       class_28 var1 = var10000;
       var1.method_210(-437407307 * field_2124, 303066737);
       var1.method_210(this.field_2117?1:0, 303066737);
@@ -169,7 +167,7 @@ public class class_170 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_3623() {
+   static {
       field_2124 = 213856331;
    }
 
@@ -183,9 +181,9 @@ public class class_170 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_3625() {
+   class_170() {
+      super();
       try {
-         super();
          this.field_2119 = 511868899;
          this.field_2120 = null;
          this.field_2123 = false;
@@ -205,8 +203,7 @@ public class class_170 {
 
    // $FF: renamed from: s () nd
    class_28 method_3627() {
-      class_28 var10000 = new class_28;
-      var10000.method_160(100);
+      class_28 var10000 = new class_28(100);
       class_28 var1 = var10000;
       var1.method_210(-437407307 * field_2124, 303066737);
       var1.method_210(this.field_2117?1:0, 303066737);
@@ -238,8 +235,7 @@ public class class_170 {
 
    // $FF: renamed from: d () nd
    class_28 method_3630() {
-      class_28 var10000 = new class_28;
-      var10000.method_160(100);
+      class_28 var10000 = new class_28(100);
       class_28 var1 = var10000;
       var1.method_210(-437407307 * field_2124, 303066737);
       var1.method_210(this.field_2117?1:0, 303066737);

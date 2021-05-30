@@ -262,9 +262,9 @@ public class class_163 implements Runnable {
    }
 
    // $FF: renamed from: <init> () void
-   void method_3424() {
+   class_163() {
+      super();
       try {
-         super();
          this.field_2031 = true;
          this.field_2027 = new Object();
          this.field_2028 = 0;

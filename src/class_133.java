@@ -10,9 +10,9 @@ public final class class_133 implements class_5, MouseWheelListener {
 
 
    // $FF: renamed from: <init> () void
-   void method_2906() {
+   class_133() {
+      super();
       try {
-         super();
          this.field_1732 = 0;
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "am.<init>(" + ')');

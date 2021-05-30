@@ -29,7 +29,7 @@ public class class_354 {
    }
 
    // $FF: renamed from: <init> () void
-   public void method_6238() {
+   public class_354() {
       super();
    }
 

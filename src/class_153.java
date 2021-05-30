@@ -32,9 +32,8 @@ public class class_153 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_3223() {
-      class_323 var10000 = new class_323;
-      var10000.method_5737();
+   static {
+      class_323 var10000 = new class_323();
       field_1926 = var10000;
    }
 
@@ -133,8 +132,7 @@ public class class_153 {
 
    // $FF: renamed from: x (nd, int) void
    public static void method_3225(class_28 var0, int var1) {
-      class_58 var10000 = new class_58;
-      var10000.method_105();
+      class_58 var10000 = new class_58();
       class_58 var2 = var10000;
       var2.field_464 = var0.method_130(-1729356814) * 1028183917;
       var2.field_459 = var0.method_135((byte)-78) * 534927143;
@@ -293,8 +291,7 @@ public class class_153 {
                var3 = null;
             } else {
                try {
-                  class_71 var10000 = new class_71;
-                  var10000.method_1046(var4, var5, var0, false);
+                  class_71 var10000 = new class_71(var4, var5, var0, false);
                   var3 = var10000;
                } catch (Exception var12) {
                   var3 = null;
@@ -314,15 +311,13 @@ public class class_153 {
 
    // $FF: renamed from: d () void
    public static void method_3227() {
-      class_323 var10000 = new class_323;
-      var10000.method_5737();
+      class_323 var10000 = new class_323();
       field_1926 = var10000;
    }
 
    // $FF: renamed from: s () void
    public static void method_3228() {
-      class_323 var10000 = new class_323;
-      var10000.method_5737();
+      class_323 var10000 = new class_323();
       field_1926 = var10000;
    }
 
@@ -433,22 +428,19 @@ public class class_153 {
 
    // $FF: renamed from: r () void
    public static void method_3232() {
-      class_323 var10000 = new class_323;
-      var10000.method_5737();
+      class_323 var10000 = new class_323();
       field_1926 = var10000;
    }
 
    // $FF: renamed from: b () void
    public static void method_3233() {
-      class_323 var10000 = new class_323;
-      var10000.method_5737();
+      class_323 var10000 = new class_323();
       field_1926 = var10000;
    }
 
    // $FF: renamed from: g (nd, int) void
    public static void method_3234(class_28 var0, int var1) {
-      class_58 var10000 = new class_58;
-      var10000.method_105();
+      class_58 var10000 = new class_58();
       class_58 var2 = var10000;
       var2.field_464 = var0.method_130(-1475003787) * 1028183917;
       var2.field_459 = var0.method_135((byte)-91) * 534927143;
@@ -559,8 +551,7 @@ public class class_153 {
 
    // $FF: renamed from: a (nd, int) void
    public static void method_3235(class_28 var0, int var1) {
-      class_58 var10000 = new class_58;
-      var10000.method_105();
+      class_58 var10000 = new class_58();
       class_58 var2 = var10000;
       var2.field_464 = var0.method_130(1193604166) * 1028183917;
       var2.field_459 = var0.method_135((byte)-56) * 534927143;
@@ -671,8 +662,7 @@ public class class_153 {
 
    // $FF: renamed from: k (nd, int) void
    public static void method_3236(class_28 var0, int var1) {
-      class_58 var10000 = new class_58;
-      var10000.method_105();
+      class_58 var10000 = new class_58();
       class_58 var2 = var10000;
       var2.field_464 = var0.method_130(-888907623) * 1028183917;
       var2.field_459 = var0.method_135((byte)-44) * 534927143;
@@ -783,8 +773,7 @@ public class class_153 {
 
    // $FF: renamed from: m (nd, int) void
    public static void method_3237(class_28 var0, int var1) {
-      class_58 var10000 = new class_58;
-      var10000.method_105();
+      class_58 var10000 = new class_58();
       class_58 var2 = var10000;
       var2.field_464 = var0.method_130(1739399455) * 1028183917;
       var2.field_459 = var0.method_135((byte)-29) * -1331431769;
@@ -895,8 +884,7 @@ public class class_153 {
 
    // $FF: renamed from: j () void
    public static void method_3238() {
-      class_323 var10000 = new class_323;
-      var10000.method_5737();
+      class_323 var10000 = new class_323();
       field_1926 = var10000;
    }
 
@@ -916,9 +904,9 @@ public class class_153 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_3242() throws Throwable {
+   class_153() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "bn.<init>(" + ')');

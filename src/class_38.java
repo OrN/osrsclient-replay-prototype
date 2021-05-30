@@ -28,8 +28,7 @@ public class class_38 extends class_27 {
       if(var2 == null) {
          return null;
       } else {
-         class_38 var10000 = new class_38;
-         var10000.method_451(var2);
+         class_38 var10000 = new class_38(var2);
          return var10000;
       }
    }
@@ -123,8 +122,7 @@ public class class_38 extends class_27 {
       if(var2 == null) {
          return null;
       } else {
-         class_38 var10000 = new class_38;
-         var10000.method_451(var2);
+         class_38 var10000 = new class_38(var2);
          return var10000;
       }
    }
@@ -178,9 +176,9 @@ public class class_38 extends class_27 {
    }
 
    // $FF: renamed from: <init> (byte[]) void
-   void method_451(byte[] var1) {
+   class_38(byte[] var1) {
+      super();
       try {
-         super.method_105();
          this.field_251 = new class_110[128];
          this.field_252 = new short[128];
          this.field_253 = new byte[128];
@@ -188,8 +186,7 @@ public class class_38 extends class_27 {
          this.field_250 = new class_262[128];
          this.field_256 = new byte[128];
          this.field_257 = new int[128];
-         class_28 var10000 = new class_28;
-         var10000.method_178(var1);
+         class_28 var10000 = new class_28(var1);
          class_28 var2 = var10000;
 
          int var3;
@@ -269,8 +266,7 @@ public class class_38 extends class_27 {
 
          class_262 var41;
          for(var14 = 0; var14 < var40.length; ++var14) {
-            class_262 var10002 = new class_262;
-            var10002.method_4993();
+            class_262 var10002 = new class_262();
             var41 = var40[var14] = var10002;
             int var16 = var2.method_130(811306751);
             if(var16 > 0) {

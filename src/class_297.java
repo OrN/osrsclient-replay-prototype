@@ -156,9 +156,9 @@ public class class_297 implements Runnable {
    }
 
    // $FF: renamed from: <init> () void
-   void method_5337() {
+   class_297() {
+      super();
       try {
-         super();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "jg.<init>(" + ')');
       }
@@ -267,12 +267,10 @@ public class class_297 implements Runnable {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_5341() {
-      class_335 var10000 = new class_335;
-      var10000.method_5960();
+   static {
+      class_335 var10000 = new class_335();
       field_3361 = var10000;
-      var10000 = new class_335;
-      var10000.method_5960();
+      var10000 = new class_335();
       field_3359 = var10000;
       field_3358 = 0;
       field_3357 = new Object();

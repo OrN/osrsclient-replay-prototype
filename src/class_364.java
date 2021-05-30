@@ -225,7 +225,7 @@ public final class class_364 {
    }
 
    // $FF: renamed from: <init> (int) void
-   public void method_6538(int var1) {
+   public class_364(int var1) {
       super();
       this.field_4083 = 0;
       this.field_4080 = var1;
@@ -233,8 +233,7 @@ public final class class_364 {
 
       for(int var2 = 0; var2 < var1; ++var2) {
          class_27[] var10000 = this.field_4081;
-         class_27 var10002 = new class_27;
-         var10002.method_105();
+         class_27 var10002 = new class_27();
          class_27 var3 = var10000[var2] = var10002;
          var3.field_10 = var3;
          var3.field_11 = var3;

@@ -105,8 +105,7 @@ public class class_231 extends class_230 {
                   }
 
                   boolean var8 = true;
-                  var10000 = new class_28;
-                  var10000.method_178(var3);
+                  var10000 = new class_28(var3);
                   var9 = var10000;
                   var10 = -1;
 
@@ -334,8 +333,7 @@ public class class_231 extends class_230 {
                         class_46.method_536(-1808857292);
                         class_251 var7 = class_206.field_2401;
                         class_240[] var37 = client.field_1475;
-                        var10000 = new class_28;
-                        var10000.method_178(var33);
+                        var10000 = new class_28(var33);
                         var9 = var10000;
                         var10 = -1;
 
@@ -498,8 +496,7 @@ public class class_231 extends class_230 {
                                           }
                                        }
 
-                                       var10000 = new class_28;
-                                       var10000.method_178(var43);
+                                       var10000 = new class_28(var43);
                                        class_28 var46 = var10000;
 
                                        for(var21 = 0; var21 < 4; ++var21) {
@@ -802,9 +799,9 @@ public class class_231 extends class_230 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_4404() {
+   class_231() {
+      super();
       try {
-         super.method_4404();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "gz.<init>(" + ')');
       }
@@ -823,8 +820,7 @@ public class class_231 extends class_230 {
                return;
             }
 
-            class_228 var10000 = new class_228;
-            var10000.method_4298();
+            class_228 var10000 = new class_228();
             class_228 var8 = var10000;
 
             try {
@@ -844,8 +840,7 @@ public class class_231 extends class_230 {
                return;
             }
 
-            class_227 var15 = new class_227;
-            var15.method_4298();
+            class_227 var15 = new class_227();
             class_227 var9 = var15;
 
             try {
@@ -871,8 +866,7 @@ public class class_231 extends class_230 {
 
       int var6;
       for(var6 = 0; var6 < var5; ++var6) {
-         class_228 var10000 = new class_228;
-         var10000.method_4298();
+         class_228 var10000 = new class_228();
          class_228 var7 = var10000;
 
          try {
@@ -888,8 +882,7 @@ public class class_231 extends class_230 {
       this.field_2590 = new HashSet(var6);
 
       for(int var12 = 0; var12 < var6; ++var12) {
-         class_227 var13 = new class_227;
-         var13.method_4298();
+         class_227 var13 = new class_227();
          class_227 var8 = var13;
 
          try {
@@ -912,8 +905,7 @@ public class class_231 extends class_230 {
 
       int var6;
       for(var6 = 0; var6 < var5; ++var6) {
-         class_228 var10000 = new class_228;
-         var10000.method_4298();
+         class_228 var10000 = new class_228();
          class_228 var7 = var10000;
 
          try {
@@ -929,8 +921,7 @@ public class class_231 extends class_230 {
       this.field_2590 = new HashSet(var6);
 
       for(int var12 = 0; var12 < var6; ++var12) {
-         class_227 var13 = new class_227;
-         var13.method_4298();
+         class_227 var13 = new class_227();
          class_227 var8 = var13;
 
          try {
@@ -953,8 +944,7 @@ public class class_231 extends class_230 {
 
       int var6;
       for(var6 = 0; var6 < var5; ++var6) {
-         class_228 var10000 = new class_228;
-         var10000.method_4298();
+         class_228 var10000 = new class_228();
          class_228 var7 = var10000;
 
          try {
@@ -970,8 +960,7 @@ public class class_231 extends class_230 {
       this.field_2590 = new HashSet(var6);
 
       for(int var12 = 0; var12 < var6; ++var12) {
-         class_227 var13 = new class_227;
-         var13.method_4298();
+         class_227 var13 = new class_227();
          class_227 var8 = var13;
 
          try {
@@ -993,14 +982,12 @@ public class class_231 extends class_230 {
 
       for(int var4 = 0; var4 < var3; ++var4) {
          int var5 = var1.method_147(175216334);
-         class_280 var10000 = new class_280;
-         var10000.method_5163(var1.method_135((byte)-47));
+         class_280 var10000 = new class_280(var1.method_135((byte)-47));
          class_280 var6 = var10000;
          boolean var7 = var1.method_130(-376547559) == 1;
          if(var2 || !var7) {
             List var8 = this.field_2592;
-            class_219 var10001 = new class_219;
-            var10001.method_4229((class_280)null, var6, var5, (class_237)null);
+            class_219 var10001 = new class_219((class_280)null, var6, var5, (class_237)null);
             var8.add(var10001);
          }
       }
@@ -1014,14 +1001,12 @@ public class class_231 extends class_230 {
 
       for(int var4 = 0; var4 < var3; ++var4) {
          int var5 = var1.method_147(821647098);
-         class_280 var10000 = new class_280;
-         var10000.method_5163(var1.method_135((byte)-65));
+         class_280 var10000 = new class_280(var1.method_135((byte)-65));
          class_280 var6 = var10000;
          boolean var7 = var1.method_130(9430553) == 1;
          if(var2 || !var7) {
             List var8 = this.field_2592;
-            class_219 var10001 = new class_219;
-            var10001.method_4229((class_280)null, var6, var5, (class_237)null);
+            class_219 var10001 = new class_219((class_280)null, var6, var5, (class_237)null);
             var8.add(var10001);
          }
       }
@@ -1040,8 +1025,7 @@ public class class_231 extends class_230 {
             }
 
             int var6 = var1.method_147(1576289878);
-            class_280 var10000 = new class_280;
-            var10000.method_5163(var1.method_135((byte)-36));
+            class_280 var10000 = new class_280(var1.method_135((byte)-36));
             class_280 var7 = var10000;
             boolean var10;
             if(var1.method_130(169497240) == 1) {
@@ -1070,8 +1054,7 @@ public class class_231 extends class_230 {
             }
 
             List var11 = this.field_2592;
-            class_219 var10001 = new class_219;
-            var10001.method_4229((class_280)null, var7, var6, (class_237)null);
+            class_219 var10001 = new class_219((class_280)null, var7, var6, (class_237)null);
             var11.add(var10001);
          }
 
@@ -1213,14 +1196,12 @@ public class class_231 extends class_230 {
 
       for(int var4 = 0; var4 < var3; ++var4) {
          int var5 = var1.method_147(374015837);
-         class_280 var10000 = new class_280;
-         var10000.method_5163(var1.method_135((byte)-95));
+         class_280 var10000 = new class_280(var1.method_135((byte)-95));
          class_280 var6 = var10000;
          boolean var7 = var1.method_130(1412148732) == 1;
          if(var2 || !var7) {
             List var8 = this.field_2592;
-            class_219 var10001 = new class_219;
-            var10001.method_4229((class_280)null, var6, var5, (class_237)null);
+            class_219 var10001 = new class_219((class_280)null, var6, var5, (class_237)null);
             var8.add(var10001);
          }
       }

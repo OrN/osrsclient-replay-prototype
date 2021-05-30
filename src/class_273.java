@@ -13,12 +13,13 @@ public class class_273 {
 
 
    // $FF: renamed from: <clinit> () void
-   static void method_5079() {}
+   static {
+   }
 
    // $FF: renamed from: <init> () void
-   void method_5080() throws Throwable {
+   class_273() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "ia.<init>(" + ')');

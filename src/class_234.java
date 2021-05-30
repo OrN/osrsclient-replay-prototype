@@ -34,19 +34,17 @@ public class class_234 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_4591() {
-      class_234 var10000 = new class_234;
-      var10000.method_4592(0);
+   static {
+      class_234 var10000 = new class_234(0);
       field_2622 = var10000;
-      var10000 = new class_234;
-      var10000.method_4592(1);
+      var10000 = new class_234(1);
       field_2619 = var10000;
    }
 
    // $FF: renamed from: <init> (int) void
-   void method_4592(int var1) {
+   class_234(int var1) {
+      super();
       try {
-         super();
          this.field_2623 = 122410317 * var1;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "fr.<init>(" + ')');

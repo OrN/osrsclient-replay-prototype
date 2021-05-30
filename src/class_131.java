@@ -199,9 +199,8 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_2878() {
-      class_131 var10000 = new class_131;
-      var10000.method_2884();
+   static {
+      class_131 var10000 = new class_131();
       field_1704 = var10000;
       field_1718 = 0;
       field_1705 = 0;
@@ -267,9 +266,9 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
    }
 
    // $FF: renamed from: <init> () void
-   void method_2884() {
+   class_131() {
+      super();
       try {
-         super();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "ak.<init>(" + ')');
       }
@@ -494,7 +493,7 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
                throw new IllegalStateException();
             }
 
-            class_127.method_2396(0, -2043539672);
+            GameApplet.method_2396(0, -2043539672);
          } else if(5 == var0) {
             if(var1 == -1888868577) {
                throw new IllegalStateException();
@@ -564,7 +563,7 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
                            throw new IllegalStateException();
                         }
 
-                        class_127.method_2396(1, -2043539672);
+                        GameApplet.method_2396(1, -2043539672);
                      } else if(19 == var0) {
                         if(var1 == -1888868577) {
                            throw new IllegalStateException();
@@ -713,8 +712,7 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
                return null;
             }
          } else {
-            class_66 var10000 = new class_66;
-            var10000.method_105();
+            class_66 var10000 = new class_66();
             class_66 var4 = var10000;
             var4.field_497 = -1099363635 * class_403.field_4276;
             var4.field_494 = class_380.field_4201 * -821679425;

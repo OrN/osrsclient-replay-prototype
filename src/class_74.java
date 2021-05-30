@@ -67,9 +67,8 @@ public class class_74 extends class_59 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_1121() {
-      class_272 var10000 = new class_272;
-      var10000.method_5063(64);
+   static {
+      class_272 var10000 = new class_272(64);
       field_593 = var10000;
    }
 
@@ -80,9 +79,9 @@ public class class_74 extends class_59 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_105() {
+   class_74() {
+      super();
       try {
-         super.method_105();
          this.field_597 = 0;
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "ex.<init>(" + ')');
@@ -96,12 +95,10 @@ public class class_74 extends class_59 {
          return var1;
       } else {
          byte[] var2 = field_594.method_5381(16, var0, -26460885);
-         class_74 var10000 = new class_74;
-         var10000.method_105();
+         class_74 var10000 = new class_74();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1119(var10001, -2017757030);
          }
 
@@ -129,12 +126,10 @@ public class class_74 extends class_59 {
          return var1;
       } else {
          byte[] var2 = field_594.method_5381(16, var0, -26460885);
-         class_74 var10000 = new class_74;
-         var10000.method_105();
+         class_74 var10000 = new class_74();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1119(var10001, 1314405663);
          }
 
@@ -150,12 +145,10 @@ public class class_74 extends class_59 {
          return var1;
       } else {
          byte[] var2 = field_594.method_5381(16, var0, -26460885);
-         class_74 var10000 = new class_74;
-         var10000.method_105();
+         class_74 var10000 = new class_74();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1119(var10001, 557723241);
          }
 

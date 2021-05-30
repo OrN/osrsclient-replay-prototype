@@ -71,9 +71,9 @@ public class class_61 extends class_59 {
    }
 
    // $FF: renamed from: <init> (int, int, int[], int[], int) void
-   void method_642(int var1, int var2, int[] var3, int[] var4, int var5) {
+   class_61(int var1, int var2, int[] var3, int[] var4, int var5) {
+      super();
       try {
-         super.method_105();
          this.field_479 = var1 * 1644910949;
          this.field_477 = -286940197 * var2;
          this.field_478 = var3;

@@ -71,9 +71,9 @@ public class class_232 {
    }
 
    // $FF: renamed from: <init> (int, int, int) void
-   void method_4441(int var1, int var2, int var3) {
+   class_232(int var1, int var2, int var3) {
+      super();
       try {
-         super();
          this.field_2602 = var1 * 266707583;
          this.field_2600 = -1921038959 * var2;
          this.field_2599 = -44193917 * var3;
@@ -956,15 +956,12 @@ public class class_232 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_4455() {
-      class_232 var10000 = new class_232;
-      var10000.method_4441(0, 0, 4);
+   static {
+      class_232 var10000 = new class_232(0, 0, 4);
       field_2594 = var10000;
-      var10000 = new class_232;
-      var10000.method_4441(1, 1, 2);
+      var10000 = new class_232(1, 1, 2);
       field_2595 = var10000;
-      var10000 = new class_232;
-      var10000.method_4441(2, 2, 0);
+      var10000 = new class_232(2, 2, 0);
       field_2596 = var10000;
    }
 

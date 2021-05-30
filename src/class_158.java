@@ -69,9 +69,9 @@ public class class_158 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_3303() {
+   class_158() {
+      super();
       try {
-         super();
          this.field_1961 = 815362225;
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "bw.<init>(" + ')');

@@ -7,8 +7,8 @@ public class class_34 extends class_27 {
 
 
    // $FF: renamed from: <init> (java.lang.Object) void
-   public void method_393(Object var1) {
-      super.method_105();
+   public class_34(Object var1) {
+      super();
       this.field_60 = var1;
    }
 }

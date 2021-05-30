@@ -7,8 +7,8 @@ public class class_32 extends class_27 {
 
 
    // $FF: renamed from: <init> (int) void
-   public void method_391(int var1) {
-      super.method_105();
+   public class_32(int var1) {
+      super();
       this.field_58 = var1;
    }
 }

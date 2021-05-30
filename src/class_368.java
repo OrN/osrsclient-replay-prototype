@@ -10,9 +10,9 @@ public class class_368 extends class_367 {
    void method_6572(class_28 var1, int var2) {}
 
    // $FF: renamed from: <init> (int) void
-   public void method_6578(int var1) {
+   public class_368(int var1) {
+      super(var1);
       try {
-         super.method_6578(var1);
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "mq.<init>(" + ')');
       }

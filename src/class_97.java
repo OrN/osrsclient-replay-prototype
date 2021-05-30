@@ -502,9 +502,9 @@ public final class class_97 extends class_91 {
    }
 
    // $FF: renamed from: <init> (int, int, int, int, int, int, int) void
-   void method_1787(int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
+   class_97(int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
+      super();
       try {
-         super.method_105();
          this.field_1071 = 0;
          this.field_1072 = 0;
          this.field_1065 = false;
@@ -547,7 +547,7 @@ public final class class_97 extends class_91 {
    // $FF: renamed from: ht (int, byte) void
    static final void method_1789(int var0, byte var1) {
       try {
-         int[] var2 = class_127.field_1410.field_502;
+         int[] var2 = GameApplet.field_1410.field_502;
          int var3 = var2.length;
 
          int var4;
@@ -601,7 +601,7 @@ public final class class_97 extends class_91 {
 
          var4 = (238 + (int)(Math.random() * 20.0D) - 10 << 16) + (238 + (int)(Math.random() * 20.0D) - 10 << 8) + (238 + (int)(Math.random() * 20.0D) - 10);
          var5 = 238 + (int)(Math.random() * 20.0D) - 10 << 16;
-         class_127.field_1410.method_758();
+         GameApplet.field_1410.method_758();
 
          int var7;
          for(var6 = 1; var6 < 103; ++var6) {

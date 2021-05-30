@@ -90,9 +90,9 @@ public class class_225 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_4290() throws Throwable {
+   class_225() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "fk.<init>(" + ')');

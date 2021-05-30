@@ -35,10 +35,10 @@ public class class_52 extends class_51 {
 
 
    // $FF: renamed from: <init> (x) void
-   void method_572(class_180 var1) {
+   class_52(class_180 var1) {
+      super();
       try {
          this.this$0 = var1;
-         super.method_105();
          this.field_385 = -1736473067;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "z.<init>(" + ')');
@@ -88,7 +88,7 @@ public class class_52 extends class_51 {
    }
 
    // $FF: renamed from: l (af, byte) void
-   static void method_573(class_127 var0, byte var1) {
+   static void method_573(GameApplet var0, byte var1) {
       try {
          while(class_178.method_3800(-1385459044)) {
             if(var1 == 0) {

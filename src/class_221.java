@@ -67,16 +67,13 @@ public final class class_221 {
             System.nanoTime();
             int var5 = var1.method_5399(class_254.field_2874.field_2873, -1103829848);
             int var6 = var1.method_5400(var5, var2, -1234442515);
-            class_28 var10000 = new class_28;
-            var10000.method_178(var1.method_5384(class_254.field_2874.field_2873, var2, -438637203));
+            class_28 var10000 = new class_28(var1.method_5384(class_254.field_2874.field_2873, var2, -438637203));
             class_28 var7 = var10000;
-            var10000 = new class_28;
-            var10000.method_178(var1.method_5384(class_254.field_2869.field_2873, var2, -696480148));
+            var10000 = new class_28(var1.method_5384(class_254.field_2869.field_2873, var2, -696480148));
             class_28 var8 = var10000;
             System.nanoTime();
             System.nanoTime();
-            class_231 var10001 = new class_231;
-            var10001.method_4404();
+            class_231 var10001 = new class_231();
             this.field_2502 = var10001;
 
             try {
@@ -113,8 +110,7 @@ public final class class_221 {
                int var15 = var13 - this.field_2502.method_4376(1057202329);
                int var16 = var14 - this.field_2502.method_4378((byte)-115);
                var22 = this.field_2507[var15];
-               var10002 = new class_233;
-               var10002.method_4546(var13, var14, this.field_2502.method_4374(897083194), this.field_2512);
+               var10002 = new class_233(var13, var14, this.field_2502.method_4374(897083194), this.field_2512);
                var22[var16] = var10002;
                this.field_2507[var15][var16].method_4459(var12, this.field_2502.field_2592, -1081431828);
             }
@@ -135,8 +131,7 @@ public final class class_221 {
                      }
 
                      var22 = this.field_2507[var19];
-                     var10002 = new class_233;
-                     var10002.method_4546(this.field_2502.method_4376(1057202329) + var19, this.field_2502.method_4378((byte)-49) + var21, this.field_2502.method_4374(705494109), this.field_2512);
+                     var10002 = new class_233(this.field_2502.method_4376(1057202329) + var19, this.field_2502.method_4378((byte)-49) + var21, this.field_2502.method_4374(705494109), this.field_2512);
                      var22[var21] = var10002;
                      this.field_2507[var19][var21].method_4460(this.field_2502.field_2590, this.field_2502.field_2592, -1864841845);
                   }
@@ -190,8 +185,7 @@ public final class class_221 {
                throw new IllegalStateException();
             }
 
-            class_242 var10000 = new class_242;
-            var10000.method_4654(var16);
+            class_242 var10000 = new class_242(var16);
             class_242 var17 = var10000;
             var17.method_4678((byte)123);
             this.field_2506.put(Integer.valueOf(var16), var17);
@@ -244,8 +238,7 @@ public final class class_221 {
    // $FF: renamed from: r (int, int, int, int, byte) fu
    class_236 method_4241(int var1, int var2, int var3, int var4, byte var5) {
       try {
-         class_236 var10000 = new class_236;
-         var10000.method_4594(this);
+         class_236 var10000 = new class_236(this);
          class_236 var6 = var10000;
          int var7 = this.field_2511 * 758122357 + var1;
          int var8 = var2 + this.field_2508 * 197299753;
@@ -527,16 +520,13 @@ public final class class_221 {
          System.nanoTime();
          int var4 = var1.method_5399(class_254.field_2874.field_2873, -817001760);
          int var5 = var1.method_5400(var4, var2, -484818046);
-         class_28 var10000 = new class_28;
-         var10000.method_178(var1.method_5384(class_254.field_2874.field_2873, var2, -953770850));
+         class_28 var10000 = new class_28(var1.method_5384(class_254.field_2874.field_2873, var2, -953770850));
          class_28 var6 = var10000;
-         var10000 = new class_28;
-         var10000.method_178(var1.method_5384(class_254.field_2869.field_2873, var2, 241463841));
+         var10000 = new class_28(var1.method_5384(class_254.field_2869.field_2873, var2, 241463841));
          class_28 var7 = var10000;
          System.nanoTime();
          System.nanoTime();
-         class_231 var10001 = new class_231;
-         var10001.method_4404();
+         class_231 var10001 = new class_231();
          this.field_2502 = var10001;
 
          try {
@@ -569,8 +559,7 @@ public final class class_221 {
             int var14 = var12 - this.field_2502.method_4376(1057202329);
             int var15 = var13 - this.field_2502.method_4378((byte)-82);
             var20 = this.field_2507[var14];
-            var10002 = new class_233;
-            var10002.method_4546(var12, var13, this.field_2502.method_4374(508426374), this.field_2512);
+            var10002 = new class_233(var12, var13, this.field_2502.method_4374(508426374), this.field_2512);
             var20[var15] = var10002;
             this.field_2507[var14][var15].method_4459(var11, this.field_2502.field_2592, -1081431828);
          }
@@ -579,8 +568,7 @@ public final class class_221 {
             for(int var19 = 0; var19 < var9; ++var19) {
                if(this.field_2507[var17][var19] == null) {
                   var20 = this.field_2507[var17];
-                  var10002 = new class_233;
-                  var10002.method_4546(this.field_2502.method_4376(1057202329) + var17, this.field_2502.method_4378((byte)-86) + var19, this.field_2502.method_4374(-478030224), this.field_2512);
+                  var10002 = new class_233(this.field_2502.method_4376(1057202329) + var17, this.field_2502.method_4378((byte)-86) + var19, this.field_2502.method_4374(-478030224), this.field_2512);
                   var20[var19] = var10002;
                   this.field_2507[var17][var19].method_4460(this.field_2502.field_2590, this.field_2502.field_2592, 3672672);
                }
@@ -608,8 +596,7 @@ public final class class_221 {
 
    // $FF: renamed from: q (int, int, int, int) fu
    class_236 method_4251(int var1, int var2, int var3, int var4) {
-      class_236 var10000 = new class_236;
-      var10000.method_4594(this);
+      class_236 var10000 = new class_236(this);
       class_236 var5 = var10000;
       int var6 = this.field_2511 * 758122357 + var1;
       int var7 = var2 + this.field_2508 * 197299753;
@@ -750,8 +737,7 @@ public final class class_221 {
       int var15 = (int)Math.ceil((double)var14);
       this.field_2515 = var15 * 545133851;
       if(!this.field_2506.containsKey(Integer.valueOf(var15))) {
-         class_242 var10000 = new class_242;
-         var10000.method_4654(var15);
+         class_242 var10000 = new class_242(var15);
          class_242 var16 = var10000;
          var16.method_4678((byte)13);
          this.field_2506.put(Integer.valueOf(var15), var16);
@@ -794,8 +780,7 @@ public final class class_221 {
       int var15 = (int)Math.ceil((double)var14);
       this.field_2515 = var15 * 410177791;
       if(!this.field_2506.containsKey(Integer.valueOf(var15))) {
-         class_242 var10000 = new class_242;
-         var10000.method_4654(var15);
+         class_242 var10000 = new class_242(var15);
          class_242 var16 = var10000;
          var16.method_4678((byte)103);
          this.field_2506.put(Integer.valueOf(var15), var16);
@@ -918,8 +903,7 @@ public final class class_221 {
 
    // $FF: renamed from: h (int, int, int, int) fu
    class_236 method_4261(int var1, int var2, int var3, int var4) {
-      class_236 var10000 = new class_236;
-      var10000.method_4594(this);
+      class_236 var10000 = new class_236(this);
       class_236 var5 = var10000;
       int var6 = this.field_2511 * 621200992 + var1;
       int var7 = var2 + this.field_2508 * 197299753;
@@ -1001,16 +985,13 @@ public final class class_221 {
          System.nanoTime();
          int var4 = var1.method_5399(class_254.field_2874.field_2873, -316455879);
          int var5 = var1.method_5400(var4, var2, 943290661);
-         class_28 var10000 = new class_28;
-         var10000.method_178(var1.method_5384(class_254.field_2874.field_2873, var2, -1093632981));
+         class_28 var10000 = new class_28(var1.method_5384(class_254.field_2874.field_2873, var2, -1093632981));
          class_28 var6 = var10000;
-         var10000 = new class_28;
-         var10000.method_178(var1.method_5384(class_254.field_2869.field_2873, var2, -1017412788));
+         var10000 = new class_28(var1.method_5384(class_254.field_2869.field_2873, var2, -1017412788));
          class_28 var7 = var10000;
          System.nanoTime();
          System.nanoTime();
-         class_231 var10001 = new class_231;
-         var10001.method_4404();
+         class_231 var10001 = new class_231();
          this.field_2502 = var10001;
 
          try {
@@ -1043,8 +1024,7 @@ public final class class_221 {
             int var14 = var12 - this.field_2502.method_4376(1057202329);
             int var15 = var13 - this.field_2502.method_4378((byte)-104);
             var20 = this.field_2507[var14];
-            var10002 = new class_233;
-            var10002.method_4546(var12, var13, this.field_2502.method_4374(-1646270210), this.field_2512);
+            var10002 = new class_233(var12, var13, this.field_2502.method_4374(-1646270210), this.field_2512);
             var20[var15] = var10002;
             this.field_2507[var14][var15].method_4459(var11, this.field_2502.field_2592, -1081431828);
          }
@@ -1053,8 +1033,7 @@ public final class class_221 {
             for(int var19 = 0; var19 < var9; ++var19) {
                if(this.field_2507[var17][var19] == null) {
                   var20 = this.field_2507[var17];
-                  var10002 = new class_233;
-                  var10002.method_4546(this.field_2502.method_4376(1057202329) + var17, this.field_2502.method_4378((byte)-4) + var19, this.field_2502.method_4374(-2116038412), this.field_2512);
+                  var10002 = new class_233(this.field_2502.method_4376(1057202329) + var17, this.field_2502.method_4378((byte)-4) + var19, this.field_2502.method_4374(-2116038412), this.field_2512);
                   var20[var19] = var10002;
                   this.field_2507[var17][var19].method_4460(this.field_2502.field_2590, this.field_2502.field_2592, 469971373);
                }
@@ -1083,16 +1062,13 @@ public final class class_221 {
          System.nanoTime();
          int var4 = var1.method_5399(class_254.field_2874.field_2873, -1061591117);
          int var5 = var1.method_5400(var4, var2, -510590976);
-         class_28 var10000 = new class_28;
-         var10000.method_178(var1.method_5384(class_254.field_2874.field_2873, var2, -1274781898));
+         class_28 var10000 = new class_28(var1.method_5384(class_254.field_2874.field_2873, var2, -1274781898));
          class_28 var6 = var10000;
-         var10000 = new class_28;
-         var10000.method_178(var1.method_5384(class_254.field_2869.field_2873, var2, 188226648));
+         var10000 = new class_28(var1.method_5384(class_254.field_2869.field_2873, var2, 188226648));
          class_28 var7 = var10000;
          System.nanoTime();
          System.nanoTime();
-         class_231 var10001 = new class_231;
-         var10001.method_4404();
+         class_231 var10001 = new class_231();
          this.field_2502 = var10001;
 
          try {
@@ -1125,8 +1101,7 @@ public final class class_221 {
             int var14 = var12 - this.field_2502.method_4376(1057202329);
             int var15 = var13 - this.field_2502.method_4378((byte)-17);
             var20 = this.field_2507[var14];
-            var10002 = new class_233;
-            var10002.method_4546(var12, var13, this.field_2502.method_4374(182052305), this.field_2512);
+            var10002 = new class_233(var12, var13, this.field_2502.method_4374(182052305), this.field_2512);
             var20[var15] = var10002;
             this.field_2507[var14][var15].method_4459(var11, this.field_2502.field_2592, -1081431828);
          }
@@ -1135,8 +1110,7 @@ public final class class_221 {
             for(int var19 = 0; var19 < var9; ++var19) {
                if(this.field_2507[var17][var19] == null) {
                   var20 = this.field_2507[var17];
-                  var10002 = new class_233;
-                  var10002.method_4546(this.field_2502.method_4376(1057202329) + var17, this.field_2502.method_4378((byte)-69) + var19, this.field_2502.method_4374(-1696939924), this.field_2512);
+                  var10002 = new class_233(this.field_2502.method_4376(1057202329) + var17, this.field_2502.method_4378((byte)-69) + var19, this.field_2502.method_4374(-1696939924), this.field_2512);
                   var20[var19] = var10002;
                   this.field_2507[var17][var19].method_4460(this.field_2502.field_2590, this.field_2502.field_2592, 498636166);
                }
@@ -1170,9 +1144,9 @@ public final class class_221 {
    }
 
    // $FF: renamed from: <init> (op[], java.util.HashMap, jv, jv) void
-   public void method_4268(class_66[] var1, HashMap var2, class_306 var3, class_306 var4) {
+   public class_221(class_66[] var1, HashMap var2, class_306 var3, class_306 var4) {
+      super();
       try {
-         super();
          this.field_2509 = false;
          this.field_2501 = false;
          this.field_2506 = new HashMap();
@@ -2050,8 +2024,7 @@ public final class class_221 {
                                     throw new IllegalStateException();
                                  }
 
-                                 var40 = new class_45;
-                                 var40.method_105();
+                                 var40 = new class_45();
                                  var33 = var40;
                                  var33.field_331 = true;
                                  var33.field_332 = var10;
@@ -2104,8 +2077,7 @@ public final class class_221 {
                                     throw new IllegalStateException();
                                  }
 
-                                 var40 = new class_45;
-                                 var40.method_105();
+                                 var40 = new class_45();
                                  var33 = var40;
                                  var33.field_331 = true;
                                  var33.field_332 = var10;
@@ -2132,8 +2104,7 @@ public final class class_221 {
                                     throw new IllegalStateException();
                                  }
 
-                                 var40 = new class_45;
-                                 var40.method_105();
+                                 var40 = new class_45();
                                  var33 = var40;
                                  var33.field_331 = true;
                                  var33.field_332 = var10;
@@ -2157,8 +2128,7 @@ public final class class_221 {
 
                               var10.field_235 = false;
                               if(var10.field_191 != null) {
-                                 var40 = new class_45;
-                                 var40.method_105();
+                                 var40 = new class_45();
                                  var33 = var40;
                                  var33.field_331 = true;
                                  var33.field_332 = var10;
@@ -2171,8 +2141,7 @@ public final class class_221 {
                         }
 
                         if(var31 && var10.field_192 != null) {
-                           var40 = new class_45;
-                           var40.method_105();
+                           var40 = new class_45();
                            var33 = var40;
                            var33.field_331 = true;
                            var33.field_332 = var10;
@@ -2189,8 +2158,7 @@ public final class class_221 {
                                  throw new IllegalStateException();
                               }
 
-                              var40 = new class_45;
-                              var40.method_105();
+                              var40 = new class_45();
                               var33 = var40;
                               var33.field_331 = true;
                               var33.field_332 = var10;
@@ -2216,8 +2184,7 @@ public final class class_221 {
                                     return;
                                  }
 
-                                 var40 = new class_45;
-                                 var40.method_105();
+                                 var40 = new class_45();
                                  var33 = var40;
                                  var33.field_331 = true;
                                  var33.field_332 = var10;
@@ -2245,8 +2212,7 @@ public final class class_221 {
                                     throw new IllegalStateException();
                                  }
 
-                                 var40 = new class_45;
-                                 var40.method_105();
+                                 var40 = new class_45();
                                  var33 = var40;
                                  var33.field_331 = true;
                                  var33.field_332 = var10;
@@ -2263,8 +2229,7 @@ public final class class_221 {
                               throw new IllegalStateException();
                            }
 
-                           var40 = new class_45;
-                           var40.method_105();
+                           var40 = new class_45();
                            var33 = var40;
                            var33.field_332 = var10;
                            var33.field_337 = var10.field_168;
@@ -2310,8 +2275,7 @@ public final class class_221 {
                                                    throw new IllegalStateException();
                                                 }
 
-                                                var40 = new class_45;
-                                                var40.method_105();
+                                                var40 = new class_45();
                                                 var37 = var40;
                                                 var37.field_332 = var10;
                                                 var37.field_337 = var10.field_200;
@@ -2325,8 +2289,7 @@ public final class class_221 {
                                     }
                                  }
 
-                                 var40 = new class_45;
-                                 var40.method_105();
+                                 var40 = new class_45();
                                  var33 = var40;
                                  var33.field_332 = var10;
                                  var33.field_337 = var10.field_200;
@@ -2369,8 +2332,7 @@ public final class class_221 {
                                                    throw new IllegalStateException();
                                                 }
 
-                                                var40 = new class_45;
-                                                var40.method_105();
+                                                var40 = new class_45();
                                                 var37 = var40;
                                                 var37.field_332 = var10;
                                                 var37.field_337 = var10.field_202;
@@ -2388,8 +2350,7 @@ public final class class_221 {
                                     }
                                  }
 
-                                 var40 = new class_45;
-                                 var40.method_105();
+                                 var40 = new class_45();
                                  var33 = var40;
                                  var33.field_332 = var10;
                                  var33.field_337 = var10.field_202;
@@ -2436,8 +2397,7 @@ public final class class_221 {
                                                    throw new IllegalStateException();
                                                 }
 
-                                                var40 = new class_45;
-                                                var40.method_105();
+                                                var40 = new class_45();
                                                 var37 = var40;
                                                 var37.field_332 = var10;
                                                 var37.field_337 = var10.field_204;
@@ -2455,8 +2415,7 @@ public final class class_221 {
                                     }
                                  }
 
-                                 var40 = new class_45;
-                                 var40.method_105();
+                                 var40 = new class_45();
                                  var33 = var40;
                                  var33.field_332 = var10;
                                  var33.field_337 = var10.field_204;
@@ -2477,8 +2436,7 @@ public final class class_221 {
                                  throw new IllegalStateException();
                               }
 
-                              var40 = new class_45;
-                              var40.method_105();
+                              var40 = new class_45();
                               var33 = var40;
                               var33.field_332 = var10;
                               var33.field_337 = var10.field_209;
@@ -2496,8 +2454,7 @@ public final class class_221 {
                                  throw new IllegalStateException();
                               }
 
-                              var40 = new class_45;
-                              var40.method_105();
+                              var40 = new class_45();
                               var33 = var40;
                               var33.field_332 = var10;
                               var33.field_337 = var10.field_211;
@@ -2515,8 +2472,7 @@ public final class class_221 {
                                  throw new IllegalStateException();
                               }
 
-                              var40 = new class_45;
-                              var40.method_105();
+                              var40 = new class_45();
                               var33 = var40;
                               var33.field_332 = var10;
                               var33.field_337 = var10.field_212;
@@ -2525,8 +2481,7 @@ public final class class_221 {
                         }
 
                         if(client.field_1430 * -1827987357 > -772300497 * var10.field_247 && var10.field_186 != null) {
-                           var40 = new class_45;
-                           var40.method_105();
+                           var40 = new class_45();
                            var33 = var40;
                            var33.field_332 = var10;
                            var33.field_337 = var10.field_186;
@@ -2543,8 +2498,7 @@ public final class class_221 {
                                  throw new IllegalStateException();
                               }
 
-                              var40 = new class_45;
-                              var40.method_105();
+                              var40 = new class_45();
                               var33 = var40;
                               var33.field_332 = var10;
                               var33.field_337 = var10.field_214;
@@ -2558,8 +2512,7 @@ public final class class_221 {
                            }
 
                            if(var10.field_237 != null) {
-                              var40 = new class_45;
-                              var40.method_105();
+                              var40 = new class_45();
                               var33 = var40;
                               var33.field_332 = var10;
                               var33.field_337 = var10.field_237;
@@ -2577,8 +2530,7 @@ public final class class_221 {
                                  throw new IllegalStateException();
                               }
 
-                              var40 = new class_45;
-                              var40.method_105();
+                              var40 = new class_45();
                               var33 = var40;
                               var33.field_332 = var10;
                               var33.field_337 = var10.field_220;
@@ -2596,8 +2548,7 @@ public final class class_221 {
                                  throw new IllegalStateException();
                               }
 
-                              var40 = new class_45;
-                              var40.method_105();
+                              var40 = new class_45();
                               var33 = var40;
                               var33.field_332 = var10;
                               var33.field_337 = var10.field_215;
@@ -2616,8 +2567,7 @@ public final class class_221 {
                                  throw new IllegalStateException();
                               }
 
-                              var40 = new class_45;
-                              var40.method_105();
+                              var40 = new class_45();
                               class_45 var36 = var40;
                               var36.field_332 = var10;
                               var36.field_342 = client.field_1644[var38] * -525569217;
@@ -2827,7 +2777,7 @@ public final class class_221 {
    }
 
    // $FF: renamed from: j (af, byte) void
-   static void method_4272(class_127 var0, byte var1) {
+   static void method_4272(GameApplet var0, byte var1) {
       try {
          if(class_177.field_2202) {
             if(var1 == 1) {

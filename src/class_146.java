@@ -30,9 +30,9 @@ public abstract class class_146 {
    protected abstract boolean method_3108(int var1, int var2, int var3, class_240 var4);
 
    // $FF: renamed from: <init> () void
-   protected void method_3109() {
+   protected class_146() {
+      super();
       try {
-         super();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "fc.<init>(" + ')');
       }

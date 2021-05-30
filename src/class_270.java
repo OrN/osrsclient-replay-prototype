@@ -30,7 +30,7 @@ public class class_270 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_5043() {
+   static {
       field_3180 = 0;
    }
 
@@ -60,9 +60,9 @@ public class class_270 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_5047() throws Throwable {
+   class_270() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "hx.<init>(" + ')');

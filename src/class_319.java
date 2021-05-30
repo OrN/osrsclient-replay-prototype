@@ -226,7 +226,7 @@ public class class_319 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_5661() {
+   static {
       field_3799 = 0;
       field_3794 = 0;
       field_3795 = 0;
@@ -480,9 +480,9 @@ public class class_319 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_5673() throws Throwable {
+   class_319() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "ke.<init>(" + ')');

@@ -132,9 +132,9 @@ public final class class_95 extends class_91 {
    }
 
    // $FF: renamed from: <init> (int, int, int, int, int, int, int, int, int, int, int) void
-   void method_1774(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11) {
+   class_95(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11) {
+      super();
       try {
-         super.method_105();
          this.field_1037 = false;
          this.field_1043 = 0;
          this.field_1049 = 0;
@@ -363,16 +363,14 @@ public final class class_95 extends class_91 {
             }
          } else {
             byte[] var3 = class_76.field_625.method_5381(32, var0, -26460885);
-            class_76 var10000 = new class_76;
-            var10000.method_105();
+            class_76 var10000 = new class_76();
             var2 = var10000;
             if(var3 != null) {
                if(var1 == -367428966) {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28;
-               var10001.method_178(var3);
+               class_28 var10001 = new class_28(var3);
                var2.method_1158(var10001, 1040710174);
             }
 

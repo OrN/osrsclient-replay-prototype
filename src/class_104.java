@@ -57,8 +57,8 @@ public abstract class class_104 extends class_27 {
    protected abstract int method_1941();
 
    // $FF: renamed from: <init> () void
-   protected void method_105() {
-      super.method_105();
+   protected class_104() {
+      super();
       this.field_1208 = true;
    }
 

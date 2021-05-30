@@ -29,9 +29,9 @@ public final class class_50 extends class_27 {
 
 
    // $FF: renamed from: <init> () void
-   void method_105() {
+   class_50() {
+      super();
       try {
-         super.method_105();
          this.field_374 = 0;
          this.field_375 = -1875645291;
       } catch (RuntimeException var1) {

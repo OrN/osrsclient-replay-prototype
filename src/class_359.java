@@ -155,9 +155,9 @@ public class class_359 implements Comparable {
    }
 
    // $FF: renamed from: <init> (java.lang.String, nc) void
-   public void method_6280(String var1, class_375 var2) {
+   public class_359(String var1, class_375 var2) {
+      super();
       try {
-         super();
          this.field_3992 = var1;
          String var4;
          if(var1 == null) {

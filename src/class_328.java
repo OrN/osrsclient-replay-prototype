@@ -103,10 +103,9 @@ public class class_328 implements Iterable {
    }
 
    // $FF: renamed from: <init> () void
-   public void method_5803() {
+   public class_328() {
       super();
-      class_59 var10001 = new class_59;
-      var10001.method_105();
+      class_59 var10001 = new class_59();
       this.field_3849 = var10001;
       this.field_3849.field_469 = this.field_3849;
       this.field_3849.field_471 = this.field_3849;
@@ -114,8 +113,7 @@ public class class_328 implements Iterable {
 
    // $FF: renamed from: aj () java.util.Iterator
    public Iterator method_5804() {
-      class_321 var10000 = new class_321;
-      var10000.method_5688(this);
+      class_321 var10000 = new class_321(this);
       return var10000;
    }
 
@@ -208,8 +206,7 @@ public class class_328 implements Iterable {
    }
 
    public Iterator iterator() {
-      class_321 var10000 = new class_321;
-      var10000.method_5688(this);
+      class_321 var10000 = new class_321(this);
       return var10000;
    }
 

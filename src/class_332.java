@@ -9,9 +9,9 @@ public final class class_332 {
 
 
    // $FF: renamed from: <init> () void
-   void method_5885() throws Throwable {
+   class_332() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "ku.<init>(" + ')');
@@ -19,7 +19,7 @@ public final class class_332 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_5886() {
+   static {
       field_3862 = new char[]{'_', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'};
       field_3861 = new long[12];
 

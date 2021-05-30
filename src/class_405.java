@@ -28,9 +28,9 @@ public class class_405 extends RuntimeException {
 
 
    // $FF: renamed from: <init> (java.lang.Throwable, java.lang.String) void
-   void method_6852(Throwable var1, String var2) {
+   class_405(Throwable var1, String var2) {
+      super();
       try {
-         super();
          this.field_4293 = var2;
          this.field_4294 = var1;
       } catch (RuntimeException var3) {
@@ -107,7 +107,7 @@ public class class_405 extends RuntimeException {
             return;
          }
 
-         URL var3 = new URL(field_4296.getCodeBase(), "clienterror.ws?c=" + field_4295 * -298094073 + "&u=" + field_4289 + "&v1=" + class_201.field_2359 + "&v2=" + class_201.field_2353 + "&ct=" + 2094073605 * field_4292 + "&e=" + var2);
+         URL var3 = new URL(field_4296.getCodeBase(), "clienterror.ws?c=" + field_4295 * -298094073 + "&u=" + field_4289 + "&v1=" + class_201.javaVendor + "&v2=" + class_201.javaVersion + "&ct=" + 2094073605 * field_4292 + "&e=" + var2);
          DataInputStream var17 = new DataInputStream(var3.openStream());
          var17.read();
          var17.close();
@@ -124,8 +124,7 @@ public class class_405 extends RuntimeException {
          var2 = (class_405)var0;
          var2.field_4293 = var2.field_4293 + ' ' + var1;
       } else {
-         class_405 var10000 = new class_405;
-         var10000.method_6852(var0, var1);
+         class_405 var10000 = new class_405(var0, var1);
          var2 = var10000;
       }
 
@@ -201,7 +200,7 @@ public class class_405 extends RuntimeException {
             return;
          }
 
-         URL var3 = new URL(field_4296.getCodeBase(), "clienterror.ws?c=" + field_4295 * -1454650143 + "&u=" + field_4289 + "&v1=" + class_201.field_2359 + "&v2=" + class_201.field_2353 + "&ct=" + 2094073605 * field_4292 + "&e=" + var2);
+         URL var3 = new URL(field_4296.getCodeBase(), "clienterror.ws?c=" + field_4295 * -1454650143 + "&u=" + field_4289 + "&v1=" + class_201.javaVendor + "&v2=" + class_201.javaVersion + "&ct=" + 2094073605 * field_4292 + "&e=" + var2);
          DataInputStream var17 = new DataInputStream(var3.openStream());
          var17.read();
          var17.close();
@@ -218,8 +217,7 @@ public class class_405 extends RuntimeException {
          var2 = (class_405)var0;
          var2.field_4293 = var2.field_4293 + ' ' + var1;
       } else {
-         class_405 var10000 = new class_405;
-         var10000.method_6852(var0, var1);
+         class_405 var10000 = new class_405(var0, var1);
          var2 = var10000;
       }
 
@@ -233,8 +231,7 @@ public class class_405 extends RuntimeException {
          var2 = (class_405)var0;
          var2.field_4293 = var2.field_4293 + ' ' + var1;
       } else {
-         class_405 var10000 = new class_405;
-         var10000.method_6852(var0, var1);
+         class_405 var10000 = new class_405(var0, var1);
          var2 = var10000;
       }
 
@@ -248,8 +245,7 @@ public class class_405 extends RuntimeException {
          var2 = (class_405)var0;
          var2.field_4293 = var2.field_4293 + ' ' + var1;
       } else {
-         class_405 var10000 = new class_405;
-         var10000.method_6852(var0, var1);
+         class_405 var10000 = new class_405(var0, var1);
          var2 = var10000;
       }
 

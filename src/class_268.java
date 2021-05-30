@@ -27,9 +27,9 @@ public class class_268 implements class_12 {
 
 
    // $FF: renamed from: <init> (int, int) void
-   void method_5036(int var1, int var2) {
+   class_268(int var1, int var2) {
+      super();
       try {
-         super();
          this.field_3164 = var1 * -1120447945;
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3, "hv.<init>(" + ')');
@@ -37,24 +37,18 @@ public class class_268 implements class_12 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_5037() {
-      class_268 var10000 = new class_268;
-      var10000.method_5036(14, 0);
+   static {
+      class_268 var10000 = new class_268(14, 0);
       field_3165 = var10000;
-      var10000 = new class_268;
-      var10000.method_5036(15, 4);
+      var10000 = new class_268(15, 4);
       field_3159 = var10000;
-      var10000 = new class_268;
-      var10000.method_5036(16, -2);
+      var10000 = new class_268(16, -2);
       field_3161 = var10000;
-      var10000 = new class_268;
-      var10000.method_5036(18, -2);
+      var10000 = new class_268(18, -2);
       field_3158 = var10000;
-      var10000 = new class_268;
-      var10000.method_5036(19, -2);
+      var10000 = new class_268(19, -2);
       field_3162 = var10000;
-      var10000 = new class_268;
-      var10000.method_5036(27, 0);
+      var10000 = new class_268(27, 0);
       field_3163 = var10000;
       field_3160 = new class_268[32];
       class_268[] var0 = new class_268[]{field_3163, field_3165, field_3162, field_3158, field_3159, field_3161};

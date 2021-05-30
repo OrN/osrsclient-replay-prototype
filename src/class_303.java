@@ -45,9 +45,9 @@ public class class_303 {
    }
 
    // $FF: renamed from: <init> (nd, boolean) void
-   public void method_5364(class_28 var1, boolean var2) {
+   public class_303(class_28 var1, boolean var2) {
+      super();
       try {
-         super();
          int var3 = var1.method_132((byte)-50);
          boolean var4 = var1.method_130(1337840952) == 1;
          byte var5;
@@ -62,8 +62,7 @@ public class class_303 {
 
          for(int var7 = 0; var7 < var6; ++var7) {
             List var10000 = this.field_3392;
-            class_310 var10001 = new class_310;
-            var10001.method_5542(var1, var5, var3);
+            class_310 var10001 = new class_310(var1, var5, var3);
             var10000.add(var10001);
          }
 
@@ -83,19 +82,15 @@ public class class_303 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_5366() {
-      class_311 var10000 = new class_311;
-      var10000.method_5548();
+   static {
+      class_311 var10000 = new class_311();
       field_3389 = var10000;
-      (new class_300).method_5351();
-      class_315 var0 = new class_315;
-      var0.method_5605();
+      new class_300();
+      class_315 var0 = new class_315();
       field_3388 = var0;
-      class_294 var1 = new class_294;
-      var1.method_5305();
+      class_294 var1 = new class_294();
       field_3391 = var1;
-      class_309 var2 = new class_309;
-      var2.method_5528();
+      class_309 var2 = new class_309();
       field_3393 = var2;
    }
 

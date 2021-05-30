@@ -259,8 +259,7 @@ public class class_341 extends class_339 {
                var6.write("data1=req");
                var6.flush();
                InputStream var7 = var5.getInputStream();
-               var10000 = new class_28;
-               var10000.method_178(new byte[1000]);
+               var10000 = new class_28(new byte[1000]);
                class_28 var8 = var10000;
 
                while(true) {
@@ -296,11 +295,9 @@ public class class_341 extends class_339 {
             } else {
                String var29 = class_177.field_2200;
                Random var30 = new Random();
-               var10000 = new class_28;
-               var10000.method_160(128);
+               var10000 = new class_28(128);
                class_28 var32 = var10000;
-               var10000 = new class_28;
-               var10000.method_160(128);
+               var10000 = new class_28(128);
                class_28 var10 = var10000;
                int[] var11 = new int[]{var30.nextInt(), var30.nextInt(), (int)(var2 >> 32), (int)var2};
                var32.method_210(10, 303066737);
@@ -394,14 +391,12 @@ public class class_341 extends class_339 {
                   var12 += 8 - var12 % 8;
                }
 
-               var10000 = new class_28;
-               var10000.method_160(var12);
+               var10000 = new class_28(var12);
                class_28 var33 = var10000;
                var33.method_120(var29, -427478981);
                var33.field_15 = var12 * -1025691571;
                var33.method_232(var11, -1937738349);
-               var10000 = new class_28;
-               var10000.method_160(-442398587 * var33.field_15 + 5 + -442398587 * var32.field_15 + -442398587 * var10.field_15);
+               var10000 = new class_28(-442398587 * var33.field_15 + 5 + -442398587 * var32.field_15 + -442398587 * var10.field_15);
                class_28 var34 = var10000;
                var34.method_210(2, 303066737);
                var34.method_210(var32.field_15 * -442398587, 303066737);
@@ -458,8 +453,7 @@ public class class_341 extends class_339 {
                   var37.write("data2=" + class_73.method_1117(var17, -899515900) + "&dest=" + class_73.method_1117("passwordchoice.ws", -103587308));
                   var37.flush();
                   InputStream var38 = var36.getInputStream();
-                  var10000 = new class_28;
-                  var10000.method_178(new byte[1000]);
+                  var10000 = new class_28(new byte[1000]);
                   var34 = var10000;
 
                   while(true) {
@@ -573,9 +567,9 @@ public class class_341 extends class_339 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_6011() {
+   class_341() {
+      super();
       try {
-         super.method_6011();
          this.field_3895 = class_357.field_3980;
          this.field_3893 = class_357.field_3980;
       } catch (RuntimeException var1) {

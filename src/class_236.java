@@ -21,10 +21,10 @@ public final class class_236 {
 
 
    // $FF: renamed from: <init> (ff) void
-   void method_4594(class_221 var1) {
+   class_236(class_221 var1) {
+      super();
       try {
          this.this$0 = var1;
-         super();
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "fu.<init>(" + ')');
       }

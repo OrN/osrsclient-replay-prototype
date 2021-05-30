@@ -26,7 +26,6 @@ public class class_140 extends class_139 {
    // $FF: renamed from: v (byte) void
    protected void method_3006(byte var1) {
       try {
-         AudioFormat var10001 = new AudioFormat;
          float var10003 = (float)(1631160541 * field_1793);
          byte var10005;
          if(field_1781) {
@@ -38,8 +37,7 @@ public class class_140 extends class_139 {
          } else {
             var10005 = 1;
          }
-
-         var10001.<init>(var10003, 16, var10005, true, false);
+         AudioFormat var10001 = new AudioFormat(var10003, 16, var10005, true, false);
          this.field_1809 = var10001;
          byte var10002;
          if(field_1781) {
@@ -161,9 +159,9 @@ public class class_140 extends class_139 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_3017() {
+   class_140() {
+      super();
       try {
-         super.method_3017();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "at.<init>(" + ')');
       }

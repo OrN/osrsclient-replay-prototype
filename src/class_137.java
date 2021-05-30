@@ -23,9 +23,9 @@ public final class class_137 {
 
 
    // $FF: renamed from: <init> () void
-   void method_2964() throws Throwable {
+   class_137() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "ar.<init>(" + ')');
@@ -36,8 +36,7 @@ public final class class_137 {
    public static class_1 method_2965(class_144 var0) {
       switch(var0.field_1822 * -537510065) {
       case 0:
-         class_25 var10000 = new class_25;
-         var10000.method_88();
+         class_25 var10000 = new class_25();
          return var10000;
       default:
          throw new IllegalArgumentException();
@@ -63,8 +62,7 @@ public final class class_137 {
    public static class_1 method_2967(class_144 var0) {
       switch(var0.field_1822 * -537510065) {
       case 0:
-         class_25 var10000 = new class_25;
-         var10000.method_88();
+         class_25 var10000 = new class_25();
          return var10000;
       default:
          throw new IllegalArgumentException();
@@ -75,8 +73,7 @@ public final class class_137 {
    public static class_1 method_2968(class_144 var0) {
       switch(var0.field_1822 * -537510065) {
       case 0:
-         class_25 var10000 = new class_25;
-         var10000.method_88();
+         class_25 var10000 = new class_25();
          return var10000;
       default:
          throw new IllegalArgumentException();
@@ -155,8 +152,7 @@ public final class class_137 {
    public static class_1 method_2970(class_144 var0) {
       switch(var0.field_1822 * -981361300) {
       case 0:
-         class_25 var10000 = new class_25;
-         var10000.method_88();
+         class_25 var10000 = new class_25();
          return var10000;
       default:
          throw new IllegalArgumentException();

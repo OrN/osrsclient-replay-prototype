@@ -19,8 +19,7 @@ public class class_403 {
       class_66[] var0 = new class_66[-522791973 * field_4277];
 
       for(int var1 = 0; var1 < -522791973 * field_4277; ++var1) {
-         class_66 var10002 = new class_66;
-         var10002.method_105();
+         class_66 var10002 = new class_66();
          class_66 var2 = var0[var1] = var10002;
          var2.field_497 = -1099363635 * field_4276;
          var2.field_494 = class_380.field_4201 * -821679425;
@@ -41,8 +40,7 @@ public class class_403 {
       class_67[] var0 = new class_67[-522791973 * field_4277];
 
       for(int var1 = 0; var1 < field_4277 * -522791973; ++var1) {
-         class_67 var10002 = new class_67;
-         var10002.method_105();
+         class_67 var10002 = new class_67();
          class_67 var2 = var0[var1] = var10002;
          var2.field_501 = field_4276 * -879351184;
          var2.field_505 = class_380.field_4201 * -821679425;
@@ -68,8 +66,7 @@ public class class_403 {
       if(!class_370.method_6606(var0, var1, var2, (byte)103)) {
          return null;
       } else {
-         class_66 var10000 = new class_66;
-         var10000.method_105();
+         class_66 var10000 = new class_66();
          class_66 var4 = var10000;
          var4.field_497 = field_4276 * -1099363635;
          var4.field_494 = class_380.field_4201 * -821679425;
@@ -110,8 +107,7 @@ public class class_403 {
       if(!var3) {
          return null;
       } else {
-         class_67 var10000 = new class_67;
-         var10000.method_105();
+         class_67 var10000 = new class_67();
          class_67 var5 = var10000;
          var5.field_501 = field_4276 * -1099363635;
          var5.field_505 = 923229541 * class_380.field_4201;
@@ -151,8 +147,7 @@ public class class_403 {
          if(null == var6) {
             var8 = null;
          } else {
-            class_69 var10000 = new class_69;
-            var10000.method_881(var6, class_223.field_2529, class_284.field_3260, field_4278, class_318.field_3787, class_192.field_2300, field_4279);
+            class_69 var10000 = new class_69(var6, class_223.field_2529, class_284.field_3260, field_4278, class_318.field_3787, class_192.field_2300, field_4279);
             class_69 var7 = var10000;
             class_192.method_3958(179304235);
             var8 = var7;
@@ -188,8 +183,7 @@ public class class_403 {
          if(null == var6) {
             var8 = null;
          } else {
-            class_69 var10000 = new class_69;
-            var10000.method_881(var6, class_223.field_2529, class_284.field_3260, field_4278, class_318.field_3787, class_192.field_2300, field_4279);
+            class_69 var10000 = new class_69(var6, class_223.field_2529, class_284.field_3260, field_4278, class_318.field_3787, class_192.field_2300, field_4279);
             class_69 var7 = var10000;
             class_192.method_3958(179304235);
             var8 = var7;
@@ -218,8 +212,7 @@ public class class_403 {
          if(null == var6) {
             var8 = null;
          } else {
-            class_69 var10000 = new class_69;
-            var10000.method_881(var6, class_223.field_2529, class_284.field_3260, field_4278, class_318.field_3787, class_192.field_2300, field_4279);
+            class_69 var10000 = new class_69(var6, class_223.field_2529, class_284.field_3260, field_4278, class_318.field_3787, class_192.field_2300, field_4279);
             class_69 var7 = var10000;
             class_192.method_3958(179304235);
             var8 = var7;
@@ -277,8 +270,7 @@ public class class_403 {
       if(!class_370.method_6606(var0, var1, var2, (byte)66)) {
          return null;
       } else {
-         class_66 var10000 = new class_66;
-         var10000.method_105();
+         class_66 var10000 = new class_66();
          class_66 var4 = var10000;
          var4.field_497 = field_4276 * -1099363635;
          var4.field_494 = class_380.field_4201 * -821679425;
@@ -319,8 +311,7 @@ public class class_403 {
       if(!class_148.method_3128(var0, var1, 1251620127)) {
          return null;
       } else {
-         class_66 var10000 = new class_66;
-         var10000.method_105();
+         class_66 var10000 = new class_66();
          class_66 var3 = var10000;
          var3.field_497 = -1099363635 * field_4276;
          var3.field_494 = class_380.field_4201 * -821679425;
@@ -340,8 +331,7 @@ public class class_403 {
       if(!class_148.method_3128(var0, var1, -685077015)) {
          return null;
       } else {
-         class_66 var10000 = new class_66;
-         var10000.method_105();
+         class_66 var10000 = new class_66();
          class_66 var3 = var10000;
          var3.field_497 = -1099363635 * field_4276;
          var3.field_494 = class_380.field_4201 * -821679425;
@@ -381,9 +371,9 @@ public class class_403 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_6833() throws Throwable {
+   class_403() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "ox.<init>(" + ')');
@@ -403,8 +393,7 @@ public class class_403 {
 
    // $FF: renamed from: ac (byte[]) void
    public static void method_6835(byte[] var0) {
-      class_28 var10000 = new class_28;
-      var10000.method_178(var0);
+      class_28 var10000 = new class_28(var0);
       class_28 var1 = var10000;
       var1.field_15 = (var0.length - 2) * -1025691571;
       field_4277 = var1.method_132((byte)-4) * -2047545261;
@@ -472,8 +461,7 @@ public class class_403 {
 
    // $FF: renamed from: at (byte[]) void
    public static void method_6836(byte[] var0) {
-      class_28 var10000 = new class_28;
-      var10000.method_178(var0);
+      class_28 var10000 = new class_28(var0);
       class_28 var1 = var10000;
       var1.field_15 = (var0.length - 2) * -1025691571;
       field_4277 = var1.method_132((byte)-48) * -2047545261;

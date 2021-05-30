@@ -44,10 +44,10 @@ public class class_116 extends class_111 {
    }
 
    // $FF: renamed from: <init> (f) void
-   void method_2247(class_167 var1) {
+   class_116(class_167 var1) {
+      super();
       try {
          this.this$0 = var1;
-         super.method_105();
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "r.<init>(" + ')');
       }
@@ -88,8 +88,7 @@ public class class_116 extends class_111 {
             }
          }
 
-         class_75 var10000 = new class_75;
-         var10000.method_1135(var0);
+         class_75 var10000 = new class_75(var0);
          return var10000;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "r.n(" + ')');

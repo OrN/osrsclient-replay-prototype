@@ -105,10 +105,10 @@ public class class_117 extends class_111 {
    }
 
    // $FF: renamed from: <init> (f) void
-   void method_2251(class_167 var1) {
+   class_117(class_167 var1) {
+      super();
       try {
          this.this$0 = var1;
-         super.method_105();
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "p.<init>(" + ')');
       }
@@ -123,8 +123,7 @@ public class class_117 extends class_111 {
                throw new IllegalStateException();
             }
 
-            class_49 var10000 = new class_49;
-            var10000.method_105();
+            class_49 var10000 = new class_49();
             var5 = var10000;
             class_49.field_361.method_6525(var5, (long)var0);
          }

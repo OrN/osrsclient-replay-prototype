@@ -18,8 +18,8 @@ public class class_64 extends class_62 {
    }
 
    // $FF: renamed from: <init> (java.lang.Object, int) void
-   void method_654(Object var1, int var2) {
-      super.method_647(var2);
+   class_64(Object var1, int var2) {
+      super(var2);
       this.field_483 = new SoftReference(var1);
    }
 

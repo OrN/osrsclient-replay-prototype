@@ -21,9 +21,9 @@ public final class class_274 {
 
 
    // $FF: renamed from: <init> () void
-   void method_5082() throws Throwable {
+   class_274() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "ib.<init>(" + ')');

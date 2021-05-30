@@ -155,7 +155,7 @@ public class class_318 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_5657() {
+   static {
       field_3789 = new char[64];
 
       int var0;
@@ -232,9 +232,9 @@ public class class_318 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_5658() throws Throwable {
+   class_318() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "kd.<init>(" + ')');

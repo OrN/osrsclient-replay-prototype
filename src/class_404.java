@@ -677,9 +677,9 @@ public final class class_404 {
    }
 
    // $FF: renamed from: <init> (int[]) void
-   public void method_6851(int[] var1) {
+   public class_404(int[] var1) {
+      super();
       try {
-         super();
          this.field_4282 = new int[256];
          this.field_4280 = new int[256];
 

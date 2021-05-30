@@ -56,9 +56,9 @@ public abstract class class_142 {
    public abstract void method_3062(int var1, int var2);
 
    // $FF: renamed from: <init> () void
-   protected void method_3063() {
+   protected class_142() {
+      super();
       try {
-         super();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "oe.<init>(" + ')');
       }

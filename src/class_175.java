@@ -49,8 +49,7 @@ public class class_175 {
                throw new IllegalStateException();
             }
 
-            class_101 var10000 = new class_101;
-            var10000.method_1887(var1, var2, var4, var3);
+            class_101 var10000 = new class_101(var1, var2, var4, var3);
             var6 = var10000;
          } else {
             var6.method_108();
@@ -97,9 +96,9 @@ public class class_175 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_3734() {
+   class_175() {
+      super();
       try {
-         super();
          this.field_2174 = new class_101[100];
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "cs.<init>(" + ')');
@@ -117,8 +116,7 @@ public class class_175 {
       }
 
       if(var5 == null) {
-         class_101 var10000 = new class_101;
-         var10000.method_1887(var1, var2, var4, var3);
+         class_101 var10000 = new class_101(var1, var2, var4, var3);
          var5 = var10000;
       } else {
          var5.method_108();
@@ -492,8 +490,7 @@ public class class_175 {
       }
 
       if(var5 == null) {
-         class_101 var10000 = new class_101;
-         var10000.method_1887(var1, var2, var4, var3);
+         class_101 var10000 = new class_101(var1, var2, var4, var3);
          var5 = var10000;
       } else {
          var5.method_108();

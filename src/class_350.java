@@ -490,7 +490,7 @@ public final class class_350 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_6202() {
+   static {
       field_3943 = new byte[520];
    }
 
@@ -656,9 +656,9 @@ public final class class_350 {
    }
 
    // $FF: renamed from: <init> (int, nf, nf, int) void
-   public void method_6204(int var1, class_376 var2, class_376 var3, int var4) {
+   public class_350(int var1, class_376 var2, class_376 var3, int var4) {
+      super();
       try {
-         super();
          this.field_3940 = null;
          this.field_3941 = null;
          this.field_3939 = 936799272;

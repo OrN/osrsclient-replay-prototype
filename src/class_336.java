@@ -15,22 +15,19 @@ public class class_336 {
 
 
    // $FF: renamed from: <clinit> () void
-   static void method_5976() {
-      class_336 var10000 = new class_336;
-      var10000.method_5977();
+   static {
+      class_336 var10000 = new class_336();
       field_3880 = var10000;
-      var10000 = new class_336;
-      var10000.method_5977();
+      var10000 = new class_336();
       field_3877 = var10000;
-      var10000 = new class_336;
-      var10000.method_5977();
+      var10000 = new class_336();
       field_3876 = var10000;
    }
 
    // $FF: renamed from: <init> () void
-   void method_5977() {
+   class_336() {
+      super();
       try {
-         super();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "ky.<init>(" + ')');
       }

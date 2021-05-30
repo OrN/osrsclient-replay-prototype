@@ -54,29 +54,23 @@ public class class_314 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_5580() {
+   static {
       field_3766 = 0;
-      class_364 var10000 = new class_364;
-      var10000.method_6538(4096);
+      class_364 var10000 = new class_364(4096);
       field_3767 = var10000;
       field_3768 = 0;
-      var10000 = new class_364;
-      var10000.method_6538(32);
+      var10000 = new class_364(32);
       field_3779 = var10000;
       field_3780 = 0;
-      class_316 var0 = new class_316;
-      var0.method_5608();
+      class_316 var0 = new class_316();
       field_3774 = var0;
-      var10000 = new class_364;
-      var10000.method_6538(4096);
+      var10000 = new class_364(4096);
       field_3781 = var10000;
       field_3773 = 0;
-      var10000 = new class_364;
-      var10000.method_6538(4096);
+      var10000 = new class_364(4096);
       field_3769 = var10000;
       field_3775 = 0;
-      class_28 var1 = new class_28;
-      var1.method_160(8);
+      class_28 var1 = new class_28(8);
       field_3776 = var1;
       field_3777 = 0;
       field_3770 = new CRC32();
@@ -110,8 +104,7 @@ public class class_314 {
                   }
                }
 
-               class_60 var10000 = new class_60;
-               var10000.method_105();
+               class_60 var10000 = new class_60();
                var8 = var10000;
                var8.field_473 = var0;
                var8.field_474 = -1150578315 * var3;
@@ -131,9 +124,9 @@ public class class_314 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_5582() throws Throwable {
+   class_314() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "jx.<init>(" + ')');
@@ -170,8 +163,7 @@ public class class_314 {
    public static void method_5585(boolean var0) {
       if(field_3771 != null) {
          try {
-            class_28 var10000 = new class_28;
-            var10000.method_160(4);
+            class_28 var10000 = new class_28(4);
             class_28 var1 = var10000;
             var1.method_210(var0?2:3, 303066737);
             var1.method_115(0, -1756916961);
@@ -214,8 +206,7 @@ public class class_314 {
                   }
                }
 
-               class_60 var10000 = new class_60;
-               var10000.method_105();
+               class_60 var10000 = new class_60();
                var8 = var10000;
                var8.field_473 = var0;
                var8.field_474 = -1150578315 * var3;
@@ -598,8 +589,7 @@ public class class_314 {
    public static void method_5597(boolean var0) {
       if(field_3771 != null) {
          try {
-            class_28 var10000 = new class_28;
-            var10000.method_160(4);
+            class_28 var10000 = new class_28(4);
             class_28 var1 = var10000;
             var1.method_210(var0?2:3, 303066737);
             var1.method_115(0, -1756916961);

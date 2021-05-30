@@ -21,7 +21,7 @@ public class class_400 {
 
 
    // $FF: renamed from: <clinit> () void
-   static void method_6801() {
+   static {
       field_4265 = new int[2048];
       field_4264 = new int[2048];
       double var0 = 0.0030679615757712823D;
@@ -34,9 +34,9 @@ public class class_400 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_6802() throws Throwable {
+   class_400() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "oo.<init>(" + ')');

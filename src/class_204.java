@@ -58,9 +58,9 @@ public class class_204 implements Comparator {
    }
 
    // $FF: renamed from: <init> (boolean) void
-   public void method_4103(boolean var1) {
+   public class_204(boolean var1) {
+      super();
       try {
-         super();
          this.field_2389 = var1;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "dv.<init>(" + ')');

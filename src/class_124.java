@@ -31,8 +31,7 @@ public class class_124 extends class_111 {
    // $FF: renamed from: fz (jp, java.lang.String, int) void
    static void method_2278(class_307 var0, String var1, int var2) {
       try {
-         class_169 var10000 = new class_169;
-         var10000.method_3616(var0, var1);
+         class_169 var10000 = new class_169(var0, var1);
          class_169 var3 = var10000;
          client.field_1690.add(var3);
          client.field_1692 += 928843505 * var3.field_2106;
@@ -96,10 +95,10 @@ public class class_124 extends class_111 {
    }
 
    // $FF: renamed from: <init> (f) void
-   void method_2280(class_167 var1) {
+   class_124(class_167 var1) {
+      super();
       try {
          this.this$0 = var1;
-         super.method_105();
          this.field_1355 = -1174614713605796747L;
          this.field_1354 = null;
       } catch (RuntimeException var2) {

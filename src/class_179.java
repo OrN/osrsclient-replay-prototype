@@ -7,7 +7,7 @@ import java.util.Date;
 public class class_179 {
 
    // $FF: renamed from: er java.lang.String
-   static String field_2223;
+   static String host;
    // $FF: renamed from: l int
    static final int field_2224 = 7;
    // $FF: renamed from: y int
@@ -124,8 +124,7 @@ public class class_179 {
                         var11 = class_165.field_2052[-26460885 * class_136.field_1752];
                         var6 = class_165.field_2052[class_136.field_1752 * -26460885 + 1];
                         var15 = class_148.field_1869.method_5381(var6, 0, -26460885);
-                        var19 = new class_69;
-                        var19.method_860(var15);
+                        var19 = new class_69(var15);
                         var17 = var19;
                         class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = var17.method_867(var4, var11);
                         return 1;
@@ -139,8 +138,7 @@ public class class_179 {
                         var11 = class_165.field_2052[-26460885 * class_136.field_1752];
                         var6 = class_165.field_2052[1 + -26460885 * class_136.field_1752];
                         var15 = class_148.field_1869.method_5381(var6, 0, -26460885);
-                        var19 = new class_69;
-                        var19.method_860(var15);
+                        var19 = new class_69(var15);
                         var17 = var19;
                         class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = var17.method_866(var4, var11);
                         return 1;
@@ -348,7 +346,7 @@ public class class_179 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_3806() {
+   static {
       field_2226 = new BigInteger("80782894952180643741752986186714059433953886149239752893425047584684715842049");
       field_2227 = new BigInteger("7237300117305667488707183861728052766358166655052137727439795191253340127955075499635575104901523446809299097934591732635674173519120047404024393881551683");
    }
@@ -415,9 +413,9 @@ public class class_179 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_3811() throws Throwable {
+   class_179() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "cv.<init>(" + ')');

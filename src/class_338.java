@@ -136,9 +136,9 @@ public class class_338 implements Comparable {
    }
 
    // $FF: renamed from: <init> () void
-   void method_6011() {
+   class_338() {
+      super();
       try {
-         super();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "lx.<init>(" + ')');
       }

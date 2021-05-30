@@ -33,9 +33,9 @@ public class class_205 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_4111() throws Throwable {
+   class_205() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "dz.<init>(" + ')');
@@ -103,7 +103,7 @@ public class class_205 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_4115() {
+   static {
       field_2392 = "true";
       field_2400 = ",";
       field_2394 = "|";

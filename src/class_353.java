@@ -30,22 +30,19 @@ public class class_353 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_6233() {
-      class_353 var10000 = new class_353;
-      var10000.method_6234(0);
+   static {
+      class_353 var10000 = new class_353(0);
       field_3959 = var10000;
-      var10000 = new class_353;
-      var10000.method_6234(1);
+      var10000 = new class_353(1);
       field_3958 = var10000;
-      var10000 = new class_353;
-      var10000.method_6234(2);
+      var10000 = new class_353(2);
       field_3960 = var10000;
    }
 
    // $FF: renamed from: <init> (int) void
-   void method_6234(int var1) {
+   class_353(int var1) {
+      super();
       try {
-         super();
          this.field_3961 = var1 * 914046243;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "lm.<init>(" + ')');

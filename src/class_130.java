@@ -31,8 +31,8 @@ public class class_130 {
    }
 
    // $FF: renamed from: <init> (nd) void
-   void method_2868(class_28 var1) {
-      this.method_2870(var1.method_130(-1596380039), var1.method_130(127747120), var1.method_139(-391631059));
+   class_130(class_28 var1) {
+      this(var1.method_130(-1596380039), var1.method_130(127747120), var1.method_139(-391631059));
    }
 
    // $FF: renamed from: y () java.lang.String
@@ -41,7 +41,7 @@ public class class_130 {
    }
 
    // $FF: renamed from: <init> (int, int, java.lang.String) void
-   void method_2870(int var1, int var2, String var3) {
+   class_130(int var1, int var2, String var3) {
       super();
       this.field_1699 = var1;
       this.field_1700 = var2;

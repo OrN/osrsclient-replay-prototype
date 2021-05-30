@@ -311,9 +311,9 @@ public abstract class class_218 {
    }
 
    // $FF: renamed from: <init> (ii, ii) void
-   void method_4223(class_280 var1, class_280 var2) {
+   class_218(class_280 var1, class_280 var2) {
+      super();
       try {
-         super();
          this.field_2480 = var1;
          this.field_2482 = var2;
       } catch (RuntimeException var3) {

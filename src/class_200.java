@@ -21,8 +21,7 @@ public class class_200 implements Runnable {
 
    // $FF: renamed from: f (java.net.URL) df
    public class_194 method_4036(URL var1) {
-      class_194 var10000 = new class_194;
-      var10000.method_3962(var1);
+      class_194 var10000 = new class_194(var1);
       class_194 var2 = var10000;
       synchronized(this) {
          this.field_2351.add(var2);
@@ -33,8 +32,7 @@ public class class_200 implements Runnable {
 
    // $FF: renamed from: j (java.net.URL) df
    public class_194 method_4037(URL var1) {
-      class_194 var10000 = new class_194;
-      var10000.method_3962(var1);
+      class_194 var10000 = new class_194(var1);
       class_194 var2 = var10000;
       synchronized(this) {
          this.field_2351.add(var2);
@@ -46,8 +44,7 @@ public class class_200 implements Runnable {
    // $FF: renamed from: v (java.net.URL, int) df
    public class_194 method_4038(URL var1, int var2) {
       try {
-         class_194 var10000 = new class_194;
-         var10000.method_3962(var1);
+         class_194 var10000 = new class_194(var1);
          class_194 var3 = var10000;
          synchronized(this) {
             this.field_2351.add(var3);
@@ -361,8 +358,7 @@ public class class_200 implements Runnable {
 
    // $FF: renamed from: p (java.net.URL) df
    public class_194 method_4043(URL var1) {
-      class_194 var10000 = new class_194;
-      var10000.method_3962(var1);
+      class_194 var10000 = new class_194(var1);
       class_194 var2 = var10000;
       synchronized(this) {
          this.field_2351.add(var2);
@@ -389,8 +385,7 @@ public class class_200 implements Runnable {
 
    // $FF: renamed from: r (java.net.URL) df
    public class_194 method_4045(URL var1) {
-      class_194 var10000 = new class_194;
-      var10000.method_3962(var1);
+      class_194 var10000 = new class_194(var1);
       class_194 var2 = var10000;
       synchronized(this) {
          this.field_2351.add(var2);
@@ -465,8 +460,7 @@ public class class_200 implements Runnable {
 
    // $FF: renamed from: y (java.net.URL) df
    public class_194 method_4050(URL var1) {
-      class_194 var10000 = new class_194;
-      var10000.method_3962(var1);
+      class_194 var10000 = new class_194(var1);
       class_194 var2 = var10000;
       synchronized(this) {
          this.field_2351.add(var2);
@@ -476,9 +470,9 @@ public class class_200 implements Runnable {
    }
 
    // $FF: renamed from: <init> () void
-   public void method_4051() {
+   public class_200() {
+      super();
       try {
-         super();
          this.field_2351 = new LinkedList();
          this.field_2348 = new Thread(this);
          this.field_2348.setPriority(1);

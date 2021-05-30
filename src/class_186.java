@@ -50,9 +50,9 @@ public class class_186 extends class_181 {
    }
 
    // $FF: renamed from: <init> (boolean) void
-   public void method_3870(boolean var1) {
+   public class_186(boolean var1) {
+      super();
       try {
-         super.method_3822();
          this.field_2264 = var1;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "dn.<init>(" + ')');
@@ -81,16 +81,14 @@ public class class_186 extends class_181 {
             }
          } else {
             byte[] var3 = class_77.field_654.method_5381(33, var0, -26460885);
-            class_77 var10000 = new class_77;
-            var10000.method_105();
+            class_77 var10000 = new class_77();
             var2 = var10000;
             if(var3 != null) {
                if(var1 == -2115685501) {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28;
-               var10001.method_178(var3);
+               class_28 var10001 = new class_28(var3);
                var2.method_1208(var10001, 1613150424);
             }
 
@@ -194,8 +192,7 @@ public class class_186 extends class_181 {
    // $FF: renamed from: bn (byte[], int) byte[]
    static final byte[] method_3876(byte[] var0, int var1) {
       try {
-         class_28 var10000 = new class_28;
-         var10000.method_178(var0);
+         class_28 var10000 = new class_28(var0);
          class_28 var2 = var10000;
          int var3 = var2.method_130(-805859956);
          int var4 = var2.method_135((byte)-99);

@@ -31,9 +31,9 @@ public class class_58 extends class_27 {
 
 
    // $FF: renamed from: <init> () void
-   void method_105() {
+   class_58() {
+      super();
       try {
-         super.method_105();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "bo.<init>(" + ')');
       }
@@ -84,8 +84,7 @@ public class class_58 extends class_27 {
                         throw new IllegalStateException();
                      }
 
-                     var10000 = new class_45;
-                     var10000.method_105();
+                     var10000 = new class_45();
                      var7 = var10000;
                      var7.field_332 = var4;
                      var7.field_337 = var4.field_216;
@@ -130,8 +129,7 @@ public class class_58 extends class_27 {
                         }
                      }
 
-                     var10000 = new class_45;
-                     var10000.method_105();
+                     var10000 = new class_45();
                      var7 = var10000;
                      var7.field_332 = var4;
                      var7.field_337 = var4.field_217;

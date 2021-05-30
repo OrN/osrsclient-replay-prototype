@@ -23,9 +23,9 @@ public final class class_26 extends Canvas {
    }
 
    // $FF: renamed from: <init> (java.awt.Component) void
-   void method_92(Component var1) {
+   class_26(Component var1) {
+      super();
       try {
-         super();
          this.field_6 = var1;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "ac.<init>(" + ')');
@@ -455,7 +455,7 @@ public final class class_26 extends Canvas {
    public static File method_98(String var0, String var1, int var2, int var3) {
       try {
          String var4 = 0 == var2?"":"" + var2;
-         class_396.field_4253 = new File(class_115.field_1290, "jagex_cl_" + var0 + "_" + var1 + var4 + ".dat");
+         class_396.field_4253 = new File(class_115.homeDirectory, "jagex_cl_" + var0 + "_" + var1 + var4 + ".dat");
          String var5 = null;
          String var6 = null;
          boolean var7 = false;
@@ -470,11 +470,9 @@ public final class class_26 extends Canvas {
 
             try {
                label249: {
-                  var10000 = new class_383;
-                  var10000.method_6690(class_396.field_4253, "rw", 10000L);
+                  var10000 = new class_383(class_396.field_4253, "rw", 10000L);
                   class_383 var8 = var10000;
-                  var29 = new class_28;
-                  var29.method_160((int)var8.method_6688(1727641981));
+                  var29 = new class_28((int)var8.method_6688(1727641981));
 
                   int var10;
                   for(var9 = var29; var9.field_15 * -442398587 < var9.field_12.length; var9.field_15 += -1025691571 * var10) {
@@ -587,12 +585,12 @@ public final class class_26 extends Canvas {
                      throw new IllegalStateException();
                   }
 
-                  for(int var23 = 0; var23 < class_48.field_356.length; ++var23) {
+                  for(int var23 = 0; var23 < class_48.cacheDirectories.length; ++var23) {
                      if(var3 != 1145652403) {
                         throw new IllegalStateException();
                      }
 
-                     File var24 = new File(class_48.field_356[var23] + class_292.field_3333[var20] + File.separatorChar + var0 + File.separatorChar);
+                     File var24 = new File(class_48.cacheDirectories[var23] + class_292.field_3333[var20] + File.separatorChar + var0 + File.separatorChar);
                      if(var24.exists()) {
                         if(var3 != 1145652403) {
                            throw new IllegalStateException();
@@ -618,7 +616,7 @@ public final class class_26 extends Canvas {
                throw new IllegalStateException();
             }
 
-            var5 = class_115.field_1290 + File.separatorChar + "jagexcache" + var4 + File.separatorChar + var0 + File.separatorChar + var1 + File.separatorChar;
+            var5 = class_115.homeDirectory + File.separatorChar + "jagexcache" + var4 + File.separatorChar + var0 + File.separatorChar + var1 + File.separatorChar;
             var7 = true;
          }
 
@@ -663,11 +661,9 @@ public final class class_26 extends Canvas {
             var9 = null;
 
             try {
-               var10000 = new class_383;
-               var10000.method_6690(class_396.field_4253, "rw", 10000L);
+               var10000 = new class_383(class_396.field_4253, "rw", 10000L);
                class_383 var26 = var10000;
-               var29 = new class_28;
-               var29.method_160(500);
+               var29 = new class_28(500);
                class_28 var28 = var29;
                var28.method_210(3, 303066737);
                byte var10001;
@@ -688,7 +684,8 @@ public final class class_26 extends Canvas {
                      throw new IllegalStateException();
                   }
 
-                  var28.method_128(var9.getPath(), 499802318);
+                  // TODO: Check if decompiler problem, originally: var9
+                  var28.method_128(var21.getPath(), 499802318);
                }
 
                var26.method_6686(var28.field_12, 0, -442398587 * var28.field_15, (byte)29);

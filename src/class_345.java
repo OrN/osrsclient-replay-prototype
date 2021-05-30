@@ -13,8 +13,7 @@ public class class_345 extends class_343 {
    // $FF: renamed from: v (byte) lx
    class_338 method_6079(byte var1) {
       try {
-         class_342 var10000 = new class_342;
-         var10000.method_6011();
+         class_342 var10000 = new class_342();
          return var10000;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "lo.v(" + ')');
@@ -43,11 +42,9 @@ public class class_345 extends class_343 {
                }
 
                boolean var5 = var10000;
-               class_359 var12 = new class_359;
-               var12.method_6280(var1.method_139(-391631059), this.field_3918);
+               class_359 var12 = new class_359(var1.method_139(-391631059), this.field_3918);
                class_359 var6 = var12;
-               var12 = new class_359;
-               var12.method_6280(var1.method_139(-391631059), this.field_3918);
+               var12 = new class_359(var1.method_139(-391631059), this.field_3918);
                class_359 var7 = var12;
                var1.method_139(-391631059);
                if(null != var6) {
@@ -121,9 +118,9 @@ public class class_345 extends class_343 {
    }
 
    // $FF: renamed from: <init> (nc) void
-   public void method_6165(class_375 var1) {
+   public class_345(class_375 var1) {
+      super(400);
       try {
-         super.method_6083(400);
          this.field_3918 = var1;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "lo.<init>(" + ')');
@@ -132,8 +129,7 @@ public class class_345 extends class_343 {
 
    // $FF: renamed from: y () lx
    class_338 method_6059() {
-      class_342 var10000 = new class_342;
-      var10000.method_6011();
+      class_342 var10000 = new class_342();
       return var10000;
    }
 
@@ -167,11 +163,9 @@ public class class_345 extends class_343 {
          if(-442398587 * var1.field_15 < var2) {
             int var3 = var1.method_130(2024107323);
             boolean var4 = (var3 & 1) == 1;
-            class_359 var10000 = new class_359;
-            var10000.method_6280(var1.method_139(-391631059), this.field_3918);
+            class_359 var10000 = new class_359(var1.method_139(-391631059), this.field_3918);
             class_359 var5 = var10000;
-            var10000 = new class_359;
-            var10000.method_6280(var1.method_139(-391631059), this.field_3918);
+            var10000 = new class_359(var1.method_139(-391631059), this.field_3918);
             class_359 var6 = var10000;
             var1.method_139(-391631059);
             if(null != var5 && var5.method_6273((byte)0)) {
@@ -213,11 +207,9 @@ public class class_345 extends class_343 {
          if(-442398587 * var1.field_15 < var2) {
             int var3 = var1.method_130(1824747967);
             boolean var4 = (var3 & 1) == 1;
-            class_359 var10000 = new class_359;
-            var10000.method_6280(var1.method_139(-391631059), this.field_3918);
+            class_359 var10000 = new class_359(var1.method_139(-391631059), this.field_3918);
             class_359 var5 = var10000;
-            var10000 = new class_359;
-            var10000.method_6280(var1.method_139(-391631059), this.field_3918);
+            var10000 = new class_359(var1.method_139(-391631059), this.field_3918);
             class_359 var6 = var10000;
             var1.method_139(-391631059);
             if(null != var5 && var5.method_6273((byte)0)) {

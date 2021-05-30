@@ -78,10 +78,10 @@ public class class_126 extends class_111 {
    }
 
    // $FF: renamed from: <init> (f) void
-   void method_2289(class_167 var1) {
+   class_126(class_167 var1) {
+      super();
       try {
          this.this$0 = var1;
-         super.method_105();
          this.field_1366 = -562247036214512195L;
          this.field_1367 = null;
          this.field_1368 = 0;
@@ -295,8 +295,7 @@ public class class_126 extends class_111 {
                         var28 = class_165.field_2052;
                         var26 = (class_136.field_1752 += -1087727229) * -26460885 - 1;
                         var10002 = class_208.field_2413;
-                        var10003 = new class_359;
-                        var10003.method_6280(var10, class_239.field_2659);
+                        var10003 = new class_359(var10, class_239.field_2659);
                         if(var10002.method_3324(var10003, false, -1207370332)) {
                            if(var3 == 1) {
                               throw new IllegalStateException();
@@ -499,8 +498,7 @@ public class class_126 extends class_111 {
                         var28 = class_165.field_2052;
                         var26 = (class_136.field_1752 += -1087727229) * -26460885 - 1;
                         var10002 = class_208.field_2413;
-                        var10003 = new class_359;
-                        var10003.method_6280(var10, class_239.field_2659);
+                        var10003 = new class_359(var10, class_239.field_2659);
                         if(var10002.method_3325(var10003, 279756852)) {
                            if(var3 == 1) {
                               throw new IllegalStateException();
@@ -635,8 +633,7 @@ public class class_126 extends class_111 {
 
                            var4 = var10000;
                            var16 = class_208.field_2413.field_1994;
-                           var25 = new class_388;
-                           var25.method_6733(var4);
+                           var25 = new class_388(var4);
                            var16.method_6124(var25, 1224360715);
                            return 1;
                         }
@@ -658,8 +655,7 @@ public class class_126 extends class_111 {
 
                               var4 = var10000;
                               var16 = class_208.field_2413.field_1994;
-                              var24 = new class_380;
-                              var24.method_6672(var4);
+                              var24 = new class_380(var4);
                               var16.method_6124(var24, 1224360715);
                               return 1;
                            }
@@ -681,8 +677,7 @@ public class class_126 extends class_111 {
 
                                  var4 = var10000;
                                  var16 = class_208.field_2413.field_1994;
-                                 var22 = new class_183;
-                                 var22.method_3842(var4);
+                                 var22 = new class_183(var4);
                                  var16.method_6124(var22, 1224360715);
                                  return 1;
                               }
@@ -704,8 +699,7 @@ public class class_126 extends class_111 {
 
                                     var4 = var10000;
                                     var16 = class_208.field_2413.field_1994;
-                                    var21 = new class_204;
-                                    var21.method_4103(var4);
+                                    var21 = new class_204(var4);
                                     var16.method_6124(var21, 1224360715);
                                     return 1;
                                  }
@@ -727,8 +721,7 @@ public class class_126 extends class_111 {
 
                                        var4 = var10000;
                                        var16 = class_208.field_2413.field_1994;
-                                       var20 = new class_189;
-                                       var20.method_3897(var4);
+                                       var20 = new class_189(var4);
                                        var16.method_6124(var20, 1224360715);
                                        return 1;
                                     }
@@ -750,8 +743,7 @@ public class class_126 extends class_111 {
 
                                           var4 = var10000;
                                           var16 = class_208.field_2413.field_1994;
-                                          var18 = new class_186;
-                                          var18.method_3870(var4);
+                                          var18 = new class_186(var4);
                                           var16.method_6124(var18, 1224360715);
                                           return 1;
                                        }
@@ -773,8 +765,7 @@ public class class_126 extends class_111 {
 
                                              var4 = var10000;
                                              var16 = class_208.field_2413.field_1994;
-                                             var17 = new class_188;
-                                             var17.method_3887(var4);
+                                             var17 = new class_188(var4);
                                              var16.method_6124(var17, 1224360715);
                                              return 1;
                                           }
@@ -793,8 +784,7 @@ public class class_126 extends class_111 {
 
                                              var4 = var10000;
                                              var16 = class_208.field_2413.field_1994;
-                                             var15 = new class_182;
-                                             var15.method_3834(var4);
+                                             var15 = new class_182(var4);
                                              var16.method_6124(var15, 1224360715);
                                              return 1;
                                           } else {
@@ -812,8 +802,7 @@ public class class_126 extends class_111 {
 
                                                 var4 = var10000;
                                                 var16 = class_208.field_2413.field_1994;
-                                                var13 = new class_187;
-                                                var13.method_3879(var4);
+                                                var13 = new class_187(var4);
                                                 var16.method_6124(var13, 1224360715);
                                                 return 1;
                                              } else {
@@ -834,8 +823,7 @@ public class class_126 extends class_111 {
 
                                                       var4 = var10000;
                                                       var16 = class_208.field_2413.field_1994;
-                                                      var12 = new class_184;
-                                                      var12.method_3848(var4);
+                                                      var12 = new class_184(var4);
                                                       var16.method_6124(var12, 1224360715);
                                                       return 1;
                                                    }
@@ -871,8 +859,7 @@ public class class_126 extends class_111 {
 
                                                          var4 = var10000;
                                                          var27 = class_208.field_2413.field_1995;
-                                                         var25 = new class_388;
-                                                         var25.method_6733(var4);
+                                                         var25 = new class_388(var4);
                                                          var27.method_6124(var25, 1224360715);
                                                          return 1;
                                                       }
@@ -892,8 +879,7 @@ public class class_126 extends class_111 {
 
                                                          var4 = var10000;
                                                          var27 = class_208.field_2413.field_1995;
-                                                         var24 = new class_380;
-                                                         var24.method_6672(var4);
+                                                         var24 = new class_380(var4);
                                                          var27.method_6124(var24, 1224360715);
                                                          return 1;
                                                       }
@@ -938,8 +924,7 @@ public class class_126 extends class_111 {
                                                             }
 
                                                             var11 = class_233.field_2617;
-                                                            var25 = new class_388;
-                                                            var25.method_6733(var4);
+                                                            var25 = new class_388(var4);
                                                             var11.method_6124(var25, 1224360715);
                                                          }
 
@@ -965,8 +950,7 @@ public class class_126 extends class_111 {
                                                                }
 
                                                                var11 = class_233.field_2617;
-                                                               var24 = new class_380;
-                                                               var24.method_6672(var4);
+                                                               var24 = new class_380(var4);
                                                                var11.method_6124(var24, 1224360715);
                                                             }
 
@@ -979,8 +963,7 @@ public class class_126 extends class_111 {
                                                             var4 = class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                             if(null != class_233.field_2617) {
                                                                var11 = class_233.field_2617;
-                                                               var22 = new class_183;
-                                                               var22.method_3842(var4);
+                                                               var22 = new class_183(var4);
                                                                var11.method_6124(var22, 1224360715);
                                                             }
 
@@ -1007,8 +990,7 @@ public class class_126 extends class_111 {
                                                                }
 
                                                                var11 = class_233.field_2617;
-                                                               var21 = new class_204;
-                                                               var21.method_4103(var4);
+                                                               var21 = new class_204(var4);
                                                                var11.method_6124(var21, 1224360715);
                                                             }
 
@@ -1035,8 +1017,7 @@ public class class_126 extends class_111 {
                                                                }
 
                                                                var11 = class_233.field_2617;
-                                                               var20 = new class_189;
-                                                               var20.method_3897(var4);
+                                                               var20 = new class_189(var4);
                                                                var11.method_6124(var20, 1224360715);
                                                             }
 
@@ -1060,8 +1041,7 @@ public class class_126 extends class_111 {
                                                             }
 
                                                             var11 = class_233.field_2617;
-                                                            var18 = new class_186;
-                                                            var18.method_3870(var4);
+                                                            var18 = new class_186(var4);
                                                             var11.method_6124(var18, 1224360715);
                                                          }
 
@@ -1087,8 +1067,7 @@ public class class_126 extends class_111 {
                                                                }
 
                                                                var11 = class_233.field_2617;
-                                                               var17 = new class_188;
-                                                               var17.method_3887(var4);
+                                                               var17 = new class_188(var4);
                                                                var11.method_6124(var17, 1224360715);
                                                             }
 
@@ -1105,8 +1084,7 @@ public class class_126 extends class_111 {
                                                                }
 
                                                                var11 = class_233.field_2617;
-                                                               var15 = new class_182;
-                                                               var15.method_3834(var4);
+                                                               var15 = new class_182(var4);
                                                                var11.method_6124(var15, 1224360715);
                                                             }
 
@@ -1129,8 +1107,7 @@ public class class_126 extends class_111 {
                                                             var4 = var10000;
                                                             if(null != class_233.field_2617) {
                                                                var11 = class_233.field_2617;
-                                                               var13 = new class_187;
-                                                               var13.method_3879(var4);
+                                                               var13 = new class_187(var4);
                                                                var11.method_6124(var13, 1224360715);
                                                             }
 
@@ -1157,8 +1134,7 @@ public class class_126 extends class_111 {
                                                                }
 
                                                                var11 = class_233.field_2617;
-                                                               var12 = new class_184;
-                                                               var12.method_3848(var4);
+                                                               var12 = new class_184(var4);
                                                                var11.method_6124(var12, 1224360715);
                                                             }
 
@@ -1192,8 +1168,7 @@ public class class_126 extends class_111 {
 
                                                                var4 = var10000;
                                                                var16 = class_208.field_2413.field_1994;
-                                                               var10001 = new class_185;
-                                                               var10001.method_3857(var4);
+                                                               var10001 = new class_185(var4);
                                                                var16.method_6124(var10001, 1224360715);
                                                                return 1;
                                                             }
@@ -1218,8 +1193,7 @@ public class class_126 extends class_111 {
                                                                   }
 
                                                                   var11 = class_233.field_2617;
-                                                                  var10001 = new class_185;
-                                                                  var10001.method_3857(var4);
+                                                                  var10001 = new class_185(var4);
                                                                   var11.method_6124(var10001, 1224360715);
                                                                }
 
@@ -1353,8 +1327,7 @@ public class class_126 extends class_111 {
             if(var4.field_218 == null) {
                return 0;
             } else {
-               class_45 var10 = new class_45;
-               var10.method_105();
+               class_45 var10 = new class_45();
                class_45 var5 = var10;
                var5.field_332 = var4;
                var5.field_337 = var4.field_218;

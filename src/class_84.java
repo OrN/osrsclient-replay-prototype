@@ -44,9 +44,8 @@ public class class_84 extends class_59 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_1413() {
-      class_272 var10000 = new class_272;
-      var10000.method_5063(64);
+   static {
+      class_272 var10000 = new class_272(64);
       field_784 = var10000;
    }
 
@@ -77,8 +76,7 @@ public class class_84 extends class_59 {
             }
          } else {
             byte[] var3 = class_78.field_669.method_5381(13, var0, -26460885);
-            class_78 var10000 = new class_78;
-            var10000.method_105();
+            class_78 var10000 = new class_78();
             var2 = var10000;
             var2.field_675 = 850117983 * var0;
             if(var3 != null) {
@@ -86,8 +84,7 @@ public class class_84 extends class_59 {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28;
-               var10001.method_178(var3);
+               class_28 var10001 = new class_28(var3);
                var2.method_1224(var10001, -929011134);
             }
 
@@ -111,12 +108,10 @@ public class class_84 extends class_59 {
          return var1;
       } else {
          byte[] var2 = field_783.method_5381(19, var0, -26460885);
-         class_84 var10000 = new class_84;
-         var10000.method_105();
+         class_84 var10000 = new class_84();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1410(var10001, (byte)-3);
          }
 
@@ -132,12 +127,10 @@ public class class_84 extends class_59 {
          return var1;
       } else {
          byte[] var2 = field_783.method_5381(19, var0, -26460885);
-         class_84 var10000 = new class_84;
-         var10000.method_105();
+         class_84 var10000 = new class_84();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1410(var10001, (byte)-98);
          }
 
@@ -193,12 +186,10 @@ public class class_84 extends class_59 {
          return var1;
       } else {
          byte[] var2 = field_783.method_5381(19, var0, -26460885);
-         class_84 var10000 = new class_84;
-         var10000.method_105();
+         class_84 var10000 = new class_84();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1410(var10001, (byte)-127);
          }
 
@@ -208,9 +199,9 @@ public class class_84 extends class_59 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_105() {
+   class_84() {
+      super();
       try {
-         super.method_105();
          this.field_785 = false;
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "ej.<init>(" + ')');
@@ -248,8 +239,7 @@ public class class_84 extends class_59 {
                            throw new IllegalStateException();
                         }
 
-                        class_173 var10000 = new class_173;
-                        var10000.method_3711();
+                        class_173 var10000 = new class_173();
                         class_58.field_465 = var10000;
                         class_58.field_465.field_2162 = client.field_1555[var4] * 2026453639;
                         class_58.field_465.field_2161 = client.field_1610[var4] * -1098570769;

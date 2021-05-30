@@ -31,8 +31,7 @@ public class class_141 implements class_3 {
    // $FF: renamed from: v (int) bd
    public class_139 method_5(int var1) {
       try {
-         class_140 var10000 = new class_140;
-         var10000.method_3017();
+         class_140 var10000 = new class_140();
          return var10000;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "av.v(" + ')');
@@ -41,15 +40,13 @@ public class class_141 implements class_3 {
 
    // $FF: renamed from: n () bd
    public class_139 method_6() {
-      class_140 var10000 = new class_140;
-      var10000.method_3017();
+      class_140 var10000 = new class_140();
       return var10000;
    }
 
    // $FF: renamed from: f () bd
    public class_139 method_7() {
-      class_140 var10000 = new class_140;
-      var10000.method_3017();
+      class_140 var10000 = new class_140();
       return var10000;
    }
 
@@ -90,8 +87,7 @@ public class class_141 implements class_3 {
                throw new IllegalStateException();
             }
 
-            class_50 var10000 = new class_50;
-            var10000.method_105();
+            class_50 var10000 = new class_50();
             var10 = var10000;
             var10.field_369 = -1242319013 * var0;
             var10.field_365 = -2054183101 * var3;
@@ -226,8 +222,7 @@ public class class_141 implements class_3 {
                      }
                   }
 
-                  var10000 = new class_96;
-                  var10000.method_1781(var4, 22, var5, var1, var2, var3, var10.field_824 * 91732693, var10.field_850, (class_91)null);
+                  var10000 = new class_96(var4, 22, var5, var1, var2, var3, var10.field_824 * 91732693, var10.field_850, (class_91)null);
                   var24 = var10000;
                }
 
@@ -257,8 +252,7 @@ public class class_141 implements class_3 {
                            }
                         }
 
-                        var10000 = new class_96;
-                        var10000.method_1781(var4, var6, var5, var1, var2, var3, var10.field_824 * 91732693, var10.field_850, (class_91)null);
+                        var10000 = new class_96(var4, var6, var5, var1, var2, var3, var10.field_824 * 91732693, var10.field_850, (class_91)null);
                         var24 = var10000;
                      }
 
@@ -295,8 +289,7 @@ public class class_141 implements class_3 {
                            }
                         }
 
-                        var10000 = new class_96;
-                        var10000.method_1781(var4, 0, var5, var1, var2, var3, 91732693 * var10.field_824, var10.field_850, (class_91)null);
+                        var10000 = new class_96(var4, 0, var5, var1, var2, var3, 91732693 * var10.field_824, var10.field_850, (class_91)null);
                         var24 = var10000;
                      }
 
@@ -333,8 +326,7 @@ public class class_141 implements class_3 {
                            }
                         }
 
-                        var10000 = new class_96;
-                        var10000.method_1781(var4, 1, var5, var1, var2, var3, 91732693 * var10.field_824, var10.field_850, (class_91)null);
+                        var10000 = new class_96(var4, 1, var5, var1, var2, var3, 91732693 * var10.field_824, var10.field_850, (class_91)null);
                         var24 = var10000;
                      }
 
@@ -376,11 +368,9 @@ public class class_141 implements class_3 {
                            }
                         }
 
-                        var10000 = new class_96;
-                        var10000.method_1781(var4, 2, var5 + 4, var1, var2, var3, var10.field_824 * 91732693, var10.field_850, (class_91)null);
+                        var10000 = new class_96(var4, 2, var5 + 4, var1, var2, var3, var10.field_824 * 91732693, var10.field_850, (class_91)null);
                         var33 = var10000;
-                        var10000 = new class_96;
-                        var10000.method_1781(var4, 2, var31, var1, var2, var3, 91732693 * var10.field_824, var10.field_850, (class_91)null);
+                        var10000 = new class_96(var4, 2, var31, var1, var2, var3, 91732693 * var10.field_824, var10.field_850, (class_91)null);
                         var26 = var10000;
                      }
 
@@ -413,8 +403,7 @@ public class class_141 implements class_3 {
                            }
                         }
 
-                        var10000 = new class_96;
-                        var10000.method_1781(var4, 3, var5, var1, var2, var3, var10.field_824 * 91732693, var10.field_850, (class_91)null);
+                        var10000 = new class_96(var4, 3, var5, var1, var2, var3, var10.field_824 * 91732693, var10.field_850, (class_91)null);
                         var24 = var10000;
                      }
 
@@ -451,8 +440,7 @@ public class class_141 implements class_3 {
                            }
                         }
 
-                        var10000 = new class_96;
-                        var10000.method_1781(var4, var6, var5, var1, var2, var3, 91732693 * var10.field_824, var10.field_850, (class_91)null);
+                        var10000 = new class_96(var4, var6, var5, var1, var2, var3, 91732693 * var10.field_824, var10.field_850, (class_91)null);
                         var24 = var10000;
                      }
 
@@ -489,8 +477,7 @@ public class class_141 implements class_3 {
                            }
                         }
 
-                        var10000 = new class_96;
-                        var10000.method_1781(var4, 4, var5, var1, var2, var3, 91732693 * var10.field_824, var10.field_850, (class_91)null);
+                        var10000 = new class_96(var4, 4, var5, var1, var2, var3, 91732693 * var10.field_824, var10.field_850, (class_91)null);
                         var24 = var10000;
                      }
 
@@ -531,8 +518,7 @@ public class class_141 implements class_3 {
                            }
                         }
 
-                        var10000 = new class_96;
-                        var10000.method_1781(var4, 4, var5, var1, var2, var3, var10.field_824 * 91732693, var10.field_850, (class_91)null);
+                        var10000 = new class_96(var4, 4, var5, var1, var2, var3, var10.field_824 * 91732693, var10.field_850, (class_91)null);
                         var27 = var10000;
                      }
 
@@ -567,8 +553,7 @@ public class class_141 implements class_3 {
                            }
                         }
 
-                        var10000 = new class_96;
-                        var10000.method_1781(var4, 4, 4 + var5, var1, var2, var3, 91732693 * var10.field_824, var10.field_850, (class_91)null);
+                        var10000 = new class_96(var4, 4, 4 + var5, var1, var2, var3, 91732693 * var10.field_824, var10.field_850, (class_91)null);
                         var27 = var10000;
                      }
 
@@ -595,8 +580,7 @@ public class class_141 implements class_3 {
                            }
                         }
 
-                        var10000 = new class_96;
-                        var10000.method_1781(var4, 4, var32 + 4, var1, var2, var3, var10.field_824 * 91732693, var10.field_850, (class_91)null);
+                        var10000 = new class_96(var4, 4, var32 + 4, var1, var2, var3, var10.field_824 * 91732693, var10.field_850, (class_91)null);
                         var24 = var10000;
                      }
 
@@ -641,11 +625,9 @@ public class class_141 implements class_3 {
                         }
                      }
 
-                     var10000 = new class_96;
-                     var10000.method_1781(var4, 4, 4 + var5, var1, var2, var3, var10.field_824 * 91732693, var10.field_850, (class_91)null);
+                     var10000 = new class_96(var4, 4, 4 + var5, var1, var2, var3, var10.field_824 * 91732693, var10.field_850, (class_91)null);
                      var27 = var10000;
-                     var10000 = new class_96;
-                     var10000.method_1781(var4, 4, var29 + 4, var1, var2, var3, var10.field_824 * 91732693, var10.field_850, (class_91)null);
+                     var10000 = new class_96(var4, 4, var29 + 4, var1, var2, var3, var10.field_824 * 91732693, var10.field_850, (class_91)null);
                      var28 = var10000;
                   }
 
@@ -674,8 +656,7 @@ public class class_141 implements class_3 {
                   }
                }
 
-               var10000 = new class_96;
-               var10000.method_1781(var4, 10, var5, var1, var2, var3, var10.field_824 * 91732693, var10.field_850, (class_91)null);
+               var10000 = new class_96(var4, 10, var5, var1, var2, var3, var10.field_824 * 91732693, var10.field_850, (class_91)null);
                var24 = var10000;
             }
 
@@ -709,9 +690,9 @@ public class class_141 implements class_3 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_3051() {
+   class_141() {
+      super();
       try {
-         super();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "av.<init>(" + ')');
       }

@@ -114,8 +114,7 @@ public class class_323 implements Iterable, Collection {
    }
 
    public Iterator iterator() {
-      class_330 var10000 = new class_330;
-      var10000.method_5870(this);
+      class_330 var10000 = new class_330(this);
       return var10000;
    }
 
@@ -436,8 +435,7 @@ public class class_323 implements Iterable, Collection {
 
    // $FF: renamed from: aj () java.util.Iterator
    public Iterator method_5732() {
-      class_330 var10000 = new class_330;
-      var10000.method_5870(this);
+      class_330 var10000 = new class_330(this);
       return var10000;
    }
 
@@ -468,10 +466,9 @@ public class class_323 implements Iterable, Collection {
    }
 
    // $FF: renamed from: <init> () void
-   public void method_5737() {
+   public class_323() {
       super();
-      class_27 var10001 = new class_27;
-      var10001.method_105();
+      class_27 var10001 = new class_27();
       this.field_3811 = var10001;
       this.field_3811.field_10 = this.field_3811;
       this.field_3811.field_11 = this.field_3811;

@@ -46,9 +46,9 @@ public final class class_377 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_6655() throws Throwable {
+   class_377() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "ng.<init>(" + ')');

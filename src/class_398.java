@@ -44,9 +44,9 @@ public class class_398 {
    }
 
    // $FF: renamed from: <init> (int, int, int) void
-   void method_6795(int var1, int var2, int var3) {
+   class_398(int var1, int var2, int var3) {
+      super();
       try {
-         super();
       } catch (RuntimeException var4) {
          throw class_223.method_4281(var4, "og.<init>(" + ')');
       }
@@ -74,9 +74,9 @@ public class class_398 {
    }
 
    // $FF: renamed from: <init> () void
-   public void method_6797() {
+   public class_398() {
+      this(-1, 1000000, 1000000);
       try {
-         this.method_6795(-1, 1000000, 1000000);
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "og.<init>(" + ')');
       }

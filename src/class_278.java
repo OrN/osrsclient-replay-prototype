@@ -50,9 +50,9 @@ public class class_278 extends class_277 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_5137() {
+   class_278() {
+      super();
       try {
-         super.method_5137();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "if.<init>(" + ')');
       }
@@ -130,8 +130,7 @@ public class class_278 extends class_277 {
                      }
                   }
 
-                  class_60 var10000 = new class_60;
-                  var10000.method_105();
+                  class_60 var10000 = new class_60();
                   var9 = var10000;
                   var9.field_473 = var0;
                   var9.field_474 = -1150578315 * var3;

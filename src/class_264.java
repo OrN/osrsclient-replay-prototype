@@ -28,8 +28,7 @@ public final class class_264 {
             return null;
          } else {
             if(var3.method_646()) {
-               class_63 var10000 = new class_63;
-               var10000.method_653(var4, var3.field_481);
+               class_63 var10000 = new class_63(var4, var3.field_481);
                class_63 var5 = var10000;
                this.field_3032.method_6588(var5, var3.field_9);
                this.field_3030.method_5797(var5);
@@ -47,10 +46,9 @@ public final class class_264 {
    }
 
    // $FF: renamed from: <init> (int, int) void
-   public void method_5001(int var1, int var2) {
+   public class_264(int var1, int var2) {
       super();
-      class_328 var10001 = new class_328;
-      var10001.method_5803();
+      class_328 var10001 = new class_328();
       this.field_3030 = var10001;
       this.field_3033 = var1;
       this.field_3031 = var1;
@@ -60,8 +58,7 @@ public final class class_264 {
          ;
       }
 
-      class_369 var4 = new class_369;
-      var4.method_6590(var3);
+      class_369 var4 = new class_369(var3);
       this.field_3032 = var4;
    }
 
@@ -79,8 +76,7 @@ public final class class_264 {
             return null;
          } else {
             if(var3.method_646()) {
-               class_63 var10000 = new class_63;
-               var10000.method_653(var4, var3.field_481);
+               class_63 var10000 = new class_63(var4, var3.field_481);
                class_63 var5 = var10000;
                this.field_3032.method_6588(var5, var3.field_9);
                this.field_3030.method_5797(var5);
@@ -127,8 +123,7 @@ public final class class_264 {
             }
          }
 
-         class_63 var10000 = new class_63;
-         var10000.method_653(var1, var4);
+         class_63 var10000 = new class_63(var1, var4);
          class_63 var6 = var10000;
          this.field_3032.method_6588(var6, var2);
          this.field_3030.method_5797(var6);
@@ -161,8 +156,7 @@ public final class class_264 {
                this.field_3031 += var2.field_481;
             }
          } else if(++var2.field_470 > (long)var1) {
-            class_64 var10000 = new class_64;
-            var10000.method_654(var2.method_644(), var2.field_481);
+            class_64 var10000 = new class_64(var2.method_644(), var2.field_481);
             class_64 var3 = var10000;
             this.field_3032.method_6588(var3, var2.field_9);
             class_328.method_5798(var3, var2);
@@ -204,8 +198,7 @@ public final class class_264 {
             return null;
          } else {
             if(var3.method_646()) {
-               class_63 var10000 = new class_63;
-               var10000.method_653(var4, var3.field_481);
+               class_63 var10000 = new class_63(var4, var3.field_481);
                class_63 var5 = var10000;
                this.field_3032.method_6588(var5, var3.field_9);
                this.field_3030.method_5797(var5);
@@ -318,8 +311,7 @@ public final class class_264 {
             }
          }
 
-         class_63 var10000 = new class_63;
-         var10000.method_653(var1, var4);
+         class_63 var10000 = new class_63(var1, var4);
          class_63 var6 = var10000;
          this.field_3032.method_6588(var6, var2);
          this.field_3030.method_5797(var6);
@@ -351,8 +343,7 @@ public final class class_264 {
             }
          }
 
-         class_63 var10000 = new class_63;
-         var10000.method_653(var1, var4);
+         class_63 var10000 = new class_63(var1, var4);
          class_63 var6 = var10000;
          this.field_3032.method_6588(var6, var2);
          this.field_3030.method_5797(var6);
@@ -384,8 +375,7 @@ public final class class_264 {
             }
          }
 
-         class_63 var10000 = new class_63;
-         var10000.method_653(var1, var4);
+         class_63 var10000 = new class_63(var1, var4);
          class_63 var6 = var10000;
          this.field_3032.method_6588(var6, var2);
          this.field_3030.method_5797(var6);
@@ -394,8 +384,8 @@ public final class class_264 {
    }
 
    // $FF: renamed from: <init> (int) void
-   public void method_5026(int var1) {
-      this.method_5001(var1, var1);
+   public class_264(int var1) {
+      this(var1, var1);
    }
 
    // $FF: renamed from: i () void
@@ -415,8 +405,7 @@ public final class class_264 {
                this.field_3031 += var2.field_481;
             }
          } else if(++var2.field_470 > (long)var1) {
-            class_64 var10000 = new class_64;
-            var10000.method_654(var2.method_644(), var2.field_481);
+            class_64 var10000 = new class_64(var2.method_644(), var2.field_481);
             class_64 var3 = var10000;
             this.field_3032.method_6588(var3, var2.field_9);
             class_328.method_5798(var3, var2);

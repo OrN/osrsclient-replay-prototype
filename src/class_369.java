@@ -126,14 +126,12 @@ public final class class_369 implements Iterable {
 
    // $FF: renamed from: aj () java.util.Iterator
    public Iterator method_6587() {
-      class_366 var10000 = new class_366;
-      var10000.method_6560(this);
+      class_366 var10000 = new class_366(this);
       return var10000;
    }
 
    public Iterator iterator() {
-      class_366 var10000 = new class_366;
-      var10000.method_6560(this);
+      class_366 var10000 = new class_366(this);
       return var10000;
    }
 
@@ -168,7 +166,7 @@ public final class class_369 implements Iterable {
    }
 
    // $FF: renamed from: <init> (int) void
-   public void method_6590(int var1) {
+   public class_369(int var1) {
       super();
       this.field_4101 = 0;
       this.field_4099 = var1;
@@ -176,8 +174,7 @@ public final class class_369 implements Iterable {
 
       for(int var2 = 0; var2 < var1; ++var2) {
          class_27[] var10000 = this.field_4098;
-         class_27 var10002 = new class_27;
-         var10002.method_105();
+         class_27 var10002 = new class_27();
          class_27 var3 = var10000[var2] = var10002;
          var3.field_10 = var3;
          var3.field_11 = var3;

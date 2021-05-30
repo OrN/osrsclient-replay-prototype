@@ -21,24 +21,18 @@ public class class_374 implements class_14 {
 
 
    // $FF: renamed from: <clinit> () void
-   static void method_6620() {
-      class_374 var10000 = new class_374;
-      var10000.method_6621(0, 0);
+   static {
+      class_374 var10000 = new class_374(0, 0);
       field_4129 = var10000;
-      var10000 = new class_374;
-      var10000.method_6621(3, 2);
+      var10000 = new class_374(3, 2);
       field_4126 = var10000;
-      var10000 = new class_374;
-      var10000.method_6621(5, 5);
+      var10000 = new class_374(5, 5);
       field_4127 = var10000;
-      var10000 = new class_374;
-      var10000.method_6621(2, 6);
+      var10000 = new class_374(2, 6);
       field_4128 = var10000;
-      var10000 = new class_374;
-      var10000.method_6621(1, 7);
+      var10000 = new class_374(1, 7);
       field_4132 = var10000;
-      var10000 = new class_374;
-      var10000.method_6621(4, 8);
+      var10000 = new class_374(4, 8);
       field_4130 = var10000;
    }
 
@@ -52,9 +46,9 @@ public class class_374 implements class_14 {
    }
 
    // $FF: renamed from: <init> (int, int) void
-   void method_6621(int var1, int var2) {
+   class_374(int var1, int var2) {
+      super();
       try {
-         super();
          this.field_4131 = var1 * -1003897275;
          this.field_4125 = var2 * -659075947;
       } catch (RuntimeException var3) {

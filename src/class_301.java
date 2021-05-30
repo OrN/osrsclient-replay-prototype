@@ -98,14 +98,12 @@ public class class_301 {
                   class_280 var10000;
                   class_280 var16;
                   if(var0 == 6606) {
-                     var10000 = new class_280;
-                     var10000.method_5163(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
+                     var10000 = new class_280(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                      var16 = var10000;
                      class_46.method_534((byte)7).method_6437(-2092998769 * var16.field_3236, var16.field_3235 * 349527629, 704726635);
                      return 1;
                   } else if(6607 == var0) {
-                     var10000 = new class_280;
-                     var10000.method_5163(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
+                     var10000 = new class_280(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                      var16 = var10000;
                      class_46.method_534((byte)7).method_6358(var16.field_3236 * -2092998769, var16.field_3235 * 349527629, (byte)19);
                      return 1;
@@ -113,8 +111,7 @@ public class class_301 {
                      if(var3 == 0) {
                         throw new IllegalStateException();
                      } else {
-                        var10000 = new class_280;
-                        var10000.method_5163(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
+                        var10000 = new class_280(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                         var16 = var10000;
                         class_46.method_534((byte)7).method_6454(var16.field_3234 * -1820038389, -2092998769 * var16.field_3236, 349527629 * var16.field_3235, Integer.MIN_VALUE);
                         return 1;
@@ -123,8 +120,7 @@ public class class_301 {
                      if(var3 == 0) {
                         throw new IllegalStateException();
                      } else {
-                        var10000 = new class_280;
-                        var10000.method_5163(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
+                        var10000 = new class_280(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                         var16 = var10000;
                         class_46.method_534((byte)7).method_6360(var16.field_3234 * -1820038389, -2092998769 * var16.field_3236, var16.field_3235 * 349527629, 1982259081);
                         return 1;
@@ -234,8 +230,7 @@ public class class_301 {
                            return 1;
                         }
                      } else if(6617 == var0) {
-                        var10000 = new class_280;
-                        var10000.method_5163(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
+                        var10000 = new class_280(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                         var16 = var10000;
                         var13 = class_46.method_534((byte)7).method_6380(-443198878);
                         if(var13 == null) {
@@ -264,8 +259,7 @@ public class class_301 {
                            if(var3 == 0) {
                               throw new IllegalStateException();
                            } else {
-                              var10000 = new class_280;
-                              var10000.method_5163(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
+                              var10000 = new class_280(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                               var16 = var10000;
                               var13 = class_46.method_534((byte)7).method_6380(-485059491);
                               if(null == var13) {
@@ -299,8 +293,7 @@ public class class_301 {
                               } else {
                                  class_136.field_1752 -= 2119512838;
                                  var4 = class_165.field_2052[-26460885 * class_136.field_1752];
-                                 var10000 = new class_280;
-                                 var10000.method_5163(class_165.field_2052[-26460885 * class_136.field_1752 + 1]);
+                                 var10000 = new class_280(class_165.field_2052[-26460885 * class_136.field_1752 + 1]);
                                  var10 = var10000;
                                  class_43.method_495(var4, var10, false, 1737731022);
                                  return 1;
@@ -311,8 +304,7 @@ public class class_301 {
                               } else {
                                  class_136.field_1752 -= 2119512838;
                                  var4 = class_165.field_2052[-26460885 * class_136.field_1752];
-                                 var10000 = new class_280;
-                                 var10000.method_5163(class_165.field_2052[1 + -26460885 * class_136.field_1752]);
+                                 var10000 = new class_280(class_165.field_2052[1 + -26460885 * class_136.field_1752]);
                                  var10 = var10000;
                                  class_43.method_495(var4, var10, true, 1737731022);
                                  return 1;
@@ -323,8 +315,7 @@ public class class_301 {
                               } else {
                                  class_136.field_1752 -= 2119512838;
                                  var4 = class_165.field_2052[class_136.field_1752 * -26460885];
-                                 var10000 = new class_280;
-                                 var10000.method_5163(class_165.field_2052[-26460885 * class_136.field_1752 + 1]);
+                                 var10000 = new class_280(class_165.field_2052[-26460885 * class_136.field_1752 + 1]);
                                  var10 = var10000;
                                  var9 = class_46.method_534((byte)7).method_6356(var4, -952195855);
                                  if(var9 == null) {
@@ -363,8 +354,7 @@ public class class_301 {
                               if(var3 == 0) {
                                  throw new IllegalStateException();
                               } else {
-                                 var10000 = new class_280;
-                                 var10000.method_5163(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
+                                 var10000 = new class_280(class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                                  var16 = var10000;
                                  var13 = class_46.method_534((byte)7).method_6337(-1820038389 * var16.field_3234, var16.field_3236 * -2092998769, 349527629 * var16.field_3235, -1024421337);
                                  if(null == var13) {
@@ -557,8 +547,7 @@ public class class_301 {
                                  } else if(var0 == 6638) {
                                     class_136.field_1752 -= 2119512838;
                                     var4 = class_165.field_2052[class_136.field_1752 * -26460885];
-                                    var10000 = new class_280;
-                                    var10000.method_5163(class_165.field_2052[1 + class_136.field_1752 * -26460885]);
+                                    var10000 = new class_280(class_165.field_2052[1 + class_136.field_1752 * -26460885]);
                                     var10 = var10000;
                                     var6 = class_46.method_534((byte)7).method_6382(var4, var10, -1053768057);
                                     if(null == var6) {
@@ -705,25 +694,21 @@ public class class_301 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_5359() {
-      class_301 var10000 = new class_301;
-      var10000.method_5360("LIVE", 0);
+   static {
+      class_301 var10000 = new class_301("LIVE", 0);
       field_3379 = var10000;
-      var10000 = new class_301;
-      var10000.method_5360("BUILDLIVE", 3);
+      var10000 = new class_301("BUILDLIVE", 3);
       field_3377 = var10000;
-      var10000 = new class_301;
-      var10000.method_5360("RC", 1);
+      var10000 = new class_301("RC", 1);
       field_3378 = var10000;
-      var10000 = new class_301;
-      var10000.method_5360("WIP", 2);
+      var10000 = new class_301("WIP", 2);
       field_3376 = var10000;
    }
 
    // $FF: renamed from: <init> (java.lang.String, int) void
-   void method_5360(String var1, int var2) {
+   class_301(String var1, int var2) {
+      super();
       try {
-         super();
          this.field_3380 = var1;
          this.field_3381 = var2 * -2025556373;
       } catch (RuntimeException var3) {

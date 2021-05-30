@@ -7,9 +7,9 @@ public class class_397 {
 
 
    // $FF: renamed from: <init> () void
-   void method_6793() throws Throwable {
+   class_397() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "of.<init>(" + ')');

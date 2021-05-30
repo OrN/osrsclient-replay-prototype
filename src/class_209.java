@@ -26,8 +26,7 @@ public class class_209 {
       int var3;
       if(var1 == null) {
          var3 = class_100.method_1845(var2, -2031794167);
-         class_369 var10000 = new class_369;
-         var10000.method_6590(var3);
+         class_369 var10000 = new class_369(var3);
          var1 = var10000;
       }
 
@@ -36,12 +35,10 @@ public class class_209 {
          int var5 = var0.method_134((byte)-66);
          Object var6;
          if(var4) {
-            class_34 var7 = new class_34;
-            var7.method_393(var0.method_139(-391631059));
+            class_34 var7 = new class_34(var0.method_139(-391631059));
             var6 = var7;
          } else {
-            class_32 var8 = new class_32;
-            var8.method_391(var0.method_135((byte)-51));
+            class_32 var8 = new class_32(var0.method_135((byte)-51));
             var6 = var8;
          }
 
@@ -57,8 +54,7 @@ public class class_209 {
       int var3;
       if(var1 == null) {
          var3 = class_100.method_1845(var2, 636296412);
-         class_369 var10000 = new class_369;
-         var10000.method_6590(var3);
+         class_369 var10000 = new class_369(var3);
          var1 = var10000;
       }
 
@@ -67,12 +63,10 @@ public class class_209 {
          int var5 = var0.method_134((byte)-109);
          Object var6;
          if(var4) {
-            class_34 var7 = new class_34;
-            var7.method_393(var0.method_139(-391631059));
+            class_34 var7 = new class_34(var0.method_139(-391631059));
             var6 = var7;
          } else {
-            class_32 var8 = new class_32;
-            var8.method_391(var0.method_135((byte)-29));
+            class_32 var8 = new class_32(var0.method_135((byte)-29));
             var6 = var8;
          }
 
@@ -143,9 +137,9 @@ public class class_209 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_4160() throws Throwable {
+   class_209() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "eb.<init>(" + ')');
@@ -172,8 +166,7 @@ public class class_209 {
                throw new IllegalStateException();
             }
 
-            class_67 var10002 = new class_67;
-            var10002.method_105();
+            class_67 var10002 = new class_67();
             class_67 var3 = var1[var2] = var10002;
             var3.field_501 = class_403.field_4276 * -1099363635;
             var3.field_505 = class_380.field_4201 * -821679425;

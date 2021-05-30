@@ -144,9 +144,8 @@ public class class_86 extends class_59 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_1465() {
-      class_272 var10000 = new class_272;
-      var10000.method_5063(64);
+   static {
+      class_272 var10000 = new class_272(64);
       field_792 = var10000;
    }
 
@@ -157,12 +156,10 @@ public class class_86 extends class_59 {
          return var1;
       } else {
          byte[] var2 = field_796.method_5381(11, var0, -26460885);
-         class_86 var10000 = new class_86;
-         var10000.method_105();
+         class_86 var10000 = new class_86();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1462(var10001, (short)18623);
          }
 
@@ -173,9 +170,9 @@ public class class_86 extends class_59 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_105() {
+   class_86() {
+      super();
       try {
-         super.method_105();
          this.field_800 = true;
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "eh.<init>(" + ')');
@@ -189,12 +186,10 @@ public class class_86 extends class_59 {
          return var1;
       } else {
          byte[] var2 = field_796.method_5381(11, var0, -26460885);
-         class_86 var10000 = new class_86;
-         var10000.method_105();
+         class_86 var10000 = new class_86();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1462(var10001, (short)-19186);
          }
 
@@ -431,8 +426,7 @@ public class class_86 extends class_59 {
             int[] var5 = new int[var3 * var4];
             PixelGrabber var6 = new PixelGrabber(var2, 0, 0, var3, var4, var5, 0, var3);
             var6.grabPixels();
-            var10000 = new class_67;
-            var10000.method_815(var5, var3, var4);
+            var10000 = new class_67(var5, var3, var4);
             return var10000;
          } catch (IOException var7) {
             ;
@@ -440,8 +434,7 @@ public class class_86 extends class_59 {
             ;
          }
 
-         var10000 = new class_67;
-         var10000.method_754(0, 0);
+         var10000 = new class_67(0, 0);
          return var10000;
       } catch (RuntimeException var9) {
          throw class_223.method_4281(var9, "eh.v(" + ')');
@@ -500,8 +493,7 @@ public class class_86 extends class_59 {
                   }
                } else {
                   class_100[] var15 = client.field_1605;
-                  class_100 var10002 = new class_100;
-                  var10002.method_105();
+                  class_100 var10002 = new class_100();
                   class_100 var14 = var15[var1] = var10002;
                   var14.field_1142 = var1 * -1619133141;
                   if(null != class_195.field_2312[var1]) {

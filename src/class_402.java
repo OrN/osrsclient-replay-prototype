@@ -9,10 +9,9 @@ public class class_402 {
 
 
    // $FF: renamed from: <init> (int[]) void
-   public void method_6807(int[] var1) {
+   public class_402(int[] var1) {
+      super();
       try {
-         super();
-
          int var2;
          for(var2 = 1; var2 <= var1.length + (var1.length >> 1); var2 <<= 1) {
             ;

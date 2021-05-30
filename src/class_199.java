@@ -27,8 +27,7 @@ public class class_199 {
       class_383 var10000;
       if(var3.exists()) {
          try {
-            var10000 = new class_383;
-            var10000.method_6690(var3, "rw", 10000L);
+            var10000 = new class_383(var3, "rw", 10000L);
             class_383 var10 = var10000;
             return var10;
          } catch (IOException var9) {
@@ -43,12 +42,11 @@ public class class_199 {
          var4 = "_wip";
       }
 
-      File var5 = new File(class_115.field_1290, "jagex_" + var1 + "_preferences" + var0 + var4 + ".dat");
+      File var5 = new File(class_115.homeDirectory, "jagex_" + var1 + "_preferences" + var0 + var4 + ".dat");
       class_383 var6;
       if(!var2 && var5.exists()) {
          try {
-            var10000 = new class_383;
-            var10000.method_6690(var5, "rw", 10000L);
+            var10000 = new class_383(var5, "rw", 10000L);
             var6 = var10000;
             return var6;
          } catch (IOException var8) {
@@ -57,8 +55,7 @@ public class class_199 {
       }
 
       try {
-         var10000 = new class_383;
-         var10000.method_6690(var3, "rw", 10000L);
+         var10000 = new class_383(var3, "rw", 10000L);
          var6 = var10000;
          return var6;
       } catch (IOException var7) {
@@ -67,7 +64,7 @@ public class class_199 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_4022() {
+   static {
       field_2344 = null;
       field_2346 = null;
       field_2341 = null;
@@ -76,26 +73,22 @@ public class class_199 {
    // $FF: renamed from: o () void
    public static void method_4023() {
       try {
-         File var0 = new File(class_115.field_1290, "random.dat");
+         File var0 = new File(class_115.homeDirectory, "random.dat");
          class_376 var10000;
          class_383 var10002;
          int var2;
          if(var0.exists()) {
-            var10000 = new class_376;
-            var10002 = new class_383;
-            var10002.method_6690(var0, "rw", 25L);
-            var10000.method_6626(var10002, 24, 0);
+            var10002 = new class_383(var0, "rw", 25L);
+            var10000 = new class_376(var10002, 24, 0);
             field_2344 = var10000;
          } else {
             label31:
             for(int var1 = 0; var1 < class_292.field_3333.length; ++var1) {
-               for(var2 = 0; var2 < class_48.field_356.length; ++var2) {
-                  File var3 = new File(class_48.field_356[var2] + class_292.field_3333[var1] + File.separatorChar + "random.dat");
+               for(var2 = 0; var2 < class_48.cacheDirectories.length; ++var2) {
+                  File var3 = new File(class_48.cacheDirectories[var2] + class_292.field_3333[var1] + File.separatorChar + "random.dat");
                   if(var3.exists()) {
-                     var10000 = new class_376;
-                     var10002 = new class_383;
-                     var10002.method_6690(var3, "rw", 25L);
-                     var10000.method_6626(var10002, 24, 0);
+                     var10002 = new class_383(var3, "rw", 25L);
+                     var10000 = new class_376(var10002, 24, 0);
                      field_2344 = var10000;
                      break label31;
                   }
@@ -110,10 +103,8 @@ public class class_199 {
             var5.write(var2);
             var5.seek(0L);
             var5.close();
-            var10000 = new class_376;
-            var10002 = new class_383;
-            var10002.method_6690(var0, "rw", 25L);
-            var10000.method_6626(var10002, 24, 0);
+            var10002 = new class_383(var0, "rw", 25L);
+            var10000 = new class_376(var10002, 24, 0);
             field_2344 = var10000;
          }
       } catch (IOException var4) {
@@ -125,7 +116,7 @@ public class class_199 {
    // $FF: renamed from: r (java.lang.String, java.lang.String, int) java.io.File
    public static File method_4024(String var0, String var1, int var2) {
       String var3 = 0 == var2?"":"" + var2;
-      class_396.field_4253 = new File(class_115.field_1290, "jagex_cl_" + var0 + "_" + var1 + var3 + ".dat");
+      class_396.field_4253 = new File(class_115.homeDirectory, "jagex_cl_" + var0 + "_" + var1 + var3 + ".dat");
       String var4 = null;
       String var5 = null;
       boolean var6 = false;
@@ -135,11 +126,9 @@ public class class_199 {
       class_28 var27;
       if(class_396.field_4253.exists()) {
          try {
-            var10000 = new class_383;
-            var10000.method_6690(class_396.field_4253, "rw", 10000L);
+            var10000 = new class_383(class_396.field_4253, "rw", 10000L);
             class_383 var7 = var10000;
-            var27 = new class_28;
-            var27.method_160((int)var7.method_6688(1371646188));
+            var27 = new class_28((int)var7.method_6688(1371646188));
 
             int var9;
             for(var8 = var27; var8.field_15 * -442398587 < var8.field_12.length; var8.field_15 += -1025691571 * var9) {
@@ -195,8 +184,8 @@ public class class_199 {
       if(var4 == null && var2 == 0) {
          label116:
          for(int var18 = 0; var18 < class_292.field_3333.length; ++var18) {
-            for(int var21 = 0; var21 < class_48.field_356.length; ++var21) {
-               File var22 = new File(class_48.field_356[var21] + class_292.field_3333[var18] + File.separatorChar + var0 + File.separatorChar);
+            for(int var21 = 0; var21 < class_48.cacheDirectories.length; ++var21) {
+               File var22 = new File(class_48.cacheDirectories[var21] + class_292.field_3333[var18] + File.separatorChar + var0 + File.separatorChar);
                if(var22.exists() && class_246.method_4711(new File(var22, "test.dat"), true, -450028783)) {
                   var4 = var22.toString();
                   var6 = true;
@@ -207,7 +196,7 @@ public class class_199 {
       }
 
       if(null == var4) {
-         var4 = class_115.field_1290 + File.separatorChar + "jagexcache" + var3 + File.separatorChar + var0 + File.separatorChar + var1 + File.separatorChar;
+         var4 = class_115.homeDirectory + File.separatorChar + "jagexcache" + var3 + File.separatorChar + var0 + File.separatorChar + var1 + File.separatorChar;
          var6 = true;
       }
 
@@ -240,17 +229,16 @@ public class class_199 {
          var8 = null;
 
          try {
-            var10000 = new class_383;
-            var10000.method_6690(class_396.field_4253, "rw", 10000L);
+            var10000 = new class_383(class_396.field_4253, "rw", 10000L);
             class_383 var24 = var10000;
-            var27 = new class_28;
-            var27.method_160(500);
+            var27 = new class_28(500);
             class_28 var26 = var27;
             var26.method_210(3, 303066737);
             var26.method_210(var8 != null?1:0, 303066737);
             var26.method_128(var19.getPath(), 499802318);
             if(var8 != null) {
-               var26.method_128(var8.getPath(), 499802318);
+               // TODO: Originally var8
+               var26.method_128(var19.getPath(), 499802318);
             }
 
             var24.method_6686(var26.field_12, 0, -2075038961 * var26.field_15, (byte)-49);
@@ -266,7 +254,7 @@ public class class_199 {
    // $FF: renamed from: b (java.lang.String, java.lang.String, int) java.io.File
    public static File method_4025(String var0, String var1, int var2) {
       String var3 = 0 == var2?"":"" + var2;
-      class_396.field_4253 = new File(class_115.field_1290, "jagex_cl_" + var0 + "_" + var1 + var3 + ".dat");
+      class_396.field_4253 = new File(class_115.homeDirectory, "jagex_cl_" + var0 + "_" + var1 + var3 + ".dat");
       String var4 = null;
       String var5 = null;
       boolean var6 = false;
@@ -276,11 +264,9 @@ public class class_199 {
       class_28 var27;
       if(class_396.field_4253.exists()) {
          try {
-            var10000 = new class_383;
-            var10000.method_6690(class_396.field_4253, "rw", 10000L);
+            var10000 = new class_383(class_396.field_4253, "rw", 10000L);
             class_383 var7 = var10000;
-            var27 = new class_28;
-            var27.method_160((int)var7.method_6688(1487816724));
+            var27 = new class_28((int)var7.method_6688(1487816724));
 
             int var9;
             for(var8 = var27; var8.field_15 * -442398587 < var8.field_12.length; var8.field_15 += -1025691571 * var9) {
@@ -336,8 +322,8 @@ public class class_199 {
       if(var4 == null && var2 == 0) {
          label116:
          for(int var18 = 0; var18 < class_292.field_3333.length; ++var18) {
-            for(int var21 = 0; var21 < class_48.field_356.length; ++var21) {
-               File var22 = new File(class_48.field_356[var21] + class_292.field_3333[var18] + File.separatorChar + var0 + File.separatorChar);
+            for(int var21 = 0; var21 < class_48.cacheDirectories.length; ++var21) {
+               File var22 = new File(class_48.cacheDirectories[var21] + class_292.field_3333[var18] + File.separatorChar + var0 + File.separatorChar);
                if(var22.exists() && class_246.method_4711(new File(var22, "test.dat"), true, 698254835)) {
                   var4 = var22.toString();
                   var6 = true;
@@ -348,7 +334,7 @@ public class class_199 {
       }
 
       if(null == var4) {
-         var4 = class_115.field_1290 + File.separatorChar + "jagexcache" + var3 + File.separatorChar + var0 + File.separatorChar + var1 + File.separatorChar;
+         var4 = class_115.homeDirectory + File.separatorChar + "jagexcache" + var3 + File.separatorChar + var0 + File.separatorChar + var1 + File.separatorChar;
          var6 = true;
       }
 
@@ -381,17 +367,16 @@ public class class_199 {
          var8 = null;
 
          try {
-            var10000 = new class_383;
-            var10000.method_6690(class_396.field_4253, "rw", 10000L);
+            var10000 = new class_383(class_396.field_4253, "rw", 10000L);
             class_383 var24 = var10000;
-            var27 = new class_28;
-            var27.method_160(500);
+            var27 = new class_28(500);
             class_28 var26 = var27;
             var26.method_210(3, 303066737);
             var26.method_210(var8 != null?1:0, 303066737);
             var26.method_128(var19.getPath(), 499802318);
             if(var8 != null) {
-               var26.method_128(var8.getPath(), 499802318);
+               // TODO: Original var8
+               var26.method_128(var19.getPath(), 499802318);
             }
 
             var24.method_6686(var26.field_12, 0, -442398587 * var26.field_15, (byte)45);
@@ -407,7 +392,7 @@ public class class_199 {
    // $FF: renamed from: j (java.lang.String, java.lang.String, int) java.io.File
    public static File method_4026(String var0, String var1, int var2) {
       String var3 = 0 == var2?"":"" + var2;
-      class_396.field_4253 = new File(class_115.field_1290, "jagex_cl_" + var0 + "_" + var1 + var3 + ".dat");
+      class_396.field_4253 = new File(class_115.homeDirectory, "jagex_cl_" + var0 + "_" + var1 + var3 + ".dat");
       String var4 = null;
       String var5 = null;
       boolean var6 = false;
@@ -417,11 +402,9 @@ public class class_199 {
       class_28 var27;
       if(class_396.field_4253.exists()) {
          try {
-            var10000 = new class_383;
-            var10000.method_6690(class_396.field_4253, "rw", 10000L);
+            var10000 = new class_383(class_396.field_4253, "rw", 10000L);
             class_383 var7 = var10000;
-            var27 = new class_28;
-            var27.method_160((int)var7.method_6688(1015847562));
+            var27 = new class_28((int)var7.method_6688(1015847562));
 
             int var9;
             for(var8 = var27; var8.field_15 * 1849884383 < var8.field_12.length; var8.field_15 += -1025691571 * var9) {
@@ -477,8 +460,8 @@ public class class_199 {
       if(var4 == null && var2 == 0) {
          label116:
          for(int var18 = 0; var18 < class_292.field_3333.length; ++var18) {
-            for(int var21 = 0; var21 < class_48.field_356.length; ++var21) {
-               File var22 = new File(class_48.field_356[var21] + class_292.field_3333[var18] + File.separatorChar + var0 + File.separatorChar);
+            for(int var21 = 0; var21 < class_48.cacheDirectories.length; ++var21) {
+               File var22 = new File(class_48.cacheDirectories[var21] + class_292.field_3333[var18] + File.separatorChar + var0 + File.separatorChar);
                if(var22.exists() && class_246.method_4711(new File(var22, "test.dat"), true, 1705714449)) {
                   var4 = var22.toString();
                   var6 = true;
@@ -489,7 +472,7 @@ public class class_199 {
       }
 
       if(null == var4) {
-         var4 = class_115.field_1290 + File.separatorChar + "jagexcache" + var3 + File.separatorChar + var0 + File.separatorChar + var1 + File.separatorChar;
+         var4 = class_115.homeDirectory + File.separatorChar + "jagexcache" + var3 + File.separatorChar + var0 + File.separatorChar + var1 + File.separatorChar;
          var6 = true;
       }
 
@@ -522,17 +505,16 @@ public class class_199 {
          var8 = null;
 
          try {
-            var10000 = new class_383;
-            var10000.method_6690(class_396.field_4253, "rw", 10000L);
+            var10000 = new class_383(class_396.field_4253, "rw", 10000L);
             class_383 var24 = var10000;
-            var27 = new class_28;
-            var27.method_160(500);
+            var27 = new class_28(500);
             class_28 var26 = var27;
             var26.method_210(3, 303066737);
             var26.method_210(var8 != null?1:0, 303066737);
             var26.method_128(var19.getPath(), 499802318);
             if(var8 != null) {
-               var26.method_128(var8.getPath(), 499802318);
+               // TODO: Originally var8.getPath
+               var26.method_128(var19.getPath(), 499802318);
             }
 
             var24.method_6686(var26.field_12, 0, -2065529096 * var26.field_15, (byte)21);
@@ -587,8 +569,7 @@ public class class_199 {
       class_383 var10000;
       if(var3.exists()) {
          try {
-            var10000 = new class_383;
-            var10000.method_6690(var3, "rw", 10000L);
+            var10000 = new class_383(var3, "rw", 10000L);
             class_383 var10 = var10000;
             return var10;
          } catch (IOException var9) {
@@ -603,12 +584,11 @@ public class class_199 {
          var4 = "_wip";
       }
 
-      File var5 = new File(class_115.field_1290, "jagex_" + var1 + "_preferences" + var0 + var4 + ".dat");
+      File var5 = new File(class_115.homeDirectory, "jagex_" + var1 + "_preferences" + var0 + var4 + ".dat");
       class_383 var6;
       if(!var2 && var5.exists()) {
          try {
-            var10000 = new class_383;
-            var10000.method_6690(var5, "rw", 10000L);
+            var10000 = new class_383(var5, "rw", 10000L);
             var6 = var10000;
             return var6;
          } catch (IOException var8) {
@@ -617,8 +597,7 @@ public class class_199 {
       }
 
       try {
-         var10000 = new class_383;
-         var10000.method_6690(var3, "rw", 10000L);
+         var10000 = new class_383(var3, "rw", 10000L);
          var6 = var10000;
          return var6;
       } catch (IOException var7) {
@@ -629,26 +608,22 @@ public class class_199 {
    // $FF: renamed from: e () void
    public static void method_4030() {
       try {
-         File var0 = new File(class_115.field_1290, "random.dat");
+         File var0 = new File(class_115.homeDirectory, "random.dat");
          class_376 var10000;
          class_383 var10002;
          int var2;
          if(var0.exists()) {
-            var10000 = new class_376;
-            var10002 = new class_383;
-            var10002.method_6690(var0, "rw", 25L);
-            var10000.method_6626(var10002, 24, 0);
+            var10002 = new class_383(var0, "rw", 25L);
+            var10000 = new class_376(var10002, 24, 0);
             field_2344 = var10000;
          } else {
             label31:
             for(int var1 = 0; var1 < class_292.field_3333.length; ++var1) {
-               for(var2 = 0; var2 < class_48.field_356.length; ++var2) {
-                  File var3 = new File(class_48.field_356[var2] + class_292.field_3333[var1] + File.separatorChar + "random.dat");
+               for(var2 = 0; var2 < class_48.cacheDirectories.length; ++var2) {
+                  File var3 = new File(class_48.cacheDirectories[var2] + class_292.field_3333[var1] + File.separatorChar + "random.dat");
                   if(var3.exists()) {
-                     var10000 = new class_376;
-                     var10002 = new class_383;
-                     var10002.method_6690(var3, "rw", 25L);
-                     var10000.method_6626(var10002, 24, 0);
+                     var10002 = new class_383(var3, "rw", 25L);
+                     var10000 = new class_376(var10002, 24, 0);
                      field_2344 = var10000;
                      break label31;
                   }
@@ -663,10 +638,8 @@ public class class_199 {
             var5.write(var2);
             var5.seek(0L);
             var5.close();
-            var10000 = new class_376;
-            var10002 = new class_383;
-            var10002.method_6690(var0, "rw", 25L);
-            var10000.method_6626(var10002, 24, 0);
+            var10002 = new class_383(var0, "rw", 25L);
+            var10000 = new class_376(var10002, 24, 0);
             field_2344 = var10000;
          }
       } catch (IOException var4) {
@@ -678,26 +651,22 @@ public class class_199 {
    // $FF: renamed from: c () void
    public static void method_4031() {
       try {
-         File var0 = new File(class_115.field_1290, "random.dat");
+         File var0 = new File(class_115.homeDirectory, "random.dat");
          class_376 var10000;
          class_383 var10002;
          int var2;
          if(var0.exists()) {
-            var10000 = new class_376;
-            var10002 = new class_383;
-            var10002.method_6690(var0, "rw", 25L);
-            var10000.method_6626(var10002, 24, 0);
+            var10002 = new class_383(var0, "rw", 25L);
+            var10000 = new class_376(var10002, 24, 0);
             field_2344 = var10000;
          } else {
             label31:
             for(int var1 = 0; var1 < class_292.field_3333.length; ++var1) {
-               for(var2 = 0; var2 < class_48.field_356.length; ++var2) {
-                  File var3 = new File(class_48.field_356[var2] + class_292.field_3333[var1] + File.separatorChar + "random.dat");
+               for(var2 = 0; var2 < class_48.cacheDirectories.length; ++var2) {
+                  File var3 = new File(class_48.cacheDirectories[var2] + class_292.field_3333[var1] + File.separatorChar + "random.dat");
                   if(var3.exists()) {
-                     var10000 = new class_376;
-                     var10002 = new class_383;
-                     var10002.method_6690(var3, "rw", 25L);
-                     var10000.method_6626(var10002, 24, 0);
+                     var10002 = new class_383(var3, "rw", 25L);
+                     var10000 = new class_376(var10002, 24, 0);
                      field_2344 = var10000;
                      break label31;
                   }
@@ -712,10 +681,8 @@ public class class_199 {
             var5.write(var2);
             var5.seek(0L);
             var5.close();
-            var10000 = new class_376;
-            var10002 = new class_383;
-            var10002.method_6690(var0, "rw", 25L);
-            var10000.method_6626(var10002, 24, 0);
+            var10002 = new class_383(var0, "rw", 25L);
+            var10000 = new class_376(var10002, 24, 0);
             field_2344 = var10000;
          }
       } catch (IOException var4) {
@@ -725,9 +692,9 @@ public class class_199 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_4032() throws Throwable {
+   class_199() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "dm.<init>(" + ')');

@@ -36,7 +36,7 @@ public class class_333 {
    }
 
    // $FF: renamed from: <init> () void
-   public void method_5894() {
+   public class_333() {
       super();
       this.field_3865 = -746359096303538669L;
       this.field_3863 = -7307109831716981347L;

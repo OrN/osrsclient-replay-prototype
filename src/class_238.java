@@ -19,18 +19,14 @@ public class class_238 implements class_14 {
 
 
    // $FF: renamed from: <clinit> () void
-   static void method_4597() {
-      class_238 var10000 = new class_238;
-      var10000.method_4599(0, (byte)0);
+   static {
+      class_238 var10000 = new class_238(0, (byte)0);
       field_2646 = var10000;
-      var10000 = new class_238;
-      var10000.method_4599(2, (byte)1);
+      var10000 = new class_238(2, (byte)1);
       field_2647 = var10000;
-      var10000 = new class_238;
-      var10000.method_4599(1, (byte)2);
+      var10000 = new class_238(1, (byte)2);
       field_2648 = var10000;
-      var10000 = new class_238;
-      var10000.method_4599(3, (byte)3);
+      var10000 = new class_238(3, (byte)3);
       field_2649 = var10000;
    }
 
@@ -42,16 +38,14 @@ public class class_238 implements class_14 {
             return var2;
          } else {
             byte[] var3 = class_84.field_783.method_5381(19, var0, -26460885);
-            class_84 var10000 = new class_84;
-            var10000.method_105();
+            class_84 var10000 = new class_84();
             var2 = var10000;
             if(var3 != null) {
                if(var1 == 9) {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28;
-               var10001.method_178(var3);
+               class_28 var10001 = new class_28(var3);
                var2.method_1410(var10001, (byte)-17);
             }
 
@@ -64,9 +58,9 @@ public class class_238 implements class_14 {
    }
 
    // $FF: renamed from: <init> (int, byte) void
-   void method_4599(int var1, byte var2) {
+   class_238(int var1, byte var2) {
+      super();
       try {
-         super();
          this.field_2650 = var1 * -968717153;
          this.field_2651 = var2;
       } catch (RuntimeException var3) {

@@ -32,8 +32,7 @@ public class class_360 {
    public void method_6293(class_306 var1, byte var2) {
       try {
          byte[] var3 = var1.method_5388(-1567646551 * class_349.field_3935.field_3936, (byte)-116);
-         class_28 var10000 = new class_28;
-         var10000.method_178(var3);
+         class_28 var10000 = new class_28(var3);
          class_28 var4 = var10000;
 
          while(true) {
@@ -66,7 +65,7 @@ public class class_360 {
    }
 
    // $FF: renamed from: <init> () void
-   public void method_6294() {
+   public class_360() {
       super();
       this.field_3997 = 1286622151;
       this.field_3995 = -42570379;
@@ -84,8 +83,7 @@ public class class_360 {
    // $FF: renamed from: n (jv) void
    public void method_6295(class_306 var1) {
       byte[] var2 = var1.method_5388(2056330613 * class_349.field_3935.field_3936, (byte)-111);
-      class_28 var10000 = new class_28;
-      var10000.method_178(var2);
+      class_28 var10000 = new class_28(var2);
       class_28 var3 = var10000;
 
       while(true) {
@@ -117,8 +115,7 @@ public class class_360 {
    // $FF: renamed from: f (jv) void
    public void method_6296(class_306 var1) {
       byte[] var2 = var1.method_5388(-1737205054 * class_349.field_3935.field_3936, (byte)-37);
-      class_28 var10000 = new class_28;
-      var10000.method_178(var2);
+      class_28 var10000 = new class_28(var2);
       class_28 var3 = var10000;
 
       while(true) {

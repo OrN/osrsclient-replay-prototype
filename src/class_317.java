@@ -846,7 +846,7 @@ public class class_317 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_5636() throws Throwable {
+   class_317() throws Throwable {
       super();
       throw new Error();
    }

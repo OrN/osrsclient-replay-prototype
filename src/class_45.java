@@ -444,8 +444,8 @@ public class class_45 extends class_27 {
    }
 
    // $FF: renamed from: <init> () void
-   public void method_105() {
-      super.method_105();
+   public class_45() {
+      super();
       this.field_341 = 1226821772;
    }
 }

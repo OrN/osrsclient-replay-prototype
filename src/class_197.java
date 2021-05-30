@@ -30,13 +30,11 @@ public class class_197 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_3994() {
+   static {
       field_2338 = new HashMap();
-      class_369 var10000 = new class_369;
-      var10000.method_6590(1024);
+      class_369 var10000 = new class_369(1024);
       field_2334 = var10000;
-      class_328 var0 = new class_328;
-      var0.method_5803();
+      class_328 var0 = new class_328();
       field_2336 = var0;
       field_2337 = 0;
    }
@@ -50,8 +48,7 @@ public class class_197 {
    static void method_3996(int var0, String var1, String var2, String var3) {
       class_175 var4 = (class_175)field_2338.get(Integer.valueOf(var0));
       if(null == var4) {
-         class_175 var10000 = new class_175;
-         var10000.method_3734();
+         class_175 var10000 = new class_175();
          var4 = var10000;
          field_2338.put(Integer.valueOf(var0), var4);
       }
@@ -66,8 +63,7 @@ public class class_197 {
    static void method_3997(int var0, String var1, String var2, String var3) {
       class_175 var4 = (class_175)field_2338.get(Integer.valueOf(var0));
       if(null == var4) {
-         class_175 var10000 = new class_175;
-         var10000.method_3734();
+         class_175 var10000 = new class_175();
          var4 = var10000;
          field_2338.put(Integer.valueOf(var0), var4);
       }
@@ -82,8 +78,7 @@ public class class_197 {
    static void method_3998(int var0, String var1, String var2, String var3) {
       class_175 var4 = (class_175)field_2338.get(Integer.valueOf(var0));
       if(null == var4) {
-         class_175 var10000 = new class_175;
-         var10000.method_3734();
+         class_175 var10000 = new class_175();
          var4 = var10000;
          field_2338.put(Integer.valueOf(var0), var4);
       }
@@ -107,9 +102,9 @@ public class class_197 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_4001() throws Throwable {
+   class_197() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "dk.<init>(" + ')');

@@ -84,9 +84,9 @@ public final class class_241 {
    }
 
    // $FF: renamed from: <init> (int, int, int, int, int, int, boolean) void
-   void method_4647(int var1, int var2, int var3, int var4, int var5, int var6, boolean var7) {
+   class_241(int var1, int var2, int var3, int var4, int var5, int var6, boolean var7) {
+      super();
       try {
-         super();
          this.field_2683 = true;
          this.field_2682 = var1 * 1632633315;
          this.field_2687 = 1025717801 * var2;

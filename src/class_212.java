@@ -64,22 +64,19 @@ public class class_212 implements class_14 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_4180() {
-      class_212 var10000 = new class_212;
-      var10000.method_4181(0, 0);
+   static {
+      class_212 var10000 = new class_212(0, 0);
       field_2435 = var10000;
-      var10000 = new class_212;
-      var10000.method_4181(1, 1);
+      var10000 = new class_212(1, 1);
       field_2432 = var10000;
-      var10000 = new class_212;
-      var10000.method_4181(2, 2);
+      var10000 = new class_212(2, 2);
       field_2433 = var10000;
    }
 
    // $FF: renamed from: <init> (int, int) void
-   void method_4181(int var1, int var2) {
+   class_212(int var1, int var2) {
+      super();
       try {
-         super();
          this.field_2436 = var1 * 389708817;
          this.field_2434 = var2 * 1828590593;
       } catch (RuntimeException var3) {

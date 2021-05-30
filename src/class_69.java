@@ -44,8 +44,8 @@ public final class class_69 extends class_68 {
    }
 
    // $FF: renamed from: <init> (byte[]) void
-   public void method_860(byte[] var1) {
-      super.method_860(var1);
+   public class_69(byte[] var1) {
+      super(var1);
    }
 
    // $FF: renamed from: v (byte[], int, int, int, int, int) void
@@ -213,8 +213,8 @@ public final class class_69 extends class_68 {
    }
 
    // $FF: renamed from: <init> (byte[], int[], int[], int[], int[], int[], byte[][]) void
-   public void method_881(byte[] var1, int[] var2, int[] var3, int[] var4, int[] var5, int[] var6, byte[][] var7) {
-      super.method_881(var1, var2, var3, var4, var5, var6, var7);
+   public class_69(byte[] var1, int[] var2, int[] var3, int[] var4, int[] var5, int[] var6, byte[][] var7) {
+      super(var1, var2, var3, var4, var5, var6, var7);
    }
 
    // $FF: renamed from: p (byte[], int, int, int, int, int) void

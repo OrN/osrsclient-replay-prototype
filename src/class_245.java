@@ -188,8 +188,7 @@ public class class_245 implements class_7 {
          }
       }
 
-      class_335 var10001 = new class_335;
-      var10001.method_5960();
+      class_335 var10001 = new class_335();
       this.field_2710 = var10001;
       this.field_2712 = this.field_2709 * 117958777;
    }
@@ -380,8 +379,7 @@ public class class_245 implements class_7 {
          }
       }
 
-      class_335 var10001 = new class_335;
-      var10001.method_5960();
+      class_335 var10001 = new class_335();
       this.field_2710 = var10001;
       this.field_2712 = this.field_2709 * -504791449;
    }
@@ -412,11 +410,10 @@ public class class_245 implements class_7 {
    }
 
    // $FF: renamed from: <init> (jv, jv, int, double, int) void
-   public void method_4701(class_306 var1, class_306 var2, int var3, double var4, int var6) {
+   public class_245(class_306 var1, class_306 var2, int var3, double var4, int var6) {
+      super();
       try {
-         super();
-         class_335 var10001 = new class_335;
-         var10001.method_5960();
+         class_335 var10001 = new class_335();
          this.field_2710 = var10001;
          this.field_2712 = 0;
          this.field_2715 = 1.0D;
@@ -431,13 +428,11 @@ public class class_245 implements class_7 {
          this.field_2714 = new class_42[var1.method_5393(0, 1621055233)];
 
          for(int var9 = 0; var9 < var8; ++var9) {
-            class_28 var10000 = new class_28;
-            var10000.method_178(var1.method_5381(0, var7[var9], -26460885));
+            class_28 var10000 = new class_28(var1.method_5381(0, var7[var9], -26460885));
             class_28 var10 = var10000;
             class_42[] var12 = this.field_2714;
             int var13 = var7[var9];
-            class_42 var10002 = new class_42;
-            var10002.method_486(var10);
+            class_42 var10002 = new class_42(var10);
             var12[var13] = var10002;
          }
 
@@ -475,8 +470,7 @@ public class class_245 implements class_7 {
             }
          }
 
-         class_335 var10001 = new class_335;
-         var10001.method_5960();
+         class_335 var10001 = new class_335();
          this.field_2710 = var10001;
          this.field_2712 = this.field_2709 * 117958777;
       } catch (RuntimeException var3) {
@@ -492,8 +486,7 @@ public class class_245 implements class_7 {
          }
       }
 
-      class_335 var10001 = new class_335;
-      var10001.method_5960();
+      class_335 var10001 = new class_335();
       this.field_2710 = var10001;
       this.field_2712 = this.field_2709 * 117958777;
    }

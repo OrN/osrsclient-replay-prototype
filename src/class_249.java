@@ -49,7 +49,7 @@ public final class class_249 {
 
 
    // $FF: renamed from: <init> (int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int, int) void
-   void method_4719(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12, int var13, int var14, int var15, int var16, int var17, int var18, int var19) {
+   class_249(int var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10, int var11, int var12, int var13, int var14, int var15, int var16, int var17, int var18, int var19) {
       super();
       this.field_2765 = true;
       if(var6 != var7 || var6 != var8 || var6 != var9) {
@@ -282,7 +282,7 @@ public final class class_249 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_4720() {
+   static {
       field_2756 = new int[6];
       field_2770 = new int[6];
       field_2771 = new int[6];

@@ -88,8 +88,7 @@ public abstract class class_226 {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28;
-               var10001.method_178(var3);
+               class_28 var10001 = new class_28(var3);
                this.method_4306(var10001, 1223315238);
                this.field_2558 = true;
                this.field_2559 = true;
@@ -162,9 +161,9 @@ public abstract class class_226 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_4298() {
+   class_226() {
+      super();
       try {
-         super();
          this.field_2560 = -30935495;
          this.field_2556 = 836156663;
          new LinkedList();
@@ -216,8 +215,7 @@ public abstract class class_226 {
       if(!this.method_4292((byte)25)) {
          byte[] var2 = var1.method_5381(-630921225 * this.field_2560, -373998791 * this.field_2556, -26460885);
          if(null != var2) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             this.method_4306(var10001, 1223315238);
             this.field_2558 = true;
             this.field_2559 = true;
@@ -234,8 +232,7 @@ public abstract class class_226 {
       if(!this.method_4292((byte)25)) {
          byte[] var2 = var1.method_5381(-630921225 * this.field_2560, -373998791 * this.field_2556, -26460885);
          if(null != var2) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             this.method_4306(var10001, 1223315238);
             this.field_2558 = true;
             this.field_2559 = true;
@@ -249,8 +246,7 @@ public abstract class class_226 {
       if(!this.method_4292((byte)25)) {
          byte[] var2 = var1.method_5381(-630921225 * this.field_2560, -373998791 * this.field_2556, -26460885);
          if(null != var2) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             this.method_4306(var10001, 1223315238);
             this.field_2558 = true;
             this.field_2559 = true;
@@ -430,8 +426,7 @@ public abstract class class_226 {
 
                      int var13 = var3.method_147(1422664365);
                      int var14 = var3.method_130(-1820345209);
-                     class_223 var10002 = new class_223;
-                     var10002.method_4279(var13, var14 >> 2, var14 & 3);
+                     class_223 var10002 = new class_223(var13, var14 >> 2, var14 & 3);
                      var16[var12] = var10002;
                   }
                }
@@ -475,8 +470,7 @@ public abstract class class_226 {
                for(var11 = 0; var11 < var9; ++var11) {
                   int var12 = var3.method_147(1018812513);
                   int var13 = var3.method_130(-1722594094);
-                  class_223 var10002 = new class_223;
-                  var10002.method_4279(var12, var13 >> 2, var13 & 3);
+                  class_223 var10002 = new class_223(var12, var13 >> 2, var13 & 3);
                   var14[var11] = var10002;
                }
             }
@@ -500,8 +494,7 @@ public abstract class class_226 {
       if(!this.method_4292((byte)25)) {
          byte[] var2 = var1.method_5381(-630921225 * this.field_2560, -1524809937 * this.field_2556, -26460885);
          if(null != var2) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             this.method_4306(var10001, 1223315238);
             this.field_2558 = true;
             this.field_2559 = true;

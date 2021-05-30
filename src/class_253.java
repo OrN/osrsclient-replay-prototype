@@ -21,9 +21,9 @@ public final class class_253 {
 
 
    // $FF: renamed from: <init> () void
-   void method_4897() {
+   class_253() {
+      super();
       try {
-         super();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "gv.<init>(" + ')');
       }
@@ -101,8 +101,7 @@ public final class class_253 {
    // $FF: renamed from: c (byte[], byte) void
    public static void method_4899(byte[] var0, byte var1) {
       try {
-         class_28 var10000 = new class_28;
-         var10000.method_178(var0);
+         class_28 var10000 = new class_28(var0);
          class_28 var2 = var10000;
          var2.field_15 = (var0.length - 2) * -1025691571;
          class_403.field_4277 = var2.method_132((byte)-34) * -2047545261;

@@ -19,18 +19,18 @@ public class class_243 {
 
 
    // $FF: renamed from: <init> () void
-   void method_4685() {
+   class_243() {
+      super();
       try {
-         super();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "gc.<init>(" + ')');
       }
    }
 
    // $FF: renamed from: <init> (gc) void
-   void method_4686(class_243 var1) {
+   class_243(class_243 var1) {
+      super();
       try {
-         super();
          this.field_2695 = var1.field_2695 * 1;
          this.field_2699 = var1.field_2699 * 1;
          this.field_2696 = var1.field_2696 * 1;

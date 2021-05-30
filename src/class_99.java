@@ -288,8 +288,7 @@ public final class class_99 extends class_98 {
 
                         var5.method_1632(0, -(-1377519793 * this.field_1117), 0);
                         class_92[] var6 = new class_92[]{var4, var5};
-                        class_92 var8 = new class_92;
-                        var8.method_1615(var6, 2);
+                        class_92 var8 = new class_92(var6, 2);
                         var4 = var8;
                      }
                   }
@@ -490,9 +489,9 @@ public final class class_99 extends class_98 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_105() {
+   class_99() {
+      super();
       try {
-         super.method_105();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "db.<init>(" + ')');
       }
@@ -585,8 +584,7 @@ public final class class_99 extends class_98 {
                if(var4 != null) {
                   var4.method_1632(0, -(-1377519793 * this.field_1117), 0);
                   class_92[] var5 = new class_92[]{var3, var4};
-                  class_92 var10000 = new class_92;
-                  var10000.method_1615(var5, 2);
+                  class_92 var10000 = new class_92(var5, 2);
                   var3 = var10000;
                }
             }
@@ -618,8 +616,7 @@ public final class class_99 extends class_98 {
                if(var4 != null) {
                   var4.method_1632(0, -(-1377519793 * this.field_1117), 0);
                   class_92[] var5 = new class_92[]{var3, var4};
-                  class_92 var10000 = new class_92;
-                  var10000.method_1615(var5, 2);
+                  class_92 var10000 = new class_92(var5, 2);
                   var3 = var10000;
                }
             }
@@ -687,8 +684,7 @@ public final class class_99 extends class_98 {
                if(var4 != null) {
                   var4.method_1632(0, -(-1377519793 * this.field_1117), 0);
                   class_92[] var5 = new class_92[]{var3, var4};
-                  class_92 var10000 = new class_92;
-                  var10000.method_1615(var5, 2);
+                  class_92 var10000 = new class_92(var5, 2);
                   var3 = var10000;
                }
             }

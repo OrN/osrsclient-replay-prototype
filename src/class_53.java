@@ -222,8 +222,7 @@ public class class_53 extends class_51 {
    // $FF: renamed from: n (y, int) void
    void method_569(class_44 var1, int var2) {
       try {
-         class_178 var10000 = new class_178;
-         var10000.method_3802();
+         class_178 var10000 = new class_178();
          class_178 var3 = var10000;
          var3.field_2222 = this.field_400;
          var3.field_2217 = this.field_392 * -1810419467;
@@ -249,8 +248,7 @@ public class class_53 extends class_51 {
 
    // $FF: renamed from: y (y) void
    void method_568(class_44 var1) {
-      class_178 var10000 = new class_178;
-      var10000.method_3802();
+      class_178 var10000 = new class_178();
       class_178 var2 = var10000;
       var2.field_2222 = this.field_400;
       var2.field_2217 = this.field_392 * -1810419467;
@@ -259,10 +257,10 @@ public class class_53 extends class_51 {
    }
 
    // $FF: renamed from: <init> (x) void
-   void method_578(class_180 var1) {
+   class_53(class_180 var1) {
+      super();
       try {
          this.this$0 = var1;
-         super.method_105();
          this.field_400 = null;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "o.<init>(" + ')');

@@ -78,9 +78,9 @@ public class class_281 implements class_14 {
    }
 
    // $FF: renamed from: <init> (int) void
-   void method_5170(int var1) {
+   class_281(int var1) {
+      super();
       try {
-         super();
          this.field_3237 = var1 * -556521617;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "ij.<init>(" + ')');
@@ -88,21 +88,16 @@ public class class_281 implements class_14 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_5171() {
-      class_281 var10000 = new class_281;
-      var10000.method_5170(0);
+   static {
+      class_281 var10000 = new class_281(0);
       field_3242 = var10000;
-      var10000 = new class_281;
-      var10000.method_5170(1);
+      var10000 = new class_281(1);
       field_3238 = var10000;
-      var10000 = new class_281;
-      var10000.method_5170(2);
+      var10000 = new class_281(2);
       field_3239 = var10000;
-      var10000 = new class_281;
-      var10000.method_5170(3);
+      var10000 = new class_281(3);
       field_3240 = var10000;
-      var10000 = new class_281;
-      var10000.method_5170(4);
+      var10000 = new class_281(4);
       field_3241 = var10000;
    }
 }

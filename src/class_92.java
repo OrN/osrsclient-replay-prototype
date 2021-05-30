@@ -156,8 +156,8 @@ public class class_92 extends class_91 {
    }
 
    // $FF: renamed from: <init> (gr[], int) void
-   public void method_1615(class_92[] var1, int var2) {
-      super.method_105();
+   public class_92(class_92[] var1, int var2) {
+      super();
       this.field_916 = 0;
       this.field_970 = 0;
       this.field_931 = 0;
@@ -313,8 +313,7 @@ public class class_92 extends class_91 {
          } else {
             class_92 var11;
             if(var5) {
-               class_92 var10000 = new class_92;
-               var10000.method_105();
+               class_92 var10000 = new class_92();
                var11 = var10000;
                var11.field_916 = this.field_916;
                var11.field_970 = this.field_970;
@@ -1495,13 +1494,11 @@ public class class_92 extends class_91 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_1639() {
-      class_92 var10000 = new class_92;
-      var10000.method_105();
+   static {
+      class_92 var10000 = new class_92();
       field_922 = var10000;
       field_913 = new byte[1];
-      var10000 = new class_92;
-      var10000.method_105();
+      var10000 = new class_92();
       field_914 = var10000;
       field_976 = new byte[1];
       field_945 = new boolean[4700];
@@ -1960,8 +1957,7 @@ public class class_92 extends class_91 {
          } else {
             class_92 var11;
             if(var5) {
-               class_92 var10000 = new class_92;
-               var10000.method_105();
+               class_92 var10000 = new class_92();
                var11 = var10000;
                var11.field_916 = this.field_916;
                var11.field_970 = this.field_970;
@@ -2994,8 +2990,8 @@ public class class_92 extends class_91 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_105() {
-      super.method_105();
+   class_92() {
+      super();
       this.field_916 = 0;
       this.field_970 = 0;
       this.field_931 = 0;

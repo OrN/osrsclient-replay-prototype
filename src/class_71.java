@@ -30,11 +30,10 @@ public class class_71 extends class_59 {
    }
 
    // $FF: renamed from: <init> (jv, jv, int, boolean) void
-   public void method_1046(class_306 var1, class_306 var2, int var3, boolean var4) {
+   public class_71(class_306 var1, class_306 var2, int var3, boolean var4) {
+      super();
       try {
-         super.method_105();
-         class_335 var10000 = new class_335;
-         var10000.method_5960();
+         class_335 var10000 = new class_335();
          class_335 var5 = var10000;
          int var6 = var1.method_5393(var3, 1125151323);
          this.field_562 = new class_252[var6];
@@ -65,16 +64,14 @@ public class class_71 extends class_59 {
                      var13 = var2.method_5418(var11, 0, 791709889);
                   }
 
-                  class_43 var15 = new class_43;
-                  var15.method_493(var11, var13);
+                  class_43 var15 = new class_43(var11, var13);
                   var10 = var15;
                   var5.method_5939(var10);
                }
 
                class_252[] var16 = this.field_562;
                int var10001 = var7[var8];
-               class_252 var10002 = new class_252;
-               var10002.method_4896(var9, var10);
+               class_252 var10002 = new class_252(var9, var10);
                var16[var10001] = var10002;
                ++var8;
                break;

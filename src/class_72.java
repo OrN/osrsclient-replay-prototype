@@ -416,12 +416,10 @@ public class class_72 extends class_59 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_1057() {
-      class_272 var10000 = new class_272;
-      var10000.method_5063(64);
+   static {
+      class_272 var10000 = new class_272(64);
       field_577 = var10000;
-      var10000 = new class_272;
-      var10000.method_5063(100);
+      var10000 = new class_272(100);
       field_566 = var10000;
    }
 
@@ -432,12 +430,10 @@ public class class_72 extends class_59 {
          return var1;
       } else {
          byte[] var2 = field_563.method_5381(12, var0, -26460885);
-         class_72 var10000 = new class_72;
-         var10000.method_105();
+         class_72 var10000 = new class_72();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1076(var10001, (byte)-38);
          }
 
@@ -454,12 +450,10 @@ public class class_72 extends class_59 {
          return var1;
       } else {
          byte[] var2 = field_563.method_5381(12, var0, -26460885);
-         class_72 var10000 = new class_72;
-         var10000.method_105();
+         class_72 var10000 = new class_72();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1076(var10001, (byte)-15);
          }
 
@@ -576,9 +570,9 @@ public class class_72 extends class_59 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_105() {
+   class_72() {
+      super();
       try {
-         super.method_105();
          this.field_567 = -419492775;
          this.field_572 = false;
          this.field_575 = 1781354027;
@@ -642,8 +636,7 @@ public class class_72 extends class_59 {
             var2 = null;
          } else {
             try {
-               class_71 var10000 = new class_71;
-               var10000.method_1046(var3, var4, var0, false);
+               class_71 var10000 = new class_71(var3, var4, var0, false);
                var2 = var10000;
             } catch (Exception var11) {
                var2 = null;
@@ -1251,8 +1244,7 @@ public class class_72 extends class_59 {
             var2 = null;
          } else {
             try {
-               class_71 var10000 = new class_71;
-               var10000.method_1046(var3, var4, var0, false);
+               class_71 var10000 = new class_71(var3, var4, var0, false);
                var2 = var10000;
             } catch (Exception var11) {
                var2 = null;
@@ -1370,8 +1362,7 @@ public class class_72 extends class_59 {
             var2 = null;
          } else {
             try {
-               class_71 var10000 = new class_71;
-               var10000.method_1046(var3, var4, var0, false);
+               class_71 var10000 = new class_71(var3, var4, var0, false);
                var2 = var10000;
             } catch (Exception var11) {
                var2 = null;
@@ -1415,8 +1406,7 @@ public class class_72 extends class_59 {
             var2 = null;
          } else {
             try {
-               class_71 var10000 = new class_71;
-               var10000.method_1046(var3, var4, var0, false);
+               class_71 var10000 = new class_71(var3, var4, var0, false);
                var2 = var10000;
             } catch (Exception var11) {
                var2 = null;

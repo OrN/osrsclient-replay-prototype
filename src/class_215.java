@@ -19,7 +19,7 @@ public class class_215 {
 
 
    // $FF: renamed from: <clinit> () void
-   static void method_4190() {
+   static {
       field_2457 = new int[128][128];
       field_2458 = new int[128][128];
       field_2455 = new int[4096];
@@ -27,9 +27,9 @@ public class class_215 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_4191() throws Throwable {
+   class_215() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "fa.<init>(" + ')');

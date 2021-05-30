@@ -150,8 +150,7 @@ public class class_216 implements class_6 {
       } else {
          int var3 = -1479044829 * this.field_2470 - this.field_2468 * -1503257742 + var1;
          int var4 = -467287198 * this.field_2465 - 123793295 * this.field_2463 + var2;
-         class_280 var10000 = new class_280;
-         var10000.method_5165(-1587202663 * this.field_2469, var3, var4);
+         class_280 var10000 = new class_280(-1587202663 * this.field_2469, var3, var4);
          return var10000;
       }
    }
@@ -168,8 +167,7 @@ public class class_216 implements class_6 {
          } else {
             int var4 = -55827264 * this.field_2470 - this.field_2468 * -1206977472 + var1;
             int var5 = -357602752 * this.field_2465 - -232069568 * this.field_2463 + var2;
-            class_280 var10000 = new class_280;
-            var10000.method_5165(-1405879659 * this.field_2469, var4, var5);
+            class_280 var10000 = new class_280(-1405879659 * this.field_2469, var4, var5);
             return var10000;
          }
       } catch (RuntimeException var6) {
@@ -301,7 +299,7 @@ public class class_216 implements class_6 {
                   class_136.field_1752 -= 2119512838;
                   var4 = class_165.field_2052[-26460885 * class_136.field_1752];
                   var5 = class_165.field_2052[1 + class_136.field_1752 * -26460885];
-                  class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_127.method_2361(var4, var5, -1726985857);
+                  class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = GameApplet.method_2361(var4, var5, -1726985857);
                   return 1;
                }
             } else if(var0 == 3302) {
@@ -407,7 +405,7 @@ public class class_216 implements class_6 {
                      class_136.field_1752 -= 2119512838;
                      var4 = '\u8000' + class_165.field_2052[class_136.field_1752 * -26460885];
                      var5 = class_165.field_2052[class_136.field_1752 * -26460885 + 1];
-                     class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_127.method_2361(var4, var5, -1726985857);
+                     class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = GameApplet.method_2361(var4, var5, -1726985857);
                      return 1;
                   }
                } else if(3314 == var0) {
@@ -535,8 +533,7 @@ public class class_216 implements class_6 {
       } else {
          int var3 = -55827264 * this.field_2470 - this.field_2468 * -1481125223 + var1;
          int var4 = -1208728348 * this.field_2465 - -232069568 * this.field_2463 + var2;
-         class_280 var10000 = new class_280;
-         var10000.method_5165(2011822775 * this.field_2469, var3, var4);
+         class_280 var10000 = new class_280(2011822775 * this.field_2469, var3, var4);
          return var10000;
       }
    }
@@ -582,9 +579,9 @@ public class class_216 implements class_6 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_4197() {
+   class_216() {
+      super();
       try {
-         super();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "fb.<init>(" + ')');
       }
@@ -597,8 +594,7 @@ public class class_216 implements class_6 {
       } else {
          int var3 = -55827264 * this.field_2470 - this.field_2468 * -1206977472 + var1;
          int var4 = -357602752 * this.field_2465 - -232069568 * this.field_2463 + var2;
-         class_280 var10000 = new class_280;
-         var10000.method_5165(-1405879659 * this.field_2469, var3, var4);
+         class_280 var10000 = new class_280(-1405879659 * this.field_2469, var3, var4);
          return var10000;
       }
    }

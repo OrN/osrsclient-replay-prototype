@@ -37,9 +37,9 @@ public class class_324 implements class_14 {
    }
 
    // $FF: renamed from: <init> (java.lang.String, java.lang.String, java.lang.String, kl, int, java.lang.String) void
-   void method_5763(String var1, String var2, String var3, class_325 var4, int var5, String var6) {
+   class_324(String var1, String var2, String var3, class_325 var4, int var5, String var6) {
+      super();
       try {
-         super();
          this.field_3819 = var1;
          this.field_3820 = var2;
          this.field_3813 = var5 * -1443089505;
@@ -81,27 +81,20 @@ public class class_324 implements class_14 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_5766() {
-      class_324 var10000 = new class_324;
-      var10000.method_5763("EN", "en", "English", class_325.field_3825, 0, "GB");
+   static {
+      class_324 var10000 = new class_324("EN", "en", "English", class_325.field_3825, 0, "GB");
       field_3815 = var10000;
-      var10000 = new class_324;
-      var10000.method_5763("DE", "de", "German", class_325.field_3825, 1, "DE");
+      var10000 = new class_324("DE", "de", "German", class_325.field_3825, 1, "DE");
       field_3812 = var10000;
-      var10000 = new class_324;
-      var10000.method_5763("FR", "fr", "French", class_325.field_3825, 2, "FR");
+      var10000 = new class_324("FR", "fr", "French", class_325.field_3825, 2, "FR");
       field_3814 = var10000;
-      var10000 = new class_324;
-      var10000.method_5763("PT", "pt", "Portuguese", class_325.field_3825, 3, "BR");
+      var10000 = new class_324("PT", "pt", "Portuguese", class_325.field_3825, 3, "BR");
       field_3824 = var10000;
-      var10000 = new class_324;
-      var10000.method_5763("NL", "nl", "Dutch", class_325.field_3837, 4, "NL");
+      var10000 = new class_324("NL", "nl", "Dutch", class_325.field_3837, 4, "NL");
       field_3818 = var10000;
-      var10000 = new class_324;
-      var10000.method_5763("ES", "es", "Spanish", class_325.field_3837, 5, "ES");
+      var10000 = new class_324("ES", "es", "Spanish", class_325.field_3837, 5, "ES");
       field_3817 = var10000;
-      var10000 = new class_324;
-      var10000.method_5763("ES_MX", "es-mx", "Spanish (Latin American)", class_325.field_3825, 6, "MX");
+      var10000 = new class_324("ES_MX", "es-mx", "Spanish (Latin American)", class_325.field_3825, 6, "MX");
       field_3822 = var10000;
       class_324[] var0 = method_5768((byte)123);
       field_3821 = new class_324[var0.length];

@@ -999,9 +999,9 @@ public class class_28 extends class_27 {
    }
 
    // $FF: renamed from: <init> (int) void
-   public void method_160(int var1) {
+   public class_28(int var1) {
+      super();
       try {
-         super.method_105();
          this.field_12 = class_54.method_582(var1, (short)3296);
          this.field_15 = 0;
       } catch (RuntimeException var2) {
@@ -1181,9 +1181,9 @@ public class class_28 extends class_27 {
    }
 
    // $FF: renamed from: <init> (byte[]) void
-   public void method_178(byte[] var1) {
+   public class_28(byte[] var1) {
+      super();
       try {
-         super.method_105();
          this.field_12 = var1;
          this.field_15 = 0;
       } catch (RuntimeException var2) {
@@ -2970,7 +2970,7 @@ public class class_28 extends class_27 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_349() {
+   static {
       field_16 = new int[256];
 
       int var2;

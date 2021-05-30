@@ -76,7 +76,7 @@ public class class_150 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_3184() {
+   class_150() {
       super();
       this.field_1906 = new int[2];
       this.field_1899 = new int[2][2][4];
@@ -147,7 +147,7 @@ public class class_150 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_3189() {
+   static {
       field_1905 = new float[2][8];
       field_1902 = new int[2][8];
    }

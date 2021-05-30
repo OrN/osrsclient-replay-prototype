@@ -378,8 +378,8 @@ public final class class_66 extends class_65 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_105() {
-      super.method_105();
+   class_66() {
+      super();
    }
 
    // $FF: renamed from: u (int, int) void

@@ -7,10 +7,9 @@ public final class class_316 {
 
 
    // $FF: renamed from: <init> () void
-   public void method_5608() {
+   public class_316() {
       super();
-      class_59 var10001 = new class_59;
-      var10001.method_105();
+      class_59 var10001 = new class_59();
       this.field_3786 = var10001;
       this.field_3786.field_469 = this.field_3786;
       this.field_3786.field_471 = this.field_3786;

@@ -33,13 +33,11 @@ public class class_373 {
                throw new IllegalStateException();
             }
 
-            class_350 var10000 = new class_350;
-            var10000.method_6204(var0, class_199.field_2346, class_164.field_2041[var0], 1000000);
+            class_350 var10000 = new class_350(var0, class_199.field_2346, class_164.field_2041[var0], 1000000);
             var5 = var10000;
          }
 
-         class_307 var7 = new class_307;
-         var7.method_5507(var5, class_135.field_1749, var0, var1, var2, var3);
+         class_307 var7 = new class_307(var5, class_135.field_1749, var0, var1, var2, var3);
          return var7;
       } catch (RuntimeException var6) {
          throw class_223.method_4281(var6, "mv.fp(" + ')');
@@ -49,8 +47,7 @@ public class class_373 {
    // $FF: renamed from: r (byte[], int, int, int, int, int, int, int, gt, fz[], int) void
    static final void method_6614(byte[] var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, class_251 var8, class_240[] var9, int var10) {
       try {
-         class_28 var10000 = new class_28;
-         var10000.method_178(var0);
+         class_28 var10000 = new class_28(var0);
          class_28 var11 = var10000;
          int var12 = -1;
 
@@ -184,24 +181,18 @@ public class class_373 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_6615() {
-      class_373 var10000 = new class_373;
-      var10000.method_6619("p11_full");
+   static {
+      class_373 var10000 = new class_373("p11_full");
       field_4116 = var10000;
-      var10000 = new class_373;
-      var10000.method_6619("p12_full");
+      var10000 = new class_373("p12_full");
       field_4124 = var10000;
-      var10000 = new class_373;
-      var10000.method_6619("b12_full");
+      var10000 = new class_373("b12_full");
       field_4117 = var10000;
-      var10000 = new class_373;
-      var10000.method_6619("verdana_11pt_regular");
+      var10000 = new class_373("verdana_11pt_regular");
       field_4118 = var10000;
-      var10000 = new class_373;
-      var10000.method_6619("verdana_13pt_regular");
+      var10000 = new class_373("verdana_13pt_regular");
       field_4115 = var10000;
-      var10000 = new class_373;
-      var10000.method_6619("verdana_15pt_regular");
+      var10000 = new class_373("verdana_15pt_regular");
       field_4119 = var10000;
    }
 
@@ -355,12 +346,10 @@ public class class_373 {
             }
          } else {
             byte[] var3 = class_89.field_897.method_5381(14, var0, -26460885);
-            class_89 var10000 = new class_89;
-            var10000.method_105();
+            class_89 var10000 = new class_89();
             var2 = var10000;
             if(var3 != null) {
-               class_28 var10001 = new class_28;
-               var10001.method_178(var3);
+               class_28 var10001 = new class_28(var3);
                var2.method_1569(var10001, -558470326);
             }
 
@@ -373,9 +362,9 @@ public class class_373 {
    }
 
    // $FF: renamed from: <init> (java.lang.String) void
-   void method_6619(String var1) {
+   class_373(String var1) {
+      super();
       try {
-         super();
          this.field_4121 = var1;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "mv.<init>(" + ')');

@@ -448,8 +448,7 @@ public class class_363 {
    void method_6343(class_230 var1, int var2) {
       try {
          this.field_4034 = var1;
-         class_221 var10001 = new class_221;
-         var10001.method_4268(this.field_4031, this.field_4059, this.field_4066, this.field_4032);
+         class_221 var10001 = new class_221(this.field_4031, this.field_4059, this.field_4066, this.field_4032);
          this.field_4021 = var10001;
          this.field_4037.method_6307(this.field_4034.method_4372((byte)-51), (byte)87);
       } catch (RuntimeException var3) {
@@ -702,8 +701,7 @@ public class class_363 {
                      }
                   }
 
-                  class_67 var10001 = new class_67;
-                  var10001.method_754(var9, var10);
+                  class_67 var10001 = new class_67(var9, var10);
                   this.field_4074 = var10001;
                }
 
@@ -986,7 +984,7 @@ public class class_363 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_6362() {
+   static {
       field_4026 = class_373.field_4118;
       field_4027 = class_373.field_4115;
       field_4028 = class_373.field_4119;
@@ -1328,11 +1326,9 @@ public class class_363 {
    // $FF: renamed from: bl (int, int, ii, ii, int) void
    public void method_6383(int var1, int var2, class_280 var3, class_280 var4, int var5) {
       try {
-         class_45 var10000 = new class_45;
-         var10000.method_105();
+         class_45 var10000 = new class_45();
          class_45 var6 = var10000;
-         class_250 var9 = new class_250;
-         var9.method_4721(var2, var3, var4);
+         class_250 var9 = new class_250(var2, var3, var4);
          class_250 var7 = var9;
          var6.method_520(new Object[]{var7}, 1143010333);
          switch(var1) {
@@ -1398,7 +1394,7 @@ public class class_363 {
    }
 
    // $FF: renamed from: <init> () void
-   public void method_6386() {
+   public class_363() {
       super();
       this.field_4040 = 1918997833;
       this.field_4075 = -1751527693;
@@ -1443,19 +1439,16 @@ public class class_363 {
       this.field_4059.put(class_232.field_2594, var5.get(field_4026));
       this.field_4059.put(class_232.field_2595, var5.get(field_4027));
       this.field_4059.put(class_232.field_2596, var5.get(field_4028));
-      class_361 var10001 = new class_361;
-      var10001.method_6304(var1);
+      class_361 var10001 = new class_361(var1);
       this.field_4037 = var10001;
       int var7 = this.field_4023.method_5399(class_254.field_2874.field_2873, -514084749);
       int[] var8 = this.field_4023.method_5392(var7, (byte)8);
       this.field_4058 = new HashMap(var8.length);
 
       for(int var9 = 0; var9 < var8.length; ++var9) {
-         class_28 var10000 = new class_28;
-         var10000.method_178(this.field_4023.method_5381(var7, var8[var9], -26460885));
+         class_28 var10000 = new class_28(this.field_4023.method_5381(var7, var8[var9], -26460885));
          class_28 var10 = var10000;
-         class_230 var12 = new class_230;
-         var12.method_4404();
+         class_230 var12 = new class_230();
          class_230 var11 = var12;
          var11.method_4363(var10, var8[var9], -1839665578);
          this.field_4058.put(var11.method_4372((byte)-58), var11);
@@ -1498,11 +1491,9 @@ public class class_363 {
             for(var12 = var10.iterator(); var12.hasNext(); class_203.method_4099(var14, (byte)1)) {
                var13 = (class_218)var12.next();
                var11.add(var13);
-               var10000 = new class_45;
-               var10000.method_105();
+               var10000 = new class_45();
                var14 = var10000;
-               var16 = new class_250;
-               var16.method_4721(var13.method_4205(2146412336), var13.field_2480, var13.field_2482);
+               var16 = new class_250(var13.method_4205(2146412336), var13.field_2480, var13.field_2482);
                var15 = var16;
                var14.method_520(new Object[]{var15, Integer.valueOf(var1), Integer.valueOf(var2)}, 778478602);
                if(this.field_4061.contains(var13)) {
@@ -1517,11 +1508,9 @@ public class class_363 {
             while(var12.hasNext()) {
                var13 = (class_218)var12.next();
                if(!var11.contains(var13)) {
-                  var10000 = new class_45;
-                  var10000.method_105();
+                  var10000 = new class_45();
                   var14 = var10000;
-                  var16 = new class_250;
-                  var16.method_4721(var13.method_4205(2147315168), var13.field_2480, var13.field_2482);
+                  var16 = new class_250(var13.method_4205(2147315168), var13.field_2480, var13.field_2482);
                   var15 = var16;
                   var14.method_520(new Object[]{var15, Integer.valueOf(var1), Integer.valueOf(var2)}, 1312515593);
                   var14.method_519(16, -1536046676);
@@ -1546,8 +1535,7 @@ public class class_363 {
          this.field_4059.put(class_232.field_2594, var5.get(field_4026));
          this.field_4059.put(class_232.field_2595, var5.get(field_4027));
          this.field_4059.put(class_232.field_2596, var5.get(field_4028));
-         class_361 var10001 = new class_361;
-         var10001.method_6304(var1);
+         class_361 var10001 = new class_361(var1);
          this.field_4037 = var10001;
          int var8 = this.field_4023.method_5399(class_254.field_2874.field_2873, -1008280168);
          int[] var9 = this.field_4023.method_5392(var8, (byte)8);
@@ -1558,11 +1546,9 @@ public class class_363 {
                throw new IllegalStateException();
             }
 
-            class_28 var10000 = new class_28;
-            var10000.method_178(this.field_4023.method_5381(var8, var9[var10], -26460885));
+            class_28 var10000 = new class_28(this.field_4023.method_5381(var8, var9[var10], -26460885));
             class_28 var11 = var10000;
-            class_230 var14 = new class_230;
-            var14.method_4404();
+            class_230 var14 = new class_230();
             class_230 var12 = var14;
             var12.method_4363(var11, var9[var10], -1949118640);
             this.field_4058.put(var12.method_4372((byte)-62), var12);
@@ -2173,8 +2159,7 @@ public class class_363 {
    // $FF: renamed from: cl (fo) void
    void method_6430(class_230 var1) {
       this.field_4034 = var1;
-      class_221 var10001 = new class_221;
-      var10001.method_4268(this.field_4031, this.field_4059, this.field_4066, this.field_4032);
+      class_221 var10001 = new class_221(this.field_4031, this.field_4059, this.field_4066, this.field_4032);
       this.field_4021 = var10001;
       this.field_4037.method_6307(this.field_4034.method_4372((byte)-78), (byte)121);
    }
@@ -2538,11 +2523,9 @@ public class class_363 {
 
                   var14 = (class_218)var13.next();
                   var12.add(var14);
-                  var10000 = new class_45;
-                  var10000.method_105();
+                  var10000 = new class_45();
                   var15 = var10000;
-                  var18 = new class_250;
-                  var18.method_4721(var14.method_4205(2145882550), var14.field_2480, var14.field_2482);
+                  var18 = new class_250(var14.method_4205(2145882550), var14.field_2480, var14.field_2482);
                   var16 = var18;
                   var15.method_520(new Object[]{var16, Integer.valueOf(var1), Integer.valueOf(var2)}, 880052354);
                   if(this.field_4061.contains(var14)) {
@@ -2569,11 +2552,9 @@ public class class_363 {
                         throw new IllegalStateException();
                      }
 
-                     var10000 = new class_45;
-                     var10000.method_105();
+                     var10000 = new class_45();
                      var15 = var10000;
-                     var18 = new class_250;
-                     var18.method_4721(var14.method_4205(2145838819), var14.field_2480, var14.field_2482);
+                     var18 = new class_250(var14.method_4205(2145838819), var14.field_2480, var14.field_2482);
                      var16 = var18;
                      var15.method_520(new Object[]{var16, Integer.valueOf(var1), Integer.valueOf(var2)}, 62994102);
                      var15.method_519(16, 2128265601);
@@ -2856,8 +2837,7 @@ public class class_363 {
    // $FF: renamed from: ca (fo) void
    void method_6476(class_230 var1) {
       this.field_4034 = var1;
-      class_221 var10001 = new class_221;
-      var10001.method_4268(this.field_4031, this.field_4059, this.field_4066, this.field_4032);
+      class_221 var10001 = new class_221(this.field_4031, this.field_4059, this.field_4066, this.field_4032);
       this.field_4021 = var10001;
       this.field_4037.method_6307(this.field_4034.method_4372((byte)-38), (byte)59);
    }
@@ -3493,11 +3473,9 @@ public class class_363 {
 
    // $FF: renamed from: gu (int, int, ii, ii) void
    public void method_6518(int var1, int var2, class_280 var3, class_280 var4) {
-      class_45 var10000 = new class_45;
-      var10000.method_105();
+      class_45 var10000 = new class_45();
       class_45 var5 = var10000;
-      class_250 var7 = new class_250;
-      var7.method_4721(var2, var3, var4);
+      class_250 var7 = new class_250(var2, var3, var4);
       class_250 var6 = var7;
       var5.method_520(new Object[]{var6}, 1906910483);
       switch(var1) {

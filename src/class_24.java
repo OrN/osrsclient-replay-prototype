@@ -46,7 +46,7 @@ public class class_24 {
    }
 
    // $FF: renamed from: <init> (nd) void
-   void method_77(class_28 var1) {
+   class_24(class_28 var1) {
       super();
       this.field_2 = new class_159[10];
 
@@ -55,8 +55,7 @@ public class class_24 {
          if(var3 != 0) {
             var1.field_15 -= -1025691571;
             class_159[] var10000 = this.field_2;
-            class_159 var10002 = new class_159;
-            var10002.method_3306();
+            class_159 var10002 = new class_159();
             var10000[var2] = var10002;
             this.field_2[var2].method_3308(var1);
          }
@@ -69,8 +68,7 @@ public class class_24 {
    // $FF: renamed from: n () au
    public class_110 method_78() {
       byte[] var1 = this.method_80();
-      class_110 var10000 = new class_110;
-      var10000.method_2223(22050, var1, 22050 * this.field_3 / 1000, 22050 * this.field_4 / 1000);
+      class_110 var10000 = new class_110(22050, var1, 22050 * this.field_3 / 1000, 22050 * this.field_4 / 1000);
       return var10000;
    }
 
@@ -80,10 +78,8 @@ public class class_24 {
       if(var3 == null) {
          return null;
       } else {
-         class_24 var10000 = new class_24;
-         class_28 var10002 = new class_28;
-         var10002.method_178(var3);
-         var10000.method_77(var10002);
+         class_28 var10002 = new class_28(var3);
+         class_24 var10000 = new class_24(var10002);
          return var10000;
       }
    }
@@ -132,10 +128,8 @@ public class class_24 {
       if(var3 == null) {
          return null;
       } else {
-         class_24 var10000 = new class_24;
-         class_28 var10002 = new class_28;
-         var10002.method_178(var3);
-         var10000.method_77(var10002);
+         class_28 var10002 = new class_28(var3);
+         class_24 var10000 = new class_24(var10002);
          return var10000;
       }
    }
@@ -176,8 +170,7 @@ public class class_24 {
    // $FF: renamed from: r () au
    public class_110 method_83() {
       byte[] var1 = this.method_80();
-      class_110 var10000 = new class_110;
-      var10000.method_2223(22050, var1, 22050 * this.field_3 / 1000, 22050 * this.field_4 / 1000);
+      class_110 var10000 = new class_110(22050, var1, 22050 * this.field_3 / 1000, 22050 * this.field_4 / 1000);
       return var10000;
    }
 
@@ -217,8 +210,7 @@ public class class_24 {
    // $FF: renamed from: j () au
    public class_110 method_85() {
       byte[] var1 = this.method_80();
-      class_110 var10000 = new class_110;
-      var10000.method_2223(-1354461772, var1, -798474884 * this.field_3 / -2045093041, -250265503 * this.field_4 / 6721421);
+      class_110 var10000 = new class_110(-1354461772, var1, -798474884 * this.field_3 / -2045093041, -250265503 * this.field_4 / 6721421);
       return var10000;
    }
 

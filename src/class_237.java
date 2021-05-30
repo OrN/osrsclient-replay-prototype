@@ -47,8 +47,7 @@ public class class_237 {
             }
          }
 
-         class_28 var10000 = new class_28;
-         var10000.method_178(var0);
+         class_28 var10000 = new class_28(var0);
          class_28 var12 = var10000;
 
          for(var8 = 0; var8 < 4; ++var8) {
@@ -73,9 +72,9 @@ public class class_237 {
    }
 
    // $FF: renamed from: <init> (java.lang.String, int, int, fp) void
-   void method_4596(String var1, int var2, int var3, class_232 var4) {
+   class_237(String var1, int var2, int var3, class_232 var4) {
+      super();
       try {
-         super();
          this.field_2642 = var1;
          this.field_2640 = var2 * 596341667;
          this.field_2641 = var3 * 718860175;

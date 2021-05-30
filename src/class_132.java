@@ -29,10 +29,10 @@ public class class_132 implements Callable {
    }
 
    // $FF: renamed from: <init> (as, nd, ai) void
-   void method_2905(class_138 var1, class_28 var2, class_1 var3) {
+   class_132(class_138 var1, class_28 var2, class_1 var3) {
+      super();
       try {
          this.this$0 = var1;
-         super();
          this.field_1730 = var2;
          this.field_1727 = var3;
       } catch (RuntimeException var4) {

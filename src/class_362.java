@@ -35,19 +35,19 @@ public class class_362 implements class_18 {
    public class_30 method_59(byte var1) {
       try {
          byte var2;
-         if(class_189.field_2274.startsWith("win")) {
+         if(class_189.osName.startsWith("win")) {
             if(var1 == -1) {
                throw new IllegalStateException();
             }
 
             var2 = 1;
-         } else if(class_189.field_2274.startsWith("mac")) {
+         } else if(class_189.osName.startsWith("mac")) {
             if(var1 == -1) {
                throw new IllegalStateException();
             }
 
             var2 = 2;
-         } else if(class_189.field_2274.startsWith("linux")) {
+         } else if(class_189.osName.startsWith("linux")) {
             if(var1 == -1) {
                throw new IllegalStateException();
             }
@@ -272,8 +272,7 @@ public class class_362 implements class_18 {
          String var18 = "";
          String var19 = "";
          int[] var24 = new int[3];
-         class_30 var10000 = new class_30;
-         var10000.method_389(var2, var7, var8, var9, this.field_4019 * -1520925295, this.field_4013 * -1280779565, this.field_4018 * 1746870345, false, var11, var12, var13, 0, var14, var15, var16, var17, 0, 0, 0, 0, var18, var19, var24, 0, "");
+         class_30 var10000 = new class_30(var2, var7, var8, var9, this.field_4019 * -1520925295, this.field_4013 * -1280779565, this.field_4018 * 1746870345, false, var11, var12, var13, 0, var14, var15, var16, var17, 0, 0, 0, 0, var18, var19, var24, 0, "");
          return var10000;
       } catch (RuntimeException var28) {
          throw class_223.method_4281(var28, "mb.v(" + ')');
@@ -343,7 +342,7 @@ public class class_362 implements class_18 {
    }
 
    // $FF: renamed from: <init> () void
-   public void method_6315() {
+   public class_362() {
       super();
    }
 
@@ -394,11 +393,11 @@ public class class_362 implements class_18 {
    // $FF: renamed from: j () my
    public class_30 method_61() {
       byte var1;
-      if(class_189.field_2274.startsWith("win")) {
+      if(class_189.osName.startsWith("win")) {
          var1 = 1;
-      } else if(class_189.field_2274.startsWith("mac")) {
+      } else if(class_189.osName.startsWith("mac")) {
          var1 = 2;
-      } else if(class_189.field_2274.startsWith("linux")) {
+      } else if(class_189.osName.startsWith("linux")) {
          var1 = 3;
       } else {
          var1 = 4;
@@ -514,8 +513,7 @@ public class class_362 implements class_18 {
       String var17 = "";
       String var18 = "";
       int[] var23 = new int[3];
-      class_30 var10000 = new class_30;
-      var10000.method_389(var1, var6, var7, var8, this.field_4019 * -1520925295, this.field_4013 * 176682914, this.field_4018 * 1746870345, false, var10, var11, var12, 0, var13, var14, var15, var16, 0, 0, 0, 0, var17, var18, var23, 0, "");
+      class_30 var10000 = new class_30(var1, var6, var7, var8, this.field_4019 * -1520925295, this.field_4013 * 176682914, this.field_4018 * 1746870345, false, var10, var11, var12, 0, var13, var14, var15, var16, 0, 0, 0, 0, var17, var18, var23, 0, "");
       return var10000;
    }
 
@@ -547,11 +545,11 @@ public class class_362 implements class_18 {
    // $FF: renamed from: p () my
    public class_30 method_60() {
       byte var1;
-      if(class_189.field_2274.startsWith("win")) {
+      if(class_189.osName.startsWith("win")) {
          var1 = 1;
-      } else if(class_189.field_2274.startsWith("mac")) {
+      } else if(class_189.osName.startsWith("mac")) {
          var1 = 2;
-      } else if(class_189.field_2274.startsWith("linux")) {
+      } else if(class_189.osName.startsWith("linux")) {
          var1 = 3;
       } else {
          var1 = 4;
@@ -667,8 +665,7 @@ public class class_362 implements class_18 {
       String var17 = "";
       String var18 = "";
       int[] var23 = new int[3];
-      class_30 var10000 = new class_30;
-      var10000.method_389(var1, var6, var7, var8, this.field_4019 * -1520925295, this.field_4013 * -1280779565, this.field_4018 * 1746870345, false, var10, var11, var12, 0, var13, var14, var15, var16, 0, 0, 0, 0, var17, var18, var23, 0, "");
+      class_30 var10000 = new class_30(var1, var6, var7, var8, this.field_4019 * -1520925295, this.field_4013 * -1280779565, this.field_4018 * 1746870345, false, var10, var11, var12, 0, var13, var14, var15, var16, 0, 0, 0, 0, var17, var18, var23, 0, "");
       return var10000;
    }
 

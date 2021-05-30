@@ -26,11 +26,10 @@ public class class_259 extends class_258 implements class_11 {
    }
 
    // $FF: renamed from: <init> (jd, int, kk, jv) void
-   public void method_4961(class_295 var1, int var2, class_324 var3, class_306 var4) {
+   public class_259(class_295 var1, int var2, class_324 var3, class_306 var4) {
+      super(var1, var3, var4 != null?var4.method_5393(var2, 1910338018):0);
       try {
-         super.method_4949(var1, var3, var4 != null?var4.method_5393(var2, 1910338018):0);
-         class_264 var10001 = new class_264;
-         var10001.method_5026(64);
+         class_264 var10001 = new class_264(64);
          this.field_2902 = var10001;
          this.field_2903 = var4;
          this.field_2901 = var2 * 2024001031;
@@ -43,16 +42,14 @@ public class class_259 extends class_258 implements class_11 {
    class_368 method_4962(int var1, int var2) {
       try {
          byte[] var3 = this.field_2903.method_5381(640434103 * this.field_2901, var1, -26460885);
-         class_368 var10000 = new class_368;
-         var10000.method_6578(var1);
+         class_368 var10000 = new class_368(var1);
          class_368 var4 = var10000;
          if(var3 != null) {
             if(var2 == 1710975487) {
                throw new IllegalStateException();
             }
 
-            class_28 var10001 = new class_28;
-            var10001.method_178(var3);
+            class_28 var10001 = new class_28(var3);
             var4.method_6568(var10001, -1490587397);
          }
 
@@ -98,8 +95,7 @@ public class class_259 extends class_258 implements class_11 {
 
    // $FF: renamed from: aj () java.util.Iterator
    public Iterator method_4964() {
-      class_379 var10000 = new class_379;
-      var10000.method_6665(this);
+      class_379 var10000 = new class_379(this);
       return var10000;
    }
 
@@ -147,8 +143,7 @@ public class class_259 extends class_258 implements class_11 {
 
    public Iterator iterator() {
       try {
-         class_379 var10000 = new class_379;
-         var10000.method_6665(this);
+         class_379 var10000 = new class_379(this);
          return var10000;
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "nu.iterator(" + ')');
@@ -158,12 +153,10 @@ public class class_259 extends class_258 implements class_11 {
    // $FF: renamed from: k (int) mq
    class_368 method_4965(int var1) {
       byte[] var2 = this.field_2903.method_5381(640434103 * this.field_2901, var1, -26460885);
-      class_368 var10000 = new class_368;
-      var10000.method_6578(var1);
+      class_368 var10000 = new class_368(var1);
       class_368 var3 = var10000;
       if(var2 != null) {
-         class_28 var10001 = new class_28;
-         var10001.method_178(var2);
+         class_28 var10001 = new class_28(var2);
          var3.method_6568(var10001, -1626168705);
       }
 
@@ -173,12 +166,10 @@ public class class_259 extends class_258 implements class_11 {
    // $FF: renamed from: m (int) mq
    class_368 method_4966(int var1) {
       byte[] var2 = this.field_2903.method_5381(640434103 * this.field_2901, var1, -26460885);
-      class_368 var10000 = new class_368;
-      var10000.method_6578(var1);
+      class_368 var10000 = new class_368(var1);
       class_368 var3 = var10000;
       if(var2 != null) {
-         class_28 var10001 = new class_28;
-         var10001.method_178(var2);
+         class_28 var10001 = new class_28(var2);
          var3.method_6568(var10001, 1374663449);
       }
 

@@ -15,9 +15,9 @@ public abstract class class_395 {
 
 
    // $FF: renamed from: <init> () void
-   void method_6787() throws Throwable {
+   class_395() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "ob.<init>(" + ')');

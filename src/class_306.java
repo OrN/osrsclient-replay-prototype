@@ -49,8 +49,7 @@ public abstract class class_306 {
          int var4 = var1.length;
          int var3 = class_151.method_3216(var1, 0, var4, 1889329497);
          this.field_3718 = -848786671 * var3;
-         class_28 var10000 = new class_28;
-         var10000.method_178(class_186.method_3876(var1, 1410541122));
+         class_28 var10000 = new class_28(class_186.method_3876(var1, 1410541122));
          class_28 var5 = var10000;
          int var6 = var5.method_130(-663110610);
          if(var6 >= 5) {
@@ -135,8 +134,7 @@ public abstract class class_306 {
                      this.field_3705[this.field_3706[var10]] = var5.method_135((byte)-86);
                   }
 
-                  class_402 var10001 = new class_402;
-                  var10001.method_6807(this.field_3705);
+                  class_402 var10001 = new class_402(this.field_3705);
                   this.field_3715 = var10001;
                }
 
@@ -239,8 +237,7 @@ public abstract class class_306 {
                      }
 
                      class_402[] var17 = this.field_3714;
-                     class_402 var10002 = new class_402;
-                     var10002.method_6807(this.field_3713[var11]);
+                     class_402 var10002 = new class_402(this.field_3713[var11]);
                      var17[var11] = var10002;
                   }
                }
@@ -430,8 +427,7 @@ public abstract class class_306 {
 
    // $FF: renamed from: ex (byte[]) byte[]
    static final byte[] method_5386(byte[] var0) {
-      class_28 var10000 = new class_28;
-      var10000.method_178(var0);
+      class_28 var10000 = new class_28(var0);
       class_28 var1 = var10000;
       int var2 = var1.method_130(-991360495);
       int var3 = var1.method_135((byte)-36);
@@ -612,8 +608,7 @@ public abstract class class_306 {
 
    // $FF: renamed from: el (byte[]) byte[]
    static final byte[] method_5397(byte[] var0) {
-      class_28 var10000 = new class_28;
-      var10000.method_178(var0);
+      class_28 var10000 = new class_28(var0);
       class_28 var1 = var10000;
       int var2 = var1.method_130(2140969684);
       int var3 = var1.method_135((byte)-39);
@@ -711,8 +706,7 @@ public abstract class class_306 {
                         }
 
                         var21 = class_319.method_5659(this.field_3709[var1], true, (byte)47);
-                        var10000 = new class_28;
-                        var10000.method_178(var21);
+                        var10000 = new class_28(var21);
                         class_28 var9 = var10000;
                         var9.method_294(var2, 5, var9.field_12.length, 141901592);
                         break label189;
@@ -767,8 +761,7 @@ public abstract class class_306 {
                   --var10;
                   int var11 = var22[var10] & 255;
                   var10 -= var11 * var4 * 4;
-                  var10000 = new class_28;
-                  var10000.method_178(var22);
+                  var10000 = new class_28(var22);
                   class_28 var23 = var10000;
                   int[] var24 = new int[var4];
                   var23.field_15 = -1025691571 * var10;
@@ -897,8 +890,7 @@ public abstract class class_306 {
             byte[] var19;
             if(var2 != null && (0 != var2[0] || 0 != var2[1] || 0 != var2[2] || 0 != var2[3])) {
                var19 = class_319.method_5659(this.field_3709[var1], true, (byte)3);
-               var10000 = new class_28;
-               var10000.method_178(var19);
+               var10000 = new class_28(var19);
                class_28 var8 = var10000;
                var8.method_294(var2, 5, var8.field_12.length, 141901592);
             } else {
@@ -930,8 +922,7 @@ public abstract class class_306 {
                --var9;
                int var10 = var20[var9] & 255;
                var9 -= var10 * var3 * 4;
-               var10000 = new class_28;
-               var10000.method_178(var20);
+               var10000 = new class_28(var20);
                class_28 var21 = var10000;
                int[] var22 = new int[var3];
                var21.field_15 = -1025691571 * var9;
@@ -991,11 +982,11 @@ public abstract class class_306 {
    }
 
    // $FF: renamed from: be (java.lang.String, java.lang.String, int) boolean
-   public boolean method_5403(String var1, String var2, int var3) {
+   public boolean method_5403(String name, String var2, int var3) {
       try {
-         var1 = var1.toLowerCase();
+         name = name.toLowerCase();
          var2 = var2.toLowerCase();
-         int var4 = this.field_3715.method_6808(class_97.method_1790(var1, -1841267567), -2076070335);
+         int var4 = this.field_3715.method_6808(class_97.method_1790(name, -1841267567), -2076070335);
          int var5 = this.field_3714[var4].method_6808(class_97.method_1790(var2, -1263295647), -2076070335);
          return this.method_5383(var4, var5, (byte)57);
       } catch (RuntimeException var6) {
@@ -1037,9 +1028,8 @@ public abstract class class_306 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_5407() {
-      class_398 var10000 = new class_398;
-      var10000.method_6797();
+   static {
+      class_398 var10000 = new class_398();
       field_3717 = var10000;
       field_3711 = 0;
    }
@@ -1098,8 +1088,7 @@ public abstract class class_306 {
       int var3 = var1.length;
       int var2 = class_151.method_3216(var1, 0, var3, 1889329497);
       this.field_3718 = -848786671 * var2;
-      class_28 var10000 = new class_28;
-      var10000.method_178(class_186.method_3876(var1, 1880620260));
+      class_28 var10000 = new class_28(class_186.method_3876(var1, 1880620260));
       class_28 var4 = var10000;
       int var5 = var4.method_130(2058288734);
       if(var5 >= 5 && var5 <= 7) {
@@ -1147,8 +1136,7 @@ public abstract class class_306 {
                this.field_3705[this.field_3706[var9]] = var4.method_135((byte)-58);
             }
 
-            class_402 var10001 = new class_402;
-            var10001.method_6807(this.field_3705);
+            class_402 var10001 = new class_402(this.field_3705);
             this.field_3715 = var10001;
          }
 
@@ -1219,8 +1207,7 @@ public abstract class class_306 {
                }
 
                class_402[] var15 = this.field_3714;
-               class_402 var10002 = new class_402;
-               var10002.method_6807(this.field_3713[var10]);
+               class_402 var10002 = new class_402(this.field_3713[var10]);
                var15[var10] = var10002;
             }
          }
@@ -1687,8 +1674,7 @@ public abstract class class_306 {
       int var3 = var1.length;
       int var2 = class_151.method_3216(var1, 0, var3, 1889329497);
       this.field_3718 = -848786671 * var2;
-      class_28 var10000 = new class_28;
-      var10000.method_178(class_186.method_3876(var1, 1855958190));
+      class_28 var10000 = new class_28(class_186.method_3876(var1, 1855958190));
       class_28 var4 = var10000;
       int var5 = var4.method_130(1230019847);
       if(var5 >= 5 && var5 <= 7) {
@@ -1736,8 +1722,7 @@ public abstract class class_306 {
                this.field_3705[this.field_3706[var9]] = var4.method_135((byte)-96);
             }
 
-            class_402 var10001 = new class_402;
-            var10001.method_6807(this.field_3705);
+            class_402 var10001 = new class_402(this.field_3705);
             this.field_3715 = var10001;
          }
 
@@ -1808,8 +1793,7 @@ public abstract class class_306 {
                }
 
                class_402[] var15 = this.field_3714;
-               class_402 var10002 = new class_402;
-               var10002.method_6807(this.field_3713[var10]);
+               class_402 var10002 = new class_402(this.field_3713[var10]);
                var15[var10] = var10002;
             }
          }
@@ -1891,8 +1875,7 @@ public abstract class class_306 {
             byte[] var19;
             if(var2 != null && (0 != var2[0] || 0 != var2[1] || 0 != var2[2] || 0 != var2[3])) {
                var19 = class_319.method_5659(this.field_3709[var1], true, (byte)-52);
-               var10000 = new class_28;
-               var10000.method_178(var19);
+               var10000 = new class_28(var19);
                class_28 var8 = var10000;
                var8.method_294(var2, 5, var8.field_12.length, 141901592);
             } else {
@@ -1924,8 +1907,7 @@ public abstract class class_306 {
                --var9;
                int var10 = var20[var9] & -399436190;
                var9 -= var10 * var3 * 4;
-               var10000 = new class_28;
-               var10000.method_178(var20);
+               var10000 = new class_28(var20);
                class_28 var21 = var10000;
                int[] var22 = new int[var3];
                var21.field_15 = 184428995 * var9;
@@ -2067,8 +2049,7 @@ public abstract class class_306 {
             byte[] var19;
             if(var2 != null && (0 != var2[0] || 0 != var2[1] || 0 != var2[2] || 0 != var2[3])) {
                var19 = class_319.method_5659(this.field_3709[var1], true, (byte)-29);
-               var10000 = new class_28;
-               var10000.method_178(var19);
+               var10000 = new class_28(var19);
                class_28 var8 = var10000;
                var8.method_294(var2, 5, var8.field_12.length, 141901592);
             } else {
@@ -2100,8 +2081,7 @@ public abstract class class_306 {
                --var9;
                int var10 = var20[var9] & 255;
                var9 -= var10 * var3 * 4;
-               var10000 = new class_28;
-               var10000.method_178(var20);
+               var10000 = new class_28(var20);
                class_28 var21 = var10000;
                int[] var22 = new int[var3];
                var21.field_15 = -1025691571 * var9;
@@ -2199,8 +2179,7 @@ public abstract class class_306 {
             byte[] var19;
             if(var2 != null && (0 != var2[0] || 0 != var2[1] || 0 != var2[2] || 0 != var2[3])) {
                var19 = class_319.method_5659(this.field_3709[var1], true, (byte)-10);
-               var10000 = new class_28;
-               var10000.method_178(var19);
+               var10000 = new class_28(var19);
                class_28 var8 = var10000;
                var8.method_294(var2, 5, var8.field_12.length, 141901592);
             } else {
@@ -2232,8 +2211,7 @@ public abstract class class_306 {
                --var9;
                int var10 = var20[var9] & 255;
                var9 -= var10 * var3 * 4;
-               var10000 = new class_28;
-               var10000.method_178(var20);
+               var10000 = new class_28(var20);
                class_28 var21 = var10000;
                int[] var22 = new int[var3];
                var21.field_15 = -584882146 * var9;
@@ -2311,8 +2289,7 @@ public abstract class class_306 {
             byte[] var19;
             if(var2 != null && (0 != var2[0] || 0 != var2[1] || 0 != var2[2] || 0 != var2[3])) {
                var19 = class_319.method_5659(this.field_3709[var1], true, (byte)13);
-               var10000 = new class_28;
-               var10000.method_178(var19);
+               var10000 = new class_28(var19);
                class_28 var8 = var10000;
                var8.method_294(var2, 5, var8.field_12.length, 141901592);
             } else {
@@ -2344,8 +2321,7 @@ public abstract class class_306 {
                --var9;
                int var10 = var20[var9] & 255;
                var9 -= var10 * var3 * 4;
-               var10000 = new class_28;
-               var10000.method_178(var20);
+               var10000 = new class_28(var20);
                class_28 var21 = var10000;
                int[] var22 = new int[var3];
                var21.field_15 = -1025691571 * var9;
@@ -2452,8 +2428,7 @@ public abstract class class_306 {
       int var3 = var1.length;
       int var2 = class_151.method_3216(var1, 0, var3, 1889329497);
       this.field_3718 = -1678290958 * var2;
-      class_28 var10000 = new class_28;
-      var10000.method_178(class_186.method_3876(var1, 1937221977));
+      class_28 var10000 = new class_28(class_186.method_3876(var1, 1937221977));
       class_28 var4 = var10000;
       int var5 = var4.method_130(1246727874);
       if(var5 >= 5 && var5 <= 7) {
@@ -2501,8 +2476,7 @@ public abstract class class_306 {
                this.field_3705[this.field_3706[var9]] = var4.method_135((byte)-45);
             }
 
-            class_402 var10001 = new class_402;
-            var10001.method_6807(this.field_3705);
+            class_402 var10001 = new class_402(this.field_3705);
             this.field_3715 = var10001;
          }
 
@@ -2573,8 +2547,7 @@ public abstract class class_306 {
                }
 
                class_402[] var15 = this.field_3714;
-               class_402 var10002 = new class_402;
-               var10002.method_6807(this.field_3713[var10]);
+               class_402 var10002 = new class_402(this.field_3713[var10]);
                var15[var10] = var10002;
             }
          }
@@ -2616,8 +2589,7 @@ public abstract class class_306 {
       int var3 = var1.length;
       int var2 = class_151.method_3216(var1, 0, var3, 1889329497);
       this.field_3718 = 612528621 * var2;
-      class_28 var10000 = new class_28;
-      var10000.method_178(class_186.method_3876(var1, 1908452011));
+      class_28 var10000 = new class_28(class_186.method_3876(var1, 1908452011));
       class_28 var4 = var10000;
       int var5 = var4.method_130(1651473517);
       if(var5 >= 5 && var5 <= 7) {
@@ -2665,8 +2637,7 @@ public abstract class class_306 {
                this.field_3705[this.field_3706[var9]] = var4.method_135((byte)-26);
             }
 
-            class_402 var10001 = new class_402;
-            var10001.method_6807(this.field_3705);
+            class_402 var10001 = new class_402(this.field_3705);
             this.field_3715 = var10001;
          }
 
@@ -2737,8 +2708,7 @@ public abstract class class_306 {
                }
 
                class_402[] var15 = this.field_3714;
-               class_402 var10002 = new class_402;
-               var10002.method_6807(this.field_3713[var10]);
+               class_402 var10002 = new class_402(this.field_3713[var10]);
                var15[var10] = var10002;
             }
          }
@@ -2803,9 +2773,9 @@ public abstract class class_306 {
    }
 
    // $FF: renamed from: <init> (boolean, boolean) void
-   void method_5478(boolean var1, boolean var2) {
+   class_306(boolean var1, boolean var2) {
+      super();
       try {
-         super();
          this.field_3719 = var1;
          this.field_3720 = var2;
       } catch (RuntimeException var3) {
@@ -2827,8 +2797,7 @@ public abstract class class_306 {
 
    // $FF: renamed from: ew (byte[]) byte[]
    static final byte[] method_5481(byte[] var0) {
-      class_28 var10000 = new class_28;
-      var10000.method_178(var0);
+      class_28 var10000 = new class_28(var0);
       class_28 var1 = var10000;
       int var2 = var1.method_130(1661960164);
       int var3 = var1.method_135((byte)-82);
@@ -2859,8 +2828,7 @@ public abstract class class_306 {
 
    // $FF: renamed from: ej (byte[]) byte[]
    static final byte[] method_5482(byte[] var0) {
-      class_28 var10000 = new class_28;
-      var10000.method_178(var0);
+      class_28 var10000 = new class_28(var0);
       class_28 var1 = var10000;
       int var2 = var1.method_130(-22295188);
       int var3 = var1.method_135((byte)-29);
@@ -2904,8 +2872,7 @@ public abstract class class_306 {
 
    // $FF: renamed from: et (byte[]) byte[]
    static final byte[] method_5484(byte[] var0) {
-      class_28 var10000 = new class_28;
-      var10000.method_178(var0);
+      class_28 var10000 = new class_28(var0);
       class_28 var1 = var10000;
       int var2 = var1.method_130(700665478);
       int var3 = var1.method_135((byte)-11);
@@ -2962,8 +2929,7 @@ public abstract class class_306 {
             if(null == var7) {
                var10 = null;
             } else {
-               class_69 var10000 = new class_69;
-               var10000.method_881(var7, class_223.field_2529, class_284.field_3260, class_403.field_4278, class_318.field_3787, class_192.field_2300, class_403.field_4279);
+               class_69 var10000 = new class_69(var7, class_223.field_2529, class_284.field_3260, class_403.field_4278, class_318.field_3787, class_192.field_2300, class_403.field_4279);
                class_69 var8 = var10000;
                class_192.method_3958(179304235);
                var10 = var8;

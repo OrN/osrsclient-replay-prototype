@@ -190,9 +190,9 @@ public class class_30 extends class_27 {
    }
 
    // $FF: renamed from: <init> (int, boolean, int, int, int, int, int, boolean, int, int, int, int, java.lang.String, java.lang.String, java.lang.String, java.lang.String, int, int, int, int, java.lang.String, java.lang.String, int[], int, java.lang.String) void
-   void method_389(int var1, boolean var2, int var3, int var4, int var5, int var6, int var7, boolean var8, int var9, int var10, int var11, int var12, String var13, String var14, String var15, String var16, int var17, int var18, int var19, int var20, String var21, String var22, int[] var23, int var24, String var25) {
+   class_30(int var1, boolean var2, int var3, int var4, int var5, int var6, int var7, boolean var8, int var9, int var10, int var11, int var12, String var13, String var14, String var15, String var16, int var17, int var18, int var19, int var20, String var21, String var22, int[] var23, int var24, String var25) {
+      super();
       try {
-         super.method_105();
          this.field_37 = new int[3];
          this.field_35 = var1 * 271031997;
          this.field_33 = var2;

@@ -35,28 +35,23 @@ public class class_254 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_4901() {
-      class_254 var10000 = new class_254;
-      var10000.method_4902("details");
+   static {
+      class_254 var10000 = new class_254("details");
       field_2874 = var10000;
-      var10000 = new class_254;
-      var10000.method_4902("compositemap");
+      var10000 = new class_254("compositemap");
       field_2869 = var10000;
-      var10000 = new class_254;
-      var10000.method_4902("compositetexture");
+      var10000 = new class_254("compositetexture");
       field_2871 = var10000;
-      var10000 = new class_254;
-      var10000.method_4902("area");
+      var10000 = new class_254("area");
       field_2868 = var10000;
-      var10000 = new class_254;
-      var10000.method_4902("labels");
+      var10000 = new class_254("labels");
       field_2872 = var10000;
    }
 
    // $FF: renamed from: <init> (java.lang.String) void
-   void method_4902(String var1) {
+   class_254(String var1) {
+      super();
       try {
-         super();
          this.field_2873 = var1;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "gw.<init>(" + ')');

@@ -64,15 +64,13 @@ public class class_47 extends class_27 {
             } else {
                if(var7 < 4) {
                   class_323 var10 = this.field_351;
-                  class_46 var10001 = new class_46;
-                  var10001.method_532(var1, var2, var3, var4);
+                  class_46 var10001 = new class_46(var1, var2, var3, var4);
                   var10.method_5698(var10001);
                }
 
             }
          } else {
-            class_46 var10000 = new class_46;
-            var10000.method_532(var1, var2, var3, var4);
+            class_46 var10000 = new class_46(var1, var2, var3, var4);
             class_323.method_5743(var10000, var6);
             if(var7 >= 4) {
                if(var5 >= 1031741011) {
@@ -144,11 +142,10 @@ public class class_47 extends class_27 {
    }
 
    // $FF: renamed from: <init> (et) void
-   void method_542(class_77 var1) {
+   class_47(class_77 var1) {
+      // TODO: super?
       try {
-         super.method_105();
-         class_323 var10001 = new class_323;
-         var10001.method_5737();
+         class_323 var10001 = new class_323();
          this.field_351 = var10001;
          this.field_350 = var1;
       } catch (RuntimeException var2) {
@@ -176,14 +173,12 @@ public class class_47 extends class_27 {
       if(var5 == null) {
          if(var6 < 4) {
             class_323 var8 = this.field_351;
-            class_46 var10001 = new class_46;
-            var10001.method_532(var1, var2, var3, var4);
+            class_46 var10001 = new class_46(var1, var2, var3, var4);
             var8.method_5698(var10001);
          }
 
       } else {
-         class_46 var10000 = new class_46;
-         var10000.method_532(var1, var2, var3, var4);
+         class_46 var10000 = new class_46(var1, var2, var3, var4);
          class_323.method_5743(var10000, var5);
          if(var6 >= 4) {
             this.field_351.method_5700().method_108();
@@ -212,14 +207,12 @@ public class class_47 extends class_27 {
       if(var5 == null) {
          if(var6 < 4) {
             class_323 var8 = this.field_351;
-            class_46 var10001 = new class_46;
-            var10001.method_532(var1, var2, var3, var4);
+            class_46 var10001 = new class_46(var1, var2, var3, var4);
             var8.method_5698(var10001);
          }
 
       } else {
-         class_46 var10000 = new class_46;
-         var10000.method_532(var1, var2, var3, var4);
+         class_46 var10000 = new class_46(var1, var2, var3, var4);
          class_323.method_5743(var10000, var5);
          if(var6 >= 4) {
             this.field_351.method_5700().method_108();
@@ -268,14 +261,12 @@ public class class_47 extends class_27 {
       if(var5 == null) {
          if(var6 < 4) {
             class_323 var8 = this.field_351;
-            class_46 var10001 = new class_46;
-            var10001.method_532(var1, var2, var3, var4);
+            class_46 var10001 = new class_46(var1, var2, var3, var4);
             var8.method_5698(var10001);
          }
 
       } else {
-         class_46 var10000 = new class_46;
-         var10000.method_532(var1, var2, var3, var4);
+         class_46 var10000 = new class_46(var1, var2, var3, var4);
          class_323.method_5743(var10000, var5);
          if(var6 >= 4) {
             this.field_351.method_5700().method_108();

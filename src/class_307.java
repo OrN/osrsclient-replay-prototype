@@ -52,8 +52,7 @@ public class class_307 extends class_306 {
             return;
          }
 
-         class_28 var10000 = new class_28;
-         var10000.method_178(class_186.method_3876(var3, 1448871300));
+         class_28 var10000 = new class_28(class_186.method_3876(var3, 1448871300));
          class_28 var6 = var10000;
          int var7 = var6.method_130(-1887830332);
          if(5 != var7 && 6 != var7) {
@@ -303,8 +302,7 @@ public class class_307 extends class_306 {
             if(null != this.field_3725) {
                int var6 = 1695957245 * this.field_3726;
                class_350 var7 = this.field_3725;
-               var10000 = new class_35;
-               var10000.method_105();
+               var10000 = new class_35();
                class_35 var8 = var10000;
                var8.field_65 = 0;
                var8.field_9 = (long)var6;
@@ -322,10 +320,8 @@ public class class_307 extends class_306 {
                         throw new IllegalStateException();
                      }
 
-                     var24 = new Thread;
-                     var10002 = new class_297;
-                     var10002.method_5337();
-                     var24.<init>(var10002);
+                     var10002 = new class_297();
+                     var24 = new Thread(var10002);
                      class_297.field_3360 = var24;
                      class_297.field_3360.setDaemon(true);
                      class_297.field_3360.start();
@@ -347,8 +343,7 @@ public class class_307 extends class_306 {
                }
 
                class_350 var19 = this.field_3724;
-               var10000 = new class_35;
-               var10000.method_105();
+               var10000 = new class_35();
                class_35 var20 = var10000;
                var20.field_65 = 0;
                var20.field_9 = (long)var1;
@@ -366,10 +361,8 @@ public class class_307 extends class_306 {
                         throw new IllegalStateException();
                      }
 
-                     var24 = new Thread;
-                     var10002 = new class_297;
-                     var10002.method_5337();
-                     var24.<init>(var10002);
+                     var10002 = new class_297();
+                     var24 = new Thread(var10002);
                      class_297.field_3360 = var24;
                      class_297.field_3360.setDaemon(true);
                      class_297.field_3360.start();
@@ -507,8 +500,7 @@ public class class_307 extends class_306 {
                   }
 
                   class_350 var3 = this.field_3724;
-                  class_35 var10000 = new class_35;
-                  var10000.method_105();
+                  class_35 var10000 = new class_35();
                   class_35 var5 = var10000;
                   var5.field_65 = 1686059743;
                   var5.field_9 = (long)var2;
@@ -526,10 +518,8 @@ public class class_307 extends class_306 {
                            return;
                         }
 
-                        Thread var13 = new Thread;
-                        class_297 var10002 = new class_297;
-                        var10002.method_5337();
-                        var13.<init>(var10002);
+                        class_297 var10002 = new class_297();
+                        Thread var13 = new Thread(var10002);
                         class_297.field_3360 = var13;
                         class_297.field_3360.setDaemon(true);
                         class_297.field_3360.start();
@@ -574,7 +564,7 @@ public class class_307 extends class_306 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_5407() {
+   static {
       field_3730 = new CRC32();
    }
 
@@ -615,8 +605,7 @@ public class class_307 extends class_306 {
          if(null != this.field_3725) {
             int var5 = 1695957245 * this.field_3726;
             class_350 var6 = this.field_3725;
-            var10000 = new class_35;
-            var10000.method_105();
+            var10000 = new class_35();
             class_35 var7 = var10000;
             var7.field_65 = 0;
             var7.field_9 = (long)var5;
@@ -630,10 +619,8 @@ public class class_307 extends class_306 {
             Object var21 = class_297.field_3357;
             synchronized(class_297.field_3357) {
                if(0 == 2106150539 * class_297.field_3358) {
-                  var22 = new Thread;
-                  var10002 = new class_297;
-                  var10002.method_5337();
-                  var22.<init>(var10002);
+                  var10002 = new class_297();
+                  var22 = new Thread(var10002);
                   class_297.field_3360 = var22;
                   class_297.field_3360.setDaemon(true);
                   class_297.field_3360.start();
@@ -651,8 +638,7 @@ public class class_307 extends class_306 {
          var2[var2.length - 1] = (byte)this.field_3707[var1];
          if(this.field_3724 != null) {
             class_350 var17 = this.field_3724;
-            var10000 = new class_35;
-            var10000.method_105();
+            var10000 = new class_35();
             class_35 var18 = var10000;
             var18.field_65 = 0;
             var18.field_9 = (long)var1;
@@ -666,10 +652,8 @@ public class class_307 extends class_306 {
             Object var20 = class_297.field_3357;
             synchronized(class_297.field_3357) {
                if(0 == 2106150539 * class_297.field_3358) {
-                  var22 = new Thread;
-                  var10002 = new class_297;
-                  var10002.method_5337();
-                  var22.<init>(var10002);
+                  var10002 = new class_297();
+                  var22 = new Thread(var10002);
                   class_297.field_3360 = var22;
                   class_297.field_3360.setDaemon(true);
                   class_297.field_3360.start();
@@ -806,9 +790,9 @@ public class class_307 extends class_306 {
    }
 
    // $FF: renamed from: <init> (lh, lh, int, boolean, boolean, boolean) void
-   public void method_5507(class_350 var1, class_350 var2, int var3, boolean var4, boolean var5, boolean var6) {
+   public class_307(class_350 var1, class_350 var2, int var3, boolean var4, boolean var5, boolean var6) {
+      super(var4, var5);
       try {
-         super.method_5478(var4, var5);
          this.field_3727 = false;
          this.field_3728 = false;
          this.field_3722 = -1421157655;
@@ -848,8 +832,7 @@ public class class_307 extends class_306 {
                if(this.field_3733 * -1472783963 != var6) {
                   class_278.method_5146(this, 255, this.field_3726 * 1695957245, this.field_3733 * -1472783963, (byte)0, true, (byte)-82);
                } else {
-                  class_28 var10000 = new class_28;
-                  var10000.method_178(class_186.method_3876(var3, 1275679316));
+                  class_28 var10000 = new class_28(class_186.method_3876(var3, 1275679316));
                   class_28 var7 = var10000;
                   int var8 = var7.method_130(-2020919026);
                   if(5 != var8) {
@@ -990,8 +973,7 @@ public class class_307 extends class_306 {
          if(null != this.field_3725) {
             int var5 = 1695957245 * this.field_3726;
             class_350 var6 = this.field_3725;
-            var10000 = new class_35;
-            var10000.method_105();
+            var10000 = new class_35();
             class_35 var7 = var10000;
             var7.field_65 = 0;
             var7.field_9 = (long)var5;
@@ -1005,10 +987,8 @@ public class class_307 extends class_306 {
             Object var21 = class_297.field_3357;
             synchronized(class_297.field_3357) {
                if(0 == 1661672415 * class_297.field_3358) {
-                  var22 = new Thread;
-                  var10002 = new class_297;
-                  var10002.method_5337();
-                  var22.<init>(var10002);
+                  var10002 = new class_297();
+                  var22 = new Thread(var10002);
                   class_297.field_3360 = var22;
                   class_297.field_3360.setDaemon(true);
                   class_297.field_3360.start();
@@ -1026,8 +1006,7 @@ public class class_307 extends class_306 {
          var2[var2.length - 1] = (byte)this.field_3707[var1];
          if(this.field_3724 != null) {
             class_350 var17 = this.field_3724;
-            var10000 = new class_35;
-            var10000.method_105();
+            var10000 = new class_35();
             class_35 var18 = var10000;
             var18.field_65 = 0;
             var18.field_9 = (long)var1;
@@ -1041,10 +1020,8 @@ public class class_307 extends class_306 {
             Object var20 = class_297.field_3357;
             synchronized(class_297.field_3357) {
                if(0 == 735776947 * class_297.field_3358) {
-                  var22 = new Thread;
-                  var10002 = new class_297;
-                  var10002.method_5337();
-                  var22.<init>(var10002);
+                  var10002 = new class_297();
+                  var22 = new Thread(var10002);
                   class_297.field_3360 = var22;
                   class_297.field_3360.setDaemon(true);
                   class_297.field_3360.start();
@@ -1077,8 +1054,7 @@ public class class_307 extends class_306 {
          if(null != this.field_3725) {
             int var5 = 1695957245 * this.field_3726;
             class_350 var6 = this.field_3725;
-            var10000 = new class_35;
-            var10000.method_105();
+            var10000 = new class_35();
             class_35 var7 = var10000;
             var7.field_65 = 0;
             var7.field_9 = (long)var5;
@@ -1092,10 +1068,8 @@ public class class_307 extends class_306 {
             Object var21 = class_297.field_3357;
             synchronized(class_297.field_3357) {
                if(0 == 2106150539 * class_297.field_3358) {
-                  var22 = new Thread;
-                  var10002 = new class_297;
-                  var10002.method_5337();
-                  var22.<init>(var10002);
+                  var10002 = new class_297();
+                  var22 = new Thread(var10002);
                   class_297.field_3360 = var22;
                   class_297.field_3360.setDaemon(true);
                   class_297.field_3360.start();
@@ -1113,8 +1087,7 @@ public class class_307 extends class_306 {
          var2[var2.length - 1] = (byte)this.field_3707[var1];
          if(this.field_3724 != null) {
             class_350 var17 = this.field_3724;
-            var10000 = new class_35;
-            var10000.method_105();
+            var10000 = new class_35();
             class_35 var18 = var10000;
             var18.field_65 = 0;
             var18.field_9 = (long)var1;
@@ -1128,10 +1101,8 @@ public class class_307 extends class_306 {
             Object var20 = class_297.field_3357;
             synchronized(class_297.field_3357) {
                if(0 == 2106150539 * class_297.field_3358) {
-                  var22 = new Thread;
-                  var10002 = new class_297;
-                  var10002.method_5337();
-                  var22.<init>(var10002);
+                  var10002 = new class_297();
+                  var22 = new Thread(var10002);
                   class_297.field_3360 = var22;
                   class_297.field_3360.setDaemon(true);
                   class_297.field_3360.start();
@@ -1177,8 +1148,7 @@ public class class_307 extends class_306 {
             return;
          }
 
-         class_28 var10000 = new class_28;
-         var10000.method_178(class_186.method_3876(var3, 1864120560));
+         class_28 var10000 = new class_28(class_186.method_3876(var3, 1864120560));
          class_28 var6 = var10000;
          int var7 = var6.method_130(1362317830);
          if(5 != var7 && 6 != var7) {
@@ -1266,8 +1236,7 @@ public class class_307 extends class_306 {
          for(var1 = 0; var1 < this.field_3729.length; ++var1) {
             if(this.field_3710[var1] > 0) {
                class_350 var2 = this.field_3724;
-               class_35 var10000 = new class_35;
-               var10000.method_105();
+               class_35 var10000 = new class_35();
                class_35 var4 = var10000;
                var4.field_65 = 1686059743;
                var4.field_9 = (long)var1;
@@ -1281,10 +1250,8 @@ public class class_307 extends class_306 {
                Object var10 = class_297.field_3357;
                synchronized(class_297.field_3357) {
                   if(0 == class_297.field_3358 * 2106150539) {
-                     Thread var11 = new Thread;
-                     class_297 var10002 = new class_297;
-                     var10002.method_5337();
-                     var11.<init>(var10002);
+                     class_297 var10002 = new class_297();
+                     Thread var11 = new Thread(var10002);
                      class_297.field_3360 = var11;
                      class_297.field_3360.setDaemon(true);
                      class_297.field_3360.start();
@@ -1318,8 +1285,7 @@ public class class_307 extends class_306 {
          if(null != this.field_3725) {
             int var5 = 1695957245 * this.field_3726;
             class_350 var6 = this.field_3725;
-            var10000 = new class_35;
-            var10000.method_105();
+            var10000 = new class_35();
             class_35 var7 = var10000;
             var7.field_65 = 0;
             var7.field_9 = (long)var5;
@@ -1333,10 +1299,8 @@ public class class_307 extends class_306 {
             Object var21 = class_297.field_3357;
             synchronized(class_297.field_3357) {
                if(0 == 2106150539 * class_297.field_3358) {
-                  var22 = new Thread;
-                  var10002 = new class_297;
-                  var10002.method_5337();
-                  var22.<init>(var10002);
+                  var10002 = new class_297();
+                  var22 = new Thread(var10002);
                   class_297.field_3360 = var22;
                   class_297.field_3360.setDaemon(true);
                   class_297.field_3360.start();
@@ -1354,8 +1318,7 @@ public class class_307 extends class_306 {
          var2[var2.length - 1] = (byte)this.field_3707[var1];
          if(this.field_3724 != null) {
             class_350 var17 = this.field_3724;
-            var10000 = new class_35;
-            var10000.method_105();
+            var10000 = new class_35();
             class_35 var18 = var10000;
             var18.field_65 = 0;
             var18.field_9 = (long)var1;
@@ -1369,10 +1332,8 @@ public class class_307 extends class_306 {
             Object var20 = class_297.field_3357;
             synchronized(class_297.field_3357) {
                if(0 == 2106150539 * class_297.field_3358) {
-                  var22 = new Thread;
-                  var10002 = new class_297;
-                  var10002.method_5337();
-                  var22.<init>(var10002);
+                  var10002 = new class_297();
+                  var22 = new Thread(var10002);
                   class_297.field_3360 = var22;
                   class_297.field_3360.setDaemon(true);
                   class_297.field_3360.start();
@@ -1414,8 +1375,7 @@ public class class_307 extends class_306 {
          for(var1 = 0; var1 < this.field_3729.length; ++var1) {
             if(this.field_3710[var1] > 0) {
                class_350 var2 = this.field_3724;
-               class_35 var10000 = new class_35;
-               var10000.method_105();
+               class_35 var10000 = new class_35();
                class_35 var4 = var10000;
                var4.field_65 = 1686059743;
                var4.field_9 = (long)var1;
@@ -1429,10 +1389,8 @@ public class class_307 extends class_306 {
                Object var10 = class_297.field_3357;
                synchronized(class_297.field_3357) {
                   if(0 == class_297.field_3358 * 2106150539) {
-                     Thread var11 = new Thread;
-                     class_297 var10002 = new class_297;
-                     var10002.method_5337();
-                     var11.<init>(var10002);
+                     class_297 var10002 = new class_297();
+                     Thread var11 = new Thread(var10002);
                      class_297.field_3360 = var11;
                      class_297.field_3360.setDaemon(true);
                      class_297.field_3360.start();

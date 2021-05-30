@@ -40,9 +40,9 @@ public final class class_208 extends class_206 implements Runnable {
 
 
    // $FF: renamed from: <init> (java.net.Socket, dp, int) void
-   public void method_4143(Socket var1, class_201 var2, int var3) throws IOException {
+   public class_208(Socket var1, class_201 var2, int var3) throws IOException {
+      super();
       try {
-         super.method_4135();
          this.field_2410 = false;
          this.field_2412 = 0;
          this.field_2418 = 0;
@@ -295,7 +295,7 @@ public final class class_208 extends class_206 implements Runnable {
 
             if(this.field_2405.field_2446 == 1) {
                try {
-                  ((Thread)this.field_2405.field_2454).join();
+                  ((Thread)this.field_2405.socket).join();
                } catch (InterruptedException var3) {
                   ;
                }
@@ -567,7 +567,7 @@ public final class class_208 extends class_206 implements Runnable {
 
             if(this.field_2405.field_2446 == 1) {
                try {
-                  ((Thread)this.field_2405.field_2454).join();
+                  ((Thread)this.field_2405.socket).join();
                } catch (InterruptedException var3) {
                   ;
                }
@@ -597,7 +597,7 @@ public final class class_208 extends class_206 implements Runnable {
 
             if(this.field_2405.field_2446 == 1) {
                try {
-                  ((Thread)this.field_2405.field_2454).join();
+                  ((Thread)this.field_2405.socket).join();
                } catch (InterruptedException var3) {
                   ;
                }
@@ -877,7 +877,7 @@ public final class class_208 extends class_206 implements Runnable {
                   }
 
                   try {
-                     ((Thread)this.field_2405.field_2454).join();
+                     ((Thread)this.field_2405.socket).join();
                   } catch (InterruptedException var4) {
                      ;
                   }

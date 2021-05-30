@@ -27,12 +27,11 @@ public class class_180 {
 
 
    // $FF: renamed from: <init> (nd) void
-   public void method_3812(class_28 var1) {
+   public class_180(class_28 var1) {
+      super();
       try {
-         super();
          this.field_2231 = 7853368797710486943L;
-         class_323 var10001 = new class_323;
-         var10001.method_5737();
+         class_323 var10001 = new class_323();
          this.field_2234 = var10001;
          this.method_3816(var1, -1275623765);
       } catch (RuntimeException var2) {
@@ -93,28 +92,23 @@ public class class_180 {
       for(int var2 = var1.method_130(1352282261); 0 != var2; var2 = var1.method_130(807660986)) {
          Object var3;
          if(1 == var2) {
-            class_53 var10000 = new class_53;
-            var10000.method_578(this);
+            class_53 var10000 = new class_53(this);
             var3 = var10000;
          } else if(var2 == 4) {
-            class_56 var4 = new class_56;
-            var4.method_591(this);
+            class_56 var4 = new class_56(this);
             var3 = var4;
          } else if(var2 == 3) {
-            class_54 var5 = new class_54;
-            var5.method_584(this);
+            class_54 var5 = new class_54(this);
             var3 = var5;
          } else if(var2 == 2) {
-            class_52 var6 = new class_52;
-            var6.method_572(this);
+            class_52 var6 = new class_52(this);
             var3 = var6;
          } else {
             if(var2 != 5) {
                throw new RuntimeException("");
             }
 
-            class_55 var7 = new class_55;
-            var7.method_587(this);
+            class_55 var7 = new class_55(this);
             var3 = var7;
          }
 
@@ -137,28 +131,24 @@ public class class_180 {
 
             Object var4;
             if(1 == var3) {
-               class_53 var10000 = new class_53;
-               var10000.method_578(this);
+               class_53 var10000 = new class_53(this);
                var4 = var10000;
             } else if(var3 == 4) {
-               class_56 var6 = new class_56;
-               var6.method_591(this);
+               class_56 var6 = new class_56(this);
                var4 = var6;
             } else if(var3 == 3) {
                if(var2 == 1798909345) {
                   throw new IllegalStateException();
                }
 
-               class_54 var7 = new class_54;
-               var7.method_584(this);
+               class_54 var7 = new class_54(this);
                var4 = var7;
             } else if(var3 == 2) {
                if(var2 == 1798909345) {
                   throw new IllegalStateException();
                }
 
-               class_52 var8 = new class_52;
-               var8.method_572(this);
+               class_52 var8 = new class_52(this);
                var4 = var8;
             } else {
                if(var3 != 5) {
@@ -169,8 +159,7 @@ public class class_180 {
                   throw new IllegalStateException();
                }
 
-               class_55 var9 = new class_55;
-               var9.method_587(this);
+               class_55 var9 = new class_55(this);
                var4 = var9;
             }
 
@@ -191,28 +180,23 @@ public class class_180 {
       for(int var2 = var1.method_130(11109013); 0 != var2; var2 = var1.method_130(277572493)) {
          Object var3;
          if(1 == var2) {
-            class_53 var10000 = new class_53;
-            var10000.method_578(this);
+            class_53 var10000 = new class_53(this);
             var3 = var10000;
          } else if(var2 == 4) {
-            class_56 var4 = new class_56;
-            var4.method_591(this);
+            class_56 var4 = new class_56(this);
             var3 = var4;
          } else if(var2 == 3) {
-            class_54 var5 = new class_54;
-            var5.method_584(this);
+            class_54 var5 = new class_54(this);
             var3 = var5;
          } else if(var2 == 2) {
-            class_52 var6 = new class_52;
-            var6.method_572(this);
+            class_52 var6 = new class_52(this);
             var3 = var6;
          } else {
             if(var2 != 5) {
                throw new RuntimeException("");
             }
 
-            class_55 var7 = new class_55;
-            var7.method_587(this);
+            class_55 var7 = new class_55(this);
             var3 = var7;
          }
 
@@ -230,28 +214,23 @@ public class class_180 {
       for(int var2 = var1.method_130(-292545383); 0 != var2; var2 = var1.method_130(-171285393)) {
          Object var3;
          if(1 == var2) {
-            class_53 var10000 = new class_53;
-            var10000.method_578(this);
+            class_53 var10000 = new class_53(this);
             var3 = var10000;
          } else if(var2 == 4) {
-            class_56 var4 = new class_56;
-            var4.method_591(this);
+            class_56 var4 = new class_56(this);
             var3 = var4;
          } else if(var2 == 3) {
-            class_54 var5 = new class_54;
-            var5.method_584(this);
+            class_54 var5 = new class_54(this);
             var3 = var5;
          } else if(var2 == 2) {
-            class_52 var6 = new class_52;
-            var6.method_572(this);
+            class_52 var6 = new class_52(this);
             var3 = var6;
          } else {
             if(var2 != 5) {
                throw new RuntimeException("");
             }
 
-            class_55 var7 = new class_55;
-            var7.method_587(this);
+            class_55 var7 = new class_55(this);
             var3 = var7;
          }
 

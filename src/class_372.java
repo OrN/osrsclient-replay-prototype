@@ -14,9 +14,9 @@ public class class_372 {
 
 
    // $FF: renamed from: <init> (jv, jv) void
-   public void method_6610(class_306 var1, class_306 var2) {
+   public class_372(class_306 var1, class_306 var2) {
+      super();
       try {
-         super();
          this.field_4111 = var1;
          this.field_4112 = var2;
          this.field_4113 = new HashMap();

@@ -123,9 +123,9 @@ public class class_224 implements class_6 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_4283() {
+   class_224() {
+      super();
       try {
-         super();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "fj.<init>(" + ')');
       }
@@ -143,8 +143,7 @@ public class class_224 implements class_6 {
          } else {
             int var4 = var1 + (this.field_2532 * 1390875840 - -1230398528 * this.field_2534) + (this.field_2530 * -174857784 - this.field_2533 * -1931194472);
             int var5 = -620843768 * this.field_2537 - -1317765656 * this.field_2539 + var2 + (this.field_2536 * -1041797824 - this.field_2535 * 235441088);
-            class_280 var10000 = new class_280;
-            var10000.method_5165(this.field_2538 * 398172859, var4, var5);
+            class_280 var10000 = new class_280(this.field_2538 * 398172859, var4, var5);
             return var10000;
          }
       } catch (RuntimeException var6) {
@@ -285,8 +284,7 @@ public class class_224 implements class_6 {
       } else {
          int var3 = var1 + (this.field_2532 * 1390875840 - -1230398528 * this.field_2534) + (this.field_2530 * -174857784 - this.field_2533 * -1931194472);
          int var4 = -620843768 * this.field_2537 - -1317765656 * this.field_2539 + var2 + (this.field_2536 * -1041797824 - this.field_2535 * 235441088);
-         class_280 var10000 = new class_280;
-         var10000.method_5165(this.field_2538 * 398172859, var3, var4);
+         class_280 var10000 = new class_280(this.field_2538 * 398172859, var3, var4);
          return var10000;
       }
    }
@@ -298,8 +296,7 @@ public class class_224 implements class_6 {
       } else {
          int var3 = var1 + (this.field_2532 * 1390875840 - -1230398528 * this.field_2534) + (this.field_2530 * -174857784 - this.field_2533 * -1931194472);
          int var4 = -620843768 * this.field_2537 - -1317765656 * this.field_2539 + var2 + (this.field_2536 * -1041797824 - this.field_2535 * 235441088);
-         class_280 var10000 = new class_280;
-         var10000.method_5165(this.field_2538 * 398172859, var3, var4);
+         class_280 var10000 = new class_280(this.field_2538 * 398172859, var3, var4);
          return var10000;
       }
    }
@@ -311,8 +308,7 @@ public class class_224 implements class_6 {
       } else {
          int var3 = var1 + (this.field_2532 * 1390875840 - -1230398528 * this.field_2534) + (this.field_2530 * -174857784 - this.field_2533 * -1931194472);
          int var4 = -620843768 * this.field_2537 - -1317765656 * this.field_2539 + var2 + (this.field_2536 * -1041797824 - this.field_2535 * 235441088);
-         class_280 var10000 = new class_280;
-         var10000.method_5165(this.field_2538 * 398172859, var3, var4);
+         class_280 var10000 = new class_280(this.field_2538 * 398172859, var3, var4);
          return var10000;
       }
    }

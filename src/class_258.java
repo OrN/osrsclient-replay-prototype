@@ -12,9 +12,9 @@ public abstract class class_258 extends class_257 implements class_21 {
    protected abstract class_367 method_4950(int var1);
 
    // $FF: renamed from: <init> (jd, kk, int) void
-   protected void method_4949(class_295 var1, class_324 var2, int var3) {
+   protected class_258(class_295 var1, class_324 var2, int var3) {
+      super(var1, var2, var3);
       try {
-         super.method_4949(var1, var2, var3);
       } catch (RuntimeException var4) {
          throw class_223.method_4281(var4, "me.<init>(" + ')');
       }
@@ -57,8 +57,7 @@ public abstract class class_258 extends class_257 implements class_21 {
       try {
          int var3 = var1.method_132((byte)-44);
          class_367 var4 = this.method_4958(var3, 1996028065);
-         class_396 var10000 = new class_396;
-         var10000.method_6788(var3);
+         class_396 var10000 = new class_396(var3);
          class_396 var5 = var10000;
          Class var6 = var4.field_4095.field_4214;
          if(var6 == Integer.class) {
@@ -151,8 +150,7 @@ public abstract class class_258 extends class_257 implements class_21 {
    public class_396 method_4960(class_28 var1) {
       int var2 = var1.method_132((byte)-105);
       class_367 var3 = this.method_4958(var2, 1185225265);
-      class_396 var10000 = new class_396;
-      var10000.method_6788(var2);
+      class_396 var10000 = new class_396(var2);
       class_396 var4 = var10000;
       Class var5 = var3.field_4095.field_4214;
       if(var5 == Integer.class) {

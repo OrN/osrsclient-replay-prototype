@@ -21,9 +21,8 @@ public class class_144 implements class_14 {
 
 
    // $FF: renamed from: <clinit> () void
-   static void method_3078() {
-      class_144 var10000 = new class_144;
-      var10000.method_3079(0, 0);
+   static {
+      class_144 var10000 = new class_144(0, 0);
       field_1826 = var10000;
    }
 
@@ -33,9 +32,9 @@ public class class_144 implements class_14 {
    }
 
    // $FF: renamed from: <init> (int, int) void
-   void method_3079(int var1, int var2) {
+   class_144(int var1, int var2) {
+      super();
       try {
-         super();
          this.field_1822 = var1 * 1706260399;
          this.field_1823 = -554369649 * var2;
       } catch (RuntimeException var3) {

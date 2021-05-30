@@ -237,8 +237,7 @@ public class class_149 {
             class_192.field_2298 = class_263.field_2989.method_4038(new URL(class_116.field_1291), 2016133211);
          } else if(class_192.field_2298.method_3963(465394052)) {
             byte[] var0 = class_192.field_2298.method_3961((byte)38);
-            class_28 var10000 = new class_28;
-            var10000.method_178(var0);
+            class_28 var10000 = new class_28(var0);
             class_28 var1 = var10000;
             var1.method_135((byte)-115);
             field_1881 = var1.method_132((byte)-6) * 274545041;
@@ -246,8 +245,7 @@ public class class_149 {
 
             for(int var2 = 0; var2 < 1267509105 * field_1881; ++var2) {
                class_149[] var5 = class_166.field_2083;
-               class_149 var10002 = new class_149;
-               var10002.method_3172();
+               class_149 var10002 = new class_149();
                class_149 var3 = var5[var2] = var10002;
                var3.field_1894 = var1.method_132((byte)-21) * -1640224087;
                var3.field_1890 = var1.method_135((byte)-7) * 1964795281;
@@ -1091,9 +1089,9 @@ public class class_149 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_3172() {
+   class_149() {
+      super();
       try {
-         super();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "bg.<init>(" + ')');
       }
@@ -1106,8 +1104,7 @@ public class class_149 {
             class_192.field_2298 = class_263.field_2989.method_4038(new URL(class_116.field_1291), 697175380);
          } else if(class_192.field_2298.method_3963(-930789162)) {
             byte[] var0 = class_192.field_2298.method_3961((byte)24);
-            class_28 var10000 = new class_28;
-            var10000.method_178(var0);
+            class_28 var10000 = new class_28(var0);
             class_28 var1 = var10000;
             var1.method_135((byte)-48);
             field_1881 = var1.method_132((byte)-110) * 274545041;
@@ -1115,8 +1112,7 @@ public class class_149 {
 
             for(int var2 = 0; var2 < -2107355422 * field_1881; ++var2) {
                class_149[] var5 = class_166.field_2083;
-               class_149 var10002 = new class_149;
-               var10002.method_3172();
+               class_149 var10002 = new class_149();
                class_149 var3 = var5[var2] = var10002;
                var3.field_1894 = var1.method_132((byte)-74) * -1640224087;
                var3.field_1890 = var1.method_135((byte)-75) * 1964795281;
@@ -1570,8 +1566,7 @@ public class class_149 {
 
                                        class_136.field_1752 -= 1590626521 * var39.field_906;
                                        class_165.field_2054 -= var39.field_907 * -700173191;
-                                       class_158 var41 = new class_158;
-                                       var41.method_3303();
+                                       class_158 var41 = new class_158();
                                        class_158 var34 = var41;
                                        var34.field_1962 = var5;
                                        var34.field_1961 = -815362225 * var27;
@@ -1804,10 +1799,12 @@ public class class_149 {
 
                               var13.append("").append(class_165.field_2056[var14].field_1962.field_9).append(" ");
                            }
-                        }
 
-                        var13.append("").append(var9);
-                        class_308.method_5523(var13.toString(), var24, 2003852629);
+                           // TODO: Check me! Decompiler error potentially
+                           var13.append("").append(var9);
+
+                           class_308.method_5523(var13.toString(), var24, 2003852629);
+                        }
                         var23 = false;
                         break label1395;
                      }
@@ -1945,7 +1942,7 @@ public class class_149 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_3181() {
+   static {
       field_1881 = 0;
       field_1887 = 0;
       field_1883 = new int[]{1, 1, 1, 1};

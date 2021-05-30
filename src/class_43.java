@@ -39,12 +39,11 @@ public class class_43 extends class_27 {
    }
 
    // $FF: renamed from: <init> (int, byte[]) void
-   void method_493(int var1, byte[] var2) {
+   class_43(int var1, byte[] var2) {
+      super();
       try {
-         super.method_105();
          this.field_314 = var1 * -1802035127;
-         class_28 var10000 = new class_28;
-         var10000.method_178(var2);
+         class_28 var10000 = new class_28(var2);
          class_28 var3 = var10000;
          this.field_310 = var3.method_130(1769551662) * 951375625;
          this.field_312 = new int[this.field_310 * -1780750535];
@@ -73,8 +72,7 @@ public class class_43 extends class_27 {
    // $FF: renamed from: r (int) void
    static void method_494(int var0) {
       try {
-         class_364 var10000 = new class_364;
-         var10000.method_6538(32);
+         class_364 var10000 = new class_364(32);
          class_49.field_361 = var10000;
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "ge.r(" + ')');
@@ -88,8 +86,7 @@ public class class_43 extends class_27 {
          int var5 = 671262203 * class_164.field_2044.field_1163;
          int var6 = 697161691 * class_243.field_2700 + (class_164.field_2044.field_1077 * -130212619 >> 7);
          int var7 = (1248597615 * class_164.field_2044.field_1076 >> 7) + class_154.field_1929 * -27903763;
-         class_280 var10000 = new class_280;
-         var10000.method_5165(var5, var6, var7);
+         class_280 var10000 = new class_280(var5, var6, var7);
          class_280 var8 = var10000;
          class_46.method_534((byte)7).method_6521(var4, var8, var1, var2, 1149896139);
       } catch (RuntimeException var9) {

@@ -48,7 +48,7 @@ public class class_156 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_3265() {
+   class_156() {
       super();
       this.field_1947 = 2;
       this.field_1942 = new int[2];

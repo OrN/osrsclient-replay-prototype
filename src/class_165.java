@@ -89,7 +89,7 @@ public class class_165 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_3429() {
+   static {
       field_2050 = new int[5];
       field_2051 = new int[5][5000];
       field_2052 = new int[1000];
@@ -378,8 +378,7 @@ public class class_165 {
 
                                  class_136.field_1752 -= 1590626521 * var36.field_906;
                                  field_2054 -= var36.field_907 * -700173191;
-                                 class_158 var10000 = new class_158;
-                                 var10000.method_3303();
+                                 class_158 var10000 = new class_158();
                                  class_158 var31 = var10000;
                                  var31.field_1962 = var4;
                                  var31.field_1961 = -815362225 * var24;
@@ -609,8 +608,7 @@ public class class_165 {
             if(var11 > 0 && var6.field_233[var11 - 1] == null) {
                throw new RuntimeException("" + (var11 - 1));
             } else {
-               class_37 var10000 = new class_37;
-               var10000.method_105();
+               class_37 var10000 = new class_37();
                class_37 var12 = var10000;
                var12.field_103 = var4 * 159316342;
                var12.field_152 = (var12.field_101 = var6.field_101 * 1) * -1554407447;
@@ -721,8 +719,7 @@ public class class_165 {
             if(var11 > 0 && var6.field_233[var11 - 1] == null) {
                throw new RuntimeException("" + (var11 - 1));
             } else {
-               class_37 var10000 = new class_37;
-               var10000.method_105();
+               class_37 var10000 = new class_37();
                class_37 var12 = var10000;
                var12.field_103 = var4 * 306308329;
                var12.field_152 = (var12.field_101 = var6.field_101 * 1) * -1554407447;
@@ -938,8 +935,7 @@ public class class_165 {
                   var21 = field_2052;
                   var22 = (class_136.field_1752 += -1087727229) * -26460885 - 1;
                   var10002 = class_208.field_2413;
-                  var10003 = new class_359;
-                  var10003.method_6280(var8, class_239.field_2659);
+                  var10003 = new class_359(var8, class_239.field_2659);
                   var21[var22] = var10002.method_3324(var10003, false, 1374148018)?1:0;
                   return 1;
                } else if(3611 == var0) {
@@ -1028,8 +1024,7 @@ public class class_165 {
                   var21 = field_2052;
                   var22 = (class_136.field_1752 += -1087727229) * -26460885 - 1;
                   var10002 = class_208.field_2413;
-                  var10003 = new class_359;
-                  var10003.method_6280(var8, class_239.field_2659);
+                  var10003 = new class_359(var8, class_239.field_2659);
                   var21[var22] = var10002.method_3325(var10003, 279756852)?1:0;
                   return 1;
                } else if(var0 == 131499609) {
@@ -1069,8 +1064,7 @@ public class class_165 {
                      if(3629 == var0) {
                         var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                         var9 = class_208.field_2413.field_1994;
-                        var20 = new class_388;
-                        var20.method_6733(var5);
+                        var20 = new class_388(var5);
                         var9.method_6124(var20, 1224360715);
                         return 1;
                      } else {
@@ -1078,8 +1072,7 @@ public class class_165 {
                         if(var0 == 3630) {
                            var5 = field_2052[(class_136.field_1752 -= 1097276691) * -1403212530] == 1;
                            var9 = class_208.field_2413.field_1994;
-                           var19 = new class_380;
-                           var19.method_6672(var5);
+                           var19 = new class_380(var5);
                            var9.method_6124(var19, 1224360715);
                            return 1;
                         } else {
@@ -1087,8 +1080,7 @@ public class class_165 {
                            if(612913627 == var0) {
                               var5 = field_2052[(class_136.field_1752 -= -1087727229) * 1009517372] == 1;
                               var9 = class_208.field_2413.field_1994;
-                              var18 = new class_183;
-                              var18.method_3842(var5);
+                              var18 = new class_183(var5);
                               var9.method_6124(var18, 1224360715);
                               return 1;
                            } else {
@@ -1096,8 +1088,7 @@ public class class_165 {
                               if(var0 == 3632) {
                                  var5 = field_2052[(class_136.field_1752 -= 689605936) * -396162092] == 1;
                                  var9 = class_208.field_2413.field_1994;
-                                 var16 = new class_204;
-                                 var16.method_4103(var5);
+                                 var16 = new class_204(var5);
                                  var9.method_6124(var16, 1224360715);
                                  return 1;
                               } else {
@@ -1105,8 +1096,7 @@ public class class_165 {
                                  if(3633 == var0) {
                                     var5 = field_2052[(class_136.field_1752 -= -1137402615) * -687329543] == 1;
                                     var9 = class_208.field_2413.field_1994;
-                                    var15 = new class_189;
-                                    var15.method_3897(var5);
+                                    var15 = new class_189(var5);
                                     var9.method_6124(var15, 1224360715);
                                     return 1;
                                  } else {
@@ -1114,8 +1104,7 @@ public class class_165 {
                                     if(var0 == 3634) {
                                        var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                        var9 = class_208.field_2413.field_1994;
-                                       var14 = new class_186;
-                                       var14.method_3870(var5);
+                                       var14 = new class_186(var5);
                                        var9.method_6124(var14, 1224360715);
                                        return 1;
                                     } else {
@@ -1123,8 +1112,7 @@ public class class_165 {
                                        if(-253117857 == var0) {
                                           var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                           var9 = class_208.field_2413.field_1994;
-                                          var13 = new class_188;
-                                          var13.method_3887(var5);
+                                          var13 = new class_188(var5);
                                           var9.method_6124(var13, 1224360715);
                                           return 1;
                                        } else {
@@ -1132,8 +1120,7 @@ public class class_165 {
                                           if(var0 == 1608816940) {
                                              var5 = field_2052[(class_136.field_1752 -= 1416940605) * -26460885] == 1;
                                              var9 = class_208.field_2413.field_1994;
-                                             var12 = new class_182;
-                                             var12.method_3834(var5);
+                                             var12 = new class_182(var5);
                                              var9.method_6124(var12, 1224360715);
                                              return 1;
                                           } else {
@@ -1141,8 +1128,7 @@ public class class_165 {
                                              if(var0 == -1908154890) {
                                                 var5 = field_2052[(class_136.field_1752 -= 723980753) * 326799028] == 1;
                                                 var9 = class_208.field_2413.field_1994;
-                                                var11 = new class_187;
-                                                var11.method_3879(var5);
+                                                var11 = new class_187(var5);
                                                 var9.method_6124(var11, 1224360715);
                                                 return 1;
                                              } else {
@@ -1150,8 +1136,7 @@ public class class_165 {
                                                 if(3638 == var0) {
                                                    var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                    var9 = class_208.field_2413.field_1994;
-                                                   var10 = new class_184;
-                                                   var10.method_3848(var5);
+                                                   var10 = new class_184(var5);
                                                    var9.method_6124(var10, 1224360715);
                                                    return 1;
                                                 } else if(-251806505 == var0) {
@@ -1165,15 +1150,13 @@ public class class_165 {
                                                    if(var0 == -1426361126) {
                                                       var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                       var17 = class_208.field_2413.field_1995;
-                                                      var20 = new class_388;
-                                                      var20.method_6733(var5);
+                                                      var20 = new class_388(var5);
                                                       var17.method_6124(var20, 1224360715);
                                                       return 1;
                                                    } else if(var0 == 3642) {
                                                       var5 = field_2052[(class_136.field_1752 -= 1598938984) * -26460885] == 1;
                                                       var17 = class_208.field_2413.field_1995;
-                                                      var19 = new class_380;
-                                                      var19.method_6672(var5);
+                                                      var19 = new class_380(var5);
                                                       var17.method_6124(var19, 1224360715);
                                                       return 1;
                                                    } else if(3643 == var0) {
@@ -1191,8 +1174,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1388397228) * -26460885] == 1;
                                                          if(null != class_233.field_2617) {
                                                             var10000 = class_233.field_2617;
-                                                            var20 = new class_388;
-                                                            var20.method_6733(var5);
+                                                            var20 = new class_388(var5);
                                                             var10000.method_6124(var20, 1224360715);
                                                          }
 
@@ -1201,8 +1183,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1536375848) * -26460885] == 1;
                                                          if(class_233.field_2617 != null) {
                                                             var10000 = class_233.field_2617;
-                                                            var19 = new class_380;
-                                                            var19.method_6672(var5);
+                                                            var19 = new class_380(var5);
                                                             var10000.method_6124(var19, 1224360715);
                                                          }
 
@@ -1211,8 +1192,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * 1000041084] == 1;
                                                          if(null != class_233.field_2617) {
                                                             var10000 = class_233.field_2617;
-                                                            var18 = new class_183;
-                                                            var18.method_3842(var5);
+                                                            var18 = new class_183(var5);
                                                             var10000.method_6124(var18, 1224360715);
                                                          }
 
@@ -1221,8 +1201,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -20447633) * -26460885] == 1;
                                                          if(null != class_233.field_2617) {
                                                             var10000 = class_233.field_2617;
-                                                            var16 = new class_204;
-                                                            var16.method_4103(var5);
+                                                            var16 = new class_204(var5);
                                                             var10000.method_6124(var16, 1224360715);
                                                          }
 
@@ -1231,8 +1210,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= 1041384292) * 1467242071] == 1;
                                                          if(null != class_233.field_2617) {
                                                             var10000 = class_233.field_2617;
-                                                            var15 = new class_189;
-                                                            var15.method_3897(var5);
+                                                            var15 = new class_189(var5);
                                                             var10000.method_6124(var15, 1224360715);
                                                          }
 
@@ -1241,8 +1219,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -1856785381] == 1;
                                                          if(class_233.field_2617 != null) {
                                                             var10000 = class_233.field_2617;
-                                                            var14 = new class_186;
-                                                            var14.method_3870(var5);
+                                                            var14 = new class_186(var5);
                                                             var10000.method_6124(var14, 1224360715);
                                                          }
 
@@ -1251,8 +1228,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(class_233.field_2617 != null) {
                                                             var10000 = class_233.field_2617;
-                                                            var13 = new class_188;
-                                                            var13.method_3887(var5);
+                                                            var13 = new class_188(var5);
                                                             var10000.method_6124(var13, 1224360715);
                                                          }
 
@@ -1261,8 +1237,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -361641399) * -26460885] == 1;
                                                          if(class_233.field_2617 != null) {
                                                             var10000 = class_233.field_2617;
-                                                            var12 = new class_182;
-                                                            var12.method_3834(var5);
+                                                            var12 = new class_182(var5);
                                                             var10000.method_6124(var12, 1224360715);
                                                          }
 
@@ -1271,8 +1246,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= 1359815770) * 2137287478] == 1;
                                                          if(null != class_233.field_2617) {
                                                             var10000 = class_233.field_2617;
-                                                            var11 = new class_187;
-                                                            var11.method_3879(var5);
+                                                            var11 = new class_187(var5);
                                                             var10000.method_6124(var11, 1224360715);
                                                          }
 
@@ -1281,8 +1255,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(class_233.field_2617 != null) {
                                                             var10000 = class_233.field_2617;
-                                                            var10 = new class_184;
-                                                            var10.method_3848(var5);
+                                                            var10 = new class_184(var5);
                                                             var10000.method_6124(var10, 1224360715);
                                                          }
 
@@ -1298,16 +1271,14 @@ public class class_165 {
                                                          if(3656 == var0) {
                                                             var5 = field_2052[(class_136.field_1752 -= -1087727229) * -390091712] == 1;
                                                             var9 = class_208.field_2413.field_1994;
-                                                            var10001 = new class_185;
-                                                            var10001.method_3857(var5);
+                                                            var10001 = new class_185(var5);
                                                             var9.method_6124(var10001, 1224360715);
                                                             return 1;
                                                          } else if(var0 == 773264513) {
                                                             var5 = field_2052[(class_136.field_1752 -= -1087727229) * 840488109] == 1;
                                                             if(class_233.field_2617 != null) {
                                                                var10000 = class_233.field_2617;
-                                                               var10001 = new class_185;
-                                                               var10001.method_3857(var5);
+                                                               var10001 = new class_185(var5);
                                                                var10000.method_6124(var10001, 1224360715);
                                                             }
 
@@ -2228,9 +2199,9 @@ public class class_165 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_3455() throws Throwable {
+   class_165() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "cd.<init>(" + ')');
@@ -2243,8 +2214,7 @@ public class class_165 {
       int var4 = 671262203 * class_164.field_2044.field_1163;
       int var5 = 697161691 * class_243.field_2700 + (class_164.field_2044.field_1077 * -130212619 >> 7);
       int var6 = (1248597615 * class_164.field_2044.field_1076 >> 7) + class_154.field_1929 * -27903763;
-      class_280 var10000 = new class_280;
-      var10000.method_5165(var4, var5, var6);
+      class_280 var10000 = new class_280(var4, var5, var6);
       class_280 var7 = var10000;
       class_46.method_534((byte)7).method_6521(var3, var7, var1, var2, 1846055374);
    }
@@ -2570,8 +2540,7 @@ public class class_165 {
                   var21 = field_2052;
                   var22 = (class_136.field_1752 += 1471423312) * -26460885 - 1;
                   var10002 = class_208.field_2413;
-                  var10003 = new class_359;
-                  var10003.method_6280(var8, class_239.field_2659);
+                  var10003 = new class_359(var8, class_239.field_2659);
                   var21[var22] = var10002.method_3324(var10003, false, 2113890076)?1:0;
                   return 1;
                } else if(810446305 == var0) {
@@ -2660,8 +2629,7 @@ public class class_165 {
                   var21 = field_2052;
                   var22 = (class_136.field_1752 += 153772356) * -26460885 - 1;
                   var10002 = class_208.field_2413;
-                  var10003 = new class_359;
-                  var10003.method_6280(var8, class_239.field_2659);
+                  var10003 = new class_359(var8, class_239.field_2659);
                   var21[var22] = var10002.method_3325(var10003, 279756852)?1:0;
                   return 1;
                } else if(var0 == -408596739) {
@@ -2701,8 +2669,7 @@ public class class_165 {
                      if(478001489 == var0) {
                         var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                         var9 = class_208.field_2413.field_1994;
-                        var20 = new class_388;
-                        var20.method_6733(var5);
+                        var20 = new class_388(var5);
                         var9.method_6124(var20, 1224360715);
                         return 1;
                      } else {
@@ -2710,8 +2677,7 @@ public class class_165 {
                         if(var0 == 1940226606) {
                            var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                            var9 = class_208.field_2413.field_1994;
-                           var19 = new class_380;
-                           var19.method_6672(var5);
+                           var19 = new class_380(var5);
                            var9.method_6124(var19, 1224360715);
                            return 1;
                         } else {
@@ -2719,8 +2685,7 @@ public class class_165 {
                            if(3631 == var0) {
                               var5 = field_2052[(class_136.field_1752 -= 2094886461) * -877629431] == 1;
                               var9 = class_208.field_2413.field_1994;
-                              var18 = new class_183;
-                              var18.method_3842(var5);
+                              var18 = new class_183(var5);
                               var9.method_6124(var18, 1224360715);
                               return 1;
                            } else {
@@ -2728,8 +2693,7 @@ public class class_165 {
                               if(var0 == 3632) {
                                  var5 = field_2052[(class_136.field_1752 -= -898735723) * -26460885] == 1;
                                  var9 = class_208.field_2413.field_1994;
-                                 var16 = new class_204;
-                                 var16.method_4103(var5);
+                                 var16 = new class_204(var5);
                                  var9.method_6124(var16, 1224360715);
                                  return 1;
                               } else {
@@ -2737,8 +2701,7 @@ public class class_165 {
                                  if(3633 == var0) {
                                     var5 = field_2052[(class_136.field_1752 -= -1087727229) * 2110080725] == 1;
                                     var9 = class_208.field_2413.field_1994;
-                                    var15 = new class_189;
-                                    var15.method_3897(var5);
+                                    var15 = new class_189(var5);
                                     var9.method_6124(var15, 1224360715);
                                     return 1;
                                  } else {
@@ -2746,8 +2709,7 @@ public class class_165 {
                                     if(var0 == 805604986) {
                                        var5 = field_2052[(class_136.field_1752 -= -797041117) * 625672675] == 1;
                                        var9 = class_208.field_2413.field_1994;
-                                       var14 = new class_186;
-                                       var14.method_3870(var5);
+                                       var14 = new class_186(var5);
                                        var9.method_6124(var14, 1224360715);
                                        return 1;
                                     } else {
@@ -2755,8 +2717,7 @@ public class class_165 {
                                        if(3635 == var0) {
                                           var5 = field_2052[(class_136.field_1752 -= -1087727229) * -2075286480] == 1;
                                           var9 = class_208.field_2413.field_1994;
-                                          var13 = new class_188;
-                                          var13.method_3887(var5);
+                                          var13 = new class_188(var5);
                                           var9.method_6124(var13, 1224360715);
                                           return 1;
                                        } else {
@@ -2764,8 +2725,7 @@ public class class_165 {
                                           if(var0 == 3636) {
                                              var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                              var9 = class_208.field_2413.field_1994;
-                                             var12 = new class_182;
-                                             var12.method_3834(var5);
+                                             var12 = new class_182(var5);
                                              var9.method_6124(var12, 1224360715);
                                              return 1;
                                           } else {
@@ -2773,8 +2733,7 @@ public class class_165 {
                                              if(var0 == 3637) {
                                                 var5 = field_2052[(class_136.field_1752 -= -81635338) * -1643551039] == 1;
                                                 var9 = class_208.field_2413.field_1994;
-                                                var11 = new class_187;
-                                                var11.method_3879(var5);
+                                                var11 = new class_187(var5);
                                                 var9.method_6124(var11, 1224360715);
                                                 return 1;
                                              } else {
@@ -2782,8 +2741,7 @@ public class class_165 {
                                                 if(3638 == var0) {
                                                    var5 = field_2052[(class_136.field_1752 -= -1087727229) * -1225137303] == 1;
                                                    var9 = class_208.field_2413.field_1994;
-                                                   var10 = new class_184;
-                                                   var10.method_3848(var5);
+                                                   var10 = new class_184(var5);
                                                    var9.method_6124(var10, 1224360715);
                                                    return 1;
                                                 } else if(3639 == var0) {
@@ -2797,15 +2755,13 @@ public class class_165 {
                                                    if(var0 == -1997681556) {
                                                       var5 = field_2052[(class_136.field_1752 -= 1834752400) * -91961834] == 1;
                                                       var17 = class_208.field_2413.field_1995;
-                                                      var20 = new class_388;
-                                                      var20.method_6733(var5);
+                                                      var20 = new class_388(var5);
                                                       var17.method_6124(var20, 1224360715);
                                                       return 1;
                                                    } else if(var0 == 3642) {
                                                       var5 = field_2052[(class_136.field_1752 -= 2063251792) * -26460885] == 1;
                                                       var17 = class_208.field_2413.field_1995;
-                                                      var19 = new class_380;
-                                                      var19.method_6672(var5);
+                                                      var19 = new class_380(var5);
                                                       var17.method_6124(var19, 1224360715);
                                                       return 1;
                                                    } else if(-344774683 == var0) {
@@ -2823,8 +2779,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= 90593467) * 1305831787] == 1;
                                                          if(null != class_233.field_2617) {
                                                             var10000 = class_233.field_2617;
-                                                            var20 = new class_388;
-                                                            var20.method_6733(var5);
+                                                            var20 = new class_388(var5);
                                                             var10000.method_6124(var20, 1224360715);
                                                          }
 
@@ -2833,8 +2788,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -1223654899] == 1;
                                                          if(class_233.field_2617 != null) {
                                                             var10000 = class_233.field_2617;
-                                                            var19 = new class_380;
-                                                            var19.method_6672(var5);
+                                                            var19 = new class_380(var5);
                                                             var10000.method_6124(var19, 1224360715);
                                                          }
 
@@ -2843,8 +2797,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -728488229] == 1;
                                                          if(null != class_233.field_2617) {
                                                             var10000 = class_233.field_2617;
-                                                            var18 = new class_183;
-                                                            var18.method_3842(var5);
+                                                            var18 = new class_183(var5);
                                                             var10000.method_6124(var18, 1224360715);
                                                          }
 
@@ -2853,8 +2806,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= 93942083) * -706388963] == 1;
                                                          if(null != class_233.field_2617) {
                                                             var10000 = class_233.field_2617;
-                                                            var16 = new class_204;
-                                                            var16.method_4103(var5);
+                                                            var16 = new class_204(var5);
                                                             var10000.method_6124(var16, 1224360715);
                                                          }
 
@@ -2863,8 +2815,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= 1443944850) * -1862701713] == 1;
                                                          if(null != class_233.field_2617) {
                                                             var10000 = class_233.field_2617;
-                                                            var15 = new class_189;
-                                                            var15.method_3897(var5);
+                                                            var15 = new class_189(var5);
                                                             var10000.method_6124(var15, 1224360715);
                                                          }
 
@@ -2873,8 +2824,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(class_233.field_2617 != null) {
                                                             var10000 = class_233.field_2617;
-                                                            var14 = new class_186;
-                                                            var14.method_3870(var5);
+                                                            var14 = new class_186(var5);
                                                             var10000.method_6124(var14, 1224360715);
                                                          }
 
@@ -2883,8 +2833,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= 381500108) * -26460885] == 1;
                                                          if(class_233.field_2617 != null) {
                                                             var10000 = class_233.field_2617;
-                                                            var13 = new class_188;
-                                                            var13.method_3887(var5);
+                                                            var13 = new class_188(var5);
                                                             var10000.method_6124(var13, 1224360715);
                                                          }
 
@@ -2893,8 +2842,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * 1184882411] == 1;
                                                          if(class_233.field_2617 != null) {
                                                             var10000 = class_233.field_2617;
-                                                            var12 = new class_182;
-                                                            var12.method_3834(var5);
+                                                            var12 = new class_182(var5);
                                                             var10000.method_6124(var12, 1224360715);
                                                          }
 
@@ -2903,8 +2851,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1704309243) * -1118654723] == 1;
                                                          if(null != class_233.field_2617) {
                                                             var10000 = class_233.field_2617;
-                                                            var11 = new class_187;
-                                                            var11.method_3879(var5);
+                                                            var11 = new class_187(var5);
                                                             var10000.method_6124(var11, 1224360715);
                                                          }
 
@@ -2913,8 +2860,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(class_233.field_2617 != null) {
                                                             var10000 = class_233.field_2617;
-                                                            var10 = new class_184;
-                                                            var10.method_3848(var5);
+                                                            var10 = new class_184(var5);
                                                             var10000.method_6124(var10, 1224360715);
                                                          }
 
@@ -2930,16 +2876,14 @@ public class class_165 {
                                                          if(1978001945 == var0) {
                                                             var5 = field_2052[(class_136.field_1752 -= -1583916982) * -26460885] == 1;
                                                             var9 = class_208.field_2413.field_1994;
-                                                            var10001 = new class_185;
-                                                            var10001.method_3857(var5);
+                                                            var10001 = new class_185(var5);
                                                             var9.method_6124(var10001, 1224360715);
                                                             return 1;
                                                          } else if(var0 == 3657) {
                                                             var5 = field_2052[(class_136.field_1752 -= -1939468519) * -1621278869] == 1;
                                                             if(class_233.field_2617 != null) {
                                                                var10000 = class_233.field_2617;
-                                                               var10001 = new class_185;
-                                                               var10001.method_3857(var5);
+                                                               var10001 = new class_185(var5);
                                                                var10000.method_6124(var10001, 1224360715);
                                                             }
 
@@ -3108,8 +3052,7 @@ public class class_165 {
          if(var3.field_218 == null) {
             return 0;
          } else {
-            class_45 var10000 = new class_45;
-            var10000.method_105();
+            class_45 var10000 = new class_45();
             class_45 var4 = var10000;
             var4.field_332 = var3;
             var4.field_337 = var3.field_218;
@@ -3160,8 +3103,7 @@ public class class_165 {
          if(var3.field_218 == null) {
             return 0;
          } else {
-            class_45 var10000 = new class_45;
-            var10000.method_105();
+            class_45 var10000 = new class_45();
             class_45 var4 = var10000;
             var4.field_332 = var3;
             var4.field_337 = var3.field_218;
@@ -3212,8 +3154,7 @@ public class class_165 {
          if(var3.field_218 == null) {
             return 0;
          } else {
-            class_45 var10000 = new class_45;
-            var10000.method_105();
+            class_45 var10000 = new class_45();
             class_45 var4 = var10000;
             var4.field_332 = var3;
             var4.field_337 = var3.field_218;
@@ -3659,8 +3600,7 @@ public class class_165 {
 
                                  class_136.field_1752 -= 1590626521 * var36.field_906;
                                  field_2054 -= var36.field_907 * -700173191;
-                                 class_158 var10000 = new class_158;
-                                 var10000.method_3303();
+                                 class_158 var10000 = new class_158();
                                  class_158 var31 = var10000;
                                  var31.field_1962 = var4;
                                  var31.field_1961 = -815362225 * var24;
@@ -4111,7 +4051,7 @@ public class class_165 {
             class_136.field_1752 -= 2119512838;
             var3 = field_2052[-26460885 * class_136.field_1752];
             var4 = field_2052[1 + class_136.field_1752 * -26460885];
-            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_127.method_2361(var3, var4, -1726985857);
+            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = GameApplet.method_2361(var3, var4, -1726985857);
             return 1;
          } else if(var0 == 3302) {
             class_136.field_1752 -= 2119512838;
@@ -4168,7 +4108,7 @@ public class class_165 {
                class_136.field_1752 -= 2119512838;
                var3 = '\u8000' + field_2052[class_136.field_1752 * -26460885];
                var4 = field_2052[class_136.field_1752 * -26460885 + 1];
-               field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_127.method_2361(var3, var4, -1726985857);
+               field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = GameApplet.method_2361(var3, var4, -1726985857);
                return 1;
             } else if(3314 == var0) {
                class_136.field_1752 -= 2119512838;
@@ -4249,7 +4189,7 @@ public class class_165 {
             class_136.field_1752 -= 2119512838;
             var3 = field_2052[1236630180 * class_136.field_1752];
             var4 = field_2052[1 + class_136.field_1752 * -26460885];
-            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_127.method_2361(var3, var4, -1726985857);
+            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = GameApplet.method_2361(var3, var4, -1726985857);
             return 1;
          } else if(var0 == 3302) {
             class_136.field_1752 -= -2031034681;
@@ -4306,7 +4246,7 @@ public class class_165 {
                class_136.field_1752 -= 219400221;
                var3 = 1624441670 + field_2052[class_136.field_1752 * 1544213644];
                var4 = field_2052[class_136.field_1752 * -26460885 + 1];
-               field_2052[(class_136.field_1752 += 1475356742) * -26460885 - 1] = class_127.method_2361(var3, var4, -1726985857);
+               field_2052[(class_136.field_1752 += 1475356742) * -26460885 - 1] = GameApplet.method_2361(var3, var4, -1726985857);
                return 1;
             } else if(-283454583 == var0) {
                class_136.field_1752 -= 672773978;
@@ -4387,7 +4327,7 @@ public class class_165 {
             class_136.field_1752 -= -1406962724;
             var3 = field_2052[-845231645 * class_136.field_1752];
             var4 = field_2052[1 + class_136.field_1752 * -26460885];
-            field_2052[(class_136.field_1752 += 783648833) * -26460885 - 1] = class_127.method_2361(var3, var4, -1726985857);
+            field_2052[(class_136.field_1752 += 783648833) * -26460885 - 1] = GameApplet.method_2361(var3, var4, -1726985857);
             return 1;
          } else if(var0 == -723798097) {
             class_136.field_1752 -= 2119512838;
@@ -4444,7 +4384,7 @@ public class class_165 {
                class_136.field_1752 -= 2119512838;
                var3 = '\u8000' + field_2052[class_136.field_1752 * 663614049];
                var4 = field_2052[class_136.field_1752 * -26460885 + 1];
-               field_2052[(class_136.field_1752 += -1344724956) * -25562161 - 1] = class_127.method_2361(var3, var4, -1726985857);
+               field_2052[(class_136.field_1752 += -1344724956) * -25562161 - 1] = GameApplet.method_2361(var3, var4, -1726985857);
                return 1;
             } else if(3314 == var0) {
                class_136.field_1752 -= 2119512838;
@@ -4747,8 +4687,7 @@ public class class_165 {
                   var21 = field_2052;
                   var22 = (class_136.field_1752 += -1087727229) * -26460885 - 1;
                   var10002 = class_208.field_2413;
-                  var10003 = new class_359;
-                  var10003.method_6280(var8, class_239.field_2659);
+                  var10003 = new class_359(var8, class_239.field_2659);
                   var21[var22] = var10002.method_3324(var10003, false, 1038612937)?1:0;
                   return 1;
                } else if(3611 == var0) {
@@ -4837,8 +4776,7 @@ public class class_165 {
                   var21 = field_2052;
                   var22 = (class_136.field_1752 += -1087727229) * -26460885 - 1;
                   var10002 = class_208.field_2413;
-                  var10003 = new class_359;
-                  var10003.method_6280(var8, class_239.field_2659);
+                  var10003 = new class_359(var8, class_239.field_2659);
                   var21[var22] = var10002.method_3325(var10003, 279756852)?1:0;
                   return 1;
                } else if(var0 == 3624) {
@@ -4878,8 +4816,7 @@ public class class_165 {
                      if(3629 == var0) {
                         var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                         var9 = class_208.field_2413.field_1994;
-                        var20 = new class_388;
-                        var20.method_6733(var5);
+                        var20 = new class_388(var5);
                         var9.method_6124(var20, 1224360715);
                         return 1;
                      } else {
@@ -4887,8 +4824,7 @@ public class class_165 {
                         if(var0 == 3630) {
                            var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                            var9 = class_208.field_2413.field_1994;
-                           var19 = new class_380;
-                           var19.method_6672(var5);
+                           var19 = new class_380(var5);
                            var9.method_6124(var19, 1224360715);
                            return 1;
                         } else {
@@ -4896,8 +4832,7 @@ public class class_165 {
                            if(3631 == var0) {
                               var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                               var9 = class_208.field_2413.field_1994;
-                              var18 = new class_183;
-                              var18.method_3842(var5);
+                              var18 = new class_183(var5);
                               var9.method_6124(var18, 1224360715);
                               return 1;
                            } else {
@@ -4905,8 +4840,7 @@ public class class_165 {
                               if(var0 == 3632) {
                                  var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                  var9 = class_208.field_2413.field_1994;
-                                 var16 = new class_204;
-                                 var16.method_4103(var5);
+                                 var16 = new class_204(var5);
                                  var9.method_6124(var16, 1224360715);
                                  return 1;
                               } else {
@@ -4914,8 +4848,7 @@ public class class_165 {
                                  if(3633 == var0) {
                                     var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                     var9 = class_208.field_2413.field_1994;
-                                    var15 = new class_189;
-                                    var15.method_3897(var5);
+                                    var15 = new class_189(var5);
                                     var9.method_6124(var15, 1224360715);
                                     return 1;
                                  } else {
@@ -4923,8 +4856,7 @@ public class class_165 {
                                     if(var0 == 3634) {
                                        var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                        var9 = class_208.field_2413.field_1994;
-                                       var14 = new class_186;
-                                       var14.method_3870(var5);
+                                       var14 = new class_186(var5);
                                        var9.method_6124(var14, 1224360715);
                                        return 1;
                                     } else {
@@ -4932,8 +4864,7 @@ public class class_165 {
                                        if(3635 == var0) {
                                           var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                           var9 = class_208.field_2413.field_1994;
-                                          var13 = new class_188;
-                                          var13.method_3887(var5);
+                                          var13 = new class_188(var5);
                                           var9.method_6124(var13, 1224360715);
                                           return 1;
                                        } else {
@@ -4941,8 +4872,7 @@ public class class_165 {
                                           if(var0 == 3636) {
                                              var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                              var9 = class_208.field_2413.field_1994;
-                                             var12 = new class_182;
-                                             var12.method_3834(var5);
+                                             var12 = new class_182(var5);
                                              var9.method_6124(var12, 1224360715);
                                              return 1;
                                           } else {
@@ -4950,8 +4880,7 @@ public class class_165 {
                                              if(var0 == 3637) {
                                                 var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                 var9 = class_208.field_2413.field_1994;
-                                                var11 = new class_187;
-                                                var11.method_3879(var5);
+                                                var11 = new class_187(var5);
                                                 var9.method_6124(var11, 1224360715);
                                                 return 1;
                                              } else {
@@ -4959,8 +4888,7 @@ public class class_165 {
                                                 if(3638 == var0) {
                                                    var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                    var9 = class_208.field_2413.field_1994;
-                                                   var10 = new class_184;
-                                                   var10.method_3848(var5);
+                                                   var10 = new class_184(var5);
                                                    var9.method_6124(var10, 1224360715);
                                                    return 1;
                                                 } else if(3639 == var0) {
@@ -4974,15 +4902,13 @@ public class class_165 {
                                                    if(var0 == 3641) {
                                                       var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                       var17 = class_208.field_2413.field_1995;
-                                                      var20 = new class_388;
-                                                      var20.method_6733(var5);
+                                                      var20 = new class_388(var5);
                                                       var17.method_6124(var20, 1224360715);
                                                       return 1;
                                                    } else if(var0 == 3642) {
                                                       var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                       var17 = class_208.field_2413.field_1995;
-                                                      var19 = new class_380;
-                                                      var19.method_6672(var5);
+                                                      var19 = new class_380(var5);
                                                       var17.method_6124(var19, 1224360715);
                                                       return 1;
                                                    } else if(3643 == var0) {
@@ -5000,8 +4926,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(null != class_233.field_2617) {
                                                             var10000 = class_233.field_2617;
-                                                            var20 = new class_388;
-                                                            var20.method_6733(var5);
+                                                            var20 = new class_388(var5);
                                                             var10000.method_6124(var20, 1224360715);
                                                          }
 
@@ -5010,8 +4935,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(class_233.field_2617 != null) {
                                                             var10000 = class_233.field_2617;
-                                                            var19 = new class_380;
-                                                            var19.method_6672(var5);
+                                                            var19 = new class_380(var5);
                                                             var10000.method_6124(var19, 1224360715);
                                                          }
 
@@ -5020,8 +4944,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(null != class_233.field_2617) {
                                                             var10000 = class_233.field_2617;
-                                                            var18 = new class_183;
-                                                            var18.method_3842(var5);
+                                                            var18 = new class_183(var5);
                                                             var10000.method_6124(var18, 1224360715);
                                                          }
 
@@ -5030,8 +4953,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(null != class_233.field_2617) {
                                                             var10000 = class_233.field_2617;
-                                                            var16 = new class_204;
-                                                            var16.method_4103(var5);
+                                                            var16 = new class_204(var5);
                                                             var10000.method_6124(var16, 1224360715);
                                                          }
 
@@ -5040,8 +4962,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(null != class_233.field_2617) {
                                                             var10000 = class_233.field_2617;
-                                                            var15 = new class_189;
-                                                            var15.method_3897(var5);
+                                                            var15 = new class_189(var5);
                                                             var10000.method_6124(var15, 1224360715);
                                                          }
 
@@ -5050,8 +4971,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(class_233.field_2617 != null) {
                                                             var10000 = class_233.field_2617;
-                                                            var14 = new class_186;
-                                                            var14.method_3870(var5);
+                                                            var14 = new class_186(var5);
                                                             var10000.method_6124(var14, 1224360715);
                                                          }
 
@@ -5060,8 +4980,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(class_233.field_2617 != null) {
                                                             var10000 = class_233.field_2617;
-                                                            var13 = new class_188;
-                                                            var13.method_3887(var5);
+                                                            var13 = new class_188(var5);
                                                             var10000.method_6124(var13, 1224360715);
                                                          }
 
@@ -5070,8 +4989,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(class_233.field_2617 != null) {
                                                             var10000 = class_233.field_2617;
-                                                            var12 = new class_182;
-                                                            var12.method_3834(var5);
+                                                            var12 = new class_182(var5);
                                                             var10000.method_6124(var12, 1224360715);
                                                          }
 
@@ -5080,8 +4998,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(null != class_233.field_2617) {
                                                             var10000 = class_233.field_2617;
-                                                            var11 = new class_187;
-                                                            var11.method_3879(var5);
+                                                            var11 = new class_187(var5);
                                                             var10000.method_6124(var11, 1224360715);
                                                          }
 
@@ -5090,8 +5007,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(class_233.field_2617 != null) {
                                                             var10000 = class_233.field_2617;
-                                                            var10 = new class_184;
-                                                            var10.method_3848(var5);
+                                                            var10 = new class_184(var5);
                                                             var10000.method_6124(var10, 1224360715);
                                                          }
 
@@ -5107,16 +5023,14 @@ public class class_165 {
                                                          if(3656 == var0) {
                                                             var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                             var9 = class_208.field_2413.field_1994;
-                                                            var10001 = new class_185;
-                                                            var10001.method_3857(var5);
+                                                            var10001 = new class_185(var5);
                                                             var9.method_6124(var10001, 1224360715);
                                                             return 1;
                                                          } else if(var0 == 3657) {
                                                             var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                             if(class_233.field_2617 != null) {
                                                                var10000 = class_233.field_2617;
-                                                               var10001 = new class_185;
-                                                               var10001.method_3857(var5);
+                                                               var10001 = new class_185(var5);
                                                                var10000.method_6124(var10001, 1224360715);
                                                             }
 
@@ -5418,8 +5332,7 @@ public class class_165 {
                   var21 = field_2052;
                   var22 = (class_136.field_1752 += -1087727229) * -26460885 - 1;
                   var10002 = class_208.field_2413;
-                  var10003 = new class_359;
-                  var10003.method_6280(var8, class_239.field_2659);
+                  var10003 = new class_359(var8, class_239.field_2659);
                   var21[var22] = var10002.method_3324(var10003, false, 749346207)?1:0;
                   return 1;
                } else if(3611 == var0) {
@@ -5508,8 +5421,7 @@ public class class_165 {
                   var21 = field_2052;
                   var22 = (class_136.field_1752 += -1087727229) * -26460885 - 1;
                   var10002 = class_208.field_2413;
-                  var10003 = new class_359;
-                  var10003.method_6280(var8, class_239.field_2659);
+                  var10003 = new class_359(var8, class_239.field_2659);
                   var21[var22] = var10002.method_3325(var10003, 279756852)?1:0;
                   return 1;
                } else if(var0 == 3624) {
@@ -5549,8 +5461,7 @@ public class class_165 {
                      if(3629 == var0) {
                         var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                         var9 = class_208.field_2413.field_1994;
-                        var20 = new class_388;
-                        var20.method_6733(var5);
+                        var20 = new class_388(var5);
                         var9.method_6124(var20, 1224360715);
                         return 1;
                      } else {
@@ -5558,8 +5469,7 @@ public class class_165 {
                         if(var0 == 3630) {
                            var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                            var9 = class_208.field_2413.field_1994;
-                           var19 = new class_380;
-                           var19.method_6672(var5);
+                           var19 = new class_380(var5);
                            var9.method_6124(var19, 1224360715);
                            return 1;
                         } else {
@@ -5567,8 +5477,7 @@ public class class_165 {
                            if(3631 == var0) {
                               var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                               var9 = class_208.field_2413.field_1994;
-                              var18 = new class_183;
-                              var18.method_3842(var5);
+                              var18 = new class_183(var5);
                               var9.method_6124(var18, 1224360715);
                               return 1;
                            } else {
@@ -5576,8 +5485,7 @@ public class class_165 {
                               if(var0 == 3632) {
                                  var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                  var9 = class_208.field_2413.field_1994;
-                                 var16 = new class_204;
-                                 var16.method_4103(var5);
+                                 var16 = new class_204(var5);
                                  var9.method_6124(var16, 1224360715);
                                  return 1;
                               } else {
@@ -5585,8 +5493,7 @@ public class class_165 {
                                  if(3633 == var0) {
                                     var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                     var9 = class_208.field_2413.field_1994;
-                                    var15 = new class_189;
-                                    var15.method_3897(var5);
+                                    var15 = new class_189(var5);
                                     var9.method_6124(var15, 1224360715);
                                     return 1;
                                  } else {
@@ -5594,8 +5501,7 @@ public class class_165 {
                                     if(var0 == 3634) {
                                        var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                        var9 = class_208.field_2413.field_1994;
-                                       var14 = new class_186;
-                                       var14.method_3870(var5);
+                                       var14 = new class_186(var5);
                                        var9.method_6124(var14, 1224360715);
                                        return 1;
                                     } else {
@@ -5603,8 +5509,7 @@ public class class_165 {
                                        if(3635 == var0) {
                                           var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                           var9 = class_208.field_2413.field_1994;
-                                          var13 = new class_188;
-                                          var13.method_3887(var5);
+                                          var13 = new class_188(var5);
                                           var9.method_6124(var13, 1224360715);
                                           return 1;
                                        } else {
@@ -5612,8 +5517,7 @@ public class class_165 {
                                           if(var0 == 3636) {
                                              var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                              var9 = class_208.field_2413.field_1994;
-                                             var12 = new class_182;
-                                             var12.method_3834(var5);
+                                             var12 = new class_182(var5);
                                              var9.method_6124(var12, 1224360715);
                                              return 1;
                                           } else {
@@ -5621,8 +5525,7 @@ public class class_165 {
                                              if(var0 == 3637) {
                                                 var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                 var9 = class_208.field_2413.field_1994;
-                                                var11 = new class_187;
-                                                var11.method_3879(var5);
+                                                var11 = new class_187(var5);
                                                 var9.method_6124(var11, 1224360715);
                                                 return 1;
                                              } else {
@@ -5630,8 +5533,7 @@ public class class_165 {
                                                 if(3638 == var0) {
                                                    var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                    var9 = class_208.field_2413.field_1994;
-                                                   var10 = new class_184;
-                                                   var10.method_3848(var5);
+                                                   var10 = new class_184(var5);
                                                    var9.method_6124(var10, 1224360715);
                                                    return 1;
                                                 } else if(3639 == var0) {
@@ -5645,15 +5547,13 @@ public class class_165 {
                                                    if(var0 == 3641) {
                                                       var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                       var17 = class_208.field_2413.field_1995;
-                                                      var20 = new class_388;
-                                                      var20.method_6733(var5);
+                                                      var20 = new class_388(var5);
                                                       var17.method_6124(var20, 1224360715);
                                                       return 1;
                                                    } else if(var0 == 3642) {
                                                       var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                       var17 = class_208.field_2413.field_1995;
-                                                      var19 = new class_380;
-                                                      var19.method_6672(var5);
+                                                      var19 = new class_380(var5);
                                                       var17.method_6124(var19, 1224360715);
                                                       return 1;
                                                    } else if(3643 == var0) {
@@ -5671,8 +5571,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(null != class_233.field_2617) {
                                                             var10000 = class_233.field_2617;
-                                                            var20 = new class_388;
-                                                            var20.method_6733(var5);
+                                                            var20 = new class_388(var5);
                                                             var10000.method_6124(var20, 1224360715);
                                                          }
 
@@ -5681,8 +5580,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(class_233.field_2617 != null) {
                                                             var10000 = class_233.field_2617;
-                                                            var19 = new class_380;
-                                                            var19.method_6672(var5);
+                                                            var19 = new class_380(var5);
                                                             var10000.method_6124(var19, 1224360715);
                                                          }
 
@@ -5691,8 +5589,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(null != class_233.field_2617) {
                                                             var10000 = class_233.field_2617;
-                                                            var18 = new class_183;
-                                                            var18.method_3842(var5);
+                                                            var18 = new class_183(var5);
                                                             var10000.method_6124(var18, 1224360715);
                                                          }
 
@@ -5701,8 +5598,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(null != class_233.field_2617) {
                                                             var10000 = class_233.field_2617;
-                                                            var16 = new class_204;
-                                                            var16.method_4103(var5);
+                                                            var16 = new class_204(var5);
                                                             var10000.method_6124(var16, 1224360715);
                                                          }
 
@@ -5711,8 +5607,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(null != class_233.field_2617) {
                                                             var10000 = class_233.field_2617;
-                                                            var15 = new class_189;
-                                                            var15.method_3897(var5);
+                                                            var15 = new class_189(var5);
                                                             var10000.method_6124(var15, 1224360715);
                                                          }
 
@@ -5721,8 +5616,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(class_233.field_2617 != null) {
                                                             var10000 = class_233.field_2617;
-                                                            var14 = new class_186;
-                                                            var14.method_3870(var5);
+                                                            var14 = new class_186(var5);
                                                             var10000.method_6124(var14, 1224360715);
                                                          }
 
@@ -5731,8 +5625,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(class_233.field_2617 != null) {
                                                             var10000 = class_233.field_2617;
-                                                            var13 = new class_188;
-                                                            var13.method_3887(var5);
+                                                            var13 = new class_188(var5);
                                                             var10000.method_6124(var13, 1224360715);
                                                          }
 
@@ -5741,8 +5634,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(class_233.field_2617 != null) {
                                                             var10000 = class_233.field_2617;
-                                                            var12 = new class_182;
-                                                            var12.method_3834(var5);
+                                                            var12 = new class_182(var5);
                                                             var10000.method_6124(var12, 1224360715);
                                                          }
 
@@ -5751,8 +5643,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(null != class_233.field_2617) {
                                                             var10000 = class_233.field_2617;
-                                                            var11 = new class_187;
-                                                            var11.method_3879(var5);
+                                                            var11 = new class_187(var5);
                                                             var10000.method_6124(var11, 1224360715);
                                                          }
 
@@ -5761,8 +5652,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(class_233.field_2617 != null) {
                                                             var10000 = class_233.field_2617;
-                                                            var10 = new class_184;
-                                                            var10.method_3848(var5);
+                                                            var10 = new class_184(var5);
                                                             var10000.method_6124(var10, 1224360715);
                                                          }
 
@@ -5778,16 +5668,14 @@ public class class_165 {
                                                          if(3656 == var0) {
                                                             var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                             var9 = class_208.field_2413.field_1994;
-                                                            var10001 = new class_185;
-                                                            var10001.method_3857(var5);
+                                                            var10001 = new class_185(var5);
                                                             var9.method_6124(var10001, 1224360715);
                                                             return 1;
                                                          } else if(var0 == 3657) {
                                                             var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                             if(class_233.field_2617 != null) {
                                                                var10000 = class_233.field_2617;
-                                                               var10001 = new class_185;
-                                                               var10001.method_3857(var5);
+                                                               var10001 = new class_185(var5);
                                                                var10000.method_6124(var10001, 1224360715);
                                                             }
 
@@ -7577,8 +7465,7 @@ public class class_165 {
                      var9 = field_2052[-26460885 * class_136.field_1752];
                      var5 = field_2052[class_136.field_1752 * -26460885 + 1];
                      var13 = class_148.field_1869.method_5381(var5, 0, -26460885);
-                     var10000 = new class_69;
-                     var10000.method_860(var13);
+                     var10000 = new class_69(var13);
                      var15 = var10000;
                      field_2052[(class_136.field_1752 += 326380586) * 339049914 - 1] = var15.method_867(var3, var9);
                      return 1;
@@ -7588,8 +7475,7 @@ public class class_165 {
                      var9 = field_2052[-26460885 * class_136.field_1752];
                      var5 = field_2052[1 + 820282823 * class_136.field_1752];
                      var13 = class_148.field_1869.method_5381(var5, 0, -26460885);
-                     var10000 = new class_69;
-                     var10000.method_860(var13);
+                     var10000 = new class_69(var13);
                      var15 = var10000;
                      field_2052[(class_136.field_1752 += 1415225067) * -26460885 - 1] = var15.method_866(var3, var9);
                      return 1;
@@ -8158,8 +8044,7 @@ public class class_165 {
       int var4 = 671262203 * class_164.field_2044.field_1163;
       int var5 = 697161691 * class_243.field_2700 + (class_164.field_2044.field_1077 * -130212619 >> 7);
       int var6 = (1248597615 * class_164.field_2044.field_1076 >> 7) + class_154.field_1929 * -27903763;
-      class_280 var10000 = new class_280;
-      var10000.method_5165(var4, var5, var6);
+      class_280 var10000 = new class_280(var4, var5, var6);
       class_280 var7 = var10000;
       class_46.method_534((byte)7).method_6521(var3, var7, var1, var2, 1265738853);
    }
@@ -9387,26 +9272,22 @@ public class class_165 {
             class_280 var14;
             class_280 var10000;
             if(var0 == 1446731907) {
-               var10000 = new class_280;
-               var10000.method_5163(field_2052[(class_136.field_1752 -= -1087727229) * 1547790748]);
+               var10000 = new class_280(field_2052[(class_136.field_1752 -= -1087727229) * 1547790748]);
                var14 = var10000;
                class_46.method_534((byte)7).method_6437(-2092998769 * var14.field_3236, var14.field_3235 * 349527629, 704726635);
                return 1;
             } else if(-282992408 == var0) {
-               var10000 = new class_280;
-               var10000.method_5163(field_2052[(class_136.field_1752 -= -1087727229) * 166321743]);
+               var10000 = new class_280(field_2052[(class_136.field_1752 -= -1087727229) * 166321743]);
                var14 = var10000;
                class_46.method_534((byte)7).method_6358(var14.field_3236 * -2092998769, var14.field_3235 * 349527629, (byte)69);
                return 1;
             } else if(var0 == -164892810) {
-               var10000 = new class_280;
-               var10000.method_5163(field_2052[(class_136.field_1752 -= -1087727229) * 1310119075]);
+               var10000 = new class_280(field_2052[(class_136.field_1752 -= -1087727229) * 1310119075]);
                var14 = var10000;
                class_46.method_534((byte)7).method_6454(var14.field_3234 * -1881188817, -847023136 * var14.field_3236, 1949224493 * var14.field_3235, Integer.MIN_VALUE);
                return 1;
             } else if(var0 == -810695526) {
-               var10000 = new class_280;
-               var10000.method_5163(field_2052[(class_136.field_1752 -= -1329180108) * -26460885]);
+               var10000 = new class_280(field_2052[(class_136.field_1752 -= -1329180108) * -26460885]);
                var14 = var10000;
                class_46.method_534((byte)7).method_6360(var14.field_3234 * 688361087, -2092998769 * var14.field_3236, var14.field_3235 * -1165452549, 1982259081);
                return 1;
@@ -9479,8 +9360,7 @@ public class class_165 {
                   field_2052[(class_136.field_1752 += -1087727229) * 1167798479 - 1] = class_46.method_534((byte)7).method_6340((byte)114);
                   return 1;
                } else if(6617 == var0) {
-                  var10000 = new class_280;
-                  var10000.method_5163(field_2052[(class_136.field_1752 -= -903246659) * -26460885]);
+                  var10000 = new class_280(field_2052[(class_136.field_1752 -= -903246659) * -26460885]);
                   var14 = var10000;
                   var11 = class_46.method_534((byte)7).method_6380(-1705016745);
                   if(var11 == null) {
@@ -9502,8 +9382,7 @@ public class class_165 {
                } else {
                   class_280 var5;
                   if(1491558524 == var0) {
-                     var10000 = new class_280;
-                     var10000.method_5163(field_2052[(class_136.field_1752 -= -818366507) * -26460885]);
+                     var10000 = new class_280(field_2052[(class_136.field_1752 -= -818366507) * -26460885]);
                      var14 = var10000;
                      var11 = class_46.method_534((byte)7).method_6380(1665910778);
                      if(null == var11) {
@@ -9525,24 +9404,21 @@ public class class_165 {
                      if(var0 == 6619) {
                         class_136.field_1752 -= -228704977;
                         var3 = field_2052[-26460885 * class_136.field_1752];
-                        var10000 = new class_280;
-                        var10000.method_5163(field_2052[-26460885 * class_136.field_1752 + 1]);
+                        var10000 = new class_280(field_2052[-26460885 * class_136.field_1752 + 1]);
                         var8 = var10000;
                         class_43.method_495(var3, var8, false, 1737731022);
                         return 1;
                      } else if(var0 == -908913738) {
                         class_136.field_1752 -= 2119512838;
                         var3 = field_2052[-26460885 * class_136.field_1752];
-                        var10000 = new class_280;
-                        var10000.method_5163(field_2052[1 + -26460885 * class_136.field_1752]);
+                        var10000 = new class_280(field_2052[1 + -26460885 * class_136.field_1752]);
                         var8 = var10000;
                         class_43.method_495(var3, var8, true, 1737731022);
                         return 1;
                      } else if(var0 == 6621) {
                         class_136.field_1752 -= 2119512838;
                         var3 = field_2052[class_136.field_1752 * 191555646];
-                        var10000 = new class_280;
-                        var10000.method_5163(field_2052[-1656195333 * class_136.field_1752 + 1]);
+                        var10000 = new class_280(field_2052[-1656195333 * class_136.field_1752 + 1]);
                         var8 = var10000;
                         var7 = class_46.method_534((byte)7).method_6356(var3, -1403165371);
                         if(var7 == null) {
@@ -9557,8 +9433,7 @@ public class class_165 {
                         field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_46.method_534((byte)7).method_6365(-66928223);
                         return 1;
                      } else if(var0 == 6623) {
-                        var10000 = new class_280;
-                        var10000.method_5163(field_2052[(class_136.field_1752 -= -1087727229) * 855899189]);
+                        var10000 = new class_280(field_2052[(class_136.field_1752 -= -1087727229) * 855899189]);
                         var14 = var10000;
                         var11 = class_46.method_534((byte)7).method_6337(-601496548 * var14.field_3234, var14.field_3236 * -2092998769, 349527629 * var14.field_3235, 858739596);
                         if(null == var11) {
@@ -9629,8 +9504,7 @@ public class class_165 {
                            } else if(var0 == 1229282262) {
                               class_136.field_1752 -= 2119512838;
                               var3 = field_2052[class_136.field_1752 * -26460885];
-                              var10000 = new class_280;
-                              var10000.method_5163(field_2052[1 + class_136.field_1752 * -26460885]);
+                              var10000 = new class_280(field_2052[1 + class_136.field_1752 * -26460885]);
                               var8 = var10000;
                               var5 = class_46.method_534((byte)7).method_6382(var3, var8, -1877576161);
                               if(null == var5) {
@@ -10211,26 +10085,22 @@ public class class_165 {
             class_280 var14;
             class_280 var10000;
             if(var0 == -155162135) {
-               var10000 = new class_280;
-               var10000.method_5163(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
+               var10000 = new class_280(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                var14 = var10000;
                class_46.method_534((byte)7).method_6437(1561242612 * var14.field_3236, var14.field_3235 * -1293244936, 704726635);
                return 1;
             } else if(1497911451 == var0) {
-               var10000 = new class_280;
-               var10000.method_5163(field_2052[(class_136.field_1752 -= 1626048100) * -26460885]);
+               var10000 = new class_280(field_2052[(class_136.field_1752 -= 1626048100) * -26460885]);
                var14 = var10000;
                class_46.method_534((byte)7).method_6358(var14.field_3236 * -2092998769, var14.field_3235 * 349527629, (byte)48);
                return 1;
             } else if(var0 == 6608) {
-               var10000 = new class_280;
-               var10000.method_5163(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
+               var10000 = new class_280(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                var14 = var10000;
                class_46.method_534((byte)7).method_6454(var14.field_3234 * -1820038389, 493074016 * var14.field_3236, -478664035 * var14.field_3235, Integer.MIN_VALUE);
                return 1;
             } else if(var0 == 6609) {
-               var10000 = new class_280;
-               var10000.method_5163(field_2052[(class_136.field_1752 -= -1280205969) * 235203661]);
+               var10000 = new class_280(field_2052[(class_136.field_1752 -= -1280205969) * 235203661]);
                var14 = var10000;
                class_46.method_534((byte)7).method_6360(var14.field_3234 * -1834307303, -838515550 * var14.field_3236, var14.field_3235 * 349527629, 1982259081);
                return 1;
@@ -10303,8 +10173,7 @@ public class class_165 {
                   field_2052[(class_136.field_1752 += -688179168) * -2036899185 - 1] = class_46.method_534((byte)7).method_6340((byte)119);
                   return 1;
                } else if(6617 == var0) {
-                  var10000 = new class_280;
-                  var10000.method_5163(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
+                  var10000 = new class_280(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                   var14 = var10000;
                   var11 = class_46.method_534((byte)7).method_6380(102803988);
                   if(var11 == null) {
@@ -10326,8 +10195,7 @@ public class class_165 {
                } else {
                   class_280 var5;
                   if(6618 == var0) {
-                     var10000 = new class_280;
-                     var10000.method_5163(field_2052[(class_136.field_1752 -= 1115844028) * -1878579840]);
+                     var10000 = new class_280(field_2052[(class_136.field_1752 -= 1115844028) * -1878579840]);
                      var14 = var10000;
                      var11 = class_46.method_534((byte)7).method_6380(-1961144412);
                      if(null == var11) {
@@ -10349,24 +10217,21 @@ public class class_165 {
                      if(var0 == -1972047596) {
                         class_136.field_1752 -= 2119512838;
                         var3 = field_2052[-26460885 * class_136.field_1752];
-                        var10000 = new class_280;
-                        var10000.method_5163(field_2052[-26460885 * class_136.field_1752 + 1]);
+                        var10000 = new class_280(field_2052[-26460885 * class_136.field_1752 + 1]);
                         var8 = var10000;
                         class_43.method_495(var3, var8, false, 1737731022);
                         return 1;
                      } else if(var0 == 6620) {
                         class_136.field_1752 -= 2119512838;
                         var3 = field_2052[-26460885 * class_136.field_1752];
-                        var10000 = new class_280;
-                        var10000.method_5163(field_2052[1 + -1964805 * class_136.field_1752]);
+                        var10000 = new class_280(field_2052[1 + -1964805 * class_136.field_1752]);
                         var8 = var10000;
                         class_43.method_495(var3, var8, true, 1737731022);
                         return 1;
                      } else if(var0 == 6621) {
                         class_136.field_1752 -= 2119512838;
                         var3 = field_2052[class_136.field_1752 * -26460885];
-                        var10000 = new class_280;
-                        var10000.method_5163(field_2052[-26460885 * class_136.field_1752 + 1]);
+                        var10000 = new class_280(field_2052[-26460885 * class_136.field_1752 + 1]);
                         var8 = var10000;
                         var7 = class_46.method_534((byte)7).method_6356(var3, -1391371693);
                         if(var7 == null) {
@@ -10381,8 +10246,7 @@ public class class_165 {
                         field_2052[(class_136.field_1752 += 855691505) * 337447773 - 1] = class_46.method_534((byte)7).method_6365(-1917573920);
                         return 1;
                      } else if(var0 == -1493855601) {
-                        var10000 = new class_280;
-                        var10000.method_5163(field_2052[(class_136.field_1752 -= 282762254) * 1962322962]);
+                        var10000 = new class_280(field_2052[(class_136.field_1752 -= 282762254) * 1962322962]);
                         var14 = var10000;
                         var11 = class_46.method_534((byte)7).method_6337(-975533771 * var14.field_3234, var14.field_3236 * -2092998769, 349527629 * var14.field_3235, -653662528);
                         if(null == var11) {
@@ -10453,8 +10317,7 @@ public class class_165 {
                            } else if(var0 == 6638) {
                               class_136.field_1752 -= 2119512838;
                               var3 = field_2052[class_136.field_1752 * 109737808];
-                              var10000 = new class_280;
-                              var10000.method_5163(field_2052[1 + class_136.field_1752 * -26460885]);
+                              var10000 = new class_280(field_2052[1 + class_136.field_1752 * -26460885]);
                               var8 = var10000;
                               var5 = class_46.method_534((byte)7).method_6382(var3, var8, -1557154067);
                               if(null == var5) {
@@ -10643,26 +10506,22 @@ public class class_165 {
             class_280 var14;
             class_280 var10000;
             if(var0 == 6606) {
-               var10000 = new class_280;
-               var10000.method_5163(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
+               var10000 = new class_280(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                var14 = var10000;
                class_46.method_534((byte)7).method_6437(-2092998769 * var14.field_3236, var14.field_3235 * 349527629, 704726635);
                return 1;
             } else if(6607 == var0) {
-               var10000 = new class_280;
-               var10000.method_5163(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
+               var10000 = new class_280(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                var14 = var10000;
                class_46.method_534((byte)7).method_6358(var14.field_3236 * -2092998769, var14.field_3235 * 349527629, (byte)109);
                return 1;
             } else if(var0 == 6608) {
-               var10000 = new class_280;
-               var10000.method_5163(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
+               var10000 = new class_280(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                var14 = var10000;
                class_46.method_534((byte)7).method_6454(var14.field_3234 * -1820038389, -2092998769 * var14.field_3236, 349527629 * var14.field_3235, Integer.MIN_VALUE);
                return 1;
             } else if(var0 == 6609) {
-               var10000 = new class_280;
-               var10000.method_5163(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
+               var10000 = new class_280(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                var14 = var10000;
                class_46.method_534((byte)7).method_6360(var14.field_3234 * -1820038389, -2092998769 * var14.field_3236, var14.field_3235 * 349527629, 1982259081);
                return 1;
@@ -10735,8 +10594,7 @@ public class class_165 {
                   field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_46.method_534((byte)7).method_6340((byte)79);
                   return 1;
                } else if(6617 == var0) {
-                  var10000 = new class_280;
-                  var10000.method_5163(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
+                  var10000 = new class_280(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                   var14 = var10000;
                   var11 = class_46.method_534((byte)7).method_6380(-1798385059);
                   if(var11 == null) {
@@ -10758,8 +10616,7 @@ public class class_165 {
                } else {
                   class_280 var5;
                   if(6618 == var0) {
-                     var10000 = new class_280;
-                     var10000.method_5163(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
+                     var10000 = new class_280(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                      var14 = var10000;
                      var11 = class_46.method_534((byte)7).method_6380(-1466477176);
                      if(null == var11) {
@@ -10781,24 +10638,21 @@ public class class_165 {
                      if(var0 == 6619) {
                         class_136.field_1752 -= 2119512838;
                         var3 = field_2052[-26460885 * class_136.field_1752];
-                        var10000 = new class_280;
-                        var10000.method_5163(field_2052[-26460885 * class_136.field_1752 + 1]);
+                        var10000 = new class_280(field_2052[-26460885 * class_136.field_1752 + 1]);
                         var8 = var10000;
                         class_43.method_495(var3, var8, false, 1737731022);
                         return 1;
                      } else if(var0 == 6620) {
                         class_136.field_1752 -= 2119512838;
                         var3 = field_2052[-26460885 * class_136.field_1752];
-                        var10000 = new class_280;
-                        var10000.method_5163(field_2052[1 + -26460885 * class_136.field_1752]);
+                        var10000 = new class_280(field_2052[1 + -26460885 * class_136.field_1752]);
                         var8 = var10000;
                         class_43.method_495(var3, var8, true, 1737731022);
                         return 1;
                      } else if(var0 == 6621) {
                         class_136.field_1752 -= 2119512838;
                         var3 = field_2052[class_136.field_1752 * -26460885];
-                        var10000 = new class_280;
-                        var10000.method_5163(field_2052[-26460885 * class_136.field_1752 + 1]);
+                        var10000 = new class_280(field_2052[-26460885 * class_136.field_1752 + 1]);
                         var8 = var10000;
                         var7 = class_46.method_534((byte)7).method_6356(var3, -523200814);
                         if(var7 == null) {
@@ -10813,8 +10667,7 @@ public class class_165 {
                         field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_46.method_534((byte)7).method_6365(-2086810552);
                         return 1;
                      } else if(var0 == 6623) {
-                        var10000 = new class_280;
-                        var10000.method_5163(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
+                        var10000 = new class_280(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                         var14 = var10000;
                         var11 = class_46.method_534((byte)7).method_6337(-1820038389 * var14.field_3234, var14.field_3236 * -2092998769, 349527629 * var14.field_3235, 599278364);
                         if(null == var11) {
@@ -10885,8 +10738,7 @@ public class class_165 {
                            } else if(var0 == 6638) {
                               class_136.field_1752 -= 2119512838;
                               var3 = field_2052[class_136.field_1752 * -26460885];
-                              var10000 = new class_280;
-                              var10000.method_5163(field_2052[1 + class_136.field_1752 * -26460885]);
+                              var10000 = new class_280(field_2052[1 + class_136.field_1752 * -26460885]);
                               var8 = var10000;
                               var5 = class_46.method_534((byte)7).method_6382(var3, var8, -1891515008);
                               if(null == var5) {
@@ -11117,8 +10969,7 @@ public class class_165 {
                   var21 = field_2052;
                   var22 = (class_136.field_1752 += -1087727229) * -26460885 - 1;
                   var10002 = class_208.field_2413;
-                  var10003 = new class_359;
-                  var10003.method_6280(var8, class_239.field_2659);
+                  var10003 = new class_359(var8, class_239.field_2659);
                   var21[var22] = var10002.method_3324(var10003, false, -1342162489)?1:0;
                   return 1;
                } else if(3611 == var0) {
@@ -11207,8 +11058,7 @@ public class class_165 {
                   var21 = field_2052;
                   var22 = (class_136.field_1752 += -1087727229) * -26460885 - 1;
                   var10002 = class_208.field_2413;
-                  var10003 = new class_359;
-                  var10003.method_6280(var8, class_239.field_2659);
+                  var10003 = new class_359(var8, class_239.field_2659);
                   var21[var22] = var10002.method_3325(var10003, 279756852)?1:0;
                   return 1;
                } else if(var0 == 3624) {
@@ -11248,8 +11098,7 @@ public class class_165 {
                      if(3629 == var0) {
                         var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                         var9 = class_208.field_2413.field_1994;
-                        var20 = new class_388;
-                        var20.method_6733(var5);
+                        var20 = new class_388(var5);
                         var9.method_6124(var20, 1224360715);
                         return 1;
                      } else {
@@ -11257,8 +11106,7 @@ public class class_165 {
                         if(var0 == 3630) {
                            var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                            var9 = class_208.field_2413.field_1994;
-                           var19 = new class_380;
-                           var19.method_6672(var5);
+                           var19 = new class_380(var5);
                            var9.method_6124(var19, 1224360715);
                            return 1;
                         } else {
@@ -11266,8 +11114,7 @@ public class class_165 {
                            if(3631 == var0) {
                               var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                               var9 = class_208.field_2413.field_1994;
-                              var18 = new class_183;
-                              var18.method_3842(var5);
+                              var18 = new class_183(var5);
                               var9.method_6124(var18, 1224360715);
                               return 1;
                            } else {
@@ -11275,8 +11122,7 @@ public class class_165 {
                               if(var0 == 3632) {
                                  var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                  var9 = class_208.field_2413.field_1994;
-                                 var16 = new class_204;
-                                 var16.method_4103(var5);
+                                 var16 = new class_204(var5);
                                  var9.method_6124(var16, 1224360715);
                                  return 1;
                               } else {
@@ -11284,8 +11130,7 @@ public class class_165 {
                                  if(3633 == var0) {
                                     var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                     var9 = class_208.field_2413.field_1994;
-                                    var15 = new class_189;
-                                    var15.method_3897(var5);
+                                    var15 = new class_189(var5);
                                     var9.method_6124(var15, 1224360715);
                                     return 1;
                                  } else {
@@ -11293,8 +11138,7 @@ public class class_165 {
                                     if(var0 == 3634) {
                                        var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                        var9 = class_208.field_2413.field_1994;
-                                       var14 = new class_186;
-                                       var14.method_3870(var5);
+                                       var14 = new class_186(var5);
                                        var9.method_6124(var14, 1224360715);
                                        return 1;
                                     } else {
@@ -11302,8 +11146,7 @@ public class class_165 {
                                        if(3635 == var0) {
                                           var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                           var9 = class_208.field_2413.field_1994;
-                                          var13 = new class_188;
-                                          var13.method_3887(var5);
+                                          var13 = new class_188(var5);
                                           var9.method_6124(var13, 1224360715);
                                           return 1;
                                        } else {
@@ -11311,8 +11154,7 @@ public class class_165 {
                                           if(var0 == 3636) {
                                              var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                              var9 = class_208.field_2413.field_1994;
-                                             var12 = new class_182;
-                                             var12.method_3834(var5);
+                                             var12 = new class_182(var5);
                                              var9.method_6124(var12, 1224360715);
                                              return 1;
                                           } else {
@@ -11320,8 +11162,7 @@ public class class_165 {
                                              if(var0 == 3637) {
                                                 var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                 var9 = class_208.field_2413.field_1994;
-                                                var11 = new class_187;
-                                                var11.method_3879(var5);
+                                                var11 = new class_187(var5);
                                                 var9.method_6124(var11, 1224360715);
                                                 return 1;
                                              } else {
@@ -11329,8 +11170,7 @@ public class class_165 {
                                                 if(3638 == var0) {
                                                    var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                    var9 = class_208.field_2413.field_1994;
-                                                   var10 = new class_184;
-                                                   var10.method_3848(var5);
+                                                   var10 = new class_184(var5);
                                                    var9.method_6124(var10, 1224360715);
                                                    return 1;
                                                 } else if(3639 == var0) {
@@ -11344,15 +11184,13 @@ public class class_165 {
                                                    if(var0 == 3641) {
                                                       var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                       var17 = class_208.field_2413.field_1995;
-                                                      var20 = new class_388;
-                                                      var20.method_6733(var5);
+                                                      var20 = new class_388(var5);
                                                       var17.method_6124(var20, 1224360715);
                                                       return 1;
                                                    } else if(var0 == 3642) {
                                                       var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                       var17 = class_208.field_2413.field_1995;
-                                                      var19 = new class_380;
-                                                      var19.method_6672(var5);
+                                                      var19 = new class_380(var5);
                                                       var17.method_6124(var19, 1224360715);
                                                       return 1;
                                                    } else if(3643 == var0) {
@@ -11370,8 +11208,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(null != class_233.field_2617) {
                                                             var10000 = class_233.field_2617;
-                                                            var20 = new class_388;
-                                                            var20.method_6733(var5);
+                                                            var20 = new class_388(var5);
                                                             var10000.method_6124(var20, 1224360715);
                                                          }
 
@@ -11380,8 +11217,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(class_233.field_2617 != null) {
                                                             var10000 = class_233.field_2617;
-                                                            var19 = new class_380;
-                                                            var19.method_6672(var5);
+                                                            var19 = new class_380(var5);
                                                             var10000.method_6124(var19, 1224360715);
                                                          }
 
@@ -11390,8 +11226,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(null != class_233.field_2617) {
                                                             var10000 = class_233.field_2617;
-                                                            var18 = new class_183;
-                                                            var18.method_3842(var5);
+                                                            var18 = new class_183(var5);
                                                             var10000.method_6124(var18, 1224360715);
                                                          }
 
@@ -11400,8 +11235,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(null != class_233.field_2617) {
                                                             var10000 = class_233.field_2617;
-                                                            var16 = new class_204;
-                                                            var16.method_4103(var5);
+                                                            var16 = new class_204(var5);
                                                             var10000.method_6124(var16, 1224360715);
                                                          }
 
@@ -11410,8 +11244,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(null != class_233.field_2617) {
                                                             var10000 = class_233.field_2617;
-                                                            var15 = new class_189;
-                                                            var15.method_3897(var5);
+                                                            var15 = new class_189(var5);
                                                             var10000.method_6124(var15, 1224360715);
                                                          }
 
@@ -11420,8 +11253,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(class_233.field_2617 != null) {
                                                             var10000 = class_233.field_2617;
-                                                            var14 = new class_186;
-                                                            var14.method_3870(var5);
+                                                            var14 = new class_186(var5);
                                                             var10000.method_6124(var14, 1224360715);
                                                          }
 
@@ -11430,8 +11262,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(class_233.field_2617 != null) {
                                                             var10000 = class_233.field_2617;
-                                                            var13 = new class_188;
-                                                            var13.method_3887(var5);
+                                                            var13 = new class_188(var5);
                                                             var10000.method_6124(var13, 1224360715);
                                                          }
 
@@ -11440,8 +11271,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(class_233.field_2617 != null) {
                                                             var10000 = class_233.field_2617;
-                                                            var12 = new class_182;
-                                                            var12.method_3834(var5);
+                                                            var12 = new class_182(var5);
                                                             var10000.method_6124(var12, 1224360715);
                                                          }
 
@@ -11450,8 +11280,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(null != class_233.field_2617) {
                                                             var10000 = class_233.field_2617;
-                                                            var11 = new class_187;
-                                                            var11.method_3879(var5);
+                                                            var11 = new class_187(var5);
                                                             var10000.method_6124(var11, 1224360715);
                                                          }
 
@@ -11460,8 +11289,7 @@ public class class_165 {
                                                          var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                          if(class_233.field_2617 != null) {
                                                             var10000 = class_233.field_2617;
-                                                            var10 = new class_184;
-                                                            var10.method_3848(var5);
+                                                            var10 = new class_184(var5);
                                                             var10000.method_6124(var10, 1224360715);
                                                          }
 
@@ -11477,16 +11305,14 @@ public class class_165 {
                                                          if(3656 == var0) {
                                                             var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                             var9 = class_208.field_2413.field_1994;
-                                                            var10001 = new class_185;
-                                                            var10001.method_3857(var5);
+                                                            var10001 = new class_185(var5);
                                                             var9.method_6124(var10001, 1224360715);
                                                             return 1;
                                                          } else if(var0 == 3657) {
                                                             var5 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885] == 1;
                                                             if(class_233.field_2617 != null) {
                                                                var10000 = class_233.field_2617;
-                                                               var10001 = new class_185;
-                                                               var10001.method_3857(var5);
+                                                               var10001 = new class_185(var5);
                                                                var10000.method_6124(var10001, 1224360715);
                                                             }
 
@@ -11854,26 +11680,22 @@ public class class_165 {
             class_280 var14;
             class_280 var10000;
             if(var0 == 6606) {
-               var10000 = new class_280;
-               var10000.method_5163(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
+               var10000 = new class_280(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                var14 = var10000;
                class_46.method_534((byte)7).method_6437(-2092998769 * var14.field_3236, var14.field_3235 * 349527629, 704726635);
                return 1;
             } else if(6607 == var0) {
-               var10000 = new class_280;
-               var10000.method_5163(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
+               var10000 = new class_280(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                var14 = var10000;
                class_46.method_534((byte)7).method_6358(var14.field_3236 * -2092998769, var14.field_3235 * 349527629, (byte)15);
                return 1;
             } else if(var0 == 6608) {
-               var10000 = new class_280;
-               var10000.method_5163(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
+               var10000 = new class_280(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                var14 = var10000;
                class_46.method_534((byte)7).method_6454(var14.field_3234 * -1820038389, -2092998769 * var14.field_3236, 349527629 * var14.field_3235, Integer.MIN_VALUE);
                return 1;
             } else if(var0 == 6609) {
-               var10000 = new class_280;
-               var10000.method_5163(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
+               var10000 = new class_280(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                var14 = var10000;
                class_46.method_534((byte)7).method_6360(var14.field_3234 * -1820038389, -2092998769 * var14.field_3236, var14.field_3235 * 349527629, 1982259081);
                return 1;
@@ -11946,8 +11768,7 @@ public class class_165 {
                   field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_46.method_534((byte)7).method_6340((byte)80);
                   return 1;
                } else if(6617 == var0) {
-                  var10000 = new class_280;
-                  var10000.method_5163(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
+                  var10000 = new class_280(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                   var14 = var10000;
                   var11 = class_46.method_534((byte)7).method_6380(-511616921);
                   if(var11 == null) {
@@ -11969,8 +11790,7 @@ public class class_165 {
                } else {
                   class_280 var5;
                   if(6618 == var0) {
-                     var10000 = new class_280;
-                     var10000.method_5163(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
+                     var10000 = new class_280(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                      var14 = var10000;
                      var11 = class_46.method_534((byte)7).method_6380(1786945645);
                      if(null == var11) {
@@ -11992,24 +11812,21 @@ public class class_165 {
                      if(var0 == 6619) {
                         class_136.field_1752 -= 2119512838;
                         var3 = field_2052[-26460885 * class_136.field_1752];
-                        var10000 = new class_280;
-                        var10000.method_5163(field_2052[-26460885 * class_136.field_1752 + 1]);
+                        var10000 = new class_280(field_2052[-26460885 * class_136.field_1752 + 1]);
                         var8 = var10000;
                         class_43.method_495(var3, var8, false, 1737731022);
                         return 1;
                      } else if(var0 == 6620) {
                         class_136.field_1752 -= 2119512838;
                         var3 = field_2052[-26460885 * class_136.field_1752];
-                        var10000 = new class_280;
-                        var10000.method_5163(field_2052[1 + -26460885 * class_136.field_1752]);
+                        var10000 = new class_280(field_2052[1 + -26460885 * class_136.field_1752]);
                         var8 = var10000;
                         class_43.method_495(var3, var8, true, 1737731022);
                         return 1;
                      } else if(var0 == 6621) {
                         class_136.field_1752 -= 2119512838;
                         var3 = field_2052[class_136.field_1752 * -26460885];
-                        var10000 = new class_280;
-                        var10000.method_5163(field_2052[-26460885 * class_136.field_1752 + 1]);
+                        var10000 = new class_280(field_2052[-26460885 * class_136.field_1752 + 1]);
                         var8 = var10000;
                         var7 = class_46.method_534((byte)7).method_6356(var3, -1482760209);
                         if(var7 == null) {
@@ -12024,8 +11841,7 @@ public class class_165 {
                         field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_46.method_534((byte)7).method_6365(-589218253);
                         return 1;
                      } else if(var0 == 6623) {
-                        var10000 = new class_280;
-                        var10000.method_5163(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
+                        var10000 = new class_280(field_2052[(class_136.field_1752 -= -1087727229) * -26460885]);
                         var14 = var10000;
                         var11 = class_46.method_534((byte)7).method_6337(-1820038389 * var14.field_3234, var14.field_3236 * -2092998769, 349527629 * var14.field_3235, 13554858);
                         if(null == var11) {
@@ -12096,8 +11912,7 @@ public class class_165 {
                            } else if(var0 == 6638) {
                               class_136.field_1752 -= 2119512838;
                               var3 = field_2052[class_136.field_1752 * -26460885];
-                              var10000 = new class_280;
-                              var10000.method_5163(field_2052[1 + class_136.field_1752 * -26460885]);
+                              var10000 = new class_280(field_2052[1 + class_136.field_1752 * -26460885]);
                               var8 = var10000;
                               var5 = class_46.method_534((byte)7).method_6382(var3, var8, -928994446);
                               if(null == var5) {

@@ -283,9 +283,9 @@ public class class_242 {
    }
 
    // $FF: renamed from: <init> (int) void
-   void method_4654(int var1) {
+   class_242(int var1) {
+      super();
       try {
-         super();
          this.field_2690 = -35900281 * var1;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "gb.<init>(" + ')');

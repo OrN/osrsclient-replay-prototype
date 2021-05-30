@@ -31,9 +31,9 @@ public class class_375 {
    }
 
    // $FF: renamed from: <init> (int, int, java.lang.String, java.lang.String, boolean, nc[]) void
-   void method_6623(int var1, int var2, String var3, String var4, boolean var5, class_375[] var6) {
+   class_375(int var1, int var2, String var3, String var4, boolean var5, class_375[] var6) {
+      super();
       try {
-         super();
          this.field_4142 = var1 * 983653345;
          this.field_4143 = var4;
       } catch (RuntimeException var7) {
@@ -50,33 +50,24 @@ public class class_375 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_6624() {
-      class_375 var10000 = new class_375;
-      var10000.method_6625(5, 0, "", "");
+   static {
+      class_375 var10000 = new class_375(5, 0, "", "");
       field_4140 = var10000;
-      var10000 = new class_375;
-      var10000.method_6625(0, 1, "", "");
+      var10000 = new class_375(0, 1, "", "");
       field_4134 = var10000;
-      var10000 = new class_375;
-      var10000.method_6625(7, 2, "", "");
+      var10000 = new class_375(7, 2, "", "");
       field_4135 = var10000;
-      var10000 = new class_375;
-      var10000.method_6625(3, 3, "", "");
+      var10000 = new class_375(3, 3, "", "");
       field_4136 = var10000;
-      var10000 = new class_375;
-      var10000.method_6625(2, 4, "", "");
+      var10000 = new class_375(2, 4, "", "");
       field_4138 = var10000;
-      var10000 = new class_375;
-      var10000.method_6625(8, 5, "", "");
+      var10000 = new class_375(8, 5, "", "");
       field_4133 = var10000;
-      var10000 = new class_375;
-      var10000.method_6625(1, 6, "", "");
+      var10000 = new class_375(1, 6, "", "");
       field_4139 = var10000;
-      var10000 = new class_375;
-      var10000.method_6625(4, 7, "", "");
+      var10000 = new class_375(4, 7, "", "");
       field_4137 = var10000;
-      var10000 = new class_375;
-      var10000.method_6623(6, -1, "", "", true, new class_375[]{field_4140, field_4134, field_4135, field_4138, field_4136});
+      var10000 = new class_375(6, -1, "", "", true, new class_375[]{field_4140, field_4134, field_4135, field_4138, field_4136});
       field_4141 = var10000;
    }
 
@@ -85,9 +76,9 @@ public class class_375 {
    }
 
    // $FF: renamed from: <init> (int, int, java.lang.String, java.lang.String) void
-   void method_6625(int var1, int var2, String var3, String var4) {
+   class_375(int var1, int var2, String var3, String var4) {
+      super();
       try {
-         super();
          this.field_4142 = var1 * 983653345;
          this.field_4143 = var4;
       } catch (RuntimeException var5) {

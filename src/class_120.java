@@ -78,16 +78,14 @@ public class class_120 extends class_111 {
             }
          } else {
             byte[] var3 = class_73.field_586.method_5381(1, var0, -26460885);
-            class_73 var10000 = new class_73;
-            var10000.method_105();
+            class_73 var10000 = new class_73();
             var2 = var10000;
             if(var3 != null) {
                if(var1 <= 2) {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28;
-               var10001.method_178(var3);
+               class_28 var10001 = new class_28(var3);
                var2.method_1095(var10001, var0, (byte)44);
             }
 
@@ -119,10 +117,10 @@ public class class_120 extends class_111 {
    }
 
    // $FF: renamed from: <init> (f) void
-   void method_2262(class_167 var1) {
+   class_120(class_167 var1) {
+      super();
       try {
          this.this$0 = var1;
-         super.method_105();
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "k.<init>(" + ')');
       }
@@ -155,8 +153,7 @@ public class class_120 extends class_111 {
    // $FF: renamed from: ka (int, int, int, int) cu
    static final class_48 method_2264(int var0, int var1, int var2, int var3) {
       try {
-         class_48 var10000 = new class_48;
-         var10000.method_105();
+         class_48 var10000 = new class_48();
          class_48 var4 = var10000;
          var4.field_353 = var1 * 1778372261;
          var4.field_354 = -1443482261 * var2;

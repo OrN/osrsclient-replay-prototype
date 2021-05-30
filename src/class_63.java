@@ -37,8 +37,8 @@ public class class_63 extends class_62 {
    }
 
    // $FF: renamed from: <init> (java.lang.Object, int) void
-   void method_653(Object var1, int var2) {
-      super.method_647(var2);
+   class_63(Object var1, int var2) {
+      super(var2);
       this.field_482 = var1;
    }
 

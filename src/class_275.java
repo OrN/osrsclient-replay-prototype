@@ -37,8 +37,7 @@ public class class_275 {
    // $FF: renamed from: y (nd, int, byte) void
    public static void method_5084(class_28 var0, int var1, byte var2) {
       try {
-         class_58 var10000 = new class_58;
-         var10000.method_105();
+         class_58 var10000 = new class_58();
          class_58 var3 = var10000;
          var3.field_464 = var0.method_130(188145457) * 1028183917;
          var3.field_459 = var0.method_135((byte)-43) * 534927143;
@@ -418,8 +417,7 @@ public class class_275 {
                   }
                }
 
-               class_93 var10000 = new class_93;
-               var10000.method_1704(var20, var11);
+               class_93 var10000 = new class_93(var20, var11);
                class_93 var21 = var10000;
 
                for(var13 = 0; var13 < 5; ++var13) {
@@ -818,8 +816,7 @@ public class class_275 {
                      }
                   }
 
-                  class_93 var10000 = new class_93;
-                  var10000.method_1704(var22, var12);
+                  class_93 var10000 = new class_93(var22, var12);
                   class_93 var23 = var10000;
 
                   for(var14 = 0; var14 < 5; ++var14) {
@@ -923,8 +920,7 @@ public class class_275 {
                }
             }
 
-            class_93 var10000 = new class_93;
-            var10000.method_1704(var7, var3);
+            class_93 var10000 = new class_93(var7, var3);
             class_93 var8 = var10000;
 
             for(var5 = 0; var5 < 5; ++var5) {
@@ -960,10 +956,9 @@ public class class_275 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_5094() {
+   static {
       field_3214 = new int[]{8, 11, 4, 6, 9, 7, 10};
-      class_272 var10000 = new class_272;
-      var10000.method_5063(260);
+      class_272 var10000 = new class_272(260);
       field_3213 = var10000;
    }
 
@@ -1025,8 +1020,7 @@ public class class_275 {
                }
             }
 
-            class_93 var10000 = new class_93;
-            var10000.method_1704(var7, var3);
+            class_93 var10000 = new class_93(var7, var3);
             class_93 var8 = var10000;
 
             for(var5 = 0; var5 < 5; ++var5) {
@@ -1238,8 +1232,7 @@ public class class_275 {
                }
             }
 
-            class_93 var10000 = new class_93;
-            var10000.method_1704(var7, var3);
+            class_93 var10000 = new class_93(var7, var3);
             class_93 var8 = var10000;
 
             for(var5 = 0; var5 < 5; ++var5) {
@@ -1424,8 +1417,7 @@ public class class_275 {
                   }
                }
 
-               class_93 var10000 = new class_93;
-               var10000.method_1704(var9, var4);
+               class_93 var10000 = new class_93(var9, var4);
                class_93 var10 = var10000;
 
                for(var6 = 0; var6 < 5; ++var6) {
@@ -1794,7 +1786,7 @@ public class class_275 {
    }
 
    // $FF: renamed from: <init> () void
-   public void method_5117() {
+   public class_275() {
       super();
       this.field_3206 = false;
    }

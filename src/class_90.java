@@ -161,9 +161,8 @@ public class class_90 extends class_59 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_1594() {
-      class_272 var10000 = new class_272;
-      var10000.method_5063(128);
+   static {
+      class_272 var10000 = new class_272(128);
       field_901 = var10000;
    }
 
@@ -239,9 +238,9 @@ public class class_90 extends class_59 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_105() {
+   class_90() {
+      super();
       try {
-         super.method_105();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "cf.<init>(" + ')');
       }
@@ -391,11 +390,9 @@ public class class_90 extends class_59 {
 
    // $FF: renamed from: l (byte[]) cf
    static class_90 method_1598(byte[] var0) {
-      class_90 var10000 = new class_90;
-      var10000.method_105();
+      class_90 var10000 = new class_90();
       class_90 var1 = var10000;
-      class_28 var12 = new class_28;
-      var12.method_178(var0);
+      class_28 var12 = new class_28(var0);
       class_28 var2 = var12;
       var2.field_15 = -1025691571 * (var2.field_12.length - 2);
       int var3 = var2.method_132((byte)-3);
@@ -414,16 +411,14 @@ public class class_90 extends class_59 {
 
          for(var7 = 0; var7 < var6; ++var7) {
             var8 = var2.method_132((byte)-123);
-            class_369 var13 = new class_369;
-            var13.method_6590(var8 > 0?class_100.method_1845(var8, 1380797556):1);
+            class_369 var13 = new class_369(var8 > 0?class_100.method_1845(var8, 1380797556):1);
             class_369 var9 = var13;
             var1.field_908[var7] = var9;
 
             while(var8-- > 0) {
                int var10 = var2.method_135((byte)-49);
                int var11 = var2.method_135((byte)-79);
-               class_32 var10001 = new class_32;
-               var10001.method_391(var11);
+               class_32 var10001 = new class_32(var11);
                var9.method_6588(var10001, (long)var10);
             }
          }
@@ -451,11 +446,9 @@ public class class_90 extends class_59 {
 
    // $FF: renamed from: o (byte[]) cf
    static class_90 method_1599(byte[] var0) {
-      class_90 var10000 = new class_90;
-      var10000.method_105();
+      class_90 var10000 = new class_90();
       class_90 var1 = var10000;
-      class_28 var12 = new class_28;
-      var12.method_178(var0);
+      class_28 var12 = new class_28(var0);
       class_28 var2 = var12;
       var2.field_15 = -1734081266 * (var2.field_12.length - 2);
       int var3 = var2.method_132((byte)-29);
@@ -474,16 +467,14 @@ public class class_90 extends class_59 {
 
          for(var7 = 0; var7 < var6; ++var7) {
             var8 = var2.method_132((byte)-45);
-            class_369 var13 = new class_369;
-            var13.method_6590(var8 > 0?class_100.method_1845(var8, -1880995108):1);
+            class_369 var13 = new class_369(var8 > 0?class_100.method_1845(var8, -1880995108):1);
             class_369 var9 = var13;
             var1.field_908[var7] = var9;
 
             while(var8-- > 0) {
                int var10 = var2.method_135((byte)-93);
                int var11 = var2.method_135((byte)-12);
-               class_32 var10001 = new class_32;
-               var10001.method_391(var11);
+               class_32 var10001 = new class_32(var11);
                var9.method_6588(var10001, (long)var10);
             }
          }
@@ -511,11 +502,9 @@ public class class_90 extends class_59 {
 
    // $FF: renamed from: c (byte[]) cf
    static class_90 method_1600(byte[] var0) {
-      class_90 var10000 = new class_90;
-      var10000.method_105();
+      class_90 var10000 = new class_90();
       class_90 var1 = var10000;
-      class_28 var12 = new class_28;
-      var12.method_178(var0);
+      class_28 var12 = new class_28(var0);
       class_28 var2 = var12;
       var2.field_15 = -1025691571 * (var2.field_12.length - 2);
       int var3 = var2.method_132((byte)-28);
@@ -534,16 +523,14 @@ public class class_90 extends class_59 {
 
          for(var7 = 0; var7 < var6; ++var7) {
             var8 = var2.method_132((byte)-10);
-            class_369 var13 = new class_369;
-            var13.method_6590(var8 > 0?class_100.method_1845(var8, -511155575):1);
+            class_369 var13 = new class_369(var8 > 0?class_100.method_1845(var8, -511155575):1);
             class_369 var9 = var13;
             var1.field_908[var7] = var9;
 
             while(var8-- > 0) {
                int var10 = var2.method_135((byte)-15);
                int var11 = var2.method_135((byte)-20);
-               class_32 var10001 = new class_32;
-               var10001.method_391(var11);
+               class_32 var10001 = new class_32(var11);
                var9.method_6588(var10001, (long)var10);
             }
          }
@@ -1813,10 +1800,8 @@ public class class_90 extends class_59 {
                }
 
                class_363 var10000 = class_287.field_3278;
-               class_280 var10003 = new class_280;
-               var10003.method_5163(var0);
-               class_280 var10004 = new class_280;
-               var10004.method_5163(var1);
+               class_280 var10003 = new class_280(var0);
+               class_280 var10004 = new class_280(var1);
                var10000.method_6383(var2, var3, var10003, var10004, 1568785181);
             }
 

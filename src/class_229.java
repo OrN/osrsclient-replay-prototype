@@ -21,9 +21,9 @@ public class class_229 {
 
 
    // $FF: renamed from: <init> (int) void
-   void method_4357(int var1) {
+   class_229(int var1) {
+      super();
       try {
-         super();
          this.field_2567 = 193399743 * var1;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "fn.<init>(" + ')');
@@ -31,12 +31,10 @@ public class class_229 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_4358() {
-      class_229 var10000 = new class_229;
-      var10000.method_4357(0);
+   static {
+      class_229 var10000 = new class_229(0);
       field_2569 = var10000;
-      var10000 = new class_229;
-      var10000.method_4357(1);
+      var10000 = new class_229(1);
       field_2568 = var10000;
    }
 
@@ -96,8 +94,7 @@ public class class_229 {
             class_44.field_323 = class_79.method_1257(var1, "options_radio_buttons,6", "", -1898295222);
             class_43.field_311 = 1495272685 * class_160.field_2001.field_498;
             class_220.field_2491 = -1878338039 * class_160.field_2001.field_492;
-            class_162 var10000 = new class_162;
-            var10000.method_3402(class_177.field_2184);
+            class_162 var10000 = new class_162(class_177.field_2184);
             class_176.field_2181 = var10000;
             if(var2) {
                class_177.field_2200 = "";

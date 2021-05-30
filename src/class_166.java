@@ -66,7 +66,7 @@ public final class class_166 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_3560() {
+   static {
       field_2078 = new int[4][105][105];
       field_2069 = new byte[4][104][104];
       field_2070 = 185062409;
@@ -141,8 +141,7 @@ public final class class_166 {
          }
       }
 
-      class_28 var10000 = new class_28;
-      var10000.method_178(var0);
+      class_28 var10000 = new class_28(var0);
       class_28 var10 = var10000;
 
       for(var7 = 0; var7 < 4; ++var7) {
@@ -189,8 +188,7 @@ public final class class_166 {
 
    // $FF: renamed from: ai (byte[], int, int, int, int, int, int, int, gt, fz[]) void
    static final void method_3567(byte[] var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, class_251 var8, class_240[] var9) {
-      class_28 var10000 = new class_28;
-      var10000.method_178(var0);
+      class_28 var10000 = new class_28(var0);
       class_28 var10 = var10000;
       int var11 = -1;
 
@@ -548,8 +546,7 @@ public final class class_166 {
 
    // $FF: renamed from: ar (byte[], int, int, int, int, int, int, int, gt, fz[]) void
    static final void method_3576(byte[] var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7, class_251 var8, class_240[] var9) {
-      class_28 var10000 = new class_28;
-      var10000.method_178(var0);
+      class_28 var10000 = new class_28(var0);
       class_28 var10 = var10000;
       int var11 = -1;
 
@@ -1589,8 +1586,7 @@ public final class class_166 {
                if(var8.field_824 * 91732693 == -1 && var8.field_842 == null) {
                   var22 = var8.method_1488(22, var4, var15, var17, var16, var18, (byte)56);
                } else {
-                  var10000 = new class_96;
-                  var10000.method_1781(var3, 22, var4, var0, var1, var2, 91732693 * var8.field_824, var8.field_850, (class_91)null);
+                  var10000 = new class_96(var3, 22, var4, var0, var1, var2, 91732693 * var8.field_824, var8.field_850, (class_91)null);
                   var22 = var10000;
                }
 
@@ -1607,8 +1603,7 @@ public final class class_166 {
                   if(var8.field_824 * 2098777307 == -1 && var8.field_842 == null) {
                      var22 = var8.method_1488(var5, var4, var15, var17, var16, var18, (byte)66);
                   } else {
-                     var10000 = new class_96;
-                     var10000.method_1781(var3, var5, var4, var0, var1, var2, var8.field_824 * -1569371403, var8.field_850, (class_91)null);
+                     var10000 = new class_96(var3, var5, var4, var0, var1, var2, var8.field_824 * -1569371403, var8.field_850, (class_91)null);
                      var22 = var10000;
                   }
 
@@ -1625,8 +1620,7 @@ public final class class_166 {
                   if(-1 == -1298418014 * var8.field_824 && null == var8.field_842) {
                      var22 = var8.method_1488(0, var4, var15, var17, var16, var18, (byte)31);
                   } else {
-                     var10000 = new class_96;
-                     var10000.method_1781(var3, 0, var4, var0, var1, var2, 91732693 * var8.field_824, var8.field_850, (class_91)null);
+                     var10000 = new class_96(var3, 0, var4, var0, var1, var2, 91732693 * var8.field_824, var8.field_850, (class_91)null);
                      var22 = var10000;
                   }
 
@@ -1681,8 +1675,7 @@ public final class class_166 {
                   if(-1 == var8.field_824 * 91732693 && var8.field_842 == null) {
                      var22 = var8.method_1488(1, var4, var15, var17, var16, var18, (byte)121);
                   } else {
-                     var10000 = new class_96;
-                     var10000.method_1781(var3, 1, var4, var0, var1, var2, var8.field_824 * 91732693, var8.field_850, (class_91)null);
+                     var10000 = new class_96(var3, 1, var4, var0, var1, var2, var8.field_824 * 91732693, var8.field_850, (class_91)null);
                      var22 = var10000;
                   }
 
@@ -1713,11 +1706,9 @@ public final class class_166 {
                         var31 = var8.method_1488(2, var4 + 4, var15, var17, var16, var18, (byte)103);
                         var30 = var8.method_1488(2, var28, var15, var17, var16, var18, (byte)106);
                      } else {
-                        var10000 = new class_96;
-                        var10000.method_1781(var3, 2, 4 + var4, var0, var1, var2, var8.field_824 * 91732693, var8.field_850, (class_91)null);
+                        var10000 = new class_96(var3, 2, 4 + var4, var0, var1, var2, var8.field_824 * 91732693, var8.field_850, (class_91)null);
                         var31 = var10000;
-                        var10000 = new class_96;
-                        var10000.method_1781(var3, 2, var28, var0, var1, var2, var8.field_824 * 91732693, var8.field_850, (class_91)null);
+                        var10000 = new class_96(var3, 2, var28, var0, var1, var2, var8.field_824 * 91732693, var8.field_850, (class_91)null);
                         var30 = var10000;
                      }
 
@@ -1750,8 +1741,7 @@ public final class class_166 {
                      if(var8.field_824 * 899462798 == -1 && null == var8.field_842) {
                         var22 = var8.method_1488(3, var4, var15, var17, var16, var18, (byte)106);
                      } else {
-                        var10000 = new class_96;
-                        var10000.method_1781(var3, 3, var4, var0, var1, var2, -1253275731 * var8.field_824, var8.field_850, (class_91)null);
+                        var10000 = new class_96(var3, 3, var4, var0, var1, var2, -1253275731 * var8.field_824, var8.field_850, (class_91)null);
                         var22 = var10000;
                      }
 
@@ -1776,8 +1766,7 @@ public final class class_166 {
                      if(-1 == var8.field_824 * -1309545238 && null == var8.field_842) {
                         var22 = var8.method_1488(var5, var4, var15, var17, var16, var18, (byte)110);
                      } else {
-                        var10000 = new class_96;
-                        var10000.method_1781(var3, var5, var4, var0, var1, var2, var8.field_824 * 91732693, var8.field_850, (class_91)null);
+                        var10000 = new class_96(var3, var5, var4, var0, var1, var2, var8.field_824 * 91732693, var8.field_850, (class_91)null);
                         var22 = var10000;
                      }
 
@@ -1794,8 +1783,7 @@ public final class class_166 {
                      if(-1 == 91732693 * var8.field_824 && var8.field_842 == null) {
                         var22 = var8.method_1488(4, var4, var15, var17, var16, var18, (byte)27);
                      } else {
-                        var10000 = new class_96;
-                        var10000.method_1781(var3, 4, var4, var0, var1, var2, var8.field_824 * 147853718, var8.field_850, (class_91)null);
+                        var10000 = new class_96(var3, 4, var4, var0, var1, var2, var8.field_824 * 147853718, var8.field_850, (class_91)null);
                         var22 = var10000;
                      }
 
@@ -1813,8 +1801,7 @@ public final class class_166 {
                         if(-1 == 704991190 * var8.field_824 && null == var8.field_842) {
                            var32 = var8.method_1488(4, var4, var15, var17, var16, var18, (byte)127);
                         } else {
-                           var10000 = new class_96;
-                           var10000.method_1781(var3, 4, var4, var0, var1, var2, var8.field_824 * -279653453, var8.field_850, (class_91)null);
+                           var10000 = new class_96(var3, 4, var4, var0, var1, var2, var8.field_824 * -279653453, var8.field_850, (class_91)null);
                            var32 = var10000;
                         }
 
@@ -1829,8 +1816,7 @@ public final class class_166 {
                         if(var8.field_824 * 91732693 == -1 && null == var8.field_842) {
                            var32 = var8.method_1488(4, 4 + var4, var15, var17, var16, var18, (byte)61);
                         } else {
-                           var10000 = new class_96;
-                           var10000.method_1781(var3, 4, 4 + var4, var0, var1, var2, 91732693 * var8.field_824, var8.field_850, (class_91)null);
+                           var10000 = new class_96(var3, 4, 4 + var4, var0, var1, var2, 91732693 * var8.field_824, var8.field_850, (class_91)null);
                            var32 = var10000;
                         }
 
@@ -1840,8 +1826,7 @@ public final class class_166 {
                         if(var8.field_824 * 91732693 == -1 && null == var8.field_842) {
                            var22 = var8.method_1488(4, 4 + var23, var15, var17, var16, var18, (byte)111);
                         } else {
-                           var10000 = new class_96;
-                           var10000.method_1781(var3, 4, var23 + 4, var0, var1, var2, 1629054778 * var8.field_824, var8.field_850, (class_91)null);
+                           var10000 = new class_96(var3, 4, var23 + 4, var0, var1, var2, 1629054778 * var8.field_824, var8.field_850, (class_91)null);
                            var22 = var10000;
                         }
 
@@ -1859,11 +1844,9 @@ public final class class_166 {
                            var32 = var8.method_1488(4, var4 + 4, var15, var17, var16, var18, (byte)75);
                            var26 = var8.method_1488(4, var27 + 4, var15, var17, var16, var18, (byte)21);
                         } else {
-                           var10000 = new class_96;
-                           var10000.method_1781(var3, 4, var4 + 4, var0, var1, var2, var8.field_824 * 91732693, var8.field_850, (class_91)null);
+                           var10000 = new class_96(var3, 4, var4 + 4, var0, var1, var2, var8.field_824 * 91732693, var8.field_850, (class_91)null);
                            var32 = var10000;
-                           var10000 = new class_96;
-                           var10000.method_1781(var3, 4, 4 + var27, var0, var1, var2, 91732693 * var8.field_824, var8.field_850, (class_91)null);
+                           var10000 = new class_96(var3, 4, 4 + var27, var0, var1, var2, 91732693 * var8.field_824, var8.field_850, (class_91)null);
                            var26 = var10000;
                         }
 
@@ -1875,8 +1858,7 @@ public final class class_166 {
                if(-1 == 1479826029 * var8.field_824 && var8.field_842 == null) {
                   var22 = var8.method_1488(10, var4, var15, var17, var16, var18, (byte)88);
                } else {
-                  var10000 = new class_96;
-                  var10000.method_1781(var3, 10, var4, var0, var1, var2, var8.field_824 * 8704466, var8.field_850, (class_91)null);
+                  var10000 = new class_96(var3, 10, var4, var0, var1, var2, var8.field_824 * 8704466, var8.field_850, (class_91)null);
                   var22 = var10000;
                }
 
@@ -2380,9 +2362,9 @@ public final class class_166 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_3584() throws Throwable {
+   class_166() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "cg.<init>(" + ')');
@@ -2462,8 +2444,7 @@ public final class class_166 {
                if(var8.field_824 * 91732693 == -1 && var8.field_842 == null) {
                   var22 = var8.method_1488(22, var4, var15, var17, var16, var18, (byte)104);
                } else {
-                  var10000 = new class_96;
-                  var10000.method_1781(var3, 22, var4, var0, var1, var2, 1374465789 * var8.field_824, var8.field_850, (class_91)null);
+                  var10000 = new class_96(var3, 22, var4, var0, var1, var2, 1374465789 * var8.field_824, var8.field_850, (class_91)null);
                   var22 = var10000;
                }
 
@@ -2480,8 +2461,7 @@ public final class class_166 {
                   if(var8.field_824 * 91732693 == -1 && var8.field_842 == null) {
                      var22 = var8.method_1488(var5, var4, var15, var17, var16, var18, (byte)80);
                   } else {
-                     var10000 = new class_96;
-                     var10000.method_1781(var3, var5, var4, var0, var1, var2, var8.field_824 * 91732693, var8.field_850, (class_91)null);
+                     var10000 = new class_96(var3, var5, var4, var0, var1, var2, var8.field_824 * 91732693, var8.field_850, (class_91)null);
                      var22 = var10000;
                   }
 
@@ -2498,8 +2478,7 @@ public final class class_166 {
                   if(-1 == 91732693 * var8.field_824 && null == var8.field_842) {
                      var22 = var8.method_1488(0, var4, var15, var17, var16, var18, (byte)10);
                   } else {
-                     var10000 = new class_96;
-                     var10000.method_1781(var3, 0, var4, var0, var1, var2, 712117866 * var8.field_824, var8.field_850, (class_91)null);
+                     var10000 = new class_96(var3, 0, var4, var0, var1, var2, 712117866 * var8.field_824, var8.field_850, (class_91)null);
                      var22 = var10000;
                   }
 
@@ -2554,8 +2533,7 @@ public final class class_166 {
                   if(-1 == var8.field_824 * 91732693 && var8.field_842 == null) {
                      var22 = var8.method_1488(1, var4, var15, var17, var16, var18, (byte)52);
                   } else {
-                     var10000 = new class_96;
-                     var10000.method_1781(var3, 1, var4, var0, var1, var2, var8.field_824 * 91732693, var8.field_850, (class_91)null);
+                     var10000 = new class_96(var3, 1, var4, var0, var1, var2, var8.field_824 * 91732693, var8.field_850, (class_91)null);
                      var22 = var10000;
                   }
 
@@ -2586,11 +2564,9 @@ public final class class_166 {
                         var31 = var8.method_1488(2, var4 + 4, var15, var17, var16, var18, (byte)83);
                         var30 = var8.method_1488(2, var28, var15, var17, var16, var18, (byte)8);
                      } else {
-                        var10000 = new class_96;
-                        var10000.method_1781(var3, 2, 4 + var4, var0, var1, var2, var8.field_824 * 91732693, var8.field_850, (class_91)null);
+                        var10000 = new class_96(var3, 2, 4 + var4, var0, var1, var2, var8.field_824 * 91732693, var8.field_850, (class_91)null);
                         var31 = var10000;
-                        var10000 = new class_96;
-                        var10000.method_1781(var3, 2, var28, var0, var1, var2, var8.field_824 * 91732693, var8.field_850, (class_91)null);
+                        var10000 = new class_96(var3, 2, var28, var0, var1, var2, var8.field_824 * 91732693, var8.field_850, (class_91)null);
                         var30 = var10000;
                      }
 
@@ -2623,8 +2599,7 @@ public final class class_166 {
                      if(var8.field_824 * -317834484 == -1 && null == var8.field_842) {
                         var22 = var8.method_1488(3, var4, var15, var17, var16, var18, (byte)11);
                      } else {
-                        var10000 = new class_96;
-                        var10000.method_1781(var3, 3, var4, var0, var1, var2, 91732693 * var8.field_824, var8.field_850, (class_91)null);
+                        var10000 = new class_96(var3, 3, var4, var0, var1, var2, 91732693 * var8.field_824, var8.field_850, (class_91)null);
                         var22 = var10000;
                      }
 
@@ -2649,8 +2624,7 @@ public final class class_166 {
                      if(-1 == var8.field_824 * 91732693 && null == var8.field_842) {
                         var22 = var8.method_1488(var5, var4, var15, var17, var16, var18, (byte)27);
                      } else {
-                        var10000 = new class_96;
-                        var10000.method_1781(var3, var5, var4, var0, var1, var2, var8.field_824 * -59935920, var8.field_850, (class_91)null);
+                        var10000 = new class_96(var3, var5, var4, var0, var1, var2, var8.field_824 * -59935920, var8.field_850, (class_91)null);
                         var22 = var10000;
                      }
 
@@ -2667,8 +2641,7 @@ public final class class_166 {
                      if(-1 == 91732693 * var8.field_824 && var8.field_842 == null) {
                         var22 = var8.method_1488(4, var4, var15, var17, var16, var18, (byte)51);
                      } else {
-                        var10000 = new class_96;
-                        var10000.method_1781(var3, 4, var4, var0, var1, var2, var8.field_824 * 91732693, var8.field_850, (class_91)null);
+                        var10000 = new class_96(var3, 4, var4, var0, var1, var2, var8.field_824 * 91732693, var8.field_850, (class_91)null);
                         var22 = var10000;
                      }
 
@@ -2686,8 +2659,7 @@ public final class class_166 {
                         if(-1 == 91732693 * var8.field_824 && null == var8.field_842) {
                            var32 = var8.method_1488(4, var4, var15, var17, var16, var18, (byte)24);
                         } else {
-                           var10000 = new class_96;
-                           var10000.method_1781(var3, 4, var4, var0, var1, var2, var8.field_824 * 91732693, var8.field_850, (class_91)null);
+                           var10000 = new class_96(var3, 4, var4, var0, var1, var2, var8.field_824 * 91732693, var8.field_850, (class_91)null);
                            var32 = var10000;
                         }
 
@@ -2702,8 +2674,7 @@ public final class class_166 {
                         if(var8.field_824 * 10527451 == -1 && null == var8.field_842) {
                            var32 = var8.method_1488(4, 4 + var4, var15, var17, var16, var18, (byte)112);
                         } else {
-                           var10000 = new class_96;
-                           var10000.method_1781(var3, 4, 4 + var4, var0, var1, var2, 91732693 * var8.field_824, var8.field_850, (class_91)null);
+                           var10000 = new class_96(var3, 4, 4 + var4, var0, var1, var2, 91732693 * var8.field_824, var8.field_850, (class_91)null);
                            var32 = var10000;
                         }
 
@@ -2713,8 +2684,7 @@ public final class class_166 {
                         if(var8.field_824 * 2002221219 == -1 && null == var8.field_842) {
                            var22 = var8.method_1488(4, 4 + var23, var15, var17, var16, var18, (byte)67);
                         } else {
-                           var10000 = new class_96;
-                           var10000.method_1781(var3, 4, var23 + 4, var0, var1, var2, 242675302 * var8.field_824, var8.field_850, (class_91)null);
+                           var10000 = new class_96(var3, 4, var23 + 4, var0, var1, var2, 242675302 * var8.field_824, var8.field_850, (class_91)null);
                            var22 = var10000;
                         }
 
@@ -2732,11 +2702,9 @@ public final class class_166 {
                            var32 = var8.method_1488(4, var4 + 4, var15, var17, var16, var18, (byte)36);
                            var26 = var8.method_1488(4, var27 + 4, var15, var17, var16, var18, (byte)50);
                         } else {
-                           var10000 = new class_96;
-                           var10000.method_1781(var3, 4, var4 + 4, var0, var1, var2, var8.field_824 * -1573583239, var8.field_850, (class_91)null);
+                           var10000 = new class_96(var3, 4, var4 + 4, var0, var1, var2, var8.field_824 * -1573583239, var8.field_850, (class_91)null);
                            var32 = var10000;
-                           var10000 = new class_96;
-                           var10000.method_1781(var3, 4, 4 + var27, var0, var1, var2, 91732693 * var8.field_824, var8.field_850, (class_91)null);
+                           var10000 = new class_96(var3, 4, 4 + var27, var0, var1, var2, 91732693 * var8.field_824, var8.field_850, (class_91)null);
                            var26 = var10000;
                         }
 
@@ -2748,8 +2716,7 @@ public final class class_166 {
                if(-1 == 388641744 * var8.field_824 && var8.field_842 == null) {
                   var22 = var8.method_1488(10, var4, var15, var17, var16, var18, (byte)110);
                } else {
-                  var10000 = new class_96;
-                  var10000.method_1781(var3, 10, var4, var0, var1, var2, var8.field_824 * 763794534, var8.field_850, (class_91)null);
+                  var10000 = new class_96(var3, 10, var4, var0, var1, var2, var8.field_824 * 763794534, var8.field_850, (class_91)null);
                   var22 = var10000;
                }
 
@@ -2876,8 +2843,7 @@ public final class class_166 {
          }
       }
 
-      class_28 var10000 = new class_28;
-      var10000.method_178(var0);
+      class_28 var10000 = new class_28(var0);
       class_28 var10 = var10000;
 
       for(var7 = 0; var7 < 4; ++var7) {
@@ -2963,8 +2929,7 @@ public final class class_166 {
          if(91732693 * var9.field_824 == -1 && null == var9.field_842) {
             var23 = var9.method_1489(22, var5, var16, var18, var17, var19, -925676771);
          } else {
-            var10000 = new class_96;
-            var10000.method_1781(var4, 22, var5, var1, var2, var3, var9.field_824 * 91732693, var9.field_850, (class_91)null);
+            var10000 = new class_96(var4, 22, var5, var1, var2, var3, var9.field_824 * 91732693, var9.field_850, (class_91)null);
             var23 = var10000;
          }
 
@@ -2978,8 +2943,7 @@ public final class class_166 {
             if(-1 == var9.field_824 * 91732693 && null == var9.field_842) {
                var23 = var9.method_1489(var6, var5, var16, var18, var17, var19, -925676771);
             } else {
-               var10000 = new class_96;
-               var10000.method_1781(var4, var6, var5, var1, var2, var3, var9.field_824 * 91732693, var9.field_850, (class_91)null);
+               var10000 = new class_96(var4, var6, var5, var1, var2, var3, var9.field_824 * 91732693, var9.field_850, (class_91)null);
                var23 = var10000;
             }
 
@@ -2992,8 +2956,7 @@ public final class class_166 {
             if(var9.field_824 * 91732693 == -1 && null == var9.field_842) {
                var23 = var9.method_1489(0, var5, var16, var18, var17, var19, -925676771);
             } else {
-               var10000 = new class_96;
-               var10000.method_1781(var4, 0, var5, var1, var2, var3, 91732693 * var9.field_824, var9.field_850, (class_91)null);
+               var10000 = new class_96(var4, 0, var5, var1, var2, var3, 91732693 * var9.field_824, var9.field_850, (class_91)null);
                var23 = var10000;
             }
 
@@ -3006,8 +2969,7 @@ public final class class_166 {
             if(-1 == 91732693 * var9.field_824 && null == var9.field_842) {
                var23 = var9.method_1489(1, var5, var16, var18, var17, var19, -925676771);
             } else {
-               var10000 = new class_96;
-               var10000.method_1781(var4, 1, var5, var1, var2, var3, 91732693 * var9.field_824, var9.field_850, (class_91)null);
+               var10000 = new class_96(var4, 1, var5, var1, var2, var3, 91732693 * var9.field_824, var9.field_850, (class_91)null);
                var23 = var10000;
             }
 
@@ -3026,11 +2988,9 @@ public final class class_166 {
                   var31 = var9.method_1489(2, 4 + var5, var16, var18, var17, var19, -925676771);
                   var25 = var9.method_1489(2, var29, var16, var18, var17, var19, -925676771);
                } else {
-                  var10000 = new class_96;
-                  var10000.method_1781(var4, 2, var5 + 4, var1, var2, var3, var9.field_824 * 91732693, var9.field_850, (class_91)null);
+                  var10000 = new class_96(var4, 2, var5 + 4, var1, var2, var3, var9.field_824 * 91732693, var9.field_850, (class_91)null);
                   var31 = var10000;
-                  var10000 = new class_96;
-                  var10000.method_1781(var4, 2, var29, var1, var2, var3, 91732693 * var9.field_824, var9.field_850, (class_91)null);
+                  var10000 = new class_96(var4, 2, var29, var1, var2, var3, 91732693 * var9.field_824, var9.field_850, (class_91)null);
                   var25 = var10000;
                }
 
@@ -3043,8 +3003,7 @@ public final class class_166 {
                if(91732693 * var9.field_824 == -1 && var9.field_842 == null) {
                   var23 = var9.method_1489(3, var5, var16, var18, var17, var19, -925676771);
                } else {
-                  var10000 = new class_96;
-                  var10000.method_1781(var4, 3, var5, var1, var2, var3, var9.field_824 * 91732693, var9.field_850, (class_91)null);
+                  var10000 = new class_96(var4, 3, var5, var1, var2, var3, var9.field_824 * 91732693, var9.field_850, (class_91)null);
                   var23 = var10000;
                }
 
@@ -3057,8 +3016,7 @@ public final class class_166 {
                if(var9.field_824 * 91732693 == -1 && null == var9.field_842) {
                   var23 = var9.method_1489(var6, var5, var16, var18, var17, var19, -925676771);
                } else {
-                  var10000 = new class_96;
-                  var10000.method_1781(var4, var6, var5, var1, var2, var3, 91732693 * var9.field_824, var9.field_850, (class_91)null);
+                  var10000 = new class_96(var4, var6, var5, var1, var2, var3, 91732693 * var9.field_824, var9.field_850, (class_91)null);
                   var23 = var10000;
                }
 
@@ -3071,8 +3029,7 @@ public final class class_166 {
                if(var9.field_824 * 91732693 == -1 && var9.field_842 == null) {
                   var23 = var9.method_1489(4, var5, var16, var18, var17, var19, -925676771);
                } else {
-                  var10000 = new class_96;
-                  var10000.method_1781(var4, 4, var5, var1, var2, var3, 91732693 * var9.field_824, var9.field_850, (class_91)null);
+                  var10000 = new class_96(var4, 4, var5, var1, var2, var3, 91732693 * var9.field_824, var9.field_850, (class_91)null);
                   var23 = var10000;
                }
 
@@ -3090,8 +3047,7 @@ public final class class_166 {
                   if(-1 == 91732693 * var9.field_824 && null == var9.field_842) {
                      var26 = var9.method_1489(4, var5, var16, var18, var17, var19, -925676771);
                   } else {
-                     var10000 = new class_96;
-                     var10000.method_1781(var4, 4, var5, var1, var2, var3, var9.field_824 * 91732693, var9.field_850, (class_91)null);
+                     var10000 = new class_96(var4, 4, var5, var1, var2, var3, var9.field_824 * 91732693, var9.field_850, (class_91)null);
                      var26 = var10000;
                   }
 
@@ -3106,8 +3062,7 @@ public final class class_166 {
                   if(-1 == var9.field_824 * 91732693 && var9.field_842 == null) {
                      var26 = var9.method_1489(4, var5 + 4, var16, var18, var17, var19, -925676771);
                   } else {
-                     var10000 = new class_96;
-                     var10000.method_1781(var4, 4, 4 + var5, var1, var2, var3, 91732693 * var9.field_824, var9.field_850, (class_91)null);
+                     var10000 = new class_96(var4, 4, 4 + var5, var1, var2, var3, 91732693 * var9.field_824, var9.field_850, (class_91)null);
                      var26 = var10000;
                   }
 
@@ -3117,8 +3072,7 @@ public final class class_166 {
                   if(-1 == var9.field_824 * 91732693 && var9.field_842 == null) {
                      var23 = var9.method_1489(4, var30 + 4, var16, var18, var17, var19, -925676771);
                   } else {
-                     var10000 = new class_96;
-                     var10000.method_1781(var4, 4, var30 + 4, var1, var2, var3, var9.field_824 * 91732693, var9.field_850, (class_91)null);
+                     var10000 = new class_96(var4, 4, var30 + 4, var1, var2, var3, var9.field_824 * 91732693, var9.field_850, (class_91)null);
                      var23 = var10000;
                   }
 
@@ -3136,11 +3090,9 @@ public final class class_166 {
                      var26 = var9.method_1489(4, var5 + 4, var16, var18, var17, var19, -925676771);
                      var27 = var9.method_1489(4, 4 + var28, var16, var18, var17, var19, -925676771);
                   } else {
-                     var10000 = new class_96;
-                     var10000.method_1781(var4, 4, 4 + var5, var1, var2, var3, var9.field_824 * 91732693, var9.field_850, (class_91)null);
+                     var10000 = new class_96(var4, 4, 4 + var5, var1, var2, var3, var9.field_824 * 91732693, var9.field_850, (class_91)null);
                      var26 = var10000;
-                     var10000 = new class_96;
-                     var10000.method_1781(var4, 4, var28 + 4, var1, var2, var3, var9.field_824 * 91732693, var9.field_850, (class_91)null);
+                     var10000 = new class_96(var4, 4, var28 + 4, var1, var2, var3, var9.field_824 * 91732693, var9.field_850, (class_91)null);
                      var27 = var10000;
                   }
 
@@ -3152,8 +3104,7 @@ public final class class_166 {
          if(-1 == 91732693 * var9.field_824 && null == var9.field_842) {
             var23 = var9.method_1489(10, var5, var16, var18, var17, var19, -925676771);
          } else {
-            var10000 = new class_96;
-            var10000.method_1781(var4, 10, var5, var1, var2, var3, var9.field_824 * 91732693, var9.field_850, (class_91)null);
+            var10000 = new class_96(var4, 10, var5, var1, var2, var3, var9.field_824 * 91732693, var9.field_850, (class_91)null);
             var23 = var10000;
          }
 

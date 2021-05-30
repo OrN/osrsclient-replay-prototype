@@ -260,7 +260,7 @@ public class class_159 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_3306() {
+   class_159() {
       super();
       this.field_1972 = new int[]{0, 0, 0, 0, 0};
       this.field_1973 = new int[]{0, 0, 0, 0, 0};
@@ -475,23 +475,19 @@ public class class_159 {
 
    // $FF: renamed from: f (nd) void
    final void method_3308(class_28 var1) {
-      class_156 var10001 = new class_156;
-      var10001.method_3265();
+      class_156 var10001 = new class_156();
       this.field_1975 = var10001;
       this.field_1975.method_3264(var1);
-      var10001 = new class_156;
-      var10001.method_3265();
+      var10001 = new class_156();
       this.field_1965 = var10001;
       this.field_1965.method_3264(var1);
       int var2 = var1.method_130(-491238564);
       if(var2 != 0) {
          var1.field_15 -= -1025691571;
-         var10001 = new class_156;
-         var10001.method_3265();
+         var10001 = new class_156();
          this.field_1966 = var10001;
          this.field_1966.method_3264(var1);
-         var10001 = new class_156;
-         var10001.method_3265();
+         var10001 = new class_156();
          this.field_1967 = var10001;
          this.field_1967.method_3264(var1);
       }
@@ -499,12 +495,10 @@ public class class_159 {
       var2 = var1.method_130(-205366611);
       if(var2 != 0) {
          var1.field_15 -= -1025691571;
-         var10001 = new class_156;
-         var10001.method_3265();
+         var10001 = new class_156();
          this.field_1969 = var10001;
          this.field_1969.method_3264(var1);
-         var10001 = new class_156;
-         var10001.method_3265();
+         var10001 = new class_156();
          this.field_1964 = var10001;
          this.field_1964.method_3264(var1);
       }
@@ -512,12 +506,10 @@ public class class_159 {
       var2 = var1.method_130(-1694357461);
       if(var2 != 0) {
          var1.field_15 -= -1025691571;
-         var10001 = new class_156;
-         var10001.method_3265();
+         var10001 = new class_156();
          this.field_1970 = var10001;
          this.field_1970.method_3264(var1);
-         var10001 = new class_156;
-         var10001.method_3265();
+         var10001 = new class_156();
          this.field_1971 = var10001;
          this.field_1971.method_3264(var1);
       }
@@ -537,17 +529,15 @@ public class class_159 {
       this.field_1986 = var1.method_144((byte)-27);
       this.field_1982 = var1.method_132((byte)-40);
       this.field_1980 = var1.method_132((byte)-24);
-      class_150 var5 = new class_150;
-      var5.method_3184();
+      class_150 var5 = new class_150();
       this.field_1968 = var5;
-      var10001 = new class_156;
-      var10001.method_3265();
+      var10001 = new class_156();
       this.field_1978 = var10001;
       this.field_1968.method_3188(var1, this.field_1978);
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_3309() {
+   static {
       field_1983 = new int['\u8000'];
       Random var0 = new Random(0L);
 
@@ -1188,23 +1178,19 @@ public class class_159 {
 
    // $FF: renamed from: d (nd) void
    final void method_3315(class_28 var1) {
-      class_156 var10001 = new class_156;
-      var10001.method_3265();
+      class_156 var10001 = new class_156();
       this.field_1975 = var10001;
       this.field_1975.method_3264(var1);
-      var10001 = new class_156;
-      var10001.method_3265();
+      var10001 = new class_156();
       this.field_1965 = var10001;
       this.field_1965.method_3264(var1);
       int var2 = var1.method_130(-1775171999);
       if(var2 != 0) {
          var1.field_15 -= -1025691571;
-         var10001 = new class_156;
-         var10001.method_3265();
+         var10001 = new class_156();
          this.field_1966 = var10001;
          this.field_1966.method_3264(var1);
-         var10001 = new class_156;
-         var10001.method_3265();
+         var10001 = new class_156();
          this.field_1967 = var10001;
          this.field_1967.method_3264(var1);
       }
@@ -1212,12 +1198,10 @@ public class class_159 {
       var2 = var1.method_130(-238955827);
       if(var2 != 0) {
          var1.field_15 -= -708323921;
-         var10001 = new class_156;
-         var10001.method_3265();
+         var10001 = new class_156();
          this.field_1969 = var10001;
          this.field_1969.method_3264(var1);
-         var10001 = new class_156;
-         var10001.method_3265();
+         var10001 = new class_156();
          this.field_1964 = var10001;
          this.field_1964.method_3264(var1);
       }
@@ -1225,12 +1209,10 @@ public class class_159 {
       var2 = var1.method_130(-1385355184);
       if(var2 != 0) {
          var1.field_15 -= -1025691571;
-         var10001 = new class_156;
-         var10001.method_3265();
+         var10001 = new class_156();
          this.field_1970 = var10001;
          this.field_1970.method_3264(var1);
-         var10001 = new class_156;
-         var10001.method_3265();
+         var10001 = new class_156();
          this.field_1971 = var10001;
          this.field_1971.method_3264(var1);
       }
@@ -1250,34 +1232,28 @@ public class class_159 {
       this.field_1986 = var1.method_144((byte)-47);
       this.field_1982 = var1.method_132((byte)-58);
       this.field_1980 = var1.method_132((byte)-89);
-      class_150 var5 = new class_150;
-      var5.method_3184();
+      class_150 var5 = new class_150();
       this.field_1968 = var5;
-      var10001 = new class_156;
-      var10001.method_3265();
+      var10001 = new class_156();
       this.field_1978 = var10001;
       this.field_1968.method_3188(var1, this.field_1978);
    }
 
    // $FF: renamed from: s (nd) void
    final void method_3316(class_28 var1) {
-      class_156 var10001 = new class_156;
-      var10001.method_3265();
+      class_156 var10001 = new class_156();
       this.field_1975 = var10001;
       this.field_1975.method_3264(var1);
-      var10001 = new class_156;
-      var10001.method_3265();
+      var10001 = new class_156();
       this.field_1965 = var10001;
       this.field_1965.method_3264(var1);
       int var2 = var1.method_130(349839628);
       if(var2 != 0) {
          var1.field_15 -= -1025691571;
-         var10001 = new class_156;
-         var10001.method_3265();
+         var10001 = new class_156();
          this.field_1966 = var10001;
          this.field_1966.method_3264(var1);
-         var10001 = new class_156;
-         var10001.method_3265();
+         var10001 = new class_156();
          this.field_1967 = var10001;
          this.field_1967.method_3264(var1);
       }
@@ -1285,12 +1261,10 @@ public class class_159 {
       var2 = var1.method_130(1897428687);
       if(var2 != 0) {
          var1.field_15 -= -1025691571;
-         var10001 = new class_156;
-         var10001.method_3265();
+         var10001 = new class_156();
          this.field_1969 = var10001;
          this.field_1969.method_3264(var1);
-         var10001 = new class_156;
-         var10001.method_3265();
+         var10001 = new class_156();
          this.field_1964 = var10001;
          this.field_1964.method_3264(var1);
       }
@@ -1298,12 +1272,10 @@ public class class_159 {
       var2 = var1.method_130(-584305092);
       if(var2 != 0) {
          var1.field_15 -= -1025691571;
-         var10001 = new class_156;
-         var10001.method_3265();
+         var10001 = new class_156();
          this.field_1970 = var10001;
          this.field_1970.method_3264(var1);
-         var10001 = new class_156;
-         var10001.method_3265();
+         var10001 = new class_156();
          this.field_1971 = var10001;
          this.field_1971.method_3264(var1);
       }
@@ -1323,34 +1295,28 @@ public class class_159 {
       this.field_1986 = var1.method_144((byte)80);
       this.field_1982 = var1.method_132((byte)-39);
       this.field_1980 = var1.method_132((byte)-43);
-      class_150 var5 = new class_150;
-      var5.method_3184();
+      class_150 var5 = new class_150();
       this.field_1968 = var5;
-      var10001 = new class_156;
-      var10001.method_3265();
+      var10001 = new class_156();
       this.field_1978 = var10001;
       this.field_1968.method_3188(var1, this.field_1978);
    }
 
    // $FF: renamed from: u (nd) void
    final void method_3317(class_28 var1) {
-      class_156 var10001 = new class_156;
-      var10001.method_3265();
+      class_156 var10001 = new class_156();
       this.field_1975 = var10001;
       this.field_1975.method_3264(var1);
-      var10001 = new class_156;
-      var10001.method_3265();
+      var10001 = new class_156();
       this.field_1965 = var10001;
       this.field_1965.method_3264(var1);
       int var2 = var1.method_130(-1073109568);
       if(var2 != 0) {
          var1.field_15 -= -1025691571;
-         var10001 = new class_156;
-         var10001.method_3265();
+         var10001 = new class_156();
          this.field_1966 = var10001;
          this.field_1966.method_3264(var1);
-         var10001 = new class_156;
-         var10001.method_3265();
+         var10001 = new class_156();
          this.field_1967 = var10001;
          this.field_1967.method_3264(var1);
       }
@@ -1358,12 +1324,10 @@ public class class_159 {
       var2 = var1.method_130(52213380);
       if(var2 != 0) {
          var1.field_15 -= 1348412136;
-         var10001 = new class_156;
-         var10001.method_3265();
+         var10001 = new class_156();
          this.field_1969 = var10001;
          this.field_1969.method_3264(var1);
-         var10001 = new class_156;
-         var10001.method_3265();
+         var10001 = new class_156();
          this.field_1964 = var10001;
          this.field_1964.method_3264(var1);
       }
@@ -1371,12 +1335,10 @@ public class class_159 {
       var2 = var1.method_130(1559204453);
       if(var2 != 0) {
          var1.field_15 -= -1025691571;
-         var10001 = new class_156;
-         var10001.method_3265();
+         var10001 = new class_156();
          this.field_1970 = var10001;
          this.field_1970.method_3264(var1);
-         var10001 = new class_156;
-         var10001.method_3265();
+         var10001 = new class_156();
          this.field_1971 = var10001;
          this.field_1971.method_3264(var1);
       }
@@ -1396,11 +1358,9 @@ public class class_159 {
       this.field_1986 = var1.method_144((byte)33);
       this.field_1982 = var1.method_132((byte)-123);
       this.field_1980 = var1.method_132((byte)-41);
-      class_150 var5 = new class_150;
-      var5.method_3184();
+      class_150 var5 = new class_150();
       this.field_1968 = var5;
-      var10001 = new class_156;
-      var10001.method_3265();
+      var10001 = new class_156();
       this.field_1978 = var10001;
       this.field_1968.method_3188(var1, this.field_1978);
    }

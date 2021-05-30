@@ -58,8 +58,7 @@ public class class_190 {
                   }
                }
 
-               class_28 var10000 = new class_28;
-               var10000.method_160(var2);
+               class_28 var10000 = new class_28(var2);
                class_28 var23 = var10000;
                var23.method_210(2, 303066737);
                var23.method_333(var3, 843693192);
@@ -204,9 +203,9 @@ public class class_190 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_3910() {
+   class_190() {
+      super();
       try {
-         super();
          this.field_2285 = false;
          int var1 = class_123.field_1348.method_5393(19, 1724087023);
          this.field_2282 = new HashMap();
@@ -276,8 +275,7 @@ public class class_190 {
                      }
                   }
 
-                  class_28 var10000 = new class_28;
-                  var10000.method_160(var3);
+                  class_28 var10000 = new class_28(var3);
                   class_28 var26 = var10000;
                   var26.method_210(2, 303066737);
                   var26.method_333(var4, -1254430750);
@@ -363,8 +361,7 @@ public class class_190 {
                            }
                         }
 
-                        class_28 var10000 = new class_28;
-                        var10000.method_178(var3);
+                        class_28 var10000 = new class_28(var3);
                         class_28 var32 = var10000;
                         if(var32.field_12.length - -442398587 * var32.field_15 < 1) {
                            if(var1 <= 13) {
@@ -571,8 +568,7 @@ public class class_190 {
                         }
                      }
 
-                     class_28 var10000 = new class_28;
-                     var10000.method_178(var2);
+                     class_28 var10000 = new class_28(var2);
                      class_28 var29 = var10000;
                      if(var29.field_12.length - 12123245 * var29.field_15 < 1) {
                         var21 = false;
@@ -833,8 +829,7 @@ public class class_190 {
                         }
                      }
 
-                     class_28 var10000 = new class_28;
-                     var10000.method_178(var2);
+                     class_28 var10000 = new class_28(var2);
                      class_28 var29 = var10000;
                      if(var29.field_12.length - -442398587 * var29.field_15 < 1) {
                         var21 = false;
@@ -1016,16 +1011,14 @@ public class class_190 {
             }
          } else {
             byte[] var3 = class_86.field_796.method_5381(11, var0, -26460885);
-            class_86 var10000 = new class_86;
-            var10000.method_105();
+            class_86 var10000 = new class_86();
             var2 = var10000;
             if(var3 != null) {
                if(var1 == -1740533248) {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28;
-               var10001.method_178(var3);
+               class_28 var10001 = new class_28(var3);
                var2.method_1462(var10001, (short)-22209);
             }
 

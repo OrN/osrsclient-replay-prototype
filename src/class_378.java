@@ -81,9 +81,9 @@ public final class class_378 {
 
 
    // $FF: renamed from: <init> () void
-   void method_6656() {
+   class_378() {
+      super();
       try {
-         super();
          this.field_4171 = 4096;
          this.field_4161 = 16;
          this.field_4162 = 258;

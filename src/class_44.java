@@ -140,8 +140,7 @@ public class class_44 extends class_27 {
             this.field_318 = new ArrayList(var5);
 
             for(int var6 = 0; var6 < var5; ++var6) {
-               class_178 var10000 = new class_178;
-               var10000.method_3802();
+               class_178 var10000 = new class_178();
                class_178 var7 = var10000;
                if(this.field_320) {
                   if(var2 <= -631068980) {
@@ -247,9 +246,9 @@ public class class_44 extends class_27 {
    }
 
    // $FF: renamed from: <init> (nd) void
-   public void method_508(class_28 var1) {
+   public class_44(class_28 var1) {
+      super();
       try {
-         super.method_105();
          this.field_317 = true;
          this.field_321 = null;
          this.method_503(var1, -104022179);
@@ -349,7 +348,7 @@ public class class_44 extends class_27 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_512() {
+   static {
       new BitSet(65536);
    }
 
@@ -410,8 +409,7 @@ public class class_44 extends class_27 {
          this.field_318 = new ArrayList(var4);
 
          for(int var5 = 0; var5 < var4; ++var5) {
-            class_178 var10000 = new class_178;
-            var10000.method_3802();
+            class_178 var10000 = new class_178();
             class_178 var6 = var10000;
             if(this.field_320) {
                var1.method_136(1193917737);
@@ -460,8 +458,7 @@ public class class_44 extends class_27 {
          this.field_318 = new ArrayList(var4);
 
          for(int var5 = 0; var5 < var4; ++var5) {
-            class_178 var10000 = new class_178;
-            var10000.method_3802();
+            class_178 var10000 = new class_178();
             class_178 var6 = var10000;
             if(this.field_320) {
                var1.method_136(-272472803);

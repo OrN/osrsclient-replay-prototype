@@ -27,7 +27,7 @@ public class class_252 {
 
 
    // $FF: renamed from: <clinit> () void
-   static void method_4895() {
+   static {
       field_2854 = new int[500];
       field_2850 = new int[500];
       field_2851 = new int[500];
@@ -35,17 +35,15 @@ public class class_252 {
    }
 
    // $FF: renamed from: <init> (byte[], ge) void
-   void method_4896(byte[] var1, class_43 var2) {
+   class_252(byte[] var1, class_43 var2) {
       super();
       this.field_2852 = null;
       this.field_2855 = -1;
       this.field_2859 = false;
       this.field_2852 = var2;
-      class_28 var10000 = new class_28;
-      var10000.method_178(var1);
+      class_28 var10000 = new class_28(var1);
       class_28 var3 = var10000;
-      var10000 = new class_28;
-      var10000.method_178(var1);
+      var10000 = new class_28(var1);
       class_28 var4 = var10000;
       var3.field_15 = -2051383142;
       int var5 = var3.method_130(1984145292);

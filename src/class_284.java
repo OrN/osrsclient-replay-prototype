@@ -17,9 +17,9 @@ public class class_284 {
 
 
    // $FF: renamed from: <init> () void
-   void method_5187() throws Throwable {
+   class_284() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "ip.<init>(" + ')');
@@ -27,7 +27,7 @@ public class class_284 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_5188() {
+   static {
       field_3259 = new String[][]{{"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"}, {"Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"}, {"jan", "fév", "mars", "avr", "mai", "juin", "juil", "août", "sept", "oct", "nov", "déc"}, {"jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"}, {"jan", "feb", "mrt", "apr", "mei", "jun", "jul", "aug", "sep", "okt", "nov", "dec"}, {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"}, {"ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"}};
       field_3257 = new String[]{"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
       Calendar.getInstance();

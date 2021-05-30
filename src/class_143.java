@@ -87,9 +87,9 @@ public final class class_143 extends class_142 {
    }
 
    // $FF: renamed from: <init> (int, int, java.awt.Component) void
-   void method_3070(int var1, int var2, Component var3) {
+   class_143(int var1, int var2, Component var3) {
+      super();
       try {
-         super.method_3063();
          this.field_1816 = 1768643867 * var1;
          this.field_1818 = -1013428683 * var2;
          this.field_1817 = new int[var1 * var2 + 1];

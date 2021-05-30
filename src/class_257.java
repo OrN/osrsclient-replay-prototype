@@ -56,9 +56,9 @@ public abstract class class_257 implements class_11 {
    }
 
    // $FF: renamed from: <init> (jd, kk, int) void
-   protected void method_4949(class_295 var1, class_324 var2, int var3) {
+   protected class_257(class_295 var1, class_324 var2, int var3) {
+      super();
       try {
-         super();
          this.field_2898 = -1874604065 * var3;
       } catch (RuntimeException var4) {
          throw class_223.method_4281(var4, "hf.<init>(" + ')');

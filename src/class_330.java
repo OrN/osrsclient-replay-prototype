@@ -36,7 +36,7 @@ public class class_330 implements Iterator {
    }
 
    // $FF: renamed from: <init> (ki) void
-   void method_5870(class_323 var1) {
+   class_330(class_323 var1) {
       super();
       this.field_3854 = null;
       this.method_5867(var1);

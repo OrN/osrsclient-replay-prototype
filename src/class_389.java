@@ -709,9 +709,8 @@ public final class class_389 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_6749() {
-      class_378 var10000 = new class_378;
-      var10000.method_6656();
+   static {
+      class_378 var10000 = new class_378();
       field_4237 = var10000;
    }
 
@@ -1783,7 +1782,7 @@ public final class class_389 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_6758() throws Throwable {
+   class_389() throws Throwable {
       super();
       throw new Error();
    }

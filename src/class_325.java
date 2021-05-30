@@ -50,9 +50,9 @@ public class class_325 implements class_14 {
    }
 
    // $FF: renamed from: <init> (java.lang.String, int, ky[]) void
-   void method_5774(String var1, int var2, class_336[] var3) {
+   class_325(String var1, int var2, class_336[] var3) {
+      super();
       try {
-         super();
          this.field_3839 = new HashSet();
          this.field_3830 = 1590874067 * var2;
          class_336[] var4 = var3;
@@ -73,9 +73,9 @@ public class class_325 implements class_14 {
    }
 
    // $FF: renamed from: <init> (java.lang.String, int) void
-   void method_5775(String var1, int var2) {
+   class_325(String var1, int var2) {
+      super();
       try {
-         super();
          this.field_3839 = new HashSet();
          this.field_3830 = 1590874067 * var2;
       } catch (RuntimeException var3) {
@@ -84,45 +84,32 @@ public class class_325 implements class_14 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_5776() {
-      class_325 var10000 = new class_325;
-      var10000.method_5774("", 0, new class_336[]{class_336.field_3876});
+   static {
+      class_325 var10000 = new class_325("", 0, new class_336[]{class_336.field_3876});
       field_3825 = var10000;
-      var10000 = new class_325;
-      var10000.method_5774("", 1, new class_336[]{class_336.field_3877, class_336.field_3876});
+      var10000 = new class_325("", 1, new class_336[]{class_336.field_3877, class_336.field_3876});
       field_3841 = var10000;
-      var10000 = new class_325;
-      var10000.method_5774("", 2, new class_336[]{class_336.field_3877, class_336.field_3880, class_336.field_3876});
+      var10000 = new class_325("", 2, new class_336[]{class_336.field_3877, class_336.field_3880, class_336.field_3876});
       field_3838 = var10000;
-      var10000 = new class_325;
-      var10000.method_5774("", 3, new class_336[]{class_336.field_3877});
+      var10000 = new class_325("", 3, new class_336[]{class_336.field_3877});
       field_3837 = var10000;
-      var10000 = new class_325;
-      var10000.method_5775("", 4);
+      var10000 = new class_325("", 4);
       field_3829 = var10000;
-      var10000 = new class_325;
-      var10000.method_5774("", 5, new class_336[]{class_336.field_3877, class_336.field_3876});
+      var10000 = new class_325("", 5, new class_336[]{class_336.field_3877, class_336.field_3876});
       field_3826 = var10000;
-      var10000 = new class_325;
-      var10000.method_5774("", 6, new class_336[]{class_336.field_3876});
+      var10000 = new class_325("", 6, new class_336[]{class_336.field_3876});
       field_3831 = var10000;
-      var10000 = new class_325;
-      var10000.method_5774("", 8, new class_336[]{class_336.field_3877, class_336.field_3876});
+      var10000 = new class_325("", 8, new class_336[]{class_336.field_3877, class_336.field_3876});
       field_3832 = var10000;
-      var10000 = new class_325;
-      var10000.method_5774("", 9, new class_336[]{class_336.field_3877, class_336.field_3880});
+      var10000 = new class_325("", 9, new class_336[]{class_336.field_3877, class_336.field_3880});
       field_3833 = var10000;
-      var10000 = new class_325;
-      var10000.method_5774("", 10, new class_336[]{class_336.field_3877});
+      var10000 = new class_325("", 10, new class_336[]{class_336.field_3877});
       field_3834 = var10000;
-      var10000 = new class_325;
-      var10000.method_5774("", 11, new class_336[]{class_336.field_3877});
+      var10000 = new class_325("", 11, new class_336[]{class_336.field_3877});
       field_3835 = var10000;
-      var10000 = new class_325;
-      var10000.method_5774("", 12, new class_336[]{class_336.field_3877, class_336.field_3876});
+      var10000 = new class_325("", 12, new class_336[]{class_336.field_3877, class_336.field_3876});
       field_3836 = var10000;
-      var10000 = new class_325;
-      var10000.method_5774("", 13, new class_336[]{class_336.field_3877});
+      var10000 = new class_325("", 13, new class_336[]{class_336.field_3877});
       field_3828 = var10000;
       method_5782(1537765097);
    }
@@ -511,8 +498,7 @@ public class class_325 implements class_14 {
             }
 
             var4 = class_100.method_1845(var3, -124194447);
-            class_369 var10000 = new class_369;
-            var10000.method_6590(var4);
+            class_369 var10000 = new class_369(var4);
             var1 = var10000;
          }
 
@@ -540,12 +526,10 @@ public class class_325 implements class_14 {
                   throw new IllegalStateException();
                }
 
-               class_34 var10 = new class_34;
-               var10.method_393(var0.method_139(-391631059));
+               class_34 var10 = new class_34(var0.method_139(-391631059));
                var7 = var10;
             } else {
-               class_32 var11 = new class_32;
-               var11.method_391(var0.method_135((byte)-86));
+               class_32 var11 = new class_32(var0.method_135((byte)-86));
                var7 = var11;
             }
 

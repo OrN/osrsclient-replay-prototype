@@ -136,9 +136,9 @@ public class class_276 {
    }
 
    // $FF: renamed from: <init> (byte[]) void
-   public void method_5129(byte[] var1) {
+   public class_276(byte[] var1) {
+      super();
       try {
-         super();
          int var2 = var1.length;
          this.field_3219 = new int[var2];
          this.field_3218 = var1;

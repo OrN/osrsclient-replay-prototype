@@ -319,9 +319,9 @@ public abstract class class_343 {
    }
 
    // $FF: renamed from: <init> (int) void
-   void method_6083(int var1) {
+   class_343(int var1) {
+      super();
       try {
-         super();
          this.field_3900 = 0;
          this.field_3902 = null;
          this.field_3901 = 1132480583 * var1;
@@ -588,11 +588,9 @@ public abstract class class_343 {
    // $FF: renamed from: f (byte[], int) cf
    static class_90 method_6116(byte[] var0, int var1) {
       try {
-         class_90 var10000 = new class_90;
-         var10000.method_105();
+         class_90 var10000 = new class_90();
          class_90 var2 = var10000;
-         class_28 var14 = new class_28;
-         var14.method_178(var0);
+         class_28 var14 = new class_28(var0);
          class_28 var3 = var14;
          var3.field_15 = -1025691571 * (var3.field_12.length - 2);
          int var4 = var3.method_132((byte)-68);
@@ -615,7 +613,6 @@ public abstract class class_343 {
                }
 
                var9 = var3.method_132((byte)-27);
-               class_369 var15 = new class_369;
                int var10002;
                if(var9 > 0) {
                   if(var1 != 1132367592) {
@@ -627,7 +624,7 @@ public abstract class class_343 {
                   var10002 = 1;
                }
 
-               var15.method_6590(var10002);
+               class_369 var15 = new class_369(var10002);
                class_369 var10 = var15;
                var2.field_908[var8] = var10;
 
@@ -638,8 +635,7 @@ public abstract class class_343 {
 
                   int var11 = var3.method_135((byte)-33);
                   int var12 = var3.method_135((byte)-123);
-                  class_32 var10001 = new class_32;
-                  var10001.method_391(var12);
+                  class_32 var10001 = new class_32(var12);
                   var10.method_6588(var10001, (long)var11);
                }
             }

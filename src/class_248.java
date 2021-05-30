@@ -21,9 +21,9 @@ public final class class_248 {
 
 
    // $FF: renamed from: <init> () void
-   void method_4716() {
+   class_248() {
+      super();
       try {
-         super();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "go.<init>(" + ')');
       }
@@ -46,8 +46,7 @@ public final class class_248 {
                      throw new IllegalStateException();
                   }
 
-                  class_45 var10000 = new class_45;
-                  var10000.method_105();
+                  class_45 var10000 = new class_45();
                   class_45 var5 = var10000;
                   var5.field_332 = var4;
                   var5.field_337 = var4.field_188;

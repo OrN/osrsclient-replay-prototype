@@ -52,9 +52,9 @@ public class class_355 extends class_354 {
    }
 
    // $FF: renamed from: <init> (ly, int) void
-   void method_6241(class_359 var1, int var2) {
+   class_355(class_359 var1, int var2) {
+      super();
       try {
-         super.method_6238();
          this.field_3967 = (int)(class_87.method_1516((byte)1) / 1000L) * 686676213;
          this.field_3965 = var1;
          this.field_3966 = (short)var2;

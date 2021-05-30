@@ -27,7 +27,7 @@ public class class_168 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_3610() {
+   static {
       field_2100 = new BigInteger("10001", 16);
       field_2099 = new BigInteger("88d2b28e43dc7be8f2376826a6d810274f07f489daf46f3fc0a40ad847e6c852b10e6939d9252721d4fb8501cf1348cdabec4165b62bd8aa0dbe6ed0394524dfe2cdce9287df5cbedb0d33bc1d9df71cb2e5c67a5d05fa058b182a192ad83fa80b8ff245b45500dce1f746b9a14db36d711c889f35183243d5805cd875580975", 16);
    }
@@ -40,13 +40,11 @@ public class class_168 {
             if(var1 <= 280539552) {
                throw new IllegalStateException();
             } else {
-               var10000 = new class_217;
-               var10000.method_4199();
+               var10000 = new class_217();
                return var10000;
             }
          } else {
-            var10000 = new class_217;
-            var10000.method_4200(class_86.method_1480(var0, (byte)92).field_502);
+            var10000 = new class_217(class_86.method_1480(var0, (byte)92).field_502);
             return var10000;
          }
       } catch (RuntimeException var2) {
@@ -55,9 +53,9 @@ public class class_168 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_3612() throws Throwable {
+   class_168() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "ci.<init>(" + ')');
@@ -75,8 +73,7 @@ public class class_168 {
             }
 
             try {
-               var10000 = new class_383;
-               var10000.method_6690(var4, "rw", 10000L);
+               var10000 = new class_383(var4, "rw", 10000L);
                class_383 var12 = var10000;
                return var12;
             } catch (IOException var10) {
@@ -99,7 +96,7 @@ public class class_168 {
             var5 = "_wip";
          }
 
-         File var6 = new File(class_115.field_1290, "jagex_" + var1 + "_preferences" + var0 + var5 + ".dat");
+         File var6 = new File(class_115.homeDirectory, "jagex_" + var1 + "_preferences" + var0 + var5 + ".dat");
          class_383 var7;
          if(!var2) {
             if(var3 <= 1676173537) {
@@ -108,8 +105,7 @@ public class class_168 {
 
             if(var6.exists()) {
                try {
-                  var10000 = new class_383;
-                  var10000.method_6690(var6, "rw", 10000L);
+                  var10000 = new class_383(var6, "rw", 10000L);
                   var7 = var10000;
                   return var7;
                } catch (IOException var9) {
@@ -119,8 +115,7 @@ public class class_168 {
          }
 
          try {
-            var10000 = new class_383;
-            var10000.method_6690(var4, "rw", 10000L);
+            var10000 = new class_383(var4, "rw", 10000L);
             var7 = var10000;
             return var7;
          } catch (IOException var8) {

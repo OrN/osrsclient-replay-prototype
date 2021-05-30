@@ -26,8 +26,7 @@ public class class_157 {
    // $FF: renamed from: v (int) void
    public static void method_3279(int var0) {
       try {
-         class_323 var10000 = new class_323;
-         var10000.method_5737();
+         class_323 var10000 = new class_323();
          class_153.field_1926 = var10000;
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "bu.v(" + ')');
@@ -457,14 +456,12 @@ public class class_157 {
    }
 
    // $FF: renamed from: <init> (jv, jv) void
-   public void method_3298(class_306 var1, class_306 var2) {
+   public class_157(class_306 var1, class_306 var2) {
+      super();
       try {
-         super();
-         class_364 var10001 = new class_364;
-         var10001.method_6538(256);
+         class_364 var10001 = new class_364(256);
          this.field_1953 = var10001;
-         var10001 = new class_364;
-         var10001.method_6538(256);
+         var10001 = new class_364(256);
          this.field_1955 = var10001;
          this.field_1954 = var1;
          this.field_1959 = var2;
@@ -477,19 +474,17 @@ public class class_157 {
    public static void method_3299(int var0) {
       try {
          try {
-            File var1 = new File(class_115.field_1290, "random.dat");
+            File fRandom = new File(class_115.homeDirectory, "random.dat");
             class_376 var10000;
             class_383 var10002;
             int var3;
-            if(var1.exists()) {
+            if(fRandom.exists()) {
                if(var0 <= 607273756) {
                   throw new IllegalStateException();
                }
 
-               var10000 = new class_376;
-               var10002 = new class_383;
-               var10002.method_6690(var1, "rw", 25L);
-               var10000.method_6626(var10002, 24, 0);
+               var10002 = new class_383(fRandom, "rw", 25L);
+               var10000 = new class_376(var10002, 24, 0);
                class_199.field_2344 = var10000;
             } else {
                label49:
@@ -498,17 +493,15 @@ public class class_157 {
                      throw new IllegalStateException();
                   }
 
-                  for(var3 = 0; var3 < class_48.field_356.length; ++var3) {
-                     File var4 = new File(class_48.field_356[var3] + class_292.field_3333[var2] + File.separatorChar + "random.dat");
+                  for(var3 = 0; var3 < class_48.cacheDirectories.length; ++var3) {
+                     File var4 = new File(class_48.cacheDirectories[var3] + class_292.field_3333[var2] + File.separatorChar + "random.dat");
                      if(var4.exists()) {
                         if(var0 <= 607273756) {
                            throw new IllegalStateException();
                         }
 
-                        var10000 = new class_376;
-                        var10002 = new class_383;
-                        var10002.method_6690(var4, "rw", 25L);
-                        var10000.method_6626(var10002, 24, 0);
+                        var10002 = new class_383(var4, "rw", 25L);
+                        var10000 = new class_376(var10002, 24, 0);
                         class_199.field_2344 = var10000;
                         break label49;
                      }
@@ -521,16 +514,14 @@ public class class_157 {
                   throw new IllegalStateException();
                }
 
-               RandomAccessFile var7 = new RandomAccessFile(var1, "rw");
+               RandomAccessFile var7 = new RandomAccessFile(fRandom, "rw");
                var3 = var7.read();
                var7.seek(0L);
                var7.write(var3);
                var7.seek(0L);
                var7.close();
-               var10000 = new class_376;
-               var10002 = new class_383;
-               var10002.method_6690(var1, "rw", 25L);
-               var10000.method_6626(var10002, 24, 0);
+               var10002 = new class_383(fRandom, "rw", 25L);
+               var10000 = new class_376(var10002, 24, 0);
                class_199.field_2344 = var10000;
             }
          } catch (IOException var5) {

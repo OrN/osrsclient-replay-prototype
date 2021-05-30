@@ -17,9 +17,9 @@ public class class_250 {
 
 
    // $FF: renamed from: <init> (int, ii, ii) void
-   public void method_4721(int var1, class_280 var2, class_280 var3) {
+   public class_250(int var1, class_280 var2, class_280 var3) {
+      super();
       try {
-         super();
          this.field_2778 = var1 * 2067483691;
          this.field_2777 = var2;
          this.field_2779 = var3;

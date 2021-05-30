@@ -39,10 +39,9 @@ public class class_285 {
    }
 
    // $FF: renamed from: <init> (byte[]) void
-   void method_5192(byte[] var1) {
+   class_285(byte[] var1) {
       super();
-      class_28 var10001 = new class_28;
-      var10001.method_178((byte[])null);
+      class_28 var10001 = new class_28((byte[])null);
       this.field_3274 = var10001;
       this.method_5233(var1);
    }
@@ -259,7 +258,7 @@ public class class_285 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_5208() {
+   static {
       field_3270 = new byte[]{(byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)1, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)2, (byte)0, (byte)1, (byte)2, (byte)1, (byte)0, (byte)0, (byte)0, (byte)0, (byte)0, (byte)0, (byte)0, (byte)0, (byte)0, (byte)0, (byte)0, (byte)0};
    }
 
@@ -295,10 +294,9 @@ public class class_285 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_5210() {
+   class_285() {
       super();
-      class_28 var10001 = new class_28;
-      var10001.method_178((byte[])null);
+      class_28 var10001 = new class_28((byte[])null);
       this.field_3274 = var10001;
    }
 

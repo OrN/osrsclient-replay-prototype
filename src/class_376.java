@@ -31,9 +31,9 @@ public class class_376 {
 
 
    // $FF: renamed from: <init> (nm, int, int) void
-   public void method_6626(class_383 var1, int var2, int var3) throws IOException {
+   public class_376(class_383 var1, int var2, int var3) throws IOException {
+      super();
       try {
-         super();
          this.field_4147 = -4831608611576950975L;
          this.field_4150 = 5152950394296653439L;
          this.field_4145 = 0;

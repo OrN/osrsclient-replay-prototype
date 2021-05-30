@@ -36,8 +36,7 @@ public class class_160 {
                throw new IllegalStateException();
             }
          } else {
-            class_359 var10000 = new class_359;
-            var10000.method_6280(var1, this.field_1990);
+            class_359 var10000 = new class_359(var1, this.field_1990);
             class_359 var3 = var10000;
             if(!var3.method_6273((byte)0)) {
                if(var2 == 1) {
@@ -265,8 +264,7 @@ public class class_160 {
                ;
             }
          } else {
-            class_359 var10000 = new class_359;
-            var10000.method_6280(var1, this.field_1990);
+            class_359 var10000 = new class_359(var1, this.field_1990);
             class_359 var3 = var10000;
             if(!var3.method_6273((byte)0)) {
                if(var2 > 718963747) {
@@ -297,8 +295,7 @@ public class class_160 {
    final void method_3331(String var1, int var2) {
       try {
          if(null != var1) {
-            class_359 var10000 = new class_359;
-            var10000.method_6280(var1, this.field_1990);
+            class_359 var10000 = new class_359(var1, this.field_1990);
             class_359 var3 = var10000;
             if(!var3.method_6273((byte)0)) {
                if(var2 < -999393360) {
@@ -366,8 +363,7 @@ public class class_160 {
    // $FF: renamed from: bu (java.lang.String) void
    final void method_3336(String var1) {
       if(null != var1) {
-         class_359 var10000 = new class_359;
-         var10000.method_6280(var1, this.field_1990);
+         class_359 var10000 = new class_359(var1, this.field_1990);
          class_359 var2 = var10000;
          if(var2.method_6273((byte)0)) {
             if(this.field_1995.method_6084(var2, -1599442958)) {
@@ -422,8 +418,7 @@ public class class_160 {
    // $FF: renamed from: bd (java.lang.String) void
    final void method_3339(String var1) {
       if(null != var1) {
-         class_359 var10000 = new class_359;
-         var10000.method_6280(var1, this.field_1990);
+         class_359 var10000 = new class_359(var1, this.field_1990);
          class_359 var2 = var10000;
          if(var2.method_6273((byte)0)) {
             if(this.field_1994.method_6084(var2, -1673432341)) {
@@ -442,8 +437,7 @@ public class class_160 {
    // $FF: renamed from: an (java.lang.String) void
    final void method_3340(String var1) {
       if(null != var1) {
-         class_359 var10000 = new class_359;
-         var10000.method_6280(var1, this.field_1990);
+         class_359 var10000 = new class_359(var1, this.field_1990);
          class_359 var2 = var10000;
          if(var2.method_6273((byte)0)) {
             if(this.field_1994.method_6084(var2, 847722659)) {
@@ -481,16 +475,14 @@ public class class_160 {
    }
 
    // $FF: renamed from: <init> (nc) void
-   void method_3344(class_375 var1) {
+   class_160(class_375 var1) {
+      super();
       try {
-         super();
          this.field_1991 = 0;
          this.field_1990 = var1;
-         class_346 var10001 = new class_346;
-         var10001.method_6177(var1);
+         class_346 var10001 = new class_346(var1);
          this.field_1994 = var10001;
-         class_345 var3 = new class_345;
-         var3.method_6165(var1);
+         class_345 var3 = new class_345(var1);
          this.field_1995 = var3;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "by.<init>(" + ')');
@@ -525,8 +517,7 @@ public class class_160 {
    // $FF: renamed from: ax (java.lang.String) void
    final void method_3350(String var1) {
       if(null != var1) {
-         class_359 var10000 = new class_359;
-         var10000.method_6280(var1, this.field_1990);
+         class_359 var10000 = new class_359(var1, this.field_1990);
          class_359 var2 = var10000;
          if(var2.method_6273((byte)0)) {
             if(this.method_3332(-1858005393)) {
@@ -560,8 +551,7 @@ public class class_160 {
    // $FF: renamed from: as (java.lang.String) void
    final void method_3351(String var1) {
       if(null != var1) {
-         class_359 var10000 = new class_359;
-         var10000.method_6280(var1, this.field_1990);
+         class_359 var10000 = new class_359(var1, this.field_1990);
          class_359 var2 = var10000;
          if(var2.method_6273((byte)0)) {
             if(this.method_3332(-1966493362)) {
@@ -606,8 +596,7 @@ public class class_160 {
                ;
             }
          } else {
-            class_359 var10000 = new class_359;
-            var10000.method_6280(var1, this.field_1990);
+            class_359 var10000 = new class_359(var1, this.field_1990);
             class_359 var3 = var10000;
             if(!var3.method_6273((byte)0)) {
                if(var2 == -2078408502) {
@@ -693,8 +682,7 @@ public class class_160 {
    // $FF: renamed from: aq (java.lang.String) void
    final void method_3360(String var1) {
       if(null != var1) {
-         class_359 var10000 = new class_359;
-         var10000.method_6280(var1, this.field_1990);
+         class_359 var10000 = new class_359(var1, this.field_1990);
          class_359 var2 = var10000;
          if(var2.method_6273((byte)0)) {
             String var4;
@@ -743,8 +731,7 @@ public class class_160 {
    // $FF: renamed from: af (java.lang.String) void
    final void method_3362(String var1) {
       if(null != var1) {
-         class_359 var10000 = new class_359;
-         var10000.method_6280(var1, this.field_1990);
+         class_359 var10000 = new class_359(var1, this.field_1990);
          class_359 var2 = var10000;
          if(var2.method_6273((byte)0)) {
             String var4;
@@ -796,8 +783,7 @@ public class class_160 {
    // $FF: renamed from: aw (java.lang.String) void
    final void method_3365(String var1) {
       if(null != var1) {
-         class_359 var10000 = new class_359;
-         var10000.method_6280(var1, this.field_1990);
+         class_359 var10000 = new class_359(var1, this.field_1990);
          class_359 var2 = var10000;
          if(var2.method_6273((byte)0)) {
             String var4;
@@ -851,8 +837,7 @@ public class class_160 {
    // $FF: renamed from: bt (java.lang.String) void
    final void method_3368(String var1) {
       if(null != var1) {
-         class_359 var10000 = new class_359;
-         var10000.method_6280(var1, this.field_1990);
+         class_359 var10000 = new class_359(var1, this.field_1990);
          class_359 var2 = var10000;
          if(var2.method_6273((byte)0)) {
             if(this.field_1995.method_6084(var2, -676034928)) {
@@ -876,8 +861,7 @@ public class class_160 {
    // $FF: renamed from: bq (java.lang.String) void
    final void method_3370(String var1) {
       if(null != var1) {
-         class_359 var10000 = new class_359;
-         var10000.method_6280(var1, this.field_1990);
+         class_359 var10000 = new class_359(var1, this.field_1990);
          class_359 var2 = var10000;
          if(var2.method_6273((byte)0)) {
             if(this.field_1995.method_6084(var2, -788927024)) {
@@ -1458,7 +1442,7 @@ public class class_160 {
                class_65.method_670(180 + class_177.field_2189 * 2130552221 - 151, 1 + var5, 302, 32, 0);
                class_65.method_681(class_177.field_2189 * 2130552221 + 180 - 150, 2 + var5, -1692315957 * class_177.field_2190, 30, 9179409);
                class_65.method_681(class_177.field_2190 * -1692315957 + (180 + 2130552221 * class_177.field_2189 - 150), 2 + var5, 300 - class_177.field_2190 * -1692315957, 30, 0);
-               var0.method_872(class_177.field_2209, class_177.field_2189 * 2130552221 + 180, 276 - var4, 16777215, -1);
+               var0.method_872(class_177.loadProgressText, class_177.field_2189 * 2130552221 + 180, 276 - var4, 16777215, -1);
             }
 
             String var6;
@@ -1717,11 +1701,9 @@ public class class_160 {
                         class_105.field_1209 = class_305.field_3663;
                      }
 
-                     class_351 var51 = new class_351;
-                     var51.method_6208(2097206533 * class_204.field_2391, var25, var1.method_885(class_105.field_1209), 11);
+                     class_351 var51 = new class_351(2097206533 * class_204.field_2391, var25, var1.method_885(class_105.field_1209), 11);
                      class_96.field_1062 = var51;
-                     var51 = new class_351;
-                     var51.method_6208(2097206533 * class_204.field_2391, var25, var1.method_885(class_305.field_3664), 11);
+                     var51 = new class_351(2097206533 * class_204.field_2391, var25, var1.method_885(class_305.field_3664), 11);
                      class_151.field_1909 = var51;
                      var1.method_872(class_105.field_1209, 2097206533 * class_204.field_2391, var25, 16777215, 0);
                   } else if(3 == -677995589 * class_177.field_2194) {
@@ -2378,8 +2360,7 @@ public class class_160 {
 
                var9 = var0.method_159(-981326073);
                byte[] var19 = new byte[var9];
-               class_28 var27 = new class_28;
-               var27.method_178(var19);
+               class_28 var27 = new class_28(var19);
                class_28 var22 = var27;
                var0.method_243(var19, 0, var9, (short)21226);
                class_195.field_2312[var5] = var22;

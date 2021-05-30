@@ -53,10 +53,10 @@ public class class_113 extends class_111 {
    }
 
    // $FF: renamed from: <init> (f) void
-   void method_2240(class_167 var1) {
+   class_113(class_167 var1) {
+      super();
       try {
          this.this$0 = var1;
-         super.method_105();
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "v.<init>(" + ')');
       }
@@ -82,7 +82,7 @@ public class class_113 extends class_111 {
             class_311.method_5553(class_311.field_3749, 264436593 * var0.field_1890, (byte)50);
          }
 
-         class_179.field_2223 = var0.field_1885;
+         class_179.host = var0.field_1885;
          client.field_1413 = var0.field_1894 * 1391148801;
          client.field_1414 = var0.field_1890 * 1175929437;
          int var10001;

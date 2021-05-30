@@ -213,8 +213,7 @@ public class class_251 {
 
    // $FF: renamed from: y (int, int, int, int, int, int, int, int) void
    public static void method_4726(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
-      class_247 var10000 = new class_247;
-      var10000.method_4713();
+      class_247 var10000 = new class_247();
       class_247 var8 = var10000;
       var8.field_2734 = var2 / 128 * -848723309;
       var8.field_2735 = var3 / 128 * -1706247967;
@@ -246,45 +245,39 @@ public class class_251 {
       int var22;
       class_41[] var24;
       if(var4 == 0) {
-         var10000 = new class_241;
-         var10000.method_4647(var11, var12, var13, var14, -1, var19, false);
+         var10000 = new class_241(var11, var12, var13, var14, -1, var19, false);
          var21 = var10000;
 
          for(var22 = var1; var22 >= 0; --var22) {
             if(this.field_2787[var22][var2][var3] == null) {
                var24 = this.field_2787[var22][var2];
-               var10002 = new class_41;
-               var10002.method_481(var22, var2, var3);
+               var10002 = new class_41(var22, var2, var3);
                var24[var3] = var10002;
             }
          }
 
          this.field_2787[var1][var2][var3].field_275 = var21;
       } else if(var4 != 1) {
-         class_249 var25 = new class_249;
-         var25.method_4719(var4, var5, var6, var2, var3, var7, var8, var9, var10, var11, var12, var13, var14, var15, var16, var17, var18, var19, var20);
+         class_249 var25 = new class_249(var4, var5, var6, var2, var3, var7, var8, var9, var10, var11, var12, var13, var14, var15, var16, var17, var18, var19, var20);
          class_249 var23 = var25;
 
          for(var22 = var1; var22 >= 0; --var22) {
             if(this.field_2787[var22][var2][var3] == null) {
                var24 = this.field_2787[var22][var2];
-               var10002 = new class_41;
-               var10002.method_481(var22, var2, var3);
+               var10002 = new class_41(var22, var2, var3);
                var24[var3] = var10002;
             }
          }
 
          this.field_2787[var1][var2][var3].field_289 = var23;
       } else {
-         var10000 = new class_241;
-         var10000.method_4647(var15, var16, var17, var18, var6, var20, var7 == var8 && var7 == var9 && var7 == var10);
+         var10000 = new class_241(var15, var16, var17, var18, var6, var20, var7 == var8 && var7 == var9 && var7 == var10);
          var21 = var10000;
 
          for(var22 = var1; var22 >= 0; --var22) {
             if(this.field_2787[var22][var2][var3] == null) {
                var24 = this.field_2787[var22][var2];
-               var10002 = new class_41;
-               var10002.method_481(var22, var2, var3);
+               var10002 = new class_41(var22, var2, var3);
                var24[var3] = var10002;
             }
          }
@@ -296,8 +289,7 @@ public class class_251 {
    // $FF: renamed from: r (int, int, int, int, gl, long, int) void
    public void method_4729(int var1, int var2, int var3, int var4, class_91 var5, long var6, int var8) {
       if(var5 != null) {
-         class_248 var10000 = new class_248;
-         var10000.method_4716();
+         class_248 var10000 = new class_248();
          class_248 var9 = var10000;
          var9.field_2749 = var5;
          var9.field_2747 = var2 * 1874556544 + -1210205376;
@@ -307,8 +299,7 @@ public class class_251 {
          var9.field_2748 = var8 * -1766964493;
          if(this.field_2787[var1][var2][var3] == null) {
             class_41[] var10 = this.field_2787[var1][var2];
-            class_41 var10002 = new class_41;
-            var10002.method_481(var1, var2, var3);
+            class_41 var10002 = new class_41(var1, var2, var3);
             var10[var3] = var10002;
          }
 
@@ -318,8 +309,7 @@ public class class_251 {
 
    // $FF: renamed from: b (int, int, int, int, gl, long, gl, gl) void
    public void method_4730(int var1, int var2, int var3, int var4, class_91 var5, long var6, class_91 var8, class_91 var9) {
-      class_253 var10000 = new class_253;
-      var10000.method_4897();
+      class_253 var10000 = new class_253();
       class_253 var10 = var10000;
       var10.field_2863 = var5;
       var10.field_2861 = var2 * -1266586496 + -633293248;
@@ -345,8 +335,7 @@ public class class_251 {
       var10.field_2860 = var11 * -40147101;
       if(this.field_2787[var1][var2][var3] == null) {
          class_41[] var15 = this.field_2787[var1][var2];
-         class_41 var10002 = new class_41;
-         var10002.method_481(var1, var2, var3);
+         class_41 var10002 = new class_41(var1, var2, var3);
          var15[var3] = var10002;
       }
 
@@ -356,8 +345,7 @@ public class class_251 {
    // $FF: renamed from: d (int, int, int, int, gl, gl, int, int, long, int) void
    public void method_4731(int var1, int var2, int var3, int var4, class_91 var5, class_91 var6, int var7, int var8, long var9, int var11) {
       if(var5 != null || var6 != null) {
-         class_269 var10000 = new class_269;
-         var10000.method_5040();
+         class_269 var10000 = new class_269();
          class_269 var12 = var10000;
          var12.field_3169 = var9 * 6932700597450399109L;
          var12.field_3177 = var11 * -1746857141;
@@ -372,8 +360,7 @@ public class class_251 {
          for(int var13 = var1; var13 >= 0; --var13) {
             if(this.field_2787[var13][var2][var3] == null) {
                class_41[] var14 = this.field_2787[var13][var2];
-               class_41 var10002 = new class_41;
-               var10002.method_481(var13, var2, var3);
+               class_41 var10002 = new class_41(var13, var2, var3);
                var14[var3] = var10002;
             }
          }
@@ -385,8 +372,7 @@ public class class_251 {
    // $FF: renamed from: s (int, int, int, int, gl, gl, int, int, int, int, long, int) void
    public void method_4732(int var1, int var2, int var3, int var4, class_91 var5, class_91 var6, int var7, int var8, int var9, int var10, long var11, int var13) {
       if(var5 != null) {
-         class_265 var10000 = new class_265;
-         var10000.method_5029();
+         class_265 var10000 = new class_265();
          class_265 var14 = var10000;
          var14.field_3035 = var11 * -734143626211523767L;
          var14.field_3045 = var13 * 1441870123;
@@ -403,8 +389,7 @@ public class class_251 {
          for(int var15 = var1; var15 >= 0; --var15) {
             if(this.field_2787[var15][var2][var3] == null) {
                class_41[] var16 = this.field_2787[var15][var2];
-               class_41 var10002 = new class_41;
-               var10002.method_481(var15, var2, var3);
+               class_41 var10002 = new class_41(var15, var2, var3);
                var16[var3] = var10002;
             }
          }
@@ -515,8 +500,7 @@ public class class_251 {
          }
       }
 
-      class_261 var10000 = new class_261;
-      var10000.method_4992();
+      class_261 var10000 = new class_261();
       class_261 var21 = var10000;
       var21.field_2917 = var12 * -2872503573805869239L;
       var21.field_2905 = var14 * 795852507;
@@ -553,8 +537,7 @@ public class class_251 {
             for(int var19 = var1; var19 >= 0; --var19) {
                if(this.field_2787[var19][var16][var23] == null) {
                   class_41[] var22 = this.field_2787[var19][var16];
-                  class_41 var10002 = new class_41;
-                  var10002.method_481(var19, var16, var23);
+                  class_41 var10002 = new class_41(var19, var16, var23);
                   var22[var23] = var10002;
                }
             }
@@ -903,7 +886,7 @@ public class class_251 {
    }
 
    // $FF: renamed from: <init> (int, int, int, int[][][]) void
-   public void method_4747(int var1, int var2, int var3, int[][][] var4) {
+   public class_251(int var1, int var2, int var3, int[][][] var4) {
       super();
       this.field_2788 = 0;
       this.field_2789 = 0;
@@ -1198,8 +1181,7 @@ public class class_251 {
    // $FF: renamed from: bj (int, int, int, int, gl, long, int) void
    public void method_4757(int var1, int var2, int var3, int var4, class_91 var5, long var6, int var8) {
       if(var5 != null) {
-         class_248 var10000 = new class_248;
-         var10000.method_4716();
+         class_248 var10000 = new class_248();
          class_248 var9 = var10000;
          var9.field_2749 = var5;
          var9.field_2747 = var2 * 1874556544 + -1210205376;
@@ -1209,8 +1191,7 @@ public class class_251 {
          var9.field_2748 = var8 * -1766964493;
          if(this.field_2787[var1][var2][var3] == null) {
             class_41[] var10 = this.field_2787[var1][var2];
-            class_41 var10002 = new class_41;
-            var10002.method_481(var1, var2, var3);
+            class_41 var10002 = new class_41(var1, var2, var3);
             var10[var3] = var10002;
          }
 
@@ -1365,8 +1346,7 @@ public class class_251 {
          for(int var3 = 0; var3 < this.field_2786; ++var3) {
             if(this.field_2787[var1][var2][var3] == null) {
                class_41[] var10000 = this.field_2787[var1][var2];
-               class_41 var10002 = new class_41;
-               var10002.method_481(var1, var2, var3);
+               class_41 var10002 = new class_41(var1, var2, var3);
                var10000[var3] = var10002;
             }
          }
@@ -1440,8 +1420,7 @@ public class class_251 {
 
    // $FF: renamed from: bn (int, int, int, int, gl, long, gl, gl) void
    public void method_4764(int var1, int var2, int var3, int var4, class_91 var5, long var6, class_91 var8, class_91 var9) {
-      class_253 var10000 = new class_253;
-      var10000.method_4897();
+      class_253 var10000 = new class_253();
       class_253 var10 = var10000;
       var10.field_2863 = var5;
       var10.field_2861 = var2 * -1266586496 + -633293248;
@@ -1467,8 +1446,7 @@ public class class_251 {
       var10.field_2860 = var11 * -1779268677;
       if(this.field_2787[var1][var2][var3] == null) {
          class_41[] var15 = this.field_2787[var1][var2];
-         class_41 var10002 = new class_41;
-         var10002.method_481(var1, var2, var3);
+         class_41 var10002 = new class_41(var1, var2, var3);
          var15[var3] = var10002;
       }
 
@@ -2473,7 +2451,7 @@ public class class_251 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_4776() {
+   static {
       field_2813 = true;
       field_2796 = 0;
       field_2797 = 0;
@@ -2490,8 +2468,7 @@ public class class_251 {
       field_2803 = new class_247[field_2822][500];
       field_2825 = 0;
       field_2794 = new class_247[500];
-      class_335 var10000 = new class_335;
-      var10000.method_5960();
+      class_335 var10000 = new class_335();
       field_2827 = var10000;
       field_2828 = new int[]{19, 55, 38, 155, 255, 110, 137, 205, 76};
       field_2842 = new int[]{160, 192, 80, 96, 0, 144, 80, 48, 160};
@@ -2575,8 +2552,7 @@ public class class_251 {
          for(int var3 = 0; var3 < this.field_2786; ++var3) {
             if(this.field_2787[var1][var2][var3] == null) {
                class_41[] var10000 = this.field_2787[var1][var2];
-               class_41 var10002 = new class_41;
-               var10002.method_481(var1, var2, var3);
+               class_41 var10002 = new class_41(var1, var2, var3);
                var10000[var3] = var10002;
             }
          }
@@ -2592,8 +2568,7 @@ public class class_251 {
          for(int var3 = 0; var3 < this.field_2786; ++var3) {
             if(this.field_2787[var1][var2][var3] == null) {
                class_41[] var10000 = this.field_2787[var1][var2];
-               class_41 var10002 = new class_41;
-               var10002.method_481(var1, var2, var3);
+               class_41 var10002 = new class_41(var1, var2, var3);
                var10000[var3] = var10002;
             }
          }
@@ -2617,8 +2592,7 @@ public class class_251 {
          for(int var3 = 0; var3 < this.field_2786; ++var3) {
             if(this.field_2787[var1][var2][var3] == null) {
                class_41[] var10000 = this.field_2787[var1][var2];
-               class_41 var10002 = new class_41;
-               var10002.method_481(var1, var2, var3);
+               class_41 var10002 = new class_41(var1, var2, var3);
                var10000[var3] = var10002;
             }
          }
@@ -2634,8 +2608,7 @@ public class class_251 {
          for(int var3 = 0; var3 < this.field_2786; ++var3) {
             if(this.field_2787[var1][var2][var3] == null) {
                class_41[] var10000 = this.field_2787[var1][var2];
-               class_41 var10002 = new class_41;
-               var10002.method_481(var1, var2, var3);
+               class_41 var10002 = new class_41(var1, var2, var3);
                var10000[var3] = var10002;
             }
          }
@@ -2666,8 +2639,7 @@ public class class_251 {
 
       if(this.field_2787[0][var1][var2] == null) {
          class_41[] var10000 = this.field_2787[0][var1];
-         class_41 var10002 = new class_41;
-         var10002.method_481(0, var1, var2);
+         class_41 var10002 = new class_41(0, var1, var2);
          var10000[var2] = var10002;
       }
 
@@ -2678,8 +2650,7 @@ public class class_251 {
    // $FF: renamed from: bi (int, int, int, int, gl, gl, int, int, long, int) void
    public void method_4785(int var1, int var2, int var3, int var4, class_91 var5, class_91 var6, int var7, int var8, long var9, int var11) {
       if(var5 != null || var6 != null) {
-         class_269 var10000 = new class_269;
-         var10000.method_5040();
+         class_269 var10000 = new class_269();
          class_269 var12 = var10000;
          var12.field_3169 = var9 * 6932700597450399109L;
          var12.field_3177 = var11 * -1746857141;
@@ -2694,8 +2665,7 @@ public class class_251 {
          for(int var13 = var1; var13 >= 0; --var13) {
             if(this.field_2787[var13][var2][var3] == null) {
                class_41[] var14 = this.field_2787[var13][var2];
-               class_41 var10002 = new class_41;
-               var10002.method_481(var13, var2, var3);
+               class_41 var10002 = new class_41(var13, var2, var3);
                var14[var3] = var10002;
             }
          }
@@ -2712,45 +2682,39 @@ public class class_251 {
       int var22;
       class_41[] var24;
       if(var4 == 0) {
-         var10000 = new class_241;
-         var10000.method_4647(var11, var12, var13, var14, -1, var19, false);
+         var10000 = new class_241(var11, var12, var13, var14, -1, var19, false);
          var21 = var10000;
 
          for(var22 = var1; var22 >= 0; --var22) {
             if(this.field_2787[var22][var2][var3] == null) {
                var24 = this.field_2787[var22][var2];
-               var10002 = new class_41;
-               var10002.method_481(var22, var2, var3);
+               var10002 = new class_41(var22, var2, var3);
                var24[var3] = var10002;
             }
          }
 
          this.field_2787[var1][var2][var3].field_275 = var21;
       } else if(var4 != 1) {
-         class_249 var25 = new class_249;
-         var25.method_4719(var4, var5, var6, var2, var3, var7, var8, var9, var10, var11, var12, var13, var14, var15, var16, var17, var18, var19, var20);
+         class_249 var25 = new class_249(var4, var5, var6, var2, var3, var7, var8, var9, var10, var11, var12, var13, var14, var15, var16, var17, var18, var19, var20);
          class_249 var23 = var25;
 
          for(var22 = var1; var22 >= 0; --var22) {
             if(this.field_2787[var22][var2][var3] == null) {
                var24 = this.field_2787[var22][var2];
-               var10002 = new class_41;
-               var10002.method_481(var22, var2, var3);
+               var10002 = new class_41(var22, var2, var3);
                var24[var3] = var10002;
             }
          }
 
          this.field_2787[var1][var2][var3].field_289 = var23;
       } else {
-         var10000 = new class_241;
-         var10000.method_4647(var15, var16, var17, var18, var6, var20, var7 == var8 && var7 == var9 && var7 == var10);
+         var10000 = new class_241(var15, var16, var17, var18, var6, var20, var7 == var8 && var7 == var9 && var7 == var10);
          var21 = var10000;
 
          for(var22 = var1; var22 >= 0; --var22) {
             if(this.field_2787[var22][var2][var3] == null) {
                var24 = this.field_2787[var22][var2];
-               var10002 = new class_41;
-               var10002.method_481(var22, var2, var3);
+               var10002 = new class_41(var22, var2, var3);
                var24[var3] = var10002;
             }
          }
@@ -2761,8 +2725,7 @@ public class class_251 {
 
    // $FF: renamed from: bf (int, int, int, int, int, int, int, int) void
    public static void method_4787(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
-      class_247 var10000 = new class_247;
-      var10000.method_4713();
+      class_247 var10000 = new class_247();
       class_247 var8 = var10000;
       var8.field_2734 = var2 / 128 * -848723309;
       var8.field_2735 = var3 / 128 * -1706247967;
@@ -2830,45 +2793,39 @@ public class class_251 {
       int var22;
       class_41[] var24;
       if(var4 == 0) {
-         var10000 = new class_241;
-         var10000.method_4647(var11, var12, var13, var14, -1, var19, false);
+         var10000 = new class_241(var11, var12, var13, var14, -1, var19, false);
          var21 = var10000;
 
          for(var22 = var1; var22 >= 0; --var22) {
             if(this.field_2787[var22][var2][var3] == null) {
                var24 = this.field_2787[var22][var2];
-               var10002 = new class_41;
-               var10002.method_481(var22, var2, var3);
+               var10002 = new class_41(var22, var2, var3);
                var24[var3] = var10002;
             }
          }
 
          this.field_2787[var1][var2][var3].field_275 = var21;
       } else if(var4 != 1) {
-         class_249 var25 = new class_249;
-         var25.method_4719(var4, var5, var6, var2, var3, var7, var8, var9, var10, var11, var12, var13, var14, var15, var16, var17, var18, var19, var20);
+         class_249 var25 = new class_249(var4, var5, var6, var2, var3, var7, var8, var9, var10, var11, var12, var13, var14, var15, var16, var17, var18, var19, var20);
          class_249 var23 = var25;
 
          for(var22 = var1; var22 >= 0; --var22) {
             if(this.field_2787[var22][var2][var3] == null) {
                var24 = this.field_2787[var22][var2];
-               var10002 = new class_41;
-               var10002.method_481(var22, var2, var3);
+               var10002 = new class_41(var22, var2, var3);
                var24[var3] = var10002;
             }
          }
 
          this.field_2787[var1][var2][var3].field_289 = var23;
       } else {
-         var10000 = new class_241;
-         var10000.method_4647(var15, var16, var17, var18, var6, var20, var7 == var8 && var7 == var9 && var7 == var10);
+         var10000 = new class_241(var15, var16, var17, var18, var6, var20, var7 == var8 && var7 == var9 && var7 == var10);
          var21 = var10000;
 
          for(var22 = var1; var22 >= 0; --var22) {
             if(this.field_2787[var22][var2][var3] == null) {
                var24 = this.field_2787[var22][var2];
-               var10002 = new class_41;
-               var10002.method_481(var22, var2, var3);
+               var10002 = new class_41(var22, var2, var3);
                var24[var3] = var10002;
             }
          }
@@ -2915,8 +2872,7 @@ public class class_251 {
    // $FF: renamed from: bx (int, int, int, int, gl, long, int) void
    public void method_4791(int var1, int var2, int var3, int var4, class_91 var5, long var6, int var8) {
       if(var5 != null) {
-         class_248 var10000 = new class_248;
-         var10000.method_4716();
+         class_248 var10000 = new class_248();
          class_248 var9 = var10000;
          var9.field_2749 = var5;
          var9.field_2747 = var2 * 1874556544 + -468414677;
@@ -2926,8 +2882,7 @@ public class class_251 {
          var9.field_2748 = var8 * -1766964493;
          if(this.field_2787[var1][var2][var3] == null) {
             class_41[] var10 = this.field_2787[var1][var2];
-            class_41 var10002 = new class_41;
-            var10002.method_481(var1, var2, var3);
+            class_41 var10002 = new class_41(var1, var2, var3);
             var10[var3] = var10002;
          }
 
@@ -2969,8 +2924,7 @@ public class class_251 {
 
    // $FF: renamed from: bo (int, int, int, int, gl, long, gl, gl) void
    public void method_4794(int var1, int var2, int var3, int var4, class_91 var5, long var6, class_91 var8, class_91 var9) {
-      class_253 var10000 = new class_253;
-      var10000.method_4897();
+      class_253 var10000 = new class_253();
       class_253 var10 = var10000;
       var10.field_2863 = var5;
       var10.field_2861 = var2 * -1266586496 + -633293248;
@@ -2996,8 +2950,7 @@ public class class_251 {
       var10.field_2860 = var11 * -720987406;
       if(this.field_2787[var1][var2][var3] == null) {
          class_41[] var15 = this.field_2787[var1][var2];
-         class_41 var10002 = new class_41;
-         var10002.method_481(var1, var2, var3);
+         class_41 var10002 = new class_41(var1, var2, var3);
          var15[var3] = var10002;
       }
 
@@ -3007,8 +2960,7 @@ public class class_251 {
    // $FF: renamed from: bw (int, int, int, int, gl, gl, int, int, long, int) void
    public void method_4795(int var1, int var2, int var3, int var4, class_91 var5, class_91 var6, int var7, int var8, long var9, int var11) {
       if(var5 != null || var6 != null) {
-         class_269 var10000 = new class_269;
-         var10000.method_5040();
+         class_269 var10000 = new class_269();
          class_269 var12 = var10000;
          var12.field_3169 = var9 * 6932700597450399109L;
          var12.field_3177 = var11 * -1809048964;
@@ -3023,8 +2975,7 @@ public class class_251 {
          for(int var13 = var1; var13 >= 0; --var13) {
             if(this.field_2787[var13][var2][var3] == null) {
                class_41[] var14 = this.field_2787[var13][var2];
-               class_41 var10002 = new class_41;
-               var10002.method_481(var13, var2, var3);
+               class_41 var10002 = new class_41(var13, var2, var3);
                var14[var3] = var10002;
             }
          }
@@ -3049,8 +3000,7 @@ public class class_251 {
          }
       }
 
-      class_261 var10000 = new class_261;
-      var10000.method_4992();
+      class_261 var10000 = new class_261();
       class_261 var21 = var10000;
       var21.field_2917 = var12 * -2872503573805869239L;
       var21.field_2905 = var14 * 795852507;
@@ -3087,8 +3037,7 @@ public class class_251 {
             for(int var19 = var1; var19 >= 0; --var19) {
                if(this.field_2787[var19][var16][var23] == null) {
                   class_41[] var22 = this.field_2787[var19][var16];
-                  class_41 var10002 = new class_41;
-                  var10002.method_481(var19, var16, var23);
+                  class_41 var10002 = new class_41(var19, var16, var23);
                   var22[var23] = var10002;
                }
             }
@@ -3111,8 +3060,7 @@ public class class_251 {
    // $FF: renamed from: bb (int, int, int, int, gl, gl, int, int, int, int, long, int) void
    public void method_4797(int var1, int var2, int var3, int var4, class_91 var5, class_91 var6, int var7, int var8, int var9, int var10, long var11, int var13) {
       if(var5 != null) {
-         class_265 var10000 = new class_265;
-         var10000.method_5029();
+         class_265 var10000 = new class_265();
          class_265 var14 = var10000;
          var14.field_3035 = var11 * -734143626211523767L;
          var14.field_3045 = var13 * 1441870123;
@@ -3129,8 +3077,7 @@ public class class_251 {
          for(int var15 = var1; var15 >= 0; --var15) {
             if(this.field_2787[var15][var2][var3] == null) {
                class_41[] var16 = this.field_2787[var15][var2];
-               class_41 var10002 = new class_41;
-               var10002.method_481(var15, var2, var3);
+               class_41 var10002 = new class_41(var15, var2, var3);
                var16[var3] = var10002;
             }
          }
@@ -3142,8 +3089,7 @@ public class class_251 {
    // $FF: renamed from: bk (int, int, int, int, gl, gl, int, int, int, int, long, int) void
    public void method_4798(int var1, int var2, int var3, int var4, class_91 var5, class_91 var6, int var7, int var8, int var9, int var10, long var11, int var13) {
       if(var5 != null) {
-         class_265 var10000 = new class_265;
-         var10000.method_5029();
+         class_265 var10000 = new class_265();
          class_265 var14 = var10000;
          var14.field_3035 = var11 * -734143626211523767L;
          var14.field_3045 = var13 * 1196436268;
@@ -3160,8 +3106,7 @@ public class class_251 {
          for(int var15 = var1; var15 >= 0; --var15) {
             if(this.field_2787[var15][var2][var3] == null) {
                class_41[] var16 = this.field_2787[var15][var2];
-               class_41 var10002 = new class_41;
-               var10002.method_481(var15, var2, var3);
+               class_41 var10002 = new class_41(var15, var2, var3);
                var16[var3] = var10002;
             }
          }
@@ -3211,8 +3156,7 @@ public class class_251 {
 
       if(this.field_2787[0][var1][var2] == null) {
          class_41[] var10000 = this.field_2787[0][var1];
-         class_41 var10002 = new class_41;
-         var10002.method_481(0, var1, var2);
+         class_41 var10002 = new class_41(0, var1, var2);
          var10000[var2] = var10002;
       }
 
@@ -3412,8 +3356,7 @@ public class class_251 {
 
       if(this.field_2787[0][var1][var2] == null) {
          class_41[] var10000 = this.field_2787[0][var1];
-         class_41 var10002 = new class_41;
-         var10002.method_481(0, var1, var2);
+         class_41 var10002 = new class_41(0, var1, var2);
          var10000[var2] = var10002;
       }
 
@@ -3441,8 +3384,7 @@ public class class_251 {
          for(int var3 = 0; var3 < this.field_2786; ++var3) {
             if(this.field_2787[var1][var2][var3] == null) {
                class_41[] var10000 = this.field_2787[var1][var2];
-               class_41 var10002 = new class_41;
-               var10002.method_481(var1, var2, var3);
+               class_41 var10002 = new class_41(var1, var2, var3);
                var10000[var3] = var10002;
             }
          }
@@ -3817,8 +3759,7 @@ public class class_251 {
 
    // $FF: renamed from: br (int, int, int, int, int, int, int, int) void
    public static void method_4844(int var0, int var1, int var2, int var3, int var4, int var5, int var6, int var7) {
-      class_247 var10000 = new class_247;
-      var10000.method_4713();
+      class_247 var10000 = new class_247();
       class_247 var8 = var10000;
       var8.field_2734 = var2 / 128 * 1882402696;
       var8.field_2735 = var3 / 128 * -1706247967;
@@ -5071,8 +5012,7 @@ public class class_251 {
    // $FF: renamed from: bp (int, int, int, int, gl, long, int) void
    public void method_4868(int var1, int var2, int var3, int var4, class_91 var5, long var6, int var8) {
       if(var5 != null) {
-         class_248 var10000 = new class_248;
-         var10000.method_4716();
+         class_248 var10000 = new class_248();
          class_248 var9 = var10000;
          var9.field_2749 = var5;
          var9.field_2747 = var2 * -1277333933 + 2058821130;
@@ -5082,8 +5022,7 @@ public class class_251 {
          var9.field_2748 = var8 * -1774496839;
          if(this.field_2787[var1][var2][var3] == null) {
             class_41[] var10 = this.field_2787[var1][var2];
-            class_41 var10002 = new class_41;
-            var10002.method_481(var1, var2, var3);
+            class_41 var10002 = new class_41(var1, var2, var3);
             var10[var3] = var10002;
          }
 

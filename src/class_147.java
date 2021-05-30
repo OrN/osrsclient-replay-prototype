@@ -248,9 +248,9 @@ public class class_147 extends class_146 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_3109() {
+   class_147() {
+      super();
       try {
-         super.method_3109();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "bb.<init>(" + ')');
       }

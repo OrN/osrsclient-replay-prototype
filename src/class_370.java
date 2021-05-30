@@ -276,20 +276,18 @@ public class class_370 implements class_20 {
    }
 
    // $FF: renamed from: <init> (me) void
-   public void method_6602(class_258 var1) {
+   public class_370(class_258 var1) {
+      this(new class_371(var1));
       try {
-         class_371 var10001 = new class_371;
-         var10001.method_6609(var1);
-         this.method_6603(var10001);
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "ms.<init>(" + ')');
       }
    }
 
    // $FF: renamed from: <init> (mt) void
-   void method_6603(class_371 var1) {
+   class_370(class_371 var1) {
+      super();
       try {
-         super();
          this.field_4102 = var1;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "ms.<init>(" + ')');

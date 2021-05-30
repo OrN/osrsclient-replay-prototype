@@ -29,7 +29,7 @@ public class class_198 implements class_4 {
    }
 
    // $FF: renamed from: <init> () void
-   public void method_4019() {
+   public class_198() {
       super();
    }
 

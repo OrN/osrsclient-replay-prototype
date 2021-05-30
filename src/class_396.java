@@ -16,9 +16,9 @@ public class class_396 {
    }
 
    // $FF: renamed from: <init> (int) void
-   public void method_6788(int var1) {
+   public class_396(int var1) {
+      super();
       try {
-         super();
          this.field_4255 = var1 * -2055733865;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "oc.<init>(" + ')');
@@ -34,9 +34,9 @@ public class class_396 {
    }
 
    // $FF: renamed from: <init> (int, java.lang.Object) void
-   public void method_6789(int var1, Object var2) {
+   public class_396(int var1, Object var2) {
+      super();
       try {
-         super();
          this.field_4255 = -2055733865 * var1;
          this.field_4254 = var2;
       } catch (RuntimeException var3) {

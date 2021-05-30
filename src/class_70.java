@@ -1672,7 +1672,7 @@ public class class_70 extends class_65 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_683() {
+   static {
       field_536 = false;
       field_534 = false;
       field_535 = false;
@@ -8288,8 +8288,8 @@ public class class_70 extends class_65 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_105() throws Throwable {
-      super.method_105();
+   class_70() throws Throwable {
+      super();
       throw new Error();
    }
 

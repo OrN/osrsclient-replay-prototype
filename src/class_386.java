@@ -49,7 +49,7 @@ final class class_386 implements class_23 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_6723() {
+   class_386() {
       super();
    }
 

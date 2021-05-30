@@ -14,16 +14,15 @@ public class class_349 {
 
 
    // $FF: renamed from: <clinit> () void
-   static void method_6197() {
-      class_349 var10000 = new class_349;
-      var10000.method_6198(3);
+   static {
+      class_349 var10000 = new class_349(3);
       field_3935 = var10000;
    }
 
    // $FF: renamed from: <init> (int) void
-   void method_6198(int var1) {
+   class_349(int var1) {
+      super();
       try {
-         super();
          this.field_3936 = var1 * -1530607719;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "lf.<init>(" + ')');

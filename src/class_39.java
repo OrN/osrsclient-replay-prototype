@@ -16,15 +16,13 @@ public class class_39 extends class_27 {
    // $FF: renamed from: n () void
    void method_457() {
       if(this.field_260 == null) {
-         class_364 var10001 = new class_364;
-         var10001.method_6538(16);
+         class_364 var10001 = new class_364(16);
          this.field_260 = var10001;
          int[] var1 = new int[16];
          int[] var2 = new int[16];
          var2[9] = 128;
          var1[9] = 128;
-         class_285 var10000 = new class_285;
-         var10000.method_5192(this.field_259);
+         class_285 var10000 = new class_285(this.field_259);
          class_285 var4 = var10000;
          int var5 = var4.method_5196();
 
@@ -82,8 +80,7 @@ public class class_39 extends class_27 {
                      int var13 = var2[var10];
                      class_33 var14 = (class_33)this.field_260.method_6523((long)var13);
                      if(var14 == null) {
-                        class_33 var15 = new class_33;
-                        var15.method_392(new byte[128]);
+                        class_33 var15 = new class_33(new byte[128]);
                         var14 = var15;
                         this.field_260.method_6525(var14, (long)var13);
                      }
@@ -100,8 +97,8 @@ public class class_39 extends class_27 {
    }
 
    // $FF: renamed from: <init> (nd) void
-   void method_458(class_28 var1) {
-      super.method_105();
+   class_39(class_28 var1) {
+      super();
       var1.field_15 = (var1.field_12.length - 3) * -1025691571;
       int var2 = var1.method_130(1013714359);
       int var3 = var1.method_132((byte)-16);
@@ -262,8 +259,7 @@ public class class_39 extends class_27 {
       int var50 = var1.field_15 * -442398587;
       var1.field_15 += var5 * 1217892583;
       this.field_259 = new byte[var4];
-      class_28 var10000 = new class_28;
-      var10000.method_178(this.field_259);
+      class_28 var10000 = new class_28(this.field_259);
       class_28 var51 = var10000;
       var51.method_116(1297377380, -1535038974);
       var51.method_116(6, 1579120212);
@@ -430,10 +426,8 @@ public class class_39 extends class_27 {
       if(var3 == null) {
          return null;
       } else {
-         class_39 var10000 = new class_39;
-         class_28 var10002 = new class_28;
-         var10002.method_178(var3);
-         var10000.method_458(var10002);
+         class_28 var10002 = new class_28(var3);
+         class_39 var10000 = new class_39(var10002);
          return var10000;
       }
    }
@@ -444,10 +438,8 @@ public class class_39 extends class_27 {
       if(var3 == null) {
          return null;
       } else {
-         class_39 var10000 = new class_39;
-         class_28 var10002 = new class_28;
-         var10002.method_178(var3);
-         var10000.method_458(var10002);
+         class_28 var10002 = new class_28(var3);
+         class_39 var10000 = new class_39(var10002);
          return var10000;
       }
    }
@@ -458,10 +450,8 @@ public class class_39 extends class_27 {
       if(var3 == null) {
          return null;
       } else {
-         class_39 var10000 = new class_39;
-         class_28 var10002 = new class_28;
-         var10002.method_178(var3);
-         var10000.method_458(var10002);
+         class_28 var10002 = new class_28(var3);
+         class_39 var10000 = new class_39(var10002);
          return var10000;
       }
    }
@@ -472,10 +462,8 @@ public class class_39 extends class_27 {
       if(var3 == null) {
          return null;
       } else {
-         class_39 var10000 = new class_39;
-         class_28 var10002 = new class_28;
-         var10002.method_178(var3);
-         var10000.method_458(var10002);
+         class_28 var10002 = new class_28(var3);
+         class_39 var10000 = new class_39(var10002);
          return var10000;
       }
    }
@@ -483,15 +471,13 @@ public class class_39 extends class_27 {
    // $FF: renamed from: b () void
    void method_464() {
       if(this.field_260 == null) {
-         class_364 var10001 = new class_364;
-         var10001.method_6538(16);
+         class_364 var10001 = new class_364(16);
          this.field_260 = var10001;
          int[] var1 = new int[16];
          int[] var2 = new int[16];
          var2[9] = 128;
          var1[9] = 128;
-         class_285 var10000 = new class_285;
-         var10000.method_5192(this.field_259);
+         class_285 var10000 = new class_285(this.field_259);
          class_285 var4 = var10000;
          int var5 = var4.method_5196();
 
@@ -549,8 +535,7 @@ public class class_39 extends class_27 {
                      int var13 = var2[var10];
                      class_33 var14 = (class_33)this.field_260.method_6523((long)var13);
                      if(var14 == null) {
-                        class_33 var15 = new class_33;
-                        var15.method_392(new byte[128]);
+                        class_33 var15 = new class_33(new byte[128]);
                         var14 = var15;
                         this.field_260.method_6525(var14, (long)var13);
                      }
@@ -569,15 +554,13 @@ public class class_39 extends class_27 {
    // $FF: renamed from: d () void
    void method_465() {
       if(this.field_260 == null) {
-         class_364 var10001 = new class_364;
-         var10001.method_6538(16);
+         class_364 var10001 = new class_364(16);
          this.field_260 = var10001;
          int[] var1 = new int[16];
          int[] var2 = new int[16];
          var2[9] = 128;
          var1[9] = 128;
-         class_285 var10000 = new class_285;
-         var10000.method_5192(this.field_259);
+         class_285 var10000 = new class_285(this.field_259);
          class_285 var4 = var10000;
          int var5 = var4.method_5196();
 
@@ -635,8 +618,7 @@ public class class_39 extends class_27 {
                      int var13 = var2[var10];
                      class_33 var14 = (class_33)this.field_260.method_6523((long)var13);
                      if(var14 == null) {
-                        class_33 var15 = new class_33;
-                        var15.method_392(new byte[128]);
+                        class_33 var15 = new class_33(new byte[128]);
                         var14 = var15;
                         this.field_260.method_6525(var14, (long)var13);
                      }
@@ -655,15 +637,13 @@ public class class_39 extends class_27 {
    // $FF: renamed from: s () void
    void method_466() {
       if(this.field_260 == null) {
-         class_364 var10001 = new class_364;
-         var10001.method_6538(16);
+         class_364 var10001 = new class_364(16);
          this.field_260 = var10001;
          int[] var1 = new int[16];
          int[] var2 = new int[16];
          var2[9] = 128;
          var1[9] = 145425403;
-         class_285 var10000 = new class_285;
-         var10000.method_5192(this.field_259);
+         class_285 var10000 = new class_285(this.field_259);
          class_285 var4 = var10000;
          int var5 = var4.method_5196();
 
@@ -721,8 +701,7 @@ public class class_39 extends class_27 {
                      int var13 = var2[var10];
                      class_33 var14 = (class_33)this.field_260.method_6523((long)var13);
                      if(var14 == null) {
-                        class_33 var15 = new class_33;
-                        var15.method_392(new byte[128]);
+                        class_33 var15 = new class_33(new byte[128]);
                         var14 = var15;
                         this.field_260.method_6525(var14, (long)var13);
                      }
@@ -741,15 +720,13 @@ public class class_39 extends class_27 {
    // $FF: renamed from: u () void
    void method_467() {
       if(this.field_260 == null) {
-         class_364 var10001 = new class_364;
-         var10001.method_6538(16);
+         class_364 var10001 = new class_364(16);
          this.field_260 = var10001;
          int[] var1 = new int[16];
          int[] var2 = new int[16];
          var2[9] = 128;
          var1[9] = 128;
-         class_285 var10000 = new class_285;
-         var10000.method_5192(this.field_259);
+         class_285 var10000 = new class_285(this.field_259);
          class_285 var4 = var10000;
          int var5 = var4.method_5196();
 
@@ -807,8 +784,7 @@ public class class_39 extends class_27 {
                      int var13 = var2[var10];
                      class_33 var14 = (class_33)this.field_260.method_6523((long)var13);
                      if(var14 == null) {
-                        class_33 var15 = new class_33;
-                        var15.method_392(new byte[128]);
+                        class_33 var15 = new class_33(new byte[128]);
                         var14 = var15;
                         this.field_260.method_6525(var14, (long)var13);
                      }
@@ -830,10 +806,8 @@ public class class_39 extends class_27 {
       if(var3 == null) {
          return null;
       } else {
-         class_39 var10000 = new class_39;
-         class_28 var10002 = new class_28;
-         var10002.method_178(var3);
-         var10000.method_458(var10002);
+         class_28 var10002 = new class_28(var3);
+         class_39 var10000 = new class_39(var10002);
          return var10000;
       }
    }

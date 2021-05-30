@@ -82,8 +82,7 @@ public class class_57 extends class_27 {
          if(var3 == null) {
             return null;
          } else {
-            class_57 var10000 = new class_57;
-            var10000.method_601(var3);
+            class_57 var10000 = new class_57(var3);
             return var10000;
          }
       }
@@ -161,8 +160,7 @@ public class class_57 extends class_27 {
 
       for(var2 = 0; var2 < var1; ++var2) {
          class_155[] var10000 = field_434;
-         class_155 var10002 = new class_155;
-         var10002.method_3254();
+         class_155 var10002 = new class_155();
          var10000[var2] = var10002;
       }
 
@@ -177,8 +175,7 @@ public class class_57 extends class_27 {
 
       for(var3 = 0; var3 < var2; ++var3) {
          class_134[] var22 = field_443;
-         class_134 var25 = new class_134;
-         var25.method_2933();
+         class_134 var25 = new class_134();
          var22[var3] = var25;
       }
 
@@ -187,8 +184,7 @@ public class class_57 extends class_27 {
 
       for(var4 = 0; var4 < var3; ++var4) {
          class_152[] var23 = field_436;
-         class_152 var26 = new class_152;
-         var26.method_3217();
+         class_152 var26 = new class_152();
          var23[var4] = var26;
       }
 
@@ -197,8 +193,7 @@ public class class_57 extends class_27 {
 
       for(var5 = 0; var5 < var4; ++var5) {
          class_161[] var24 = field_437;
-         class_161 var27 = new class_161;
-         var27.method_3379();
+         class_161 var27 = new class_161();
          var24[var5] = var27;
       }
 
@@ -241,8 +236,7 @@ public class class_57 extends class_27 {
 
    // $FF: renamed from: p (byte[]) void
    void method_598(byte[] var1) {
-      class_28 var10000 = new class_28;
-      var10000.method_178(var1);
+      class_28 var10000 = new class_28(var1);
       class_28 var2 = var10000;
       this.field_424 = var2.method_135((byte)-102);
       this.field_425 = var2.method_135((byte)-110);
@@ -548,8 +542,8 @@ public class class_57 extends class_27 {
    }
 
    // $FF: renamed from: <init> (byte[]) void
-   void method_601(byte[] var1) {
-      super.method_105();
+   class_57(byte[] var1) {
+      super();
       this.method_598(var1);
    }
 
@@ -613,14 +607,13 @@ public class class_57 extends class_27 {
          this.field_441 = null;
          byte[] var7 = this.field_454;
          this.field_454 = null;
-         class_110 var10000 = new class_110;
-         var10000.method_2224(this.field_424, var7, this.field_426, this.field_427, this.field_428);
+         class_110 var10000 = new class_110(this.field_424, var7, this.field_426, this.field_427, this.field_428);
          return var10000;
       }
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_605() {
+   static {
       field_442 = false;
    }
 
@@ -646,8 +639,7 @@ public class class_57 extends class_27 {
          if(var3 == null) {
             return null;
          } else {
-            class_57 var10000 = new class_57;
-            var10000.method_601(var3);
+            class_57 var10000 = new class_57(var3);
             return var10000;
          }
       }
@@ -744,8 +736,7 @@ public class class_57 extends class_27 {
 
       for(var2 = 0; var2 < var1; ++var2) {
          class_155[] var10000 = field_434;
-         class_155 var10002 = new class_155;
-         var10002.method_3254();
+         class_155 var10002 = new class_155();
          var10000[var2] = var10002;
       }
 
@@ -760,8 +751,7 @@ public class class_57 extends class_27 {
 
       for(var3 = 0; var3 < var2; ++var3) {
          class_134[] var22 = field_443;
-         class_134 var25 = new class_134;
-         var25.method_2933();
+         class_134 var25 = new class_134();
          var22[var3] = var25;
       }
 
@@ -770,8 +760,7 @@ public class class_57 extends class_27 {
 
       for(var4 = 0; var4 < var3; ++var4) {
          class_152[] var23 = field_436;
-         class_152 var26 = new class_152;
-         var26.method_3217();
+         class_152 var26 = new class_152();
          var23[var4] = var26;
       }
 
@@ -780,8 +769,7 @@ public class class_57 extends class_27 {
 
       for(var5 = 0; var5 < var4; ++var5) {
          class_161[] var24 = field_437;
-         class_161 var27 = new class_161;
-         var27.method_3379();
+         class_161 var27 = new class_161();
          var24[var5] = var27;
       }
 
@@ -844,8 +832,7 @@ public class class_57 extends class_27 {
          this.field_441 = null;
          byte[] var7 = this.field_454;
          this.field_454 = null;
-         class_110 var10000 = new class_110;
-         var10000.method_2224(this.field_424, var7, this.field_426, this.field_427, this.field_428);
+         class_110 var10000 = new class_110(this.field_424, var7, this.field_426, this.field_427, this.field_428);
          return var10000;
       }
    }
@@ -885,8 +872,7 @@ public class class_57 extends class_27 {
 
    // $FF: renamed from: x (byte[]) void
    void method_615(byte[] var1) {
-      class_28 var10000 = new class_28;
-      var10000.method_178(var1);
+      class_28 var10000 = new class_28(var1);
       class_28 var2 = var10000;
       this.field_424 = var2.method_135((byte)-94);
       this.field_425 = var2.method_135((byte)-83);
@@ -918,8 +904,7 @@ public class class_57 extends class_27 {
 
    // $FF: renamed from: z (byte[]) void
    void method_616(byte[] var1) {
-      class_28 var10000 = new class_28;
-      var10000.method_178(var1);
+      class_28 var10000 = new class_28(var1);
       class_28 var2 = var10000;
       this.field_424 = var2.method_135((byte)-71);
       this.field_425 = var2.method_135((byte)-31);
@@ -951,8 +936,7 @@ public class class_57 extends class_27 {
 
    // $FF: renamed from: w (byte[]) void
    void method_617(byte[] var1) {
-      class_28 var10000 = new class_28;
-      var10000.method_178(var1);
+      class_28 var10000 = new class_28(var1);
       class_28 var2 = var10000;
       this.field_424 = var2.method_135((byte)-70);
       this.field_425 = var2.method_135((byte)-57);
@@ -1054,8 +1038,7 @@ public class class_57 extends class_27 {
 
       for(var2 = 0; var2 < var1; ++var2) {
          class_155[] var10000 = field_434;
-         class_155 var10002 = new class_155;
-         var10002.method_3254();
+         class_155 var10002 = new class_155();
          var10000[var2] = var10002;
       }
 
@@ -1070,8 +1053,7 @@ public class class_57 extends class_27 {
 
       for(var3 = 0; var3 < var2; ++var3) {
          class_134[] var22 = field_443;
-         class_134 var25 = new class_134;
-         var25.method_2933();
+         class_134 var25 = new class_134();
          var22[var3] = var25;
       }
 
@@ -1080,8 +1062,7 @@ public class class_57 extends class_27 {
 
       for(var4 = 0; var4 < var3; ++var4) {
          class_152[] var23 = field_436;
-         class_152 var26 = new class_152;
-         var26.method_3217();
+         class_152 var26 = new class_152();
          var23[var4] = var26;
       }
 
@@ -1090,8 +1071,7 @@ public class class_57 extends class_27 {
 
       for(var5 = 0; var5 < var4; ++var5) {
          class_161[] var24 = field_437;
-         class_161 var27 = new class_161;
-         var27.method_3379();
+         class_161 var27 = new class_161();
          var24[var5] = var27;
       }
 
@@ -1431,8 +1411,7 @@ public class class_57 extends class_27 {
 
       for(var2 = 0; var2 < var1; ++var2) {
          class_155[] var10000 = field_434;
-         class_155 var10002 = new class_155;
-         var10002.method_3254();
+         class_155 var10002 = new class_155();
          var10000[var2] = var10002;
       }
 
@@ -1447,8 +1426,7 @@ public class class_57 extends class_27 {
 
       for(var3 = 0; var3 < var2; ++var3) {
          class_134[] var22 = field_443;
-         class_134 var25 = new class_134;
-         var25.method_2933();
+         class_134 var25 = new class_134();
          var22[var3] = var25;
       }
 
@@ -1457,8 +1435,7 @@ public class class_57 extends class_27 {
 
       for(var4 = 0; var4 < var3; ++var4) {
          class_152[] var23 = field_436;
-         class_152 var26 = new class_152;
-         var26.method_3217();
+         class_152 var26 = new class_152();
          var23[var4] = var26;
       }
 
@@ -1467,8 +1444,7 @@ public class class_57 extends class_27 {
 
       for(var5 = 0; var5 < var4; ++var5) {
          class_161[] var24 = field_437;
-         class_161 var27 = new class_161;
-         var27.method_3379();
+         class_161 var27 = new class_161();
          var24[var5] = var27;
       }
 
@@ -1487,8 +1463,7 @@ public class class_57 extends class_27 {
 
    // $FF: renamed from: m (byte[]) void
    void method_621(byte[] var1) {
-      class_28 var10000 = new class_28;
-      var10000.method_178(var1);
+      class_28 var10000 = new class_28(var1);
       class_28 var2 = var10000;
       this.field_424 = var2.method_135((byte)-123);
       this.field_425 = var2.method_135((byte)-71);
@@ -1590,8 +1565,7 @@ public class class_57 extends class_27 {
 
       for(var2 = 0; var2 < var1; ++var2) {
          class_155[] var10000 = field_434;
-         class_155 var10002 = new class_155;
-         var10002.method_3254();
+         class_155 var10002 = new class_155();
          var10000[var2] = var10002;
       }
 
@@ -1606,8 +1580,7 @@ public class class_57 extends class_27 {
 
       for(var3 = 0; var3 < var2; ++var3) {
          class_134[] var22 = field_443;
-         class_134 var25 = new class_134;
-         var25.method_2933();
+         class_134 var25 = new class_134();
          var22[var3] = var25;
       }
 
@@ -1616,8 +1589,7 @@ public class class_57 extends class_27 {
 
       for(var4 = 0; var4 < var3; ++var4) {
          class_152[] var23 = field_436;
-         class_152 var26 = new class_152;
-         var26.method_3217();
+         class_152 var26 = new class_152();
          var23[var4] = var26;
       }
 
@@ -1626,8 +1598,7 @@ public class class_57 extends class_27 {
 
       for(var5 = 0; var5 < var4; ++var5) {
          class_161[] var24 = field_437;
-         class_161 var27 = new class_161;
-         var27.method_3379();
+         class_161 var27 = new class_161();
          var24[var5] = var27;
       }
 
@@ -1758,8 +1729,7 @@ public class class_57 extends class_27 {
 
       for(var2 = 0; var2 < var1; ++var2) {
          class_155[] var10000 = field_434;
-         class_155 var10002 = new class_155;
-         var10002.method_3254();
+         class_155 var10002 = new class_155();
          var10000[var2] = var10002;
       }
 
@@ -1774,8 +1744,7 @@ public class class_57 extends class_27 {
 
       for(var3 = 0; var3 < var2; ++var3) {
          class_134[] var22 = field_443;
-         class_134 var25 = new class_134;
-         var25.method_2933();
+         class_134 var25 = new class_134();
          var22[var3] = var25;
       }
 
@@ -1784,8 +1753,7 @@ public class class_57 extends class_27 {
 
       for(var4 = 0; var4 < var3; ++var4) {
          class_152[] var23 = field_436;
-         class_152 var26 = new class_152;
-         var26.method_3217();
+         class_152 var26 = new class_152();
          var23[var4] = var26;
       }
 
@@ -1794,8 +1762,7 @@ public class class_57 extends class_27 {
 
       for(var5 = 0; var5 < var4; ++var5) {
          class_161[] var24 = field_437;
-         class_161 var27 = new class_161;
-         var27.method_3379();
+         class_161 var27 = new class_161();
          var24[var5] = var27;
       }
 
@@ -1822,8 +1789,7 @@ public class class_57 extends class_27 {
          if(var3 == null) {
             return null;
          } else {
-            class_57 var10000 = new class_57;
-            var10000.method_601(var3);
+            class_57 var10000 = new class_57(var3);
             return var10000;
          }
       }
@@ -1887,8 +1853,7 @@ public class class_57 extends class_27 {
          this.field_441 = null;
          byte[] var7 = this.field_454;
          this.field_454 = null;
-         class_110 var10000 = new class_110;
-         var10000.method_2224(this.field_424, var7, this.field_426, this.field_427, this.field_428);
+         class_110 var10000 = new class_110(this.field_424, var7, this.field_426, this.field_427, this.field_428);
          return var10000;
       }
    }
@@ -1939,8 +1904,7 @@ public class class_57 extends class_27 {
          this.field_441 = null;
          byte[] var7 = this.field_454;
          this.field_454 = null;
-         class_110 var10000 = new class_110;
-         var10000.method_2224(this.field_424, var7, this.field_426, this.field_427, this.field_428);
+         class_110 var10000 = new class_110(this.field_424, var7, this.field_426, this.field_427, this.field_428);
          return var10000;
       }
    }

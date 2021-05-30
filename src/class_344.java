@@ -62,8 +62,7 @@ public class class_344 extends class_343 {
          this.method_6104(1662872367);
 
          for(int var13 = 0; var13 < var7; ++var13) {
-            class_359 var10001 = new class_359;
-            var10001.method_6280(var1.method_139(-391631059), this.field_3915);
+            class_359 var10001 = new class_359(var1.method_139(-391631059), this.field_3915);
             class_341 var9 = (class_341)this.method_6069(var10001, 2038015722);
             int var14 = var1.method_132((byte)-87);
             var9.method_6016(var14, (this.field_3910 += 1879730295) * -1952190137 - 1, 1166530780);
@@ -78,8 +77,7 @@ public class class_344 extends class_343 {
    // $FF: renamed from: v (byte) lx
    class_338 method_6079(byte var1) {
       try {
-         class_341 var10000 = new class_341;
-         var10000.method_6011();
+         class_341 var10000 = new class_341();
          return var10000;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "lt.v(" + ')');
@@ -180,8 +178,7 @@ public class class_344 extends class_343 {
                   throw new IllegalStateException();
                }
 
-               class_359 var10001 = new class_359;
-               var10001.method_6280(var1.method_139(-391631059), this.field_3915);
+               class_359 var10001 = new class_359(var1.method_139(-391631059), this.field_3915);
                class_341 var10 = (class_341)this.method_6069(var10001, 1649546401);
                int var16 = var1.method_132((byte)-82);
                var10.method_6016(var16, (this.field_3910 += 1879730295) * -1952190137 - 1, -180363259);
@@ -198,8 +195,7 @@ public class class_344 extends class_343 {
 
    // $FF: renamed from: x (nd) void
    public final void method_6147(class_28 var1) {
-      class_359 var10000 = new class_359;
-      var10000.method_6280(var1.method_139(-391631059), this.field_3915);
+      class_359 var10000 = new class_359(var1.method_139(-391631059), this.field_3915);
       class_359 var2 = var10000;
       int var3 = var1.method_132((byte)-45);
       byte var4 = var1.method_131((byte)13);
@@ -251,8 +247,7 @@ public class class_344 extends class_343 {
    // $FF: renamed from: s (nd, int) void
    public final void method_6149(class_28 var1, int var2) {
       try {
-         class_359 var10000 = new class_359;
-         var10000.method_6280(var1.method_139(-391631059), this.field_3915);
+         class_359 var10000 = new class_359(var1.method_139(-391631059), this.field_3915);
          class_359 var3 = var10000;
          int var4 = var1.method_132((byte)-118);
          byte var5 = var1.method_131((byte)-61);
@@ -336,8 +331,7 @@ public class class_344 extends class_343 {
 
    // $FF: renamed from: y () lx
    class_338 method_6059() {
-      class_341 var10000 = new class_341;
-      var10000.method_6011();
+      class_341 var10000 = new class_341();
       return var10000;
    }
 
@@ -394,8 +388,7 @@ public class class_344 extends class_343 {
          this.method_6104(349373368);
 
          for(int var13 = 0; var13 < var7; ++var13) {
-            class_359 var10001 = new class_359;
-            var10001.method_6280(var1.method_139(-391631059), this.field_3915);
+            class_359 var10001 = new class_359(var1.method_139(-391631059), this.field_3915);
             class_341 var9 = (class_341)this.method_6069(var10001, 1485079753);
             int var14 = var1.method_132((byte)-26);
             var9.method_6016(var14, (this.field_3910 += 1879730295) * 2092080294 - 1, -1591096228);
@@ -445,8 +438,7 @@ public class class_344 extends class_343 {
          this.method_6104(533711664);
 
          for(int var13 = 0; var13 < var7; ++var13) {
-            class_359 var10001 = new class_359;
-            var10001.method_6280(var1.method_139(-391631059), this.field_3915);
+            class_359 var10001 = new class_359(var1.method_139(-391631059), this.field_3915);
             class_341 var9 = (class_341)this.method_6069(var10001, 1702935572);
             int var14 = var1.method_132((byte)-76);
             var9.method_6016(var14, (this.field_3910 += -833130731) * -515556316 - 1, 348161507);
@@ -512,8 +504,7 @@ public class class_344 extends class_343 {
          this.method_6104(-705777756);
 
          for(int var13 = 0; var13 < var7; ++var13) {
-            class_359 var10001 = new class_359;
-            var10001.method_6280(var1.method_139(-391631059), this.field_3915);
+            class_359 var10001 = new class_359(var1.method_139(-391631059), this.field_3915);
             class_341 var9 = (class_341)this.method_6069(var10001, 1218531798);
             int var14 = var1.method_132((byte)-74);
             var9.method_6016(var14, (this.field_3910 += 1879730295) * -1952190137 - 1, -1228934319);
@@ -527,8 +518,7 @@ public class class_344 extends class_343 {
 
    // $FF: renamed from: m (nd) void
    public final void method_6156(class_28 var1) {
-      class_359 var10000 = new class_359;
-      var10000.method_6280(var1.method_139(-391631059), this.field_3915);
+      class_359 var10000 = new class_359(var1.method_139(-391631059), this.field_3915);
       class_359 var2 = var10000;
       int var3 = var1.method_132((byte)-122);
       byte var4 = var1.method_131((byte)-98);
@@ -603,8 +593,7 @@ public class class_344 extends class_343 {
          this.method_6104(554626827);
 
          for(int var13 = 0; var13 < var7; ++var13) {
-            class_359 var10001 = new class_359;
-            var10001.method_6280(var1.method_139(-391631059), this.field_3915);
+            class_359 var10001 = new class_359(var1.method_139(-391631059), this.field_3915);
             class_341 var9 = (class_341)this.method_6069(var10001, 1944208702);
             int var14 = var1.method_132((byte)-64);
             var9.method_6016(var14, (this.field_3910 += 1906850304) * -1952190137 - 1, -1484850308);
@@ -617,9 +606,9 @@ public class class_344 extends class_343 {
    }
 
    // $FF: renamed from: <init> (nc, lc) void
-   public void method_6158(class_375 var1, class_16 var2) {
+   public class_344(class_375 var1, class_16 var2) {
+      super(100);
       try {
-         super.method_6083(100);
          this.field_3909 = null;
          this.field_3906 = null;
          this.field_3910 = 1879730295;

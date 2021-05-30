@@ -15,7 +15,7 @@ public class class_260 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_4971() {
+   static {
       new Object();
       field_2904 = new int[33];
       field_2904[0] = 0;
@@ -37,9 +37,9 @@ public class class_260 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_4973() throws Throwable {
+   class_260() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "hi.<init>(" + ')');

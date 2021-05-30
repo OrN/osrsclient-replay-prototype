@@ -12,7 +12,7 @@ public class class_128 implements class_0 {
 
 
    // $FF: renamed from: <init> (aj) void
-   void method_2833(class_130 var1) {
+   class_128(class_130 var1) {
       super();
       this.field_1696 = this.method_2848();
    }

@@ -23,8 +23,7 @@ public class class_304 implements class_14 {
          int var7;
          int var8;
          label46: {
-            class_103 var10000 = new class_103;
-            var10000.method_105();
+            class_103 var10000 = new class_103();
             var6 = var10000;
             var6.field_1188 = -921901257 * var0;
             var6.field_1198 = -1130410624 * var1;
@@ -89,18 +88,14 @@ public class class_304 implements class_14 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_5371() {
-      class_304 var10000 = new class_304;
-      var10000.method_5374(-1);
+   static {
+      class_304 var10000 = new class_304(-1);
       field_3397 = var10000;
-      var10000 = new class_304;
-      var10000.method_5374(0);
+      var10000 = new class_304(0);
       field_3400 = var10000;
-      var10000 = new class_304;
-      var10000.method_5374(1);
+      var10000 = new class_304(1);
       field_3398 = var10000;
-      var10000 = new class_304;
-      var10000.method_5374(2);
+      var10000 = new class_304(2);
       field_3399 = var10000;
    }
 
@@ -120,9 +115,9 @@ public class class_304 implements class_14 {
    }
 
    // $FF: renamed from: <init> (int) void
-   void method_5374(int var1) {
+   class_304(int var1) {
+      super();
       try {
-         super();
          this.field_3396 = 259074289 * var1;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "jn.<init>(" + ')');

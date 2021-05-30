@@ -13,9 +13,9 @@ public class class_211 {
 
 
    // $FF: renamed from: <init> (int) void
-   public void method_4172(int var1) {
+   public class_211(int var1) {
+      super();
       try {
-         super();
          class_80 var2 = class_299.method_5347(var1, -1033409139);
          if(var2.method_1274((short)-14386)) {
             this.field_2430 = new short[var2.field_709.length];

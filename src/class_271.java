@@ -36,9 +36,9 @@ public class class_271 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_5059() {
+   class_271() {
+      super();
       try {
-         super();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "hy.<init>(" + ')');
       }
@@ -174,8 +174,7 @@ public class class_271 {
             int var15 = class_65.field_486;
             int[] var16 = new int[4];
             class_65.method_655(var16);
-            class_67 var10000 = new class_67;
-            var10000.method_754(36, 32);
+            class_67 var10000 = new class_67(36, 32);
             var9 = var10000;
             class_65.method_656(var9.field_502, 36, 32);
             class_65.method_662();

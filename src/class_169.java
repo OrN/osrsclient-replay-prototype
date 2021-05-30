@@ -126,9 +126,9 @@ public class class_169 {
    }
 
    // $FF: renamed from: <init> (jp, java.lang.String) void
-   void method_3616(class_307 var1, String var2) {
+   class_169(class_307 var1, String var2) {
+      super();
       try {
-         super();
          this.field_2107 = 0;
          this.field_2105 = var1;
          this.field_2106 = var1.method_5457(585354532) * -296342647;
@@ -158,16 +158,14 @@ public class class_169 {
             return var2;
          } else {
             byte[] var3 = class_85.field_786.method_5381(34, var0, -26460885);
-            class_85 var10000 = new class_85;
-            var10000.method_105();
+            class_85 var10000 = new class_85();
             var2 = var10000;
             if(var3 != null) {
                if(var1 == 74066814) {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28;
-               var10001.method_178(var3);
+               class_28 var10001 = new class_28(var3);
                var2.method_1431(var10001, -32029901);
             }
 

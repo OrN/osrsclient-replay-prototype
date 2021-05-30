@@ -125,9 +125,9 @@ public final class class_383 {
    }
 
    // $FF: renamed from: <init> (java.io.File, java.lang.String, long) void
-   public void method_6690(File var1, String var2, long var3) throws IOException {
+   public class_383(File var1, String var2, long var3) throws IOException {
+      super();
       try {
-         super();
          if(var3 == -1L) {
             var3 = Long.MAX_VALUE;
          }

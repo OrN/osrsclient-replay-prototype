@@ -28,9 +28,9 @@ public class class_136 {
 
 
    // $FF: renamed from: <init> () void
-   void method_2952() throws Throwable {
+   class_136() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "aq.<init>(" + ')');
@@ -489,7 +489,7 @@ public class class_136 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_2962() {
+   static {
       field_1755 = null;
       field_1751 = "";
    }

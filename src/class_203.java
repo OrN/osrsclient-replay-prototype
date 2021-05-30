@@ -195,18 +195,15 @@ public class class_203 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_4091() {
+   class_203() {
+      super();
       try {
-         super();
-         class_323 var10001 = new class_323;
-         var10001.method_5737();
+         class_323 var10001 = new class_323();
          this.field_2371 = var10001;
          this.field_2383 = 0;
-         class_28 var2 = new class_28;
-         var2.method_160(5000);
+         class_28 var2 = new class_28(5000);
          this.field_2373 = var2;
-         class_29 var3 = new class_29;
-         var3.method_160('\u9c40');
+         class_29 var3 = new class_29('\u9c40');
          this.field_2375 = var3;
          this.field_2376 = null;
          this.field_2380 = 0;

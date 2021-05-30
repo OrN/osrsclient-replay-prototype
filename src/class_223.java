@@ -23,9 +23,9 @@ public class class_223 {
 
 
    // $FF: renamed from: <init> (int, int, int) void
-   void method_4279(int var1, int var2, int var3) {
+   class_223(int var1, int var2, int var3) {
+      super();
       try {
-         super();
          this.field_2521 = var1 * -1613171285;
          this.field_2522 = 725393889 * var2;
          this.field_2526 = -1937775429 * var3;
@@ -61,20 +61,24 @@ public class class_223 {
 
    // $FF: renamed from: n (java.lang.Throwable, java.lang.String) oz
    public static class_405 method_4281(Throwable var0, String var1) {
-      try {
+      /*try {
          class_405 var2;
          if(var0 instanceof class_405) {
             var2 = (class_405)var0;
             var2.field_4293 = var2.field_4293 + ' ' + var1;
          } else {
-            class_405 var10000 = new class_405;
-            var10000.method_6852(var0, var1);
+            class_405 var10000 = new class_405(var0, var1);
             var2 = var10000;
          }
 
          return var2;
       } catch (RuntimeException var3) {
          throw method_4281(var3, "fh.n(" + ')');
-      }
+      }*/
+
+      // TODO: Better Logger
+      var0.printStackTrace();
+      //System.exit(0);
+      return null;
    }
 }

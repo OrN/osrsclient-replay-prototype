@@ -25,9 +25,9 @@ public class class_172 implements Callable {
    }
 
    // $FF: renamed from: <init> () void
-   void method_3707() {
+   class_172() {
+      super();
       try {
-         super();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "co.<init>(" + ')');
       }

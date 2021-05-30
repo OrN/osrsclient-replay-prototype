@@ -149,9 +149,9 @@ public class class_193 extends class_191 {
    }
 
    // $FF: renamed from: <init> () void
-   public void method_3949() {
+   public class_193() {
+      super();
       try {
-         super.method_3949();
          this.field_2301 = System.nanoTime() * 4914803548099444557L;
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "de.<init>(" + ')');

@@ -87,9 +87,9 @@ public class class_182 extends class_181 {
    }
 
    // $FF: renamed from: <init> (boolean) void
-   public void method_3834(boolean var1) {
+   public class_182(boolean var1) {
+      super();
       try {
-         super.method_3822();
          this.field_2246 = var1;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "dy.<init>(" + ')');

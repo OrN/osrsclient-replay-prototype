@@ -9,7 +9,7 @@ public class class_48 extends class_27 {
    // $FF: renamed from: f boolean
    boolean field_355;
    // $FF: renamed from: a java.lang.String[]
-   public static String[] field_356;
+   public static String[] cacheDirectories;
    // $FF: renamed from: l int
    static final int field_357 = 12;
    // $FF: renamed from: bv int
@@ -30,16 +30,14 @@ public class class_48 extends class_27 {
             }
          } else {
             byte[] var3 = class_79.field_690.method_5381(8, var0, -26460885);
-            class_79 var10000 = new class_79;
-            var10000.method_105();
+            class_79 var10000 = new class_79();
             var2 = var10000;
             if(var3 != null) {
                if(var1 != -647978763) {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28;
-               var10001.method_178(var3);
+               class_28 var10001 = new class_28(var3);
                var2.method_1241(var10001, 1467910885);
             }
 
@@ -52,9 +50,9 @@ public class class_48 extends class_27 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_105() {
+   class_48() {
+      super();
       try {
-         super.method_105();
          this.field_355 = false;
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "cu.<init>(" + ')');

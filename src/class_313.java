@@ -20,12 +20,10 @@ public class class_313 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_5575() {
-      class_313 var10000 = new class_313;
-      var10000.method_5577(51, 27, 800, 0, 16, 16);
+   static {
+      class_313 var10000 = new class_313(51, 27, 800, 0, 16, 16);
       field_3762 = var10000;
-      var10000 = new class_313;
-      var10000.method_5577(25, 28, 800, 656, 40, 40);
+      var10000 = new class_313(25, 28, 800, 656, 40, 40);
       field_3761 = var10000;
    }
 
@@ -35,9 +33,9 @@ public class class_313 {
    }
 
    // $FF: renamed from: <init> (int, int, int, int, int, int) void
-   void method_5577(int var1, int var2, int var3, int var4, int var5, int var6) {
+   class_313(int var1, int var2, int var3, int var4, int var5, int var6) {
+      super();
       try {
-         super();
          this.field_3760 = var5 * 1199166777;
          this.field_3763 = -1929935585 * var6;
       } catch (RuntimeException var7) {

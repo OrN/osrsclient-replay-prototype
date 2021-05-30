@@ -34,8 +34,8 @@ public final class class_67 extends class_65 {
    }
 
    // $FF: renamed from: <init> (int, int) void
-   public void method_754(int var1, int var2) {
-      this.method_815(new int[var1 * var2], var1, var2);
+   public class_67(int var1, int var2) {
+      this(new int[var1 * var2], var1, var2);
    }
 
    // $FF: renamed from: bw (int[], int[], int, int, int, int, int, int, int, int, int, int, int) void
@@ -1008,8 +1008,8 @@ public final class class_67 extends class_65 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_105() {
-      super.method_105();
+   class_67() {
+      super();
    }
 
    // $FF: renamed from: al (int, int, int, int, int, int, double, int) void
@@ -1533,8 +1533,7 @@ public final class class_67 extends class_65 {
 
    // $FF: renamed from: ag () oh
    public class_67 method_788() {
-      class_67 var10000 = new class_67;
-      var10000.method_754(this.field_508, this.field_500);
+      class_67 var10000 = new class_67(this.field_508, this.field_500);
       class_67 var1 = var10000;
       var1.field_501 = this.field_501;
       var1.field_505 = this.field_505;
@@ -1552,8 +1551,7 @@ public final class class_67 extends class_65 {
 
    // $FF: renamed from: ax () oh
    public class_67 method_789() {
-      class_67 var10000 = new class_67;
-      var10000.method_754(this.field_508, this.field_500);
+      class_67 var10000 = new class_67(this.field_508, this.field_500);
       class_67 var1 = var10000;
       var1.field_501 = this.field_501;
       var1.field_505 = this.field_505;
@@ -1571,8 +1569,7 @@ public final class class_67 extends class_65 {
 
    // $FF: renamed from: as () oh
    public class_67 method_790() {
-      class_67 var10000 = new class_67;
-      var10000.method_754(this.field_508, this.field_500);
+      class_67 var10000 = new class_67(this.field_508, this.field_500);
       class_67 var1 = var10000;
       var1.field_501 = this.field_501;
       var1.field_505 = this.field_505;
@@ -1631,8 +1628,7 @@ public final class class_67 extends class_65 {
 
    // $FF: renamed from: am () oh
    public class_67 method_792() {
-      class_67 var10000 = new class_67;
-      var10000.method_754(this.field_501, this.field_505);
+      class_67 var10000 = new class_67(this.field_501, this.field_505);
       class_67 var1 = var10000;
 
       for(int var2 = 0; var2 < this.field_500; ++var2) {
@@ -1646,8 +1642,7 @@ public final class class_67 extends class_65 {
 
    // $FF: renamed from: az () oh
    public class_67 method_793() {
-      class_67 var10000 = new class_67;
-      var10000.method_754(this.field_501, this.field_505);
+      class_67 var10000 = new class_67(this.field_501, this.field_505);
       class_67 var1 = var10000;
 
       for(int var2 = 0; var2 < this.field_500; ++var2) {
@@ -1960,8 +1955,7 @@ public final class class_67 extends class_65 {
 
    // $FF: renamed from: n () oh
    public class_67 method_804() {
-      class_67 var10000 = new class_67;
-      var10000.method_754(this.field_501, this.field_505);
+      class_67 var10000 = new class_67(this.field_501, this.field_505);
       class_67 var1 = var10000;
 
       for(int var2 = 0; var2 < this.field_500; ++var2) {
@@ -2256,8 +2250,7 @@ public final class class_67 extends class_65 {
 
    // $FF: renamed from: aj () oh
    public class_67 method_814() {
-      class_67 var10000 = new class_67;
-      var10000.method_754(this.field_501, this.field_505);
+      class_67 var10000 = new class_67(this.field_501, this.field_505);
       class_67 var1 = var10000;
 
       for(int var2 = 0; var2 < this.field_500; ++var2) {
@@ -2270,8 +2263,8 @@ public final class class_67 extends class_65 {
    }
 
    // $FF: renamed from: <init> (int[], int, int) void
-   public void method_815(int[] var1, int var2, int var3) {
-      super.method_105();
+   public class_67(int[] var1, int var2, int var3) {
+      super();
       this.field_502 = var1;
       this.field_508 = this.field_501 = var2;
       this.field_500 = this.field_505 = var3;
@@ -4070,8 +4063,7 @@ public final class class_67 extends class_65 {
 
    // $FF: renamed from: v () oh
    public class_67 method_856() {
-      class_67 var10000 = new class_67;
-      var10000.method_754(this.field_508, this.field_500);
+      class_67 var10000 = new class_67(this.field_508, this.field_500);
       class_67 var1 = var10000;
       var1.field_501 = this.field_501;
       var1.field_505 = this.field_505;

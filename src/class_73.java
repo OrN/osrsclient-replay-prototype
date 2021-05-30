@@ -29,12 +29,10 @@ public class class_73 extends class_59 {
          return var1;
       } else {
          byte[] var2 = field_586.method_5381(1, var0, -26460885);
-         class_73 var10000 = new class_73;
-         var10000.method_105();
+         class_73 var10000 = new class_73();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1095(var10001, var0, (byte)101);
          }
 
@@ -222,9 +220,8 @@ public class class_73 extends class_59 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_1098() {
-      class_272 var10000 = new class_272;
-      var10000.method_5063(64);
+   static {
+      class_272 var10000 = new class_272(64);
       field_588 = var10000;
    }
 
@@ -262,12 +259,10 @@ public class class_73 extends class_59 {
          return var1;
       } else {
          byte[] var2 = field_586.method_5381(1, var0, -26460885);
-         class_73 var10000 = new class_73;
-         var10000.method_105();
+         class_73 var10000 = new class_73();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1095(var10001, var0, (byte)68);
          }
 
@@ -284,12 +279,10 @@ public class class_73 extends class_59 {
          return var1;
       } else {
          byte[] var2 = field_586.method_5381(1, var0, -26460885);
-         class_73 var10000 = new class_73;
-         var10000.method_105();
+         class_73 var10000 = new class_73();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1095(var10001, var0, (byte)10);
          }
 
@@ -383,12 +376,10 @@ public class class_73 extends class_59 {
          return var1;
       } else {
          byte[] var2 = field_586.method_5381(1, var0, -26460885);
-         class_73 var10000 = new class_73;
-         var10000.method_105();
+         class_73 var10000 = new class_73();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1095(var10001, var0, (byte)26);
          }
 
@@ -432,12 +423,10 @@ public class class_73 extends class_59 {
          return var1;
       } else {
          byte[] var2 = field_586.method_5381(1, var0, -26460885);
-         class_73 var10000 = new class_73;
-         var10000.method_105();
+         class_73 var10000 = new class_73();
          var1 = var10000;
          if(var2 != null) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1095(var10001, var0, (byte)6);
          }
 
@@ -448,9 +437,9 @@ public class class_73 extends class_59 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_105() {
+   class_73() {
+      super();
       try {
-         super.method_105();
          this.field_584 = 0;
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "ey.<init>(" + ')');

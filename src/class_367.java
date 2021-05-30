@@ -206,9 +206,9 @@ public abstract class class_367 implements class_9 {
    }
 
    // $FF: renamed from: <init> (int) void
-   void method_6578(int var1) {
+   class_367(int var1) {
+      super();
       try {
-         super();
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "ml.<init>(" + ')');
       }

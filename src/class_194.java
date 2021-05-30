@@ -27,9 +27,9 @@ public class class_194 {
    }
 
    // $FF: renamed from: <init> (java.net.URL) void
-   void method_3962(URL var1) {
+   class_194(URL var1) {
+      super();
       try {
-         super();
          this.field_2306 = var1;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "df.<init>(" + ')');

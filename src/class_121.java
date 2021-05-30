@@ -39,10 +39,10 @@ public class class_121 extends class_111 {
    }
 
    // $FF: renamed from: <init> (f) void
-   void method_2267(class_167 var1) {
+   class_121(class_167 var1) {
+      super();
       try {
          this.this$0 = var1;
-         super.method_105();
          this.field_1333 = 443567941;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "h.<init>(" + ')');
@@ -97,8 +97,7 @@ public class class_121 extends class_111 {
             }
          } else {
             byte[] var3 = class_87.field_802.method_5381(6, var0, -26460885);
-            class_87 var10000 = new class_87;
-            var10000.method_105();
+            class_87 var10000 = new class_87();
             var2 = var10000;
             var2.field_808 = 139564951 * var0;
             if(null != var3) {
@@ -106,8 +105,7 @@ public class class_121 extends class_111 {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28;
-               var10001.method_178(var3);
+               class_28 var10001 = new class_28(var3);
                var2.method_1484(var10001, (byte)1);
             }
 

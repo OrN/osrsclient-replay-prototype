@@ -47,15 +47,15 @@ public class class_40 extends class_27 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_472() {
+   static {
       field_268 = new class_40[300];
       field_266 = 0;
    }
 
    // $FF: renamed from: <init> () void
-   void method_105() {
+   class_40() {
+      super();
       try {
-         super.method_105();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "hq.<init>(" + ')');
       }
@@ -65,8 +65,7 @@ public class class_40 extends class_27 {
    public static class_40 method_473(class_266 var0, class_404 var1) {
       class_40 var2;
       if(field_266 * -725708193 == 0) {
-         class_40 var10000 = new class_40;
-         var10000.method_105();
+         class_40 var10000 = new class_40();
          var2 = var10000;
       } else {
          var2 = field_268[(field_266 -= 1843709903) * -227614929];
@@ -76,24 +75,19 @@ public class class_40 extends class_27 {
       var2.field_262 = var0.field_3153 * -1937979799;
       class_29 var10001;
       if(var2.field_262 * -353849396 == -1) {
-         var10001 = new class_29;
-         var10001.method_160(260);
+         var10001 = new class_29(260);
          var2.field_263 = var10001;
       } else if(1909802584 == 1934863547 * var2.field_262) {
-         var10001 = new class_29;
-         var10001.method_160(-629592871);
+         var10001 = new class_29(-629592871);
          var2.field_263 = var10001;
       } else if(var2.field_262 * 1934863547 <= 18) {
-         var10001 = new class_29;
-         var10001.method_160(20);
+         var10001 = new class_29(20);
          var2.field_263 = var10001;
       } else if(-27595703 * var2.field_262 <= 98) {
-         var10001 = new class_29;
-         var10001.method_160(457994531);
+         var10001 = new class_29(457994531);
          var2.field_263 = var10001;
       } else {
-         var10001 = new class_29;
-         var10001.method_160(260);
+         var10001 = new class_29(260);
          var2.field_263 = var10001;
       }
 
@@ -107,8 +101,7 @@ public class class_40 extends class_27 {
    public static class_40 method_474(class_266 var0, class_404 var1) {
       class_40 var2;
       if(field_266 * 1615295544 == 0) {
-         class_40 var10000 = new class_40;
-         var10000.method_105();
+         class_40 var10000 = new class_40();
          var2 = var10000;
       } else {
          var2 = field_268[(field_266 -= -1228620447) * -227614929];
@@ -118,24 +111,19 @@ public class class_40 extends class_27 {
       var2.field_262 = var0.field_3153 * -1937979799;
       class_29 var10001;
       if(var2.field_262 * 1934863547 == -1) {
-         var10001 = new class_29;
-         var10001.method_160(591459580);
+         var10001 = new class_29(591459580);
          var2.field_263 = var10001;
       } else if(-2 == -1645372153 * var2.field_262) {
-         var10001 = new class_29;
-         var10001.method_160(10000);
+         var10001 = new class_29(10000);
          var2.field_263 = var10001;
       } else if(var2.field_262 * -1944320151 <= 18) {
-         var10001 = new class_29;
-         var10001.method_160(20);
+         var10001 = new class_29(20);
          var2.field_263 = var10001;
       } else if(1934863547 * var2.field_262 <= 98) {
-         var10001 = new class_29;
-         var10001.method_160(-922060501);
+         var10001 = new class_29(-922060501);
          var2.field_263 = var10001;
       } else {
-         var10001 = new class_29;
-         var10001.method_160(-178792389);
+         var10001 = new class_29(-178792389);
          var2.field_263 = var10001;
       }
 
@@ -149,8 +137,7 @@ public class class_40 extends class_27 {
    public static class_40 method_475() {
       class_40 var0;
       if(0 == field_266 * -227614929) {
-         class_40 var10000 = new class_40;
-         var10000.method_105();
+         class_40 var10000 = new class_40();
          var0 = var10000;
       } else {
          var0 = field_268[(field_266 -= 1843709903) * -227614929];
@@ -158,8 +145,7 @@ public class class_40 extends class_27 {
 
       var0.field_267 = null;
       var0.field_262 = 0;
-      class_29 var10001 = new class_29;
-      var10001.method_160(5000);
+      class_29 var10001 = new class_29(5000);
       var0.field_263 = var10001;
       return var0;
    }
@@ -168,8 +154,7 @@ public class class_40 extends class_27 {
    public static class_40 method_476(class_266 var0, class_404 var1) {
       class_40 var2;
       if(field_266 * -227614929 == 0) {
-         class_40 var10000 = new class_40;
-         var10000.method_105();
+         class_40 var10000 = new class_40();
          var2 = var10000;
       } else {
          var2 = field_268[(field_266 -= 1843709903) * -227614929];
@@ -179,24 +164,19 @@ public class class_40 extends class_27 {
       var2.field_262 = var0.field_3153 * -1937979799;
       class_29 var10001;
       if(var2.field_262 * 1934863547 == -1) {
-         var10001 = new class_29;
-         var10001.method_160(260);
+         var10001 = new class_29(260);
          var2.field_263 = var10001;
       } else if(-2 == 1934863547 * var2.field_262) {
-         var10001 = new class_29;
-         var10001.method_160(10000);
+         var10001 = new class_29(10000);
          var2.field_263 = var10001;
       } else if(var2.field_262 * 1934863547 <= 18) {
-         var10001 = new class_29;
-         var10001.method_160(20);
+         var10001 = new class_29(20);
          var2.field_263 = var10001;
       } else if(1934863547 * var2.field_262 <= 98) {
-         var10001 = new class_29;
-         var10001.method_160(100);
+         var10001 = new class_29(100);
          var2.field_263 = var10001;
       } else {
-         var10001 = new class_29;
-         var10001.method_160(260);
+         var10001 = new class_29(260);
          var2.field_263 = var10001;
       }
 
@@ -267,8 +247,7 @@ public class class_40 extends class_27 {
    public static class_40 method_478() {
       class_40 var0;
       if(0 == field_266 * 1478816237) {
-         class_40 var10000 = new class_40;
-         var10000.method_105();
+         class_40 var10000 = new class_40();
          var0 = var10000;
       } else {
          var0 = field_268[(field_266 -= 1843709903) * -227614929];
@@ -276,8 +255,7 @@ public class class_40 extends class_27 {
 
       var0.field_267 = null;
       var0.field_262 = 0;
-      class_29 var10001 = new class_29;
-      var10001.method_160(5000);
+      class_29 var10001 = new class_29(5000);
       var0.field_263 = var10001;
       return var0;
    }
@@ -312,8 +290,7 @@ public class class_40 extends class_27 {
    public static class_40 method_480() {
       class_40 var0;
       if(0 == field_266 * -227614929) {
-         class_40 var10000 = new class_40;
-         var10000.method_105();
+         class_40 var10000 = new class_40();
          var0 = var10000;
       } else {
          var0 = field_268[(field_266 -= 1843709903) * -227614929];
@@ -321,8 +298,7 @@ public class class_40 extends class_27 {
 
       var0.field_267 = null;
       var0.field_262 = 0;
-      class_29 var10001 = new class_29;
-      var10001.method_160(5000);
+      class_29 var10001 = new class_29(5000);
       var0.field_263 = var10001;
       return var0;
    }

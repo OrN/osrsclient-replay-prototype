@@ -33,18 +33,14 @@ public class class_365 implements class_14 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_6549() {
-      class_365 var10000 = new class_365;
-      var10000.method_6550(1, 1);
+   static {
+      class_365 var10000 = new class_365(1, 1);
       field_4087 = var10000;
-      var10000 = new class_365;
-      var10000.method_6550(0, 2);
+      var10000 = new class_365(0, 2);
       field_4085 = var10000;
-      var10000 = new class_365;
-      var10000.method_6550(3, 3);
+      var10000 = new class_365(3, 3);
       field_4086 = var10000;
-      var10000 = new class_365;
-      var10000.method_6550(2, 10);
+      var10000 = new class_365(2, 10);
       field_4084 = var10000;
    }
 
@@ -54,9 +50,9 @@ public class class_365 implements class_14 {
    }
 
    // $FF: renamed from: <init> (int, int) void
-   void method_6550(int var1, int var2) {
+   class_365(int var1, int var2) {
+      super();
       try {
-         super();
          this.field_4088 = -1515001733 * var1;
          this.field_4089 = var2 * 471021569;
       } catch (RuntimeException var3) {

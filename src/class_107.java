@@ -116,8 +116,8 @@ public class class_107 extends class_104 {
    }
 
    // $FF: renamed from: <init> (au, int, int, int) void
-   void method_2070(class_110 var1, int var2, int var3, int var4) {
-      super.method_105();
+   class_107(class_110 var1, int var2, int var3, int var4) {
+      super();
       this.field_1205 = var1;
       this.field_1250 = var1.field_1264;
       this.field_1251 = var1.field_1265;
@@ -132,8 +132,7 @@ public class class_107 extends class_104 {
    // $FF: renamed from: f (au, int, int) bv
    public static class_107 method_2071(class_110 var0, int var1, int var2) {
       if(var0.field_1266 != null && var0.field_1266.length != 0) {
-         class_107 var10000 = new class_107;
-         var10000.method_2192(var0, (int)((long)var0.field_1262 * 256L * (long)var1 / (long)(class_139.field_1793 * -92703148)), var2 << 6);
+         class_107 var10000 = new class_107(var0, (int)((long)var0.field_1262 * 256L * (long)var1 / (long)(class_139.field_1793 * -92703148)), var2 << 6);
          return var10000;
       } else {
          return null;
@@ -143,8 +142,7 @@ public class class_107 extends class_104 {
    // $FF: renamed from: y (au, int, int, int) bv
    public static class_107 method_2072(class_110 var0, int var1, int var2, int var3) {
       if(var0.field_1266 != null && var0.field_1266.length != 0) {
-         class_107 var10000 = new class_107;
-         var10000.method_2070(var0, var1, var2, var3);
+         class_107 var10000 = new class_107(var0, var1, var2, var3);
          return var10000;
       } else {
          return null;
@@ -2618,8 +2616,7 @@ public class class_107 extends class_104 {
    // $FF: renamed from: ba (au, int, int) bv
    public static class_107 method_2114(class_110 var0, int var1, int var2) {
       if(var0.field_1266 != null && var0.field_1266.length != 0) {
-         class_107 var10000 = new class_107;
-         var10000.method_2192(var0, (int)((long)var0.field_1262 * 256L * (long)var1 / (long)(class_139.field_1793 * -92703148)), var2 << 6);
+         class_107 var10000 = new class_107(var0, (int)((long)var0.field_1262 * 256L * (long)var1 / (long)(class_139.field_1793 * -92703148)), var2 << 6);
          return var10000;
       } else {
          return null;
@@ -2629,8 +2626,7 @@ public class class_107 extends class_104 {
    // $FF: renamed from: be (au, int, int) bv
    public static class_107 method_2115(class_110 var0, int var1, int var2) {
       if(var0.field_1266 != null && var0.field_1266.length != 0) {
-         class_107 var10000 = new class_107;
-         var10000.method_2192(var0, (int)((long)var0.field_1262 * 256L * (long)var1 / (long)(class_139.field_1793 * 1232502642)), var2 << 6);
+         class_107 var10000 = new class_107(var0, (int)((long)var0.field_1262 * 256L * (long)var1 / (long)(class_139.field_1793 * 1232502642)), var2 << 6);
          return var10000;
       } else {
          return null;
@@ -2640,8 +2636,7 @@ public class class_107 extends class_104 {
    // $FF: renamed from: bj (au, int, int, int) bv
    public static class_107 method_2116(class_110 var0, int var1, int var2, int var3) {
       if(var0.field_1266 != null && var0.field_1266.length != 0) {
-         class_107 var10000 = new class_107;
-         var10000.method_2070(var0, var1, var2, var3);
+         class_107 var10000 = new class_107(var0, var1, var2, var3);
          return var10000;
       } else {
          return null;
@@ -2651,8 +2646,7 @@ public class class_107 extends class_104 {
    // $FF: renamed from: bx (au, int, int, int) bv
    public static class_107 method_2117(class_110 var0, int var1, int var2, int var3) {
       if(var0.field_1266 != null && var0.field_1266.length != 0) {
-         class_107 var10000 = new class_107;
-         var10000.method_2070(var0, var1, var2, var3);
+         class_107 var10000 = new class_107(var0, var1, var2, var3);
          return var10000;
       } else {
          return null;
@@ -4852,8 +4846,8 @@ public class class_107 extends class_104 {
    }
 
    // $FF: renamed from: <init> (au, int, int) void
-   void method_2192(class_110 var1, int var2, int var3) {
-      super.method_105();
+   class_107(class_110 var1, int var2, int var3) {
+      super();
       this.field_1205 = var1;
       this.field_1250 = var1.field_1264;
       this.field_1251 = var1.field_1265;

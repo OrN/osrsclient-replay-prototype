@@ -795,19 +795,15 @@ public class class_87 extends class_59 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_1490() {
+   static {
       field_806 = false;
-      class_272 var10000 = new class_272;
-      var10000.method_5063(4096);
+      class_272 var10000 = new class_272(4096);
       field_803 = var10000;
-      var10000 = new class_272;
-      var10000.method_5063(500);
+      var10000 = new class_272(500);
       field_817 = var10000;
-      var10000 = new class_272;
-      var10000.method_5063(30);
+      var10000 = new class_272(30);
       field_805 = var10000;
-      var10000 = new class_272;
-      var10000.method_5063(30);
+      var10000 = new class_272(30);
       field_827 = var10000;
       field_807 = new class_93[4];
    }
@@ -886,13 +882,11 @@ public class class_87 extends class_59 {
          return var1;
       } else {
          byte[] var2 = field_802.method_5381(6, var0, -26460885);
-         class_87 var10000 = new class_87;
-         var10000.method_105();
+         class_87 var10000 = new class_87();
          var1 = var10000;
          var1.field_808 = -1899720995 * var0;
          if(null != var2) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1484(var10001, (byte)1);
          }
 
@@ -1063,13 +1057,11 @@ public class class_87 extends class_59 {
          return var1;
       } else {
          byte[] var2 = field_802.method_5381(6, var0, -26460885);
-         class_87 var10000 = new class_87;
-         var10000.method_105();
+         class_87 var10000 = new class_87();
          var1 = var10000;
          var1.field_808 = 139564951 * var0;
          if(null != var2) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1484(var10001, (byte)1);
          }
 
@@ -1091,13 +1083,11 @@ public class class_87 extends class_59 {
          return var1;
       } else {
          byte[] var2 = field_802.method_5381(6, var0, -26460885);
-         class_87 var10000 = new class_87;
-         var10000.method_105();
+         class_87 var10000 = new class_87();
          var1 = var10000;
          var1.field_808 = 139564951 * var0;
          if(null != var2) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1484(var10001, (byte)1);
          }
 
@@ -1200,13 +1190,11 @@ public class class_87 extends class_59 {
          return var1;
       } else {
          byte[] var2 = field_802.method_5381(6, var0, -26460885);
-         class_87 var10000 = new class_87;
-         var10000.method_105();
+         class_87 var10000 = new class_87();
          var1 = var10000;
          var1.field_808 = 139564951 * var0;
          if(null != var2) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1484(var10001, (byte)1);
          }
 
@@ -2464,9 +2452,9 @@ public class class_87 extends class_59 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_105() {
+   class_87() {
+      super();
       try {
-         super.method_105();
          this.field_811 = class_305.field_3410;
          this.field_839 = 822501225;
          this.field_851 = -2102030313;
@@ -2560,8 +2548,7 @@ public class class_87 extends class_59 {
          }
 
          if(var5 > 1) {
-            var10000 = new class_93;
-            var10000.method_1704(field_807, var5);
+            var10000 = new class_93(field_807, var5);
             var3 = var10000;
          }
       } else {
@@ -2612,8 +2599,7 @@ public class class_87 extends class_59 {
          var10 = true;
       }
 
-      var10000 = new class_93;
-      var10000.method_1732(var3, var2 == 0 && !var4 && !var10, this.field_812 == null, null == this.field_814, true);
+      var10000 = new class_93(var3, var2 == 0 && !var4 && !var10, this.field_812 == null, null == this.field_814, true);
       class_93 var11 = var10000;
       if(var1 == 4 && var2 > 3) {
          var11.method_1712(-1143068479);
@@ -2659,13 +2645,11 @@ public class class_87 extends class_59 {
          return var1;
       } else {
          byte[] var2 = field_802.method_5381(6, var0, -26460885);
-         class_87 var10000 = new class_87;
-         var10000.method_105();
+         class_87 var10000 = new class_87();
          var1 = var10000;
          var1.field_808 = 139564951 * var0;
          if(null != var2) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1484(var10001, (byte)1);
          }
 
@@ -2989,8 +2973,7 @@ public class class_87 extends class_59 {
             }
 
             if(var6 > 1) {
-               var14 = new class_93;
-               var14.method_1704(field_807, var6);
+               var14 = new class_93(field_807, var6);
                var4 = var14;
             }
          } else {
@@ -3099,7 +3082,6 @@ public class class_87 extends class_59 {
 
          boolean var10003;
          label308: {
-            var14 = new class_93;
             if(var2 == 0) {
                if(var3 != 1581886638) {
                   throw new IllegalStateException();
@@ -3131,7 +3113,7 @@ public class class_87 extends class_59 {
             var10004 = false;
          }
 
-         var14.method_1732(var4, var10003, var10004, null == this.field_814, true);
+         var14 = new class_93(var4, var10003, var10004, null == this.field_814, true);
          class_93 var13 = var14;
          if(var1 == 4) {
             if(var3 != 1581886638) {

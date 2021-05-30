@@ -47,8 +47,7 @@ public class class_230 {
          this.field_2581 = 1914980669 * var2;
          this.field_2587 = var1.method_139(-391631059);
          this.field_2577 = var1.method_139(-391631059);
-         class_280 var10001 = new class_280;
-         var10001.method_5163(var1.method_135((byte)-25));
+         class_280 var10001 = new class_280(var1.method_135((byte)-25));
          this.field_2580 = var10001;
          this.field_2578 = var1.method_135((byte)-57) * 476314275;
          var1.method_130(336075111);
@@ -91,23 +90,19 @@ public class class_230 {
          Object var6 = null;
          switch(var5.field_2650 * -694186145) {
          case 0:
-            class_216 var10 = new class_216;
-            var10.method_4197();
+            class_216 var10 = new class_216();
             var6 = var10;
             break;
          case 1:
-            class_239 var9 = new class_239;
-            var9.method_4603();
+            class_239 var9 = new class_239();
             var6 = var9;
             break;
          case 2:
-            class_244 var8 = new class_244;
-            var8.method_4688();
+            class_244 var8 = new class_244();
             var6 = var8;
             break;
          case 3:
-            class_224 var10000 = new class_224;
-            var10000.method_4283();
+            class_224 var10000 = new class_224();
             var6 = var10000;
             break;
          default:
@@ -323,23 +318,19 @@ public class class_230 {
       Object var5 = null;
       switch(var4.field_2650 * -694186145) {
       case 0:
-         class_216 var8 = new class_216;
-         var8.method_4197();
+         class_216 var8 = new class_216();
          var5 = var8;
          break;
       case 1:
-         class_239 var7 = new class_239;
-         var7.method_4603();
+         class_239 var7 = new class_239();
          var5 = var7;
          break;
       case 2:
-         class_244 var6 = new class_244;
-         var6.method_4688();
+         class_244 var6 = new class_244();
          var5 = var6;
          break;
       case 3:
-         class_224 var10000 = new class_224;
-         var10000.method_4283();
+         class_224 var10000 = new class_224();
          var5 = var10000;
          break;
       default:
@@ -358,23 +349,19 @@ public class class_230 {
       Object var5 = null;
       switch(var4.field_2650 * -694186145) {
       case 0:
-         class_216 var8 = new class_216;
-         var8.method_4197();
+         class_216 var8 = new class_216();
          var5 = var8;
          break;
       case 1:
-         class_239 var7 = new class_239;
-         var7.method_4603();
+         class_239 var7 = new class_239();
          var5 = var7;
          break;
       case 2:
-         class_244 var6 = new class_244;
-         var6.method_4688();
+         class_244 var6 = new class_244();
          var5 = var6;
          break;
       case 3:
-         class_224 var10000 = new class_224;
-         var10000.method_4283();
+         class_224 var10000 = new class_224();
          var5 = var10000;
          break;
       default:
@@ -393,23 +380,19 @@ public class class_230 {
       Object var5 = null;
       switch(var4.field_2650 * -694186145) {
       case 0:
-         class_216 var8 = new class_216;
-         var8.method_4197();
+         class_216 var8 = new class_216();
          var5 = var8;
          break;
       case 1:
-         class_239 var7 = new class_239;
-         var7.method_4603();
+         class_239 var7 = new class_239();
          var5 = var7;
          break;
       case 2:
-         class_244 var6 = new class_244;
-         var6.method_4688();
+         class_244 var6 = new class_244();
          var5 = var6;
          break;
       case 3:
-         class_224 var10000 = new class_224;
-         var10000.method_4283();
+         class_224 var10000 = new class_224();
          var5 = var10000;
          break;
       default:
@@ -579,8 +562,7 @@ public class class_230 {
    // $FF: renamed from: z (byte) ii
    public class_280 method_4394(byte var1) {
       try {
-         class_280 var10000 = new class_280;
-         var10000.method_5154(this.field_2580);
+         class_280 var10000 = new class_280(this.field_2580);
          return var10000;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "fo.z(" + ')');
@@ -667,7 +649,7 @@ public class class_230 {
    }
 
    // $FF: renamed from: <init> () void
-   public void method_4404() {
+   public class_230() {
       super();
       this.field_2581 = -1914980669;
       this.field_2578 = -476314275;
@@ -795,8 +777,7 @@ public class class_230 {
 
    // $FF: renamed from: bf () ii
    public class_280 method_4426() {
-      class_280 var10000 = new class_280;
-      var10000.method_5154(this.field_2580);
+      class_280 var10000 = new class_280(this.field_2580);
       return var10000;
    }
 }

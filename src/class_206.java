@@ -62,9 +62,9 @@ public abstract class class_206 {
    public abstract boolean method_4134(int var1) throws IOException;
 
    // $FF: renamed from: <init> () void
-   protected void method_4135() {
+   protected class_206() {
+      super();
       try {
-         super();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "ls.<init>(" + ')');
       }

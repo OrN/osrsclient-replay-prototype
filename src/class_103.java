@@ -176,7 +176,7 @@ public final class class_103 extends class_27 {
                      int var6 = -574530013 * client.field_1629 & 2047;
                      int var7 = -130212619 * class_164.field_2044.field_1077 / 32 + 48;
                      int var8 = 464 - class_164.field_2044.field_1076 * 1248597615 / 32;
-                     class_127.field_1410.method_842(var1, var2, 1279799405 * var5.field_479, -1973837741 * var5.field_477, var7, var8, var6, 256, var5.field_476, var5.field_478);
+                     GameApplet.field_1410.method_842(var1, var2, 1279799405 * var5.field_479, -1973837741 * var5.field_477, var7, var8, var6, 256, var5.field_476, var5.field_478);
 
                      int var9;
                      int var10;
@@ -516,8 +516,7 @@ public final class class_103 extends class_27 {
 
    // $FF: renamed from: u (int, int, int, eg, int) void
    static void method_1924(int var0, int var1, int var2, class_87 var3, int var4) {
-      class_103 var10000 = new class_103;
-      var10000.method_105();
+      class_103 var10000 = new class_103();
       class_103 var5 = var10000;
       var5.field_1188 = -921901257 * var0;
       var5.field_1198 = -1130410624 * var1;
@@ -550,8 +549,7 @@ public final class class_103 extends class_27 {
 
    // $FF: renamed from: l (int, int, int, eg, int) void
    static void method_1925(int var0, int var1, int var2, class_87 var3, int var4) {
-      class_103 var10000 = new class_103;
-      var10000.method_105();
+      class_103 var10000 = new class_103();
       class_103 var5 = var10000;
       var5.field_1188 = -921901257 * var0;
       var5.field_1198 = -1130410624 * var1;
@@ -731,9 +729,9 @@ public final class class_103 extends class_27 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_105() {
+   class_103() {
+      super();
       try {
-         super.method_105();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "bc.<init>(" + ')');
       }
@@ -741,8 +739,7 @@ public final class class_103 extends class_27 {
 
    // $FF: renamed from: o (int, int, int, eg, int) void
    static void method_1928(int var0, int var1, int var2, class_87 var3, int var4) {
-      class_103 var10000 = new class_103;
-      var10000.method_105();
+      class_103 var10000 = new class_103();
       class_103 var5 = var10000;
       var5.field_1188 = -375707528 * var0;
       var5.field_1198 = 1921924430 * var1;
@@ -774,9 +771,8 @@ public final class class_103 extends class_27 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_1929() {
-      class_335 var10000 = new class_335;
-      var10000.method_5960();
+   static {
+      class_335 var10000 = new class_335();
       field_1203 = var10000;
    }
 

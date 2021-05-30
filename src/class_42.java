@@ -301,8 +301,8 @@ public class class_42 extends class_27 {
    }
 
    // $FF: renamed from: <init> (nd) void
-   void method_486(class_28 var1) {
-      super.method_105();
+   class_42(class_28 var1) {
+      super();
       this.field_308 = false;
       this.field_299 = var1.method_132((byte)-65);
       this.field_306 = var1.method_130(155585777) == 1;

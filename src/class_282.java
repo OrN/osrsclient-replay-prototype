@@ -23,12 +23,10 @@ public class class_282 {
          var2 = var3;
       } else {
          byte[] var4 = class_89.field_897.method_5381(14, var0, -26460885);
-         class_89 var10000 = new class_89;
-         var10000.method_105();
+         class_89 var10000 = new class_89();
          var3 = var10000;
          if(var4 != null) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var4);
+            class_28 var10001 = new class_28(var4);
             var3.method_1569(var10001, 659571256);
          }
 
@@ -49,7 +47,7 @@ public class class_282 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_5173() {
+   static {
       field_3248 = new int[32];
       int var0 = 2;
 
@@ -63,9 +61,9 @@ public class class_282 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_5174() throws Throwable {
+   class_282() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "ik.<init>(" + ')');
@@ -80,12 +78,10 @@ public class class_282 {
          var2 = var3;
       } else {
          byte[] var4 = class_89.field_897.method_5381(14, var0, -26460885);
-         class_89 var10000 = new class_89;
-         var10000.method_105();
+         class_89 var10000 = new class_89();
          var3 = var10000;
          if(var4 != null) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var4);
+            class_28 var10001 = new class_28(var4);
             var3.method_1569(var10001, -942699285);
          }
 
@@ -123,12 +119,10 @@ public class class_282 {
          var2 = var3;
       } else {
          byte[] var4 = class_89.field_897.method_5381(14, var0, -26460885);
-         class_89 var10000 = new class_89;
-         var10000.method_105();
+         class_89 var10000 = new class_89();
          var3 = var10000;
          if(var4 != null) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var4);
+            class_28 var10001 = new class_28(var4);
             var3.method_1569(var10001, 318753339);
          }
 

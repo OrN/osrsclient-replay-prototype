@@ -15,8 +15,8 @@ public class class_110 extends class_109 {
 
 
    // $FF: renamed from: <init> (int, byte[], int, int) void
-   void method_2223(int var1, byte[] var2, int var3, int var4) {
-      super.method_105();
+   class_110(int var1, byte[] var2, int var3, int var4) {
+      super();
       this.field_1262 = var1;
       this.field_1266 = var2;
       this.field_1264 = var3;
@@ -24,8 +24,8 @@ public class class_110 extends class_109 {
    }
 
    // $FF: renamed from: <init> (int, byte[], int, int, boolean) void
-   void method_2224(int var1, byte[] var2, int var3, int var4, boolean var5) {
-      super.method_105();
+   class_110(int var1, byte[] var2, int var3, int var4, boolean var5) {
+      super();
       this.field_1262 = var1;
       this.field_1266 = var2;
       this.field_1264 = var3;

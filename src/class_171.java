@@ -434,14 +434,12 @@ public class class_171 {
             var4.method_108();
          }
       } else {
-         class_369 var10001 = new class_369;
-         var10001.method_6590(4);
+         class_369 var10001 = new class_369(4);
          this.field_2154 = var10001;
       }
 
       class_369 var10000 = this.field_2154;
-      class_31 var6 = new class_31;
-      var6.method_390(var2);
+      class_31 var6 = new class_31(var2);
       var10000.method_6588(var6, (long)var1);
       return true;
    }
@@ -830,14 +828,12 @@ public class class_171 {
                var9.method_108();
             }
          } else {
-            class_369 var10001 = new class_369;
-            var10001.method_6590(4);
+            class_369 var10001 = new class_369(4);
             this.field_2154 = var10001;
          }
 
          class_369 var12 = this.field_2154;
-         class_32 var13 = new class_32;
-         var13.method_391(var2);
+         class_32 var13 = new class_32(var2);
          var12.method_6588(var13, (long)var1);
          return true;
       } catch (RuntimeException var11) {
@@ -936,8 +932,7 @@ public class class_171 {
 
                      var5.method_108();
                      var10000 = this.field_2154;
-                     var10001 = new class_34;
-                     var10001.method_393(var2);
+                     var10001 = new class_34(var2);
                      var10000.method_6588(var10001, var5.field_9);
                      return true;
                   }
@@ -946,14 +941,12 @@ public class class_171 {
                var4.method_108();
             }
          } else {
-            class_369 var7 = new class_369;
-            var7.method_6590(4);
+            class_369 var7 = new class_369(4);
             this.field_2154 = var7;
          }
 
          var10000 = this.field_2154;
-         var10001 = new class_34;
-         var10001.method_393(var2);
+         var10001 = new class_34(var2);
          var10000.method_6588(var10001, (long)var1);
          return true;
       } catch (RuntimeException var6) {
@@ -979,14 +972,12 @@ public class class_171 {
             var3.method_108();
          }
       } else {
-         class_369 var10001 = new class_369;
-         var10001.method_6590(4);
+         class_369 var10001 = new class_369(4);
          this.field_2154 = var10001;
       }
 
       class_369 var10000 = this.field_2154;
-      class_32 var5 = new class_32;
-      var5.method_391(var2);
+      class_32 var5 = new class_32(var2);
       var10000.method_6588(var5, (long)var1);
       return true;
    }
@@ -1180,14 +1171,12 @@ public class class_171 {
                var4.method_108();
             }
          } else {
-            class_369 var10001 = new class_369;
-            var10001.method_6590(4);
+            class_369 var10001 = new class_369(4);
             this.field_2154 = var10001;
          }
 
          class_369 var10000 = this.field_2154;
-         class_31 var7 = new class_31;
-         var7.method_390(var2);
+         class_31 var7 = new class_31(var2);
          var10000.method_6588(var7, (long)var1);
          return true;
       } catch (RuntimeException var6) {
@@ -1575,7 +1564,6 @@ public class class_171 {
                if(var3 >= 3) {
                   var5 = var1.method_132((byte)-49);
                   if(var5 > 0) {
-                     class_369 var10001 = new class_369;
                      int var10003;
                      if(var5 < 16) {
                         if(var2 == 1359138405) {
@@ -1587,7 +1575,7 @@ public class class_171 {
                         var10003 = 16;
                      }
 
-                     var10001.method_6590(var10003);
+                     class_369 var10001 = new class_369(var10003);
                      this.field_2154 = var10001;
 
                      while(var5-- > 0) {
@@ -1606,8 +1594,7 @@ public class class_171 {
 
                            int var9 = var1.method_135((byte)-104);
                            var15 = this.field_2154;
-                           class_32 var16 = new class_32;
-                           var16.method_391(var9);
+                           class_32 var16 = new class_32(var9);
                            var15.method_6588(var16, (long)var7);
                         } else if(var8 == 1) {
                            if(var2 == 1359138405) {
@@ -1616,8 +1603,7 @@ public class class_171 {
 
                            long var12 = var1.method_136(1243007514);
                            var15 = this.field_2154;
-                           class_31 var17 = new class_31;
-                           var17.method_390(var12);
+                           class_31 var17 = new class_31(var12);
                            var15.method_6588(var17, (long)var7);
                         } else if(2 == var8) {
                            if(var2 == 1359138405) {
@@ -1626,8 +1612,7 @@ public class class_171 {
 
                            String var13 = var1.method_139(-391631059);
                            var15 = this.field_2154;
-                           class_34 var18 = new class_34;
-                           var18.method_393(var13);
+                           class_34 var18 = new class_34(var13);
                            var15.method_6588(var18, (long)var7);
                         }
                      }
@@ -1761,14 +1746,12 @@ public class class_171 {
             var4.method_108();
          }
       } else {
-         class_369 var10001 = new class_369;
-         var10001.method_6590(4);
+         class_369 var10001 = new class_369(4);
          this.field_2154 = var10001;
       }
 
       class_369 var10000 = this.field_2154;
-      class_31 var6 = new class_31;
-      var6.method_390(var2);
+      class_31 var6 = new class_31(var2);
       var10000.method_6588(var6, (long)var1);
       return true;
    }
@@ -2140,8 +2123,7 @@ public class class_171 {
          if(var2 >= 3) {
             var4 = var1.method_132((byte)-45);
             if(var4 > 0) {
-               class_369 var10001 = new class_369;
-               var10001.method_6590(var4 < 16?class_100.method_1845(var4, -859680529):16);
+               class_369 var10001 = new class_369(var4 < 16?class_100.method_1845(var4, -859680529):16);
                this.field_2154 = var10001;
 
                while(var4-- > 0) {
@@ -2152,20 +2134,17 @@ public class class_171 {
                   if(0 == var7) {
                      int var8 = var1.method_135((byte)-102);
                      var12 = this.field_2154;
-                     class_32 var13 = new class_32;
-                     var13.method_391(var8);
+                     class_32 var13 = new class_32(var8);
                      var12.method_6588(var13, (long)var6);
                   } else if(var7 == 1) {
                      long var10 = var1.method_136(-596217084);
                      var12 = this.field_2154;
-                     class_31 var14 = new class_31;
-                     var14.method_390(var10);
+                     class_31 var14 = new class_31(var10);
                      var12.method_6588(var14, (long)var6);
                   } else if(2 == var7) {
                      String var11 = var1.method_139(-391631059);
                      var12 = this.field_2154;
-                     class_34 var15 = new class_34;
-                     var15.method_393(var11);
+                     class_34 var15 = new class_34(var11);
                      var12.method_6588(var15, (long)var6);
                   }
                }
@@ -2265,14 +2244,12 @@ public class class_171 {
             var3.method_108();
          }
       } else {
-         class_369 var10001 = new class_369;
-         var10001.method_6590(4);
+         class_369 var10001 = new class_369(4);
          this.field_2154 = var10001;
       }
 
       class_369 var10000 = this.field_2154;
-      class_32 var5 = new class_32;
-      var5.method_391(var2);
+      class_32 var5 = new class_32(var2);
       var10000.method_6588(var5, (long)var1);
       return true;
    }
@@ -2295,14 +2272,12 @@ public class class_171 {
             var4.method_108();
          }
       } else {
-         class_369 var10001 = new class_369;
-         var10001.method_6590(4);
+         class_369 var10001 = new class_369(4);
          this.field_2154 = var10001;
       }
 
       class_369 var10000 = this.field_2154;
-      class_31 var6 = new class_31;
-      var6.method_390(var2);
+      class_31 var6 = new class_31(var2);
       var10000.method_6588(var6, (long)var1);
       return true;
    }
@@ -2365,9 +2340,9 @@ public class class_171 {
    }
 
    // $FF: renamed from: <init> (nd) void
-   public void method_3689(class_28 var1) {
+   public class_171(class_28 var1) {
+      super();
       try {
-         super();
          this.field_2133 = 0;
          this.field_2134 = null;
          this.field_2153 = 0;
@@ -2502,14 +2477,12 @@ public class class_171 {
             var3.method_108();
          }
       } else {
-         class_369 var10001 = new class_369;
-         var10001.method_6590(4);
+         class_369 var10001 = new class_369(4);
          this.field_2154 = var10001;
       }
 
       class_369 var10000 = this.field_2154;
-      class_32 var5 = new class_32;
-      var5.method_391(var2);
+      class_32 var5 = new class_32(var2);
       var10000.method_6588(var5, (long)var1);
       return true;
    }
@@ -2532,14 +2505,12 @@ public class class_171 {
             var4.method_108();
          }
       } else {
-         class_369 var10001 = new class_369;
-         var10001.method_6590(4);
+         class_369 var10001 = new class_369(4);
          this.field_2154 = var10001;
       }
 
       class_369 var10000 = this.field_2154;
-      class_31 var6 = new class_31;
-      var6.method_390(var2);
+      class_31 var6 = new class_31(var2);
       var10000.method_6588(var6, (long)var1);
       return true;
    }
@@ -2562,14 +2533,12 @@ public class class_171 {
             var4.method_108();
          }
       } else {
-         class_369 var10001 = new class_369;
-         var10001.method_6590(4);
+         class_369 var10001 = new class_369(4);
          this.field_2154 = var10001;
       }
 
       class_369 var10000 = this.field_2154;
-      class_31 var6 = new class_31;
-      var6.method_390(var2);
+      class_31 var6 = new class_31(var2);
       var10000.method_6588(var6, (long)var1);
       return true;
    }
@@ -2636,14 +2605,12 @@ public class class_171 {
                var4.method_108();
             }
          } else {
-            class_369 var10001 = new class_369;
-            var10001.method_6590(4);
+            class_369 var10001 = new class_369(4);
             this.field_2154 = var10001;
          }
 
          class_369 var10000 = this.field_2154;
-         class_32 var7 = new class_32;
-         var7.method_391(var2);
+         class_32 var7 = new class_32(var2);
          var10000.method_6588(var7, (long)var1);
          return true;
       } catch (RuntimeException var6) {
@@ -2673,8 +2640,7 @@ public class class_171 {
 
                   var4.method_108();
                   var10000 = this.field_2154;
-                  var10001 = new class_34;
-                  var10001.method_393(var2);
+                  var10001 = new class_34(var2);
                   var10000.method_6588(var10001, var4.field_9);
                   return true;
                }
@@ -2683,14 +2649,12 @@ public class class_171 {
             var3.method_108();
          }
       } else {
-         class_369 var5 = new class_369;
-         var5.method_6590(4);
+         class_369 var5 = new class_369(4);
          this.field_2154 = var5;
       }
 
       var10000 = this.field_2154;
-      var10001 = new class_34;
-      var10001.method_393(var2);
+      var10001 = new class_34(var2);
       var10000.method_6588(var10001, (long)var1);
       return true;
    }
@@ -2815,8 +2779,7 @@ public class class_171 {
          if(var2 >= 3) {
             var4 = var1.method_132((byte)-87);
             if(var4 > 0) {
-               class_369 var10001 = new class_369;
-               var10001.method_6590(var4 < 16?class_100.method_1845(var4, -1203060414):16);
+               class_369 var10001 = new class_369(var4 < 16?class_100.method_1845(var4, -1203060414):16);
                this.field_2154 = var10001;
 
                while(var4-- > 0) {
@@ -2827,20 +2790,17 @@ public class class_171 {
                   if(0 == var7) {
                      int var8 = var1.method_135((byte)-65);
                      var12 = this.field_2154;
-                     class_32 var13 = new class_32;
-                     var13.method_391(var8);
+                     class_32 var13 = new class_32(var8);
                      var12.method_6588(var13, (long)var6);
                   } else if(var7 == 1) {
                      long var10 = var1.method_136(713338937);
                      var12 = this.field_2154;
-                     class_31 var14 = new class_31;
-                     var14.method_390(var10);
+                     class_31 var14 = new class_31(var10);
                      var12.method_6588(var14, (long)var6);
                   } else if(2 == var7) {
                      String var11 = var1.method_139(-391631059);
                      var12 = this.field_2154;
-                     class_34 var15 = new class_34;
-                     var15.method_393(var11);
+                     class_34 var15 = new class_34(var11);
                      var12.method_6588(var15, (long)var6);
                   }
                }
@@ -2992,8 +2952,7 @@ public class class_171 {
          if(var2 >= 3) {
             var4 = var1.method_132((byte)-73);
             if(var4 > 0) {
-               class_369 var10001 = new class_369;
-               var10001.method_6590(var4 < 16?class_100.method_1845(var4, -150388078):16);
+               class_369 var10001 = new class_369(var4 < 16?class_100.method_1845(var4, -150388078):16);
                this.field_2154 = var10001;
 
                while(var4-- > 0) {
@@ -3004,20 +2963,17 @@ public class class_171 {
                   if(0 == var7) {
                      int var8 = var1.method_135((byte)-21);
                      var12 = this.field_2154;
-                     class_32 var13 = new class_32;
-                     var13.method_391(var8);
+                     class_32 var13 = new class_32(var8);
                      var12.method_6588(var13, (long)var6);
                   } else if(var7 == 1) {
                      long var10 = var1.method_136(-599747106);
                      var12 = this.field_2154;
-                     class_31 var14 = new class_31;
-                     var14.method_390(var10);
+                     class_31 var14 = new class_31(var10);
                      var12.method_6588(var14, (long)var6);
                   } else if(2 == var7) {
                      String var11 = var1.method_139(-391631059);
                      var12 = this.field_2154;
-                     class_34 var15 = new class_34;
-                     var15.method_393(var11);
+                     class_34 var15 = new class_34(var11);
                      var12.method_6588(var15, (long)var6);
                   }
                }
@@ -3060,16 +3016,14 @@ public class class_171 {
             }
          } else {
             byte[] var3 = class_74.field_594.method_5381(16, var0, -26460885);
-            class_74 var10000 = new class_74;
-            var10000.method_105();
+            class_74 var10000 = new class_74();
             var2 = var10000;
             if(var3 != null) {
                if(var1 == -65536) {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28;
-               var10001.method_178(var3);
+               class_28 var10001 = new class_28(var3);
                var2.method_1119(var10001, 1856210017);
             }
 

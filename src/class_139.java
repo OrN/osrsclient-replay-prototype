@@ -903,9 +903,9 @@ public class class_139 {
    }
 
    // $FF: renamed from: <init> () void
-   protected void method_3017() {
+   protected class_139() {
+      super();
       try {
-         super();
          this.field_1800 = -950721440;
          this.field_1788 = class_87.method_1516((byte)1) * -5018830713457052579L;
          this.field_1792 = 0L;
@@ -1145,8 +1145,7 @@ public class class_139 {
 
             var3.method_2998(1181152315 * var3.field_1789, (short)-11166);
             if(field_1783 * 1120747367 > 0 && null == class_101.field_1182) {
-               class_154 var5 = new class_154;
-               var5.method_3244();
+               class_154 var5 = new class_154();
                class_101.field_1182 = var5;
                class_276.field_3220 = Executors.newScheduledThreadPool(1);
                class_276.field_3220.scheduleAtFixedRate(class_101.field_1182, 0L, 10L, TimeUnit.MILLISECONDS);
@@ -1162,8 +1161,7 @@ public class class_139 {
 
             return var3;
          } catch (Throwable var4) {
-            class_139 var10000 = new class_139;
-            var10000.method_3017();
+            class_139 var10000 = new class_139();
             return var10000;
          }
       } else {

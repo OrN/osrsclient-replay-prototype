@@ -122,7 +122,7 @@ public class class_308 {
                return;
             }
 
-            URL var4 = new URL(class_405.field_4296.getCodeBase(), "clienterror.ws?c=" + class_405.field_4295 * -1454650143 + "&u=" + class_405.field_4289 + "&v1=" + class_201.field_2359 + "&v2=" + class_201.field_2353 + "&ct=" + 2094073605 * class_405.field_4292 + "&e=" + var3);
+            URL var4 = new URL(class_405.field_4296.getCodeBase(), "clienterror.ws?c=" + class_405.field_4295 * -1454650143 + "&u=" + class_405.field_4289 + "&v1=" + class_201.javaVendor + "&v2=" + class_201.javaVersion + "&ct=" + 2094073605 * class_405.field_4292 + "&e=" + var3);
             DataInputStream var19 = new DataInputStream(var4.openStream());
             var19.read();
             var19.close();
@@ -136,7 +136,7 @@ public class class_308 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_5524() {
+   static {
       int var0 = 0;
       int var1 = 0;
       class_313[] var2 = class_227.method_4349(1606153053);
@@ -155,9 +155,9 @@ public class class_308 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_5525() throws Throwable {
+   class_308() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "jq.<init>(" + ')');

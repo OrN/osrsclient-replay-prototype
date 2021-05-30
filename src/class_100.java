@@ -229,9 +229,7 @@ public final class class_100 extends class_98 {
             this.field_1133 = 1757135961;
          }
 
-         class_359 var10001 = new class_359;
-         var10001.method_6280(var1.method_139(-391631059), class_239.field_2659);
-         this.field_1148 = var10001;
+         this.field_1148 = new class_359(var1.method_139(-391631059), class_239.field_2659);
          this.method_1826((byte)112);
          this.method_1828((byte)4);
          this.method_1863(-660230159);
@@ -310,9 +308,7 @@ public final class class_100 extends class_98 {
 
                         boolean var17 = var10000;
                         boolean var18 = 0 != (var16 & 2);
-                        class_211 var30 = new class_211;
-                        var30.method_4172(var15);
-                        class_211 var19 = var30;
+                        class_211 var19 = new class_211(var15);
                         int var20;
                         int[] var21;
                         boolean var22;
@@ -417,9 +413,7 @@ public final class class_100 extends class_98 {
                throw new IllegalStateException();
             }
 
-            class_275 var31 = new class_275;
-            var31.method_5117();
-            this.field_1143 = var31;
+            this.field_1143 = new class_275();
          }
 
          boolean var10005;
@@ -710,9 +704,7 @@ public final class class_100 extends class_98 {
 
                         var5.method_1632(0, -(-1377519793 * this.field_1117), 0);
                         var6 = new class_92[]{var4, var5};
-                        var8 = new class_92;
-                        var8.method_1615(var6, 2);
-                        var4 = var8;
+                        var4 = new class_92(var6, 2);
                      }
                   }
                }
@@ -762,9 +754,7 @@ public final class class_100 extends class_98 {
                         }
 
                         var6 = new class_92[]{var4, var5};
-                        var8 = new class_92;
-                        var8.method_1615(var6, 2);
-                        var4 = var8;
+                        var4 = new class_92(var6, 2);
                         if(-1173912475 * this.field_1106 == 512) {
                            if(var1 >= 0) {
                               throw new IllegalStateException();
@@ -909,9 +899,7 @@ public final class class_100 extends class_98 {
          this.field_1133 = 1757135961;
       }
 
-      class_359 var10001 = new class_359;
-      var10001.method_6280(var1.method_139(-391631059), class_239.field_2659);
-      this.field_1148 = var10001;
+      this.field_1148 = new class_359(var1.method_139(-391631059), class_239.field_2659);
       this.method_1826((byte)68);
       this.method_1828((byte)4);
       this.method_1863(-660230159);
@@ -941,9 +929,7 @@ public final class class_100 extends class_98 {
                   int var15 = var1.method_130(13921746);
                   boolean var16 = (var15 & 1) != 0;
                   boolean var17 = 0 != (var15 & 2);
-                  class_211 var10000 = new class_211;
-                  var10000.method_4172(var14);
-                  class_211 var18 = var10000;
+                  class_211 var18 = new class_211(var14);
                   int var19;
                   int[] var20;
                   boolean var21;
@@ -986,8 +972,7 @@ public final class class_100 extends class_98 {
       }
 
       if(null == this.field_1143) {
-         class_275 var27 = new class_275;
-         var27.method_5117();
+         class_275 var27 = new class_275();
          this.field_1143 = var27;
       }
 
@@ -1015,8 +1000,7 @@ public final class class_100 extends class_98 {
                if(var4 != null) {
                   var4.method_1632(0, -(-1377519793 * this.field_1117), 0);
                   var5 = new class_92[]{var3, var4};
-                  var10000 = new class_92;
-                  var10000.method_1615(var5, 2);
+                  var10000 = new class_92(var5, 2);
                   var3 = var10000;
                }
             }
@@ -1041,8 +1025,7 @@ public final class class_100 extends class_98 {
                   }
 
                   var5 = new class_92[]{var3, var4};
-                  var10000 = new class_92;
-                  var10000.method_1615(var5, 2);
+                  var10000 = new class_92(var5, 2);
                   var3 = var10000;
                   if(-213222215 * this.field_1106 == -1968997211) {
                      var4.method_1628();
@@ -1086,8 +1069,7 @@ public final class class_100 extends class_98 {
                if(var4 != null) {
                   var4.method_1632(0, -(-1377519793 * this.field_1117), 0);
                   var5 = new class_92[]{var3, var4};
-                  var10000 = new class_92;
-                  var10000.method_1615(var5, 2);
+                  var10000 = new class_92(var5, 2);
                   var3 = var10000;
                }
             }
@@ -1112,8 +1094,7 @@ public final class class_100 extends class_98 {
                   }
 
                   var5 = new class_92[]{var3, var4};
-                  var10000 = new class_92;
-                  var10000.method_1615(var5, 2);
+                  var10000 = new class_92(var5, 2);
                   var3 = var10000;
                   if(-1990265867 * this.field_1106 == 1437755564) {
                      var4.method_1628();
@@ -1222,8 +1203,7 @@ public final class class_100 extends class_98 {
          this.field_1133 = 1058850315;
       }
 
-      class_359 var10001 = new class_359;
-      var10001.method_6280(var1.method_139(-391631059), class_239.field_2659);
+      class_359 var10001 = new class_359(var1.method_139(-391631059), class_239.field_2659);
       this.field_1148 = var10001;
       this.method_1826((byte)118);
       this.method_1828((byte)4);
@@ -1254,8 +1234,7 @@ public final class class_100 extends class_98 {
                   int var15 = var1.method_130(-596777611);
                   boolean var16 = (var15 & 1) != 0;
                   boolean var17 = 0 != (var15 & 2);
-                  class_211 var10000 = new class_211;
-                  var10000.method_4172(var14);
+                  class_211 var10000 = new class_211(var14);
                   class_211 var18 = var10000;
                   int var19;
                   int[] var20;
@@ -1299,8 +1278,7 @@ public final class class_100 extends class_98 {
       }
 
       if(null == this.field_1143) {
-         class_275 var27 = new class_275;
-         var27.method_5117();
+         class_275 var27 = new class_275();
          this.field_1143 = var27;
       }
 
@@ -1388,8 +1366,7 @@ public final class class_100 extends class_98 {
          this.field_1133 = 1757135961;
       }
 
-      class_359 var10001 = new class_359;
-      var10001.method_6280(var1.method_139(-391631059), class_239.field_2659);
+      class_359 var10001 = new class_359(var1.method_139(-391631059), class_239.field_2659);
       this.field_1148 = var10001;
       this.method_1826((byte)66);
       this.method_1828((byte)4);
@@ -1420,8 +1397,7 @@ public final class class_100 extends class_98 {
                   int var15 = var1.method_130(-509174236);
                   boolean var16 = (var15 & 1) != 0;
                   boolean var17 = 0 != (var15 & 2);
-                  class_211 var10000 = new class_211;
-                  var10000.method_4172(var14);
+                  class_211 var10000 = new class_211(var14);
                   class_211 var18 = var10000;
                   int var19;
                   int[] var20;
@@ -1465,8 +1441,7 @@ public final class class_100 extends class_98 {
       }
 
       if(null == this.field_1143) {
-         class_275 var27 = new class_275;
-         var27.method_5117();
+         class_275 var27 = new class_275();
          this.field_1143 = var27;
       }
 
@@ -1494,8 +1469,7 @@ public final class class_100 extends class_98 {
                if(var4 != null) {
                   var4.method_1632(0, -(-1377519793 * this.field_1117), 0);
                   var5 = new class_92[]{var3, var4};
-                  var10000 = new class_92;
-                  var10000.method_1615(var5, 2);
+                  var10000 = new class_92(var5, 2);
                   var3 = var10000;
                }
             }
@@ -1520,8 +1494,7 @@ public final class class_100 extends class_98 {
                   }
 
                   var5 = new class_92[]{var3, var4};
-                  var10000 = new class_92;
-                  var10000.method_1615(var5, 2);
+                  var10000 = new class_92(var5, 2);
                   var3 = var10000;
                   if(-1173912475 * this.field_1106 == 512) {
                      var4.method_1628();
@@ -1625,8 +1598,7 @@ public final class class_100 extends class_98 {
          this.field_1133 = -1044927417;
       }
 
-      class_359 var10001 = new class_359;
-      var10001.method_6280(var1.method_139(-391631059), class_239.field_2659);
+      class_359 var10001 = new class_359(var1.method_139(-391631059), class_239.field_2659);
       this.field_1148 = var10001;
       this.method_1826((byte)37);
       this.method_1828((byte)4);
@@ -1657,8 +1629,7 @@ public final class class_100 extends class_98 {
                   int var15 = var1.method_130(-1717675992);
                   boolean var16 = (var15 & 1) != 0;
                   boolean var17 = 0 != (var15 & 2);
-                  class_211 var10000 = new class_211;
-                  var10000.method_4172(var14);
+                  class_211 var10000 = new class_211(var14);
                   class_211 var18 = var10000;
                   int var19;
                   int[] var20;
@@ -1702,8 +1673,7 @@ public final class class_100 extends class_98 {
       }
 
       if(null == this.field_1143) {
-         class_275 var27 = new class_275;
-         var27.method_5117();
+         class_275 var27 = new class_275();
          this.field_1143 = var27;
       }
 
@@ -2167,9 +2137,9 @@ public final class class_100 extends class_98 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_105() {
+   class_100() {
+      super();
       try {
-         super.method_105();
          this.field_1166 = 725606113;
          this.field_1145 = -249069277;
          this.field_1146 = new String[3];

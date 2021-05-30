@@ -335,9 +335,9 @@ public class class_148 {
    }
 
    // $FF: renamed from: <init> (int, int) void
-   public void method_3127(int var1, int var2) {
+   public class_148(int var1, int var2) {
+      super();
       try {
-         super();
          if(var1 != var2) {
             int var3 = class_374.method_6622(var1, var2, (byte)-6);
             var1 /= var3;

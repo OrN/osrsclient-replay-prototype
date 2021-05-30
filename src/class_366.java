@@ -155,7 +155,7 @@ public class class_366 implements Iterator {
    }
 
    // $FF: renamed from: <init> (mr) void
-   void method_6560(class_369 var1) {
+   class_366(class_369 var1) {
       super();
       this.field_4094 = null;
       this.field_4091 = var1;

@@ -61,8 +61,7 @@ public class class_296 {
             }
          }
 
-         class_67 var10000 = new class_67;
-         var10000.method_815(var18, var3, var3);
+         class_67 var10000 = new class_67(var18, var3, var3);
          class_67 var19 = var10000;
          this.field_3352.put(Integer.valueOf(var1), var19);
       } catch (RuntimeException var15) {
@@ -75,11 +74,9 @@ public class class_296 {
       int var5 = (int)(18.0F * var4);
       class_67 var6 = this.method_5320(var5, -1959245210);
       int var7 = 1 + 2 * var5;
-      class_351 var10000 = new class_351;
-      var10000.method_6208(0, 0, var3.field_508, var3.field_500);
+      class_351 var10000 = new class_351(0, 0, var3.field_508, var3.field_500);
       class_351 var8 = var10000;
-      var10000 = new class_351;
-      var10000.method_6220(0, 0);
+      var10000 = new class_351(0, 0);
       class_351 var9 = var10000;
       this.field_3351.method_6210(var7, var7, 284108596);
       System.nanoTime();
@@ -144,11 +141,9 @@ public class class_296 {
          int var6 = (int)(18.0F * var4);
          class_67 var7 = this.method_5320(var6, -158733567);
          int var8 = 1 + 2 * var6;
-         class_351 var10000 = new class_351;
-         var10000.method_6208(0, 0, var3.field_508, var3.field_500);
+         class_351 var10000 = new class_351(0, 0, var3.field_508, var3.field_500);
          class_351 var9 = var10000;
-         var10000 = new class_351;
-         var10000.method_6220(0, 0);
+         var10000 = new class_351(0, 0);
          class_351 var10 = var10000;
          this.field_3351.method_6210(var8, var8, 566817349);
          System.nanoTime();
@@ -314,8 +309,7 @@ public class class_296 {
          }
       }
 
-      class_67 var10000 = new class_67;
-      var10000.method_815(var16, var2, var2);
+      class_67 var10000 = new class_67(var16, var2, var2);
       class_67 var17 = var10000;
       this.field_3352.put(Integer.valueOf(var1), var17);
    }
@@ -347,8 +341,7 @@ public class class_296 {
          }
       }
 
-      class_67 var10000 = new class_67;
-      var10000.method_815(var16, var2, var2);
+      class_67 var10000 = new class_67(var16, var2, var2);
       class_67 var17 = var10000;
       this.field_3352.put(Integer.valueOf(var1), var17);
    }
@@ -428,11 +421,9 @@ public class class_296 {
       int var5 = (int)(18.0F * var4);
       class_67 var6 = this.method_5320(var5, -216292220);
       int var7 = 1 + 2 * var5;
-      class_351 var10000 = new class_351;
-      var10000.method_6208(0, 0, var3.field_508, var3.field_500);
+      class_351 var10000 = new class_351(0, 0, var3.field_508, var3.field_500);
       class_351 var8 = var10000;
-      var10000 = new class_351;
-      var10000.method_6220(0, 0);
+      var10000 = new class_351(0, 0);
       class_351 var9 = var10000;
       this.field_3351.method_6210(var7, var7, 1487102328);
       System.nanoTime();
@@ -475,12 +466,11 @@ public class class_296 {
    }
 
    // $FF: renamed from: <init> () void
-   public void method_5333() {
+   public class_296() {
+      super();
       try {
-         super();
          this.field_3352 = new HashMap();
-         class_351 var10001 = new class_351;
-         var10001.method_6220(0, 0);
+         class_351 var10001 = new class_351(0, 0);
          this.field_3351 = var10001;
          this.field_3353 = new int[2048];
          this.field_3354 = new int[2048];

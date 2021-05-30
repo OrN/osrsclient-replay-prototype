@@ -11,9 +11,9 @@ public abstract class class_191 {
 
 
    // $FF: renamed from: <init> () void
-   void method_3949() {
+   class_191() {
+      super();
       try {
-         super();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "ez.<init>(" + ')');
       }
@@ -114,8 +114,7 @@ public abstract class class_191 {
                   }
                }
 
-               class_45 var10000 = new class_45;
-               var10000.method_105();
+               class_45 var10000 = new class_45();
                class_45 var7 = var10000;
                var7.field_332 = var0;
                var7.field_337 = var0.field_218;
@@ -170,21 +169,18 @@ public abstract class class_191 {
                         }
 
                         class_37[] var10000 = class_37.field_93[var0];
-                        class_37 var10002 = new class_37;
-                        var10002.method_105();
+                        class_37 var10002 = new class_37();
                         var10000[var3] = var10002;
                         class_37.field_93[var0][var3].field_101 = 1969535585 * ((var0 << 16) + var3);
                         class_28 var10001;
                         class_37 var6;
                         if(var4[0] == -1) {
                            var6 = class_37.field_93[var0][var3];
-                           var10001 = new class_28;
-                           var10001.method_178(var4);
+                           var10001 = new class_28(var4);
                            var6.method_401(var10001, 107425419);
                         } else {
                            var6 = class_37.field_93[var0][var3];
-                           var10001 = new class_28;
-                           var10001.method_178(var4);
+                           var10001 = new class_28(var4);
                            var6.method_400(var10001, 1748856001);
                         }
                      }

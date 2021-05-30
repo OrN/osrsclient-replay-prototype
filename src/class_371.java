@@ -70,16 +70,14 @@ public class class_371 implements class_17 {
             this.field_4110 = new HashMap();
             var10000 = this.field_4110;
             var10001 = Integer.valueOf(var1);
-            var10002 = new class_396;
-            var10002.method_6789(var1, var2);
+            var10002 = new class_396(var1, var2);
             var10000.put(var10001, var10002);
          } else {
             class_396 var4 = (class_396)this.field_4110.get(Integer.valueOf(var1));
             if(null == var4) {
                var10000 = this.field_4110;
                var10001 = Integer.valueOf(var1);
-               var10002 = new class_396;
-               var10002.method_6789(var1, var2);
+               var10002 = new class_396(var1, var2);
                var10000.put(var10001, var10002);
             } else {
                var4.field_4254 = var2;
@@ -105,9 +103,9 @@ public class class_371 implements class_17 {
    }
 
    // $FF: renamed from: <init> (ne) void
-   public void method_6609(class_21 var1) {
+   public class_371(class_21 var1) {
+      super();
       try {
-         super();
          this.field_4106 = var1;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "mt.<init>(" + ')');
@@ -147,16 +145,14 @@ public class class_371 implements class_17 {
          this.field_4110 = new HashMap();
          var10000 = this.field_4110;
          var10001 = Integer.valueOf(var1);
-         var10002 = new class_396;
-         var10002.method_6789(var1, var2);
+         var10002 = new class_396(var1, var2);
          var10000.put(var10001, var10002);
       } else {
          class_396 var3 = (class_396)this.field_4110.get(Integer.valueOf(var1));
          if(null == var3) {
             var10000 = this.field_4110;
             var10001 = Integer.valueOf(var1);
-            var10002 = new class_396;
-            var10002.method_6789(var1, var2);
+            var10002 = new class_396(var1, var2);
             var10000.put(var10001, var10002);
          } else {
             var3.field_4254 = var2;

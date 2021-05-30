@@ -36,8 +36,7 @@ public class class_135 {
          int[] var4 = new int[var2 * var3];
          PixelGrabber var5 = new PixelGrabber(var1, 0, 0, var2, var3, var4, 0, var2);
          var5.grabPixels();
-         var10000 = new class_67;
-         var10000.method_815(var4, var2, var3);
+         var10000 = new class_67(var4, var2, var3);
          return var10000;
       } catch (IOException var6) {
          ;
@@ -45,13 +44,12 @@ public class class_135 {
          ;
       }
 
-      var10000 = new class_67;
-      var10000.method_754(0, 0);
+      var10000 = new class_67(0, 0);
       return var10000;
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_2940() {
+   static {
       ImageIO.setUseCache(false);
    }
 
@@ -67,8 +65,7 @@ public class class_135 {
          int[] var4 = new int[var2 * var3];
          PixelGrabber var5 = new PixelGrabber(var1, 0, 0, var2, var3, var4, 0, var2);
          var5.grabPixels();
-         var10000 = new class_67;
-         var10000.method_815(var4, var2, var3);
+         var10000 = new class_67(var4, var2, var3);
          return var10000;
       } catch (IOException var6) {
          ;
@@ -76,8 +73,7 @@ public class class_135 {
          ;
       }
 
-      var10000 = new class_67;
-      var10000.method_754(0, 0);
+      var10000 = new class_67(0, 0);
       return var10000;
    }
 
@@ -437,8 +433,8 @@ public class class_135 {
                      }
 
                      class_198.field_2340 = var3;
-                     class_127.field_1403 = 4302826277310093293L;
-                     class_127.field_1379 = 7975047348458726733L;
+                     GameApplet.field_1403 = 4302826277310093293L;
+                     GameApplet.field_1379 = 7975047348458726733L;
                   }
                }
             } catch (Throwable var10) {
@@ -453,13 +449,13 @@ public class class_135 {
 
             long var12 = class_87.method_1516((byte)1);
             long var4 = class_198.field_2340.getCollectionTime();
-            if(-1L != 6246927008582722683L * class_127.field_1379) {
+            if(-1L != 6246927008582722683L * GameApplet.field_1379) {
                if(var0 != -56748890) {
                   throw new IllegalStateException();
                }
 
-               long var6 = var4 - class_127.field_1379 * 6246927008582722683L;
-               long var8 = var12 - -7805304911218154981L * class_127.field_1403;
+               long var6 = var4 - GameApplet.field_1379 * 6246927008582722683L;
+               long var8 = var12 - -7805304911218154981L * GameApplet.field_1403;
                if(0L != var8) {
                   if(var0 != -56748890) {
                      throw new IllegalStateException();
@@ -469,8 +465,8 @@ public class class_135 {
                }
             }
 
-            class_127.field_1379 = -7975047348458726733L * var4;
-            class_127.field_1403 = -4302826277310093293L * var12;
+            GameApplet.field_1379 = -7975047348458726733L * var4;
+            GameApplet.field_1403 = -4302826277310093293L * var12;
          }
 
          return var1;
@@ -559,9 +555,9 @@ public class class_135 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_2950() throws Throwable {
+   class_135() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "ao.<init>(" + ')');

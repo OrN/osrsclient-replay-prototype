@@ -243,9 +243,9 @@ public class class_96 extends class_91 {
    }
 
    // $FF: renamed from: <init> (int, int, int, int, int, int, int, boolean, gl) void
-   void method_1781(int var1, int var2, int var3, int var4, int var5, int var6, int var7, boolean var8, class_91 var9) {
+   class_96(int var1, int var2, int var3, int var4, int var5, int var6, int var7, boolean var8, class_91 var9) {
+      super();
       try {
-         super.method_105();
          this.field_1054 = var1 * 1043051779;
          this.field_1061 = var2 * 79589827;
          this.field_1056 = -616339375 * var3;

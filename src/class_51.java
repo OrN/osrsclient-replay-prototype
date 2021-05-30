@@ -12,9 +12,9 @@ public abstract class class_51 extends class_27 {
    abstract void method_568(class_44 var1);
 
    // $FF: renamed from: <init> () void
-   void method_105() {
+   class_51() {
+      super();
       try {
-         super.method_105();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "a.<init>(" + ')');
       }

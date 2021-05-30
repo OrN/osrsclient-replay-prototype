@@ -13,9 +13,9 @@ public class class_327 {
 
 
    // $FF: renamed from: <init> () void
-   void method_5794() throws Throwable {
+   class_327() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "kn.<init>(" + ')');

@@ -72,82 +72,59 @@ public class class_290 implements class_14 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_5286() {
-      class_290 var10000 = new class_290;
-      var10000.method_5287(0, 0);
+   static {
+      class_290 var10000 = new class_290(0, 0);
       field_3293 = var10000;
-      var10000 = new class_290;
-      var10000.method_5287(1, 0);
+      var10000 = new class_290(1, 0);
       field_3287 = var10000;
-      var10000 = new class_290;
-      var10000.method_5287(2, 0);
+      var10000 = new class_290(2, 0);
       field_3311 = var10000;
-      var10000 = new class_290;
-      var10000.method_5287(3, 0);
+      var10000 = new class_290(3, 0);
       field_3289 = var10000;
-      var10000 = new class_290;
-      var10000.method_5287(9, 2);
+      var10000 = new class_290(9, 2);
       field_3290 = var10000;
-      var10000 = new class_290;
-      var10000.method_5287(4, 1);
+      var10000 = new class_290(4, 1);
       field_3291 = var10000;
-      var10000 = new class_290;
-      var10000.method_5287(5, 1);
+      var10000 = new class_290(5, 1);
       field_3292 = var10000;
-      var10000 = new class_290;
-      var10000.method_5287(6, 1);
+      var10000 = new class_290(6, 1);
       field_3308 = var10000;
-      var10000 = new class_290;
-      var10000.method_5287(7, 1);
+      var10000 = new class_290(7, 1);
       field_3294 = var10000;
-      var10000 = new class_290;
-      var10000.method_5287(8, 1);
+      var10000 = new class_290(8, 1);
       field_3295 = var10000;
-      var10000 = new class_290;
-      var10000.method_5287(12, 2);
+      var10000 = new class_290(12, 2);
       field_3286 = var10000;
-      var10000 = new class_290;
-      var10000.method_5287(13, 2);
+      var10000 = new class_290(13, 2);
       field_3300 = var10000;
-      var10000 = new class_290;
-      var10000.method_5287(14, 2);
+      var10000 = new class_290(14, 2);
       field_3307 = var10000;
-      var10000 = new class_290;
-      var10000.method_5287(15, 2);
+      var10000 = new class_290(15, 2);
       field_3299 = var10000;
-      var10000 = new class_290;
-      var10000.method_5287(16, 2);
+      var10000 = new class_290(16, 2);
       field_3310 = var10000;
-      var10000 = new class_290;
-      var10000.method_5287(17, 2);
+      var10000 = new class_290(17, 2);
       field_3301 = var10000;
-      var10000 = new class_290;
-      var10000.method_5287(18, 2);
+      var10000 = new class_290(18, 2);
       field_3302 = var10000;
-      var10000 = new class_290;
-      var10000.method_5287(19, 2);
+      var10000 = new class_290(19, 2);
       field_3303 = var10000;
-      var10000 = new class_290;
-      var10000.method_5287(20, 2);
+      var10000 = new class_290(20, 2);
       field_3296 = var10000;
-      var10000 = new class_290;
-      var10000.method_5287(21, 2);
+      var10000 = new class_290(21, 2);
       field_3305 = var10000;
-      var10000 = new class_290;
-      var10000.method_5287(10, 2);
+      var10000 = new class_290(10, 2);
       field_3306 = var10000;
-      var10000 = new class_290;
-      var10000.method_5287(11, 2);
+      var10000 = new class_290(11, 2);
       field_3288 = var10000;
-      var10000 = new class_290;
-      var10000.method_5287(22, 3);
+      var10000 = new class_290(22, 3);
       field_3298 = var10000;
    }
 
    // $FF: renamed from: <init> (int, int) void
-   void method_5287(int var1, int var2) {
+   class_290(int var1, int var2) {
+      super();
       try {
-         super();
          this.field_3309 = -1791833721 * var1;
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3, "ix.<init>(" + ')');
@@ -238,8 +215,7 @@ public class class_290 implements class_14 {
                   }
                }
 
-               var10000 = new class_37;
-               var10000.method_105();
+               var10000 = new class_37();
                class_37 var14 = var10000;
                var14.field_103 = var5 * -1415658351;
                var14.field_152 = (var14.field_101 = var7.field_101 * 1) * -1554407447;

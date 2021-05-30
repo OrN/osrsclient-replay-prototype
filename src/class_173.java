@@ -17,9 +17,9 @@ public class class_173 {
 
 
    // $FF: renamed from: <init> () void
-   void method_3711() {
+   class_173() {
+      super();
       try {
-         super();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "cp.<init>(" + ')');
       }

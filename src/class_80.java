@@ -404,9 +404,9 @@ public class class_80 extends class_59 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_105() {
+   class_80() {
+      super();
       try {
-         super.method_105();
          this.field_707 = class_305.field_3410;
          this.field_713 = -804765840;
          this.field_733 = 0;
@@ -488,13 +488,11 @@ public class class_80 extends class_59 {
 
                   class_93 var8 = class_93.method_1708(class_331.field_3859, var5, 0);
                   class_93[] var9 = new class_93[]{var6, var7, var8};
-                  var10000 = new class_93;
-                  var10000.method_1704(var9, 3);
+                  var10000 = new class_93(var9, 3);
                   var6 = var10000;
                } else {
                   class_93[] var12 = new class_93[]{var6, var7};
-                  var10000 = new class_93;
-                  var10000.method_1704(var12, 2);
+                  var10000 = new class_93(var12, 2);
                   var6 = var10000;
                }
             }
@@ -629,8 +627,7 @@ public class class_80 extends class_59 {
 
                class_93 var6 = class_93.method_1708(class_331.field_3859, var4, 0);
                class_93[] var7 = new class_93[]{var5, var6};
-               class_93 var10000 = new class_93;
-               var10000.method_1704(var7, 2);
+               class_93 var10000 = new class_93(var7, 2);
                var5 = var10000;
             }
 
@@ -814,15 +811,12 @@ public class class_80 extends class_59 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_1276() {
-      class_272 var10000 = new class_272;
-      var10000.method_5063(64);
+   static {
+      class_272 var10000 = new class_272(64);
       field_702 = var10000;
-      var10000 = new class_272;
-      var10000.method_5063(50);
+      var10000 = new class_272(50);
       field_703 = var10000;
-      var10000 = new class_272;
-      var10000.method_5063(200);
+      var10000 = new class_272(200);
       field_704 = var10000;
    }
 
@@ -833,13 +827,11 @@ public class class_80 extends class_59 {
          return var1;
       } else {
          byte[] var2 = class_368.field_4096.method_5381(10, var0, -26460885);
-         class_80 var10000 = new class_80;
-         var10000.method_105();
+         class_80 var10000 = new class_80();
          var1 = var10000;
          var1.field_748 = -31876329 * var0;
          if(var2 != null) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1260(var10001, -1124272514);
          }
 
@@ -857,7 +849,7 @@ public class class_80 extends class_59 {
          }
 
          if(!class_49.field_363 && var1.field_720) {
-            var1.field_707 = class_305.field_3621;
+            var1.field_707 = class_305.strMembersObject;
             var1.field_747 = false;
             var1.field_721 = null;
             var1.field_730 = null;
@@ -893,13 +885,11 @@ public class class_80 extends class_59 {
          return var1;
       } else {
          byte[] var2 = class_368.field_4096.method_5381(10, var0, -26460885);
-         class_80 var10000 = new class_80;
-         var10000.method_105();
+         class_80 var10000 = new class_80();
          var1 = var10000;
          var1.field_748 = -31876329 * var0;
          if(var2 != null) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1260(var10001, -1151710764);
          }
 
@@ -917,7 +907,7 @@ public class class_80 extends class_59 {
          }
 
          if(!class_49.field_363 && var1.field_720) {
-            var1.field_707 = class_305.field_3621;
+            var1.field_707 = class_305.strMembersObject;
             var1.field_747 = false;
             var1.field_721 = null;
             var1.field_730 = null;
@@ -1327,8 +1317,7 @@ public class class_80 extends class_59 {
          int var14 = class_65.field_486;
          int[] var15 = new int[4];
          class_65.method_655(var15);
-         class_67 var10000 = new class_67;
-         var10000.method_754(36, 32);
+         class_67 var10000 = new class_67(36, 32);
          var8 = var10000;
          class_65.method_656(var8.field_502, 36, 32);
          class_65.method_662();
@@ -1640,8 +1629,7 @@ public class class_80 extends class_59 {
          int var14 = class_65.field_486;
          int[] var15 = new int[4];
          class_65.method_655(var15);
-         class_67 var10000 = new class_67;
-         var10000.method_754(-2018074252, -1625217917);
+         class_67 var10000 = new class_67(-2018074252, -1625217917);
          var8 = var10000;
          class_65.method_656(var8.field_502, -2049483367, 1260138724);
          class_65.method_662();
@@ -1877,13 +1865,11 @@ public class class_80 extends class_59 {
             if(var4 != -1) {
                class_93 var7 = class_93.method_1708(class_331.field_3859, var4, 0);
                class_93[] var8 = new class_93[]{var5, var6, var7};
-               var10000 = new class_93;
-               var10000.method_1704(var8, 3);
+               var10000 = new class_93(var8, 3);
                var5 = var10000;
             } else {
                class_93[] var10 = new class_93[]{var5, var6};
-               var10000 = new class_93;
-               var10000.method_1704(var10, 2);
+               var10000 = new class_93(var10, 2);
                var5 = var10000;
             }
          }
@@ -1972,8 +1958,7 @@ public class class_80 extends class_59 {
          int var14 = class_65.field_486;
          int[] var15 = new int[4];
          class_65.method_655(var15);
-         class_67 var10000 = new class_67;
-         var10000.method_754(36, 32);
+         class_67 var10000 = new class_67(36, 32);
          var8 = var10000;
          class_65.method_656(var8.field_502, 36, 32);
          class_65.method_662();
@@ -2101,8 +2086,7 @@ public class class_80 extends class_59 {
          int var14 = class_65.field_486;
          int[] var15 = new int[4];
          class_65.method_655(var15);
-         class_67 var10000 = new class_67;
-         var10000.method_754(1428129032, 32);
+         class_67 var10000 = new class_67(1428129032, 32);
          var8 = var10000;
          class_65.method_656(var8.field_502, 36, 32);
          class_65.method_662();
@@ -2320,8 +2304,7 @@ public class class_80 extends class_59 {
          if(var3 != -1) {
             class_93 var5 = class_93.method_1708(class_331.field_3859, var3, 0);
             class_93[] var6 = new class_93[]{var4, var5};
-            class_93 var10000 = new class_93;
-            var10000.method_1704(var6, 2);
+            class_93 var10000 = new class_93(var6, 2);
             var4 = var10000;
          }
 
@@ -2982,13 +2965,11 @@ public class class_80 extends class_59 {
             if(var4 != -1) {
                class_93 var7 = class_93.method_1708(class_331.field_3859, var4, 0);
                class_93[] var8 = new class_93[]{var5, var6, var7};
-               var10000 = new class_93;
-               var10000.method_1704(var8, 3);
+               var10000 = new class_93(var8, 3);
                var5 = var10000;
             } else {
                class_93[] var10 = new class_93[]{var5, var6};
-               var10000 = new class_93;
-               var10000.method_1704(var10, 2);
+               var10000 = new class_93(var10, 2);
                var5 = var10000;
             }
          }

@@ -22,8 +22,7 @@ public abstract class class_277 {
       if(null == var0) {
          return null;
       } else if(var0.length > 136) {
-         class_278 var10000 = new class_278;
-         var10000.method_5137();
+         class_278 var10000 = new class_278();
          class_278 var2 = var10000;
          var2.method_5134(var0, (byte)-73);
          return var2;
@@ -42,8 +41,7 @@ public abstract class class_277 {
       if(null == var0) {
          return null;
       } else if(var0.length > 136) {
-         class_278 var10000 = new class_278;
-         var10000.method_5137();
+         class_278 var10000 = new class_278();
          class_278 var2 = var10000;
          var2.method_5134(var0, (byte)-16);
          return var2;
@@ -58,9 +56,9 @@ public abstract class class_277 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_5137() {
+   class_277() {
+      super();
       try {
-         super();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "im.<init>(" + ')');
       }
@@ -120,8 +118,7 @@ public abstract class class_277 {
                return null;
             }
          } else {
-            class_66 var10000 = new class_66;
-            var10000.method_105();
+            class_66 var10000 = new class_66();
             class_66 var5 = var10000;
             var5.field_497 = class_403.field_4276 * -1099363635;
             var5.field_494 = class_380.field_4201 * -821679425;
@@ -153,8 +150,7 @@ public abstract class class_277 {
       if(null == var0) {
          return null;
       } else if(var0.length > 136) {
-         class_278 var10000 = new class_278;
-         var10000.method_5137();
+         class_278 var10000 = new class_278();
          class_278 var2 = var10000;
          var2.method_5134(var0, (byte)18);
          return var2;

@@ -22,8 +22,7 @@ public class class_29 extends class_28 {
    // $FF: renamed from: v (int[], int) void
    public void method_355(int[] var1, int var2) {
       try {
-         class_404 var10001 = new class_404;
-         var10001.method_6851(var1);
+         class_404 var10001 = new class_404(var1);
          this.field_19 = var10001;
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3, "nb.v(" + ')');
@@ -55,7 +54,7 @@ public class class_29 extends class_28 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_349() {
+   static {
       field_20 = new int[]{0, 1, 3, 7, 15, 31, 63, 127, 255, 511, 1023, 2047, 4095, 8191, 16383, 32767, '\uffff', 131071, 262143, 524287, 1048575, 2097151, 4194303, 8388607, 16777215, 33554431, 67108863, 134217727, 268435455, 536870911, 1073741823, Integer.MAX_VALUE, -1};
    }
 
@@ -81,9 +80,9 @@ public class class_29 extends class_28 {
    }
 
    // $FF: renamed from: <init> (int) void
-   public void method_160(int var1) {
+   public class_29(int var1) {
+      super(var1);
       try {
-         super.method_160(var1);
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "nb.<init>(" + ')');
       }
@@ -146,15 +145,13 @@ public class class_29 extends class_28 {
 
    // $FF: renamed from: l (int[]) void
    public void method_365(int[] var1) {
-      class_404 var10001 = new class_404;
-      var10001.method_6851(var1);
+      class_404 var10001 = new class_404(var1);
       this.field_19 = var10001;
    }
 
    // $FF: renamed from: o (int[]) void
    public void method_366(int[] var1) {
-      class_404 var10001 = new class_404;
-      var10001.method_6851(var1);
+      class_404 var10001 = new class_404(var1);
       this.field_19 = var10001;
    }
 

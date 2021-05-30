@@ -53,17 +53,16 @@ public class class_310 {
    }
 
    // $FF: renamed from: <init> (nd, byte, int) void
-   void method_5542(class_28 var1, byte var2, int var3) {
+   class_310(class_28 var1, byte var2, int var3) {
+      super();
       try {
-         super();
          this.field_3742 = var1.method_139(-391631059);
          this.field_3746 = var1.method_139(-391631059);
          this.field_3745 = var1.method_132((byte)-73) * 976507365;
          this.field_3743 = var1.method_136(-1559517591) * -1523233194100030643L;
          int var4 = var1.method_135((byte)-127);
          int var5 = var1.method_135((byte)-110);
-         class_312 var10001 = new class_312;
-         var10001.method_5561();
+         class_312 var10001 = new class_312();
          this.field_3744 = var10001;
          this.field_3744.method_5560(2, 1177781475);
          this.field_3744.method_5572(var2, (byte)110);

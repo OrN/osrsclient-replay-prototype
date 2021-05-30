@@ -111,8 +111,7 @@ public class class_88 extends class_59 {
             if(var6.length == 1) {
                var7 = var6[0];
             } else {
-               class_93 var10000 = new class_93;
-               var10000.method_1704(var6, var6.length);
+               class_93 var10000 = new class_93(var6, var6.length);
                var7 = var10000;
             }
 
@@ -174,8 +173,7 @@ public class class_88 extends class_59 {
             if(var8.length == 1) {
                var12 = var8[0];
             } else {
-               class_93 var10000 = new class_93;
-               var10000.method_1704(var8, var8.length);
+               class_93 var10000 = new class_93(var8, var8.length);
                var12 = var10000;
             }
 
@@ -531,8 +529,7 @@ public class class_88 extends class_59 {
                if(var9.length == 1) {
                   var14 = var9[0];
                } else {
-                  class_93 var10000 = new class_93;
-                  var10000.method_1704(var9, var9.length);
+                  class_93 var10000 = new class_93(var9, var9.length);
                   var14 = var10000;
                }
 
@@ -678,8 +675,7 @@ public class class_88 extends class_59 {
 
                   var9 = var8[0];
                } else {
-                  class_93 var10000 = new class_93;
-                  var10000.method_1704(var8, var8.length);
+                  class_93 var10000 = new class_93(var8, var8.length);
                   var9 = var10000;
                }
 
@@ -848,12 +844,10 @@ public class class_88 extends class_59 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_1549() {
-      class_272 var10000 = new class_272;
-      var10000.method_5063(64);
+   static {
+      class_272 var10000 = new class_272(64);
       field_884 = var10000;
-      var10000 = new class_272;
-      var10000.method_5063(50);
+      var10000 = new class_272(50);
       field_876 = var10000;
    }
 
@@ -864,13 +858,11 @@ public class class_88 extends class_59 {
          return var1;
       } else {
          byte[] var2 = field_890.method_5381(9, var0, -26460885);
-         class_88 var10000 = new class_88;
-         var10000.method_105();
+         class_88 var10000 = new class_88();
          var1 = var10000;
          var1.field_857 = var0 * 1893482329;
          if(var2 != null) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1566(var10001, 1170104499);
          }
 
@@ -1066,8 +1058,7 @@ public class class_88 extends class_59 {
             if(var8.length == 1) {
                var12 = var8[0];
             } else {
-               class_93 var10000 = new class_93;
-               var10000.method_1704(var8, var8.length);
+               class_93 var10000 = new class_93(var8, var8.length);
                var12 = var10000;
             }
 
@@ -1140,8 +1131,7 @@ public class class_88 extends class_59 {
             if(var6.length == 1) {
                var7 = var6[0];
             } else {
-               class_93 var10000 = new class_93;
-               var10000.method_1704(var6, var6.length);
+               class_93 var10000 = new class_93(var6, var6.length);
                var7 = var10000;
             }
 
@@ -1192,8 +1182,7 @@ public class class_88 extends class_59 {
             if(var6.length == 1) {
                var7 = var6[0];
             } else {
-               class_93 var10000 = new class_93;
-               var10000.method_1704(var6, var6.length);
+               class_93 var10000 = new class_93(var6, var6.length);
                var7 = var10000;
             }
 
@@ -1284,8 +1273,7 @@ public class class_88 extends class_59 {
             if(var8.length == 1) {
                var12 = var8[0];
             } else {
-               class_93 var10000 = new class_93;
-               var10000.method_1704(var8, var8.length);
+               class_93 var10000 = new class_93(var8, var8.length);
                var12 = var10000;
             }
 
@@ -1396,9 +1384,9 @@ public class class_88 extends class_59 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_105() {
+   class_88() {
+      super();
       try {
-         super.method_105();
          this.field_858 = class_305.field_3410;
          this.field_859 = 2143888193;
          this.field_875 = -1784073613;

@@ -161,9 +161,8 @@ public final class class_145 implements KeyListener, FocusListener {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_3085() {
-      class_145 var10000 = new class_145;
-      var10000.method_3102();
+   static {
+      class_145 var10000 = new class_145();
       field_1846 = var10000;
       field_1840 = new boolean[112];
       field_1842 = new int[128];
@@ -506,9 +505,9 @@ public final class class_145 implements KeyListener, FocusListener {
    public final void method_3101(FocusEvent var1) {}
 
    // $FF: renamed from: <init> () void
-   void method_3102() {
+   class_145() {
+      super();
       try {
-         super();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "az.<init>(" + ')');
       }

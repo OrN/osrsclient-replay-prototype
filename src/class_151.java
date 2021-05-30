@@ -80,9 +80,9 @@ public class class_151 implements Comparator {
    }
 
    // $FF: renamed from: <init> () void
-   void method_3206() {
+   class_151() {
+      super();
       try {
-         super();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "bk.<init>(" + ')');
       }
@@ -279,16 +279,14 @@ public class class_151 implements Comparator {
             }
          } else {
             byte[] var3 = class_81.field_754.method_5381(5, var0, -26460885);
-            class_81 var10000 = new class_81;
-            var10000.method_105();
+            class_81 var10000 = new class_81();
             var2 = var10000;
             if(null != var3) {
                if(var1 == 0) {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28;
-               var10001.method_178(var3);
+               class_28 var10001 = new class_28(var3);
                var2.method_1340(var10001, 1433861399);
             }
 

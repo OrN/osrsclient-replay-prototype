@@ -11,7 +11,7 @@ public class class_115 extends class_111 {
    // $FF: renamed from: kh int
    static int field_1289;
    // $FF: renamed from: t java.lang.String
-   public static String field_1290;
+   public static String homeDirectory;
 
 
    // $FF: renamed from: ii (int, int, int) void
@@ -50,10 +50,10 @@ public class class_115 extends class_111 {
    }
 
    // $FF: renamed from: <init> (f) void
-   void method_2244(class_167 var1) {
+   class_115(class_167 var1) {
+      super();
       try {
          this.this$0 = var1;
-         super.method_105();
          this.field_1288 = -824813057;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "t.<init>(" + ')');
@@ -74,8 +74,7 @@ public class class_115 extends class_111 {
                throw new IllegalStateException();
             }
 
-            class_40 var10000 = new class_40;
-            var10000.method_105();
+            class_40 var10000 = new class_40();
             var1 = var10000;
          } else {
             var1 = class_40.field_268[(class_40.field_266 -= 1843709903) * -227614929];
@@ -83,8 +82,7 @@ public class class_115 extends class_111 {
 
          var1.field_267 = null;
          var1.field_262 = 0;
-         class_29 var10001 = new class_29;
-         var10001.method_160(5000);
+         class_29 var10001 = new class_29(5000);
          var1.field_263 = var10001;
          return var1;
       } catch (RuntimeException var3) {

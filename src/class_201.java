@@ -9,7 +9,7 @@ public class class_201 implements Runnable {
    // $FF: renamed from: r int
    static final int field_2352 = 1;
    // $FF: renamed from: n java.lang.String
-   public static String field_2353;
+   public static String javaVersion;
    // $FF: renamed from: f eu
    class_214 field_2354;
    // $FF: renamed from: d int
@@ -21,7 +21,7 @@ public class class_201 implements Runnable {
    // $FF: renamed from: j boolean
    boolean field_2358;
    // $FF: renamed from: v java.lang.String
-   public static String field_2359;
+   public static String javaVendor;
    // $FF: renamed from: ex lz
    static class_360 field_2360;
    // $FF: renamed from: i int
@@ -58,15 +58,15 @@ public class class_201 implements Runnable {
          try {
             int var2 = var1.field_2450 * -308758867;
             if(var2 == 1) {
-               var1.field_2454 = new Socket(InetAddress.getByName((String)var1.field_2447), var1.field_2451);
+               var1.socket = new Socket(InetAddress.getByName((String)var1.host), var1.port);
             } else if(var2 == 2) {
-               Thread var3 = new Thread((Runnable)var1.field_2447);
-               var3.setDaemon(true);
-               var3.start();
-               var3.setPriority(var1.field_2451);
-               var1.field_2454 = var3;
+               Thread thread = new Thread((Runnable)var1.host);
+               thread.setDaemon(true);
+               thread.start();
+               thread.setPriority(var1.port);
+               var1.socket = thread;
             } else if(4 == var2) {
-               var1.field_2454 = new DataInputStream(((URL)var1.field_2447).openStream());
+               var1.socket = new DataInputStream(((URL)var1.host).openStream());
             }
 
             var1.field_2446 = 1;
@@ -101,12 +101,11 @@ public class class_201 implements Runnable {
    // $FF: renamed from: n (int, int, int, java.lang.Object, int) eu
    final class_214 method_4056(int var1, int var2, int var3, Object var4, int var5) {
       try {
-         class_214 var10000 = new class_214;
-         var10000.method_4189();
+         class_214 var10000 = new class_214();
          class_214 var6 = var10000;
          var6.field_2450 = 548150565 * var1;
-         var6.field_2451 = var2;
-         var6.field_2447 = var4;
+         var6.port = var2;
+         var6.host = var4;
          synchronized(this) {
             if(this.field_2357 != null) {
                if(var5 == 259457722) {
@@ -175,15 +174,15 @@ public class class_201 implements Runnable {
          try {
             int var2 = var1.field_2450 * 1269022157;
             if(var2 == 1) {
-               var1.field_2454 = new Socket(InetAddress.getByName((String)var1.field_2447), var1.field_2451);
+               var1.socket = new Socket(InetAddress.getByName((String)var1.host), var1.port);
             } else if(var2 == 2) {
-               Thread var3 = new Thread((Runnable)var1.field_2447);
+               Thread var3 = new Thread((Runnable)var1.host);
                var3.setDaemon(true);
                var3.start();
-               var3.setPriority(var1.field_2451);
-               var1.field_2454 = var3;
+               var3.setPriority(var1.port);
+               var1.socket = var3;
             } else if(4 == var2) {
-               var1.field_2454 = new DataInputStream(((URL)var1.field_2447).openStream());
+               var1.socket = new DataInputStream(((URL)var1.host).openStream());
             }
 
             var1.field_2446 = 1;
@@ -225,15 +224,15 @@ public class class_201 implements Runnable {
             try {
                int var2 = var1.field_2450 * -308758867;
                if(var2 == 1) {
-                  var1.field_2454 = new Socket(InetAddress.getByName((String)var1.field_2447), var1.field_2451);
+                  var1.socket = new Socket(InetAddress.getByName((String)var1.host), var1.port);
                } else if(var2 == 2) {
-                  Thread var3 = new Thread((Runnable)var1.field_2447);
+                  Thread var3 = new Thread((Runnable)var1.host);
                   var3.setDaemon(true);
                   var3.start();
-                  var3.setPriority(var1.field_2451);
-                  var1.field_2454 = var3;
+                  var3.setPriority(var1.port);
+                  var1.socket = var3;
                } else if(4 == var2) {
-                  var1.field_2454 = new DataInputStream(((URL)var1.field_2447).openStream());
+                  var1.socket = new DataInputStream(((URL)var1.host).openStream());
                }
 
                var1.field_2446 = 1;
@@ -307,12 +306,11 @@ public class class_201 implements Runnable {
 
    // $FF: renamed from: j (int, int, int, java.lang.Object) eu
    final class_214 method_4061(int var1, int var2, int var3, Object var4) {
-      class_214 var10000 = new class_214;
-      var10000.method_4189();
+      class_214 var10000 = new class_214();
       class_214 var5 = var10000;
       var5.field_2450 = -1398399643 * var1;
-      var5.field_2451 = var2;
-      var5.field_2447 = var4;
+      var5.port = var2;
+      var5.host = var4;
       synchronized(this) {
          if(this.field_2357 != null) {
             this.field_2357.field_2453 = var5;
@@ -328,12 +326,11 @@ public class class_201 implements Runnable {
 
    // $FF: renamed from: r (int, int, int, java.lang.Object) eu
    final class_214 method_4062(int var1, int var2, int var3, Object var4) {
-      class_214 var10000 = new class_214;
-      var10000.method_4189();
+      class_214 var10000 = new class_214();
       class_214 var5 = var10000;
       var5.field_2450 = 548150565 * var1;
-      var5.field_2451 = var2;
-      var5.field_2447 = var4;
+      var5.port = var2;
+      var5.host = var4;
       synchronized(this) {
          if(this.field_2357 != null) {
             this.field_2357.field_2453 = var5;
@@ -349,12 +346,11 @@ public class class_201 implements Runnable {
 
    // $FF: renamed from: b (int, int, int, java.lang.Object) eu
    final class_214 method_4063(int var1, int var2, int var3, Object var4) {
-      class_214 var10000 = new class_214;
-      var10000.method_4189();
+      class_214 var10000 = new class_214();
       class_214 var5 = var10000;
       var5.field_2450 = 548150565 * var1;
-      var5.field_2451 = var2;
-      var5.field_2447 = var4;
+      var5.port = var2;
+      var5.host = var4;
       synchronized(this) {
          if(this.field_2357 != null) {
             this.field_2357.field_2453 = var5;
@@ -379,18 +375,18 @@ public class class_201 implements Runnable {
    }
 
    // $FF: renamed from: <init> () void
-   public void method_4066() {
+   public class_201() {
+      super();
       try {
-         super();
          this.field_2354 = null;
          this.field_2357 = null;
          this.field_2358 = false;
-         field_2359 = "Unknown";
-         field_2353 = "1.6";
+         javaVendor = "Unknown";
+         javaVersion = "1.6";
 
          try {
-            field_2359 = System.getProperty("java.vendor");
-            field_2353 = System.getProperty("java.version");
+            javaVendor = System.getProperty("java.vendor");
+            javaVersion = System.getProperty("java.version");
          } catch (Exception var2) {
             ;
          }

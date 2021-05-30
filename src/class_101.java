@@ -59,8 +59,7 @@ public class class_101 extends class_59 {
    final void method_1884(int var1) {
       try {
          if(null != this.field_1180) {
-            class_359 var10001 = new class_359;
-            var10001.method_6280(class_122.method_2271(this.field_1180, (byte)16), class_239.field_2659);
+            class_359 var10001 = new class_359(class_122.method_2271(this.field_1180, (byte)16), class_239.field_2659);
             this.field_1184 = var10001;
          } else {
             this.field_1184 = null;
@@ -86,9 +85,9 @@ public class class_101 extends class_59 {
    }
 
    // $FF: renamed from: <init> (int, java.lang.String, java.lang.String, java.lang.String) void
-   void method_1887(int var1, String var2, String var3, String var4) {
+   class_101(int var1, String var2, String var3, String var4) {
+      super();
       try {
-         super.method_105();
          this.field_1173 = class_357.field_3980;
          this.field_1179 = class_357.field_3980;
          this.method_1883(var1, var2, var3, var4, 2082804570);
@@ -274,8 +273,7 @@ public class class_101 extends class_59 {
    // $FF: renamed from: ab () void
    final void method_1904() {
       if(null != this.field_1180) {
-         class_359 var10001 = new class_359;
-         var10001.method_6280(class_122.method_2271(this.field_1180, (byte)16), class_239.field_2659);
+         class_359 var10001 = new class_359(class_122.method_2271(this.field_1180, (byte)16), class_239.field_2659);
          this.field_1184 = var10001;
       } else {
          this.field_1184 = null;
@@ -314,8 +312,7 @@ public class class_101 extends class_59 {
    // $FF: renamed from: ae () void
    final void method_1909() {
       if(null != this.field_1180) {
-         class_359 var10001 = new class_359;
-         var10001.method_6280(class_122.method_2271(this.field_1180, (byte)16), class_239.field_2659);
+         class_359 var10001 = new class_359(class_122.method_2271(this.field_1180, (byte)16), class_239.field_2659);
          this.field_1184 = var10001;
       } else {
          this.field_1184 = null;
@@ -326,8 +323,7 @@ public class class_101 extends class_59 {
    // $FF: renamed from: ap () void
    final void method_1910() {
       if(null != this.field_1180) {
-         class_359 var10001 = new class_359;
-         var10001.method_6280(class_122.method_2271(this.field_1180, (byte)16), class_239.field_2659);
+         class_359 var10001 = new class_359(class_122.method_2271(this.field_1180, (byte)16), class_239.field_2659);
          this.field_1184 = var10001;
       } else {
          this.field_1184 = null;

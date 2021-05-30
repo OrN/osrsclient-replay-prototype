@@ -26,12 +26,12 @@ import java.net.URL;
 import java.util.Iterator;
 
 // $FF: renamed from: af
-public abstract class class_127 extends Applet implements Runnable, FocusListener, WindowListener {
+public abstract class GameApplet extends Applet implements Runnable, FocusListener, WindowListener {
 
    // $FF: renamed from: t int
    int field_1374;
    // $FF: renamed from: n af
-   static class_127 field_1375;
+   static GameApplet field_1375;
    // $FF: renamed from: am boolean
    volatile boolean field_1376;
    // $FF: renamed from: p long
@@ -217,8 +217,7 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
                throw new IllegalStateException();
             }
 
-            class_133 var10001 = new class_133;
-            var10001.method_2906();
+            class_133 var10001 = new class_133();
             this.field_1411 = var10001;
             this.field_1411.method_2911(this.field_1397, -1721881715);
          }
@@ -461,8 +460,7 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
                   throw new IllegalStateException();
                }
 
-               class_201 var10000 = new class_201;
-               var10000.method_4066();
+               class_201 var10000 = new class_201();
                field_1392 = var10000;
             }
 
@@ -503,8 +501,7 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
             class_58.field_460 -= (var3.bottom + var3.top) * -1394579951;
          }
 
-         class_26 var10001 = new class_26;
-         var10001.method_92(this);
+         class_26 var10001 = new class_26(this);
          this.field_1397 = var10001;
          var2.setBackground(Color.BLACK);
          var2.setLayout((LayoutManager)null);
@@ -549,8 +546,7 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
                }
             }
 
-            class_143 var10000 = new class_143;
-            var10000.method_3070(646214551 * class_137.field_1766, class_58.field_460 * -1538307343, this.field_1397);
+            class_143 var10000 = new class_143(646214551 * class_137.field_1766, class_58.field_460 * -1538307343, this.field_1397);
             class_126.field_1370 = var10000;
          }
 
@@ -761,8 +757,7 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
          class_58.field_460 -= (var2.bottom + var2.top) * -1394579951;
       }
 
-      class_26 var10001 = new class_26;
-      var10001.method_92(this);
+      class_26 var10001 = new class_26(this);
       this.field_1397 = var10001;
       var1.setBackground(Color.BLACK);
       var1.setLayout((LayoutManager)null);
@@ -784,8 +779,7 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
          ((class_143)class_126.field_1370).method_3066(this.field_1397, 1179291480);
          class_126.field_1370.method_3059(0, 0, -1896303856);
       } else {
-         class_143 var10000 = new class_143;
-         var10000.method_3070(646214551 * class_137.field_1766, class_58.field_460 * -1538307343, this.field_1397);
+         class_143 var10000 = new class_143(646214551 * class_137.field_1766, class_58.field_460 * -1538307343, this.field_1397);
          class_126.field_1370 = var10000;
       }
 
@@ -944,10 +938,10 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
    public void run() {
       try {
          try {
-            if(null != class_201.field_2359) {
-               String var1 = class_201.field_2359.toLowerCase();
+            if(null != class_201.javaVendor) {
+               String var1 = class_201.javaVendor.toLowerCase();
                if(var1.indexOf("sun") != -1 || var1.indexOf("apple") != -1) {
-                  String var2 = class_201.field_2353;
+                  String var2 = class_201.javaVersion;
                   if(var2.equals("1.1") || var2.startsWith("1.1.") || var2.equals("1.2") || var2.startsWith("1.2.") || var2.equals("1.3") || var2.startsWith("1.3.") || var2.equals("1.4") || var2.startsWith("1.4.") || var2.equals("1.5") || var2.startsWith("1.5.") || var2.equals("1.6.0")) {
                      this.method_2324("wrongjava", (byte)-1);
                      return;
@@ -976,12 +970,10 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
 
             Object var8;
             try {
-               class_193 var10 = new class_193;
-               var10.method_3949();
+               class_193 var10 = new class_193();
                var8 = var10;
             } catch (Throwable var5) {
-               class_192 var10000 = new class_192;
-               var10000.method_3949();
+               class_192 var10000 = new class_192();
                var8 = var10000;
             }
 
@@ -1091,8 +1083,7 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
          class_405.field_4295 = -1986655908 * var3;
          class_405.field_4296 = this;
          if(null == field_1392) {
-            class_201 var10000 = new class_201;
-            var10000.method_4066();
+            class_201 var10000 = new class_201();
             field_1392 = var10000;
          }
 
@@ -1240,8 +1231,7 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
             var4 -= var5.bottom + var5.top;
          }
 
-         class_351 var10000 = new class_351;
-         var10000.method_6220(var3, var4);
+         class_351 var10000 = new class_351(var3, var4);
          return var10000;
       } catch (RuntimeException var6) {
          throw class_223.method_4281(var6, "af.aj(" + ')');
@@ -1257,7 +1247,7 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
    protected abstract void method_2328(int var1);
 
    // $FF: renamed from: <clinit> () void
-   static void method_2329() {
+   static {
       field_1375 = null;
       field_1398 = 0;
       field_1377 = 0L;
@@ -1317,8 +1307,7 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
          this.field_1390 = (this.field_1404 * 634137331 - class_137.field_1766 * -1320700608) / 2 * 182874275;
          this.field_1374 = 0;
          this.field_1397.setSize(-1597247435 * class_137.field_1766, class_58.field_460 * -1538307343);
-         class_143 var10000 = new class_143;
-         var10000.method_3070(class_137.field_1766 * -734029269, -1037294039 * class_58.field_460, this.field_1397);
+         class_143 var10000 = new class_143(class_137.field_1766 * -734029269, -1037294039 * class_58.field_460, this.field_1397);
          class_126.field_1370 = var10000;
          if(this.field_1396 == var1) {
             Insets var3 = this.field_1396.getInsets();
@@ -1429,8 +1418,7 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
             this.field_1390 = (this.field_1404 * -1091351445 - class_137.field_1766 * 646214551) / 2 * 182874275;
             this.field_1374 = 0;
             this.field_1397.setSize(646214551 * class_137.field_1766, class_58.field_460 * -1538307343);
-            class_143 var10000 = new class_143;
-            var10000.method_3070(class_137.field_1766 * 646214551, -1538307343 * class_58.field_460, this.field_1397);
+            class_143 var10000 = new class_143(class_137.field_1766 * 646214551, -1538307343 * class_58.field_460, this.field_1397);
             class_126.field_1370 = var10000;
             if(this.field_1396 == var2) {
                Insets var4 = this.field_1396.getInsets();
@@ -1473,8 +1461,7 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
    // $FF: renamed from: af () dw
    protected class_5 method_2345() {
       if(null == this.field_1411) {
-         class_133 var10001 = new class_133;
-         var10001.method_2906();
+         class_133 var10001 = new class_133();
          this.field_1411 = var10001;
          this.field_1411.method_2911(this.field_1397, -286997893);
       }
@@ -1657,8 +1644,7 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
          this.field_1390 = (this.field_1404 * -1091351445 - class_137.field_1766 * -978954037) / 2 * 182874275;
          this.field_1374 = 0;
          this.field_1397.setSize(646214551 * class_137.field_1766, class_58.field_460 * -1207012468);
-         class_143 var10000 = new class_143;
-         var10000.method_3070(class_137.field_1766 * -1015788710, -514790564 * class_58.field_460, this.field_1397);
+         class_143 var10000 = new class_143(class_137.field_1766 * -1015788710, -514790564 * class_58.field_460, this.field_1397);
          class_126.field_1370 = var10000;
          if(this.field_1396 == var1) {
             Insets var3 = this.field_1396.getInsets();
@@ -1692,8 +1678,7 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
          this.field_1390 = (this.field_1404 * -1091351445 - class_137.field_1766 * 646214551) / 2 * 182874275;
          this.field_1374 = 0;
          this.field_1397.setSize(646214551 * class_137.field_1766, class_58.field_460 * -1538307343);
-         class_143 var10000 = new class_143;
-         var10000.method_3070(class_137.field_1766 * 646214551, -1538307343 * class_58.field_460, this.field_1397);
+         class_143 var10000 = new class_143(class_137.field_1766 * 646214551, -1538307343 * class_58.field_460, this.field_1397);
          class_126.field_1370 = var10000;
          if(this.field_1396 == var1) {
             Insets var3 = this.field_1396.getInsets();
@@ -1863,9 +1848,9 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
    }
 
    // $FF: renamed from: <init> () void
-   protected void method_2368() {
+   protected GameApplet() {
+      super();
       try {
-         super();
          this.field_1381 = false;
          this.field_1390 = 0;
          this.field_1374 = 0;
@@ -1882,8 +1867,7 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
          }
 
          this.field_1402 = var1;
-         class_141 var10000 = new class_141;
-         var10000.method_3051();
+         class_141 var10000 = new class_141();
          class_180.method_3820(var10000, 229174712);
       } catch (RuntimeException var4) {
          throw class_223.method_4281(var4, "af.<init>(" + ')');
@@ -1925,8 +1909,7 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
          class_58.field_460 -= (var2.bottom + var2.top) * 9233454;
       }
 
-      class_26 var10001 = new class_26;
-      var10001.method_92(this);
+      class_26 var10001 = new class_26(this);
       this.field_1397 = var10001;
       var1.setBackground(Color.BLACK);
       var1.setLayout((LayoutManager)null);
@@ -1948,8 +1931,7 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
          ((class_143)class_126.field_1370).method_3066(this.field_1397, 1335329828);
          class_126.field_1370.method_3059(0, 0, -1104759174);
       } else {
-         class_143 var10000 = new class_143;
-         var10000.method_3070(1120109090 * class_137.field_1766, class_58.field_460 * -587809659, this.field_1397);
+         class_143 var10000 = new class_143(1120109090 * class_137.field_1766, class_58.field_460 * -587809659, this.field_1397);
          class_126.field_1370 = var10000;
       }
 
@@ -2022,10 +2004,10 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
    // $FF: renamed from: by () void
    public void method_2373() {
       try {
-         if(null != class_201.field_2359) {
-            String var1 = class_201.field_2359.toLowerCase();
+         if(null != class_201.javaVendor) {
+            String var1 = class_201.javaVendor.toLowerCase();
             if(var1.indexOf("sun") != -1 || var1.indexOf("apple") != -1) {
-               String var2 = class_201.field_2353;
+               String var2 = class_201.javaVersion;
                if(var2.equals("1.1") || var2.startsWith("1.1.") || var2.equals("1.2") || var2.startsWith("1.2.") || var2.equals("1.3") || var2.startsWith("1.3.") || var2.equals("1.4") || var2.startsWith("1.4.") || var2.equals("1.5") || var2.startsWith("1.5.") || var2.equals("1.6.0")) {
                   this.method_2324("wrongjava", (byte)-1);
                   return;
@@ -2054,12 +2036,10 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
 
          Object var7;
          try {
-            class_193 var9 = new class_193;
-            var9.method_3949();
+            class_193 var9 = new class_193();
             var7 = var9;
          } catch (Throwable var5) {
-            class_192 var10000 = new class_192;
-            var10000.method_3949();
+            class_192 var10000 = new class_192();
             var7 = var10000;
          }
 
@@ -2086,10 +2066,10 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
    // $FF: renamed from: bc () void
    public void method_2374() {
       try {
-         if(null != class_201.field_2359) {
-            String var1 = class_201.field_2359.toLowerCase();
+         if(null != class_201.javaVendor) {
+            String var1 = class_201.javaVendor.toLowerCase();
             if(var1.indexOf("sun") != -1 || var1.indexOf("apple") != -1) {
-               String var2 = class_201.field_2353;
+               String var2 = class_201.javaVersion;
                if(var2.equals("1.1") || var2.startsWith("1.1.") || var2.equals("1.2") || var2.startsWith("1.2.") || var2.equals("1.3") || var2.startsWith("1.3.") || var2.equals("1.4") || var2.startsWith("1.4.") || var2.equals("1.5") || var2.startsWith("1.5.") || var2.equals("1.6.0")) {
                   this.method_2324("wrongjava", (byte)-1);
                   return;
@@ -2118,12 +2098,10 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
 
          Object var7;
          try {
-            class_193 var9 = new class_193;
-            var9.method_3949();
+            class_193 var9 = new class_193();
             var7 = var9;
          } catch (Throwable var5) {
-            class_192 var10000 = new class_192;
-            var10000.method_3949();
+            class_192 var10000 = new class_192();
             var7 = var10000;
          }
 
@@ -2289,8 +2267,7 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
          this.field_1390 = (this.field_1404 * -1091351445 - class_137.field_1766 * 2036421293) / 2 * -1942847044;
          this.field_1374 = 0;
          this.field_1397.setSize(910962566 * class_137.field_1766, class_58.field_460 * -1538307343);
-         class_143 var10000 = new class_143;
-         var10000.method_3070(class_137.field_1766 * 1590030796, -1538307343 * class_58.field_460, this.field_1397);
+         class_143 var10000 = new class_143(class_137.field_1766 * 1590030796, -1538307343 * class_58.field_460, this.field_1397);
          class_126.field_1370 = var10000;
          if(this.field_1396 == var1) {
             Insets var3 = this.field_1396.getInsets();
@@ -2908,8 +2885,7 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
          var3 -= var4.bottom + var4.top;
       }
 
-      class_351 var10000 = new class_351;
-      var10000.method_6220(var2, var3);
+      class_351 var10000 = new class_351(var2, var3);
       return var10000;
    }
 
@@ -2924,8 +2900,7 @@ public abstract class class_127 extends Applet implements Runnable, FocusListene
          var3 -= var4.bottom + var4.top;
       }
 
-      class_351 var10000 = new class_351;
-      var10000.method_6220(var2, var3);
+      class_351 var10000 = new class_351(var2, var3);
       return var10000;
    }
 

@@ -81,9 +81,9 @@ public class class_312 {
    }
 
    // $FF: renamed from: <init> () void
-   public void method_5561() {
+   public class_312() {
+      super();
       try {
-         super();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "ju.<init>(" + ')');
       }
@@ -124,9 +124,9 @@ public class class_312 {
    void method_5568(Integer var1) {}
 
    // $FF: renamed from: <init> (nd, boolean) void
-   public void method_5569(class_28 var1, boolean var2) {
+   public class_312(class_28 var1, boolean var2) {
+      super();
       try {
-         super();
          this.field_3755 = var1.method_131((byte)-23);
          this.field_3754 = var1.method_132((byte)-29) * 515671321;
          this.field_3758 = var1.method_135((byte)-46) * 675729031;

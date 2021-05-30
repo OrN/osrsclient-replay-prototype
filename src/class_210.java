@@ -18,9 +18,9 @@ public class class_210 {
 
 
    // $FF: renamed from: <init> () void
-   void method_4163() throws Throwable {
+   class_210() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "ec.<init>(" + ')');
@@ -28,7 +28,7 @@ public class class_210 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_4164() {
+   static {
       field_2425 = false;
       field_2424 = new Hashtable(16);
    }

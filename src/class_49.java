@@ -13,16 +13,15 @@ public class class_49 extends class_27 {
 
 
    // $FF: renamed from: <clinit> () void
-   static void method_552() {
-      class_364 var10000 = new class_364;
-      var10000.method_6538(32);
+   static {
+      class_364 var10000 = new class_364(32);
       field_361 = var10000;
    }
 
    // $FF: renamed from: <init> () void
-   void method_105() {
+   class_49() {
+      super();
       try {
-         super.method_105();
          this.field_360 = new int[]{-1};
          this.field_362 = new int[]{0};
       } catch (RuntimeException var1) {
@@ -110,8 +109,7 @@ public class class_49 extends class_27 {
    static void method_561(int var0, int var1, int var2, int var3) {
       class_49 var4 = (class_49)field_361.method_6523((long)var0);
       if(null == var4) {
-         class_49 var10000 = new class_49;
-         var10000.method_105();
+         class_49 var10000 = new class_49();
          var4 = var10000;
          field_361.method_6525(var4, (long)var0);
       }
@@ -143,8 +141,7 @@ public class class_49 extends class_27 {
    static void method_562(int var0, int var1, int var2, int var3) {
       class_49 var4 = (class_49)field_361.method_6523((long)var0);
       if(null == var4) {
-         class_49 var10000 = new class_49;
-         var10000.method_105();
+         class_49 var10000 = new class_49();
          var4 = var10000;
          field_361.method_6525(var4, (long)var0);
       }
@@ -210,15 +207,13 @@ public class class_49 extends class_27 {
 
    // $FF: renamed from: z () void
    static void method_566() {
-      class_364 var10000 = new class_364;
-      var10000.method_6538(32);
+      class_364 var10000 = new class_364(32);
       field_361 = var10000;
    }
 
    // $FF: renamed from: w () void
    static void method_567() {
-      class_364 var10000 = new class_364;
-      var10000.method_6538(32);
+      class_364 var10000 = new class_364(32);
       field_361 = var10000;
    }
 }

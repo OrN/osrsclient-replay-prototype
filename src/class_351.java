@@ -25,9 +25,9 @@ public class class_351 {
    }
 
    // $FF: renamed from: <init> (int, int, int, int) void
-   public void method_6208(int var1, int var2, int var3, int var4) {
+   public class_351(int var1, int var2, int var3, int var4) {
+      super();
       try {
-         super();
          this.method_6209(var1, var2, 1379140744);
          this.method_6210(var3, var4, 1063534704);
       } catch (RuntimeException var5) {
@@ -216,9 +216,9 @@ public class class_351 {
    }
 
    // $FF: renamed from: <init> (int, int) void
-   public void method_6220(int var1, int var2) {
+   public class_351(int var1, int var2) {
+      this(0, 0, var1, var2);
       try {
-         this.method_6208(0, 0, var1, var2);
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3, "li.<init>(" + ')');
       }

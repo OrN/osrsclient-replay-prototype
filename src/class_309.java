@@ -43,7 +43,7 @@ final class class_309 implements Comparator {
    }
 
    // $FF: renamed from: <init> () void
-   void method_5528() {
+   class_309() {
       super();
    }
 

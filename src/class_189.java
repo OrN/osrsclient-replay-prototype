@@ -5,7 +5,7 @@ public class class_189 extends class_181 {
    // $FF: renamed from: v boolean
    final boolean field_2273;
    // $FF: renamed from: z java.lang.String
-   public static String field_2274;
+   public static String osName;
    // $FF: renamed from: dm jp
    static class_307 field_2275;
    // $FF: renamed from: iz int
@@ -147,9 +147,9 @@ public class class_189 extends class_181 {
    }
 
    // $FF: renamed from: <init> (boolean) void
-   public void method_3897(boolean var1) {
+   public class_189(boolean var1) {
+      super();
       try {
-         super.method_3822();
          this.field_2273 = var1;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "da.<init>(" + ')');
@@ -177,8 +177,7 @@ public class class_189 extends class_181 {
 
                byte[] var4 = var0.method_5381(35, var3, -26460885);
                class_75[] var10000 = class_75.field_614;
-               class_75 var10002 = new class_75;
-               var10002.method_1135(var3);
+               class_75 var10002 = new class_75(var3);
                var10000[var3] = var10002;
                if(var4 != null) {
                   if(var2 >= 89896861) {
@@ -186,8 +185,7 @@ public class class_189 extends class_181 {
                   }
 
                   class_75 var6 = class_75.field_614[var3];
-                  class_28 var10001 = new class_28;
-                  var10001.method_178(var4);
+                  class_28 var10001 = new class_28(var4);
                   var6.method_1138(var10001, -1509060370);
                   class_75.field_614[var3].method_1133(-505496297);
                }

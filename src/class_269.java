@@ -56,9 +56,9 @@ public final class class_269 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_5040() {
+   class_269() {
+      super();
       try {
-         super();
          this.field_3169 = 0L;
          this.field_3177 = 0;
       } catch (RuntimeException var1) {

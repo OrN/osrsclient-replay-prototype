@@ -6,7 +6,7 @@ import java.util.concurrent.Future;
 public class class_138 {
 
    // $FF: renamed from: w java.lang.String
-   public static String field_1769;
+   public static String propertyOSName;
    // $FF: renamed from: n java.util.concurrent.Future
    Future field_1770;
    // $FF: renamed from: f nd
@@ -362,9 +362,9 @@ public class class_138 {
    }
 
    // $FF: renamed from: <init> (nd, ai) void
-   public void method_2976(class_28 var1, class_1 var2) {
+   public class_138(class_28 var1, class_1 var2) {
+      super();
       try {
-         super();
          this.field_1772 = Executors.newSingleThreadExecutor();
          this.field_1771 = var1;
          this.field_1778 = var2;
@@ -399,8 +399,7 @@ public class class_138 {
    void method_2980(byte var1) {
       try {
          ExecutorService var10001 = this.field_1772;
-         class_132 var10002 = new class_132;
-         var10002.method_2905(this, this.field_1771, this.field_1778);
+         class_132 var10002 = new class_132(this, this.field_1771, this.field_1778);
          this.field_1770 = var10001.submit(var10002);
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "as.y(" + ')');
@@ -437,16 +436,14 @@ public class class_138 {
    // $FF: renamed from: l () void
    void method_2985() {
       ExecutorService var10001 = this.field_1772;
-      class_132 var10002 = new class_132;
-      var10002.method_2905(this, this.field_1771, this.field_1778);
+      class_132 var10002 = new class_132(this, this.field_1771, this.field_1778);
       this.field_1770 = var10001.submit(var10002);
    }
 
    // $FF: renamed from: o () void
    void method_2986() {
       ExecutorService var10001 = this.field_1772;
-      class_132 var10002 = new class_132;
-      var10002.method_2905(this, this.field_1771, this.field_1778);
+      class_132 var10002 = new class_132(this, this.field_1771, this.field_1778);
       this.field_1770 = var10001.submit(var10002);
    }
 

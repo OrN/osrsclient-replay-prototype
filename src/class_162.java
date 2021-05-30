@@ -1046,9 +1046,9 @@ public class class_162 {
    }
 
    // $FF: renamed from: <init> (op[]) void
-   void method_3402(class_66[] var1) {
+   class_162(class_66[] var1) {
+      super();
       try {
-         super();
          this.field_2010 = new int[256];
          this.field_2011 = 0;
          this.field_2020 = 0;
@@ -1297,16 +1297,14 @@ public class class_162 {
             }
          } else {
             byte[] var3 = class_72.field_563.method_5381(12, var0, -26460885);
-            class_72 var10000 = new class_72;
-            var10000.method_105();
+            class_72 var10000 = new class_72();
             var2 = var10000;
             if(var3 != null) {
                if(var1 >= 2050386517) {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28;
-               var10001.method_178(var3);
+               class_28 var10001 = new class_28(var3);
                var2.method_1076(var10001, (byte)11);
             }
 
@@ -1459,8 +1457,7 @@ public class class_162 {
             }
 
             if(null != var5.field_198) {
-               class_45 var10000 = new class_45;
-               var10000.method_105();
+               class_45 var10000 = new class_45();
                class_45 var6 = var10000;
                var6.field_332 = var5;
                var6.field_337 = var5.field_198;

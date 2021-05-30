@@ -20,9 +20,9 @@ public final class class_217 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_4199() {
+   class_217() {
+      super();
       try {
-         super();
          this.field_2475 = new int[4096];
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "fd.<init>(" + ')');
@@ -30,9 +30,9 @@ public final class class_217 {
    }
 
    // $FF: renamed from: <init> (int[]) void
-   void method_4200(int[] var1) {
+   class_217(int[] var1) {
+      super();
       try {
-         super();
          this.field_2475 = var1;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "fd.<init>(" + ')');

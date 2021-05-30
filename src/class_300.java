@@ -55,7 +55,7 @@ final class class_300 implements Comparator {
    }
 
    // $FF: renamed from: <init> () void
-   void method_5351() {
+   class_300() {
       super();
    }
 
@@ -97,8 +97,7 @@ final class class_300 implements Comparator {
             if(var2 == 1277514161) {
                throw new IllegalStateException();
             } else {
-               class_278 var10000 = new class_278;
-               var10000.method_5137();
+               class_278 var10000 = new class_278();
                class_278 var3 = var10000;
                var3.method_5134(var0, (byte)43);
                return var3;

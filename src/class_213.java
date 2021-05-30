@@ -33,15 +33,12 @@ public class class_213 implements class_14 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_4185() {
-      class_213 var10000 = new class_213;
-      var10000.method_4186(1, 0);
+   static {
+      class_213 var10000 = new class_213(1, 0);
       field_2444 = var10000;
-      var10000 = new class_213;
-      var10000.method_4186(0, 1);
+      var10000 = new class_213(0, 1);
       field_2439 = var10000;
-      var10000 = new class_213;
-      var10000.method_4186(2, 2);
+      var10000 = new class_213(2, 2);
       field_2440 = var10000;
    }
 
@@ -56,9 +53,9 @@ public class class_213 implements class_14 {
    }
 
    // $FF: renamed from: <init> (int, int) void
-   void method_4186(int var1, int var2) {
+   class_213(int var1, int var2) {
+      super();
       try {
-         super();
          this.field_2441 = var1 * -484963161;
          this.field_2442 = 654482243 * var2;
       } catch (RuntimeException var3) {
@@ -112,8 +109,7 @@ public class class_213 implements class_14 {
                         }
 
                         if(null == class_101.field_1182) {
-                           class_154 var7 = new class_154;
-                           var7.method_3244();
+                           class_154 var7 = new class_154();
                            class_101.field_1182 = var7;
                            class_276.field_3220 = Executors.newScheduledThreadPool(1);
                            class_276.field_3220.scheduleAtFixedRate(class_101.field_1182, 0L, 10L, TimeUnit.MILLISECONDS);
@@ -134,8 +130,7 @@ public class class_213 implements class_14 {
 
                      return var4;
                   } catch (Throwable var5) {
-                     class_139 var10000 = new class_139;
-                     var10000.method_3017();
+                     class_139 var10000 = new class_139();
                      return var10000;
                   }
                }

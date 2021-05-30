@@ -33,9 +33,9 @@ public class class_385 implements class_14 {
    }
 
    // $FF: renamed from: <init> (int, int, java.lang.Class, nv) void
-   void method_6709(int var1, int var2, Class var3, class_23 var4) {
+   class_385(int var1, int var2, Class var3, class_23 var4) {
+      super();
       try {
-         super();
          this.field_4217 = var1 * -938134805;
          this.field_4222 = -1491529763 * var2;
          this.field_4214 = var3;
@@ -59,8 +59,7 @@ public class class_385 implements class_14 {
       try {
          switch(var0.field_1822 * -537510065) {
          case 0:
-            class_25 var10000 = new class_25;
-            var10000.method_88();
+            class_25 var10000 = new class_25();
             return var10000;
          default:
             throw new IllegalArgumentException();
@@ -124,21 +123,15 @@ public class class_385 implements class_14 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_6715() {
-      class_385 var10000 = new class_385;
-      class_384 var10005 = new class_384;
-      var10005.method_6704();
-      var10000.method_6709(2, 0, Integer.class, var10005);
+   static {
+      class_384 var10005 = new class_384();
+      class_385 var10000 = new class_385(2, 0, Integer.class, var10005);
       field_4218 = var10000;
-      var10000 = new class_385;
-      class_390 var0 = new class_390;
-      var0.method_6768();
-      var10000.method_6709(0, 1, Long.class, var0);
+      class_390 var0 = new class_390();
+      var10000 = new class_385(0, 1, Long.class, var0);
       field_4215 = var10000;
-      var10000 = new class_385;
-      class_386 var1 = new class_386;
-      var1.method_6723();
-      var10000.method_6709(1, 2, String.class, var1);
+      class_386 var1 = new class_386();
+      var10000 = new class_385(1, 2, String.class, var1);
       field_4216 = var10000;
    }
 

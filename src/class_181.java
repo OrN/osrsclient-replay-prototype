@@ -17,9 +17,9 @@ public abstract class class_181 implements Comparator {
    }
 
    // $FF: renamed from: <init> () void
-   protected void method_3822() {
+   protected class_181() {
+      super();
       try {
-         super();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "ln.<init>(" + ')');
       }

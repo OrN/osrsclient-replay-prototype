@@ -746,8 +746,7 @@ public class class_176 {
                throw new IllegalStateException();
             }
 
-            class_66 var10002 = new class_66;
-            var10002.method_105();
+            class_66 var10002 = new class_66();
             class_66 var3 = var1[var2] = var10002;
             var3.field_497 = -1099363635 * class_403.field_4276;
             var3.field_494 = class_380.field_4201 * -821679425;
@@ -767,9 +766,9 @@ public class class_176 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_3750() throws Throwable {
+   class_176() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "q.<init>(" + ')');

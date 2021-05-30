@@ -53,9 +53,8 @@ public class class_81 extends class_59 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_1342() {
-      class_272 var10000 = new class_272;
-      var10000.method_5063(64);
+   static {
+      class_272 var10000 = new class_272(64);
       field_756 = var10000;
    }
 
@@ -90,8 +89,7 @@ public class class_81 extends class_59 {
                return null;
             }
          } else {
-            class_38 var10000 = new class_38;
-            var10000.method_451(var3);
+            class_38 var10000 = new class_38(var3);
             return var10000;
          }
       } catch (RuntimeException var4) {
@@ -100,9 +98,9 @@ public class class_81 extends class_59 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_105() {
+   class_81() {
+      super();
       try {
-         super.method_105();
          this.field_755 = 0;
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "ep.<init>(" + ')');
@@ -128,12 +126,10 @@ public class class_81 extends class_59 {
          return var1;
       } else {
          byte[] var2 = field_754.method_5381(5, var0, -26460885);
-         class_81 var10000 = new class_81;
-         var10000.method_105();
+         class_81 var10000 = new class_81();
          var1 = var10000;
          if(null != var2) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1340(var10001, 1433861399);
          }
 
@@ -173,12 +169,10 @@ public class class_81 extends class_59 {
          return var1;
       } else {
          byte[] var2 = field_754.method_5381(5, var0, -26460885);
-         class_81 var10000 = new class_81;
-         var10000.method_105();
+         class_81 var10000 = new class_81();
          var1 = var10000;
          if(null != var2) {
-            class_28 var10001 = new class_28;
-            var10001.method_178(var2);
+            class_28 var10001 = new class_28(var2);
             var1.method_1340(var10001, 1433861399);
          }
 

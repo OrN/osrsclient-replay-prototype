@@ -570,8 +570,7 @@ public class class_106 extends class_104 {
          if(null != var10) {
             class_110 var11 = var10.field_251[var2];
             if(var11 != null) {
-               class_36 var10000 = new class_36;
-               var10000.method_105();
+               class_36 var10000 = new class_36();
                class_36 var7 = var10000;
                var7.field_81 = 1226398783 * var1;
                var7.field_68 = var10;
@@ -904,9 +903,9 @@ public class class_106 extends class_104 {
    }
 
    // $FF: renamed from: <init> () void
-   public void method_105() {
+   public class_106() {
+      super();
       try {
-         super.method_105();
          this.field_1214 = -1173780224;
          this.field_1233 = -926606400;
          this.field_1234 = new int[16];
@@ -926,14 +925,11 @@ public class class_106 extends class_104 {
          this.field_1231 = new int[16];
          this.field_1227 = new class_36[16][128];
          this.field_1229 = new class_36[16][128];
-         class_285 var10001 = new class_285;
-         var10001.method_5210();
+         class_285 var10001 = new class_285();
          this.field_1220 = var10001;
-         class_105 var2 = new class_105;
-         var2.method_1956(this);
+         class_105 var2 = new class_105(this);
          this.field_1240 = var2;
-         class_364 var3 = new class_364;
-         var3.method_6538(128);
+         class_364 var3 = new class_364(128);
          this.field_1213 = var3;
          this.method_1982(1700163653);
       } catch (RuntimeException var1) {
@@ -2285,8 +2281,7 @@ public class class_106 extends class_104 {
       if(null != var8) {
          class_110 var9 = var8.field_251[var2];
          if(var9 != null) {
-            class_36 var10000 = new class_36;
-            var10000.method_105();
+            class_36 var10000 = new class_36();
             class_36 var6 = var10000;
             var6.field_81 = 1226398783 * var1;
             var6.field_68 = var8;
@@ -2351,8 +2346,7 @@ public class class_106 extends class_104 {
       if(null != var8) {
          class_110 var9 = var8.field_251[var2];
          if(var9 != null) {
-            class_36 var10000 = new class_36;
-            var10000.method_105();
+            class_36 var10000 = new class_36();
             class_36 var6 = var10000;
             var6.field_81 = 1020797501 * var1;
             var6.field_68 = var8;
@@ -2417,8 +2411,7 @@ public class class_106 extends class_104 {
       if(null != var8) {
          class_110 var9 = var8.field_251[var2];
          if(var9 != null) {
-            class_36 var10000 = new class_36;
-            var10000.method_105();
+            class_36 var10000 = new class_36();
             class_36 var6 = var10000;
             var6.field_81 = 1226398783 * var1;
             var6.field_68 = var8;

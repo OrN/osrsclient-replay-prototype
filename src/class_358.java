@@ -438,9 +438,9 @@ public class class_358 implements Runnable {
    }
 
    // $FF: renamed from: <init> (java.io.InputStream, int) void
-   void method_6256(InputStream var1, int var2) {
+   class_358(InputStream var1, int var2) {
+      super();
       try {
-         super();
          this.field_3985 = 0;
          this.field_3986 = 0;
          this.field_3981 = var1;

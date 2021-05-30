@@ -105,8 +105,7 @@ public class class_54 extends class_51 {
                      throw new IllegalStateException();
                   }
 
-                  class_45 var10000 = new class_45;
-                  var10000.method_105();
+                  class_45 var10000 = new class_45();
                   class_45 var2 = var10000;
                   var2.field_332 = var1;
                   var2.field_337 = var1.field_199;
@@ -124,10 +123,10 @@ public class class_54 extends class_51 {
    }
 
    // $FF: renamed from: <init> (x) void
-   void method_584(class_180 var1) {
+   class_54(class_180 var1) {
+      super();
       try {
          this.this$0 = var1;
-         super.method_105();
          this.field_408 = 1560714953;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "j.<init>(" + ')');
@@ -143,8 +142,7 @@ public class class_54 extends class_51 {
                return;
             }
 
-            class_175 var10000 = new class_175;
-            var10000.method_3734();
+            class_175 var10000 = new class_175();
             var5 = var10000;
             class_197.field_2338.put(Integer.valueOf(var0), var5);
          }

@@ -119,8 +119,7 @@ public class class_112 extends class_111 {
                throw new IllegalStateException();
             }
 
-            class_40 var10000 = new class_40;
-            var10000.method_105();
+            class_40 var10000 = new class_40();
             var3 = var10000;
          } else {
             var3 = class_40.field_268[(class_40.field_266 -= 1843709903) * -227614929];
@@ -134,32 +133,27 @@ public class class_112 extends class_111 {
                throw new IllegalStateException();
             }
 
-            var10001 = new class_29;
-            var10001.method_160(260);
+            var10001 = new class_29(260);
             var3.field_263 = var10001;
          } else if(-2 == 1934863547 * var3.field_262) {
-            var10001 = new class_29;
-            var10001.method_160(10000);
+            var10001 = new class_29(10000);
             var3.field_263 = var10001;
          } else if(var3.field_262 * 1934863547 <= 18) {
             if(var2 != 8) {
                throw new IllegalStateException();
             }
 
-            var10001 = new class_29;
-            var10001.method_160(20);
+            var10001 = new class_29(20);
             var3.field_263 = var10001;
          } else if(1934863547 * var3.field_262 <= 98) {
             if(var2 != 8) {
                throw new IllegalStateException();
             }
 
-            var10001 = new class_29;
-            var10001.method_160(100);
+            var10001 = new class_29(100);
             var3.field_263 = var10001;
          } else {
-            var10001 = new class_29;
-            var10001.method_160(260);
+            var10001 = new class_29(260);
             var3.field_263 = var10001;
          }
 
@@ -173,10 +167,10 @@ public class class_112 extends class_111 {
    }
 
    // $FF: renamed from: <init> (f) void
-   void method_2239(class_167 var1) {
+   class_112(class_167 var1) {
+      super();
       try {
          this.this$0 = var1;
-         super.method_105();
          this.field_1276 = 1572776343;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "w.<init>(" + ')');

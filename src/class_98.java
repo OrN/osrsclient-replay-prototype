@@ -391,9 +391,9 @@ public abstract class class_98 extends class_91 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_105() {
+   class_98() {
+      super();
       try {
-         super.method_105();
          this.field_1095 = false;
          this.field_1079 = -83608191;
          this.field_1081 = -1248675989;
@@ -415,8 +415,7 @@ public abstract class class_98 extends class_91 {
          this.field_1098 = new int[4];
          this.field_1099 = new int[4];
          this.field_1100 = new int[4];
-         class_323 var10001 = new class_323;
-         var10001.method_5737();
+         class_323 var10001 = new class_323();
          this.field_1101 = var10001;
          this.field_1128 = 187990533;
          this.field_1103 = false;
@@ -496,8 +495,7 @@ public abstract class class_98 extends class_91 {
       }
 
       if(null != var9 || var11 < 4) {
-         class_47 var10000 = new class_47;
-         var10000.method_542(var7);
+         class_47 var10000 = new class_47(var7);
          var12 = var10000;
          if(var8 == null) {
             this.field_1101.method_5698(var12);
@@ -563,8 +561,7 @@ public abstract class class_98 extends class_91 {
                throw new IllegalStateException();
             }
          } else {
-            class_47 var10000 = new class_47;
-            var10000.method_542(var8);
+            class_47 var10000 = new class_47(var8);
             var13 = var10000;
             if(var9 == null) {
                if(var7 >= 1) {
@@ -770,8 +767,7 @@ public abstract class class_98 extends class_91 {
       }
 
       if(null != var9 || var11 < 4) {
-         class_47 var10000 = new class_47;
-         var10000.method_542(var7);
+         class_47 var10000 = new class_47(var7);
          var12 = var10000;
          if(var8 == null) {
             this.field_1101.method_5698(var12);
@@ -839,8 +835,7 @@ public abstract class class_98 extends class_91 {
       }
 
       if(null != var9 || var11 < 4) {
-         class_47 var10000 = new class_47;
-         var10000.method_542(var7);
+         class_47 var10000 = new class_47(var7);
          var12 = var10000;
          if(var8 == null) {
             this.field_1101.method_5698(var12);
@@ -884,8 +879,7 @@ public abstract class class_98 extends class_91 {
          int var3 = class_195.field_2313 * -1143549299;
          int[] var4 = class_195.field_2318;
          boolean var5 = false;
-         class_359 var10000 = new class_359;
-         var10000.method_6280(var1, class_239.field_2659);
+         class_359 var10000 = new class_359(var1, class_239.field_2659);
          class_359 var6 = var10000;
 
          for(int var7 = 0; var7 < var3; ++var7) {

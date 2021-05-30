@@ -990,7 +990,7 @@ public class class_65 extends class_59 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_683() {
+   static {
       field_487 = 0;
       field_485 = 0;
       field_489 = 0;
@@ -2325,8 +2325,8 @@ public class class_65 extends class_59 {
    }
 
    // $FF: renamed from: <init> () void
-   protected void method_105() {
-      super.method_105();
+   protected class_65() {
+      super();
    }
 
    // $FF: renamed from: fm (int, int, int, int, int, int, int, int) void

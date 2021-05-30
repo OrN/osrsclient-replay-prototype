@@ -180,13 +180,11 @@ public class class_108 extends class_104 {
    }
 
    // $FF: renamed from: <init> () void
-   public void method_105() {
-      super.method_105();
-      class_335 var10001 = new class_335;
-      var10001.method_5960();
+   public class_108() {
+      super();
+      class_335 var10001 = new class_335();
       this.field_1260 = var10001;
-      var10001 = new class_335;
-      var10001.method_5960();
+      var10001 = new class_335();
       this.field_1258 = var10001;
       this.field_1259 = 0;
       this.field_1257 = -1;

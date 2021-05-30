@@ -84,19 +84,17 @@ public class class_207 extends class_206 {
    }
 
    // $FF: renamed from: <init> (java.net.Socket, int, int) void
-   public void method_4142(Socket var1, int var2, int var3) throws IOException {
+   public class_207(Socket var1, int var2, int var3) throws IOException {
+      super();
       try {
-         super.method_4135();
          this.field_2403 = var1;
          this.field_2403.setSoTimeout(30000);
          this.field_2403.setTcpNoDelay(true);
          this.field_2403.setReceiveBufferSize(65536);
          this.field_2403.setSendBufferSize(65536);
-         class_358 var10001 = new class_358;
-         var10001.method_6256(this.field_2403.getInputStream(), var2);
+         class_358 var10001 = new class_358(this.field_2403.getInputStream(), var2);
          this.field_2402 = var10001;
-         class_348 var5 = new class_348;
-         var5.method_6194(this.field_2403.getOutputStream(), var3);
+         class_348 var5 = new class_348(this.field_2403.getOutputStream(), var3);
          this.field_2404 = var5;
       } catch (RuntimeException var4) {
          throw class_223.method_4281(var4, "lg.<init>(" + ')');

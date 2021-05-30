@@ -63,9 +63,9 @@ public class class_339 extends class_338 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_6011() {
+   class_339() {
+      super();
       try {
-         super.method_6011();
          this.field_3888 = 245371139;
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "lv.<init>(" + ')');

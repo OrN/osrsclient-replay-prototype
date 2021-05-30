@@ -77,43 +77,33 @@ public class class_256 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_4946() {
-      class_256 var10000 = new class_256;
-      var10000.method_4947(15);
+   static {
+      class_256 var10000 = new class_256(15);
       field_2894 = var10000;
-      var10000 = new class_256;
-      var10000.method_4947(7);
+      var10000 = new class_256(7);
       field_2888 = var10000;
-      var10000 = new class_256;
-      var10000.method_4947(2);
+      var10000 = new class_256(2);
       field_2890 = var10000;
-      var10000 = new class_256;
-      var10000.method_4947(5);
+      var10000 = new class_256(5);
       field_2891 = var10000;
-      var10000 = new class_256;
-      var10000.method_4947(14);
+      var10000 = new class_256(14);
       field_2889 = var10000;
-      var10000 = new class_256;
-      var10000.method_4947(3);
+      var10000 = new class_256(3);
       field_2893 = var10000;
-      var10000 = new class_256;
-      var10000.method_4947(5);
+      var10000 = new class_256(5);
       field_2895 = var10000;
-      var10000 = new class_256;
-      var10000.method_4947(4);
+      var10000 = new class_256(4);
       field_2892 = var10000;
-      var10000 = new class_256;
-      var10000.method_4947(4);
+      var10000 = new class_256(4);
       field_2896 = var10000;
-      var10000 = new class_256;
-      var10000.method_4947(6);
+      var10000 = new class_256(6);
       field_2897 = var10000;
    }
 
    // $FF: renamed from: <init> (int) void
-   void method_4947(int var1) {
+   class_256(int var1) {
+      super();
       try {
-         super();
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "ha.<init>(" + ')');
       }

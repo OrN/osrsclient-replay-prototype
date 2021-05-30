@@ -33,9 +33,9 @@ public class class_46 extends class_27 {
    }
 
    // $FF: renamed from: <init> (int, int, int, int) void
-   void method_532(int var1, int var2, int var3, int var4) {
+   class_46(int var1, int var2, int var3, int var4) {
+      super();
       try {
-         super.method_105();
          this.field_344 = -94687113 * var1;
          this.field_348 = var2 * 543483917;
          this.field_345 = var3 * -940522253;

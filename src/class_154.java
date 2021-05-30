@@ -23,9 +23,9 @@ public class class_154 implements Runnable {
 
 
    // $FF: renamed from: <init> () void
-   void method_3244() {
+   class_154() {
+      super();
       try {
-         super();
          this.field_1934 = new class_139[2];
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "bq.<init>(" + ')');
@@ -113,16 +113,14 @@ public class class_154 implements Runnable {
             }
          } else {
             byte[] var3 = class_209.field_2421.method_5381(4, var0, -26460885);
-            class_82 var10000 = new class_82;
-            var10000.method_105();
+            class_82 var10000 = new class_82();
             var2 = var10000;
             if(null != var3) {
                if(var1 >= -80698473) {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28;
-               var10001.method_178(var3);
+               class_28 var10001 = new class_28(var3);
                var2.method_1369(var10001, var0, -1052896488);
             }
 
@@ -1368,8 +1366,7 @@ public class class_154 implements Runnable {
                class_192.field_2298 = class_263.field_2989.method_4038(new URL(class_116.field_1291), -1811269491);
             } else if(class_192.field_2298.method_3963(-754673345)) {
                byte[] var1 = class_192.field_2298.method_3961((byte)83);
-               class_28 var10000 = new class_28;
-               var10000.method_178(var1);
+               class_28 var10000 = new class_28(var1);
                class_28 var2 = var10000;
                var2.method_135((byte)-81);
                class_149.field_1881 = var2.method_132((byte)-6) * 274545041;
@@ -1377,8 +1374,7 @@ public class class_154 implements Runnable {
 
                for(int var3 = 0; var3 < 1267509105 * class_149.field_1881; ++var3) {
                   class_149[] var7 = class_166.field_2083;
-                  class_149 var10002 = new class_149;
-                  var10002.method_3172();
+                  class_149 var10002 = new class_149();
                   class_149 var4 = var7[var3] = var10002;
                   var4.field_1894 = var2.method_132((byte)-105) * -1640224087;
                   var4.field_1890 = var2.method_135((byte)-117) * 1964795281;
@@ -1522,8 +1518,7 @@ public class class_154 implements Runnable {
                   }
 
                   class_99[] var10000 = client.field_1458;
-                  class_99 var10002 = new class_99;
-                  var10002.method_105();
+                  class_99 var10002 = new class_99();
                   var10000[var14] = var10002;
                   var15 = true;
                }

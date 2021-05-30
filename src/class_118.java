@@ -126,10 +126,10 @@ public class class_118 extends class_111 {
    }
 
    // $FF: renamed from: <init> (f) void
-   void method_2256(class_167 var1) {
+   class_118(class_167 var1) {
+      super();
       try {
          this.this$0 = var1;
-         super.method_105();
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "n.<init>(" + ')');
       }

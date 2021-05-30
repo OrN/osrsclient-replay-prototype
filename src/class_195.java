@@ -238,7 +238,7 @@ public class class_195 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_3967() {
+   static {
       field_2308 = new byte[2048];
       field_2311 = new byte[2048];
       field_2312 = new class_28[2048];
@@ -251,8 +251,7 @@ public class class_195 {
       field_2317 = new int[2048];
       field_2320 = 0;
       field_2314 = new int[2048];
-      class_28 var10000 = new class_28;
-      var10000.method_178(new byte[5000]);
+      class_28 var10000 = new class_28(new byte[5000]);
       field_2322 = var10000;
    }
 
@@ -261,8 +260,7 @@ public class class_195 {
       var0.method_358(-587110833);
       int var1 = 929092845 * client.field_1534;
       class_100[] var10000 = client.field_1605;
-      class_100 var10002 = new class_100;
-      var10002.method_105();
+      class_100 var10002 = new class_100();
       class_100 var2 = class_164.field_2044 = var10000[var1] = var10002;
       var2.field_1142 = var1 * -1619133141;
       int var3 = var0.method_361(30, (byte)-35);
@@ -305,8 +303,7 @@ public class class_195 {
       var0.method_358(1517897997);
       int var1 = 929092845 * client.field_1534;
       class_100[] var10000 = client.field_1605;
-      class_100 var10002 = new class_100;
-      var10002.method_105();
+      class_100 var10002 = new class_100();
       class_100 var2 = class_164.field_2044 = var10000[var1] = var10002;
       var2.field_1142 = var1 * -1619133141;
       int var3 = var0.method_361(30, (byte)17);
@@ -369,8 +366,7 @@ public class class_195 {
             throw new RuntimeException();
          } else {
             class_100[] var10000 = client.field_1605;
-            class_100 var10002 = new class_100;
-            var10002.method_105();
+            class_100 var10002 = new class_100();
             class_100 var12 = var10000[var1] = var10002;
             var12.field_1142 = var1 * -1619133141;
             if(null != field_2312[var1]) {
@@ -463,8 +459,7 @@ public class class_195 {
       var0.method_358(1547268867);
       int var1 = 929092845 * client.field_1534;
       class_100[] var10000 = client.field_1605;
-      class_100 var10002 = new class_100;
-      var10002.method_105();
+      class_100 var10002 = new class_100();
       class_100 var2 = class_164.field_2044 = var10000[var1] = var10002;
       var2.field_1142 = var1 * -1619133141;
       int var3 = var0.method_361(30, (byte)67);
@@ -507,8 +502,7 @@ public class class_195 {
       var0.method_358(-707854866);
       int var1 = -552499060 * client.field_1534;
       class_100[] var10000 = client.field_1605;
-      class_100 var10002 = new class_100;
-      var10002.method_105();
+      class_100 var10002 = new class_100();
       class_100 var2 = class_164.field_2044 = var10000[var1] = var10002;
       var2.field_1142 = var1 * -600030510;
       int var3 = var0.method_361(30, (byte)-45);
@@ -719,8 +713,7 @@ public class class_195 {
          if(0 != (var6 & 2)) {
             var8 = var0.method_159(1362582947);
             byte[] var17 = new byte[var8];
-            class_28 var10000 = new class_28;
-            var10000.method_178(var17);
+            class_28 var10000 = new class_28(var17);
             class_28 var20 = var10000;
             var0.method_243(var17, 0, var8, (short)27365);
             field_2312[var4] = var20;
@@ -950,8 +943,7 @@ public class class_195 {
          if(0 != (var6 & 2)) {
             var8 = var0.method_159(-576948079);
             byte[] var17 = new byte[var8];
-            class_28 var10000 = new class_28;
-            var10000.method_178(var17);
+            class_28 var10000 = new class_28(var17);
             class_28 var20 = var10000;
             var0.method_243(var17, 0, var8, (short)15620);
             field_2312[var4] = var20;
@@ -1009,9 +1001,9 @@ public class class_195 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_3975() throws Throwable {
+   class_195() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "di.<init>(" + ')');
@@ -1602,8 +1594,7 @@ public class class_195 {
          if(0 != (var6 & 2)) {
             var8 = var0.method_159(1205204922);
             byte[] var17 = new byte[var8];
-            class_28 var10000 = new class_28;
-            var10000.method_178(var17);
+            class_28 var10000 = new class_28(var17);
             class_28 var20 = var10000;
             var0.method_243(var17, 0, var8, (short)25059);
             field_2312[var4] = var20;
@@ -1865,8 +1856,7 @@ public class class_195 {
       var0.method_358(-784096196);
       int var1 = 929092845 * client.field_1534;
       class_100[] var10000 = client.field_1605;
-      class_100 var10002 = new class_100;
-      var10002.method_105();
+      class_100 var10002 = new class_100();
       class_100 var2 = class_164.field_2044 = var10000[var1] = var10002;
       var2.field_1142 = var1 * -1619133141;
       int var3 = var0.method_361(30, (byte)48);
@@ -1929,8 +1919,7 @@ public class class_195 {
             throw new RuntimeException();
          } else {
             class_100[] var10000 = client.field_1605;
-            class_100 var10002 = new class_100;
-            var10002.method_105();
+            class_100 var10002 = new class_100();
             class_100 var12 = var10000[var1] = var10002;
             var12.field_1142 = var1 * -1619133141;
             if(null != field_2312[var1]) {
@@ -2043,8 +2032,7 @@ public class class_195 {
             throw new RuntimeException();
          } else {
             class_100[] var10000 = client.field_1605;
-            class_100 var10002 = new class_100;
-            var10002.method_105();
+            class_100 var10002 = new class_100();
             class_100 var12 = var10000[var1] = var10002;
             var12.field_1142 = var1 * -1619133141;
             if(null != field_2312[var1]) {

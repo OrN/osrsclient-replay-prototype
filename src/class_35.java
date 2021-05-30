@@ -17,9 +17,9 @@ public class class_35 extends class_27 {
 
 
    // $FF: renamed from: <init> () void
-   void method_105() {
+   class_35() {
+      super();
       try {
-         super.method_105();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "jy.<init>(" + ')');
       }

@@ -16,8 +16,8 @@ public abstract class class_62 extends class_59 {
    abstract boolean method_646();
 
    // $FF: renamed from: <init> (int) void
-   void method_647(int var1) {
-      super.method_105();
+   class_62(int var1) {
+      super();
       this.field_481 = var1;
    }
 

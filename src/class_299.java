@@ -17,14 +17,14 @@ public class class_299 {
 
 
    // $FF: renamed from: <clinit> () void
-   static void method_5345() {
+   static {
       Math.sqrt(8192.0D);
    }
 
    // $FF: renamed from: <init> () void
-   void method_5346() throws Throwable {
+   class_299() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "ji.<init>(" + ')');
@@ -43,8 +43,7 @@ public class class_299 {
             }
          } else {
             byte[] var3 = class_368.field_4096.method_5381(10, var0, -26460885);
-            class_80 var10000 = new class_80;
-            var10000.method_105();
+            class_80 var10000 = new class_80();
             var2 = var10000;
             var2.field_748 = -31876329 * var0;
             if(var3 != null) {
@@ -52,8 +51,7 @@ public class class_299 {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28;
-               var10001.method_178(var3);
+               class_28 var10001 = new class_28(var3);
                var2.method_1260(var10001, 2116753290);
             }
 
@@ -88,7 +86,7 @@ public class class_299 {
                      throw new IllegalStateException();
                   }
 
-                  var2.field_707 = class_305.field_3621;
+                  var2.field_707 = class_305.strMembersObject;
                   var2.field_747 = false;
                   var2.field_721 = null;
                   var2.field_730 = null;

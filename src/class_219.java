@@ -26,9 +26,9 @@ public class class_219 extends class_218 {
    }
 
    // $FF: renamed from: <init> (ii, ii, int, fv) void
-   void method_4229(class_280 var1, class_280 var2, int var3, class_237 var4) {
+   class_219(class_280 var1, class_280 var2, int var3, class_237 var4) {
+      super(var1, var2);
       try {
-         super.method_4223(var1, var2);
          this.field_2485 = -1889144677 * var3;
          this.field_2484 = var4;
          class_75 var5 = class_116.method_2248(this.method_4205(2146229173), 1647125333);

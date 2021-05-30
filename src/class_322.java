@@ -22,14 +22,14 @@ public class class_322 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_5690() {
+   static {
       new HashMap();
    }
 
    // $FF: renamed from: <init> () void
-   void method_5691() throws Throwable {
+   class_322() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "kh.<init>(" + ')');

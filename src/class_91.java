@@ -36,9 +36,9 @@ public abstract class class_91 extends class_59 {
    }
 
    // $FF: renamed from: <init> () void
-   protected void method_105() {
+   protected class_91() {
+      super();
       try {
-         super.method_105();
          this.field_911 = -1901239416;
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "gl.<init>(" + ')');

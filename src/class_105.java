@@ -246,14 +246,12 @@ public class class_105 extends class_104 {
    }
 
    // $FF: renamed from: <init> (hp) void
-   void method_1956(class_106 var1) {
+   class_105(class_106 var1) {
+      super();
       try {
-         super.method_105();
-         class_335 var10001 = new class_335;
-         var10001.method_5960();
+         class_335 var10001 = new class_335();
          this.field_1210 = var10001;
-         class_108 var3 = new class_108;
-         var3.method_105();
+         class_108 var3 = new class_108();
          this.field_1211 = var3;
          this.field_1212 = var1;
       } catch (RuntimeException var2) {

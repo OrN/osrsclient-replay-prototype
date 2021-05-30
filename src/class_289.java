@@ -13,9 +13,9 @@ public class class_289 {
 
 
    // $FF: renamed from: <init> () void
-   void method_5282() throws Throwable {
+   class_289() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "iw.<init>(" + ')');
@@ -23,7 +23,7 @@ public class class_289 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_5283() {
+   static {
       field_3285 = new boolean[]{true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false, false};
       field_3282 = new int[99];
       int var0 = 0;

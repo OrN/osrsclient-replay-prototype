@@ -41,8 +41,8 @@ public class class_59 extends class_27 {
    }
 
    // $FF: renamed from: <init> () void
-   public void method_105() {
-      super.method_105();
+   public class_59() {
+      super();
    }
 
    // $FF: renamed from: dr () void

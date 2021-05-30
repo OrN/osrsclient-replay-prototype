@@ -57,9 +57,9 @@ public class class_220 extends class_218 {
    }
 
    // $FF: renamed from: <init> (ii, ii, int, fq) void
-   void method_4231(class_280 var1, class_280 var2, int var3, class_233 var4) {
+   class_220(class_280 var1, class_280 var2, int var3, class_233 var4) {
+      super(var1, var2);
       try {
-         super.method_4223(var1, var2);
          this.field_2496 = var3 * -338977707;
          this.field_2492 = var4;
          this.method_4230((short)28684);
@@ -262,16 +262,14 @@ public class class_220 extends class_218 {
             }
          } else {
             byte[] var3 = class_394.field_4247.method_5381(3, var0, -26460885);
-            class_83 var10000 = new class_83;
-            var10000.method_105();
+            class_83 var10000 = new class_83();
             var2 = var10000;
             if(var3 != null) {
                if(var1 <= -1) {
                   throw new IllegalStateException();
                }
 
-               class_28 var10001 = new class_28;
-               var10001.method_178(var3);
+               class_28 var10001 = new class_28(var3);
                var2.method_1378(var10001, 76297691);
             }
 

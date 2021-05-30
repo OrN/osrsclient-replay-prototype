@@ -18,9 +18,9 @@ public class class_280 {
    }
 
    // $FF: renamed from: <init> (ii) void
-   public void method_5154(class_280 var1) {
+   public class_280(class_280 var1) {
+      super();
       try {
-         super();
          this.field_3234 = 1 * var1.field_3234;
          this.field_3236 = 1 * var1.field_3236;
          this.field_3235 = var1.field_3235 * 1;
@@ -175,7 +175,7 @@ public class class_280 {
                var11 = var4;
             }
 
-            int[] var24 = class_127.field_1410.field_502;
+            int[] var24 = GameApplet.field_1410.field_502;
             var26 = 24624 + var1 * 4 + (103 - var2) * 2048;
             var15 = class_164.method_3425(var6);
             class_87 var16 = class_121.method_2269(var15, -559129028);
@@ -380,7 +380,7 @@ public class class_280 {
                      var27 = 15597568;
                   }
 
-                  int[] var30 = class_127.field_1410.field_502;
+                  int[] var30 = GameApplet.field_1410.field_502;
                   int var31 = (103 - var2) * 2048 + var1 * 4 + 24624;
                   if(0 != var9) {
                      if(var9 != 2) {
@@ -441,9 +441,9 @@ public class class_280 {
    }
 
    // $FF: renamed from: <init> (int) void
-   public void method_5163(int var1) {
+   public class_280(int var1) {
+      super();
       try {
-         super();
          if(var1 == -1) {
             this.field_3234 = 524908381;
          } else {
@@ -463,9 +463,9 @@ public class class_280 {
    }
 
    // $FF: renamed from: <init> (int, int, int) void
-   public void method_5165(int var1, int var2, int var3) {
+   public class_280(int var1, int var2, int var3) {
+      super();
       try {
-         super();
          this.field_3234 = var1 * -524908381;
          this.field_3236 = var2 * 1144577903;
          this.field_3235 = var3 * -1764554107;
@@ -526,8 +526,7 @@ public class class_280 {
          var0.method_358(-201706662);
          int var2 = 929092845 * client.field_1534;
          class_100[] var10000 = client.field_1605;
-         class_100 var10002 = new class_100;
-         var10002.method_105();
+         class_100 var10002 = new class_100();
          class_100 var3 = class_164.field_2044 = var10000[var2] = var10002;
          var3.field_1142 = var2 * -1619133141;
          int var4 = var0.method_361(30, (byte)-61);

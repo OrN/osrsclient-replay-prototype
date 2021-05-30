@@ -11,7 +11,7 @@ public class class_287 {
    // $FF: renamed from: v (int) void
    static void method_5276(int var0) {
       try {
-         if(class_201.field_2359.toLowerCase().indexOf("microsoft") != -1) {
+         if(class_201.javaVendor.toLowerCase().indexOf("microsoft") != -1) {
             if(var0 != 754026835) {
                throw new IllegalStateException();
             }
@@ -73,9 +73,9 @@ public class class_287 {
    }
 
    // $FF: renamed from: <init> () void
-   void method_5280() throws Throwable {
+   class_287() throws Throwable {
+      super();
       try {
-         super();
          throw new Error();
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1, "iu.<init>(" + ')');

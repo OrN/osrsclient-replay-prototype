@@ -23,11 +23,9 @@ public class class_346 extends class_343 {
       while(true) {
          if(2125169906 * var1.field_15 < var2) {
             boolean var3 = var1.method_130(-9834795) == 1;
-            class_359 var10000 = new class_359;
-            var10000.method_6280(var1.method_139(-391631059), this.field_3923);
+            class_359 var10000 = new class_359(var1.method_139(-391631059), this.field_3923);
             class_359 var4 = var10000;
-            var10000 = new class_359;
-            var10000.method_6280(var1.method_139(-391631059), this.field_3923);
+            var10000 = new class_359(var1.method_139(-391631059), this.field_3923);
             class_359 var5 = var10000;
             int var6 = var1.method_132((byte)-30);
             int var7 = var1.method_130(-248533789);
@@ -73,8 +71,7 @@ public class class_346 extends class_343 {
 
                      if(var14) {
                         class_326 var15 = this.field_3922;
-                        class_355 var10001 = new class_355;
-                        var10001.method_6241(var4, var6);
+                        class_355 var10001 = new class_355(var4, var6);
                         var15.method_5784(var10001);
                      }
                   }
@@ -117,8 +114,7 @@ public class class_346 extends class_343 {
    // $FF: renamed from: v (byte) lx
    class_338 method_6079(byte var1) {
       try {
-         class_340 var10000 = new class_340;
-         var10000.method_6011();
+         class_340 var10000 = new class_340();
          return var10000;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2, "lb.v(" + ')');
@@ -166,11 +162,9 @@ public class class_346 extends class_343 {
             }
 
             boolean var4 = var1.method_130(-1256224246) == 1;
-            class_359 var10000 = new class_359;
-            var10000.method_6280(var1.method_139(-391631059), this.field_3923);
+            class_359 var10000 = new class_359(var1.method_139(-391631059), this.field_3923);
             class_359 var5 = var10000;
-            var10000 = new class_359;
-            var10000.method_6280(var1.method_139(-391631059), this.field_3923);
+            var10000 = new class_359(var1.method_139(-391631059), this.field_3923);
             class_359 var6 = var10000;
             int var7 = var1.method_132((byte)-103);
             int var8 = var1.method_130(565954263);
@@ -285,8 +279,7 @@ public class class_346 extends class_343 {
 
                         if(var16) {
                            class_326 var18 = this.field_3922;
-                           class_355 var10001 = new class_355;
-                           var10001.method_6241(var5, var7);
+                           class_355 var10001 = new class_355(var5, var7);
                            var18.method_5784(var10001);
                         }
                      }
@@ -347,8 +340,7 @@ public class class_346 extends class_343 {
 
    // $FF: renamed from: y () lx
    class_338 method_6059() {
-      class_340 var10000 = new class_340;
-      var10000.method_6011();
+      class_340 var10000 = new class_340();
       return var10000;
    }
 
@@ -671,12 +663,11 @@ public class class_346 extends class_343 {
    }
 
    // $FF: renamed from: <init> (nc) void
-   public void method_6177(class_375 var1) {
+   public class_346(class_375 var1) {
+      super(400);
       try {
-         super.method_6083(400);
          this.field_3921 = -2078548851;
-         class_326 var10001 = new class_326;
-         var10001.method_5783();
+         class_326 var10001 = new class_326();
          this.field_3922 = var10001;
          this.field_3923 = var1;
       } catch (RuntimeException var2) {
@@ -689,11 +680,9 @@ public class class_346 extends class_343 {
       while(true) {
          if(-442398587 * var1.field_15 < var2) {
             boolean var3 = var1.method_130(-1723062702) == 1;
-            class_359 var10000 = new class_359;
-            var10000.method_6280(var1.method_139(-391631059), this.field_3923);
+            class_359 var10000 = new class_359(var1.method_139(-391631059), this.field_3923);
             class_359 var4 = var10000;
-            var10000 = new class_359;
-            var10000.method_6280(var1.method_139(-391631059), this.field_3923);
+            var10000 = new class_359(var1.method_139(-391631059), this.field_3923);
             class_359 var5 = var10000;
             int var6 = var1.method_132((byte)-105);
             int var7 = var1.method_130(24839563);
@@ -739,8 +728,7 @@ public class class_346 extends class_343 {
 
                      if(var14) {
                         class_326 var15 = this.field_3922;
-                        class_355 var10001 = new class_355;
-                        var10001.method_6241(var4, var6);
+                        class_355 var10001 = new class_355(var4, var6);
                         var15.method_5784(var10001);
                      }
                   }
@@ -780,11 +768,9 @@ public class class_346 extends class_343 {
       while(true) {
          if(-442398587 * var1.field_15 < var2) {
             boolean var3 = var1.method_130(-334386371) == 1;
-            class_359 var10000 = new class_359;
-            var10000.method_6280(var1.method_139(-391631059), this.field_3923);
+            class_359 var10000 = new class_359(var1.method_139(-391631059), this.field_3923);
             class_359 var4 = var10000;
-            var10000 = new class_359;
-            var10000.method_6280(var1.method_139(-391631059), this.field_3923);
+            var10000 = new class_359(var1.method_139(-391631059), this.field_3923);
             class_359 var5 = var10000;
             int var6 = var1.method_132((byte)-99);
             int var7 = var1.method_130(-883940060);
@@ -830,8 +816,7 @@ public class class_346 extends class_343 {
 
                      if(var14) {
                         class_326 var15 = this.field_3922;
-                        class_355 var10001 = new class_355;
-                        var10001.method_6241(var4, var6);
+                        class_355 var10001 = new class_355(var4, var6);
                         var15.method_5784(var10001);
                      }
                   }

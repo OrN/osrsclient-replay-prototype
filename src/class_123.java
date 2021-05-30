@@ -32,10 +32,10 @@ public class class_123 extends class_111 {
    }
 
    // $FF: renamed from: <init> (f) void
-   void method_2276(class_167 var1) {
+   class_123(class_167 var1) {
+      super();
       try {
          this.this$0 = var1;
-         super.method_105();
          this.field_1352 = -5333157319275296417L;
          this.field_1346 = null;
       } catch (RuntimeException var2) {

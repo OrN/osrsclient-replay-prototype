@@ -343,9 +343,9 @@ public class class_75 extends class_59 {
    }
 
    // $FF: renamed from: <init> (int) void
-   void method_1135(int var1) {
+   class_75(int var1) {
+      super();
       try {
-         super.method_105();
          this.field_602 = -802165351;
          this.field_601 = 1235557667;
          this.field_599 = 0;
@@ -375,9 +375,8 @@ public class class_75 extends class_59 {
    }
 
    // $FF: renamed from: <clinit> () void
-   static void method_1137() {
-      class_272 var10000 = new class_272;
-      var10000.method_5063(256);
+   static {
+      class_272 var10000 = new class_272(256);
       field_598 = var10000;
    }
 
@@ -426,8 +425,7 @@ public class class_75 extends class_59 {
       if(var0 >= 0 && var0 < field_614.length && null != field_614[var0]) {
          return field_614[var0];
       } else {
-         class_75 var10000 = new class_75;
-         var10000.method_1135(var0);
+         class_75 var10000 = new class_75(var0);
          return var10000;
       }
    }
@@ -468,13 +466,11 @@ public class class_75 extends class_59 {
          for(int var2 = 0; var2 < -617825071 * class_331.field_3858; ++var2) {
             byte[] var3 = var0.method_5381(35, var2, -26460885);
             class_75[] var10000 = field_614;
-            class_75 var10002 = new class_75;
-            var10002.method_1135(var2);
+            class_75 var10002 = new class_75(var2);
             var10000[var2] = var10002;
             if(var3 != null) {
                class_75 var4 = field_614[var2];
-               class_28 var10001 = new class_28;
-               var10001.method_178(var3);
+               class_28 var10001 = new class_28(var3);
                var4.method_1138(var10001, -912100201);
                field_614[var2].method_1133(-832218591);
             }
@@ -643,13 +639,11 @@ public class class_75 extends class_59 {
          for(int var2 = 0; var2 < -617825071 * class_331.field_3858; ++var2) {
             byte[] var3 = var0.method_5381(35, var2, -26460885);
             class_75[] var10000 = field_614;
-            class_75 var10002 = new class_75;
-            var10002.method_1135(var2);
+            class_75 var10002 = new class_75(var2);
             var10000[var2] = var10002;
             if(var3 != null) {
                class_75 var4 = field_614[var2];
-               class_28 var10001 = new class_28;
-               var10001.method_178(var3);
+               class_28 var10001 = new class_28(var3);
                var4.method_1138(var10001, -1711635387);
                field_614[var2].method_1133(-260656956);
             }
