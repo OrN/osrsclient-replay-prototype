@@ -11,6 +11,8 @@ Thumbs.db
 # Ignore game files
 random.dat
 jagex_cl_oldschool_LIVE.dat
+jagexcache/oldschool/LIVE/preferences.dat
+jagexcache/oldschool/LIVE/preferences2.dat
 # Ignore files created by posix people
 *~
 # Ignore vim swapfiles

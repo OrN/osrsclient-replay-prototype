@@ -17,37 +17,13 @@ public class launcher extends JFrame implements AppletStub, AppletContext, Windo
     private static launcher instance;
     private HashMap<String, String> parameters = new HashMap<String, String>();
     private Applet applet;
+    JConfig config;
 
     public static void main(String[] args) {
         instance = new launcher();
     }
 
-    private void loadParameters() {
-        parameters.put("20", "https://token-auth.production.jxp.aws.jagex.com/");
-        parameters.put("19", "196515767263-1oo20deqm6edn7ujlihl6rpadk9drhva.apps.googleusercontent.com");
-        parameters.put("15", "0");
-        parameters.put("11", "https://auth.jagex.com/");
-        parameters.put("8", "true");
-        parameters.put("4", "58793");
-        parameters.put("5", "1");
-        parameters.put("12", "490");
-        parameters.put("14", "0");
-        parameters.put("13", ".runescape.com");
-        parameters.put("2", "https://payments.jagex.com/");
-        parameters.put("9", "ElZAIrq5NpKN6D3mDdihco3oPeYN2KFy2DCquj7JMmECPmLrDP3Bnw");
-        parameters.put("18", "");
-        parameters.put("1", "1");
-        parameters.put("10", "5");
-        parameters.put("16", "false");
-        parameters.put("6", "0");
-        parameters.put("7", "0");
-        parameters.put("3", "true");
-        parameters.put("17", "http://www.runescape.com/g=oldscape/slr.ws?order=LPWM");
-    }
-
     public launcher() {
-        loadParameters();
-
         applet = new client();
         applet.setStub(this);
         applet.setPreferredSize(new Dimension(800, 600));
@@ -61,8 +37,12 @@ public class launcher extends JFrame implements AppletStub, AppletContext, Windo
         pack();
 
         System.setProperty("user.home", ".");
-        applet.init();
-        applet.start();
+
+        config = new JConfig();
+        if (config.fetch("http://oldschool190.runescape.com/jav_config.ws") && config.isSupported()) {
+            applet.init();
+            applet.start();
+        }
     }
 
     @Override
@@ -77,20 +57,12 @@ public class launcher extends JFrame implements AppletStub, AppletContext, Windo
 
     @Override
     public URL getCodeBase() {
-        try {
-            return new URL("http://oldschool190.runescape.com/");
-        } catch (Exception e) {
-            return null;
-        }
+        return config.getURL("codebase");
     }
 
     @Override
     public String getParameter(String name) {
-        String result = null;
-        if (parameters.containsKey(name))
-            result = parameters.get(name);
-        System.out.println(name + ": " + result);
-        return result;
+        return config.getParameter(name);
     }
 
     @Override
@@ -124,12 +96,10 @@ public class launcher extends JFrame implements AppletStub, AppletContext, Windo
 
     @Override
     public void showDocument(URL url) {
-        showDocument(url, "");
     }
 
     @Override
     public void showDocument(URL url, String target) {
-        System.out.println("showDocument");
     }
 
     @Override
