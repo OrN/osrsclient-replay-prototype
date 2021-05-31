@@ -183,7 +183,6 @@ public class class_199 {
 
       if(var6) {
          var19 = new File(var4);
-         var8 = null;
 
          try {
             var10000 = new RAFileHandle(class_396.field_4253, "rw", 10000L);
@@ -191,12 +190,8 @@ public class class_199 {
             var27 = new Buffer(500);
             Buffer var26 = var27;
             var26.writeByte(3);
-            var26.writeByte(var8 != null?1:0);
+            var26.writeByte(0);
             var26.method_128(var19.getPath(), 499802318);
-            if(var8 != null) {
-               // TODO: Originally var8
-               var26.method_128(var19.getPath(), 499802318);
-            }
 
             var24.write(var26.data, 0, -2075038961 * var26.offset, (byte)-49);
             var24.close();
@@ -321,7 +316,6 @@ public class class_199 {
 
       if(var6) {
          var19 = new File(var4);
-         var8 = null;
 
          try {
             var10000 = new RAFileHandle(class_396.field_4253, "rw", 10000L);
@@ -329,12 +323,8 @@ public class class_199 {
             var27 = new Buffer(500);
             Buffer var26 = var27;
             var26.writeByte(3);
-            var26.writeByte(var8 != null?1:0);
+            var26.writeByte(0);
             var26.method_128(var19.getPath(), 499802318);
-            if(var8 != null) {
-               // TODO: Original var8
-               var26.method_128(var19.getPath(), 499802318);
-            }
 
             var24.write(var26.data, 0, -442398587 * var26.offset, (byte)45);
             var24.close();
@@ -459,7 +449,6 @@ public class class_199 {
 
       if(var6) {
          var19 = new File(var4);
-         var8 = null;
 
          try {
             var10000 = new RAFileHandle(class_396.field_4253, "rw", 10000L);
@@ -467,12 +456,9 @@ public class class_199 {
             var27 = new Buffer(500);
             Buffer var26 = var27;
             var26.writeByte(3);
-            var26.writeByte(var8 != null?1:0);
+            var26.writeByte(0);
+            var26.writeByte(0);
             var26.method_128(var19.getPath(), 499802318);
-            if(var8 != null) {
-               // TODO: Originally var8.getPath
-               var26.method_128(var19.getPath(), 499802318);
-            }
 
             var24.write(var26.data, 0, -2065529096 * var26.offset, (byte)21);
             var24.close();

@@ -834,7 +834,6 @@ public class class_149 {
 
                            }
 
-                           // TODO: Check me! Decompiler error potentially
                            var13.append("").append(var9);
                            var13.append("").append(class_165.field_2056[var14].field_1962.field_9).append(" ");
 

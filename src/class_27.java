@@ -40,11 +40,6 @@ public class class_27 {
       }
    }
 
-   // $FF: renamed from: <init> () void
-   public class_27() {
-      super();
-   }
-
    // $FF: renamed from: ft () void
    public void method_106() {
       if(this.field_11 != null) {

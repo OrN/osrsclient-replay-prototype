@@ -143,7 +143,6 @@ public class class_47 extends class_27 {
 
    // $FF: renamed from: <init> (et) void
    class_47(class_77 var1) {
-      // TODO: super?
       try {
          class_323 var10001 = new class_323();
          this.field_351 = var10001;

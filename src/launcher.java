@@ -47,7 +47,7 @@ public class launcher extends JFrame implements AppletStub, AppletContext, Windo
         setVisible(true);
 
         System.setProperty("user.home", ".");
-        
+
         applet.init();
         applet.start();
     }

@@ -658,7 +658,6 @@ public final class class_26 extends Canvas {
 
          if(var7) {
             var21 = new File(var5);
-            var9 = null;
 
             try {
                var10000 = new RAFileHandle(class_396.field_4253, "rw", 10000L);
@@ -667,26 +666,10 @@ public final class class_26 extends Canvas {
                Buffer var28 = var29;
                var28.writeByte(3);
                byte var10001;
-               if(var9 != null) {
-                  if(var3 != 1145652403) {
-                     throw new IllegalStateException();
-                  }
-
-                  var10001 = 1;
-               } else {
-                  var10001 = 0;
-               }
+               var10001 = 0;
 
                var28.writeByte(var10001);
                var28.method_128(var21.getPath(), 499802318);
-               if(var9 != null) {
-                  if(var3 != 1145652403) {
-                     throw new IllegalStateException();
-                  }
-
-                  // TODO: Check if decompiler problem, originally: var9
-                  var28.method_128(var21.getPath(), 499802318);
-               }
 
                var26.write(var28.data, 0, -442398587 * var28.offset, (byte)29);
                var26.close();
