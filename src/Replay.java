@@ -8,7 +8,7 @@ public class Replay {
         PLAYBACK,
     }
 
-    private static Mode mode = Mode.RECORD;
+    private static Mode mode = Mode.PLAYBACK;
     private static boolean active = false;
 
     private static String replayDirectory;
@@ -50,7 +50,7 @@ public class Replay {
             if (!active) {
                 switch (mode) {
                     case PLAYBACK:
-                        ReplayServer.replayPath = "./replays/05-31-2021 02.31.34";
+                        ReplayServer.replayPath = "./replays/05-31-2021 03.08.02";
                         keysIn = new DataInputStream(new BufferedInputStream(new FileInputStream(new File(ReplayServer.replayPath + "/keys.bin"))));
                         ReplayServer.Start();
                         break;

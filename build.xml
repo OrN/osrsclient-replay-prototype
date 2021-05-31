@@ -5,7 +5,7 @@
 	<property name="dist.dir" value="dist" />
 	<property name="bin.dir" value="bin" />
 
-	<property name="jar.main-class" value="client" />
+	<property name="jar.main-class" value="launcher" />
 	<property name="jar.name" value="${ant.project.name}.jar" />
 	<property name="jar.file" value="${dist.dir}/${jar.name}" />
 
@@ -28,12 +28,7 @@
 
 	<target name="distrun" depends="dist">
 		<java jar="${jar.file}" dir="${bin.dir}" fork="true" >
-			<arg value="members" />
-            <arg value="10.10.200.1" />
-            <arg value="43594" />
-            <arg value="65537" />
-            <arg value="12345678" />
-            <arg value="true" />
+			<arg value="1" />
         </java>
 	</target>
 	
@@ -42,11 +37,7 @@
 			<classpath>
 				<pathelement location="${main.build.dir}"/>
 			</classpath>
-			<arg value="members" />
-			<arg value="10.10.200.1" />
-			<arg value="43594" />
-			<arg value="12345678" />
-			<arg value="true" />
+			<arg value="1" />
 		</java>
 	</target>
 
