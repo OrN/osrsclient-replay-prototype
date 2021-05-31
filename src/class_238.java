@@ -85,7 +85,7 @@ public class class_238 implements class_14 {
       try {
          client.field_1463.method_4077();
          client.field_1463.networkBuffer.offset = 0;
-         client.field_1463.field_2376 = null;
+         client.field_1463.opcode = null;
          client.field_1463.field_2381 = null;
          client.field_1463.field_2382 = null;
          client.field_1463.field_2370 = null;

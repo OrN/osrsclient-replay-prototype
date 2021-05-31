@@ -16,7 +16,7 @@ public class class_203 {
    // $FF: renamed from: j nb
    NetworkBuffer networkBuffer;
    // $FF: renamed from: r hl
-   ServerOpcode field_2376;
+   ServerOpcode opcode;
    // $FF: renamed from: ar int
    static final int field_2377 = 19137016;
    // $FF: renamed from: d boolean
@@ -164,7 +164,7 @@ public class class_203 {
          this.field_2373 = var2;
          NetworkBuffer var3 = new NetworkBuffer('\u9c40');
          this.networkBuffer = var3;
-         this.field_2376 = null;
+         this.opcode = null;
          this.field_2380 = 0;
          this.field_2378 = true;
          this.field_2379 = 0;

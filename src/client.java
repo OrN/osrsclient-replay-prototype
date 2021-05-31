@@ -1095,1608 +1095,6 @@ public final class client extends GameApplet implements class_16 {
          throw class_223.method_4281(var8);
       }
    }
-
-   // $FF: renamed from: ra (ds) boolean
-   final boolean method_2447(class_203 var1) {
-      class_206 var2 = var1.method_4083();
-      NetworkBuffer var3 = var1.networkBuffer;
-      if(var2 == null) {
-         return false;
-      } else {
-         String var5;
-         int var6;
-         try {
-            int var21;
-            if(var1.field_2376 == null) {
-               if(var1.field_2378) {
-                  if(!var2.method_4118(1, -211935081)) {
-                     return false;
-                  }
-
-                  var2.read(var1.networkBuffer.data, 0, 1, -1995023747);
-                  var1.field_2379 = 0;
-                  var1.field_2378 = false;
-               }
-
-               var3.offset = 0;
-               if(var3.method_368(1369092662)) {
-                  if(!var2.method_4118(1, -211935081)) {
-                     return false;
-                  }
-
-                  var2.read(var1.networkBuffer.data, 1, 1, -2071070513);
-                  var1.field_2379 = 0;
-               }
-
-               var1.field_2378 = true;
-               ServerOpcode[] var4 = class_176.method_3744();
-               var21 = var3.method_377(-1097576918);
-               if(var21 < 0 || var21 >= var4.length) {
-                  throw new IOException(var21 + " " + var3.offset * -442398587);
-               }
-
-               var1.field_2376 = var4[var21];
-               var1.field_2380 = 1568909879 * var1.field_2376.field_3027;
-            }
-
-            if(-83736147 * var1.field_2380 == -1) {
-               if(!var2.method_4118(1, -211935081)) {
-                  return false;
-               }
-
-               var1.method_4083().read(var3.data, 0, 1, -2059807117);
-               var1.field_2380 = 930611749 * (var3.data[0] & 255);
-            }
-
-            if(-2 == -83736147 * var1.field_2380) {
-               if(!var2.method_4118(2, -211935081)) {
-                  return false;
-               }
-
-               var1.method_4083().read(var3.data, 0, 2, -2126876741);
-               var3.offset = 0;
-               var1.field_2380 = var3.readShort() * 930611749;
-            }
-
-            if(!var2.method_4118(var1.field_2380 * -83736147, -211935081)) {
-               return false;
-            }
-
-            var3.offset = 0;
-            var2.read(var3.data, 0, var1.field_2380 * -83736147, -1905059083);
-            var1.field_2379 = 0;
-            field_1468.method_5907();
-            var1.field_2370 = var1.field_2382;
-            var1.field_2382 = var1.field_2381;
-            var1.field_2381 = var1.field_2376;
-            int var20;
-            int var28;
-            int var29;
-            int var36;
-            if(ServerOpcode.OPCODE_47 == var1.field_2376) {
-               var20 = var3.readShort();
-               var21 = var3.readInt();
-               var6 = var20 >> 10 & 31;
-               var28 = var20 >> 5 & 31;
-               var29 = var20 & 31;
-               var36 = (var28 << 11) + (var6 << 19) + (var29 << 3);
-               class_37 var56 = class_71.method_1047(var21);
-               if(var36 != -1017532251 * var56.field_245) {
-                  var56.field_245 = var36 * 1950267181;
-                  class_254.method_4900(var56, (byte)124);
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            boolean var63;
-            if(ServerOpcode.OPCODE_34 == var1.field_2376) {
-               var63 = var3.method_119(649245380);
-               if(var63) {
-                  if(class_183.field_2249 == null) {
-                     class_296 var91 = new class_296();
-                     class_183.field_2249 = var91;
-                  }
-               } else {
-                  class_183.field_2249 = null;
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_56) {
-               class_153.field_1924 = var3.readUnsignedByte() * 1925598893;
-               class_247.field_2745 = var3.readUnsignedByte() * 1044884017;
-
-               while(var3.offset * -442398587 < var1.field_2380 * -83736147) {
-                  var20 = var3.readUnsignedByte();
-                  class_256 var71 = class_275.method_5118()[var20];
-                  class_41.method_482(var71, 236848204);
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_50 == var1.field_2376) {
-               class_41.method_482(class_256.field_2895, 236848204);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            String var22;
-            if(ServerOpcode.OPCODE_81 == var1.field_2376) {
-               var22 = var3.method_139(-391631059);
-               Object[] var70 = new Object[var22.length() + 1];
-
-               for(var6 = var22.length() - 1; var6 >= 0; --var6) {
-                  if(var22.charAt(var6) == 115) {
-                     var70[1 + var6] = var3.method_139(-391631059);
-                  } else {
-                     var70[var6 + 1] = new Integer(var3.readInt());
-                  }
-               }
-
-               var70[0] = new Integer(var3.readInt());
-               class_45 var90 = new class_45();
-               class_45 var69 = var90;
-               var69.field_337 = var70;
-               class_203.method_4099(var69);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_59 == var1.field_2376) {
-               field_1433 = var3.readUnsignedByte() * -1386659271;
-               if(1 == field_1433 * -1764619255) {
-                  field_1587 = var3.readShort() * -1446215429;
-               }
-
-               if(-1764619255 * field_1433 >= 2 && field_1433 * -1764619255 <= 6) {
-                  if(2 == field_1433 * -1764619255) {
-                     field_1491 = 1032327360;
-                     field_1440 = -1601934016;
-                  }
-
-                  if(field_1433 * -1764619255 == 3) {
-                     field_1491 = 0;
-                     field_1440 = -1601934016;
-                  }
-
-                  if(-1764619255 * field_1433 == 4) {
-                     field_1491 = 2064654720;
-                     field_1440 = -1601934016;
-                  }
-
-                  if(5 == field_1433 * -1764619255) {
-                     field_1491 = 1032327360;
-                     field_1440 = 0;
-                  }
-
-                  if(field_1433 * -1764619255 == 6) {
-                     field_1491 = 1032327360;
-                     field_1440 = 1091099264;
-                  }
-
-                  field_1433 = 1521648754;
-                  field_1436 = var3.readShort() * 253036989;
-                  field_1437 = var3.readShort() * -192647493;
-                  field_1438 = var3.readUnsignedByte() * -1486072999;
-               }
-
-               if(field_1433 * -1764619255 == 10) {
-                  field_1691 = var3.readShort() * 498843285;
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_11 == var1.field_2376) {
-               class_41.method_482(class_256.field_2891, 236848204);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            class_370 var88;
-            if(ServerOpcode.OPCODE_68 == var1.field_2376) {
-               var88 = new class_370(class_255.field_2887);
-               class_144.field_1824 = var88;
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_77 == var1.field_2376) {
-               var20 = var3.readUnsignedByte();
-               class_122.method_2273(var20);
-               var1.field_2376 = null;
-               return false;
-            }
-
-            if(ServerOpcode.OPCODE_52 == var1.field_2376) {
-               var20 = var3.readUnsignedByte();
-               class_312 var80;
-               class_312[] var89;
-               if(var3.readUnsignedByte() == 0) {
-                  var89 = field_1637;
-                  var80 = new class_312();
-                  var89[var20] = var80;
-                  var3.offset += -1282579094;
-               } else {
-                  var3.offset -= -1025691571;
-                  var89 = field_1637;
-                  var80 = new class_312(var3, false);
-                  var89[var20] = var80;
-               }
-
-               field_1616 = 697255233 * field_1602;
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_41 == var1.field_2376) {
-               class_45.field_338 = class_198.method_4020(var3.readUnsignedByte(), 759791831);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_18) {
-               class_41.method_482(class_256.field_2889, 236848204);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_4) {
-               var20 = var3.readShort();
-               var21 = var3.readUnsignedByte();
-               var6 = var3.readShort();
-               NetworkInput.method_6259(var20, var21, var6, 420237151);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            class_37 var40;
-            if(ServerOpcode.OPCODE_17 == var1.field_2376) {
-               var20 = var3.readInt();
-               var21 = var3.readShort();
-               var40 = class_71.method_1047(var20);
-               if(946573619 * var40.field_144 != 2 || var21 != var40.field_145 * 1064486253) {
-                  var40.field_144 = 370516982;
-                  var40.field_145 = -252507035 * var21;
-                  class_254.method_4900(var40, (byte)42);
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            int var43;
-            if(var1.field_2376 == ServerOpcode.OPCODE_88) {
-               field_1537 = true;
-               class_350.field_3944 = var3.readUnsignedByte() * -627283991;
-               class_117.field_1304 = var3.readUnsignedByte() * -615922221;
-               class_119.field_1317 = var3.readShort() * -447565925;
-               class_346.field_3925 = var3.readUnsignedByte() * -1161427459;
-               class_157.field_1957 = var3.readUnsignedByte() * 1686290257;
-               if(class_157.field_1957 * -1515591247 >= 100) {
-                  var20 = class_350.field_3944 * 1248865408 + 64;
-                  var21 = 64 + class_117.field_1304 * 1710042496;
-                  var6 = class_205.method_4113(var20, var21, class_115.field_1289 * 1115122599, -159035846) - class_119.field_1317 * -1469899117;
-                  var28 = var20 - GameMouseListener.field_1719 * 1681670171;
-                  var29 = var6 - class_172.field_2159 * 45831589;
-                  var36 = var21 - -2115685501 * class_205.field_2393;
-                  var43 = (int)Math.sqrt((double)(var28 * var28 + var36 * var36));
-                  class_78.field_686 = ((int)(Math.atan2((double)var29, (double)var43) * 325.949D) & 2047) * -1037557343;
-                  class_382.field_4208 = ((int)(Math.atan2((double)var28, (double)var36) * -325.949D) & 2047) * 252884949;
-                  if(class_78.field_686 * -1584922015 < 128) {
-                     class_78.field_686 = 336646272;
-                  }
-
-                  if(-1584922015 * class_78.field_686 > 383) {
-                     class_78.field_686 = 2047496159;
-                  }
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_76) {
-               var20 = var3.method_179();
-               var21 = var3.method_292();
-               var40 = class_71.method_1047(var20);
-               if(var21 != var40.field_148 * 679546321 || -1 == var21) {
-                  var40.field_148 = 161901361 * var21;
-                  var40.field_116 = 0;
-                  var40.field_232 = 0;
-                  class_254.method_4900(var40, (byte)65);
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_21) {
-               class_41.method_482(class_256.field_2897, 236848204);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_20) {
-               class_41.method_482(class_256.field_2894, 236848204);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_14) {
-               var20 = var3.readUnsignedByte();
-               class_171.method_3702(var20);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_49) {
-               if(class_144.field_1824 == null) {
-                  var88 = new class_370(class_255.field_2887);
-                  class_144.field_1824 = var88;
-               }
-
-               class_396 var72 = class_255.field_2887.method_4953(var3, (byte)80);
-               class_144.field_1824.field_4102.method_54(1815237159 * var72.field_4255, var72.field_4254, 1679381861);
-               field_1687[(field_1628 += 430970447) * 1843609775 - 1 & 31] = 1815237159 * var72.field_4255;
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_35 == var1.field_2376) {
-               class_208.field_2413.method_3321(var3, var1.field_2380 * -83736147);
-               field_1612 = field_1602 * 141937247;
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_74) {
-               field_1537 = true;
-               class_74.field_592 = var3.readUnsignedByte() * 770710025;
-               class_342.field_3898 = var3.readUnsignedByte() * 541685037;
-               class_277.field_3222 = var3.readShort() * -200435917;
-               class_138.field_1774 = var3.readUnsignedByte() * -245049725;
-               class_119.field_1320 = var3.readUnsignedByte() * 1215340287;
-               if(1439588607 * class_119.field_1320 >= 100) {
-                  GameMouseListener.field_1719 = 2024086912 * class_74.field_592 + 359040192;
-                  class_205.field_2393 = -1057465472 * class_342.field_3898 + 1115474624;
-                  class_172.field_2159 = (class_205.method_4113(1681670171 * GameMouseListener.field_1719, -2115685501 * class_205.field_2393, 1115122599 * class_115.field_1289, -1105832300) - class_277.field_3222 * -941868037) * -1768191443;
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_67 == var1.field_2376) {
-               class_154.method_3252(true, var3, -791423048);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_72) {
-               field_1520 = var3.readUnsignedByte() * 819547401;
-               if(-1714532039 * field_1520 == 255) {
-                  field_1520 = 0;
-               }
-
-               field_1562 = var3.readUnsignedByte() * 1551872625;
-               if(255 == field_1562 * 1810222737) {
-                  field_1562 = 0;
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            class_48 var7;
-            class_37 var35;
-            if(var1.field_2376 == ServerOpcode.OPCODE_43) {
-               var20 = var3.method_180();
-               var21 = var3.method_180();
-               class_48 var65 = (class_48)field_1578.method_6523((long)var21);
-               var7 = (class_48)field_1578.method_6523((long)var20);
-               if(var7 != null) {
-                  class_135.method_2943(var7, null == var65 || 897280301 * var7.field_353 != var65.field_353 * 897280301, -167047177);
-               }
-
-               if(var65 != null) {
-                  var65.method_108();
-                  field_1578.method_6525(var65, (long)var20);
-               }
-
-               var35 = class_71.method_1047(var21);
-               if(null != var35) {
-                  class_254.method_4900(var35, (byte)89);
-               }
-
-               var35 = class_71.method_1047(var20);
-               if(null != var35) {
-                  class_254.method_4900(var35, (byte)4);
-                  class_352.method_6231(class_37.field_93[-1722455647 * var35.field_101 >>> 16], var35, true);
-               }
-
-               if(-1 != 1338880923 * field_1412) {
-                  class_177.method_3761(1338880923 * field_1412, 1, 845778631);
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_10 == var1.field_2376) {
-               class_355.method_6240(var3.method_139(-391631059), 1473397883);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_94) {
-               var20 = var3.readInt();
-               class_48 var66 = (class_48)field_1578.method_6523((long)var20);
-               if(var66 != null) {
-                  class_135.method_2943(var66, true, -1175804387);
-               }
-
-               if(field_1583 != null) {
-                  class_254.method_4900(field_1583, (byte)21);
-                  field_1583 = null;
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_29) {
-               if(1338880923 * field_1412 != -1) {
-                  class_177.method_3761(field_1412 * 1338880923, 0, -475581741);
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            long var55;
-            class_32 var78;
-            class_364 var82;
-            if(ServerOpcode.OPCODE_27 == var1.field_2376) {
-               var20 = var1.field_2380 * -83736147 + var3.offset * -442398587;
-               var21 = var3.readShort();
-               var6 = var3.readShort();
-               if(1338880923 * field_1412 != var21) {
-                  field_1412 = -1384220013 * var21;
-                  this.method_2461(false);
-                  class_112.method_2237(1338880923 * field_1412, 993410393);
-                  class_248.method_4717(1338880923 * field_1412, (byte)8);
-
-                  for(var28 = 0; var28 < 100; ++var28) {
-                     field_1495[var28] = true;
-                  }
-               }
-
-               class_48 var46;
-               for(; var6-- > 0; var46.field_355 = true) {
-                  var28 = var3.readInt();
-                  var29 = var3.readShort();
-                  var36 = var3.readUnsignedByte();
-                  var46 = (class_48)field_1578.method_6523((long)var28);
-                  if(var46 != null && var29 != 897280301 * var46.field_353) {
-                     class_135.method_2943(var46, true, -2073109812);
-                     var46 = null;
-                  }
-
-                  if(var46 == null) {
-                     var46 = class_120.method_2264(var28, var29, var36, 1386178524);
-                  }
-               }
-
-               for(var7 = (class_48)field_1578.method_6531(); var7 != null; var7 = (class_48)field_1578.method_6527()) {
-                  if(var7.field_355) {
-                     var7.field_355 = false;
-                  } else {
-                     class_135.method_2943(var7, true, -1549431750);
-                  }
-               }
-
-               var82 = new class_364(512);
-               field_1623 = var82;
-
-               while(-442398587 * var3.offset < var20) {
-                  var28 = var3.readInt();
-                  var29 = var3.readShort();
-                  var36 = var3.readShort();
-                  var43 = var3.readInt();
-
-                  for(int var52 = var29; var52 <= var36; ++var52) {
-                     var55 = ((long)var28 << 32) + (long)var52;
-                     var82 = field_1623;
-                     var78 = new class_32(var43);
-                     var82.method_6525(var78, var55);
-                  }
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_5 == var1.field_2376) {
-               var63 = var3.method_113() == 1;
-               var21 = var3.method_163();
-               var40 = class_71.method_1047(var21);
-               if(var63 != var40.field_121) {
-                  var40.field_121 = var63;
-                  class_254.method_4900(var40, (byte)34);
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_1) {
-               class_144.field_1824 = null;
-               var1.field_2376 = null;
-               return true;
-            }
-
-            int var15;
-            class_359 var10001;
-            long var26;
-            long var30;
-            long var39;
-            String var60;
-            class_160 var77;
-            if(ServerOpcode.OPCODE_9 == var1.field_2376) {
-               var22 = var3.method_139(-391631059);
-               var30 = var3.readLong();
-               var26 = (long)var3.readShort();
-               var39 = (long)var3.method_134();
-               class_292 var51 = (class_292)class_197.method_4016(class_391.method_6773(), var3.readUnsignedByte(), -611336247);
-               var55 = var39 + (var26 << 32);
-               boolean var62 = false;
-
-               for(var15 = 0; var15 < 100; ++var15) {
-                  if(var55 == field_1640[var15]) {
-                     var62 = true;
-                     break;
-                  }
-               }
-
-               if(var51.field_3332) {
-                  var77 = class_208.field_2413;
-                  var10001 = new class_359(var22, class_239.field_2659);
-                  if(var77.method_3325(var10001, 279756852)) {
-                     var62 = true;
-                  }
-               }
-
-               if(!var62 && -267997189 * field_1531 == 0) {
-                  field_1640[-2103302667 * field_1641] = var55;
-                  field_1641 = (field_1641 * -2103302667 + 1) % 100 * 52403805;
-                  var60 = class_68.method_868(class_135.method_2942(class_38.method_449(var3), -539525597));
-                  if(-1 != 417414069 * var51.field_3330) {
-                     class_54.method_585(9, class_174.method_3729(417414069 * var51.field_3330) + var22, var60, class_291.method_5296(var30), -178955430);
-                  } else {
-                     class_54.method_585(9, var22, var60, class_291.method_5296(var30), 496656688);
-                  }
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_70 == var1.field_2376) {
-               class_41.method_482(class_256.field_2893, 236848204);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_79) {
-               var22 = var3.method_139(-391631059);
-               var21 = var3.method_180();
-               var40 = class_71.method_1047(var21);
-               if(!var22.equals(var40.field_136)) {
-                  var40.field_136 = var22;
-                  class_254.method_4900(var40, (byte)99);
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_64) {
-               var20 = var3.method_168();
-               var21 = var3.method_163();
-               var40 = class_71.method_1047(var21);
-               if(1 != 946573619 * var40.field_144 || var20 != 1064486253 * var40.field_145) {
-                  var40.field_144 = 185258491;
-                  var40.field_145 = -252507035 * var20;
-                  class_254.method_4900(var40, (byte)61);
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_6) {
-               var20 = var3.readInt();
-               if(var20 != field_1499 * -315190483) {
-                  field_1499 = 711341221 * var20;
-                  class_90.method_1605(272503253);
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_78 == var1.field_2376) {
-               class_56.method_589((byte)41);
-               var1.field_2376 = null;
-               return false;
-            }
-
-            if(ServerOpcode.OPCODE_37 == var1.field_2376) {
-               class_149 var86 = new class_149();
-               class_149 var68 = var86;
-               var68.field_1885 = var3.method_139(-391631059);
-               var68.field_1894 = var3.readShort() * -1640224087;
-               var21 = var3.readInt();
-               var68.field_1890 = 1964795281 * var21;
-               class_53.method_579(45, (byte)0);
-               var2.close(2124402709);
-               var2 = null;
-               class_113.method_2241(var68, 1920877251);
-               var1.field_2376 = null;
-               return false;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_85) {
-               field_1432 = var3.readShort() * -469289334;
-               field_1435 = -664131431 * field_1602;
-               var1.field_2376 = null;
-               return true;
-            }
-
-            String var50;
-            if(var1.field_2376 == ServerOpcode.OPCODE_65) {
-               byte[] var67 = new byte[-83736147 * var1.field_2380];
-               var3.method_360(var67, 0, var67.length, (short)255);
-               Buffer var85 = new Buffer(var67);
-               Buffer var64 = var85;
-               var50 = var64.method_139(-391631059);
-               class_195.method_3988(var50, true, false, 232848228);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            byte var19;
-            if(ServerOpcode.OPCODE_39 == var1.field_2376) {
-               class_198.method_4017();
-               var19 = var3.readByte();
-               if(1 == var1.field_2380 * -83736147) {
-                  if(var19 >= 0) {
-                     field_1510[var19] = null;
-                  } else {
-                     class_88.field_856 = null;
-                  }
-
-                  var1.field_2376 = null;
-                  return true;
-               }
-
-               if(var19 >= 0) {
-                  class_171[] var83 = field_1510;
-                  class_171 var79 = new class_171(var3);
-                  var83[var19] = var79;
-               } else {
-                  class_171 var84 = new class_171(var3);
-                  class_88.field_856 = var84;
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_24) {
-               var20 = var3.method_163();
-               var21 = var3.method_168();
-               var40 = class_71.method_1047(var20);
-               if(null != var40 && var40.field_103 * 1659206769 == 0) {
-                  if(var21 > var40.field_125 * 1577090123 - -571887853 * var40.field_117) {
-                     var21 = var40.field_125 * 1577090123 - -571887853 * var40.field_117;
-                  }
-
-                  if(var21 < 0) {
-                     var21 = 0;
-                  }
-
-                  if(1974901921 * var40.field_123 != var21) {
-                     var40.field_123 = -174176415 * var21;
-                     class_254.method_4900(var40, (byte)3);
-                  }
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_90 == var1.field_2376) {
-               for(var20 = 0; var20 < class_282.field_3246.length; ++var20) {
-                  if(class_282.field_3246[var20] != class_282.field_3247[var20]) {
-                     class_282.field_3246[var20] = class_282.field_3247[var20];
-                     class_147.method_3111(var20, -1094996166);
-                     field_1603[(field_1439 += -27061103) * 1149971569 - 1 & 31] = var20;
-                  }
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_58 == var1.field_2376) {
-               class_275.method_5084(var3, (byte)14);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_92) {
-               var20 = var3.readInt();
-               var21 = var3.readShort();
-               if(var20 < -70000) {
-                  var21 += '\u8000';
-               }
-
-               if(var20 >= 0) {
-                  var40 = class_71.method_1047(var20);
-               } else {
-                  var40 = null;
-               }
-
-               for(; -442398587 * var3.offset < -83736147 * var1.field_2380; class_117.method_2252(var21, var28, var29 - 1, var36, -402074125)) {
-                  var28 = var3.method_144();
-                  var29 = var3.readShort();
-                  var36 = 0;
-                  if(var29 != 0) {
-                     var36 = var3.readUnsignedByte();
-                     if(255 == var36) {
-                        var36 = var3.readInt();
-                     }
-                  }
-
-                  if(null != var40 && var28 >= 0 && var28 < var40.field_227.length) {
-                     var40.field_227[var28] = var29;
-                     var40.field_228[var28] = var36;
-                  }
-               }
-
-               if(null != var40) {
-                  class_254.method_4900(var40, (byte)23);
-               }
-
-               class_222.method_4278(1775046130);
-               field_1658[(field_1606 += 830110885) * 102304557 - 1 & 31] = var21 & 32767;
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_0) {
-               class_370.method_6601(false, var1.networkBuffer, -1931945380);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_26) {
-               class_160.method_3378(var3, -83736147 * var1.field_2380, -1794600582);
-               class_103.method_1930(-1784391198);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_69 == var1.field_2376) {
-               class_41.method_482(class_256.field_2888, 236848204);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_15 == var1.field_2376) {
-               class_222.method_4278(1853744625);
-               field_1674 = var3.readUnsignedByte() * -1003772217;
-               field_1435 = field_1602 * -664131431;
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_75) {
-               var20 = var3.readShort();
-               if('\uffff' == var20) {
-                  var20 = -1;
-               }
-
-               var21 = var3.method_179();
-               var6 = var3.method_170();
-               if(var6 == '\uffff') {
-                  var6 = -1;
-               }
-
-               var28 = var3.method_163();
-
-               for(var29 = var20; var29 <= var6; ++var29) {
-                  var39 = ((long)var28 << 32) + (long)var29;
-                  class_27 var49 = field_1623.method_6523(var39);
-                  if(null != var49) {
-                     var49.method_108();
-                  }
-
-                  var82 = field_1623;
-                  var78 = new class_32(var21);
-                  var82.method_6525(var78, var39);
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_30 == var1.field_2376) {
-               var20 = var3.readInt();
-               var21 = var3.readInt();
-               var6 = class_135.method_2947(-56748890);
-               class_40 var48 = class_112.newPacket(ClientOpcode.OPCODE_84, field_1463.isaac, (byte)8);
-               var48.networkBuffer.writeInt(var20);
-               var48.networkBuffer.writeIntReverse(var21);
-               var48.networkBuffer.method_145(field_1382 * -1080528073);
-               var48.networkBuffer.method_148(var6);
-               field_1463.method_4079(var48);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_86 == var1.field_2376) {
-               class_370.method_6601(true, var1.networkBuffer, -1337023708);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_32) {
-               class_41.method_482(class_256.field_2890, 236848204);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_84) {
-               var63 = var3.readUnsignedByte() == 1;
-               if(var63) {
-                  class_37.field_242 = (class_87.method_1516((byte)1) - var3.readLong()) * -3858876477054660781L;
-                  class_303 var81 = new class_303(var3);
-                  class_185.field_2261 = var81;
-               } else {
-                  class_185.field_2261 = null;
-               }
-
-               field_1524 = 1086034561 * field_1602;
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_57) {
-               field_1537 = false;
-
-               for(var20 = 0; var20 < 5; ++var20) {
-                  field_1469[var20] = false;
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            class_37 var25;
-            if(ServerOpcode.OPCODE_53 == var1.field_2376) {
-               var20 = var3.method_163();
-               var21 = var3.method_180();
-               var6 = var3.readShortAlt();
-               if('\uffff' == var6) {
-                  var6 = -1;
-               }
-
-               var25 = class_71.method_1047(var21);
-               class_80 var38;
-               if(!var25.field_100) {
-                  if(-1 == var6) {
-                     var25.field_144 = 0;
-                     var1.field_2376 = null;
-                     return true;
-                  }
-
-                  var38 = class_299.method_5347(var6, -657099518);
-                  var25.field_144 = 741033964;
-                  var25.field_145 = var6 * -252507035;
-                  var25.field_142 = -634708543 * var38.field_733;
-                  var25.field_153 = var38.field_714 * 1271973011;
-                  var25.field_205 = -922077133 * (var38.field_713 * 2127509708 / var20);
-                  class_254.method_4900(var25, (byte)24);
-               } else {
-                  var25.field_229 = -145071707 * var6;
-                  var25.field_161 = var20 * -1943101049;
-                  var38 = class_299.method_5347(var6, -2131536865);
-                  var25.field_142 = -634708543 * var38.field_733;
-                  var25.field_153 = var38.field_714 * 1271973011;
-                  var25.field_137 = var38.field_715 * -2017546435;
-                  var25.field_150 = -125333263 * var38.field_716;
-                  var25.field_151 = 1363851317 * var38.field_717;
-                  var25.field_205 = 171073169 * var38.field_713;
-                  if(1 == var38.field_705 * -1049731853) {
-                     var25.field_160 = -1656645413;
-                  } else {
-                     var25.field_160 = 981676470;
-                  }
-
-                  if(var25.field_156 * -1993271177 > 0) {
-                     var25.field_205 = -922077133 * (var25.field_205 * -646946976 / (-1993271177 * var25.field_156));
-                  } else if(1593997171 * var25.field_112 > 0) {
-                     var25.field_205 = -646946976 * var25.field_205 / (var25.field_112 * 1593997171) * -922077133;
-                  }
-
-                  class_254.method_4900(var25, (byte)126);
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_80 == var1.field_2376) {
-               field_1655 = var3.readUnsignedByte() * -851795329;
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_45) {
-               var22 = var3.method_139(-391631059);
-               var5 = class_68.method_868(class_135.method_2942(class_38.method_449(var3), -758858323));
-               class_149.method_3135(6, var22, var5);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            int var57;
-            String var59;
-            if(var1.field_2376 == ServerOpcode.OPCODE_19) {
-               var19 = var3.readByte();
-               var30 = (long)var3.readShort();
-               var26 = (long)var3.method_134();
-               var39 = var26 + (var30 << 32);
-               boolean var44 = false;
-               class_44 var53 = var19 >= 0?field_1647[var19]:class_147.field_1865;
-               if(var53 == null) {
-                  var44 = true;
-               } else {
-                  for(var57 = 0; var57 < 100; ++var57) {
-                     if(var39 == field_1640[var57]) {
-                        var44 = true;
-                        break;
-                     }
-                  }
-               }
-
-               if(!var44) {
-                  field_1640[field_1641 * -2103302667] = var39;
-                  field_1641 = (1 + field_1641 * -2103302667) % 100 * 52403805;
-                  var59 = class_38.method_449(var3);
-                  int var61 = var19 >= 0?43:46;
-                  class_54.method_585(var61, "", var59, var53.field_321, -1351255784);
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_8) {
-               class_247.field_2745 = var3.method_159() * 1044884017;
-               class_153.field_1924 = var3.method_113() * 1925598893;
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_62) {
-               var20 = var3.method_168();
-               var21 = var3.method_170();
-               var6 = var3.readShortAlt();
-               var28 = var3.method_163();
-               var35 = class_71.method_1047(var28);
-               if(var35.field_142 * -1005507705 != var20 || var21 != 490585271 * var35.field_153 || var6 != var35.field_205 * 1456177915) {
-                  var35.field_142 = 626567735 * var20;
-                  var35.field_153 = var21 * -1507467001;
-                  var35.field_205 = -922077133 * var6;
-                  class_254.method_4900(var35, (byte)8);
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            class_37 var45;
-            if(ServerOpcode.OPCODE_61 == var1.field_2376) {
-               var20 = var3.method_180();
-               var45 = class_71.method_1047(var20);
-               var45.field_144 = 555775473;
-               var45.field_145 = class_164.field_2044.field_1143.method_5093(-1167283796) * -252507035;
-               class_254.method_4900(var45, (byte)102);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_63 == var1.field_2376) {
-               var20 = var3.method_144();
-               boolean var54 = var3.readUnsignedByte() == 1;
-               var50 = "";
-               boolean var41 = false;
-               if(var54) {
-                  var50 = var3.method_139(-391631059);
-                  var77 = class_208.field_2413;
-                  var10001 = new class_359(var50, class_239.field_2659);
-                  if(var77.method_3325(var10001, 279756852)) {
-                     var41 = true;
-                  }
-               }
-
-               String var33 = var3.method_139(-391631059);
-               if(!var41) {
-                  class_149.method_3135(var20, var50, var33);
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_60) {
-               class_222.method_4278(855714574);
-               field_1542 = var3.method_269(-1542485131) * -927806369;
-               field_1435 = field_1602 * -664131431;
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_91) {
-               field_1593 = var3.readUnsignedByte() * -1816728115;
-               field_1638 = var3.method_113() * 1186588677;
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_66) {
-               var3.offset += 1345407084;
-               if(var3.method_155(-1379421761)) {
-                  class_279.method_5149(var3, var3.offset * -442398587 - 28, 1189897610);
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_40 == var1.field_2376) {
-               var20 = var3.readShort();
-               if('\uffff' == var20) {
-                  var20 = -1;
-               }
-
-               class_125.method_2288(var20, (byte)45);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_25 == var1.field_2376) {
-               var20 = var3.readShortAlt();
-               if(var20 == '\uffff') {
-                  var20 = -1;
-               }
-
-               var21 = var3.method_175();
-               class_294.method_5314(var20, 719968862);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_54) {
-               var22 = var3.method_139(-391631059);
-               var21 = var3.method_113();
-               var6 = var3.method_237();
-               if(var21 >= 1 && var21 <= 8) {
-                  if(var22.equalsIgnoreCase(class_305.field_3410)) {
-                     var22 = null;
-                  }
-
-                  field_1541[var21 - 1] = var22;
-                  field_1447[var21 - 1] = var6 == 0;
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_12) {
-               var20 = var3.readUnsignedByte();
-               var21 = var3.readUnsignedByte();
-               var6 = var3.readUnsignedByte();
-               var28 = var3.readUnsignedByte();
-               field_1469[var20] = true;
-               field_1666[var20] = var21;
-               field_1667[var20] = var6;
-               field_1668[var20] = var28;
-               field_1669[var20] = 0;
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_83) {
-               class_153.field_1924 = var3.readUnsignedByte() * 1925598893;
-               class_247.field_2745 = var3.readUnsignedByte() * 1044884017;
-
-               for(var20 = 1575841489 * class_247.field_2745; var20 < 8 + class_247.field_2745 * 1575841489; ++var20) {
-                  for(var21 = class_153.field_1924 * -1125497563; var21 < 8 + -1125497563 * class_153.field_1924; ++var21) {
-                     if(null != field_1635[1115122599 * class_115.field_1289][var20][var21]) {
-                        field_1635[1115122599 * class_115.field_1289][var20][var21] = null;
-                        class_171.method_3690(var20, var21, (byte)0);
-                     }
-                  }
-               }
-
-               for(class_50 var47 = (class_50)field_1574.method_5944(); null != var47; var47 = (class_50)field_1574.method_5972()) {
-                  if(var47.field_364 * 1813016497 >= class_247.field_2745 * 1575841489 && 1813016497 * var47.field_364 < 8 + 1575841489 * class_247.field_2745 && -396145343 * var47.field_367 >= class_153.field_1924 * -1125497563 && var47.field_367 * -396145343 < 8 + -1125497563 * class_153.field_1924 && -28991277 * var47.field_369 == class_115.field_1289 * 1115122599) {
-                     var47.field_375 = 0;
-                  }
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_23 == var1.field_2376) {
-               for(var20 = 0; var20 < field_1605.length; ++var20) {
-                  if(field_1605[var20] != null) {
-                     field_1605[var20].field_1108 = 1152446837;
-                  }
-               }
-
-               for(var20 = 0; var20 < field_1458.length; ++var20) {
-                  if(field_1458[var20] != null) {
-                     field_1458[var20].field_1108 = 1152446837;
-                  }
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_22) {
-               var20 = var3.method_179();
-               var45 = class_71.method_1047(var20);
-
-               for(var6 = 0; var6 < var45.field_227.length; ++var6) {
-                  var45.field_227[var6] = -1;
-                  var45.field_227[var6] = 0;
-               }
-
-               class_254.method_4900(var45, (byte)49);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_46 == var1.field_2376) {
-               class_222.method_4278(933768618);
-               var20 = var3.method_159();
-               var21 = var3.method_113();
-               var6 = var3.method_180();
-               field_1551[var21] = var6;
-               field_1549[var21] = var20;
-               field_1550[var21] = 1;
-
-               for(var28 = 0; var28 < 98; ++var28) {
-                  if(var6 >= class_289.field_3282[var28]) {
-                     field_1550[var21] = var28 + 2;
-                  }
-               }
-
-               field_1450[(field_1608 += 1721561511) * 28091927 - 1 & 31] = var21;
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_82 == var1.field_2376) {
-               class_208.field_2413.method_3328();
-               field_1612 = 141937247 * field_1602;
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_51 == var1.field_2376) {
-               var20 = var3.method_180();
-               var21 = var3.method_170();
-               var6 = var3.method_170();
-               var25 = class_71.method_1047(var20);
-               var25.field_157 = (var6 + (var21 << 16)) * -355998211;
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_31) {
-               var20 = var3.method_180();
-               var21 = var3.readShort();
-               class_282.field_3247[var21] = var20;
-               if(class_282.field_3246[var21] != var20) {
-                  class_282.field_3246[var21] = var20;
-               }
-
-               class_147.method_3111(var21, 1298641266);
-               field_1603[(field_1439 += -27061103) * 1149971569 - 1 & 31] = var21;
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_71 == var1.field_2376) {
-               var20 = var3.readInt();
-               var21 = var3.readShort();
-               if(var20 < -70000) {
-                  var21 += '\u8000';
-               }
-
-               if(var20 >= 0) {
-                  var40 = class_71.method_1047(var20);
-               } else {
-                  var40 = null;
-               }
-
-               if(null != var40) {
-                  for(var28 = 0; var28 < var40.field_227.length; ++var28) {
-                     var40.field_227[var28] = 0;
-                     var40.field_228[var28] = 0;
-                  }
-               }
-
-               class_151.method_3214(var21, -97165394);
-               var28 = var3.readShort();
-
-               for(var29 = 0; var29 < var28; ++var29) {
-                  var36 = var3.readShortAlt();
-                  var43 = var3.method_159();
-                  if(255 == var43) {
-                     var43 = var3.method_179();
-                  }
-
-                  if(null != var40 && var29 < var40.field_227.length) {
-                     var40.field_227[var29] = var36;
-                     var40.field_228[var29] = var43;
-                  }
-
-                  class_117.method_2252(var21, var29, var36 - 1, var43, -402074125);
-               }
-
-               if(null != var40) {
-                  class_254.method_4900(var40, (byte)94);
-               }
-
-               class_222.method_4278(1753510937);
-               field_1658[(field_1606 += 830110885) * 102304557 - 1 & 31] = var21 & 32767;
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_28) {
-               var20 = var3.readShortAlt();
-               class_177.method_3783(var20);
-               field_1658[(field_1606 += 830110885) * 102304557 - 1 & 31] = var20 & 32767;
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_93 == var1.field_2376) {
-               if(class_233.field_2617 != null) {
-                  class_233.field_2617.method_6149(var3, 817545734);
-               }
-
-               class_240.method_4613();
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_55) {
-               for(var20 = 0; var20 < -1782450907 * class_74.field_591; ++var20) {
-                  class_74 var34 = class_171.method_3703(var20, -967424153);
-                  if(null != var34) {
-                     class_282.field_3247[var20] = 0;
-                     class_282.field_3246[var20] = 0;
-                  }
-               }
-
-               class_222.method_4278(744849344);
-               field_1439 += -865955296;
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_87) {
-               class_154.method_3252(false, var3, -1543751913);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_2 == var1.field_2376) {
-               var20 = var3.readShort();
-               byte var32 = var3.readByte();
-               class_282.field_3247[var20] = var32;
-               if(var32 != class_282.field_3246[var20]) {
-                  class_282.field_3246[var20] = var32;
-               }
-
-               class_147.method_3111(var20, 261876973);
-               field_1603[(field_1439 += -27061103) * 1149971569 - 1 & 31] = var20;
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_73 == var1.field_2376) {
-               class_208.field_2413.field_1995.method_6164(var3, -83736147 * var1.field_2380, (short)2231);
-               class_163.method_3423(1173215822);
-               field_1612 = 141937247 * field_1602;
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_44 == var1.field_2376) {
-               class_41.method_482(class_256.field_2892, 236848204);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_13 == var1.field_2376) {
-               var22 = var3.method_139(-391631059);
-               var30 = (long)var3.readShort();
-               var26 = (long)var3.method_134();
-               class_292 var9 = (class_292)class_197.method_4016(class_391.method_6773(), var3.readUnsignedByte(), -611336247);
-               long var42 = var26 + (var30 << 32);
-               boolean var12 = false;
-
-               for(var57 = 0; var57 < 100; ++var57) {
-                  if(field_1640[var57] == var42) {
-                     var12 = true;
-                     break;
-                  }
-               }
-
-               var77 = class_208.field_2413;
-               var10001 = new class_359(var22, class_239.field_2659);
-               if(var77.method_3325(var10001, 279756852)) {
-                  var12 = true;
-               }
-
-               if(!var12 && -267997189 * field_1531 == 0) {
-                  field_1640[-2103302667 * field_1641] = var42;
-                  field_1641 = 52403805 * ((-2103302667 * field_1641 + 1) % 100);
-                  var59 = class_68.method_868(class_135.method_2942(class_38.method_449(var3), -660872146));
-                  byte var58;
-                  if(var9.field_3331) {
-                     var58 = 7;
-                  } else {
-                     var58 = 3;
-                  }
-
-                  if(417414069 * var9.field_3330 != -1) {
-                     class_149.method_3135(var58, class_174.method_3729(417414069 * var9.field_3330) + var22, var59);
-                  } else {
-                     class_149.method_3135(var58, var22, var59);
-                  }
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_42 == var1.field_2376) {
-               var19 = var3.readByte();
-               var5 = var3.method_139(-391631059);
-               long var37 = (long)var3.readShort();
-               long var8 = (long)var3.method_134();
-               class_292 var10 = (class_292)class_197.method_4016(class_391.method_6773(), var3.readUnsignedByte(), -611336247);
-               long var11 = (var37 << 32) + var8;
-               boolean var13 = false;
-               class_44 var14 = null;
-               var14 = var19 >= 0?field_1647[var19]:class_147.field_1865;
-               if(var14 == null) {
-                  var13 = true;
-               } else {
-                  var15 = 0;
-
-                  while(true) {
-                     if(var15 >= 100) {
-                        if(var10.field_3332) {
-                           var77 = class_208.field_2413;
-                           var10001 = new class_359(var5, class_239.field_2659);
-                           if(var77.method_3325(var10001, 279756852)) {
-                              var13 = true;
-                           }
-                        }
-                        break;
-                     }
-
-                     if(field_1640[var15] == var11) {
-                        var13 = true;
-                        break;
-                     }
-
-                     ++var15;
-                  }
-               }
-
-               if(!var13) {
-                  field_1640[-2103302667 * field_1641] = var11;
-                  field_1641 = (1 + field_1641 * -2103302667) % 100 * 52403805;
-                  var60 = class_68.method_868(class_38.method_449(var3));
-                  int var16 = var19 >= 0?41:44;
-                  if(-1 != var10.field_3330 * 417414069) {
-                     class_54.method_585(var16, class_174.method_3729(417414069 * var10.field_3330) + var5, var60, var14.field_321, -408899561);
-                  } else {
-                     class_54.method_585(var16, var5, var60, var14.field_321, 603295998);
-                  }
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_16) {
-               field_1615 = 2086307701 * field_1602;
-               var19 = var3.readByte();
-               class_180 var76 = new class_180(var3);
-               class_180 var27 = var76;
-               class_44 var31;
-               if(var19 >= 0) {
-                  var31 = field_1647[var19];
-               } else {
-                  var31 = class_147.field_1865;
-               }
-
-               var27.method_3813(var31, 205429833);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_7 == var1.field_2376) {
-               class_198.method_4017();
-               var19 = var3.readByte();
-               class_167 var75 = new class_167(var3);
-               class_167 var23 = var75;
-               class_171 var24;
-               if(var19 >= 0) {
-                  var24 = field_1510[var19];
-               } else {
-                  var24 = class_88.field_856;
-               }
-
-               var23.method_3601(var24, 179104908);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_3 == var1.field_2376) {
-               var20 = var3.method_227(-1905667053);
-               var21 = var3.method_163();
-               var6 = var3.method_187(-1157474585);
-               var25 = class_71.method_1047(var21);
-               if(var6 != var25.field_159 * 516231807 || var20 != var25.field_111 * -1017092357 || 416061409 * var25.field_106 != 0 || -843432795 * var25.field_107 != 0) {
-                  var25.field_159 = -616256129 * var6;
-                  var25.field_111 = var20 * -1598442445;
-                  var25.field_106 = 0;
-                  var25.field_107 = 0;
-                  class_254.method_4900(var25, (byte)107);
-                  this.method_2462(var25, 1464965690);
-                  if(1659206769 * var25.field_103 == 0) {
-                     class_352.method_6231(class_37.field_93[var21 >> 16], var25, false);
-                  }
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_48 == var1.field_2376) {
-               var20 = var3.readUnsignedByte();
-               var21 = var3.method_170();
-               var6 = var3.method_179();
-               var7 = (class_48)field_1578.method_6523((long)var6);
-               if(null != var7) {
-                  class_135.method_2943(var7, var21 != var7.field_353 * 897280301, -144015282);
-               }
-
-               class_120.method_2264(var6, var21, var20, 1580128065);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_36 == var1.field_2376) {
-               var20 = var3.method_168();
-               field_1412 = -1384220013 * var20;
-               this.method_2461(false);
-               class_112.method_2237(var20, 993410393);
-               class_248.method_4717(1338880923 * field_1412, (byte)84);
-
-               for(var21 = 0; var21 < 100; ++var21) {
-                  field_1495[var21] = true;
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(ServerOpcode.OPCODE_38 == var1.field_2376) {
-               if(var1.field_2380 * -83736147 == 0) {
-                  class_233.field_2617 = null;
-               } else {
-                  if(class_233.field_2617 == null) {
-                     class_344 var74 = new class_344(class_239.field_2659, class_121.field_1337);
-                     class_233.field_2617 = var74;
-                  }
-
-                  class_233.field_2617.method_6146(var3, -1514220632);
-               }
-
-               class_240.method_4613();
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_33) {
-               class_41.method_482(class_256.field_2896, 236848204);
-               var1.field_2376 = null;
-               return true;
-            }
-
-            if(var1.field_2376 == ServerOpcode.OPCODE_89) {
-               field_1615 = 2086307701 * field_1602;
-               var19 = var3.readByte();
-               if(1 == -83736147 * var1.field_2380) {
-                  if(var19 >= 0) {
-                     field_1647[var19] = null;
-                  } else {
-                     class_147.field_1865 = null;
-                  }
-
-                  var1.field_2376 = null;
-                  return true;
-               }
-
-               if(var19 >= 0) {
-                  class_44[] var10000 = field_1647;
-                  class_44 var10002 = new class_44(var3);
-                  var10000[var19] = var10002;
-               } else {
-                  class_44 var73 = new class_44(var3);
-                  class_147.field_1865 = var73;
-               }
-
-               var1.field_2376 = null;
-               return true;
-            }
-
-            class_308.method_5523("" + (var1.field_2376 != null?-1581409905 * var1.field_2376.field_2964:-1) + class_205.field_2400 + (var1.field_2382 != null?var1.field_2382.field_2964 * -1581409905:-1) + class_205.field_2400 + (var1.field_2370 != null?var1.field_2370.field_2964 * -1581409905:-1) + class_205.field_2400 + var1.field_2380 * -83736147, (Throwable)null, 1844696116);
-            class_56.method_589((byte)-81);
-         } catch (IOException var17) {
-            class_60.method_638(-552402310);
-         } catch (Exception var18) {
-            var5 = "" + (var1.field_2376 != null?var1.field_2376.field_2964 * -1581409905:-1) + class_205.field_2400 + (var1.field_2382 != null?-1581409905 * var1.field_2382.field_2964:-1) + class_205.field_2400 + (var1.field_2370 != null?-1581409905 * var1.field_2370.field_2964:-1) + class_205.field_2400 + var1.field_2380 * -83736147 + class_205.field_2400 + (697161691 * class_243.field_2700 + class_164.field_2044.field_1112[0]) + class_205.field_2400 + (class_164.field_2044.field_1126[0] + -27903763 * class_154.field_1929) + class_205.field_2400;
-
-            for(var6 = 0; var6 < var1.field_2380 * -83736147 && var6 < 50; ++var6) {
-               var5 = var5 + var3.data[var6] + class_205.field_2400;
-            }
-
-            class_308.method_5523(var5, var18, 1923990055);
-            class_56.method_589((byte)-51);
-         }
-
-         return true;
-      }
-   }
-
    // $FF: renamed from: ol () void
    void method_2448() {
       int var1 = 646214551 * class_137.field_1766;
@@ -4004,7 +2402,7 @@ public final class client extends GameApplet implements class_16 {
             int var10001;
             try {
                int var23;
-               if(var1.field_2376 == null) {
+               if(var1.opcode == null) {
                   label2600: {
                      if(var2 >= 477492867) {
                         throw new IllegalStateException();
@@ -4047,8 +2445,8 @@ public final class client extends GameApplet implements class_16 {
                         }
 
                         if(var23 < var5.length) {
-                           var1.field_2376 = var5[var23];
-                           var1.field_2380 = 1568909879 * var1.field_2376.field_3027;
+                           var1.opcode = var5[var23];
+                           var1.field_2380 = 1568909879 * var1.opcode.field_3027;
                            break label2600;
                         }
 
@@ -4102,12 +2500,12 @@ public final class client extends GameApplet implements class_16 {
                field_1468.method_5907();
                var1.field_2370 = var1.field_2382;
                var1.field_2382 = var1.field_2381;
-               var1.field_2381 = var1.field_2376;
+               var1.field_2381 = var1.opcode;
                int var22;
                int var30;
                int var31;
                int var38;
-               if(ServerOpcode.OPCODE_47 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_47 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -4128,12 +2526,12 @@ public final class client extends GameApplet implements class_16 {
                      class_254.method_4900(var58, (byte)53);
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
                boolean var64;
-               if(ServerOpcode.OPCODE_34 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_34 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -4156,11 +2554,11 @@ public final class client extends GameApplet implements class_16 {
                      class_183.field_2249 = null;
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_56) {
+               if(var1.opcode == ServerOpcode.OPCODE_56) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -4178,18 +2576,18 @@ public final class client extends GameApplet implements class_16 {
                      class_41.method_482(var72, 236848204);
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_50 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_50 == var1.opcode) {
                   class_41.method_482(class_256.field_2895, 236848204);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
                String var24;
-               if(ServerOpcode.OPCODE_81 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_81 == var1.opcode) {
                   var24 = var4.method_139(-391631059);
                   Object[] var71 = new Object[var24.length() + 1];
 
@@ -4210,11 +2608,11 @@ public final class client extends GameApplet implements class_16 {
                   class_45 var70 = var97;
                   var70.field_337 = var71;
                   class_203.method_4099(var70);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_59 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_59 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -4294,40 +2692,40 @@ public final class client extends GameApplet implements class_16 {
                      field_1691 = var4.readShort() * 498843285;
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_11 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_11 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
 
                   class_41.method_482(class_256.field_2891, 236848204);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
                class_370 var95;
-               if(ServerOpcode.OPCODE_68 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_68 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
 
                   var95 = new class_370(class_255.field_2887);
                   class_144.field_1824 = var95;
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_77 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_77 == var1.opcode) {
                   var22 = var4.readUnsignedByte();
                   class_122.method_2273(var22);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return false;
                }
 
-               if(ServerOpcode.OPCODE_52 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_52 == var1.opcode) {
                   var22 = var4.readUnsignedByte();
                   class_312 var81;
                   class_312[] var96;
@@ -4348,27 +2746,27 @@ public final class client extends GameApplet implements class_16 {
                   }
 
                   field_1616 = 697255233 * field_1602;
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_41 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_41 == var1.opcode) {
                   class_45.field_338 = class_198.method_4020(var4.readUnsignedByte(), -333681005);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_18) {
+               if(var1.opcode == ServerOpcode.OPCODE_18) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
 
                   class_41.method_482(class_256.field_2889, 236848204);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_4) {
+               if(var1.opcode == ServerOpcode.OPCODE_4) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -4377,12 +2775,12 @@ public final class client extends GameApplet implements class_16 {
                   var23 = var4.readUnsignedByte();
                   var7 = var4.readShort();
                   NetworkInput.method_6259(var22, var23, var7, 1648779145);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
                class_37 var42;
-               if(ServerOpcode.OPCODE_17 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_17 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -4410,12 +2808,12 @@ public final class client extends GameApplet implements class_16 {
                      class_254.method_4900(var42, (byte)33);
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
                int var45;
-               if(var1.field_2376 == ServerOpcode.OPCODE_88) {
+               if(var1.opcode == ServerOpcode.OPCODE_88) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -4457,11 +2855,11 @@ public final class client extends GameApplet implements class_16 {
                      }
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_76) {
+               if(var1.opcode == ServerOpcode.OPCODE_76) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -4486,38 +2884,38 @@ public final class client extends GameApplet implements class_16 {
                      class_254.method_4900(var42, (byte)50);
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_21) {
+               if(var1.opcode == ServerOpcode.OPCODE_21) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
 
                   class_41.method_482(class_256.field_2897, 236848204);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_20) {
+               if(var1.opcode == ServerOpcode.OPCODE_20) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
 
                   class_41.method_482(class_256.field_2894, 236848204);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_14) {
+               if(var1.opcode == ServerOpcode.OPCODE_14) {
                   var22 = var4.readUnsignedByte();
                   class_171.method_3702(var22);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_49) {
+               if(var1.opcode == ServerOpcode.OPCODE_49) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -4530,22 +2928,22 @@ public final class client extends GameApplet implements class_16 {
                   class_396 var73 = class_255.field_2887.method_4953(var4, (byte)66);
                   class_144.field_1824.field_4102.method_54(1815237159 * var73.field_4255, var73.field_4254, -1681668792);
                   field_1687[(field_1628 += 430970447) * 1843609775 - 1 & 31] = 1815237159 * var73.field_4255;
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_35 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_35 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
 
                   class_208.field_2413.method_3321(var4, var1.field_2380 * -83736147);
                   field_1612 = field_1602 * 141937247;
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_74) {
+               if(var1.opcode == ServerOpcode.OPCODE_74) {
                   field_1537 = true;
                   class_74.field_592 = var4.readUnsignedByte() * 770710025;
                   class_342.field_3898 = var4.readUnsignedByte() * 541685037;
@@ -4562,21 +2960,21 @@ public final class client extends GameApplet implements class_16 {
                      class_172.field_2159 = (class_205.method_4113(1681670171 * GameMouseListener.field_1719, -2115685501 * class_205.field_2393, 1115122599 * class_115.field_1289, -747690385) - class_277.field_3222 * -941868037) * -1768191443;
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_67 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_67 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
 
                   class_154.method_3252(true, var4, -964489928);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_72) {
+               if(var1.opcode == ServerOpcode.OPCODE_72) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -4595,14 +2993,14 @@ public final class client extends GameApplet implements class_16 {
                      field_1562 = 0;
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
                class_48 var8;
                class_37 var37;
                boolean var85;
-               if(var1.field_2376 == ServerOpcode.OPCODE_43) {
+               if(var1.opcode == ServerOpcode.OPCODE_43) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -4666,21 +3064,21 @@ public final class client extends GameApplet implements class_16 {
                      class_177.method_3761(1338880923 * field_1412, 1, 684555967);
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_10 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_10 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
 
                   class_355.method_6240(var4.method_139(-391631059), -1148380845);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_94) {
+               if(var1.opcode == ServerOpcode.OPCODE_94) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -4704,11 +3102,11 @@ public final class client extends GameApplet implements class_16 {
                      field_1583 = null;
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_29) {
+               if(var1.opcode == ServerOpcode.OPCODE_29) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -4721,14 +3119,14 @@ public final class client extends GameApplet implements class_16 {
                      class_177.method_3761(field_1412 * 1338880923, 0, 877549053);
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
                long var57;
                class_32 var87;
                class_364 var89;
-               if(ServerOpcode.OPCODE_27 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_27 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -4822,12 +3220,12 @@ public final class client extends GameApplet implements class_16 {
                      }
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
                boolean var84;
-               if(ServerOpcode.OPCODE_5 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_5 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -4850,13 +3248,13 @@ public final class client extends GameApplet implements class_16 {
                      class_254.method_4900(var42, (byte)47);
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_1) {
+               if(var1.opcode == ServerOpcode.OPCODE_1) {
                   class_144.field_1824 = null;
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
@@ -4867,7 +3265,7 @@ public final class client extends GameApplet implements class_16 {
                String var62;
                class_160 var82;
                class_359 var86;
-               if(ServerOpcode.OPCODE_9 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_9 == var1.opcode) {
                   var24 = var4.method_139(-391631059);
                   var32 = var4.readLong();
                   var28 = (long)var4.readShort();
@@ -4928,17 +3326,17 @@ public final class client extends GameApplet implements class_16 {
                      }
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_70 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_70 == var1.opcode) {
                   class_41.method_482(class_256.field_2893, 236848204);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_79) {
+               if(var1.opcode == ServerOpcode.OPCODE_79) {
                   var24 = var4.method_139(-391631059);
                   var23 = var4.method_180();
                   var42 = class_71.method_1047(var23);
@@ -4951,11 +3349,11 @@ public final class client extends GameApplet implements class_16 {
                      class_254.method_4900(var42, (byte)76);
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_64) {
+               if(var1.opcode == ServerOpcode.OPCODE_64) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -4983,11 +3381,11 @@ public final class client extends GameApplet implements class_16 {
                      class_254.method_4900(var42, (byte)96);
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_6) {
+               if(var1.opcode == ServerOpcode.OPCODE_6) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -5002,21 +3400,21 @@ public final class client extends GameApplet implements class_16 {
                      class_90.method_1605(2124366444);
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_78 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_78 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
 
                   class_56.method_589((byte)20);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return false;
                }
 
-               if(ServerOpcode.OPCODE_37 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_37 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -5031,23 +3429,23 @@ public final class client extends GameApplet implements class_16 {
                   var3.close(1695965651);
                   var3 = null;
                   class_113.method_2241(var69, 1992005131);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return false;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_85) {
+               if(var1.opcode == ServerOpcode.OPCODE_85) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
 
                   field_1432 = var4.readShort() * -469289334;
                   field_1435 = -664131431 * field_1602;
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
                String var52;
-               if(var1.field_2376 == ServerOpcode.OPCODE_65) {
+               if(var1.opcode == ServerOpcode.OPCODE_65) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -5058,12 +3456,12 @@ public final class client extends GameApplet implements class_16 {
                   Buffer var65 = var92;
                   var52 = var65.method_139(-391631059);
                   class_195.method_3988(var52, true, false, -574895472);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
                byte var21;
-               if(ServerOpcode.OPCODE_39 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_39 == var1.opcode) {
                   class_198.method_4017();
                   var21 = var4.readByte();
                   if(1 == var1.field_2380 * -83736147) {
@@ -5081,7 +3479,7 @@ public final class client extends GameApplet implements class_16 {
                         class_88.field_856 = null;
                      }
 
-                     var1.field_2376 = null;
+                     var1.opcode = null;
                      return true;
                   }
 
@@ -5094,11 +3492,11 @@ public final class client extends GameApplet implements class_16 {
                      class_88.field_856 = var91;
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_24) {
+               if(var1.opcode == ServerOpcode.OPCODE_24) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -5143,11 +3541,11 @@ public final class client extends GameApplet implements class_16 {
                      }
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_90 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_90 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -5168,21 +3566,21 @@ public final class client extends GameApplet implements class_16 {
                      }
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_58 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_58 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
 
                   class_275.method_5084(var4, (byte)14);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_92) {
+               if(var1.opcode == ServerOpcode.OPCODE_92) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -5254,42 +3652,42 @@ public final class client extends GameApplet implements class_16 {
 
                   class_222.method_4278(1716136591);
                   field_1658[(field_1606 += 830110885) * 102304557 - 1 & 31] = var23 & 32767;
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_0) {
+               if(var1.opcode == ServerOpcode.OPCODE_0) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
 
                   class_370.method_6601(false, var1.networkBuffer, -1735016520);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_26) {
+               if(var1.opcode == ServerOpcode.OPCODE_26) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
 
                   class_160.method_3378(var4, -83736147 * var1.field_2380, -1580432233);
                   class_103.method_1930(-1750320042);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_69 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_69 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
 
                   class_41.method_482(class_256.field_2888, 236848204);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_15 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_15 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -5297,11 +3695,11 @@ public final class client extends GameApplet implements class_16 {
                   class_222.method_4278(1141668651);
                   field_1674 = var4.readUnsignedByte() * -1003772217;
                   field_1435 = field_1602 * -664131431;
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_75) {
+               if(var1.opcode == ServerOpcode.OPCODE_75) {
                   var22 = var4.readShort();
                   if('\uffff' == var22) {
                      if(var2 >= 477492867) {
@@ -5343,11 +3741,11 @@ public final class client extends GameApplet implements class_16 {
                      var89.method_6525(var87, var41);
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_30 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_30 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -5361,31 +3759,31 @@ public final class client extends GameApplet implements class_16 {
                   var50.networkBuffer.method_145(field_1382 * -1080528073);
                   var50.networkBuffer.method_148(var7);
                   field_1463.method_4079(var50);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_86 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_86 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
 
                   class_370.method_6601(true, var1.networkBuffer, -390498206);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_32) {
+               if(var1.opcode == ServerOpcode.OPCODE_32) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
 
                   class_41.method_482(class_256.field_2890, 236848204);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_84) {
+               if(var1.opcode == ServerOpcode.OPCODE_84) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -5414,11 +3812,11 @@ public final class client extends GameApplet implements class_16 {
                   }
 
                   field_1524 = 1086034561 * field_1602;
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_57) {
+               if(var1.opcode == ServerOpcode.OPCODE_57) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -5433,12 +3831,12 @@ public final class client extends GameApplet implements class_16 {
                      field_1469[var22] = false;
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
                class_37 var27;
-               if(ServerOpcode.OPCODE_53 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_53 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -5463,7 +3861,7 @@ public final class client extends GameApplet implements class_16 {
                         }
 
                         var27.field_144 = 0;
-                        var1.field_2376 = null;
+                        var1.opcode = null;
                         return true;
                      }
 
@@ -5507,21 +3905,21 @@ public final class client extends GameApplet implements class_16 {
                      class_254.method_4900(var27, (byte)21);
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_80 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_80 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
 
                   field_1655 = var4.readUnsignedByte() * -851795329;
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_45) {
+               if(var1.opcode == ServerOpcode.OPCODE_45) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -5529,7 +3927,7 @@ public final class client extends GameApplet implements class_16 {
                   var24 = var4.method_139(-391631059);
                   var6 = class_68.method_868(class_135.method_2942(class_38.method_449(var4), -2047813228));
                   class_149.method_3135(6, var24, var6);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
@@ -5538,7 +3936,7 @@ public final class client extends GameApplet implements class_16 {
                String var61;
                class_44 var76;
                byte var83;
-               if(var1.field_2376 == ServerOpcode.OPCODE_19) {
+               if(var1.opcode == ServerOpcode.OPCODE_19) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -5600,18 +3998,18 @@ public final class client extends GameApplet implements class_16 {
                      class_54.method_585(var60, "", var61, var55.field_321, -557983847);
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_8) {
+               if(var1.opcode == ServerOpcode.OPCODE_8) {
                   class_247.field_2745 = var4.method_159() * 1044884017;
                   class_153.field_1924 = var4.method_113() * 1925598893;
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_62) {
+               if(var1.opcode == ServerOpcode.OPCODE_62) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -5638,12 +4036,12 @@ public final class client extends GameApplet implements class_16 {
                      class_254.method_4900(var37, (byte)39);
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
                class_37 var46;
-               if(ServerOpcode.OPCODE_61 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_61 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -5653,11 +4051,11 @@ public final class client extends GameApplet implements class_16 {
                   var46.field_144 = 555775473;
                   var46.field_145 = class_164.field_2044.field_1143.method_5093(-1167283796) * -252507035;
                   class_254.method_4900(var46, (byte)45);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_63 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_63 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -5702,11 +4100,11 @@ public final class client extends GameApplet implements class_16 {
                      class_149.method_3135(var22, var52, var35);
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_60) {
+               if(var1.opcode == ServerOpcode.OPCODE_60) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -5714,22 +4112,22 @@ public final class client extends GameApplet implements class_16 {
                   class_222.method_4278(1990492828);
                   field_1542 = var4.method_269(-1542485131) * -927806369;
                   field_1435 = field_1602 * -664131431;
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_91) {
+               if(var1.opcode == ServerOpcode.OPCODE_91) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
 
                   field_1593 = var4.readUnsignedByte() * -1816728115;
                   field_1638 = var4.method_113() * 1186588677;
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_66) {
+               if(var1.opcode == ServerOpcode.OPCODE_66) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -5743,22 +4141,22 @@ public final class client extends GameApplet implements class_16 {
                      class_279.method_5149(var4, var4.offset * -442398587 - 28, 1292576632);
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_40 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_40 == var1.opcode) {
                   var22 = var4.readShort();
                   if('\uffff' == var22) {
                      var22 = -1;
                   }
 
                   class_125.method_2288(var22, (byte)-43);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_25 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_25 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -5774,11 +4172,11 @@ public final class client extends GameApplet implements class_16 {
 
                   var23 = var4.method_175();
                   class_294.method_5314(var22, -1454161058);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_54) {
+               if(var1.opcode == ServerOpcode.OPCODE_54) {
                   var24 = var4.method_139(-391631059);
                   var23 = var4.method_113();
                   var7 = var4.method_237();
@@ -5807,11 +4205,11 @@ public final class client extends GameApplet implements class_16 {
                      field_1447[var10001] = var75;
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_12) {
+               if(var1.opcode == ServerOpcode.OPCODE_12) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -5825,11 +4223,11 @@ public final class client extends GameApplet implements class_16 {
                   field_1667[var22] = var7;
                   field_1668[var22] = var30;
                   field_1669[var22] = 0;
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_83) {
+               if(var1.opcode == ServerOpcode.OPCODE_83) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -5886,11 +4284,11 @@ public final class client extends GameApplet implements class_16 {
                      }
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_23 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_23 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -5919,11 +4317,11 @@ public final class client extends GameApplet implements class_16 {
                      }
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_22) {
+               if(var1.opcode == ServerOpcode.OPCODE_22) {
                   var22 = var4.method_179();
                   var46 = class_71.method_1047(var22);
 
@@ -5933,11 +4331,11 @@ public final class client extends GameApplet implements class_16 {
                   }
 
                   class_254.method_4900(var46, (byte)30);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_46 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_46 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -5965,22 +4363,22 @@ public final class client extends GameApplet implements class_16 {
                   }
 
                   field_1450[(field_1608 += 1721561511) * 28091927 - 1 & 31] = var23;
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_82 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_82 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
 
                   class_208.field_2413.method_3328();
                   field_1612 = 141937247 * field_1602;
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_51 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_51 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -5990,11 +4388,11 @@ public final class client extends GameApplet implements class_16 {
                   var7 = var4.method_170();
                   var27 = class_71.method_1047(var22);
                   var27.field_157 = (var7 + (var23 << 16)) * -355998211;
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_31) {
+               if(var1.opcode == ServerOpcode.OPCODE_31) {
                   var22 = var4.method_180();
                   var23 = var4.readShort();
                   class_282.field_3247[var23] = var22;
@@ -6008,11 +4406,11 @@ public final class client extends GameApplet implements class_16 {
 
                   class_147.method_3111(var23, 877505841);
                   field_1603[(field_1439 += -27061103) * 1149971569 - 1 & 31] = var23;
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_71 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_71 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -6094,11 +4492,11 @@ public final class client extends GameApplet implements class_16 {
 
                   class_222.method_4278(1728610756);
                   field_1658[(field_1606 += 830110885) * 102304557 - 1 & 31] = var23 & 32767;
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_28) {
+               if(var1.opcode == ServerOpcode.OPCODE_28) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -6106,11 +4504,11 @@ public final class client extends GameApplet implements class_16 {
                   var22 = var4.readShortAlt();
                   class_177.method_3783(var22);
                   field_1658[(field_1606 += 830110885) * 102304557 - 1 & 31] = var22 & 32767;
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_93 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_93 == var1.opcode) {
                   if(class_233.field_2617 != null) {
                      if(var2 >= 477492867) {
                         throw new IllegalStateException();
@@ -6120,11 +4518,11 @@ public final class client extends GameApplet implements class_16 {
                   }
 
                   class_240.method_4613();
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_55) {
+               if(var1.opcode == ServerOpcode.OPCODE_55) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -6147,21 +4545,21 @@ public final class client extends GameApplet implements class_16 {
 
                   class_222.method_4278(788556516);
                   field_1439 += -865955296;
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_87) {
+               if(var1.opcode == ServerOpcode.OPCODE_87) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
 
                   class_154.method_3252(false, var4, 1306073803);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_2 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_2 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -6179,11 +4577,11 @@ public final class client extends GameApplet implements class_16 {
 
                   class_147.method_3111(var22, -721966816);
                   field_1603[(field_1439 += -27061103) * 1149971569 - 1 & 31] = var22;
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_73 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_73 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -6191,17 +4589,17 @@ public final class client extends GameApplet implements class_16 {
                   class_208.field_2413.field_1995.method_6164(var4, -83736147 * var1.field_2380, (short)-13688);
                   class_163.method_3423(642993573);
                   field_1612 = 141937247 * field_1602;
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_44 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_44 == var1.opcode) {
                   class_41.method_482(class_256.field_2892, 236848204);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_13 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_13 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -6273,11 +4671,11 @@ public final class client extends GameApplet implements class_16 {
                      }
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_42 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_42 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -6363,11 +4761,11 @@ public final class client extends GameApplet implements class_16 {
                      }
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_16) {
+               if(var1.opcode == ServerOpcode.OPCODE_16) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -6384,11 +4782,11 @@ public final class client extends GameApplet implements class_16 {
                   }
 
                   var29.method_3813(var33, 205429833);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_7 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_7 == var1.opcode) {
                   class_198.method_4017();
                   var21 = var4.readByte();
                   class_167 var78 = new class_167(var4);
@@ -6405,11 +4803,11 @@ public final class client extends GameApplet implements class_16 {
                   }
 
                   var25.method_3601(var26, -184881258);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_3 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_3 == var1.opcode) {
                   label2166: {
                      var22 = var4.method_227(-1905667053);
                      var23 = var4.method_163();
@@ -6442,11 +4840,11 @@ public final class client extends GameApplet implements class_16 {
                      }
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_48 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_48 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -6474,11 +4872,11 @@ public final class client extends GameApplet implements class_16 {
                   }
 
                   class_120.method_2264(var7, var23, var22, 551565024);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_36 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_36 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -6497,11 +4895,11 @@ public final class client extends GameApplet implements class_16 {
                      field_1495[var23] = true;
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(ServerOpcode.OPCODE_38 == var1.field_2376) {
+               if(ServerOpcode.OPCODE_38 == var1.opcode) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -6526,17 +4924,17 @@ public final class client extends GameApplet implements class_16 {
                   }
 
                   class_240.method_4613();
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_33) {
+               if(var1.opcode == ServerOpcode.OPCODE_33) {
                   class_41.method_482(class_256.field_2896, 236848204);
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
-               if(var1.field_2376 == ServerOpcode.OPCODE_89) {
+               if(var1.opcode == ServerOpcode.OPCODE_89) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
@@ -6558,7 +4956,7 @@ public final class client extends GameApplet implements class_16 {
                         class_147.field_1865 = null;
                      }
 
-                     var1.field_2376 = null;
+                     var1.opcode = null;
                      return true;
                   }
 
@@ -6575,17 +4973,17 @@ public final class client extends GameApplet implements class_16 {
                      class_147.field_1865 = var76;
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
                var10000 = (new StringBuilder()).append("");
-               if(var1.field_2376 != null) {
+               if(var1.opcode != null) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
 
-                  var10001 = -1581409905 * var1.field_2376.field_2964;
+                  var10001 = -1581409905 * var1.opcode.field_2964;
                } else {
                   var10001 = -1;
                }
@@ -6618,12 +5016,12 @@ public final class client extends GameApplet implements class_16 {
                class_60.method_638(-552402310);
             } catch (Exception var19) {
                var10000 = (new StringBuilder()).append("");
-               if(var1.field_2376 != null) {
+               if(var1.opcode != null) {
                   if(var2 >= 477492867) {
                      throw new IllegalStateException();
                   }
 
-                  var10001 = var1.field_2376.field_2964 * -1581409905;
+                  var10001 = var1.opcode.field_2964 * -1581409905;
                } else {
                   var10001 = -1;
                }
@@ -22237,7 +20635,7 @@ public final class client extends GameApplet implements class_16 {
          int var6;
          try {
             int var21;
-            if(var1.field_2376 == null) {
+            if(var1.opcode == null) {
                if(var1.field_2378) {
                   if(!var2.method_4118(1, -211935081)) {
                      return false;
@@ -22265,8 +20663,8 @@ public final class client extends GameApplet implements class_16 {
                   throw new IOException(var21 + " " + var3.offset * -370921248);
                }
 
-               var1.field_2376 = var4[var21];
-               var1.field_2380 = 1568909879 * var1.field_2376.field_3027;
+               var1.opcode = var4[var21];
+               var1.field_2380 = 1568909879 * var1.opcode.field_3027;
             }
 
             if(-83736147 * var1.field_2380 == -1) {
@@ -22298,12 +20696,12 @@ public final class client extends GameApplet implements class_16 {
             field_1468.method_5907();
             var1.field_2370 = var1.field_2382;
             var1.field_2382 = var1.field_2381;
-            var1.field_2381 = var1.field_2376;
+            var1.field_2381 = var1.opcode;
             int var20;
             int var28;
             int var29;
             int var36;
-            if(ServerOpcode.OPCODE_47 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_47 == var1.opcode) {
                var20 = var3.readShort();
                var21 = var3.readInt();
                var6 = var20 >> 10 & 31;
@@ -22316,12 +20714,12 @@ public final class client extends GameApplet implements class_16 {
                   class_254.method_4900(var56, (byte)68);
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
             boolean var63;
-            if(ServerOpcode.OPCODE_34 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_34 == var1.opcode) {
                var63 = var3.method_119(1928796373);
                if(var63) {
                   if(class_183.field_2249 == null) {
@@ -22332,11 +20730,11 @@ public final class client extends GameApplet implements class_16 {
                   class_183.field_2249 = null;
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_56) {
+            if(var1.opcode == ServerOpcode.OPCODE_56) {
                class_153.field_1924 = var3.readUnsignedByte() * 32019331;
                class_247.field_2745 = var3.readUnsignedByte() * 1044884017;
 
@@ -22346,18 +20744,18 @@ public final class client extends GameApplet implements class_16 {
                   class_41.method_482(var71, 236848204);
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_50 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_50 == var1.opcode) {
                class_41.method_482(class_256.field_2895, 236848204);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
             String var22;
-            if(ServerOpcode.OPCODE_81 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_81 == var1.opcode) {
                var22 = var3.method_139(-391631059);
                Object[] var70 = new Object[var22.length() + 1];
 
@@ -22374,11 +20772,11 @@ public final class client extends GameApplet implements class_16 {
                class_45 var69 = var90;
                var69.field_337 = var70;
                class_203.method_4099(var69);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_59 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_59 == var1.opcode) {
                field_1433 = var3.readUnsignedByte() * 1238805372;
                if(1 == field_1433 * 1509870976) {
                   field_1587 = var3.readShort() * 1894815354;
@@ -22420,32 +20818,32 @@ public final class client extends GameApplet implements class_16 {
                   field_1691 = var3.readShort() * 498843285;
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_11 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_11 == var1.opcode) {
                class_41.method_482(class_256.field_2891, 236848204);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
             class_370 var88;
-            if(ServerOpcode.OPCODE_68 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_68 == var1.opcode) {
                var88 = new class_370(class_255.field_2887);
                class_144.field_1824 = var88;
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_77 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_77 == var1.opcode) {
                var20 = var3.readUnsignedByte();
                class_122.method_2273(var20);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return false;
             }
 
-            if(ServerOpcode.OPCODE_52 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_52 == var1.opcode) {
                var20 = var3.readUnsignedByte();
                class_312 var80;
                class_312[] var89;
@@ -22462,33 +20860,33 @@ public final class client extends GameApplet implements class_16 {
                }
 
                field_1616 = 697255233 * field_1602;
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_41 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_41 == var1.opcode) {
                class_45.field_338 = class_198.method_4020(var3.readUnsignedByte(), 1654171188);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_18) {
+            if(var1.opcode == ServerOpcode.OPCODE_18) {
                class_41.method_482(class_256.field_2889, 236848204);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_4) {
+            if(var1.opcode == ServerOpcode.OPCODE_4) {
                var20 = var3.readShort();
                var21 = var3.readUnsignedByte();
                var6 = var3.readShort();
                NetworkInput.method_6259(var20, var21, var6, -956221698);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
             class_37 var40;
-            if(ServerOpcode.OPCODE_17 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_17 == var1.opcode) {
                var20 = var3.readInt();
                var21 = var3.readShort();
                var40 = class_71.method_1047(var20);
@@ -22498,12 +20896,12 @@ public final class client extends GameApplet implements class_16 {
                   class_254.method_4900(var40, (byte)29);
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
             int var43;
-            if(var1.field_2376 == ServerOpcode.OPCODE_88) {
+            if(var1.opcode == ServerOpcode.OPCODE_88) {
                field_1537 = true;
                class_350.field_3944 = var3.readUnsignedByte() * -627283991;
                class_117.field_1304 = var3.readUnsignedByte() * -615922221;
@@ -22529,11 +20927,11 @@ public final class client extends GameApplet implements class_16 {
                   }
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_76) {
+            if(var1.opcode == ServerOpcode.OPCODE_76) {
                var20 = var3.method_179();
                var21 = var3.method_292();
                var40 = class_71.method_1047(var20);
@@ -22544,30 +20942,30 @@ public final class client extends GameApplet implements class_16 {
                   class_254.method_4900(var40, (byte)12);
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_21) {
+            if(var1.opcode == ServerOpcode.OPCODE_21) {
                class_41.method_482(class_256.field_2897, 236848204);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_20) {
+            if(var1.opcode == ServerOpcode.OPCODE_20) {
                class_41.method_482(class_256.field_2894, 236848204);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_14) {
+            if(var1.opcode == ServerOpcode.OPCODE_14) {
                var20 = var3.readUnsignedByte();
                class_171.method_3702(var20);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_49) {
+            if(var1.opcode == ServerOpcode.OPCODE_49) {
                if(class_144.field_1824 == null) {
                   var88 = new class_370(class_255.field_2887);
                   class_144.field_1824 = var88;
@@ -22576,18 +20974,18 @@ public final class client extends GameApplet implements class_16 {
                class_396 var72 = class_255.field_2887.method_4953(var3, (byte)87);
                class_144.field_1824.field_4102.method_54(-1260492598 * var72.field_4255, var72.field_4254, -782734712);
                field_1687[(field_1628 += -256362274) * -48285057 - 1 & 261937719] = -1879812781 * var72.field_4255;
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_35 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_35 == var1.opcode) {
                class_208.field_2413.method_3321(var3, var1.field_2380 * -1376340580);
                field_1612 = field_1602 * -1141528114;
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_74) {
+            if(var1.opcode == ServerOpcode.OPCODE_74) {
                field_1537 = true;
                class_74.field_592 = var3.readUnsignedByte() * 506687243;
                class_342.field_3898 = var3.readUnsignedByte() * 400977418;
@@ -22600,17 +20998,17 @@ public final class client extends GameApplet implements class_16 {
                   class_172.field_2159 = (class_205.method_4113(1445228081 * GameMouseListener.field_1719, -2115685501 * class_205.field_2393, 1493087171 * class_115.field_1289, 866218709) - class_277.field_3222 * -941868037) * -1768191443;
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_67 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_67 == var1.opcode) {
                class_154.method_3252(true, var3, 830277979);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_72) {
+            if(var1.opcode == ServerOpcode.OPCODE_72) {
                field_1520 = var3.readUnsignedByte() * 819547401;
                if(747638132 * field_1520 == -254909962) {
                   field_1520 = 0;
@@ -22621,13 +21019,13 @@ public final class client extends GameApplet implements class_16 {
                   field_1562 = 0;
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
             class_48 var7;
             class_37 var35;
-            if(var1.field_2376 == ServerOpcode.OPCODE_43) {
+            if(var1.opcode == ServerOpcode.OPCODE_43) {
                var20 = var3.method_180();
                var21 = var3.method_180();
                class_48 var65 = (class_48)field_1578.method_6523((long)var21);
@@ -22656,17 +21054,17 @@ public final class client extends GameApplet implements class_16 {
                   class_177.method_3761(1254125033 * field_1412, 1, -262341379);
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_10 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_10 == var1.opcode) {
                class_355.method_6240(var3.method_139(-391631059), 297709207);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_94) {
+            if(var1.opcode == ServerOpcode.OPCODE_94) {
                var20 = var3.readInt();
                class_48 var66 = (class_48)field_1578.method_6523((long)var20);
                if(var66 != null) {
@@ -22678,23 +21076,23 @@ public final class client extends GameApplet implements class_16 {
                   field_1583 = null;
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_29) {
+            if(var1.opcode == ServerOpcode.OPCODE_29) {
                if(188298202 * field_1412 != -1) {
                   class_177.method_3761(field_1412 * 1338880923, 0, 1184964175);
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
             long var55;
             class_32 var78;
             class_364 var82;
-            if(ServerOpcode.OPCODE_27 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_27 == var1.opcode) {
                var20 = var1.field_2380 * -83736147 + var3.offset * -442398587;
                var21 = var3.readShort();
                var6 = var3.readShort();
@@ -22750,11 +21148,11 @@ public final class client extends GameApplet implements class_16 {
                   }
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_5 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_5 == var1.opcode) {
                var63 = var3.method_113() == 1;
                var21 = var3.method_163();
                var40 = class_71.method_1047(var21);
@@ -22763,13 +21161,13 @@ public final class client extends GameApplet implements class_16 {
                   class_254.method_4900(var40, (byte)120);
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_1) {
+            if(var1.opcode == ServerOpcode.OPCODE_1) {
                class_144.field_1824 = null;
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
@@ -22780,7 +21178,7 @@ public final class client extends GameApplet implements class_16 {
             long var39;
             String var60;
             class_160 var77;
-            if(ServerOpcode.OPCODE_9 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_9 == var1.opcode) {
                var22 = var3.method_139(-391631059);
                var30 = var3.readLong();
                var26 = (long)var3.readShort();
@@ -22815,17 +21213,17 @@ public final class client extends GameApplet implements class_16 {
                   }
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_70 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_70 == var1.opcode) {
                class_41.method_482(class_256.field_2893, 236848204);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_79) {
+            if(var1.opcode == ServerOpcode.OPCODE_79) {
                var22 = var3.method_139(-391631059);
                var21 = var3.method_180();
                var40 = class_71.method_1047(var21);
@@ -22834,11 +21232,11 @@ public final class client extends GameApplet implements class_16 {
                   class_254.method_4900(var40, (byte)82);
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_64) {
+            if(var1.opcode == ServerOpcode.OPCODE_64) {
                var20 = var3.method_168();
                var21 = var3.method_163();
                var40 = class_71.method_1047(var21);
@@ -22848,28 +21246,28 @@ public final class client extends GameApplet implements class_16 {
                   class_254.method_4900(var40, (byte)110);
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_6) {
+            if(var1.opcode == ServerOpcode.OPCODE_6) {
                var20 = var3.readInt();
                if(var20 != field_1499 * 103769661) {
                   field_1499 = 711341221 * var20;
                   class_90.method_1605(809310843);
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_78 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_78 == var1.opcode) {
                class_56.method_589((byte)-61);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return false;
             }
 
-            if(ServerOpcode.OPCODE_37 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_37 == var1.opcode) {
                class_149 var86 = new class_149();
                class_149 var68 = var86;
                var68.field_1885 = var3.method_139(-391631059);
@@ -22880,31 +21278,31 @@ public final class client extends GameApplet implements class_16 {
                var2.close(1831757639);
                var2 = null;
                class_113.method_2241(var68, 1973742776);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return false;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_85) {
+            if(var1.opcode == ServerOpcode.OPCODE_85) {
                field_1432 = var3.readShort() * -469289334;
                field_1435 = -664131431 * field_1602;
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
             String var50;
-            if(var1.field_2376 == ServerOpcode.OPCODE_65) {
+            if(var1.opcode == ServerOpcode.OPCODE_65) {
                byte[] var67 = new byte[728832300 * var1.field_2380];
                var3.method_360(var67, 0, var67.length, (short)255);
                Buffer var85 = new Buffer(var67);
                Buffer var64 = var85;
                var50 = var64.method_139(-391631059);
                class_195.method_3988(var50, true, false, 948313544);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
             byte var19;
-            if(ServerOpcode.OPCODE_39 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_39 == var1.opcode) {
                class_198.method_4017();
                var19 = var3.readByte();
                if(1 == var1.field_2380 * -1266700563) {
@@ -22914,7 +21312,7 @@ public final class client extends GameApplet implements class_16 {
                      class_88.field_856 = null;
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
@@ -22927,11 +21325,11 @@ public final class client extends GameApplet implements class_16 {
                   class_88.field_856 = var84;
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_24) {
+            if(var1.opcode == ServerOpcode.OPCODE_24) {
                var20 = var3.method_163();
                var21 = var3.method_168();
                var40 = class_71.method_1047(var20);
@@ -22950,11 +21348,11 @@ public final class client extends GameApplet implements class_16 {
                   }
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_90 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_90 == var1.opcode) {
                for(var20 = 0; var20 < class_282.field_3246.length; ++var20) {
                   if(class_282.field_3246[var20] != class_282.field_3247[var20]) {
                      class_282.field_3246[var20] = class_282.field_3247[var20];
@@ -22963,17 +21361,17 @@ public final class client extends GameApplet implements class_16 {
                   }
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_58 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_58 == var1.opcode) {
                class_275.method_5084(var3, (byte)14);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_92) {
+            if(var1.opcode == ServerOpcode.OPCODE_92) {
                var20 = var3.readInt();
                var21 = var3.readShort();
                if(var20 < -70000) {
@@ -23009,38 +21407,38 @@ public final class client extends GameApplet implements class_16 {
 
                class_222.method_4278(955476364);
                field_1658[(field_1606 += 1231318917) * 102304557 - 1 & 1297404703] = var21 & -146719909;
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_0) {
+            if(var1.opcode == ServerOpcode.OPCODE_0) {
                class_370.method_6601(false, var1.networkBuffer, -812095377);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_26) {
+            if(var1.opcode == ServerOpcode.OPCODE_26) {
                class_160.method_3378(var3, -83736147 * var1.field_2380, -1098647306);
                class_103.method_1930(-1793821012);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_69 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_69 == var1.opcode) {
                class_41.method_482(class_256.field_2888, 236848204);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_15 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_15 == var1.opcode) {
                class_222.method_4278(1134989619);
                field_1674 = var3.readUnsignedByte() * 816907933;
                field_1435 = field_1602 * -664131431;
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_75) {
+            if(var1.opcode == ServerOpcode.OPCODE_75) {
                var20 = var3.readShort();
                if(-1118737763 == var20) {
                   var20 = -1;
@@ -23066,11 +21464,11 @@ public final class client extends GameApplet implements class_16 {
                   var82.method_6525(var78, var39);
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_30 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_30 == var1.opcode) {
                var20 = var3.readInt();
                var21 = var3.readInt();
                var6 = class_135.method_2947(-56748890);
@@ -23080,23 +21478,23 @@ public final class client extends GameApplet implements class_16 {
                var48.networkBuffer.method_145(field_1382 * 2046458417);
                var48.networkBuffer.method_148(var6);
                field_1463.method_4079(var48);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_86 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_86 == var1.opcode) {
                class_370.method_6601(true, var1.networkBuffer, -2121846170);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_32) {
+            if(var1.opcode == ServerOpcode.OPCODE_32) {
                class_41.method_482(class_256.field_2890, 236848204);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_84) {
+            if(var1.opcode == ServerOpcode.OPCODE_84) {
                var63 = var3.readUnsignedByte() == 1;
                if(var63) {
                   class_37.field_242 = (class_87.method_1516((byte)1) - var3.readLong()) * -3858876477054660781L;
@@ -23107,23 +21505,23 @@ public final class client extends GameApplet implements class_16 {
                }
 
                field_1524 = -1283274434 * field_1602;
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_57) {
+            if(var1.opcode == ServerOpcode.OPCODE_57) {
                field_1537 = false;
 
                for(var20 = 0; var20 < 5; ++var20) {
                   field_1469[var20] = false;
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
             class_37 var25;
-            if(ServerOpcode.OPCODE_53 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_53 == var1.opcode) {
                var20 = var3.method_163();
                var21 = var3.method_180();
                var6 = var3.readShortAlt();
@@ -23136,7 +21534,7 @@ public final class client extends GameApplet implements class_16 {
                if(!var25.field_100) {
                   if(-1 == var6) {
                      var25.field_144 = 0;
-                     var1.field_2376 = null;
+                     var1.opcode = null;
                      return true;
                   }
 
@@ -23172,27 +21570,27 @@ public final class client extends GameApplet implements class_16 {
                   class_254.method_4900(var25, (byte)123);
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_80 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_80 == var1.opcode) {
                field_1655 = var3.readUnsignedByte() * -695483270;
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_45) {
+            if(var1.opcode == ServerOpcode.OPCODE_45) {
                var22 = var3.method_139(-391631059);
                var5 = class_68.method_868(class_135.method_2942(class_38.method_449(var3), -323873514));
                class_149.method_3135(6, var22, var5);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
             int var57;
             String var59;
-            if(var1.field_2376 == ServerOpcode.OPCODE_19) {
+            if(var1.opcode == ServerOpcode.OPCODE_19) {
                var19 = var3.readByte();
                var30 = (long)var3.readShort();
                var26 = (long)var3.method_134();
@@ -23218,18 +21616,18 @@ public final class client extends GameApplet implements class_16 {
                   class_54.method_585(var61, "", var59, var53.field_321, 1804066778);
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_8) {
+            if(var1.opcode == ServerOpcode.OPCODE_8) {
                class_247.field_2745 = var3.method_159() * 1044884017;
                class_153.field_1924 = var3.method_113() * 626913591;
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_62) {
+            if(var1.opcode == ServerOpcode.OPCODE_62) {
                var20 = var3.method_168();
                var21 = var3.method_170();
                var6 = var3.readShortAlt();
@@ -23242,22 +21640,22 @@ public final class client extends GameApplet implements class_16 {
                   class_254.method_4900(var35, (byte)79);
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
             class_37 var45;
-            if(ServerOpcode.OPCODE_61 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_61 == var1.opcode) {
                var20 = var3.method_180();
                var45 = class_71.method_1047(var20);
                var45.field_144 = -258360752;
                var45.field_145 = class_164.field_2044.field_1143.method_5093(-1167283796) * -252507035;
                class_254.method_4900(var45, (byte)47);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_63 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_63 == var1.opcode) {
                var20 = var3.method_144();
                boolean var54 = var3.readUnsignedByte() == 1;
                var50 = "";
@@ -23276,47 +21674,47 @@ public final class client extends GameApplet implements class_16 {
                   class_149.method_3135(var20, var50, var33);
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_60) {
+            if(var1.opcode == ServerOpcode.OPCODE_60) {
                class_222.method_4278(1056085885);
                field_1542 = var3.method_269(-1542485131) * -1313640986;
                field_1435 = field_1602 * -1055487325;
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_91) {
+            if(var1.opcode == ServerOpcode.OPCODE_91) {
                field_1593 = var3.readUnsignedByte() * -1816728115;
                field_1638 = var3.method_113() * 1186588677;
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_66) {
+            if(var1.opcode == ServerOpcode.OPCODE_66) {
                var3.offset += -21230002;
                if(var3.method_155(-1524594198)) {
                   class_279.method_5149(var3, var3.offset * -442398587 - 28, 1191471722);
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_40 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_40 == var1.opcode) {
                var20 = var3.readShort();
                if(1630511018 == var20) {
                   var20 = -1;
                }
 
                class_125.method_2288(var20, (byte)-29);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_25 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_25 == var1.opcode) {
                var20 = var3.readShortAlt();
                if(var20 == 1404215159) {
                   var20 = -1;
@@ -23324,11 +21722,11 @@ public final class client extends GameApplet implements class_16 {
 
                var21 = var3.method_175();
                class_294.method_5314(var20, 1959478747);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_54) {
+            if(var1.opcode == ServerOpcode.OPCODE_54) {
                var22 = var3.method_139(-391631059);
                var21 = var3.method_113();
                var6 = var3.method_237();
@@ -23341,11 +21739,11 @@ public final class client extends GameApplet implements class_16 {
                   field_1447[var21 - 1] = var6 == 0;
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_12) {
+            if(var1.opcode == ServerOpcode.OPCODE_12) {
                var20 = var3.readUnsignedByte();
                var21 = var3.readUnsignedByte();
                var6 = var3.readUnsignedByte();
@@ -23355,11 +21753,11 @@ public final class client extends GameApplet implements class_16 {
                field_1667[var20] = var6;
                field_1668[var20] = var28;
                field_1669[var20] = 0;
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_83) {
+            if(var1.opcode == ServerOpcode.OPCODE_83) {
                class_153.field_1924 = var3.readUnsignedByte() * 1925598893;
                class_247.field_2745 = var3.readUnsignedByte() * 1044884017;
 
@@ -23378,11 +21776,11 @@ public final class client extends GameApplet implements class_16 {
                   }
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_23 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_23 == var1.opcode) {
                for(var20 = 0; var20 < field_1605.length; ++var20) {
                   if(field_1605[var20] != null) {
                      field_1605[var20].field_1108 = 1152446837;
@@ -23395,11 +21793,11 @@ public final class client extends GameApplet implements class_16 {
                   }
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_22) {
+            if(var1.opcode == ServerOpcode.OPCODE_22) {
                var20 = var3.method_179();
                var45 = class_71.method_1047(var20);
 
@@ -23409,11 +21807,11 @@ public final class client extends GameApplet implements class_16 {
                }
 
                class_254.method_4900(var45, (byte)116);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_46 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_46 == var1.opcode) {
                class_222.method_4278(1148881942);
                var20 = var3.method_159();
                var21 = var3.method_113();
@@ -23429,28 +21827,28 @@ public final class client extends GameApplet implements class_16 {
                }
 
                field_1450[(field_1608 += -240198955) * 547712630 - 1 & 1826474791] = var21;
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_82 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_82 == var1.opcode) {
                class_208.field_2413.method_3328();
                field_1612 = -678887805 * field_1602;
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_51 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_51 == var1.opcode) {
                var20 = var3.method_180();
                var21 = var3.method_170();
                var6 = var3.method_170();
                var25 = class_71.method_1047(var20);
                var25.field_157 = (var6 + (var21 << 16)) * 511830397;
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_31) {
+            if(var1.opcode == ServerOpcode.OPCODE_31) {
                var20 = var3.method_180();
                var21 = var3.readShort();
                class_282.field_3247[var21] = var20;
@@ -23460,11 +21858,11 @@ public final class client extends GameApplet implements class_16 {
 
                class_147.method_3111(var21, -131141421);
                field_1603[(field_1439 += -1219135707) * 1149971569 - 1 & 31] = var21;
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_71 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_71 == var1.opcode) {
                var20 = var3.readInt();
                var21 = var3.readShort();
                if(var20 < 1448736181) {
@@ -23508,29 +21906,29 @@ public final class client extends GameApplet implements class_16 {
 
                class_222.method_4278(1277983271);
                field_1658[(field_1606 += 830110885) * 1770669809 - 1 & 188455075] = var21 & 32767;
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_28) {
+            if(var1.opcode == ServerOpcode.OPCODE_28) {
                var20 = var3.readShortAlt();
                class_177.method_3783(var20);
                field_1658[(field_1606 += 830110885) * 1592853450 - 1 & -1807556234] = var20 & 32767;
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_93 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_93 == var1.opcode) {
                if(class_233.field_2617 != null) {
                   class_233.field_2617.method_6149(var3, 817545734);
                }
 
                class_240.method_4613();
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_55) {
+            if(var1.opcode == ServerOpcode.OPCODE_55) {
                for(var20 = 0; var20 < -1782450907 * class_74.field_591; ++var20) {
                   class_74 var34 = class_171.method_3703(var20, 2015226941);
                   if(null != var34) {
@@ -23541,17 +21939,17 @@ public final class client extends GameApplet implements class_16 {
 
                class_222.method_4278(1828507128);
                field_1439 += -865955296;
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_87) {
+            if(var1.opcode == ServerOpcode.OPCODE_87) {
                class_154.method_3252(false, var3, -1227703177);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_2 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_2 == var1.opcode) {
                var20 = var3.readShort();
                byte var32 = var3.readByte();
                class_282.field_3247[var20] = var32;
@@ -23561,25 +21959,25 @@ public final class client extends GameApplet implements class_16 {
 
                class_147.method_3111(var20, 538112598);
                field_1603[(field_1439 += -1118436924) * 1149971569 - 1 & 31] = var20;
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_73 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_73 == var1.opcode) {
                class_208.field_2413.field_1995.method_6164(var3, -1435786970 * var1.field_2380, (short)-5647);
                class_163.method_3423(931345589);
                field_1612 = 141937247 * field_1602;
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_44 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_44 == var1.opcode) {
                class_41.method_482(class_256.field_2892, 236848204);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_13 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_13 == var1.opcode) {
                var22 = var3.method_139(-391631059);
                var30 = (long)var3.readShort();
                var26 = (long)var3.method_134();
@@ -23618,11 +22016,11 @@ public final class client extends GameApplet implements class_16 {
                   }
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_42 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_42 == var1.opcode) {
                var19 = var3.readByte();
                var5 = var3.method_139(-391631059);
                long var37 = (long)var3.readShort();
@@ -23670,11 +22068,11 @@ public final class client extends GameApplet implements class_16 {
                   }
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_16) {
+            if(var1.opcode == ServerOpcode.OPCODE_16) {
                field_1615 = 192977429 * field_1602;
                var19 = var3.readByte();
                class_180 var76 = new class_180(var3);
@@ -23687,11 +22085,11 @@ public final class client extends GameApplet implements class_16 {
                }
 
                var27.method_3813(var31, 205429833);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_7 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_7 == var1.opcode) {
                class_198.method_4017();
                var19 = var3.readByte();
                class_167 var75 = new class_167(var3);
@@ -23704,11 +22102,11 @@ public final class client extends GameApplet implements class_16 {
                }
 
                var23.method_3601(var24, 125196456);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_3 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_3 == var1.opcode) {
                var20 = var3.method_227(-1905667053);
                var21 = var3.method_163();
                var6 = var3.method_187(-2141211393);
@@ -23725,11 +22123,11 @@ public final class client extends GameApplet implements class_16 {
                   }
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_48 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_48 == var1.opcode) {
                var20 = var3.readUnsignedByte();
                var21 = var3.method_170();
                var6 = var3.method_179();
@@ -23739,11 +22137,11 @@ public final class client extends GameApplet implements class_16 {
                }
 
                class_120.method_2264(var6, var21, var20, 383166786);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_36 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_36 == var1.opcode) {
                var20 = var3.method_168();
                field_1412 = -1384220013 * var20;
                this.method_2461(false);
@@ -23754,11 +22152,11 @@ public final class client extends GameApplet implements class_16 {
                   field_1495[var21] = true;
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(ServerOpcode.OPCODE_38 == var1.field_2376) {
+            if(ServerOpcode.OPCODE_38 == var1.opcode) {
                if(var1.field_2380 * -83736147 == 0) {
                   class_233.field_2617 = null;
                } else {
@@ -23771,17 +22169,17 @@ public final class client extends GameApplet implements class_16 {
                }
 
                class_240.method_4613();
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_33) {
+            if(var1.opcode == ServerOpcode.OPCODE_33) {
                class_41.method_482(class_256.field_2896, 236848204);
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            if(var1.field_2376 == ServerOpcode.OPCODE_89) {
+            if(var1.opcode == ServerOpcode.OPCODE_89) {
                field_1615 = 541089324 * field_1602;
                var19 = var3.readByte();
                if(1 == -83736147 * var1.field_2380) {
@@ -23791,7 +22189,7 @@ public final class client extends GameApplet implements class_16 {
                      class_147.field_1865 = null;
                   }
 
-                  var1.field_2376 = null;
+                  var1.opcode = null;
                   return true;
                }
 
@@ -23804,16 +22202,16 @@ public final class client extends GameApplet implements class_16 {
                   class_147.field_1865 = var73;
                }
 
-               var1.field_2376 = null;
+               var1.opcode = null;
                return true;
             }
 
-            class_308.method_5523("" + (var1.field_2376 != null?-1581409905 * var1.field_2376.field_2964:-1) + class_205.field_2400 + (var1.field_2382 != null?var1.field_2382.field_2964 * -1581409905:-1) + class_205.field_2400 + (var1.field_2370 != null?var1.field_2370.field_2964 * -1378553514:-1) + class_205.field_2400 + var1.field_2380 * 2138698227, (Throwable)null, 2067147455);
+            class_308.method_5523("" + (var1.opcode != null?-1581409905 * var1.opcode.field_2964:-1) + class_205.field_2400 + (var1.field_2382 != null?var1.field_2382.field_2964 * -1581409905:-1) + class_205.field_2400 + (var1.field_2370 != null?var1.field_2370.field_2964 * -1378553514:-1) + class_205.field_2400 + var1.field_2380 * 2138698227, (Throwable)null, 2067147455);
             class_56.method_589((byte)15);
          } catch (IOException var17) {
             class_60.method_638(-552402310);
          } catch (Exception var18) {
-            var5 = "" + (var1.field_2376 != null?var1.field_2376.field_2964 * 1233337553:-1) + class_205.field_2400 + (var1.field_2382 != null?-1581409905 * var1.field_2382.field_2964:-1) + class_205.field_2400 + (var1.field_2370 != null?2087206396 * var1.field_2370.field_2964:-1) + class_205.field_2400 + var1.field_2380 * 674804584 + class_205.field_2400 + (697161691 * class_243.field_2700 + class_164.field_2044.field_1112[0]) + class_205.field_2400 + (class_164.field_2044.field_1126[0] + -27903763 * class_154.field_1929) + class_205.field_2400;
+            var5 = "" + (var1.opcode != null?var1.opcode.field_2964 * 1233337553:-1) + class_205.field_2400 + (var1.field_2382 != null?-1581409905 * var1.field_2382.field_2964:-1) + class_205.field_2400 + (var1.field_2370 != null?2087206396 * var1.field_2370.field_2964:-1) + class_205.field_2400 + var1.field_2380 * 674804584 + class_205.field_2400 + (697161691 * class_243.field_2700 + class_164.field_2044.field_1112[0]) + class_205.field_2400 + (class_164.field_2044.field_1126[0] + -27903763 * class_154.field_1929) + class_205.field_2400;
 
             for(var6 = 0; var6 < var1.field_2380 * -712810941 && var6 < 50; ++var6) {
                var5 = var5 + var3.data[var6] + class_205.field_2400;
@@ -27032,854 +25430,6 @@ public final class client extends GameApplet implements class_16 {
       }
    }
 
-   // $FF: renamed from: tm (int, int, int, int, java.lang.String, java.lang.String, int, int) void
-   static final void method_2662(int var0, int var1, int var2, int var3, String var5, int var6, int var7) {
-      if(var2 >= 2000) {
-         var2 -= 2000;
-      }
-
-      class_40 var8;
-      if(37 == var2) {
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_95, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeIntAltReversed(var1);
-         var8.networkBuffer.writeShortAlt(var0);
-         var8.networkBuffer.writeShortReverse(var3);
-         field_1463.method_4079(var8);
-         field_1523 = 0;
-         class_303.field_3395 = class_71.method_1047(var1);
-         field_1617 = -1317495798 * var0;
-      }
-
-      if(var2 == 16) {
-         field_1567 = -1948773469 * var6;
-         field_1519 = var7 * 798735877;
-         field_1521 = -2135967972;
-         field_1645 = 0;
-         field_1520 = -1555141481 * var0;
-         field_1562 = var1 * 1562845642;
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_5, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeShort(class_178.field_2220 * -18278717);
-         var8.networkBuffer.method_185(var3);
-         var8.networkBuffer.writeShort(class_189.field_2276 * 1854633345);
-         var8.networkBuffer.writeShortAlt(class_154.field_1929 * -939390177 + var1);
-         var8.networkBuffer.writeShort(class_243.field_2700 * 46245643 + var0);
-         var8.networkBuffer.writeIntAlt(class_100.field_1172 * 1565845213);
-         var8.networkBuffer.method_148(class_145.field_1840[1221945681]?1:0);
-         field_1463.method_4079(var8);
-      }
-
-      class_40 var9;
-      class_100 var11;
-      if(var2 == 47) {
-         var11 = field_1605[var3];
-         if(null != var11) {
-            field_1567 = 560058203 * var6;
-            field_1519 = var7 * -1377907910;
-            field_1521 = 85662564;
-            field_1645 = 0;
-            field_1520 = 1447445219 * var0;
-            field_1562 = var1 * 1551872625;
-            var9 = class_112.newPacket(ClientOpcode.OPCODE_33, field_1463.isaac, (byte)8);
-            var9.networkBuffer.method_185(var3);
-            var9.networkBuffer.method_148(class_145.field_1840[82]?1:0);
-            field_1463.method_4079(var9);
-         }
-      }
-
-      class_37 var12;
-      if(var2 == -1699738843) {
-         var12 = class_325.method_5779(var1, var0, 1372206237);
-         if(var12 != null) {
-            var9 = class_112.newPacket(ClientOpcode.OPCODE_0, field_1463.isaac, (byte)8);
-            var9.networkBuffer.writeIntAltReversed(var1);
-            var9.networkBuffer.method_185(539336237 * var12.field_229);
-            var9.networkBuffer.writeShort(field_1564 * -772905767);
-            var9.networkBuffer.writeIntReverse(class_148.field_1875 * 1430642749);
-            var9.networkBuffer.method_185(1683168531 * field_1573);
-            var9.networkBuffer.writeShort(var0);
-            field_1463.method_4079(var9);
-         }
-      }
-
-      class_99 var13;
-      if(var2 == 13) {
-         var13 = field_1458[var3];
-         if(var13 != null) {
-            field_1567 = var6 * 1165113427;
-            field_1519 = var7 * -2012625266;
-            field_1521 = 306627709;
-            field_1645 = 0;
-            field_1520 = -1150663326 * var0;
-            field_1562 = 1897458934 * var1;
-            var9 = class_112.newPacket(ClientOpcode.OPCODE_53, field_1463.isaac, (byte)8);
-            var9.networkBuffer.method_158(class_145.field_1840[82]?1:0);
-            var9.networkBuffer.writeShortAlt(var3);
-            field_1463.method_4079(var9);
-         }
-      }
-
-      int var10;
-      class_37 var14;
-      if(28 == var2) {
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_65, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeIntReverse(var1);
-         field_1463.method_4079(var8);
-         var14 = class_71.method_1047(var1);
-         if(var14.field_221 != null && var14.field_221[0][0] == 5) {
-            var10 = var14.field_221[0][1];
-            class_282.field_3246[var10] = 1 - class_282.field_3246[var10];
-            class_147.method_3111(var10, -1682851941);
-         }
-      }
-
-      if(var2 == -991129668) {
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_61, field_1463.isaac, (byte)8);
-         var8.networkBuffer.method_185(var3);
-         var8.networkBuffer.writeShortAlt(var0);
-         var8.networkBuffer.writeInt(var1);
-         field_1463.method_4079(var8);
-         field_1523 = 0;
-         class_303.field_3395 = class_71.method_1047(var1);
-         field_1617 = var0 * -315663137;
-      }
-
-      if(34 == var2) {
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_4, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeIntAltReversed(var1);
-         var8.networkBuffer.writeShort(var0);
-         var8.networkBuffer.writeShort(var3);
-         field_1463.method_4079(var8);
-         field_1523 = 0;
-         class_303.field_3395 = class_71.method_1047(var1);
-         field_1617 = 552489244 * var0;
-      }
-
-      if(8 == var2) {
-         var13 = field_1458[var3];
-         if(var13 != null) {
-            field_1567 = 1647109865 * var6;
-            field_1519 = -889207859 * var7;
-            field_1521 = 426907693;
-            field_1645 = 0;
-            field_1520 = -800360697 * var0;
-            field_1562 = -219211605 * var1;
-            var9 = class_112.newPacket(ClientOpcode.OPCODE_7, field_1463.isaac, (byte)8);
-            var9.networkBuffer.writeIntAlt(1430642749 * class_148.field_1875);
-            var9.networkBuffer.writeShort(1929969682 * field_1564);
-            var9.networkBuffer.writeShort(var3);
-            var9.networkBuffer.writeShortReverse(745102441 * field_1573);
-            var9.networkBuffer.method_158(class_145.field_1840[1142285184]?1:0);
-            field_1463.method_4079(var9);
-         }
-      }
-
-      if(var2 == 1002) {
-         field_1567 = 734672714 * var6;
-         field_1519 = 1304895670 * var7;
-         field_1521 = -1022456306;
-         field_1645 = 0;
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_80, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeShort(var3);
-         field_1463.method_4079(var8);
-      }
-
-      if(42 == var2) {
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_63, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeIntAlt(var1);
-         var8.networkBuffer.writeShortReverse(var3);
-         var8.networkBuffer.method_185(var0);
-         field_1463.method_4079(var8);
-         field_1523 = 0;
-         class_303.field_3395 = class_71.method_1047(var1);
-         field_1617 = -315663137 * var0;
-      }
-
-      if(var2 == 31) {
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_59, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeIntReverse(var1);
-         var8.networkBuffer.writeIntAltReversed(263315767 * class_100.field_1172);
-         var8.networkBuffer.method_185(var0);
-         var8.networkBuffer.writeShortReverse(var3);
-         var8.networkBuffer.writeShortAlt(1666091660 * class_178.field_2220);
-         var8.networkBuffer.writeShortAlt(class_189.field_2276 * 1854633345);
-         field_1463.method_4079(var8);
-         field_1523 = 0;
-         class_303.field_3395 = class_71.method_1047(var1);
-         field_1617 = -1144139115 * var0;
-      }
-
-      if(var2 == 5) {
-         field_1567 = 560058203 * var6;
-         field_1519 = 1890796421 * var7;
-         field_1521 = 374253518;
-         field_1645 = 0;
-         field_1520 = var0 * 819547401;
-         field_1562 = 353057363 * var1;
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_100, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeShort(var0 + 697161691 * class_243.field_2700);
-         var8.networkBuffer.writeShortAlt(-1943451327 * class_154.field_1929 + var1);
-         var8.networkBuffer.method_145(class_145.field_1840[82]?1:0);
-         var8.networkBuffer.method_185(var3);
-         field_1463.method_4079(var8);
-      }
-
-      if(var2 == 41) {
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_67, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeShort(var3);
-         var8.networkBuffer.method_185(var0);
-         var8.networkBuffer.writeIntAltReversed(var1);
-         field_1463.method_4079(var8);
-         field_1523 = 0;
-         class_303.field_3395 = class_71.method_1047(var1);
-         field_1617 = -315663137 * var0;
-      }
-
-      if(1160320262 == var2) {
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_98, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeIntAlt(-1266646052 * class_148.field_1875);
-         var8.networkBuffer.method_185(1683168531 * field_1573);
-         var8.networkBuffer.writeIntAlt(var1);
-         var8.networkBuffer.writeShort(var3);
-         var8.networkBuffer.method_185(var0);
-         field_1463.method_4079(var8);
-         field_1523 = 0;
-         class_303.field_3395 = class_71.method_1047(var1);
-         field_1617 = -1476209647 * var0;
-      }
-
-      if(21 == var2) {
-         field_1567 = 560058203 * var6;
-         field_1519 = 246678685 * var7;
-         field_1521 = -317192549;
-         field_1645 = 0;
-         field_1520 = 819547401 * var0;
-         field_1562 = var1 * 1551872625;
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_3, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeShortAlt(var3);
-         var8.networkBuffer.writeShortReverse(class_154.field_1929 * -27903763 + var1);
-         var8.networkBuffer.method_145(class_145.field_1840[82]?1:0);
-         var8.networkBuffer.writeShortReverse(var0 + class_243.field_2700 * -2120594029);
-         field_1463.method_4079(var8);
-      }
-
-      if(30 == var2 && null == field_1583) {
-         class_115.method_2243(var1, var0);
-         field_1583 = class_325.method_5779(var1, var0, 1861011343);
-         class_254.method_4900(field_1583, (byte)102);
-      }
-
-      if(18 == var2) {
-         field_1567 = 560058203 * var6;
-         field_1519 = var7 * 1363262679;
-         field_1521 = -775132260;
-         field_1645 = 0;
-         field_1520 = var0 * -279260905;
-         field_1562 = 1551872625 * var1;
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_76, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeShortReverse(var3);
-         var8.networkBuffer.method_148(class_145.field_1840[830528176]?1:0);
-         var8.networkBuffer.writeShortAlt(-333786077 * class_154.field_1929 + var1);
-         var8.networkBuffer.writeShortReverse(697161691 * class_243.field_2700 + var0);
-         field_1463.method_4079(var8);
-      }
-
-      if(410237965 == var2) {
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_101, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeInt(var1);
-         var8.networkBuffer.writeShort(var3);
-         var8.networkBuffer.writeShortAlt(var0);
-         field_1463.method_4079(var8);
-         field_1523 = 0;
-         class_303.field_3395 = class_71.method_1047(var1);
-         field_1617 = var0 * 1664275680;
-      }
-
-      if(var2 == 3) {
-         field_1567 = var6 * 560058203;
-         field_1519 = -892978579 * var7;
-         field_1521 = -1022456306;
-         field_1645 = 0;
-         field_1520 = var0 * 819547401;
-         field_1562 = var1 * -423583516;
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_69, field_1463.isaac, (byte)8);
-         var8.networkBuffer.method_158(class_145.field_1840[-998222798]?1:0);
-         var8.networkBuffer.writeShortAlt(var3);
-         var8.networkBuffer.writeShortReverse(-1612445818 * class_243.field_2700 + var0);
-         var8.networkBuffer.writeShort(var1 + class_154.field_1929 * 805582678);
-         field_1463.method_4079(var8);
-      }
-
-      if(var2 == 4) {
-         field_1567 = var6 * -348803986;
-         field_1519 = var7 * -737324038;
-         field_1521 = -2097701204;
-         field_1645 = 0;
-         field_1520 = var0 * 819547401;
-         field_1562 = var1 * -207153123;
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_54, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeShortReverse(class_243.field_2700 * 654108554 + var0);
-         var8.networkBuffer.writeShortAlt(var3);
-         var8.networkBuffer.method_145(class_145.field_1840[1372510252]?1:0);
-         var8.networkBuffer.writeShortAlt(-27903763 * class_154.field_1929 + var1);
-         field_1463.method_4079(var8);
-      }
-
-      if(14 == var2) {
-         var11 = field_1605[var3];
-         if(null != var11) {
-            field_1567 = -155320617 * var6;
-            field_1519 = 246678685 * var7;
-            field_1521 = -1022456306;
-            field_1645 = 0;
-            field_1520 = -27548895 * var0;
-            field_1562 = 1551872625 * var1;
-            var9 = class_112.newPacket(ClientOpcode.OPCODE_51, field_1463.isaac, (byte)8);
-            var9.networkBuffer.writeIntAltReversed(class_100.field_1172 * 1022554237);
-            var9.networkBuffer.method_185(class_189.field_2276 * 946193587);
-            var9.networkBuffer.method_145(class_145.field_1840[82]?1:0);
-            var9.networkBuffer.method_185(1499946925 * class_178.field_2220);
-            var9.networkBuffer.writeShortReverse(var3);
-            field_1463.method_4079(var9);
-         }
-      }
-
-      if(var2 == 17) {
-         field_1567 = var6 * -250804799;
-         field_1519 = -1208173964 * var7;
-         field_1521 = 1150413015;
-         field_1645 = 0;
-         field_1520 = 819547401 * var0;
-         field_1562 = var1 * -1168952751;
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_96, field_1463.isaac, (byte)8);
-         var8.networkBuffer.method_145(class_145.field_1840[82]?1:0);
-         var8.networkBuffer.writeInt(-2064084162 * class_148.field_1875);
-         var8.networkBuffer.writeShort(class_154.field_1929 * -1668803875 + var1);
-         var8.networkBuffer.writeShortAlt(2009544117 * field_1564);
-         var8.networkBuffer.method_185(var3);
-         var8.networkBuffer.writeShortReverse(var0 + class_243.field_2700 * -1698856574);
-         var8.networkBuffer.writeShort(1683168531 * field_1573);
-         field_1463.method_4079(var8);
-      }
-
-      if(var2 == 49) {
-         var11 = field_1605[var3];
-         if(null != var11) {
-            field_1567 = 560058203 * var6;
-            field_1519 = var7 * 251542551;
-            field_1521 = -1022456306;
-            field_1645 = 0;
-            field_1520 = var0 * 928405403;
-            field_1562 = 1551872625 * var1;
-            var9 = class_112.newPacket(ClientOpcode.OPCODE_64, field_1463.isaac, (byte)8);
-            var9.networkBuffer.method_145(class_145.field_1840[1386645316]?1:0);
-            var9.networkBuffer.writeShortAlt(var3);
-            field_1463.method_4079(var9);
-         }
-      }
-
-      if(57 == var2 || var2 == 351545752) {
-         var12 = class_325.method_5779(var1, var0, 803723886);
-         if(null != var12) {
-            class_382.method_6682(var3, var1, var0, var12.field_229 * 539336237, var5, 1132909032);
-         }
-      }
-
-      if(var2 == 1001) {
-         field_1567 = var6 * 303213366;
-         field_1519 = var7 * 246678685;
-         field_1521 = -1022456306;
-         field_1645 = 0;
-         field_1520 = -603868965 * var0;
-         field_1562 = -185073681 * var1;
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_78, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeShortAlt(var0 + 592523404 * class_243.field_2700);
-         var8.networkBuffer.method_158(class_145.field_1840[82]?1:0);
-         var8.networkBuffer.writeShortReverse(var3);
-         var8.networkBuffer.writeShortAlt(-27903763 * class_154.field_1929 + var1);
-         field_1463.method_4079(var8);
-      }
-
-      if(var2 == 1) {
-         field_1567 = 560058203 * var6;
-         field_1519 = 1577233474 * var7;
-         field_1521 = -1022456306;
-         field_1645 = 0;
-         field_1520 = var0 * 819547401;
-         field_1562 = -960126228 * var1;
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_105, field_1463.isaac, (byte)8);
-         var8.networkBuffer.method_185(-1827868631 * class_189.field_2276);
-         var8.networkBuffer.writeShortAlt(var3);
-         var8.networkBuffer.method_158(class_145.field_1840[1835997905]?1:0);
-         var8.networkBuffer.writeShortAlt(class_154.field_1929 * 84306352 + var1);
-         var8.networkBuffer.writeIntReverse(class_100.field_1172 * 447005296);
-         var8.networkBuffer.writeShortAlt(var0 + 1083035148 * class_243.field_2700);
-         var8.networkBuffer.writeShortReverse(class_178.field_2220 * 81340013);
-         field_1463.method_4079(var8);
-      }
-
-      if(23 == var2) {
-         if(field_1553) {
-            class_206.field_2401.method_4841();
-         } else {
-            class_206.field_2401.method_4755(class_115.field_1289 * 1331395655, var0, var1, true);
-         }
-      }
-
-      if(46 == var2) {
-         var11 = field_1605[var3];
-         if(var11 != null) {
-            field_1567 = 560058203 * var6;
-            field_1519 = var7 * 246678685;
-            field_1521 = -572546403;
-            field_1645 = 0;
-            field_1520 = var0 * 703571137;
-            field_1562 = var1 * -173732558;
-            var9 = class_112.newPacket(ClientOpcode.OPCODE_52, field_1463.isaac, (byte)8);
-            var9.networkBuffer.method_148(class_145.field_1840[-710506995]?1:0);
-            var9.networkBuffer.writeShortReverse(var3);
-            field_1463.method_4079(var9);
-         }
-      }
-
-      if(var2 == 48) {
-         var11 = field_1605[var3];
-         if(null != var11) {
-            field_1567 = var6 * 1552165388;
-            field_1519 = 246678685 * var7;
-            field_1521 = -1022456306;
-            field_1645 = 0;
-            field_1520 = -1696522818 * var0;
-            field_1562 = var1 * -1015580054;
-            var9 = class_112.newPacket(ClientOpcode.OPCODE_30, field_1463.isaac, (byte)8);
-            var9.networkBuffer.writeShortAlt(var3);
-            var9.networkBuffer.writeByte(class_145.field_1840[773815249]?1:0);
-            field_1463.method_4079(var9);
-         }
-      }
-
-      if(var2 == 38) {
-         class_54.method_583(944864157);
-         var12 = class_71.method_1047(var1);
-         field_1570 = 1267127549;
-         class_178.field_2220 = 1632162661 * var0;
-         class_100.field_1172 = var1 * 1093673333;
-         class_189.field_2276 = var3 * 1443023489;
-         class_254.method_4900(var12, (byte)81);
-         field_1571 = class_136.method_2958(1965817512) + class_299.method_5347(var3, -2104078638).field_707 + class_136.method_2958(16777215);
-         if(null == field_1571) {
-            field_1571 = class_305.field_3410;
-         }
-
-      } else {
-         if(var2 == 1003369511) {
-            var11 = field_1605[var3];
-            if(var11 != null) {
-               field_1567 = var6 * 560058203;
-               field_1519 = 246678685 * var7;
-               field_1521 = 1083871481;
-               field_1645 = 0;
-               field_1520 = var0 * 819547401;
-               field_1562 = var1 * 1551872625;
-               var9 = class_112.newPacket(ClientOpcode.OPCODE_82, field_1463.isaac, (byte)8);
-               var9.networkBuffer.writeShort(var3);
-               var9.networkBuffer.writeByte(class_145.field_1840[82]?1:0);
-               field_1463.method_4079(var9);
-            }
-         }
-
-         if(614979999 == var2) {
-            var11 = field_1605[var3];
-            if(var11 != null) {
-               field_1567 = var6 * 951700751;
-               field_1519 = var7 * 246678685;
-               field_1521 = -1022456306;
-               field_1645 = 0;
-               field_1520 = var0 * 819547401;
-               field_1562 = 1953080365 * var1;
-               var9 = class_112.newPacket(ClientOpcode.OPCODE_48, field_1463.isaac, (byte)8);
-               var9.networkBuffer.writeByte(class_145.field_1840[82]?1:0);
-               var9.networkBuffer.writeShortAlt(var3);
-               field_1463.method_4079(var9);
-            }
-         }
-
-         if(2031619069 == var2) {
-            field_1567 = var6 * 560058203;
-            field_1519 = -1697085024 * var7;
-            field_1521 = -1022456306;
-            field_1645 = 0;
-            var8 = class_112.newPacket(ClientOpcode.OPCODE_74, field_1463.isaac, (byte)8);
-            var8.networkBuffer.writeShort(var3);
-            field_1463.method_4079(var8);
-         }
-
-         if(var2 == 1052314856) {
-            var11 = field_1605[var3];
-            if(null != var11) {
-               field_1567 = 560058203 * var6;
-               field_1519 = 246678685 * var7;
-               field_1521 = 301418909;
-               field_1645 = 0;
-               field_1520 = 819547401 * var0;
-               field_1562 = var1 * 1551872625;
-               var9 = class_112.newPacket(ClientOpcode.OPCODE_25, field_1463.isaac, (byte)8);
-               var9.networkBuffer.method_185(var3);
-               var9.networkBuffer.method_148(class_145.field_1840[499970411]?1:0);
-               field_1463.method_4079(var9);
-            }
-         }
-
-         if(var2 == 9) {
-            var13 = field_1458[var3];
-            if(null != var13) {
-               field_1567 = -1762478129 * var6;
-               field_1519 = var7 * 246678685;
-               field_1521 = -742532794;
-               field_1645 = 0;
-               field_1520 = var0 * 819547401;
-               field_1562 = var1 * -1388951396;
-               var9 = class_112.newPacket(ClientOpcode.OPCODE_32, field_1463.isaac, (byte)8);
-               var9.networkBuffer.method_145(class_145.field_1840[-1150611845]?1:0);
-               var9.networkBuffer.writeShort(var3);
-               field_1463.method_4079(var9);
-            }
-         }
-
-         if(7 == var2) {
-            var13 = field_1458[var3];
-            if(var13 != null) {
-               field_1567 = var6 * 560058203;
-               field_1519 = -788485805 * var7;
-               field_1521 = -1022456306;
-               field_1645 = 0;
-               field_1520 = -732061551 * var0;
-               field_1562 = var1 * -879538996;
-               var9 = class_112.newPacket(ClientOpcode.OPCODE_103, field_1463.isaac, (byte)8);
-               var9.networkBuffer.writeByte(class_145.field_1840[309105509]?1:0);
-               var9.networkBuffer.writeShortAlt(class_189.field_2276 * 1185760641);
-               var9.networkBuffer.writeIntAlt(class_100.field_1172 * 1923749835);
-               var9.networkBuffer.method_185(var3);
-               var9.networkBuffer.writeShort(class_178.field_2220 * -965187879);
-               field_1463.method_4079(var9);
-            }
-         }
-
-         if(var2 == 29) {
-            var8 = class_112.newPacket(ClientOpcode.OPCODE_65, field_1463.isaac, (byte)8);
-            var8.networkBuffer.writeIntReverse(var1);
-            field_1463.method_4079(var8);
-            var14 = class_71.method_1047(var1);
-            if(null != var14.field_221 && var14.field_221[0][0] == 5) {
-               var10 = var14.field_221[0][1];
-               if(class_282.field_3246[var10] != var14.field_193[0]) {
-                  class_282.field_3246[var10] = var14.field_193[0];
-                  class_147.method_3111(var10, 830191076);
-               }
-            }
-         }
-
-         class_40 var15;
-         if(var2 == 1003) {
-            field_1567 = 560058203 * var6;
-            field_1519 = 922733238 * var7;
-            field_1521 = -1022456306;
-            field_1645 = 0;
-            var13 = field_1458[var3];
-            if(null != var13) {
-               class_88 var16 = var13.field_1141;
-               if(var16.field_862 != null) {
-                  var16 = var16.method_1545((byte)-43);
-               }
-
-               if(null != var16) {
-                  var15 = class_112.newPacket(ClientOpcode.OPCODE_6, field_1463.isaac, (byte)8);
-                  var15.networkBuffer.writeShort(var16.field_857 * -2060838679);
-                  field_1463.method_4079(var15);
-               }
-            }
-         }
-
-         if(6 == var2) {
-            field_1567 = 145832997 * var6;
-            field_1519 = var7 * 246678685;
-            field_1521 = -1022456306;
-            field_1645 = 0;
-            field_1520 = var0 * 819547401;
-            field_1562 = 1551872625 * var1;
-            var8 = class_112.newPacket(ClientOpcode.OPCODE_93, field_1463.isaac, (byte)8);
-            var8.networkBuffer.method_185(var3);
-            var8.networkBuffer.method_185(var1 + -196511376 * class_154.field_1929);
-            var8.networkBuffer.method_145(class_145.field_1840[1026349142]?1:0);
-            var8.networkBuffer.writeShortAlt(class_243.field_2700 * 1390024189 + var0);
-            field_1463.method_4079(var8);
-         }
-
-         if(var2 == 12) {
-            var13 = field_1458[var3];
-            if(null != var13) {
-               field_1567 = var6 * 1618806678;
-               field_1519 = 1457351858 * var7;
-               field_1521 = -1022456306;
-               field_1645 = 0;
-               field_1520 = var0 * 819547401;
-               field_1562 = var1 * 88663658;
-               var9 = class_112.newPacket(ClientOpcode.OPCODE_29, field_1463.isaac, (byte)8);
-               var9.networkBuffer.writeByte(class_145.field_1840[-2093079425]?1:0);
-               var9.networkBuffer.method_185(var3);
-               field_1463.method_4079(var9);
-            }
-         }
-
-         if(var2 == 2) {
-            field_1567 = 1900270967 * var6;
-            field_1519 = var7 * 246678685;
-            field_1521 = -1022456306;
-            field_1645 = 0;
-            field_1520 = var0 * 269473782;
-            field_1562 = 1959669178 * var1;
-            var8 = class_112.newPacket(ClientOpcode.OPCODE_71, field_1463.isaac, (byte)8);
-            var8.networkBuffer.writeShort(var0 + class_243.field_2700 * 697161691);
-            var8.networkBuffer.writeShortReverse(var3);
-            var8.networkBuffer.writeShort(field_1564 * 57094518);
-            var8.networkBuffer.writeShortReverse(class_154.field_1929 * 1263263620 + var1);
-            var8.networkBuffer.writeShortReverse(field_1573 * 1683168531);
-            var8.networkBuffer.method_158(class_145.field_1840[-1188829330]?1:0);
-            var8.networkBuffer.writeIntAlt(class_148.field_1875 * 1430642749);
-            field_1463.method_4079(var8);
-         }
-
-         if(26 == var2) {
-            class_117.method_2250((short)-13637);
-         }
-
-         if(1019721751 == var2 || 1009 == var2 || var2 == 1010 || var2 == -730496973 || var2 == 1012) {
-            class_363 var10000 = class_287.field_3278;
-            class_280 var10003 = new class_280(var0);
-            class_280 var10004 = new class_280(var1);
-            var10000.method_6383(var2, var3, var10003, var10004);
-         }
-
-         if(var2 == 11) {
-            var13 = field_1458[var3];
-            if(null != var13) {
-               field_1567 = var6 * 560058203;
-               field_1519 = 246678685 * var7;
-               field_1521 = -1022456306;
-               field_1645 = 0;
-               field_1520 = 819547401 * var0;
-               field_1562 = var1 * -1528374946;
-               var9 = class_112.newPacket(ClientOpcode.OPCODE_92, field_1463.isaac, (byte)8);
-               var9.networkBuffer.writeShort(var3);
-               var9.networkBuffer.writeByte(class_145.field_1840[1539661920]?1:0);
-               field_1463.method_4079(var9);
-            }
-         }
-
-         if(var2 == 24) {
-            var12 = class_71.method_1047(var1);
-            boolean var17 = true;
-            if(-1245218361 * var12.field_207 > 0) {
-               var17 = class_72.method_1091(var12, 951320504);
-            }
-
-            if(var17) {
-               var15 = class_112.newPacket(ClientOpcode.OPCODE_65, field_1463.isaac, (byte)8);
-               var15.networkBuffer.writeIntReverse(var1);
-               field_1463.method_4079(var15);
-            }
-         }
-
-         if(var2 == 22) {
-            field_1567 = -579114127 * var6;
-            field_1519 = var7 * 469046254;
-            field_1521 = -1604952099;
-            field_1645 = 0;
-            field_1520 = -2085766722 * var0;
-            field_1562 = -57709988 * var1;
-            var8 = class_112.newPacket(ClientOpcode.OPCODE_77, field_1463.isaac, (byte)8);
-            var8.networkBuffer.writeShortAlt(var3);
-            var8.networkBuffer.method_185(-193164258 * class_243.field_2700 + var0);
-            var8.networkBuffer.method_158(class_145.field_1840[82]?1:0);
-            var8.networkBuffer.method_185(var1 + -27903763 * class_154.field_1929);
-            field_1463.method_4079(var8);
-         }
-
-         if(39 == var2) {
-            var8 = class_112.newPacket(ClientOpcode.OPCODE_99, field_1463.isaac, (byte)8);
-            var8.networkBuffer.writeShortAlt(var0);
-            var8.networkBuffer.writeShort(var3);
-            var8.networkBuffer.writeInt(var1);
-            field_1463.method_4079(var8);
-            field_1523 = 0;
-            class_303.field_3395 = class_71.method_1047(var1);
-            field_1617 = 1613931095 * var0;
-         }
-
-         if(1405739540 == var2) {
-            var8 = class_112.newPacket(ClientOpcode.OPCODE_55, field_1463.isaac, (byte)8);
-            var8.networkBuffer.writeShortReverse(var3);
-            var8.networkBuffer.writeIntAlt(var1);
-            var8.networkBuffer.writeShortAlt(var0);
-            field_1463.method_4079(var8);
-            field_1523 = 0;
-            class_303.field_3395 = class_71.method_1047(var1);
-            field_1617 = -978024352 * var0;
-         }
-
-         if(var2 == 15) {
-            var11 = field_1605[var3];
-            if(var11 != null) {
-               field_1567 = var6 * 4607216;
-               field_1519 = -769412844 * var7;
-               field_1521 = -1022456306;
-               field_1645 = 0;
-               field_1520 = 819547401 * var0;
-               field_1562 = var1 * -921851878;
-               var9 = class_112.newPacket(ClientOpcode.OPCODE_43, field_1463.isaac, (byte)8);
-               var9.networkBuffer.method_185(field_1573 * -2129375097);
-               var9.networkBuffer.writeShortAlt(var3);
-               var9.networkBuffer.writeInt(1430642749 * class_148.field_1875);
-               var9.networkBuffer.method_148(class_145.field_1840[-1267983491]?1:0);
-               var9.networkBuffer.writeShortAlt(field_1564 * 1626153121);
-               field_1463.method_4079(var9);
-            }
-         }
-
-         if(20 == var2) {
-            field_1567 = var6 * 560058203;
-            field_1519 = var7 * 246678685;
-            field_1521 = -1607843224;
-            field_1645 = 0;
-            field_1520 = var0 * 819547401;
-            field_1562 = 27875987 * var1;
-            var8 = class_112.newPacket(ClientOpcode.OPCODE_62, field_1463.isaac, (byte)8);
-            var8.networkBuffer.method_185(var3);
-            var8.networkBuffer.writeShort(var0 + class_243.field_2700 * -278217050);
-            var8.networkBuffer.method_148(class_145.field_1840[-2044315454]?1:0);
-            var8.networkBuffer.writeShortAlt(var1 + class_154.field_1929 * -27903763);
-            field_1463.method_4079(var8);
-         }
-
-         if(732649055 == var2) {
-            var11 = field_1605[var3];
-            if(var11 != null) {
-               field_1567 = 560058203 * var6;
-               field_1519 = 1927573665 * var7;
-               field_1521 = 937454444;
-               field_1645 = 0;
-               field_1520 = 363240056 * var0;
-               field_1562 = 1551872625 * var1;
-               var9 = class_112.newPacket(ClientOpcode.OPCODE_102, field_1463.isaac, (byte)8);
-               var9.networkBuffer.writeShortReverse(var3);
-               var9.networkBuffer.method_158(class_145.field_1840[82]?1:0);
-               field_1463.method_4079(var9);
-            }
-         }
-
-         if(25 == var2) {
-            var12 = class_325.method_5779(var1, var0, 1267591887);
-            if(null != var12) {
-               class_54.method_583(-886204145);
-               class_162.method_3415(var1, var0, class_196.method_3989(class_112.method_2236(var12, 2147059763)), 539336237 * var12.field_229, -2143555780);
-               field_1570 = 0;
-               field_1575 = class_269.method_5039(var12, -1070467549);
-               if(field_1575 == null) {
-                  field_1575 = class_305.field_3410;
-               }
-
-               if(var12.field_100) {
-                  field_1545 = var12.field_91 + class_136.method_2958(637767947);
-               } else {
-                  field_1545 = class_136.method_2958(-1893959811) + var12.field_225 + class_136.method_2958(-1978464592);
-               }
-            }
-
-         } else {
-            if(1732573022 == var2) {
-               var8 = class_112.newPacket(ClientOpcode.OPCODE_37, field_1463.isaac, (byte)8);
-               var8.networkBuffer.writeShort(var0);
-               var8.networkBuffer.writeIntAltReversed(var1);
-               var8.networkBuffer.method_185(var3);
-               field_1463.method_4079(var8);
-               field_1523 = 0;
-               class_303.field_3395 = class_71.method_1047(var1);
-               field_1617 = var0 * -315663137;
-            }
-
-            if(var2 == 10) {
-               var13 = field_1458[var3];
-               if(var13 != null) {
-                  field_1567 = var6 * 560058203;
-                  field_1519 = var7 * 246678685;
-                  field_1521 = -1628010578;
-                  field_1645 = 0;
-                  field_1520 = var0 * 819547401;
-                  field_1562 = var1 * -1421044660;
-                  var9 = class_112.newPacket(ClientOpcode.OPCODE_47, field_1463.isaac, (byte)8);
-                  var9.networkBuffer.method_185(var3);
-                  var9.networkBuffer.method_145(class_145.field_1840[-1492079303]?1:0);
-                  field_1463.method_4079(var9);
-               }
-            }
-
-            if(var2 == 33) {
-               var8 = class_112.newPacket(ClientOpcode.OPCODE_13, field_1463.isaac, (byte)8);
-               var8.networkBuffer.writeIntAlt(var1);
-               var8.networkBuffer.writeShort(var0);
-               var8.networkBuffer.writeShortReverse(var3);
-               field_1463.method_4079(var8);
-               field_1523 = 0;
-               class_303.field_3395 = class_71.method_1047(var1);
-               field_1617 = var0 * -315663137;
-            }
-
-            if(var2 == 1005) {
-               var12 = class_71.method_1047(var1);
-               if(var12 != null && var12.field_228[var0] >= 100000) {
-                  class_149.method_3135(27, "", var12.field_228[var0] + " x " + class_299.method_5347(var3, -1025988022).field_707);
-               } else {
-                  var9 = class_112.newPacket(ClientOpcode.OPCODE_74, field_1463.isaac, (byte)8);
-                  var9.networkBuffer.writeShort(var3);
-                  field_1463.method_4079(var9);
-               }
-
-               field_1523 = 0;
-               class_303.field_3395 = class_71.method_1047(var1);
-               field_1617 = 1304097987 * var0;
-            }
-
-            if(var2 == 19) {
-               field_1567 = 560058203 * var6;
-               field_1519 = 246678685 * var7;
-               field_1521 = -1022456306;
-               field_1645 = 0;
-               field_1520 = 819547401 * var0;
-               field_1562 = 1551872625 * var1;
-               var8 = class_112.newPacket(ClientOpcode.OPCODE_87, field_1463.isaac, (byte)8);
-               var8.networkBuffer.writeShort(class_243.field_2700 * 697161691 + var0);
-               var8.networkBuffer.writeShortAlt(-27903763 * class_154.field_1929 + var1);
-               var8.networkBuffer.method_145(class_145.field_1840[813219153]?1:0);
-               var8.networkBuffer.writeShort(var3);
-               field_1463.method_4079(var8);
-            }
-
-            if(0 != -2111520814 * field_1570) {
-               field_1570 = 0;
-               class_254.method_4900(class_71.method_1047(-190404842 * class_100.field_1172), (byte)81);
-            }
-
-            if(field_1572) {
-               class_54.method_583(1043929913);
-            }
-
-            if(null != class_303.field_3395 && 0 == field_1523 * -1890193251) {
-               class_254.method_4900(class_303.field_3395, (byte)18);
-            }
-
-         }
-      }
-   }
-
    // $FF: renamed from: qr (int, int, int) int
    static final int method_2663(int var0, int var1, int var2) {
       int var3 = var0 >> 7;
@@ -28348,854 +25898,6 @@ public final class client extends GameApplet implements class_16 {
       }
 
       class_122.method_2274();
-   }
-
-   // $FF: renamed from: ti (int, int, int, int, java.lang.String, java.lang.String, int, int) void
-   static final void method_2682(int var0, int var1, int var2, int var3, String var5, int var6, int var7) {
-      if(var2 >= 295464342) {
-         var2 -= 2000;
-      }
-
-      class_40 var8;
-      if(-1946359585 == var2) {
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_95, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeIntAltReversed(var1);
-         var8.networkBuffer.writeShortAlt(var0);
-         var8.networkBuffer.writeShortReverse(var3);
-         field_1463.method_4079(var8);
-         field_1523 = 0;
-         class_303.field_3395 = class_71.method_1047(var1);
-         field_1617 = -206722955 * var0;
-      }
-
-      if(var2 == 16) {
-         field_1567 = 1094275089 * var6;
-         field_1519 = var7 * 246678685;
-         field_1521 = -1022456306;
-         field_1645 = 0;
-         field_1520 = -1341896331 * var0;
-         field_1562 = var1 * 1188880498;
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_5, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeShort(class_178.field_2220 * 979989395);
-         var8.networkBuffer.method_185(var3);
-         var8.networkBuffer.writeShort(class_189.field_2276 * 1892344125);
-         var8.networkBuffer.writeShortAlt(class_154.field_1929 * -27903763 + var1);
-         var8.networkBuffer.writeShort(class_243.field_2700 * -394351772 + var0);
-         var8.networkBuffer.writeIntAlt(class_100.field_1172 * 1460917855);
-         var8.networkBuffer.method_148(class_145.field_1840[-341715398]?1:0);
-         field_1463.method_4079(var8);
-      }
-
-      class_40 var9;
-      class_100 var11;
-      if(var2 == 47) {
-         var11 = field_1605[var3];
-         if(null != var11) {
-            field_1567 = 560058203 * var6;
-            field_1519 = var7 * 246678685;
-            field_1521 = -1022456306;
-            field_1645 = 0;
-            field_1520 = 819547401 * var0;
-            field_1562 = var1 * 1551872625;
-            var9 = class_112.newPacket(ClientOpcode.OPCODE_33, field_1463.isaac, (byte)8);
-            var9.networkBuffer.method_185(var3);
-            var9.networkBuffer.method_148(class_145.field_1840[82]?1:0);
-            field_1463.method_4079(var9);
-         }
-      }
-
-      class_37 var12;
-      if(var2 == 58) {
-         var12 = class_325.method_5779(var1, var0, 1717538002);
-         if(var12 != null) {
-            var9 = class_112.newPacket(ClientOpcode.OPCODE_0, field_1463.isaac, (byte)8);
-            var9.networkBuffer.writeIntAltReversed(var1);
-            var9.networkBuffer.method_185(2095504909 * var12.field_229);
-            var9.networkBuffer.writeShort(field_1564 * 1424616685);
-            var9.networkBuffer.writeIntReverse(class_148.field_1875 * 1430642749);
-            var9.networkBuffer.method_185(1683168531 * field_1573);
-            var9.networkBuffer.writeShort(var0);
-            field_1463.method_4079(var9);
-         }
-      }
-
-      class_99 var13;
-      if(var2 == 13) {
-         var13 = field_1458[var3];
-         if(var13 != null) {
-            field_1567 = var6 * 560058203;
-            field_1519 = var7 * 246678685;
-            field_1521 = -1022456306;
-            field_1645 = 0;
-            field_1520 = 819547401 * var0;
-            field_1562 = 1551872625 * var1;
-            var9 = class_112.newPacket(ClientOpcode.OPCODE_53, field_1463.isaac, (byte)8);
-            var9.networkBuffer.method_158(class_145.field_1840[-1524167998]?1:0);
-            var9.networkBuffer.writeShortAlt(var3);
-            field_1463.method_4079(var9);
-         }
-      }
-
-      int var10;
-      class_37 var14;
-      if(28 == var2) {
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_65, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeIntReverse(var1);
-         field_1463.method_4079(var8);
-         var14 = class_71.method_1047(var1);
-         if(var14.field_221 != null && var14.field_221[0][0] == 5) {
-            var10 = var14.field_221[0][1];
-            class_282.field_3246[var10] = 1 - class_282.field_3246[var10];
-            class_147.method_3111(var10, 1430290324);
-         }
-      }
-
-      if(var2 == 43) {
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_61, field_1463.isaac, (byte)8);
-         var8.networkBuffer.method_185(var3);
-         var8.networkBuffer.writeShortAlt(var0);
-         var8.networkBuffer.writeInt(var1);
-         field_1463.method_4079(var8);
-         field_1523 = 0;
-         class_303.field_3395 = class_71.method_1047(var1);
-         field_1617 = var0 * 764155285;
-      }
-
-      if(-313737658 == var2) {
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_4, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeIntAltReversed(var1);
-         var8.networkBuffer.writeShort(var0);
-         var8.networkBuffer.writeShort(var3);
-         field_1463.method_4079(var8);
-         field_1523 = 0;
-         class_303.field_3395 = class_71.method_1047(var1);
-         field_1617 = -910313498 * var0;
-      }
-
-      if(8 == var2) {
-         var13 = field_1458[var3];
-         if(var13 != null) {
-            field_1567 = 560058203 * var6;
-            field_1519 = 1603178341 * var7;
-            field_1521 = 397311452;
-            field_1645 = 0;
-            field_1520 = 435416819 * var0;
-            field_1562 = 1551872625 * var1;
-            var9 = class_112.newPacket(ClientOpcode.OPCODE_7, field_1463.isaac, (byte)8);
-            var9.networkBuffer.writeIntAlt(-2117966644 * class_148.field_1875);
-            var9.networkBuffer.writeShort(1424616685 * field_1564);
-            var9.networkBuffer.writeShort(var3);
-            var9.networkBuffer.writeShortReverse(697447922 * field_1573);
-            var9.networkBuffer.method_158(class_145.field_1840[-1840442527]?1:0);
-            field_1463.method_4079(var9);
-         }
-      }
-
-      if(var2 == -851884037) {
-         field_1567 = 560058203 * var6;
-         field_1519 = 246678685 * var7;
-         field_1521 = -770101019;
-         field_1645 = 0;
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_80, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeShort(var3);
-         field_1463.method_4079(var8);
-      }
-
-      if(42 == var2) {
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_63, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeIntAlt(var1);
-         var8.networkBuffer.writeShortReverse(var3);
-         var8.networkBuffer.method_185(var0);
-         field_1463.method_4079(var8);
-         field_1523 = 0;
-         class_303.field_3395 = class_71.method_1047(var1);
-         field_1617 = -315663137 * var0;
-      }
-
-      if(var2 == 1613377165) {
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_59, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeIntReverse(var1);
-         var8.networkBuffer.writeIntAltReversed(1565845213 * class_100.field_1172);
-         var8.networkBuffer.method_185(var0);
-         var8.networkBuffer.writeShortReverse(var3);
-         var8.networkBuffer.writeShortAlt(81340013 * class_178.field_2220);
-         var8.networkBuffer.writeShortAlt(class_189.field_2276 * 1840785956);
-         field_1463.method_4079(var8);
-         field_1523 = 0;
-         class_303.field_3395 = class_71.method_1047(var1);
-         field_1617 = 234385933 * var0;
-      }
-
-      if(var2 == 5) {
-         field_1567 = 560058203 * var6;
-         field_1519 = 246678685 * var7;
-         field_1521 = -1022456306;
-         field_1645 = 0;
-         field_1520 = var0 * 763993618;
-         field_1562 = -1629421780 * var1;
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_100, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeShort(var0 + -703531836 * class_243.field_2700);
-         var8.networkBuffer.writeShortAlt(-27903763 * class_154.field_1929 + var1);
-         var8.networkBuffer.method_145(class_145.field_1840[257811225]?1:0);
-         var8.networkBuffer.method_185(var3);
-         field_1463.method_4079(var8);
-      }
-
-      if(var2 == 628466177) {
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_67, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeShort(var3);
-         var8.networkBuffer.method_185(var0);
-         var8.networkBuffer.writeIntAltReversed(var1);
-         field_1463.method_4079(var8);
-         field_1523 = 0;
-         class_303.field_3395 = class_71.method_1047(var1);
-         field_1617 = -315663137 * var0;
-      }
-
-      if(-2022583999 == var2) {
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_98, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeIntAlt(-707301077 * class_148.field_1875);
-         var8.networkBuffer.method_185(775944023 * field_1573);
-         var8.networkBuffer.writeIntAlt(var1);
-         var8.networkBuffer.writeShort(var3);
-         var8.networkBuffer.method_185(var0);
-         field_1463.method_4079(var8);
-         field_1523 = 0;
-         class_303.field_3395 = class_71.method_1047(var1);
-         field_1617 = -315663137 * var0;
-      }
-
-      if(21 == var2) {
-         field_1567 = -976739058 * var6;
-         field_1519 = 246678685 * var7;
-         field_1521 = -1022456306;
-         field_1645 = 0;
-         field_1520 = 819547401 * var0;
-         field_1562 = var1 * 1092574165;
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_3, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeShortAlt(var3);
-         var8.networkBuffer.writeShortReverse(class_154.field_1929 * -654325454 + var1);
-         var8.networkBuffer.method_145(class_145.field_1840[-1777082177]?1:0);
-         var8.networkBuffer.writeShortReverse(var0 + class_243.field_2700 * -901737091);
-         field_1463.method_4079(var8);
-      }
-
-      if(30 == var2 && null == field_1583) {
-         class_115.method_2243(var1, var0);
-         field_1583 = class_325.method_5779(var1, var0, 657335814);
-         class_254.method_4900(field_1583, (byte)3);
-      }
-
-      if(18 == var2) {
-         field_1567 = 356483344 * var6;
-         field_1519 = var7 * 246678685;
-         field_1521 = -1022456306;
-         field_1645 = 0;
-         field_1520 = var0 * 819547401;
-         field_1562 = -835092600 * var1;
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_76, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeShortReverse(var3);
-         var8.networkBuffer.method_148(class_145.field_1840[436529975]?1:0);
-         var8.networkBuffer.writeShortAlt(-27903763 * class_154.field_1929 + var1);
-         var8.networkBuffer.writeShortReverse(355737942 * class_243.field_2700 + var0);
-         field_1463.method_4079(var8);
-      }
-
-      if(1847628922 == var2) {
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_101, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeInt(var1);
-         var8.networkBuffer.writeShort(var3);
-         var8.networkBuffer.writeShortAlt(var0);
-         field_1463.method_4079(var8);
-         field_1523 = 0;
-         class_303.field_3395 = class_71.method_1047(var1);
-         field_1617 = var0 * -315663137;
-      }
-
-      if(var2 == 3) {
-         field_1567 = var6 * 903050505;
-         field_1519 = 98720234 * var7;
-         field_1521 = -1022456306;
-         field_1645 = 0;
-         field_1520 = var0 * 819547401;
-         field_1562 = var1 * 382759660;
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_69, field_1463.isaac, (byte)8);
-         var8.networkBuffer.method_158(class_145.field_1840[82]?1:0);
-         var8.networkBuffer.writeShortAlt(var3);
-         var8.networkBuffer.writeShortReverse(697161691 * class_243.field_2700 + var0);
-         var8.networkBuffer.writeShort(var1 + class_154.field_1929 * -27903763);
-         field_1463.method_4079(var8);
-      }
-
-      if(var2 == 4) {
-         field_1567 = var6 * 560058203;
-         field_1519 = var7 * 1872062585;
-         field_1521 = -159209546;
-         field_1645 = 0;
-         field_1520 = var0 * -491042836;
-         field_1562 = var1 * -680744353;
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_54, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeShortReverse(class_243.field_2700 * -1211985107 + var0);
-         var8.networkBuffer.writeShortAlt(var3);
-         var8.networkBuffer.method_145(class_145.field_1840[82]?1:0);
-         var8.networkBuffer.writeShortAlt(-27903763 * class_154.field_1929 + var1);
-         field_1463.method_4079(var8);
-      }
-
-      if(14 == var2) {
-         var11 = field_1605[var3];
-         if(null != var11) {
-            field_1567 = 1239247479 * var6;
-            field_1519 = 246678685 * var7;
-            field_1521 = -1022456306;
-            field_1645 = 0;
-            field_1520 = 545141953 * var0;
-            field_1562 = 137903323 * var1;
-            var9 = class_112.newPacket(ClientOpcode.OPCODE_51, field_1463.isaac, (byte)8);
-            var9.networkBuffer.writeIntAltReversed(class_100.field_1172 * 1565845213);
-            var9.networkBuffer.method_185(class_189.field_2276 * 1854633345);
-            var9.networkBuffer.method_145(class_145.field_1840[82]?1:0);
-            var9.networkBuffer.method_185(81340013 * class_178.field_2220);
-            var9.networkBuffer.writeShortReverse(var3);
-            field_1463.method_4079(var9);
-         }
-      }
-
-      if(var2 == 17) {
-         field_1567 = var6 * -369536029;
-         field_1519 = 246678685 * var7;
-         field_1521 = -1022456306;
-         field_1645 = 0;
-         field_1520 = 819547401 * var0;
-         field_1562 = var1 * 1776469998;
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_96, field_1463.isaac, (byte)8);
-         var8.networkBuffer.method_145(class_145.field_1840[82]?1:0);
-         var8.networkBuffer.writeInt(474483108 * class_148.field_1875);
-         var8.networkBuffer.writeShort(class_154.field_1929 * -27903763 + var1);
-         var8.networkBuffer.writeShortAlt(1293126178 * field_1564);
-         var8.networkBuffer.method_185(var3);
-         var8.networkBuffer.writeShortReverse(var0 + class_243.field_2700 * 697161691);
-         var8.networkBuffer.writeShort(-1864001933 * field_1573);
-         field_1463.method_4079(var8);
-      }
-
-      if(var2 == -759679288) {
-         var11 = field_1605[var3];
-         if(null != var11) {
-            field_1567 = 66106592 * var6;
-            field_1519 = var7 * 1613389895;
-            field_1521 = -1022456306;
-            field_1645 = 0;
-            field_1520 = var0 * -868586069;
-            field_1562 = -1087043337 * var1;
-            var9 = class_112.newPacket(ClientOpcode.OPCODE_64, field_1463.isaac, (byte)8);
-            var9.networkBuffer.method_145(class_145.field_1840[1396156088]?1:0);
-            var9.networkBuffer.writeShortAlt(var3);
-            field_1463.method_4079(var9);
-         }
-      }
-
-      if(437300228 == var2 || var2 == 1007) {
-         var12 = class_325.method_5779(var1, var0, 322574896);
-         if(null != var12) {
-            class_382.method_6682(var3, var1, var0, var12.field_229 * 1883326779, var5, -1767069931);
-         }
-      }
-
-      if(var2 == 1001) {
-         field_1567 = var6 * 2068987572;
-         field_1519 = var7 * 504580552;
-         field_1521 = -1391726238;
-         field_1645 = 0;
-         field_1520 = -351968878 * var0;
-         field_1562 = 318394346 * var1;
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_78, field_1463.isaac, (byte)8);
-         var8.networkBuffer.writeShortAlt(var0 + 697161691 * class_243.field_2700);
-         var8.networkBuffer.method_158(class_145.field_1840[892225224]?1:0);
-         var8.networkBuffer.writeShortReverse(var3);
-         var8.networkBuffer.writeShortAlt(-1520824970 * class_154.field_1929 + var1);
-         field_1463.method_4079(var8);
-      }
-
-      if(var2 == 1) {
-         field_1567 = 1822163884 * var6;
-         field_1519 = 246678685 * var7;
-         field_1521 = -1022456306;
-         field_1645 = 0;
-         field_1520 = var0 * 819547401;
-         field_1562 = -872375561 * var1;
-         var8 = class_112.newPacket(ClientOpcode.OPCODE_105, field_1463.isaac, (byte)8);
-         var8.networkBuffer.method_185(1854633345 * class_189.field_2276);
-         var8.networkBuffer.writeShortAlt(var3);
-         var8.networkBuffer.method_158(class_145.field_1840[1249884859]?1:0);
-         var8.networkBuffer.writeShortAlt(class_154.field_1929 * -2017325881 + var1);
-         var8.networkBuffer.writeIntReverse(class_100.field_1172 * 59565695);
-         var8.networkBuffer.writeShortAlt(var0 + 697161691 * class_243.field_2700);
-         var8.networkBuffer.writeShortReverse(class_178.field_2220 * 1550509765);
-         field_1463.method_4079(var8);
-      }
-
-      if(23 == var2) {
-         if(field_1553) {
-            class_206.field_2401.method_4841();
-         } else {
-            class_206.field_2401.method_4755(class_115.field_1289 * -1238226704, var0, var1, true);
-         }
-      }
-
-      if(46 == var2) {
-         var11 = field_1605[var3];
-         if(var11 != null) {
-            field_1567 = -997598065 * var6;
-            field_1519 = var7 * 1768421468;
-            field_1521 = -1022456306;
-            field_1645 = 0;
-            field_1520 = var0 * 819547401;
-            field_1562 = var1 * 1551872625;
-            var9 = class_112.newPacket(ClientOpcode.OPCODE_52, field_1463.isaac, (byte)8);
-            var9.networkBuffer.method_148(class_145.field_1840[82]?1:0);
-            var9.networkBuffer.writeShortReverse(var3);
-            field_1463.method_4079(var9);
-         }
-      }
-
-      if(var2 == 48) {
-         var11 = field_1605[var3];
-         if(null != var11) {
-            field_1567 = var6 * 560058203;
-            field_1519 = 246678685 * var7;
-            field_1521 = 2067691386;
-            field_1645 = 0;
-            field_1520 = 819547401 * var0;
-            field_1562 = var1 * 1701947786;
-            var9 = class_112.newPacket(ClientOpcode.OPCODE_30, field_1463.isaac, (byte)8);
-            var9.networkBuffer.writeShortAlt(var3);
-            var9.networkBuffer.writeByte(class_145.field_1840[82]?1:0);
-            field_1463.method_4079(var9);
-         }
-      }
-
-      if(var2 == -225584832) {
-         class_54.method_583(-733283740);
-         var12 = class_71.method_1047(var1);
-         field_1570 = -2061774149;
-         class_178.field_2220 = 1632162661 * var0;
-         class_100.field_1172 = var1 * -1747674806;
-         class_189.field_2276 = var3 * -891952310;
-         class_254.method_4900(var12, (byte)50);
-         field_1571 = class_136.method_2958(-1520484185) + class_299.method_5347(var3, 422693701).field_707 + class_136.method_2958(16777215);
-         if(null == field_1571) {
-            field_1571 = class_305.field_3410;
-         }
-
-      } else {
-         if(var2 == 1705369865) {
-            var11 = field_1605[var3];
-            if(var11 != null) {
-               field_1567 = var6 * -1118889076;
-               field_1519 = 246678685 * var7;
-               field_1521 = -1022456306;
-               field_1645 = 0;
-               field_1520 = var0 * 1255937926;
-               field_1562 = var1 * -1771303877;
-               var9 = class_112.newPacket(ClientOpcode.OPCODE_82, field_1463.isaac, (byte)8);
-               var9.networkBuffer.writeShort(var3);
-               var9.networkBuffer.writeByte(class_145.field_1840[1803295622]?1:0);
-               field_1463.method_4079(var9);
-            }
-         }
-
-         if(-2021896629 == var2) {
-            var11 = field_1605[var3];
-            if(var11 != null) {
-               field_1567 = var6 * 1799036152;
-               field_1519 = var7 * -897743133;
-               field_1521 = -1022456306;
-               field_1645 = 0;
-               field_1520 = var0 * -554951899;
-               field_1562 = 1254706882 * var1;
-               var9 = class_112.newPacket(ClientOpcode.OPCODE_48, field_1463.isaac, (byte)8);
-               var9.networkBuffer.writeByte(class_145.field_1840[82]?1:0);
-               var9.networkBuffer.writeShortAlt(var3);
-               field_1463.method_4079(var9);
-            }
-         }
-
-         if(1102922629 == var2) {
-            field_1567 = var6 * 560058203;
-            field_1519 = 246678685 * var7;
-            field_1521 = -1177665708;
-            field_1645 = 0;
-            var8 = class_112.newPacket(ClientOpcode.OPCODE_74, field_1463.isaac, (byte)8);
-            var8.networkBuffer.writeShort(var3);
-            field_1463.method_4079(var8);
-         }
-
-         if(var2 == -1231328690) {
-            var11 = field_1605[var3];
-            if(null != var11) {
-               field_1567 = 2124449174 * var6;
-               field_1519 = 246678685 * var7;
-               field_1521 = 2042929375;
-               field_1645 = 0;
-               field_1520 = 819547401 * var0;
-               field_1562 = var1 * -216103623;
-               var9 = class_112.newPacket(ClientOpcode.OPCODE_25, field_1463.isaac, (byte)8);
-               var9.networkBuffer.method_185(var3);
-               var9.networkBuffer.method_148(class_145.field_1840[82]?1:0);
-               field_1463.method_4079(var9);
-            }
-         }
-
-         if(var2 == 9) {
-            var13 = field_1458[var3];
-            if(null != var13) {
-               field_1567 = 1018834382 * var6;
-               field_1519 = var7 * 246678685;
-               field_1521 = -1022456306;
-               field_1645 = 0;
-               field_1520 = var0 * -1700611091;
-               field_1562 = var1 * 630109382;
-               var9 = class_112.newPacket(ClientOpcode.OPCODE_32, field_1463.isaac, (byte)8);
-               var9.networkBuffer.method_145(class_145.field_1840[82]?1:0);
-               var9.networkBuffer.writeShort(var3);
-               field_1463.method_4079(var9);
-            }
-         }
-
-         if(7 == var2) {
-            var13 = field_1458[var3];
-            if(var13 != null) {
-               field_1567 = var6 * -76590248;
-               field_1519 = -379120257 * var7;
-               field_1521 = -1022456306;
-               field_1645 = 0;
-               field_1520 = 819547401 * var0;
-               field_1562 = var1 * 1551872625;
-               var9 = class_112.newPacket(ClientOpcode.OPCODE_103, field_1463.isaac, (byte)8);
-               var9.networkBuffer.writeByte(class_145.field_1840[82]?1:0);
-               var9.networkBuffer.writeShortAlt(class_189.field_2276 * 1854633345);
-               var9.networkBuffer.writeIntAlt(class_100.field_1172 * 521561897);
-               var9.networkBuffer.method_185(var3);
-               var9.networkBuffer.writeShort(class_178.field_2220 * 81340013);
-               field_1463.method_4079(var9);
-            }
-         }
-
-         if(var2 == 29) {
-            var8 = class_112.newPacket(ClientOpcode.OPCODE_65, field_1463.isaac, (byte)8);
-            var8.networkBuffer.writeIntReverse(var1);
-            field_1463.method_4079(var8);
-            var14 = class_71.method_1047(var1);
-            if(null != var14.field_221 && var14.field_221[0][0] == 5) {
-               var10 = var14.field_221[0][1];
-               if(class_282.field_3246[var10] != var14.field_193[0]) {
-                  class_282.field_3246[var10] = var14.field_193[0];
-                  class_147.method_3111(var10, 303789689);
-               }
-            }
-         }
-
-         class_40 var15;
-         if(var2 == -2059199813) {
-            field_1567 = 512115013 * var6;
-            field_1519 = 246678685 * var7;
-            field_1521 = -1022456306;
-            field_1645 = 0;
-            var13 = field_1458[var3];
-            if(null != var13) {
-               class_88 var16 = var13.field_1141;
-               if(var16.field_862 != null) {
-                  var16 = var16.method_1545((byte)24);
-               }
-
-               if(null != var16) {
-                  var15 = class_112.newPacket(ClientOpcode.OPCODE_6, field_1463.isaac, (byte)8);
-                  var15.networkBuffer.writeShort(var16.field_857 * -2060838679);
-                  field_1463.method_4079(var15);
-               }
-            }
-         }
-
-         if(6 == var2) {
-            field_1567 = 2072026202 * var6;
-            field_1519 = var7 * 246678685;
-            field_1521 = 377421656;
-            field_1645 = 0;
-            field_1520 = var0 * 819547401;
-            field_1562 = 1551872625 * var1;
-            var8 = class_112.newPacket(ClientOpcode.OPCODE_93, field_1463.isaac, (byte)8);
-            var8.networkBuffer.method_185(var3);
-            var8.networkBuffer.method_185(var1 + 316310315 * class_154.field_1929);
-            var8.networkBuffer.method_145(class_145.field_1840[-1052887646]?1:0);
-            var8.networkBuffer.writeShortAlt(class_243.field_2700 * 697161691 + var0);
-            field_1463.method_4079(var8);
-         }
-
-         if(var2 == 12) {
-            var13 = field_1458[var3];
-            if(null != var13) {
-               field_1567 = var6 * 560058203;
-               field_1519 = 699137262 * var7;
-               field_1521 = -1022456306;
-               field_1645 = 0;
-               field_1520 = var0 * 819547401;
-               field_1562 = var1 * 1551872625;
-               var9 = class_112.newPacket(ClientOpcode.OPCODE_29, field_1463.isaac, (byte)8);
-               var9.networkBuffer.writeByte(class_145.field_1840[82]?1:0);
-               var9.networkBuffer.method_185(var3);
-               field_1463.method_4079(var9);
-            }
-         }
-
-         if(var2 == 2) {
-            field_1567 = -1877477990 * var6;
-            field_1519 = var7 * 246678685;
-            field_1521 = -1022456306;
-            field_1645 = 0;
-            field_1520 = var0 * 819547401;
-            field_1562 = 356157048 * var1;
-            var8 = class_112.newPacket(ClientOpcode.OPCODE_71, field_1463.isaac, (byte)8);
-            var8.networkBuffer.writeShort(var0 + class_243.field_2700 * 697161691);
-            var8.networkBuffer.writeShortReverse(var3);
-            var8.networkBuffer.writeShort(field_1564 * -183001773);
-            var8.networkBuffer.writeShortReverse(class_154.field_1929 * -27903763 + var1);
-            var8.networkBuffer.writeShortReverse(field_1573 * 2145863682);
-            var8.networkBuffer.method_158(class_145.field_1840[-396604751]?1:0);
-            var8.networkBuffer.writeIntAlt(class_148.field_1875 * 1430642749);
-            field_1463.method_4079(var8);
-         }
-
-         if(26 == var2) {
-            class_117.method_2250((short)-15442);
-         }
-
-         if(1008 == var2 || 1009 == var2 || var2 == 1010 || var2 == 1338998204 || var2 == 1012) {
-            class_363 var10000 = class_287.field_3278;
-            class_280 var10003 = new class_280(var0);
-            class_280 var10004 = new class_280(var1);
-            var10000.method_6383(var2, var3, var10003, var10004);
-         }
-
-         if(var2 == 11) {
-            var13 = field_1458[var3];
-            if(null != var13) {
-               field_1567 = var6 * 560058203;
-               field_1519 = -1941342200 * var7;
-               field_1521 = -1022456306;
-               field_1645 = 0;
-               field_1520 = 819547401 * var0;
-               field_1562 = var1 * -1523683674;
-               var9 = class_112.newPacket(ClientOpcode.OPCODE_92, field_1463.isaac, (byte)8);
-               var9.networkBuffer.writeShort(var3);
-               var9.networkBuffer.writeByte(class_145.field_1840[-541707729]?1:0);
-               field_1463.method_4079(var9);
-            }
-         }
-
-         if(var2 == 24) {
-            var12 = class_71.method_1047(var1);
-            boolean var17 = true;
-            if(1121370226 * var12.field_207 > 0) {
-               var17 = class_72.method_1091(var12, -199946662);
-            }
-
-            if(var17) {
-               var15 = class_112.newPacket(ClientOpcode.OPCODE_65, field_1463.isaac, (byte)8);
-               var15.networkBuffer.writeIntReverse(var1);
-               field_1463.method_4079(var15);
-            }
-         }
-
-         if(var2 == 22) {
-            field_1567 = 560058203 * var6;
-            field_1519 = var7 * -2110216325;
-            field_1521 = -648718301;
-            field_1645 = 0;
-            field_1520 = -1152526700 * var0;
-            field_1562 = 1551872625 * var1;
-            var8 = class_112.newPacket(ClientOpcode.OPCODE_77, field_1463.isaac, (byte)8);
-            var8.networkBuffer.writeShortAlt(var3);
-            var8.networkBuffer.method_185(697161691 * class_243.field_2700 + var0);
-            var8.networkBuffer.method_158(class_145.field_1840[-912500261]?1:0);
-            var8.networkBuffer.method_185(var1 + -27903763 * class_154.field_1929);
-            field_1463.method_4079(var8);
-         }
-
-         if(-804129117 == var2) {
-            var8 = class_112.newPacket(ClientOpcode.OPCODE_99, field_1463.isaac, (byte)8);
-            var8.networkBuffer.writeShortAlt(var0);
-            var8.networkBuffer.writeShort(var3);
-            var8.networkBuffer.writeInt(var1);
-            field_1463.method_4079(var8);
-            field_1523 = 0;
-            class_303.field_3395 = class_71.method_1047(var1);
-            field_1617 = -315663137 * var0;
-         }
-
-         if(35 == var2) {
-            var8 = class_112.newPacket(ClientOpcode.OPCODE_55, field_1463.isaac, (byte)8);
-            var8.networkBuffer.writeShortReverse(var3);
-            var8.networkBuffer.writeIntAlt(var1);
-            var8.networkBuffer.writeShortAlt(var0);
-            field_1463.method_4079(var8);
-            field_1523 = 0;
-            class_303.field_3395 = class_71.method_1047(var1);
-            field_1617 = -1337523508 * var0;
-         }
-
-         if(var2 == 15) {
-            var11 = field_1605[var3];
-            if(var11 != null) {
-               field_1567 = var6 * -1809373745;
-               field_1519 = 2125727328 * var7;
-               field_1521 = 1285863066;
-               field_1645 = 0;
-               field_1520 = 819547401 * var0;
-               field_1562 = var1 * 1551872625;
-               var9 = class_112.newPacket(ClientOpcode.OPCODE_43, field_1463.isaac, (byte)8);
-               var9.networkBuffer.method_185(field_1573 * -676926561);
-               var9.networkBuffer.writeShortAlt(var3);
-               var9.networkBuffer.writeInt(1430642749 * class_148.field_1875);
-               var9.networkBuffer.method_148(class_145.field_1840[82]?1:0);
-               var9.networkBuffer.writeShortAlt(field_1564 * 1424616685);
-               field_1463.method_4079(var9);
-            }
-         }
-
-         if(20 == var2) {
-            field_1567 = var6 * 560058203;
-            field_1519 = var7 * 246678685;
-            field_1521 = -1022456306;
-            field_1645 = 0;
-            field_1520 = var0 * 819547401;
-            field_1562 = 1491721213 * var1;
-            var8 = class_112.newPacket(ClientOpcode.OPCODE_62, field_1463.isaac, (byte)8);
-            var8.networkBuffer.method_185(var3);
-            var8.networkBuffer.writeShort(var0 + class_243.field_2700 * 697161691);
-            var8.networkBuffer.method_148(class_145.field_1840[-1697953546]?1:0);
-            var8.networkBuffer.writeShortAlt(var1 + class_154.field_1929 * -27903763);
-            field_1463.method_4079(var8);
-         }
-
-         if(51 == var2) {
-            var11 = field_1605[var3];
-            if(var11 != null) {
-               field_1567 = -330476190 * var6;
-               field_1519 = -488211227 * var7;
-               field_1521 = -1022456306;
-               field_1645 = 0;
-               field_1520 = -172050831 * var0;
-               field_1562 = 369901455 * var1;
-               var9 = class_112.newPacket(ClientOpcode.OPCODE_102, field_1463.isaac, (byte)8);
-               var9.networkBuffer.writeShortReverse(var3);
-               var9.networkBuffer.method_158(class_145.field_1840[82]?1:0);
-               field_1463.method_4079(var9);
-            }
-         }
-
-         if(25 == var2) {
-            var12 = class_325.method_5779(var1, var0, 1021172777);
-            if(null != var12) {
-               class_54.method_583(1441522336);
-               class_162.method_3415(var1, var0, class_196.method_3989(class_112.method_2236(var12, 2131799094)), -730808334 * var12.field_229, -2143841438);
-               field_1570 = 0;
-               field_1575 = class_269.method_5039(var12, 321829900);
-               if(field_1575 == null) {
-                  field_1575 = class_305.field_3410;
-               }
-
-               if(var12.field_100) {
-                  field_1545 = var12.field_91 + class_136.method_2958(-1313990282);
-               } else {
-                  field_1545 = class_136.method_2958('\uff00') + var12.field_225 + class_136.method_2958(943329578);
-               }
-            }
-
-         } else {
-            if(40 == var2) {
-               var8 = class_112.newPacket(ClientOpcode.OPCODE_37, field_1463.isaac, (byte)8);
-               var8.networkBuffer.writeShort(var0);
-               var8.networkBuffer.writeIntAltReversed(var1);
-               var8.networkBuffer.method_185(var3);
-               field_1463.method_4079(var8);
-               field_1523 = 0;
-               class_303.field_3395 = class_71.method_1047(var1);
-               field_1617 = var0 * -315663137;
-            }
-
-            if(var2 == 10) {
-               var13 = field_1458[var3];
-               if(var13 != null) {
-                  field_1567 = var6 * 560058203;
-                  field_1519 = var7 * 1789294561;
-                  field_1521 = 140615301;
-                  field_1645 = 0;
-                  field_1520 = var0 * 819547401;
-                  field_1562 = var1 * 1551872625;
-                  var9 = class_112.newPacket(ClientOpcode.OPCODE_47, field_1463.isaac, (byte)8);
-                  var9.networkBuffer.method_185(var3);
-                  var9.networkBuffer.method_145(class_145.field_1840[82]?1:0);
-                  field_1463.method_4079(var9);
-               }
-            }
-
-            if(var2 == 33) {
-               var8 = class_112.newPacket(ClientOpcode.OPCODE_13, field_1463.isaac, (byte)8);
-               var8.networkBuffer.writeIntAlt(var1);
-               var8.networkBuffer.writeShort(var0);
-               var8.networkBuffer.writeShortReverse(var3);
-               field_1463.method_4079(var8);
-               field_1523 = 0;
-               class_303.field_3395 = class_71.method_1047(var1);
-               field_1617 = var0 * -318223993;
-            }
-
-            if(var2 == 1005) {
-               var12 = class_71.method_1047(var1);
-               if(var12 != null && var12.field_228[var0] >= -1487809012) {
-                  class_149.method_3135(27, "", var12.field_228[var0] + " x " + class_299.method_5347(var3, -1353412871).field_707);
-               } else {
-                  var9 = class_112.newPacket(ClientOpcode.OPCODE_74, field_1463.isaac, (byte)8);
-                  var9.networkBuffer.writeShort(var3);
-                  field_1463.method_4079(var9);
-               }
-
-               field_1523 = 0;
-               class_303.field_3395 = class_71.method_1047(var1);
-               field_1617 = 1851158199 * var0;
-            }
-
-            if(var2 == 19) {
-               field_1567 = 560058203 * var6;
-               field_1519 = 272024812 * var7;
-               field_1521 = -1022456306;
-               field_1645 = 0;
-               field_1520 = -1408438262 * var0;
-               field_1562 = 1551872625 * var1;
-               var8 = class_112.newPacket(ClientOpcode.OPCODE_87, field_1463.isaac, (byte)8);
-               var8.networkBuffer.writeShort(class_243.field_2700 * 855499321 + var0);
-               var8.networkBuffer.writeShortAlt(-27903763 * class_154.field_1929 + var1);
-               var8.networkBuffer.method_145(class_145.field_1840[82]?1:0);
-               var8.networkBuffer.writeShort(var3);
-               field_1463.method_4079(var8);
-            }
-
-            if(0 != -417098277 * field_1570) {
-               field_1570 = 0;
-               class_254.method_4900(class_71.method_1047(1565845213 * class_100.field_1172), (byte)66);
-            }
-
-            if(field_1572) {
-               class_54.method_583(-1092077723);
-            }
-
-            if(null != class_303.field_3395 && 0 == field_1523 * -1890193251) {
-               class_254.method_4900(class_303.field_3395, (byte)13);
-            }
-
-         }
-      }
    }
 
    // $FF: renamed from: ub (int) java.lang.String
@@ -36241,8 +32943,8 @@ public final class client extends GameApplet implements class_16 {
                         var30 = var3.method_377(1807969364);
                         if(var30 >= 0) {
                            if(var30 < var28.length) {
-                              field_1463.field_2376 = var28[var30];
-                              field_1463.field_2380 = field_1463.field_2376.field_3027 * 1568909879;
+                              field_1463.opcode = var28[var30];
+                              field_1463.field_2380 = field_1463.opcode.field_3027 * 1568909879;
                               ((class_206)var2).read(var3.data, 0, 2, -1943967720);
                               var3.offset = 0;
                               field_1463.field_2380 = var3.readShort() * 930611749;
@@ -36381,7 +33083,7 @@ public final class client extends GameApplet implements class_16 {
                      class_157.method_3279();
                      field_1463.method_4077();
                      field_1463.networkBuffer.offset = 0;
-                     field_1463.field_2376 = null;
+                     field_1463.opcode = null;
                      field_1463.field_2381 = null;
                      field_1463.field_2382 = null;
                      field_1463.field_2370 = null;
@@ -36589,7 +33291,7 @@ public final class client extends GameApplet implements class_16 {
                      class_280.method_5168(var3, (byte)-128);
                      class_151.field_1910 = -1635050229;
                      class_370.method_6601(false, var3, -2130717093);
-                     field_1463.field_2376 = null;
+                     field_1463.opcode = null;
                   }
 
                }
