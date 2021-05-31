@@ -143,7 +143,7 @@ public class class_318 {
             }
          }
 
-         class_40 var2 = class_112.method_2238(class_266.field_3084, client.field_1463.isaac, (byte)8);
+         class_40 var2 = class_112.newPacket(Opcode.OPCODE_38, client.field_1463.isaac, (byte)8);
          var2.networkBuffer.writeByte(command.length() + 1);
          var2.networkBuffer.writeString(command);
          client.field_1463.method_4079(var2);

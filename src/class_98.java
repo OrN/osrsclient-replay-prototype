@@ -914,7 +914,7 @@ public abstract class class_98 extends class_91 {
                               throw new IllegalStateException();
                            }
 
-                           var9 = class_112.method_2238(class_266.field_3071, client.field_1463.isaac, (byte)8);
+                           var9 = class_112.newPacket(Opcode.OPCODE_25, client.field_1463.isaac, (byte)8);
                            var9.networkBuffer.method_185(var4[var7]);
                            var9.networkBuffer.method_148(0);
                            client.field_1463.method_4079(var9);
@@ -923,7 +923,7 @@ public abstract class class_98 extends class_91 {
                               throw new IllegalStateException();
                            }
 
-                           var9 = class_112.method_2238(class_266.field_3079, client.field_1463.isaac, (byte)8);
+                           var9 = class_112.newPacket(Opcode.OPCODE_33, client.field_1463.isaac, (byte)8);
                            var9.networkBuffer.method_185(var4[var7]);
                            var9.networkBuffer.method_148(0);
                            client.field_1463.method_4079(var9);
@@ -932,7 +932,7 @@ public abstract class class_98 extends class_91 {
                               throw new IllegalStateException();
                            }
 
-                           var9 = class_112.method_2238(class_266.field_3110, client.field_1463.isaac, (byte)8);
+                           var9 = class_112.newPacket(Opcode.OPCODE_64, client.field_1463.isaac, (byte)8);
                            var9.networkBuffer.method_145(0);
                            var9.networkBuffer.writeShortAlt(var4[var7]);
                            client.field_1463.method_4079(var9);
@@ -941,7 +941,7 @@ public abstract class class_98 extends class_91 {
                               throw new IllegalStateException();
                            }
 
-                           var9 = class_112.method_2238(class_266.field_3094, client.field_1463.isaac, (byte)8);
+                           var9 = class_112.newPacket(Opcode.OPCODE_48, client.field_1463.isaac, (byte)8);
                            var9.networkBuffer.writeByte(0);
                            var9.networkBuffer.writeShortAlt(var4[var7]);
                            client.field_1463.method_4079(var9);

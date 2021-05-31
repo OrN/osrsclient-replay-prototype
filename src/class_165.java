@@ -5725,7 +5725,7 @@ public class class_165 {
          }
 
          client.field_1638 = field_2052[-26460885 * class_136.field_1752 + 2] * 1186588677;
-         class_40 var13 = class_112.method_2238(class_266.field_3085, client.field_1463.isaac, (byte)8);
+         class_40 var13 = class_112.newPacket(Opcode.OPCODE_39, client.field_1463.isaac, (byte)8);
          var13.networkBuffer.writeByte(client.field_1593 * -639645947);
          var13.networkBuffer.writeByte(-767370613 * class_45.field_338.field_3961);
          var13.networkBuffer.writeByte(client.field_1638 * -1863932723);
@@ -5741,7 +5741,7 @@ public class class_165 {
             class_136.field_1752 -= 2119512838;
             var8 = field_2052[class_136.field_1752 * -26460885];
             var10 = field_2052[class_136.field_1752 * -26460885 + 1];
-            var6 = class_112.method_2238(class_266.field_3070, client.field_1463.isaac, (byte)8);
+            var6 = class_112.newPacket(Opcode.OPCODE_34, client.field_1463.isaac, (byte)8);
             var6.networkBuffer.writeByte(class_166.method_3598(var3) + 2);
             var6.networkBuffer.writeString(var3);
             var6.networkBuffer.writeByte(var8 - 1);
@@ -5815,7 +5815,7 @@ public class class_165 {
                      field_2054 -= -1000716630;
                      var3 = field_2053[field_2054 * 1824375293];
                      String var9 = field_2053[1824375293 * field_2054 + 1];
-                     var11 = class_112.method_2238(class_266.field_3088, client.field_1463.isaac, (byte)8);
+                     var11 = class_112.newPacket(Opcode.OPCODE_42, client.field_1463.isaac, (byte)8);
                      var11.networkBuffer.writeShortReverse(0);
                      int var12 = -442398587 * var11.networkBuffer.offset;
                      var11.networkBuffer.writeString(var3);
@@ -7713,7 +7713,7 @@ public class class_165 {
          }
 
          client.field_1638 = field_2052[-505471280 * class_136.field_1752 + 2] * 1186588677;
-         class_40 var13 = class_112.method_2238(class_266.field_3085, client.field_1463.isaac, (byte)8);
+         class_40 var13 = class_112.newPacket(Opcode.OPCODE_39, client.field_1463.isaac, (byte)8);
          var13.networkBuffer.writeByte(client.field_1593 * -639645947);
          var13.networkBuffer.writeByte(2090751423 * class_45.field_338.field_3961);
          var13.networkBuffer.writeByte(client.field_1638 * -1863932723);
@@ -7729,7 +7729,7 @@ public class class_165 {
             class_136.field_1752 -= 2119512838;
             var8 = field_2052[class_136.field_1752 * 1504907510];
             var10 = field_2052[class_136.field_1752 * -26460885 + 1];
-            var6 = class_112.method_2238(class_266.field_3070, client.field_1463.isaac, (byte)8);
+            var6 = class_112.newPacket(Opcode.OPCODE_34, client.field_1463.isaac, (byte)8);
             var6.networkBuffer.writeByte(class_166.method_3598(var3) + 2);
             var6.networkBuffer.writeString(var3);
             var6.networkBuffer.writeByte(var8 - 1);
@@ -7803,7 +7803,7 @@ public class class_165 {
                      field_2054 -= -1000716630;
                      var3 = field_2053[field_2054 * 1824375293];
                      String var9 = field_2053[1824375293 * field_2054 + 1];
-                     var11 = class_112.method_2238(class_266.field_3088, client.field_1463.isaac, (byte)8);
+                     var11 = class_112.newPacket(Opcode.OPCODE_42, client.field_1463.isaac, (byte)8);
                      var11.networkBuffer.writeShortReverse(0);
                      int var12 = 792259952 * var11.networkBuffer.offset;
                      var11.networkBuffer.writeString(var3);
@@ -8205,7 +8205,7 @@ public class class_165 {
          }
 
          client.field_1638 = field_2052[-26460885 * class_136.field_1752 + 2] * 1186588677;
-         class_40 var13 = class_112.method_2238(class_266.field_3085, client.field_1463.isaac, (byte)8);
+         class_40 var13 = class_112.newPacket(Opcode.OPCODE_39, client.field_1463.isaac, (byte)8);
          var13.networkBuffer.writeByte(client.field_1593 * -639645947);
          var13.networkBuffer.writeByte(-767370613 * class_45.field_338.field_3961);
          var13.networkBuffer.writeByte(client.field_1638 * -1863932723);
@@ -8221,7 +8221,7 @@ public class class_165 {
             class_136.field_1752 -= 2119512838;
             var8 = field_2052[class_136.field_1752 * -26460885];
             var10 = field_2052[class_136.field_1752 * -26460885 + 1];
-            var6 = class_112.method_2238(class_266.field_3070, client.field_1463.isaac, (byte)8);
+            var6 = class_112.newPacket(Opcode.OPCODE_34, client.field_1463.isaac, (byte)8);
             var6.networkBuffer.writeByte(class_166.method_3598(var3) + 2);
             var6.networkBuffer.writeString(var3);
             var6.networkBuffer.writeByte(var8 - 1);
@@ -8295,7 +8295,7 @@ public class class_165 {
                      field_2054 -= -1000716630;
                      var3 = field_2053[field_2054 * 1824375293];
                      String var9 = field_2053[1824375293 * field_2054 + 1];
-                     var11 = class_112.method_2238(class_266.field_3088, client.field_1463.isaac, (byte)8);
+                     var11 = class_112.newPacket(Opcode.OPCODE_42, client.field_1463.isaac, (byte)8);
                      var11.networkBuffer.writeShortReverse(0);
                      int var12 = -442398587 * var11.networkBuffer.offset;
                      var11.networkBuffer.writeString(var3);
@@ -8430,7 +8430,7 @@ public class class_165 {
          }
 
          client.field_1638 = field_2052[-321883290 * class_136.field_1752 + 2] * 1186588677;
-         class_40 var13 = class_112.method_2238(class_266.field_3085, client.field_1463.isaac, (byte)8);
+         class_40 var13 = class_112.newPacket(Opcode.OPCODE_39, client.field_1463.isaac, (byte)8);
          var13.networkBuffer.writeByte(client.field_1593 * -639645947);
          var13.networkBuffer.writeByte(-767370613 * class_45.field_338.field_3961);
          var13.networkBuffer.writeByte(client.field_1638 * -1863932723);
@@ -8446,7 +8446,7 @@ public class class_165 {
             class_136.field_1752 -= -942860852;
             var8 = field_2052[class_136.field_1752 * 355023983];
             var10 = field_2052[class_136.field_1752 * -26460885 + 1];
-            var6 = class_112.method_2238(class_266.field_3070, client.field_1463.isaac, (byte)8);
+            var6 = class_112.newPacket(Opcode.OPCODE_34, client.field_1463.isaac, (byte)8);
             var6.networkBuffer.writeByte(class_166.method_3598(var3) + 2);
             var6.networkBuffer.writeString(var3);
             var6.networkBuffer.writeByte(var8 - 1);
@@ -8520,7 +8520,7 @@ public class class_165 {
                      field_2054 -= 1749871685;
                      var3 = field_2053[field_2054 * 1824375293];
                      String var9 = field_2053[-1961345661 * field_2054 + 1];
-                     var11 = class_112.method_2238(class_266.field_3088, client.field_1463.isaac, (byte)8);
+                     var11 = class_112.newPacket(Opcode.OPCODE_42, client.field_1463.isaac, (byte)8);
                      var11.networkBuffer.writeShortReverse(0);
                      int var12 = -442398587 * var11.networkBuffer.offset;
                      var11.networkBuffer.writeString(var3);
@@ -12369,7 +12369,7 @@ public class class_165 {
          }
 
          client.field_1638 = field_2052[239048906 * class_136.field_1752 + 2] * 1186588677;
-         class_40 var13 = class_112.method_2238(class_266.field_3085, client.field_1463.isaac, (byte)8);
+         class_40 var13 = class_112.newPacket(Opcode.OPCODE_39, client.field_1463.isaac, (byte)8);
          var13.networkBuffer.writeByte(client.field_1593 * -585689923);
          var13.networkBuffer.writeByte(-767370613 * class_45.field_338.field_3961);
          var13.networkBuffer.writeByte(client.field_1638 * 280377903);
@@ -12385,7 +12385,7 @@ public class class_165 {
             class_136.field_1752 -= -1356584369;
             var8 = field_2052[class_136.field_1752 * 1022550110];
             var10 = field_2052[class_136.field_1752 * -26460885 + 1];
-            var6 = class_112.method_2238(class_266.field_3070, client.field_1463.isaac, (byte)8);
+            var6 = class_112.newPacket(Opcode.OPCODE_34, client.field_1463.isaac, (byte)8);
             var6.networkBuffer.writeByte(class_166.method_3598(var3) + 2);
             var6.networkBuffer.writeString(var3);
             var6.networkBuffer.writeByte(var8 - 1);
@@ -12459,7 +12459,7 @@ public class class_165 {
                      field_2054 -= 1003771861;
                      var3 = field_2053[field_2054 * -2053468233];
                      String var9 = field_2053[1824375293 * field_2054 + 1];
-                     var11 = class_112.method_2238(class_266.field_3088, client.field_1463.isaac, (byte)8);
+                     var11 = class_112.newPacket(Opcode.OPCODE_42, client.field_1463.isaac, (byte)8);
                      var11.networkBuffer.writeShortReverse(0);
                      int var12 = -442398587 * var11.networkBuffer.offset;
                      var11.networkBuffer.writeString(var3);

@@ -1650,7 +1650,7 @@ public class class_363 {
                   }
 
                   if(var8) {
-                     class_40 var12 = class_112.method_2238(class_266.field_3080, client.field_1463.isaac, (byte)8);
+                     class_40 var12 = class_112.newPacket(Opcode.OPCODE_104, client.field_1463.isaac, (byte)8);
                      var12.networkBuffer.writeInt(this.field_4072.method_5156());
                      client.field_1463.method_4079(var12);
                      this.field_4064 = 0L;

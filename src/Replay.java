@@ -53,7 +53,7 @@ public class Replay {
             if (!active) {
                 switch (mode) {
                     case PLAYBACK:
-                        ReplayServer.replayPath = "./replays/05-31-2021 04.03.26";
+                        ReplayServer.replayPath = "./replays/05-31-2021 05.26.58";
                         keysIn = new DataInputStream(new BufferedInputStream(new FileInputStream(new File(ReplayServer.replayPath + "/keys.bin"))));
                         settingsIn = new DataInputStream(new BufferedInputStream(new FileInputStream(new File(ReplayServer.replayPath + "/settings.bin"))));
 

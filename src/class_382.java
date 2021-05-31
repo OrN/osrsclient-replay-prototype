@@ -42,7 +42,7 @@ public final class class_382 {
                         return;
                      }
 
-                     var8 = class_112.method_2238(class_266.field_3078, client.field_1463.isaac, (byte)8);
+                     var8 = class_112.newPacket(Opcode.OPCODE_16, client.field_1463.isaac, (byte)8);
                      var8.networkBuffer.writeIntReverse(var1);
                      var8.networkBuffer.writeShortReverse(var2);
                      var8.networkBuffer.writeShortReverse(var3);
@@ -54,7 +54,7 @@ public final class class_382 {
                         throw new IllegalStateException();
                      }
 
-                     var8 = class_112.method_2238(class_266.field_3077, client.field_1463.isaac, (byte)8);
+                     var8 = class_112.newPacket(Opcode.OPCODE_66, client.field_1463.isaac, (byte)8);
                      var8.networkBuffer.writeIntReverse(var1);
                      var8.networkBuffer.writeShortReverse(var2);
                      var8.networkBuffer.writeShortReverse(var3);
@@ -66,7 +66,7 @@ public final class class_382 {
                         throw new IllegalStateException();
                      }
 
-                     var8 = class_112.method_2238(class_266.field_3090, client.field_1463.isaac, (byte)8);
+                     var8 = class_112.newPacket(Opcode.OPCODE_44, client.field_1463.isaac, (byte)8);
                      var8.networkBuffer.writeIntReverse(var1);
                      var8.networkBuffer.writeShortReverse(var2);
                      var8.networkBuffer.writeShortReverse(var3);
@@ -78,7 +78,7 @@ public final class class_382 {
                         throw new IllegalStateException();
                      }
 
-                     var8 = class_112.method_2238(class_266.field_3152, client.field_1463.isaac, (byte)8);
+                     var8 = class_112.newPacket(Opcode.OPCODE_27, client.field_1463.isaac, (byte)8);
                      var8.networkBuffer.writeIntReverse(var1);
                      var8.networkBuffer.writeShortReverse(var2);
                      var8.networkBuffer.writeShortReverse(var3);
@@ -90,7 +90,7 @@ public final class class_382 {
                         return;
                      }
 
-                     var8 = class_112.method_2238(class_266.field_3066, client.field_1463.isaac, (byte)8);
+                     var8 = class_112.newPacket(Opcode.OPCODE_20, client.field_1463.isaac, (byte)8);
                      var8.networkBuffer.writeIntReverse(var1);
                      var8.networkBuffer.writeShortReverse(var2);
                      var8.networkBuffer.writeShortReverse(var3);
@@ -102,7 +102,7 @@ public final class class_382 {
                         throw new IllegalStateException();
                      }
 
-                     var8 = class_112.method_2238(class_266.field_3124, client.field_1463.isaac, (byte)8);
+                     var8 = class_112.newPacket(Opcode.OPCODE_94, client.field_1463.isaac, (byte)8);
                      var8.networkBuffer.writeIntReverse(var1);
                      var8.networkBuffer.writeShortReverse(var2);
                      var8.networkBuffer.writeShortReverse(var3);
@@ -114,7 +114,7 @@ public final class class_382 {
                         throw new IllegalStateException();
                      }
 
-                     var8 = class_112.method_2238(class_266.field_3122, client.field_1463.isaac, (byte)8);
+                     var8 = class_112.newPacket(Opcode.OPCODE_22, client.field_1463.isaac, (byte)8);
                      var8.networkBuffer.writeIntReverse(var1);
                      var8.networkBuffer.writeShortReverse(var2);
                      var8.networkBuffer.writeShortReverse(var3);
@@ -126,7 +126,7 @@ public final class class_382 {
                         throw new IllegalStateException();
                      }
 
-                     var8 = class_112.method_2238(class_266.field_3087, client.field_1463.isaac, (byte)8);
+                     var8 = class_112.newPacket(Opcode.OPCODE_41, client.field_1463.isaac, (byte)8);
                      var8.networkBuffer.writeIntReverse(var1);
                      var8.networkBuffer.writeShortReverse(var2);
                      var8.networkBuffer.writeShortReverse(var3);
@@ -134,7 +134,7 @@ public final class class_382 {
                   }
 
                   if(9 == var0) {
-                     var8 = class_112.method_2238(class_266.field_3067, client.field_1463.isaac, (byte)8);
+                     var8 = class_112.newPacket(Opcode.OPCODE_21, client.field_1463.isaac, (byte)8);
                      var8.networkBuffer.writeIntReverse(var1);
                      var8.networkBuffer.writeShortReverse(var2);
                      var8.networkBuffer.writeShortReverse(var3);
@@ -146,7 +146,7 @@ public final class class_382 {
                         throw new IllegalStateException();
                      }
 
-                     var8 = class_112.method_2238(class_266.field_3106, client.field_1463.isaac, (byte)8);
+                     var8 = class_112.newPacket(Opcode.OPCODE_60, client.field_1463.isaac, (byte)8);
                      var8.networkBuffer.writeIntReverse(var1);
                      var8.networkBuffer.writeShortReverse(var2);
                      var8.networkBuffer.writeShortReverse(var3);

@@ -424,7 +424,7 @@ public class class_245 implements class_7 {
                throw new IllegalStateException();
             }
 
-            class_40 var2 = class_112.method_2238(class_266.field_3064, client.field_1463.isaac, (byte)8);
+            class_40 var2 = class_112.newPacket(Opcode.OPCODE_18, client.field_1463.isaac, (byte)8);
             client.field_1463.method_4079(var2);
 
             try {

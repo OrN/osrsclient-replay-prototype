@@ -137,7 +137,7 @@ public class class_153 {
                   int var11 = var6 * var9 - var8 * var5 >> 11;
                   int var12 = var10 + -130212619 * class_164.field_2044.field_1077 >> 7;
                   int var13 = class_164.field_2044.field_1076 * 1248597615 - var11 >> 7;
-                  class_40 var14 = class_112.method_2238(class_266.field_3063, client.field_1463.isaac, (byte)8);
+                  class_40 var14 = class_112.newPacket(Opcode.OPCODE_17, client.field_1463.isaac, (byte)8);
                   var14.networkBuffer.writeByte(18);
                   byte var10001;
                   if(class_145.field_1840[82]) {

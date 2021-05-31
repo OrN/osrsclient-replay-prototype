@@ -291,7 +291,7 @@ public class class_76 extends class_59 {
                   return var2;
                }
             } else {
-               var2 = class_266.method_5032(field_634, 444689543 * this.field_635, 0, (byte)65);
+               var2 = Opcode.method_5032(field_634, 444689543 * this.field_635, 0, (byte)65);
                if(null != var2) {
                   if(var1 == 449991818) {
                      throw new IllegalStateException();
@@ -394,7 +394,7 @@ public class class_76 extends class_59 {
                   return var2;
                }
             } else {
-               var2 = class_266.method_5032(field_634, 311873853 * this.field_636, 0, (byte)77);
+               var2 = Opcode.method_5032(field_634, 311873853 * this.field_636, 0, (byte)77);
                if(null != var2) {
                   field_628.method_5064(var2, (long)(311873853 * this.field_636));
                }
@@ -657,7 +657,7 @@ public class class_76 extends class_59 {
             if(var2 != null) {
                return var2;
             } else {
-               var2 = class_266.method_5032(field_634, this.field_638 * -1479453361, 0, (byte)16);
+               var2 = Opcode.method_5032(field_634, this.field_638 * -1479453361, 0, (byte)16);
                if(null != var2) {
                   if(var1 != -1) {
                      throw new IllegalStateException();
@@ -701,7 +701,7 @@ public class class_76 extends class_59 {
                   return var2;
                }
             } else {
-               var2 = class_266.method_5032(field_634, this.field_637 * 592944735, 0, (byte)14);
+               var2 = Opcode.method_5032(field_634, this.field_637 * 592944735, 0, (byte)14);
                if(null != var2) {
                   field_628.method_5064(var2, (long)(592944735 * this.field_637));
                }

@@ -711,7 +711,7 @@ public class class_231 extends class_230 {
                      throw new IllegalStateException();
                   }
 
-                  var41 = class_112.method_2238(class_266.field_3057, client.field_1463.isaac, (byte)8);
+                  var41 = class_112.newPacket(Opcode.OPCODE_11, client.field_1463.isaac, (byte)8);
                   var41.networkBuffer.writeIntReverse(1057001181);
                   client.field_1463.method_4079(var41);
                }
@@ -770,7 +770,7 @@ public class class_231 extends class_230 {
                class_53.method_579(30, (byte)0);
                class_46.method_536(-1808857292);
                class_144.method_3081();
-               var41 = class_112.method_2238(class_266.field_3143, client.field_1463.isaac, (byte)8);
+               var41 = class_112.newPacket(Opcode.OPCODE_97, client.field_1463.isaac, (byte)8);
                client.field_1463.method_4079(var41);
                client.field_1383.method_3950(-1887937791);
 

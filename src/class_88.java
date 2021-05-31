@@ -734,7 +734,7 @@ public class class_88 extends class_59 {
    static final void method_1564(String var0) {
       try {
          if(!var0.equals("")) {
-            class_40 var2 = class_112.method_2238(class_266.field_3048, client.field_1463.isaac, (byte)8);
+            class_40 var2 = class_112.newPacket(Opcode.OPCODE_2, client.field_1463.isaac, (byte)8);
             var2.networkBuffer.writeByte(class_166.method_3598(var0));
             var2.networkBuffer.writeString(var0);
             client.field_1463.method_4079(var2);

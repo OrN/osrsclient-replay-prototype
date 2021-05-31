@@ -12,7 +12,7 @@ public class class_147 extends class_146 {
    static final void method_3111(int var0, int var1) {
       try {
          class_222.method_4278(741410463);
-         class_266.method_5030(1602650141);
+         Opcode.method_5030(1602650141);
          int var2 = class_171.method_3703(var0, 499302221).field_597 * 812709151;
          if(var2 == 0) {
             if(var1 != 1571499895) {

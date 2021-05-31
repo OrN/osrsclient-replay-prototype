@@ -1944,7 +1944,7 @@ public final class client extends GameApplet implements class_16 {
                var20 = var3.readInt();
                var21 = var3.readInt();
                var6 = class_135.method_2947(-56748890);
-               class_40 var48 = class_112.method_2238(class_266.field_3108, field_1463.isaac, (byte)8);
+               class_40 var48 = class_112.newPacket(Opcode.OPCODE_84, field_1463.isaac, (byte)8);
                var48.networkBuffer.writeInt(var20);
                var48.networkBuffer.writeIntReverse(var21);
                var48.networkBuffer.method_145(field_1382 * -1080528073);
@@ -5355,7 +5355,7 @@ public final class client extends GameApplet implements class_16 {
                   var22 = var4.readInt();
                   var23 = var4.readInt();
                   var7 = class_135.method_2947(-56748890);
-                  class_40 var50 = class_112.method_2238(class_266.field_3108, field_1463.isaac, (byte)8);
+                  class_40 var50 = class_112.newPacket(Opcode.OPCODE_84, field_1463.isaac, (byte)8);
                   var50.networkBuffer.writeInt(var22);
                   var50.networkBuffer.writeIntReverse(var23);
                   var50.networkBuffer.method_145(field_1382 * -1080528073);
@@ -7347,7 +7347,7 @@ public final class client extends GameApplet implements class_16 {
                               throw new IllegalStateException();
                            }
 
-                           class_40 var13 = class_112.method_2238(class_266.field_3060, field_1463.isaac, (byte)8);
+                           class_40 var13 = class_112.newPacket(Opcode.OPCODE_14, field_1463.isaac, (byte)8);
                            var13.networkBuffer.writeInt(field_1594.field_101 * -1722455647);
                            var13.networkBuffer.writeShortAlt(539336237 * field_1590.field_229);
                            var13.networkBuffer.writeShortReverse(41180389 * field_1594.field_102);
@@ -10613,13 +10613,13 @@ public final class client extends GameApplet implements class_16 {
                } else if(80 == -1127540073 * field_1444) {
                   var23 = 0;
                   if(null == class_88.field_891) {
-                     class_88.field_891 = class_266.method_5032(class_311.field_3749, class_201.field_2360.field_3997 * -1949566455, 0, (byte)56);
+                     class_88.field_891 = Opcode.method_5032(class_311.field_3749, class_201.field_2360.field_3997 * -1949566455, 0, (byte)56);
                   } else {
                      ++var23;
                   }
 
                   if(null == class_165.field_2067) {
-                     class_165.field_2067 = class_266.method_5032(class_311.field_3749, class_201.field_2360.field_3995 * -1513831133, 0, (byte)93);
+                     class_165.field_2067 = Opcode.method_5032(class_311.field_3749, class_201.field_2360.field_3995 * -1513831133, 0, (byte)93);
                   } else {
                      ++var23;
                   }
@@ -11057,13 +11057,13 @@ public final class client extends GameApplet implements class_16 {
                } else if(1875504448 == -1127540073 * field_1444) {
                   var23 = 0;
                   if(null == class_88.field_891) {
-                     class_88.field_891 = class_266.method_5032(class_311.field_3749, class_201.field_2360.field_3997 * -828739600, 0, (byte)29);
+                     class_88.field_891 = Opcode.method_5032(class_311.field_3749, class_201.field_2360.field_3997 * -828739600, 0, (byte)29);
                   } else {
                      ++var23;
                   }
 
                   if(null == class_165.field_2067) {
-                     class_165.field_2067 = class_266.method_5032(class_311.field_3749, class_201.field_2360.field_3995 * -988148698, 0, (byte)62);
+                     class_165.field_2067 = Opcode.method_5032(class_311.field_3749, class_201.field_2360.field_3995 * -988148698, 0, (byte)62);
                   } else {
                      ++var23;
                   }
@@ -11838,7 +11838,7 @@ public final class client extends GameApplet implements class_16 {
             int var2;
             class_40 var16;
             while(class_52.method_574(1354264812)) {
-               var16 = class_112.method_2238(class_266.field_3058, field_1463.isaac, (byte)8);
+               var16 = class_112.newPacket(Opcode.OPCODE_12, field_1463.isaac, (byte)8);
                var16.networkBuffer.writeByte(0);
                var2 = -442398587 * var16.networkBuffer.offset;
                class_183.method_3844(var16.networkBuffer, 1193764435);
@@ -11847,7 +11847,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(field_1468.field_3866) {
-               var16 = class_112.method_2238(class_266.field_3119, field_1463.isaac, (byte)8);
+               var16 = class_112.newPacket(Opcode.OPCODE_73, field_1463.isaac, (byte)8);
                var16.networkBuffer.writeByte(0);
                var2 = var16.networkBuffer.offset * -442398587;
                field_1468.method_5903(var16.networkBuffer, -442398587);
@@ -11894,7 +11894,7 @@ public final class client extends GameApplet implements class_16 {
 
                         if(var9 != field_1427 * -1975403091 || var8 != field_1588 * 261633124) {
                            if(var18 == null) {
-                              var18 = class_112.method_2238(class_266.field_3102, field_1463.isaac, (byte)8);
+                              var18 = class_112.newPacket(Opcode.OPCODE_81, field_1463.isaac, (byte)8);
                               var18.networkBuffer.writeByte(0);
                               var3 = var18.networkBuffer.offset * 980147157;
                               var18.networkBuffer.offset += 2021417652;
@@ -11992,7 +11992,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                var5 = (int)var19;
-               var25 = class_112.method_2238(class_266.field_3137, field_1463.isaac, (byte)8);
+               var25 = class_112.newPacket(Opcode.OPCODE_91, field_1463.isaac, (byte)8);
                var25.networkBuffer.writeShortReverse((GameMouseListener.field_1717 * -265253353 == 2?1:0) + (var5 << 1));
                var25.networkBuffer.writeShortReverse(var4);
                var25.networkBuffer.writeShortReverse(var3);
@@ -12000,7 +12000,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(1230368427 * class_145.field_1847 > 0) {
-               var16 = class_112.method_2238(class_266.field_3047, field_1463.isaac, (byte)8);
+               var16 = class_112.newPacket(Opcode.OPCODE_1, field_1463.isaac, (byte)8);
                var16.networkBuffer.writeShortReverse(0);
                var2 = var16.networkBuffer.offset * -442398587;
                long var20 = class_87.method_1516((byte)1);
@@ -12031,7 +12031,7 @@ public final class client extends GameApplet implements class_16 {
             if(field_1502 && field_1501 * -1396591603 <= 0) {
                field_1501 = 181742419;
                field_1502 = false;
-               var16 = class_112.method_2238(class_266.field_3104, field_1463.isaac, (byte)8);
+               var16 = class_112.newPacket(Opcode.OPCODE_58, field_1463.isaac, (byte)8);
                var16.networkBuffer.method_185(field_1486 * -2031705619);
                var16.networkBuffer.writeShortReverse(982683405 * field_1629);
                field_1463.method_4079(var16);
@@ -12039,14 +12039,14 @@ public final class client extends GameApplet implements class_16 {
 
             if(class_244.field_2708 && !field_1506) {
                field_1506 = true;
-               var16 = class_112.method_2238(class_266.field_3054, field_1463.isaac, (byte)8);
+               var16 = class_112.newPacket(Opcode.OPCODE_70, field_1463.isaac, (byte)8);
                var16.networkBuffer.writeByte(1);
                field_1463.method_4079(var16);
             }
 
             if(!class_244.field_2708 && field_1506) {
                field_1506 = false;
-               var16 = class_112.method_2238(class_266.field_3054, field_1463.isaac, (byte)8);
+               var16 = class_112.newPacket(Opcode.OPCODE_70, field_1463.isaac, (byte)8);
                var16.networkBuffer.writeByte(0);
                field_1463.method_4079(var16);
             }
@@ -12368,7 +12368,7 @@ public final class client extends GameApplet implements class_16 {
                                                    var40.method_420(field_1546 * 627407062, 1666839155 * field_1548);
                                                 }
 
-                                                var42 = class_112.method_2238(class_266.field_3132, field_1463.isaac, (byte)8);
+                                                var42 = class_112.newPacket(Opcode.OPCODE_86, field_1463.isaac, (byte)8);
                                                 var42.networkBuffer.writeIntAlt(-678197247 * class_90.field_900.field_101);
                                                 var42.networkBuffer.method_158(var44);
                                                 var42.networkBuffer.writeShortAlt(field_1548 * -65004085);
@@ -12396,7 +12396,7 @@ public final class client extends GameApplet implements class_16 {
                                     if(class_251.method_4824()) {
                                        var3 = class_251.field_2817;
                                        var4 = class_251.field_2818;
-                                       var42 = class_112.method_2238(class_266.field_3116, field_1463.isaac, (byte)8);
+                                       var42 = class_112.newPacket(Opcode.OPCODE_46, field_1463.isaac, (byte)8);
                                        var42.networkBuffer.writeByte(5);
                                        var42.networkBuffer.method_148(class_145.field_1840[82]?(class_145.field_1840[81]?2:1):0);
                                        var42.networkBuffer.writeShortReverse(class_154.field_1929 * -1953086649 + var4);
@@ -12563,14 +12563,14 @@ public final class client extends GameApplet implements class_16 {
                                     if(var3 > 1972812088 && var5 > 15000) {
                                        field_1466 = 1596083710;
                                        class_297.method_5342(14500);
-                                       var25 = class_112.method_2238(class_266.field_3118, field_1463.isaac, (byte)8);
+                                       var25 = class_112.newPacket(Opcode.OPCODE_72, field_1463.isaac, (byte)8);
                                        field_1463.method_4079(var25);
                                     }
 
                                     class_208.field_2413.method_3322(1243520681);
                                     field_1463.field_2372 += -1196966475;
                                     if(field_1463.field_2372 * 239536285 > -1610626974) {
-                                       var25 = class_112.method_2238(class_266.field_3064, field_1463.isaac, (byte)8);
+                                       var25 = class_112.newPacket(Opcode.OPCODE_18, field_1463.isaac, (byte)8);
                                        field_1463.method_4079(var25);
                                     }
 
@@ -12650,7 +12650,7 @@ public final class client extends GameApplet implements class_16 {
             int var2;
             class_40 var16;
             while(class_52.method_574(1280370157)) {
-               var16 = class_112.method_2238(class_266.field_3058, field_1463.isaac, (byte)8);
+               var16 = class_112.newPacket(Opcode.OPCODE_12, field_1463.isaac, (byte)8);
                var16.networkBuffer.writeByte(0);
                var2 = -442398587 * var16.networkBuffer.offset;
                class_183.method_3844(var16.networkBuffer, 1907526755);
@@ -12659,7 +12659,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(field_1468.field_3866) {
-               var16 = class_112.method_2238(class_266.field_3119, field_1463.isaac, (byte)8);
+               var16 = class_112.newPacket(Opcode.OPCODE_73, field_1463.isaac, (byte)8);
                var16.networkBuffer.writeByte(0);
                var2 = var16.networkBuffer.offset * -442398587;
                field_1468.method_5903(var16.networkBuffer, -442398587);
@@ -12706,7 +12706,7 @@ public final class client extends GameApplet implements class_16 {
 
                         if(var9 != field_1427 * -1975403091 || var8 != field_1588 * 424553417) {
                            if(var18 == null) {
-                              var18 = class_112.method_2238(class_266.field_3102, field_1463.isaac, (byte)8);
+                              var18 = class_112.newPacket(Opcode.OPCODE_81, field_1463.isaac, (byte)8);
                               var18.networkBuffer.writeByte(0);
                               var3 = var18.networkBuffer.offset * -442398587;
                               var18.networkBuffer.offset += -2051383142;
@@ -12804,7 +12804,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                var5 = (int)var19;
-               var25 = class_112.method_2238(class_266.field_3137, field_1463.isaac, (byte)8);
+               var25 = class_112.newPacket(Opcode.OPCODE_91, field_1463.isaac, (byte)8);
                var25.networkBuffer.writeShortReverse((GameMouseListener.field_1717 * -265253353 == 2?1:0) + (var5 << 1));
                var25.networkBuffer.writeShortReverse(var4);
                var25.networkBuffer.writeShortReverse(var3);
@@ -12812,7 +12812,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(-402048791 * class_145.field_1847 > 0) {
-               var16 = class_112.method_2238(class_266.field_3047, field_1463.isaac, (byte)8);
+               var16 = class_112.newPacket(Opcode.OPCODE_1, field_1463.isaac, (byte)8);
                var16.networkBuffer.writeShortReverse(0);
                var2 = var16.networkBuffer.offset * -442398587;
                long var20 = class_87.method_1516((byte)1);
@@ -12843,7 +12843,7 @@ public final class client extends GameApplet implements class_16 {
             if(field_1502 && field_1501 * -1396591603 <= 0) {
                field_1501 = 1563072356;
                field_1502 = false;
-               var16 = class_112.method_2238(class_266.field_3104, field_1463.isaac, (byte)8);
+               var16 = class_112.newPacket(Opcode.OPCODE_58, field_1463.isaac, (byte)8);
                var16.networkBuffer.method_185(field_1486 * -2031705619);
                var16.networkBuffer.writeShortReverse(-574530013 * field_1629);
                field_1463.method_4079(var16);
@@ -12851,14 +12851,14 @@ public final class client extends GameApplet implements class_16 {
 
             if(class_244.field_2708 && !field_1506) {
                field_1506 = true;
-               var16 = class_112.method_2238(class_266.field_3054, field_1463.isaac, (byte)8);
+               var16 = class_112.newPacket(Opcode.OPCODE_70, field_1463.isaac, (byte)8);
                var16.networkBuffer.writeByte(1);
                field_1463.method_4079(var16);
             }
 
             if(!class_244.field_2708 && field_1506) {
                field_1506 = false;
-               var16 = class_112.method_2238(class_266.field_3054, field_1463.isaac, (byte)8);
+               var16 = class_112.newPacket(Opcode.OPCODE_70, field_1463.isaac, (byte)8);
                var16.networkBuffer.writeByte(0);
                field_1463.method_4079(var16);
             }
@@ -13180,7 +13180,7 @@ public final class client extends GameApplet implements class_16 {
                                                    var40.method_420(field_1546 * -1148388107, -65004085 * field_1548);
                                                 }
 
-                                                var42 = class_112.method_2238(class_266.field_3132, field_1463.isaac, (byte)8);
+                                                var42 = class_112.newPacket(Opcode.OPCODE_86, field_1463.isaac, (byte)8);
                                                 var42.networkBuffer.writeIntAlt(-1722455647 * class_90.field_900.field_101);
                                                 var42.networkBuffer.method_158(var44);
                                                 var42.networkBuffer.writeShortAlt(field_1548 * -65004085);
@@ -13208,7 +13208,7 @@ public final class client extends GameApplet implements class_16 {
                                     if(class_251.method_4824()) {
                                        var3 = class_251.field_2817;
                                        var4 = class_251.field_2818;
-                                       var42 = class_112.method_2238(class_266.field_3116, field_1463.isaac, (byte)8);
+                                       var42 = class_112.newPacket(Opcode.OPCODE_46, field_1463.isaac, (byte)8);
                                        var42.networkBuffer.writeByte(5);
                                        var42.networkBuffer.method_148(class_145.field_1840[82]?(class_145.field_1840[81]?2:1):0);
                                        var42.networkBuffer.writeShortReverse(class_154.field_1929 * -27903763 + var4);
@@ -13375,14 +13375,14 @@ public final class client extends GameApplet implements class_16 {
                                     if(var3 > 15000 && var5 > 15000) {
                                        field_1466 = 348395914;
                                        class_297.method_5342(14500);
-                                       var25 = class_112.method_2238(class_266.field_3118, field_1463.isaac, (byte)8);
+                                       var25 = class_112.newPacket(Opcode.OPCODE_72, field_1463.isaac, (byte)8);
                                        field_1463.method_4079(var25);
                                     }
 
                                     class_208.field_2413.method_3322(1980656786);
                                     field_1463.field_2372 += -1196966475;
                                     if(field_1463.field_2372 * 239536285 > 50) {
-                                       var25 = class_112.method_2238(class_266.field_3064, field_1463.isaac, (byte)8);
+                                       var25 = class_112.newPacket(Opcode.OPCODE_18, field_1463.isaac, (byte)8);
                                        field_1463.method_4079(var25);
                                     }
 
@@ -13462,7 +13462,7 @@ public final class client extends GameApplet implements class_16 {
             int var2;
             class_40 var16;
             while(class_52.method_574(-740701103)) {
-               var16 = class_112.method_2238(class_266.field_3058, field_1463.isaac, (byte)8);
+               var16 = class_112.newPacket(Opcode.OPCODE_12, field_1463.isaac, (byte)8);
                var16.networkBuffer.writeByte(0);
                var2 = -442398587 * var16.networkBuffer.offset;
                class_183.method_3844(var16.networkBuffer, 1798456642);
@@ -13471,7 +13471,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(field_1468.field_3866) {
-               var16 = class_112.method_2238(class_266.field_3119, field_1463.isaac, (byte)8);
+               var16 = class_112.newPacket(Opcode.OPCODE_73, field_1463.isaac, (byte)8);
                var16.networkBuffer.writeByte(0);
                var2 = var16.networkBuffer.offset * -442398587;
                field_1468.method_5903(var16.networkBuffer, -442398587);
@@ -13518,7 +13518,7 @@ public final class client extends GameApplet implements class_16 {
 
                         if(var9 != field_1427 * -1975403091 || var8 != field_1588 * 424553417) {
                            if(var18 == null) {
-                              var18 = class_112.method_2238(class_266.field_3102, field_1463.isaac, (byte)8);
+                              var18 = class_112.newPacket(Opcode.OPCODE_81, field_1463.isaac, (byte)8);
                               var18.networkBuffer.writeByte(0);
                               var3 = var18.networkBuffer.offset * -442398587;
                               var18.networkBuffer.offset += -2051383142;
@@ -13616,7 +13616,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                var5 = (int)var19;
-               var25 = class_112.method_2238(class_266.field_3137, field_1463.isaac, (byte)8);
+               var25 = class_112.newPacket(Opcode.OPCODE_91, field_1463.isaac, (byte)8);
                var25.networkBuffer.writeShortReverse((GameMouseListener.field_1717 * -265253353 == 2?1:0) + (var5 << 1));
                var25.networkBuffer.writeShortReverse(var4);
                var25.networkBuffer.writeShortReverse(var3);
@@ -13624,7 +13624,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(-402048791 * class_145.field_1847 > 0) {
-               var16 = class_112.method_2238(class_266.field_3047, field_1463.isaac, (byte)8);
+               var16 = class_112.newPacket(Opcode.OPCODE_1, field_1463.isaac, (byte)8);
                var16.networkBuffer.writeShortReverse(0);
                var2 = var16.networkBuffer.offset * -442398587;
                long var20 = class_87.method_1516((byte)1);
@@ -13655,7 +13655,7 @@ public final class client extends GameApplet implements class_16 {
             if(field_1502 && field_1501 * -1396591603 <= 0) {
                field_1501 = 1563072356;
                field_1502 = false;
-               var16 = class_112.method_2238(class_266.field_3104, field_1463.isaac, (byte)8);
+               var16 = class_112.newPacket(Opcode.OPCODE_58, field_1463.isaac, (byte)8);
                var16.networkBuffer.method_185(field_1486 * -2031705619);
                var16.networkBuffer.writeShortReverse(-574530013 * field_1629);
                field_1463.method_4079(var16);
@@ -13663,14 +13663,14 @@ public final class client extends GameApplet implements class_16 {
 
             if(class_244.field_2708 && !field_1506) {
                field_1506 = true;
-               var16 = class_112.method_2238(class_266.field_3054, field_1463.isaac, (byte)8);
+               var16 = class_112.newPacket(Opcode.OPCODE_70, field_1463.isaac, (byte)8);
                var16.networkBuffer.writeByte(1);
                field_1463.method_4079(var16);
             }
 
             if(!class_244.field_2708 && field_1506) {
                field_1506 = false;
-               var16 = class_112.method_2238(class_266.field_3054, field_1463.isaac, (byte)8);
+               var16 = class_112.newPacket(Opcode.OPCODE_70, field_1463.isaac, (byte)8);
                var16.networkBuffer.writeByte(0);
                field_1463.method_4079(var16);
             }
@@ -13992,7 +13992,7 @@ public final class client extends GameApplet implements class_16 {
                                                    var40.method_420(field_1546 * -1148388107, -65004085 * field_1548);
                                                 }
 
-                                                var42 = class_112.method_2238(class_266.field_3132, field_1463.isaac, (byte)8);
+                                                var42 = class_112.newPacket(Opcode.OPCODE_86, field_1463.isaac, (byte)8);
                                                 var42.networkBuffer.writeIntAlt(-1722455647 * class_90.field_900.field_101);
                                                 var42.networkBuffer.method_158(var44);
                                                 var42.networkBuffer.writeShortAlt(field_1548 * -65004085);
@@ -14020,7 +14020,7 @@ public final class client extends GameApplet implements class_16 {
                                     if(class_251.method_4824()) {
                                        var3 = class_251.field_2817;
                                        var4 = class_251.field_2818;
-                                       var42 = class_112.method_2238(class_266.field_3116, field_1463.isaac, (byte)8);
+                                       var42 = class_112.newPacket(Opcode.OPCODE_46, field_1463.isaac, (byte)8);
                                        var42.networkBuffer.writeByte(5);
                                        var42.networkBuffer.method_148(class_145.field_1840[82]?(class_145.field_1840[81]?2:1):0);
                                        var42.networkBuffer.writeShortReverse(class_154.field_1929 * -27903763 + var4);
@@ -14187,14 +14187,14 @@ public final class client extends GameApplet implements class_16 {
                                     if(var3 > 15000 && var5 > 15000) {
                                        field_1466 = 348395914;
                                        class_297.method_5342(14500);
-                                       var25 = class_112.method_2238(class_266.field_3118, field_1463.isaac, (byte)8);
+                                       var25 = class_112.newPacket(Opcode.OPCODE_72, field_1463.isaac, (byte)8);
                                        field_1463.method_4079(var25);
                                     }
 
                                     class_208.field_2413.method_3322(1316774063);
                                     field_1463.field_2372 += -1196966475;
                                     if(field_1463.field_2372 * 239536285 > 50) {
-                                       var25 = class_112.method_2238(class_266.field_3064, field_1463.isaac, (byte)8);
+                                       var25 = class_112.newPacket(Opcode.OPCODE_18, field_1463.isaac, (byte)8);
                                        field_1463.method_4079(var25);
                                     }
 
@@ -14680,7 +14680,7 @@ public final class client extends GameApplet implements class_16 {
                int var10 = var5 * var8 - var7 * var4 >> 11;
                int var11 = var9 + -130212619 * class_164.field_2044.field_1077 >> 7;
                int var12 = class_164.field_2044.field_1076 * 1248597615 - var10 >> 7;
-               class_40 var13 = class_112.method_2238(class_266.field_3063, field_1463.isaac, (byte)8);
+               class_40 var13 = class_112.newPacket(Opcode.OPCODE_17, field_1463.isaac, (byte)8);
                var13.networkBuffer.writeByte(18);
                var13.networkBuffer.method_148(class_145.field_1840[82]?(class_145.field_1840[81]?2:1):0);
                var13.networkBuffer.writeShortReverse(class_154.field_1929 * -27903763 + var12);
@@ -14725,7 +14725,7 @@ public final class client extends GameApplet implements class_16 {
                int var10 = var5 * var8 - var7 * var4 >> 11;
                int var11 = var9 + -130212619 * class_164.field_2044.field_1077 >> 7;
                int var12 = class_164.field_2044.field_1076 * -902347096 - var10 >> 7;
-               class_40 var13 = class_112.method_2238(class_266.field_3063, field_1463.isaac, (byte)8);
+               class_40 var13 = class_112.newPacket(Opcode.OPCODE_17, field_1463.isaac, (byte)8);
                var13.networkBuffer.writeByte(18);
                var13.networkBuffer.method_148(class_145.field_1840[82]?(class_145.field_1840[81]?2:1):0);
                var13.networkBuffer.writeShortReverse(class_154.field_1929 * -27903763 + var12);
@@ -15340,7 +15340,7 @@ public final class client extends GameApplet implements class_16 {
       }
 
       if(-888167097 * field_1421 >= 25) {
-         class_40 var1 = class_112.method_2238(class_266.field_3136, field_1463.isaac, (byte)8);
+         class_40 var1 = class_112.newPacket(Opcode.OPCODE_90, field_1463.isaac, (byte)8);
          var1.networkBuffer.writeByte(class_78.method_1223(702215999));
          var1.networkBuffer.writeShortReverse(class_137.field_1766 * 646214551);
          var1.networkBuffer.writeShortReverse(class_58.field_460 * -1538307343);
@@ -17244,7 +17244,7 @@ public final class client extends GameApplet implements class_16 {
 
    // $FF: renamed from: ye () void
    static final void method_2577() {
-      class_40 var0 = class_112.method_2238(class_266.field_3068, field_1463.isaac, (byte)8);
+      class_40 var0 = class_112.newPacket(Opcode.OPCODE_45, field_1463.isaac, (byte)8);
       field_1463.method_4079(var0);
 
       for(class_48 var1 = (class_48)field_1578.method_6531(); var1 != null; var1 = (class_48)field_1578.method_6527()) {
@@ -21307,7 +21307,7 @@ public final class client extends GameApplet implements class_16 {
       if(239536285 * field_1463.field_2372 >= 50 || var0) {
          field_1463.field_2372 = 0;
          if(!field_1522 && field_1463.method_4083() != null) {
-            class_40 var1 = class_112.method_2238(class_266.field_3064, field_1463.isaac, (byte)8);
+            class_40 var1 = class_112.newPacket(Opcode.OPCODE_18, field_1463.isaac, (byte)8);
             field_1463.method_4079(var1);
 
             try {
@@ -21692,7 +21692,7 @@ public final class client extends GameApplet implements class_16 {
             class_87.field_817.method_5074();
             class_40 var39;
             if(class_121.field_1337.method_2439((byte)3)) {
-               var39 = class_112.method_2238(class_266.field_3057, field_1463.isaac, (byte)8);
+               var39 = class_112.newPacket(Opcode.OPCODE_11, field_1463.isaac, (byte)8);
                var39.networkBuffer.writeIntReverse(1057001181);
                field_1463.method_4079(var39);
             }
@@ -21716,7 +21716,7 @@ public final class client extends GameApplet implements class_16 {
             class_53.method_579(30, (byte)0);
             class_46.method_536(-1808857292);
             class_144.method_3081();
-            var39 = class_112.method_2238(class_266.field_3143, field_1463.isaac, (byte)8);
+            var39 = class_112.newPacket(Opcode.OPCODE_97, field_1463.isaac, (byte)8);
             field_1463.method_4079(var39);
             field_1383.method_3950(-1887937791);
 
@@ -23074,7 +23074,7 @@ public final class client extends GameApplet implements class_16 {
                var20 = var3.readInt();
                var21 = var3.readInt();
                var6 = class_135.method_2947(-56748890);
-               class_40 var48 = class_112.method_2238(class_266.field_3108, field_1463.isaac, (byte)8);
+               class_40 var48 = class_112.newPacket(Opcode.OPCODE_84, field_1463.isaac, (byte)8);
                var48.networkBuffer.writeInt(var20);
                var48.networkBuffer.writeIntReverse(var21);
                var48.networkBuffer.method_145(field_1382 * 2046458417);
@@ -26367,7 +26367,7 @@ public final class client extends GameApplet implements class_16 {
 
       class_40 var8;
       if(37 == var2) {
-         var8 = class_112.method_2238(class_266.field_3147, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_95, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeIntAltReversed(var1);
          var8.networkBuffer.writeShortAlt(var0);
          var8.networkBuffer.writeShortReverse(var3);
@@ -26384,7 +26384,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = 819547401 * var0;
          field_1562 = var1 * 12017485;
-         var8 = class_112.method_2238(class_266.field_3051, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_5, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeShort(class_178.field_2220 * 81340013);
          var8.networkBuffer.method_185(var3);
          var8.networkBuffer.writeShort(class_189.field_2276 * -247340430);
@@ -26406,7 +26406,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = 819547401 * var0;
             field_1562 = var1 * 1551872625;
-            var9 = class_112.method_2238(class_266.field_3079, field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(Opcode.OPCODE_33, field_1463.isaac, (byte)8);
             var9.networkBuffer.method_185(var3);
             var9.networkBuffer.method_148(class_145.field_1840[892887690]?1:0);
             field_1463.method_4079(var9);
@@ -26417,7 +26417,7 @@ public final class client extends GameApplet implements class_16 {
       if(var2 == 58) {
          var12 = class_325.method_5779(var1, var0, -121174748);
          if(var12 != null) {
-            var9 = class_112.method_2238(class_266.field_3072, field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(Opcode.OPCODE_0, field_1463.isaac, (byte)8);
             var9.networkBuffer.writeIntAltReversed(var1);
             var9.networkBuffer.method_185(539336237 * var12.field_229);
             var9.networkBuffer.writeShort(field_1564 * 1424616685);
@@ -26438,7 +26438,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = 819547401 * var0;
             field_1562 = 1551872625 * var1;
-            var9 = class_112.method_2238(class_266.field_3099, field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(Opcode.OPCODE_53, field_1463.isaac, (byte)8);
             var9.networkBuffer.method_158(class_145.field_1840[-1314236068]?1:0);
             var9.networkBuffer.writeShortAlt(var3);
             field_1463.method_4079(var9);
@@ -26448,7 +26448,7 @@ public final class client extends GameApplet implements class_16 {
       int var10;
       class_37 var14;
       if(28 == var2) {
-         var8 = class_112.method_2238(class_266.field_3093, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_65, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeIntReverse(var1);
          field_1463.method_4079(var8);
          var14 = class_71.method_1047(var1);
@@ -26460,7 +26460,7 @@ public final class client extends GameApplet implements class_16 {
       }
 
       if(var2 == -211844451) {
-         var8 = class_112.method_2238(class_266.field_3107, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_61, field_1463.isaac, (byte)8);
          var8.networkBuffer.method_185(var3);
          var8.networkBuffer.writeShortAlt(var0);
          var8.networkBuffer.writeInt(var1);
@@ -26471,7 +26471,7 @@ public final class client extends GameApplet implements class_16 {
       }
 
       if(34 == var2) {
-         var8 = class_112.method_2238(class_266.field_3050, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_4, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeIntAltReversed(var1);
          var8.networkBuffer.writeShort(var0);
          var8.networkBuffer.writeShort(var3);
@@ -26490,7 +26490,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = 819547401 * var0;
             field_1562 = 1551872625 * var1;
-            var9 = class_112.method_2238(class_266.field_3073, field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(Opcode.OPCODE_7, field_1463.isaac, (byte)8);
             var9.networkBuffer.writeIntAlt(1321088252 * class_148.field_1875);
             var9.networkBuffer.writeShort(664696957 * field_1564);
             var9.networkBuffer.writeShort(var3);
@@ -26505,13 +26505,13 @@ public final class client extends GameApplet implements class_16 {
          field_1519 = 246678685 * var7;
          field_1521 = -1022456306;
          field_1645 = 0;
-         var8 = class_112.method_2238(class_266.field_3065, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_80, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeShort(var3);
          field_1463.method_4079(var8);
       }
 
       if(42 == var2) {
-         var8 = class_112.method_2238(class_266.field_3109, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_63, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeIntAlt(var1);
          var8.networkBuffer.writeShortReverse(var3);
          var8.networkBuffer.method_185(var0);
@@ -26522,7 +26522,7 @@ public final class client extends GameApplet implements class_16 {
       }
 
       if(var2 == -1869856353) {
-         var8 = class_112.method_2238(class_266.field_3105, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_59, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeIntReverse(var1);
          var8.networkBuffer.writeIntAltReversed(1565845213 * class_100.field_1172);
          var8.networkBuffer.method_185(var0);
@@ -26542,7 +26542,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = var0 * 819547401;
          field_1562 = -1369371642 * var1;
-         var8 = class_112.method_2238(class_266.field_3146, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_100, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeShort(var0 + 697161691 * class_243.field_2700);
          var8.networkBuffer.writeShortAlt(-1583423663 * class_154.field_1929 + var1);
          var8.networkBuffer.method_145(class_145.field_1840[82]?1:0);
@@ -26551,7 +26551,7 @@ public final class client extends GameApplet implements class_16 {
       }
 
       if(var2 == 1926610520) {
-         var8 = class_112.method_2238(class_266.field_3113, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_67, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeShort(var3);
          var8.networkBuffer.method_185(var0);
          var8.networkBuffer.writeIntAltReversed(var1);
@@ -26562,7 +26562,7 @@ public final class client extends GameApplet implements class_16 {
       }
 
       if(-1265941496 == var2) {
-         var8 = class_112.method_2238(class_266.field_3083, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_98, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeIntAlt(1430642749 * class_148.field_1875);
          var8.networkBuffer.method_185(-828075131 * field_1573);
          var8.networkBuffer.writeIntAlt(var1);
@@ -26581,7 +26581,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = 146758381 * var0;
          field_1562 = var1 * 1551872625;
-         var8 = class_112.method_2238(class_266.field_3049, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_3, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeShortAlt(var3);
          var8.networkBuffer.writeShortReverse(class_154.field_1929 * -676859281 + var1);
          var8.networkBuffer.method_145(class_145.field_1840[82]?1:0);
@@ -26602,7 +26602,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = var0 * 819547401;
          field_1562 = 1551872625 * var1;
-         var8 = class_112.method_2238(class_266.field_3140, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_76, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeShortReverse(var3);
          var8.networkBuffer.method_148(class_145.field_1840[82]?1:0);
          var8.networkBuffer.writeShortAlt(-1632695505 * class_154.field_1929 + var1);
@@ -26611,7 +26611,7 @@ public final class client extends GameApplet implements class_16 {
       }
 
       if(36 == var2) {
-         var8 = class_112.method_2238(class_266.field_3135, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_101, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeInt(var1);
          var8.networkBuffer.writeShort(var3);
          var8.networkBuffer.writeShortAlt(var0);
@@ -26628,7 +26628,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = var0 * 2093993811;
          field_1562 = var1 * 1496262188;
-         var8 = class_112.method_2238(class_266.field_3115, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_69, field_1463.isaac, (byte)8);
          var8.networkBuffer.method_158(class_145.field_1840[82]?1:0);
          var8.networkBuffer.writeShortAlt(var3);
          var8.networkBuffer.writeShortReverse(364736135 * class_243.field_2700 + var0);
@@ -26643,7 +26643,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = var0 * -1291731589;
          field_1562 = var1 * 1551872625;
-         var8 = class_112.method_2238(class_266.field_3100, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_54, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeShortReverse(class_243.field_2700 * 697161691 + var0);
          var8.networkBuffer.writeShortAlt(var3);
          var8.networkBuffer.method_145(class_145.field_1840[82]?1:0);
@@ -26660,7 +26660,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = -2114357614 * var0;
             field_1562 = 1551872625 * var1;
-            var9 = class_112.method_2238(class_266.field_3097, field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(Opcode.OPCODE_51, field_1463.isaac, (byte)8);
             var9.networkBuffer.writeIntAltReversed(class_100.field_1172 * 1565845213);
             var9.networkBuffer.method_185(class_189.field_2276 * 1854633345);
             var9.networkBuffer.method_145(class_145.field_1840[82]?1:0);
@@ -26677,7 +26677,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = 469146291 * var0;
          field_1562 = var1 * 510693085;
-         var8 = class_112.method_2238(class_266.field_3142, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_96, field_1463.isaac, (byte)8);
          var8.networkBuffer.method_145(class_145.field_1840[416364671]?1:0);
          var8.networkBuffer.writeInt(1430642749 * class_148.field_1875);
          var8.networkBuffer.writeShort(class_154.field_1929 * 211031279 + var1);
@@ -26697,7 +26697,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = var0 * -1646643499;
             field_1562 = 1551872625 * var1;
-            var9 = class_112.method_2238(class_266.field_3110, field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(Opcode.OPCODE_64, field_1463.isaac, (byte)8);
             var9.networkBuffer.method_145(class_145.field_1840[82]?1:0);
             var9.networkBuffer.writeShortAlt(var3);
             field_1463.method_4079(var9);
@@ -26718,7 +26718,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = 819547401 * var0;
          field_1562 = 1551872625 * var1;
-         var8 = class_112.method_2238(class_266.field_3114, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_78, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeShortAlt(var0 + 697161691 * class_243.field_2700);
          var8.networkBuffer.method_158(class_145.field_1840[82]?1:0);
          var8.networkBuffer.writeShortReverse(var3);
@@ -26733,7 +26733,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = var0 * 639871176;
          field_1562 = -1888297007 * var1;
-         var8 = class_112.method_2238(class_266.field_3151, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_105, field_1463.isaac, (byte)8);
          var8.networkBuffer.method_185(-1618989074 * class_189.field_2276);
          var8.networkBuffer.writeShortAlt(var3);
          var8.networkBuffer.method_158(class_145.field_1840[660920081]?1:0);
@@ -26761,7 +26761,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = var0 * 635167584;
             field_1562 = var1 * 1551872625;
-            var9 = class_112.method_2238(class_266.field_3111, field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(Opcode.OPCODE_52, field_1463.isaac, (byte)8);
             var9.networkBuffer.method_148(class_145.field_1840[82]?1:0);
             var9.networkBuffer.writeShortReverse(var3);
             field_1463.method_4079(var9);
@@ -26777,7 +26777,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = -2095675789 * var0;
             field_1562 = var1 * -1440730348;
-            var9 = class_112.method_2238(class_266.field_3076, field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(Opcode.OPCODE_30, field_1463.isaac, (byte)8);
             var9.networkBuffer.writeShortAlt(var3);
             var9.networkBuffer.writeByte(class_145.field_1840[86560767]?1:0);
             field_1463.method_4079(var9);
@@ -26807,7 +26807,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = var0 * -1076676978;
                field_1562 = var1 * 239965402;
-               var9 = class_112.method_2238(class_266.field_3128, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_82, field_1463.isaac, (byte)8);
                var9.networkBuffer.writeShort(var3);
                var9.networkBuffer.writeByte(class_145.field_1840[82]?1:0);
                field_1463.method_4079(var9);
@@ -26823,7 +26823,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = var0 * 494416094;
                field_1562 = 736937377 * var1;
-               var9 = class_112.method_2238(class_266.field_3094, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_48, field_1463.isaac, (byte)8);
                var9.networkBuffer.writeByte(class_145.field_1840[82]?1:0);
                var9.networkBuffer.writeShortAlt(var3);
                field_1463.method_4079(var9);
@@ -26835,7 +26835,7 @@ public final class client extends GameApplet implements class_16 {
             field_1519 = -594460706 * var7;
             field_1521 = -1022456306;
             field_1645 = 0;
-            var8 = class_112.method_2238(class_266.field_3120, field_1463.isaac, (byte)8);
+            var8 = class_112.newPacket(Opcode.OPCODE_74, field_1463.isaac, (byte)8);
             var8.networkBuffer.writeShort(var3);
             field_1463.method_4079(var8);
          }
@@ -26849,7 +26849,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = 819547401 * var0;
                field_1562 = var1 * 1551872625;
-               var9 = class_112.method_2238(class_266.field_3071, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_25, field_1463.isaac, (byte)8);
                var9.networkBuffer.method_185(var3);
                var9.networkBuffer.method_148(class_145.field_1840[-1475219961]?1:0);
                field_1463.method_4079(var9);
@@ -26865,7 +26865,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = var0 * -1484132360;
                field_1562 = var1 * 1551872625;
-               var9 = class_112.method_2238(class_266.field_3098, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_32, field_1463.isaac, (byte)8);
                var9.networkBuffer.method_145(class_145.field_1840[-823764195]?1:0);
                var9.networkBuffer.writeShort(var3);
                field_1463.method_4079(var9);
@@ -26881,7 +26881,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = -467186518 * var0;
                field_1562 = var1 * 1551872625;
-               var9 = class_112.method_2238(class_266.field_3149, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_103, field_1463.isaac, (byte)8);
                var9.networkBuffer.writeByte(class_145.field_1840[82]?1:0);
                var9.networkBuffer.writeShortAlt(class_189.field_2276 * 1629389305);
                var9.networkBuffer.writeIntAlt(class_100.field_1172 * 1565845213);
@@ -26892,7 +26892,7 @@ public final class client extends GameApplet implements class_16 {
          }
 
          if(var2 == 29) {
-            var8 = class_112.method_2238(class_266.field_3093, field_1463.isaac, (byte)8);
+            var8 = class_112.newPacket(Opcode.OPCODE_65, field_1463.isaac, (byte)8);
             var8.networkBuffer.writeIntReverse(var1);
             field_1463.method_4079(var8);
             var14 = class_71.method_1047(var1);
@@ -26919,7 +26919,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(null != var16) {
-                  var15 = class_112.method_2238(class_266.field_3052, field_1463.isaac, (byte)8);
+                  var15 = class_112.newPacket(Opcode.OPCODE_6, field_1463.isaac, (byte)8);
                   var15.networkBuffer.writeShort(var16.field_857 * -2060838679);
                   field_1463.method_4079(var15);
                }
@@ -26933,7 +26933,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = var0 * 819547401;
             field_1562 = 415350271 * var1;
-            var8 = class_112.method_2238(class_266.field_3046, field_1463.isaac, (byte)8);
+            var8 = class_112.newPacket(Opcode.OPCODE_93, field_1463.isaac, (byte)8);
             var8.networkBuffer.method_185(var3);
             var8.networkBuffer.method_185(var1 + 222204450 * class_154.field_1929);
             var8.networkBuffer.method_145(class_145.field_1840[-1821811553]?1:0);
@@ -26950,7 +26950,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = var0 * -1183468882;
                field_1562 = var1 * 1551872625;
-               var9 = class_112.method_2238(class_266.field_3075, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_29, field_1463.isaac, (byte)8);
                var9.networkBuffer.writeByte(class_145.field_1840[82]?1:0);
                var9.networkBuffer.method_185(var3);
                field_1463.method_4079(var9);
@@ -26964,7 +26964,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = var0 * 1175638159;
             field_1562 = -1719678831 * var1;
-            var8 = class_112.method_2238(class_266.field_3117, field_1463.isaac, (byte)8);
+            var8 = class_112.newPacket(Opcode.OPCODE_71, field_1463.isaac, (byte)8);
             var8.networkBuffer.writeShort(var0 + class_243.field_2700 * 697161691);
             var8.networkBuffer.writeShortReverse(var3);
             var8.networkBuffer.writeShort(field_1564 * 1424616685);
@@ -26995,7 +26995,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = 819547401 * var0;
                field_1562 = var1 * 1551872625;
-               var9 = class_112.method_2238(class_266.field_3092, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_92, field_1463.isaac, (byte)8);
                var9.networkBuffer.writeShort(var3);
                var9.networkBuffer.writeByte(class_145.field_1840[613954528]?1:0);
                field_1463.method_4079(var9);
@@ -27010,7 +27010,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(var17) {
-               var15 = class_112.method_2238(class_266.field_3093, field_1463.isaac, (byte)8);
+               var15 = class_112.newPacket(Opcode.OPCODE_65, field_1463.isaac, (byte)8);
                var15.networkBuffer.writeIntReverse(var1);
                field_1463.method_4079(var15);
             }
@@ -27023,7 +27023,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = 819547401 * var0;
             field_1562 = 1832171158 * var1;
-            var8 = class_112.method_2238(class_266.field_3123, field_1463.isaac, (byte)8);
+            var8 = class_112.newPacket(Opcode.OPCODE_77, field_1463.isaac, (byte)8);
             var8.networkBuffer.writeShortAlt(var3);
             var8.networkBuffer.method_185(537457184 * class_243.field_2700 + var0);
             var8.networkBuffer.method_158(class_145.field_1840[-347189388]?1:0);
@@ -27032,7 +27032,7 @@ public final class client extends GameApplet implements class_16 {
          }
 
          if(-1339103721 == var2) {
-            var8 = class_112.method_2238(class_266.field_3055, field_1463.isaac, (byte)8);
+            var8 = class_112.newPacket(Opcode.OPCODE_99, field_1463.isaac, (byte)8);
             var8.networkBuffer.writeShortAlt(var0);
             var8.networkBuffer.writeShort(var3);
             var8.networkBuffer.writeInt(var1);
@@ -27043,7 +27043,7 @@ public final class client extends GameApplet implements class_16 {
          }
 
          if(-871814631 == var2) {
-            var8 = class_112.method_2238(class_266.field_3101, field_1463.isaac, (byte)8);
+            var8 = class_112.newPacket(Opcode.OPCODE_55, field_1463.isaac, (byte)8);
             var8.networkBuffer.writeShortReverse(var3);
             var8.networkBuffer.writeIntAlt(var1);
             var8.networkBuffer.writeShortAlt(var0);
@@ -27062,7 +27062,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = 2057259119 * var0;
                field_1562 = var1 * 1551872625;
-               var9 = class_112.method_2238(class_266.field_3089, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_43, field_1463.isaac, (byte)8);
                var9.networkBuffer.method_185(field_1573 * 1249874667);
                var9.networkBuffer.writeShortAlt(var3);
                var9.networkBuffer.writeInt(1430642749 * class_148.field_1875);
@@ -27079,7 +27079,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = var0 * 1437636020;
             field_1562 = 1267434801 * var1;
-            var8 = class_112.method_2238(class_266.field_3150, field_1463.isaac, (byte)8);
+            var8 = class_112.newPacket(Opcode.OPCODE_62, field_1463.isaac, (byte)8);
             var8.networkBuffer.method_185(var3);
             var8.networkBuffer.writeShort(var0 + class_243.field_2700 * 697161691);
             var8.networkBuffer.method_148(class_145.field_1840[1208340724]?1:0);
@@ -27096,7 +27096,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = 819547401 * var0;
                field_1562 = 1551872625 * var1;
-               var9 = class_112.method_2238(class_266.field_3130, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_102, field_1463.isaac, (byte)8);
                var9.networkBuffer.writeShortReverse(var3);
                var9.networkBuffer.method_158(class_145.field_1840[82]?1:0);
                field_1463.method_4079(var9);
@@ -27123,7 +27123,7 @@ public final class client extends GameApplet implements class_16 {
 
          } else {
             if(40 == var2) {
-               var8 = class_112.method_2238(class_266.field_3053, field_1463.isaac, (byte)8);
+               var8 = class_112.newPacket(Opcode.OPCODE_37, field_1463.isaac, (byte)8);
                var8.networkBuffer.writeShort(var0);
                var8.networkBuffer.writeIntAltReversed(var1);
                var8.networkBuffer.method_185(var3);
@@ -27142,7 +27142,7 @@ public final class client extends GameApplet implements class_16 {
                   field_1645 = 0;
                   field_1520 = var0 * 819547401;
                   field_1562 = var1 * 1551872625;
-                  var9 = class_112.method_2238(class_266.field_3144, field_1463.isaac, (byte)8);
+                  var9 = class_112.newPacket(Opcode.OPCODE_47, field_1463.isaac, (byte)8);
                   var9.networkBuffer.method_185(var3);
                   var9.networkBuffer.method_145(class_145.field_1840[-195626828]?1:0);
                   field_1463.method_4079(var9);
@@ -27150,7 +27150,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(var2 == 614444563) {
-               var8 = class_112.method_2238(class_266.field_3059, field_1463.isaac, (byte)8);
+               var8 = class_112.newPacket(Opcode.OPCODE_13, field_1463.isaac, (byte)8);
                var8.networkBuffer.writeIntAlt(var1);
                var8.networkBuffer.writeShort(var0);
                var8.networkBuffer.writeShortReverse(var3);
@@ -27165,7 +27165,7 @@ public final class client extends GameApplet implements class_16 {
                if(var12 != null && var12.field_228[var0] >= 100000) {
                   class_149.method_3135(27, "", var12.field_228[var0] + " x " + class_299.method_5347(var3, -970387397).field_707);
                } else {
-                  var9 = class_112.method_2238(class_266.field_3120, field_1463.isaac, (byte)8);
+                  var9 = class_112.newPacket(Opcode.OPCODE_74, field_1463.isaac, (byte)8);
                   var9.networkBuffer.writeShort(var3);
                   field_1463.method_4079(var9);
                }
@@ -27182,7 +27182,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = 819547401 * var0;
                field_1562 = 1551872625 * var1;
-               var8 = class_112.method_2238(class_266.field_3133, field_1463.isaac, (byte)8);
+               var8 = class_112.newPacket(Opcode.OPCODE_87, field_1463.isaac, (byte)8);
                var8.networkBuffer.writeShort(class_243.field_2700 * 1292738322 + var0);
                var8.networkBuffer.writeShortAlt(244215575 * class_154.field_1929 + var1);
                var8.networkBuffer.method_145(class_145.field_1840[553777847]?1:0);
@@ -27252,7 +27252,7 @@ public final class client extends GameApplet implements class_16 {
    // $FF: renamed from: zm (java.lang.String) void
    static final void method_2640(String var0) {
       if(!var0.equals("")) {
-         class_40 var1 = class_112.method_2238(class_266.field_3048, field_1463.isaac, (byte)8);
+         class_40 var1 = class_112.newPacket(Opcode.OPCODE_2, field_1463.isaac, (byte)8);
          var1.networkBuffer.writeByte(class_166.method_3598(var0));
          var1.networkBuffer.writeString(var0);
          field_1463.method_4079(var1);
@@ -27888,7 +27888,7 @@ public final class client extends GameApplet implements class_16 {
 
       class_40 var8;
       if(37 == var2) {
-         var8 = class_112.method_2238(class_266.field_3147, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_95, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeIntAltReversed(var1);
          var8.networkBuffer.writeShortAlt(var0);
          var8.networkBuffer.writeShortReverse(var3);
@@ -27905,7 +27905,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = -1555141481 * var0;
          field_1562 = var1 * 1562845642;
-         var8 = class_112.method_2238(class_266.field_3051, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_5, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeShort(class_178.field_2220 * -18278717);
          var8.networkBuffer.method_185(var3);
          var8.networkBuffer.writeShort(class_189.field_2276 * 1854633345);
@@ -27927,7 +27927,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = 1447445219 * var0;
             field_1562 = var1 * 1551872625;
-            var9 = class_112.method_2238(class_266.field_3079, field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(Opcode.OPCODE_33, field_1463.isaac, (byte)8);
             var9.networkBuffer.method_185(var3);
             var9.networkBuffer.method_148(class_145.field_1840[82]?1:0);
             field_1463.method_4079(var9);
@@ -27938,7 +27938,7 @@ public final class client extends GameApplet implements class_16 {
       if(var2 == -1699738843) {
          var12 = class_325.method_5779(var1, var0, 1372206237);
          if(var12 != null) {
-            var9 = class_112.method_2238(class_266.field_3072, field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(Opcode.OPCODE_0, field_1463.isaac, (byte)8);
             var9.networkBuffer.writeIntAltReversed(var1);
             var9.networkBuffer.method_185(539336237 * var12.field_229);
             var9.networkBuffer.writeShort(field_1564 * -772905767);
@@ -27959,7 +27959,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = -1150663326 * var0;
             field_1562 = 1897458934 * var1;
-            var9 = class_112.method_2238(class_266.field_3099, field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(Opcode.OPCODE_53, field_1463.isaac, (byte)8);
             var9.networkBuffer.method_158(class_145.field_1840[82]?1:0);
             var9.networkBuffer.writeShortAlt(var3);
             field_1463.method_4079(var9);
@@ -27969,7 +27969,7 @@ public final class client extends GameApplet implements class_16 {
       int var10;
       class_37 var14;
       if(28 == var2) {
-         var8 = class_112.method_2238(class_266.field_3093, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_65, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeIntReverse(var1);
          field_1463.method_4079(var8);
          var14 = class_71.method_1047(var1);
@@ -27981,7 +27981,7 @@ public final class client extends GameApplet implements class_16 {
       }
 
       if(var2 == -991129668) {
-         var8 = class_112.method_2238(class_266.field_3107, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_61, field_1463.isaac, (byte)8);
          var8.networkBuffer.method_185(var3);
          var8.networkBuffer.writeShortAlt(var0);
          var8.networkBuffer.writeInt(var1);
@@ -27992,7 +27992,7 @@ public final class client extends GameApplet implements class_16 {
       }
 
       if(34 == var2) {
-         var8 = class_112.method_2238(class_266.field_3050, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_4, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeIntAltReversed(var1);
          var8.networkBuffer.writeShort(var0);
          var8.networkBuffer.writeShort(var3);
@@ -28011,7 +28011,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = -800360697 * var0;
             field_1562 = -219211605 * var1;
-            var9 = class_112.method_2238(class_266.field_3073, field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(Opcode.OPCODE_7, field_1463.isaac, (byte)8);
             var9.networkBuffer.writeIntAlt(1430642749 * class_148.field_1875);
             var9.networkBuffer.writeShort(1929969682 * field_1564);
             var9.networkBuffer.writeShort(var3);
@@ -28026,13 +28026,13 @@ public final class client extends GameApplet implements class_16 {
          field_1519 = 1304895670 * var7;
          field_1521 = -1022456306;
          field_1645 = 0;
-         var8 = class_112.method_2238(class_266.field_3065, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_80, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeShort(var3);
          field_1463.method_4079(var8);
       }
 
       if(42 == var2) {
-         var8 = class_112.method_2238(class_266.field_3109, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_63, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeIntAlt(var1);
          var8.networkBuffer.writeShortReverse(var3);
          var8.networkBuffer.method_185(var0);
@@ -28043,7 +28043,7 @@ public final class client extends GameApplet implements class_16 {
       }
 
       if(var2 == 31) {
-         var8 = class_112.method_2238(class_266.field_3105, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_59, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeIntReverse(var1);
          var8.networkBuffer.writeIntAltReversed(263315767 * class_100.field_1172);
          var8.networkBuffer.method_185(var0);
@@ -28063,7 +28063,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = var0 * 819547401;
          field_1562 = 353057363 * var1;
-         var8 = class_112.method_2238(class_266.field_3146, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_100, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeShort(var0 + 697161691 * class_243.field_2700);
          var8.networkBuffer.writeShortAlt(-1943451327 * class_154.field_1929 + var1);
          var8.networkBuffer.method_145(class_145.field_1840[82]?1:0);
@@ -28072,7 +28072,7 @@ public final class client extends GameApplet implements class_16 {
       }
 
       if(var2 == 41) {
-         var8 = class_112.method_2238(class_266.field_3113, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_67, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeShort(var3);
          var8.networkBuffer.method_185(var0);
          var8.networkBuffer.writeIntAltReversed(var1);
@@ -28083,7 +28083,7 @@ public final class client extends GameApplet implements class_16 {
       }
 
       if(1160320262 == var2) {
-         var8 = class_112.method_2238(class_266.field_3083, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_98, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeIntAlt(-1266646052 * class_148.field_1875);
          var8.networkBuffer.method_185(1683168531 * field_1573);
          var8.networkBuffer.writeIntAlt(var1);
@@ -28102,7 +28102,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = 819547401 * var0;
          field_1562 = var1 * 1551872625;
-         var8 = class_112.method_2238(class_266.field_3049, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_3, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeShortAlt(var3);
          var8.networkBuffer.writeShortReverse(class_154.field_1929 * -27903763 + var1);
          var8.networkBuffer.method_145(class_145.field_1840[82]?1:0);
@@ -28123,7 +28123,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = var0 * -279260905;
          field_1562 = 1551872625 * var1;
-         var8 = class_112.method_2238(class_266.field_3140, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_76, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeShortReverse(var3);
          var8.networkBuffer.method_148(class_145.field_1840[830528176]?1:0);
          var8.networkBuffer.writeShortAlt(-333786077 * class_154.field_1929 + var1);
@@ -28132,7 +28132,7 @@ public final class client extends GameApplet implements class_16 {
       }
 
       if(410237965 == var2) {
-         var8 = class_112.method_2238(class_266.field_3135, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_101, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeInt(var1);
          var8.networkBuffer.writeShort(var3);
          var8.networkBuffer.writeShortAlt(var0);
@@ -28149,7 +28149,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = var0 * 819547401;
          field_1562 = var1 * -423583516;
-         var8 = class_112.method_2238(class_266.field_3115, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_69, field_1463.isaac, (byte)8);
          var8.networkBuffer.method_158(class_145.field_1840[-998222798]?1:0);
          var8.networkBuffer.writeShortAlt(var3);
          var8.networkBuffer.writeShortReverse(-1612445818 * class_243.field_2700 + var0);
@@ -28164,7 +28164,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = var0 * 819547401;
          field_1562 = var1 * -207153123;
-         var8 = class_112.method_2238(class_266.field_3100, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_54, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeShortReverse(class_243.field_2700 * 654108554 + var0);
          var8.networkBuffer.writeShortAlt(var3);
          var8.networkBuffer.method_145(class_145.field_1840[1372510252]?1:0);
@@ -28181,7 +28181,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = -27548895 * var0;
             field_1562 = 1551872625 * var1;
-            var9 = class_112.method_2238(class_266.field_3097, field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(Opcode.OPCODE_51, field_1463.isaac, (byte)8);
             var9.networkBuffer.writeIntAltReversed(class_100.field_1172 * 1022554237);
             var9.networkBuffer.method_185(class_189.field_2276 * 946193587);
             var9.networkBuffer.method_145(class_145.field_1840[82]?1:0);
@@ -28198,7 +28198,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = 819547401 * var0;
          field_1562 = var1 * -1168952751;
-         var8 = class_112.method_2238(class_266.field_3142, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_96, field_1463.isaac, (byte)8);
          var8.networkBuffer.method_145(class_145.field_1840[82]?1:0);
          var8.networkBuffer.writeInt(-2064084162 * class_148.field_1875);
          var8.networkBuffer.writeShort(class_154.field_1929 * -1668803875 + var1);
@@ -28218,7 +28218,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = var0 * 928405403;
             field_1562 = 1551872625 * var1;
-            var9 = class_112.method_2238(class_266.field_3110, field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(Opcode.OPCODE_64, field_1463.isaac, (byte)8);
             var9.networkBuffer.method_145(class_145.field_1840[1386645316]?1:0);
             var9.networkBuffer.writeShortAlt(var3);
             field_1463.method_4079(var9);
@@ -28239,7 +28239,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = -603868965 * var0;
          field_1562 = -185073681 * var1;
-         var8 = class_112.method_2238(class_266.field_3114, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_78, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeShortAlt(var0 + 592523404 * class_243.field_2700);
          var8.networkBuffer.method_158(class_145.field_1840[82]?1:0);
          var8.networkBuffer.writeShortReverse(var3);
@@ -28254,7 +28254,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = var0 * 819547401;
          field_1562 = -960126228 * var1;
-         var8 = class_112.method_2238(class_266.field_3151, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_105, field_1463.isaac, (byte)8);
          var8.networkBuffer.method_185(-1827868631 * class_189.field_2276);
          var8.networkBuffer.writeShortAlt(var3);
          var8.networkBuffer.method_158(class_145.field_1840[1835997905]?1:0);
@@ -28282,7 +28282,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = var0 * 703571137;
             field_1562 = var1 * -173732558;
-            var9 = class_112.method_2238(class_266.field_3111, field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(Opcode.OPCODE_52, field_1463.isaac, (byte)8);
             var9.networkBuffer.method_148(class_145.field_1840[-710506995]?1:0);
             var9.networkBuffer.writeShortReverse(var3);
             field_1463.method_4079(var9);
@@ -28298,7 +28298,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = -1696522818 * var0;
             field_1562 = var1 * -1015580054;
-            var9 = class_112.method_2238(class_266.field_3076, field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(Opcode.OPCODE_30, field_1463.isaac, (byte)8);
             var9.networkBuffer.writeShortAlt(var3);
             var9.networkBuffer.writeByte(class_145.field_1840[773815249]?1:0);
             field_1463.method_4079(var9);
@@ -28328,7 +28328,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = var0 * 819547401;
                field_1562 = var1 * 1551872625;
-               var9 = class_112.method_2238(class_266.field_3128, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_82, field_1463.isaac, (byte)8);
                var9.networkBuffer.writeShort(var3);
                var9.networkBuffer.writeByte(class_145.field_1840[82]?1:0);
                field_1463.method_4079(var9);
@@ -28344,7 +28344,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = var0 * 819547401;
                field_1562 = 1953080365 * var1;
-               var9 = class_112.method_2238(class_266.field_3094, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_48, field_1463.isaac, (byte)8);
                var9.networkBuffer.writeByte(class_145.field_1840[82]?1:0);
                var9.networkBuffer.writeShortAlt(var3);
                field_1463.method_4079(var9);
@@ -28356,7 +28356,7 @@ public final class client extends GameApplet implements class_16 {
             field_1519 = -1697085024 * var7;
             field_1521 = -1022456306;
             field_1645 = 0;
-            var8 = class_112.method_2238(class_266.field_3120, field_1463.isaac, (byte)8);
+            var8 = class_112.newPacket(Opcode.OPCODE_74, field_1463.isaac, (byte)8);
             var8.networkBuffer.writeShort(var3);
             field_1463.method_4079(var8);
          }
@@ -28370,7 +28370,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = 819547401 * var0;
                field_1562 = var1 * 1551872625;
-               var9 = class_112.method_2238(class_266.field_3071, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_25, field_1463.isaac, (byte)8);
                var9.networkBuffer.method_185(var3);
                var9.networkBuffer.method_148(class_145.field_1840[499970411]?1:0);
                field_1463.method_4079(var9);
@@ -28386,7 +28386,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = var0 * 819547401;
                field_1562 = var1 * -1388951396;
-               var9 = class_112.method_2238(class_266.field_3098, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_32, field_1463.isaac, (byte)8);
                var9.networkBuffer.method_145(class_145.field_1840[-1150611845]?1:0);
                var9.networkBuffer.writeShort(var3);
                field_1463.method_4079(var9);
@@ -28402,7 +28402,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = -732061551 * var0;
                field_1562 = var1 * -879538996;
-               var9 = class_112.method_2238(class_266.field_3149, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_103, field_1463.isaac, (byte)8);
                var9.networkBuffer.writeByte(class_145.field_1840[309105509]?1:0);
                var9.networkBuffer.writeShortAlt(class_189.field_2276 * 1185760641);
                var9.networkBuffer.writeIntAlt(class_100.field_1172 * 1923749835);
@@ -28413,7 +28413,7 @@ public final class client extends GameApplet implements class_16 {
          }
 
          if(var2 == 29) {
-            var8 = class_112.method_2238(class_266.field_3093, field_1463.isaac, (byte)8);
+            var8 = class_112.newPacket(Opcode.OPCODE_65, field_1463.isaac, (byte)8);
             var8.networkBuffer.writeIntReverse(var1);
             field_1463.method_4079(var8);
             var14 = class_71.method_1047(var1);
@@ -28440,7 +28440,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(null != var16) {
-                  var15 = class_112.method_2238(class_266.field_3052, field_1463.isaac, (byte)8);
+                  var15 = class_112.newPacket(Opcode.OPCODE_6, field_1463.isaac, (byte)8);
                   var15.networkBuffer.writeShort(var16.field_857 * -2060838679);
                   field_1463.method_4079(var15);
                }
@@ -28454,7 +28454,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = var0 * 819547401;
             field_1562 = 1551872625 * var1;
-            var8 = class_112.method_2238(class_266.field_3046, field_1463.isaac, (byte)8);
+            var8 = class_112.newPacket(Opcode.OPCODE_93, field_1463.isaac, (byte)8);
             var8.networkBuffer.method_185(var3);
             var8.networkBuffer.method_185(var1 + -196511376 * class_154.field_1929);
             var8.networkBuffer.method_145(class_145.field_1840[1026349142]?1:0);
@@ -28471,7 +28471,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = var0 * 819547401;
                field_1562 = var1 * 88663658;
-               var9 = class_112.method_2238(class_266.field_3075, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_29, field_1463.isaac, (byte)8);
                var9.networkBuffer.writeByte(class_145.field_1840[-2093079425]?1:0);
                var9.networkBuffer.method_185(var3);
                field_1463.method_4079(var9);
@@ -28485,7 +28485,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = var0 * 269473782;
             field_1562 = 1959669178 * var1;
-            var8 = class_112.method_2238(class_266.field_3117, field_1463.isaac, (byte)8);
+            var8 = class_112.newPacket(Opcode.OPCODE_71, field_1463.isaac, (byte)8);
             var8.networkBuffer.writeShort(var0 + class_243.field_2700 * 697161691);
             var8.networkBuffer.writeShortReverse(var3);
             var8.networkBuffer.writeShort(field_1564 * 57094518);
@@ -28516,7 +28516,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = 819547401 * var0;
                field_1562 = var1 * -1528374946;
-               var9 = class_112.method_2238(class_266.field_3092, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_92, field_1463.isaac, (byte)8);
                var9.networkBuffer.writeShort(var3);
                var9.networkBuffer.writeByte(class_145.field_1840[1539661920]?1:0);
                field_1463.method_4079(var9);
@@ -28531,7 +28531,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(var17) {
-               var15 = class_112.method_2238(class_266.field_3093, field_1463.isaac, (byte)8);
+               var15 = class_112.newPacket(Opcode.OPCODE_65, field_1463.isaac, (byte)8);
                var15.networkBuffer.writeIntReverse(var1);
                field_1463.method_4079(var15);
             }
@@ -28544,7 +28544,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = -2085766722 * var0;
             field_1562 = -57709988 * var1;
-            var8 = class_112.method_2238(class_266.field_3123, field_1463.isaac, (byte)8);
+            var8 = class_112.newPacket(Opcode.OPCODE_77, field_1463.isaac, (byte)8);
             var8.networkBuffer.writeShortAlt(var3);
             var8.networkBuffer.method_185(-193164258 * class_243.field_2700 + var0);
             var8.networkBuffer.method_158(class_145.field_1840[82]?1:0);
@@ -28553,7 +28553,7 @@ public final class client extends GameApplet implements class_16 {
          }
 
          if(39 == var2) {
-            var8 = class_112.method_2238(class_266.field_3055, field_1463.isaac, (byte)8);
+            var8 = class_112.newPacket(Opcode.OPCODE_99, field_1463.isaac, (byte)8);
             var8.networkBuffer.writeShortAlt(var0);
             var8.networkBuffer.writeShort(var3);
             var8.networkBuffer.writeInt(var1);
@@ -28564,7 +28564,7 @@ public final class client extends GameApplet implements class_16 {
          }
 
          if(1405739540 == var2) {
-            var8 = class_112.method_2238(class_266.field_3101, field_1463.isaac, (byte)8);
+            var8 = class_112.newPacket(Opcode.OPCODE_55, field_1463.isaac, (byte)8);
             var8.networkBuffer.writeShortReverse(var3);
             var8.networkBuffer.writeIntAlt(var1);
             var8.networkBuffer.writeShortAlt(var0);
@@ -28583,7 +28583,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = 819547401 * var0;
                field_1562 = var1 * -921851878;
-               var9 = class_112.method_2238(class_266.field_3089, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_43, field_1463.isaac, (byte)8);
                var9.networkBuffer.method_185(field_1573 * -2129375097);
                var9.networkBuffer.writeShortAlt(var3);
                var9.networkBuffer.writeInt(1430642749 * class_148.field_1875);
@@ -28600,7 +28600,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = var0 * 819547401;
             field_1562 = 27875987 * var1;
-            var8 = class_112.method_2238(class_266.field_3150, field_1463.isaac, (byte)8);
+            var8 = class_112.newPacket(Opcode.OPCODE_62, field_1463.isaac, (byte)8);
             var8.networkBuffer.method_185(var3);
             var8.networkBuffer.writeShort(var0 + class_243.field_2700 * -278217050);
             var8.networkBuffer.method_148(class_145.field_1840[-2044315454]?1:0);
@@ -28617,7 +28617,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = 363240056 * var0;
                field_1562 = 1551872625 * var1;
-               var9 = class_112.method_2238(class_266.field_3130, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_102, field_1463.isaac, (byte)8);
                var9.networkBuffer.writeShortReverse(var3);
                var9.networkBuffer.method_158(class_145.field_1840[82]?1:0);
                field_1463.method_4079(var9);
@@ -28644,7 +28644,7 @@ public final class client extends GameApplet implements class_16 {
 
          } else {
             if(1732573022 == var2) {
-               var8 = class_112.method_2238(class_266.field_3053, field_1463.isaac, (byte)8);
+               var8 = class_112.newPacket(Opcode.OPCODE_37, field_1463.isaac, (byte)8);
                var8.networkBuffer.writeShort(var0);
                var8.networkBuffer.writeIntAltReversed(var1);
                var8.networkBuffer.method_185(var3);
@@ -28663,7 +28663,7 @@ public final class client extends GameApplet implements class_16 {
                   field_1645 = 0;
                   field_1520 = var0 * 819547401;
                   field_1562 = var1 * -1421044660;
-                  var9 = class_112.method_2238(class_266.field_3144, field_1463.isaac, (byte)8);
+                  var9 = class_112.newPacket(Opcode.OPCODE_47, field_1463.isaac, (byte)8);
                   var9.networkBuffer.method_185(var3);
                   var9.networkBuffer.method_145(class_145.field_1840[-1492079303]?1:0);
                   field_1463.method_4079(var9);
@@ -28671,7 +28671,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(var2 == 33) {
-               var8 = class_112.method_2238(class_266.field_3059, field_1463.isaac, (byte)8);
+               var8 = class_112.newPacket(Opcode.OPCODE_13, field_1463.isaac, (byte)8);
                var8.networkBuffer.writeIntAlt(var1);
                var8.networkBuffer.writeShort(var0);
                var8.networkBuffer.writeShortReverse(var3);
@@ -28686,7 +28686,7 @@ public final class client extends GameApplet implements class_16 {
                if(var12 != null && var12.field_228[var0] >= 100000) {
                   class_149.method_3135(27, "", var12.field_228[var0] + " x " + class_299.method_5347(var3, -1025988022).field_707);
                } else {
-                  var9 = class_112.method_2238(class_266.field_3120, field_1463.isaac, (byte)8);
+                  var9 = class_112.newPacket(Opcode.OPCODE_74, field_1463.isaac, (byte)8);
                   var9.networkBuffer.writeShort(var3);
                   field_1463.method_4079(var9);
                }
@@ -28703,7 +28703,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = 819547401 * var0;
                field_1562 = 1551872625 * var1;
-               var8 = class_112.method_2238(class_266.field_3133, field_1463.isaac, (byte)8);
+               var8 = class_112.newPacket(Opcode.OPCODE_87, field_1463.isaac, (byte)8);
                var8.networkBuffer.writeShort(class_243.field_2700 * 697161691 + var0);
                var8.networkBuffer.writeShortAlt(-27903763 * class_154.field_1929 + var1);
                var8.networkBuffer.method_145(class_145.field_1840[813219153]?1:0);
@@ -28755,7 +28755,7 @@ public final class client extends GameApplet implements class_16 {
 
    // $FF: renamed from: tu (int, int) void
    static void method_2665(int var0, int var1) {
-      class_40 var2 = class_112.method_2238(class_266.field_3126, field_1463.isaac, (byte)8);
+      class_40 var2 = class_112.newPacket(Opcode.OPCODE_19, field_1463.isaac, (byte)8);
       var2.networkBuffer.method_185(var1);
       var2.networkBuffer.writeIntAltReversed(var0);
       field_1463.method_4079(var2);
@@ -28763,7 +28763,7 @@ public final class client extends GameApplet implements class_16 {
 
    // $FF: renamed from: tt (int, int) void
    static void method_2666(int var0, int var1) {
-      class_40 var2 = class_112.method_2238(class_266.field_3126, field_1463.isaac, (byte)8);
+      class_40 var2 = class_112.newPacket(Opcode.OPCODE_19, field_1463.isaac, (byte)8);
       var2.networkBuffer.method_185(var1);
       var2.networkBuffer.writeIntAltReversed(var0);
       field_1463.method_4079(var2);
@@ -28771,7 +28771,7 @@ public final class client extends GameApplet implements class_16 {
 
    // $FF: renamed from: ta (int, int) void
    static void method_2667(int var0, int var1) {
-      class_40 var2 = class_112.method_2238(class_266.field_3126, field_1463.isaac, (byte)8);
+      class_40 var2 = class_112.newPacket(Opcode.OPCODE_19, field_1463.isaac, (byte)8);
       var2.networkBuffer.method_185(var1);
       var2.networkBuffer.writeIntAltReversed(var0);
       field_1463.method_4079(var2);
@@ -28800,7 +28800,7 @@ public final class client extends GameApplet implements class_16 {
             if(class_245.method_4708(class_112.method_2236(var5, 2145517389), var0 - 1, 2124687980)) {
                class_40 var7;
                if(1 == var0) {
-                  var7 = class_112.method_2238(class_266.field_3078, field_1463.isaac, (byte)8);
+                  var7 = class_112.newPacket(Opcode.OPCODE_16, field_1463.isaac, (byte)8);
                   var7.networkBuffer.writeIntReverse(var1);
                   var7.networkBuffer.writeShortReverse(var2);
                   var7.networkBuffer.writeShortReverse(var3);
@@ -28808,7 +28808,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(var0 == 2) {
-                  var7 = class_112.method_2238(class_266.field_3077, field_1463.isaac, (byte)8);
+                  var7 = class_112.newPacket(Opcode.OPCODE_66, field_1463.isaac, (byte)8);
                   var7.networkBuffer.writeIntReverse(var1);
                   var7.networkBuffer.writeShortReverse(var2);
                   var7.networkBuffer.writeShortReverse(var3);
@@ -28816,7 +28816,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(var0 == 3) {
-                  var7 = class_112.method_2238(class_266.field_3090, field_1463.isaac, (byte)8);
+                  var7 = class_112.newPacket(Opcode.OPCODE_44, field_1463.isaac, (byte)8);
                   var7.networkBuffer.writeIntReverse(var1);
                   var7.networkBuffer.writeShortReverse(var2);
                   var7.networkBuffer.writeShortReverse(var3);
@@ -28824,7 +28824,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(4 == var0) {
-                  var7 = class_112.method_2238(class_266.field_3152, field_1463.isaac, (byte)8);
+                  var7 = class_112.newPacket(Opcode.OPCODE_27, field_1463.isaac, (byte)8);
                   var7.networkBuffer.writeIntReverse(var1);
                   var7.networkBuffer.writeShortReverse(var2);
                   var7.networkBuffer.writeShortReverse(var3);
@@ -28832,7 +28832,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(var0 == 5) {
-                  var7 = class_112.method_2238(class_266.field_3066, field_1463.isaac, (byte)8);
+                  var7 = class_112.newPacket(Opcode.OPCODE_20, field_1463.isaac, (byte)8);
                   var7.networkBuffer.writeIntReverse(var1);
                   var7.networkBuffer.writeShortReverse(var2);
                   var7.networkBuffer.writeShortReverse(var3);
@@ -28840,7 +28840,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(6 == var0) {
-                  var7 = class_112.method_2238(class_266.field_3124, field_1463.isaac, (byte)8);
+                  var7 = class_112.newPacket(Opcode.OPCODE_94, field_1463.isaac, (byte)8);
                   var7.networkBuffer.writeIntReverse(var1);
                   var7.networkBuffer.writeShortReverse(var2);
                   var7.networkBuffer.writeShortReverse(var3);
@@ -28848,7 +28848,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(7 == var0) {
-                  var7 = class_112.method_2238(class_266.field_3122, field_1463.isaac, (byte)8);
+                  var7 = class_112.newPacket(Opcode.OPCODE_22, field_1463.isaac, (byte)8);
                   var7.networkBuffer.writeIntReverse(var1);
                   var7.networkBuffer.writeShortReverse(var2);
                   var7.networkBuffer.writeShortReverse(var3);
@@ -28856,7 +28856,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(var0 == 8) {
-                  var7 = class_112.method_2238(class_266.field_3087, field_1463.isaac, (byte)8);
+                  var7 = class_112.newPacket(Opcode.OPCODE_41, field_1463.isaac, (byte)8);
                   var7.networkBuffer.writeIntReverse(var1);
                   var7.networkBuffer.writeShortReverse(var2);
                   var7.networkBuffer.writeShortReverse(var3);
@@ -28864,7 +28864,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(9 == var0) {
-                  var7 = class_112.method_2238(class_266.field_3067, field_1463.isaac, (byte)8);
+                  var7 = class_112.newPacket(Opcode.OPCODE_21, field_1463.isaac, (byte)8);
                   var7.networkBuffer.writeIntReverse(var1);
                   var7.networkBuffer.writeShortReverse(var2);
                   var7.networkBuffer.writeShortReverse(var3);
@@ -28872,7 +28872,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(10 == var0) {
-                  var7 = class_112.method_2238(class_266.field_3106, field_1463.isaac, (byte)8);
+                  var7 = class_112.newPacket(Opcode.OPCODE_60, field_1463.isaac, (byte)8);
                   var7.networkBuffer.writeIntReverse(var1);
                   var7.networkBuffer.writeShortReverse(var2);
                   var7.networkBuffer.writeShortReverse(var3);
@@ -28907,7 +28907,7 @@ public final class client extends GameApplet implements class_16 {
             if(class_245.method_4708(class_112.method_2236(var5, 2131100782), var0 - 1, 2010022084)) {
                class_40 var7;
                if(1 == var0) {
-                  var7 = class_112.method_2238(class_266.field_3078, field_1463.isaac, (byte)8);
+                  var7 = class_112.newPacket(Opcode.OPCODE_16, field_1463.isaac, (byte)8);
                   var7.networkBuffer.writeIntReverse(var1);
                   var7.networkBuffer.writeShortReverse(var2);
                   var7.networkBuffer.writeShortReverse(var3);
@@ -28915,7 +28915,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(var0 == 2) {
-                  var7 = class_112.method_2238(class_266.field_3077, field_1463.isaac, (byte)8);
+                  var7 = class_112.newPacket(Opcode.OPCODE_66, field_1463.isaac, (byte)8);
                   var7.networkBuffer.writeIntReverse(var1);
                   var7.networkBuffer.writeShortReverse(var2);
                   var7.networkBuffer.writeShortReverse(var3);
@@ -28923,7 +28923,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(var0 == 3) {
-                  var7 = class_112.method_2238(class_266.field_3090, field_1463.isaac, (byte)8);
+                  var7 = class_112.newPacket(Opcode.OPCODE_44, field_1463.isaac, (byte)8);
                   var7.networkBuffer.writeIntReverse(var1);
                   var7.networkBuffer.writeShortReverse(var2);
                   var7.networkBuffer.writeShortReverse(var3);
@@ -28931,7 +28931,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(4 == var0) {
-                  var7 = class_112.method_2238(class_266.field_3152, field_1463.isaac, (byte)8);
+                  var7 = class_112.newPacket(Opcode.OPCODE_27, field_1463.isaac, (byte)8);
                   var7.networkBuffer.writeIntReverse(var1);
                   var7.networkBuffer.writeShortReverse(var2);
                   var7.networkBuffer.writeShortReverse(var3);
@@ -28939,7 +28939,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(var0 == 5) {
-                  var7 = class_112.method_2238(class_266.field_3066, field_1463.isaac, (byte)8);
+                  var7 = class_112.newPacket(Opcode.OPCODE_20, field_1463.isaac, (byte)8);
                   var7.networkBuffer.writeIntReverse(var1);
                   var7.networkBuffer.writeShortReverse(var2);
                   var7.networkBuffer.writeShortReverse(var3);
@@ -28947,7 +28947,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(6 == var0) {
-                  var7 = class_112.method_2238(class_266.field_3124, field_1463.isaac, (byte)8);
+                  var7 = class_112.newPacket(Opcode.OPCODE_94, field_1463.isaac, (byte)8);
                   var7.networkBuffer.writeIntReverse(var1);
                   var7.networkBuffer.writeShortReverse(var2);
                   var7.networkBuffer.writeShortReverse(var3);
@@ -28955,7 +28955,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(7 == var0) {
-                  var7 = class_112.method_2238(class_266.field_3122, field_1463.isaac, (byte)8);
+                  var7 = class_112.newPacket(Opcode.OPCODE_22, field_1463.isaac, (byte)8);
                   var7.networkBuffer.writeIntReverse(var1);
                   var7.networkBuffer.writeShortReverse(var2);
                   var7.networkBuffer.writeShortReverse(var3);
@@ -28963,7 +28963,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(var0 == 8) {
-                  var7 = class_112.method_2238(class_266.field_3087, field_1463.isaac, (byte)8);
+                  var7 = class_112.newPacket(Opcode.OPCODE_41, field_1463.isaac, (byte)8);
                   var7.networkBuffer.writeIntReverse(var1);
                   var7.networkBuffer.writeShortReverse(var2);
                   var7.networkBuffer.writeShortReverse(var3);
@@ -28971,7 +28971,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(9 == var0) {
-                  var7 = class_112.method_2238(class_266.field_3067, field_1463.isaac, (byte)8);
+                  var7 = class_112.newPacket(Opcode.OPCODE_21, field_1463.isaac, (byte)8);
                   var7.networkBuffer.writeIntReverse(var1);
                   var7.networkBuffer.writeShortReverse(var2);
                   var7.networkBuffer.writeShortReverse(var3);
@@ -28979,7 +28979,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(10 == var0) {
-                  var7 = class_112.method_2238(class_266.field_3106, field_1463.isaac, (byte)8);
+                  var7 = class_112.newPacket(Opcode.OPCODE_60, field_1463.isaac, (byte)8);
                   var7.networkBuffer.writeIntReverse(var1);
                   var7.networkBuffer.writeShortReverse(var2);
                   var7.networkBuffer.writeShortReverse(var3);
@@ -29034,7 +29034,7 @@ public final class client extends GameApplet implements class_16 {
             class_178 var2 = (class_178)field_1647[var0].field_318.get(var1);
             if(var2.field_2221 == -1) {
                class_203 var3 = field_1463;
-               class_40 var4 = class_112.method_2238(class_266.field_3086, var3.isaac, (byte)8);
+               class_40 var4 = class_112.newPacket(Opcode.OPCODE_40, var3.isaac, (byte)8);
                var4.networkBuffer.writeByte(3 + class_166.method_3598(var2.field_2222));
                var4.networkBuffer.writeByte(var0);
                var4.networkBuffer.writeShortReverse(var1);
@@ -29206,7 +29206,7 @@ public final class client extends GameApplet implements class_16 {
 
       class_40 var8;
       if(-1946359585 == var2) {
-         var8 = class_112.method_2238(class_266.field_3147, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_95, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeIntAltReversed(var1);
          var8.networkBuffer.writeShortAlt(var0);
          var8.networkBuffer.writeShortReverse(var3);
@@ -29223,7 +29223,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = -1341896331 * var0;
          field_1562 = var1 * 1188880498;
-         var8 = class_112.method_2238(class_266.field_3051, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_5, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeShort(class_178.field_2220 * 979989395);
          var8.networkBuffer.method_185(var3);
          var8.networkBuffer.writeShort(class_189.field_2276 * 1892344125);
@@ -29245,7 +29245,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = 819547401 * var0;
             field_1562 = var1 * 1551872625;
-            var9 = class_112.method_2238(class_266.field_3079, field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(Opcode.OPCODE_33, field_1463.isaac, (byte)8);
             var9.networkBuffer.method_185(var3);
             var9.networkBuffer.method_148(class_145.field_1840[82]?1:0);
             field_1463.method_4079(var9);
@@ -29256,7 +29256,7 @@ public final class client extends GameApplet implements class_16 {
       if(var2 == 58) {
          var12 = class_325.method_5779(var1, var0, 1717538002);
          if(var12 != null) {
-            var9 = class_112.method_2238(class_266.field_3072, field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(Opcode.OPCODE_0, field_1463.isaac, (byte)8);
             var9.networkBuffer.writeIntAltReversed(var1);
             var9.networkBuffer.method_185(2095504909 * var12.field_229);
             var9.networkBuffer.writeShort(field_1564 * 1424616685);
@@ -29277,7 +29277,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = 819547401 * var0;
             field_1562 = 1551872625 * var1;
-            var9 = class_112.method_2238(class_266.field_3099, field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(Opcode.OPCODE_53, field_1463.isaac, (byte)8);
             var9.networkBuffer.method_158(class_145.field_1840[-1524167998]?1:0);
             var9.networkBuffer.writeShortAlt(var3);
             field_1463.method_4079(var9);
@@ -29287,7 +29287,7 @@ public final class client extends GameApplet implements class_16 {
       int var10;
       class_37 var14;
       if(28 == var2) {
-         var8 = class_112.method_2238(class_266.field_3093, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_65, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeIntReverse(var1);
          field_1463.method_4079(var8);
          var14 = class_71.method_1047(var1);
@@ -29299,7 +29299,7 @@ public final class client extends GameApplet implements class_16 {
       }
 
       if(var2 == 43) {
-         var8 = class_112.method_2238(class_266.field_3107, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_61, field_1463.isaac, (byte)8);
          var8.networkBuffer.method_185(var3);
          var8.networkBuffer.writeShortAlt(var0);
          var8.networkBuffer.writeInt(var1);
@@ -29310,7 +29310,7 @@ public final class client extends GameApplet implements class_16 {
       }
 
       if(-313737658 == var2) {
-         var8 = class_112.method_2238(class_266.field_3050, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_4, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeIntAltReversed(var1);
          var8.networkBuffer.writeShort(var0);
          var8.networkBuffer.writeShort(var3);
@@ -29329,7 +29329,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = 435416819 * var0;
             field_1562 = 1551872625 * var1;
-            var9 = class_112.method_2238(class_266.field_3073, field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(Opcode.OPCODE_7, field_1463.isaac, (byte)8);
             var9.networkBuffer.writeIntAlt(-2117966644 * class_148.field_1875);
             var9.networkBuffer.writeShort(1424616685 * field_1564);
             var9.networkBuffer.writeShort(var3);
@@ -29344,13 +29344,13 @@ public final class client extends GameApplet implements class_16 {
          field_1519 = 246678685 * var7;
          field_1521 = -770101019;
          field_1645 = 0;
-         var8 = class_112.method_2238(class_266.field_3065, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_80, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeShort(var3);
          field_1463.method_4079(var8);
       }
 
       if(42 == var2) {
-         var8 = class_112.method_2238(class_266.field_3109, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_63, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeIntAlt(var1);
          var8.networkBuffer.writeShortReverse(var3);
          var8.networkBuffer.method_185(var0);
@@ -29361,7 +29361,7 @@ public final class client extends GameApplet implements class_16 {
       }
 
       if(var2 == 1613377165) {
-         var8 = class_112.method_2238(class_266.field_3105, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_59, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeIntReverse(var1);
          var8.networkBuffer.writeIntAltReversed(1565845213 * class_100.field_1172);
          var8.networkBuffer.method_185(var0);
@@ -29381,7 +29381,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = var0 * 763993618;
          field_1562 = -1629421780 * var1;
-         var8 = class_112.method_2238(class_266.field_3146, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_100, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeShort(var0 + -703531836 * class_243.field_2700);
          var8.networkBuffer.writeShortAlt(-27903763 * class_154.field_1929 + var1);
          var8.networkBuffer.method_145(class_145.field_1840[257811225]?1:0);
@@ -29390,7 +29390,7 @@ public final class client extends GameApplet implements class_16 {
       }
 
       if(var2 == 628466177) {
-         var8 = class_112.method_2238(class_266.field_3113, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_67, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeShort(var3);
          var8.networkBuffer.method_185(var0);
          var8.networkBuffer.writeIntAltReversed(var1);
@@ -29401,7 +29401,7 @@ public final class client extends GameApplet implements class_16 {
       }
 
       if(-2022583999 == var2) {
-         var8 = class_112.method_2238(class_266.field_3083, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_98, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeIntAlt(-707301077 * class_148.field_1875);
          var8.networkBuffer.method_185(775944023 * field_1573);
          var8.networkBuffer.writeIntAlt(var1);
@@ -29420,7 +29420,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = 819547401 * var0;
          field_1562 = var1 * 1092574165;
-         var8 = class_112.method_2238(class_266.field_3049, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_3, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeShortAlt(var3);
          var8.networkBuffer.writeShortReverse(class_154.field_1929 * -654325454 + var1);
          var8.networkBuffer.method_145(class_145.field_1840[-1777082177]?1:0);
@@ -29441,7 +29441,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = var0 * 819547401;
          field_1562 = -835092600 * var1;
-         var8 = class_112.method_2238(class_266.field_3140, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_76, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeShortReverse(var3);
          var8.networkBuffer.method_148(class_145.field_1840[436529975]?1:0);
          var8.networkBuffer.writeShortAlt(-27903763 * class_154.field_1929 + var1);
@@ -29450,7 +29450,7 @@ public final class client extends GameApplet implements class_16 {
       }
 
       if(1847628922 == var2) {
-         var8 = class_112.method_2238(class_266.field_3135, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_101, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeInt(var1);
          var8.networkBuffer.writeShort(var3);
          var8.networkBuffer.writeShortAlt(var0);
@@ -29467,7 +29467,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = var0 * 819547401;
          field_1562 = var1 * 382759660;
-         var8 = class_112.method_2238(class_266.field_3115, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_69, field_1463.isaac, (byte)8);
          var8.networkBuffer.method_158(class_145.field_1840[82]?1:0);
          var8.networkBuffer.writeShortAlt(var3);
          var8.networkBuffer.writeShortReverse(697161691 * class_243.field_2700 + var0);
@@ -29482,7 +29482,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = var0 * -491042836;
          field_1562 = var1 * -680744353;
-         var8 = class_112.method_2238(class_266.field_3100, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_54, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeShortReverse(class_243.field_2700 * -1211985107 + var0);
          var8.networkBuffer.writeShortAlt(var3);
          var8.networkBuffer.method_145(class_145.field_1840[82]?1:0);
@@ -29499,7 +29499,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = 545141953 * var0;
             field_1562 = 137903323 * var1;
-            var9 = class_112.method_2238(class_266.field_3097, field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(Opcode.OPCODE_51, field_1463.isaac, (byte)8);
             var9.networkBuffer.writeIntAltReversed(class_100.field_1172 * 1565845213);
             var9.networkBuffer.method_185(class_189.field_2276 * 1854633345);
             var9.networkBuffer.method_145(class_145.field_1840[82]?1:0);
@@ -29516,7 +29516,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = 819547401 * var0;
          field_1562 = var1 * 1776469998;
-         var8 = class_112.method_2238(class_266.field_3142, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_96, field_1463.isaac, (byte)8);
          var8.networkBuffer.method_145(class_145.field_1840[82]?1:0);
          var8.networkBuffer.writeInt(474483108 * class_148.field_1875);
          var8.networkBuffer.writeShort(class_154.field_1929 * -27903763 + var1);
@@ -29536,7 +29536,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = var0 * -868586069;
             field_1562 = -1087043337 * var1;
-            var9 = class_112.method_2238(class_266.field_3110, field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(Opcode.OPCODE_64, field_1463.isaac, (byte)8);
             var9.networkBuffer.method_145(class_145.field_1840[1396156088]?1:0);
             var9.networkBuffer.writeShortAlt(var3);
             field_1463.method_4079(var9);
@@ -29557,7 +29557,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = -351968878 * var0;
          field_1562 = 318394346 * var1;
-         var8 = class_112.method_2238(class_266.field_3114, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_78, field_1463.isaac, (byte)8);
          var8.networkBuffer.writeShortAlt(var0 + 697161691 * class_243.field_2700);
          var8.networkBuffer.method_158(class_145.field_1840[892225224]?1:0);
          var8.networkBuffer.writeShortReverse(var3);
@@ -29572,7 +29572,7 @@ public final class client extends GameApplet implements class_16 {
          field_1645 = 0;
          field_1520 = var0 * 819547401;
          field_1562 = -872375561 * var1;
-         var8 = class_112.method_2238(class_266.field_3151, field_1463.isaac, (byte)8);
+         var8 = class_112.newPacket(Opcode.OPCODE_105, field_1463.isaac, (byte)8);
          var8.networkBuffer.method_185(1854633345 * class_189.field_2276);
          var8.networkBuffer.writeShortAlt(var3);
          var8.networkBuffer.method_158(class_145.field_1840[1249884859]?1:0);
@@ -29600,7 +29600,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = var0 * 819547401;
             field_1562 = var1 * 1551872625;
-            var9 = class_112.method_2238(class_266.field_3111, field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(Opcode.OPCODE_52, field_1463.isaac, (byte)8);
             var9.networkBuffer.method_148(class_145.field_1840[82]?1:0);
             var9.networkBuffer.writeShortReverse(var3);
             field_1463.method_4079(var9);
@@ -29616,7 +29616,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = 819547401 * var0;
             field_1562 = var1 * 1701947786;
-            var9 = class_112.method_2238(class_266.field_3076, field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(Opcode.OPCODE_30, field_1463.isaac, (byte)8);
             var9.networkBuffer.writeShortAlt(var3);
             var9.networkBuffer.writeByte(class_145.field_1840[82]?1:0);
             field_1463.method_4079(var9);
@@ -29646,7 +29646,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = var0 * 1255937926;
                field_1562 = var1 * -1771303877;
-               var9 = class_112.method_2238(class_266.field_3128, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_82, field_1463.isaac, (byte)8);
                var9.networkBuffer.writeShort(var3);
                var9.networkBuffer.writeByte(class_145.field_1840[1803295622]?1:0);
                field_1463.method_4079(var9);
@@ -29662,7 +29662,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = var0 * -554951899;
                field_1562 = 1254706882 * var1;
-               var9 = class_112.method_2238(class_266.field_3094, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_48, field_1463.isaac, (byte)8);
                var9.networkBuffer.writeByte(class_145.field_1840[82]?1:0);
                var9.networkBuffer.writeShortAlt(var3);
                field_1463.method_4079(var9);
@@ -29674,7 +29674,7 @@ public final class client extends GameApplet implements class_16 {
             field_1519 = 246678685 * var7;
             field_1521 = -1177665708;
             field_1645 = 0;
-            var8 = class_112.method_2238(class_266.field_3120, field_1463.isaac, (byte)8);
+            var8 = class_112.newPacket(Opcode.OPCODE_74, field_1463.isaac, (byte)8);
             var8.networkBuffer.writeShort(var3);
             field_1463.method_4079(var8);
          }
@@ -29688,7 +29688,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = 819547401 * var0;
                field_1562 = var1 * -216103623;
-               var9 = class_112.method_2238(class_266.field_3071, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_25, field_1463.isaac, (byte)8);
                var9.networkBuffer.method_185(var3);
                var9.networkBuffer.method_148(class_145.field_1840[82]?1:0);
                field_1463.method_4079(var9);
@@ -29704,7 +29704,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = var0 * -1700611091;
                field_1562 = var1 * 630109382;
-               var9 = class_112.method_2238(class_266.field_3098, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_32, field_1463.isaac, (byte)8);
                var9.networkBuffer.method_145(class_145.field_1840[82]?1:0);
                var9.networkBuffer.writeShort(var3);
                field_1463.method_4079(var9);
@@ -29720,7 +29720,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = 819547401 * var0;
                field_1562 = var1 * 1551872625;
-               var9 = class_112.method_2238(class_266.field_3149, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_103, field_1463.isaac, (byte)8);
                var9.networkBuffer.writeByte(class_145.field_1840[82]?1:0);
                var9.networkBuffer.writeShortAlt(class_189.field_2276 * 1854633345);
                var9.networkBuffer.writeIntAlt(class_100.field_1172 * 521561897);
@@ -29731,7 +29731,7 @@ public final class client extends GameApplet implements class_16 {
          }
 
          if(var2 == 29) {
-            var8 = class_112.method_2238(class_266.field_3093, field_1463.isaac, (byte)8);
+            var8 = class_112.newPacket(Opcode.OPCODE_65, field_1463.isaac, (byte)8);
             var8.networkBuffer.writeIntReverse(var1);
             field_1463.method_4079(var8);
             var14 = class_71.method_1047(var1);
@@ -29758,7 +29758,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(null != var16) {
-                  var15 = class_112.method_2238(class_266.field_3052, field_1463.isaac, (byte)8);
+                  var15 = class_112.newPacket(Opcode.OPCODE_6, field_1463.isaac, (byte)8);
                   var15.networkBuffer.writeShort(var16.field_857 * -2060838679);
                   field_1463.method_4079(var15);
                }
@@ -29772,7 +29772,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = var0 * 819547401;
             field_1562 = 1551872625 * var1;
-            var8 = class_112.method_2238(class_266.field_3046, field_1463.isaac, (byte)8);
+            var8 = class_112.newPacket(Opcode.OPCODE_93, field_1463.isaac, (byte)8);
             var8.networkBuffer.method_185(var3);
             var8.networkBuffer.method_185(var1 + 316310315 * class_154.field_1929);
             var8.networkBuffer.method_145(class_145.field_1840[-1052887646]?1:0);
@@ -29789,7 +29789,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = var0 * 819547401;
                field_1562 = var1 * 1551872625;
-               var9 = class_112.method_2238(class_266.field_3075, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_29, field_1463.isaac, (byte)8);
                var9.networkBuffer.writeByte(class_145.field_1840[82]?1:0);
                var9.networkBuffer.method_185(var3);
                field_1463.method_4079(var9);
@@ -29803,7 +29803,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = var0 * 819547401;
             field_1562 = 356157048 * var1;
-            var8 = class_112.method_2238(class_266.field_3117, field_1463.isaac, (byte)8);
+            var8 = class_112.newPacket(Opcode.OPCODE_71, field_1463.isaac, (byte)8);
             var8.networkBuffer.writeShort(var0 + class_243.field_2700 * 697161691);
             var8.networkBuffer.writeShortReverse(var3);
             var8.networkBuffer.writeShort(field_1564 * -183001773);
@@ -29834,7 +29834,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = 819547401 * var0;
                field_1562 = var1 * -1523683674;
-               var9 = class_112.method_2238(class_266.field_3092, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_92, field_1463.isaac, (byte)8);
                var9.networkBuffer.writeShort(var3);
                var9.networkBuffer.writeByte(class_145.field_1840[-541707729]?1:0);
                field_1463.method_4079(var9);
@@ -29849,7 +29849,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(var17) {
-               var15 = class_112.method_2238(class_266.field_3093, field_1463.isaac, (byte)8);
+               var15 = class_112.newPacket(Opcode.OPCODE_65, field_1463.isaac, (byte)8);
                var15.networkBuffer.writeIntReverse(var1);
                field_1463.method_4079(var15);
             }
@@ -29862,7 +29862,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = -1152526700 * var0;
             field_1562 = 1551872625 * var1;
-            var8 = class_112.method_2238(class_266.field_3123, field_1463.isaac, (byte)8);
+            var8 = class_112.newPacket(Opcode.OPCODE_77, field_1463.isaac, (byte)8);
             var8.networkBuffer.writeShortAlt(var3);
             var8.networkBuffer.method_185(697161691 * class_243.field_2700 + var0);
             var8.networkBuffer.method_158(class_145.field_1840[-912500261]?1:0);
@@ -29871,7 +29871,7 @@ public final class client extends GameApplet implements class_16 {
          }
 
          if(-804129117 == var2) {
-            var8 = class_112.method_2238(class_266.field_3055, field_1463.isaac, (byte)8);
+            var8 = class_112.newPacket(Opcode.OPCODE_99, field_1463.isaac, (byte)8);
             var8.networkBuffer.writeShortAlt(var0);
             var8.networkBuffer.writeShort(var3);
             var8.networkBuffer.writeInt(var1);
@@ -29882,7 +29882,7 @@ public final class client extends GameApplet implements class_16 {
          }
 
          if(35 == var2) {
-            var8 = class_112.method_2238(class_266.field_3101, field_1463.isaac, (byte)8);
+            var8 = class_112.newPacket(Opcode.OPCODE_55, field_1463.isaac, (byte)8);
             var8.networkBuffer.writeShortReverse(var3);
             var8.networkBuffer.writeIntAlt(var1);
             var8.networkBuffer.writeShortAlt(var0);
@@ -29901,7 +29901,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = 819547401 * var0;
                field_1562 = var1 * 1551872625;
-               var9 = class_112.method_2238(class_266.field_3089, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_43, field_1463.isaac, (byte)8);
                var9.networkBuffer.method_185(field_1573 * -676926561);
                var9.networkBuffer.writeShortAlt(var3);
                var9.networkBuffer.writeInt(1430642749 * class_148.field_1875);
@@ -29918,7 +29918,7 @@ public final class client extends GameApplet implements class_16 {
             field_1645 = 0;
             field_1520 = var0 * 819547401;
             field_1562 = 1491721213 * var1;
-            var8 = class_112.method_2238(class_266.field_3150, field_1463.isaac, (byte)8);
+            var8 = class_112.newPacket(Opcode.OPCODE_62, field_1463.isaac, (byte)8);
             var8.networkBuffer.method_185(var3);
             var8.networkBuffer.writeShort(var0 + class_243.field_2700 * 697161691);
             var8.networkBuffer.method_148(class_145.field_1840[-1697953546]?1:0);
@@ -29935,7 +29935,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = -172050831 * var0;
                field_1562 = 369901455 * var1;
-               var9 = class_112.method_2238(class_266.field_3130, field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(Opcode.OPCODE_102, field_1463.isaac, (byte)8);
                var9.networkBuffer.writeShortReverse(var3);
                var9.networkBuffer.method_158(class_145.field_1840[82]?1:0);
                field_1463.method_4079(var9);
@@ -29962,7 +29962,7 @@ public final class client extends GameApplet implements class_16 {
 
          } else {
             if(40 == var2) {
-               var8 = class_112.method_2238(class_266.field_3053, field_1463.isaac, (byte)8);
+               var8 = class_112.newPacket(Opcode.OPCODE_37, field_1463.isaac, (byte)8);
                var8.networkBuffer.writeShort(var0);
                var8.networkBuffer.writeIntAltReversed(var1);
                var8.networkBuffer.method_185(var3);
@@ -29981,7 +29981,7 @@ public final class client extends GameApplet implements class_16 {
                   field_1645 = 0;
                   field_1520 = var0 * 819547401;
                   field_1562 = var1 * 1551872625;
-                  var9 = class_112.method_2238(class_266.field_3144, field_1463.isaac, (byte)8);
+                  var9 = class_112.newPacket(Opcode.OPCODE_47, field_1463.isaac, (byte)8);
                   var9.networkBuffer.method_185(var3);
                   var9.networkBuffer.method_145(class_145.field_1840[82]?1:0);
                   field_1463.method_4079(var9);
@@ -29989,7 +29989,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(var2 == 33) {
-               var8 = class_112.method_2238(class_266.field_3059, field_1463.isaac, (byte)8);
+               var8 = class_112.newPacket(Opcode.OPCODE_13, field_1463.isaac, (byte)8);
                var8.networkBuffer.writeIntAlt(var1);
                var8.networkBuffer.writeShort(var0);
                var8.networkBuffer.writeShortReverse(var3);
@@ -30004,7 +30004,7 @@ public final class client extends GameApplet implements class_16 {
                if(var12 != null && var12.field_228[var0] >= -1487809012) {
                   class_149.method_3135(27, "", var12.field_228[var0] + " x " + class_299.method_5347(var3, -1353412871).field_707);
                } else {
-                  var9 = class_112.method_2238(class_266.field_3120, field_1463.isaac, (byte)8);
+                  var9 = class_112.newPacket(Opcode.OPCODE_74, field_1463.isaac, (byte)8);
                   var9.networkBuffer.writeShort(var3);
                   field_1463.method_4079(var9);
                }
@@ -30021,7 +30021,7 @@ public final class client extends GameApplet implements class_16 {
                field_1645 = 0;
                field_1520 = -1408438262 * var0;
                field_1562 = 1551872625 * var1;
-               var8 = class_112.method_2238(class_266.field_3133, field_1463.isaac, (byte)8);
+               var8 = class_112.newPacket(Opcode.OPCODE_87, field_1463.isaac, (byte)8);
                var8.networkBuffer.writeShort(class_243.field_2700 * 855499321 + var0);
                var8.networkBuffer.writeShortAlt(-27903763 * class_154.field_1929 + var1);
                var8.networkBuffer.method_145(class_145.field_1840[82]?1:0);
@@ -32774,7 +32774,7 @@ public final class client extends GameApplet implements class_16 {
             class_178 var2 = (class_178)field_1647[var0].field_318.get(var1);
             if(var2.field_2221 == -1) {
                class_203 var3 = field_1463;
-               class_40 var4 = class_112.method_2238(class_266.field_3086, var3.isaac, (byte)8);
+               class_40 var4 = class_112.newPacket(Opcode.OPCODE_40, var3.isaac, (byte)8);
                var4.networkBuffer.writeByte(3 + class_166.method_3598(var2.field_2222));
                var4.networkBuffer.writeByte(var0);
                var4.networkBuffer.writeShortReverse(var1);
@@ -32806,7 +32806,7 @@ public final class client extends GameApplet implements class_16 {
                int var10 = var5 * var8 - var7 * var4 >> 11;
                int var11 = var9 + 1654496663 * class_164.field_2044.field_1077 >> 7;
                int var12 = class_164.field_2044.field_1076 * 1248597615 - var10 >> 7;
-               class_40 var13 = class_112.method_2238(class_266.field_3063, field_1463.isaac, (byte)8);
+               class_40 var13 = class_112.newPacket(Opcode.OPCODE_17, field_1463.isaac, (byte)8);
                var13.networkBuffer.writeByte(18);
                var13.networkBuffer.method_148(class_145.field_1840[82]?(class_145.field_1840[-1166022172]?2:1):0);
                var13.networkBuffer.writeShortReverse(class_154.field_1929 * 1158281783 + var12);
@@ -32950,7 +32950,7 @@ public final class client extends GameApplet implements class_16 {
          }
 
          if(var1 == 326) {
-            class_40 var4 = class_112.method_2238(class_266.field_3148, field_1463.isaac, (byte)8);
+            class_40 var4 = class_112.newPacket(Opcode.OPCODE_89, field_1463.isaac, (byte)8);
             field_1613.method_5089(var4.networkBuffer, 580596518);
             field_1463.method_4079(var4);
             return true;
@@ -33020,7 +33020,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(field_1594 != null && class_85.method_1441(field_1590, 1058677563) != null) {
-                  class_40 var11 = class_112.method_2238(class_266.field_3060, field_1463.isaac, (byte)8);
+                  class_40 var11 = class_112.newPacket(Opcode.OPCODE_14, field_1463.isaac, (byte)8);
                   var11.networkBuffer.writeInt(field_1594.field_101 * -1722455647);
                   var11.networkBuffer.writeShortAlt(539336237 * field_1590.field_229);
                   var11.networkBuffer.writeShortReverse(41180389 * field_1594.field_102);
@@ -33110,7 +33110,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(field_1594 != null && class_85.method_1441(field_1590, 1703329408) != null) {
-                  class_40 var11 = class_112.method_2238(class_266.field_3060, field_1463.isaac, (byte)8);
+                  class_40 var11 = class_112.newPacket(Opcode.OPCODE_14, field_1463.isaac, (byte)8);
                   var11.networkBuffer.writeInt(field_1594.field_101 * -1722455647);
                   var11.networkBuffer.writeShortAlt(539336237 * field_1590.field_229);
                   var11.networkBuffer.writeShortReverse(41180389 * field_1594.field_102);
@@ -33200,7 +33200,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(field_1594 != null && class_85.method_1441(field_1590, 265034298) != null) {
-                  class_40 var11 = class_112.method_2238(class_266.field_3060, field_1463.isaac, (byte)8);
+                  class_40 var11 = class_112.newPacket(Opcode.OPCODE_14, field_1463.isaac, (byte)8);
                   var11.networkBuffer.writeInt(field_1594.field_101 * -1722455647);
                   var11.networkBuffer.writeShortAlt(-262254796 * field_1590.field_229);
                   var11.networkBuffer.writeShortReverse(41180389 * field_1594.field_102);
@@ -33379,7 +33379,7 @@ public final class client extends GameApplet implements class_16 {
                int var3;
                class_40 var18;
                while(class_52.method_574(-912438388)) {
-                  var18 = class_112.method_2238(class_266.field_3058, field_1463.isaac, (byte)8);
+                  var18 = class_112.newPacket(Opcode.OPCODE_12, field_1463.isaac, (byte)8);
                   var18.networkBuffer.writeByte(0);
                   var3 = -442398587 * var18.networkBuffer.offset;
                   class_183.method_3844(var18.networkBuffer, 1636861714);
@@ -33392,7 +33392,7 @@ public final class client extends GameApplet implements class_16 {
                      return;
                   }
 
-                  var18 = class_112.method_2238(class_266.field_3119, field_1463.isaac, (byte)8);
+                  var18 = class_112.newPacket(Opcode.OPCODE_73, field_1463.isaac, (byte)8);
                   var18.networkBuffer.writeByte(0);
                   var3 = var18.networkBuffer.offset * -442398587;
                   field_1468.method_5903(var18.networkBuffer, -442398587);
@@ -33494,7 +33494,7 @@ public final class client extends GameApplet implements class_16 {
                                     throw new IllegalStateException();
                                  }
 
-                                 var20 = class_112.method_2238(class_266.field_3102, field_1463.isaac, (byte)8);
+                                 var20 = class_112.newPacket(Opcode.OPCODE_81, field_1463.isaac, (byte)8);
                                  var20.networkBuffer.writeByte(0);
                                  var4 = var20.networkBuffer.offset * -442398587;
                                  var20.networkBuffer.offset += -2051383142;
@@ -33715,7 +33715,7 @@ public final class client extends GameApplet implements class_16 {
                   }
 
                   var6 = (int)var21;
-                  var27 = class_112.method_2238(class_266.field_3137, field_1463.isaac, (byte)8);
+                  var27 = class_112.newPacket(Opcode.OPCODE_91, field_1463.isaac, (byte)8);
                   if(GameMouseListener.field_1717 * -265253353 == 2) {
                      if(var1 >= 349527629) {
                         return;
@@ -33733,7 +33733,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(-402048791 * class_145.field_1847 > 0) {
-                  var18 = class_112.method_2238(class_266.field_3047, field_1463.isaac, (byte)8);
+                  var18 = class_112.newPacket(Opcode.OPCODE_1, field_1463.isaac, (byte)8);
                   var18.networkBuffer.writeShortReverse(0);
                   var3 = var18.networkBuffer.offset * -442398587;
                   long var22 = class_87.method_1516((byte)1);
@@ -33801,7 +33801,7 @@ public final class client extends GameApplet implements class_16 {
 
                      field_1501 = 1563072356;
                      field_1502 = false;
-                     var18 = class_112.method_2238(class_266.field_3104, field_1463.isaac, (byte)8);
+                     var18 = class_112.newPacket(Opcode.OPCODE_58, field_1463.isaac, (byte)8);
                      var18.networkBuffer.method_185(field_1486 * -2031705619);
                      var18.networkBuffer.writeShortReverse(-574530013 * field_1629);
                      field_1463.method_4079(var18);
@@ -33819,7 +33819,7 @@ public final class client extends GameApplet implements class_16 {
                      }
 
                      field_1506 = true;
-                     var18 = class_112.method_2238(class_266.field_3054, field_1463.isaac, (byte)8);
+                     var18 = class_112.newPacket(Opcode.OPCODE_70, field_1463.isaac, (byte)8);
                      var18.networkBuffer.writeByte(1);
                      field_1463.method_4079(var18);
                   }
@@ -33836,7 +33836,7 @@ public final class client extends GameApplet implements class_16 {
                      }
 
                      field_1506 = false;
-                     var18 = class_112.method_2238(class_266.field_3054, field_1463.isaac, (byte)8);
+                     var18 = class_112.newPacket(Opcode.OPCODE_70, field_1463.isaac, (byte)8);
                      var18.networkBuffer.writeByte(0);
                      field_1463.method_4079(var18);
                   }
@@ -34494,7 +34494,7 @@ public final class client extends GameApplet implements class_16 {
                                                          var42.method_420(field_1546 * -1148388107, -65004085 * field_1548);
                                                       }
 
-                                                      var44 = class_112.method_2238(class_266.field_3132, field_1463.isaac, (byte)8);
+                                                      var44 = class_112.newPacket(Opcode.OPCODE_86, field_1463.isaac, (byte)8);
                                                       var44.networkBuffer.writeIntAlt(-1722455647 * class_90.field_900.field_101);
                                                       var44.networkBuffer.method_158(var46);
                                                       var44.networkBuffer.writeShortAlt(field_1548 * -65004085);
@@ -34561,7 +34561,7 @@ public final class client extends GameApplet implements class_16 {
 
                                           var4 = class_251.field_2817;
                                           var5 = class_251.field_2818;
-                                          var44 = class_112.method_2238(class_266.field_3116, field_1463.isaac, (byte)8);
+                                          var44 = class_112.newPacket(Opcode.OPCODE_46, field_1463.isaac, (byte)8);
                                           var44.networkBuffer.writeByte(5);
                                           if(class_145.field_1840[82]) {
                                              if(var1 >= 349527629) {
@@ -34901,7 +34901,7 @@ public final class client extends GameApplet implements class_16 {
 
                                              field_1466 = 348395914;
                                              class_297.method_5342(14500);
-                                             var27 = class_112.method_2238(class_266.field_3118, field_1463.isaac, (byte)8);
+                                             var27 = class_112.newPacket(Opcode.OPCODE_72, field_1463.isaac, (byte)8);
                                              field_1463.method_4079(var27);
                                           }
                                        }
@@ -34909,7 +34909,7 @@ public final class client extends GameApplet implements class_16 {
                                        class_208.field_2413.method_3322(1668816694);
                                        field_1463.field_2372 += -1196966475;
                                        if(field_1463.field_2372 * 239536285 > 50) {
-                                          var27 = class_112.method_2238(class_266.field_3064, field_1463.isaac, (byte)8);
+                                          var27 = class_112.newPacket(Opcode.OPCODE_18, field_1463.isaac, (byte)8);
                                           field_1463.method_4079(var27);
                                        }
 
@@ -35100,7 +35100,7 @@ public final class client extends GameApplet implements class_16 {
          if(var1 >= 0 && var1 < field_1647[var0].method_501()) {
             class_178 var3 = (class_178)field_1647[var0].field_318.get(var1);
             class_203 var4 = field_1463;
-            class_40 var5 = class_112.method_2238(class_266.field_3081, var4.isaac, (byte)8);
+            class_40 var5 = class_112.newPacket(Opcode.OPCODE_35, var4.isaac, (byte)8);
             var5.networkBuffer.writeByte(4 + class_166.method_3598(var3.field_2222));
             var5.networkBuffer.writeByte(var0);
             var5.networkBuffer.writeShortReverse(var1);
@@ -35318,7 +35318,7 @@ public final class client extends GameApplet implements class_16 {
          if(var3.field_2221 == -1) {
             String var4 = var3.field_2222;
             class_203 var5 = field_1463;
-            class_40 var6 = class_112.method_2238(class_266.field_3125, var5.isaac, (byte)8);
+            class_40 var6 = class_112.newPacket(Opcode.OPCODE_68, var5.isaac, (byte)8);
             var6.networkBuffer.writeByte(3 + class_166.method_3598(var4));
             var6.networkBuffer.writeByte(var0);
             var6.networkBuffer.writeShortReverse(var1);
@@ -35789,7 +35789,7 @@ public final class client extends GameApplet implements class_16 {
 
    // $FF: renamed from: yr () void
    static final void method_2774() {
-      class_40 var0 = class_112.method_2238(class_266.field_3068, field_1463.isaac, (byte)8);
+      class_40 var0 = class_112.newPacket(Opcode.OPCODE_45, field_1463.isaac, (byte)8);
       field_1463.method_4079(var0);
 
       for(class_48 var1 = (class_48)field_1578.method_6531(); var1 != null; var1 = (class_48)field_1578.method_6527()) {
@@ -35981,7 +35981,7 @@ public final class client extends GameApplet implements class_16 {
          }
 
          if(var1 == 326) {
-            class_40 var4 = class_112.method_2238(class_266.field_3148, field_1463.isaac, (byte)8);
+            class_40 var4 = class_112.newPacket(Opcode.OPCODE_89, field_1463.isaac, (byte)8);
             field_1613.method_5089(var4.networkBuffer, 580596518);
             field_1463.method_4079(var4);
             return true;
@@ -35999,7 +35999,7 @@ public final class client extends GameApplet implements class_16 {
          if(var3.field_2221 == -1) {
             String var4 = var3.field_2222;
             class_203 var5 = field_1463;
-            class_40 var6 = class_112.method_2238(class_266.field_3125, var5.isaac, (byte)8);
+            class_40 var6 = class_112.newPacket(Opcode.OPCODE_68, var5.isaac, (byte)8);
             var6.networkBuffer.writeByte(3 + class_166.method_3598(var4));
             var6.networkBuffer.writeByte(var0);
             var6.networkBuffer.writeShortReverse(var1);
@@ -37412,7 +37412,7 @@ public final class client extends GameApplet implements class_16 {
                         field_1495[var23] = true;
                      }
 
-                     var19 = class_112.method_2238(class_266.field_3136, field_1463.isaac, (byte)8);
+                     var19 = class_112.newPacket(Opcode.OPCODE_90, field_1463.isaac, (byte)8);
                      var19.networkBuffer.writeByte(class_78.method_1223(702215999));
                      var19.networkBuffer.writeShortReverse(class_137.field_1766 * 646214551);
                      var19.networkBuffer.writeShortReverse(-1538307343 * class_58.field_460);
@@ -38107,7 +38107,7 @@ public final class client extends GameApplet implements class_16 {
          if(var1 >= 0 && var1 < field_1647[var0].method_501()) {
             class_178 var3 = (class_178)field_1647[var0].field_318.get(var1);
             class_203 var4 = field_1463;
-            class_40 var5 = class_112.method_2238(class_266.field_3081, var4.isaac, (byte)8);
+            class_40 var5 = class_112.newPacket(Opcode.OPCODE_35, var4.isaac, (byte)8);
             var5.networkBuffer.writeByte(4 + class_166.method_3598(var3.field_2222));
             var5.networkBuffer.writeByte(var0);
             var5.networkBuffer.writeShortReverse(var1);
@@ -38209,7 +38209,7 @@ public final class client extends GameApplet implements class_16 {
 
    // $FF: renamed from: zt () void
    static final void method_2819() {
-      class_40 var0 = class_112.method_2238(class_266.field_3048, field_1463.isaac, (byte)8);
+      class_40 var0 = class_112.newPacket(Opcode.OPCODE_2, field_1463.isaac, (byte)8);
       var0.networkBuffer.writeByte(0);
       field_1463.method_4079(var0);
    }
@@ -38664,7 +38664,7 @@ public final class client extends GameApplet implements class_16 {
    // $FF: renamed from: yh (int) void
    static final void method_2824(int var0) {
       class_222.method_4278(1734175787);
-      class_266.method_5030(1602650141);
+      Opcode.method_5030(1602650141);
       int var1 = class_171.method_3703(var0, -1780323372).field_597 * 812709151;
       if(var1 != 0) {
          int var2 = class_282.field_3246[var0];
@@ -38801,7 +38801,7 @@ public final class client extends GameApplet implements class_16 {
    }
 
    public static void abq(int var0, int var1, int var2, boolean var3) {
-      class_40 var4 = class_112.method_2238(class_266.field_3131, field_1463.isaac, (byte)8);
+      class_40 var4 = class_112.newPacket(Opcode.OPCODE_85, field_1463.isaac, (byte)8);
       var4.networkBuffer.writeShortAlt(var1);
       var4.networkBuffer.writeIntReverse(var3?-315190483 * field_1499:0);
       var4.networkBuffer.writeByte(var2);
@@ -38816,7 +38816,7 @@ public final class client extends GameApplet implements class_16 {
    // $FF: renamed from: zo (java.lang.String) void
    static final void method_2825(String var0) {
       if(null != class_233.field_2617) {
-         class_40 var1 = class_112.method_2238(class_266.field_3139, field_1463.isaac, (byte)8);
+         class_40 var1 = class_112.newPacket(Opcode.OPCODE_56, field_1463.isaac, (byte)8);
          var1.networkBuffer.writeByte(class_166.method_3598(var0));
          var1.networkBuffer.writeString(var0);
          field_1463.method_4079(var1);
@@ -38865,7 +38865,7 @@ public final class client extends GameApplet implements class_16 {
    }
 
    static void abt() {
-      field_1463.method_4079(class_112.method_2238(class_266.field_3082, field_1463.isaac, (byte)8));
+      field_1463.method_4079(class_112.newPacket(Opcode.OPCODE_36, field_1463.isaac, (byte)8));
       field_1660 = 0;
    }
 
@@ -39330,7 +39330,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(field_1594 != null && class_85.method_1441(field_1590, 503466023) != null) {
-                  class_40 var11 = class_112.method_2238(class_266.field_3060, field_1463.isaac, (byte)8);
+                  class_40 var11 = class_112.newPacket(Opcode.OPCODE_14, field_1463.isaac, (byte)8);
                   var11.networkBuffer.writeInt(field_1594.field_101 * -1722455647);
                   var11.networkBuffer.writeShortAlt(539336237 * field_1590.field_229);
                   var11.networkBuffer.writeShortReverse(41180389 * field_1594.field_102);

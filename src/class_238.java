@@ -134,7 +134,7 @@ public class class_238 implements class_14 {
             client.field_1495[var1] = true;
          }
 
-         class_40 var4 = class_112.method_2238(class_266.field_3136, client.field_1463.isaac, (byte)8);
+         class_40 var4 = class_112.newPacket(Opcode.OPCODE_90, client.field_1463.isaac, (byte)8);
          var4.networkBuffer.writeByte(class_78.method_1223(702215999));
          var4.networkBuffer.writeShortReverse(646214551 * class_137.field_1766);
          var4.networkBuffer.writeShortReverse(-1538307343 * class_58.field_460);
@@ -152,7 +152,7 @@ public class class_238 implements class_14 {
    // $FF: renamed from: v (int, java.lang.String, kk, int, int) hq
    public static class_40 method_4601(int var0, String var1, class_324 var2, int var3, int var4) {
       try {
-         class_40 var5 = class_112.method_2238(class_266.field_3134, client.field_1463.isaac, (byte)8);
+         class_40 var5 = class_112.newPacket(Opcode.OPCODE_88, client.field_1463.isaac, (byte)8);
          var5.networkBuffer.writeByte(0);
          int var6 = var5.networkBuffer.offset * -442398587;
          var5.networkBuffer.writeByte(var0);

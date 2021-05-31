@@ -667,7 +667,7 @@ public class class_75 extends class_59 {
             if(var3 != null) {
                return var3;
             } else {
-               var3 = class_266.method_5032(field_618, var1, 0, (byte)71);
+               var3 = Opcode.method_5032(field_618, var1, 0, (byte)71);
                if(var3 != null) {
                   if(var2 <= 2130552221) {
                      throw new IllegalStateException();

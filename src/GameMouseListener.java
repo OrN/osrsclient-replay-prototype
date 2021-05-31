@@ -260,7 +260,7 @@ public class GameMouseListener implements MouseListener, MouseMotionListener, Fo
    // $FF: renamed from: la (int) void
    static void method_2890() {
       try {
-         client.field_1463.method_4079(class_112.method_2238(class_266.field_3082, client.field_1463.isaac, (byte)8));
+         client.field_1463.method_4079(class_112.newPacket(Opcode.OPCODE_36, client.field_1463.isaac, (byte)8));
          client.field_1660 = 0;
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1);
@@ -527,7 +527,7 @@ public class GameMouseListener implements MouseListener, MouseMotionListener, Fo
    // $FF: renamed from: ke (byte) void
    static final void method_2902() {
       try {
-         class_40 var1 = class_112.method_2238(class_266.field_3048, client.field_1463.isaac, (byte)8);
+         class_40 var1 = class_112.newPacket(Opcode.OPCODE_2, client.field_1463.isaac, (byte)8);
          var1.networkBuffer.writeByte(0);
          client.field_1463.method_4079(var1);
       } catch (RuntimeException var2) {

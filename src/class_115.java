@@ -15,7 +15,7 @@ public class class_115 extends class_111 {
    // $FF: renamed from: ii (int, int, int) void
    static void method_2243(int var0, int var1) {
       try {
-         class_40 var3 = class_112.method_2238(class_266.field_3126, client.field_1463.isaac, (byte)8);
+         class_40 var3 = class_112.newPacket(Opcode.OPCODE_19, client.field_1463.isaac, (byte)8);
          var3.networkBuffer.method_185(var1);
          var3.networkBuffer.writeIntAltReversed(var0);
          client.field_1463.method_4079(var3);
