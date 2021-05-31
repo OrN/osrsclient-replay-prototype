@@ -32,21 +32,24 @@ public class launcher extends JFrame implements AppletStub, AppletContext, Windo
         applet.setStub(this);
         applet.setPreferredSize(new Dimension(800, 600));
 
+        config = new JConfig();
+        if (!config.fetch("http://oldschool" + world + ".runescape.com/jav_config.ws") || !config.isSupported()) {
+            return;
+        }
+
         addWindowListener(this);
+        setTitle(config.getData("title"));
         setResizable(true);
-        setVisible(true);
         setContentPane(applet);
         getContentPane().setBackground(Color.BLACK);
-        setLocationRelativeTo(null);
         pack();
+        setLocationRelativeTo(null);
+        setVisible(true);
 
         System.setProperty("user.home", ".");
-
-        config = new JConfig();
-        if (config.fetch("http://oldschool" + world + ".runescape.com/jav_config.ws") && config.isSupported()) {
-            applet.init();
-            applet.start();
-        }
+        
+        applet.init();
+        applet.start();
     }
 
     @Override

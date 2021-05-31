@@ -75,6 +75,13 @@ public class JConfig {
             return null;
     }
 
+    public String getData(String key) {
+        if (m_data.containsKey(key))
+            return m_data.get(key);
+        else
+            return null;
+    }
+
     public URL getURL(String key) {
         try {
             return new URL(m_data.get(key));
