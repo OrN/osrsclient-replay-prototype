@@ -82,7 +82,7 @@ public class class_30 extends class_27 {
          var1.writeByte(8);
          var1.writeByte(this.field_35 * -1738879851);
          var1.writeByte(this.field_33?1:0);
-         var1.method_333(this.field_45 * -841564613);
+         var1.writeShortReverse(this.field_45 * -841564613);
          var1.writeByte(-1817348859 * this.field_38);
          var1.writeByte(this.field_36 * -664826965);
          var1.writeByte(743323425 * this.field_50);
@@ -99,26 +99,26 @@ public class class_30 extends class_27 {
          }
 
          var1.writeByte(var10001);
-         var1.method_333(this.field_34 * -862865125);
+         var1.writeShortReverse(this.field_34 * -862865125);
          var1.writeByte(-669385777 * this.field_54);
-         var1.method_115(this.field_21 * 1636879871);
-         var1.method_333(-741619897 * this.field_43);
+         var1.writeTriReversed(this.field_21 * 1636879871);
+         var1.writeShortReverse(-741619897 * this.field_43);
          var1.method_121(this.field_44, (byte)-39);
          var1.method_121(this.field_55, (byte)-49);
          var1.method_121(this.field_46, (byte)3);
          var1.method_121(this.field_49, (byte)-13);
          var1.writeByte(611587281 * this.field_47);
-         var1.method_333(945045113 * this.field_48);
+         var1.writeShortReverse(945045113 * this.field_48);
          var1.method_121(this.field_52, (byte)-32);
          var1.method_121(this.field_53, (byte)-41);
          var1.writeByte(this.field_29 * 942702701);
          var1.writeByte(-2113690795 * this.field_51);
 
          for(int var3 = 0; var3 < this.field_37.length; ++var3) {
-            var1.method_116(this.field_37[var3]);
+            var1.writeIntReverse(this.field_37[var3]);
          }
 
-         var1.method_116(this.field_56 * 1352170779);
+         var1.writeIntReverse(this.field_56 * 1352170779);
          var1.method_121(this.field_25, (byte)78);
       } catch (RuntimeException var4) {
          throw class_223.method_4281(var4);
@@ -160,32 +160,32 @@ public class class_30 extends class_27 {
       var1.writeByte(8);
       var1.writeByte(this.field_35 * -1738879851);
       var1.writeByte(this.field_33?1:0);
-      var1.method_333(this.field_45 * -841564613);
+      var1.writeShortReverse(this.field_45 * -841564613);
       var1.writeByte(-1817348859 * this.field_38);
       var1.writeByte(this.field_36 * -664826965);
       var1.writeByte(743323425 * this.field_50);
       var1.writeByte(this.field_40 * -1340740659);
       var1.writeByte(this.field_39?1:0);
-      var1.method_333(this.field_34 * -862865125);
+      var1.writeShortReverse(this.field_34 * -862865125);
       var1.writeByte(-669385777 * this.field_54);
-      var1.method_115(this.field_21 * 1636879871);
-      var1.method_333(-741619897 * this.field_43);
+      var1.writeTriReversed(this.field_21 * 1636879871);
+      var1.writeShortReverse(-741619897 * this.field_43);
       var1.method_121(this.field_44, (byte)-10);
       var1.method_121(this.field_55, (byte)15);
       var1.method_121(this.field_46, (byte)26);
       var1.method_121(this.field_49, (byte)-15);
       var1.writeByte(611587281 * this.field_47);
-      var1.method_333(945045113 * this.field_48);
+      var1.writeShortReverse(945045113 * this.field_48);
       var1.method_121(this.field_52, (byte)-86);
       var1.method_121(this.field_53, (byte)-25);
       var1.writeByte(this.field_29 * 942702701);
       var1.writeByte(-2113690795 * this.field_51);
 
       for(int var2 = 0; var2 < this.field_37.length; ++var2) {
-         var1.method_116(this.field_37[var2]);
+         var1.writeIntReverse(this.field_37[var2]);
       }
 
-      var1.method_116(this.field_56 * 1352170779);
+      var1.writeIntReverse(this.field_56 * 1352170779);
       var1.method_121(this.field_25, (byte)-28);
    }
 

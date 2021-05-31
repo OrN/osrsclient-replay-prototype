@@ -279,7 +279,7 @@ public class class_297 implements Runnable {
    // $FF: renamed from: n (int, byte) void
    public static void method_5342(int var0) {
       try {
-         class_131.field_1718 = var0 * 457540795;
+         GameMouseListener.field_1718 = var0 * 457540795;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2);
       }

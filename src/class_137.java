@@ -103,13 +103,13 @@ public final class class_137 {
                return class_115.field_1289 * 1115122599;
             }
          } else {
-            int var1 = class_205.method_4113(class_131.field_1719 * 1681670171, -2115685501 * class_205.field_2393, 1115122599 * class_115.field_1289, 455713412);
+            int var1 = class_205.method_4113(GameMouseListener.field_1719 * 1681670171, -2115685501 * class_205.field_2393, 1115122599 * class_115.field_1289, 455713412);
             if(var1 - 45831589 * class_172.field_2159 < 800) {
                if(var0 <= 1) {
                   throw new IllegalStateException();
                }
 
-               if((class_166.field_2069[class_115.field_1289 * 1115122599][1681670171 * class_131.field_1719 >> 7][class_205.field_2393 * -2115685501 >> 7] & 4) != 0) {
+               if((class_166.field_2069[class_115.field_1289 * 1115122599][1681670171 * GameMouseListener.field_1719 >> 7][class_205.field_2393 * -2115685501 >> 7] & 4) != 0) {
                   if(var0 <= 1) {
                      throw new IllegalStateException();
                   }
@@ -128,8 +128,8 @@ public final class class_137 {
    // $FF: renamed from: jq (int, int, int, int, int, byte) void
    static final void method_2972(int var0, int var1, int var2, int var3, int var4, byte var5) {
       try {
-         class_100.field_1151[0].method_735(var0, var1);
-         class_100.field_1151[1].method_735(var0, var3 + var1 - 16);
+         class_100.field_1151[0].draw(var0, var1);
+         class_100.field_1151[1].draw(var0, var3 + var1 - 16);
          class_65.method_681(var0, 16 + var1, 16, var3 - 32, client.field_1480 * -119839221);
          int var6 = (var3 - 32) * var3 / var4;
          if(var6 < 8) {

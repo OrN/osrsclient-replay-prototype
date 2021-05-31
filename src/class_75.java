@@ -217,7 +217,7 @@ public class class_75 extends class_59 {
                         throw new IllegalStateException();
                      }
 
-                     this.field_620[var6] = var1.method_131();
+                     this.field_620[var6] = var1.readByte();
                   }
                } else if(16 == var2) {
                   if(var3 >= -509177523) {
@@ -542,7 +542,7 @@ public class class_75 extends class_59 {
             this.field_620 = new byte[var3];
 
             for(var5 = 0; var5 < var3; ++var5) {
-               this.field_620[var5] = var1.method_131();
+               this.field_620[var5] = var1.readByte();
             }
          } else if(16 != var2) {
             if(17 == var2) {

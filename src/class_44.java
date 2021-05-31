@@ -129,12 +129,12 @@ public class class_44 extends class_27 {
             var4 = var1.readUnsignedByte();
          }
 
-         this.field_9 = var1.method_136();
-         this.field_319 = var1.method_136() * 1641196620496598251L;
+         this.field_9 = var1.readLong();
+         this.field_319 = var1.readLong() * 1641196620496598251L;
          this.field_321 = var1.method_139(-391631059);
          var1.method_119(-39963121);
-         this.field_316 = var1.method_131();
-         this.field_322 = var1.method_131();
+         this.field_316 = var1.readByte();
+         this.field_322 = var1.readByte();
          int var5 = var1.readShort();
          if(var5 > 0) {
             this.field_318 = new ArrayList(var5);
@@ -147,7 +147,7 @@ public class class_44 extends class_27 {
                      throw new IllegalStateException();
                   }
 
-                  var1.method_136();
+                  var1.readLong();
                }
 
                if(this.field_317) {
@@ -158,7 +158,7 @@ public class class_44 extends class_27 {
                   var7.field_2222 = var1.method_139(-391631059);
                }
 
-               var7.field_2221 = var1.method_131();
+               var7.field_2221 = var1.readByte();
                var7.field_2217 = var1.readShort() * -811705383;
                if(var4 >= 3) {
                   if(var2 <= -631068980) {
@@ -398,12 +398,12 @@ public class class_44 extends class_27 {
          var3 = var1.readUnsignedByte();
       }
 
-      this.field_9 = var1.method_136();
-      this.field_319 = var1.method_136() * 1641196620496598251L;
+      this.field_9 = var1.readLong();
+      this.field_319 = var1.readLong() * 1641196620496598251L;
       this.field_321 = var1.method_139(-391631059);
       var1.method_119(1630026748);
-      this.field_316 = var1.method_131();
-      this.field_322 = var1.method_131();
+      this.field_316 = var1.readByte();
+      this.field_322 = var1.readByte();
       int var4 = var1.readShort();
       if(var4 > 0) {
          this.field_318 = new ArrayList(var4);
@@ -412,14 +412,14 @@ public class class_44 extends class_27 {
             class_178 var10000 = new class_178();
             class_178 var6 = var10000;
             if(this.field_320) {
-               var1.method_136();
+               var1.readLong();
             }
 
             if(this.field_317) {
                var6.field_2222 = var1.method_139(-391631059);
             }
 
-            var6.field_2221 = var1.method_131();
+            var6.field_2221 = var1.readByte();
             var6.field_2217 = var1.readShort() * -811705383;
             if(var3 >= 3) {
                var1.method_119(1862166750);
@@ -447,12 +447,12 @@ public class class_44 extends class_27 {
          var3 = var1.readUnsignedByte();
       }
 
-      this.field_9 = var1.method_136();
-      this.field_319 = var1.method_136() * 1641196620496598251L;
+      this.field_9 = var1.readLong();
+      this.field_319 = var1.readLong() * 1641196620496598251L;
       this.field_321 = var1.method_139(-391631059);
       var1.method_119(625358015);
-      this.field_316 = var1.method_131();
-      this.field_322 = var1.method_131();
+      this.field_316 = var1.readByte();
+      this.field_322 = var1.readByte();
       int var4 = var1.readShort();
       if(var4 > 0) {
          this.field_318 = new ArrayList(var4);
@@ -461,14 +461,14 @@ public class class_44 extends class_27 {
             class_178 var10000 = new class_178();
             class_178 var6 = var10000;
             if(this.field_320) {
-               var1.method_136();
+               var1.readLong();
             }
 
             if(this.field_317) {
                var6.field_2222 = var1.method_139(-391631059);
             }
 
-            var6.field_2221 = var1.method_131();
+            var6.field_2221 = var1.readByte();
             var6.field_2217 = var1.readShort() * -811705383;
             if(var3 >= 3) {
                var1.method_119(-759128062);

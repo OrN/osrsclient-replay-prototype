@@ -1323,10 +1323,10 @@ public class class_171 {
                }
 
                this.field_2136 = var1.readUnsignedByte() == 1;
-               this.field_2142 = var1.method_131();
-               this.field_2152 = var1.method_131();
-               this.field_2137 = var1.method_131();
-               this.field_2135 = var1.method_131();
+               this.field_2142 = var1.readByte();
+               this.field_2152 = var1.readByte();
+               this.field_2137 = var1.readByte();
+               this.field_2135 = var1.readByte();
                int var5;
                if(this.field_2141 * -1916816431 > 0) {
                   if(var2 == 1359138405) {
@@ -1433,7 +1433,7 @@ public class class_171 {
 
                   for(var5 = 0; var5 < -1916816431 * this.field_2141; ++var5) {
                      if(this.field_2130) {
-                        this.field_2132[var5] = var1.method_136();
+                        this.field_2132[var5] = var1.readLong();
                      }
 
                      if(this.field_2131) {
@@ -1444,7 +1444,7 @@ public class class_171 {
                         this.field_2146[var5] = var1.method_347(-1871529570);
                      }
 
-                     this.field_2149[var5] = var1.method_131();
+                     this.field_2149[var5] = var1.readByte();
                      if(var3 >= 2) {
                         if(var2 == 1359138405) {
                            throw new IllegalStateException();
@@ -1548,7 +1548,7 @@ public class class_171 {
                            throw new IllegalStateException();
                         }
 
-                        this.field_2151[var5] = var1.method_136();
+                        this.field_2151[var5] = var1.readLong();
                      }
 
                      if(this.field_2131) {
@@ -1601,7 +1601,7 @@ public class class_171 {
                               return;
                            }
 
-                           long var12 = var1.method_136();
+                           long var12 = var1.readLong();
                            var15 = this.field_2154;
                            class_31 var17 = new class_31(var12);
                            var15.method_6588(var17, (long)var7);
@@ -2040,10 +2040,10 @@ public class class_171 {
          }
 
          this.field_2136 = var1.readUnsignedByte() == 1;
-         this.field_2142 = var1.method_131();
-         this.field_2152 = var1.method_131();
-         this.field_2137 = var1.method_131();
-         this.field_2135 = var1.method_131();
+         this.field_2142 = var1.readByte();
+         this.field_2152 = var1.readByte();
+         this.field_2137 = var1.readByte();
+         this.field_2135 = var1.readByte();
          int var4;
          if(this.field_2141 * -1916816431 > 0) {
             if(this.field_2130 && (null == this.field_2132 || this.field_2132.length < this.field_2141 * -1916816431)) {
@@ -2072,14 +2072,14 @@ public class class_171 {
 
             for(var4 = 0; var4 < -1916816431 * this.field_2141; ++var4) {
                if(this.field_2130) {
-                  this.field_2132[var4] = var1.method_136();
+                  this.field_2132[var4] = var1.readLong();
                }
 
                if(this.field_2131) {
                   this.field_2146[var4] = var1.method_347(-519378041);
                }
 
-               this.field_2149[var4] = var1.method_131();
+               this.field_2149[var4] = var1.readByte();
                if(var2 >= 2) {
                   this.field_2145[var4] = var1.readInt();
                }
@@ -2111,7 +2111,7 @@ public class class_171 {
 
             for(var4 = 0; var4 < 1521260055 * this.field_2150; ++var4) {
                if(this.field_2130) {
-                  this.field_2151[var4] = var1.method_136();
+                  this.field_2151[var4] = var1.readLong();
                }
 
                if(this.field_2131) {
@@ -2137,7 +2137,7 @@ public class class_171 {
                      class_32 var13 = new class_32(var8);
                      var12.method_6588(var13, (long)var6);
                   } else if(var7 == 1) {
-                     long var10 = var1.method_136();
+                     long var10 = var1.readLong();
                      var12 = this.field_2154;
                      class_31 var14 = new class_31(var10);
                      var12.method_6588(var14, (long)var6);
@@ -2696,10 +2696,10 @@ public class class_171 {
          }
 
          this.field_2136 = var1.readUnsignedByte() == 1;
-         this.field_2142 = var1.method_131();
-         this.field_2152 = var1.method_131();
-         this.field_2137 = var1.method_131();
-         this.field_2135 = var1.method_131();
+         this.field_2142 = var1.readByte();
+         this.field_2152 = var1.readByte();
+         this.field_2137 = var1.readByte();
+         this.field_2135 = var1.readByte();
          int var4;
          if(this.field_2141 * -1916816431 > 0) {
             if(this.field_2130 && (null == this.field_2132 || this.field_2132.length < this.field_2141 * -1916816431)) {
@@ -2728,14 +2728,14 @@ public class class_171 {
 
             for(var4 = 0; var4 < -1916816431 * this.field_2141; ++var4) {
                if(this.field_2130) {
-                  this.field_2132[var4] = var1.method_136();
+                  this.field_2132[var4] = var1.readLong();
                }
 
                if(this.field_2131) {
                   this.field_2146[var4] = var1.method_347(-2064536503);
                }
 
-               this.field_2149[var4] = var1.method_131();
+               this.field_2149[var4] = var1.readByte();
                if(var2 >= 2) {
                   this.field_2145[var4] = var1.readInt();
                }
@@ -2767,7 +2767,7 @@ public class class_171 {
 
             for(var4 = 0; var4 < 1521260055 * this.field_2150; ++var4) {
                if(this.field_2130) {
-                  this.field_2151[var4] = var1.method_136();
+                  this.field_2151[var4] = var1.readLong();
                }
 
                if(this.field_2131) {
@@ -2793,7 +2793,7 @@ public class class_171 {
                      class_32 var13 = new class_32(var8);
                      var12.method_6588(var13, (long)var6);
                   } else if(var7 == 1) {
-                     long var10 = var1.method_136();
+                     long var10 = var1.readLong();
                      var12 = this.field_2154;
                      class_31 var14 = new class_31(var10);
                      var12.method_6588(var14, (long)var6);
@@ -2869,10 +2869,10 @@ public class class_171 {
          }
 
          this.field_2136 = var1.readUnsignedByte() == 1;
-         this.field_2142 = var1.method_131();
-         this.field_2152 = var1.method_131();
-         this.field_2137 = var1.method_131();
-         this.field_2135 = var1.method_131();
+         this.field_2142 = var1.readByte();
+         this.field_2152 = var1.readByte();
+         this.field_2137 = var1.readByte();
+         this.field_2135 = var1.readByte();
          int var4;
          if(this.field_2141 * -1916816431 > 0) {
             if(this.field_2130 && (null == this.field_2132 || this.field_2132.length < this.field_2141 * 608088773)) {
@@ -2901,14 +2901,14 @@ public class class_171 {
 
             for(var4 = 0; var4 < -1916816431 * this.field_2141; ++var4) {
                if(this.field_2130) {
-                  this.field_2132[var4] = var1.method_136();
+                  this.field_2132[var4] = var1.readLong();
                }
 
                if(this.field_2131) {
                   this.field_2146[var4] = var1.method_347(-1798064360);
                }
 
-               this.field_2149[var4] = var1.method_131();
+               this.field_2149[var4] = var1.readByte();
                if(var2 >= 2) {
                   this.field_2145[var4] = var1.readInt();
                }
@@ -2940,7 +2940,7 @@ public class class_171 {
 
             for(var4 = 0; var4 < 1521260055 * this.field_2150; ++var4) {
                if(this.field_2130) {
-                  this.field_2151[var4] = var1.method_136();
+                  this.field_2151[var4] = var1.readLong();
                }
 
                if(this.field_2131) {
@@ -2966,7 +2966,7 @@ public class class_171 {
                      class_32 var13 = new class_32(var8);
                      var12.method_6588(var13, (long)var6);
                   } else if(var7 == 1) {
-                     long var10 = var1.method_136();
+                     long var10 = var1.readLong();
                      var12 = this.field_2154;
                      class_31 var14 = new class_31(var10);
                      var12.method_6588(var14, (long)var6);

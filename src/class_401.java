@@ -10,10 +10,10 @@ public class class_401 {
 
    // $FF: renamed from: n (int, java.lang.String, kk, int) hq
    public static class_40 method_6803(int var0, String var1, class_324 var2, int var3) {
-      class_40 var4 = class_112.method_2238(class_266.field_3134, client.field_1463.field_2384, (byte)8);
-      var4.field_263.writeByte(0);
-      int var5 = var4.field_263.offset * -824284167;
-      var4.field_263.writeByte(var0);
+      class_40 var4 = class_112.method_2238(class_266.field_3134, client.field_1463.isaac, (byte)8);
+      var4.networkBuffer.writeByte(0);
+      int var5 = var4.networkBuffer.offset * -824284167;
+      var4.networkBuffer.writeByte(var0);
       String var6 = var1.toLowerCase();
       byte var7 = 0;
       if(var6.startsWith(class_305.field_3582)) {
@@ -128,23 +128,23 @@ public class class_401 {
          }
       }
 
-      var4.field_263.writeByte(var7);
-      var4.field_263.writeByte(var8);
-      class_86.method_1479(var4.field_263, var1);
+      var4.networkBuffer.writeByte(var7);
+      var4.networkBuffer.writeByte(var8);
+      class_86.method_1479(var4.networkBuffer, var1);
       if(var0 == class_281.field_3240.method_50()) {
-         var4.field_263.writeByte(var3);
+         var4.networkBuffer.writeByte(var3);
       }
 
-      var4.field_263.method_317(-796349658 * var4.field_263.offset - var5, -1355578498);
+      var4.networkBuffer.method_317(-796349658 * var4.networkBuffer.offset - var5, -1355578498);
       return var4;
    }
 
    // $FF: renamed from: y (int, java.lang.String, kk, int) hq
    public static class_40 method_6804(int var0, String var1, class_324 var2, int var3) {
-      class_40 var4 = class_112.method_2238(class_266.field_3134, client.field_1463.field_2384, (byte)8);
-      var4.field_263.writeByte(0);
-      int var5 = var4.field_263.offset * -1605689697;
-      var4.field_263.writeByte(var0);
+      class_40 var4 = class_112.method_2238(class_266.field_3134, client.field_1463.isaac, (byte)8);
+      var4.networkBuffer.writeByte(0);
+      int var5 = var4.networkBuffer.offset * -1605689697;
+      var4.networkBuffer.writeByte(var0);
       String var6 = var1.toLowerCase();
       byte var7 = 0;
       if(var6.startsWith(class_305.field_3582)) {
@@ -259,14 +259,14 @@ public class class_401 {
          }
       }
 
-      var4.field_263.writeByte(var7);
-      var4.field_263.writeByte(var8);
-      class_86.method_1479(var4.field_263, var1);
+      var4.networkBuffer.writeByte(var7);
+      var4.networkBuffer.writeByte(var8);
+      class_86.method_1479(var4.networkBuffer, var1);
       if(var0 == class_281.field_3240.method_50()) {
-         var4.field_263.writeByte(var3);
+         var4.networkBuffer.writeByte(var3);
       }
 
-      var4.field_263.method_317(-442398587 * var4.field_263.offset - var5, -1206294765);
+      var4.networkBuffer.method_317(-442398587 * var4.networkBuffer.offset - var5, -1206294765);
       return var4;
    }
 
@@ -282,10 +282,10 @@ public class class_401 {
 
    // $FF: renamed from: f (int, java.lang.String, kk, int) hq
    public static class_40 method_6806(int var0, String var1, class_324 var2, int var3) {
-      class_40 var4 = class_112.method_2238(class_266.field_3134, client.field_1463.field_2384, (byte)8);
-      var4.field_263.writeByte(0);
-      int var5 = var4.field_263.offset * -442398587;
-      var4.field_263.writeByte(var0);
+      class_40 var4 = class_112.method_2238(class_266.field_3134, client.field_1463.isaac, (byte)8);
+      var4.networkBuffer.writeByte(0);
+      int var5 = var4.networkBuffer.offset * -442398587;
+      var4.networkBuffer.writeByte(var0);
       String var6 = var1.toLowerCase();
       byte var7 = 0;
       if(var6.startsWith(class_305.field_3582)) {
@@ -400,14 +400,14 @@ public class class_401 {
          }
       }
 
-      var4.field_263.writeByte(var7);
-      var4.field_263.writeByte(var8);
-      class_86.method_1479(var4.field_263, var1);
+      var4.networkBuffer.writeByte(var7);
+      var4.networkBuffer.writeByte(var8);
+      class_86.method_1479(var4.networkBuffer, var1);
       if(var0 == class_281.field_3240.method_50()) {
-         var4.field_263.writeByte(var3);
+         var4.networkBuffer.writeByte(var3);
       }
 
-      var4.field_263.method_317(-442398587 * var4.field_263.offset - var5, -466674390);
+      var4.networkBuffer.method_317(-442398587 * var4.networkBuffer.offset - var5, -466674390);
       return var4;
    }
 }

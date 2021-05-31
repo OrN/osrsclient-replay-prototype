@@ -1514,8 +1514,8 @@ public class class_72 extends class_59 {
                if(var1 == -26460885) {
                   throw new IllegalStateException();
                } else {
-                  class_40 var6 = class_112.method_2238(class_266.field_3148, client.field_1463.field_2384, (byte)8);
-                  client.field_1613.method_5089(var6.field_263, 580596518);
+                  class_40 var6 = class_112.method_2238(class_266.field_3148, client.field_1463.isaac, (byte)8);
+                  client.field_1613.method_5089(var6.networkBuffer, 580596518);
                   client.field_1463.method_4079(var6);
                   return true;
                }

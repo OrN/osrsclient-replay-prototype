@@ -34,7 +34,7 @@ public class class_167 {
 
    // $FF: renamed from: f (nd) void
    void method_3599(Buffer var1) {
-      this.field_2094 = var1.method_136() * -686052109729941307L;
+      this.field_2094 = var1.readLong() * -686052109729941307L;
       this.field_2086 = var1.readInt() * -1656381045;
 
       for(int var2 = var1.readUnsignedByte(); 0 != var2; var2 = var1.readUnsignedByte()) {
@@ -139,7 +139,7 @@ public class class_167 {
 
    // $FF: renamed from: p (nd) void
    void method_3602(Buffer var1) {
-      this.field_2094 = var1.method_136() * -686052109729941307L;
+      this.field_2094 = var1.readLong() * -686052109729941307L;
       this.field_2086 = var1.readInt() * 1654488779;
 
       for(int var2 = var1.readUnsignedByte(); 0 != var2; var2 = var1.readUnsignedByte()) {
@@ -203,7 +203,7 @@ public class class_167 {
 
    // $FF: renamed from: y (nd) void
    void method_3603(Buffer var1) {
-      this.field_2094 = var1.method_136() * -686052109729941307L;
+      this.field_2094 = var1.readLong() * -686052109729941307L;
       this.field_2086 = var1.readInt() * 1654488779;
 
       for(int var2 = var1.readUnsignedByte(); 0 != var2; var2 = var1.readUnsignedByte()) {
@@ -268,7 +268,7 @@ public class class_167 {
    // $FF: renamed from: v (nd, int) void
    void method_3604(Buffer var1, int var2) {
       try {
-         this.field_2094 = var1.method_136() * -686052109729941307L;
+         this.field_2094 = var1.readLong() * -686052109729941307L;
          this.field_2086 = var1.readInt() * 1654488779;
 
          for(int var3 = var1.readUnsignedByte(); 0 != var3; var3 = var1.readUnsignedByte()) {

@@ -14,7 +14,7 @@ public class class_25 implements class_1 {
          ;
       }
 
-      var2.method_341(var5);
+      var2.writeLongReversed(var5);
    }
 
    // $FF: renamed from: v (nd) nd

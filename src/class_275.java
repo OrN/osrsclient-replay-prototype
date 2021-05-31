@@ -103,7 +103,7 @@ public class class_275 {
 
                               var13 = var0.readInt();
                               var11[var12] = new byte[var13];
-                              var0.method_267(var11[var12], 0, var13, 1127537554);
+                              var0.read(var11[var12], 0, var13, 1127537554);
                            }
                         }
 

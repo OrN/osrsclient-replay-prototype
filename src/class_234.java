@@ -5,7 +5,7 @@ public class class_234 {
     // $FF: renamed from: n fr
    static final class_234 field_2619;
    // $FF: renamed from: do ls
-   static class_206 field_2620;
+   static class_206 clientSocket;
     // $FF: renamed from: v fr
    static final class_234 field_2622;
    // $FF: renamed from: f int

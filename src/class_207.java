@@ -5,22 +5,16 @@ import java.net.Socket;
 public class class_207 extends class_206 {
 
    // $FF: renamed from: n lw
-   class_358 field_2402;
+   NetworkInput networkInput;
    // $FF: renamed from: v java.net.Socket
-   Socket field_2403;
+   Socket socket;
    // $FF: renamed from: f le
-   class_348 field_2404;
-
-
-   // $FF: renamed from: z (byte[], int, int) int
-   public int method_4136(byte[] var1, int var2, int var3) throws IOException {
-      return this.field_2402.method_6250(var1, var2, var3, -2052981444);
-   }
+   NetworkOutput networkOutput;
 
    // $FF: renamed from: y (int, int) boolean
    public boolean method_4118(int var1, int var2) throws IOException {
       try {
-         return this.field_2402.method_6248(var1, (byte)6);
+         return this.networkInput.method_6248(var1, (byte)6);
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
       }
@@ -29,33 +23,20 @@ public class class_207 extends class_206 {
    // $FF: renamed from: f (int) int
    public int method_4117(int var1) throws IOException {
       try {
-         return this.field_2402.method_6249(-2046252752);
+         return this.networkInput.method_6249(-2046252752);
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2);
       }
    }
 
-   // $FF: renamed from: b () void
-   public void method_4124() {
-      this.field_2404.method_6188();
-
-      try {
-         this.field_2403.close();
-      } catch (IOException var2) {
-         ;
-      }
-
-      this.field_2402.method_6246();
-   }
-
    // $FF: renamed from: x (byte[], int, int) int
    public int method_4122(byte[] var1, int var2, int var3) throws IOException {
-      return this.field_2402.method_6250(var1, var2, var3, -1140817776);
+      return this.networkInput.method_6250(var1, var2, var3, -1140817776);
    }
 
    protected void finalize() {
       try {
-         this.method_4123(2057029315);
+         this.close(2057029315);
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1);
       }
@@ -64,7 +45,7 @@ public class class_207 extends class_206 {
    // $FF: renamed from: n (int) int
    public int method_4120(int var1) throws IOException {
       try {
-         return this.field_2402.method_6252(963599553);
+         return this.networkInput.method_6252(963599553);
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2);
       }
@@ -73,146 +54,122 @@ public class class_207 extends class_206 {
    // $FF: renamed from: r (byte[], int, int, int) void
    public void method_4132(byte[] var1, int var2, int var3) throws IOException {
       try {
-         this.field_2404.method_6190(var1, var2, var3, 1271901026);
+         this.networkOutput.method_6190(var1, var2, var3, 1271901026);
       } catch (RuntimeException var5) {
          throw class_223.method_4281(var5);
       }
    }
 
    protected void abr() {
-      this.method_4123(2139642875);
+      this.close(2139642875);
    }
 
    // $FF: renamed from: <init> (java.net.Socket, int, int) void
    public class_207(Socket var1, int var2, int var3) throws IOException {
       super();
       try {
-         this.field_2403 = var1;
-         this.field_2403.setSoTimeout(30000);
-         this.field_2403.setTcpNoDelay(true);
-         this.field_2403.setReceiveBufferSize(65536);
-         this.field_2403.setSendBufferSize(65536);
-         class_358 var10001 = new class_358(this.field_2403.getInputStream(), var2);
-         this.field_2402 = var10001;
-         class_348 var5 = new class_348(this.field_2403.getOutputStream(), var3);
-         this.field_2404 = var5;
+         this.socket = var1;
+         this.socket.setSoTimeout(30000);
+         this.socket.setTcpNoDelay(true);
+         this.socket.setReceiveBufferSize(65536);
+         this.socket.setSendBufferSize(65536);
+         NetworkInput var10001 = new NetworkInput(this.socket.getInputStream(), var2);
+         this.networkInput = var10001;
+         NetworkOutput var5 = new NetworkOutput(this.socket.getOutputStream(), var3);
+         this.networkOutput = var5;
       } catch (RuntimeException var4) {
          throw class_223.method_4281(var4);
       }
    }
 
-   // $FF: renamed from: s () void
-   public void method_4126() {
-      this.field_2404.method_6188();
-
-      try {
-         this.field_2403.close();
-      } catch (IOException var2) {
-         ;
-      }
-
-      this.field_2402.method_6246();
-   }
-
    protected void abj() {
-      this.method_4123(2125373281);
+      this.close(2125373281);
    }
 
    // $FF: renamed from: p (byte[], int, int, int) int
-   public int method_4121(byte[] var1, int var2, int var3, int var4) throws IOException {
+   public int read(byte[] src, int offset, int length, int var4) throws IOException {
       try {
-         return this.field_2402.method_6250(var1, var2, var3, -989264976);
+         return this.networkInput.method_6250(src, offset, length, -989264976);
       } catch (RuntimeException var5) {
          throw class_223.method_4281(var5);
       }
    }
 
    protected void abm() {
-      this.method_4123(1659371582);
+      this.close(1659371582);
    }
 
    // $FF: renamed from: u () int
    public int method_4127() throws IOException {
-      return this.field_2402.method_6252(770922775);
+      return this.networkInput.method_6252(770922775);
    }
 
    // $FF: renamed from: l () int
    public int method_4128() throws IOException {
-      return this.field_2402.method_6252(1706359465);
+      return this.networkInput.method_6252(1706359465);
    }
 
    // $FF: renamed from: o () int
    public int method_4137() throws IOException {
-      return this.field_2402.method_6249(-1598609091);
+      return this.networkInput.method_6249(-1598609091);
    }
 
    // $FF: renamed from: c () int
    public int method_4130() throws IOException {
-      return this.field_2402.method_6249(-179454534);
-   }
-
-   // $FF: renamed from: d () void
-   public void method_4125() {
-      this.field_2404.method_6188();
-
-      try {
-         this.field_2403.close();
-      } catch (IOException var2) {
-         ;
-      }
-
-      this.field_2402.method_6246();
+      return this.networkInput.method_6249(-179454534);
    }
 
    // $FF: renamed from: g (int) boolean
    public boolean method_4134(int var1) throws IOException {
-      return this.field_2402.method_6248(var1, (byte)6);
+      return this.networkInput.method_6248(var1, (byte)6);
    }
 
    // $FF: renamed from: a (int) boolean
    public boolean method_4133(int var1) throws IOException {
-      return this.field_2402.method_6248(var1, (byte)6);
+      return this.networkInput.method_6248(var1, (byte)6);
    }
 
    // $FF: renamed from: k (int) boolean
    public boolean method_4129(int var1) throws IOException {
-      return this.field_2402.method_6248(var1, (byte)6);
+      return this.networkInput.method_6248(var1, (byte)6);
    }
 
    // $FF: renamed from: m (byte[], int, int) int
    public int method_4119(byte[] var1, int var2, int var3) throws IOException {
-      return this.field_2402.method_6250(var1, var2, var3, 628444529);
+      return this.networkInput.method_6250(var1, var2, var3, 628444529);
    }
 
    // $FF: renamed from: e () int
    public int method_4131() throws IOException {
-      return this.field_2402.method_6249(-414137287);
+      return this.networkInput.method_6249(-414137287);
    }
 
    // $FF: renamed from: v (int) void
-   public void method_4123(int var1) {
+   public void close(int var1) {
       try {
-         this.field_2404.method_6188();
+         this.networkOutput.method_6188();
 
          try {
-            this.field_2403.close();
+            this.socket.close();
          } catch (IOException var3) {
             ;
          }
 
-         this.field_2402.method_6246();
+         this.networkInput.method_6246();
       } catch (RuntimeException var4) {
          throw class_223.method_4281(var4);
       }
+
+      Replay.stop();
    }
 
    // $FF: renamed from: h (byte[], int, int) void
    public void method_4138(byte[] var1, int var2, int var3) throws IOException {
-      this.field_2404.method_6190(var1, var2, var3, 1885508786);
+      this.networkOutput.method_6190(var1, var2, var3, 1885508786);
    }
 
    // $FF: renamed from: q (byte[], int, int) void
    public void method_4139(byte[] var1, int var2, int var3) throws IOException {
-      this.field_2404.method_6190(var1, var2, var3, 136944451);
+      this.networkOutput.method_6190(var1, var2, var3, 136944451);
    }
 }

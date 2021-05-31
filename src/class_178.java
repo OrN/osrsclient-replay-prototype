@@ -24,12 +24,12 @@ public class class_178 {
          }
 
          label58: {
-            if(class_177.field_2200 != null) {
+            if(class_177.email != null) {
                if(var1 <= 49) {
                   throw new IllegalStateException();
                }
 
-               if(class_177.field_2200.length() > 0) {
+               if(class_177.email.length() > 0) {
                   if(var1 <= 49) {
                      throw new IllegalStateException();
                   }
@@ -37,25 +37,25 @@ public class class_178 {
                }
             }
 
-            if(null != class_87.preferences.field_2120) {
-               class_177.field_2200 = class_87.preferences.field_2120;
-               client.field_1453 = true;
+            if(null != class_87.preferences.rememberedEmail) {
+               class_177.email = class_87.preferences.rememberedEmail;
+               client.rememberEmail = true;
             } else {
-               client.field_1453 = false;
+               client.rememberEmail = false;
             }
          }
 
-         if(client.field_1453) {
+         if(client.rememberEmail) {
             if(var1 <= 49) {
                return;
             }
 
-            if(null != class_177.field_2200) {
+            if(null != class_177.email) {
                if(var1 <= 49) {
                   throw new IllegalStateException();
                }
 
-               if(class_177.field_2200.length() > 0) {
+               if(class_177.email.length() > 0) {
                   if(var1 <= 49) {
                      throw new IllegalStateException();
                   }

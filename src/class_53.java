@@ -207,13 +207,13 @@ public class class_53 extends class_51 {
             }
 
             var1.offset -= -1025691571;
-            var1.method_136();
+            var1.readLong();
          }
 
          this.field_400 = var1.method_347(-1491281932);
          this.field_392 = var1.readShort() * -1193008939;
-         this.field_393 = var1.method_131();
-         var1.method_136();
+         this.field_393 = var1.readByte();
+         var1.readLong();
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
       }
@@ -237,13 +237,13 @@ public class class_53 extends class_51 {
    void method_570(Buffer var1) {
       if(var1.readUnsignedByte() != 1515308310) {
          var1.offset -= -919309012;
-         var1.method_136();
+         var1.readLong();
       }
 
       this.field_400 = var1.method_347(-520721452);
       this.field_392 = var1.readShort() * -1193008939;
-      this.field_393 = var1.method_131();
-      var1.method_136();
+      this.field_393 = var1.readByte();
+      var1.readLong();
    }
 
    // $FF: renamed from: y (y) void
@@ -300,7 +300,7 @@ public class class_53 extends class_51 {
                   }
                }
 
-               client.field_1448 = 0;
+               client.loginStage = 0;
                client.field_1449 = 0;
                client.field_1621 = 0;
                client.field_1468.method_5896(var0);
@@ -319,7 +319,7 @@ public class class_53 extends class_51 {
                }
 
                if(var0 != 40 && client.field_1464 != null) {
-                  client.field_1464.method_4123(2145866063);
+                  client.field_1464.close(2145866063);
                   client.field_1464 = null;
                }
             }
@@ -371,8 +371,8 @@ public class class_53 extends class_51 {
                            return;
                         }
                      } else {
-                        class_299.field_3369 = null;
-                        class_177.field_2185 = null;
+                        class_299.loginBackground = null;
+                        class_177.loginButton = null;
                         class_177.field_2184 = null;
                         class_177.field_2186 = null;
                         class_52.field_378 = null;

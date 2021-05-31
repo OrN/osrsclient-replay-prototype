@@ -1,6 +1,6 @@
 
 // $FF: renamed from: oy
-public final class class_404 {
+public final class ISAAC {
 
    // $FF: renamed from: p int[]
    int[] field_4280;
@@ -677,7 +677,7 @@ public final class class_404 {
    }
 
    // $FF: renamed from: <init> (int[]) void
-   public class_404(int[] var1) {
+   public ISAAC(int[] var1) {
       super();
       try {
          this.field_4282 = new int[256];

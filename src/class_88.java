@@ -230,9 +230,9 @@ public class class_88 extends class_59 {
 
                this.field_871 = true;
             } else if(var2 == 100) {
-               this.field_879 = var1.method_131() * 288347979;
+               this.field_879 = var1.readByte() * 288347979;
             } else if(101 == var2) {
-               this.field_880 = var1.method_131() * -1536154543;
+               this.field_880 = var1.readByte() * -1536154543;
             } else if(var2 == 102) {
                if(var3 == 7) {
                   throw new IllegalStateException();
@@ -734,9 +734,9 @@ public class class_88 extends class_59 {
    static final void method_1564(String var0) {
       try {
          if(!var0.equals("")) {
-            class_40 var2 = class_112.method_2238(class_266.field_3048, client.field_1463.field_2384, (byte)8);
-            var2.field_263.writeByte(class_166.method_3598(var0));
-            var2.field_263.method_120(var0);
+            class_40 var2 = class_112.method_2238(class_266.field_3048, client.field_1463.isaac, (byte)8);
+            var2.networkBuffer.writeByte(class_166.method_3598(var0));
+            var2.networkBuffer.writeString(var0);
             client.field_1463.method_4079(var2);
          }
       } catch (RuntimeException var3) {

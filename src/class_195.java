@@ -38,7 +38,7 @@ public class class_195 {
 
 
    // $FF: renamed from: k (nb, int) void
-   static void method_3966(class_29 var0, int var1) {
+   static void method_3966(NetworkBuffer var0, int var1) {
       boolean var2 = var0.method_361(1, (byte)76) == 1;
       if(var2) {
          field_2314[(field_2320 += -1575538987) * -1149592963 - 1] = var1;
@@ -256,7 +256,7 @@ public class class_195 {
    }
 
    // $FF: renamed from: r (nb) void
-   static final void method_3968(class_29 var0) {
+   static final void method_3968(NetworkBuffer var0) {
       var0.method_358();
       int var1 = 929092845 * client.field_1534;
       class_100[] var10000 = client.field_1605;
@@ -299,7 +299,7 @@ public class class_195 {
    }
 
    // $FF: renamed from: b (nb) void
-   static final void method_3969(class_29 var0) {
+   static final void method_3969(NetworkBuffer var0) {
       var0.method_358();
       int var1 = 929092845 * client.field_1534;
       class_100[] var10000 = client.field_1605;
@@ -342,7 +342,7 @@ public class class_195 {
    }
 
    // $FF: renamed from: x (nb, int) boolean
-   static boolean method_3970(class_29 var0, int var1) {
+   static boolean method_3970(NetworkBuffer var0, int var1) {
       int var2 = var0.method_361(2, (byte)34);
       int var3;
       int var4;
@@ -455,7 +455,7 @@ public class class_195 {
    }
 
    // $FF: renamed from: d (nb) void
-   static final void method_3971(class_29 var0) {
+   static final void method_3971(NetworkBuffer var0) {
       var0.method_358();
       int var1 = 929092845 * client.field_1534;
       class_100[] var10000 = client.field_1605;
@@ -498,7 +498,7 @@ public class class_195 {
    }
 
    // $FF: renamed from: u (nb) void
-   static final void method_3972(class_29 var0) {
+   static final void method_3972(NetworkBuffer var0) {
       var0.method_358();
       int var1 = -552499060 * client.field_1534;
       class_100[] var10000 = client.field_1605;
@@ -541,7 +541,7 @@ public class class_195 {
    }
 
    // $FF: renamed from: l (nb, int) void
-   static final void method_3973(class_29 var0, int var1) {
+   static final void method_3973(NetworkBuffer var0, int var1) {
       int var2 = -1130505350 * var0.offset;
       field_2320 = 0;
       class_139.method_3008(var0, -1831454192);
@@ -564,7 +564,7 @@ public class class_195 {
 
          int var8;
          if(0 != (var6 & 47713042)) {
-            var5.field_1113 = var0.method_169() * 590622678;
+            var5.field_1113 = var0.readShortAlt() * 590622678;
             var8 = var0.method_179();
             var5.field_1117 = 1296170927 * (var8 >> 16);
             var5.field_1127 = (-1702273423 * client.field_1425 + (var8 & 1285032793)) * 203474704;
@@ -651,7 +651,7 @@ public class class_195 {
             var5.field_1109 = var0.method_162() * -1684756142;
             var5.field_1078 = var0.method_157() * -280468969;
             var5.field_1105 = (var0.readShort() + client.field_1425 * -1702273423) * 2093690946;
-            var5.field_1123 = (var0.method_169() + -2086162791 * client.field_1425) * -999940959;
+            var5.field_1123 = (var0.readShortAlt() + -2086162791 * client.field_1425) * -999940959;
             var5.field_1124 = var0.method_170() * -410013785;
             if(var5.field_1168) {
                var5.field_1118 += var5.field_1155 * 1628507480;
@@ -671,7 +671,7 @@ public class class_195 {
          }
 
          if((var6 & 64) != 0) {
-            var8 = var0.method_169();
+            var8 = var0.readShortAlt();
             class_292 var16 = (class_292)class_197.method_4016(class_391.method_6773(), var0.method_113(), -611336247);
             boolean var19 = var0.method_159() == 1;
             var11 = var0.method_159();
@@ -684,7 +684,7 @@ public class class_195 {
 
                if(!var21 && -267997189 * client.field_1531 == 0 && !var5.field_1154) {
                   field_2322.offset = 0;
-                  var0.method_243(field_2322.data, 0, var11, (short)18306);
+                  var0.readReverse(field_2322.data, 0, var11, (short)18306);
                   field_2322.offset = 0;
                   String var22 = class_68.method_868(class_135.method_2942(class_38.method_449(field_2322), -847170794));
                   var5.field_1089 = var22.trim();
@@ -715,7 +715,7 @@ public class class_195 {
             byte[] var17 = new byte[var8];
             Buffer var10000 = new Buffer(var17);
             Buffer var20 = var10000;
-            var0.method_243(var17, 0, var8, (short)27365);
+            var0.readReverse(var17, 0, var8, (short)27365);
             field_2312[var4] = var20;
             var5.method_1824(var20, (byte)1);
          }
@@ -771,7 +771,7 @@ public class class_195 {
    }
 
    // $FF: renamed from: o (nb, int) void
-   static final void method_3974(class_29 var0, int var1) {
+   static final void method_3974(NetworkBuffer var0, int var1) {
       int var2 = -442398587 * var0.offset;
       field_2320 = 0;
       class_139.method_3008(var0, -1775789856);
@@ -794,7 +794,7 @@ public class class_195 {
 
          int var8;
          if(0 != (var6 & 256)) {
-            var5.field_1113 = var0.method_169() * 1634941531;
+            var5.field_1113 = var0.readShortAlt() * 1634941531;
             var8 = var0.method_179();
             var5.field_1117 = 1296170927 * (var8 >> 16);
             var5.field_1127 = (-1702273423 * client.field_1425 + (var8 & '\uffff')) * -2033842497;
@@ -881,7 +881,7 @@ public class class_195 {
             var5.field_1109 = var0.method_162() * -260652731;
             var5.field_1078 = var0.method_157() * -280468969;
             var5.field_1105 = (var0.readShort() + client.field_1425 * -1702273423) * 911678983;
-            var5.field_1123 = (var0.method_169() + -1702273423 * client.field_1425) * -999940959;
+            var5.field_1123 = (var0.readShortAlt() + -1702273423 * client.field_1425) * -999940959;
             var5.field_1124 = var0.method_170() * -410013785;
             if(var5.field_1168) {
                var5.field_1118 += var5.field_1155 * 1969261743;
@@ -901,7 +901,7 @@ public class class_195 {
          }
 
          if((var6 & 64) != 0) {
-            var8 = var0.method_169();
+            var8 = var0.readShortAlt();
             class_292 var16 = (class_292)class_197.method_4016(class_391.method_6773(), var0.method_113(), -611336247);
             boolean var19 = var0.method_159() == 1;
             var11 = var0.method_159();
@@ -914,7 +914,7 @@ public class class_195 {
 
                if(!var21 && -267997189 * client.field_1531 == 0 && !var5.field_1154) {
                   field_2322.offset = 0;
-                  var0.method_243(field_2322.data, 0, var11, (short)25246);
+                  var0.readReverse(field_2322.data, 0, var11, (short)25246);
                   field_2322.offset = 0;
                   String var22 = class_68.method_868(class_135.method_2942(class_38.method_449(field_2322), -1984394636));
                   var5.field_1089 = var22.trim();
@@ -945,7 +945,7 @@ public class class_195 {
             byte[] var17 = new byte[var8];
             Buffer var10000 = new Buffer(var17);
             Buffer var20 = var10000;
-            var0.method_243(var17, 0, var8, (short)15620);
+            var0.readReverse(var17, 0, var8, (short)15620);
             field_2312[var4] = var20;
             var5.method_1824(var20, (byte)1);
          }
@@ -1022,7 +1022,7 @@ public class class_195 {
    }
 
    // $FF: renamed from: g (nb, int) void
-   static void method_3977(class_29 var0, int var1) {
+   static void method_3977(NetworkBuffer var0, int var1) {
       boolean var2 = var0.method_361(1, (byte)74) == 1;
       if(var2) {
          field_2314[(field_2320 += -1575538987) * -1149592963 - 1] = var1;
@@ -1222,7 +1222,7 @@ public class class_195 {
    }
 
    // $FF: renamed from: a (nb, int) void
-   static void method_3978(class_29 var0, int var1) {
+   static void method_3978(NetworkBuffer var0, int var1) {
       boolean var2 = var0.method_361(1, (byte)11) == 1;
       if(var2) {
          field_2314[(field_2320 += -1575538987) * -235223313 - 1] = var1;
@@ -1422,7 +1422,7 @@ public class class_195 {
    }
 
    // $FF: renamed from: c (nb, int) void
-   static final void method_3979(class_29 var0, int var1) {
+   static final void method_3979(NetworkBuffer var0, int var1) {
       int var2 = -442398587 * var0.offset;
       field_2320 = 0;
       class_139.method_3008(var0, -1378072382);
@@ -1445,7 +1445,7 @@ public class class_195 {
 
          int var8;
          if(0 != (var6 & 256)) {
-            var5.field_1113 = var0.method_169() * 1634941531;
+            var5.field_1113 = var0.readShortAlt() * 1634941531;
             var8 = var0.method_179();
             var5.field_1117 = 1296170927 * (var8 >> 16);
             var5.field_1127 = (-1702273423 * client.field_1425 + (var8 & '\uffff')) * -2033842497;
@@ -1532,7 +1532,7 @@ public class class_195 {
             var5.field_1109 = var0.method_162() * -260652731;
             var5.field_1078 = var0.method_157() * -280468969;
             var5.field_1105 = (var0.readShort() + client.field_1425 * -1702273423) * 911678983;
-            var5.field_1123 = (var0.method_169() + -1702273423 * client.field_1425) * -999940959;
+            var5.field_1123 = (var0.readShortAlt() + -1702273423 * client.field_1425) * -999940959;
             var5.field_1124 = var0.method_170() * -410013785;
             if(var5.field_1168) {
                var5.field_1118 += var5.field_1155 * 1969261743;
@@ -1552,7 +1552,7 @@ public class class_195 {
          }
 
          if((var6 & 64) != 0) {
-            var8 = var0.method_169();
+            var8 = var0.readShortAlt();
             class_292 var16 = (class_292)class_197.method_4016(class_391.method_6773(), var0.method_113(), -611336247);
             boolean var19 = var0.method_159() == 1;
             var11 = var0.method_159();
@@ -1565,7 +1565,7 @@ public class class_195 {
 
                if(!var21 && -267997189 * client.field_1531 == 0 && !var5.field_1154) {
                   field_2322.offset = 0;
-                  var0.method_243(field_2322.data, 0, var11, (short)13155);
+                  var0.readReverse(field_2322.data, 0, var11, (short)13155);
                   field_2322.offset = 0;
                   String var22 = class_68.method_868(class_135.method_2942(class_38.method_449(field_2322), -2020943954));
                   var5.field_1089 = var22.trim();
@@ -1596,7 +1596,7 @@ public class class_195 {
             byte[] var17 = new byte[var8];
             Buffer var10000 = new Buffer(var17);
             Buffer var20 = var10000;
-            var0.method_243(var17, 0, var8, (short)25059);
+            var0.readReverse(var17, 0, var8, (short)25059);
             field_2312[var4] = var20;
             var5.method_1824(var20, (byte)1);
          }
@@ -1652,7 +1652,7 @@ public class class_195 {
    }
 
    // $FF: renamed from: m (nb, int) void
-   static void method_3980(class_29 var0, int var1) {
+   static void method_3980(NetworkBuffer var0, int var1) {
       boolean var2 = var0.method_361(1, (byte)-4) == 1;
       if(var2) {
          field_2314[(field_2320 += -1330185254) * 1071908739 - 1] = var1;
@@ -1852,7 +1852,7 @@ public class class_195 {
    }
 
    // $FF: renamed from: s (nb) void
-   static final void method_3981(class_29 var0) {
+   static final void method_3981(NetworkBuffer var0) {
       var0.method_358();
       int var1 = 929092845 * client.field_1534;
       class_100[] var10000 = client.field_1605;
@@ -1895,7 +1895,7 @@ public class class_195 {
    }
 
    // $FF: renamed from: z (nb, int) boolean
-   static boolean method_3982(class_29 var0, int var1) {
+   static boolean method_3982(NetworkBuffer var0, int var1) {
       int var2 = var0.method_361(2, (byte)108);
       int var3;
       int var4;
@@ -2008,7 +2008,7 @@ public class class_195 {
    }
 
    // $FF: renamed from: w (nb, int) boolean
-   static boolean method_3983(class_29 var0, int var1) {
+   static boolean method_3983(NetworkBuffer var0, int var1) {
       int var2 = var0.method_361(2, (byte)67);
       int var3;
       int var4;
@@ -2132,7 +2132,7 @@ public class class_195 {
    }
 
    // $FF: renamed from: e (nb) void
-   static final void method_3985(class_29 var0) {
+   static final void method_3985(NetworkBuffer var0) {
       int var1 = 0;
       var0.method_358();
 

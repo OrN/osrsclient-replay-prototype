@@ -13,7 +13,7 @@ public class class_347 {
 
    // $FF: renamed from: j (double, double, double) double
    public static double method_6182(double var0, double var2, double var4) {
-      return class_131.method_2874((var0 - var2) / var4) / var4;
+      return GameMouseListener.method_2874((var0 - var2) / var4) / var4;
    }
 
    // $FF: renamed from: f (double) double
@@ -23,7 +23,7 @@ public class class_347 {
 
    // $FF: renamed from: p (double, double, double) double
    public static double method_6184(double var0, double var2, double var4) {
-      return class_131.method_2874((var0 - var2) / var4) / var4;
+      return GameMouseListener.method_2874((var0 - var2) / var4) / var4;
    }
 
    // $FF: renamed from: <init> () void

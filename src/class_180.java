@@ -86,8 +86,8 @@ public class class_180 {
 
    // $FF: renamed from: f (nd) void
    void method_3815(Buffer var1) {
-      this.field_2233 = var1.method_136() * -195396748607488393L;
-      this.field_2231 = var1.method_136() * -7853368797710486943L;
+      this.field_2233 = var1.readLong() * -195396748607488393L;
+      this.field_2231 = var1.readLong() * -7853368797710486943L;
 
       for(int var2 = var1.readUnsignedByte(); 0 != var2; var2 = var1.readUnsignedByte()) {
          Object var3;
@@ -121,8 +121,8 @@ public class class_180 {
    // $FF: renamed from: v (nd, int) void
    void method_3816(Buffer var1, int var2) {
       try {
-         this.field_2233 = var1.method_136() * -195396748607488393L;
-         this.field_2231 = var1.method_136() * -7853368797710486943L;
+         this.field_2233 = var1.readLong() * -195396748607488393L;
+         this.field_2231 = var1.readLong() * -7853368797710486943L;
 
          for(int var3 = var1.readUnsignedByte(); 0 != var3; var3 = var1.readUnsignedByte()) {
             if(var2 == 1798909345) {
@@ -174,8 +174,8 @@ public class class_180 {
 
    // $FF: renamed from: p (nd) void
    void method_3817(Buffer var1) {
-      this.field_2233 = var1.method_136() * -195396748607488393L;
-      this.field_2231 = var1.method_136() * -7853368797710486943L;
+      this.field_2233 = var1.readLong() * -195396748607488393L;
+      this.field_2231 = var1.readLong() * -7853368797710486943L;
 
       for(int var2 = var1.readUnsignedByte(); 0 != var2; var2 = var1.readUnsignedByte()) {
          Object var3;
@@ -208,8 +208,8 @@ public class class_180 {
 
    // $FF: renamed from: y (nd) void
    void method_3818(Buffer var1) {
-      this.field_2233 = var1.method_136() * -195396748607488393L;
-      this.field_2231 = var1.method_136() * -7853368797710486943L;
+      this.field_2233 = var1.readLong() * -195396748607488393L;
+      this.field_2231 = var1.readLong() * -7853368797710486943L;
 
       for(int var2 = var1.readUnsignedByte(); 0 != var2; var2 = var1.readUnsignedByte()) {
          Object var3;

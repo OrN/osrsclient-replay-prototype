@@ -1129,8 +1129,8 @@ public final class class_329 {
                            throw new IllegalStateException();
                         }
 
-                        var16 = class_131.field_1722 * -678881683;
-                        var17 = 1903378733 * class_131.field_1703;
+                        var16 = GameMouseListener.field_1722 * -678881683;
+                        var17 = 1903378733 * GameMouseListener.field_1703;
                         var16 -= -653830947 * client.field_1592;
                         var17 -= client.field_1445 * 1055501491;
                         if(var16 < client.field_1516 * 1941546241) {
@@ -1604,8 +1604,8 @@ public final class class_329 {
                                           throw new IllegalStateException();
                                        }
 
-                                       var36 = -678881683 * class_131.field_1722 - client.field_1526 * 823942939;
-                                       var38 = 1903378733 * class_131.field_1703 - client.field_1527 * -732224895;
+                                       var36 = -678881683 * GameMouseListener.field_1722 - client.field_1526 * 823942939;
+                                       var38 = 1903378733 * GameMouseListener.field_1703 - client.field_1527 * -732224895;
                                        if(var36 < 5) {
                                           if(var9 != -1945038256) {
                                              return;
@@ -1937,7 +1937,7 @@ public final class class_329 {
                               var10007 = -1;
                            }
 
-                           var34.method_884(var33, var13, var14, var10004, var10005, var21, var10007, 1863227195 * var11.field_223, var11.field_118 * 1397843337, 1855839745 * var11.field_180);
+                           var34.drawString(var33, var13, var14, var10004, var10005, var21, var10007, 1863227195 * var11.field_223, var11.field_118 * 1397843337, 1855839745 * var11.field_180);
                         }
                      } else if(5 == 1659206769 * var11.field_103) {
                         if(var9 != -1945038256) {

@@ -42,10 +42,10 @@ public final class class_382 {
                         return;
                      }
 
-                     var8 = class_112.method_2238(class_266.field_3078, client.field_1463.field_2384, (byte)8);
-                     var8.field_263.method_116(var1);
-                     var8.field_263.method_333(var2);
-                     var8.field_263.method_333(var3);
+                     var8 = class_112.method_2238(class_266.field_3078, client.field_1463.isaac, (byte)8);
+                     var8.networkBuffer.writeIntReverse(var1);
+                     var8.networkBuffer.writeShortReverse(var2);
+                     var8.networkBuffer.writeShortReverse(var3);
                      client.field_1463.method_4079(var8);
                   }
 
@@ -54,10 +54,10 @@ public final class class_382 {
                         throw new IllegalStateException();
                      }
 
-                     var8 = class_112.method_2238(class_266.field_3077, client.field_1463.field_2384, (byte)8);
-                     var8.field_263.method_116(var1);
-                     var8.field_263.method_333(var2);
-                     var8.field_263.method_333(var3);
+                     var8 = class_112.method_2238(class_266.field_3077, client.field_1463.isaac, (byte)8);
+                     var8.networkBuffer.writeIntReverse(var1);
+                     var8.networkBuffer.writeShortReverse(var2);
+                     var8.networkBuffer.writeShortReverse(var3);
                      client.field_1463.method_4079(var8);
                   }
 
@@ -66,10 +66,10 @@ public final class class_382 {
                         throw new IllegalStateException();
                      }
 
-                     var8 = class_112.method_2238(class_266.field_3090, client.field_1463.field_2384, (byte)8);
-                     var8.field_263.method_116(var1);
-                     var8.field_263.method_333(var2);
-                     var8.field_263.method_333(var3);
+                     var8 = class_112.method_2238(class_266.field_3090, client.field_1463.isaac, (byte)8);
+                     var8.networkBuffer.writeIntReverse(var1);
+                     var8.networkBuffer.writeShortReverse(var2);
+                     var8.networkBuffer.writeShortReverse(var3);
                      client.field_1463.method_4079(var8);
                   }
 
@@ -78,10 +78,10 @@ public final class class_382 {
                         throw new IllegalStateException();
                      }
 
-                     var8 = class_112.method_2238(class_266.field_3152, client.field_1463.field_2384, (byte)8);
-                     var8.field_263.method_116(var1);
-                     var8.field_263.method_333(var2);
-                     var8.field_263.method_333(var3);
+                     var8 = class_112.method_2238(class_266.field_3152, client.field_1463.isaac, (byte)8);
+                     var8.networkBuffer.writeIntReverse(var1);
+                     var8.networkBuffer.writeShortReverse(var2);
+                     var8.networkBuffer.writeShortReverse(var3);
                      client.field_1463.method_4079(var8);
                   }
 
@@ -90,10 +90,10 @@ public final class class_382 {
                         return;
                      }
 
-                     var8 = class_112.method_2238(class_266.field_3066, client.field_1463.field_2384, (byte)8);
-                     var8.field_263.method_116(var1);
-                     var8.field_263.method_333(var2);
-                     var8.field_263.method_333(var3);
+                     var8 = class_112.method_2238(class_266.field_3066, client.field_1463.isaac, (byte)8);
+                     var8.networkBuffer.writeIntReverse(var1);
+                     var8.networkBuffer.writeShortReverse(var2);
+                     var8.networkBuffer.writeShortReverse(var3);
                      client.field_1463.method_4079(var8);
                   }
 
@@ -102,10 +102,10 @@ public final class class_382 {
                         throw new IllegalStateException();
                      }
 
-                     var8 = class_112.method_2238(class_266.field_3124, client.field_1463.field_2384, (byte)8);
-                     var8.field_263.method_116(var1);
-                     var8.field_263.method_333(var2);
-                     var8.field_263.method_333(var3);
+                     var8 = class_112.method_2238(class_266.field_3124, client.field_1463.isaac, (byte)8);
+                     var8.networkBuffer.writeIntReverse(var1);
+                     var8.networkBuffer.writeShortReverse(var2);
+                     var8.networkBuffer.writeShortReverse(var3);
                      client.field_1463.method_4079(var8);
                   }
 
@@ -114,10 +114,10 @@ public final class class_382 {
                         throw new IllegalStateException();
                      }
 
-                     var8 = class_112.method_2238(class_266.field_3122, client.field_1463.field_2384, (byte)8);
-                     var8.field_263.method_116(var1);
-                     var8.field_263.method_333(var2);
-                     var8.field_263.method_333(var3);
+                     var8 = class_112.method_2238(class_266.field_3122, client.field_1463.isaac, (byte)8);
+                     var8.networkBuffer.writeIntReverse(var1);
+                     var8.networkBuffer.writeShortReverse(var2);
+                     var8.networkBuffer.writeShortReverse(var3);
                      client.field_1463.method_4079(var8);
                   }
 
@@ -126,18 +126,18 @@ public final class class_382 {
                         throw new IllegalStateException();
                      }
 
-                     var8 = class_112.method_2238(class_266.field_3087, client.field_1463.field_2384, (byte)8);
-                     var8.field_263.method_116(var1);
-                     var8.field_263.method_333(var2);
-                     var8.field_263.method_333(var3);
+                     var8 = class_112.method_2238(class_266.field_3087, client.field_1463.isaac, (byte)8);
+                     var8.networkBuffer.writeIntReverse(var1);
+                     var8.networkBuffer.writeShortReverse(var2);
+                     var8.networkBuffer.writeShortReverse(var3);
                      client.field_1463.method_4079(var8);
                   }
 
                   if(9 == var0) {
-                     var8 = class_112.method_2238(class_266.field_3067, client.field_1463.field_2384, (byte)8);
-                     var8.field_263.method_116(var1);
-                     var8.field_263.method_333(var2);
-                     var8.field_263.method_333(var3);
+                     var8 = class_112.method_2238(class_266.field_3067, client.field_1463.isaac, (byte)8);
+                     var8.networkBuffer.writeIntReverse(var1);
+                     var8.networkBuffer.writeShortReverse(var2);
+                     var8.networkBuffer.writeShortReverse(var3);
                      client.field_1463.method_4079(var8);
                   }
 
@@ -146,10 +146,10 @@ public final class class_382 {
                         throw new IllegalStateException();
                      }
 
-                     var8 = class_112.method_2238(class_266.field_3106, client.field_1463.field_2384, (byte)8);
-                     var8.field_263.method_116(var1);
-                     var8.field_263.method_333(var2);
-                     var8.field_263.method_333(var3);
+                     var8 = class_112.method_2238(class_266.field_3106, client.field_1463.isaac, (byte)8);
+                     var8.networkBuffer.writeIntReverse(var1);
+                     var8.networkBuffer.writeShortReverse(var2);
+                     var8.networkBuffer.writeShortReverse(var3);
                      client.field_1463.method_4079(var8);
                   }
 

@@ -83,7 +83,7 @@ public abstract class class_68 extends class_65 {
                            try {
                               var9 = class_168.method_3609(var8.substring(4));
                               class_66 var13 = field_527[var9];
-                              var13.method_735(var2, var3 + this.field_522 - var13.field_494);
+                              var13.draw(var2, var3 + this.field_522 - var13.field_494);
                               var2 += var13.field_497;
                               var5 = -1;
                            } catch (Exception var11) {
@@ -724,7 +724,7 @@ public abstract class class_68 extends class_65 {
    }
 
    // $FF: renamed from: z (java.lang.String, int, int, int, int, int, int, int, int, int) int
-   public int method_884(String var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10) {
+   public int drawString(String var1, int var2, int var3, int var4, int var5, int var6, int var7, int var8, int var9, int var10) {
       if(var1 == null) {
          return 0;
       } else {
@@ -1320,7 +1320,7 @@ public abstract class class_68 extends class_65 {
                               ++var8;
                               var14 = class_168.method_3609(var11.substring(4));
                               class_66 var18 = field_527[var14];
-                              var18.method_735(var2 + var12, var3 + this.field_522 - var18.field_494 + var13);
+                              var18.draw(var2 + var12, var3 + this.field_522 - var18.field_494 + var13);
                               var2 += var18.field_497;
                               var7 = -1;
                            } catch (Exception var16) {
@@ -1552,7 +1552,7 @@ public abstract class class_68 extends class_65 {
                               ++var8;
                               var14 = class_168.method_3609(var11.substring(4));
                               class_66 var18 = field_527[var14];
-                              var18.method_735(var2 + var12, var3 + this.field_522 - var18.field_494 + var13);
+                              var18.draw(var2 + var12, var3 + this.field_522 - var18.field_494 + var13);
                               var2 += var18.field_497;
                               var7 = -1;
                            } catch (Exception var16) {
@@ -1885,7 +1885,7 @@ public abstract class class_68 extends class_65 {
                               ++var8;
                               var14 = class_168.method_3609(var11.substring(4));
                               class_66 var18 = field_527[var14];
-                              var18.method_735(var2 + var12, var3 + this.field_522 - var18.field_494 + var13);
+                              var18.draw(var2 + var12, var3 + this.field_522 - var18.field_494 + var13);
                               var2 += var18.field_497;
                               var7 = -1;
                            } catch (Exception var16) {
@@ -2335,7 +2335,7 @@ public abstract class class_68 extends class_65 {
                            try {
                               var9 = class_168.method_3609(var8.substring(4));
                               class_66 var13 = field_527[var9];
-                              var13.method_735(var2, var3 + this.field_522 - var13.field_494);
+                              var13.draw(var2, var3 + this.field_522 - var13.field_494);
                               var2 += var13.field_497;
                               var5 = -1;
                            } catch (Exception var11) {
@@ -2745,7 +2745,7 @@ public abstract class class_68 extends class_65 {
                            try {
                               var9 = class_168.method_3609(var8.substring(4));
                               class_66 var13 = field_527[var9];
-                              var13.method_735(var2, var3 + this.field_522 - var13.field_494);
+                              var13.draw(var2, var3 + this.field_522 - var13.field_494);
                               var2 += var13.field_497;
                               var5 = -1;
                            } catch (Exception var11) {
@@ -2850,7 +2850,7 @@ public abstract class class_68 extends class_65 {
                               ++var8;
                               var14 = class_168.method_3609(var11.substring(4));
                               class_66 var18 = field_527[var14];
-                              var18.method_735(var2 + var12, var3 + this.field_522 - var18.field_494 + var13);
+                              var18.draw(var2 + var12, var3 + this.field_522 - var18.field_494 + var13);
                               var2 += var18.field_497;
                               var7 = -1;
                            } catch (Exception var16) {
@@ -2968,7 +2968,7 @@ public abstract class class_68 extends class_65 {
                               ++var8;
                               var14 = class_168.method_3609(var11.substring(4));
                               class_66 var18 = field_527[var14];
-                              var18.method_735(var2 + var12, var3 + this.field_522 - var18.field_494 + var13);
+                              var18.draw(var2 + var12, var3 + this.field_522 - var18.field_494 + var13);
                               var2 += var18.field_497;
                               var7 = -1;
                            } catch (Exception var16) {

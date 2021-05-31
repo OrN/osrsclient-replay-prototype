@@ -332,7 +332,7 @@ public class class_175 {
                               }
 
                               if(var10 <= 9) {
-                                 class_404.method_6843(var5, var10, var7, var8, (byte)-36);
+                                 ISAAC.method_6843(var5, var10, var7, var8, (byte)-36);
                                  return 1;
                               }
 
@@ -350,7 +350,7 @@ public class class_175 {
                            var6 = 10;
                            var7 = class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885];
                            var8 = class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885];
-                           class_404.method_6843(var5, var6, var7, var8, (byte)-43);
+                           ISAAC.method_6843(var5, var6, var7, var8, (byte)-43);
                            return 1;
                         }
                      } else if(var0 == 1354) {

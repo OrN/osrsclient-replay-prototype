@@ -71,7 +71,7 @@ public class class_86 extends class_59 {
                return;
             }
 
-            byte var5 = var1.method_131();
+            byte var5 = var1.readByte();
             int var6 = var5 & 255;
             if(0 == var6) {
                if(var3 <= 1) {
@@ -219,7 +219,7 @@ public class class_86 extends class_59 {
    // $FF: renamed from: l (nd, int) void
    void method_1470(Buffer var1, int var2) {
       if(var2 == 1) {
-         byte var4 = var1.method_131();
+         byte var4 = var1.readByte();
          int var5 = var4 & 255;
          if(0 == var5) {
             throw new IllegalArgumentException("" + Integer.toString(var5, 16));
@@ -249,7 +249,7 @@ public class class_86 extends class_59 {
    // $FF: renamed from: o (nd, int) void
    void method_1471(Buffer var1, int var2) {
       if(var2 == 1) {
-         byte var4 = var1.method_131();
+         byte var4 = var1.readByte();
          int var5 = var4 & 255;
          if(0 == var5) {
             throw new IllegalArgumentException("" + Integer.toString(var5, 16));
@@ -291,7 +291,7 @@ public class class_86 extends class_59 {
    // $FF: renamed from: e (nd, int) void
    void method_1473(Buffer var1, int var2) {
       if(var2 == 1) {
-         byte var4 = var1.method_131();
+         byte var4 = var1.readByte();
          int var5 = var4 & 255;
          if(0 == var5) {
             throw new IllegalArgumentException("" + Integer.toString(var5, 16));
@@ -321,7 +321,7 @@ public class class_86 extends class_59 {
    // $FF: renamed from: g (nd, int) void
    void method_1474(Buffer var1, int var2) {
       if(var2 == 1) {
-         byte var4 = var1.method_131();
+         byte var4 = var1.readByte();
          int var5 = var4 & 1461260145;
          if(0 == var5) {
             throw new IllegalArgumentException("" + Integer.toString(var5, 16));
@@ -368,7 +368,7 @@ public class class_86 extends class_59 {
    // $FF: renamed from: c (nd, int) void
    void method_1477(Buffer var1, int var2) {
       if(var2 == 1) {
-         byte var4 = var1.method_131();
+         byte var4 = var1.readByte();
          int var5 = var4 & 255;
          if(0 == var5) {
             throw new IllegalArgumentException("" + Integer.toString(var5, 16));
@@ -442,7 +442,7 @@ public class class_86 extends class_59 {
    }
 
    // $FF: renamed from: p (nb, int, int) boolean
-   static boolean method_1481(class_29 var0, int var1, int var2) {
+   static boolean method_1481(NetworkBuffer var0, int var1, int var2) {
       try {
          int var3 = var0.method_361(2, (byte)-17);
          int var4;

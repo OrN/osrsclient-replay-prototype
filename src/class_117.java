@@ -50,7 +50,7 @@ public class class_117 extends class_111 {
    // $FF: renamed from: kr (short) void
    static final void method_2250(short var0) {
       try {
-         class_40 var1 = class_112.method_2238(class_266.field_3068, client.field_1463.field_2384, (byte)8);
+         class_40 var1 = class_112.method_2238(class_266.field_3068, client.field_1463.isaac, (byte)8);
          client.field_1463.method_4079(var1);
 
          for(class_48 var2 = (class_48)client.field_1578.method_6531(); var2 != null; var2 = (class_48)client.field_1578.method_6527()) {
@@ -155,8 +155,8 @@ public class class_117 extends class_111 {
    // $FF: renamed from: lx (int, int, int, boolean, int) void
    public static void method_2253(int var0, int var1, int var2, boolean var3, int var4) {
       try {
-         class_40 var5 = class_112.method_2238(class_266.field_3131, client.field_1463.field_2384, (byte)8);
-         var5.field_263.method_167(var1);
+         class_40 var5 = class_112.method_2238(class_266.field_3131, client.field_1463.isaac, (byte)8);
+         var5.networkBuffer.writeShortAlt(var1);
          int var10001;
          if(var3) {
             if(var4 <= 666059637) {
@@ -168,9 +168,9 @@ public class class_117 extends class_111 {
             var10001 = 0;
          }
 
-         var5.field_263.method_116(var10001);
-         var5.field_263.writeByte(var2);
-         var5.field_263.method_185(var0);
+         var5.networkBuffer.writeIntReverse(var10001);
+         var5.networkBuffer.writeByte(var2);
+         var5.networkBuffer.method_185(var0);
          client.field_1463.method_4079(var5);
       } catch (RuntimeException var6) {
          throw class_223.method_4281(var6);

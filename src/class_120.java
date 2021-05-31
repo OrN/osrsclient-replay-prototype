@@ -33,10 +33,10 @@ public class class_120 extends class_111 {
          }
 
          this.field_1327 = var10001;
-         this.field_1324 = var1.method_131();
-         this.field_1325 = var1.method_131();
-         this.field_1326 = var1.method_131();
-         this.field_1328 = var1.method_131();
+         this.field_1324 = var1.readByte();
+         this.field_1325 = var1.readByte();
+         this.field_1326 = var1.readByte();
+         this.field_1328 = var1.readByte();
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
       }
@@ -45,10 +45,10 @@ public class class_120 extends class_111 {
    // $FF: renamed from: f (nd) void
    void method_2234(Buffer var1) {
       this.field_1327 = var1.readUnsignedByte() == 1;
-      this.field_1324 = var1.method_131();
-      this.field_1325 = var1.method_131();
-      this.field_1326 = var1.method_131();
-      this.field_1328 = var1.method_131();
+      this.field_1324 = var1.readByte();
+      this.field_1325 = var1.readByte();
+      this.field_1326 = var1.readByte();
+      this.field_1328 = var1.readByte();
    }
 
    // $FF: renamed from: n (l, byte) void
@@ -99,10 +99,10 @@ public class class_120 extends class_111 {
    // $FF: renamed from: y (nd) void
    void method_2233(Buffer var1) {
       this.field_1327 = var1.readUnsignedByte() == 1;
-      this.field_1324 = var1.method_131();
-      this.field_1325 = var1.method_131();
-      this.field_1326 = var1.method_131();
-      this.field_1328 = var1.method_131();
+      this.field_1324 = var1.readByte();
+      this.field_1325 = var1.readByte();
+      this.field_1326 = var1.readByte();
+      this.field_1328 = var1.readByte();
    }
 
    // $FF: renamed from: p (l) void

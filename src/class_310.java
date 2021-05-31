@@ -30,7 +30,7 @@ public class class_310 {
          this.field_3742 = var1.method_139(-391631059);
          this.field_3746 = var1.method_139(-391631059);
          this.field_3745 = var1.readShort() * 976507365;
-         this.field_3743 = var1.method_136() * -1523233194100030643L;
+         this.field_3743 = var1.readLong() * -1523233194100030643L;
          int var4 = var1.readInt();
          int var5 = var1.readInt();
          class_312 var10001 = new class_312();

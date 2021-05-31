@@ -25,7 +25,7 @@ public class class_305 {
    // $FF: renamed from: u java.lang.String
    public static String field_3412;
    // $FF: renamed from: io java.lang.String
-   public static String field_3413;
+   public static String strNewUser;
    // $FF: renamed from: o java.lang.String
    public static String field_3414;
    // $FF: renamed from: c java.lang.String
@@ -59,7 +59,7 @@ public class class_305 {
    // $FF: renamed from: ar java.lang.String
    public static String field_3429;
    // $FF: renamed from: ir java.lang.String
-   public static String field_3430;
+   public static String strConnectingServer;
    // $FF: renamed from: al java.lang.String
    public static String strLoadedTextures;
    // $FF: renamed from: dr java.lang.String
@@ -299,9 +299,9 @@ public class class_305 {
    // $FF: renamed from: es java.lang.String
    public static String field_3549;
    // $FF: renamed from: ey java.lang.String
-   public static String field_3550;
+   public static String strUnexpectedServerResponse;
    // $FF: renamed from: ee java.lang.String
-   public static String field_3551;
+   public static String strTryDifferentWorld;
    // $FF: renamed from: fl java.lang.String
    public static String field_3552;
    // $FF: renamed from: ei java.lang.String
@@ -497,7 +497,7 @@ public class class_305 {
    // $FF: renamed from: ga java.lang.String
    public static String field_3648;
    // $FF: renamed from: is java.lang.String
-   public static String field_3649;
+   public static String strExistingUser;
    // $FF: renamed from: fk java.lang.String
    public static String field_3650;
    // $FF: renamed from: il java.lang.String
@@ -985,8 +985,8 @@ public class class_305 {
       field_3547 = "The code you entered was incorrect.";
       field_3510 = "Please try again.";
       field_3549 = "";
-      field_3550 = "Unexpected server response";
-      field_3551 = "Please try using a different world.";
+      strUnexpectedServerResponse = "Unexpected server response";
+      strTryDifferentWorld = "Please try using a different world.";
       field_3627 = "";
       field_3553 = " has logged in.";
       field_3625 = " has logged out.";
@@ -1071,7 +1071,7 @@ public class class_305 {
       field_3633 = "Authenticator";
       field_3634 = "<u=ff>Can\'t Log In?</u>";
       field_3635 = "";
-      field_3430 = "Connecting to server...";
+      strConnectingServer = "Connecting to server...";
       field_3637 = "";
       field_3638 = "The game servers are currently being updated.";
       field_3644 = "Please wait a few minutes and try again.";
@@ -1083,8 +1083,8 @@ public class class_305 {
       field_3645 = "Password: ";
       field_3646 = "PIN: ";
       field_3647 = "Welcome to RuneScape";
-      field_3413 = "New User";
-      field_3649 = "Existing User";
+      strNewUser = "New User";
+      strExistingUser = "Existing User";
       field_3620 = "Login";
       field_3651 = "Cancel";
       field_3517 = "Remember username";

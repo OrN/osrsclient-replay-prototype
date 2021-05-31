@@ -210,10 +210,10 @@ public class class_90 extends class_59 {
                return;
             }
 
-            var9 = class_112.method_2238(class_266.field_3147, client.field_1463.field_2384, (byte)8);
-            var9.field_263.writeInt(var1);
-            var9.field_263.method_167(var0);
-            var9.field_263.method_333(var3);
+            var9 = class_112.method_2238(class_266.field_3147, client.field_1463.isaac, (byte)8);
+            var9.networkBuffer.writeIntAltReversed(var1);
+            var9.networkBuffer.writeShortAlt(var0);
+            var9.networkBuffer.writeShortReverse(var3);
             client.field_1463.method_4079(var9);
             client.field_1523 = 0;
             class_303.field_3395 = class_71.method_1047(var1);
@@ -232,13 +232,13 @@ public class class_90 extends class_59 {
             client.field_1645 = 0;
             client.field_1520 = 819547401 * var0;
             client.field_1562 = var1 * 1551872625;
-            var9 = class_112.method_2238(class_266.field_3051, client.field_1463.field_2384, (byte)8);
-            var9.field_263.method_165(class_178.field_2220 * 81340013);
-            var9.field_263.method_185(var3);
-            var9.field_263.method_165(class_189.field_2276 * 1854633345);
-            var9.field_263.method_167(class_154.field_1929 * -27903763 + var1);
-            var9.field_263.method_165(class_243.field_2700 * 697161691 + var0);
-            var9.field_263.method_177(class_100.field_1172 * 1565845213);
+            var9 = class_112.method_2238(class_266.field_3051, client.field_1463.isaac, (byte)8);
+            var9.networkBuffer.writeShort(class_178.field_2220 * 81340013);
+            var9.networkBuffer.method_185(var3);
+            var9.networkBuffer.writeShort(class_189.field_2276 * 1854633345);
+            var9.networkBuffer.writeShortAlt(class_154.field_1929 * -27903763 + var1);
+            var9.networkBuffer.writeShort(class_243.field_2700 * 697161691 + var0);
+            var9.networkBuffer.writeIntAlt(class_100.field_1172 * 1565845213);
             if(class_145.field_1840[82]) {
                if(var8 == 594496727) {
                   throw new IllegalStateException();
@@ -249,7 +249,7 @@ public class class_90 extends class_59 {
                var10001 = 0;
             }
 
-            var9.field_263.method_148(var10001);
+            var9.networkBuffer.method_148(var10001);
             client.field_1463.method_4079(var9);
          }
 
@@ -268,8 +268,8 @@ public class class_90 extends class_59 {
                client.field_1645 = 0;
                client.field_1520 = 819547401 * var0;
                client.field_1562 = var1 * 1551872625;
-               var10 = class_112.method_2238(class_266.field_3079, client.field_1463.field_2384, (byte)8);
-               var10.field_263.method_185(var3);
+               var10 = class_112.method_2238(class_266.field_3079, client.field_1463.isaac, (byte)8);
+               var10.networkBuffer.method_185(var3);
                if(class_145.field_1840[82]) {
                   if(var8 == 594496727) {
                      throw new IllegalStateException();
@@ -280,7 +280,7 @@ public class class_90 extends class_59 {
                   var10001 = 0;
                }
 
-               var10.field_263.method_148(var10001);
+               var10.networkBuffer.method_148(var10001);
                client.field_1463.method_4079(var10);
             }
          }
@@ -297,13 +297,13 @@ public class class_90 extends class_59 {
                   throw new IllegalStateException();
                }
 
-               var10 = class_112.method_2238(class_266.field_3072, client.field_1463.field_2384, (byte)8);
-               var10.field_263.writeInt(var1);
-               var10.field_263.method_185(539336237 * var14.field_229);
-               var10.field_263.method_165(client.field_1564 * 1424616685);
-               var10.field_263.method_116(class_148.field_1875 * 1430642749);
-               var10.field_263.method_185(1683168531 * client.field_1573);
-               var10.field_263.method_165(var0);
+               var10 = class_112.method_2238(class_266.field_3072, client.field_1463.isaac, (byte)8);
+               var10.networkBuffer.writeIntAltReversed(var1);
+               var10.networkBuffer.method_185(539336237 * var14.field_229);
+               var10.networkBuffer.writeShort(client.field_1564 * 1424616685);
+               var10.networkBuffer.writeIntReverse(class_148.field_1875 * 1430642749);
+               var10.networkBuffer.method_185(1683168531 * client.field_1573);
+               var10.networkBuffer.writeShort(var0);
                client.field_1463.method_4079(var10);
             }
          }
@@ -322,7 +322,7 @@ public class class_90 extends class_59 {
                client.field_1645 = 0;
                client.field_1520 = 819547401 * var0;
                client.field_1562 = 1551872625 * var1;
-               var10 = class_112.method_2238(class_266.field_3099, client.field_1463.field_2384, (byte)8);
+               var10 = class_112.method_2238(class_266.field_3099, client.field_1463.isaac, (byte)8);
                if(class_145.field_1840[82]) {
                   if(var8 == 594496727) {
                      return;
@@ -333,8 +333,8 @@ public class class_90 extends class_59 {
                   var10001 = 0;
                }
 
-               var10.field_263.method_158(var10001);
-               var10.field_263.method_167(var3);
+               var10.networkBuffer.method_158(var10001);
+               var10.networkBuffer.writeShortAlt(var3);
                client.field_1463.method_4079(var10);
             }
          }
@@ -346,8 +346,8 @@ public class class_90 extends class_59 {
                throw new IllegalStateException();
             }
 
-            var9 = class_112.method_2238(class_266.field_3093, client.field_1463.field_2384, (byte)8);
-            var9.field_263.method_116(var1);
+            var9 = class_112.method_2238(class_266.field_3093, client.field_1463.isaac, (byte)8);
+            var9.networkBuffer.writeIntReverse(var1);
             client.field_1463.method_4079(var9);
             var16 = class_71.method_1047(var1);
             if(var16.field_221 != null) {
@@ -372,10 +372,10 @@ public class class_90 extends class_59 {
                return;
             }
 
-            var9 = class_112.method_2238(class_266.field_3107, client.field_1463.field_2384, (byte)8);
-            var9.field_263.method_185(var3);
-            var9.field_263.method_167(var0);
-            var9.field_263.method_176(var1);
+            var9 = class_112.method_2238(class_266.field_3107, client.field_1463.isaac, (byte)8);
+            var9.networkBuffer.method_185(var3);
+            var9.networkBuffer.writeShortAlt(var0);
+            var9.networkBuffer.writeInt(var1);
             client.field_1463.method_4079(var9);
             client.field_1523 = 0;
             class_303.field_3395 = class_71.method_1047(var1);
@@ -387,10 +387,10 @@ public class class_90 extends class_59 {
                throw new IllegalStateException();
             }
 
-            var9 = class_112.method_2238(class_266.field_3050, client.field_1463.field_2384, (byte)8);
-            var9.field_263.writeInt(var1);
-            var9.field_263.method_165(var0);
-            var9.field_263.method_165(var3);
+            var9 = class_112.method_2238(class_266.field_3050, client.field_1463.isaac, (byte)8);
+            var9.networkBuffer.writeIntAltReversed(var1);
+            var9.networkBuffer.writeShort(var0);
+            var9.networkBuffer.writeShort(var3);
             client.field_1463.method_4079(var9);
             client.field_1523 = 0;
             class_303.field_3395 = class_71.method_1047(var1);
@@ -410,11 +410,11 @@ public class class_90 extends class_59 {
                client.field_1645 = 0;
                client.field_1520 = 819547401 * var0;
                client.field_1562 = 1551872625 * var1;
-               var10 = class_112.method_2238(class_266.field_3073, client.field_1463.field_2384, (byte)8);
-               var10.field_263.method_177(1430642749 * class_148.field_1875);
-               var10.field_263.method_165(1424616685 * client.field_1564);
-               var10.field_263.method_165(var3);
-               var10.field_263.method_333(1683168531 * client.field_1573);
+               var10 = class_112.method_2238(class_266.field_3073, client.field_1463.isaac, (byte)8);
+               var10.networkBuffer.writeIntAlt(1430642749 * class_148.field_1875);
+               var10.networkBuffer.writeShort(1424616685 * client.field_1564);
+               var10.networkBuffer.writeShort(var3);
+               var10.networkBuffer.writeShortReverse(1683168531 * client.field_1573);
                if(class_145.field_1840[82]) {
                   if(var8 == 594496727) {
                      throw new IllegalStateException();
@@ -425,7 +425,7 @@ public class class_90 extends class_59 {
                   var10001 = 0;
                }
 
-               var10.field_263.method_158(var10001);
+               var10.networkBuffer.method_158(var10001);
                client.field_1463.method_4079(var10);
             }
          }
@@ -439,8 +439,8 @@ public class class_90 extends class_59 {
             client.field_1519 = 246678685 * var7;
             client.field_1521 = -1022456306;
             client.field_1645 = 0;
-            var9 = class_112.method_2238(class_266.field_3065, client.field_1463.field_2384, (byte)8);
-            var9.field_263.method_165(var3);
+            var9 = class_112.method_2238(class_266.field_3065, client.field_1463.isaac, (byte)8);
+            var9.networkBuffer.writeShort(var3);
             client.field_1463.method_4079(var9);
          }
 
@@ -449,10 +449,10 @@ public class class_90 extends class_59 {
                throw new IllegalStateException();
             }
 
-            var9 = class_112.method_2238(class_266.field_3109, client.field_1463.field_2384, (byte)8);
-            var9.field_263.method_177(var1);
-            var9.field_263.method_333(var3);
-            var9.field_263.method_185(var0);
+            var9 = class_112.method_2238(class_266.field_3109, client.field_1463.isaac, (byte)8);
+            var9.networkBuffer.writeIntAlt(var1);
+            var9.networkBuffer.writeShortReverse(var3);
+            var9.networkBuffer.method_185(var0);
             client.field_1463.method_4079(var9);
             client.field_1523 = 0;
             class_303.field_3395 = class_71.method_1047(var1);
@@ -464,13 +464,13 @@ public class class_90 extends class_59 {
                return;
             }
 
-            var9 = class_112.method_2238(class_266.field_3105, client.field_1463.field_2384, (byte)8);
-            var9.field_263.method_116(var1);
-            var9.field_263.writeInt(1565845213 * class_100.field_1172);
-            var9.field_263.method_185(var0);
-            var9.field_263.method_333(var3);
-            var9.field_263.method_167(81340013 * class_178.field_2220);
-            var9.field_263.method_167(class_189.field_2276 * 1854633345);
+            var9 = class_112.method_2238(class_266.field_3105, client.field_1463.isaac, (byte)8);
+            var9.networkBuffer.writeIntReverse(var1);
+            var9.networkBuffer.writeIntAltReversed(1565845213 * class_100.field_1172);
+            var9.networkBuffer.method_185(var0);
+            var9.networkBuffer.writeShortReverse(var3);
+            var9.networkBuffer.writeShortAlt(81340013 * class_178.field_2220);
+            var9.networkBuffer.writeShortAlt(class_189.field_2276 * 1854633345);
             client.field_1463.method_4079(var9);
             client.field_1523 = 0;
             class_303.field_3395 = class_71.method_1047(var1);
@@ -488,11 +488,11 @@ public class class_90 extends class_59 {
             client.field_1645 = 0;
             client.field_1520 = var0 * 819547401;
             client.field_1562 = 1551872625 * var1;
-            var9 = class_112.method_2238(class_266.field_3146, client.field_1463.field_2384, (byte)8);
-            var9.field_263.method_165(var0 + 697161691 * class_243.field_2700);
-            var9.field_263.method_167(-27903763 * class_154.field_1929 + var1);
-            var9.field_263.method_145(class_145.field_1840[82]?1:0);
-            var9.field_263.method_185(var3);
+            var9 = class_112.method_2238(class_266.field_3146, client.field_1463.isaac, (byte)8);
+            var9.networkBuffer.writeShort(var0 + 697161691 * class_243.field_2700);
+            var9.networkBuffer.writeShortAlt(-27903763 * class_154.field_1929 + var1);
+            var9.networkBuffer.method_145(class_145.field_1840[82]?1:0);
+            var9.networkBuffer.method_185(var3);
             client.field_1463.method_4079(var9);
          }
 
@@ -501,10 +501,10 @@ public class class_90 extends class_59 {
                return;
             }
 
-            var9 = class_112.method_2238(class_266.field_3113, client.field_1463.field_2384, (byte)8);
-            var9.field_263.method_165(var3);
-            var9.field_263.method_185(var0);
-            var9.field_263.writeInt(var1);
+            var9 = class_112.method_2238(class_266.field_3113, client.field_1463.isaac, (byte)8);
+            var9.networkBuffer.writeShort(var3);
+            var9.networkBuffer.method_185(var0);
+            var9.networkBuffer.writeIntAltReversed(var1);
             client.field_1463.method_4079(var9);
             client.field_1523 = 0;
             class_303.field_3395 = class_71.method_1047(var1);
@@ -516,12 +516,12 @@ public class class_90 extends class_59 {
                return;
             }
 
-            var9 = class_112.method_2238(class_266.field_3083, client.field_1463.field_2384, (byte)8);
-            var9.field_263.method_177(1430642749 * class_148.field_1875);
-            var9.field_263.method_185(1683168531 * client.field_1573);
-            var9.field_263.method_177(var1);
-            var9.field_263.method_165(var3);
-            var9.field_263.method_185(var0);
+            var9 = class_112.method_2238(class_266.field_3083, client.field_1463.isaac, (byte)8);
+            var9.networkBuffer.writeIntAlt(1430642749 * class_148.field_1875);
+            var9.networkBuffer.method_185(1683168531 * client.field_1573);
+            var9.networkBuffer.writeIntAlt(var1);
+            var9.networkBuffer.writeShort(var3);
+            var9.networkBuffer.method_185(var0);
             client.field_1463.method_4079(var9);
             client.field_1523 = 0;
             class_303.field_3395 = class_71.method_1047(var1);
@@ -539,9 +539,9 @@ public class class_90 extends class_59 {
             client.field_1645 = 0;
             client.field_1520 = 819547401 * var0;
             client.field_1562 = var1 * 1551872625;
-            var9 = class_112.method_2238(class_266.field_3049, client.field_1463.field_2384, (byte)8);
-            var9.field_263.method_167(var3);
-            var9.field_263.method_333(class_154.field_1929 * -27903763 + var1);
+            var9 = class_112.method_2238(class_266.field_3049, client.field_1463.isaac, (byte)8);
+            var9.networkBuffer.writeShortAlt(var3);
+            var9.networkBuffer.writeShortReverse(class_154.field_1929 * -27903763 + var1);
             if(class_145.field_1840[82]) {
                if(var8 == 594496727) {
                   return;
@@ -552,8 +552,8 @@ public class class_90 extends class_59 {
                var10001 = 0;
             }
 
-            var9.field_263.method_145(var10001);
-            var9.field_263.method_333(var0 + class_243.field_2700 * 697161691);
+            var9.networkBuffer.method_145(var10001);
+            var9.networkBuffer.writeShortReverse(var0 + class_243.field_2700 * 697161691);
             client.field_1463.method_4079(var9);
          }
 
@@ -584,11 +584,11 @@ public class class_90 extends class_59 {
             client.field_1645 = 0;
             client.field_1520 = var0 * 819547401;
             client.field_1562 = 1551872625 * var1;
-            var9 = class_112.method_2238(class_266.field_3140, client.field_1463.field_2384, (byte)8);
-            var9.field_263.method_333(var3);
-            var9.field_263.method_148(class_145.field_1840[82]?1:0);
-            var9.field_263.method_167(-27903763 * class_154.field_1929 + var1);
-            var9.field_263.method_333(697161691 * class_243.field_2700 + var0);
+            var9 = class_112.method_2238(class_266.field_3140, client.field_1463.isaac, (byte)8);
+            var9.networkBuffer.writeShortReverse(var3);
+            var9.networkBuffer.method_148(class_145.field_1840[82]?1:0);
+            var9.networkBuffer.writeShortAlt(-27903763 * class_154.field_1929 + var1);
+            var9.networkBuffer.writeShortReverse(697161691 * class_243.field_2700 + var0);
             client.field_1463.method_4079(var9);
          }
 
@@ -597,10 +597,10 @@ public class class_90 extends class_59 {
                throw new IllegalStateException();
             }
 
-            var9 = class_112.method_2238(class_266.field_3135, client.field_1463.field_2384, (byte)8);
-            var9.field_263.method_176(var1);
-            var9.field_263.method_165(var3);
-            var9.field_263.method_167(var0);
+            var9 = class_112.method_2238(class_266.field_3135, client.field_1463.isaac, (byte)8);
+            var9.networkBuffer.writeInt(var1);
+            var9.networkBuffer.writeShort(var3);
+            var9.networkBuffer.writeShortAlt(var0);
             client.field_1463.method_4079(var9);
             client.field_1523 = 0;
             class_303.field_3395 = class_71.method_1047(var1);
@@ -618,7 +618,7 @@ public class class_90 extends class_59 {
             client.field_1645 = 0;
             client.field_1520 = var0 * 819547401;
             client.field_1562 = var1 * 1551872625;
-            var9 = class_112.method_2238(class_266.field_3115, client.field_1463.field_2384, (byte)8);
+            var9 = class_112.method_2238(class_266.field_3115, client.field_1463.isaac, (byte)8);
             if(class_145.field_1840[82]) {
                if(var8 == 594496727) {
                   throw new IllegalStateException();
@@ -629,10 +629,10 @@ public class class_90 extends class_59 {
                var10001 = 0;
             }
 
-            var9.field_263.method_158(var10001);
-            var9.field_263.method_167(var3);
-            var9.field_263.method_333(697161691 * class_243.field_2700 + var0);
-            var9.field_263.method_165(var1 + class_154.field_1929 * -27903763);
+            var9.networkBuffer.method_158(var10001);
+            var9.networkBuffer.writeShortAlt(var3);
+            var9.networkBuffer.writeShortReverse(697161691 * class_243.field_2700 + var0);
+            var9.networkBuffer.writeShort(var1 + class_154.field_1929 * -27903763);
             client.field_1463.method_4079(var9);
          }
 
@@ -647,9 +647,9 @@ public class class_90 extends class_59 {
             client.field_1645 = 0;
             client.field_1520 = var0 * 819547401;
             client.field_1562 = var1 * 1551872625;
-            var9 = class_112.method_2238(class_266.field_3100, client.field_1463.field_2384, (byte)8);
-            var9.field_263.method_333(class_243.field_2700 * 697161691 + var0);
-            var9.field_263.method_167(var3);
+            var9 = class_112.method_2238(class_266.field_3100, client.field_1463.isaac, (byte)8);
+            var9.networkBuffer.writeShortReverse(class_243.field_2700 * 697161691 + var0);
+            var9.networkBuffer.writeShortAlt(var3);
             if(class_145.field_1840[82]) {
                if(var8 == 594496727) {
                   throw new IllegalStateException();
@@ -660,8 +660,8 @@ public class class_90 extends class_59 {
                var10001 = 0;
             }
 
-            var9.field_263.method_145(var10001);
-            var9.field_263.method_167(-27903763 * class_154.field_1929 + var1);
+            var9.networkBuffer.method_145(var10001);
+            var9.networkBuffer.writeShortAlt(-27903763 * class_154.field_1929 + var1);
             client.field_1463.method_4079(var9);
          }
 
@@ -682,9 +682,9 @@ public class class_90 extends class_59 {
                client.field_1645 = 0;
                client.field_1520 = 819547401 * var0;
                client.field_1562 = 1551872625 * var1;
-               var10 = class_112.method_2238(class_266.field_3097, client.field_1463.field_2384, (byte)8);
-               var10.field_263.writeInt(class_100.field_1172 * 1565845213);
-               var10.field_263.method_185(class_189.field_2276 * 1854633345);
+               var10 = class_112.method_2238(class_266.field_3097, client.field_1463.isaac, (byte)8);
+               var10.networkBuffer.writeIntAltReversed(class_100.field_1172 * 1565845213);
+               var10.networkBuffer.method_185(class_189.field_2276 * 1854633345);
                if(class_145.field_1840[82]) {
                   if(var8 == 594496727) {
                      throw new IllegalStateException();
@@ -695,9 +695,9 @@ public class class_90 extends class_59 {
                   var10001 = 0;
                }
 
-               var10.field_263.method_145(var10001);
-               var10.field_263.method_185(81340013 * class_178.field_2220);
-               var10.field_263.method_333(var3);
+               var10.networkBuffer.method_145(var10001);
+               var10.networkBuffer.method_185(81340013 * class_178.field_2220);
+               var10.networkBuffer.writeShortReverse(var3);
                client.field_1463.method_4079(var10);
             }
          }
@@ -713,7 +713,7 @@ public class class_90 extends class_59 {
             client.field_1645 = 0;
             client.field_1520 = 819547401 * var0;
             client.field_1562 = var1 * 1551872625;
-            var9 = class_112.method_2238(class_266.field_3142, client.field_1463.field_2384, (byte)8);
+            var9 = class_112.method_2238(class_266.field_3142, client.field_1463.isaac, (byte)8);
             if(class_145.field_1840[82]) {
                if(var8 == 594496727) {
                   return;
@@ -724,13 +724,13 @@ public class class_90 extends class_59 {
                var10001 = 0;
             }
 
-            var9.field_263.method_145(var10001);
-            var9.field_263.method_176(1430642749 * class_148.field_1875);
-            var9.field_263.method_165(class_154.field_1929 * -27903763 + var1);
-            var9.field_263.method_167(1424616685 * client.field_1564);
-            var9.field_263.method_185(var3);
-            var9.field_263.method_333(var0 + class_243.field_2700 * 697161691);
-            var9.field_263.method_165(1683168531 * client.field_1573);
+            var9.networkBuffer.method_145(var10001);
+            var9.networkBuffer.writeInt(1430642749 * class_148.field_1875);
+            var9.networkBuffer.writeShort(class_154.field_1929 * -27903763 + var1);
+            var9.networkBuffer.writeShortAlt(1424616685 * client.field_1564);
+            var9.networkBuffer.method_185(var3);
+            var9.networkBuffer.writeShortReverse(var0 + class_243.field_2700 * 697161691);
+            var9.networkBuffer.writeShort(1683168531 * client.field_1573);
             client.field_1463.method_4079(var9);
          }
 
@@ -751,7 +751,7 @@ public class class_90 extends class_59 {
                client.field_1645 = 0;
                client.field_1520 = var0 * 819547401;
                client.field_1562 = 1551872625 * var1;
-               var10 = class_112.method_2238(class_266.field_3110, client.field_1463.field_2384, (byte)8);
+               var10 = class_112.method_2238(class_266.field_3110, client.field_1463.isaac, (byte)8);
                if(class_145.field_1840[82]) {
                   if(var8 == 594496727) {
                      throw new IllegalStateException();
@@ -762,8 +762,8 @@ public class class_90 extends class_59 {
                   var10001 = 0;
                }
 
-               var10.field_263.method_145(var10001);
-               var10.field_263.method_167(var3);
+               var10.networkBuffer.method_145(var10001);
+               var10.networkBuffer.writeShortAlt(var3);
                client.field_1463.method_4079(var10);
             }
          }
@@ -804,11 +804,11 @@ public class class_90 extends class_59 {
             client.field_1645 = 0;
             client.field_1520 = 819547401 * var0;
             client.field_1562 = 1551872625 * var1;
-            var9 = class_112.method_2238(class_266.field_3114, client.field_1463.field_2384, (byte)8);
-            var9.field_263.method_167(var0 + 697161691 * class_243.field_2700);
-            var9.field_263.method_158(class_145.field_1840[82]?1:0);
-            var9.field_263.method_333(var3);
-            var9.field_263.method_167(-27903763 * class_154.field_1929 + var1);
+            var9 = class_112.method_2238(class_266.field_3114, client.field_1463.isaac, (byte)8);
+            var9.networkBuffer.writeShortAlt(var0 + 697161691 * class_243.field_2700);
+            var9.networkBuffer.method_158(class_145.field_1840[82]?1:0);
+            var9.networkBuffer.writeShortReverse(var3);
+            var9.networkBuffer.writeShortAlt(-27903763 * class_154.field_1929 + var1);
             client.field_1463.method_4079(var9);
          }
 
@@ -823,14 +823,14 @@ public class class_90 extends class_59 {
             client.field_1645 = 0;
             client.field_1520 = var0 * 819547401;
             client.field_1562 = 1551872625 * var1;
-            var9 = class_112.method_2238(class_266.field_3151, client.field_1463.field_2384, (byte)8);
-            var9.field_263.method_185(1854633345 * class_189.field_2276);
-            var9.field_263.method_167(var3);
-            var9.field_263.method_158(class_145.field_1840[82]?1:0);
-            var9.field_263.method_167(class_154.field_1929 * -27903763 + var1);
-            var9.field_263.method_116(class_100.field_1172 * 1565845213);
-            var9.field_263.method_167(var0 + 697161691 * class_243.field_2700);
-            var9.field_263.method_333(class_178.field_2220 * 81340013);
+            var9 = class_112.method_2238(class_266.field_3151, client.field_1463.isaac, (byte)8);
+            var9.networkBuffer.method_185(1854633345 * class_189.field_2276);
+            var9.networkBuffer.writeShortAlt(var3);
+            var9.networkBuffer.method_158(class_145.field_1840[82]?1:0);
+            var9.networkBuffer.writeShortAlt(class_154.field_1929 * -27903763 + var1);
+            var9.networkBuffer.writeIntReverse(class_100.field_1172 * 1565845213);
+            var9.networkBuffer.writeShortAlt(var0 + 697161691 * class_243.field_2700);
+            var9.networkBuffer.writeShortReverse(class_178.field_2220 * 81340013);
             client.field_1463.method_4079(var9);
          }
 
@@ -863,7 +863,7 @@ public class class_90 extends class_59 {
                client.field_1645 = 0;
                client.field_1520 = var0 * 819547401;
                client.field_1562 = var1 * 1551872625;
-               var10 = class_112.method_2238(class_266.field_3111, client.field_1463.field_2384, (byte)8);
+               var10 = class_112.method_2238(class_266.field_3111, client.field_1463.isaac, (byte)8);
                if(class_145.field_1840[82]) {
                   if(var8 == 594496727) {
                      throw new IllegalStateException();
@@ -874,8 +874,8 @@ public class class_90 extends class_59 {
                   var10001 = 0;
                }
 
-               var10.field_263.method_148(var10001);
-               var10.field_263.method_333(var3);
+               var10.networkBuffer.method_148(var10001);
+               var10.networkBuffer.writeShortReverse(var3);
                client.field_1463.method_4079(var10);
             }
          }
@@ -893,8 +893,8 @@ public class class_90 extends class_59 {
                client.field_1645 = 0;
                client.field_1520 = 819547401 * var0;
                client.field_1562 = var1 * 1551872625;
-               var10 = class_112.method_2238(class_266.field_3076, client.field_1463.field_2384, (byte)8);
-               var10.field_263.method_167(var3);
+               var10 = class_112.method_2238(class_266.field_3076, client.field_1463.isaac, (byte)8);
+               var10.networkBuffer.writeShortAlt(var3);
                if(class_145.field_1840[82]) {
                   if(var8 == 594496727) {
                      throw new IllegalStateException();
@@ -905,7 +905,7 @@ public class class_90 extends class_59 {
                   var10001 = 0;
                }
 
-               var10.field_263.writeByte(var10001);
+               var10.networkBuffer.writeByte(var10001);
                client.field_1463.method_4079(var10);
             }
          }
@@ -947,8 +947,8 @@ public class class_90 extends class_59 {
                   client.field_1645 = 0;
                   client.field_1520 = var0 * 819547401;
                   client.field_1562 = var1 * 1551872625;
-                  var10 = class_112.method_2238(class_266.field_3128, client.field_1463.field_2384, (byte)8);
-                  var10.field_263.method_165(var3);
+                  var10 = class_112.method_2238(class_266.field_3128, client.field_1463.isaac, (byte)8);
+                  var10.networkBuffer.writeShort(var3);
                   if(class_145.field_1840[82]) {
                      if(var8 == 594496727) {
                         return;
@@ -959,7 +959,7 @@ public class class_90 extends class_59 {
                      var10001 = 0;
                   }
 
-                  var10.field_263.writeByte(var10001);
+                  var10.networkBuffer.writeByte(var10001);
                   client.field_1463.method_4079(var10);
                }
             }
@@ -981,7 +981,7 @@ public class class_90 extends class_59 {
                   client.field_1645 = 0;
                   client.field_1520 = var0 * 819547401;
                   client.field_1562 = 1551872625 * var1;
-                  var10 = class_112.method_2238(class_266.field_3094, client.field_1463.field_2384, (byte)8);
+                  var10 = class_112.method_2238(class_266.field_3094, client.field_1463.isaac, (byte)8);
                   if(class_145.field_1840[82]) {
                      if(var8 == 594496727) {
                         throw new IllegalStateException();
@@ -992,8 +992,8 @@ public class class_90 extends class_59 {
                      var10001 = 0;
                   }
 
-                  var10.field_263.writeByte(var10001);
-                  var10.field_263.method_167(var3);
+                  var10.networkBuffer.writeByte(var10001);
+                  var10.networkBuffer.writeShortAlt(var3);
                   client.field_1463.method_4079(var10);
                }
             }
@@ -1003,8 +1003,8 @@ public class class_90 extends class_59 {
                client.field_1519 = 246678685 * var7;
                client.field_1521 = -1022456306;
                client.field_1645 = 0;
-               var9 = class_112.method_2238(class_266.field_3120, client.field_1463.field_2384, (byte)8);
-               var9.field_263.method_165(var3);
+               var9 = class_112.method_2238(class_266.field_3120, client.field_1463.isaac, (byte)8);
+               var9.networkBuffer.writeShort(var3);
                client.field_1463.method_4079(var9);
             }
 
@@ -1021,8 +1021,8 @@ public class class_90 extends class_59 {
                   client.field_1645 = 0;
                   client.field_1520 = 819547401 * var0;
                   client.field_1562 = var1 * 1551872625;
-                  var10 = class_112.method_2238(class_266.field_3071, client.field_1463.field_2384, (byte)8);
-                  var10.field_263.method_185(var3);
+                  var10 = class_112.method_2238(class_266.field_3071, client.field_1463.isaac, (byte)8);
+                  var10.networkBuffer.method_185(var3);
                   if(class_145.field_1840[82]) {
                      if(var8 == 594496727) {
                         throw new IllegalStateException();
@@ -1033,7 +1033,7 @@ public class class_90 extends class_59 {
                      var10001 = 0;
                   }
 
-                  var10.field_263.method_148(var10001);
+                  var10.networkBuffer.method_148(var10001);
                   client.field_1463.method_4079(var10);
                }
             }
@@ -1055,7 +1055,7 @@ public class class_90 extends class_59 {
                   client.field_1645 = 0;
                   client.field_1520 = var0 * 819547401;
                   client.field_1562 = var1 * 1551872625;
-                  var10 = class_112.method_2238(class_266.field_3098, client.field_1463.field_2384, (byte)8);
+                  var10 = class_112.method_2238(class_266.field_3098, client.field_1463.isaac, (byte)8);
                   if(class_145.field_1840[82]) {
                      if(var8 == 594496727) {
                         throw new IllegalStateException();
@@ -1066,8 +1066,8 @@ public class class_90 extends class_59 {
                      var10001 = 0;
                   }
 
-                  var10.field_263.method_145(var10001);
-                  var10.field_263.method_165(var3);
+                  var10.networkBuffer.method_145(var10001);
+                  var10.networkBuffer.writeShort(var3);
                   client.field_1463.method_4079(var10);
                }
             }
@@ -1089,7 +1089,7 @@ public class class_90 extends class_59 {
                   client.field_1645 = 0;
                   client.field_1520 = 819547401 * var0;
                   client.field_1562 = var1 * 1551872625;
-                  var10 = class_112.method_2238(class_266.field_3149, client.field_1463.field_2384, (byte)8);
+                  var10 = class_112.method_2238(class_266.field_3149, client.field_1463.isaac, (byte)8);
                   if(class_145.field_1840[82]) {
                      if(var8 == 594496727) {
                         throw new IllegalStateException();
@@ -1100,11 +1100,11 @@ public class class_90 extends class_59 {
                      var10001 = 0;
                   }
 
-                  var10.field_263.writeByte(var10001);
-                  var10.field_263.method_167(class_189.field_2276 * 1854633345);
-                  var10.field_263.method_177(class_100.field_1172 * 1565845213);
-                  var10.field_263.method_185(var3);
-                  var10.field_263.method_165(class_178.field_2220 * 81340013);
+                  var10.networkBuffer.writeByte(var10001);
+                  var10.networkBuffer.writeShortAlt(class_189.field_2276 * 1854633345);
+                  var10.networkBuffer.writeIntAlt(class_100.field_1172 * 1565845213);
+                  var10.networkBuffer.method_185(var3);
+                  var10.networkBuffer.writeShort(class_178.field_2220 * 81340013);
                   client.field_1463.method_4079(var10);
                }
             }
@@ -1114,8 +1114,8 @@ public class class_90 extends class_59 {
                   throw new IllegalStateException();
                }
 
-               var9 = class_112.method_2238(class_266.field_3093, client.field_1463.field_2384, (byte)8);
-               var9.field_263.method_116(var1);
+               var9 = class_112.method_2238(class_266.field_3093, client.field_1463.isaac, (byte)8);
+               var9.networkBuffer.writeIntReverse(var1);
                client.field_1463.method_4079(var9);
                var16 = class_71.method_1047(var1);
                if(null != var16.field_221) {
@@ -1167,8 +1167,8 @@ public class class_90 extends class_59 {
                         throw new IllegalStateException();
                      }
 
-                     var17 = class_112.method_2238(class_266.field_3052, client.field_1463.field_2384, (byte)8);
-                     var17.field_263.method_165(var18.field_857 * -2060838679);
+                     var17 = class_112.method_2238(class_266.field_3052, client.field_1463.isaac, (byte)8);
+                     var17.networkBuffer.writeShort(var18.field_857 * -2060838679);
                      client.field_1463.method_4079(var17);
                   }
                }
@@ -1185,9 +1185,9 @@ public class class_90 extends class_59 {
                client.field_1645 = 0;
                client.field_1520 = var0 * 819547401;
                client.field_1562 = 1551872625 * var1;
-               var9 = class_112.method_2238(class_266.field_3046, client.field_1463.field_2384, (byte)8);
-               var9.field_263.method_185(var3);
-               var9.field_263.method_185(var1 + -27903763 * class_154.field_1929);
+               var9 = class_112.method_2238(class_266.field_3046, client.field_1463.isaac, (byte)8);
+               var9.networkBuffer.method_185(var3);
+               var9.networkBuffer.method_185(var1 + -27903763 * class_154.field_1929);
                if(class_145.field_1840[82]) {
                   if(var8 == 594496727) {
                      throw new IllegalStateException();
@@ -1198,8 +1198,8 @@ public class class_90 extends class_59 {
                   var10001 = 0;
                }
 
-               var9.field_263.method_145(var10001);
-               var9.field_263.method_167(class_243.field_2700 * 697161691 + var0);
+               var9.networkBuffer.method_145(var10001);
+               var9.networkBuffer.writeShortAlt(class_243.field_2700 * 697161691 + var0);
                client.field_1463.method_4079(var9);
             }
 
@@ -1216,7 +1216,7 @@ public class class_90 extends class_59 {
                   client.field_1645 = 0;
                   client.field_1520 = var0 * 819547401;
                   client.field_1562 = var1 * 1551872625;
-                  var10 = class_112.method_2238(class_266.field_3075, client.field_1463.field_2384, (byte)8);
+                  var10 = class_112.method_2238(class_266.field_3075, client.field_1463.isaac, (byte)8);
                   if(class_145.field_1840[82]) {
                      if(var8 == 594496727) {
                         return;
@@ -1227,8 +1227,8 @@ public class class_90 extends class_59 {
                      var10001 = 0;
                   }
 
-                  var10.field_263.writeByte(var10001);
-                  var10.field_263.method_185(var3);
+                  var10.networkBuffer.writeByte(var10001);
+                  var10.networkBuffer.method_185(var3);
                   client.field_1463.method_4079(var10);
                }
             }
@@ -1244,12 +1244,12 @@ public class class_90 extends class_59 {
                client.field_1645 = 0;
                client.field_1520 = var0 * 819547401;
                client.field_1562 = 1551872625 * var1;
-               var9 = class_112.method_2238(class_266.field_3117, client.field_1463.field_2384, (byte)8);
-               var9.field_263.method_165(var0 + class_243.field_2700 * 697161691);
-               var9.field_263.method_333(var3);
-               var9.field_263.method_165(client.field_1564 * 1424616685);
-               var9.field_263.method_333(class_154.field_1929 * -27903763 + var1);
-               var9.field_263.method_333(client.field_1573 * 1683168531);
+               var9 = class_112.method_2238(class_266.field_3117, client.field_1463.isaac, (byte)8);
+               var9.networkBuffer.writeShort(var0 + class_243.field_2700 * 697161691);
+               var9.networkBuffer.writeShortReverse(var3);
+               var9.networkBuffer.writeShort(client.field_1564 * 1424616685);
+               var9.networkBuffer.writeShortReverse(class_154.field_1929 * -27903763 + var1);
+               var9.networkBuffer.writeShortReverse(client.field_1573 * 1683168531);
                if(class_145.field_1840[82]) {
                   if(var8 == 594496727) {
                      return;
@@ -1260,8 +1260,8 @@ public class class_90 extends class_59 {
                   var10001 = 0;
                }
 
-               var9.field_263.method_158(var10001);
-               var9.field_263.method_177(class_148.field_1875 * 1430642749);
+               var9.networkBuffer.method_158(var10001);
+               var9.networkBuffer.writeIntAlt(class_148.field_1875 * 1430642749);
                client.field_1463.method_4079(var9);
             }
 
@@ -1311,9 +1311,9 @@ public class class_90 extends class_59 {
                   client.field_1645 = 0;
                   client.field_1520 = 819547401 * var0;
                   client.field_1562 = var1 * 1551872625;
-                  var10 = class_112.method_2238(class_266.field_3092, client.field_1463.field_2384, (byte)8);
-                  var10.field_263.method_165(var3);
-                  var10.field_263.writeByte(class_145.field_1840[82]?1:0);
+                  var10 = class_112.method_2238(class_266.field_3092, client.field_1463.isaac, (byte)8);
+                  var10.networkBuffer.writeShort(var3);
+                  var10.networkBuffer.writeByte(class_145.field_1840[82]?1:0);
                   client.field_1463.method_4079(var10);
                }
             }
@@ -1334,8 +1334,8 @@ public class class_90 extends class_59 {
                      throw new IllegalStateException();
                   }
 
-                  var17 = class_112.method_2238(class_266.field_3093, client.field_1463.field_2384, (byte)8);
-                  var17.field_263.method_116(var1);
+                  var17 = class_112.method_2238(class_266.field_3093, client.field_1463.isaac, (byte)8);
+                  var17.networkBuffer.writeIntReverse(var1);
                   client.field_1463.method_4079(var17);
                }
             }
@@ -1351,9 +1351,9 @@ public class class_90 extends class_59 {
                client.field_1645 = 0;
                client.field_1520 = 819547401 * var0;
                client.field_1562 = 1551872625 * var1;
-               var9 = class_112.method_2238(class_266.field_3123, client.field_1463.field_2384, (byte)8);
-               var9.field_263.method_167(var3);
-               var9.field_263.method_185(697161691 * class_243.field_2700 + var0);
+               var9 = class_112.method_2238(class_266.field_3123, client.field_1463.isaac, (byte)8);
+               var9.networkBuffer.writeShortAlt(var3);
+               var9.networkBuffer.method_185(697161691 * class_243.field_2700 + var0);
                if(class_145.field_1840[82]) {
                   if(var8 == 594496727) {
                      throw new IllegalStateException();
@@ -1364,8 +1364,8 @@ public class class_90 extends class_59 {
                   var10001 = 0;
                }
 
-               var9.field_263.method_158(var10001);
-               var9.field_263.method_185(var1 + -27903763 * class_154.field_1929);
+               var9.networkBuffer.method_158(var10001);
+               var9.networkBuffer.method_185(var1 + -27903763 * class_154.field_1929);
                client.field_1463.method_4079(var9);
             }
 
@@ -1374,10 +1374,10 @@ public class class_90 extends class_59 {
                   throw new IllegalStateException();
                }
 
-               var9 = class_112.method_2238(class_266.field_3055, client.field_1463.field_2384, (byte)8);
-               var9.field_263.method_167(var0);
-               var9.field_263.method_165(var3);
-               var9.field_263.method_176(var1);
+               var9 = class_112.method_2238(class_266.field_3055, client.field_1463.isaac, (byte)8);
+               var9.networkBuffer.writeShortAlt(var0);
+               var9.networkBuffer.writeShort(var3);
+               var9.networkBuffer.writeInt(var1);
                client.field_1463.method_4079(var9);
                client.field_1523 = 0;
                class_303.field_3395 = class_71.method_1047(var1);
@@ -1385,10 +1385,10 @@ public class class_90 extends class_59 {
             }
 
             if(35 == var2) {
-               var9 = class_112.method_2238(class_266.field_3101, client.field_1463.field_2384, (byte)8);
-               var9.field_263.method_333(var3);
-               var9.field_263.method_177(var1);
-               var9.field_263.method_167(var0);
+               var9 = class_112.method_2238(class_266.field_3101, client.field_1463.isaac, (byte)8);
+               var9.networkBuffer.writeShortReverse(var3);
+               var9.networkBuffer.writeIntAlt(var1);
+               var9.networkBuffer.writeShortAlt(var0);
                client.field_1463.method_4079(var9);
                client.field_1523 = 0;
                class_303.field_3395 = class_71.method_1047(var1);
@@ -1408,10 +1408,10 @@ public class class_90 extends class_59 {
                   client.field_1645 = 0;
                   client.field_1520 = 819547401 * var0;
                   client.field_1562 = var1 * 1551872625;
-                  var10 = class_112.method_2238(class_266.field_3089, client.field_1463.field_2384, (byte)8);
-                  var10.field_263.method_185(client.field_1573 * 1683168531);
-                  var10.field_263.method_167(var3);
-                  var10.field_263.method_176(1430642749 * class_148.field_1875);
+                  var10 = class_112.method_2238(class_266.field_3089, client.field_1463.isaac, (byte)8);
+                  var10.networkBuffer.method_185(client.field_1573 * 1683168531);
+                  var10.networkBuffer.writeShortAlt(var3);
+                  var10.networkBuffer.writeInt(1430642749 * class_148.field_1875);
                   if(class_145.field_1840[82]) {
                      if(var8 == 594496727) {
                         throw new IllegalStateException();
@@ -1422,8 +1422,8 @@ public class class_90 extends class_59 {
                      var10001 = 0;
                   }
 
-                  var10.field_263.method_148(var10001);
-                  var10.field_263.method_167(client.field_1564 * 1424616685);
+                  var10.networkBuffer.method_148(var10001);
+                  var10.networkBuffer.writeShortAlt(client.field_1564 * 1424616685);
                   client.field_1463.method_4079(var10);
                }
             }
@@ -1439,11 +1439,11 @@ public class class_90 extends class_59 {
                client.field_1645 = 0;
                client.field_1520 = var0 * 819547401;
                client.field_1562 = 1551872625 * var1;
-               var9 = class_112.method_2238(class_266.field_3150, client.field_1463.field_2384, (byte)8);
-               var9.field_263.method_185(var3);
-               var9.field_263.method_165(var0 + class_243.field_2700 * 697161691);
-               var9.field_263.method_148(class_145.field_1840[82]?1:0);
-               var9.field_263.method_167(var1 + class_154.field_1929 * -27903763);
+               var9 = class_112.method_2238(class_266.field_3150, client.field_1463.isaac, (byte)8);
+               var9.networkBuffer.method_185(var3);
+               var9.networkBuffer.writeShort(var0 + class_243.field_2700 * 697161691);
+               var9.networkBuffer.method_148(class_145.field_1840[82]?1:0);
+               var9.networkBuffer.writeShortAlt(var1 + class_154.field_1929 * -27903763);
                client.field_1463.method_4079(var9);
             }
 
@@ -1464,8 +1464,8 @@ public class class_90 extends class_59 {
                   client.field_1645 = 0;
                   client.field_1520 = 819547401 * var0;
                   client.field_1562 = 1551872625 * var1;
-                  var10 = class_112.method_2238(class_266.field_3130, client.field_1463.field_2384, (byte)8);
-                  var10.field_263.method_333(var3);
+                  var10 = class_112.method_2238(class_266.field_3130, client.field_1463.isaac, (byte)8);
+                  var10.networkBuffer.writeShortReverse(var3);
                   if(class_145.field_1840[82]) {
                      if(var8 == 594496727) {
                         throw new IllegalStateException();
@@ -1476,7 +1476,7 @@ public class class_90 extends class_59 {
                      var10001 = 0;
                   }
 
-                  var10.field_263.method_158(var10001);
+                  var10.networkBuffer.method_158(var10001);
                   client.field_1463.method_4079(var10);
                }
             }
@@ -1519,10 +1519,10 @@ public class class_90 extends class_59 {
                      throw new IllegalStateException();
                   }
 
-                  var9 = class_112.method_2238(class_266.field_3053, client.field_1463.field_2384, (byte)8);
-                  var9.field_263.method_165(var0);
-                  var9.field_263.writeInt(var1);
-                  var9.field_263.method_185(var3);
+                  var9 = class_112.method_2238(class_266.field_3053, client.field_1463.isaac, (byte)8);
+                  var9.networkBuffer.writeShort(var0);
+                  var9.networkBuffer.writeIntAltReversed(var1);
+                  var9.networkBuffer.method_185(var3);
                   client.field_1463.method_4079(var9);
                   client.field_1523 = 0;
                   class_303.field_3395 = class_71.method_1047(var1);
@@ -1546,9 +1546,9 @@ public class class_90 extends class_59 {
                      client.field_1645 = 0;
                      client.field_1520 = var0 * 819547401;
                      client.field_1562 = var1 * 1551872625;
-                     var10 = class_112.method_2238(class_266.field_3144, client.field_1463.field_2384, (byte)8);
-                     var10.field_263.method_185(var3);
-                     var10.field_263.method_145(class_145.field_1840[82]?1:0);
+                     var10 = class_112.method_2238(class_266.field_3144, client.field_1463.isaac, (byte)8);
+                     var10.networkBuffer.method_185(var3);
+                     var10.networkBuffer.method_145(class_145.field_1840[82]?1:0);
                      client.field_1463.method_4079(var10);
                   }
                }
@@ -1558,10 +1558,10 @@ public class class_90 extends class_59 {
                      return;
                   }
 
-                  var9 = class_112.method_2238(class_266.field_3059, client.field_1463.field_2384, (byte)8);
-                  var9.field_263.method_177(var1);
-                  var9.field_263.method_165(var0);
-                  var9.field_263.method_333(var3);
+                  var9 = class_112.method_2238(class_266.field_3059, client.field_1463.isaac, (byte)8);
+                  var9.networkBuffer.writeIntAlt(var1);
+                  var9.networkBuffer.writeShort(var0);
+                  var9.networkBuffer.writeShortReverse(var3);
                   client.field_1463.method_4079(var9);
                   client.field_1523 = 0;
                   class_303.field_3395 = class_71.method_1047(var1);
@@ -1586,8 +1586,8 @@ public class class_90 extends class_59 {
                         }
                      }
 
-                     var10 = class_112.method_2238(class_266.field_3120, client.field_1463.field_2384, (byte)8);
-                     var10.field_263.method_165(var3);
+                     var10 = class_112.method_2238(class_266.field_3120, client.field_1463.isaac, (byte)8);
+                     var10.networkBuffer.writeShort(var3);
                      client.field_1463.method_4079(var10);
                   }
 
@@ -1607,9 +1607,9 @@ public class class_90 extends class_59 {
                   client.field_1645 = 0;
                   client.field_1520 = 819547401 * var0;
                   client.field_1562 = 1551872625 * var1;
-                  var9 = class_112.method_2238(class_266.field_3133, client.field_1463.field_2384, (byte)8);
-                  var9.field_263.method_165(class_243.field_2700 * 697161691 + var0);
-                  var9.field_263.method_167(-27903763 * class_154.field_1929 + var1);
+                  var9 = class_112.method_2238(class_266.field_3133, client.field_1463.isaac, (byte)8);
+                  var9.networkBuffer.writeShort(class_243.field_2700 * 697161691 + var0);
+                  var9.networkBuffer.writeShortAlt(-27903763 * class_154.field_1929 + var1);
                   if(class_145.field_1840[82]) {
                      if(var8 == 594496727) {
                         throw new IllegalStateException();
@@ -1620,8 +1620,8 @@ public class class_90 extends class_59 {
                      var10001 = 0;
                   }
 
-                  var9.field_263.method_145(var10001);
-                  var9.field_263.method_165(var3);
+                  var9.networkBuffer.method_145(var10001);
+                  var9.networkBuffer.writeShort(var3);
                   client.field_1463.method_4079(var9);
                }
 

@@ -5,22 +5,22 @@ import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 
 // $FF: renamed from: ak
-public class class_131 implements MouseListener, MouseMotionListener, FocusListener {
+public class GameMouseListener implements MouseListener, MouseMotionListener, FocusListener {
 
    // $FF: renamed from: m int
    public static int field_1701;
     // $FF: renamed from: o int
    public static int field_1703;
    // $FF: renamed from: p ak
-   public static class_131 field_1704;
+   public static GameMouseListener instance;
    // $FF: renamed from: r int
-   static volatile int field_1705;
+   static volatile int buttonsPressed;
    // $FF: renamed from: b int
-   static volatile int field_1706;
+   static volatile int mouseX;
    // $FF: renamed from: d int
-   static volatile int field_1707;
+   static volatile int mouseY;
    // $FF: renamed from: s long
-   static volatile long field_1708;
+   static volatile long mouseLastMoved;
    // $FF: renamed from: u int
    public static int field_1709;
     // $FF: renamed from: x int
@@ -28,11 +28,11 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
    // $FF: renamed from: y long
    public static long field_1712;
    // $FF: renamed from: c int
-   static volatile int field_1713;
+   static volatile int buttons;
    // $FF: renamed from: e int
-   static volatile int field_1714;
+   static volatile int mousePressedX;
    // $FF: renamed from: g int
-   static volatile int field_1715;
+   static volatile int mousePressedY;
    // $FF: renamed from: a long
    static volatile long field_1716;
    // $FF: renamed from: k int
@@ -56,21 +56,21 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
       }
    }
 
-   public final synchronized void mousePressed(MouseEvent var1) {
+   public final synchronized void mousePressed(MouseEvent event) {
       try {
-         if(null != field_1704) {
+         if(null != instance) {
             field_1718 = 0;
-            field_1714 = var1.getX() * 1537867177;
-            field_1715 = var1.getY() * 1303582181;
+            mousePressedX = event.getX() * 1537867177;
+            mousePressedY = event.getY() * 1303582181;
             field_1716 = class_87.method_1516((byte)1) * 5733810010149540283L;
-            field_1713 = this.method_2876(var1, 1689031104) * -621965751;
-            if(field_1713 * -1156070407 != 0) {
-               field_1705 = -1604755989 * field_1713;
+            buttons = this.getButtonsPressed(event, 1689031104) * -621965751;
+            if(buttons * -1156070407 != 0) {
+               buttonsPressed = -1604755989 * buttons;
             }
          }
 
-         if(var1.isPopupTrigger()) {
-            var1.consume();
+         if(event.isPopupTrigger()) {
+            event.consume();
          }
 
       } catch (RuntimeException var2) {
@@ -80,9 +80,9 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
 
    public final synchronized void mouseReleased(MouseEvent var1) {
       try {
-         if(null != field_1704) {
+         if(null != instance) {
             field_1718 = 0;
-            field_1705 = 0;
+            buttonsPressed = 0;
          }
 
          if(var1.isPopupTrigger()) {
@@ -95,7 +95,7 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
    }
 
    // $FF: renamed from: f (java.awt.event.MouseEvent, int) int
-   final int method_2876(MouseEvent var1, int var2) {
+   final int getButtonsPressed(MouseEvent var1, int var2) {
       try {
          int var3 = var1.getButton();
          if(!var1.isAltDown()) {
@@ -126,11 +126,11 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
 
    public final synchronized void mouseExited(MouseEvent var1) {
       try {
-         if(null != field_1704) {
+         if(null != instance) {
             field_1718 = 0;
-            field_1706 = -494421185;
-            field_1707 = -1569435391;
-            field_1708 = var1.getWhen() * 6626452511999439039L;
+            mouseX = -494421185;
+            mouseY = -1569435391;
+            mouseLastMoved = var1.getWhen() * 6626452511999439039L;
          }
 
       } catch (RuntimeException var2) {
@@ -164,8 +164,8 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
 
    public final synchronized void focusLost(FocusEvent var1) {
       try {
-         if(field_1704 != null) {
-            field_1705 = 0;
+         if(instance != null) {
+            buttonsPressed = 0;
          }
 
       } catch (RuntimeException var2) {
@@ -175,20 +175,20 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
 
    // $FF: renamed from: <clinit> () void
    static {
-      class_131 var10000 = new class_131();
-      field_1704 = var10000;
+      GameMouseListener var10000 = new GameMouseListener();
+      instance = var10000;
       field_1718 = 0;
-      field_1705 = 0;
-      field_1706 = -494421185;
-      field_1707 = -1569435391;
-      field_1708 = -6626452511999439039L;
+      buttonsPressed = 0;
+      mouseX = -494421185;
+      mouseY = -1569435391;
+      mouseLastMoved = -6626452511999439039L;
       field_1709 = 0;
       field_1722 = 0;
       field_1703 = 0;
       field_1712 = 0L;
-      field_1713 = 0;
-      field_1714 = 0;
-      field_1715 = 0;
+      buttons = 0;
+      mousePressedX = 0;
+      mousePressedY = 0;
       field_1716 = 0L;
       field_1717 = 0;
       field_1701 = 0;
@@ -207,22 +207,22 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
 
    // $FF: renamed from: p () void
    public static void method_2883() {
-      class_131 var0 = field_1704;
-      synchronized(field_1704) {
-         field_1709 = -40744581 * field_1705;
-         field_1722 = field_1706 * 822596517;
-         field_1703 = field_1707 * -381452709;
-         field_1712 = field_1708 * -1969538407909689887L;
-         field_1717 = 671619183 * field_1713;
-         field_1701 = field_1714 * -1043757915;
-         field_1711 = field_1715 * 518397864;
+      GameMouseListener var0 = instance;
+      synchronized(instance) {
+         field_1709 = -40744581 * buttonsPressed;
+         field_1722 = mouseX * 822596517;
+         field_1703 = mouseY * -381452709;
+         field_1712 = mouseLastMoved * -1969538407909689887L;
+         field_1717 = 671619183 * buttons;
+         field_1701 = mousePressedX * -1043757915;
+         field_1711 = mousePressedY * 518397864;
          field_1720 = field_1716 * -52424837630769195L;
-         field_1713 = 0;
+         buttons = 0;
       }
    }
 
    // $FF: renamed from: <init> () void
-   class_131() {
+   GameMouseListener() {
       super();
       try {
       } catch (RuntimeException var1) {
@@ -232,17 +232,17 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
 
    // $FF: renamed from: j () void
    public static void method_2886() {
-      class_131 var0 = field_1704;
-      synchronized(field_1704) {
-         field_1709 = -40744581 * field_1705;
-         field_1722 = field_1706 * 822596517;
-         field_1703 = field_1707 * -381452709;
-         field_1712 = field_1708 * -1969538407909689887L;
-         field_1717 = 671619183 * field_1713;
-         field_1701 = field_1714 * -1043757915;
-         field_1711 = field_1715 * 42143541;
+      GameMouseListener var0 = instance;
+      synchronized(instance) {
+         field_1709 = -40744581 * buttonsPressed;
+         field_1722 = mouseX * 822596517;
+         field_1703 = mouseY * -381452709;
+         field_1712 = mouseLastMoved * -1969538407909689887L;
+         field_1717 = 671619183 * buttons;
+         field_1701 = mousePressedX * -1043757915;
+         field_1711 = mousePressedY * 42143541;
          field_1720 = field_1716 * -52424837630769195L;
-         field_1713 = 0;
+         buttons = 0;
       }
    }
 
@@ -260,7 +260,7 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
    // $FF: renamed from: la (int) void
    static void method_2890() {
       try {
-         client.field_1463.method_4079(class_112.method_2238(class_266.field_3082, client.field_1463.field_2384, (byte)8));
+         client.field_1463.method_4079(class_112.method_2238(class_266.field_3082, client.field_1463.isaac, (byte)8));
          client.field_1660 = 0;
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1);
@@ -269,27 +269,27 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
 
    // $FF: renamed from: y () void
    public static void method_2891() {
-      class_131 var0 = field_1704;
-      synchronized(field_1704) {
-         field_1709 = -40744581 * field_1705;
-         field_1722 = field_1706 * 1371398121;
-         field_1703 = field_1707 * 709284789;
-         field_1712 = field_1708 * -1969538407909689887L;
-         field_1717 = -1329280467 * field_1713;
-         field_1701 = field_1714 * -1043757915;
-         field_1711 = field_1715 * 42143541;
+      GameMouseListener var0 = instance;
+      synchronized(instance) {
+         field_1709 = -40744581 * buttonsPressed;
+         field_1722 = mouseX * 1371398121;
+         field_1703 = mouseY * 709284789;
+         field_1712 = mouseLastMoved * -1969538407909689887L;
+         field_1717 = -1329280467 * buttons;
+         field_1701 = mousePressedX * -1043757915;
+         field_1711 = mousePressedY * 42143541;
          field_1720 = field_1716 * -52424837630769195L;
-         field_1713 = 0;
+         buttons = 0;
       }
    }
 
    public final synchronized void mouseMoved(MouseEvent var1) {
       try {
-         if(null != field_1704) {
+         if(null != instance) {
             field_1718 = 0;
-            field_1706 = var1.getX() * 494421185;
-            field_1707 = var1.getY() * 1569435391;
-            field_1708 = var1.getWhen() * 6626452511999439039L;
+            mouseX = var1.getX() * 494421185;
+            mouseY = var1.getY() * 1569435391;
+            mouseLastMoved = var1.getWhen() * 6626452511999439039L;
          }
 
       } catch (RuntimeException var2) {
@@ -491,7 +491,7 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
                         if(61 == var0) {
                            class_177.field_2194 = 1666685477;
                         } else {
-                           class_299.method_5348(class_305.field_3550, class_305.field_3551, class_305.field_3627);
+                           class_299.method_5348(class_305.strUnexpectedServerResponse, class_305.strTryDifferentWorld, class_305.field_3627);
                         }
                      }
                      break label228;
@@ -510,16 +510,16 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
 
    // $FF: renamed from: h (java.awt.event.FocusEvent) void
    public final synchronized void method_2900() {
-      if(field_1704 != null) {
-         field_1705 = 0;
+      if(instance != null) {
+         buttonsPressed = 0;
       }
 
    }
 
    // $FF: renamed from: q (java.awt.event.FocusEvent) void
    public final synchronized void method_2901() {
-      if(field_1704 != null) {
-         field_1705 = 0;
+      if(instance != null) {
+         buttonsPressed = 0;
       }
 
    }
@@ -527,8 +527,8 @@ public class class_131 implements MouseListener, MouseMotionListener, FocusListe
    // $FF: renamed from: ke (byte) void
    static final void method_2902() {
       try {
-         class_40 var1 = class_112.method_2238(class_266.field_3048, client.field_1463.field_2384, (byte)8);
-         var1.field_263.writeByte(0);
+         class_40 var1 = class_112.method_2238(class_266.field_3048, client.field_1463.isaac, (byte)8);
+         var1.networkBuffer.writeByte(0);
          client.field_1463.method_4079(var1);
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2);

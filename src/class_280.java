@@ -192,7 +192,7 @@ public class class_280 {
 
                   int var18 = (var16.field_839 * -1154448540 - var17.field_498) / 2;
                   int var19 = (var16.field_851 * 1338154652 - var17.field_492) / 2;
-                  var17.method_735(48 + 4 * var1 + var18, var19 + (104 - var2 - var16.field_851 * -1812944985) * 4 + 48);
+                  var17.draw(48 + 4 * var1 + var18, var19 + (104 - var2 - var16.field_851 * -1812944985) * 4 + 48);
                }
             } else {
                label292: {
@@ -327,7 +327,7 @@ public class class_280 {
 
                   var26 = (var12.field_839 * -1154448540 - var25.field_498) / 2;
                   var15 = (var12.field_851 * 1338154652 - var25.field_492) / 2;
-                  var25.method_735(var26 + 4 * var1 + 48, (104 - var2 - -1812944985 * var12.field_851) * 4 + 48 + var15);
+                  var25.draw(var26 + 4 * var1 + 48, (104 - var2 - -1812944985 * var12.field_851) * 4 + 48 + var15);
                }
             } else if(9 == var10) {
                label308: {
@@ -425,7 +425,7 @@ public class class_280 {
 
                   var11 = (var21.field_839 * -1154448540 - var22.field_498) / 2;
                   int var23 = (1338154652 * var21.field_851 - var22.field_492) / 2;
-                  var22.method_735(var1 * 4 + 48 + var11, 48 + 4 * (104 - var2 - var21.field_851 * -1812944985) + var23);
+                  var22.draw(var1 * 4 + 48 + var11, 48 + 4 * (104 - var2 - var21.field_851 * -1812944985) + var23);
                }
             }
          }
@@ -521,7 +521,7 @@ public class class_280 {
    }
 
    // $FF: renamed from: v (nb, byte) void
-   static final void method_5168(class_29 var0, byte var1) {
+   static final void method_5168(NetworkBuffer var0, byte var1) {
       try {
          var0.method_358();
          int var2 = 929092845 * client.field_1534;

@@ -78,8 +78,8 @@ public class class_229 {
             class_177.field_2186 = class_86.method_1480(var5);
             class_52.field_378 = class_177.field_2186.method_856();
             class_311.method_5553(var1, client.field_1414 * 1088533541, (byte)26);
-            class_299.field_3369 = class_79.method_1257(var1, "titlebox", "");
-            class_177.field_2185 = class_79.method_1257(var1, "titlebutton", "");
+            class_299.loginBackground = class_79.method_1257(var1, "titlebox", "");
+            class_177.loginButton = class_79.method_1257(var1, "titlebutton", "");
             int var7 = var1.method_5399("runes");
             int var8 = var1.method_5400(var7, "");
             class_66[] var6 = class_212.method_4182(var1, var7, var8);
@@ -97,7 +97,7 @@ public class class_229 {
             class_162 var10000 = new class_162(class_177.field_2184);
             class_176.field_2181 = var10000;
             if(var2) {
-               class_177.field_2200 = "";
+               class_177.email = "";
                class_177.field_2212 = "";
             }
 
@@ -122,7 +122,7 @@ public class class_229 {
             class_204.field_2391 = 1849138212 + class_177.field_2189 * -1802309191;
             class_177.field_2186.method_765(751544539 * class_177.field_2183, 0);
             class_52.field_378.method_765(class_177.field_2183 * 751544539 + 382, 0);
-            class_372.field_4114.method_735(751544539 * class_177.field_2183 + 382 - class_372.field_4114.field_498 / 2, 18);
+            class_372.field_4114.draw(751544539 * class_177.field_2183 + 382 - class_372.field_4114.field_498 / 2, 18);
          }
       } catch (RuntimeException var10) {
          throw class_223.method_4281(var10);

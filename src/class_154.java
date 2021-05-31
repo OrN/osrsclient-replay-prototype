@@ -1363,11 +1363,11 @@ public class class_154 implements Runnable {
    }
 
    // $FF: renamed from: hr (boolean, nb, int) void
-   static final void method_3252(boolean var0, class_29 var1, int var2) {
+   static final void method_3252(boolean var0, NetworkBuffer var1, int var2) {
       try {
          client.field_1538 = 0;
          client.field_1461 = 0;
-         class_29 var3 = client.field_1463.field_2375;
+         NetworkBuffer var3 = client.field_1463.networkBuffer;
          var3.method_358();
          int var4 = var3.method_361(8, (byte)-48);
          int var5;

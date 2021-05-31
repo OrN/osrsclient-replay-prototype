@@ -829,10 +829,10 @@ public class class_37 extends class_27 {
             this.field_113 = var1.readShort() * 1681689769;
          }
 
-         this.field_108 = var1.method_131() * 923552651;
-         this.field_109 = var1.method_131() * -1264602799;
-         this.field_106 = var1.method_131() * 557706273;
-         this.field_107 = var1.method_131() * -1722594515;
+         this.field_108 = var1.readByte() * 923552651;
+         this.field_109 = var1.readByte() * -1264602799;
+         this.field_106 = var1.readByte() * 557706273;
+         this.field_107 = var1.readByte() * -1722594515;
          this.field_152 = var1.readShort() * -148315831;
          if('\uffff' == this.field_152 * -1338646279) {
             if(var2 == 1691994495) {

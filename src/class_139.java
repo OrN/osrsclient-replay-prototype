@@ -349,7 +349,7 @@ public class class_139 {
    }
 
    // $FF: renamed from: f (nb, int) void
-   static final void method_3008(class_29 var0, int var1) {
+   static final void method_3008(NetworkBuffer var0, int var1) {
       try {
          int var2 = 0;
          var0.method_358();

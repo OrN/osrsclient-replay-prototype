@@ -198,7 +198,7 @@ public class class_38 extends class_27 {
 
          int var5;
          for(var5 = 0; var5 < var3; ++var5) {
-            var4[var5] = var2.method_131();
+            var4[var5] = var2.readByte();
          }
 
          var2.offset += -1025691571;
@@ -215,7 +215,7 @@ public class class_38 extends class_27 {
 
          int var8;
          for(var8 = 0; var8 < var6; ++var8) {
-            var7[var8] = var2.method_131();
+            var7[var8] = var2.readByte();
          }
 
          var2.offset += -1025691571;
@@ -231,7 +231,7 @@ public class class_38 extends class_27 {
          byte[] var10 = new byte[var9];
 
          for(int var11 = 0; var11 < var9; ++var11) {
-            var10[var11] = var2.method_131();
+            var10[var11] = var2.readByte();
          }
 
          var2.offset += -1025691571;
@@ -294,7 +294,7 @@ public class class_38 extends class_27 {
 
          int var19;
          for(var19 = 0; var19 < var17; ++var19) {
-            var18[var19] = var2.method_131();
+            var18[var19] = var2.readByte();
          }
 
          var2.offset += -1025691571;
@@ -429,26 +429,26 @@ public class class_38 extends class_27 {
             var28 = var40[var27];
             if(var28.field_2930 != null) {
                for(var29 = 1; var29 < var28.field_2930.length; var29 += 2) {
-                  var28.field_2930[var29] = var2.method_131();
+                  var28.field_2930[var29] = var2.readByte();
                }
             }
 
             if(var28.field_2921 != null) {
                for(var29 = 3; var29 < var28.field_2921.length - 2; var29 += 2) {
-                  var28.field_2921[var29] = var2.method_131();
+                  var28.field_2921[var29] = var2.readByte();
                }
             }
          }
 
          if(var42 != null) {
             for(var27 = 1; var27 < var42.length; var27 += 2) {
-               var42[var27] = var2.method_131();
+               var42[var27] = var2.readByte();
             }
          }
 
          if(null != var43) {
             for(var27 = 1; var27 < var43.length; var27 += 2) {
-               var43[var27] = var2.method_131();
+               var43[var27] = var2.readByte();
             }
          }
 

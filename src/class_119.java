@@ -97,12 +97,12 @@ public class class_119 extends class_111 {
                if(var1 < client.field_1647[var0].method_501()) {
                   class_178 var4 = (class_178)client.field_1647[var0].field_318.get(var1);
                   class_203 var5 = client.field_1463;
-                  class_40 var6 = class_112.method_2238(class_266.field_3081, var5.field_2384, (byte)8);
-                  var6.field_263.writeByte(4 + class_166.method_3598(var4.field_2222));
-                  var6.field_263.writeByte(var0);
-                  var6.field_263.method_333(var1);
-                  var6.field_263.method_250(var2, (short)-15310);
-                  var6.field_263.method_120(var4.field_2222);
+                  class_40 var6 = class_112.method_2238(class_266.field_3081, var5.isaac, (byte)8);
+                  var6.networkBuffer.writeByte(4 + class_166.method_3598(var4.field_2222));
+                  var6.networkBuffer.writeByte(var0);
+                  var6.networkBuffer.writeShortReverse(var1);
+                  var6.networkBuffer.method_250(var2, (short)-15310);
+                  var6.networkBuffer.writeString(var4.field_2222);
                   var5.method_4079(var6);
                   return;
                }

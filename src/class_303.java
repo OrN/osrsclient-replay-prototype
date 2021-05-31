@@ -142,7 +142,7 @@ public class class_303 {
 
                   if(var1 <= 13056) {
                      int var4 = class_205.method_4113(var0, var1, 1115122599 * class_115.field_1289, 589860392) - var2;
-                     var0 -= class_131.field_1719 * 1681670171;
+                     var0 -= GameMouseListener.field_1719 * 1681670171;
                      var4 -= class_172.field_2159 * 45831589;
                      var1 -= class_205.field_2393 * -2115685501;
                      int var5 = class_70.field_548[-1584922015 * class_78.field_686];

@@ -63,11 +63,11 @@ public class class_118 extends class_111 {
 
                   String var5 = var4.field_2222;
                   class_203 var6 = client.field_1463;
-                  class_40 var7 = class_112.method_2238(class_266.field_3125, var6.field_2384, (byte)8);
-                  var7.field_263.writeByte(3 + class_166.method_3598(var5));
-                  var7.field_263.writeByte(var0);
-                  var7.field_263.method_333(var1);
-                  var7.field_263.method_120(var5);
+                  class_40 var7 = class_112.method_2238(class_266.field_3125, var6.isaac, (byte)8);
+                  var7.networkBuffer.writeByte(3 + class_166.method_3598(var5));
+                  var7.networkBuffer.writeByte(var0);
+                  var7.networkBuffer.writeShortReverse(var1);
+                  var7.networkBuffer.writeString(var5);
                   var6.method_4079(var7);
                   return;
                }

@@ -80,7 +80,7 @@ public class class_54 extends class_51 {
       var1.readUnsignedByte();
       if(var1.readUnsignedByte() != 255) {
          var1.offset -= -1025691571;
-         var1.method_136();
+         var1.readLong();
       }
 
    }
@@ -176,7 +176,7 @@ public class class_54 extends class_51 {
             }
 
             var1.offset -= -1025691571;
-            var1.method_136();
+            var1.readLong();
          }
 
       } catch (RuntimeException var3) {

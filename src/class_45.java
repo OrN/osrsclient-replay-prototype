@@ -57,9 +57,9 @@ public class class_45 extends class_27 {
                throw new IllegalStateException();
             }
 
-            var10000 = class_116.method_2249(class_177.field_2200);
+            var10000 = class_116.method_2249(class_177.email);
          } else {
-            var10000 = class_177.field_2200;
+            var10000 = class_177.email;
          }
 
          return var10000;
@@ -169,7 +169,7 @@ public class class_45 extends class_27 {
    }
 
    // $FF: renamed from: hs (nb, int) void
-   static final void method_529(class_29 var0, int var1) {
+   static final void method_529(NetworkBuffer var0, int var1) {
       try {
          for(int var2 = 0; var2 < client.field_1461 * 1045404765; ++var2) {
             int var3 = client.field_1462[var2];
@@ -314,9 +314,9 @@ public class class_45 extends class_27 {
                var4.field_1120 = var0.method_162() * 2120129099;
                var4.field_1109 = var0.method_123() * -260652731;
                var4.field_1078 = var0.method_157() * -280468969;
-               var4.field_1105 = (var0.method_169() + -1702273423 * client.field_1425) * 911678983;
+               var4.field_1105 = (var0.readShortAlt() + -1702273423 * client.field_1425) * 911678983;
                var4.field_1123 = (var0.method_168() + -1702273423 * client.field_1425) * -999940959;
-               var4.field_1124 = var0.method_169() * -410013785;
+               var4.field_1124 = var0.readShortAlt() * -410013785;
                var4.field_1130 = -2139872387;
                var4.field_1114 = 0;
                var4.field_1118 += -64437987 * var4.field_1112[0];

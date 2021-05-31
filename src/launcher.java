@@ -10,7 +10,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.util.Enumeration;
-import java.util.HashMap;
 import java.util.Iterator;
 
 public class launcher extends JFrame implements AppletStub, AppletContext, WindowListener {
@@ -137,6 +136,8 @@ public class launcher extends JFrame implements AppletStub, AppletContext, Windo
         setVisible(false);
         applet.stop();
         applet.destroy();
+        Replay.stop();
+        ReplayServer.Stop();
         System.exit(0);
     }
 

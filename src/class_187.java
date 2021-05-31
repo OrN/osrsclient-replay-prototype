@@ -3,7 +3,7 @@
 public class class_187 extends class_181 {
 
     // $FF: renamed from: ff eu
-   static class_214 field_2269;
+   static HostData field_2269;
    // $FF: renamed from: v boolean
    final boolean field_2270;
 
@@ -104,8 +104,8 @@ public class class_187 extends class_181 {
                      var13 = class_168.method_3609(var15);
                   }
 
-                  class_40 var17 = class_112.method_2238(class_266.field_3056, client.field_1463.field_2384, (byte)8);
-                  var17.field_263.method_116(var13);
+                  class_40 var17 = class_112.method_2238(class_266.field_3056, client.field_1463.isaac, (byte)8);
+                  var17.networkBuffer.writeIntReverse(var13);
                   client.field_1463.method_4079(var17);
                   return 1;
                }
@@ -113,9 +113,9 @@ public class class_187 extends class_181 {
                class_40 var11;
                if(var0 == 3105) {
                   var15 = class_165.field_2053[(class_165.field_2054 -= 1647125333) * 1824375293];
-                  var11 = class_112.method_2238(class_266.field_3069, client.field_1463.field_2384, (byte)8);
-                  var11.field_263.writeByte(var15.length() + 1);
-                  var11.field_263.method_120(var15);
+                  var11 = class_112.method_2238(class_266.field_3069, client.field_1463.isaac, (byte)8);
+                  var11.networkBuffer.writeByte(var15.length() + 1);
+                  var11.networkBuffer.writeString(var15);
                   client.field_1463.method_4079(var11);
                   return 1;
                } else if(3106 == var0) {
@@ -123,9 +123,9 @@ public class class_187 extends class_181 {
                      throw new IllegalStateException();
                   } else {
                      var15 = class_165.field_2053[(class_165.field_2054 -= 1647125333) * 1824375293];
-                     var11 = class_112.method_2238(class_266.field_3127, client.field_1463.field_2384, (byte)8);
-                     var11.field_263.writeByte(var15.length() + 1);
-                     var11.field_263.method_120(var15);
+                     var11 = class_112.method_2238(class_266.field_3127, client.field_1463.isaac, (byte)8);
+                     var11.networkBuffer.writeByte(var15.length() + 1);
+                     var11.networkBuffer.writeString(var15);
                      client.field_1463.method_4079(var11);
                      return 1;
                   }
@@ -257,8 +257,8 @@ public class class_187 extends class_181 {
                               throw new IllegalStateException();
                            } else {
                               var9 = class_165.field_2052[(class_136.field_1752 -= -1087727229) * -26460885];
-                              var11 = class_112.method_2238(class_266.field_3121, client.field_1463.field_2384, (byte)8);
-                              var11.field_263.method_333(var9);
+                              var11 = class_112.method_2238(class_266.field_3121, client.field_1463.isaac, (byte)8);
+                              var11.networkBuffer.writeShortReverse(var9);
                               client.field_1463.method_4079(var11);
                               return 1;
                            }
@@ -275,11 +275,11 @@ public class class_187 extends class_181 {
                               } else if(var6.length() > 500) {
                                  return 1;
                               } else {
-                                 class_40 var7 = class_112.method_2238(class_266.field_3062, client.field_1463.field_2384, (byte)8);
-                                 var7.field_263.method_333(1 + class_166.method_3598(var5) + class_166.method_3598(var6));
-                                 var7.field_263.method_120(var5);
-                                 var7.field_263.method_120(var6);
-                                 var7.field_263.writeByte(var9);
+                                 class_40 var7 = class_112.method_2238(class_266.field_3062, client.field_1463.isaac, (byte)8);
+                                 var7.networkBuffer.writeShortReverse(1 + class_166.method_3598(var5) + class_166.method_3598(var6));
+                                 var7.networkBuffer.writeString(var5);
+                                 var7.networkBuffer.writeString(var6);
+                                 var7.networkBuffer.writeByte(var9);
                                  client.field_1463.method_4079(var7);
                                  return 1;
                               }
@@ -593,13 +593,13 @@ public class class_187 extends class_181 {
                               }
 
                               var10 = var19;
-                              client.field_1453 = var10;
+                              client.rememberEmail = var10;
                               if(!var10) {
                                  if(var3 <= -460481447) {
                                     throw new IllegalStateException();
                                  }
 
-                                 class_87.preferences.field_2120 = "";
+                                 class_87.preferences.rememberedEmail = "";
                                  class_94.savePreferences(-320160331);
                               }
 
@@ -608,7 +608,7 @@ public class class_187 extends class_181 {
                               if(var3 <= -460481447) {
                                  throw new IllegalStateException();
                               } else {
-                                 class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = client.field_1453?1:0;
+                                 class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = client.rememberEmail ?1:0;
                                  return 1;
                               }
                            } else if(3145 == var0) {

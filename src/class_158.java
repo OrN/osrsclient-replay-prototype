@@ -313,7 +313,7 @@ public class class_158 {
                var13 = var18;
             }
 
-            class_131.field_1719 = -1739220461 * (var7 - var13);
+            GameMouseListener.field_1719 = -1739220461 * (var7 - var13);
             class_172.field_2159 = (var8 - var14) * -1768191443;
             class_205.field_2393 = (var9 - var15) * -989203669;
             class_78.field_686 = -1037557343 * var21;
@@ -384,7 +384,7 @@ public class class_158 {
                            var9 = class_164.field_2044.field_1076 * 1248597615 >> 7;
                         }
 
-                        var10 = 1681670171 * class_131.field_1719 >> 7;
+                        var10 = 1681670171 * GameMouseListener.field_1719 >> 7;
                         var11 = -2115685501 * class_205.field_2393 >> 7;
                         if(var10 >= 0 && var11 >= 0) {
                            if(var4 == -1785462492) {
@@ -615,7 +615,7 @@ public class class_158 {
             var21 = class_137.method_2971((byte)26);
          }
 
-         var23 = 1681670171 * class_131.field_1719;
+         var23 = 1681670171 * GameMouseListener.field_1719;
          var7 = class_172.field_2159 * 45831589;
          var8 = class_205.field_2393 * -2115685501;
          var9 = -1584922015 * class_78.field_686;
@@ -633,7 +633,7 @@ public class class_158 {
                      throw new IllegalStateException();
                   }
 
-                  class_131.field_1719 += -1739220461 * var12;
+                  GameMouseListener.field_1719 += -1739220461 * var12;
                }
 
                if(var11 == 1) {
@@ -677,15 +677,15 @@ public class class_158 {
             }
          }
 
-         var11 = class_131.field_1722 * -678881683;
-         var12 = class_131.field_1703 * 1903378733;
-         if(0 != class_131.field_1717 * -265253353) {
+         var11 = GameMouseListener.field_1722 * -678881683;
+         var12 = GameMouseListener.field_1703 * 1903378733;
+         if(0 != GameMouseListener.field_1717 * -265253353) {
             if(var4 == -1785462492) {
                return;
             }
 
-            var11 = class_131.field_1701 * 1003938789;
-            var12 = 339791065 * class_131.field_1711;
+            var11 = GameMouseListener.field_1701 * 1003938789;
+            var12 = 339791065 * GameMouseListener.field_1711;
          }
 
          label579: {
@@ -724,7 +724,7 @@ public class class_158 {
          class_46.method_536(-1808857292);
          var13 = class_70.field_544;
          class_70.field_544 = client.field_1682 * 755828989;
-         class_206.field_2401.method_4861(class_131.field_1719 * 1681670171, 45831589 * class_172.field_2159, class_205.field_2393 * -2115685501, class_78.field_686 * -1584922015, 611240317 * class_382.field_4208, var21);
+         class_206.field_2401.method_4861(GameMouseListener.field_1719 * 1681670171, 45831589 * class_172.field_2159, class_205.field_2393 * -2115685501, class_78.field_686 * -1584922015, 611240317 * class_382.field_4208, var21);
          class_70.field_544 = var13;
          class_46.method_536(-1808857292);
          class_206.field_2401.method_4737();
@@ -732,7 +732,7 @@ public class class_158 {
          class_175.method_3741(var0, var1, 694193640);
          ((class_245)class_70.field_555).method_4694(613265553 * client.field_1689, -451757246);
          class_125.method_2287(-630332055);
-         class_131.field_1719 = -1739220461 * var23;
+         GameMouseListener.field_1719 = -1739220461 * var23;
          class_172.field_2159 = -1768191443 * var7;
          class_205.field_2393 = -989203669 * var8;
          class_78.field_686 = -1037557343 * var9;

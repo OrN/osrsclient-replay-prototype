@@ -151,7 +151,7 @@ public class class_84 extends class_59 {
    public static void method_1428() {
       try {
          if(class_314.field_3771 != null) {
-            class_314.field_3771.method_4123(1840761151);
+            class_314.field_3771.close(1840761151);
          }
 
       } catch (RuntimeException var1) {

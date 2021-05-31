@@ -25,7 +25,7 @@ public class class_77 extends class_59 {
    // $FF: renamed from: o int
    int field_662;
    // $FF: renamed from: eq int[]
-   static int[] field_663;
+   static int[] xteaKeys;
    // $FF: renamed from: e int
    public int field_664;
    // $FF: renamed from: l int

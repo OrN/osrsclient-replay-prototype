@@ -265,7 +265,7 @@ public final class class_26 extends Canvas {
 
          client.field_1642 = 0;
          client.field_1537 = false;
-         class_131.field_1719 -= -1739220461 * (var6 << 7);
+         GameMouseListener.field_1719 -= -1739220461 * (var6 << 7);
          class_205.field_2393 -= (var7 << 7) * -989203669;
          class_146.field_1861 -= 640290789 * (var6 << 7);
          class_271.field_3188 -= (var7 << 7) * 921873329;

@@ -16,7 +16,7 @@ final class class_384 implements class_23 {
    // $FF: renamed from: b (java.lang.Integer, nd, byte) void
    void method_6702(Integer var1, Buffer var2) {
       try {
-         var2.method_116(var1.intValue());
+         var2.writeIntReverse(var1.intValue());
       } catch (RuntimeException var4) {
          throw class_223.method_4281(var4);
       }
@@ -33,7 +33,7 @@ final class class_384 implements class_23 {
 
    // $FF: renamed from: d (java.lang.Integer, nd) void
    void method_6703(Integer var1, Buffer var2) {
-      var2.method_116(var1.intValue());
+      var2.writeIntReverse(var1.intValue());
    }
 
    // $FF: renamed from: <init> () void
@@ -72,16 +72,16 @@ final class class_384 implements class_23 {
 
    // $FF: renamed from: s (java.lang.Integer, nd) void
    void method_6705(Integer var1, Buffer var2) {
-      var2.method_116(var1.intValue());
+      var2.writeIntReverse(var1.intValue());
    }
 
    // $FF: renamed from: u (java.lang.Integer, nd) void
    void method_6706(Integer var1, Buffer var2) {
-      var2.method_116(var1.intValue());
+      var2.writeIntReverse(var1.intValue());
    }
 
    // $FF: renamed from: l (java.lang.Integer, nd) void
    void method_6707(Integer var1, Buffer var2) {
-      var2.method_116(var1.intValue());
+      var2.writeIntReverse(var1.intValue());
    }
 }

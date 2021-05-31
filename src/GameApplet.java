@@ -403,10 +403,10 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       try {
          class_154.method_3245(this.field_1397);
          Canvas var2 = this.field_1397;
-         var2.removeMouseListener(class_131.field_1704);
-         var2.removeMouseMotionListener(class_131.field_1704);
-         var2.removeFocusListener(class_131.field_1704);
-         class_131.field_1705 = 0;
+         var2.removeMouseListener(GameMouseListener.instance);
+         var2.removeMouseMotionListener(GameMouseListener.instance);
+         var2.removeFocusListener(GameMouseListener.instance);
+         GameMouseListener.buttonsPressed = 0;
          if(this.field_1411 != null) {
             this.field_1411.method_2908(this.field_1397);
          }
@@ -414,9 +414,9 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
          this.method_2306(-1567592382);
          class_162.method_3417(this.field_1397);
          Canvas var3 = this.field_1397;
-         var3.addMouseListener(class_131.field_1704);
-         var3.addMouseMotionListener(class_131.field_1704);
-         var3.addFocusListener(class_131.field_1704);
+         var3.addMouseListener(GameMouseListener.instance);
+         var3.addMouseMotionListener(GameMouseListener.instance);
+         var3.addFocusListener(GameMouseListener.instance);
          if(this.field_1411 != null) {
             if(var1 != 6) {
                throw new IllegalStateException();
@@ -1052,9 +1052,9 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    protected final void method_2317() {
       try {
          Canvas var2 = this.field_1397;
-         var2.addMouseListener(class_131.field_1704);
-         var2.addMouseMotionListener(class_131.field_1704);
-         var2.addFocusListener(class_131.field_1704);
+         var2.addMouseListener(GameMouseListener.instance);
+         var2.addMouseMotionListener(GameMouseListener.instance);
+         var2.addFocusListener(GameMouseListener.instance);
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
       }
@@ -1508,9 +1508,9 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: bv () void
    protected final void method_2352() {
       Canvas var1 = this.field_1397;
-      var1.addMouseListener(class_131.field_1704);
-      var1.addMouseMotionListener(class_131.field_1704);
-      var1.addFocusListener(class_131.field_1704);
+      var1.addMouseListener(GameMouseListener.instance);
+      var1.addMouseMotionListener(GameMouseListener.instance);
+      var1.addFocusListener(GameMouseListener.instance);
    }
 
    // $FF: renamed from: bq (java.lang.String) void
@@ -1597,9 +1597,9 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: bz () void
    protected final void method_2357() {
       Canvas var1 = this.field_1397;
-      var1.addMouseListener(class_131.field_1704);
-      var1.addMouseMotionListener(class_131.field_1704);
-      var1.addFocusListener(class_131.field_1704);
+      var1.addMouseListener(GameMouseListener.instance);
+      var1.addMouseMotionListener(GameMouseListener.instance);
+      var1.addFocusListener(GameMouseListener.instance);
    }
 
    // $FF: renamed from: ch () void
@@ -1826,10 +1826,10 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    final void method_2367() {
       class_154.method_3245(this.field_1397);
       Canvas var1 = this.field_1397;
-      var1.removeMouseListener(class_131.field_1704);
-      var1.removeMouseMotionListener(class_131.field_1704);
-      var1.removeFocusListener(class_131.field_1704);
-      class_131.field_1705 = 0;
+      var1.removeMouseListener(GameMouseListener.instance);
+      var1.removeMouseMotionListener(GameMouseListener.instance);
+      var1.removeFocusListener(GameMouseListener.instance);
+      GameMouseListener.buttonsPressed = 0;
       if(this.field_1411 != null) {
          this.field_1411.method_2908(this.field_1397);
       }
@@ -1837,9 +1837,9 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       this.method_2306(-270674896);
       class_162.method_3417(this.field_1397);
       Canvas var2 = this.field_1397;
-      var2.addMouseListener(class_131.field_1704);
-      var2.addMouseMotionListener(class_131.field_1704);
-      var2.addFocusListener(class_131.field_1704);
+      var2.addMouseListener(GameMouseListener.instance);
+      var2.addMouseMotionListener(GameMouseListener.instance);
+      var2.addFocusListener(GameMouseListener.instance);
       if(this.field_1411 != null) {
          this.field_1411.method_2911(this.field_1397);
       }
@@ -2428,9 +2428,9 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: bm () void
    protected final void method_2386() {
       Canvas var1 = this.field_1397;
-      var1.addMouseListener(class_131.field_1704);
-      var1.addMouseMotionListener(class_131.field_1704);
-      var1.addFocusListener(class_131.field_1704);
+      var1.addMouseListener(GameMouseListener.instance);
+      var1.addMouseMotionListener(GameMouseListener.instance);
+      var1.addFocusListener(GameMouseListener.instance);
    }
 
    // $FF: renamed from: ck () void

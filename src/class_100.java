@@ -70,8 +70,8 @@ public final class class_100 extends class_98 {
       try {
          var1.offset = 0;
          int var3 = var1.readUnsignedByte();
-         this.field_1166 = var1.method_131() * -725606113;
-         this.field_1145 = var1.method_131() * 249069277;
+         this.field_1166 = var1.readByte() * -725606113;
+         this.field_1145 = var1.readByte() * 249069277;
          int var4 = -1;
          this.field_1161 = 0;
          int[] var5 = new int[12];
@@ -1299,16 +1299,16 @@ public final class class_100 extends class_98 {
    // $FF: renamed from: v (int) void
    public static void method_1878() {
       try {
-         synchronized(class_131.field_1704) {
-            class_131.field_1709 = -40744581 * class_131.field_1705;
-            class_131.field_1722 = class_131.field_1706 * 822596517;
-            class_131.field_1703 = class_131.field_1707 * -381452709;
-            class_131.field_1712 = class_131.field_1708 * -1969538407909689887L;
-            class_131.field_1717 = 671619183 * class_131.field_1713;
-            class_131.field_1701 = class_131.field_1714 * -1043757915;
-            class_131.field_1711 = class_131.field_1715 * 42143541;
-            class_131.field_1720 = class_131.field_1716 * -52424837630769195L;
-            class_131.field_1713 = 0;
+         synchronized(GameMouseListener.instance) {
+            GameMouseListener.field_1709 = -40744581 * GameMouseListener.buttonsPressed;
+            GameMouseListener.field_1722 = GameMouseListener.mouseX * 822596517;
+            GameMouseListener.field_1703 = GameMouseListener.mouseY * -381452709;
+            GameMouseListener.field_1712 = GameMouseListener.mouseLastMoved * -1969538407909689887L;
+            GameMouseListener.field_1717 = 671619183 * GameMouseListener.buttons;
+            GameMouseListener.field_1701 = GameMouseListener.mousePressedX * -1043757915;
+            GameMouseListener.field_1711 = GameMouseListener.mousePressedY * 42143541;
+            GameMouseListener.field_1720 = GameMouseListener.field_1716 * -52424837630769195L;
+            GameMouseListener.buttons = 0;
          }
       } catch (RuntimeException var4) {
          throw class_223.method_4281(var4);

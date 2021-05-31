@@ -1,6 +1,6 @@
 
 // $FF: renamed from: eu
-public class class_214 {
+public class HostData {
 
    // $FF: renamed from: p int
    public volatile int field_2446;
@@ -11,18 +11,7 @@ public class class_214 {
    // $FF: renamed from: r int
    public int port;
     // $FF: renamed from: v eu
-   class_214 field_2453;
+   HostData field_2453;
    // $FF: renamed from: d java.lang.Object
    public volatile Object socket;
-
-
-   // $FF: renamed from: <init> () void
-   class_214() {
-      super();
-      try {
-         this.field_2446 = 0;
-      } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1);
-      }
-   }
 }

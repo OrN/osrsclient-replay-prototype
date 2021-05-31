@@ -14,7 +14,7 @@ public class class_203 {
    // $FF: renamed from: v ls
    class_206 field_2374;
    // $FF: renamed from: j nb
-   class_29 field_2375;
+   NetworkBuffer networkBuffer;
    // $FF: renamed from: r hl
    class_263 field_2376;
    // $FF: renamed from: ar int
@@ -30,9 +30,9 @@ public class class_203 {
    // $FF: renamed from: o hl
    class_263 field_2382;
    // $FF: renamed from: f int
-   int field_2383;
+   int length;
    // $FF: renamed from: p oy
-   public class_404 field_2384;
+   public ISAAC isaac;
    // $FF: renamed from: by int
    public static final int field_2385 = 97;
    // $FF: renamed from: av java.lang.String
@@ -47,7 +47,7 @@ public class class_203 {
                throw new IllegalStateException();
             }
 
-            if(-432974383 * this.field_2383 > 0) {
+            if(-432974383 * this.length > 0) {
                if(var1 != -1875758370) {
                   throw new IllegalStateException();
                }
@@ -63,17 +63,17 @@ public class class_203 {
                      break;
                   }
 
-                  if(var2.field_264 * -2120774193 > this.field_2373.data.length - -442398587 * this.field_2373.offset) {
+                  if(var2.length * -2120774193 > this.field_2373.data.length - -442398587 * this.field_2373.offset) {
                      if(var1 != -1875758370) {
                         throw new IllegalStateException();
                      }
                      break;
                   }
 
-                  this.field_2373.method_161(var2.field_263.data, 0, -2120774193 * var2.field_264);
-                  this.field_2383 -= var2.field_264 * -1686998625;
+                  this.field_2373.write(var2.networkBuffer.data, 0, -2120774193 * var2.length);
+                  this.length -= var2.length * -1686998625;
                   var2.method_108();
-                  var2.field_263.method_112((byte)32);
+                  var2.networkBuffer.method_112((byte)32);
                   var2.method_471((byte)100);
                }
 
@@ -91,7 +91,7 @@ public class class_203 {
    final void method_4077() {
       try {
          this.field_2371.method_5696();
-         this.field_2383 = 0;
+         this.length = 0;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2);
       }
@@ -110,9 +110,9 @@ public class class_203 {
    public final void method_4079(class_40 var1) {
       try {
          this.field_2371.method_5697(var1);
-         var1.field_264 = var1.field_263.offset * 985550187;
-         var1.field_263.offset = 0;
-         this.field_2383 += var1.field_264 * -1686998625;
+         var1.length = var1.networkBuffer.offset * 985550187;
+         var1.networkBuffer.offset = 0;
+         this.length += var1.length * -1686998625;
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
       }
@@ -125,15 +125,6 @@ public class class_203 {
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
       }
-   }
-
-   // $FF: renamed from: e () void
-   void method_4081() {
-      if(this.field_2374 != null) {
-         this.field_2374.method_4123(2139532504);
-         this.field_2374 = null;
-      }
-
    }
 
    // $FF: renamed from: j (int) void
@@ -154,44 +145,12 @@ public class class_203 {
       }
    }
 
-   // $FF: renamed from: b () void
-   final void method_4084() {
-      this.field_2371.method_5696();
-      this.field_2383 = 0;
-   }
-
-   // $FF: renamed from: d () void
-   final void method_4085() {
-      this.field_2371.method_5696();
-      this.field_2383 = 0;
-   }
-
    // $FF: renamed from: l (hq) void
    public final void method_4086(class_40 var1) {
       this.field_2371.method_5697(var1);
-      var1.field_264 = var1.field_263.offset * 985550187;
-      var1.field_263.offset = 0;
-      this.field_2383 += var1.field_264 * -1686998625;
-   }
-
-   // $FF: renamed from: m () ls
-   class_206 method_4087() {
-      return this.field_2374;
-   }
-
-   // $FF: renamed from: a () void
-   void method_4088() {
-      this.field_2374 = null;
-   }
-
-   // $FF: renamed from: o (ls) void
-   void method_4089(class_206 var1) {
-      this.field_2374 = var1;
-   }
-
-   // $FF: renamed from: c (ls) void
-   void method_4090(class_206 var1) {
-      this.field_2374 = var1;
+      var1.length = var1.networkBuffer.offset * 985550187;
+      var1.networkBuffer.offset = 0;
+      this.length += var1.length * -1686998625;
    }
 
    // $FF: renamed from: <init> () void
@@ -200,11 +159,11 @@ public class class_203 {
       try {
          class_323 var10001 = new class_323();
          this.field_2371 = var10001;
-         this.field_2383 = 0;
+         this.length = 0;
          Buffer var2 = new Buffer(5000);
          this.field_2373 = var2;
-         class_29 var3 = new class_29('\u9c40');
-         this.field_2375 = var3;
+         NetworkBuffer var3 = new NetworkBuffer('\u9c40');
+         this.networkBuffer = var3;
          this.field_2376 = null;
          this.field_2380 = 0;
          this.field_2378 = true;
@@ -213,71 +172,6 @@ public class class_203 {
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1);
       }
-   }
-
-   // $FF: renamed from: g () void
-   void method_4092() {
-      if(this.field_2374 != null) {
-         this.field_2374.method_4123(2093924496);
-         this.field_2374 = null;
-      }
-
-   }
-
-   // $FF: renamed from: u () void
-   final void method_4093() throws IOException {
-      if(this.field_2374 != null && -432974383 * this.field_2383 > 0) {
-         this.field_2373.offset = 0;
-
-         while(true) {
-            class_40 var1 = (class_40)this.field_2371.method_5700();
-            if(var1 == null || var1.field_264 * -1952245086 > this.field_2373.data.length - -442398587 * this.field_2373.offset) {
-               this.field_2374.method_4132(this.field_2373.data, 0, this.field_2373.offset * -442398587);
-               this.field_2372 = 0;
-               break;
-            }
-
-            this.field_2373.method_161(var1.field_263.data, 0, -2120774193 * var1.field_264);
-            this.field_2383 -= var1.field_264 * -1686998625;
-            var1.method_108();
-            var1.field_263.method_112((byte)114);
-            var1.method_471((byte)38);
-         }
-      }
-
-   }
-
-   // $FF: renamed from: k () void
-   void method_4094() {
-      this.field_2374 = null;
-   }
-
-   // $FF: renamed from: s () void
-   final void method_4095() throws IOException {
-      if(this.field_2374 != null && -432974383 * this.field_2383 > 0) {
-         this.field_2373.offset = 0;
-
-         while(true) {
-            class_40 var1 = (class_40)this.field_2371.method_5700();
-            if(var1 == null || var1.field_264 * 656199849 > this.field_2373.data.length - -442398587 * this.field_2373.offset) {
-               this.field_2374.method_4132(this.field_2373.data, 0, this.field_2373.offset * -442398587);
-               this.field_2372 = 0;
-               break;
-            }
-
-            this.field_2373.method_161(var1.field_263.data, 0, -1427645537 * var1.field_264);
-            this.field_2383 -= var1.field_264 * -1736269188;
-            var1.method_108();
-            var1.field_263.method_112((byte)103);
-            var1.method_471((byte)106);
-         }
-      }
-
-   }
-
-   // $FF: renamed from: x () ls
-   class_206 method_4096() {
-      return this.field_2374;
    }
 
    // $FF: renamed from: ky (int, int) void
@@ -339,7 +233,7 @@ public class class_203 {
    void method_4098() {
       try {
          if(this.field_2374 != null) {
-            this.field_2374.method_4123(2121257738);
+            this.field_2374.close(2121257738);
             this.field_2374 = null;
          }
 

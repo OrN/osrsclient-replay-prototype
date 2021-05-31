@@ -133,8 +133,8 @@ public class class_341 extends class_339 {
     // $FF: renamed from: d (int) void
    static void method_6049(int var0) {
       try {
-         class_177.field_2200 = class_177.field_2200.trim();
-         if(class_177.field_2200.length() == 0) {
+         class_177.email = class_177.email.trim();
+         if(class_177.email.length() == 0) {
             if(var0 != -1024085126) {
                throw new IllegalStateException();
             } else {
@@ -165,7 +165,7 @@ public class class_341 extends class_339 {
                      }
 
                      var8.offset = 0;
-                     long var31 = var8.method_136();
+                     long var31 = var8.readLong();
                      var2 = var31;
                      break;
                   }
@@ -188,7 +188,7 @@ public class class_341 extends class_339 {
             if(var2 == 0L) {
                var1 = 5;
             } else {
-               String var29 = class_177.field_2200;
+               String var29 = class_177.email;
                Random var30 = new Random();
                var10000 = new Buffer(128);
                Buffer var32 = var10000;
@@ -203,23 +203,23 @@ public class class_341 extends class_339 {
                      throw new IllegalStateException();
                   }
 
-                  var32.method_116(var30.nextInt());
+                  var32.writeIntReverse(var30.nextInt());
                }
 
-               var32.method_116(var11[0]);
-               var32.method_116(var11[1]);
-               var32.method_341(var2);
-               var32.method_341(0L);
+               var32.writeIntReverse(var11[0]);
+               var32.writeIntReverse(var11[1]);
+               var32.writeLongReversed(var2);
+               var32.writeLongReversed(0L);
 
                for(var12 = 0; var12 < 4; ++var12) {
                   if(var0 != -1024085126) {
                      return;
                   }
 
-                  var32.method_116(var30.nextInt());
+                  var32.writeIntReverse(var30.nextInt());
                }
 
-               var32.method_153(class_179.field_2226, class_179.field_2227);
+               var32.encryptRSA(class_179.field_2226, class_179.field_2227);
                var10.writeByte(10);
 
                for(var12 = 0; var12 < 3; ++var12) {
@@ -227,17 +227,17 @@ public class class_341 extends class_339 {
                      return;
                   }
 
-                  var10.method_116(var30.nextInt());
+                  var10.writeIntReverse(var30.nextInt());
                }
 
-               var10.method_341(var30.nextLong());
+               var10.writeLongReversed(var30.nextLong());
                var10.method_117(var30.nextLong());
                if(client.field_1457 != null) {
                   if(var0 != -1024085126) {
                      throw new IllegalStateException();
                   }
 
-                  var10.method_161(client.field_1457, 0, client.field_1457.length);
+                  var10.write(client.field_1457, 0, client.field_1457.length);
                } else {
                   byte[] var13 = new byte[24];
 
@@ -276,11 +276,11 @@ public class class_341 extends class_339 {
                      }
                   }
 
-                  var10.method_161(var13, 0, var13.length);
+                  var10.write(var13, 0, var13.length);
                }
 
-               var10.method_341(var30.nextLong());
-               var10.method_153(class_179.field_2226, class_179.field_2227);
+               var10.writeLongReversed(var30.nextLong());
+               var10.encryptRSA(class_179.field_2226, class_179.field_2227);
                var12 = class_166.method_3598(var29);
                if(var12 % 8 != 0) {
                   var12 += 8 - var12 % 8;
@@ -288,18 +288,18 @@ public class class_341 extends class_339 {
 
                var10000 = new Buffer(var12);
                Buffer var33 = var10000;
-               var33.method_120(var29);
+               var33.writeString(var29);
                var33.offset = var12 * -1025691571;
                var33.method_232(var11, -1937738349);
                var10000 = new Buffer(-442398587 * var33.offset + 5 + -442398587 * var32.offset + -442398587 * var10.offset);
                Buffer var34 = var10000;
                var34.writeByte(2);
                var34.writeByte(var32.offset * -442398587);
-               var34.method_161(var32.data, 0, -442398587 * var32.offset);
+               var34.write(var32.data, 0, -442398587 * var32.offset);
                var34.writeByte(-442398587 * var10.offset);
-               var34.method_161(var10.data, 0, var10.offset * -442398587);
-               var34.method_333(var33.offset * -442398587);
-               var34.method_161(var33.data, 0, -442398587 * var33.offset);
+               var34.write(var10.data, 0, var10.offset * -442398587);
+               var34.writeShortReverse(var33.offset * -442398587);
+               var34.write(var33.data, 0, -442398587 * var33.offset);
                byte[] var16 = var34.data;
                int var18 = var16.length;
                StringBuilder var19 = new StringBuilder();

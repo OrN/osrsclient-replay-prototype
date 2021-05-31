@@ -7,19 +7,15 @@ public class class_40 extends class_27 {
    // $FF: renamed from: n int
    int field_262;
    // $FF: renamed from: f nb
-   public class_29 field_263;
+   public NetworkBuffer networkBuffer;
    // $FF: renamed from: y int
-   public int field_264;
-   // $FF: renamed from: l int
-   static final int field_265 = 10;
+   public int length;
    // $FF: renamed from: j int
    static int field_266;
    // $FF: renamed from: v hs
    class_266 field_267;
    // $FF: renamed from: p hq[]
    static class_40[] field_268;
-   // $FF: renamed from: bm int
-   static final int field_269 = 73;
    // $FF: renamed from: hw oh[]
    static class_67[] field_270;
 
@@ -52,17 +48,8 @@ public class class_40 extends class_27 {
       field_266 = 0;
    }
 
-   // $FF: renamed from: <init> () void
-   class_40() {
-      super();
-      try {
-      } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1);
-      }
-   }
-
    // $FF: renamed from: p (hs, oy) hq
-   public static class_40 method_473(class_266 var0, class_404 var1) {
+   public static class_40 method_473(class_266 var0, ISAAC var1) {
       class_40 var2;
       if(field_266 * -725708193 == 0) {
          class_40 var10000 = new class_40();
@@ -73,32 +60,32 @@ public class class_40 extends class_27 {
 
       var2.field_267 = var0;
       var2.field_262 = var0.field_3153 * -1937979799;
-      class_29 var10001;
+      NetworkBuffer var10001;
       if(var2.field_262 * -353849396 == -1) {
-         var10001 = new class_29(260);
-         var2.field_263 = var10001;
+         var10001 = new NetworkBuffer(260);
+         var2.networkBuffer = var10001;
       } else if(1909802584 == 1934863547 * var2.field_262) {
-         var10001 = new class_29(-629592871);
-         var2.field_263 = var10001;
+         var10001 = new NetworkBuffer(-629592871);
+         var2.networkBuffer = var10001;
       } else if(var2.field_262 * 1934863547 <= 18) {
-         var10001 = new class_29(20);
-         var2.field_263 = var10001;
+         var10001 = new NetworkBuffer(20);
+         var2.networkBuffer = var10001;
       } else if(-27595703 * var2.field_262 <= 98) {
-         var10001 = new class_29(457994531);
-         var2.field_263 = var10001;
+         var10001 = new NetworkBuffer(457994531);
+         var2.networkBuffer = var10001;
       } else {
-         var10001 = new class_29(260);
-         var2.field_263 = var10001;
+         var10001 = new NetworkBuffer(260);
+         var2.networkBuffer = var10001;
       }
 
-      var2.field_263.method_354(var1);
-      var2.field_263.method_357(-1958588669 * var2.field_267.field_3091);
-      var2.field_264 = 0;
+      var2.networkBuffer.method_354(var1);
+      var2.networkBuffer.method_357(-1958588669 * var2.field_267.field_3091);
+      var2.length = 0;
       return var2;
    }
 
    // $FF: renamed from: j (hs, oy) hq
-   public static class_40 method_474(class_266 var0, class_404 var1) {
+   public static class_40 method_474(class_266 var0, ISAAC var1) {
       class_40 var2;
       if(field_266 * 1615295544 == 0) {
          class_40 var10000 = new class_40();
@@ -109,27 +96,27 @@ public class class_40 extends class_27 {
 
       var2.field_267 = var0;
       var2.field_262 = var0.field_3153 * -1937979799;
-      class_29 var10001;
+      NetworkBuffer var10001;
       if(var2.field_262 * 1934863547 == -1) {
-         var10001 = new class_29(591459580);
-         var2.field_263 = var10001;
+         var10001 = new NetworkBuffer(591459580);
+         var2.networkBuffer = var10001;
       } else if(-2 == -1645372153 * var2.field_262) {
-         var10001 = new class_29(10000);
-         var2.field_263 = var10001;
+         var10001 = new NetworkBuffer(10000);
+         var2.networkBuffer = var10001;
       } else if(var2.field_262 * -1944320151 <= 18) {
-         var10001 = new class_29(20);
-         var2.field_263 = var10001;
+         var10001 = new NetworkBuffer(20);
+         var2.networkBuffer = var10001;
       } else if(1934863547 * var2.field_262 <= 98) {
-         var10001 = new class_29(-922060501);
-         var2.field_263 = var10001;
+         var10001 = new NetworkBuffer(-922060501);
+         var2.networkBuffer = var10001;
       } else {
-         var10001 = new class_29(-178792389);
-         var2.field_263 = var10001;
+         var10001 = new NetworkBuffer(-178792389);
+         var2.networkBuffer = var10001;
       }
 
-      var2.field_263.method_354(var1);
-      var2.field_263.method_357(-1958588669 * var2.field_267.field_3091);
-      var2.field_264 = 0;
+      var2.networkBuffer.method_354(var1);
+      var2.networkBuffer.method_357(-1958588669 * var2.field_267.field_3091);
+      var2.length = 0;
       return var2;
    }
 
@@ -145,13 +132,13 @@ public class class_40 extends class_27 {
 
       var0.field_267 = null;
       var0.field_262 = 0;
-      class_29 var10001 = new class_29(5000);
-      var0.field_263 = var10001;
+      NetworkBuffer var10001 = new NetworkBuffer(5000);
+      var0.networkBuffer = var10001;
       return var0;
    }
 
    // $FF: renamed from: y (hs, oy) hq
-   public static class_40 method_476(class_266 var0, class_404 var1) {
+   public static class_40 method_476(class_266 var0, ISAAC var1) {
       class_40 var2;
       if(field_266 * -227614929 == 0) {
          class_40 var10000 = new class_40();
@@ -162,27 +149,27 @@ public class class_40 extends class_27 {
 
       var2.field_267 = var0;
       var2.field_262 = var0.field_3153 * -1937979799;
-      class_29 var10001;
+      NetworkBuffer var10001;
       if(var2.field_262 * 1934863547 == -1) {
-         var10001 = new class_29(260);
-         var2.field_263 = var10001;
+         var10001 = new NetworkBuffer(260);
+         var2.networkBuffer = var10001;
       } else if(-2 == 1934863547 * var2.field_262) {
-         var10001 = new class_29(10000);
-         var2.field_263 = var10001;
+         var10001 = new NetworkBuffer(10000);
+         var2.networkBuffer = var10001;
       } else if(var2.field_262 * 1934863547 <= 18) {
-         var10001 = new class_29(20);
-         var2.field_263 = var10001;
+         var10001 = new NetworkBuffer(20);
+         var2.networkBuffer = var10001;
       } else if(1934863547 * var2.field_262 <= 98) {
-         var10001 = new class_29(100);
-         var2.field_263 = var10001;
+         var10001 = new NetworkBuffer(100);
+         var2.networkBuffer = var10001;
       } else {
-         var10001 = new class_29(260);
-         var2.field_263 = var10001;
+         var10001 = new NetworkBuffer(260);
+         var2.networkBuffer = var10001;
       }
 
-      var2.field_263.method_354(var1);
-      var2.field_263.method_357(-1958588669 * var2.field_267.field_3091);
-      var2.field_264 = 0;
+      var2.networkBuffer.method_354(var1);
+      var2.networkBuffer.method_357(-1958588669 * var2.field_267.field_3091);
+      var2.length = 0;
       return var2;
    }
 
@@ -255,8 +242,8 @@ public class class_40 extends class_27 {
 
       var0.field_267 = null;
       var0.field_262 = 0;
-      class_29 var10001 = new class_29(5000);
-      var0.field_263 = var10001;
+      NetworkBuffer var10001 = new NetworkBuffer(5000);
+      var0.networkBuffer = var10001;
       return var0;
    }
 
@@ -298,8 +285,8 @@ public class class_40 extends class_27 {
 
       var0.field_267 = null;
       var0.field_262 = 0;
-      class_29 var10001 = new class_29(5000);
-      var0.field_263 = var10001;
+      NetworkBuffer var10001 = new NetworkBuffer(5000);
+      var0.networkBuffer = var10001;
       return var0;
    }
 }

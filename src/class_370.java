@@ -7,7 +7,7 @@ public class class_370 implements class_20 {
 
 
     // $FF: renamed from: ho (boolean, nb, int) void
-   static final void method_6601(boolean var0, class_29 var1, int var2) {
+   static final void method_6601(boolean var0, NetworkBuffer var1, int var2) {
       try {
          client.field_1476 = var0;
          int var3;

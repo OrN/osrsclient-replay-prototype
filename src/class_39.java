@@ -261,11 +261,11 @@ public class class_39 extends class_27 {
       this.field_259 = new byte[var4];
       Buffer var10000 = new Buffer(this.field_259);
       Buffer var51 = var10000;
-      var51.method_116(1297377380);
-      var51.method_116(6);
-      var51.method_333(var2 > 1?1:0);
-      var51.method_333(var2);
-      var51.method_333(var3);
+      var51.writeIntReverse(1297377380);
+      var51.writeIntReverse(6);
+      var51.writeShortReverse(var2 > 1?1:0);
+      var51.writeShortReverse(var2);
+      var51.writeShortReverse(var3);
       var1.offset = var13 * -1025691571;
       int var52 = 0;
       int var53 = 0;
@@ -279,7 +279,7 @@ public class class_39 extends class_27 {
       int var60 = 0;
 
       while(var60 < var2) {
-         var51.method_116(1297379947);
+         var51.writeIntReverse(1297379947);
          var51.offset += 192201012;
          int var61 = var51.offset * -442398587;
          int var62 = -1;

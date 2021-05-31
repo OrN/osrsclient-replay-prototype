@@ -376,7 +376,7 @@ public class class_233 {
             }
          } else {
             class_69 var8 = (class_69)this.field_2606.get(var7.field_2643);
-            var8.method_884(var7.field_2642, var3 - var7.field_2640 * -1781114869 / 2, var4, -1781114869 * var7.field_2640, -733130897 * var7.field_2641, -16777216 | var2.field_605 * 1016348217, 0, 1, 0, var8.field_522 / 2);
+            var8.drawString(var7.field_2642, var3 - var7.field_2640 * -1781114869 / 2, var4, -1781114869 * var7.field_2640, -733130897 * var7.field_2641, -16777216 | var2.field_605 * 1016348217, 0, 1, 0, var8.field_522 / 2);
          }
       } catch (RuntimeException var9) {
          throw class_223.method_4281(var9);

@@ -251,10 +251,10 @@ public class class_176 {
                }
 
                client.field_1638 = class_165.field_2052[-26460885 * class_136.field_1752 + 2] * 1186588677;
-               class_40 var15 = class_112.method_2238(class_266.field_3085, client.field_1463.field_2384, (byte)8);
-               var15.field_263.writeByte(client.field_1593 * -639645947);
-               var15.field_263.writeByte(-767370613 * class_45.field_338.field_3961);
-               var15.field_263.writeByte(client.field_1638 * -1863932723);
+               class_40 var15 = class_112.method_2238(class_266.field_3085, client.field_1463.isaac, (byte)8);
+               var15.networkBuffer.writeByte(client.field_1593 * -639645947);
+               var15.networkBuffer.writeByte(-767370613 * class_45.field_338.field_3961);
+               var15.networkBuffer.writeByte(client.field_1638 * -1863932723);
                client.field_1463.method_4079(var15);
                return 1;
             }
@@ -268,11 +268,11 @@ public class class_176 {
                class_136.field_1752 -= 2119512838;
                var10 = class_165.field_2052[class_136.field_1752 * -26460885];
                var12 = class_165.field_2052[class_136.field_1752 * -26460885 + 1];
-               var7 = class_112.method_2238(class_266.field_3070, client.field_1463.field_2384, (byte)8);
-               var7.field_263.writeByte(class_166.method_3598(var4) + 2);
-               var7.field_263.method_120(var4);
-               var7.field_263.writeByte(var10 - 1);
-               var7.field_263.writeByte(var12);
+               var7 = class_112.method_2238(class_266.field_3070, client.field_1463.isaac, (byte)8);
+               var7.networkBuffer.writeByte(class_166.method_3598(var4) + 2);
+               var7.networkBuffer.writeString(var4);
+               var7.networkBuffer.writeByte(var10 - 1);
+               var7.networkBuffer.writeByte(var12);
                client.field_1463.method_4079(var7);
                return 1;
             } else {
@@ -470,12 +470,12 @@ public class class_176 {
                            class_165.field_2054 -= -1000716630;
                            var4 = class_165.field_2053[class_165.field_2054 * 1824375293];
                            String var11 = class_165.field_2053[1824375293 * class_165.field_2054 + 1];
-                           var13 = class_112.method_2238(class_266.field_3088, client.field_1463.field_2384, (byte)8);
-                           var13.field_263.method_333(0);
-                           int var14 = -442398587 * var13.field_263.offset;
-                           var13.field_263.method_120(var4);
-                           class_86.method_1479(var13.field_263, var11);
-                           var13.field_263.method_126(-442398587 * var13.field_263.offset - var14, (byte)-121);
+                           var13 = class_112.method_2238(class_266.field_3088, client.field_1463.isaac, (byte)8);
+                           var13.networkBuffer.writeShortReverse(0);
+                           int var14 = -442398587 * var13.networkBuffer.offset;
+                           var13.networkBuffer.writeString(var4);
+                           class_86.method_1479(var13.networkBuffer, var11);
+                           var13.networkBuffer.writeShortAltReverse(-442398587 * var13.networkBuffer.offset - var14, (byte)-121);
                            client.field_1463.method_4079(var13);
                            return 1;
                         }

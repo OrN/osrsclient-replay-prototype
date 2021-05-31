@@ -260,7 +260,7 @@ public class class_57 extends class_27 {
          } while(var6 >= 255);
 
          byte[] var7 = new byte[var5];
-         var2.method_267(var7, 0, var5, 728624452);
+         var2.read(var7, 0, var5, 728624452);
          this.field_450[var4] = var7;
       }
 
@@ -896,7 +896,7 @@ public class class_57 extends class_27 {
          } while(var6 >= 255);
 
          byte[] var7 = new byte[var5];
-         var2.method_267(var7, 0, var5, 1437213151);
+         var2.read(var7, 0, var5, 1437213151);
          this.field_450[var4] = var7;
       }
 
@@ -928,7 +928,7 @@ public class class_57 extends class_27 {
          } while(var6 >= -1811845834);
 
          byte[] var7 = new byte[var5];
-         var2.method_267(var7, 0, var5, 1610138167);
+         var2.read(var7, 0, var5, 1610138167);
          this.field_450[var4] = var7;
       }
 
@@ -960,7 +960,7 @@ public class class_57 extends class_27 {
          } while(var6 >= 255);
 
          byte[] var7 = new byte[var5];
-         var2.method_267(var7, 0, var5, 1109069848);
+         var2.read(var7, 0, var5, 1109069848);
          this.field_450[var4] = var7;
       }
 
@@ -1487,7 +1487,7 @@ public class class_57 extends class_27 {
          } while(var6 >= 255);
 
          byte[] var7 = new byte[var5];
-         var2.method_267(var7, 0, var5, 1624589879);
+         var2.read(var7, 0, var5, 1624589879);
          this.field_450[var4] = var7;
       }
 

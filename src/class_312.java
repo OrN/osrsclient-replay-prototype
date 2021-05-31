@@ -79,7 +79,7 @@ public class class_312 {
    public class_312(Buffer var1, boolean var2) {
       super();
       try {
-         this.field_3755 = var1.method_131();
+         this.field_3755 = var1.readByte();
          this.field_3754 = var1.readShort() * 515671321;
          this.field_3758 = var1.readInt() * 675729031;
          this.field_3756 = var1.readInt() * 1613502191;

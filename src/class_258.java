@@ -71,7 +71,7 @@ public abstract class class_258 extends class_257 implements class_21 {
                throw new IllegalStateException();
             }
 
-            var5.field_4254 = Long.valueOf(var1.method_136());
+            var5.field_4254 = Long.valueOf(var1.readLong());
          } else if(var6 == String.class) {
             if(var2 <= 8) {
                throw new IllegalStateException();
@@ -156,7 +156,7 @@ public abstract class class_258 extends class_257 implements class_21 {
       if(var5 == Integer.class) {
          var4.field_4254 = Integer.valueOf(var1.readInt());
       } else if(Long.class == var5) {
-         var4.field_4254 = Long.valueOf(var1.method_136());
+         var4.field_4254 = Long.valueOf(var1.readLong());
       } else if(var5 == String.class) {
          var4.field_4254 = var1.method_140((byte)9);
       } else {

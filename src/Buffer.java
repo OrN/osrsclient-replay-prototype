@@ -55,7 +55,7 @@ public class Buffer extends class_27 {
    }
 
    // $FF: renamed from: as (int, int) void
-   public void method_115(int var1) {
+   public void writeTriReversed(int var1) {
       try {
          this.data[(this.offset += -1025691571) * -442398587 - 1] = (byte)(var1 >> 16);
          this.data[(this.offset += -1025691571) * -442398587 - 1] = (byte)(var1 >> 8);
@@ -66,7 +66,7 @@ public class Buffer extends class_27 {
    }
 
    // $FF: renamed from: aj (int, int) void
-   public void method_116(int var1) {
+   public void writeIntReverse(int var1) {
       try {
          this.data[(this.offset += -1025691571) * -442398587 - 1] = (byte)(var1 >> 24);
          this.data[(this.offset += -1025691571) * -442398587 - 1] = (byte)(var1 >> 16);
@@ -117,7 +117,7 @@ public class Buffer extends class_27 {
    }
 
    // $FF: renamed from: at (java.lang.String, int) void
-   public void method_120(String var1) {
+   public void writeString(String var1) {
       try {
          int var3 = var1.indexOf(0);
          if(var3 >= 0) {
@@ -208,7 +208,7 @@ public class Buffer extends class_27 {
    }
 
    // $FF: renamed from: ay (int, byte) void
-   public void method_126(int var1, byte var2) {
+   public void writeShortAltReverse(int var1, byte var2) {
       try {
          if(var1 >= 0) {
             if(var2 >= 32) {
@@ -354,7 +354,7 @@ public class Buffer extends class_27 {
    }
 
    // $FF: renamed from: bt (byte) byte
-   public byte method_131() {
+   public byte readByte() {
       try {
          return this.data[(this.offset += -1025691571) * -442398587 - 1];
       } catch (RuntimeException var2) {
@@ -410,7 +410,7 @@ public class Buffer extends class_27 {
    }
 
    // $FF: renamed from: bm (int) long
-   public long method_136() {
+   public long readLong() {
       try {
          long var2 = (long)this.readInt() & 4294967295L;
          long var4 = (long)this.readInt() & 4294967295L;
@@ -461,13 +461,6 @@ public class Buffer extends class_27 {
 
       var5 = var9 - var7;
       this.offset = var4 + -1025691571 * var5;
-   }
-
-   // $FF: renamed from: jn (int) void
-   public void method_138(int var1) {
-      this.data[(this.offset += -1025691571) * -442398587 - 1] = (byte)var1;
-      this.data[(this.offset += -18044079) * -442398587 - 1] = (byte)(var1 >> 8);
-      this.data[(this.offset += 903467245) * -1364142286 - 1] = (byte)(var1 >> 16);
    }
 
    // $FF: renamed from: bs (int) java.lang.String
@@ -809,8 +802,8 @@ public class Buffer extends class_27 {
             }
 
             this.offset -= 384402024;
-            this.method_116(var5);
-            this.method_116(var6);
+            this.writeIntReverse(var5);
+            this.writeIntReverse(var6);
          }
 
       } catch (RuntimeException var10) {
@@ -819,30 +812,30 @@ public class Buffer extends class_27 {
    }
 
    // $FF: renamed from: bb (int[], int, int, byte) void
-   public void method_151(int[] var1, int var2, int var3, byte var4) {
+   public void xteaEncrypt(int[] keys, int offset, int length, byte var4) {
       try {
          int var5 = -442398587 * this.offset;
-         this.offset = -1025691571 * var2;
-         int var6 = (var3 - var2) / 8;
+         this.offset = -1025691571 * offset;
+         int blockLength = (length - offset) / 8;
 
-         for(int var7 = 0; var7 < var6; ++var7) {
+         for(int i = 0; i < blockLength; ++i) {
             int var8 = this.readInt();
             int var9 = this.readInt();
             int var10 = 0;
             int var11 = -1640531527;
 
-            for(int var12 = 32; var12-- > 0; var9 += (var8 << 4 ^ var8 >>> 5) + var8 ^ var1[var10 >>> 11 & 3] + var10) {
+            for(int var12 = 32; var12-- > 0; var9 += (var8 << 4 ^ var8 >>> 5) + var8 ^ keys[var10 >>> 11 & 3] + var10) {
                if(var4 == 0) {
                   throw new IllegalStateException();
                }
 
-               var8 += (var9 << 4 ^ var9 >>> 5) + var9 ^ var10 + var1[var10 & 3];
+               var8 += (var9 << 4 ^ var9 >>> 5) + var9 ^ var10 + keys[var10 & 3];
                var10 += var11;
             }
 
             this.offset -= 384402024;
-            this.method_116(var8);
-            this.method_116(var9);
+            this.writeIntReverse(var8);
+            this.writeIntReverse(var9);
          }
 
          this.offset = var5 * -1025691571;
@@ -864,18 +857,18 @@ public class Buffer extends class_27 {
    }
 
    // $FF: renamed from: bg (java.math.BigInteger, java.math.BigInteger, int) void
-   public void method_153(BigInteger var1, BigInteger var2) {
+   public void encryptRSA(BigInteger var1, BigInteger var2) {
       try {
          int var4 = -442398587 * this.offset;
          this.offset = 0;
          byte[] var5 = new byte[var4];
-         this.method_267(var5, 0, var4, 841544685);
+         this.read(var5, 0, var4, 841544685);
          BigInteger var6 = new BigInteger(var5);
          BigInteger var7 = var6.modPow(var1, var2);
          byte[] var8 = var7.toByteArray();
          this.offset = 0;
-         this.method_333(var8.length);
-         this.method_161(var8, 0, var8.length);
+         this.writeShortReverse(var8.length);
+         this.write(var8, 0, var8.length);
       } catch (RuntimeException var9) {
          throw class_223.method_4281(var9);
       }
@@ -909,7 +902,7 @@ public class Buffer extends class_27 {
                   throw new IllegalStateException();
                }
 
-               this.method_333('\u8000' + var1);
+               this.writeShortReverse('\u8000' + var1);
                return;
             }
          }
@@ -991,10 +984,10 @@ public class Buffer extends class_27 {
    }
 
    // $FF: renamed from: aw (byte[], int, int, int) void
-   public void method_161(byte[] var1, int var2, int var3) {
+   public void write(byte[] src, int offset, int len) {
       try {
-         for(int var5 = var2; var5 < var2 + var3; ++var5) {
-            this.data[(this.offset += -1025691571) * -442398587 - 1] = var1[var5];
+         for(int var5 = offset; var5 < offset + len; ++var5) {
+            this.data[(this.offset += -1025691571) * -442398587 - 1] = src[var5];
          }
 
       } catch (RuntimeException var6) {
@@ -1043,7 +1036,7 @@ public class Buffer extends class_27 {
    }
 
    // $FF: renamed from: cn (int, int) void
-   public void method_165(int var1) {
+   public void writeShort(int var1) {
       try {
          this.data[(this.offset += -1025691571) * -442398587 - 1] = (byte)var1;
          this.data[(this.offset += -1025691571) * -442398587 - 1] = (byte)(var1 >> 8);
@@ -1052,14 +1045,8 @@ public class Buffer extends class_27 {
       }
    }
 
-   // $FF: renamed from: jj () int
-   public int method_166() {
-      this.offset += 192201012;
-      return ((this.data[-442398587 * this.offset - 2] & 255) << 24) + ((this.data[this.offset * -442398587 - 1] & 255) << 16) + ((this.data[this.offset * -442398587 - 4] & 255) << 8) + (this.data[-442398587 * this.offset - 3] & 255);
-   }
-
    // $FF: renamed from: cg (int, byte) void
-   public void method_167(int var1) {
+   public void writeShortAlt(int var1) {
       try {
          this.data[(this.offset += -1025691571) * -442398587 - 1] = (byte)(var1 + 128);
          this.data[(this.offset += -1025691571) * -442398587 - 1] = (byte)(var1 >> 8);
@@ -1079,7 +1066,7 @@ public class Buffer extends class_27 {
    }
 
    // $FF: renamed from: ck (int) int
-   public int method_169() {
+   public int readShortAlt() {
       try {
          this.offset += -2051383142;
          return (this.data[-442398587 * this.offset - 1] - 128 & 255) + ((this.data[-442398587 * this.offset - 2] & 255) << 8);
@@ -1138,7 +1125,7 @@ public class Buffer extends class_27 {
    }
 
    // $FF: renamed from: ch (int, int) void
-   public void method_176(int var1) {
+   public void writeInt(int var1) {
       try {
          this.data[(this.offset += -1025691571) * -442398587 - 1] = (byte)var1;
          this.data[(this.offset += -1025691571) * -442398587 - 1] = (byte)(var1 >> 8);
@@ -1150,7 +1137,7 @@ public class Buffer extends class_27 {
    }
 
    // $FF: renamed from: cy (int, byte) void
-   public void method_177(int var1) {
+   public void writeIntAlt(int var1) {
       try {
          this.data[(this.offset += -1025691571) * -442398587 - 1] = (byte)(var1 >> 8);
          this.data[(this.offset += -1025691571) * -442398587 - 1] = (byte)var1;
@@ -1257,14 +1244,6 @@ public class Buffer extends class_27 {
       }
    }
 
-   // $FF: renamed from: gn (byte[], int, int) void
-   public void method_188(byte[] var1, int var2, int var3) {
-      for(int var4 = var2; var4 < var2 + var3; ++var4) {
-         var1[var4] = this.data[(this.offset += -1025691571) * -442398587 - 1];
-      }
-
-   }
-
    // $FF: renamed from: dk () void
    public void method_189() {
       if(this.data != null) {
@@ -1275,7 +1254,7 @@ public class Buffer extends class_27 {
    }
 
    // $FF: renamed from: cx (int, int) void
-   public void writeInt(int var1) {
+   public void writeIntAltReversed(int var1) {
       try {
          this.data[(this.offset += -1025691571) * -442398587 - 1] = (byte)(var1 >> 16);
          this.data[(this.offset += -1025691571) * -442398587 - 1] = (byte)(var1 >> 24);
@@ -1461,50 +1440,6 @@ public class Buffer extends class_27 {
       return (this.data[-430923245 * this.offset - 1] - 128 & 255) + ((this.data[1421436989 * this.offset - 2] & 255) << 8);
    }
 
-   // $FF: renamed from: et (byte[], int, int) void
-   public void method_220(byte[] var1, int var2, int var3) {
-      for(int var4 = var2; var4 < var2 + var3; ++var4) {
-         this.data[(this.offset += -1025691571) * -442398587 - 1] = var1[var4];
-      }
-
-   }
-
-   // $FF: renamed from: ig () byte
-   public byte method_221() {
-      return (byte)(0 - this.data[(this.offset += -1025691571) * -442398587 - 1]);
-   }
-
-   // $FF: renamed from: er (byte[], int, int) void
-   public void method_222(byte[] var1, int var2, int var3) {
-      for(int var4 = var2; var4 < var2 + var3; ++var4) {
-         this.data[(this.offset += -1025691571) * -5952759 - 1] = var1[var4];
-      }
-
-   }
-
-   // $FF: renamed from: en (byte[], int, int) void
-   public void method_223(byte[] var1, int var2, int var3) {
-      for(int var4 = var2; var4 < var2 + var3; ++var4) {
-         this.data[(this.offset += -1025691571) * -442398587 - 1] = var1[var4];
-      }
-
-   }
-
-   // $FF: renamed from: ef (nd) void
-   public void method_224(Buffer var1) {
-      this.method_161(var1.data, 0, var1.offset * -442398587);
-   }
-
-   // $FF: renamed from: em (nd) void
-   public void method_225(Buffer var1) {
-      this.method_161(var1.data, 0, var1.offset * 413383614);
-   }
-
-   // $FF: renamed from: es (nd) void
-   public void method_226(Buffer var1) {
-      this.method_161(var1.data, 0, var1.offset * -442398587);
-   }
-
    // $FF: renamed from: cu (int) int
    public int method_227(int var1) {
       try {
@@ -1587,8 +1522,8 @@ public class Buffer extends class_27 {
             }
 
             this.offset -= 384402024;
-            this.method_116(var5);
-            this.method_116(var6);
+            this.writeIntReverse(var5);
+            this.writeIntReverse(var6);
          }
 
       } catch (RuntimeException var10) {
@@ -1610,7 +1545,7 @@ public class Buffer extends class_27 {
       if(var1 >= 0 && var1 < 128) {
          this.writeByte(var1);
       } else if(var1 >= 0 && var1 < '\u8000') {
-         this.method_333('\u8000' + var1);
+         this.writeShortReverse('\u8000' + var1);
       } else {
          throw new IllegalArgumentException();
       }
@@ -1621,7 +1556,7 @@ public class Buffer extends class_27 {
       if(var1 >= 0 && var1 < 552479697) {
          this.writeByte(var1);
       } else if(var1 >= 0 && var1 < '\u8000') {
-         this.method_333('\u8000' + var1);
+         this.writeShortReverse('\u8000' + var1);
       } else {
          throw new IllegalArgumentException();
       }
@@ -1632,7 +1567,7 @@ public class Buffer extends class_27 {
       if(var1 >= 0 && var1 < -1762041547) {
          this.writeByte(var1);
       } else if(var1 >= 0 && var1 < -848738216) {
-         this.method_333('\u8000' + var1);
+         this.writeShortReverse('\u8000' + var1);
       } else {
          throw new IllegalArgumentException();
       }
@@ -1702,24 +1637,24 @@ public class Buffer extends class_27 {
       int var3 = -442398587 * this.offset;
       this.offset = 0;
       byte[] var4 = new byte[var3];
-      this.method_267(var4, 0, var3, 1173119673);
+      this.read(var4, 0, var3, 1173119673);
       BigInteger var5 = new BigInteger(var4);
       BigInteger var6 = var5.modPow(var1, var2);
       byte[] var7 = var6.toByteArray();
       this.offset = 0;
-      this.method_333(var7.length);
-      this.method_161(var7, 0, var7.length);
+      this.writeShortReverse(var7.length);
+      this.write(var7, 0, var7.length);
    }
 
    // $FF: renamed from: db (byte[], int, int, short) void
-   public void method_243(byte[] var1, int var2, int var3, short var4) {
+   public void readReverse(byte[] dst, int var2, int var3, short var4) {
       try {
          for(int var5 = var3 + var2 - 1; var5 >= var2; --var5) {
             if(var4 <= 8218) {
                return;
             }
 
-            var1[var5] = (byte)(this.data[(this.offset += -1025691571) * -442398587 - 1] - 128);
+            dst[var5] = (byte)(this.data[(this.offset += -1025691571) * -442398587 - 1] - 128);
          }
 
       } catch (RuntimeException var6) {
@@ -1782,14 +1717,6 @@ public class Buffer extends class_27 {
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
       }
-   }
-
-   // $FF: renamed from: jz (byte[], int, int) void
-   public void method_251(byte[] var1, int var2, int var3) {
-      for(int var4 = var3 + var2 - 1; var4 >= var2; --var4) {
-         var1[var4] = (byte)(this.data[(this.offset += -1025691571) * -442398587 - 1] - 128);
-      }
-
    }
 
    // $FF: renamed from: gw () int
@@ -1856,13 +1783,13 @@ public class Buffer extends class_27 {
       int var3 = 1466193639 * this.offset;
       this.offset = 0;
       byte[] var4 = new byte[var3];
-      this.method_267(var4, 0, var3, 1867772799);
+      this.read(var4, 0, var3, 1867772799);
       BigInteger var5 = new BigInteger(var4);
       BigInteger var6 = var5.modPow(var1, var2);
       byte[] var7 = var6.toByteArray();
       this.offset = 0;
-      this.method_333(var7.length);
-      this.method_161(var7, 0, var7.length);
+      this.writeShortReverse(var7.length);
+      this.write(var7, 0, var7.length);
    }
 
    // $FF: renamed from: gf () boolean
@@ -1940,14 +1867,14 @@ public class Buffer extends class_27 {
    }
 
    // $FF: renamed from: ba (byte[], int, int, int) void
-   public void method_267(byte[] var1, int var2, int var3, int var4) {
+   public void read(byte[] dst, int offset, int len, int var4) {
       try {
-         for(int var5 = var2; var5 < var2 + var3; ++var5) {
+         for(int var5 = offset; var5 < offset + len; ++var5) {
             if(var4 <= 712195475) {
                throw new IllegalStateException();
             }
 
-            var1[var5] = this.data[(this.offset += -1025691571) * -442398587 - 1];
+            dst[var5] = this.data[(this.offset += -1025691571) * -442398587 - 1];
          }
 
       } catch (RuntimeException var6) {
@@ -2153,8 +2080,8 @@ public class Buffer extends class_27 {
          }
 
          this.offset -= 384402024;
-         this.method_116(var4);
-         this.method_116(var5);
+         this.writeIntReverse(var4);
+         this.writeIntReverse(var5);
       }
 
    }
@@ -2176,8 +2103,8 @@ public class Buffer extends class_27 {
          }
 
          this.offset -= 384402024;
-         this.method_116(var4);
-         this.method_116(var5);
+         this.writeIntReverse(var4);
+         this.writeIntReverse(var5);
       }
 
    }
@@ -2198,7 +2125,7 @@ public class Buffer extends class_27 {
          }
 
          var6 = ~var6;
-         this.method_116(var6);
+         this.writeIntReverse(var6);
          return var6;
       } catch (RuntimeException var8) {
          throw class_223.method_4281(var8);
@@ -2222,8 +2149,8 @@ public class Buffer extends class_27 {
          }
 
          this.offset -= 384402024;
-         this.method_116(var4);
-         this.method_116(var5);
+         this.writeIntReverse(var4);
+         this.writeIntReverse(var5);
       }
 
    }
@@ -2246,8 +2173,8 @@ public class Buffer extends class_27 {
          }
 
          this.offset -= 1919460364;
-         this.method_116(var7);
-         this.method_116(var8);
+         this.writeIntReverse(var7);
+         this.writeIntReverse(var8);
       }
 
       this.offset = var4 * -232195251;
@@ -2271,8 +2198,8 @@ public class Buffer extends class_27 {
          }
 
          this.offset -= 1845440158;
-         this.method_116(var7);
-         this.method_116(var8);
+         this.writeIntReverse(var7);
+         this.writeIntReverse(var8);
       }
 
       this.offset = -1025691571 * var4;
@@ -2296,8 +2223,8 @@ public class Buffer extends class_27 {
          }
 
          this.offset -= 384402024;
-         this.method_116(var7);
-         this.method_116(var8);
+         this.writeIntReverse(var7);
+         this.writeIntReverse(var8);
       }
 
       this.offset = -1025691571 * var4;
@@ -2321,8 +2248,8 @@ public class Buffer extends class_27 {
          }
 
          this.offset -= 384402024;
-         this.method_116(var7);
-         this.method_116(var8);
+         this.writeIntReverse(var7);
+         this.writeIntReverse(var8);
       }
 
       this.offset = -1025691571 * var4;
@@ -2333,13 +2260,13 @@ public class Buffer extends class_27 {
       int var3 = -442398587 * this.offset;
       this.offset = 0;
       byte[] var4 = new byte[var3];
-      this.method_267(var4, 0, var3, 1825656758);
+      this.read(var4, 0, var3, 1825656758);
       BigInteger var5 = new BigInteger(var4);
       BigInteger var6 = var5.modPow(var1, var2);
       byte[] var7 = var6.toByteArray();
       this.offset = 0;
-      this.method_333(var7.length);
-      this.method_161(var7, 0, var7.length);
+      this.writeShortReverse(var7.length);
+      this.write(var7, 0, var7.length);
    }
 
    // $FF: renamed from: cz (byte) int
@@ -2362,13 +2289,13 @@ public class Buffer extends class_27 {
       int var3 = -442398587 * this.offset;
       this.offset = 0;
       byte[] var4 = new byte[var3];
-      this.method_267(var4, 0, var3, 2010098768);
+      this.read(var4, 0, var3, 2010098768);
       BigInteger var5 = new BigInteger(var4);
       BigInteger var6 = var5.modPow(var1, var2);
       byte[] var7 = var6.toByteArray();
       this.offset = 0;
-      this.method_333(var7.length);
-      this.method_161(var7, 0, var7.length);
+      this.writeShortReverse(var7.length);
+      this.write(var7, 0, var7.length);
    }
 
    // $FF: renamed from: bk (int[], int, int, int) void
@@ -2394,8 +2321,8 @@ public class Buffer extends class_27 {
             }
 
             this.offset -= 384402024;
-            this.method_116(var8);
-            this.method_116(var9);
+            this.writeIntReverse(var8);
+            this.writeIntReverse(var9);
          }
 
          this.offset = -1025691571 * var5;
@@ -2415,7 +2342,7 @@ public class Buffer extends class_27 {
       }
 
       var5 = ~var5;
-      this.method_116(var5);
+      this.writeIntReverse(var5);
       return var5;
    }
 
@@ -2430,7 +2357,7 @@ public class Buffer extends class_27 {
       }
 
       var5 = ~var5;
-      this.method_116(var5);
+      this.writeIntReverse(var5);
       return var5;
    }
 
@@ -2703,7 +2630,7 @@ public class Buffer extends class_27 {
    }
 
    // $FF: renamed from: ax (int, int) void
-   public void method_333(int var1) {
+   public void writeShortReverse(int var1) {
       try {
          this.data[(this.offset += -1025691571) * -442398587 - 1] = (byte)(var1 >> 8);
          this.data[(this.offset += -1025691571) * -442398587 - 1] = (byte)var1;
@@ -2713,9 +2640,9 @@ public class Buffer extends class_27 {
    }
 
    // $FF: renamed from: af (nd, byte) void
-   public void method_334(Buffer var1) {
+   public void writeBuffer(Buffer src) {
       try {
-         this.method_161(var1.data, 0, var1.offset * -442398587);
+         this.write(src.data, 0, src.offset * -442398587);
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
       }
@@ -2793,7 +2720,7 @@ public class Buffer extends class_27 {
    }
 
    // $FF: renamed from: az (long) void
-   public void method_341(long var1) {
+   public void writeLongReversed(long var1) {
       try {
          this.data[(this.offset += -1025691571) * -442398587 - 1] = (byte)((int)(var1 >> 56));
          this.data[(this.offset += -1025691571) * -442398587 - 1] = (byte)((int)(var1 >> 48));
@@ -2919,8 +2846,8 @@ public class Buffer extends class_27 {
          }
 
          this.offset -= 1353541151;
-         this.method_116(var4);
-         this.method_116(var5);
+         this.writeIntReverse(var4);
+         this.writeIntReverse(var5);
       }
 
    }
@@ -2942,7 +2869,7 @@ public class Buffer extends class_27 {
       }
 
       var5 = ~var5;
-      this.method_116(var5);
+      this.writeIntReverse(var5);
       return var5;
    }
 

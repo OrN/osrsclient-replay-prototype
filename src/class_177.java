@@ -10,7 +10,7 @@ public class class_177 {
    // $FF: renamed from: y op[]
    static class_66[] field_2184;
    // $FF: renamed from: j op
-   static class_66 field_2185;
+   static class_66 loginButton;
    // $FF: renamed from: r oh
    static class_67 field_2186;
    // $FF: renamed from: x int
@@ -36,7 +36,7 @@ public class class_177 {
    // $FF: renamed from: ar int
    static int field_2199;
    // $FF: renamed from: at java.lang.String
-   static String field_2200;
+   static String email;
    // $FF: renamed from: aa boolean
    static boolean field_2201;
    // $FF: renamed from: bm boolean
@@ -79,7 +79,7 @@ public class class_177 {
       field_2196 = "";
       field_2197 = "";
       field_2213 = "";
-      field_2200 = "";
+      email = "";
       field_2212 = "";
       field_2201 = false;
       field_2207 = false;

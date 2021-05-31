@@ -47,7 +47,7 @@ public class class_42 extends class_27 {
       this.field_307 = new int[var5];
 
       for(int var6 = 0; var6 < this.field_301.length; ++var6) {
-         class_66 var7 = class_131.method_2903(var4, this.field_301[var6], (short)234);
+         class_66 var7 = GameMouseListener.method_2903(var4, this.field_301[var6], (short)234);
          var7.method_738();
          byte[] var8 = var7.field_493;
          int[] var9 = var7.field_491;
@@ -144,7 +144,7 @@ public class class_42 extends class_27 {
       this.field_307 = new int[var5];
 
       for(int var6 = 0; var6 < this.field_301.length; ++var6) {
-         class_66 var7 = class_131.method_2903(var4, this.field_301[var6], (short)234);
+         class_66 var7 = GameMouseListener.method_2903(var4, this.field_301[var6], (short)234);
          var7.method_738();
          byte[] var8 = var7.field_493;
          int[] var9 = var7.field_491;
@@ -358,7 +358,7 @@ public class class_42 extends class_27 {
       this.field_307 = new int[var5];
 
       for(int var6 = 0; var6 < this.field_301.length; ++var6) {
-         class_66 var7 = class_131.method_2903(var4, this.field_301[var6], (short)234);
+         class_66 var7 = GameMouseListener.method_2903(var4, this.field_301[var6], (short)234);
          var7.method_738();
          byte[] var8 = var7.field_493;
          int[] var9 = var7.field_491;

@@ -1,17 +1,17 @@
 
 // $FF: renamed from: nb
-public class class_29 extends Buffer {
+public class NetworkBuffer extends Buffer {
 
    // $FF: renamed from: f int
    int field_18;
    // $FF: renamed from: v oy
-   class_404 field_19;
+   ISAAC field_19;
    // $FF: renamed from: n int[]
    static final int[] field_20;
 
 
    // $FF: renamed from: n (oy, byte) void
-   public void method_354(class_404 var1) {
+   public void method_354(ISAAC var1) {
       try {
          this.field_19 = var1;
       } catch (RuntimeException var3) {
@@ -22,7 +22,7 @@ public class class_29 extends Buffer {
    // $FF: renamed from: v (int[], int) void
    public void method_355(int[] var1) {
       try {
-         class_404 var10001 = new class_404(var1);
+         ISAAC var10001 = new ISAAC(var1);
          this.field_19 = var10001;
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
@@ -80,7 +80,7 @@ public class class_29 extends Buffer {
    }
 
    // $FF: renamed from: <init> (int) void
-   public class_29(int var1) {
+   public NetworkBuffer(int var1) {
       super(var1);
       try {
       } catch (RuntimeException var2) {
@@ -145,18 +145,18 @@ public class class_29 extends Buffer {
 
    // $FF: renamed from: l (int[]) void
    public void method_365(int[] var1) {
-      class_404 var10001 = new class_404(var1);
+      ISAAC var10001 = new ISAAC(var1);
       this.field_19 = var10001;
    }
 
    // $FF: renamed from: o (int[]) void
    public void method_366(int[] var1) {
-      class_404 var10001 = new class_404(var1);
+      ISAAC var10001 = new ISAAC(var1);
       this.field_19 = var10001;
    }
 
    // $FF: renamed from: c (oy) void
-   public void method_367(class_404 var1) {
+   public void method_367(ISAAC var1) {
       this.field_19 = var1;
    }
 

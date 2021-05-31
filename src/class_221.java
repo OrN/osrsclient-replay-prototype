@@ -875,17 +875,17 @@ public final class class_221 {
                         throw new IllegalStateException();
                      }
 
-                     if(-678881683 * class_131.field_1722 >= var13 && class_131.field_1703 * 1903378733 >= var14) {
+                     if(-678881683 * GameMouseListener.field_1722 >= var13 && GameMouseListener.field_1703 * 1903378733 >= var14) {
                         if(var8 != 1695957245) {
                            throw new IllegalStateException();
                         }
 
-                        if(-678881683 * class_131.field_1722 < var15) {
+                        if(-678881683 * GameMouseListener.field_1722 < var15) {
                            if(var8 != 1695957245) {
                               throw new IllegalStateException();
                            }
 
-                           if(1903378733 * class_131.field_1703 < var16) {
+                           if(1903378733 * GameMouseListener.field_1703 < var16) {
                               if(var8 != 1695957245) {
                                  throw new IllegalStateException();
                               }
@@ -925,17 +925,17 @@ public final class class_221 {
                         return;
                      }
 
-                     if(class_131.field_1722 * -678881683 >= var13) {
+                     if(GameMouseListener.field_1722 * -678881683 >= var13) {
                         if(var8 != 1695957245) {
                            throw new IllegalStateException();
                         }
 
-                        if(class_131.field_1703 * 1903378733 >= var14) {
+                        if(GameMouseListener.field_1703 * 1903378733 >= var14) {
                            if(var8 != 1695957245) {
                               throw new IllegalStateException();
                            }
 
-                           if(class_131.field_1722 * -678881683 < var15 && 1903378733 * class_131.field_1703 < var16) {
+                           if(GameMouseListener.field_1722 * -678881683 < var15 && 1903378733 * GameMouseListener.field_1703 < var16) {
                               if(var8 != 1695957245) {
                                  throw new IllegalStateException();
                               }
@@ -965,11 +965,11 @@ public final class class_221 {
                   }
                }
 
-               var18 = -678881683 * class_131.field_1722;
-               var19 = 1903378733 * class_131.field_1703;
-               if(-265253353 * class_131.field_1717 != 0) {
-                  var18 = 1003938789 * class_131.field_1701;
-                  var19 = class_131.field_1711 * 339791065;
+               var18 = -678881683 * GameMouseListener.field_1722;
+               var19 = 1903378733 * GameMouseListener.field_1703;
+               if(-265253353 * GameMouseListener.field_1717 != 0) {
+                  var18 = 1003938789 * GameMouseListener.field_1701;
+                  var19 = GameMouseListener.field_1711 * 339791065;
                }
 
                boolean var39;
@@ -1025,7 +1025,7 @@ public final class class_221 {
                         throw new IllegalStateException();
                      }
 
-                     class_287.field_3278.method_6449(class_131.field_1722 * -678881683, 1903378733 * class_131.field_1703, var30, var11, var12, 1163271639 * var10.field_104, -571887853 * var10.field_117, -814941662);
+                     class_287.field_3278.method_6449(GameMouseListener.field_1722 * -678881683, 1903378733 * GameMouseListener.field_1703, var30, var11, var12, 1163271639 * var10.field_104, -571887853 * var10.field_117, -814941662);
                   }
 
                   if(!client.field_1553) {
@@ -1275,22 +1275,22 @@ public final class class_221 {
                      }
 
                      label1418: {
-                        if(class_131.field_1722 * -678881683 >= var13) {
+                        if(GameMouseListener.field_1722 * -678881683 >= var13) {
                            if(var8 != 1695957245) {
                               throw new IllegalStateException();
                            }
 
-                           if(1903378733 * class_131.field_1703 >= var14) {
+                           if(1903378733 * GameMouseListener.field_1703 >= var14) {
                               if(var8 != 1695957245) {
                                  throw new IllegalStateException();
                               }
 
-                              if(-678881683 * class_131.field_1722 < var15) {
+                              if(-678881683 * GameMouseListener.field_1722 < var15) {
                                  if(var8 != 1695957245) {
                                     throw new IllegalStateException();
                                  }
 
-                                 if(1903378733 * class_131.field_1703 < var16) {
+                                 if(1903378733 * GameMouseListener.field_1703 < var16) {
                                     if(var8 != 1695957245) {
                                        throw new IllegalStateException();
                                     }
@@ -1308,7 +1308,7 @@ public final class class_221 {
                      boolean var31;
                      label1408: {
                         var31 = false;
-                        if(1 != 97210001 * class_131.field_1709) {
+                        if(1 != 97210001 * GameMouseListener.field_1709) {
                            if(client.field_1441) {
                               break label1408;
                            }
@@ -1317,7 +1317,7 @@ public final class class_221 {
                               throw new IllegalStateException();
                            }
 
-                           if(4 != class_131.field_1709 * 97210001) {
+                           if(4 != GameMouseListener.field_1709 * 97210001) {
                               break label1408;
                            }
 
@@ -1333,12 +1333,12 @@ public final class class_221 {
 
                      label1399: {
                         var22 = false;
-                        if(class_131.field_1717 * -265253353 != 1) {
+                        if(GameMouseListener.field_1717 * -265253353 != 1) {
                            if(var8 != 1695957245) {
                               throw new IllegalStateException();
                            }
 
-                           if(client.field_1441 || -265253353 * class_131.field_1717 != 4) {
+                           if(client.field_1441 || -265253353 * GameMouseListener.field_1717 != 4) {
                               break label1399;
                            }
 
@@ -1347,17 +1347,17 @@ public final class class_221 {
                            }
                         }
 
-                        if(1003938789 * class_131.field_1701 >= var13) {
+                        if(1003938789 * GameMouseListener.field_1701 >= var13) {
                            if(var8 != 1695957245) {
                               throw new IllegalStateException();
                            }
 
-                           if(339791065 * class_131.field_1711 >= var14) {
+                           if(339791065 * GameMouseListener.field_1711 >= var14) {
                               if(var8 != 1695957245) {
                                  throw new IllegalStateException();
                               }
 
-                              if(class_131.field_1701 * 1003938789 < var15 && class_131.field_1711 * 339791065 < var16) {
+                              if(GameMouseListener.field_1701 * 1003938789 < var15 && GameMouseListener.field_1711 * 339791065 < var16) {
                                  if(var8 != 1695957245) {
                                     return;
                                  }
@@ -1369,7 +1369,7 @@ public final class class_221 {
                      }
 
                      if(var22) {
-                        class_84.method_1426(var10, 1003938789 * class_131.field_1701 - var11, class_131.field_1711 * 339791065 - var12, (byte)8);
+                        class_84.method_1426(var10, 1003938789 * GameMouseListener.field_1701 - var11, GameMouseListener.field_1711 * 339791065 - var12, (byte)8);
                      }
 
                      if(-1245218361 * var10.field_207 == 1400) {
@@ -1483,8 +1483,8 @@ public final class class_221 {
                                  var33 = var40;
                                  var33.field_331 = true;
                                  var33.field_332 = var10;
-                                 var33.field_333 = -861910615 * (1003938789 * class_131.field_1701 - var11);
-                                 var33.field_334 = (339791065 * class_131.field_1711 - var12) * -1799481251;
+                                 var33.field_333 = -861910615 * (1003938789 * GameMouseListener.field_1701 - var11);
+                                 var33.field_334 = (339791065 * GameMouseListener.field_1711 - var12) * -1799481251;
                                  var33.field_337 = var10.field_120;
                                  client.field_1576.method_5939(var33);
                               }
@@ -1510,8 +1510,8 @@ public final class class_221 {
                                  var33 = var40;
                                  var33.field_331 = true;
                                  var33.field_332 = var10;
-                                 var33.field_333 = -861910615 * (class_131.field_1722 * -678881683 - var11);
-                                 var33.field_334 = (class_131.field_1703 * 1903378733 - var12) * -1799481251;
+                                 var33.field_333 = -861910615 * (GameMouseListener.field_1722 * -678881683 - var11);
+                                 var33.field_334 = (GameMouseListener.field_1703 * 1903378733 - var12) * -1799481251;
                                  var33.field_337 = var10.field_190;
                                  client.field_1576.method_5939(var33);
                               }
@@ -1534,8 +1534,8 @@ public final class class_221 {
                                  var33 = var40;
                                  var33.field_331 = true;
                                  var33.field_332 = var10;
-                                 var33.field_333 = (class_131.field_1722 * -678881683 - var11) * -861910615;
-                                 var33.field_334 = -1799481251 * (1903378733 * class_131.field_1703 - var12);
+                                 var33.field_333 = (GameMouseListener.field_1722 * -678881683 - var11) * -861910615;
+                                 var33.field_334 = -1799481251 * (1903378733 * GameMouseListener.field_1703 - var12);
                                  var33.field_337 = var10.field_191;
                                  client.field_1622.method_5939(var33);
                               }
@@ -1547,8 +1547,8 @@ public final class class_221 {
                            var33 = var40;
                            var33.field_331 = true;
                            var33.field_332 = var10;
-                           var33.field_333 = (-678881683 * class_131.field_1722 - var11) * -861910615;
-                           var33.field_334 = (1903378733 * class_131.field_1703 - var12) * -1799481251;
+                           var33.field_333 = (-678881683 * GameMouseListener.field_1722 - var11) * -861910615;
+                           var33.field_334 = (1903378733 * GameMouseListener.field_1703 - var12) * -1799481251;
                            var33.field_337 = var10.field_192;
                            client.field_1576.method_5939(var33);
                         }
@@ -1564,8 +1564,8 @@ public final class class_221 {
                               var33 = var40;
                               var33.field_331 = true;
                               var33.field_332 = var10;
-                              var33.field_333 = (class_131.field_1722 * -678881683 - var11) * -861910615;
-                              var33.field_334 = -1799481251 * (class_131.field_1703 * 1903378733 - var12);
+                              var33.field_333 = (GameMouseListener.field_1722 * -678881683 - var11) * -861910615;
+                              var33.field_334 = -1799481251 * (GameMouseListener.field_1703 * 1903378733 - var12);
                               var33.field_337 = var10.field_213;
                               client.field_1576.method_5939(var33);
                            }
@@ -1590,8 +1590,8 @@ public final class class_221 {
                                  var33 = var40;
                                  var33.field_331 = true;
                                  var33.field_332 = var10;
-                                 var33.field_333 = (-678881683 * class_131.field_1722 - var11) * -861910615;
-                                 var33.field_334 = -1799481251 * (1903378733 * class_131.field_1703 - var12);
+                                 var33.field_333 = (-678881683 * GameMouseListener.field_1722 - var11) * -861910615;
+                                 var33.field_334 = -1799481251 * (1903378733 * GameMouseListener.field_1703 - var12);
                                  var33.field_337 = var10.field_194;
                                  client.field_1576.method_5939(var33);
                               }
@@ -1618,8 +1618,8 @@ public final class class_221 {
                                  var33 = var40;
                                  var33.field_331 = true;
                                  var33.field_332 = var10;
-                                 var33.field_333 = (class_131.field_1722 * -678881683 - var11) * -861910615;
-                                 var33.field_334 = -1799481251 * (class_131.field_1703 * 1903378733 - var12);
+                                 var33.field_333 = (GameMouseListener.field_1722 * -678881683 - var11) * -861910615;
+                                 var33.field_334 = -1799481251 * (GameMouseListener.field_1703 * 1903378733 - var12);
                                  var33.field_337 = var10.field_195;
                                  client.field_1622.method_5939(var33);
                               }
@@ -2024,17 +2024,17 @@ public final class class_221 {
                            }
                         }
 
-                        if(-678881683 * class_131.field_1722 >= var13 && 1903378733 * class_131.field_1703 >= var14) {
+                        if(-678881683 * GameMouseListener.field_1722 >= var13 && 1903378733 * GameMouseListener.field_1703 >= var14) {
                            if(var8 != 1695957245) {
                               return;
                            }
 
-                           if(-678881683 * class_131.field_1722 < var15) {
+                           if(-678881683 * GameMouseListener.field_1722 < var15) {
                               if(var8 != 1695957245) {
                                  return;
                               }
 
-                              if(class_131.field_1703 * 1903378733 < var16) {
+                              if(GameMouseListener.field_1703 * 1903378733 < var16) {
                                  if(var8 != 1695957245) {
                                     throw new IllegalStateException();
                                  }
@@ -2058,22 +2058,22 @@ public final class class_221 {
                            throw new IllegalStateException();
                         }
 
-                        if(-678881683 * class_131.field_1722 >= var13) {
+                        if(-678881683 * GameMouseListener.field_1722 >= var13) {
                            if(var8 != 1695957245) {
                               return;
                            }
 
-                           if(class_131.field_1703 * 1903378733 >= var14) {
+                           if(GameMouseListener.field_1703 * 1903378733 >= var14) {
                               if(var8 != 1695957245) {
                                  throw new IllegalStateException();
                               }
 
-                              if(-678881683 * class_131.field_1722 < var15) {
+                              if(-678881683 * GameMouseListener.field_1722 < var15) {
                                  if(var8 != 1695957245) {
                                     throw new IllegalStateException();
                                  }
 
-                                 if(1903378733 * class_131.field_1703 < var16) {
+                                 if(1903378733 * GameMouseListener.field_1703 < var16) {
                                     if(var8 != 1695957245) {
                                        return;
                                     }
@@ -2090,7 +2090,7 @@ public final class class_221 {
                            throw new IllegalStateException();
                         }
 
-                        class_352.method_6230(var10, var11 + 1163271639 * var10.field_104, var12, -571887853 * var10.field_117, 1577090123 * var10.field_125, class_131.field_1722 * -678881683, 1903378733 * class_131.field_1703, 584848260);
+                        class_352.method_6230(var10, var11 + 1163271639 * var10.field_104, var12, -571887853 * var10.field_117, 1577090123 * var10.field_125, GameMouseListener.field_1722 * -678881683, 1903378733 * GameMouseListener.field_1703, 584848260);
                      }
                   }
 
@@ -2111,22 +2111,22 @@ public final class class_221 {
                               return;
                            }
 
-                           if(-678881683 * class_131.field_1722 >= var13) {
+                           if(-678881683 * GameMouseListener.field_1722 >= var13) {
                               if(var8 != 1695957245) {
                                  throw new IllegalStateException();
                               }
 
-                              if(1903378733 * class_131.field_1703 >= var14) {
+                              if(1903378733 * GameMouseListener.field_1703 >= var14) {
                                  if(var8 != 1695957245) {
                                     return;
                                  }
 
-                                 if(class_131.field_1722 * -678881683 < var15) {
+                                 if(GameMouseListener.field_1722 * -678881683 < var15) {
                                     if(var8 != 1695957245) {
                                        throw new IllegalStateException();
                                     }
 
-                                    if(class_131.field_1703 * 1903378733 < var16) {
+                                    if(GameMouseListener.field_1703 * 1903378733 < var16) {
                                        if(var8 != 1695957245) {
                                           return;
                                        }
@@ -2190,7 +2190,7 @@ public final class class_221 {
          } else {
             boolean var10001;
             label1794: {
-               if(1 != class_131.field_1717 * -265253353) {
+               if(1 != GameMouseListener.field_1717 * -265253353) {
                   if(var1 == 1) {
                      throw new IllegalStateException();
                   }
@@ -2203,7 +2203,7 @@ public final class class_221 {
                      throw new IllegalStateException();
                   }
 
-                  if(class_131.field_1717 * -265253353 != 4) {
+                  if(GameMouseListener.field_1717 * -265253353 != 4) {
                      break label1794;
                   }
 
@@ -2212,12 +2212,12 @@ public final class class_221 {
                   }
                }
 
-               if(1003938789 * class_131.field_1701 >= 751544539 * class_177.field_2183 + 765 - 50) {
+               if(1003938789 * GameMouseListener.field_1701 >= 751544539 * class_177.field_2183 + 765 - 50) {
                   if(var1 == 1) {
                      throw new IllegalStateException();
                   }
 
-                  if(339791065 * class_131.field_1711 >= 453) {
+                  if(339791065 * GameMouseListener.field_1711 >= 453) {
                      if(var1 == 1) {
                         throw new IllegalStateException();
                      }
@@ -2339,12 +2339,12 @@ public final class class_221 {
                   }
 
                   label1762: {
-                     if(1 != class_131.field_1717 * -265253353) {
+                     if(1 != GameMouseListener.field_1717 * -265253353) {
                         if(var1 == 1) {
                            return;
                         }
 
-                        if(client.field_1441 || class_131.field_1717 * -265253353 != 4) {
+                        if(client.field_1441 || GameMouseListener.field_1717 * -265253353 != 4) {
                            break label1762;
                         }
 
@@ -2357,22 +2357,22 @@ public final class class_221 {
                      short var6 = 463;
                      byte var7 = 100;
                      byte var8 = 35;
-                     if(class_131.field_1701 * 1003938789 >= var27) {
+                     if(GameMouseListener.field_1701 * 1003938789 >= var27) {
                         if(var1 == 1) {
                            return;
                         }
 
-                        if(class_131.field_1701 * 1003938789 <= var27 + var7) {
+                        if(GameMouseListener.field_1701 * 1003938789 <= var27 + var7) {
                            if(var1 == 1) {
                               throw new IllegalStateException();
                            }
 
-                           if(339791065 * class_131.field_1711 >= var6) {
+                           if(339791065 * GameMouseListener.field_1711 >= var6) {
                               if(var1 == 1) {
                                  return;
                               }
 
-                              if(339791065 * class_131.field_1711 <= var6 + var8) {
+                              if(339791065 * GameMouseListener.field_1711 <= var6 + var8) {
                                  if(var1 == 1) {
                                     throw new IllegalStateException();
                                  }
@@ -2394,16 +2394,16 @@ public final class class_221 {
                   }
                }
 
-               var27 = class_131.field_1717 * -265253353;
-               int var28 = class_131.field_1701 * 1003938789;
-               int var29 = class_131.field_1711 * 339791065;
+               var27 = GameMouseListener.field_1717 * -265253353;
+               int var28 = GameMouseListener.field_1701 * 1003938789;
+               int var29 = GameMouseListener.field_1711 * 339791065;
                if(var27 == 0) {
                   if(var1 == 1) {
                      return;
                   }
 
-                  var28 = class_131.field_1722 * -678881683;
-                  var29 = class_131.field_1703 * 1903378733;
+                  var28 = GameMouseListener.field_1722 * -678881683;
+                  var29 = GameMouseListener.field_1703 * 1903378733;
                }
 
                if(!client.field_1441) {
@@ -2512,17 +2512,17 @@ public final class class_221 {
                      class_177.field_2197 = class_305.field_3534;
                      class_177.field_2213 = class_305.field_3697;
                      class_177.field_2194 = 2078798195;
-                     if(client.field_1453) {
+                     if(client.rememberEmail) {
                         if(var1 == 1) {
                            return;
                         }
 
-                        if(null != class_177.field_2200) {
+                        if(null != class_177.email) {
                            if(var1 == 1) {
                               throw new IllegalStateException();
                            }
 
-                           if(class_177.field_2200.length() > 0) {
+                           if(class_177.email.length() > 0) {
                               if(var1 == 1) {
                                  throw new IllegalStateException();
                               }
@@ -2555,17 +2555,17 @@ public final class class_221 {
 
                      class_177.field_2191 = class_305.field_3586;
                      class_177.field_2194 = 2078798195;
-                     if(client.field_1453) {
+                     if(client.rememberEmail) {
                         if(var1 == 1) {
                            throw new IllegalStateException();
                         }
 
-                        if(null != class_177.field_2200) {
+                        if(null != class_177.email) {
                            if(var1 == 1) {
                               throw new IllegalStateException();
                            }
 
-                           if(class_177.field_2200.length() > 0) {
+                           if(class_177.email.length() > 0) {
                               class_177.field_2204 = 129356965;
                               return;
                            }
@@ -2583,12 +2583,12 @@ public final class class_221 {
                      class_177.field_2213 = class_305.field_3626;
                      class_177.field_2191 = class_305.field_3586;
                      class_177.field_2194 = 2078798195;
-                     if(client.field_1453) {
+                     if(client.rememberEmail) {
                         if(var1 == 1) {
                            throw new IllegalStateException();
                         }
 
-                        if(class_177.field_2200 != null && class_177.field_2200.length() > 0) {
+                        if(class_177.email != null && class_177.email.length() > 0) {
                            if(var1 == 1) {
                               throw new IllegalStateException();
                            }
@@ -2799,8 +2799,8 @@ public final class class_221 {
                                        throw new IllegalStateException();
                                     }
 
-                                    class_177.field_2200 = class_177.field_2200.trim();
-                                    if(class_177.field_2200.length() == 0) {
+                                    class_177.email = class_177.email.trim();
+                                    if(class_177.email.length() == 0) {
                                        if(var1 == 1) {
                                           throw new IllegalStateException();
                                        }
@@ -2818,7 +2818,7 @@ public final class class_221 {
                                        return;
                                     }
 
-                                    class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637);
+                                    class_299.method_5348(class_305.field_3635, class_305.strConnectingServer, class_305.field_3637);
                                     class_89.method_1578(false, (byte)-21);
                                     class_53.method_579(20, (byte)0);
                                     return;
@@ -2849,7 +2849,7 @@ public final class class_221 {
                                     }
 
                                     class_177.field_2194 = 0;
-                                    class_177.field_2200 = "";
+                                    class_177.email = "";
                                     class_177.field_2212 = "";
                                     class_54.field_405 = 0;
                                     class_282.field_3249 = "";
@@ -2891,7 +2891,7 @@ public final class class_221 {
                                  throw new IllegalStateException();
                               }
 
-                              if(!client.field_1453) {
+                              if(!client.rememberEmail) {
                                  if(var1 == 1) {
                                     throw new IllegalStateException();
                                  }
@@ -2901,18 +2901,18 @@ public final class class_221 {
                                  var10000 = false;
                               }
 
-                              client.field_1453 = var10000;
-                              if(!client.field_1453) {
+                              client.rememberEmail = var10000;
+                              if(!client.rememberEmail) {
                                  if(var1 == 1) {
                                     return;
                                  }
 
-                                 if(null != class_87.preferences.field_2120) {
+                                 if(null != class_87.preferences.rememberedEmail) {
                                     if(var1 == 1) {
                                        throw new IllegalStateException();
                                     }
 
-                                    class_87.preferences.field_2120 = null;
+                                    class_87.preferences.rememberedEmail = null;
                                     class_94.savePreferences(-1202671302);
                                  }
                               }
@@ -2979,9 +2979,9 @@ public final class class_221 {
                                     throw new IllegalStateException();
                                  }
 
-                                 class_177.field_2200 = "";
-                                 class_87.preferences.field_2120 = null;
-                                 if(client.field_1453 && null != class_177.field_2200 && class_177.field_2200.length() > 0) {
+                                 class_177.email = "";
+                                 class_87.preferences.rememberedEmail = null;
+                                 if(client.rememberEmail && null != class_177.email && class_177.email.length() > 0) {
                                     if(var1 == 1) {
                                        return;
                                     }
@@ -3004,7 +3004,7 @@ public final class class_221 {
                               }
 
                               class_177.field_2194 = 0;
-                              class_177.field_2200 = "";
+                              class_177.email = "";
                               class_177.field_2212 = "";
                               class_54.field_405 = 0;
                               class_282.field_3249 = "";
@@ -3034,12 +3034,12 @@ public final class class_221 {
                                        return;
                                     }
 
-                                    if(class_177.field_2200.length() > 0) {
+                                    if(class_177.email.length() > 0) {
                                        if(var1 == 1) {
                                           return;
                                        }
 
-                                       class_177.field_2200 = class_177.field_2200.substring(0, class_177.field_2200.length() - 1);
+                                       class_177.email = class_177.email.substring(0, class_177.email.length() - 1);
                                     }
                                  }
 
@@ -3057,12 +3057,12 @@ public final class class_221 {
                                     class_177.field_2204 = 129356965;
                                  }
 
-                                 if(class_141.method_3049(class_283.field_3253, 228217886) && class_177.field_2200.length() < 320) {
+                                 if(class_141.method_3049(class_283.field_3253, 228217886) && class_177.email.length() < 320) {
                                     if(var1 == 1) {
                                        throw new IllegalStateException();
                                     }
 
-                                    class_177.field_2200 = class_177.field_2200 + class_283.field_3253;
+                                    class_177.email = class_177.email + class_283.field_3253;
                                  }
                                  break;
                               }
@@ -3107,8 +3107,8 @@ public final class class_221 {
                                        return;
                                     }
 
-                                    class_177.field_2200 = class_177.field_2200.trim();
-                                    if(class_177.field_2200.length() == 0) {
+                                    class_177.email = class_177.email.trim();
+                                    if(class_177.email.length() == 0) {
                                        class_299.method_5348(class_305.field_3522, class_305.field_3458, class_305.field_3524);
                                        return;
                                     }
@@ -3122,7 +3122,7 @@ public final class class_221 {
                                        return;
                                     }
 
-                                    class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637);
+                                    class_299.method_5348(class_305.field_3635, class_305.strConnectingServer, class_305.field_3637);
                                     class_89.method_1578(false, (byte)21);
                                     class_53.method_579(20, (byte)0);
                                     return;
@@ -3457,7 +3457,7 @@ public final class class_221 {
                                           class_54.field_405 = Integer.parseInt(class_282.field_3249) * -2113447877;
                                           class_282.field_3249 = "";
                                           class_89.method_1578(true, (byte)-103);
-                                          class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637);
+                                          class_299.method_5348(class_305.field_3635, class_305.strConnectingServer, class_305.field_3637);
                                           class_53.method_579(20, (byte)0);
                                           return;
                                        }
@@ -3561,7 +3561,7 @@ public final class class_221 {
                                           }
 
                                           class_177.field_2194 = 0;
-                                          class_177.field_2200 = "";
+                                          class_177.email = "";
                                           class_177.field_2212 = "";
                                           class_54.field_405 = 0;
                                           class_282.field_3249 = "";
@@ -3595,7 +3595,7 @@ public final class class_221 {
                                  }
 
                                  class_177.field_2194 = 0;
-                                 class_177.field_2200 = "";
+                                 class_177.email = "";
                                  class_177.field_2212 = "";
                                  class_54.field_405 = 0;
                                  class_282.field_3249 = "";
@@ -3632,7 +3632,7 @@ public final class class_221 {
                                     class_54.field_405 = Integer.parseInt(class_282.field_3249) * -2113447877;
                                     class_282.field_3249 = "";
                                     class_89.method_1578(true, (byte)-1);
-                                    class_299.method_5348(class_305.field_3635, class_305.field_3430, class_305.field_3637);
+                                    class_299.method_5348(class_305.field_3635, class_305.strConnectingServer, class_305.field_3637);
                                     class_53.method_579(20, (byte)0);
                                     return;
                                  }
@@ -3752,8 +3752,8 @@ public final class class_221 {
 
                                  class_178.method_3797(true, (byte)68);
                               } else {
-                                 if(class_80.field_752 * 644081785 == 85 && class_177.field_2200.length() > 0) {
-                                    class_177.field_2200 = class_177.field_2200.substring(0, class_177.field_2200.length() - 1);
+                                 if(class_80.field_752 * 644081785 == 85 && class_177.email.length() > 0) {
+                                    class_177.email = class_177.email.substring(0, class_177.email.length() - 1);
                                  }
 
                                  if(644081785 * class_80.field_752 == 84) {
@@ -3766,12 +3766,12 @@ public final class class_221 {
                                        throw new IllegalStateException();
                                     }
 
-                                    if(class_177.field_2200.length() < 320) {
+                                    if(class_177.email.length() < 320) {
                                        if(var1 == 1) {
                                           throw new IllegalStateException();
                                        }
 
-                                       class_177.field_2200 = class_177.field_2200 + class_283.field_3253;
+                                       class_177.email = class_177.email + class_283.field_3253;
                                     }
                                  }
                               }

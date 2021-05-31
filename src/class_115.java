@@ -15,9 +15,9 @@ public class class_115 extends class_111 {
    // $FF: renamed from: ii (int, int, int) void
    static void method_2243(int var0, int var1) {
       try {
-         class_40 var3 = class_112.method_2238(class_266.field_3126, client.field_1463.field_2384, (byte)8);
-         var3.field_263.method_185(var1);
-         var3.field_263.writeInt(var0);
+         class_40 var3 = class_112.method_2238(class_266.field_3126, client.field_1463.isaac, (byte)8);
+         var3.networkBuffer.method_185(var1);
+         var3.networkBuffer.writeIntAltReversed(var0);
          client.field_1463.method_4079(var3);
       } catch (RuntimeException var4) {
          throw class_223.method_4281(var4);
@@ -80,8 +80,8 @@ public class class_115 extends class_111 {
 
          var1.field_267 = null;
          var1.field_262 = 0;
-         class_29 var10001 = new class_29(5000);
-         var1.field_263 = var10001;
+         NetworkBuffer var10001 = new NetworkBuffer(5000);
+         var1.networkBuffer = var10001;
          return var1;
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);

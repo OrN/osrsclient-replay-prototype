@@ -151,7 +151,7 @@ public final class class_66 extends class_65 {
    }
 
    // $FF: renamed from: f (int, int) void
-   public void method_735(int var1, int var2) {
+   public void draw(int var1, int var2) {
       var1 += this.field_495;
       var2 += this.field_496;
       int var3 = var1 + var2 * field_484;

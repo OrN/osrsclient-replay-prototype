@@ -16,7 +16,7 @@ final class class_390 implements class_23 {
    // $FF: renamed from: b (java.lang.Long, nd, int) void
    void method_6769(Long var1, Buffer var2) {
       try {
-         var2.method_341(var1.longValue());
+         var2.writeLongReversed(var1.longValue());
       } catch (RuntimeException var4) {
          throw class_223.method_4281(var4);
       }
@@ -25,7 +25,7 @@ final class class_390 implements class_23 {
    // $FF: renamed from: n (nd, int) java.lang.Object
    public Object method_75(Buffer var1) {
       try {
-         return Long.valueOf(var1.method_136());
+         return Long.valueOf(var1.readLong());
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
       }
@@ -52,22 +52,22 @@ final class class_390 implements class_23 {
 
    // $FF: renamed from: p (nd) java.lang.Object
    public Object method_70(Buffer var1) {
-      return Long.valueOf(var1.method_136());
+      return Long.valueOf(var1.readLong());
    }
 
    // $FF: renamed from: j (nd) java.lang.Object
    public Object method_69(Buffer var1) {
-      return Long.valueOf(var1.method_136());
+      return Long.valueOf(var1.readLong());
    }
 
    // $FF: renamed from: r (nd) java.lang.Object
    public Object method_74(Buffer var1) {
-      return Long.valueOf(var1.method_136());
+      return Long.valueOf(var1.readLong());
    }
 
    // $FF: renamed from: d (java.lang.Long, nd) void
    void method_6770(Long var1, Buffer var2) {
-      var2.method_341(var1.longValue());
+      var2.writeLongReversed(var1.longValue());
    }
 
    // $FF: renamed from: ge (int) void

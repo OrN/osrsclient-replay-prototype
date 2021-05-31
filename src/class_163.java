@@ -24,9 +24,9 @@ public class class_163 implements Runnable {
             Object var1 = this.field_2027;
             synchronized(this.field_2027) {
                if(-1046460859 * this.field_2028 < 500) {
-                  this.field_2026[-1046460859 * this.field_2028] = -678881683 * class_131.field_1722;
-                  this.field_2030[this.field_2028 * -1046460859] = 1903378733 * class_131.field_1703;
-                  this.field_2029[this.field_2028 * -1046460859] = -7947308061041944289L * class_131.field_1712;
+                  this.field_2026[-1046460859 * this.field_2028] = -678881683 * GameMouseListener.field_1722;
+                  this.field_2030[this.field_2028 * -1046460859] = 1903378733 * GameMouseListener.field_1703;
+                  this.field_2029[this.field_2028 * -1046460859] = -7947308061041944289L * GameMouseListener.field_1712;
                   this.field_2028 += 492756109;
                }
             }

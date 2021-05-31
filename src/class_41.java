@@ -70,7 +70,7 @@ public final class class_41 extends class_27 {
    // $FF: renamed from: hn (ha, int) void
    static final void method_482(class_256 var0, int var1) {
       try {
-         class_29 var2 = client.field_1463.field_2375;
+         NetworkBuffer var2 = client.field_1463.networkBuffer;
          int var3;
          int var4;
          int var5;
@@ -196,7 +196,7 @@ public final class class_41 extends class_27 {
                throw new IllegalStateException();
             } else {
                var3 = var2.method_168();
-               var4 = var2.method_169();
+               var4 = var2.readShortAlt();
                var5 = var2.method_168();
                var6 = var2.readUnsignedByte();
                var7 = 1575841489 * class_247.field_2745 + (var6 >> 4 & 7);
@@ -518,7 +518,7 @@ public final class class_41 extends class_27 {
                         var8 = (var7 >> 4 & 7) + class_247.field_2745 * 1575841489;
                         var9 = (var7 & 7) + -1125497563 * class_153.field_1924;
                         var10 = var2.method_113();
-                        var11 = var2.method_169();
+                        var11 = var2.readShortAlt();
                         byte var43 = var2.method_123();
                         var13 = var2.method_170();
                         var14 = var2.readShort();
@@ -577,8 +577,8 @@ public final class class_41 extends class_27 {
                            throw new IllegalStateException();
                         }
 
-                        byte var33 = var2.method_131();
-                        var4 = var2.method_169();
+                        byte var33 = var2.readByte();
+                        var4 = var2.readShortAlt();
                         var5 = var2.method_168();
                         byte var35 = var2.method_162();
                         var7 = var2.readShort();
@@ -591,7 +591,7 @@ public final class class_41 extends class_27 {
                         var14 = var13 >> 2;
                         var15 = var13 & 3;
                         int var16 = client.field_1478[var14];
-                        byte var17 = var2.method_131();
+                        byte var17 = var2.readByte();
                         class_100 var18;
                         if(929092845 * client.field_1534 == var7) {
                            var18 = class_164.field_2044;

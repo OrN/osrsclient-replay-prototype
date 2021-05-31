@@ -8,7 +8,7 @@ import java.net.Socket;
 public final class class_208 extends class_206 implements Runnable {
 
    // $FF: renamed from: j eu
-   class_214 field_2405;
+   HostData field_2405;
    // $FF: renamed from: n java.io.OutputStream
    OutputStream field_2406;
    // $FF: renamed from: f java.net.Socket
@@ -81,7 +81,7 @@ public final class class_208 extends class_206 implements Runnable {
 
    protected void finalize() {
       try {
-         this.method_4123(1654713390);
+         this.close(1654713390);
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1);
       }
@@ -614,15 +614,15 @@ public final class class_208 extends class_206 implements Runnable {
    }
 
    protected void abj() {
-      this.method_4123(1678878639);
+      this.close(1678878639);
    }
 
    protected void abr() {
-      this.method_4123(1780978057);
+      this.close(1780978057);
    }
 
    protected void abm() {
-      this.method_4123(2075836822);
+      this.close(2075836822);
    }
 
    // $FF: renamed from: y (int, int) boolean
@@ -744,7 +744,7 @@ public final class class_208 extends class_206 implements Runnable {
    }
 
    // $FF: renamed from: p (byte[], int, int, int) int
-   public int method_4121(byte[] var1, int var2, int var3, int var4) throws IOException {
+   public int read(byte[] var1, int var2, int var3, int var4) throws IOException {
       try {
          if(this.field_2410) {
             if(var4 >= -1811973036) {
@@ -850,7 +850,7 @@ public final class class_208 extends class_206 implements Runnable {
    }
 
    // $FF: renamed from: v (int) void
-   public void method_4123(int var1) {
+   public void close(int var1) {
       try {
          if(!this.field_2410) {
             synchronized(this) {

@@ -183,7 +183,7 @@ public class class_278 extends class_277 {
             int var7 = class_183.field_2251.method_867(var0, 250) * 13;
             class_65.method_681(var4 - var3, var5 - var3, var6 + var3 + var3, var7 + var3 + var3, 0);
             class_65.method_670(var4 - var3, var5 - var3, var3 + var3 + var6, var7 + var3 + var3, 16777215);
-            class_183.field_2251.method_884(var0, var4, var5, var6, var7, 16777215, -1, 1, 1, 0);
+            class_183.field_2251.drawString(var0, var4, var5, var6, var7, 16777215, -1, 1, 1, 0);
             int var8 = var4 - var3;
             int var9 = var5 - var3;
             int var10 = var3 + var3 + var6;

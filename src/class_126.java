@@ -41,7 +41,7 @@ public class class_126 extends class_111 {
             }
 
             var1.offset -= -1025691571;
-            this.field_1366 = var1.method_136() * 562247036214512195L;
+            this.field_1366 = var1.readLong() * 562247036214512195L;
          }
 
          this.field_1367 = var1.method_347(-47631958);
@@ -55,7 +55,7 @@ public class class_126 extends class_111 {
    void method_2234(Buffer var1) {
       if(var1.readUnsignedByte() != -1730927792) {
          var1.offset -= -1025691571;
-         this.field_1366 = var1.method_136() * 562247036214512195L;
+         this.field_1366 = var1.readLong() * 562247036214512195L;
       }
 
       this.field_1367 = var1.method_347(-1790620980);
@@ -66,7 +66,7 @@ public class class_126 extends class_111 {
    void method_2233(Buffer var1) {
       if(var1.readUnsignedByte() != -1765968671) {
          var1.offset -= -1025691571;
-         this.field_1366 = var1.method_136() * 562247036214512195L;
+         this.field_1366 = var1.readLong() * 562247036214512195L;
       }
 
       this.field_1367 = var1.method_347(-706051404);
@@ -444,7 +444,7 @@ public class class_126 extends class_111 {
                      if(var3 == 1) {
                         throw new IllegalStateException();
                      } else {
-                        class_131.method_2902();
+                        GameMouseListener.method_2902();
                         return 1;
                      }
                   } else if(3621 == var0) {

@@ -94,7 +94,7 @@ public class class_153 {
                   throw new IllegalStateException();
                }
 
-               if(1 != class_131.field_1717 * -265253353) {
+               if(1 != GameMouseListener.field_1717 * -265253353) {
                   if(var3 <= 1736557337) {
                      throw new IllegalStateException();
                   }
@@ -107,7 +107,7 @@ public class class_153 {
                      throw new IllegalStateException();
                   }
 
-                  if(-265253353 * class_131.field_1717 != 4) {
+                  if(-265253353 * GameMouseListener.field_1717 != 4) {
                      return;
                   }
 
@@ -121,8 +121,8 @@ public class class_153 {
                   return;
                }
 
-               int var5 = class_131.field_1701 * 1003938789 - var1;
-               int var6 = class_131.field_1711 * 339791065 - var2;
+               int var5 = GameMouseListener.field_1701 * 1003938789 - var1;
+               int var6 = GameMouseListener.field_1711 * 339791065 - var2;
                if(var4.method_639(var5, var6, -1353633749)) {
                   if(var3 <= 1736557337) {
                      throw new IllegalStateException();
@@ -137,8 +137,8 @@ public class class_153 {
                   int var11 = var6 * var9 - var8 * var5 >> 11;
                   int var12 = var10 + -130212619 * class_164.field_2044.field_1077 >> 7;
                   int var13 = class_164.field_2044.field_1076 * 1248597615 - var11 >> 7;
-                  class_40 var14 = class_112.method_2238(class_266.field_3063, client.field_1463.field_2384, (byte)8);
-                  var14.field_263.writeByte(18);
+                  class_40 var14 = class_112.method_2238(class_266.field_3063, client.field_1463.isaac, (byte)8);
+                  var14.networkBuffer.writeByte(18);
                   byte var10001;
                   if(class_145.field_1840[82]) {
                      if(class_145.field_1840[81]) {
@@ -154,19 +154,19 @@ public class class_153 {
                      var10001 = 0;
                   }
 
-                  var14.field_263.method_148(var10001);
-                  var14.field_263.method_333(class_154.field_1929 * -27903763 + var13);
-                  var14.field_263.method_333(var12 + class_243.field_2700 * 697161691);
-                  var14.field_263.writeByte(var5);
-                  var14.field_263.writeByte(var6);
-                  var14.field_263.method_333(client.field_1629 * -574530013);
-                  var14.field_263.writeByte(57);
-                  var14.field_263.writeByte(0);
-                  var14.field_263.writeByte(0);
-                  var14.field_263.writeByte(89);
-                  var14.field_263.method_333(class_164.field_2044.field_1077 * -130212619);
-                  var14.field_263.method_333(class_164.field_2044.field_1076 * 1248597615);
-                  var14.field_263.writeByte(63);
+                  var14.networkBuffer.method_148(var10001);
+                  var14.networkBuffer.writeShortReverse(class_154.field_1929 * -27903763 + var13);
+                  var14.networkBuffer.writeShortReverse(var12 + class_243.field_2700 * 697161691);
+                  var14.networkBuffer.writeByte(var5);
+                  var14.networkBuffer.writeByte(var6);
+                  var14.networkBuffer.writeShortReverse(client.field_1629 * -574530013);
+                  var14.networkBuffer.writeByte(57);
+                  var14.networkBuffer.writeByte(0);
+                  var14.networkBuffer.writeByte(0);
+                  var14.networkBuffer.writeByte(89);
+                  var14.networkBuffer.writeShortReverse(class_164.field_2044.field_1077 * -130212619);
+                  var14.networkBuffer.writeShortReverse(class_164.field_2044.field_1076 * 1248597615);
+                  var14.networkBuffer.writeByte(63);
                   client.field_1463.method_4079(var14);
                   client.field_1520 = 819547401 * var12;
                   client.field_1562 = var13 * 1551872625;

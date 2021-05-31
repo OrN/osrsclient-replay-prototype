@@ -11,7 +11,7 @@ public class class_215 {
     // $FF: renamed from: d int[]
    static int[] field_2460;
    // $FF: renamed from: ds eu
-   static class_214 field_2461;
+   static HostData hostData;
 
 
    // $FF: renamed from: <clinit> () void

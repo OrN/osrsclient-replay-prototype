@@ -434,7 +434,7 @@ public abstract class class_306 {
       if(var3 >= 0 && (0 == 269464329 * field_3711 || var3 <= field_3711 * 269464329)) {
          if(0 == var2) {
             byte[] var6 = new byte[var3];
-            var1.method_267(var6, 0, var3, 1018164334);
+            var1.read(var6, 0, var3, 1018164334);
             return var6;
          } else {
             int var4 = var1.readInt();
@@ -615,7 +615,7 @@ public abstract class class_306 {
       if(var3 >= 0 && (0 == 269464329 * field_3711 || var3 <= field_3711 * 269464329)) {
          if(0 == var2) {
             byte[] var6 = new byte[var3];
-            var1.method_267(var6, 0, var3, 1647766328);
+            var1.read(var6, 0, var3, 1647766328);
             return var6;
          } else {
             int var4 = var1.readInt();
@@ -2804,7 +2804,7 @@ public abstract class class_306 {
       if(var3 >= 0 && (0 == 269464329 * field_3711 || var3 <= field_3711 * 269464329)) {
          if(0 == var2) {
             byte[] var6 = new byte[var3];
-            var1.method_267(var6, 0, var3, 994585740);
+            var1.read(var6, 0, var3, 994585740);
             return var6;
          } else {
             int var4 = var1.readInt();
@@ -2835,7 +2835,7 @@ public abstract class class_306 {
       if(var3 >= 0 && (0 == 269464329 * field_3711 || var3 <= field_3711 * 366634365)) {
          if(0 == var2) {
             byte[] var6 = new byte[var3];
-            var1.method_267(var6, 0, var3, 1001153849);
+            var1.read(var6, 0, var3, 1001153849);
             return var6;
          } else {
             int var4 = var1.readInt();
@@ -2879,7 +2879,7 @@ public abstract class class_306 {
       if(var3 >= 0 && (0 == 1247381053 * field_3711 || var3 <= field_3711 * -322104510)) {
          if(0 == var2) {
             byte[] var6 = new byte[var3];
-            var1.method_267(var6, 0, var3, 1374768888);
+            var1.read(var6, 0, var3, 1374768888);
             return var6;
          } else {
             int var4 = var1.readInt();

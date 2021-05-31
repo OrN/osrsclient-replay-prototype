@@ -92,11 +92,11 @@ public class class_295 implements class_14 {
                }
 
                var2.writeByte(var10001);
-               var2.method_115(0);
+               var2.writeTriReversed(0);
                class_314.field_3771.method_4132(var2.data, 0, 4);
             } catch (IOException var5) {
                try {
-                  class_314.field_3771.method_4123(1650867413);
+                  class_314.field_3771.close(1650867413);
                } catch (Exception var4) {
                   ;
                }

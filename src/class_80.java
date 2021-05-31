@@ -1059,7 +1059,7 @@ public class class_80 extends class_59 {
                   this.field_711[var5] = (short)var1.readShort();
                }
             } else if(42 == var2) {
-               this.field_723 = var1.method_131() * 1541643739;
+               this.field_723 = var1.readByte() * 1541643739;
             } else if(65 == var2) {
                if(var3 == -1311253189) {
                   throw new IllegalStateException();
@@ -1157,13 +1157,13 @@ public class class_80 extends class_59 {
                      return;
                   }
 
-                  this.field_742 = var1.method_131() * -507162055;
+                  this.field_742 = var1.readByte() * -507162055;
                } else if(var2 == 114) {
                   if(var3 == -1311253189) {
                      throw new IllegalStateException();
                   }
 
-                  this.field_744 = var1.method_131() * -1469299737;
+                  this.field_744 = var1.readByte() * -1469299737;
                } else if(var2 == 115) {
                   if(var3 == -1311253189) {
                      throw new IllegalStateException();
@@ -1276,7 +1276,7 @@ public class class_80 extends class_59 {
    }
 
    // $FF: renamed from: y (nb, int, byte) void
-   static void method_1337(class_29 var0, int var1, byte var2) {
+   static void method_1337(NetworkBuffer var0, int var1, byte var2) {
       try {
          boolean var10000;
          if(var0.method_361(1, (byte)-62) == 1) {

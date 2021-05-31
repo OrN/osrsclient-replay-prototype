@@ -84,7 +84,7 @@ public class class_238 implements class_14 {
    static void method_4600(int var0) {
       try {
          client.field_1463.method_4077();
-         client.field_1463.field_2375.offset = 0;
+         client.field_1463.networkBuffer.offset = 0;
          client.field_1463.field_2376 = null;
          client.field_1463.field_2381 = null;
          client.field_1463.field_2382 = null;
@@ -134,10 +134,10 @@ public class class_238 implements class_14 {
             client.field_1495[var1] = true;
          }
 
-         class_40 var4 = class_112.method_2238(class_266.field_3136, client.field_1463.field_2384, (byte)8);
-         var4.field_263.writeByte(class_78.method_1223(702215999));
-         var4.field_263.method_333(646214551 * class_137.field_1766);
-         var4.field_263.method_333(-1538307343 * class_58.field_460);
+         class_40 var4 = class_112.method_2238(class_266.field_3136, client.field_1463.isaac, (byte)8);
+         var4.networkBuffer.writeByte(class_78.method_1223(702215999));
+         var4.networkBuffer.writeShortReverse(646214551 * class_137.field_1766);
+         var4.networkBuffer.writeShortReverse(-1538307343 * class_58.field_460);
          client.field_1463.method_4079(var4);
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
@@ -152,10 +152,10 @@ public class class_238 implements class_14 {
    // $FF: renamed from: v (int, java.lang.String, kk, int, int) hq
    public static class_40 method_4601(int var0, String var1, class_324 var2, int var3, int var4) {
       try {
-         class_40 var5 = class_112.method_2238(class_266.field_3134, client.field_1463.field_2384, (byte)8);
-         var5.field_263.writeByte(0);
-         int var6 = var5.field_263.offset * -442398587;
-         var5.field_263.writeByte(var0);
+         class_40 var5 = class_112.method_2238(class_266.field_3134, client.field_1463.isaac, (byte)8);
+         var5.networkBuffer.writeByte(0);
+         int var6 = var5.networkBuffer.offset * -442398587;
+         var5.networkBuffer.writeByte(var0);
          String var7 = var1.toLowerCase();
          byte var8 = 0;
          if(var7.startsWith(class_305.field_3582)) {
@@ -382,14 +382,14 @@ public class class_238 implements class_14 {
             }
          }
 
-         var5.field_263.writeByte(var8);
-         var5.field_263.writeByte(var9);
-         class_86.method_1479(var5.field_263, var1);
+         var5.networkBuffer.writeByte(var8);
+         var5.networkBuffer.writeByte(var9);
+         class_86.method_1479(var5.networkBuffer, var1);
          if(var0 == class_281.field_3240.method_50()) {
-            var5.field_263.writeByte(var3);
+            var5.networkBuffer.writeByte(var3);
          }
 
-         var5.field_263.method_317(-442398587 * var5.field_263.offset - var6, -1035307288);
+         var5.networkBuffer.method_317(-442398587 * var5.networkBuffer.offset - var6, -1035307288);
          return var5;
       } catch (RuntimeException var10) {
          throw class_223.method_4281(var10);

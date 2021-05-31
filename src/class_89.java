@@ -92,7 +92,7 @@ public class class_89 extends class_59 {
             client.field_1452 = var10000;
          } else {
             LinkedHashMap var2 = class_87.preferences.field_2126;
-            String var4 = class_177.field_2200;
+            String var4 = class_177.email;
             int var5 = var4.length();
             int var6 = 0;
 

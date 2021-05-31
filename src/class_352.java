@@ -19,7 +19,7 @@ public class class_352 {
          int var8;
          label156: {
             client.field_1484 = false;
-            if(1 != class_131.field_1709 * 97210001) {
+            if(1 != GameMouseListener.field_1709 * 97210001) {
                if(var7 != 584848260) {
                   throw new IllegalStateException();
                }
@@ -32,7 +32,7 @@ public class class_352 {
                   return;
                }
 
-               if(4 != class_131.field_1709 * 97210001) {
+               if(4 != GameMouseListener.field_1709 * 97210001) {
                   break label156;
                }
 

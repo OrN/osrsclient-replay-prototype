@@ -122,9 +122,9 @@ public class class_205 {
                throw new IllegalStateException();
             }
          } else {
-            class_40 var2 = class_112.method_2238(class_266.field_3139, client.field_1463.field_2384, (byte)8);
-            var2.field_263.writeByte(class_166.method_3598(var0));
-            var2.field_263.method_120(var0);
+            class_40 var2 = class_112.method_2238(class_266.field_3139, client.field_1463.isaac, (byte)8);
+            var2.networkBuffer.writeByte(class_166.method_3598(var0));
+            var2.networkBuffer.writeString(var0);
             client.field_1463.method_4079(var2);
          }
       } catch (RuntimeException var3) {

@@ -17,7 +17,7 @@ public class Preferences {
    // $FF: renamed from: p int
    int field_2119;
    // $FF: renamed from: j java.lang.String
-   String field_2120;
+   String rememberedEmail;
    // $FF: renamed from: s int
    int field_2121;
    // $FF: renamed from: d int
@@ -27,7 +27,7 @@ public class Preferences {
    // $FF: renamed from: v int
    static int field_2124;
    // $FF: renamed from: eg java.security.SecureRandom
-   static SecureRandom field_2125;
+   static SecureRandom secureRandom;
    // $FF: renamed from: l java.util.LinkedHashMap
    LinkedHashMap field_2126;
    // $FF: renamed from: qd int
@@ -50,22 +50,22 @@ public class Preferences {
 
          while(var3.hasNext()) {
             Entry var4 = (Entry)var3.next();
-            var2.method_116(((Integer)var4.getKey()).intValue());
-            var2.method_116(((Integer)var4.getValue()).intValue());
+            var2.writeIntReverse(((Integer)var4.getKey()).intValue());
+            var2.writeIntReverse(((Integer)var4.getValue()).intValue());
          }
 
          String var10001;
-         if(this.field_2120 != null) {
+         if(this.rememberedEmail != null) {
             if(var1 <= -1538307343) {
                throw new IllegalStateException();
             }
 
-            var10001 = this.field_2120;
+            var10001 = this.rememberedEmail;
          } else {
             var10001 = "";
          }
 
-         var2.method_120(var10001);
+         var2.writeString(var10001);
          var2.method_250(this.field_2123, (short)-16479);
          var2.writeByte((int)(100.0D * this.field_2128));
          var2.writeByte(this.field_2122 * 1285356667);
@@ -81,7 +81,7 @@ public class Preferences {
    Preferences(Buffer var1) {
       try {
          this.field_2119 = 511868899;
-         this.field_2120 = null;
+         this.rememberedEmail = null;
          this.field_2123 = false;
          this.field_2128 = 0.8D;
          this.field_2122 = -264120627;
@@ -114,7 +114,7 @@ public class Preferences {
                }
 
                if(var2 > 4) {
-                  this.field_2120 = var1.method_347(-189323230);
+                  this.rememberedEmail = var1.method_347(-189323230);
                }
 
                if(var2 > 5) {

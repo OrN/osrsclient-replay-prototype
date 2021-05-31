@@ -163,8 +163,8 @@ public class class_56 extends class_51 {
             }
 
             var1.readUnsignedByte();
-            this.field_418 = var1.method_131();
-            this.field_419 = var1.method_131();
+            this.field_418 = var1.readByte();
+            this.field_419 = var1.readByte();
          }
 
       } catch (RuntimeException var3) {
@@ -177,8 +177,8 @@ public class class_56 extends class_51 {
       this.field_417 = var1.method_347(-518173250);
       if(null != this.field_417) {
          var1.readUnsignedByte();
-         this.field_418 = var1.method_131();
-         this.field_419 = var1.method_131();
+         this.field_418 = var1.readByte();
+         this.field_419 = var1.readByte();
       }
 
    }

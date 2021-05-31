@@ -311,11 +311,11 @@ public class class_93 extends class_91 {
          }
 
          if(var13 == 255) {
-            this.field_999[var38] = var6.method_131();
+            this.field_999[var38] = var6.readByte();
          }
 
          if(var14 == 1) {
-            this.field_992[var38] = var7.method_131();
+            this.field_992[var38] = var7.readByte();
          }
 
          if(var15 == 1) {
@@ -1394,7 +1394,7 @@ public class class_93 extends class_91 {
          var2.offset = 0;
 
          for(var26 = 0; var26 < var11; ++var26) {
-            byte var27 = this.field_998[var26] = var2.method_131();
+            byte var27 = this.field_998[var26] = var2.readByte();
             if(var27 == 0) {
                ++var23;
             }
@@ -1565,15 +1565,15 @@ public class class_93 extends class_91 {
       for(var51 = 0; var51 < var10; ++var51) {
          this.field_994[var51] = (short)var2.readShort();
          if(var12 == 1) {
-            this.field_990[var51] = var3.method_131();
+            this.field_990[var51] = var3.readByte();
          }
 
          if(var13 == 255) {
-            this.field_999[var51] = var4.method_131();
+            this.field_999[var51] = var4.readByte();
          }
 
          if(var14 == 1) {
-            this.field_992[var51] = var5.method_131();
+            this.field_992[var51] = var5.readByte();
          }
 
          if(var15 == 1) {
@@ -1718,7 +1718,7 @@ public class class_93 extends class_91 {
          var2.offset = 0;
 
          for(var26 = 0; var26 < var11; ++var26) {
-            byte var27 = this.field_998[var26] = var2.method_131();
+            byte var27 = this.field_998[var26] = var2.readByte();
             if(var27 == 0) {
                ++var23;
             }
@@ -1889,15 +1889,15 @@ public class class_93 extends class_91 {
       for(var51 = 0; var51 < var10; ++var51) {
          this.field_994[var51] = (short)var2.readShort();
          if(var12 == 1) {
-            this.field_990[var51] = var3.method_131();
+            this.field_990[var51] = var3.readByte();
          }
 
          if(var13 == 255) {
-            this.field_999[var51] = var4.method_131();
+            this.field_999[var51] = var4.readByte();
          }
 
          if(var14 == 1) {
-            this.field_992[var51] = var5.method_131();
+            this.field_992[var51] = var5.readByte();
          }
 
          if(var15 == 1) {
@@ -2043,7 +2043,7 @@ public class class_93 extends class_91 {
          var2.offset = 0;
 
          for(var26 = 0; var26 < var11; ++var26) {
-            byte var27 = this.field_998[var26] = var2.method_131();
+            byte var27 = this.field_998[var26] = var2.readByte();
             if(var27 == 0) {
                ++var23;
             }
@@ -2214,15 +2214,15 @@ public class class_93 extends class_91 {
       for(var51 = 0; var51 < var10; ++var51) {
          this.field_994[var51] = (short)var2.readShort();
          if(var12 == 1) {
-            this.field_990[var51] = var3.method_131();
+            this.field_990[var51] = var3.readByte();
          }
 
          if(var13 == 255) {
-            this.field_999[var51] = var4.method_131();
+            this.field_999[var51] = var4.readByte();
          }
 
          if(var14 == 1) {
-            this.field_992[var51] = var5.method_131();
+            this.field_992[var51] = var5.readByte();
          }
 
          if(var15 == 1) {
@@ -2497,11 +2497,11 @@ public class class_93 extends class_91 {
          }
 
          if(var13 == -2089125597) {
-            this.field_999[var38] = var6.method_131();
+            this.field_999[var38] = var6.readByte();
          }
 
          if(var14 == 1) {
-            this.field_992[var38] = var7.method_131();
+            this.field_992[var38] = var7.readByte();
          }
 
          if(var15 == 1) {
@@ -2779,11 +2779,11 @@ public class class_93 extends class_91 {
          }
 
          if(var13 == 255) {
-            this.field_999[var38] = var6.method_131();
+            this.field_999[var38] = var6.readByte();
          }
 
          if(var14 == 1) {
-            this.field_992[var38] = var7.method_131();
+            this.field_992[var38] = var7.readByte();
          }
 
          if(var15 == 1) {
@@ -3061,11 +3061,11 @@ public class class_93 extends class_91 {
          }
 
          if(var13 == 255) {
-            this.field_999[var38] = var6.method_131();
+            this.field_999[var38] = var6.readByte();
          }
 
          if(var14 == 1) {
-            this.field_992[var38] = var7.method_131();
+            this.field_992[var38] = var7.readByte();
          }
 
          if(var15 == 1) {
@@ -3880,7 +3880,7 @@ public class class_93 extends class_91 {
          var2.offset = 0;
 
          for(var26 = 0; var26 < var11; ++var26) {
-            byte var27 = this.field_998[var26] = var2.method_131();
+            byte var27 = this.field_998[var26] = var2.readByte();
             if(var27 == 0) {
                ++var23;
             }
@@ -4051,15 +4051,15 @@ public class class_93 extends class_91 {
       for(var51 = 0; var51 < var10; ++var51) {
          this.field_994[var51] = (short)var2.readShort();
          if(var12 == 1) {
-            this.field_990[var51] = var3.method_131();
+            this.field_990[var51] = var3.readByte();
          }
 
          if(var13 == 255) {
-            this.field_999[var51] = var4.method_131();
+            this.field_999[var51] = var4.readByte();
          }
 
          if(var14 == 1) {
-            this.field_992[var51] = var5.method_131();
+            this.field_992[var51] = var5.readByte();
          }
 
          if(var15 == 1) {

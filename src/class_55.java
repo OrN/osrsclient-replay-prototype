@@ -55,9 +55,9 @@ public class class_55 extends class_51 {
    void method_570(Buffer var1) {
       var1.readUnsignedByte();
       this.field_413 = var1.readShort() * -2127816187;
-      this.field_410 = var1.method_131();
+      this.field_410 = var1.readByte();
       this.field_414 = var1.readShort() * -827329295;
-      var1.method_136();
+      var1.readLong();
       this.field_412 = var1.method_139(-391631059);
       var1.readUnsignedByte();
    }
@@ -67,9 +67,9 @@ public class class_55 extends class_51 {
       try {
          var1.readUnsignedByte();
          this.field_413 = var1.readShort() * -188362621;
-         this.field_410 = var1.method_131();
+         this.field_410 = var1.readByte();
          this.field_414 = var1.readShort() * -827329295;
-         var1.method_136();
+         var1.readLong();
          this.field_412 = var1.method_139(-391631059);
          var1.readUnsignedByte();
       } catch (RuntimeException var3) {

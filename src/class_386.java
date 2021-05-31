@@ -18,7 +18,7 @@ final class class_386 implements class_23 {
    // $FF: renamed from: b (java.lang.String, nd, byte) void
    void method_6722(String var1, Buffer var2) {
       try {
-         var2.method_120(var1);
+         var2.writeString(var1);
       } catch (RuntimeException var4) {
          throw class_223.method_4281(var4);
       }
@@ -55,7 +55,7 @@ final class class_386 implements class_23 {
 
    // $FF: renamed from: u (java.lang.String, nd) void
    void method_6724(String var1, Buffer var2) {
-      var2.method_120(var1);
+      var2.writeString(var1);
    }
 
    // $FF: renamed from: j (nd) java.lang.Object
@@ -65,12 +65,12 @@ final class class_386 implements class_23 {
 
    // $FF: renamed from: d (java.lang.String, nd) void
    void method_6725(String var1, Buffer var2) {
-      var2.method_120(var1);
+      var2.writeString(var1);
    }
 
    // $FF: renamed from: s (java.lang.String, nd) void
    void method_6726(String var1, Buffer var2) {
-      var2.method_120(var1);
+      var2.writeString(var1);
    }
 
    // $FF: renamed from: n (nd, int) java.lang.Object

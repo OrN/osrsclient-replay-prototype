@@ -186,7 +186,7 @@ public final class class_253 {
                      return;
                   }
 
-                  var8[var10] = var2.method_131();
+                  var8[var10] = var2.readByte();
                }
             } else if(1 == var9) {
                if(var1 != 1) {
@@ -203,7 +203,7 @@ public final class class_253 {
                         throw new IllegalStateException();
                      }
 
-                     var8[var5 * var11 + var10] = var2.method_131();
+                     var8[var5 * var11 + var10] = var2.readByte();
                   }
                }
             }

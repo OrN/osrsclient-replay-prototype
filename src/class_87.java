@@ -345,13 +345,13 @@ public class class_87 extends class_59 {
                return;
             }
 
-            this.field_826 = var1.method_131() * -2118336885;
+            this.field_826 = var1.readByte() * -2118336885;
          } else if(39 == var2) {
             if(var3 >= -864081678) {
                throw new IllegalStateException();
             }
 
-            this.field_845 = var1.method_131() * 1911142931;
+            this.field_845 = var1.readByte() * 1911142931;
          } else if(var2 >= 30 && var2 < 35) {
             this.field_828[var2 - 30] = var1.method_139(-391631059);
             if(this.field_828[var2 - 30].equalsIgnoreCase(class_305.field_3405)) {
@@ -834,7 +834,7 @@ public class class_87 extends class_59 {
                throw new IllegalStateException();
             } else {
                class_136.field_1752 -= 1031785609;
-               class_358.method_6259(class_165.field_2052[-26460885 * class_136.field_1752], class_165.field_2052[1 + class_136.field_1752 * -26460885], class_165.field_2052[2 + class_136.field_1752 * -26460885], -337847097);
+               NetworkInput.method_6259(class_165.field_2052[-26460885 * class_136.field_1752], class_165.field_2052[1 + class_136.field_1752 * -26460885], class_165.field_2052[2 + class_136.field_1752 * -26460885], -337847097);
                return 1;
             }
          } else if(3201 == var0) {

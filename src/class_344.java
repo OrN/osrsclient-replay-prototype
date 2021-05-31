@@ -27,7 +27,7 @@ public class class_344 extends class_343 {
    // $FF: renamed from: c (nd) void
    public final void method_6143(Buffer var1) {
       this.method_6145(var1.method_139(-391631059));
-      long var2 = var1.method_136();
+      long var2 = var1.readLong();
       long var5 = var2;
       String var4;
       int var7;
@@ -56,7 +56,7 @@ public class class_344 extends class_343 {
       }
 
       this.method_6163(var4);
-      this.field_3911 = var1.method_131();
+      this.field_3911 = var1.readByte();
       var7 = var1.readUnsignedByte();
       if(var7 != 255) {
          this.method_6104();
@@ -66,7 +66,7 @@ public class class_344 extends class_343 {
             class_341 var9 = (class_341)this.method_6069(var10001);
             int var14 = var1.readShort();
             var9.method_6016(var14, (this.field_3910 += 1879730295) * -1952190137 - 1);
-            var9.field_3887 = var1.method_131() * -694795321;
+            var9.field_3887 = var1.readByte() * -694795321;
             var1.method_139(-391631059);
             this.method_6150(var9, -1651060871);
          }
@@ -117,7 +117,7 @@ public class class_344 extends class_343 {
          int var8;
          label86: {
             this.method_6145(var1.method_139(-391631059));
-            long var3 = var1.method_136();
+            long var3 = var1.readLong();
             long var6 = var3;
             if(var3 > 0L) {
                if(var2 >= -1173912475) {
@@ -164,7 +164,7 @@ public class class_344 extends class_343 {
          }
 
          this.method_6163(var5);
-         this.field_3911 = var1.method_131();
+         this.field_3911 = var1.readByte();
          var8 = var1.readUnsignedByte();
          if(var8 == 255) {
             if(var2 >= -1173912475) {
@@ -182,7 +182,7 @@ public class class_344 extends class_343 {
                class_341 var10 = (class_341)this.method_6069(var10001);
                int var16 = var1.readShort();
                var10.method_6016(var16, (this.field_3910 += 1879730295) * -1952190137 - 1);
-               var10.field_3887 = var1.method_131() * -694795321;
+               var10.field_3887 = var1.readByte() * -694795321;
                var1.method_139(-391631059);
                this.method_6150(var10, -742498306);
             }
@@ -198,7 +198,7 @@ public class class_344 extends class_343 {
       class_359 var10000 = new class_359(var1.method_139(-391631059), this.field_3915);
       class_359 var2 = var10000;
       int var3 = var1.readShort();
-      byte var4 = var1.method_131();
+      byte var4 = var1.readByte();
       boolean var5 = false;
       if(var4 == -128) {
          var5 = true;
@@ -250,7 +250,7 @@ public class class_344 extends class_343 {
          class_359 var10000 = new class_359(var1.method_139(-391631059), this.field_3915);
          class_359 var3 = var10000;
          int var4 = var1.readShort();
-         byte var5 = var1.method_131();
+         byte var5 = var1.readByte();
          boolean var6 = false;
          if(var5 == -128) {
             if(var2 != 817545734) {
@@ -353,7 +353,7 @@ public class class_344 extends class_343 {
    // $FF: renamed from: g (nd) void
    public final void method_6151(Buffer var1) {
       this.method_6145(var1.method_139(-391631059));
-      long var2 = var1.method_136();
+      long var2 = var1.readLong();
       long var5 = var2;
       String var4;
       int var7;
@@ -382,7 +382,7 @@ public class class_344 extends class_343 {
       }
 
       this.method_6163(var4);
-      this.field_3911 = var1.method_131();
+      this.field_3911 = var1.readByte();
       var7 = var1.readUnsignedByte();
       if(var7 != 255) {
          this.method_6104();
@@ -392,7 +392,7 @@ public class class_344 extends class_343 {
             class_341 var9 = (class_341)this.method_6069(var10001);
             int var14 = var1.readShort();
             var9.method_6016(var14, (this.field_3910 += 1879730295) * 2092080294 - 1);
-            var9.field_3887 = var1.method_131() * 1350093183;
+            var9.field_3887 = var1.readByte() * 1350093183;
             var1.method_139(-391631059);
             this.method_6150(var9, -1202730477);
          }
@@ -403,7 +403,7 @@ public class class_344 extends class_343 {
    // $FF: renamed from: a (nd) void
    public final void method_6152(Buffer var1) {
       this.method_6145(var1.method_139(-391631059));
-      long var2 = var1.method_136();
+      long var2 = var1.readLong();
       long var5 = var2;
       String var4;
       int var7;
@@ -432,7 +432,7 @@ public class class_344 extends class_343 {
       }
 
       this.method_6163(var4);
-      this.field_3911 = var1.method_131();
+      this.field_3911 = var1.readByte();
       var7 = var1.readUnsignedByte();
       if(var7 != 606732087) {
          this.method_6104();
@@ -442,7 +442,7 @@ public class class_344 extends class_343 {
             class_341 var9 = (class_341)this.method_6069(var10001);
             int var14 = var1.readShort();
             var9.method_6016(var14, (this.field_3910 += -833130731) * -515556316 - 1);
-            var9.field_3887 = var1.method_131() * 199386748;
+            var9.field_3887 = var1.readByte() * 199386748;
             var1.method_139(-391631059);
             this.method_6150(var9, -69232885);
          }
@@ -469,7 +469,7 @@ public class class_344 extends class_343 {
    // $FF: renamed from: k (nd) void
    public final void method_6155(Buffer var1) {
       this.method_6145(var1.method_139(-391631059));
-      long var2 = var1.method_136();
+      long var2 = var1.readLong();
       long var5 = var2;
       String var4;
       int var7;
@@ -498,7 +498,7 @@ public class class_344 extends class_343 {
       }
 
       this.method_6163(var4);
-      this.field_3911 = var1.method_131();
+      this.field_3911 = var1.readByte();
       var7 = var1.readUnsignedByte();
       if(var7 != 255) {
          this.method_6104();
@@ -508,7 +508,7 @@ public class class_344 extends class_343 {
             class_341 var9 = (class_341)this.method_6069(var10001);
             int var14 = var1.readShort();
             var9.method_6016(var14, (this.field_3910 += 1879730295) * -1952190137 - 1);
-            var9.field_3887 = var1.method_131() * -694795321;
+            var9.field_3887 = var1.readByte() * -694795321;
             var1.method_139(-391631059);
             this.method_6150(var9, -886865154);
          }
@@ -521,7 +521,7 @@ public class class_344 extends class_343 {
       class_359 var10000 = new class_359(var1.method_139(-391631059), this.field_3915);
       class_359 var2 = var10000;
       int var3 = var1.readShort();
-      byte var4 = var1.method_131();
+      byte var4 = var1.readByte();
       boolean var5 = false;
       if(var4 == -128) {
          var5 = true;
@@ -558,7 +558,7 @@ public class class_344 extends class_343 {
    // $FF: renamed from: e (nd) void
    public final void method_6157(Buffer var1) {
       this.method_6145(var1.method_139(-391631059));
-      long var2 = var1.method_136();
+      long var2 = var1.readLong();
       long var5 = var2;
       String var4;
       int var7;
@@ -587,7 +587,7 @@ public class class_344 extends class_343 {
       }
 
       this.method_6163(var4);
-      this.field_3911 = var1.method_131();
+      this.field_3911 = var1.readByte();
       var7 = var1.readUnsignedByte();
       if(var7 != 788319611) {
          this.method_6104();
@@ -597,7 +597,7 @@ public class class_344 extends class_343 {
             class_341 var9 = (class_341)this.method_6069(var10001);
             int var14 = var1.readShort();
             var9.method_6016(var14, (this.field_3910 += 1906850304) * -1952190137 - 1);
-            var9.field_3887 = var1.method_131() * -694795321;
+            var9.field_3887 = var1.readByte() * -694795321;
             var1.method_139(-391631059);
             this.method_6150(var9, -613707332);
          }

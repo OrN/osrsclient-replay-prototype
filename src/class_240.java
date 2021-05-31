@@ -901,10 +901,10 @@ public class class_240 {
                return;
             }
 
-            class_40 var2 = class_112.method_2238(class_266.field_3136, client.field_1463.field_2384, (byte)8);
-            var2.field_263.writeByte(class_78.method_1223(702215999));
-            var2.field_263.method_333(class_137.field_1766 * 646214551);
-            var2.field_263.method_333(class_58.field_460 * -1538307343);
+            class_40 var2 = class_112.method_2238(class_266.field_3136, client.field_1463.isaac, (byte)8);
+            var2.networkBuffer.writeByte(class_78.method_1223(702215999));
+            var2.networkBuffer.writeShortReverse(class_137.field_1766 * 646214551);
+            var2.networkBuffer.writeShortReverse(class_58.field_460 * -1538307343);
             client.field_1463.method_4079(var2);
          }
 

@@ -164,7 +164,7 @@ public class class_333 {
             var3 = 65535L;
          }
 
-         var1.method_333((int)var3);
+         var1.writeShortReverse((int)var3);
          long var5 = this.field_3867 * -8039422533561910721L;
          var5 /= 10L;
          if(var5 < 0L) {
@@ -181,7 +181,7 @@ public class class_333 {
             var5 = 65535L;
          }
 
-         var1.method_333((int)var5);
+         var1.writeShortReverse((int)var5);
          long var7 = this.field_3868 * -6788679505704133641L;
          var7 /= 10L;
          if(var7 < 0L) {
@@ -198,11 +198,11 @@ public class class_333 {
             var7 = 65535L;
          }
 
-         var1.method_333((int)var7);
-         var1.method_333(this.field_3869 * 2093027907);
-         var1.method_333(this.field_3870 * 2015708795);
-         var1.method_333(this.field_3871 * -211935081);
-         var1.method_333(this.field_3872 * -1004054843);
+         var1.writeShortReverse((int)var7);
+         var1.writeShortReverse(this.field_3869 * 2093027907);
+         var1.writeShortReverse(this.field_3870 * 2015708795);
+         var1.writeShortReverse(this.field_3871 * -211935081);
+         var1.writeShortReverse(this.field_3872 * -1004054843);
       } catch (RuntimeException var9) {
          throw class_223.method_4281(var9);
       }
@@ -440,7 +440,7 @@ public class class_333 {
          var2 = 65535L;
       }
 
-      var1.method_333((int)var2);
+      var1.writeShortReverse((int)var2);
       long var4 = this.field_3867 * -8039422533561910721L;
       var4 /= 10L;
       if(var4 < 0L) {
@@ -449,7 +449,7 @@ public class class_333 {
          var4 = 65535L;
       }
 
-      var1.method_333((int)var4);
+      var1.writeShortReverse((int)var4);
       long var6 = this.field_3868 * -6788679505704133641L;
       var6 /= 10L;
       if(var6 < 0L) {
@@ -458,11 +458,11 @@ public class class_333 {
          var6 = 65535L;
       }
 
-      var1.method_333((int)var6);
-      var1.method_333(this.field_3869 * 2093027907);
-      var1.method_333(this.field_3870 * 2015708795);
-      var1.method_333(this.field_3871 * -211935081);
-      var1.method_333(this.field_3872 * -1004054843);
+      var1.writeShortReverse((int)var6);
+      var1.writeShortReverse(this.field_3869 * 2093027907);
+      var1.writeShortReverse(this.field_3870 * 2015708795);
+      var1.writeShortReverse(this.field_3871 * -211935081);
+      var1.writeShortReverse(this.field_3872 * -1004054843);
    }
 
    // $FF: renamed from: s () void
@@ -480,7 +480,7 @@ public class class_333 {
          var2 = 65535L;
       }
 
-      var1.method_333((int)var2);
+      var1.writeShortReverse((int)var2);
       long var4 = this.field_3867 * -8039422533561910721L;
       var4 /= 10L;
       if(var4 < 0L) {
@@ -489,7 +489,7 @@ public class class_333 {
          var4 = 65535L;
       }
 
-      var1.method_333((int)var4);
+      var1.writeShortReverse((int)var4);
       long var6 = this.field_3868 * -6788679505704133641L;
       var6 /= 10L;
       if(var6 < 0L) {
@@ -498,11 +498,11 @@ public class class_333 {
          var6 = 65535L;
       }
 
-      var1.method_333((int)var6);
-      var1.method_333(this.field_3869 * 2093027907);
-      var1.method_333(this.field_3870 * -275877178);
-      var1.method_333(this.field_3871 * -211935081);
-      var1.method_333(this.field_3872 * -1004054843);
+      var1.writeShortReverse((int)var6);
+      var1.writeShortReverse(this.field_3869 * 2093027907);
+      var1.writeShortReverse(this.field_3870 * -275877178);
+      var1.writeShortReverse(this.field_3871 * -211935081);
+      var1.writeShortReverse(this.field_3872 * -1004054843);
    }
 
    // $FF: renamed from: n (char, int) boolean

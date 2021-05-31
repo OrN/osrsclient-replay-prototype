@@ -425,7 +425,7 @@ public final class class_166 {
             }
 
             if(var7 <= 49) {
-               class_273.field_3195[var1][var2][var3] = var0.method_131();
+               class_273.field_3195[var1][var2][var3] = var0.readByte();
                class_52.field_389[var1][var2][var3] = (byte)((var7 - 2) / 4);
                class_278.field_3226[var1][var2][var3] = (byte)(var7 - 2 + var6 & 3);
             } else if(var7 <= 81) {
@@ -497,7 +497,7 @@ public final class class_166 {
             }
 
             if(var7 <= 49) {
-               class_273.field_3195[var1][var2][var3] = var0.method_131();
+               class_273.field_3195[var1][var2][var3] = var0.readByte();
                class_52.field_389[var1][var2][var3] = (byte)((var7 - 2) / 4);
                class_278.field_3226[var1][var2][var3] = (byte)(var7 - 2 + var6 & 3);
             } else if(var7 <= 81) {

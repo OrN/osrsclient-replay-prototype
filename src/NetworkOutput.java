@@ -2,10 +2,10 @@ import java.io.IOException;
 import java.io.OutputStream;
 
 // $FF: renamed from: le
-public class class_348 implements Runnable {
+public class NetworkOutput implements Runnable {
 
    // $FF: renamed from: n java.io.OutputStream
-   OutputStream field_3927;
+   OutputStream output;
    // $FF: renamed from: j int
    int field_3928;
    // $FF: renamed from: f int
@@ -26,7 +26,7 @@ public class class_348 implements Runnable {
    boolean method_6186() {
       if(this.field_3934) {
          try {
-            this.field_3927.close();
+            this.output.close();
             if(this.field_3933 == null) {
                this.field_3933 = new IOException("");
             }
@@ -47,7 +47,7 @@ public class class_348 implements Runnable {
       try {
          if(this.field_3934) {
             try {
-               this.field_3927.close();
+               this.output.close();
                if(this.field_3933 == null) {
                   if(var1 != 1) {
                      throw new IllegalStateException();
@@ -217,7 +217,7 @@ public class class_348 implements Runnable {
                }
 
                try {
-                  this.field_3927.flush();
+                  this.output.flush();
                } catch (IOException var10) {
                   this.field_3933 = var10;
                   return;
@@ -237,11 +237,11 @@ public class class_348 implements Runnable {
 
          try {
             if(var1 + this.field_3932 * -1232062539 <= this.field_3929 * 255745785) {
-               this.field_3927.write(this.field_3930, -1232062539 * this.field_3932, var1);
+               this.output.write(this.field_3930, -1232062539 * this.field_3932, var1);
             } else {
                int var13 = 255745785 * this.field_3929 - this.field_3932 * 845310104;
-               this.field_3927.write(this.field_3930, -1232062539 * this.field_3932, var13);
-               this.field_3927.write(this.field_3930, 0, var1 - var13);
+               this.output.write(this.field_3930, -1232062539 * this.field_3932, var13);
+               this.output.write(this.field_3930, 0, var1 - var13);
             }
          } catch (IOException var9) {
             IOException var2 = var9;
@@ -279,7 +279,7 @@ public class class_348 implements Runnable {
                }
 
                try {
-                  this.field_3927.flush();
+                  this.output.flush();
                } catch (IOException var10) {
                   this.field_3933 = var10;
                   return;
@@ -299,11 +299,11 @@ public class class_348 implements Runnable {
 
          try {
             if(var1 + this.field_3932 * -1232062539 <= this.field_3929 * 255745785) {
-               this.field_3927.write(this.field_3930, -1232062539 * this.field_3932, var1);
+               this.output.write(this.field_3930, -1232062539 * this.field_3932, var1);
             } else {
                int var13 = 255745785 * this.field_3929 - this.field_3932 * -1232062539;
-               this.field_3927.write(this.field_3930, -1232062539 * this.field_3932, var13);
-               this.field_3927.write(this.field_3930, 0, var1 - var13);
+               this.output.write(this.field_3930, -1232062539 * this.field_3932, var13);
+               this.output.write(this.field_3930, 0, var1 - var13);
             }
          } catch (IOException var9) {
             IOException var2 = var9;
@@ -356,12 +356,12 @@ public class class_348 implements Runnable {
    }
 
    // $FF: renamed from: <init> (java.io.OutputStream, int) void
-   class_348(OutputStream var1, int var2) {
+   NetworkOutput(OutputStream var1, int var2) {
       super();
       try {
          this.field_3932 = 0;
          this.field_3928 = 0;
-         this.field_3927 = var1;
+         this.output = var1;
          this.field_3929 = (1 + var2) * -1586887863;
          this.field_3930 = new byte[this.field_3929 * 255745785];
          this.field_3931 = new Thread(this);
@@ -393,7 +393,7 @@ public class class_348 implements Runnable {
                   }
 
                   try {
-                     this.field_3927.flush();
+                     this.output.flush();
                   } catch (IOException var10) {
                      this.field_3933 = var10;
                      return;
@@ -413,11 +413,11 @@ public class class_348 implements Runnable {
 
             try {
                if(var1 + this.field_3932 * -1232062539 <= this.field_3929 * 255745785) {
-                  this.field_3927.write(this.field_3930, -1232062539 * this.field_3932, var1);
+                  this.output.write(this.field_3930, -1232062539 * this.field_3932, var1);
                } else {
                   int var14 = 255745785 * this.field_3929 - this.field_3932 * -1232062539;
-                  this.field_3927.write(this.field_3930, -1232062539 * this.field_3932, var14);
-                  this.field_3927.write(this.field_3930, 0, var1 - var14);
+                  this.output.write(this.field_3930, -1232062539 * this.field_3932, var14);
+                  this.output.write(this.field_3930, 0, var1 - var14);
                }
             } catch (IOException var9) {
                IOException var2 = var9;

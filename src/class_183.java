@@ -66,7 +66,7 @@ public class class_183 extends class_181 {
    }
 
     // $FF: renamed from: f (nb, int) void
-   public static void method_3844(class_29 var0, int var1) {
+   public static void method_3844(NetworkBuffer var0, int var1) {
       try {
          class_58 var2 = (class_58)class_153.field_1926.method_5700();
          if(var2 == null) {
@@ -75,7 +75,7 @@ public class class_183 extends class_181 {
             }
          } else {
             int var3 = var0.offset * -442398587;
-            var0.method_116(var2.field_459 * -848582505);
+            var0.writeIntReverse(var2.field_459 * -848582505);
 
             for(int var4 = 0; var4 < var2.field_464 * -637285787; ++var4) {
                if(var1 <= 1148722603) {
@@ -101,7 +101,7 @@ public class class_183 extends class_181 {
                         var6 = var2.field_461[var4];
                         var7 = var6.getInt((Object)null);
                         var0.writeByte(0);
-                        var0.method_116(var7);
+                        var0.writeIntReverse(var7);
                      } else if(1 == var5) {
                         if(var1 <= 1148722603) {
                            throw new IllegalStateException();
@@ -118,7 +118,7 @@ public class class_183 extends class_181 {
                         var6 = var2.field_461[var4];
                         var7 = var6.getModifiers();
                         var0.writeByte(0);
-                        var0.method_116(var7);
+                        var0.writeIntReverse(var7);
                      }
 
                      Method var24;
@@ -153,10 +153,10 @@ public class class_183 extends class_181 {
                            }
 
                            var0.writeByte(1);
-                           var0.method_341(((Number)var26).longValue());
+                           var0.writeLongReversed(((Number)var26).longValue());
                         } else if(var26 instanceof String) {
                            var0.writeByte(2);
-                           var0.method_120((String)var26);
+                           var0.writeString((String)var26);
                         } else {
                            var0.writeByte(4);
                         }
@@ -168,7 +168,7 @@ public class class_183 extends class_181 {
                         var24 = var2.field_463[var4];
                         var7 = var24.getModifiers();
                         var0.writeByte(0);
-                        var0.method_116(var7);
+                        var0.writeIntReverse(var7);
                      }
                   } catch (ClassNotFoundException var11) {
                      var0.writeByte(-10);

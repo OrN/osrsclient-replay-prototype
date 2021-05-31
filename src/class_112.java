@@ -105,7 +105,7 @@ public class class_112 extends class_111 {
    }
 
    // $FF: renamed from: v (hs, oy, byte) hq
-   public static class_40 method_2238(class_266 var0, class_404 var1, byte var2) {
+   public static class_40 method_2238(class_266 var0, ISAAC var1, byte var2) {
       try {
          class_40 var3;
          if(class_40.field_266 * -227614929 == 0) {
@@ -121,39 +121,39 @@ public class class_112 extends class_111 {
 
          var3.field_267 = var0;
          var3.field_262 = var0.field_3153 * -1937979799;
-         class_29 var10001;
+         NetworkBuffer var10001;
          if(var3.field_262 * 1934863547 == -1) {
             if(var2 != 8) {
                throw new IllegalStateException();
             }
 
-            var10001 = new class_29(260);
-            var3.field_263 = var10001;
+            var10001 = new NetworkBuffer(260);
+            var3.networkBuffer = var10001;
          } else if(-2 == 1934863547 * var3.field_262) {
-            var10001 = new class_29(10000);
-            var3.field_263 = var10001;
+            var10001 = new NetworkBuffer(10000);
+            var3.networkBuffer = var10001;
          } else if(var3.field_262 * 1934863547 <= 18) {
             if(var2 != 8) {
                throw new IllegalStateException();
             }
 
-            var10001 = new class_29(20);
-            var3.field_263 = var10001;
+            var10001 = new NetworkBuffer(20);
+            var3.networkBuffer = var10001;
          } else if(1934863547 * var3.field_262 <= 98) {
             if(var2 != 8) {
                throw new IllegalStateException();
             }
 
-            var10001 = new class_29(100);
-            var3.field_263 = var10001;
+            var10001 = new NetworkBuffer(100);
+            var3.networkBuffer = var10001;
          } else {
-            var10001 = new class_29(260);
-            var3.field_263 = var10001;
+            var10001 = new NetworkBuffer(260);
+            var3.networkBuffer = var10001;
          }
 
-         var3.field_263.method_354(var1);
-         var3.field_263.method_357(-1958588669 * var3.field_267.field_3091);
-         var3.field_264 = 0;
+         var3.networkBuffer.method_354(var1);
+         var3.networkBuffer.method_357(-1958588669 * var3.field_267.field_3091);
+         var3.length = 0;
          return var3;
       } catch (RuntimeException var5) {
          throw class_223.method_4281(var5);

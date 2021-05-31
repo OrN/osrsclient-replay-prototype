@@ -20,22 +20,13 @@ public abstract class class_206 {
    public abstract int method_4120(int var1) throws IOException;
 
    // $FF: renamed from: p (byte[], int, int, int) int
-   public abstract int method_4121(byte[] var1, int var2, int var3, int var4) throws IOException;
+   public abstract int read(byte[] var1, int var2, int var3, int var4) throws IOException;
 
    // $FF: renamed from: x (byte[], int, int) int
    public abstract int method_4122(byte[] var1, int var2, int var3) throws IOException;
 
    // $FF: renamed from: v (int) void
-   public abstract void method_4123(int var1);
-
-   // $FF: renamed from: b () void
-   public abstract void method_4124();
-
-   // $FF: renamed from: d () void
-   public abstract void method_4125();
-
-   // $FF: renamed from: s () void
-   public abstract void method_4126();
+   public abstract void close(int var1);
 
    // $FF: renamed from: u () int
    public abstract int method_4127() throws IOException;
@@ -69,9 +60,6 @@ public abstract class class_206 {
          throw class_223.method_4281(var1);
       }
    }
-
-   // $FF: renamed from: z (byte[], int, int) int
-   public abstract int method_4136(byte[] var1, int var2, int var3) throws IOException;
 
    // $FF: renamed from: o () int
    public abstract int method_4137() throws IOException;

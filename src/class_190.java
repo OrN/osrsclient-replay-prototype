@@ -184,7 +184,7 @@ public class class_190 {
                   Buffer var10000 = new Buffer(var3);
                   Buffer var26 = var10000;
                   var26.writeByte(2);
-                  var26.method_333(var4);
+                  var26.writeShortReverse(var4);
                   Iterator var27 = this.field_2282.entrySet().iterator();
 
                   while(var27.hasNext()) {
@@ -195,7 +195,7 @@ public class class_190 {
                            throw new IllegalStateException();
                         }
 
-                        var26.method_333(var29);
+                        var26.writeShortReverse(var29);
                         Object var9 = var28.getValue();
                         class_385 var10 = class_385.method_6713(var9.getClass(), (byte)-16);
                         var26.writeByte(618578037 * var10.field_4222);

@@ -185,7 +185,7 @@ public class class_186 extends class_181 {
                      throw new IllegalStateException();
                   } else {
                      byte[] var8 = new byte[var4];
-                     var2.method_267(var8, 0, var4, 1260377098);
+                     var2.read(var8, 0, var4, 1260377098);
                      return var8;
                   }
                } else {

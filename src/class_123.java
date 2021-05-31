@@ -42,7 +42,7 @@ public class class_123 extends class_111 {
       try {
          if(var1.readUnsignedByte() != 255) {
             var1.offset -= -1025691571;
-            this.field_1352 = var1.method_136() * 5333157319275296417L;
+            this.field_1352 = var1.readLong() * 5333157319275296417L;
          }
 
          this.field_1346 = var1.method_347(-45515982);
@@ -64,7 +64,7 @@ public class class_123 extends class_111 {
    void method_2233(Buffer var1) {
       if(var1.readUnsignedByte() != 255) {
          var1.offset -= 1960136266;
-         this.field_1352 = var1.method_136() * 5333157319275296417L;
+         this.field_1352 = var1.readLong() * 5333157319275296417L;
       }
 
       this.field_1346 = var1.method_347(84371846);
@@ -169,7 +169,7 @@ public class class_123 extends class_111 {
    void method_2234(Buffer var1) {
       if(var1.readUnsignedByte() != 255) {
          var1.offset -= -1025691571;
-         this.field_1352 = var1.method_136() * 5333157319275296417L;
+         this.field_1352 = var1.readLong() * 5333157319275296417L;
       }
 
       this.field_1346 = var1.method_347(-489116618);

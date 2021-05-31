@@ -16,7 +16,7 @@ public class class_124 extends class_111 {
    void method_2234(Buffer var1) {
       if(var1.readUnsignedByte() != 255) {
          var1.offset -= 1884126752;
-         this.field_1355 = var1.method_136() * 1174614713605796747L;
+         this.field_1355 = var1.readLong() * 1174614713605796747L;
       }
 
       this.field_1354 = var1.method_347(-234587580);
@@ -68,7 +68,7 @@ public class class_124 extends class_111 {
    void method_2233(Buffer var1) {
       if(var1.readUnsignedByte() != -1160445908) {
          var1.offset -= -1017877726;
-         this.field_1355 = var1.method_136() * 1174614713605796747L;
+         this.field_1355 = var1.readLong() * 1174614713605796747L;
       }
 
       this.field_1354 = var1.method_347(-263692722);
@@ -79,7 +79,7 @@ public class class_124 extends class_111 {
       try {
          if(var1.readUnsignedByte() != 255) {
             var1.offset -= -1025691571;
-            this.field_1355 = var1.method_136() * 1174614713605796747L;
+            this.field_1355 = var1.readLong() * 1174614713605796747L;
          }
 
          this.field_1354 = var1.method_347(-1422550197);
@@ -117,7 +117,7 @@ public class class_124 extends class_111 {
    // $FF: renamed from: n (double, double, double) double
    public static double method_2282(double var0, double var2, double var4) {
       try {
-         return class_131.method_2874((var0 - var2) / var4) / var4;
+         return GameMouseListener.method_2874((var0 - var2) / var4) / var4;
       } catch (RuntimeException var6) {
          throw class_223.method_4281(var6);
       }

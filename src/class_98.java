@@ -914,36 +914,36 @@ public abstract class class_98 extends class_91 {
                               throw new IllegalStateException();
                            }
 
-                           var9 = class_112.method_2238(class_266.field_3071, client.field_1463.field_2384, (byte)8);
-                           var9.field_263.method_185(var4[var7]);
-                           var9.field_263.method_148(0);
+                           var9 = class_112.method_2238(class_266.field_3071, client.field_1463.isaac, (byte)8);
+                           var9.networkBuffer.method_185(var4[var7]);
+                           var9.networkBuffer.method_148(0);
                            client.field_1463.method_4079(var9);
                         } else if(var0 == 4) {
                            if(var2 == 1590901191) {
                               throw new IllegalStateException();
                            }
 
-                           var9 = class_112.method_2238(class_266.field_3079, client.field_1463.field_2384, (byte)8);
-                           var9.field_263.method_185(var4[var7]);
-                           var9.field_263.method_148(0);
+                           var9 = class_112.method_2238(class_266.field_3079, client.field_1463.isaac, (byte)8);
+                           var9.networkBuffer.method_185(var4[var7]);
+                           var9.networkBuffer.method_148(0);
                            client.field_1463.method_4079(var9);
                         } else if(var0 == 6) {
                            if(var2 == 1590901191) {
                               throw new IllegalStateException();
                            }
 
-                           var9 = class_112.method_2238(class_266.field_3110, client.field_1463.field_2384, (byte)8);
-                           var9.field_263.method_145(0);
-                           var9.field_263.method_167(var4[var7]);
+                           var9 = class_112.method_2238(class_266.field_3110, client.field_1463.isaac, (byte)8);
+                           var9.networkBuffer.method_145(0);
+                           var9.networkBuffer.writeShortAlt(var4[var7]);
                            client.field_1463.method_4079(var9);
                         } else if(7 == var0) {
                            if(var2 == 1590901191) {
                               throw new IllegalStateException();
                            }
 
-                           var9 = class_112.method_2238(class_266.field_3094, client.field_1463.field_2384, (byte)8);
-                           var9.field_263.writeByte(0);
-                           var9.field_263.method_167(var4[var7]);
+                           var9 = class_112.method_2238(class_266.field_3094, client.field_1463.isaac, (byte)8);
+                           var9.networkBuffer.writeByte(0);
+                           var9.networkBuffer.writeShortAlt(var4[var7]);
                            client.field_1463.method_4079(var9);
                         }
 
