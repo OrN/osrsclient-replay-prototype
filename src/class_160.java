@@ -77,7 +77,7 @@ public class class_160 {
                         class_149.method_3135(30, "", var6);
                      }
                   } else {
-                     class_40 var4 = class_112.newPacket(Opcode.OPCODE_50, client.field_1463.isaac, (byte)8);
+                     class_40 var4 = class_112.newPacket(ClientOpcode.OPCODE_50, client.field_1463.isaac, (byte)8);
                      var4.networkBuffer.writeByte(class_166.method_3598(var1));
                      var4.networkBuffer.writeString(var1);
                      client.field_1463.method_4079(var4);
@@ -112,7 +112,7 @@ public class class_160 {
 
    // $FF: renamed from: bl (java.lang.String, int) void
    static final void method_3320(String var0, int var1) {
-      class_40 var2 = class_112.newPacket(Opcode.OPCODE_49, client.field_1463.isaac, (byte)8);
+      class_40 var2 = class_112.newPacket(ClientOpcode.OPCODE_49, client.field_1463.isaac, (byte)8);
       var2.networkBuffer.writeByte(class_166.method_3598(var0) + 1);
       var2.networkBuffer.writeString(var0);
       var2.networkBuffer.method_148(var1);
@@ -277,7 +277,7 @@ public class class_160 {
                   }
 
                   class_148.method_3123();
-                  class_40 var4 = class_112.newPacket(Opcode.OPCODE_8, client.field_1463.isaac, (byte)8);
+                  class_40 var4 = class_112.newPacket(ClientOpcode.OPCODE_8, client.field_1463.isaac, (byte)8);
                   var4.networkBuffer.writeByte(class_166.method_3598(var1));
                   var4.networkBuffer.writeString(var1);
                   client.field_1463.method_4079(var4);
@@ -304,7 +304,7 @@ public class class_160 {
             } else {
                if(this.field_1995.method_6084(var3, 473835979)) {
                   class_148.method_3123();
-                  class_40 var4 = class_112.newPacket(Opcode.OPCODE_83, client.field_1463.isaac, (byte)8);
+                  class_40 var4 = class_112.newPacket(ClientOpcode.OPCODE_83, client.field_1463.isaac, (byte)8);
                   var4.networkBuffer.writeByte(class_166.method_3598(var1));
                   var4.networkBuffer.writeString(var1);
                   client.field_1463.method_4079(var4);
@@ -368,7 +368,7 @@ public class class_160 {
          if(var2.method_6273((byte)0)) {
             if(this.field_1995.method_6084(var2, -1599442958)) {
                class_148.method_3123();
-               class_40 var3 = class_112.newPacket(Opcode.OPCODE_83, client.field_1463.isaac, (byte)8);
+               class_40 var3 = class_112.newPacket(ClientOpcode.OPCODE_83, client.field_1463.isaac, (byte)8);
                var3.networkBuffer.writeByte(class_166.method_3598(var1));
                var3.networkBuffer.writeString(var1);
                client.field_1463.method_4079(var3);
@@ -423,7 +423,7 @@ public class class_160 {
          if(var2.method_6273((byte)0)) {
             if(this.field_1994.method_6084(var2, -1673432341)) {
                class_148.method_3123();
-               class_40 var3 = class_112.newPacket(Opcode.OPCODE_8, client.field_1463.isaac, (byte)8);
+               class_40 var3 = class_112.newPacket(ClientOpcode.OPCODE_8, client.field_1463.isaac, (byte)8);
                var3.networkBuffer.writeByte(class_166.method_3598(var1));
                var3.networkBuffer.writeString(var1);
                client.field_1463.method_4079(var3);
@@ -442,7 +442,7 @@ public class class_160 {
          if(var2.method_6273((byte)0)) {
             if(this.field_1994.method_6084(var2, 847722659)) {
                class_148.method_3123();
-               class_40 var3 = class_112.newPacket(Opcode.OPCODE_8, client.field_1463.isaac, (byte)8);
+               class_40 var3 = class_112.newPacket(ClientOpcode.OPCODE_8, client.field_1463.isaac, (byte)8);
                var3.networkBuffer.writeByte(class_166.method_3598(var1));
                var3.networkBuffer.writeString(var1);
                client.field_1463.method_4079(var3);
@@ -538,7 +538,7 @@ public class class_160 {
                   var4 = var5.append(class_305.field_3597).toString();
                   class_149.method_3135(30, "", var4);
                } else {
-                  class_40 var3 = class_112.newPacket(Opcode.OPCODE_24, client.field_1463.isaac, (byte)8);
+                  class_40 var3 = class_112.newPacket(ClientOpcode.OPCODE_24, client.field_1463.isaac, (byte)8);
                   var3.networkBuffer.writeByte(class_166.method_3598(var1));
                   var3.networkBuffer.writeString(var1);
                   client.field_1463.method_4079(var3);
@@ -572,7 +572,7 @@ public class class_160 {
                   var4 = var5.append(class_305.field_3597).toString();
                   class_149.method_3135(30, "", var4);
                } else {
-                  class_40 var3 = class_112.newPacket(Opcode.OPCODE_24, client.field_1463.isaac, (byte)8);
+                  class_40 var3 = class_112.newPacket(ClientOpcode.OPCODE_24, client.field_1463.isaac, (byte)8);
                   var3.networkBuffer.writeByte(class_166.method_3598(var1));
                   var3.networkBuffer.writeString(var1);
                   client.field_1463.method_4079(var3);
@@ -628,7 +628,7 @@ public class class_160 {
                   var6 = var7.append(class_305.field_3597).toString();
                   class_149.method_3135(30, "", var6);
                } else {
-                  class_40 var4 = class_112.newPacket(Opcode.OPCODE_24, client.field_1463.isaac, (byte)8);
+                  class_40 var4 = class_112.newPacket(ClientOpcode.OPCODE_24, client.field_1463.isaac, (byte)8);
                   var4.networkBuffer.writeByte(class_166.method_3598(var1));
                   var4.networkBuffer.writeString(var1);
                   client.field_1463.method_4079(var4);
@@ -711,7 +711,7 @@ public class class_160 {
                   var4 = var5.append(class_305.field_3523).toString();
                   class_149.method_3135(30, "", var4);
                } else {
-                  class_40 var3 = class_112.newPacket(Opcode.OPCODE_50, client.field_1463.isaac, (byte)8);
+                  class_40 var3 = class_112.newPacket(ClientOpcode.OPCODE_50, client.field_1463.isaac, (byte)8);
                   var3.networkBuffer.writeByte(class_166.method_3598(var1));
                   var3.networkBuffer.writeString(var1);
                   client.field_1463.method_4079(var3);
@@ -760,7 +760,7 @@ public class class_160 {
                   var4 = var5.append(class_305.field_3523).toString();
                   class_149.method_3135(30, "", var4);
                } else {
-                  class_40 var3 = class_112.newPacket(Opcode.OPCODE_50, client.field_1463.isaac, (byte)8);
+                  class_40 var3 = class_112.newPacket(ClientOpcode.OPCODE_50, client.field_1463.isaac, (byte)8);
                   var3.networkBuffer.writeByte(class_166.method_3598(var1));
                   var3.networkBuffer.writeString(var1);
                   client.field_1463.method_4079(var3);
@@ -812,7 +812,7 @@ public class class_160 {
                   var4 = var5.append(class_305.field_3523).toString();
                   class_149.method_3135(30, "", var4);
                } else {
-                  class_40 var3 = class_112.newPacket(Opcode.OPCODE_50, client.field_1463.isaac, (byte)8);
+                  class_40 var3 = class_112.newPacket(ClientOpcode.OPCODE_50, client.field_1463.isaac, (byte)8);
                   var3.networkBuffer.writeByte(class_166.method_3598(var1));
                   var3.networkBuffer.writeString(var1);
                   client.field_1463.method_4079(var3);
@@ -842,7 +842,7 @@ public class class_160 {
          if(var2.method_6273((byte)0)) {
             if(this.field_1995.method_6084(var2, -676034928)) {
                class_148.method_3123();
-               class_40 var3 = class_112.newPacket(Opcode.OPCODE_83, client.field_1463.isaac, (byte)8);
+               class_40 var3 = class_112.newPacket(ClientOpcode.OPCODE_83, client.field_1463.isaac, (byte)8);
                var3.networkBuffer.writeByte(class_166.method_3598(var1));
                var3.networkBuffer.writeString(var1);
                client.field_1463.method_4079(var3);
@@ -866,7 +866,7 @@ public class class_160 {
          if(var2.method_6273((byte)0)) {
             if(this.field_1995.method_6084(var2, -788927024)) {
                class_148.method_3123();
-               class_40 var3 = class_112.newPacket(Opcode.OPCODE_83, client.field_1463.isaac, (byte)8);
+               class_40 var3 = class_112.newPacket(ClientOpcode.OPCODE_83, client.field_1463.isaac, (byte)8);
                var3.networkBuffer.writeByte(class_166.method_3598(var1));
                var3.networkBuffer.writeString(var1);
                client.field_1463.method_4079(var3);

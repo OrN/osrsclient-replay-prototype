@@ -13,7 +13,7 @@ public class class_40 extends class_27 {
    // $FF: renamed from: j int
    static int field_266;
    // $FF: renamed from: v hs
-   Opcode field_267;
+   ClientOpcode field_267;
    // $FF: renamed from: p hq[]
    static class_40[] field_268;
    // $FF: renamed from: hw oh[]
@@ -49,7 +49,7 @@ public class class_40 extends class_27 {
    }
 
    // $FF: renamed from: p (hs, oy) hq
-   public static class_40 method_473(Opcode var0, ISAAC var1) {
+   public static class_40 method_473(ClientOpcode var0, ISAAC var1) {
       class_40 var2;
       if(field_266 * -725708193 == 0) {
          class_40 var10000 = new class_40();
@@ -85,7 +85,7 @@ public class class_40 extends class_27 {
    }
 
    // $FF: renamed from: j (hs, oy) hq
-   public static class_40 method_474(Opcode var0, ISAAC var1) {
+   public static class_40 method_474(ClientOpcode var0, ISAAC var1) {
       class_40 var2;
       if(field_266 * 1615295544 == 0) {
          class_40 var10000 = new class_40();
@@ -138,7 +138,7 @@ public class class_40 extends class_27 {
    }
 
    // $FF: renamed from: y (hs, oy) hq
-   public static class_40 method_476(Opcode var0, ISAAC var1) {
+   public static class_40 method_476(ClientOpcode var0, ISAAC var1) {
       class_40 var2;
       if(field_266 * -227614929 == 0) {
          class_40 var10000 = new class_40();

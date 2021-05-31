@@ -11,9 +11,9 @@ public class class_176 {
 
 
    // $FF: renamed from: v (int) hl[]
-   public static class_263[] method_3744() {
+   public static ServerOpcode[] method_3744() {
       try {
-         return new class_263[]{class_263.field_3011, class_263.field_2982, class_263.field_2933, class_263.field_2934, class_263.field_2935, class_263.field_2936, class_263.field_2937, class_263.field_3029, class_263.field_2939, class_263.field_3016, class_263.field_2960, class_263.field_2942, class_263.field_2979, class_263.field_2944, class_263.field_2945, class_263.field_2991, class_263.field_2947, class_263.field_2948, class_263.field_2977, class_263.field_2950, class_263.field_2940, class_263.field_2952, class_263.field_2946, class_263.field_2954, class_263.field_2955, class_263.field_2956, class_263.field_2957, class_263.field_3006, class_263.field_2987, class_263.field_2953, class_263.field_2995, class_263.field_2962, class_263.field_2943, class_263.field_3026, class_263.field_2965, class_263.field_2966, class_263.field_2931, class_263.field_2968, class_263.field_2980, class_263.field_2970, class_263.field_2971, class_263.field_2972, class_263.field_2973, class_263.field_2974, class_263.field_2975, class_263.field_2976, class_263.field_3005, class_263.field_2963, class_263.field_3004, class_263.field_2969, class_263.field_2981, class_263.field_2978, class_263.field_2983, class_263.field_2984, class_263.field_2985, class_263.field_2986, class_263.field_2988, class_263.field_3020, class_263.field_2941, class_263.field_2990, class_263.field_3024, class_263.field_2992, class_263.field_2993, class_263.field_2994, class_263.field_3018, class_263.field_2996, class_263.field_3015, class_263.field_2998, class_263.field_2961, class_263.field_3000, class_263.field_3001, class_263.field_3002, class_263.field_3003, class_263.field_2999, class_263.field_2932, class_263.field_2949, class_263.field_3007, class_263.field_3008, class_263.field_3009, class_263.field_3010, class_263.field_3025, class_263.field_3012, class_263.field_3013, class_263.field_3014, class_263.field_2958, class_263.field_2959, class_263.field_3017, class_263.field_2938, class_263.field_3019, class_263.field_2997, class_263.field_3021, class_263.field_3022, class_263.field_3023, class_263.field_2951, class_263.field_2967};
+         return new ServerOpcode[]{ServerOpcode.OPCODE_0, ServerOpcode.OPCODE_1, ServerOpcode.OPCODE_2, ServerOpcode.OPCODE_3, ServerOpcode.OPCODE_4, ServerOpcode.OPCODE_5, ServerOpcode.OPCODE_6, ServerOpcode.OPCODE_7, ServerOpcode.OPCODE_8, ServerOpcode.OPCODE_9, ServerOpcode.OPCODE_10, ServerOpcode.OPCODE_11, ServerOpcode.OPCODE_12, ServerOpcode.OPCODE_13, ServerOpcode.OPCODE_14, ServerOpcode.OPCODE_15, ServerOpcode.OPCODE_16, ServerOpcode.OPCODE_17, ServerOpcode.OPCODE_18, ServerOpcode.OPCODE_19, ServerOpcode.OPCODE_20, ServerOpcode.OPCODE_21, ServerOpcode.OPCODE_22, ServerOpcode.OPCODE_23, ServerOpcode.OPCODE_24, ServerOpcode.OPCODE_25, ServerOpcode.OPCODE_26, ServerOpcode.OPCODE_27, ServerOpcode.OPCODE_28, ServerOpcode.OPCODE_29, ServerOpcode.OPCODE_30, ServerOpcode.OPCODE_31, ServerOpcode.OPCODE_32, ServerOpcode.OPCODE_33, ServerOpcode.OPCODE_34, ServerOpcode.OPCODE_35, ServerOpcode.OPCODE_36, ServerOpcode.OPCODE_37, ServerOpcode.OPCODE_38, ServerOpcode.OPCODE_39, ServerOpcode.OPCODE_40, ServerOpcode.OPCODE_41, ServerOpcode.OPCODE_42, ServerOpcode.OPCODE_43, ServerOpcode.OPCODE_44, ServerOpcode.OPCODE_45, ServerOpcode.OPCODE_46, ServerOpcode.OPCODE_47, ServerOpcode.OPCODE_48, ServerOpcode.OPCODE_49, ServerOpcode.OPCODE_50, ServerOpcode.OPCODE_51, ServerOpcode.OPCODE_52, ServerOpcode.OPCODE_53, ServerOpcode.OPCODE_54, ServerOpcode.OPCODE_55, ServerOpcode.OPCODE_56, ServerOpcode.OPCODE_57, ServerOpcode.OPCODE_58, ServerOpcode.OPCODE_59, ServerOpcode.OPCODE_60, ServerOpcode.OPCODE_61, ServerOpcode.OPCODE_62, ServerOpcode.OPCODE_63, ServerOpcode.OPCODE_64, ServerOpcode.OPCODE_65, ServerOpcode.OPCODE_66, ServerOpcode.OPCODE_67, ServerOpcode.OPCODE_68, ServerOpcode.OPCODE_69, ServerOpcode.OPCODE_70, ServerOpcode.OPCODE_71, ServerOpcode.OPCODE_72, ServerOpcode.OPCODE_73, ServerOpcode.OPCODE_74, ServerOpcode.OPCODE_75, ServerOpcode.OPCODE_76, ServerOpcode.OPCODE_77, ServerOpcode.OPCODE_78, ServerOpcode.OPCODE_79, ServerOpcode.OPCODE_80, ServerOpcode.OPCODE_81, ServerOpcode.OPCODE_82, ServerOpcode.OPCODE_83, ServerOpcode.OPCODE_84, ServerOpcode.OPCODE_85, ServerOpcode.OPCODE_86, ServerOpcode.OPCODE_87, ServerOpcode.OPCODE_88, ServerOpcode.OPCODE_89, ServerOpcode.OPCODE_90, ServerOpcode.OPCODE_91, ServerOpcode.OPCODE_92, ServerOpcode.OPCODE_93, ServerOpcode.OPCODE_94};
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1);
       }
@@ -251,7 +251,7 @@ public class class_176 {
                }
 
                client.field_1638 = class_165.field_2052[-26460885 * class_136.field_1752 + 2] * 1186588677;
-               class_40 var15 = class_112.newPacket(Opcode.OPCODE_39, client.field_1463.isaac, (byte)8);
+               class_40 var15 = class_112.newPacket(ClientOpcode.OPCODE_39, client.field_1463.isaac, (byte)8);
                var15.networkBuffer.writeByte(client.field_1593 * -639645947);
                var15.networkBuffer.writeByte(-767370613 * class_45.field_338.field_3961);
                var15.networkBuffer.writeByte(client.field_1638 * -1863932723);
@@ -268,7 +268,7 @@ public class class_176 {
                class_136.field_1752 -= 2119512838;
                var10 = class_165.field_2052[class_136.field_1752 * -26460885];
                var12 = class_165.field_2052[class_136.field_1752 * -26460885 + 1];
-               var7 = class_112.newPacket(Opcode.OPCODE_34, client.field_1463.isaac, (byte)8);
+               var7 = class_112.newPacket(ClientOpcode.OPCODE_34, client.field_1463.isaac, (byte)8);
                var7.networkBuffer.writeByte(class_166.method_3598(var4) + 2);
                var7.networkBuffer.writeString(var4);
                var7.networkBuffer.writeByte(var10 - 1);
@@ -470,7 +470,7 @@ public class class_176 {
                            class_165.field_2054 -= -1000716630;
                            var4 = class_165.field_2053[class_165.field_2054 * 1824375293];
                            String var11 = class_165.field_2053[1824375293 * class_165.field_2054 + 1];
-                           var13 = class_112.newPacket(Opcode.OPCODE_42, client.field_1463.isaac, (byte)8);
+                           var13 = class_112.newPacket(ClientOpcode.OPCODE_42, client.field_1463.isaac, (byte)8);
                            var13.networkBuffer.writeShortReverse(0);
                            int var14 = -442398587 * var13.networkBuffer.offset;
                            var13.networkBuffer.writeString(var4);

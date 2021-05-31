@@ -36,7 +36,7 @@ public class class_212 implements class_14 {
     // $FF: renamed from: g (java.lang.String, int, int) void
    static final void method_4177(String var0, int var1) {
       try {
-         class_40 var3 = class_112.newPacket(Opcode.OPCODE_49, client.field_1463.isaac, (byte)8);
+         class_40 var3 = class_112.newPacket(ClientOpcode.OPCODE_49, client.field_1463.isaac, (byte)8);
          var3.networkBuffer.writeByte(class_166.method_3598(var0) + 1);
          var3.networkBuffer.writeString(var0);
          var3.networkBuffer.method_148(var1);

@@ -50,7 +50,7 @@ public class class_117 extends class_111 {
    // $FF: renamed from: kr (short) void
    static final void method_2250(short var0) {
       try {
-         class_40 var1 = class_112.newPacket(Opcode.OPCODE_45, client.field_1463.isaac, (byte)8);
+         class_40 var1 = class_112.newPacket(ClientOpcode.OPCODE_45, client.field_1463.isaac, (byte)8);
          client.field_1463.method_4079(var1);
 
          for(class_48 var2 = (class_48)client.field_1578.method_6531(); var2 != null; var2 = (class_48)client.field_1578.method_6527()) {
@@ -155,7 +155,7 @@ public class class_117 extends class_111 {
    // $FF: renamed from: lx (int, int, int, boolean, int) void
    public static void method_2253(int var0, int var1, int var2, boolean var3, int var4) {
       try {
-         class_40 var5 = class_112.newPacket(Opcode.OPCODE_85, client.field_1463.isaac, (byte)8);
+         class_40 var5 = class_112.newPacket(ClientOpcode.OPCODE_85, client.field_1463.isaac, (byte)8);
          var5.networkBuffer.writeShortAlt(var1);
          int var10001;
          if(var3) {

@@ -608,7 +608,7 @@ public class class_73 extends class_59 {
 
                         var3.append('+');
                      } else {
-                        byte var6 = class_263.method_4995(var5, (byte)85);
+                        byte var6 = ServerOpcode.method_4995(var5, (byte)85);
                         var3.append('%');
                         int var7 = var6 >> 4 & 15;
                         if(var7 >= 10) {

@@ -485,7 +485,7 @@ public final class class_329 {
       int var2 = 0;
 
       for(int var3 = 0; var3 < var1; ++var3) {
-         var2 = (var2 << 5) - var2 + class_263.method_4995(var0.charAt(var3), (byte)41);
+         var2 = (var2 << 5) - var2 + ServerOpcode.method_4995(var0.charAt(var3), (byte)41);
       }
 
       return var2;
@@ -687,7 +687,7 @@ public final class class_329 {
       int var2 = 0;
 
       for(int var3 = 0; var3 < var1; ++var3) {
-         var2 = (var2 << 5) - var2 + class_263.method_4995(var0.charAt(var3), (byte)23);
+         var2 = (var2 << 5) - var2 + ServerOpcode.method_4995(var0.charAt(var3), (byte)23);
       }
 
       return var2;

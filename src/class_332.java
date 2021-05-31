@@ -147,7 +147,7 @@ public final class class_332 {
                   }
 
                   class_203 var4 = client.field_1463;
-                  class_40 var5 = class_112.newPacket(Opcode.OPCODE_40, var4.isaac, (byte)8);
+                  class_40 var5 = class_112.newPacket(ClientOpcode.OPCODE_40, var4.isaac, (byte)8);
                   var5.networkBuffer.writeByte(3 + class_166.method_3598(var3.field_2222));
                   var5.networkBuffer.writeByte(var0);
                   var5.networkBuffer.writeShortReverse(var1);

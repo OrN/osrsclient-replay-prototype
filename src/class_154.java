@@ -1325,7 +1325,7 @@ public class class_154 implements Runnable {
       try {
          try {
             if(class_192.field_2298 == null) {
-               class_192.field_2298 = class_263.field_2989.method_4038(new URL(class_116.field_1291));
+               class_192.field_2298 = ServerOpcode.field_2989.method_4038(new URL(class_116.field_1291));
             } else if(class_192.field_2298.method_3963()) {
                byte[] var1 = class_192.field_2298.method_3961();
                Buffer var10000 = new Buffer(var1);

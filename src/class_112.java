@@ -105,7 +105,7 @@ public class class_112 extends class_111 {
    }
 
    // $FF: renamed from: v (hs, oy, byte) hq
-   public static class_40 newPacket(Opcode var0, ISAAC var1, byte var2) {
+   public static class_40 newPacket(ClientOpcode var0, ISAAC var1, byte var2) {
       try {
          class_40 var3;
          if(class_40.field_266 * -227614929 == 0) {

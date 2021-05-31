@@ -645,7 +645,7 @@ public final class class_97 extends class_91 {
                throw new IllegalStateException();
             }
 
-            var3 = (var3 << 5) - var3 + class_263.method_4995(var0.charAt(var4), (byte)60);
+            var3 = (var3 << 5) - var3 + ServerOpcode.method_4995(var0.charAt(var4), (byte)60);
          }
 
          return var3;

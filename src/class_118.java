@@ -63,7 +63,7 @@ public class class_118 extends class_111 {
 
                   String var5 = var4.field_2222;
                   class_203 var6 = client.field_1463;
-                  class_40 var7 = class_112.newPacket(Opcode.OPCODE_68, var6.isaac, (byte)8);
+                  class_40 var7 = class_112.newPacket(ClientOpcode.OPCODE_68, var6.isaac, (byte)8);
                   var7.networkBuffer.writeByte(3 + class_166.method_3598(var5));
                   var7.networkBuffer.writeByte(var0);
                   var7.networkBuffer.writeShortReverse(var1);

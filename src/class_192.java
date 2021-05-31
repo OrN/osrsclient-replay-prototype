@@ -670,7 +670,7 @@ public class class_192 extends class_191 {
                         throw new IllegalStateException();
                      }
 
-                     class_88.field_891 = Opcode.method_5032(class_311.field_3749, class_201.field_2360.field_3997 * -1949566455, 0, (byte)14);
+                     class_88.field_891 = ClientOpcode.method_5032(class_311.field_3749, class_201.field_2360.field_3997 * -1949566455, 0, (byte)14);
                   } else {
                      ++var25;
                   }
@@ -680,7 +680,7 @@ public class class_192 extends class_191 {
                         return;
                      }
 
-                     class_165.field_2067 = Opcode.method_5032(class_311.field_3749, class_201.field_2360.field_3995 * -1513831133, 0, (byte)68);
+                     class_165.field_2067 = ClientOpcode.method_5032(class_311.field_3749, class_201.field_2360.field_3995 * -1513831133, 0, (byte)68);
                   } else {
                      ++var25;
                   }

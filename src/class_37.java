@@ -1174,7 +1174,7 @@ public class class_37 extends class_27 {
             if(null != var6) {
                return var6;
             } else {
-               var6 = Opcode.method_5032(class_279.field_3227, var3, 0, (byte)68);
+               var6 = ClientOpcode.method_5032(class_279.field_3227, var3, 0, (byte)68);
                if(null == var6) {
                   if(var2 != -903165753) {
                      throw new IllegalStateException();
@@ -1743,7 +1743,7 @@ public class class_37 extends class_27 {
                   return var4;
                }
 
-               var4 = Opcode.method_5032(class_279.field_3227, var3, 0, (byte)36);
+               var4 = ClientOpcode.method_5032(class_279.field_3227, var3, 0, (byte)36);
                if(var4 != null) {
                   field_224.method_5064(var4, (long)var3);
                } else {

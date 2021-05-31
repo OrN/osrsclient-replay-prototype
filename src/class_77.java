@@ -117,7 +117,7 @@ public class class_77 extends class_59 {
          if(var1 != null) {
             return var1;
          } else {
-            var1 = Opcode.method_5032(field_661, this.field_652 * -1753833631, 0, (byte)50);
+            var1 = ClientOpcode.method_5032(field_661, this.field_652 * -1753833631, 0, (byte)50);
             if(null != var1) {
                field_655.method_5064(var1, (long)(this.field_652 * 727023287));
             }
@@ -145,7 +145,7 @@ public class class_77 extends class_59 {
                   return var2;
                }
             } else {
-               var2 = Opcode.method_5032(field_661, -714777503 * this.field_662, 0, (byte)72);
+               var2 = ClientOpcode.method_5032(field_661, -714777503 * this.field_662, 0, (byte)72);
                if(var2 != null) {
                   field_655.method_5064(var2, (long)(this.field_662 * -714777503));
                }
@@ -176,7 +176,7 @@ public class class_77 extends class_59 {
                   return var2;
                }
             } else {
-               var2 = Opcode.method_5032(field_661, this.field_652 * -1753833631, 0, (byte)97);
+               var2 = ClientOpcode.method_5032(field_661, this.field_652 * -1753833631, 0, (byte)97);
                if(null != var2) {
                   if(var1 == 6707) {
                      throw new IllegalStateException();
@@ -299,7 +299,7 @@ public class class_77 extends class_59 {
          if(null != var1) {
             return var1;
          } else {
-            var1 = Opcode.method_5032(field_661, -714777503 * this.field_662, 0, (byte)81);
+            var1 = ClientOpcode.method_5032(field_661, -714777503 * this.field_662, 0, (byte)81);
             if(var1 != null) {
                field_655.method_5064(var1, (long)(this.field_662 * -714777503));
             }
@@ -411,7 +411,7 @@ public class class_77 extends class_59 {
          if(null != var1) {
             return var1;
          } else {
-            var1 = Opcode.method_5032(field_661, 121510870 * this.field_662, 0, (byte)125);
+            var1 = ClientOpcode.method_5032(field_661, 121510870 * this.field_662, 0, (byte)125);
             if(var1 != null) {
                field_655.method_5064(var1, (long)(this.field_662 * -500378658));
             }
@@ -430,7 +430,7 @@ public class class_77 extends class_59 {
          if(var1 != null) {
             return var1;
          } else {
-            var1 = Opcode.method_5032(field_661, this.field_652 * -1753833631, 0, (byte)60);
+            var1 = ClientOpcode.method_5032(field_661, this.field_652 * -1753833631, 0, (byte)60);
             if(null != var1) {
                field_655.method_5064(var1, (long)(this.field_652 * -1753833631));
             }

@@ -10,7 +10,7 @@ public class class_401 {
 
    // $FF: renamed from: n (int, java.lang.String, kk, int) hq
    public static class_40 method_6803(int var0, String var1, class_324 var2, int var3) {
-      class_40 var4 = class_112.newPacket(Opcode.OPCODE_88, client.field_1463.isaac, (byte)8);
+      class_40 var4 = class_112.newPacket(ClientOpcode.OPCODE_88, client.field_1463.isaac, (byte)8);
       var4.networkBuffer.writeByte(0);
       int var5 = var4.networkBuffer.offset * -824284167;
       var4.networkBuffer.writeByte(var0);
@@ -141,7 +141,7 @@ public class class_401 {
 
    // $FF: renamed from: y (int, java.lang.String, kk, int) hq
    public static class_40 method_6804(int var0, String var1, class_324 var2, int var3) {
-      class_40 var4 = class_112.newPacket(Opcode.OPCODE_88, client.field_1463.isaac, (byte)8);
+      class_40 var4 = class_112.newPacket(ClientOpcode.OPCODE_88, client.field_1463.isaac, (byte)8);
       var4.networkBuffer.writeByte(0);
       int var5 = var4.networkBuffer.offset * -1605689697;
       var4.networkBuffer.writeByte(var0);
@@ -282,7 +282,7 @@ public class class_401 {
 
    // $FF: renamed from: f (int, java.lang.String, kk, int) hq
    public static class_40 method_6806(int var0, String var1, class_324 var2, int var3) {
-      class_40 var4 = class_112.newPacket(Opcode.OPCODE_88, client.field_1463.isaac, (byte)8);
+      class_40 var4 = class_112.newPacket(ClientOpcode.OPCODE_88, client.field_1463.isaac, (byte)8);
       var4.networkBuffer.writeByte(0);
       int var5 = var4.networkBuffer.offset * -442398587;
       var4.networkBuffer.writeByte(var0);

@@ -4,7 +4,7 @@ import java.io.IOException;
 public class class_203 {
 
    // $FF: renamed from: c hl
-   class_263 field_2370;
+   ServerOpcode field_2370;
    // $FF: renamed from: n ki
    class_323 field_2371;
    // $FF: renamed from: u int
@@ -16,7 +16,7 @@ public class class_203 {
    // $FF: renamed from: j nb
    NetworkBuffer networkBuffer;
    // $FF: renamed from: r hl
-   class_263 field_2376;
+   ServerOpcode field_2376;
    // $FF: renamed from: ar int
    static final int field_2377 = 19137016;
    // $FF: renamed from: d boolean
@@ -26,9 +26,9 @@ public class class_203 {
    // $FF: renamed from: b int
    int field_2380;
    // $FF: renamed from: l hl
-   class_263 field_2381;
+   ServerOpcode field_2381;
    // $FF: renamed from: o hl
-   class_263 field_2382;
+   ServerOpcode field_2382;
    // $FF: renamed from: f int
    int length;
    // $FF: renamed from: p oy

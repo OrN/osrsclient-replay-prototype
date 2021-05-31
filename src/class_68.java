@@ -67,7 +67,7 @@ public abstract class class_68 extends class_65 {
 
       for(int var6 = 0; var6 < var1.length(); ++var6) {
          if(var1.charAt(var6) != 0) {
-            char var7 = (char)(class_263.method_4995(var1.charAt(var6), (byte)72) & 255);
+            char var7 = (char)(ServerOpcode.method_4995(var1.charAt(var6), (byte)72) & 255);
             if(var7 == 60) {
                var4 = var6;
             } else {
@@ -190,7 +190,7 @@ public abstract class class_68 extends class_65 {
          var1 = 32;
       }
 
-      return this.field_520[class_263.method_4995(var1, (byte)72) & 255];
+      return this.field_520[ServerOpcode.method_4995(var1, (byte)72) & 255];
    }
 
    // $FF: renamed from: bq (java.lang.String, int, int, int, int) void
@@ -518,7 +518,7 @@ public abstract class class_68 extends class_65 {
          var1 = 32;
       }
 
-      return this.field_520[class_263.method_4995(var1, (byte)23) & 255];
+      return this.field_520[ServerOpcode.method_4995(var1, (byte)23) & 255];
    }
 
    // $FF: renamed from: h (java.lang.String, int, int, int, int, int, int) void
@@ -825,7 +825,7 @@ public abstract class class_68 extends class_65 {
                }
 
                if(var2 == -1) {
-                  var4 += this.field_520[(char)(class_263.method_4995(var6, (byte)53) & 255)];
+                  var4 += this.field_520[(char)(ServerOpcode.method_4995(var6, (byte)53) & 255)];
                   if(this.field_521 != null && var3 != -1) {
                      var4 += this.field_521[(var3 << 8) + var6];
                   }
@@ -1277,7 +1277,7 @@ public abstract class class_68 extends class_65 {
          var1 = 32;
       }
 
-      return this.field_520[class_263.method_4995(var1, (byte)66) & 255];
+      return this.field_520[ServerOpcode.method_4995(var1, (byte)66) & 255];
    }
 
    // $FF: renamed from: al (java.lang.String, int, int, int[], int[]) void
@@ -1289,7 +1289,7 @@ public abstract class class_68 extends class_65 {
 
       for(int var9 = 0; var9 < var1.length(); ++var9) {
          if(var1.charAt(var9) != 0) {
-            char var10 = (char)(class_263.method_4995(var1.charAt(var9), (byte)103) & 255);
+            char var10 = (char)(ServerOpcode.method_4995(var1.charAt(var9), (byte)103) & 255);
             if(var10 == 60) {
                var6 = var9;
             } else {
@@ -1404,7 +1404,7 @@ public abstract class class_68 extends class_65 {
          var1 = 32;
       }
 
-      return this.field_520[class_263.method_4995(var1, (byte)20) & -302010459];
+      return this.field_520[ServerOpcode.method_4995(var1, (byte)20) & -302010459];
    }
 
    // $FF: renamed from: aq (java.lang.String, int[], java.lang.String[]) int
@@ -1521,7 +1521,7 @@ public abstract class class_68 extends class_65 {
 
       for(int var9 = 0; var9 < var1.length(); ++var9) {
          if(var1.charAt(var9) != 0) {
-            char var10 = (char)(class_263.method_4995(var1.charAt(var9), (byte)74) & 255);
+            char var10 = (char)(ServerOpcode.method_4995(var1.charAt(var9), (byte)74) & 255);
             if(var10 == 60) {
                var6 = var9;
             } else {
@@ -1854,7 +1854,7 @@ public abstract class class_68 extends class_65 {
 
       for(int var9 = 0; var9 < var1.length(); ++var9) {
          if(var1.charAt(var9) != 0) {
-            int var10 = (char)(class_263.method_4995(var1.charAt(var9), (byte)82) & 255);
+            int var10 = (char)(ServerOpcode.method_4995(var1.charAt(var9), (byte)82) & 255);
             if(var10 == 60) {
                var6 = var9;
             } else {
@@ -2319,7 +2319,7 @@ public abstract class class_68 extends class_65 {
 
       for(int var6 = 0; var6 < var1.length(); ++var6) {
          if(var1.charAt(var6) != 0) {
-            char var7 = (char)(class_263.method_4995(var1.charAt(var6), (byte)52) & -192136235);
+            char var7 = (char)(ServerOpcode.method_4995(var1.charAt(var6), (byte)52) & -192136235);
             if(var7 == -1652918222) {
                var4 = var6;
             } else {
@@ -2729,7 +2729,7 @@ public abstract class class_68 extends class_65 {
 
       for(int var6 = 0; var6 < var1.length(); ++var6) {
          if(var1.charAt(var6) != 0) {
-            int var7 = (char)(class_263.method_4995(var1.charAt(var6), (byte)94) & 255);
+            int var7 = (char)(ServerOpcode.method_4995(var1.charAt(var6), (byte)94) & 255);
             if(var7 == 60) {
                var4 = var6;
             } else {
@@ -2819,7 +2819,7 @@ public abstract class class_68 extends class_65 {
 
       for(int var9 = 0; var9 < var1.length(); ++var9) {
          if(var1.charAt(var9) != 0) {
-            int var10 = (char)(class_263.method_4995(var1.charAt(var9), (byte)36) & -797627950);
+            int var10 = (char)(ServerOpcode.method_4995(var1.charAt(var9), (byte)36) & -797627950);
             if(var10 == -830228515) {
                var6 = var9;
             } else {
@@ -2937,7 +2937,7 @@ public abstract class class_68 extends class_65 {
 
       for(int var9 = 0; var9 < var1.length(); ++var9) {
          if(var1.charAt(var9) != 0) {
-            int var10 = (char)(class_263.method_4995(var1.charAt(var9), (byte)22) & 255);
+            int var10 = (char)(ServerOpcode.method_4995(var1.charAt(var9), (byte)22) & 255);
             if(var10 == 60) {
                var6 = var9;
             } else {
@@ -3380,7 +3380,7 @@ public abstract class class_68 extends class_65 {
          var1 = 32;
       }
 
-      return this.field_520[class_263.method_4995(var1, (byte)72) & 255];
+      return this.field_520[ServerOpcode.method_4995(var1, (byte)72) & 255];
    }
 
    // $FF: renamed from: ch (int[], byte[], int, int, int, int, int, int, int) void

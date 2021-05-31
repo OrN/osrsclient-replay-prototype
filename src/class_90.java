@@ -210,7 +210,7 @@ public class class_90 extends class_59 {
                return;
             }
 
-            var9 = class_112.newPacket(Opcode.OPCODE_95, client.field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(ClientOpcode.OPCODE_95, client.field_1463.isaac, (byte)8);
             var9.networkBuffer.writeIntAltReversed(var1);
             var9.networkBuffer.writeShortAlt(var0);
             var9.networkBuffer.writeShortReverse(var3);
@@ -232,7 +232,7 @@ public class class_90 extends class_59 {
             client.field_1645 = 0;
             client.field_1520 = 819547401 * var0;
             client.field_1562 = var1 * 1551872625;
-            var9 = class_112.newPacket(Opcode.OPCODE_5, client.field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(ClientOpcode.OPCODE_5, client.field_1463.isaac, (byte)8);
             var9.networkBuffer.writeShort(class_178.field_2220 * 81340013);
             var9.networkBuffer.method_185(var3);
             var9.networkBuffer.writeShort(class_189.field_2276 * 1854633345);
@@ -268,7 +268,7 @@ public class class_90 extends class_59 {
                client.field_1645 = 0;
                client.field_1520 = 819547401 * var0;
                client.field_1562 = var1 * 1551872625;
-               var10 = class_112.newPacket(Opcode.OPCODE_33, client.field_1463.isaac, (byte)8);
+               var10 = class_112.newPacket(ClientOpcode.OPCODE_33, client.field_1463.isaac, (byte)8);
                var10.networkBuffer.method_185(var3);
                if(class_145.field_1840[82]) {
                   if(var8 == 594496727) {
@@ -297,7 +297,7 @@ public class class_90 extends class_59 {
                   throw new IllegalStateException();
                }
 
-               var10 = class_112.newPacket(Opcode.OPCODE_0, client.field_1463.isaac, (byte)8);
+               var10 = class_112.newPacket(ClientOpcode.OPCODE_0, client.field_1463.isaac, (byte)8);
                var10.networkBuffer.writeIntAltReversed(var1);
                var10.networkBuffer.method_185(539336237 * var14.field_229);
                var10.networkBuffer.writeShort(client.field_1564 * 1424616685);
@@ -322,7 +322,7 @@ public class class_90 extends class_59 {
                client.field_1645 = 0;
                client.field_1520 = 819547401 * var0;
                client.field_1562 = 1551872625 * var1;
-               var10 = class_112.newPacket(Opcode.OPCODE_53, client.field_1463.isaac, (byte)8);
+               var10 = class_112.newPacket(ClientOpcode.OPCODE_53, client.field_1463.isaac, (byte)8);
                if(class_145.field_1840[82]) {
                   if(var8 == 594496727) {
                      return;
@@ -346,7 +346,7 @@ public class class_90 extends class_59 {
                throw new IllegalStateException();
             }
 
-            var9 = class_112.newPacket(Opcode.OPCODE_65, client.field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(ClientOpcode.OPCODE_65, client.field_1463.isaac, (byte)8);
             var9.networkBuffer.writeIntReverse(var1);
             client.field_1463.method_4079(var9);
             var16 = class_71.method_1047(var1);
@@ -372,7 +372,7 @@ public class class_90 extends class_59 {
                return;
             }
 
-            var9 = class_112.newPacket(Opcode.OPCODE_61, client.field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(ClientOpcode.OPCODE_61, client.field_1463.isaac, (byte)8);
             var9.networkBuffer.method_185(var3);
             var9.networkBuffer.writeShortAlt(var0);
             var9.networkBuffer.writeInt(var1);
@@ -387,7 +387,7 @@ public class class_90 extends class_59 {
                throw new IllegalStateException();
             }
 
-            var9 = class_112.newPacket(Opcode.OPCODE_4, client.field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(ClientOpcode.OPCODE_4, client.field_1463.isaac, (byte)8);
             var9.networkBuffer.writeIntAltReversed(var1);
             var9.networkBuffer.writeShort(var0);
             var9.networkBuffer.writeShort(var3);
@@ -410,7 +410,7 @@ public class class_90 extends class_59 {
                client.field_1645 = 0;
                client.field_1520 = 819547401 * var0;
                client.field_1562 = 1551872625 * var1;
-               var10 = class_112.newPacket(Opcode.OPCODE_7, client.field_1463.isaac, (byte)8);
+               var10 = class_112.newPacket(ClientOpcode.OPCODE_7, client.field_1463.isaac, (byte)8);
                var10.networkBuffer.writeIntAlt(1430642749 * class_148.field_1875);
                var10.networkBuffer.writeShort(1424616685 * client.field_1564);
                var10.networkBuffer.writeShort(var3);
@@ -439,7 +439,7 @@ public class class_90 extends class_59 {
             client.field_1519 = 246678685 * var7;
             client.field_1521 = -1022456306;
             client.field_1645 = 0;
-            var9 = class_112.newPacket(Opcode.OPCODE_80, client.field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(ClientOpcode.OPCODE_80, client.field_1463.isaac, (byte)8);
             var9.networkBuffer.writeShort(var3);
             client.field_1463.method_4079(var9);
          }
@@ -449,7 +449,7 @@ public class class_90 extends class_59 {
                throw new IllegalStateException();
             }
 
-            var9 = class_112.newPacket(Opcode.OPCODE_63, client.field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(ClientOpcode.OPCODE_63, client.field_1463.isaac, (byte)8);
             var9.networkBuffer.writeIntAlt(var1);
             var9.networkBuffer.writeShortReverse(var3);
             var9.networkBuffer.method_185(var0);
@@ -464,7 +464,7 @@ public class class_90 extends class_59 {
                return;
             }
 
-            var9 = class_112.newPacket(Opcode.OPCODE_59, client.field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(ClientOpcode.OPCODE_59, client.field_1463.isaac, (byte)8);
             var9.networkBuffer.writeIntReverse(var1);
             var9.networkBuffer.writeIntAltReversed(1565845213 * class_100.field_1172);
             var9.networkBuffer.method_185(var0);
@@ -488,7 +488,7 @@ public class class_90 extends class_59 {
             client.field_1645 = 0;
             client.field_1520 = var0 * 819547401;
             client.field_1562 = 1551872625 * var1;
-            var9 = class_112.newPacket(Opcode.OPCODE_100, client.field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(ClientOpcode.OPCODE_100, client.field_1463.isaac, (byte)8);
             var9.networkBuffer.writeShort(var0 + 697161691 * class_243.field_2700);
             var9.networkBuffer.writeShortAlt(-27903763 * class_154.field_1929 + var1);
             var9.networkBuffer.method_145(class_145.field_1840[82]?1:0);
@@ -501,7 +501,7 @@ public class class_90 extends class_59 {
                return;
             }
 
-            var9 = class_112.newPacket(Opcode.OPCODE_67, client.field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(ClientOpcode.OPCODE_67, client.field_1463.isaac, (byte)8);
             var9.networkBuffer.writeShort(var3);
             var9.networkBuffer.method_185(var0);
             var9.networkBuffer.writeIntAltReversed(var1);
@@ -516,7 +516,7 @@ public class class_90 extends class_59 {
                return;
             }
 
-            var9 = class_112.newPacket(Opcode.OPCODE_98, client.field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(ClientOpcode.OPCODE_98, client.field_1463.isaac, (byte)8);
             var9.networkBuffer.writeIntAlt(1430642749 * class_148.field_1875);
             var9.networkBuffer.method_185(1683168531 * client.field_1573);
             var9.networkBuffer.writeIntAlt(var1);
@@ -539,7 +539,7 @@ public class class_90 extends class_59 {
             client.field_1645 = 0;
             client.field_1520 = 819547401 * var0;
             client.field_1562 = var1 * 1551872625;
-            var9 = class_112.newPacket(Opcode.OPCODE_3, client.field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(ClientOpcode.OPCODE_3, client.field_1463.isaac, (byte)8);
             var9.networkBuffer.writeShortAlt(var3);
             var9.networkBuffer.writeShortReverse(class_154.field_1929 * -27903763 + var1);
             if(class_145.field_1840[82]) {
@@ -584,7 +584,7 @@ public class class_90 extends class_59 {
             client.field_1645 = 0;
             client.field_1520 = var0 * 819547401;
             client.field_1562 = 1551872625 * var1;
-            var9 = class_112.newPacket(Opcode.OPCODE_76, client.field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(ClientOpcode.OPCODE_76, client.field_1463.isaac, (byte)8);
             var9.networkBuffer.writeShortReverse(var3);
             var9.networkBuffer.method_148(class_145.field_1840[82]?1:0);
             var9.networkBuffer.writeShortAlt(-27903763 * class_154.field_1929 + var1);
@@ -597,7 +597,7 @@ public class class_90 extends class_59 {
                throw new IllegalStateException();
             }
 
-            var9 = class_112.newPacket(Opcode.OPCODE_101, client.field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(ClientOpcode.OPCODE_101, client.field_1463.isaac, (byte)8);
             var9.networkBuffer.writeInt(var1);
             var9.networkBuffer.writeShort(var3);
             var9.networkBuffer.writeShortAlt(var0);
@@ -618,7 +618,7 @@ public class class_90 extends class_59 {
             client.field_1645 = 0;
             client.field_1520 = var0 * 819547401;
             client.field_1562 = var1 * 1551872625;
-            var9 = class_112.newPacket(Opcode.OPCODE_69, client.field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(ClientOpcode.OPCODE_69, client.field_1463.isaac, (byte)8);
             if(class_145.field_1840[82]) {
                if(var8 == 594496727) {
                   throw new IllegalStateException();
@@ -647,7 +647,7 @@ public class class_90 extends class_59 {
             client.field_1645 = 0;
             client.field_1520 = var0 * 819547401;
             client.field_1562 = var1 * 1551872625;
-            var9 = class_112.newPacket(Opcode.OPCODE_54, client.field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(ClientOpcode.OPCODE_54, client.field_1463.isaac, (byte)8);
             var9.networkBuffer.writeShortReverse(class_243.field_2700 * 697161691 + var0);
             var9.networkBuffer.writeShortAlt(var3);
             if(class_145.field_1840[82]) {
@@ -682,7 +682,7 @@ public class class_90 extends class_59 {
                client.field_1645 = 0;
                client.field_1520 = 819547401 * var0;
                client.field_1562 = 1551872625 * var1;
-               var10 = class_112.newPacket(Opcode.OPCODE_51, client.field_1463.isaac, (byte)8);
+               var10 = class_112.newPacket(ClientOpcode.OPCODE_51, client.field_1463.isaac, (byte)8);
                var10.networkBuffer.writeIntAltReversed(class_100.field_1172 * 1565845213);
                var10.networkBuffer.method_185(class_189.field_2276 * 1854633345);
                if(class_145.field_1840[82]) {
@@ -713,7 +713,7 @@ public class class_90 extends class_59 {
             client.field_1645 = 0;
             client.field_1520 = 819547401 * var0;
             client.field_1562 = var1 * 1551872625;
-            var9 = class_112.newPacket(Opcode.OPCODE_96, client.field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(ClientOpcode.OPCODE_96, client.field_1463.isaac, (byte)8);
             if(class_145.field_1840[82]) {
                if(var8 == 594496727) {
                   return;
@@ -751,7 +751,7 @@ public class class_90 extends class_59 {
                client.field_1645 = 0;
                client.field_1520 = var0 * 819547401;
                client.field_1562 = 1551872625 * var1;
-               var10 = class_112.newPacket(Opcode.OPCODE_64, client.field_1463.isaac, (byte)8);
+               var10 = class_112.newPacket(ClientOpcode.OPCODE_64, client.field_1463.isaac, (byte)8);
                if(class_145.field_1840[82]) {
                   if(var8 == 594496727) {
                      throw new IllegalStateException();
@@ -804,7 +804,7 @@ public class class_90 extends class_59 {
             client.field_1645 = 0;
             client.field_1520 = 819547401 * var0;
             client.field_1562 = 1551872625 * var1;
-            var9 = class_112.newPacket(Opcode.OPCODE_78, client.field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(ClientOpcode.OPCODE_78, client.field_1463.isaac, (byte)8);
             var9.networkBuffer.writeShortAlt(var0 + 697161691 * class_243.field_2700);
             var9.networkBuffer.method_158(class_145.field_1840[82]?1:0);
             var9.networkBuffer.writeShortReverse(var3);
@@ -823,7 +823,7 @@ public class class_90 extends class_59 {
             client.field_1645 = 0;
             client.field_1520 = var0 * 819547401;
             client.field_1562 = 1551872625 * var1;
-            var9 = class_112.newPacket(Opcode.OPCODE_105, client.field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(ClientOpcode.OPCODE_105, client.field_1463.isaac, (byte)8);
             var9.networkBuffer.method_185(1854633345 * class_189.field_2276);
             var9.networkBuffer.writeShortAlt(var3);
             var9.networkBuffer.method_158(class_145.field_1840[82]?1:0);
@@ -863,7 +863,7 @@ public class class_90 extends class_59 {
                client.field_1645 = 0;
                client.field_1520 = var0 * 819547401;
                client.field_1562 = var1 * 1551872625;
-               var10 = class_112.newPacket(Opcode.OPCODE_52, client.field_1463.isaac, (byte)8);
+               var10 = class_112.newPacket(ClientOpcode.OPCODE_52, client.field_1463.isaac, (byte)8);
                if(class_145.field_1840[82]) {
                   if(var8 == 594496727) {
                      throw new IllegalStateException();
@@ -893,7 +893,7 @@ public class class_90 extends class_59 {
                client.field_1645 = 0;
                client.field_1520 = 819547401 * var0;
                client.field_1562 = var1 * 1551872625;
-               var10 = class_112.newPacket(Opcode.OPCODE_30, client.field_1463.isaac, (byte)8);
+               var10 = class_112.newPacket(ClientOpcode.OPCODE_30, client.field_1463.isaac, (byte)8);
                var10.networkBuffer.writeShortAlt(var3);
                if(class_145.field_1840[82]) {
                   if(var8 == 594496727) {
@@ -947,7 +947,7 @@ public class class_90 extends class_59 {
                   client.field_1645 = 0;
                   client.field_1520 = var0 * 819547401;
                   client.field_1562 = var1 * 1551872625;
-                  var10 = class_112.newPacket(Opcode.OPCODE_82, client.field_1463.isaac, (byte)8);
+                  var10 = class_112.newPacket(ClientOpcode.OPCODE_82, client.field_1463.isaac, (byte)8);
                   var10.networkBuffer.writeShort(var3);
                   if(class_145.field_1840[82]) {
                      if(var8 == 594496727) {
@@ -981,7 +981,7 @@ public class class_90 extends class_59 {
                   client.field_1645 = 0;
                   client.field_1520 = var0 * 819547401;
                   client.field_1562 = 1551872625 * var1;
-                  var10 = class_112.newPacket(Opcode.OPCODE_48, client.field_1463.isaac, (byte)8);
+                  var10 = class_112.newPacket(ClientOpcode.OPCODE_48, client.field_1463.isaac, (byte)8);
                   if(class_145.field_1840[82]) {
                      if(var8 == 594496727) {
                         throw new IllegalStateException();
@@ -1003,7 +1003,7 @@ public class class_90 extends class_59 {
                client.field_1519 = 246678685 * var7;
                client.field_1521 = -1022456306;
                client.field_1645 = 0;
-               var9 = class_112.newPacket(Opcode.OPCODE_74, client.field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(ClientOpcode.OPCODE_74, client.field_1463.isaac, (byte)8);
                var9.networkBuffer.writeShort(var3);
                client.field_1463.method_4079(var9);
             }
@@ -1021,7 +1021,7 @@ public class class_90 extends class_59 {
                   client.field_1645 = 0;
                   client.field_1520 = 819547401 * var0;
                   client.field_1562 = var1 * 1551872625;
-                  var10 = class_112.newPacket(Opcode.OPCODE_25, client.field_1463.isaac, (byte)8);
+                  var10 = class_112.newPacket(ClientOpcode.OPCODE_25, client.field_1463.isaac, (byte)8);
                   var10.networkBuffer.method_185(var3);
                   if(class_145.field_1840[82]) {
                      if(var8 == 594496727) {
@@ -1055,7 +1055,7 @@ public class class_90 extends class_59 {
                   client.field_1645 = 0;
                   client.field_1520 = var0 * 819547401;
                   client.field_1562 = var1 * 1551872625;
-                  var10 = class_112.newPacket(Opcode.OPCODE_32, client.field_1463.isaac, (byte)8);
+                  var10 = class_112.newPacket(ClientOpcode.OPCODE_32, client.field_1463.isaac, (byte)8);
                   if(class_145.field_1840[82]) {
                      if(var8 == 594496727) {
                         throw new IllegalStateException();
@@ -1089,7 +1089,7 @@ public class class_90 extends class_59 {
                   client.field_1645 = 0;
                   client.field_1520 = 819547401 * var0;
                   client.field_1562 = var1 * 1551872625;
-                  var10 = class_112.newPacket(Opcode.OPCODE_103, client.field_1463.isaac, (byte)8);
+                  var10 = class_112.newPacket(ClientOpcode.OPCODE_103, client.field_1463.isaac, (byte)8);
                   if(class_145.field_1840[82]) {
                      if(var8 == 594496727) {
                         throw new IllegalStateException();
@@ -1114,7 +1114,7 @@ public class class_90 extends class_59 {
                   throw new IllegalStateException();
                }
 
-               var9 = class_112.newPacket(Opcode.OPCODE_65, client.field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(ClientOpcode.OPCODE_65, client.field_1463.isaac, (byte)8);
                var9.networkBuffer.writeIntReverse(var1);
                client.field_1463.method_4079(var9);
                var16 = class_71.method_1047(var1);
@@ -1167,7 +1167,7 @@ public class class_90 extends class_59 {
                         throw new IllegalStateException();
                      }
 
-                     var17 = class_112.newPacket(Opcode.OPCODE_6, client.field_1463.isaac, (byte)8);
+                     var17 = class_112.newPacket(ClientOpcode.OPCODE_6, client.field_1463.isaac, (byte)8);
                      var17.networkBuffer.writeShort(var18.field_857 * -2060838679);
                      client.field_1463.method_4079(var17);
                   }
@@ -1185,7 +1185,7 @@ public class class_90 extends class_59 {
                client.field_1645 = 0;
                client.field_1520 = var0 * 819547401;
                client.field_1562 = 1551872625 * var1;
-               var9 = class_112.newPacket(Opcode.OPCODE_93, client.field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(ClientOpcode.OPCODE_93, client.field_1463.isaac, (byte)8);
                var9.networkBuffer.method_185(var3);
                var9.networkBuffer.method_185(var1 + -27903763 * class_154.field_1929);
                if(class_145.field_1840[82]) {
@@ -1216,7 +1216,7 @@ public class class_90 extends class_59 {
                   client.field_1645 = 0;
                   client.field_1520 = var0 * 819547401;
                   client.field_1562 = var1 * 1551872625;
-                  var10 = class_112.newPacket(Opcode.OPCODE_29, client.field_1463.isaac, (byte)8);
+                  var10 = class_112.newPacket(ClientOpcode.OPCODE_29, client.field_1463.isaac, (byte)8);
                   if(class_145.field_1840[82]) {
                      if(var8 == 594496727) {
                         return;
@@ -1244,7 +1244,7 @@ public class class_90 extends class_59 {
                client.field_1645 = 0;
                client.field_1520 = var0 * 819547401;
                client.field_1562 = 1551872625 * var1;
-               var9 = class_112.newPacket(Opcode.OPCODE_71, client.field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(ClientOpcode.OPCODE_71, client.field_1463.isaac, (byte)8);
                var9.networkBuffer.writeShort(var0 + class_243.field_2700 * 697161691);
                var9.networkBuffer.writeShortReverse(var3);
                var9.networkBuffer.writeShort(client.field_1564 * 1424616685);
@@ -1311,7 +1311,7 @@ public class class_90 extends class_59 {
                   client.field_1645 = 0;
                   client.field_1520 = 819547401 * var0;
                   client.field_1562 = var1 * 1551872625;
-                  var10 = class_112.newPacket(Opcode.OPCODE_92, client.field_1463.isaac, (byte)8);
+                  var10 = class_112.newPacket(ClientOpcode.OPCODE_92, client.field_1463.isaac, (byte)8);
                   var10.networkBuffer.writeShort(var3);
                   var10.networkBuffer.writeByte(class_145.field_1840[82]?1:0);
                   client.field_1463.method_4079(var10);
@@ -1334,7 +1334,7 @@ public class class_90 extends class_59 {
                      throw new IllegalStateException();
                   }
 
-                  var17 = class_112.newPacket(Opcode.OPCODE_65, client.field_1463.isaac, (byte)8);
+                  var17 = class_112.newPacket(ClientOpcode.OPCODE_65, client.field_1463.isaac, (byte)8);
                   var17.networkBuffer.writeIntReverse(var1);
                   client.field_1463.method_4079(var17);
                }
@@ -1351,7 +1351,7 @@ public class class_90 extends class_59 {
                client.field_1645 = 0;
                client.field_1520 = 819547401 * var0;
                client.field_1562 = 1551872625 * var1;
-               var9 = class_112.newPacket(Opcode.OPCODE_77, client.field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(ClientOpcode.OPCODE_77, client.field_1463.isaac, (byte)8);
                var9.networkBuffer.writeShortAlt(var3);
                var9.networkBuffer.method_185(697161691 * class_243.field_2700 + var0);
                if(class_145.field_1840[82]) {
@@ -1374,7 +1374,7 @@ public class class_90 extends class_59 {
                   throw new IllegalStateException();
                }
 
-               var9 = class_112.newPacket(Opcode.OPCODE_99, client.field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(ClientOpcode.OPCODE_99, client.field_1463.isaac, (byte)8);
                var9.networkBuffer.writeShortAlt(var0);
                var9.networkBuffer.writeShort(var3);
                var9.networkBuffer.writeInt(var1);
@@ -1385,7 +1385,7 @@ public class class_90 extends class_59 {
             }
 
             if(35 == var2) {
-               var9 = class_112.newPacket(Opcode.OPCODE_55, client.field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(ClientOpcode.OPCODE_55, client.field_1463.isaac, (byte)8);
                var9.networkBuffer.writeShortReverse(var3);
                var9.networkBuffer.writeIntAlt(var1);
                var9.networkBuffer.writeShortAlt(var0);
@@ -1408,7 +1408,7 @@ public class class_90 extends class_59 {
                   client.field_1645 = 0;
                   client.field_1520 = 819547401 * var0;
                   client.field_1562 = var1 * 1551872625;
-                  var10 = class_112.newPacket(Opcode.OPCODE_43, client.field_1463.isaac, (byte)8);
+                  var10 = class_112.newPacket(ClientOpcode.OPCODE_43, client.field_1463.isaac, (byte)8);
                   var10.networkBuffer.method_185(client.field_1573 * 1683168531);
                   var10.networkBuffer.writeShortAlt(var3);
                   var10.networkBuffer.writeInt(1430642749 * class_148.field_1875);
@@ -1439,7 +1439,7 @@ public class class_90 extends class_59 {
                client.field_1645 = 0;
                client.field_1520 = var0 * 819547401;
                client.field_1562 = 1551872625 * var1;
-               var9 = class_112.newPacket(Opcode.OPCODE_62, client.field_1463.isaac, (byte)8);
+               var9 = class_112.newPacket(ClientOpcode.OPCODE_62, client.field_1463.isaac, (byte)8);
                var9.networkBuffer.method_185(var3);
                var9.networkBuffer.writeShort(var0 + class_243.field_2700 * 697161691);
                var9.networkBuffer.method_148(class_145.field_1840[82]?1:0);
@@ -1464,7 +1464,7 @@ public class class_90 extends class_59 {
                   client.field_1645 = 0;
                   client.field_1520 = 819547401 * var0;
                   client.field_1562 = 1551872625 * var1;
-                  var10 = class_112.newPacket(Opcode.OPCODE_102, client.field_1463.isaac, (byte)8);
+                  var10 = class_112.newPacket(ClientOpcode.OPCODE_102, client.field_1463.isaac, (byte)8);
                   var10.networkBuffer.writeShortReverse(var3);
                   if(class_145.field_1840[82]) {
                      if(var8 == 594496727) {
@@ -1519,7 +1519,7 @@ public class class_90 extends class_59 {
                      throw new IllegalStateException();
                   }
 
-                  var9 = class_112.newPacket(Opcode.OPCODE_37, client.field_1463.isaac, (byte)8);
+                  var9 = class_112.newPacket(ClientOpcode.OPCODE_37, client.field_1463.isaac, (byte)8);
                   var9.networkBuffer.writeShort(var0);
                   var9.networkBuffer.writeIntAltReversed(var1);
                   var9.networkBuffer.method_185(var3);
@@ -1546,7 +1546,7 @@ public class class_90 extends class_59 {
                      client.field_1645 = 0;
                      client.field_1520 = var0 * 819547401;
                      client.field_1562 = var1 * 1551872625;
-                     var10 = class_112.newPacket(Opcode.OPCODE_47, client.field_1463.isaac, (byte)8);
+                     var10 = class_112.newPacket(ClientOpcode.OPCODE_47, client.field_1463.isaac, (byte)8);
                      var10.networkBuffer.method_185(var3);
                      var10.networkBuffer.method_145(class_145.field_1840[82]?1:0);
                      client.field_1463.method_4079(var10);
@@ -1558,7 +1558,7 @@ public class class_90 extends class_59 {
                      return;
                   }
 
-                  var9 = class_112.newPacket(Opcode.OPCODE_13, client.field_1463.isaac, (byte)8);
+                  var9 = class_112.newPacket(ClientOpcode.OPCODE_13, client.field_1463.isaac, (byte)8);
                   var9.networkBuffer.writeIntAlt(var1);
                   var9.networkBuffer.writeShort(var0);
                   var9.networkBuffer.writeShortReverse(var3);
@@ -1586,7 +1586,7 @@ public class class_90 extends class_59 {
                         }
                      }
 
-                     var10 = class_112.newPacket(Opcode.OPCODE_74, client.field_1463.isaac, (byte)8);
+                     var10 = class_112.newPacket(ClientOpcode.OPCODE_74, client.field_1463.isaac, (byte)8);
                      var10.networkBuffer.writeShort(var3);
                      client.field_1463.method_4079(var10);
                   }
@@ -1607,7 +1607,7 @@ public class class_90 extends class_59 {
                   client.field_1645 = 0;
                   client.field_1520 = 819547401 * var0;
                   client.field_1562 = 1551872625 * var1;
-                  var9 = class_112.newPacket(Opcode.OPCODE_87, client.field_1463.isaac, (byte)8);
+                  var9 = class_112.newPacket(ClientOpcode.OPCODE_87, client.field_1463.isaac, (byte)8);
                   var9.networkBuffer.writeShort(class_243.field_2700 * 697161691 + var0);
                   var9.networkBuffer.writeShortAlt(-27903763 * class_154.field_1929 + var1);
                   if(class_145.field_1840[82]) {
