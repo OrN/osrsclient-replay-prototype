@@ -61,6 +61,8 @@ public class ReplayServer implements Runnable {
 
                     nextTimestamp = inputIn.readLong();
                 }
+
+                Thread.sleep(1);
             }
         } catch (Exception e) {
             e.printStackTrace();

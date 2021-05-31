@@ -6997,7 +6997,7 @@ public class class_165 {
 
             return 1;
          } else if(var0 == 5308) {
-            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = -257328061 * class_87.preferences.field_2119;
+            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = -257328061 * class_87.preferences.clientSizeMode;
             return 1;
          } else if(5309 != var0) {
             if(5310 == var0) {
@@ -7016,7 +7016,7 @@ public class class_165 {
          } else {
             var3 = field_2052[(class_136.field_1752 -= -1087727229) * -227728291];
             if(1 == var3 || 2 == var3) {
-               class_87.preferences.field_2119 = var3 * 1130865572;
+               class_87.preferences.clientSizeMode = var3 * 1130865572;
                class_94.savePreferences(-1890280712);
             }
 
@@ -8770,7 +8770,7 @@ public class class_165 {
 
             return 1;
          } else if(var0 == 5308) {
-            field_2052[(class_136.field_1752 += -1087727229) * -2127088170 - 1] = -660685365 * class_87.preferences.field_2119;
+            field_2052[(class_136.field_1752 += -1087727229) * -2127088170 - 1] = -660685365 * class_87.preferences.clientSizeMode;
             return 1;
          } else if(1471623786 != var0) {
             if(-1324838684 == var0) {
@@ -8789,7 +8789,7 @@ public class class_165 {
          } else {
             var3 = field_2052[(class_136.field_1752 -= -458861120) * -26460885];
             if(1 == var3 || 2 == var3) {
-               class_87.preferences.field_2119 = var3 * 395499296;
+               class_87.preferences.clientSizeMode = var3 * 395499296;
                class_94.savePreferences(-946793174);
             }
 
@@ -8896,7 +8896,7 @@ public class class_165 {
 
             return 1;
          } else if(var0 == 5308) {
-            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = -660685365 * class_87.preferences.field_2119;
+            field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = -660685365 * class_87.preferences.clientSizeMode;
             return 1;
          } else if(5309 != var0) {
             if(5310 == var0) {
@@ -8915,7 +8915,7 @@ public class class_165 {
          } else {
             var3 = field_2052[(class_136.field_1752 -= -1087727229) * -26460885];
             if(1 == var3 || 2 == var3) {
-               class_87.preferences.field_2119 = var3 * 511868899;
+               class_87.preferences.clientSizeMode = var3 * 511868899;
                class_94.savePreferences(-1542705711);
             }
 

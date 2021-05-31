@@ -885,7 +885,7 @@ public final class client extends GameApplet implements class_16 {
             showFPS = true;
          }
 
-         class_240.method_4645(class_87.preferences.field_2119 * -660685365, 847550164);
+         class_240.method_4645(class_87.preferences.clientSizeMode * -660685365, 847550164);
          class_160 var14 = new class_160(class_239.field_2659);
          class_208.field_2413 = var14;
       } catch (RuntimeException var10) {

@@ -15,7 +15,7 @@ public class Preferences {
    // $FF: renamed from: y boolean
    boolean musicEnabled;
    // $FF: renamed from: p int
-   int field_2119;
+   int clientSizeMode;
    // $FF: renamed from: j java.lang.String
    String rememberedEmail;
    // $FF: renamed from: s int
@@ -44,7 +44,7 @@ public class Preferences {
          var2.writeByte(-437407307 * field_2124);
          var2.writeByte(this.roofsHidden ?1:0);
          var2.writeByte(this.musicEnabled ?1:0);
-         var2.writeByte(this.field_2119 * -660685365);
+         var2.writeByte(this.clientSizeMode * -660685365);
          var2.writeByte(this.field_2126.size());
          Iterator var3 = this.field_2126.entrySet().iterator();
 
@@ -80,7 +80,7 @@ public class Preferences {
    // $FF: renamed from: <init> (nd) void
    Preferences(Buffer var1) {
       try {
-         this.field_2119 = 511868899;
+         this.clientSizeMode = 511868899;
          this.rememberedEmail = null;
          this.field_2123 = false;
          this.field_2128 = 0.8D;
@@ -100,7 +100,7 @@ public class Preferences {
                }
 
                if(var2 > 3) {
-                  this.field_2119 = var1.readUnsignedByte() * 511868899;
+                  this.clientSizeMode = var1.readUnsignedByte() * 511868899;
                }
 
                if(var2 > 2) {

@@ -10,13 +10,16 @@ public class Replay {
 
     private static Mode mode = Mode.PLAYBACK;
     private static boolean active = false;
+    private static int prevSizeMode;
 
     private static String replayDirectory;
     private static long replayStartTime;
     private static DataOutputStream keysOut;
     private static DataOutputStream inputOut;
+    private static DataOutputStream settingsOut;
 
     private static DataInputStream keysIn;
+    private static DataInputStream settingsIn;
 
     public static boolean clientReady = false;
 
@@ -50,8 +53,14 @@ public class Replay {
             if (!active) {
                 switch (mode) {
                     case PLAYBACK:
-                        ReplayServer.replayPath = "./replays/05-31-2021 03.08.02";
+                        ReplayServer.replayPath = "./replays/05-31-2021 04.03.26";
                         keysIn = new DataInputStream(new BufferedInputStream(new FileInputStream(new File(ReplayServer.replayPath + "/keys.bin"))));
+                        settingsIn = new DataInputStream(new BufferedInputStream(new FileInputStream(new File(ReplayServer.replayPath + "/settings.bin"))));
+
+                        prevSizeMode = class_87.preferences.clientSizeMode;
+                        class_87.preferences.clientSizeMode = settingsIn.readInt();
+                        class_240.method_4645(class_87.preferences.clientSizeMode * -660685365, 847550164);
+
                         ReplayServer.Start();
                         break;
                     case RECORD:
@@ -61,6 +70,10 @@ public class Replay {
                         fReplayDirectory.mkdirs();
                         keysOut = new DataOutputStream(new BufferedOutputStream(new FileOutputStream(new File(replayDirectory + "/keys.bin"))));
                         inputOut = new DataOutputStream(new BufferedOutputStream(new FileOutputStream(new File(replayDirectory + "/input.bin"))));
+                        settingsOut = new DataOutputStream(new BufferedOutputStream(new FileOutputStream(new File(replayDirectory + "/settings.bin"))));
+
+                        settingsOut.writeInt(class_87.preferences.clientSizeMode);
+                        settingsOut.flush();
 
                         // Initialize data
                         replayStartTime = System.currentTimeMillis();
@@ -77,10 +90,21 @@ public class Replay {
             return;
 
         try {
-            keysOut.flush();
-            keysOut.close();
-            inputOut.flush();
-            inputOut.close();
+            if (mode == Mode.RECORD) {
+                keysOut.flush();
+                keysOut.close();
+                inputOut.flush();
+                inputOut.close();
+                settingsOut.flush();
+                settingsOut.close();
+            } else if (mode == Mode.PLAYBACK) {
+                keysIn.close();
+                settingsIn.close();
+
+                class_87.preferences.clientSizeMode = prevSizeMode;
+                class_240.method_4645(class_87.preferences.clientSizeMode * -660685365, 847550164);
+                class_94.savePreferences(-2074912368);
+            }
         } catch (Exception e) {}
 
         active = false;

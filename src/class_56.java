@@ -245,7 +245,7 @@ public class class_56 extends class_51 {
                if(var3 <= -1780215685) {
                   throw new IllegalStateException();
                } else {
-                  class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = -660685365 * class_87.preferences.field_2119;
+                  class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = -660685365 * class_87.preferences.clientSizeMode;
                   return 1;
                }
             } else if(5309 == var0) {
@@ -263,7 +263,7 @@ public class class_56 extends class_51 {
                      }
                   }
 
-                  class_87.preferences.field_2119 = var4 * 511868899;
+                  class_87.preferences.clientSizeMode = var4 * 511868899;
                   class_94.savePreferences(-411883528);
                   return 1;
                }
