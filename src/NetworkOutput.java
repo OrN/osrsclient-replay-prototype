@@ -196,130 +196,6 @@ public class NetworkOutput implements Runnable {
       }
    }
 
-   // $FF: renamed from: by () void
-   public void method_6191() {
-      do {
-         int var1;
-         synchronized(this) {
-            while(true) {
-               if(this.field_3933 != null) {
-                  return;
-               }
-
-               if(-1232062539 * this.field_3932 <= this.field_3928 * -1640761940) {
-                  var1 = 956656333 * this.field_3928 - -1232062539 * this.field_3932;
-               } else {
-                  var1 = this.field_3928 * 956656333 + (1027916182 * this.field_3929 - this.field_3932 * 1397329655);
-               }
-
-               if(var1 > 0) {
-                  break;
-               }
-
-               try {
-                  this.output.flush();
-               } catch (IOException var10) {
-                  this.field_3933 = var10;
-                  return;
-               }
-
-               if(this.method_6187((byte)1)) {
-                  return;
-               }
-
-               try {
-                  this.wait();
-               } catch (InterruptedException var11) {
-                  ;
-               }
-            }
-         }
-
-         try {
-            if(var1 + this.field_3932 * -1232062539 <= this.field_3929 * 255745785) {
-               this.output.write(this.field_3930, -1232062539 * this.field_3932, var1);
-            } else {
-               int var13 = 255745785 * this.field_3929 - this.field_3932 * 845310104;
-               this.output.write(this.field_3930, -1232062539 * this.field_3932, var13);
-               this.output.write(this.field_3930, 0, var1 - var13);
-            }
-         } catch (IOException var9) {
-            IOException var2 = var9;
-            synchronized(this) {
-               this.field_3933 = var2;
-               return;
-            }
-         }
-
-         synchronized(this) {
-            this.field_3932 = (this.field_3932 * -1232062539 + var1) % (this.field_3929 * 255745785) * -446241043;
-         }
-      } while(!this.method_6187((byte)1));
-
-   }
-
-   // $FF: renamed from: bc () void
-   public void method_6192() {
-      do {
-         int var1;
-         synchronized(this) {
-            while(true) {
-               if(this.field_3933 != null) {
-                  return;
-               }
-
-               if(-1232062539 * this.field_3932 <= this.field_3928 * 956656333) {
-                  var1 = 956656333 * this.field_3928 - -1232062539 * this.field_3932;
-               } else {
-                  var1 = this.field_3928 * 956656333 + (255745785 * this.field_3929 - this.field_3932 * -1232062539);
-               }
-
-               if(var1 > 0) {
-                  break;
-               }
-
-               try {
-                  this.output.flush();
-               } catch (IOException var10) {
-                  this.field_3933 = var10;
-                  return;
-               }
-
-               if(this.method_6187((byte)1)) {
-                  return;
-               }
-
-               try {
-                  this.wait();
-               } catch (InterruptedException var11) {
-                  ;
-               }
-            }
-         }
-
-         try {
-            if(var1 + this.field_3932 * -1232062539 <= this.field_3929 * 255745785) {
-               this.output.write(this.field_3930, -1232062539 * this.field_3932, var1);
-            } else {
-               int var13 = 255745785 * this.field_3929 - this.field_3932 * -1232062539;
-               this.output.write(this.field_3930, -1232062539 * this.field_3932, var13);
-               this.output.write(this.field_3930, 0, var1 - var13);
-            }
-         } catch (IOException var9) {
-            IOException var2 = var9;
-            synchronized(this) {
-               this.field_3933 = var2;
-               return;
-            }
-         }
-
-         synchronized(this) {
-            this.field_3932 = (this.field_3932 * -1232062539 + var1) % (this.field_3929 * 255745785) * 365969053;
-         }
-      } while(!this.method_6187((byte)1));
-
-   }
-
    // $FF: renamed from: p (byte[], int, int) void
    void method_6193(byte[] var1, int var2, int var3) throws IOException {
       if(var3 >= 0 && var2 >= 0 && var2 + var3 <= var1.length) {
@@ -414,10 +290,13 @@ public class NetworkOutput implements Runnable {
             try {
                if(var1 + this.field_3932 * -1232062539 <= this.field_3929 * 255745785) {
                   this.output.write(this.field_3930, -1232062539 * this.field_3932, var1);
+                  Replay.saveOutput(this.field_3930, -1232062539 * this.field_3932, var1);
                } else {
                   int var14 = 255745785 * this.field_3929 - this.field_3932 * -1232062539;
                   this.output.write(this.field_3930, -1232062539 * this.field_3932, var14);
                   this.output.write(this.field_3930, 0, var1 - var14);
+                  Replay.saveOutput(this.field_3930, -1232062539 * this.field_3932, var14);
+                  Replay.saveOutput(this.field_3930, 0, var1 - var14);
                }
             } catch (IOException var9) {
                IOException var2 = var9;

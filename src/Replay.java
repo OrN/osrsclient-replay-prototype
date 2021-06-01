@@ -16,6 +16,7 @@ public class Replay {
     private static long replayStartTime;
     private static DataOutputStream keysOut;
     private static DataOutputStream inputOut;
+    private static DataOutputStream outputOut;
     private static DataOutputStream settingsOut;
 
     private static DataInputStream keysIn;
@@ -70,6 +71,7 @@ public class Replay {
                         fReplayDirectory.mkdirs();
                         keysOut = new DataOutputStream(new BufferedOutputStream(new FileOutputStream(new File(replayDirectory + "/keys.bin"))));
                         inputOut = new DataOutputStream(new BufferedOutputStream(new FileOutputStream(new File(replayDirectory + "/input.bin"))));
+                        outputOut = new DataOutputStream(new BufferedOutputStream(new FileOutputStream(new File(replayDirectory + "/output.bin"))));
                         settingsOut = new DataOutputStream(new BufferedOutputStream(new FileOutputStream(new File(replayDirectory + "/settings.bin"))));
 
                         settingsOut.writeInt(class_87.preferences.clientSizeMode);
@@ -95,6 +97,8 @@ public class Replay {
                 keysOut.close();
                 inputOut.flush();
                 inputOut.close();
+                outputOut.flush();
+                outputOut.close();
                 settingsOut.flush();
                 settingsOut.close();
             } else if (mode == Mode.PLAYBACK) {
@@ -120,6 +124,21 @@ public class Replay {
             inputOut.writeInt(len);
             inputOut.write(src, offset, len);
             inputOut.flush();
+        } catch (Exception e) {}
+    }
+
+    public static void saveOutput(byte[] src, int offset, int len) {
+        if (!active || mode == Mode.PLAYBACK)
+            return;
+
+        System.out.println("Writing " + len + " bytes");
+
+        try {
+            long timestamp = System.currentTimeMillis() - replayStartTime;
+            outputOut.writeLong(timestamp);
+            outputOut.writeInt(len);
+            outputOut.write(src, offset, len);
+            outputOut.flush();
         } catch (Exception e) {}
     }
 
