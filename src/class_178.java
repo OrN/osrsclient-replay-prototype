@@ -13,14 +13,14 @@ public class class_178 {
 
 
    // $FF: renamed from: b (boolean, byte) void
-   static void method_3797(boolean var0, byte var1) {
+   static void showUserLoginMenu(boolean var0, byte var1) {
       try {
          class_177.field_2196 = class_305.field_3617;
          class_177.field_2197 = class_305.field_3618;
          class_177.field_2213 = class_305.field_3619;
-         class_177.field_2194 = -137370906;
+         class_177.loginMenuStage = -137370906;
          if(var0) {
-            class_177.field_2212 = "";
+            class_177.password = "";
          }
 
          label58: {
@@ -60,13 +60,13 @@ public class class_178 {
                      throw new IllegalStateException();
                   }
 
-                  class_177.field_2204 = 129356965;
+                  class_177.connectStage = 129356965;
                   return;
                }
             }
          }
 
-         class_177.field_2204 = 0;
+         class_177.connectStage = 0;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2);
       }

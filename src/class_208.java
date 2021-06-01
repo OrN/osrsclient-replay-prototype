@@ -16,7 +16,7 @@ public final class class_208 extends class_206 implements Runnable {
    // $FF: renamed from: v java.io.InputStream
    InputStream field_2408;
    // $FF: renamed from: p dp
-   class_201 field_2409;
+   Connection field_2409;
    // $FF: renamed from: y boolean
    boolean field_2410;
    // $FF: renamed from: r byte[]
@@ -40,7 +40,7 @@ public final class class_208 extends class_206 implements Runnable {
 
 
    // $FF: renamed from: <init> (java.net.Socket, dp, int) void
-   public class_208(Socket var1, class_201 var2, int var3) throws IOException {
+   public class_208(Socket var1, Connection var2, int var3) throws IOException {
       super();
       try {
          this.field_2410 = false;
@@ -896,7 +896,7 @@ public final class class_208 extends class_206 implements Runnable {
       try {
          client.field_1554 = 0;
          client.field_1553 = false;
-         client.field_1631[0] = class_305.field_3651;
+         client.field_1631[0] = class_305.strCancel;
          client.field_1560[0] = "";
          client.field_1557[0] = 1006;
          client.field_1492[0] = false;

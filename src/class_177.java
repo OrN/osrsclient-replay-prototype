@@ -24,7 +24,7 @@ public class class_177 {
    // $FF: renamed from: bp int
    static int field_2193;
    // $FF: renamed from: aj int
-   static int field_2194;
+   static int loginMenuStage;
    // $FF: renamed from: bx int
    static int field_2195;
    // $FF: renamed from: az java.lang.String
@@ -44,7 +44,7 @@ public class class_177 {
    // $FF: renamed from: bt boolean
    static boolean field_2203;
    // $FF: renamed from: bq int
-   static int field_2204;
+   static int connectStage;
    // $FF: renamed from: n boolean
    static boolean field_2206;
    // $FF: renamed from: au boolean
@@ -58,7 +58,7 @@ public class class_177 {
    // $FF: renamed from: bl java.lang.String
    static String field_2211;
    // $FF: renamed from: ah java.lang.String
-   static String field_2212;
+   static String password;
    // $FF: renamed from: ac java.lang.String
    static String field_2213;
    // $FF: renamed from: e int
@@ -74,17 +74,17 @@ public class class_177 {
       loadProgressText = "";
       field_2192 = 174778505;
       field_2199 = 452438349;
-      field_2194 = 0;
+      loginMenuStage = 0;
       field_2191 = "";
       field_2196 = "";
       field_2197 = "";
       field_2213 = "";
       email = "";
-      field_2212 = "";
+      password = "";
       field_2201 = false;
       field_2207 = false;
       field_2203 = true;
-      field_2204 = 0;
+      connectStage = 0;
       field_2198 = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!\"£$%^&*()-_=+[{]};:\'@#~,<.>/?\\| ";
       field_2211 = "1234567890";
       field_2202 = false;

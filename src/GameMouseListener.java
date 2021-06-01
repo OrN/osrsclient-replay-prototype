@@ -319,7 +319,7 @@ public class GameMouseListener implements MouseListener, MouseMotionListener, Fo
 
             class_299.method_5348(class_305.field_3453, class_305.field_3454, class_305.field_3455);
          } else if(3 == var0) {
-            class_177.field_2194 = 1941427289;
+            class_177.loginMenuStage = 1941427289;
             class_177.field_2199 = 452438349;
          } else if(var0 == 4) {
             if(var1 == -1888868577) {
@@ -466,7 +466,7 @@ public class GameMouseListener implements MouseListener, MouseMotionListener, Fo
                            throw new IllegalStateException();
                         }
 
-                        class_177.field_2194 = -549483624;
+                        class_177.loginMenuStage = -549483624;
                      } else {
                         if(56 == var0) {
                            if(var1 == -1888868577) {
@@ -489,7 +489,7 @@ public class GameMouseListener implements MouseListener, MouseMotionListener, Fo
                         }
 
                         if(61 == var0) {
-                           class_177.field_2194 = 1666685477;
+                           class_177.loginMenuStage = 1666685477;
                         } else {
                            class_299.method_5348(class_305.strUnexpectedServerResponse, class_305.strTryDifferentWorld, class_305.field_3627);
                         }

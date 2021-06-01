@@ -107,7 +107,7 @@ public class class_405 extends RuntimeException {
             return;
          }
 
-         URL var3 = new URL(field_4296.getCodeBase(), "clienterror.ws?c=" + field_4295 * -298094073 + "&u=" + field_4289 + "&v1=" + class_201.javaVendor + "&v2=" + class_201.javaVersion + "&ct=" + 2094073605 * field_4292 + "&e=" + var2);
+         URL var3 = new URL(field_4296.getCodeBase(), "clienterror.ws?c=" + field_4295 * -298094073 + "&u=" + field_4289 + "&v1=" + Connection.javaVendor + "&v2=" + Connection.javaVersion + "&ct=" + 2094073605 * field_4292 + "&e=" + var2);
          DataInputStream var17 = new DataInputStream(var3.openStream());
          var17.read();
          var17.close();
@@ -200,7 +200,7 @@ public class class_405 extends RuntimeException {
             return;
          }
 
-         URL var3 = new URL(field_4296.getCodeBase(), "clienterror.ws?c=" + field_4295 * -1454650143 + "&u=" + field_4289 + "&v1=" + class_201.javaVendor + "&v2=" + class_201.javaVersion + "&ct=" + 2094073605 * field_4292 + "&e=" + var2);
+         URL var3 = new URL(field_4296.getCodeBase(), "clienterror.ws?c=" + field_4295 * -1454650143 + "&u=" + field_4289 + "&v1=" + Connection.javaVendor + "&v2=" + Connection.javaVersion + "&ct=" + 2094073605 * field_4292 + "&e=" + var2);
          DataInputStream var17 = new DataInputStream(var3.openStream());
          var17.read();
          var17.close();

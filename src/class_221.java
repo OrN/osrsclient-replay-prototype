@@ -2422,7 +2422,7 @@ public final class class_221 {
 
                int var9;
                short var10;
-               if(0 == -677995589 * class_177.field_2194) {
+               if(0 == -677995589 * class_177.loginMenuStage) {
                   if(var1 == 1) {
                      throw new IllegalStateException();
                   }
@@ -2511,7 +2511,7 @@ public final class class_221 {
                      class_177.field_2196 = class_305.field_3630;
                      class_177.field_2197 = class_305.field_3534;
                      class_177.field_2213 = class_305.field_3697;
-                     class_177.field_2194 = 2078798195;
+                     class_177.loginMenuStage = 2078798195;
                      if(client.rememberEmail) {
                         if(var1 == 1) {
                            return;
@@ -2527,13 +2527,13 @@ public final class class_221 {
                                  throw new IllegalStateException();
                               }
 
-                              class_177.field_2204 = 129356965;
+                              class_177.connectStage = 129356965;
                               return;
                            }
                         }
                      }
 
-                     class_177.field_2204 = 0;
+                     class_177.connectStage = 0;
                   } else if(0 != (1088533541 * client.field_1414 & 4)) {
                      if(var1 == 1) {
                         throw new IllegalStateException();
@@ -2554,7 +2554,7 @@ public final class class_221 {
                      }
 
                      class_177.field_2191 = class_305.field_3586;
-                     class_177.field_2194 = 2078798195;
+                     class_177.loginMenuStage = 2078798195;
                      if(client.rememberEmail) {
                         if(var1 == 1) {
                            throw new IllegalStateException();
@@ -2566,13 +2566,13 @@ public final class class_221 {
                            }
 
                            if(class_177.email.length() > 0) {
-                              class_177.field_2204 = 129356965;
+                              class_177.connectStage = 129356965;
                               return;
                            }
                         }
                      }
 
-                     class_177.field_2204 = 0;
+                     class_177.connectStage = 0;
                   } else if((client.field_1414 * 1088533541 & 1024) != 0) {
                      if(var1 == 1) {
                         return;
@@ -2582,7 +2582,7 @@ public final class class_221 {
                      class_177.field_2197 = class_305.field_3580;
                      class_177.field_2213 = class_305.field_3626;
                      class_177.field_2191 = class_305.field_3586;
-                     class_177.field_2194 = 2078798195;
+                     class_177.loginMenuStage = 2078798195;
                      if(client.rememberEmail) {
                         if(var1 == 1) {
                            throw new IllegalStateException();
@@ -2593,19 +2593,19 @@ public final class class_221 {
                               throw new IllegalStateException();
                            }
 
-                           class_177.field_2204 = 129356965;
+                           class_177.connectStage = 129356965;
                            return;
                         }
                      }
 
-                     class_177.field_2204 = 0;
+                     class_177.connectStage = 0;
                   } else {
-                     class_178.method_3797(false, (byte)78);
+                     class_178.showUserLoginMenu(false, (byte)78);
                   }
                } else {
                   int var31;
                   short var33;
-                  if(class_177.field_2194 * -677995589 == 1) {
+                  if(class_177.loginMenuStage * -677995589 == 1) {
                      if(var1 == 1) {
                         return;
                      }
@@ -2616,13 +2616,13 @@ public final class class_221 {
                               return;
                            }
 
-                           class_178.method_3797(false, (byte)66);
+                           class_178.showUserLoginMenu(false, (byte)66);
                         } else if(644081785 * class_80.field_752 == 13) {
                            if(var1 == 1) {
                               throw new IllegalStateException();
                            }
 
-                           class_177.field_2194 = 0;
+                           class_177.loginMenuStage = 0;
                         }
                      }
 
@@ -2648,7 +2648,7 @@ public final class class_221 {
                                     throw new IllegalStateException();
                                  }
 
-                                 class_178.method_3797(false, (byte)74);
+                                 class_178.showUserLoginMenu(false, (byte)74);
                               }
                            }
                         }
@@ -2675,7 +2675,7 @@ public final class class_221 {
                                     throw new IllegalStateException();
                                  }
 
-                                 class_177.field_2194 = 0;
+                                 class_177.loginMenuStage = 0;
                               }
                            }
                         }
@@ -2685,7 +2685,7 @@ public final class class_221 {
                      short var32;
                      boolean var35;
                      int var38;
-                     if(class_177.field_2194 * -677995589 == 2) {
+                     if(class_177.loginMenuStage * -677995589 == 2) {
                         if(var1 == 1) {
                            throw new IllegalStateException();
                         }
@@ -2707,7 +2707,7 @@ public final class class_221 {
                                     throw new IllegalStateException();
                                  }
 
-                                 class_177.field_2204 = 0;
+                                 class_177.connectStage = 0;
                               }
                            }
                         }
@@ -2728,7 +2728,7 @@ public final class class_221 {
                                     throw new IllegalStateException();
                                  }
 
-                                 class_177.field_2204 = 129356965;
+                                 class_177.connectStage = 129356965;
                               }
                            }
                         }
@@ -2765,7 +2765,7 @@ public final class class_221 {
                                           switch(-519325819 * class_177.field_2199) {
                                           case 1:
                                              class_299.method_5348(class_305.field_3669, class_305.field_3670, class_305.field_3641);
-                                             class_177.field_2194 = 1804056383;
+                                             class_177.loginMenuStage = 1804056383;
                                              return;
                                           case 2:
                                              class_195.method_3988("https://support.runescape.com/hc/en-gb", true, false, -1494615877);
@@ -2809,7 +2809,7 @@ public final class class_221 {
                                        return;
                                     }
 
-                                    if(class_177.field_2212.length() == 0) {
+                                    if(class_177.password.length() == 0) {
                                        if(var1 == 1) {
                                           throw new IllegalStateException();
                                        }
@@ -2848,9 +2848,9 @@ public final class class_221 {
                                        throw new IllegalStateException();
                                     }
 
-                                    class_177.field_2194 = 0;
+                                    class_177.loginMenuStage = 0;
                                     class_177.email = "";
-                                    class_177.field_2212 = "";
+                                    class_177.password = "";
                                     class_54.field_405 = 0;
                                     class_282.field_3249 = "";
                                     class_177.field_2203 = true;
@@ -2986,9 +2986,9 @@ public final class class_221 {
                                        return;
                                     }
 
-                                    class_177.field_2204 = 129356965;
+                                    class_177.connectStage = 129356965;
                                  } else {
-                                    class_177.field_2204 = 0;
+                                    class_177.connectStage = 0;
                                  }
                               }
 
@@ -3003,13 +3003,13 @@ public final class class_221 {
                                  throw new IllegalStateException();
                               }
 
-                              class_177.field_2194 = 0;
+                              class_177.loginMenuStage = 0;
                               class_177.email = "";
-                              class_177.field_2212 = "";
+                              class_177.password = "";
                               class_54.field_405 = 0;
                               class_282.field_3249 = "";
                               class_177.field_2203 = true;
-                           } else if(-1482820819 * class_177.field_2204 == 0) {
+                           } else if(-1482820819 * class_177.connectStage == 0) {
                               if(var1 == 1) {
                                  return;
                               }
@@ -3054,7 +3054,7 @@ public final class class_221 {
                                        }
                                     }
 
-                                    class_177.field_2204 = 129356965;
+                                    class_177.connectStage = 129356965;
                                  }
 
                                  if(class_141.method_3049(class_283.field_3253, 228217886) && class_177.email.length() < 320) {
@@ -3066,7 +3066,7 @@ public final class class_221 {
                                  }
                                  break;
                               }
-                           } else if(-1482820819 * class_177.field_2204 == 1) {
+                           } else if(-1482820819 * class_177.connectStage == 1) {
                               if(var1 == 1) {
                                  throw new IllegalStateException();
                               }
@@ -3077,12 +3077,12 @@ public final class class_221 {
                                        return;
                                     }
 
-                                    if(class_177.field_2212.length() > 0) {
+                                    if(class_177.password.length() > 0) {
                                        if(var1 == 1) {
                                           return;
                                        }
 
-                                       class_177.field_2212 = class_177.field_2212.substring(0, class_177.field_2212.length() - 1);
+                                       class_177.password = class_177.password.substring(0, class_177.password.length() - 1);
                                        break label1818;
                                     }
                                  }
@@ -3101,7 +3101,7 @@ public final class class_221 {
                                     }
                                  }
 
-                                 class_177.field_2204 = 0;
+                                 class_177.connectStage = 0;
                                  if(84 == class_80.field_752 * 644081785) {
                                     if(var1 == 1) {
                                        return;
@@ -3113,7 +3113,7 @@ public final class class_221 {
                                        return;
                                     }
 
-                                    if(class_177.field_2212.length() == 0) {
+                                    if(class_177.password.length() == 0) {
                                        if(var1 == 1) {
                                           throw new IllegalStateException();
                                        }
@@ -3147,7 +3147,7 @@ public final class class_221 {
 
                                     Clipboard var11 = Toolkit.getDefaultToolkit().getSystemClipboard();
                                     Transferable var12 = var11.getContents(class_121.field_1337);
-                                    int var13 = 20 - class_177.field_2212.length();
+                                    int var13 = 20 - class_177.password.length();
                                     if(var13 <= 0) {
                                        continue;
                                     }
@@ -3244,11 +3244,11 @@ public final class class_221 {
                                                 continue;
                                              }
 
-                                             class_177.field_2194 = 1941427289;
+                                             class_177.loginMenuStage = 1941427289;
                                              return;
                                           }
 
-                                          class_177.field_2212 = class_177.field_2212 + var14.substring(0, var15);
+                                          class_177.password = class_177.password + var14.substring(0, var15);
                                           continue label1746;
                                        }
                                     } catch (UnsupportedFlavorException var22) {
@@ -3336,17 +3336,17 @@ public final class class_221 {
                                     throw new IllegalStateException();
                                  }
 
-                                 if(class_177.field_2212.length() < 20) {
+                                 if(class_177.password.length() < 20) {
                                     if(var1 == 1) {
                                        throw new IllegalStateException();
                                     }
 
-                                    class_177.field_2212 = class_177.field_2212 + class_283.field_3253;
+                                    class_177.password = class_177.password + class_283.field_3253;
                                  }
                               }
                            }
                         }
-                     } else if(class_177.field_2194 * -677995589 == 3) {
+                     } else if(class_177.loginMenuStage * -677995589 == 3) {
                         if(var1 == 1) {
                            throw new IllegalStateException();
                         }
@@ -3373,7 +3373,7 @@ public final class class_221 {
                                        throw new IllegalStateException();
                                     }
 
-                                    class_178.method_3797(false, (byte)56);
+                                    class_178.showUserLoginMenu(false, (byte)56);
                                  }
                               }
                            }
@@ -3407,7 +3407,7 @@ public final class class_221 {
                                        }
 
                                        class_299.method_5348(class_305.field_3669, class_305.field_3670, class_305.field_3641);
-                                       class_177.field_2194 = 1804056383;
+                                       class_177.loginMenuStage = 1804056383;
                                        return;
                                     }
                                  }
@@ -3416,7 +3416,7 @@ public final class class_221 {
                         }
                      } else {
                         int var39;
-                        if(4 == class_177.field_2194 * -677995589) {
+                        if(4 == class_177.loginMenuStage * -677995589) {
                            if(var1 == 1) {
                               throw new IllegalStateException();
                            }
@@ -3560,9 +3560,9 @@ public final class class_221 {
                                              throw new IllegalStateException();
                                           }
 
-                                          class_177.field_2194 = 0;
+                                          class_177.loginMenuStage = 0;
                                           class_177.email = "";
-                                          class_177.field_2212 = "";
+                                          class_177.password = "";
                                           class_54.field_405 = 0;
                                           class_282.field_3249 = "";
                                        }
@@ -3594,9 +3594,9 @@ public final class class_221 {
                                     return;
                                  }
 
-                                 class_177.field_2194 = 0;
+                                 class_177.loginMenuStage = 0;
                                  class_177.email = "";
-                                 class_177.field_2212 = "";
+                                 class_177.password = "";
                                  class_54.field_405 = 0;
                                  class_282.field_3249 = "";
                               } else {
@@ -3648,7 +3648,7 @@ public final class class_221 {
                                  }
                               }
                            }
-                        } else if(class_177.field_2194 * -677995589 == 5) {
+                        } else if(class_177.loginMenuStage * -677995589 == 5) {
                            if(var1 == 1) {
                               throw new IllegalStateException();
                            }
@@ -3678,7 +3678,7 @@ public final class class_221 {
                                  }
 
                                  if(var29 >= var33 - 20 && var29 <= 20 + var33) {
-                                    class_178.method_3797(true, (byte)125);
+                                    class_178.showUserLoginMenu(true, (byte)125);
                                  }
                               }
                            }
@@ -3750,7 +3750,7 @@ public final class class_221 {
                                     throw new IllegalStateException();
                                  }
 
-                                 class_178.method_3797(true, (byte)68);
+                                 class_178.showUserLoginMenu(true, (byte)68);
                               } else {
                                  if(class_80.field_752 * 644081785 == 85 && class_177.email.length() > 0) {
                                     class_177.email = class_177.email.substring(0, class_177.email.length() - 1);
@@ -3776,7 +3776,7 @@ public final class class_221 {
                                  }
                               }
                            }
-                        } else if(-677995589 * class_177.field_2194 == 6) {
+                        } else if(-677995589 * class_177.loginMenuStage == 6) {
                            if(var1 == 1) {
                               throw new IllegalStateException();
                            }
@@ -3796,7 +3796,7 @@ public final class class_221 {
                                  }
                               }
 
-                              class_178.method_3797(true, (byte)78);
+                              class_178.showUserLoginMenu(true, (byte)78);
                            }
 
                            var32 = 321;
@@ -3810,10 +3810,10 @@ public final class class_221 {
                                     throw new IllegalStateException();
                                  }
 
-                                 class_178.method_3797(true, (byte)88);
+                                 class_178.showUserLoginMenu(true, (byte)88);
                               }
                            }
-                        } else if(7 == class_177.field_2194 * -677995589) {
+                        } else if(7 == class_177.loginMenuStage * -677995589) {
                            var31 = class_177.field_2189 * 2130552221 + 180 - 80;
                            var33 = 321;
                            if(1 == var27) {
@@ -3834,7 +3834,7 @@ public final class class_221 {
                                     if(var29 <= 20 + var33) {
                                        class_195.method_3988(class_83.method_1409("secure", true, 348637301) + "m=dob/set_dob.ws", true, false, -796568451);
                                        class_299.method_5348(class_305.field_3666, class_305.field_3628, class_305.field_3668);
-                                       class_177.field_2194 = -412112718;
+                                       class_177.loginMenuStage = -412112718;
                                        return;
                                     }
                                  }
@@ -3867,13 +3867,13 @@ public final class class_221 {
                                              return;
                                           }
 
-                                          class_178.method_3797(true, (byte)85);
+                                          class_178.showUserLoginMenu(true, (byte)85);
                                        }
                                     }
                                  }
                               }
                            }
-                        } else if(8 == class_177.field_2194 * -677995589) {
+                        } else if(8 == class_177.loginMenuStage * -677995589) {
                            if(var1 == 1) {
                               throw new IllegalStateException();
                            }
@@ -3907,7 +3907,7 @@ public final class class_221 {
 
                                           class_195.method_3988("https://www.jagex.com/terms/privacy", true, false, 1007000975);
                                           class_299.method_5348(class_305.field_3666, class_305.field_3628, class_305.field_3668);
-                                          class_177.field_2194 = -412112718;
+                                          class_177.loginMenuStage = -412112718;
                                           return;
                                        }
                                     }
@@ -3941,13 +3941,13 @@ public final class class_221 {
                                              return;
                                           }
 
-                                          class_178.method_3797(true, (byte)63);
+                                          class_178.showUserLoginMenu(true, (byte)63);
                                        }
                                     }
                                  }
                               }
                            }
-                        } else if(12 == -677995589 * class_177.field_2194) {
+                        } else if(12 == -677995589 * class_177.loginMenuStage) {
                            if(var1 == 1) {
                               throw new IllegalStateException();
                            }
@@ -3961,7 +3961,7 @@ public final class class_221 {
                               var42 = "https://support.runescape.com/hc/en-gb/articles/206103939-My-account-is-locked";
                               break;
                            default:
-                              class_178.method_3797(false, (byte)100);
+                              class_178.showUserLoginMenu(false, (byte)100);
                            }
 
                            var9 = 2130552221 * class_177.field_2189 + 180;
@@ -3988,7 +3988,7 @@ public final class class_221 {
 
                                        class_195.method_3988(var42, true, false, 145508550);
                                        class_299.method_5348(class_305.field_3666, class_305.field_3628, class_305.field_3668);
-                                       class_177.field_2194 = -412112718;
+                                       class_177.loginMenuStage = -412112718;
                                        return;
                                     }
                                  }
@@ -4022,13 +4022,13 @@ public final class class_221 {
                                              throw new IllegalStateException();
                                           }
 
-                                          class_178.method_3797(false, (byte)111);
+                                          class_178.showUserLoginMenu(false, (byte)111);
                                        }
                                     }
                                  }
                               }
                            }
-                        } else if(class_177.field_2194 * -677995589 == 24) {
+                        } else if(class_177.loginMenuStage * -677995589 == 24) {
                            if(var1 == 1) {
                               throw new IllegalStateException();
                            }
@@ -4050,7 +4050,7 @@ public final class class_221 {
                                        return;
                                     }
 
-                                    class_178.method_3797(false, (byte)67);
+                                    class_178.showUserLoginMenu(false, (byte)67);
                                  }
                               }
                            }

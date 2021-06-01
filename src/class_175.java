@@ -400,7 +400,7 @@ public class class_175 {
    // $FF: renamed from: n (java.lang.String[], int[], int) void
    public static void method_3740(String[] var0, int[] var1) {
       try {
-         class_201.method_4060(var0, var1, 0, var0.length - 1, (byte)121);
+         Connection.method_4060(var0, var1, 0, var0.length - 1, (byte)121);
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
       }

@@ -4,18 +4,14 @@ import java.net.Socket;
 import java.net.URL;
 
 // $FF: renamed from: dp
-public class class_201 implements Runnable {
+public class Connection implements Runnable {
 
-   // $FF: renamed from: r int
-   static final int field_2352 = 1;
    // $FF: renamed from: n java.lang.String
    public static String javaVersion;
    // $FF: renamed from: f eu
    HostData field_2354;
-   // $FF: renamed from: d int
-   static final int field_2355 = 4;
    // $FF: renamed from: p java.lang.Thread
-   Thread field_2356;
+   Thread thread;
    // $FF: renamed from: y eu
    HostData field_2357;
    // $FF: renamed from: j boolean
@@ -24,21 +20,6 @@ public class class_201 implements Runnable {
    public static String javaVendor;
    // $FF: renamed from: ex lz
    static class_360 field_2360;
-
-   // $FF: renamed from: p () void
-   public final void method_4054() {
-      synchronized(this) {
-         this.field_2358 = true;
-         this.notifyAll();
-      }
-
-      try {
-         this.field_2356.join();
-      } catch (InterruptedException var3) {
-         ;
-      }
-
-   }
 
    // $FF: renamed from: d (java.lang.String, int) eu
    public final HostData method_4055(String var1, int var2) {
@@ -202,66 +183,6 @@ public class class_201 implements Runnable {
       }
    }
 
-   // $FF: renamed from: j (int, int, int, java.lang.Object) eu
-   final HostData method_4061(int var1, int var2, Object var4) {
-      HostData var10000 = new HostData();
-      HostData var5 = var10000;
-      var5.field_2450 = -1398399643 * var1;
-      var5.port = var2;
-      var5.host = var4;
-      synchronized(this) {
-         if(this.field_2357 != null) {
-            this.field_2357.field_2453 = var5;
-            this.field_2357 = var5;
-         } else {
-            this.field_2357 = this.field_2354 = var5;
-         }
-
-         this.notify();
-         return var5;
-      }
-   }
-
-   // $FF: renamed from: r (int, int, int, java.lang.Object) eu
-   final HostData method_4062(int var1, int var2, Object var4) {
-      HostData var10000 = new HostData();
-      HostData var5 = var10000;
-      var5.field_2450 = 548150565 * var1;
-      var5.port = var2;
-      var5.host = var4;
-      synchronized(this) {
-         if(this.field_2357 != null) {
-            this.field_2357.field_2453 = var5;
-            this.field_2357 = var5;
-         } else {
-            this.field_2357 = this.field_2354 = var5;
-         }
-
-         this.notify();
-         return var5;
-      }
-   }
-
-   // $FF: renamed from: b (int, int, int, java.lang.Object) eu
-   final HostData method_4063(int var1, int var2, Object var4) {
-      HostData var10000 = new HostData();
-      HostData var5 = var10000;
-      var5.field_2450 = 548150565 * var1;
-      var5.port = var2;
-      var5.host = var4;
-      synchronized(this) {
-         if(this.field_2357 != null) {
-            this.field_2357.field_2453 = var5;
-            this.field_2357 = var5;
-         } else {
-            this.field_2357 = this.field_2354 = var5;
-         }
-
-         this.notify();
-         return var5;
-      }
-   }
-
    // $FF: renamed from: l (java.lang.String, int) eu
    public final HostData method_4064(String var1, int var2) {
       return this.method_4056(1, var2, var1, 1664192045);
@@ -273,7 +194,7 @@ public class class_201 implements Runnable {
    }
 
    // $FF: renamed from: <init> () void
-   public class_201() {
+   public Connection() {
       super();
       try {
          this.field_2354 = null;
@@ -290,17 +211,17 @@ public class class_201 implements Runnable {
          }
 
          this.field_2358 = false;
-         this.field_2356 = new Thread(this);
-         this.field_2356.setPriority(10);
-         this.field_2356.setDaemon(true);
-         this.field_2356.start();
+         this.thread = new Thread(this);
+         this.thread.setPriority(10);
+         this.thread.setDaemon(true);
+         this.thread.start();
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
       }
    }
 
    // $FF: renamed from: v (byte) void
-   public final void method_4067() {
+   public final void close() {
       try {
          synchronized(this) {
             this.field_2358 = true;
@@ -308,7 +229,7 @@ public class class_201 implements Runnable {
          }
 
          try {
-            this.field_2356.join();
+            this.thread.join();
          } catch (InterruptedException var4) {
             ;
          }

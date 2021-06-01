@@ -432,7 +432,7 @@ public class class_341 extends class_339 {
             switch(var1) {
             case 2:
                class_299.method_5348(class_305.field_3672, class_305.field_3673, class_305.field_3674);
-               class_177.field_2194 = -412112718;
+               class_177.loginMenuStage = -412112718;
                break;
             case 3:
                class_299.method_5348(class_305.field_3675, class_305.field_3676, class_305.field_3677);

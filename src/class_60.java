@@ -31,13 +31,4 @@ public class class_60 extends class_59 {
          throw class_223.method_4281(var1);
       }
    }
-
-   // $FF: renamed from: <init> () void
-   class_60() {
-      super();
-      try {
-      } catch (RuntimeException var1) {
-         throw class_223.method_4281(var1);
-      }
-   }
 }

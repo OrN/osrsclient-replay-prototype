@@ -559,7 +559,7 @@ public class class_232 {
    // $FF: renamed from: a (int) void
    static void method_4451() {
       try {
-         class_177.field_2194 = -1648450872;
+         class_177.loginMenuStage = -1648450872;
          class_299.method_5348(class_305.field_3461, class_305.field_3581, class_305.field_3643);
       } catch (RuntimeException var1) {
          throw class_223.method_4281(var1);

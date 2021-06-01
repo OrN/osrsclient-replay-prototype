@@ -113,7 +113,7 @@ public class class_305 {
    // $FF: renamed from: bq java.lang.String
    public static String field_3456;
    // $FF: renamed from: ad java.lang.String
-   public static String field_3457;
+   public static String strLoadedInput;
    // $FF: renamed from: dt java.lang.String
    public static String field_3458;
    // $FF: renamed from: bv java.lang.String
@@ -439,7 +439,7 @@ public class class_305 {
    // $FF: renamed from: hh java.lang.String
    public static String field_3619;
    // $FF: renamed from: id java.lang.String
-   public static String field_3620;
+   public static String strLogin;
    // $FF: renamed from: v java.lang.String
    public static String strMembersObject;
    // $FF: renamed from: hz java.lang.String
@@ -501,7 +501,7 @@ public class class_305 {
    // $FF: renamed from: fk java.lang.String
    public static String field_3650;
    // $FF: renamed from: il java.lang.String
-   public static String field_3651;
+   public static String strCancel;
    // $FF: renamed from: cg java.lang.String
    public static String field_3652;
    // $FF: renamed from: kg java.lang.String
@@ -867,7 +867,7 @@ public class class_305 {
       strLoadingSprites = "Loaded sprites";
       strLoadingTextures = "Loading textures - ";
       strLoadedTextures = "Loaded textures";
-      field_3457 = "Loaded input handler";
+      strLoadedInput = "Loaded input handler";
       field_3525 = "Loading wordpack - ";
       field_3429 = "Loaded wordpack";
       field_3699 = "Loading interfaces - ";
@@ -1085,8 +1085,8 @@ public class class_305 {
       field_3647 = "Welcome to RuneScape";
       strNewUser = "New User";
       strExistingUser = "Existing User";
-      field_3620 = "Login";
-      field_3651 = "Cancel";
+      strLogin = "Login";
+      strCancel = "Cancel";
       field_3517 = "Remember username";
       field_3696 = "Hide username";
       field_3654 = "Invalid credentials.";

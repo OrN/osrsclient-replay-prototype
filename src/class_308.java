@@ -113,7 +113,7 @@ public class class_308 {
                return;
             }
 
-            URL var4 = new URL(class_405.field_4296.getCodeBase(), "clienterror.ws?c=" + class_405.field_4295 * -1454650143 + "&u=" + class_405.field_4289 + "&v1=" + class_201.javaVendor + "&v2=" + class_201.javaVersion + "&ct=" + 2094073605 * class_405.field_4292 + "&e=" + var3);
+            URL var4 = new URL(class_405.field_4296.getCodeBase(), "clienterror.ws?c=" + class_405.field_4295 * -1454650143 + "&u=" + class_405.field_4289 + "&v1=" + Connection.javaVendor + "&v2=" + Connection.javaVersion + "&ct=" + 2094073605 * class_405.field_4292 + "&e=" + var3);
             DataInputStream var19 = new DataInputStream(var4.openStream());
             var19.read();
             var19.close();

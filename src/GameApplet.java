@@ -65,7 +65,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: aq boolean
    static volatile boolean field_1391;
    // $FF: renamed from: v dp
-   protected static class_201 field_1392;
+   protected static Connection connection;
    // $FF: renamed from: ae int
    int field_1393;
    // $FF: renamed from: ap int
@@ -455,16 +455,16 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             class_58.field_460 = var2 * -1394579951;
             class_405.field_4295 = 582907681 * var3;
             class_405.field_4296 = this;
-            if(null == field_1392) {
+            if(null == connection) {
                if(var4 == -1351365437) {
                   throw new IllegalStateException();
                }
 
-               class_201 var10000 = new class_201();
-               field_1392 = var10000;
+               Connection var10000 = new Connection();
+               connection = var10000;
             }
 
-            field_1392.method_4058(this, 1);
+            connection.method_4058(this, 1);
          } catch (Exception var6) {
             class_308.method_5523((String)null, var6, 1876892877);
             this.method_2324("crash", (byte)-1);
@@ -826,13 +826,13 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                }
             }
 
-            if(null != field_1392) {
+            if(null != connection) {
                if(var1 <= 209035984) {
                   throw new IllegalStateException();
                }
 
                try {
-                  field_1392.method_4067();
+                  connection.close();
                } catch (Exception var3) {
                   ;
                }
@@ -938,10 +938,10 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    public void run() {
       try {
          try {
-            if(null != class_201.javaVendor) {
-               String var1 = class_201.javaVendor.toLowerCase();
+            if(null != Connection.javaVendor) {
+               String var1 = Connection.javaVendor.toLowerCase();
                if(var1.indexOf("sun") != -1 || var1.indexOf("apple") != -1) {
-                  String var2 = class_201.javaVersion;
+                  String var2 = Connection.javaVersion;
                   if(var2.equals("1.1") || var2.startsWith("1.1.") || var2.equals("1.2") || var2.startsWith("1.2.") || var2.equals("1.3") || var2.startsWith("1.3.") || var2.equals("1.4") || var2.startsWith("1.4.") || var2.equals("1.5") || var2.startsWith("1.5.") || var2.equals("1.6.0")) {
                      this.method_2324("wrongjava", (byte)-1);
                      return;
@@ -1062,38 +1062,6 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
    // $FF: renamed from: ab (int) void
    protected abstract void method_2318(int var1);
-
-   // $FF: renamed from: bo (int, int, int) void
-   protected final void method_2319(int var1, int var2, int var3) {
-      try {
-         if(null != field_1375) {
-            field_1398 += 192447753;
-            if(field_1398 * 661166393 >= 3) {
-               this.method_2324("alreadyloaded", (byte)-1);
-               return;
-            }
-
-            this.getAppletContext().showDocument(this.getDocumentBase(), "_self");
-            return;
-         }
-
-         field_1375 = this;
-         class_137.field_1766 = var1 * 1059624892;
-         class_58.field_460 = var2 * -1174254669;
-         class_405.field_4295 = -1986655908 * var3;
-         class_405.field_4296 = this;
-         if(null == field_1392) {
-            class_201 var10000 = new class_201();
-            field_1392 = var10000;
-         }
-
-         field_1392.method_4058(this, 1);
-      } catch (Exception var5) {
-         class_308.method_5523((String)null, var5, 1926738018);
-         this.method_2324("crash", (byte)-1);
-      }
-
-   }
 
    // $FF: renamed from: ad (boolean, short) void
    protected abstract void method_2320(boolean var1, short var2);
@@ -2004,10 +1972,10 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: by () void
    public void method_2373() {
       try {
-         if(null != class_201.javaVendor) {
-            String var1 = class_201.javaVendor.toLowerCase();
+         if(null != Connection.javaVendor) {
+            String var1 = Connection.javaVendor.toLowerCase();
             if(var1.indexOf("sun") != -1 || var1.indexOf("apple") != -1) {
-               String var2 = class_201.javaVersion;
+               String var2 = Connection.javaVersion;
                if(var2.equals("1.1") || var2.startsWith("1.1.") || var2.equals("1.2") || var2.startsWith("1.2.") || var2.equals("1.3") || var2.startsWith("1.3.") || var2.equals("1.4") || var2.startsWith("1.4.") || var2.equals("1.5") || var2.startsWith("1.5.") || var2.equals("1.6.0")) {
                   this.method_2324("wrongjava", (byte)-1);
                   return;
@@ -2066,10 +2034,10 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: bc () void
    public void method_2374() {
       try {
-         if(null != class_201.javaVendor) {
-            String var1 = class_201.javaVendor.toLowerCase();
+         if(null != Connection.javaVendor) {
+            String var1 = Connection.javaVendor.toLowerCase();
             if(var1.indexOf("sun") != -1 || var1.indexOf("apple") != -1) {
-               String var2 = class_201.javaVersion;
+               String var2 = Connection.javaVersion;
                if(var2.equals("1.1") || var2.startsWith("1.1.") || var2.equals("1.2") || var2.startsWith("1.2.") || var2.equals("1.3") || var2.startsWith("1.3.") || var2.equals("1.4") || var2.startsWith("1.4.") || var2.equals("1.5") || var2.startsWith("1.5.") || var2.equals("1.6.0")) {
                   this.method_2324("wrongjava", (byte)-1);
                   return;
@@ -2339,9 +2307,9 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             }
          }
 
-         if(null != field_1392) {
+         if(null != connection) {
             try {
-               field_1392.method_4067();
+               connection.close();
             } catch (Exception var2) {
                ;
             }
@@ -2376,9 +2344,9 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             }
          }
 
-         if(null != field_1392) {
+         if(null != connection) {
             try {
-               field_1392.method_4067();
+               connection.close();
             } catch (Exception var2) {
                ;
             }
@@ -2413,9 +2381,9 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             }
          }
 
-         if(null != field_1392) {
+         if(null != connection) {
             try {
-               field_1392.method_4067();
+               connection.close();
             } catch (Exception var2) {
                ;
             }
@@ -2523,7 +2491,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: c (int, int) void
    static void method_2396(int var0) {
       try {
-         class_177.field_2194 = -824225436;
+         class_177.loginMenuStage = -824225436;
          class_177.field_2192 = -174778505 * var0;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2);
@@ -2643,9 +2611,6 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
          field_1377 = 0L;
       }
    }
-
-   // $FF: renamed from: dt (boolean) void
-   protected abstract void method_2417(boolean var1);
 
    // $FF: renamed from: ef () int
    protected static int method_2418() {

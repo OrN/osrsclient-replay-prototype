@@ -67,12 +67,12 @@ public class class_229 {
                      return;
                   }
 
-                  class_177.field_2194 = -274741812;
+                  class_177.loginMenuStage = -274741812;
                }
 
             }
          } else {
-            class_177.field_2194 = var3 * 2078798195;
+            class_177.loginMenuStage = var3 * 2078798195;
             class_65.method_662();
             byte[] var5 = var0.method_5384("title.jpg", "");
             class_177.field_2186 = class_86.method_1480(var5);
@@ -98,7 +98,7 @@ public class class_229 {
             class_176.field_2181 = var10000;
             if(var2) {
                class_177.email = "";
-               class_177.field_2212 = "";
+               class_177.password = "";
             }
 
             class_54.field_405 = 0;

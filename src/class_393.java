@@ -37,7 +37,7 @@ public class class_393 {
 
    // $FF: renamed from: r (java.lang.String[], int[]) void
    public static void method_6778(String[] var0, int[] var1) {
-      class_201.method_4060(var0, var1, 0, var0.length - 1, (byte)127);
+      Connection.method_4060(var0, var1, 0, var0.length - 1, (byte)127);
    }
 
    // $FF: renamed from: <init> () void
@@ -52,7 +52,7 @@ public class class_393 {
 
    // $FF: renamed from: j (java.lang.String[], int[]) void
    public static void method_6780(String[] var0, int[] var1) {
-      class_201.method_4060(var0, var1, 0, var0.length - 1, (byte)104);
+      Connection.method_4060(var0, var1, 0, var0.length - 1, (byte)104);
    }
 
    // $FF: renamed from: s (java.lang.String[], int[], int, int) void
@@ -82,20 +82,20 @@ public class class_393 {
          var0[var5] = var6;
          var1[var3] = var1[var5];
          var1[var5] = var7;
-         class_201.method_4060(var0, var1, var2, var5 - 1, (byte)113);
-         class_201.method_4060(var0, var1, 1 + var5, var3, (byte)125);
+         Connection.method_4060(var0, var1, var2, var5 - 1, (byte)113);
+         Connection.method_4060(var0, var1, 1 + var5, var3, (byte)125);
       }
 
    }
 
    // $FF: renamed from: b (java.lang.String[], int[]) void
    public static void method_6782(String[] var0, int[] var1) {
-      class_201.method_4060(var0, var1, 0, var0.length - 1, (byte)114);
+      Connection.method_4060(var0, var1, 0, var0.length - 1, (byte)114);
    }
 
    // $FF: renamed from: d (java.lang.String[], int[]) void
    public static void method_6783(String[] var0, int[] var1) {
-      class_201.method_4060(var0, var1, 0, var0.length - 1, (byte)119);
+      Connection.method_4060(var0, var1, 0, var0.length - 1, (byte)119);
    }
 
    // $FF: renamed from: p (java.lang.String[], short[], int, int) void

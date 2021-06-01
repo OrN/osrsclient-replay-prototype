@@ -4,15 +4,19 @@ import java.applet.AppletContext;
 import java.applet.AppletStub;
 import java.applet.AudioClip;
 import java.awt.*;
+import java.awt.datatransfer.DataFlavor;
+import java.awt.dnd.*;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.util.Enumeration;
 import java.util.Iterator;
+import java.util.List;
 
-public class launcher extends JFrame implements AppletStub, AppletContext, WindowListener {
+public class launcher extends JFrame implements AppletStub, AppletContext, WindowListener, DropTargetListener {
     private static launcher instance;
     private Applet applet;
     JConfig config;
@@ -45,6 +49,8 @@ public class launcher extends JFrame implements AppletStub, AppletContext, Windo
         pack();
         setLocationRelativeTo(null);
         setVisible(true);
+
+        new DropTarget(this, DnDConstants.ACTION_COPY_OR_MOVE, this);
 
         System.setProperty("user.home", ".");
 
@@ -166,5 +172,40 @@ public class launcher extends JFrame implements AppletStub, AppletContext, Windo
     @Override
     public void windowDeactivated(WindowEvent e) {
 
+    }
+
+    @Override
+    public void dragEnter(DropTargetDragEvent dtde) {
+
+    }
+
+    @Override
+    public void dragOver(DropTargetDragEvent dtde) {
+
+    }
+
+    @Override
+    public void dropActionChanged(DropTargetDragEvent dtde) {
+
+    }
+
+    @Override
+    public void dragExit(DropTargetEvent dte) {
+
+    }
+
+    @Override
+    public void drop(DropTargetDropEvent evt) {
+        if (evt.getTransferable().isDataFlavorSupported(DataFlavor.javaFileListFlavor)) {
+            evt.acceptDrop(DnDConstants.ACTION_LINK);
+            try {
+                List<File> droppedFiles = (List<File>)evt.getTransferable().getTransferData(DataFlavor.javaFileListFlavor);
+
+                for (File f : droppedFiles) {
+                    Replay.Play(f.getAbsolutePath());
+                    return;
+                }
+            } catch (Exception e) {}
+        }
     }
 }

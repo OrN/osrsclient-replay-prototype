@@ -11,7 +11,7 @@ public class class_287 {
    // $FF: renamed from: v (int) void
    static void method_5276(int var0) {
       try {
-         if(class_201.javaVendor.toLowerCase().indexOf("microsoft") != -1) {
+         if(Connection.javaVendor.toLowerCase().indexOf("microsoft") != -1) {
             if(var0 != 754026835) {
                throw new IllegalStateException();
             }

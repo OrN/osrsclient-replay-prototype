@@ -49,12 +49,28 @@ public class Replay {
         return keys;
     }
 
+    public static void Play(String fname) {
+        if (active)
+            return;
+
+        ReplayServer.replayPath = fname;
+        Replay.mode = Mode.PLAYBACK;
+
+        class_178.showUserLoginMenu(false, (byte)82);
+        if (class_177.email == null || class_177.email.length() <= 0)
+            class_177.email = "Replay";
+        class_177.password = "Replay";
+
+        class_299.method_5348(class_305.field_3635, class_305.strConnectingServer, class_305.field_3637);
+        class_89.method_1578(false, (byte)21);
+        class_53.method_579(20, (byte)0);
+    }
+
     public static void start() {
         try {
             if (!active) {
                 switch (mode) {
                     case PLAYBACK:
-                        ReplayServer.replayPath = "./replays/05-31-2021 05.26.58";
                         keysIn = new DataInputStream(new BufferedInputStream(new FileInputStream(new File(ReplayServer.replayPath + "/keys.bin"))));
                         settingsIn = new DataInputStream(new BufferedInputStream(new FileInputStream(new File(ReplayServer.replayPath + "/settings.bin"))));
 
@@ -112,6 +128,7 @@ public class Replay {
         } catch (Exception e) {}
 
         active = false;
+        Replay.mode = Mode.RECORD;
     }
 
     public static void saveInput(byte[] src, int offset, int len) {
