@@ -131,8 +131,6 @@ public class Replay {
         if (!active || mode == Mode.PLAYBACK)
             return;
 
-        System.out.println("Writing " + len + " bytes");
-
         try {
             long timestamp = System.currentTimeMillis() - replayStartTime;
             outputOut.writeLong(timestamp);
