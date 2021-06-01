@@ -436,34 +436,4 @@ public class NetworkOutput implements Runnable {
          throw class_223.method_4281(var13);
       }
    }
-
-   // $FF: renamed from: r () void
-   void method_6195() {
-      synchronized(this) {
-         this.field_3934 = true;
-         this.notifyAll();
-      }
-
-      try {
-         this.field_3931.join();
-      } catch (InterruptedException var3) {
-         ;
-      }
-
-   }
-
-   // $FF: renamed from: b () void
-   void method_6196() {
-      synchronized(this) {
-         this.field_3934 = true;
-         this.notifyAll();
-      }
-
-      try {
-         this.field_3931.join();
-      } catch (InterruptedException var3) {
-         ;
-      }
-
-   }
 }

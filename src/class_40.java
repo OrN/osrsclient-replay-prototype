@@ -59,7 +59,7 @@ public class class_40 extends class_27 {
       }
 
       var2.field_267 = var0;
-      var2.field_262 = var0.field_3153 * -1937979799;
+      var2.field_262 = var0.subopcode * -1937979799;
       NetworkBuffer var10001;
       if(var2.field_262 * -353849396 == -1) {
          var10001 = new NetworkBuffer(260);
@@ -79,7 +79,7 @@ public class class_40 extends class_27 {
       }
 
       var2.networkBuffer.method_354(var1);
-      var2.networkBuffer.method_357(-1958588669 * var2.field_267.field_3091);
+      var2.networkBuffer.method_357(-1958588669 * var2.field_267.opcode);
       var2.length = 0;
       return var2;
    }
@@ -95,7 +95,7 @@ public class class_40 extends class_27 {
       }
 
       var2.field_267 = var0;
-      var2.field_262 = var0.field_3153 * -1937979799;
+      var2.field_262 = var0.subopcode * -1937979799;
       NetworkBuffer var10001;
       if(var2.field_262 * 1934863547 == -1) {
          var10001 = new NetworkBuffer(591459580);
@@ -115,7 +115,7 @@ public class class_40 extends class_27 {
       }
 
       var2.networkBuffer.method_354(var1);
-      var2.networkBuffer.method_357(-1958588669 * var2.field_267.field_3091);
+      var2.networkBuffer.method_357(-1958588669 * var2.field_267.opcode);
       var2.length = 0;
       return var2;
    }
@@ -148,7 +148,7 @@ public class class_40 extends class_27 {
       }
 
       var2.field_267 = var0;
-      var2.field_262 = var0.field_3153 * -1937979799;
+      var2.field_262 = var0.subopcode * -1937979799;
       NetworkBuffer var10001;
       if(var2.field_262 * 1934863547 == -1) {
          var10001 = new NetworkBuffer(260);
@@ -168,7 +168,7 @@ public class class_40 extends class_27 {
       }
 
       var2.networkBuffer.method_354(var1);
-      var2.networkBuffer.method_357(-1958588669 * var2.field_267.field_3091);
+      var2.networkBuffer.method_357(-1958588669 * var2.field_267.opcode);
       var2.length = 0;
       return var2;
    }

@@ -120,7 +120,7 @@ public class class_112 extends class_111 {
          }
 
          var3.field_267 = var0;
-         var3.field_262 = var0.field_3153 * -1937979799;
+         var3.field_262 = var0.subopcode * -1937979799;
          NetworkBuffer var10001;
          if(var3.field_262 * 1934863547 == -1) {
             if(var2 != 8) {
@@ -152,7 +152,7 @@ public class class_112 extends class_111 {
          }
 
          var3.networkBuffer.method_354(var1);
-         var3.networkBuffer.method_357(-1958588669 * var3.field_267.field_3091);
+         var3.networkBuffer.method_357(-1958588669 * var3.field_267.opcode);
          var3.length = 0;
          return var3;
       } catch (RuntimeException var5) {

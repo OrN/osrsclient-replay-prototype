@@ -916,7 +916,7 @@ public abstract class class_98 extends class_91 {
 
                            var9 = class_112.newPacket(ClientOpcode.OPCODE_25, client.field_1463.isaac, (byte)8);
                            var9.networkBuffer.method_185(var4[var7]);
-                           var9.networkBuffer.method_148(0);
+                           var9.networkBuffer.writeByteInv(0);
                            client.field_1463.method_4079(var9);
                         } else if(var0 == 4) {
                            if(var2 == 1590901191) {
@@ -925,7 +925,7 @@ public abstract class class_98 extends class_91 {
 
                            var9 = class_112.newPacket(ClientOpcode.OPCODE_33, client.field_1463.isaac, (byte)8);
                            var9.networkBuffer.method_185(var4[var7]);
-                           var9.networkBuffer.method_148(0);
+                           var9.networkBuffer.writeByteInv(0);
                            client.field_1463.method_4079(var9);
                         } else if(var0 == 6) {
                            if(var2 == 1590901191) {

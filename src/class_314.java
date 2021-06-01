@@ -14,7 +14,7 @@ public class class_314 {
    // $FF: renamed from: u md
    public static class_364 field_3769;
    // $FF: renamed from: m java.util.zip.CRC32
-   public static CRC32 field_3770;
+   public static CRC32 crc32;
    // $FF: renamed from: v ls
    public static class_206 field_3771;
    // $FF: renamed from: w byte
@@ -63,7 +63,7 @@ public class class_314 {
       Buffer var1 = new Buffer(8);
       field_3776 = var1;
       field_3777 = 0;
-      field_3770 = new CRC32();
+      crc32 = new CRC32();
       field_3765 = new class_307[256];
       field_3772 = 0;
       field_3778 = 0;

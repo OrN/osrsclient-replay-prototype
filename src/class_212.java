@@ -39,7 +39,7 @@ public class class_212 implements class_14 {
          class_40 var3 = class_112.newPacket(ClientOpcode.OPCODE_49, client.field_1463.isaac, (byte)8);
          var3.networkBuffer.writeByte(class_166.method_3598(var0) + 1);
          var3.networkBuffer.writeString(var0);
-         var3.networkBuffer.method_148(var1);
+         var3.networkBuffer.writeByteInv(var1);
          client.field_1463.method_4079(var3);
       } catch (RuntimeException var4) {
          throw class_223.method_4281(var4);

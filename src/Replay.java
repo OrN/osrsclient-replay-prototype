@@ -8,7 +8,7 @@ public class Replay {
         PLAYBACK,
     }
 
-    private static Mode mode = Mode.PLAYBACK;
+    private static Mode mode = Mode.RECORD;
     private static boolean active = false;
     private static int prevSizeMode;
 

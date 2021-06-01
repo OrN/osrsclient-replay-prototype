@@ -154,7 +154,7 @@ public class class_153 {
                      var10001 = 0;
                   }
 
-                  var14.networkBuffer.method_148(var10001);
+                  var14.networkBuffer.writeByteInv(var10001);
                   var14.networkBuffer.writeShortReverse(class_154.field_1929 * -27903763 + var13);
                   var14.networkBuffer.writeShortReverse(var12 + class_243.field_2700 * 697161691);
                   var14.networkBuffer.writeByte(var5);

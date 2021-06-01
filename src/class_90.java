@@ -249,7 +249,7 @@ public class class_90 extends class_59 {
                var10001 = 0;
             }
 
-            var9.networkBuffer.method_148(var10001);
+            var9.networkBuffer.writeByteInv(var10001);
             client.field_1463.method_4079(var9);
          }
 
@@ -280,7 +280,7 @@ public class class_90 extends class_59 {
                   var10001 = 0;
                }
 
-               var10.networkBuffer.method_148(var10001);
+               var10.networkBuffer.writeByteInv(var10001);
                client.field_1463.method_4079(var10);
             }
          }
@@ -333,7 +333,7 @@ public class class_90 extends class_59 {
                   var10001 = 0;
                }
 
-               var10.networkBuffer.method_158(var10001);
+               var10.networkBuffer.writeByteAlt(var10001);
                var10.networkBuffer.writeShortAlt(var3);
                client.field_1463.method_4079(var10);
             }
@@ -425,7 +425,7 @@ public class class_90 extends class_59 {
                   var10001 = 0;
                }
 
-               var10.networkBuffer.method_158(var10001);
+               var10.networkBuffer.writeByteAlt(var10001);
                client.field_1463.method_4079(var10);
             }
          }
@@ -586,7 +586,7 @@ public class class_90 extends class_59 {
             client.field_1562 = 1551872625 * var1;
             var9 = class_112.newPacket(ClientOpcode.OPCODE_76, client.field_1463.isaac, (byte)8);
             var9.networkBuffer.writeShortReverse(var3);
-            var9.networkBuffer.method_148(class_145.field_1840[82]?1:0);
+            var9.networkBuffer.writeByteInv(class_145.field_1840[82]?1:0);
             var9.networkBuffer.writeShortAlt(-27903763 * class_154.field_1929 + var1);
             var9.networkBuffer.writeShortReverse(697161691 * class_243.field_2700 + var0);
             client.field_1463.method_4079(var9);
@@ -618,7 +618,7 @@ public class class_90 extends class_59 {
             client.field_1645 = 0;
             client.field_1520 = var0 * 819547401;
             client.field_1562 = var1 * 1551872625;
-            var9 = class_112.newPacket(ClientOpcode.OPCODE_69, client.field_1463.isaac, (byte)8);
+            var9 = class_112.newPacket(ClientOpcode.INTERACT_OBJECT, client.field_1463.isaac, (byte)8);
             if(class_145.field_1840[82]) {
                if(var8 == 594496727) {
                   throw new IllegalStateException();
@@ -629,7 +629,7 @@ public class class_90 extends class_59 {
                var10001 = 0;
             }
 
-            var9.networkBuffer.method_158(var10001);
+            var9.networkBuffer.writeByteAlt(var10001);
             var9.networkBuffer.writeShortAlt(var3);
             var9.networkBuffer.writeShortReverse(697161691 * class_243.field_2700 + var0);
             var9.networkBuffer.writeShort(var1 + class_154.field_1929 * -27903763);
@@ -806,7 +806,7 @@ public class class_90 extends class_59 {
             client.field_1562 = 1551872625 * var1;
             var9 = class_112.newPacket(ClientOpcode.OPCODE_78, client.field_1463.isaac, (byte)8);
             var9.networkBuffer.writeShortAlt(var0 + 697161691 * class_243.field_2700);
-            var9.networkBuffer.method_158(class_145.field_1840[82]?1:0);
+            var9.networkBuffer.writeByteAlt(class_145.field_1840[82]?1:0);
             var9.networkBuffer.writeShortReverse(var3);
             var9.networkBuffer.writeShortAlt(-27903763 * class_154.field_1929 + var1);
             client.field_1463.method_4079(var9);
@@ -826,7 +826,7 @@ public class class_90 extends class_59 {
             var9 = class_112.newPacket(ClientOpcode.OPCODE_105, client.field_1463.isaac, (byte)8);
             var9.networkBuffer.method_185(1854633345 * class_189.field_2276);
             var9.networkBuffer.writeShortAlt(var3);
-            var9.networkBuffer.method_158(class_145.field_1840[82]?1:0);
+            var9.networkBuffer.writeByteAlt(class_145.field_1840[82]?1:0);
             var9.networkBuffer.writeShortAlt(class_154.field_1929 * -27903763 + var1);
             var9.networkBuffer.writeIntReverse(class_100.field_1172 * 1565845213);
             var9.networkBuffer.writeShortAlt(var0 + 697161691 * class_243.field_2700);
@@ -874,7 +874,7 @@ public class class_90 extends class_59 {
                   var10001 = 0;
                }
 
-               var10.networkBuffer.method_148(var10001);
+               var10.networkBuffer.writeByteInv(var10001);
                var10.networkBuffer.writeShortReverse(var3);
                client.field_1463.method_4079(var10);
             }
@@ -1033,7 +1033,7 @@ public class class_90 extends class_59 {
                      var10001 = 0;
                   }
 
-                  var10.networkBuffer.method_148(var10001);
+                  var10.networkBuffer.writeByteInv(var10001);
                   client.field_1463.method_4079(var10);
                }
             }
@@ -1260,7 +1260,7 @@ public class class_90 extends class_59 {
                   var10001 = 0;
                }
 
-               var9.networkBuffer.method_158(var10001);
+               var9.networkBuffer.writeByteAlt(var10001);
                var9.networkBuffer.writeIntAlt(class_148.field_1875 * 1430642749);
                client.field_1463.method_4079(var9);
             }
@@ -1364,7 +1364,7 @@ public class class_90 extends class_59 {
                   var10001 = 0;
                }
 
-               var9.networkBuffer.method_158(var10001);
+               var9.networkBuffer.writeByteAlt(var10001);
                var9.networkBuffer.method_185(var1 + -27903763 * class_154.field_1929);
                client.field_1463.method_4079(var9);
             }
@@ -1422,7 +1422,7 @@ public class class_90 extends class_59 {
                      var10001 = 0;
                   }
 
-                  var10.networkBuffer.method_148(var10001);
+                  var10.networkBuffer.writeByteInv(var10001);
                   var10.networkBuffer.writeShortAlt(client.field_1564 * 1424616685);
                   client.field_1463.method_4079(var10);
                }
@@ -1442,7 +1442,7 @@ public class class_90 extends class_59 {
                var9 = class_112.newPacket(ClientOpcode.OPCODE_62, client.field_1463.isaac, (byte)8);
                var9.networkBuffer.method_185(var3);
                var9.networkBuffer.writeShort(var0 + class_243.field_2700 * 697161691);
-               var9.networkBuffer.method_148(class_145.field_1840[82]?1:0);
+               var9.networkBuffer.writeByteInv(class_145.field_1840[82]?1:0);
                var9.networkBuffer.writeShortAlt(var1 + class_154.field_1929 * -27903763);
                client.field_1463.method_4079(var9);
             }
@@ -1476,7 +1476,7 @@ public class class_90 extends class_59 {
                      var10001 = 0;
                   }
 
-                  var10.networkBuffer.method_158(var10001);
+                  var10.networkBuffer.writeByteAlt(var10001);
                   client.field_1463.method_4079(var10);
                }
             }
@@ -1546,7 +1546,7 @@ public class class_90 extends class_59 {
                      client.field_1645 = 0;
                      client.field_1520 = var0 * 819547401;
                      client.field_1562 = var1 * 1551872625;
-                     var10 = class_112.newPacket(ClientOpcode.OPCODE_47, client.field_1463.isaac, (byte)8);
+                     var10 = class_112.newPacket(ClientOpcode.INTERACT_NPC, client.field_1463.isaac, (byte)8);
                      var10.networkBuffer.method_185(var3);
                      var10.networkBuffer.method_145(class_145.field_1840[82]?1:0);
                      client.field_1463.method_4079(var10);

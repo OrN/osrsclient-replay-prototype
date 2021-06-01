@@ -115,7 +115,7 @@ public class class_160 {
       class_40 var2 = class_112.newPacket(ClientOpcode.OPCODE_49, client.field_1463.isaac, (byte)8);
       var2.networkBuffer.writeByte(class_166.method_3598(var0) + 1);
       var2.networkBuffer.writeString(var0);
-      var2.networkBuffer.method_148(var1);
+      var2.networkBuffer.writeByteInv(var1);
       client.field_1463.method_4079(var2);
    }
 

@@ -39,7 +39,7 @@ public class ClientOpcode implements class_12 {
    // $FF: renamed from: k hs
    public static final ClientOpcode OPCODE_17;
    // $FF: renamed from: m hs
-   public static final ClientOpcode OPCODE_18;
+   public static final ClientOpcode HEARTBEAT;
    // $FF: renamed from: cv hs
    public static final ClientOpcode OPCODE_80;
    // $FF: renamed from: z hs
@@ -93,7 +93,7 @@ public class ClientOpcode implements class_12 {
    // $FF: renamed from: aq hs
    public static final ClientOpcode OPCODE_44;
    // $FF: renamed from: dj int
-   final int field_3091;
+   final int opcode;
    // $FF: renamed from: cj hs
    public static final ClientOpcode OPCODE_92;
    // $FF: renamed from: be hs
@@ -141,9 +141,9 @@ public class ClientOpcode implements class_12 {
    // $FF: renamed from: cd hs
    public static final ClientOpcode OPCODE_78;
    // $FF: renamed from: bn hs
-   public static final ClientOpcode OPCODE_69;
+   public static final ClientOpcode INTERACT_OBJECT;
    // $FF: renamed from: af hs
-   public static final ClientOpcode OPCODE_46;
+   public static final ClientOpcode WALKTO;
    // $FF: renamed from: bw hs
    public static final ClientOpcode OPCODE_71;
    // $FF: renamed from: bi hs
@@ -199,7 +199,7 @@ public class ClientOpcode implements class_12 {
    // $FF: renamed from: ce hs
    public static final ClientOpcode OPCODE_97;
    // $FF: renamed from: ak hs
-   public static final ClientOpcode OPCODE_47;
+   public static final ClientOpcode INTERACT_NPC;
    // $FF: renamed from: d hs
    public static final ClientOpcode OPCODE_8;
    // $FF: renamed from: cx hs
@@ -217,7 +217,7 @@ public class ClientOpcode implements class_12 {
    // $FF: renamed from: ap hs
    public static final ClientOpcode OPCODE_27;
    // $FF: renamed from: dr int
-   final int field_3153;
+   final int subopcode;
 
 
    // $FF: renamed from: n (int) void
@@ -246,8 +246,8 @@ public class ClientOpcode implements class_12 {
    ClientOpcode(int var1, int var2) {
       super();
       try {
-         this.field_3091 = -230157397 * var1;
-         this.field_3153 = var2 * -275856261;
+         this.opcode = -230157397 * var1;
+         this.subopcode = var2 * -275856261;
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);
       }
@@ -343,7 +343,7 @@ public class ClientOpcode implements class_12 {
       var10000 = new ClientOpcode(17, -1);
       OPCODE_17 = var10000;
       var10000 = new ClientOpcode(18, 0);
-      OPCODE_18 = var10000;
+      HEARTBEAT = var10000;
       var10000 = new ClientOpcode(19, 6);
       OPCODE_19 = var10000;
       var10000 = new ClientOpcode(20, 8);
@@ -399,9 +399,9 @@ public class ClientOpcode implements class_12 {
       var10000 = new ClientOpcode(45, 0);
       OPCODE_45 = var10000;
       var10000 = new ClientOpcode(46, -1);
-      OPCODE_46 = var10000;
+      WALKTO = var10000;
       var10000 = new ClientOpcode(47, 3);
-      OPCODE_47 = var10000;
+      INTERACT_NPC = var10000;
       var10000 = new ClientOpcode(48, 3);
       OPCODE_48 = var10000;
       var10000 = new ClientOpcode(49, -1);
@@ -445,7 +445,7 @@ public class ClientOpcode implements class_12 {
       var10000 = new ClientOpcode(68, -1);
       OPCODE_68 = var10000;
       var10000 = new ClientOpcode(69, 7);
-      OPCODE_69 = var10000;
+      INTERACT_OBJECT = var10000;
       var10000 = new ClientOpcode(70, 1);
       OPCODE_70 = var10000;
       var10000 = new ClientOpcode(71, 15);

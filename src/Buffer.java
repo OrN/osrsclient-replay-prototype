@@ -761,7 +761,7 @@ public class Buffer extends class_27 {
    }
 
    // $FF: renamed from: cm (int, int) void
-   public void method_148(int var1) {
+   public void writeByteInv(int var1) {
       try {
          this.data[(this.offset += -1025691571) * -442398587 - 1] = (byte)(0 - var1);
       } catch (RuntimeException var3) {
@@ -955,7 +955,7 @@ public class Buffer extends class_27 {
    }
 
    // $FF: renamed from: cv (int, int) void
-   public void method_158(int var1) {
+   public void writeByteAlt(int var1) {
       try {
          this.data[(this.offset += -1025691571) * -442398587 - 1] = (byte)(128 - var1);
       } catch (RuntimeException var3) {
