@@ -57,11 +57,8 @@ public class Replay {
         Replay.mode = Mode.PLAYBACK;
 
         class_178.showUserLoginMenu(false, (byte)82);
-        if (class_177.email == null || class_177.email.length() <= 0)
-            class_177.email = "Replay";
-        class_177.password = "Replay";
 
-        class_299.method_5348(class_305.field_3635, class_305.strConnectingServer, class_305.field_3637);
+        class_299.method_5348(class_305.field_3635, class_305.strConnectingServer, "- Replay Playback -");
         class_89.method_1578(false, (byte)21);
         class_53.method_579(20, (byte)0);
     }
