@@ -7,7 +7,7 @@ public class class_60 extends class_59 {
    // $FF: renamed from: v jp
    public IDXFile field_473;
    // $FF: renamed from: n int
-   public int field_474;
+   public int hash;
    // $FF: renamed from: ti int
    static final int field_475 = 2;
 

@@ -184,7 +184,8 @@ public class NetworkInput implements Runnable {
             int var2;
             try {
                var2 = this.inputStream.read(this.data, this.offset * -1909735131, var1);
-               Replay.saveInput(this.data, this.offset * -1909735131, var2);
+               if (Settings.ENABLE_REPLAY_SUPPORT)
+                  Replay.saveInput(this.data, this.offset * -1909735131, var2);
                if(-1 == var2) {
                   throw new EOFException();
                }

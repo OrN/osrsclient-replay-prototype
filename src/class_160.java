@@ -932,7 +932,8 @@ public class class_160 {
 
    // $FF: renamed from: s (kt, kt, kt, byte) void
    static void drawLoginScreen(class_69 var0, class_69 var1, class_69 var2, byte var3) {
-      Replay.clientReady = true;
+      if (Settings.ENABLE_REPLAY_SUPPORT)
+         Replay.clientReady = true;
 
       try {
          class_177.field_2183 = 1213207379 * ((class_137.field_1766 * 646214551 - 765) / 2);

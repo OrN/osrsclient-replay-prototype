@@ -63,7 +63,7 @@ public class Replay {
         class_53.method_579(20, (byte)0);
     }
 
-    public static void start() {
+    public static void Start() {
         try {
             if (!active) {
                 switch (mode) {

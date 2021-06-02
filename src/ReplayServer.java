@@ -77,7 +77,7 @@ public class ReplayServer implements Runnable {
 
     public static String getHost(String host) {
         String ret = "127.0.0.1";
-        if (!Replay.isPlayback())
+        if (!Settings.ENABLE_REPLAY_SUPPORT || !Replay.isPlayback())
             ret = host;
         return ret;
     }

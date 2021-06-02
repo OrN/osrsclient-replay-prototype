@@ -61,7 +61,7 @@ public class class_202 implements class_14 {
             }
 
             if(var3 == class_185.field_2260.field_9) {
-               return -847787153 * class_154.field_1928.offset / (class_154.field_1928.data.length - class_185.field_2260.field_472) + 1;
+               return -847787153 * class_154.buffer.offset / (class_154.buffer.data.length - class_185.field_2260.field_472) + 1;
             }
 
             if(var2 >= 7) {

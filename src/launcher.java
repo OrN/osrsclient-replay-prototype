@@ -50,7 +50,8 @@ public class launcher extends JFrame implements AppletStub, AppletContext, Windo
         setLocationRelativeTo(null);
         setVisible(true);
 
-        new DropTarget(this, DnDConstants.ACTION_COPY_OR_MOVE, this);
+        if (Settings.ENABLE_REPLAY_SUPPORT)
+            new DropTarget(this, DnDConstants.ACTION_COPY_OR_MOVE, this);
 
         System.setProperty("user.home", ".");
 
@@ -70,6 +71,13 @@ public class launcher extends JFrame implements AppletStub, AppletContext, Windo
 
     @Override
     public URL getCodeBase() {
+        if (Settings.CUSTOM_HOST_IP.length() > 0) {
+            try {
+                return new URL("http://" + Settings.CUSTOM_HOST_IP + "/");
+            } catch (Exception e) {
+                return null;
+            }
+        }
         return config.getURL("codebase");
     }
 
@@ -145,8 +153,10 @@ public class launcher extends JFrame implements AppletStub, AppletContext, Windo
         setVisible(false);
         applet.stop();
         applet.destroy();
-        Replay.stop();
-        ReplayServer.Stop();
+        if (Settings.ENABLE_REPLAY_SUPPORT) {
+            Replay.stop();
+            ReplayServer.Stop();
+        }
         System.exit(0);
     }
 

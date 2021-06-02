@@ -511,7 +511,7 @@ public final class client extends GameApplet implements class_16 {
    // $FF: renamed from: iw int[]
    static int[] field_1661;
    // $FF: renamed from: ep int
-   static int field_1662;
+   static int reconnectAttempts;
    // $FF: renamed from: rc aa[]
    static class_24[] field_1663;
    // $FF: renamed from: mu int
@@ -1251,7 +1251,7 @@ public final class client extends GameApplet implements class_16 {
 
                                  int var9;
                                  int var10;
-                                 int var11;
+                                 int i;
                                  int var13;
                                  if(var8 > 0) {
                                     if(var1 != 1243838219) {
@@ -1289,10 +1289,10 @@ public final class client extends GameApplet implements class_16 {
 
                                        class_314.field_3776.offset = 0;
                                        var10 = class_314.field_3776.readUnsignedByte();
-                                       var11 = class_314.field_3776.readShort();
+                                       i = class_314.field_3776.readShort();
                                        int var12 = class_314.field_3776.readUnsignedByte();
                                        var13 = class_314.field_3776.readInt();
-                                       long var14 = (long)((var10 << 16) + var11);
+                                       long var14 = (long)((var10 << 16) + i);
                                        class_60 var16 = (class_60)class_314.field_3779.method_6523(var14);
                                        class_123.field_1350 = true;
                                        if(null == var16) {
@@ -1322,9 +1322,9 @@ public final class client extends GameApplet implements class_16 {
                                        byte var17 = var26;
                                        class_185.field_2260 = var16;
                                        var10000 = new Buffer(class_185.field_2260.field_472 + var17 + var13);
-                                       class_154.field_1928 = var10000;
-                                       class_154.field_1928.writeByte(var12);
-                                       class_154.field_1928.writeIntReverse(var13);
+                                       class_154.buffer = var10000;
+                                       class_154.buffer.writeByte(var12);
+                                       class_154.buffer.writeIntReverse(var13);
                                        class_314.field_3777 = 438516600;
                                        class_314.field_3776.offset = 0;
                                     } else if(0 == class_314.field_3777 * -288041073) {
@@ -1344,14 +1344,14 @@ public final class client extends GameApplet implements class_16 {
                                        }
                                     }
                                  } else {
-                                    var9 = class_154.field_1928.data.length - class_185.field_2260.field_472;
+                                    var9 = class_154.buffer.data.length - class_185.field_2260.field_472;
                                     var10 = 512 - class_314.field_3777 * -288041073;
-                                    if(var10 > var9 - -442398587 * class_154.field_1928.offset) {
+                                    if(var10 > var9 - -442398587 * class_154.buffer.offset) {
                                        if(var1 != 1243838219) {
                                           throw new IllegalStateException();
                                        }
 
-                                       var10 = var9 - -442398587 * class_154.field_1928.offset;
+                                       var10 = var9 - -442398587 * class_154.buffer.offset;
                                     }
 
                                     if(var10 > var23) {
@@ -1362,53 +1362,53 @@ public final class client extends GameApplet implements class_16 {
                                        var10 = var23;
                                     }
 
-                                    class_314.field_3771.read(class_154.field_1928.data, -442398587 * class_154.field_1928.offset, var10, -1823275345);
+                                    class_314.field_3771.read(class_154.buffer.data, -442398587 * class_154.buffer.offset, var10, -1823275345);
                                     if(class_314.field_3772 != 0) {
                                        if(var1 != 1243838219) {
                                           throw new IllegalStateException();
                                        }
 
-                                       for(var11 = 0; var11 < var10; ++var11) {
+                                       for(i = 0; i < var10; ++i) {
                                           if(var1 != 1243838219) {
                                              throw new IllegalStateException();
                                           }
 
-                                          class_154.field_1928.data[var11 + class_154.field_1928.offset * -442398587] ^= class_314.field_3772;
+                                          class_154.buffer.data[i + class_154.buffer.offset * -442398587] ^= class_314.field_3772;
                                        }
                                     }
 
-                                    class_154.field_1928.offset += -1025691571 * var10;
+                                    class_154.buffer.offset += -1025691571 * var10;
                                     class_314.field_3777 += 591685487 * var10;
-                                    if(var9 == -442398587 * class_154.field_1928.offset) {
+                                    if(var9 == -442398587 * class_154.buffer.offset) {
                                        if(var1 != 1243838219) {
                                           return;
                                        }
 
                                        if(class_185.field_2260.field_9 == 16711935L) {
-                                          class_202.buffer = class_154.field_1928;
+                                          class_202.buffer = class_154.buffer;
 
-                                          for(var11 = 0; var11 < 256; ++var11) {
+                                          for(i = 0; i < 256; ++i) {
                                              if(var1 != 1243838219) {
                                                 throw new IllegalStateException();
                                              }
 
-                                             IDXFile var24 = class_314.idxFiles[var11];
-                                             if(var24 != null) {
+                                             IDXFile idx = class_314.idxFiles[i];
+                                             if(idx != null) {
                                                 if(var1 != 1243838219) {
                                                    return;
                                                 }
 
-                                                class_202.buffer.offset = 384402024 * var11 + -833490559;
+                                                class_202.buffer.offset = 384402024 * i + -833490559;
                                                 var13 = class_202.buffer.readInt();
                                                 int var25 = class_202.buffer.readInt();
-                                                var24.method_5489(var13, var25, -887756709);
+                                                idx.method_5489(var13, var25, -887756709);
                                              }
                                           }
                                        } else {
                                           class_314.crc32.reset();
-                                          class_314.crc32.update(class_154.field_1928.data, 0, var9);
-                                          var11 = (int)class_314.crc32.getValue();
-                                          if(class_185.field_2260.field_474 * 1816786653 != var11) {
+                                          class_314.crc32.update(class_154.buffer.data, 0, var9);
+                                          i = (int)class_314.crc32.getValue();
+                                          if(class_185.field_2260.hash * 1816786653 != i) {
                                              if(var1 != 1243838219) {
                                                 throw new IllegalStateException();
                                              }
@@ -1428,7 +1428,7 @@ public final class client extends GameApplet implements class_16 {
 
                                           class_314.field_3778 = 0;
                                           class_314.field_3782 = 0;
-                                          class_185.field_2260.field_473.method_5490((int)(class_185.field_2260.field_9 & 65535L), class_154.field_1928.data, (class_185.field_2260.field_9 & 16711680L) == 16711680L, class_123.field_1350, 525734565);
+                                          class_185.field_2260.field_473.method_5490((int)(class_185.field_2260.field_9 & 65535L), class_154.buffer.data, (class_185.field_2260.field_9 & 16711680L) == 16711680L, class_123.field_1350, 525734565);
                                        }
 
                                        class_185.field_2260.method_108();
@@ -1440,7 +1440,7 @@ public final class client extends GameApplet implements class_16 {
 
                                        class_314.field_3777 = 0;
                                        class_185.field_2260 = null;
-                                       class_154.field_1928 = null;
+                                       class_154.buffer = null;
                                     } else {
                                        if(-288041073 * class_314.field_3777 != 512) {
                                           break label330;
@@ -1478,7 +1478,8 @@ public final class client extends GameApplet implements class_16 {
                   throw new IllegalStateException();
                }
 
-               this.method_2768(1090327888);
+               if (!Settings.DISABLE_CLIENT_UPDATER)
+                   this.method_2768(1090327888);
             }
 
          }
@@ -1523,8 +1524,8 @@ public final class client extends GameApplet implements class_16 {
             class_362.field_4020 = 1024747149 * class_232.field_2597;
          }
 
-         field_1662 += 1925127995;
-         if(field_1662 * -515874317 >= 2) {
+         reconnectAttempts += 1925127995;
+         if(reconnectAttempts * -515874317 >= 2) {
             label89: {
                if(var2 <= 1991901704) {
                   return;
@@ -1545,7 +1546,7 @@ public final class client extends GameApplet implements class_16 {
                      throw new IllegalStateException();
                   }
 
-                  this.method_2324("js5connect_full", (byte)-1);
+                  this.showGameError("js5connect_full", (byte)-1);
                   field_1421 = -1235816232;
                } else {
                   field_1446 = 1017678712;
@@ -1555,19 +1556,19 @@ public final class client extends GameApplet implements class_16 {
             }
          }
 
-         if(field_1662 * -515874317 >= 2) {
+         if(reconnectAttempts * -515874317 >= 2) {
             if(var2 <= 1991901704) {
                throw new IllegalStateException();
             }
 
             if(var1 == 6) {
-               this.method_2324("js5connect_outofdate", (byte)-1);
+               this.showGameError("js5connect_outofdate", (byte)-1);
                field_1421 = -1235816232;
                return;
             }
          }
 
-         if(field_1662 * -515874317 >= 4) {
+         if(reconnectAttempts * -515874317 >= 4) {
             if(var2 <= 1991901704) {
                throw new IllegalStateException();
             }
@@ -1577,7 +1578,7 @@ public final class client extends GameApplet implements class_16 {
                   throw new IllegalStateException();
                }
 
-               this.method_2324("js5connect", (byte)-1);
+               this.showGameError("js5connect", (byte)-1);
                field_1421 = -1235816232;
             } else {
                field_1446 = 1017678712;
@@ -6111,213 +6112,6 @@ public final class client extends GameApplet implements class_16 {
 
    }
 
-   // $FF: renamed from: dv () void
-   public final void method_2410() {
-      if(this.method_2307(-1762901599)) {
-         int var4;
-         for(int var1 = 0; var1 <= 20; ++var1) {
-            String var2 = this.getParameter(Integer.toString(var1));
-            if(null != var2) {
-               switch(var1) {
-               case 1:
-                  field_1467 = Integer.parseInt(var2) != 0;
-               case 2:
-               case 11:
-               case 13:
-               case 16:
-               default:
-                  break;
-               case 3:
-                  if(var2.equalsIgnoreCase(class_205.field_2392)) {
-                     field_1416 = true;
-                  } else {
-                     field_1416 = false;
-                  }
-                  break;
-               case 4:
-                  if(-1731105959 * field_1418 == -1) {
-                     field_1418 = Integer.parseInt(var2) * 1849830633;
-                  }
-                  break;
-               case 5:
-                  field_1414 = Integer.parseInt(var2) * -1551415379;
-                  break;
-               case 6:
-                  class_387.field_4226 = class_324.method_5772(Integer.parseInt(var2), (byte)-119);
-                  break;
-               case 7:
-                  var4 = Integer.parseInt(var2);
-                  class_301[] var5 = new class_301[]{class_301.field_3376, class_301.field_3379, class_301.field_3378, class_301.field_3377};
-                  class_301[] var6 = var5;
-                  int var7 = 0;
-
-                  class_301 var15;
-                  while(true) {
-                     if(var7 >= var6.length) {
-                        var15 = null;
-                        break;
-                     }
-
-                     class_301 var8 = var6[var7];
-                     if(629900867 * var8.field_3381 == var4) {
-                        var15 = var8;
-                        break;
-                     }
-
-                     ++var7;
-                  }
-
-                  class_246.field_2726 = var15;
-                  break;
-               case 8:
-                  if(var2.equalsIgnoreCase(class_205.field_2392)) {
-                     ;
-                  }
-                  break;
-               case 9:
-                  class_371.field_4107 = var2;
-                  break;
-               case 10:
-                  class_295[] var3 = new class_295[]{class_295.field_3343, class_295.field_3348, class_295.field_3346, class_295.field_3342, class_295.field_3344, class_295.field_3345};
-                  class_154.field_1933 = (class_295)class_197.method_4016(var3, Integer.parseInt(var2), -611336247);
-                  if(class_295.field_3342 == class_154.field_1933) {
-                     class_239.field_2659 = class_375.field_4140;
-                  } else {
-                     class_239.field_2659 = class_375.field_4141;
-                  }
-                  break;
-               case 12:
-                  field_1413 = Integer.parseInt(var2) * -1210138199;
-                  break;
-               case 14:
-                  class_90.field_909 = Integer.parseInt(var2) * -1771312211;
-                  break;
-               case 15:
-                  field_1626 = Integer.parseInt(var2) * 1218254459;
-                  break;
-               case 17:
-                  class_116.field_1291 = var2;
-               }
-            }
-         }
-
-         class_251.field_2813 = false;
-         field_1417 = false;
-         class_179.host = this.getCodeBase().getHost();
-         String var13 = class_246.field_2726.field_3380;
-         byte var14 = 0;
-
-         try {
-            class_157.field_1958 = -1549115313;
-            class_184.field_2257 = var14 * 1724244681;
-
-            try {
-               class_138.propertyOSName = System.getProperty("os.name");
-            } catch (Exception var11) {
-               class_138.propertyOSName = "Unknown";
-            }
-
-            class_189.osName = class_138.propertyOSName.toLowerCase();
-
-            try {
-               class_115.homeDirectory = System.getProperty("user.home");
-               if(null != class_115.homeDirectory) {
-                  class_115.homeDirectory = class_115.homeDirectory + "/";
-               }
-            } catch (Exception var10) {
-               ;
-            }
-
-            try {
-               if(class_189.osName.startsWith("win")) {
-                  if(class_115.homeDirectory == null) {
-                     class_115.homeDirectory = System.getenv("USERPROFILE");
-                  }
-               } else if(class_115.homeDirectory == null) {
-                  class_115.homeDirectory = System.getenv("HOME");
-               }
-
-               if(null != class_115.homeDirectory) {
-                  class_115.homeDirectory = class_115.homeDirectory + "/";
-               }
-            } catch (Exception var9) {
-               ;
-            }
-
-            if(null == class_115.homeDirectory) {
-               class_115.homeDirectory = "~/";
-            }
-
-            class_48.cacheDirectories = new String[]{"c:/rscache/", "/rscache/", "c:/windows/", "c:/winnt/", "c:/", class_115.homeDirectory, "/tmp/", ""};
-            class_292.field_3333 = new String[]{".jagex_cache_" + -1166420103 * class_184.field_2257, ".file_store_" + class_184.field_2257 * -1166420103};
-            int var16 = 0;
-
-            label133:
-            while(var16 < 4) {
-               class_53.fOldschoolCacheDir = class_26.method_98("oldschool", var13, var16, 1145652403);
-               if(!class_53.fOldschoolCacheDir.exists()) {
-                  class_53.fOldschoolCacheDir.mkdirs();
-               }
-
-               File[] var17 = class_53.fOldschoolCacheDir.listFiles();
-               if(null == var17) {
-                  break;
-               }
-
-               File[] var19 = var17;
-               int var20 = 0;
-
-               while(true) {
-                  if(var20 >= var19.length) {
-                     break label133;
-                  }
-
-                  File var21 = var19[var20];
-                  if(!class_246.method_4711(var21, false, 1241082902)) {
-                     ++var16;
-                     break;
-                  }
-
-                  ++var20;
-               }
-            }
-
-            File var18 = class_53.fOldschoolCacheDir;
-            class_210.fOldschoolCacheDir = var18;
-            if(!class_210.fOldschoolCacheDir.exists()) {
-               throw new RuntimeException("");
-            }
-
-            class_210.field_2425 = true;
-            class_157.method_3299(1463817569);
-            RAFileHandle var10002 = new RAFileHandle(class_158.method_3302("main_file_cache.dat2", 517796767), "rw", 1048576000L);
-             class_376 var10000 = new class_376(var10002, 5200, 0);
-            class_199.field_2346 = var10000;
-            var10002 = new RAFileHandle(class_158.method_3302("main_file_cache.idx255", 1200217514), "rw", 1048576L);
-            var10000 = new class_376(var10002, 6000, 0);
-            class_199.field_2341 = var10000;
-            class_164.field_2041 = new class_376[264174683 * class_157.field_1958];
-
-            for(var4 = 0; var4 < 264174683 * class_157.field_1958; ++var4) {
-               class_376[] var22 = class_164.field_2041;
-               RAFileHandle var10004 = new RAFileHandle(class_158.method_3302("main_file_cache.idx" + var4, -482858561), "rw", 1048576L);
-               class_376 var23 = new class_376(var10004, 6000, 0);
-               var22[var4] = var23;
-            }
-         } catch (Exception var12) {
-            class_308.method_5523((String)null, var12, 2003967957);
-         }
-
-         class_121.field_1337 = this;
-         class_405.field_4292 = field_1418 * 408492869;
-         if(-1 == field_1419 * 1523027191) {
-            field_1419 = 0;
-         }
-
-         this.method_2305(765, 503, 196, 355625643);
-      }
-   }
-
    // $FF: renamed from: dx () void
    protected final void method_2414() {
       field_1425 += 72262289;
@@ -8298,154 +8092,6 @@ public final class client extends GameApplet implements class_16 {
          class_208.method_4144(field_1605[field_1544 * -1666645162], false, 1923537216);
       }
 
-   }
-
-   // $FF: renamed from: ms () void
-   void method_2565() {
-      if(class_314.field_3778 * -1094208681 >= 4) {
-         this.method_2324("js5crc", (byte)-1);
-         field_1421 = -1235816232;
-      } else {
-         if(-1907411451 * class_314.field_3782 >= 4) {
-            if(-779832224 * field_1421 <= 5) {
-               this.method_2324("js5io", (byte)-1);
-               field_1421 = -1235816232;
-               return;
-            }
-
-            field_1446 = 1017678712;
-            class_314.field_3782 = 1341836721;
-         }
-
-         if((field_1446 -= -675402295) * 1137065962 + 1 <= 0) {
-            try {
-               if(field_1569 * 1383681377 == 0) {
-                  class_215.hostData = connection.method_4057(class_179.host, class_362.field_4020 * 1745891823);
-                  field_1569 += 205917683;
-               }
-
-               if(field_1569 * 534657201 == 1) {
-                  if(class_215.hostData.field_2446 == 2) {
-                     this.method_2451(-1, 2143570126);
-                     return;
-                  }
-
-                  if(class_215.hostData.field_2446 == 1) {
-                     field_1569 += -1833627567;
-                  }
-               }
-
-               Buffer var15;
-               if(534657201 * field_1569 == 2) {
-                  if(field_1467) {
-                     Socket var2 = (Socket)class_215.hostData.socket;
-                     class_207 var10000 = new class_207(var2, 1322888785, 5000);
-                     class_207 var1 = var10000;
-                     class_234.clientSocket = var1;
-                  } else {
-                     class_208 var14 = new class_208((Socket)class_215.hostData.socket, connection, 5000);
-                     class_234.clientSocket = var14;
-                  }
-
-                  var15 = new Buffer(5);
-                  Buffer var9 = var15;
-                  var9.writeByte(15);
-                  var9.writeIntReverse(196);
-                  class_234.clientSocket.method_4132(var9.data, 0, 5);
-                  field_1569 += 1927003544;
-                  class_35.field_63 = class_87.method_1516((byte)1) * -666039520055302667L;
-               }
-
-               if(-2059041593 * field_1569 == 3) {
-                  if(class_234.clientSocket.method_4117(1659206769) <= 0 && (field_1467 || field_1421 * -1903624664 > 5)) {
-                     if(class_87.method_1516((byte)1) - -6353355391446000035L * class_35.field_63 > 30000L) {
-                        this.method_2451(-1186867608, 2096764601);
-                        return;
-                     }
-                  } else {
-                     int var10 = class_234.clientSocket.method_4120(-3289075);
-                     if(0 != var10) {
-                        this.method_2451(var10, 2050051280);
-                        return;
-                     }
-
-                     field_1569 += -285497198;
-                  }
-               }
-
-               if(4 == 534657201 * field_1569) {
-                  class_206 var11 = class_234.clientSocket;
-                  boolean var12 = -888167097 * field_1421 > 20;
-                  if(class_314.field_3771 != null) {
-                     try {
-                        class_314.field_3771.close(1906218510);
-                     } catch (Exception var7) {
-                        ;
-                     }
-
-                     class_314.field_3771 = null;
-                  }
-
-                  class_314.field_3771 = var11;
-                  class_295.method_5317(var12, (byte)94);
-                  class_314.field_3776.offset = 0;
-                  class_185.field_2260 = null;
-                  class_154.field_1928 = null;
-                  class_314.field_3777 = 0;
-
-                  while(true) {
-                     class_60 var3 = (class_60)class_314.field_3779.method_6531();
-                     if(var3 == null) {
-                        while(true) {
-                           var3 = (class_60)class_314.field_3769.method_6531();
-                           if(null == var3) {
-                              if(class_314.field_3772 != 0) {
-                                 try {
-                                    var15 = new Buffer(4);
-                                    Buffer var13 = var15;
-                                    var13.writeByte(4);
-                                    var13.writeByte(class_314.field_3772);
-                                    var13.writeShortReverse(0);
-                                    class_314.field_3771.method_4132(var13.data, 0, 4);
-                                 } catch (IOException var6) {
-                                    try {
-                                       class_314.field_3771.close(2070936116);
-                                    } catch (Exception var5) {
-                                       ;
-                                    }
-
-                                    class_314.field_3782 += 447278907;
-                                    class_314.field_3771 = null;
-                                 }
-                              }
-
-                              class_314.field_3766 = 0;
-                              class_119.field_1323 = class_87.method_1516((byte)1) * -5009534103969646581L;
-                              class_215.hostData = null;
-                              class_234.clientSocket = null;
-                              field_1569 = 0;
-                              field_1662 = 0;
-                              return;
-                           }
-
-                           class_314.field_3774.method_5610(var3);
-                           class_314.field_3781.method_6525(var3, var3.field_9);
-                           class_314.field_3773 += 422170945;
-                           class_314.field_3775 -= 459295267;
-                        }
-                     }
-
-                     class_314.field_3767.method_6525(var3, var3.field_9);
-                     class_314.field_3768 += -2124932997;
-                     class_314.field_3780 -= 923119039;
-                  }
-               }
-            } catch (IOException var8) {
-               this.method_2451(-3, 2019837392);
-            }
-
-         }
-      }
    }
 
    // $FF: renamed from: sm () void
@@ -20272,7 +19918,7 @@ public final class client extends GameApplet implements class_16 {
       field_1444 = 0;
       field_1569 = 0;
       field_1446 = 0;
-      field_1662 = 0;
+      reconnectAttempts = 0;
       loginStage = 0;
       field_1449 = 0;
       field_1621 = 0;
@@ -23919,72 +23565,6 @@ public final class client extends GameApplet implements class_16 {
 
    }
 
-   // $FF: renamed from: xw (int) void
-   static final void method_2764(int var0) {
-      var0 = Math.min(Math.max(var0, 0), 255);
-      if(var0 != class_87.preferences.field_2122 * 1285356667) {
-         if(0 == 1285356667 * class_87.preferences.field_2122 && -1 != 2076100495 * field_1656) {
-            class_162.method_3399(class_194.idx6, 2076100495 * field_1656, 0, var0, false);
-            field_1657 = false;
-         } else if(0 == var0) {
-            class_198.field_2339.method_1962();
-            class_270.field_3180 = 1262412465;
-            class_271.field_3186 = null;
-            field_1657 = false;
-         } else if(-1481365935 * class_270.field_3180 != 0) {
-            class_270.field_3181 = 2118204629 * var0;
-         } else {
-            class_198.field_2339.method_1985(var0);
-         }
-
-         class_87.preferences.field_2122 = var0 * -813727053;
-         class_94.savePreferences(-113070397);
-      }
-
-   }
-
-   // $FF: renamed from: xb (int) void
-   static final void method_2765(int var0) {
-      var0 = Math.min(Math.max(var0, 0), 127);
-      class_87.preferences.field_2121 = var0 * 2063214359;
-      class_94.savePreferences(-1956611668);
-   }
-
-   // $FF: renamed from: xq (int) void
-   static final void method_2766(int var0) {
-      var0 = Math.min(Math.max(var0, 0), 127);
-      class_87.preferences.field_2121 = var0 * 156672433;
-      class_94.savePreferences(-372890444);
-   }
-
-   // $FF: renamed from: xy () void
-   static void method_2767() {
-      for(class_48 var0 = (class_48)field_1578.method_6531(); null != var0; var0 = (class_48)field_1578.method_6527()) {
-         int var1 = 897280301 * var0.field_353;
-         if(class_191.method_3957(var1, (byte)-71)) {
-            boolean var2 = true;
-            class_37[] var3 = class_37.field_93[var1];
-
-            int var4;
-            for(var4 = 0; var4 < var3.length; ++var4) {
-               if(null != var3[var4]) {
-                  var2 = var3[var4].field_100;
-                  break;
-               }
-            }
-
-            if(!var2) {
-               var4 = (int)var0.field_9;
-               class_37 var5 = class_71.method_1047(var4);
-               if(null != var5) {
-                  class_254.method_4900(var5, (byte)82);
-               }
-            }
-         }
-      }
-
-   }
-
    // $FF: renamed from: ev (int) void
    void method_2768(int var1) {
       try {
@@ -23992,7 +23572,7 @@ public final class client extends GameApplet implements class_16 {
             if(var1 <= -2025370252) {
                throw new IllegalStateException();
             } else {
-               this.method_2324("js5crc", (byte)-1);
+               this.showGameError("js5crc", (byte)-1);
                field_1421 = -1235816232;
             }
          } else {
@@ -24006,7 +23586,7 @@ public final class client extends GameApplet implements class_16 {
                      throw new IllegalStateException();
                   }
 
-                  this.method_2324("js5io", (byte)-1);
+                  this.showGameError("js5io", (byte)-1);
                   field_1421 = -1235816232;
                   return;
                }
@@ -24018,8 +23598,8 @@ public final class client extends GameApplet implements class_16 {
             if((field_1446 -= -675402295) * -587760519 + 1 <= 0) {
                try {
                   if(field_1569 * 534657201 == 0) {
-                     class_215.hostData = connection.method_4057(class_179.host, class_362.field_4020 * 1745891823);
-                     field_1569 += -1833627567;
+                      class_215.hostData = connection.method_4057(class_179.host, class_362.field_4020 * 1745891823);
+                      field_1569 += -1833627567;
                   }
 
                   if(field_1569 * 534657201 == 1) {
@@ -24031,7 +23611,7 @@ public final class client extends GameApplet implements class_16 {
                         if(var1 <= -2025370252) {
                            return;
                         }
-
+                        
                         this.method_2451(-1, 2013355984);
                         return;
                      }
@@ -24153,7 +23733,7 @@ public final class client extends GameApplet implements class_16 {
                      class_295.method_5317(var14, (byte)31);
                      class_314.field_3776.offset = 0;
                      class_185.field_2260 = null;
-                     class_154.field_1928 = null;
+                     class_154.buffer = null;
                      class_314.field_3777 = 0;
 
                      while(true) {
@@ -24199,7 +23779,7 @@ public final class client extends GameApplet implements class_16 {
                                  class_215.hostData = null;
                                  class_234.clientSocket = null;
                                  field_1569 = 0;
-                                 field_1662 = 0;
+                                 reconnectAttempts = 0;
                                  return;
                               }
 
@@ -24216,6 +23796,7 @@ public final class client extends GameApplet implements class_16 {
                      }
                   }
                } catch (IOException var9) {
+                   var9.printStackTrace();
                   this.method_2451(-3, 1995142761);
                }
 
@@ -24888,7 +24469,8 @@ public final class client extends GameApplet implements class_16 {
          Object var2 = field_1463.method_4083();
          NetworkBuffer var3 = field_1463.networkBuffer;
 
-         Replay.start();
+         if (Settings.ENABLE_REPLAY_SUPPORT)
+            Replay.Start();
 
          try {
             if(-1024706269 * loginStage == 0) {
@@ -25103,7 +24685,8 @@ public final class client extends GameApplet implements class_16 {
                field_1463.method_4077();
                NetworkBuffer encryptedBlock = new NetworkBuffer(500);
                int[] xteaKeysNew = new int[]{Preferences.secureRandom.nextInt(), Preferences.secureRandom.nextInt(), Preferences.secureRandom.nextInt(), Preferences.secureRandom.nextInt()};
-               xteaKeysNew = Replay.loadKeys(xteaKeysNew);
+               if (Settings.ENABLE_REPLAY_SUPPORT)
+                   xteaKeysNew = Replay.loadKeys(xteaKeysNew);
                encryptedBlock.offset = 0;
                encryptedBlock.writeByte(1);
                encryptedBlock.writeIntReverse(xteaKeysNew[0]);
@@ -26103,7 +25686,7 @@ public final class client extends GameApplet implements class_16 {
          }
 
          if(0 == -888167097 * field_1421) {
-            this.method_2322(class_177.field_2190 * -564105319, class_177.loadProgressText, var1, 91092739);
+            this.drawBootstrapScreen(class_177.field_2190 * -564105319, class_177.loadProgressText, var1, 91092739);
          } else if(5 == -888167097 * field_1421) {
             if(var2 <= 8220) {
                throw new IllegalStateException();

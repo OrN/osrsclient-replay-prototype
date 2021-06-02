@@ -20,7 +20,7 @@ public class IDXFile extends class_306 {
    // $FF: renamed from: b boolean[]
    volatile boolean[] field_3729;
    // $FF: renamed from: d java.util.zip.CRC32
-   static CRC32 field_3730;
+   static CRC32 crc32;
    // $FF: renamed from: n int
    public static final int field_3731 = 200;
    // $FF: renamed from: u int
@@ -44,9 +44,9 @@ public class IDXFile extends class_306 {
             return;
          }
 
-         field_3730.reset();
-         field_3730.update(var3, 0, var3.length);
-         var5 = (int)field_3730.getValue();
+         crc32.reset();
+         crc32.update(var3, 0, var3.length);
+         var5 = (int) crc32.getValue();
          if(this.field_3733 * -1472783963 != var5) {
             class_278.method_5146(this, 255, this.field_3726 * 1695957245, this.field_3733 * -1472783963, (byte)0, true, (byte)-78);
             return;
@@ -85,9 +85,9 @@ public class IDXFile extends class_306 {
             return;
          }
 
-         field_3730.reset();
-         field_3730.update(var3, 0, var3.length - 2);
-         var5 = (int)field_3730.getValue();
+         crc32.reset();
+         crc32.update(var3, 0, var3.length - 2);
+         var5 = (int) crc32.getValue();
          int var9 = (var3[var3.length - 1] & 255) + ((var3[var3.length - 2] & 255) << 8);
          if(var5 != this.field_3708[var2] || var9 != this.field_3707[var2]) {
             this.field_3729[var2] = false;
@@ -565,7 +565,7 @@ public class IDXFile extends class_306 {
 
    // $FF: renamed from: <clinit> () void
    static {
-      field_3730 = new CRC32();
+      crc32 = new CRC32();
    }
 
    // $FF: renamed from: o () boolean
@@ -826,9 +826,9 @@ public class IDXFile extends class_306 {
                   class_278.method_5146(this, 255, 1695957245 * this.field_3726, -1472783963 * this.field_3733, (byte)0, true, (byte)-95);
                }
             } else {
-               field_3730.reset();
-               field_3730.update(var3, 0, var3.length);
-               var6 = (int)field_3730.getValue();
+               crc32.reset();
+               crc32.update(var3, 0, var3.length);
+               var6 = (int) crc32.getValue();
                if(this.field_3733 * -1472783963 != var6) {
                   class_278.method_5146(this, 255, this.field_3726 * 1695957245, this.field_3733 * -1472783963, (byte)0, true, (byte)-82);
                } else {
@@ -887,9 +887,9 @@ public class IDXFile extends class_306 {
                }
 
                if(var3.length > 2) {
-                  field_3730.reset();
-                  field_3730.update(var3, 0, var3.length - 2);
-                  var6 = (int)field_3730.getValue();
+                  crc32.reset();
+                  crc32.update(var3, 0, var3.length - 2);
+                  var6 = (int) crc32.getValue();
                   int var11 = (var3[var3.length - 1] & 255) + ((var3[var3.length - 2] & 255) << 8);
                   if(var6 == this.field_3708[var2]) {
                      if(var5 == 14) {
@@ -1140,9 +1140,9 @@ public class IDXFile extends class_306 {
             return;
          }
 
-         field_3730.reset();
-         field_3730.update(var3, 0, var3.length);
-         var5 = (int)field_3730.getValue();
+         crc32.reset();
+         crc32.update(var3, 0, var3.length);
+         var5 = (int) crc32.getValue();
          if(this.field_3733 * -1472783963 != var5) {
             class_278.method_5146(this, 255, this.field_3726 * 1695957245, this.field_3733 * -1472783963, (byte)0, true, (byte)-63);
             return;
@@ -1181,9 +1181,9 @@ public class IDXFile extends class_306 {
             return;
          }
 
-         field_3730.reset();
-         field_3730.update(var3, 0, var3.length - 2);
-         var5 = (int)field_3730.getValue();
+         crc32.reset();
+         crc32.update(var3, 0, var3.length - 2);
+         var5 = (int) crc32.getValue();
          int var9 = (var3[var3.length - 1] & 255) + ((var3[var3.length - 2] & 255) << 8);
          if(var5 != this.field_3708[var2] || var9 != this.field_3707[var2]) {
             this.field_3729[var2] = false;

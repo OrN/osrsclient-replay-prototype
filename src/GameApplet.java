@@ -79,7 +79,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: f int
    static int field_1398;
    // $FF: renamed from: ax java.awt.Image
-   static Image field_1399;
+   static Image progressBar;
    // $FF: renamed from: as int
    static int field_1400;
    // $FF: renamed from: aj boolean
@@ -203,11 +203,11 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
          Color var5 = new Color(140, 17, 17);
 
          try {
-            if(field_1399 == null) {
-               field_1399 = this.field_1397.createImage(1147168512, 100147886);
+            if(progressBar == null) {
+               progressBar = this.field_1397.createImage(1147168512, 100147886);
             }
 
-            Graphics var6 = field_1399.getGraphics();
+            Graphics var6 = progressBar.getGraphics();
             var6.setColor(var5);
             var6.drawRect(0, 0, 303, 33);
             var6.fillRect(2, 2, var1 * 3, 30);
@@ -217,7 +217,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             var6.setFont(class_83.field_780);
             var6.setColor(Color.white);
             var6.drawString(var2, (1214741657 - class_349.field_3938.stringWidth(var2)) / 2, 22);
-            var4.drawImage(field_1399, 646214551 * class_137.field_1766 / 2 - -1745828144, class_58.field_460 * 1391694112 / 2 - 18, (ImageObserver)null);
+            var4.drawImage(progressBar, 646214551 * class_137.field_1766 / 2 - -1745828144, class_58.field_460 * 1391694112 / 2 - 18, (ImageObserver)null);
          } catch (Exception var9) {
             int var7 = class_137.field_1766 * 1767230358 / 2 - 152;
             int var8 = class_58.field_460 * 406694549 / 2 - 18;
@@ -383,7 +383,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                      throw new IllegalStateException();
                   }
 
-                  this.method_2324("alreadyloaded", (byte)-1);
+                  this.showGameError("alreadyloaded", (byte)-1);
                   return;
                }
 
@@ -408,7 +408,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             connection.method_4058(this, 1);
          } catch (Exception var6) {
             class_308.method_5523((String)null, var6, 1876892877);
-            this.method_2324("crash", (byte)-1);
+            this.showGameError("crash", (byte)-1);
          }
 
       } catch (RuntimeException var7) {
@@ -502,7 +502,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    protected final boolean method_2307(int var1) {
       try {
          String hostname = this.getDocumentBase().getHost().toLowerCase();
-         if(!hostname.equals("jagex.com")) {
+         if(Settings.CUSTOM_HOST_IP.length() <= 0 && !hostname.equals("jagex.com")) {
             if(var1 >= -774112648) {
                throw new IllegalStateException();
             }
@@ -550,7 +550,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                         return true;
                      }
 
-                     this.method_2324("invalidhost", (byte)-1);
+                     this.showGameError("invalidhost", (byte)-1);
                      return false;
                   }
 
@@ -881,7 +881,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                if(var1.indexOf("sun") != -1 || var1.indexOf("apple") != -1) {
                   String var2 = Connection.javaVersion;
                   if(var2.equals("1.1") || var2.startsWith("1.1.") || var2.equals("1.2") || var2.startsWith("1.2.") || var2.equals("1.3") || var2.startsWith("1.3.") || var2.equals("1.4") || var2.startsWith("1.4.") || var2.equals("1.5") || var2.startsWith("1.5.") || var2.equals("1.6.0")) {
-                     this.method_2324("wrongjava", (byte)-1);
+                     this.showGameError("wrongjava", (byte)-1);
                      return;
                   }
 
@@ -893,7 +893,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
                      String var4 = var2.substring(6, var3);
                      if(class_52.method_575(var4) && class_168.method_3609(var4) < 10) {
-                        this.method_2324("wrongjava", (byte)-1);
+                        this.showGameError("wrongjava", (byte)-1);
                         return;
                      }
                   }
@@ -929,7 +929,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             }
          } catch (Exception var6) {
             class_308.method_5523((String)null, var6, 2070444539);
-            this.method_2324("crash", (byte)-1);
+            this.showGameError("crash", (byte)-1);
          }
 
          this.method_2313(1052097273);
@@ -1008,7 +1008,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    protected abstract void method_2321(int var1);
 
    // $FF: renamed from: ar (int, java.lang.String, boolean, int) void
-   protected final void method_2322(int var1, String var2, boolean var3, int var4) {
+   protected final void drawBootstrapScreen(int var1, String var2, boolean var3, int var4) {
       try {
          try {
             Graphics var5 = this.field_1397.getGraphics();
@@ -1033,11 +1033,11 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             Color var6 = new Color(140, 17, 17);
 
             try {
-               if(field_1399 == null) {
-                  field_1399 = this.field_1397.createImage(304, 34);
+               if(progressBar == null) {
+                  progressBar = this.field_1397.createImage(304, 34);
                }
 
-               Graphics var7 = field_1399.getGraphics();
+               Graphics var7 = progressBar.getGraphics();
                var7.setColor(var6);
                var7.drawRect(0, 0, 303, 33);
                var7.fillRect(2, 2, var1 * 3, 30);
@@ -1047,7 +1047,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                var7.setFont(class_83.field_780);
                var7.setColor(Color.white);
                var7.drawString(var2, (304 - class_349.field_3938.stringWidth(var2)) / 2, 22);
-               var5.drawImage(field_1399, 646214551 * class_137.field_1766 / 2 - 152, class_58.field_460 * -1538307343 / 2 - 18, (ImageObserver)null);
+               var5.drawImage(progressBar, 646214551 * class_137.field_1766 / 2 - 152, class_58.field_460 * -1538307343 / 2 - 18, (ImageObserver)null);
             } catch (Exception var10) {
                int var8 = class_137.field_1766 * 646214551 / 2 - 152;
                int var9 = class_58.field_460 * -1538307343 / 2 - 18;
@@ -1059,7 +1059,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                var5.fillRect(var8 + 2 + 3 * var1, var9 + 2, 300 - 3 * var1, 30);
                var5.setFont(class_83.field_780);
                var5.setColor(Color.white);
-               //var5.drawString(var2, var8 + (304 - class_349.field_3938.stringWidth(var2)) / 2, var9 + 22);
+               var5.drawString(var2, var8 + (304 - class_349.field_3938.stringWidth(var2)) / 2, var9 + 22);
             }
          } catch (Exception var11) {
             this.field_1397.repaint();
@@ -1073,7 +1073,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: ag (byte) void
    protected final void method_2323() {
       try {
-         field_1399 = null;
+         progressBar = null;
          class_83.field_780 = null;
          class_349.field_3938 = null;
       } catch (RuntimeException var2) {
@@ -1082,7 +1082,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    }
 
    // $FF: renamed from: ax (java.lang.String, byte) void
-   protected void method_2324(String var1, byte var2) {
+   protected void showGameError(String var1, byte var2) {
       try {
          if(this.field_1381) {
             if(var2 != -1) {
@@ -1439,7 +1439,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                if(var1.endsWith("192.168.1.")) {
                   return true;
                } else {
-                  this.method_2324("invalidhost", (byte)-1);
+                  this.showGameError("invalidhost", (byte)-1);
                   return false;
                }
             }
@@ -1860,7 +1860,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                if(var1.endsWith("192.168.1.")) {
                   return true;
                } else {
-                  this.method_2324("invalidhost", (byte)-1);
+                  this.showGameError("invalidhost", (byte)-1);
                   return false;
                }
             }
@@ -1887,7 +1887,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                if(var1.endsWith("192.168.1.")) {
                   return true;
                } else {
-                  this.method_2324("invalidhost", (byte)-1);
+                  this.showGameError("invalidhost", (byte)-1);
                   return false;
                }
             }
@@ -1915,7 +1915,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             if(var1.indexOf("sun") != -1 || var1.indexOf("apple") != -1) {
                String var2 = Connection.javaVersion;
                if(var2.equals("1.1") || var2.startsWith("1.1.") || var2.equals("1.2") || var2.startsWith("1.2.") || var2.equals("1.3") || var2.startsWith("1.3.") || var2.equals("1.4") || var2.startsWith("1.4.") || var2.equals("1.5") || var2.startsWith("1.5.") || var2.equals("1.6.0")) {
-                  this.method_2324("wrongjava", (byte)-1);
+                  this.showGameError("wrongjava", (byte)-1);
                   return;
                }
 
@@ -1927,7 +1927,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
                   String var4 = var2.substring(6, var3);
                   if(class_52.method_575(var4) && class_168.method_3609(var4) < 10) {
-                     this.method_2324("wrongjava", (byte)-1);
+                     this.showGameError("wrongjava", (byte)-1);
                      return;
                   }
                }
@@ -1963,7 +1963,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
          }
       } catch (Exception var6) {
          class_308.method_5523((String)null, var6, 1942525812);
-         this.method_2324("crash", (byte)-1);
+         this.showGameError("crash", (byte)-1);
       }
 
       this.method_2313(764127006);
@@ -1977,7 +1977,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             if(var1.indexOf("sun") != -1 || var1.indexOf("apple") != -1) {
                String var2 = Connection.javaVersion;
                if(var2.equals("1.1") || var2.startsWith("1.1.") || var2.equals("1.2") || var2.startsWith("1.2.") || var2.equals("1.3") || var2.startsWith("1.3.") || var2.equals("1.4") || var2.startsWith("1.4.") || var2.equals("1.5") || var2.startsWith("1.5.") || var2.equals("1.6.0")) {
-                  this.method_2324("wrongjava", (byte)-1);
+                  this.showGameError("wrongjava", (byte)-1);
                   return;
                }
 
@@ -1989,7 +1989,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
                   String var4 = var2.substring(6, var3);
                   if(class_52.method_575(var4) && class_168.method_3609(var4) < 10) {
-                     this.method_2324("wrongjava", (byte)-1);
+                     this.showGameError("wrongjava", (byte)-1);
                      return;
                   }
                }
@@ -2025,7 +2025,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
          }
       } catch (Exception var6) {
          class_308.method_5523((String)null, var6, 1872071416);
-         this.method_2324("crash", (byte)-1);
+         this.showGameError("crash", (byte)-1);
       }
 
       this.method_2313(745755149);
@@ -2531,9 +2531,6 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       field_1391 = false;
    }
 
-   // $FF: renamed from: dv () void
-   public abstract void method_2410();
-
    // $FF: renamed from: al (byte) void
    protected abstract void method_2413(byte var1);
 
@@ -2611,11 +2608,11 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
          Color var5 = new Color(140, 17, 17);
 
          try {
-            if(field_1399 == null) {
-               field_1399 = this.field_1397.createImage(304, 34);
+            if(progressBar == null) {
+               progressBar = this.field_1397.createImage(304, 34);
             }
 
-            Graphics var6 = field_1399.getGraphics();
+            Graphics var6 = progressBar.getGraphics();
             var6.setColor(var5);
             var6.drawRect(0, 0, 1597764645, 33);
             var6.fillRect(2, 2, var1 * 3, 30);
@@ -2625,7 +2622,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             var6.setFont(class_83.field_780);
             var6.setColor(Color.white);
             var6.drawString(var2, (-1787750115 - class_349.field_3938.stringWidth(var2)) / 2, 22);
-            var4.drawImage(field_1399, 646214551 * class_137.field_1766 / 2 - 152, class_58.field_460 * -1538307343 / 2 - 18, (ImageObserver)null);
+            var4.drawImage(progressBar, 646214551 * class_137.field_1766 / 2 - 152, class_58.field_460 * -1538307343 / 2 - 18, (ImageObserver)null);
          } catch (Exception var9) {
             int var7 = class_137.field_1766 * 646214551 / 2 - 1954650480;
             int var8 = class_58.field_460 * -1538307343 / 2 - 18;
@@ -2654,21 +2651,21 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
    // $FF: renamed from: dw () void
    protected final void method_2424() {
-      field_1399 = null;
+      progressBar = null;
       class_83.field_780 = null;
       class_349.field_3938 = null;
    }
 
    // $FF: renamed from: ec () void
    protected final void method_2425() {
-      field_1399 = null;
+      progressBar = null;
       class_83.field_780 = null;
       class_349.field_3938 = null;
    }
 
    // $FF: renamed from: ea () void
    protected final void method_2426() {
-      field_1399 = null;
+      progressBar = null;
       class_83.field_780 = null;
       class_349.field_3938 = null;
    }
@@ -2710,11 +2707,11 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
          Color var5 = new Color(140, 17, 17);
 
          try {
-            if(field_1399 == null) {
-               field_1399 = this.field_1397.createImage(-1398851682, 1673405168);
+            if(progressBar == null) {
+               progressBar = this.field_1397.createImage(-1398851682, 1673405168);
             }
 
-            Graphics var6 = field_1399.getGraphics();
+            Graphics var6 = progressBar.getGraphics();
             var6.setColor(var5);
             var6.drawRect(0, 0, 1955395235, 33);
             var6.fillRect(2, 2, var1 * 3, 30);
@@ -2724,7 +2721,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             var6.setFont(class_83.field_780);
             var6.setColor(Color.white);
             var6.drawString(var2, (304 - class_349.field_3938.stringWidth(var2)) / 2, 22);
-            var4.drawImage(field_1399, 719180240 * class_137.field_1766 / 2 - 152, class_58.field_460 * 2105862257 / 2 - 18, (ImageObserver)null);
+            var4.drawImage(progressBar, 719180240 * class_137.field_1766 / 2 - 152, class_58.field_460 * 2105862257 / 2 - 18, (ImageObserver)null);
          } catch (Exception var9) {
             int var7 = class_137.field_1766 * -463745456 / 2 - 152;
             int var8 = class_58.field_460 * -1538307343 / 2 - 18;

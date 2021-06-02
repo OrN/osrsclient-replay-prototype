@@ -160,7 +160,8 @@ public class class_207 extends class_206 {
          throw class_223.method_4281(var4);
       }
 
-      Replay.stop();
+      if (Settings.ENABLE_REPLAY_SUPPORT)
+         Replay.stop();
    }
 
    // $FF: renamed from: h (byte[], int, int) void

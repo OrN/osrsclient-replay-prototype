@@ -199,13 +199,16 @@ public class NetworkOutput implements Runnable {
             try {
                if(var1 + this.offset * -1232062539 <= this.field_3929 * 255745785) {
                   this.outputStream.write(this.data, -1232062539 * this.offset, var1);
-                  Replay.saveOutput(this.data, -1232062539 * this.offset, var1);
+                  if (Settings.ENABLE_REPLAY_SUPPORT)
+                     Replay.saveOutput(this.data, -1232062539 * this.offset, var1);
                } else {
                   int var14 = 255745785 * this.field_3929 - this.offset * -1232062539;
                   this.outputStream.write(this.data, -1232062539 * this.offset, var14);
                   this.outputStream.write(this.data, 0, var1 - var14);
-                  Replay.saveOutput(this.data, -1232062539 * this.offset, var14);
-                  Replay.saveOutput(this.data, 0, var1 - var14);
+                  if (Settings.ENABLE_REPLAY_SUPPORT) {
+                     Replay.saveOutput(this.data, -1232062539 * this.offset, var14);
+                     Replay.saveOutput(this.data, 0, var1 - var14);
+                  }
                }
             } catch (IOException var9) {
                IOException var2 = var9;

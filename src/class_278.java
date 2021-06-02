@@ -133,7 +133,7 @@ public class class_278 extends class_277 {
                   class_60 var10000 = new class_60();
                   var9 = var10000;
                   var9.field_473 = var0;
-                  var9.field_474 = -1150578315 * var3;
+                  var9.hash = -1150578315 * var3;
                   var9.field_472 = var4;
                   if(var5) {
                      class_314.field_3767.method_6525(var9, var7);

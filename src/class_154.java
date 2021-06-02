@@ -5,7 +5,7 @@ import java.net.URL;
 public class class_154 implements Runnable {
 
     // $FF: renamed from: g nd
-   public static Buffer field_1928;
+   public static Buffer buffer;
    // $FF: renamed from: gq int
    static int field_1929;
     // $FF: renamed from: bl jd
