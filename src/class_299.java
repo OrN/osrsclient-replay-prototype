@@ -9,7 +9,7 @@ public class class_299 {
    // $FF: renamed from: f int
    public static final int field_3368 = 64;
    // $FF: renamed from: p op
-   static class_66 loginBackground;
+   static class_66 loginMenuBackground;
    // $FF: renamed from: he int
    static final int field_3370 = 512;
    // $FF: renamed from: v int

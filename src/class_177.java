@@ -12,7 +12,7 @@ public class class_177 {
    // $FF: renamed from: j op
    static class_66 loginButton;
    // $FF: renamed from: r oh
-   static class_67 field_2186;
+   static class_67 loginFireLeft;
    // $FF: renamed from: x int
    static int field_2189;
    // $FF: renamed from: w int

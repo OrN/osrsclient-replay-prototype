@@ -3,7 +3,7 @@
 public class class_52 extends class_51 {
 
    // $FF: renamed from: b oh
-   static class_67 field_378;
+   static class_67 loginFireRight;
    // $FF: renamed from: n byte
    byte field_379;
    // $FF: renamed from: f int
@@ -101,9 +101,9 @@ public class class_52 extends class_51 {
                }
 
                class_177.field_2202 = false;
-               class_177.field_2186.method_765(class_177.field_2183 * 751544539, 0);
-               field_378.method_765(382 + 751544539 * class_177.field_2183, 0);
-               class_372.field_4114.draw(class_177.field_2183 * 751544539 + 382 - class_372.field_4114.field_498 / 2, 18);
+               class_177.loginFireLeft.method_765(class_177.field_2183 * 751544539, 0);
+               loginFireRight.method_765(382 + 751544539 * class_177.field_2183, 0);
+               IDXMap.runescapeLogo.draw(class_177.field_2183 * 751544539 + 382 - IDXMap.runescapeLogo.field_498 / 2, 18);
                return;
             }
 
@@ -367,9 +367,9 @@ public class class_52 extends class_51 {
 
                   if(GameMouseListener.field_1711 * 339791065 <= 20) {
                      class_177.field_2202 = false;
-                     class_177.field_2186.method_765(751544539 * class_177.field_2183, 0);
-                     field_378.method_765(751544539 * class_177.field_2183 + 382, 0);
-                     class_372.field_4114.draw(382 + class_177.field_2183 * 751544539 - class_372.field_4114.field_498 / 2, 18);
+                     class_177.loginFireLeft.method_765(751544539 * class_177.field_2183, 0);
+                     loginFireRight.method_765(751544539 * class_177.field_2183 + 382, 0);
+                     IDXMap.runescapeLogo.draw(382 + class_177.field_2183 * 751544539 - IDXMap.runescapeLogo.field_498 / 2, 18);
                      return;
                   }
                }
@@ -381,9 +381,9 @@ public class class_52 extends class_51 {
                class_149 var6 = class_166.field_2083[1383104493 * class_177.field_2208];
                class_113.method_2241(var6, 1784663758);
                class_177.field_2202 = false;
-               class_177.field_2186.method_765(751544539 * class_177.field_2183, 0);
-               field_378.method_765(751544539 * class_177.field_2183 + 382, 0);
-               class_372.field_4114.draw(class_177.field_2183 * 751544539 + 382 - class_372.field_4114.field_498 / 2, 18);
+               class_177.loginFireLeft.method_765(751544539 * class_177.field_2183, 0);
+               loginFireRight.method_765(751544539 * class_177.field_2183 + 382, 0);
+               IDXMap.runescapeLogo.draw(class_177.field_2183 * 751544539 + 382 - IDXMap.runescapeLogo.field_498 / 2, 18);
             }
          } else {
             if(-1580902995 * class_177.field_2195 > 0) {

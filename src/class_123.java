@@ -3,11 +3,11 @@
 public class class_123 extends class_111 {
 
    // $FF: renamed from: ed jp
-   static class_307 field_1345;
+   static IDXFile idx17;
    // $FF: renamed from: n java.lang.String
    String field_1346;
     // $FF: renamed from: dx jp
-   static class_307 field_1348;
+   static IDXFile idx2;
     // $FF: renamed from: o boolean
    public static boolean field_1350;
     // $FF: synthetic field

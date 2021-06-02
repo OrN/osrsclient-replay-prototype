@@ -506,7 +506,7 @@ public class class_135 {
             var6 = var7;
          } else {
             String var8 = String.valueOf(var4);
-            int var9 = class_189.field_2275.method_5399(var8);
+            int var9 = class_189.idx12.method_5399(var8);
             if(var9 == -1) {
                if(var3 >= 1) {
                   throw new IllegalStateException();
@@ -515,7 +515,7 @@ public class class_135 {
                var6 = null;
             } else {
                label111: {
-                  byte[] var10 = class_189.field_2275.method_5388(var9, (byte)-23);
+                  byte[] var10 = class_189.idx12.method_5388(var9, (byte)-23);
                   if(var10 != null) {
                      if(var3 >= 1) {
                         throw new IllegalStateException();
@@ -565,7 +565,7 @@ public class class_135 {
                var16 = var17;
             } else {
                String var11 = String.valueOf(var15);
-               int var12 = class_189.field_2275.method_5399(var11);
+               int var12 = class_189.idx12.method_5399(var11);
                if(var12 == -1) {
                   if(var3 >= 1) {
                      throw new IllegalStateException();
@@ -574,7 +574,7 @@ public class class_135 {
                   var16 = null;
                } else {
                   label100: {
-                     byte[] var13 = class_189.field_2275.method_5388(var12, (byte)-21);
+                     byte[] var13 = class_189.idx12.method_5388(var12, (byte)-21);
                      if(var13 != null) {
                         if(var3 >= 1) {
                            throw new IllegalStateException();

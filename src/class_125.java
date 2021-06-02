@@ -5,7 +5,7 @@ public class class_125 extends class_111 {
     // $FF: synthetic field
    final class_167 this$0;
    // $FF: renamed from: da jp
-   static class_307 field_1360;
+   static IDXFile idx1;
    // $FF: renamed from: v int
    int field_1361;
     // $FF: renamed from: eh int
@@ -368,7 +368,7 @@ public class class_125 extends class_111 {
                            throw new IllegalStateException();
                         }
 
-                        class_26.method_100(2, class_194.field_2307, var0, 0, class_87.preferences.field_2122 * 1285356667, false);
+                        class_26.method_100(2, class_194.idx6, var0, 0, class_87.preferences.field_2122 * 1285356667, false);
                      }
                   }
                }

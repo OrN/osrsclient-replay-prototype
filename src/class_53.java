@@ -359,24 +359,24 @@ public class class_53 extends class_51 {
                            var10003 = 0;
                         }
 
-                        class_229.method_4360(class_157.field_1956, class_311.field_3749, true, var10003, 38126091);
+                        class_229.method_4360(class_157.idx10, class_311.idx8, true, var10003, 38126091);
                      } else if(11 == var0) {
                         if(var1 != 0) {
                            throw new IllegalStateException();
                         }
 
-                        class_229.method_4360(class_157.field_1956, class_311.field_3749, false, 4, 1776207444);
+                        class_229.method_4360(class_157.idx10, class_311.idx8, false, 4, 1776207444);
                      } else if(!class_177.field_2206) {
                         if(var1 != 0) {
                            return;
                         }
                      } else {
-                        class_299.loginBackground = null;
+                        class_299.loginMenuBackground = null;
                         class_177.loginButton = null;
                         class_177.field_2184 = null;
-                        class_177.field_2186 = null;
-                        class_52.field_378 = null;
-                        class_372.field_4114 = null;
+                        class_177.loginFireLeft = null;
+                        class_52.loginFireRight = null;
+                        IDXMap.runescapeLogo = null;
                         class_148.field_1872 = null;
                         class_160.field_2001 = null;
                         class_312.field_3759 = null;
@@ -394,7 +394,7 @@ public class class_53 extends class_51 {
                   }
                }
 
-               class_229.method_4360(class_157.field_1956, class_311.field_3749, true, 0, -905944907);
+               class_229.method_4360(class_157.idx10, class_311.idx8, true, 0, -905944907);
             }
 
             client.field_1421 = var0 * -1216711561;

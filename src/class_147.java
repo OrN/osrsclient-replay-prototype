@@ -308,7 +308,7 @@ public class class_147 extends class_146 {
                return var2;
             }
          } else {
-            byte[] var3 = class_189.field_2275.method_5381(var0, 0);
+            byte[] var3 = class_189.idx12.method_5381(var0, 0);
             if(var3 == null) {
                if(var1 != -26460885) {
                   throw new IllegalStateException();

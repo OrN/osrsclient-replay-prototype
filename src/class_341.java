@@ -11,7 +11,7 @@ public class class_341 extends class_339 {
     // $FF: renamed from: n lu
    class_357 field_3893;
    // $FF: renamed from: ea jp
-   static class_307 field_3894;
+   static IDXFile idx15;
    // $FF: renamed from: v lu
    class_357 field_3895;
 

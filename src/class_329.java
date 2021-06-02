@@ -2235,7 +2235,7 @@ public final class class_329 {
                                                 var50 = -1;
                                              }
 
-                                             var34.method_872(var44, var10002, var27, var10004, var50);
+                                             var34.drawString(var44, var10002, var27, var10004, var50);
                                           } else {
                                              var10002 = var38 + var11.field_104 * 1163271639 - 1;
                                              var10004 = -1017532251 * var11.field_245;

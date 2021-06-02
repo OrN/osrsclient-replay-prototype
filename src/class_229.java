@@ -15,7 +15,7 @@ public class class_229 {
    // $FF: renamed from: z int
    public static final int field_2572 = 128;
    // $FF: renamed from: ek jp
-   static class_307 field_2573;
+   static IDXFile idx19;
    // $FF: renamed from: x int
    public static final int field_2574 = 8;
 
@@ -39,18 +39,18 @@ public class class_229 {
    }
 
    // $FF: renamed from: n (jp, int, int) void
-   static void method_4359(class_307 var0, int var1, int var2) {
+   static void initIDX(IDXFile idxFile, int index, int var2) {
       try {
-         if(class_202.field_2369 != null) {
+         if(class_202.buffer != null) {
             if(var2 < -1093561710) {
-               class_202.field_2369.offset = var1 * 384402024 + -833490559;
-               int var3 = class_202.field_2369.readInt();
-               int var4 = class_202.field_2369.readInt();
-               var0.method_5489(var3, var4, -887756709);
+               class_202.buffer.offset = index * 384402024 + -833490559;
+               int var3 = class_202.buffer.readInt();
+               int var4 = class_202.buffer.readInt();
+               idxFile.method_5489(var3, var4, -887756709);
             }
          } else {
-            class_278.method_5146((class_307)null, 255, 255, 0, (byte)0, true, (byte)-57);
-            class_314.field_3765[var1] = var0;
+            class_278.method_5146((IDXFile)null, 255, 255, 0, (byte)0, true, (byte)-57);
+            class_314.idxFiles[index] = idxFile;
          }
       } catch (RuntimeException var5) {
          throw class_223.method_4281(var5);
@@ -75,10 +75,10 @@ public class class_229 {
             class_177.loginMenuStage = var3 * 2078798195;
             class_65.method_662();
             byte[] var5 = var0.method_5384("title.jpg", "");
-            class_177.field_2186 = class_86.method_1480(var5);
-            class_52.field_378 = class_177.field_2186.method_856();
+            class_177.loginFireLeft = class_86.method_1480(var5);
+            class_52.loginFireRight = class_177.loginFireLeft.method_856();
             class_311.method_5553(var1, client.field_1414 * 1088533541, (byte)26);
-            class_299.loginBackground = class_79.method_1257(var1, "titlebox", "");
+            class_299.loginMenuBackground = class_79.method_1257(var1, "titlebox", "");
             class_177.loginButton = class_79.method_1257(var1, "titlebutton", "");
             int var7 = var1.method_5399("runes");
             int var8 = var1.method_5400(var7, "");
@@ -110,7 +110,7 @@ public class class_229 {
                   throw new IllegalStateException();
                }
 
-               class_116.method_2246(2, class_194.field_2307, "scape main", "", 255, false);
+               class_116.method_2246(2, class_194.idx6, "scape main", "", 255, false);
             } else {
                class_215.method_4193(2);
             }
@@ -120,9 +120,9 @@ public class class_229 {
             class_177.field_2183 = (646214551 * class_137.field_1766 - 765) / 2 * 1213207379;
             class_177.field_2189 = -1366237486 + 322976471 * class_177.field_2183;
             class_204.field_2391 = 1849138212 + class_177.field_2189 * -1802309191;
-            class_177.field_2186.method_765(751544539 * class_177.field_2183, 0);
-            class_52.field_378.method_765(class_177.field_2183 * 751544539 + 382, 0);
-            class_372.field_4114.draw(751544539 * class_177.field_2183 + 382 - class_372.field_4114.field_498 / 2, 18);
+            class_177.loginFireLeft.method_765(751544539 * class_177.field_2183, 0);
+            class_52.loginFireRight.method_765(class_177.field_2183 * 751544539 + 382, 0);
+            IDXMap.runescapeLogo.draw(751544539 * class_177.field_2183 + 382 - IDXMap.runescapeLogo.field_498 / 2, 18);
          }
       } catch (RuntimeException var10) {
          throw class_223.method_4281(var10);

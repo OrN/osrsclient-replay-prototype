@@ -105,48 +105,6 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: at am
    class_133 field_1411;
 
-
-   // $FF: renamed from: bj () void
-   void method_2293() {
-      int var1 = -1437613301 * this.field_1390;
-      int var2 = -179382835 * this.field_1374;
-      int var3 = this.field_1404 * -1091351445 - 646214551 * class_137.field_1766 - var1;
-      int var4 = -2128033235 * this.field_1389 - -1538307343 * class_58.field_460 - var2;
-      if(var1 > 0 || var3 > 0 || var2 > 0 || var4 > 0) {
-         try {
-            Container var5 = this.method_2325(1142166715);
-            int var6 = 0;
-            int var7 = 0;
-            if(this.field_1396 == var5) {
-               Insets var8 = this.field_1396.getInsets();
-               var6 = var8.left;
-               var7 = var8.top;
-            }
-
-            Graphics var10 = var5.getGraphics();
-            var10.setColor(Color.black);
-            if(var1 > 0) {
-               var10.fillRect(var6, var7, var1, this.field_1389 * -2128033235);
-            }
-
-            if(var2 > 0) {
-               var10.fillRect(var6, var7, this.field_1404 * -1091351445, var2);
-            }
-
-            if(var3 > 0) {
-               var10.fillRect(this.field_1404 * -1091351445 + var6 - var3, var7, var3, -2128033235 * this.field_1389);
-            }
-
-            if(var4 > 0) {
-               var10.fillRect(var6, -2128033235 * this.field_1389 + var7 - var4, this.field_1404 * -1091351445, var4);
-            }
-         } catch (Exception var9) {
-            ;
-         }
-      }
-
-   }
-
    // $FF: renamed from: p (int, int, int) void
    protected final void method_2294(int var1, int var2, int var3) {
       try {
@@ -277,23 +235,6 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
          this.field_1397.repaint();
       }
 
-   }
-
-   // $FF: renamed from: cm () void
-   void method_2298() {
-      long var1 = class_87.method_1516((byte)1);
-      long var3 = field_1386[1202015039 * field_1387];
-      field_1386[1202015039 * field_1387] = var1;
-      field_1387 = -454548289 * (1 + 1202015039 * field_1387 & 31);
-      if(var3 != 0L && var1 > var3) {
-         ;
-      }
-
-      synchronized(this) {
-         class_244.field_2708 = field_1391;
-      }
-
-      this.method_2413((byte)81);
    }
 
    // $FF: renamed from: s (int) void
@@ -932,9 +873,6 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       }
    }
 
-   // $FF: renamed from: dn (boolean) void
-   protected abstract void method_2314(boolean var1);
-
    public void run() {
       try {
          try {
@@ -1121,7 +1059,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                var5.fillRect(var8 + 2 + 3 * var1, var9 + 2, 300 - 3 * var1, 30);
                var5.setFont(class_83.field_780);
                var5.setColor(Color.white);
-               var5.drawString(var2, var8 + (304 - class_349.field_3938.stringWidth(var2)) / 2, var9 + 22);
+               //var5.drawString(var2, var8 + (304 - class_349.field_3938.stringWidth(var2)) / 2, var9 + 22);
             }
          } catch (Exception var11) {
             this.field_1397.repaint();
@@ -2602,9 +2540,6 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: dx () void
    protected abstract void method_2414();
 
-   // $FF: renamed from: dg (boolean) void
-   protected abstract void method_2415(boolean var1);
-
    // $FF: renamed from: cj () void
    public final void method_2416() {
       if(this == field_1375 && !field_1378) {
@@ -2649,9 +2584,6 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
       return var0;
    }
-
-   // $FF: renamed from: dh (boolean) void
-   protected abstract void method_2419(boolean var1);
 
    // $FF: renamed from: dl () void
    protected abstract void method_2420();
@@ -2872,9 +2804,6 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       this.field_1394 = var1 * -1004683489;
       this.field_1384 = var2 * -605552423;
    }
-
-   // $FF: renamed from: du (boolean) void
-   protected abstract void method_2435(boolean var1);
 
    public final void windowDeiconified(WindowEvent var1) {
       try {

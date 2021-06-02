@@ -4,7 +4,7 @@ import java.util.Comparator;
 final class class_311 implements Comparator {
 
    // $FF: renamed from: dl jp
-   static class_307 field_3749;
+   static IDXFile idx8;
     // $FF: renamed from: fq long
    static long field_3752;
 
@@ -108,15 +108,15 @@ final class class_311 implements Comparator {
                throw new IllegalStateException();
             }
 
-            class_372.field_4114 = class_79.method_1257(var0, "logo_deadman_mode", "");
+            IDXMap.runescapeLogo = class_79.method_1257(var0, "logo_deadman_mode", "");
          } else if(0 != (var1 & 1073741824)) {
             if(var2 <= 4) {
                throw new IllegalStateException();
             }
 
-            class_372.field_4114 = class_79.method_1257(var0, "logo_seasonal_mode", "");
+            IDXMap.runescapeLogo = class_79.method_1257(var0, "logo_seasonal_mode", "");
          } else {
-            class_372.field_4114 = class_79.method_1257(var0, "logo", "");
+            IDXMap.runescapeLogo = class_79.method_1257(var0, "logo", "");
          }
 
       } catch (RuntimeException var3) {

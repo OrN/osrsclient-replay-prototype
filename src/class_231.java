@@ -38,7 +38,7 @@ public class class_231 extends class_230 {
                      throw new IllegalStateException();
                   }
 
-                  class_119.field_1316[var2] = class_286.field_3275.method_5381(class_51.field_376[var2], 0);
+                  class_119.field_1316[var2] = class_286.idx5.method_5381(class_51.field_376[var2], 0);
                   if(null == class_119.field_1316[var2]) {
                      var1 = false;
                      client.field_1470 += -394356945;
@@ -51,7 +51,7 @@ public class class_231 extends class_230 {
                   return;
                }
 
-               class_168.field_2103[var2] = class_286.field_3275.method_5382(class_176.field_2178[var2], 0, field_2591[var2], 744457350);
+               class_168.field_2103[var2] = class_286.idx5.method_5382(class_176.field_2178[var2], 0, field_2591[var2], 744457350);
                if(null == class_168.field_2103[var2]) {
                   if(var0 != 0) {
                      throw new IllegalStateException();
@@ -645,7 +645,7 @@ public class class_231 extends class_230 {
                                           throw new IllegalStateException();
                                        }
 
-                                       class_373.method_6614(class_168.field_2103[var12], var32, 8 * var4, 8 * var5, var36, 8 * (var40 & 7), 8 * (var10 & 7), var38, class_206.field_2401, client.field_1475, 305716239);
+                                       FontHandler.method_6614(class_168.field_2103[var12], var32, 8 * var4, 8 * var5, var36, 8 * (var40 & 7), 8 * (var10 & 7), var38, class_206.field_2401, client.field_1475, 305716239);
                                        break;
                                     }
                                  }
@@ -761,8 +761,8 @@ public class class_231 extends class_230 {
                            }
                         }
 
-                        class_286.field_3275.method_5405("m" + var38 + "_" + var40, (byte)-13);
-                        class_286.field_3275.method_5405("l" + var38 + "_" + var40, (byte)-55);
+                        class_286.idx5.method_5405("m" + var38 + "_" + var40, (byte)-13);
+                        class_286.idx5.method_5405("l" + var38 + "_" + var40, (byte)-55);
                      }
                   }
                }

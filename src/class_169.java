@@ -5,7 +5,7 @@ public class class_169 {
    // $FF: renamed from: o int
    public static final int field_2104 = 43;
    // $FF: renamed from: n jp
-   final class_307 field_2105;
+   final IDXFile field_2105;
    // $FF: renamed from: f int
    final int field_2106;
    // $FF: renamed from: y int
@@ -126,7 +126,7 @@ public class class_169 {
    }
 
    // $FF: renamed from: <init> (jp, java.lang.String) void
-   class_169(class_307 var1) {
+   class_169(IDXFile var1) {
       super();
       try {
          this.field_2107 = 0;

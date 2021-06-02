@@ -11,7 +11,7 @@ public class class_240 {
    // $FF: renamed from: am int[][]
    public int[][] field_2679;
    // $FF: renamed from: dq jp
-   static class_307 field_2680;
+   static IDXFile idx9;
    // $FF: renamed from: ax int
    int field_2681;
 

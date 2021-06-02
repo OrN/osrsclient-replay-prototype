@@ -9,7 +9,7 @@ public class class_35 extends class_27 {
    // $FF: renamed from: dy long
    static long field_63;
    // $FF: renamed from: y jp
-   public class_307 field_64;
+   public IDXFile field_64;
    // $FF: renamed from: v int
    int field_65;
    // $FF: renamed from: e int

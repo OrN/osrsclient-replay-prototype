@@ -4,7 +4,7 @@ import java.util.zip.CRC32;
 public class class_314 {
 
    // $FF: renamed from: z jp[]
-   public static class_307[] field_3765;
+   public static IDXFile[] idxFiles;
    // $FF: renamed from: n int
    public static int field_3766;
    // $FF: renamed from: y md
@@ -40,7 +40,7 @@ public class class_314 {
    // $FF: renamed from: h int
    public static int field_3782;
    // $FF: renamed from: dd jp
-   static class_307 field_3783;
+   static IDXFile idx0;
 
 
     // $FF: renamed from: <clinit> () void
@@ -64,7 +64,7 @@ public class class_314 {
       field_3776 = var1;
       field_3777 = 0;
       crc32 = new CRC32();
-      field_3765 = new class_307[256];
+      idxFiles = new IDXFile[256];
       field_3772 = 0;
       field_3778 = 0;
       field_3782 = 0;
@@ -297,7 +297,7 @@ public class class_314 {
                      throw new IllegalStateException();
                   }
 
-                  class_37.field_241.method_872(var22, var0 + 1057202329 * client.field_1434, client.field_1517 * -1775322899 + var1, var17, 0);
+                  class_37.field_241.drawString(var22, var0 + 1057202329 * client.field_1434, client.field_1517 * -1775322899 + var1, var17, 0);
                }
 
                if(1 == client.field_1511[var10]) {
@@ -353,11 +353,11 @@ public class class_314 {
                   }
 
                   class_65.method_679(var0, var1 + client.field_1517 * -1775322899 - class_37.field_241.field_522 - 1, var2 + var0, 5 + -1775322899 * client.field_1517 + var1);
-                  class_37.field_241.method_872(var22, client.field_1434 * 1057202329 + var0, var19 + var1 + client.field_1517 * -1775322899, var17, 0);
+                  class_37.field_241.drawString(var22, client.field_1434 * 1057202329 + var0, var19 + var1 + client.field_1517 * -1775322899, var17, 0);
                   class_65.method_694(var0, var1, var2 + var0, var3 + var1);
                }
             } else {
-               class_37.field_241.method_872(var22, 1057202329 * client.field_1434 + var0, var1 + client.field_1517 * -1775322899, 16776960, 0);
+               class_37.field_241.drawString(var22, 1057202329 * client.field_1434 + var0, var1 + client.field_1517 * -1775322899, 16776960, 0);
             }
          }
 

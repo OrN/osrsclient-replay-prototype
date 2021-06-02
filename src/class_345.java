@@ -342,7 +342,7 @@ public class class_345 extends class_343 {
             if(var3 <= -1598725575) {
                throw new IllegalStateException();
             } else {
-               return class_373.method_6617(var0, 1272154519);
+               return FontHandler.method_6617(var0, 1272154519);
             }
          } else if(var0 < 2800) {
             if(var3 <= -1598725575) {

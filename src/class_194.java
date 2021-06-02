@@ -14,7 +14,7 @@ public class class_194 {
    // $FF: renamed from: v java.net.URL
    final URL field_2306;
    // $FF: renamed from: dn jp
-   static class_307 field_2307;
+   static IDXFile idx6;
 
 
    // $FF: renamed from: n (byte) byte[]

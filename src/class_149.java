@@ -1,10 +1,8 @@
-import java.net.URL;
-
 // $FF: renamed from: bg
 public class class_149 {
 
    // $FF: renamed from: fu mu
-   static class_372 field_1879;
+   static IDXMap field_1879;
    // $FF: renamed from: g int
    int field_1880;
    // $FF: renamed from: j int

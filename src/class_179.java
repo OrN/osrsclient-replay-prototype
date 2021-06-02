@@ -111,7 +111,7 @@ public class class_179 {
                         class_136.field_1752 -= 2119512838;
                         var11 = class_165.field_2052[-26460885 * class_136.field_1752];
                         var6 = class_165.field_2052[class_136.field_1752 * -26460885 + 1];
-                        var15 = class_148.field_1869.method_5381(var6, 0);
+                        var15 = class_148.idx13.method_5381(var6, 0);
                         var19 = new class_69(var15);
                         var17 = var19;
                         class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = var17.method_867(var4, var11);
@@ -125,7 +125,7 @@ public class class_179 {
                         class_136.field_1752 -= 2119512838;
                         var11 = class_165.field_2052[-26460885 * class_136.field_1752];
                         var6 = class_165.field_2052[1 + -26460885 * class_136.field_1752];
-                        var15 = class_148.field_1869.method_5381(var6, 0);
+                        var15 = class_148.idx13.method_5381(var6, 0);
                         var19 = new class_69(var15);
                         var17 = var19;
                         class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = var17.method_866(var4, var11);

@@ -7,7 +7,7 @@ public class class_189 extends class_181 {
    // $FF: renamed from: z java.lang.String
    public static String osName;
    // $FF: renamed from: dm jp
-   static class_307 field_2275;
+   static IDXFile idx12;
    // $FF: renamed from: iz int
    static int field_2276;
     // $FF: renamed from: u short[]

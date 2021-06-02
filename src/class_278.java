@@ -82,7 +82,7 @@ public class class_278 extends class_277 {
    }
 
    // $FF: renamed from: f (jp, int, int, int, byte, boolean, byte) void
-   static void method_5146(class_307 var0, int var1, int var2, int var3, byte var4, boolean var5, byte var6) {
+   static void method_5146(IDXFile var0, int var1, int var2, int var3, byte var4, boolean var5, byte var6) {
       try {
          long var7 = (long)((var1 << 16) + var2);
          class_60 var9 = (class_60)class_314.field_3767.method_6523(var7);

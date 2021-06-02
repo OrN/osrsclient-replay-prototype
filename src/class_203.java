@@ -194,7 +194,7 @@ public class class_203 {
                         throw new IllegalStateException();
                      }
 
-                     class_162.method_3399(class_194.field_2307, 2076100495 * client.field_1656, 0, var0, false);
+                     class_162.method_3399(class_194.idx6, 2076100495 * client.field_1656, 0, var0, false);
                      client.field_1657 = false;
                      break label46;
                   }

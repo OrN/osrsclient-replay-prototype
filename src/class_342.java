@@ -134,9 +134,9 @@ public class class_342 extends class_338 {
                         if(var1 < var78) {
                            var11 = -881485665 * var0.field_1116 + 15;
                            class_303.method_5369(-130212619 * var0.field_1077, 1248597615 * var0.field_1076, var11, -1158444411);
-                           class_68 var12 = (class_68)client.field_1532.get(class_373.field_4124);
+                           class_68 var12 = (class_68)client.field_1532.get(FontHandler.p12_full);
                            byte var13 = 9;
-                           var12.method_872(var10.field_1148.method_6272(), 1057202329 * client.field_1434 + var2, var3 + -1775322899 * client.field_1517 - var13, 16777215, 0);
+                           var12.drawString(var10.field_1148.method_6272(), 1057202329 * client.field_1434 + var2, var3 + -1775322899 * client.field_1517 - var13, 16777215, 0);
                            var9 = 18;
                         }
                      }

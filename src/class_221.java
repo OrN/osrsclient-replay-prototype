@@ -46,7 +46,7 @@ public final class class_221 {
    // $FF: renamed from: g int
    public int field_2515;
    // $FF: renamed from: dp jp
-   static class_307 field_2516;
+   static IDXFile idx11;
 
 
     // $FF: renamed from: v (jv, java.lang.String, boolean, byte) void
@@ -2239,7 +2239,7 @@ public final class class_221 {
                            throw new IllegalStateException();
                         }
 
-                        class_307 var2 = class_194.field_2307;
+                        IDXFile var2 = class_194.idx6;
                         int var3 = var2.method_5399("scape main");
                         int var4 = var2.method_5400(var3, "");
                         class_162.method_3399(var2, var3, var4, 255, false);

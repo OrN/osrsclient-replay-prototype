@@ -26,7 +26,7 @@ public class class_44 extends class_27 {
    // $FF: renamed from: y int[]
    int[] field_325;
    // $FF: renamed from: dg jp
-   static class_307 field_326;
+   static IDXFile idx3;
    // $FF: renamed from: ay int
    static final int field_327 = 58;
    // $FF: renamed from: ny int

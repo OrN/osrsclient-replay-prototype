@@ -7,11 +7,11 @@ public class class_148 {
     // $FF: renamed from: y int
    int field_1868;
    // $FF: renamed from: dw jp
-   static class_307 field_1869;
+   static IDXFile idx13;
    // $FF: renamed from: j int[][]
    int[][] field_1870;
    // $FF: renamed from: dh jp
-   static class_307 field_1871;
+   static IDXFile idx7;
    // $FF: renamed from: s op[]
    static class_66[] field_1872;
     // $FF: renamed from: mm int

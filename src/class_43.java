@@ -97,7 +97,7 @@ public class class_43 extends class_27 {
    // $FF: renamed from: v (int, int) int
    public static int method_496(int var0) {
       try {
-         class_89 var2 = class_373.method_6618(var0, 743368656);
+         class_89 var2 = FontHandler.method_6618(var0, 743368656);
          int var3 = -2059144841 * var2.field_894;
          int var4 = var2.field_896 * -1506226221;
          int var5 = var2.field_895 * -354172645;

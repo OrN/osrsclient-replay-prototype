@@ -986,7 +986,7 @@ public final class client extends GameApplet implements class_16 {
                      throw new IllegalStateException();
                   }
 
-                  class_192.method_3960((byte)47);
+                  class_192.loadAssets((byte)47);
                   field_1383.method_3950(-1887937791);
 
                   for(var10 = 0; var10 < 32; ++var10) {
@@ -1012,7 +1012,7 @@ public final class client extends GameApplet implements class_16 {
                   }
 
                   class_221.method_4272((byte)-51);
-                  class_192.method_3960((byte)30);
+                  class_192.loadAssets((byte)30);
                   field_1383.method_3950(-1887937791);
 
                   for(var10 = 0; var10 < 32; ++var10) {
@@ -1385,22 +1385,22 @@ public final class client extends GameApplet implements class_16 {
                                        }
 
                                        if(class_185.field_2260.field_9 == 16711935L) {
-                                          class_202.field_2369 = class_154.field_1928;
+                                          class_202.buffer = class_154.field_1928;
 
                                           for(var11 = 0; var11 < 256; ++var11) {
                                              if(var1 != 1243838219) {
                                                 throw new IllegalStateException();
                                              }
 
-                                             class_307 var24 = class_314.field_3765[var11];
+                                             IDXFile var24 = class_314.idxFiles[var11];
                                              if(var24 != null) {
                                                 if(var1 != 1243838219) {
                                                    return;
                                                 }
 
-                                                class_202.field_2369.offset = 384402024 * var11 + -833490559;
-                                                var13 = class_202.field_2369.readInt();
-                                                int var25 = class_202.field_2369.readInt();
+                                                class_202.buffer.offset = 384402024 * var11 + -833490559;
+                                                var13 = class_202.buffer.readInt();
+                                                int var25 = class_202.buffer.readInt();
                                                 var24.method_5489(var13, var25, -887756709);
                                              }
                                           }
@@ -6376,7 +6376,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(field_1421 * -888167097 == 0) {
-               class_192.method_3960((byte)81);
+               class_192.loadAssets((byte)81);
                field_1383.method_3950(-1887937791);
 
                for(var8 = 0; var8 < 32; ++var8) {
@@ -6390,7 +6390,7 @@ public final class client extends GameApplet implements class_16 {
                class_299.field_3366 = 0;
             } else if(-888167097 * field_1421 == 5) {
                class_221.method_4272((byte)-46);
-               class_192.method_3960((byte)-17);
+               class_192.loadAssets((byte)-17);
                field_1383.method_3950(-1887937791);
 
                for(var8 = 0; var8 < 32; ++var8) {
@@ -6424,450 +6424,6 @@ public final class client extends GameApplet implements class_16 {
 
          var1.field_64.method_5508(var1.field_61, (int)var1.field_9, var1.field_62, false, (byte)43);
       }
-   }
-
-   // $FF: renamed from: dg (boolean) void
-   protected final void method_2415(boolean var1) {
-      boolean var2;
-      label140: {
-         try {
-            if(2 == -1481365935 * class_270.field_3180) {
-               if(class_167.field_2098 == null) {
-                  class_167.field_2098 = class_39.method_468(class_271.field_3186, class_137.field_1760 * 1804499547, -1099530389 * class_119.field_1322);
-                  if(null == class_167.field_2098) {
-                     var2 = false;
-                     break label140;
-                  }
-               }
-
-               if(class_197.field_2335 == null) {
-                  class_157 var10000 = new class_157(class_75.field_606, class_270.field_3184);
-                  class_197.field_2335 = var10000;
-               }
-
-               if(class_198.field_2339.method_1964(class_167.field_2098, class_270.field_3182, class_197.field_2335, 2116820552, -2049412461)) {
-                  class_198.field_2339.method_2065((byte)115);
-                  class_198.field_2339.method_1985(class_270.field_3181 * -528081795);
-                  class_198.field_2339.method_1967(class_167.field_2098, class_270.field_3179, 413813169);
-                  class_270.field_3180 = 0;
-                  class_167.field_2098 = null;
-                  class_197.field_2335 = null;
-                  class_271.field_3186 = null;
-                  var2 = true;
-                  break label140;
-               }
-            }
-         } catch (Exception var5) {
-            var5.printStackTrace();
-            class_198.field_2339.method_1962();
-            class_270.field_3180 = 0;
-            class_167.field_2098 = null;
-            class_197.field_2335 = null;
-            class_271.field_3186 = null;
-         }
-
-         var2 = false;
-      }
-
-      if(var2 && field_1657 && class_362.field_4017 != null) {
-         class_362.field_4017.method_3046();
-      }
-
-      if((10 == 1302980275 * field_1421 || 20 == field_1421 * -888167097 || 30 == -888167097 * field_1421) && 6326177537901632971L * field_1634 != 0L && class_87.method_1516((byte)1) > 6326177537901632971L * field_1634) {
-         class_240.method_4645(class_78.method_1223(702215999), 1876154968);
-      }
-
-      int var4;
-      if(var1) {
-         for(var4 = 0; var4 < 100; ++var4) {
-            field_1495[var4] = true;
-         }
-      }
-
-      if(0 == -888167097 * field_1421) {
-         this.method_2322(class_177.field_2190 * -564105319, class_177.loadProgressText, var1, 91092739);
-      } else if(5 == -888167097 * field_1421) {
-         class_160.method_3376(class_37.field_241, class_98.field_1136, class_183.field_2251, (byte)0);
-      } else if(-1936164947 * field_1421 != 10 && 11 != -730991653 * field_1421) {
-         if(20 == field_1421 * -473986439) {
-            class_160.method_3376(class_37.field_241, class_98.field_1136, class_183.field_2251, (byte)0);
-         } else if(field_1421 * -888167097 == 25) {
-            if(field_1474 * 385060964 == 1) {
-               if(1381923814 * field_1470 > 834526125 * field_1471) {
-                  field_1471 = 2010727251 * field_1470;
-               }
-
-               var4 = (-1830310260 * field_1471 - -101509522 * field_1470) / (834526125 * field_1471);
-               class_278.method_5148(class_305.field_3433 + class_205.field_2398 + class_205.field_2395 + var4 + "%" + class_205.field_2396, false, -1591335539);
-            } else if(2 == -189422017 * field_1474) {
-               if(field_1472 * 1282334079 > field_1473 * -1654531502) {
-                  field_1473 = field_1472 * 21006811;
-               }
-
-               var4 = (field_1473 * -1135725366 - 280556350 * field_1472) / (-1283633245 * field_1473) + 50;
-               class_278.method_5148(class_305.field_3433 + class_205.field_2398 + class_205.field_2395 + var4 + "%" + class_205.field_2396, false, -1591335539);
-            } else {
-               class_278.method_5148(class_305.field_3433, false, -1591335539);
-            }
-         } else if(field_1421 * -888167097 == 30) {
-            this.method_2456(849947302);
-         } else if(-888167097 * field_1421 == 231504081) {
-            class_278.method_5148(class_305.field_3414 + class_205.field_2398 + class_305.field_3415, false, -1591335539);
-         } else if(field_1421 * -783015891 == -85322706) {
-            class_278.method_5148(class_305.field_3579, false, -1591335539);
-         }
-      } else {
-         class_160.method_3376(class_37.field_241, class_98.field_1136, class_183.field_2251, (byte)0);
-      }
-
-      if(field_1421 * -888167097 == 30 && field_1633 * -1725337582 == 0 && !var1 && !field_1675) {
-         for(var4 = 0; var4 < 257317803 * field_1646; ++var4) {
-            if(field_1556[var4]) {
-               class_126.field_1370.method_3057(field_1695[var4], field_1518[var4], field_1539[var4], field_1632[var4]);
-               field_1556[var4] = false;
-            }
-         }
-      } else if(1210269829 * field_1421 > 0) {
-         class_126.field_1370.method_3059(0, 0);
-
-         for(var4 = 0; var4 < 257317803 * field_1646; ++var4) {
-            field_1556[var4] = false;
-         }
-      }
-
-   }
-
-   // $FF: renamed from: du (boolean) void
-   protected final void method_2435(boolean var1) {
-      boolean var2;
-      label140: {
-         try {
-            if(2 == -1481365935 * class_270.field_3180) {
-               if(class_167.field_2098 == null) {
-                  class_167.field_2098 = class_39.method_468(class_271.field_3186, class_137.field_1760 * -812894805, -1941483732 * class_119.field_1322);
-                  if(null == class_167.field_2098) {
-                     var2 = false;
-                     break label140;
-                  }
-               }
-
-               if(class_197.field_2335 == null) {
-                  class_157 var10000 = new class_157(class_75.field_606, class_270.field_3184);
-                  class_197.field_2335 = var10000;
-               }
-
-               if(class_198.field_2339.method_1964(class_167.field_2098, class_270.field_3182, class_197.field_2335, -337894474, -976228595)) {
-                  class_198.field_2339.method_2065((byte)101);
-                  class_198.field_2339.method_1985(class_270.field_3181 * -528081795);
-                  class_198.field_2339.method_1967(class_167.field_2098, class_270.field_3179, 147539490);
-                  class_270.field_3180 = 0;
-                  class_167.field_2098 = null;
-                  class_197.field_2335 = null;
-                  class_271.field_3186 = null;
-                  var2 = true;
-                  break label140;
-               }
-            }
-         } catch (Exception var5) {
-            var5.printStackTrace();
-            class_198.field_2339.method_1962();
-            class_270.field_3180 = 0;
-            class_167.field_2098 = null;
-            class_197.field_2335 = null;
-            class_271.field_3186 = null;
-         }
-
-         var2 = false;
-      }
-
-      if(var2 && field_1657 && class_362.field_4017 != null) {
-         class_362.field_4017.method_3046();
-      }
-
-      if((10 == -888167097 * field_1421 || 20 == field_1421 * -888167097 || 30 == -888167097 * field_1421) && 6326177537901632971L * field_1634 != 0L && class_87.method_1516((byte)1) > 6326177537901632971L * field_1634) {
-         class_240.method_4645(class_78.method_1223(702215999), 1711162486);
-      }
-
-      int var4;
-      if(var1) {
-         for(var4 = 0; var4 < -612114781; ++var4) {
-            field_1495[var4] = true;
-         }
-      }
-
-      if(0 == -888167097 * field_1421) {
-         this.method_2322(class_177.field_2190 * -1187217489, class_177.loadProgressText, var1, 91092739);
-      } else if(5 == 1350628797 * field_1421) {
-         class_160.method_3376(class_37.field_241, class_98.field_1136, class_183.field_2251, (byte)0);
-      } else if(-323367940 * field_1421 != 10 && 11 != -888167097 * field_1421) {
-         if(20 == field_1421 * -1020499254) {
-            class_160.method_3376(class_37.field_241, class_98.field_1136, class_183.field_2251, (byte)0);
-         } else if(field_1421 * 1422465311 == 25) {
-            if(field_1474 * 1659729323 == 1) {
-               if(6167969 * field_1470 > 834526125 * field_1471) {
-                  field_1471 = 739903723 * field_1470;
-               }
-
-               var4 = (974501941 * field_1471 - -101509522 * field_1470) / (49456948 * field_1471);
-               class_278.method_5148(class_305.field_3433 + class_205.field_2398 + class_205.field_2395 + var4 + "%" + class_205.field_2396, false, -1591335539);
-            } else if(2 == 562616699 * field_1474) {
-               if(field_1472 * 1282334079 > field_1473 * -1199651302) {
-                  field_1473 = field_1472 * -797153435;
-               }
-
-               var4 = (field_1473 * -502178474 - 653573446 * field_1472) / (1781171757 * field_1473) + 50;
-               class_278.method_5148(class_305.field_3433 + class_205.field_2398 + class_205.field_2395 + var4 + "%" + class_205.field_2396, false, -1591335539);
-            } else {
-               class_278.method_5148(class_305.field_3433, false, -1591335539);
-            }
-         } else if(field_1421 * -888167097 == 30) {
-            this.method_2456(1602580194);
-         } else if(1876925409 * field_1421 == 1333915295) {
-            class_278.method_5148(class_305.field_3414 + class_205.field_2398 + class_305.field_3415, false, -1591335539);
-         } else if(field_1421 * -888167097 == -1527485938) {
-            class_278.method_5148(class_305.field_3579, false, -1591335539);
-         }
-      } else {
-         class_160.method_3376(class_37.field_241, class_98.field_1136, class_183.field_2251, (byte)0);
-      }
-
-      if(field_1421 * -888167097 == 30 && field_1633 * 861107794 == 0 && !var1 && !field_1675) {
-         for(var4 = 0; var4 < 1362759652 * field_1646; ++var4) {
-            if(field_1556[var4]) {
-               class_126.field_1370.method_3057(field_1695[var4], field_1518[var4], field_1539[var4], field_1632[var4]);
-               field_1556[var4] = false;
-            }
-         }
-      } else if(-457437773 * field_1421 > 0) {
-         class_126.field_1370.method_3059(0, 0);
-
-         for(var4 = 0; var4 < -94334290 * field_1646; ++var4) {
-            field_1556[var4] = false;
-         }
-      }
-
-   }
-
-   // $FF: renamed from: dn (boolean) void
-   protected final void method_2314(boolean var1) {
-      boolean var2;
-      label140: {
-         try {
-            if(2 == -1481365935 * class_270.field_3180) {
-               if(class_167.field_2098 == null) {
-                  class_167.field_2098 = class_39.method_468(class_271.field_3186, class_137.field_1760 * -812894805, -64207299 * class_119.field_1322);
-                  if(null == class_167.field_2098) {
-                     var2 = false;
-                     break label140;
-                  }
-               }
-
-               if(class_197.field_2335 == null) {
-                  class_157 var10000 = new class_157(class_75.field_606, class_270.field_3184);
-                  class_197.field_2335 = var10000;
-               }
-
-               if(class_198.field_2339.method_1964(class_167.field_2098, class_270.field_3182, class_197.field_2335, 22050, 1376832347)) {
-                  class_198.field_2339.method_2065((byte)48);
-                  class_198.field_2339.method_1985(class_270.field_3181 * -751351098);
-                  class_198.field_2339.method_1967(class_167.field_2098, class_270.field_3179, 621285799);
-                  class_270.field_3180 = 0;
-                  class_167.field_2098 = null;
-                  class_197.field_2335 = null;
-                  class_271.field_3186 = null;
-                  var2 = true;
-                  break label140;
-               }
-            }
-         } catch (Exception var5) {
-            var5.printStackTrace();
-            class_198.field_2339.method_1962();
-            class_270.field_3180 = 0;
-            class_167.field_2098 = null;
-            class_197.field_2335 = null;
-            class_271.field_3186 = null;
-         }
-
-         var2 = false;
-      }
-
-      if(var2 && field_1657 && class_362.field_4017 != null) {
-         class_362.field_4017.method_3046();
-      }
-
-      if((10 == -888167097 * field_1421 || 20 == field_1421 * 259377229 || 30 == -888167097 * field_1421) && 6326177537901632971L * field_1634 != 0L && class_87.method_1516((byte)1) > 6326177537901632971L * field_1634) {
-         class_240.method_4645(class_78.method_1223(702215999), 1130640609);
-      }
-
-      int var4;
-      if(var1) {
-         for(var4 = 0; var4 < 772300567; ++var4) {
-            field_1495[var4] = true;
-         }
-      }
-
-      if(0 == -888167097 * field_1421) {
-         this.method_2322(class_177.field_2190 * -564105319, class_177.loadProgressText, var1, 91092739);
-      } else if(5 == 2132932925 * field_1421) {
-         class_160.method_3376(class_37.field_241, class_98.field_1136, class_183.field_2251, (byte)0);
-      } else if(-888167097 * field_1421 != 10 && 11 != -888167097 * field_1421) {
-         if(20 == field_1421 * 1210698253) {
-            class_160.method_3376(class_37.field_241, class_98.field_1136, class_183.field_2251, (byte)0);
-         } else if(field_1421 * -1468070475 == 25) {
-            if(field_1474 * -189422017 == 1) {
-               if(731554450 * field_1470 > 834526125 * field_1471) {
-                  field_1471 = 2081062404 * field_1470;
-               }
-
-               var4 = (-5663242 * field_1471 - -101509522 * field_1470) / (834526125 * field_1471);
-               class_278.method_5148(class_305.field_3433 + class_205.field_2398 + class_205.field_2395 + var4 + "%" + class_205.field_2396, false, -1591335539);
-            } else if(2 == 51097696 * field_1474) {
-               if(field_1472 * 695229756 > field_1473 * 477500901) {
-                  field_1473 = field_1472 * 21006811;
-               }
-
-               var4 = (field_1473 * -1135725366 - -307805490 * field_1472) / (434826818 * field_1473) + -726839384;
-               class_278.method_5148(class_305.field_3433 + class_205.field_2398 + class_205.field_2395 + var4 + "%" + class_205.field_2396, false, -1591335539);
-            } else {
-               class_278.method_5148(class_305.field_3433, false, -1591335539);
-            }
-         } else if(field_1421 * 2046624582 == 30) {
-            this.method_2456(-179575714);
-         } else if(-291223647 * field_1421 == 40) {
-            class_278.method_5148(class_305.field_3414 + class_205.field_2398 + class_305.field_3415, false, -1591335539);
-         } else if(field_1421 * 2025625778 == 45) {
-            class_278.method_5148(class_305.field_3579, false, -1591335539);
-         }
-      } else {
-         class_160.method_3376(class_37.field_241, class_98.field_1136, class_183.field_2251, (byte)0);
-      }
-
-      if(field_1421 * -920646964 == 30 && field_1633 * -1573826453 == 0 && !var1 && !field_1675) {
-         for(var4 = 0; var4 < 257317803 * field_1646; ++var4) {
-            if(field_1556[var4]) {
-               class_126.field_1370.method_3057(field_1695[var4], field_1518[var4], field_1539[var4], field_1632[var4]);
-               field_1556[var4] = false;
-            }
-         }
-      } else if(-888167097 * field_1421 > 0) {
-         class_126.field_1370.method_3059(0, 0);
-
-         for(var4 = 0; var4 < -161734591 * field_1646; ++var4) {
-            field_1556[var4] = false;
-         }
-      }
-
-   }
-
-   // $FF: renamed from: dh (boolean) void
-   protected final void method_2419(boolean var1) {
-      boolean var2;
-      label140: {
-         try {
-            if(2 == -1429672296 * class_270.field_3180) {
-               if(class_167.field_2098 == null) {
-                  class_167.field_2098 = class_39.method_468(class_271.field_3186, class_137.field_1760 * 544497477, 393303047 * class_119.field_1322);
-                  if(null == class_167.field_2098) {
-                     var2 = false;
-                     break label140;
-                  }
-               }
-
-               if(class_197.field_2335 == null) {
-                  class_157 var10000 = new class_157(class_75.field_606, class_270.field_3184);
-                  class_197.field_2335 = var10000;
-               }
-
-               if(class_198.field_2339.method_1964(class_167.field_2098, class_270.field_3182, class_197.field_2335, -1716429512, -1022775640)) {
-                  class_198.field_2339.method_2065((byte)117);
-                  class_198.field_2339.method_1985(class_270.field_3181 * -1346690739);
-                  class_198.field_2339.method_1967(class_167.field_2098, class_270.field_3179, 1390957562);
-                  class_270.field_3180 = 0;
-                  class_167.field_2098 = null;
-                  class_197.field_2335 = null;
-                  class_271.field_3186 = null;
-                  var2 = true;
-                  break label140;
-               }
-            }
-         } catch (Exception var5) {
-            var5.printStackTrace();
-            class_198.field_2339.method_1962();
-            class_270.field_3180 = 0;
-            class_167.field_2098 = null;
-            class_197.field_2335 = null;
-            class_271.field_3186 = null;
-         }
-
-         var2 = false;
-      }
-
-      if(var2 && field_1657 && class_362.field_4017 != null) {
-         class_362.field_4017.method_3046();
-      }
-
-      if((10 == -888167097 * field_1421 || 20 == field_1421 * 60396984 || 30 == 1839820668 * field_1421) && 6326177537901632971L * field_1634 != 0L && class_87.method_1516((byte)1) > 6326177537901632971L * field_1634) {
-         class_240.method_4645(class_78.method_1223(702215999), 2137730739);
-      }
-
-      int var4;
-      if(var1) {
-         for(var4 = 0; var4 < 1304594182; ++var4) {
-            field_1495[var4] = true;
-         }
-      }
-
-      if(0 == -1951955109 * field_1421) {
-         this.method_2322(class_177.field_2190 * -564105319, class_177.loadProgressText, var1, 91092739);
-      } else if(5 == -888167097 * field_1421) {
-         class_160.method_3376(class_37.field_241, class_98.field_1136, class_183.field_2251, (byte)0);
-      } else if(1517465416 * field_1421 != 10 && 11 != -888167097 * field_1421) {
-         if(20 == field_1421 * -1596168574) {
-            class_160.method_3376(class_37.field_241, class_98.field_1136, class_183.field_2251, (byte)0);
-         } else if(field_1421 * 1208976560 == 25) {
-            if(field_1474 * -540258139 == 1) {
-               if(45767596 * field_1470 > -1212686759 * field_1471) {
-                  field_1471 = 739903723 * field_1470;
-               }
-
-               var4 = (-1223366710 * field_1471 - -101509522 * field_1470) / (-1896332343 * field_1471);
-               class_278.method_5148(class_305.field_3433 + class_205.field_2398 + class_205.field_2395 + var4 + "%" + class_205.field_2396, false, -1591335539);
-            } else if(2 == -873501383 * field_1474) {
-               if(field_1472 * 2112303754 > field_1473 * -1060781997) {
-                  field_1473 = field_1472 * 21006811;
-               }
-
-               var4 = (field_1473 * 1890107659 - -1466079960 * field_1472) / (533874072 * field_1473) + 1677761135;
-               class_278.method_5148(class_305.field_3433 + class_205.field_2398 + class_205.field_2395 + var4 + "%" + class_205.field_2396, false, -1591335539);
-            } else {
-               class_278.method_5148(class_305.field_3433, false, -1591335539);
-            }
-         } else if(field_1421 * -888167097 == 30) {
-            this.method_2456(-1388209678);
-         } else if(-888167097 * field_1421 == 151627631) {
-            class_278.method_5148(class_305.field_3414 + class_205.field_2398 + class_305.field_3415, false, -1591335539);
-         } else if(field_1421 * -888167097 == 666390565) {
-            class_278.method_5148(class_305.field_3579, false, -1591335539);
-         }
-      } else {
-         class_160.method_3376(class_37.field_241, class_98.field_1136, class_183.field_2251, (byte)0);
-      }
-
-      if(field_1421 * 1883667764 == 30 && field_1633 * -585495289 == 0 && !var1 && !field_1675) {
-         for(var4 = 0; var4 < 248696862 * field_1646; ++var4) {
-            if(field_1556[var4]) {
-               class_126.field_1370.method_3057(field_1695[var4], field_1518[var4], field_1539[var4], field_1632[var4]);
-               field_1556[var4] = false;
-            }
-         }
-      } else if(-888167097 * field_1421 > 0) {
-         class_126.field_1370.method_3059(0, 0);
-
-         for(var4 = 0; var4 < 257317803 * field_1646; ++var4) {
-            field_1556[var4] = false;
-         }
-      }
-
    }
 
    // $FF: renamed from: dl () void
@@ -7046,16 +6602,16 @@ public final class client extends GameApplet implements class_16 {
 
          if(var0 != 5 && var0 != 10) {
             if(20 == var0) {
-               class_229.method_4360(class_157.field_1956, class_311.field_3749, true, -888167097 * field_1421 == 11?4:0, 199917687);
+               class_229.method_4360(class_157.idx10, class_311.idx8, true, -888167097 * field_1421 == 11?4:0, 199917687);
             } else if(11 == var0) {
-               class_229.method_4360(class_157.field_1956, class_311.field_3749, false, 4, -541688599);
+               class_229.method_4360(class_157.idx10, class_311.idx8, false, 4, -541688599);
             } else if(class_177.field_2206) {
-               class_299.loginBackground = null;
+               class_299.loginMenuBackground = null;
                class_177.loginButton = null;
                class_177.field_2184 = null;
-               class_177.field_2186 = null;
-               class_52.field_378 = null;
-               class_372.field_4114 = null;
+               class_177.loginFireLeft = null;
+               class_52.loginFireRight = null;
+               IDXMap.runescapeLogo = null;
                class_148.field_1872 = null;
                class_160.field_2001 = null;
                class_312.field_3759 = null;
@@ -7070,7 +6626,7 @@ public final class client extends GameApplet implements class_16 {
                class_177.field_2206 = false;
             }
          } else {
-            class_229.method_4360(class_157.field_1956, class_311.field_3749, true, 0, -312884050);
+            class_229.method_4360(class_157.idx10, class_311.idx8, true, 0, -312884050);
          }
 
          field_1421 = var0 * -1216711561;
@@ -7109,16 +6665,16 @@ public final class client extends GameApplet implements class_16 {
 
          if(var0 != 5 && var0 != 10) {
             if(20 == var0) {
-               class_229.method_4360(class_157.field_1956, class_311.field_3749, true, -888167097 * field_1421 == 11?4:0, 1833695822);
+               class_229.method_4360(class_157.idx10, class_311.idx8, true, -888167097 * field_1421 == 11?4:0, 1833695822);
             } else if(11 == var0) {
-               class_229.method_4360(class_157.field_1956, class_311.field_3749, false, 4, 545651777);
+               class_229.method_4360(class_157.idx10, class_311.idx8, false, 4, 545651777);
             } else if(class_177.field_2206) {
-               class_299.loginBackground = null;
+               class_299.loginMenuBackground = null;
                class_177.loginButton = null;
                class_177.field_2184 = null;
-               class_177.field_2186 = null;
-               class_52.field_378 = null;
-               class_372.field_4114 = null;
+               class_177.loginFireLeft = null;
+               class_52.loginFireRight = null;
+               IDXMap.runescapeLogo = null;
                class_148.field_1872 = null;
                class_160.field_2001 = null;
                class_312.field_3759 = null;
@@ -7133,7 +6689,7 @@ public final class client extends GameApplet implements class_16 {
                class_177.field_2206 = false;
             }
          } else {
-            class_229.method_4360(class_157.field_1956, class_311.field_3749, true, 0, -1231581457);
+            class_229.method_4360(class_157.idx10, class_311.idx8, true, 0, -1231581457);
          }
 
          field_1421 = var0 * -1216711561;
@@ -7172,16 +6728,16 @@ public final class client extends GameApplet implements class_16 {
 
          if(var0 != 5 && var0 != 10) {
             if(20 == var0) {
-               class_229.method_4360(class_157.field_1956, class_311.field_3749, true, -888167097 * field_1421 == 11?4:0, 89633783);
+               class_229.method_4360(class_157.idx10, class_311.idx8, true, -888167097 * field_1421 == 11?4:0, 89633783);
             } else if(11 == var0) {
-               class_229.method_4360(class_157.field_1956, class_311.field_3749, false, 4, -1178674983);
+               class_229.method_4360(class_157.idx10, class_311.idx8, false, 4, -1178674983);
             } else if(class_177.field_2206) {
-               class_299.loginBackground = null;
+               class_299.loginMenuBackground = null;
                class_177.loginButton = null;
                class_177.field_2184 = null;
-               class_177.field_2186 = null;
-               class_52.field_378 = null;
-               class_372.field_4114 = null;
+               class_177.loginFireLeft = null;
+               class_52.loginFireRight = null;
+               IDXMap.runescapeLogo = null;
                class_148.field_1872 = null;
                class_160.field_2001 = null;
                class_312.field_3759 = null;
@@ -7196,7 +6752,7 @@ public final class client extends GameApplet implements class_16 {
                class_177.field_2206 = false;
             }
          } else {
-            class_229.method_4360(class_157.field_1956, class_311.field_3749, true, 0, 1818608298);
+            class_229.method_4360(class_157.idx10, class_311.idx8, true, 0, 1818608298);
          }
 
          field_1421 = var0 * -1216711561;
@@ -8198,7 +7754,7 @@ public final class client extends GameApplet implements class_16 {
    }
 
    // $FF: renamed from: mf (jp, java.lang.String) void
-   static void method_2548(class_307 var0) {
+   static void method_2548(IDXFile var0) {
       class_169 var10000 = new class_169(var0);
       class_169 var2 = var10000;
       field_1690.add(var2);
@@ -9380,9 +8936,9 @@ public final class client extends GameApplet implements class_16 {
             if(var1 < var76) {
                var10 = -1670041961 * var0.field_1116 + 15;
                class_303.method_5369(920502396 * var0.field_1077, 1248597615 * var0.field_1076, var10, -1158444411);
-               class_68 var11 = (class_68)field_1532.get(class_373.field_4124);
+               class_68 var11 = (class_68)field_1532.get(FontHandler.p12_full);
                byte var12 = 9;
-               var11.method_872(var9.field_1148.method_6272(), 1057202329 * field_1434 + var2, var3 + -1775322899 * field_1517 - var12, 16777215, 0);
+               var11.drawString(var9.field_1148.method_6272(), 1057202329 * field_1434 + var2, var3 + -1775322899 * field_1517 - var12, 16777215, 0);
                var8 = 18;
             }
          }
@@ -9991,9 +9547,9 @@ public final class client extends GameApplet implements class_16 {
             if(var1 < var76) {
                var10 = -2054784651 * var0.field_1116 + 15;
                class_303.method_5369(-1900741713 * var0.field_1077, 1248597615 * var0.field_1076, var10, -1158444411);
-               class_68 var11 = (class_68)field_1532.get(class_373.field_4124);
+               class_68 var11 = (class_68)field_1532.get(FontHandler.p12_full);
                byte var12 = 9;
-               var11.method_872(var9.field_1148.method_6272(), -1093788092 * field_1434 + var2, var3 + 258184811 * field_1517 - var12, 16777215, 0);
+               var11.drawString(var9.field_1148.method_6272(), -1093788092 * field_1434 + var2, var3 + 258184811 * field_1517 - var12, 16777215, 0);
                var8 = 18;
             }
          }
@@ -10591,9 +10147,9 @@ public final class client extends GameApplet implements class_16 {
             if(var1 < var76) {
                var10 = -1428690689 * var0.field_1116 + 15;
                class_303.method_5369(-130212619 * var0.field_1077, 1248597615 * var0.field_1076, var10, -1158444411);
-               class_68 var11 = (class_68)field_1532.get(class_373.field_4124);
+               class_68 var11 = (class_68)field_1532.get(FontHandler.p12_full);
                byte var12 = 9;
-               var11.method_872(var9.field_1148.method_6272(), -1890177890 * field_1434 + var2, var3 + -1049903299 * field_1517 - var12, 478648544, 0);
+               var11.drawString(var9.field_1148.method_6272(), -1890177890 * field_1434 + var2, var3 + -1049903299 * field_1517 - var12, 478648544, 0);
                var8 = 18;
             }
          }
@@ -11191,9 +10747,9 @@ public final class client extends GameApplet implements class_16 {
             if(var1 < var76) {
                var10 = -260205224 * var0.field_1116 + 15;
                class_303.method_5369(-667150295 * var0.field_1077, 2020526872 * var0.field_1076, var10, -1158444411);
-               class_68 var11 = (class_68)field_1532.get(class_373.field_4124);
+               class_68 var11 = (class_68)field_1532.get(FontHandler.p12_full);
                byte var12 = 9;
-               var11.method_872(var9.field_1148.method_6272(), 1057202329 * field_1434 + var2, var3 + -1775322899 * field_1517 - var12, -1771956050, 0);
+               var11.drawString(var9.field_1148.method_6272(), 1057202329 * field_1434 + var2, var3 + -1775322899 * field_1517 - var12, -1771956050, 0);
                var8 = 18;
             }
          }
@@ -11881,7 +11437,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(field_1511[var9] == 0) {
-               class_37.field_241.method_872(var20, var0 + 1057202329 * field_1434, field_1517 * -1775322899 + var1, var16, 0);
+               class_37.field_241.drawString(var20, var0 + 1057202329 * field_1434, field_1517 * -1775322899 + var1, var16, 0);
             }
 
             if(1 == field_1511[var9]) {
@@ -11913,11 +11469,11 @@ public final class client extends GameApplet implements class_16 {
                }
 
                class_65.method_679(var0, var1 + field_1517 * -1775322899 - class_37.field_241.field_522 - 1, var2 + var0, 5 + -1775322899 * field_1517 + var1);
-               class_37.field_241.method_872(var20, field_1434 * 1057202329 + var0, var18 + var1 + field_1517 * -1775322899, var16, 0);
+               class_37.field_241.drawString(var20, field_1434 * 1057202329 + var0, var18 + var1 + field_1517 * -1775322899, var16, 0);
                class_65.method_694(var0, var1, var2 + var0, var3 + var1);
             }
          } else {
-            class_37.field_241.method_872(var20, 1057202329 * field_1434 + var0, var1 + field_1517 * -1775322899, 16776960, 0);
+            class_37.field_241.drawString(var20, 1057202329 * field_1434 + var0, var1 + field_1517 * -1775322899, 16776960, 0);
          }
       }
 
@@ -12036,7 +11592,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(field_1511[var9] == 0) {
-               class_37.field_241.method_872(var20, var0 + 1067759264 * field_1434, field_1517 * 1406054529 + var1, var16, 0);
+               class_37.field_241.drawString(var20, var0 + 1067759264 * field_1434, field_1517 * 1406054529 + var1, var16, 0);
             }
 
             if(1 == field_1511[var9]) {
@@ -12068,11 +11624,11 @@ public final class client extends GameApplet implements class_16 {
                }
 
                class_65.method_679(var0, var1 + field_1517 * 312895410 - class_37.field_241.field_522 - 1, var2 + var0, 5 + -1542307864 * field_1517 + var1);
-               class_37.field_241.method_872(var20, field_1434 * 1057202329 + var0, var18 + var1 + field_1517 * -1775322899, var16, 0);
+               class_37.field_241.drawString(var20, field_1434 * 1057202329 + var0, var18 + var1 + field_1517 * -1775322899, var16, 0);
                class_65.method_694(var0, var1, var2 + var0, var3 + var1);
             }
          } else {
-            class_37.field_241.method_872(var20, 1057202329 * field_1434 + var0, var1 + field_1517 * -1775322899, 16776960, 0);
+            class_37.field_241.drawString(var20, 1057202329 * field_1434 + var0, var1 + field_1517 * -1775322899, 16776960, 0);
          }
       }
 
@@ -12770,7 +12326,7 @@ public final class client extends GameApplet implements class_16 {
                                              if(var10.field_223 * 1863227195 == 0) {
                                                 var31.method_869(var24, var25, var26, -1574820624 * var10.field_245, var10.field_167?0:-1);
                                              } else if(1 == 1585652650 * var10.field_223) {
-                                                var31.method_872(var24, var25 + var10.field_104 * -1338929484 / 2, var26, var10.field_245 * -1017532251, var10.field_167?0:-1);
+                                                var31.drawString(var24, var25 + var10.field_104 * -1338929484 / 2, var26, var10.field_245 * -1017532251, var10.field_167?0:-1);
                                              } else {
                                                 var31.method_947(var24, var25 + var10.field_104 * 1805295901 - 1, var26, 105729300 * var10.field_245, var10.field_167?0:-1);
                                              }
@@ -13169,7 +12725,7 @@ public final class client extends GameApplet implements class_16 {
       int var1;
       for(var1 = 0; var1 < class_119.field_1316.length; ++var1) {
          if(class_51.field_376[var1] != -1 && null == class_119.field_1316[var1]) {
-            class_119.field_1316[var1] = class_286.field_3275.method_5381(class_51.field_376[var1], 0);
+            class_119.field_1316[var1] = class_286.idx5.method_5381(class_51.field_376[var1], 0);
             if(null == class_119.field_1316[var1]) {
                var0 = false;
                field_1470 += -394356945;
@@ -13177,7 +12733,7 @@ public final class client extends GameApplet implements class_16 {
          }
 
          if(class_176.field_2178[var1] != -1 && null == class_168.field_2103[var1]) {
-            class_168.field_2103[var1] = class_286.field_3275.method_5382(class_176.field_2178[var1], 0, class_231.field_2591[var1], 744457350);
+            class_168.field_2103[var1] = class_286.idx5.method_5382(class_176.field_2178[var1], 0, class_231.field_2591[var1], 744457350);
             if(null == class_168.field_2103[var1]) {
                var0 = false;
                field_1470 += -394356945;
@@ -13483,7 +13039,7 @@ public final class client extends GameApplet implements class_16 {
 
                            for(var11 = 0; var11 < class_275.field_3216.length; ++var11) {
                               if(var10 == class_275.field_3216[var11] && null != class_168.field_2103[var11]) {
-                                 class_373.method_6614(class_168.field_2103[var11], var30, 8 * var3, 8 * var4, var34, 8 * (var38 & 7), 8 * (var9 & 7), var36, class_206.field_2401, field_1475, -915212653);
+                                 FontHandler.method_6614(class_168.field_2103[var11], var30, 8 * var3, 8 * var4, var34, 8 * (var38 & 7), 8 * (var9 & 7), var36, class_206.field_2401, field_1475, -915212653);
                                  break;
                               }
                            }
@@ -13546,8 +13102,8 @@ public final class client extends GameApplet implements class_16 {
                for(var36 = var3 - 1; var36 <= var4 + 1; ++var36) {
                   for(var38 = var32 - 1; var38 <= 1 + var34; ++var38) {
                      if(var36 < var3 || var36 > var4 || var38 < var32 || var38 > var34) {
-                        class_286.field_3275.method_5405("m" + var36 + "_" + var38, (byte)-10);
-                        class_286.field_3275.method_5405("l" + var36 + "_" + var38, (byte)-3);
+                        class_286.idx5.method_5405("m" + var36 + "_" + var38, (byte)-10);
+                        class_286.idx5.method_5405("l" + var36 + "_" + var38, (byte)-3);
                      }
                   }
                }
@@ -13704,7 +13260,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(field_1421 * -888167097 == 0) {
-               class_192.method_3960((byte)83);
+               class_192.loadAssets((byte)83);
                field_1383.method_3950(-1887937791);
 
                for(var8 = 0; var8 < 32; ++var8) {
@@ -13718,7 +13274,7 @@ public final class client extends GameApplet implements class_16 {
                class_299.field_3366 = 0;
             } else if(-888167097 * field_1421 == 5) {
                class_221.method_4272((byte)18);
-               class_192.method_3960((byte)24);
+               class_192.loadAssets((byte)24);
                field_1383.method_3950(-1887937791);
 
                for(var8 = 0; var8 < -849703562; ++var8) {
@@ -16376,9 +15932,9 @@ public final class client extends GameApplet implements class_16 {
             if(var1 < var76) {
                var10 = -1879392340 * var0.field_1116 + 15;
                class_303.method_5369(-1480931280 * var0.field_1077, -1150248281 * var0.field_1076, var10, -1158444411);
-               class_68 var11 = (class_68)field_1532.get(class_373.field_4124);
+               class_68 var11 = (class_68)field_1532.get(FontHandler.p12_full);
                byte var12 = 9;
-               var11.method_872(var9.field_1148.method_6272(), 1057202329 * field_1434 + var2, var3 + -1777701551 * field_1517 - var12, 16777215, 0);
+               var11.drawString(var9.field_1148.method_6272(), 1057202329 * field_1434 + var2, var3 + -1777701551 * field_1517 - var12, 16777215, 0);
                var8 = 18;
             }
          }
@@ -18558,18 +18114,18 @@ public final class client extends GameApplet implements class_16 {
       class_37.field_98.method_5074();
       ((class_245)class_70.field_555).method_4703((short)128);
       class_90.field_901.method_5074();
-      class_314.field_3783.method_5450((byte)79);
-      class_125.field_1360.method_5450((byte)34);
-      class_44.field_326.method_5450((byte)40);
-      class_137.field_1762.method_5450((byte)91);
-      class_286.field_3275.method_5450((byte)77);
-      class_194.field_2307.method_5450((byte)45);
-      class_148.field_1871.method_5450((byte)70);
-      class_311.field_3749.method_5450((byte)91);
-      class_240.field_2680.method_5450((byte)90);
-      class_157.field_1956.method_5450((byte)125);
-      class_221.field_2516.method_5450((byte)115);
-      class_189.field_2275.method_5450((byte)39);
+      class_314.idx0.method_5450((byte)79);
+      class_125.idx1.method_5450((byte)34);
+      class_44.idx3.method_5450((byte)40);
+      class_137.idx4.method_5450((byte)91);
+      class_286.idx5.method_5450((byte)77);
+      class_194.idx6.method_5450((byte)45);
+      class_148.idx7.method_5450((byte)70);
+      class_311.idx8.method_5450((byte)91);
+      class_240.idx9.method_5450((byte)90);
+      class_157.idx10.method_5450((byte)125);
+      class_221.idx11.method_5450((byte)115);
+      class_189.idx12.method_5450((byte)39);
       class_206.field_2401.method_4723();
 
       for(int var0 = 0; var0 < 4; ++var0) {
@@ -22229,18 +21785,18 @@ public final class client extends GameApplet implements class_16 {
       class_37.field_98.method_5074();
       ((class_245)class_70.field_555).method_4703((short)128);
       class_90.field_901.method_5074();
-      class_314.field_3783.method_5450((byte)73);
-      class_125.field_1360.method_5450((byte)114);
-      class_44.field_326.method_5450((byte)117);
-      class_137.field_1762.method_5450((byte)48);
-      class_286.field_3275.method_5450((byte)47);
-      class_194.field_2307.method_5450((byte)81);
-      class_148.field_1871.method_5450((byte)107);
-      class_311.field_3749.method_5450((byte)109);
-      class_240.field_2680.method_5450((byte)78);
-      class_157.field_1956.method_5450((byte)124);
-      class_221.field_2516.method_5450((byte)62);
-      class_189.field_2275.method_5450((byte)89);
+      class_314.idx0.method_5450((byte)73);
+      class_125.idx1.method_5450((byte)114);
+      class_44.idx3.method_5450((byte)117);
+      class_137.idx4.method_5450((byte)48);
+      class_286.idx5.method_5450((byte)47);
+      class_194.idx6.method_5450((byte)81);
+      class_148.idx7.method_5450((byte)107);
+      class_311.idx8.method_5450((byte)109);
+      class_240.idx9.method_5450((byte)78);
+      class_157.idx10.method_5450((byte)124);
+      class_221.idx11.method_5450((byte)62);
+      class_189.idx12.method_5450((byte)89);
       class_206.field_2401.method_4723();
 
       for(int var0 = 0; var0 < 4; ++var0) {
@@ -23042,7 +22598,7 @@ public final class client extends GameApplet implements class_16 {
                            }
 
                            class_24 var10000 = (class_24)null;
-                           var25 = class_24.method_79(class_137.field_1762, field_1659[var2], 0);
+                           var25 = class_24.method_79(class_137.idx4, field_1659[var2], 0);
                            if(var25 == null) {
                               continue;
                            }
@@ -23156,7 +22712,7 @@ public final class client extends GameApplet implements class_16 {
                                  throw new IllegalStateException();
                               }
 
-                              class_162.method_3399(class_194.field_2307, field_1656 * 2076100495, 0, 1285356667 * class_87.preferences.field_2122, false);
+                              class_162.method_3399(class_194.idx6, field_1656 * 2076100495, 0, 1285356667 * class_87.preferences.field_2122, false);
                            }
                         }
 
@@ -23288,7 +22844,7 @@ public final class client extends GameApplet implements class_16 {
                         field_1582 += -1689374317;
                      }
 
-                     if(class_373.method_6616()) {
+                     if(FontHandler.method_6616()) {
                         if(var1 >= 349527629) {
                            throw new IllegalStateException();
                         }
@@ -24320,7 +23876,7 @@ public final class client extends GameApplet implements class_16 {
       var0 = Math.min(Math.max(var0, 0), 255);
       if(var0 != class_87.preferences.field_2122 * 1285356667) {
          if(0 == 1285356667 * class_87.preferences.field_2122 && -1 != 2076100495 * field_1656) {
-            class_162.method_3399(class_194.field_2307, 2076100495 * field_1656, 0, var0, false);
+            class_162.method_3399(class_194.idx6, 2076100495 * field_1656, 0, var0, false);
             field_1657 = false;
          } else if(0 == var0) {
             class_198.field_2339.method_1962();
@@ -24344,7 +23900,7 @@ public final class client extends GameApplet implements class_16 {
       var0 = Math.min(Math.max(var0, 0), 255);
       if(var0 != class_87.preferences.field_2122 * 647442633) {
          if(0 == 102013734 * class_87.preferences.field_2122 && -1 != 2076100495 * field_1656) {
-            class_162.method_3399(class_194.field_2307, 2076100495 * field_1656, 0, var0, false);
+            class_162.method_3399(class_194.idx6, 2076100495 * field_1656, 0, var0, false);
             field_1657 = false;
          } else if(0 == var0) {
             class_198.field_2339.method_1962();
@@ -24368,7 +23924,7 @@ public final class client extends GameApplet implements class_16 {
       var0 = Math.min(Math.max(var0, 0), 255);
       if(var0 != class_87.preferences.field_2122 * 1285356667) {
          if(0 == 1285356667 * class_87.preferences.field_2122 && -1 != 2076100495 * field_1656) {
-            class_162.method_3399(class_194.field_2307, 2076100495 * field_1656, 0, var0, false);
+            class_162.method_3399(class_194.idx6, 2076100495 * field_1656, 0, var0, false);
             field_1657 = false;
          } else if(0 == var0) {
             class_198.field_2339.method_1962();
@@ -25277,7 +24833,7 @@ public final class client extends GameApplet implements class_16 {
    // $FF: renamed from: nh (int, int) void
    static void method_2789(int var0) {
       if(-534699828 * class_87.preferences.field_2122 != 0 && var0 != -1) {
-         class_162.method_3399(class_221.field_2516, var0, 0, class_87.preferences.field_2122 * 1285356667, false);
+         class_162.method_3399(class_221.idx11, var0, 0, class_87.preferences.field_2122 * 1285356667, false);
          field_1657 = true;
       }
 
@@ -25690,27 +25246,27 @@ public final class client extends GameApplet implements class_16 {
                var6.networkBuffer.write(var38.data, 0, var38.data.length);
                var6.networkBuffer.writeByte(-1731105959 * field_1418);
                var6.networkBuffer.writeIntReverse(0);
-               var6.networkBuffer.writeIntReverse(class_194.field_2307.field_3718 * 2055325169);
+               var6.networkBuffer.writeIntReverse(class_194.idx6.field_3718 * 2055325169);
                var6.networkBuffer.writeIntAlt(0);
-               var6.networkBuffer.writeIntAlt(class_123.field_1345.field_3718 * 2055325169);
-               var6.networkBuffer.writeIntAltReversed(class_125.field_1360.field_3718 * 2055325169);
-               var6.networkBuffer.writeIntAlt(2055325169 * class_44.field_326.field_3718);
-               var6.networkBuffer.writeIntAltReversed(2055325169 * class_54.field_406.field_3718);
-               var6.networkBuffer.writeIntReverse(2055325169 * class_229.field_2573.field_3718);
-               var6.networkBuffer.writeInt(class_314.field_3783.field_3718 * 2055325169);
-               var6.networkBuffer.writeIntReverse(class_341.field_3894.field_3718 * 2055325169);
-               var6.networkBuffer.writeIntReverse(2055325169 * class_157.field_1956.field_3718);
-               var6.networkBuffer.writeIntReverse(2055325169 * class_123.field_1348.field_3718);
-               var6.networkBuffer.writeInt(class_221.field_2516.field_3718 * 2055325169);
-               var6.networkBuffer.writeIntAltReversed(class_137.field_1762.field_3718 * 2055325169);
-               var6.networkBuffer.writeIntReverse(class_148.field_1869.field_3718 * 2055325169);
-               var6.networkBuffer.writeIntAltReversed(2055325169 * class_202.field_2368.field_3718);
-               var6.networkBuffer.writeIntAlt(2055325169 * class_240.field_2680.field_3718);
-               var6.networkBuffer.writeInt(class_189.field_2275.field_3718 * 2055325169);
-               var6.networkBuffer.writeIntAltReversed(2055325169 * class_373.field_4123.field_3718);
-               var6.networkBuffer.writeInt(class_286.field_3275.field_3718 * 2055325169);
-               var6.networkBuffer.writeIntReverse(2055325169 * class_148.field_1871.field_3718);
-               var6.networkBuffer.writeIntReverse(class_311.field_3749.field_3718 * 2055325169);
+               var6.networkBuffer.writeIntAlt(class_123.idx17.field_3718 * 2055325169);
+               var6.networkBuffer.writeIntAltReversed(class_125.idx1.field_3718 * 2055325169);
+               var6.networkBuffer.writeIntAlt(2055325169 * class_44.idx3.field_3718);
+               var6.networkBuffer.writeIntAltReversed(2055325169 * class_54.idx20.field_3718);
+               var6.networkBuffer.writeIntReverse(2055325169 * class_229.idx19.field_3718);
+               var6.networkBuffer.writeInt(class_314.idx0.field_3718 * 2055325169);
+               var6.networkBuffer.writeIntReverse(class_341.idx15.field_3718 * 2055325169);
+               var6.networkBuffer.writeIntReverse(2055325169 * class_157.idx10.field_3718);
+               var6.networkBuffer.writeIntReverse(2055325169 * class_123.idx2.field_3718);
+               var6.networkBuffer.writeInt(class_221.idx11.field_3718 * 2055325169);
+               var6.networkBuffer.writeIntAltReversed(class_137.idx4.field_3718 * 2055325169);
+               var6.networkBuffer.writeIntReverse(class_148.idx13.field_3718 * 2055325169);
+               var6.networkBuffer.writeIntAltReversed(2055325169 * class_202.idx14.field_3718);
+               var6.networkBuffer.writeIntAlt(2055325169 * class_240.idx9.field_3718);
+               var6.networkBuffer.writeInt(class_189.idx12.field_3718 * 2055325169);
+               var6.networkBuffer.writeIntAltReversed(2055325169 * FontHandler.idx18.field_3718);
+               var6.networkBuffer.writeInt(class_286.idx5.field_3718 * 2055325169);
+               var6.networkBuffer.writeIntReverse(2055325169 * class_148.idx7.field_3718);
+               var6.networkBuffer.writeIntReverse(class_311.idx8.field_3718 * 2055325169);
                var6.networkBuffer.xteaEncrypt(xteaKeysNew, var8, var6.networkBuffer.offset * -442398587, (byte)-6);
                var6.networkBuffer.writeShortAltReverse(var6.networkBuffer.offset * -442398587 - var30, (byte)-121);
                field_1463.method_4079(var6);
@@ -26553,7 +26109,7 @@ public final class client extends GameApplet implements class_16 {
                throw new IllegalStateException();
             }
 
-            class_160.method_3376(class_37.field_241, class_98.field_1136, class_183.field_2251, (byte)0);
+            class_160.drawLoginScreen(class_37.field_241, class_98.field_1136, class_183.field_2251, (byte)0);
          } else {
             label225: {
                if(-888167097 * field_1421 != 10) {
@@ -26563,7 +26119,7 @@ public final class client extends GameApplet implements class_16 {
                            return;
                         }
 
-                        class_160.method_3376(class_37.field_241, class_98.field_1136, class_183.field_2251, (byte)0);
+                        class_160.drawLoginScreen(class_37.field_241, class_98.field_1136, class_183.field_2251, (byte)0);
                      } else if(field_1421 * -888167097 == 25) {
                         if(var2 <= 8220) {
                            throw new IllegalStateException();
@@ -26629,7 +26185,7 @@ public final class client extends GameApplet implements class_16 {
                   }
                }
 
-               class_160.method_3376(class_37.field_241, class_98.field_1136, class_183.field_2251, (byte)0);
+               class_160.drawLoginScreen(class_37.field_241, class_98.field_1136, class_183.field_2251, (byte)0);
             }
          }
 

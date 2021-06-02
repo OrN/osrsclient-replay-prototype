@@ -138,8 +138,8 @@ public class class_370 implements class_20 {
                   }
 
                   class_275.field_3216[var5] = var9;
-                  class_51.field_376[var5] = class_286.field_3275.method_5399("m" + var7 + "_" + var8);
-                  class_176.field_2178[var5] = class_286.field_3275.method_5399("l" + var7 + "_" + var8);
+                  class_51.field_376[var5] = class_286.idx5.method_5399("m" + var7 + "_" + var8);
+                  class_176.field_2178[var5] = class_286.idx5.method_5399("l" + var7 + "_" + var8);
                   ++var5;
                }
             }
@@ -243,8 +243,8 @@ public class class_370 implements class_20 {
                            class_275.field_3216[var6] = var13;
                            var14 = var13 >> 8 & 255;
                            int var15 = var13 & 255;
-                           class_51.field_376[var6] = class_286.field_3275.method_5399("m" + var14 + "_" + var15);
-                           class_176.field_2178[var6] = class_286.field_3275.method_5399("l" + var14 + "_" + var15);
+                           class_51.field_376[var6] = class_286.idx5.method_5399("m" + var14 + "_" + var15);
+                           class_176.field_2178[var6] = class_286.idx5.method_5399("l" + var14 + "_" + var15);
                            ++var6;
                         }
                      }

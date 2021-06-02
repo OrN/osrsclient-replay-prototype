@@ -1,7 +1,7 @@
 import java.util.zip.CRC32;
 
 // $FF: renamed from: jp
-public class class_307 extends class_306 {
+public class IDXFile extends class_306 {
 
    // $FF: renamed from: l int
    int field_3722;
@@ -790,7 +790,7 @@ public class class_307 extends class_306 {
    }
 
    // $FF: renamed from: <init> (lh, lh, int, boolean, boolean, boolean) void
-   public class_307(class_350 var1, class_350 var2, int var3, boolean var4, boolean var5, boolean var6) {
+   public IDXFile(class_350 var1, class_350 var2, int var3, boolean var4, boolean var5, boolean var6) {
       super(var4, var5);
       try {
          this.field_3727 = false;
@@ -800,7 +800,7 @@ public class class_307 extends class_306 {
          this.field_3725 = var2;
          this.field_3726 = var3 * 264232021;
          this.field_3728 = var6;
-         class_229.method_4359(this, this.field_3726 * 1695957245, -2058248289);
+         class_229.initIDX(this, this.field_3726 * 1695957245, -2058248289);
       } catch (RuntimeException var7) {
          throw class_223.method_4281(var7);
       }

@@ -15,11 +15,11 @@ public class class_363 {
     // $FF: renamed from: al int
    int field_4025;
    // $FF: renamed from: s mv
-   static final class_373 field_4026;
+   static final FontHandler field_4026;
    // $FF: renamed from: u mv
-   static final class_373 field_4027;
+   static final FontHandler field_4027;
    // $FF: renamed from: l mv
-   static final class_373 field_4028;
+   static final FontHandler field_4028;
    // $FF: renamed from: aq boolean
    boolean field_4029;
    // $FF: renamed from: an boolean
@@ -477,7 +477,7 @@ public class class_363 {
             }
 
             this.method_6348(var1, var2, var3, var4, var9, var10, -511459104);
-            if(class_373.method_6616()) {
+            if(FontHandler.method_6616()) {
                if(var6 == 461631309) {
                   throw new IllegalStateException();
                }
@@ -853,9 +853,9 @@ public class class_363 {
 
    // $FF: renamed from: <clinit> () void
    static {
-      field_4026 = class_373.field_4118;
-      field_4027 = class_373.field_4115;
-      field_4028 = class_373.field_4119;
+      field_4026 = FontHandler.verdana_11pt_regular;
+      field_4027 = FontHandler.verdana_13pt_regular;
+      field_4028 = FontHandler.verdana_15pt_regular;
    }
 
     // $FF: renamed from: am (int) int
@@ -1261,7 +1261,7 @@ public class class_363 {
          class_65.method_681(var1, var2, var3, var4, -16777216);
          class_65.method_670(var8 - 152, var9, 304, 34, -65536);
          class_65.method_681(var8 - 150, 2 + var9, 3 * var5, 30, -65536);
-         this.field_4078.method_872(class_305.field_3703, var8, var7 + var9, -1, -1);
+         this.field_4078.drawString(class_305.field_3703, var8, var7 + var9, -1, -1);
       } catch (RuntimeException var10) {
          throw class_223.method_4281(var10);
       }
@@ -1637,7 +1637,7 @@ public class class_363 {
             int var7 = (int)((float)(this.field_4039 * -1742821169) - ((float)(var2 - -530472683 * this.field_4047) - (float)this.method_6365() * this.field_4042 / 2.0F) / this.field_4042);
             this.field_4072 = this.field_4034.method_4399(var6 + this.field_4034.method_4376() * 64, var7 + this.field_4034.method_4378() * 64, -1073728046);
             if(null != this.field_4072 && var3) {
-               if(class_373.method_6616() && class_145.field_1840[82] && class_145.field_1840[81]) {
+               if(FontHandler.method_6616() && class_145.field_1840[82] && class_145.field_1840[81]) {
                   class_117.method_2253(this.field_4072.field_3236 * -2092998769, 349527629 * this.field_4072.field_3235, this.field_4072.field_3234 * -1820038389, false, 1614956445);
                } else {
                   boolean var8 = true;

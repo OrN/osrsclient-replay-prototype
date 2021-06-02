@@ -1,27 +1,27 @@
 
 // $FF: renamed from: mv
-public class class_373 {
+public class FontHandler {
 
    // $FF: renamed from: p mv
-   public static final class_373 field_4115;
+   public static final FontHandler verdana_13pt_regular;
    // $FF: renamed from: v mv
-   public static final class_373 field_4116;
+   public static final FontHandler p11_full;
    // $FF: renamed from: f mv
-   public static final class_373 field_4117;
+   public static final FontHandler b12_full;
    // $FF: renamed from: y mv
-   public static final class_373 field_4118;
+   public static final FontHandler verdana_11pt_regular;
    // $FF: renamed from: j mv
-   public static final class_373 field_4119;
+   public static final FontHandler verdana_15pt_regular;
     // $FF: renamed from: r java.lang.String
-   String field_4121;
+   String name;
     // $FF: renamed from: eu jp
-   static class_307 field_4123;
+   static IDXFile idx18;
    // $FF: renamed from: n mv
-   public static final class_373 field_4124;
+   public static final FontHandler p12_full;
 
 
    // $FF: renamed from: fp (int, boolean, boolean, boolean, byte) jp
-   static class_307 method_6613(int var0, boolean var1, boolean var2, boolean var3, byte var4) {
+   static IDXFile loadIDXFile(int var0, boolean var1, boolean var2, boolean var3, byte var4) {
       try {
          class_350 var5 = null;
          if(null != class_199.field_2346) {
@@ -33,7 +33,7 @@ public class class_373 {
             var5 = var10000;
          }
 
-         class_307 var7 = new class_307(var5, class_135.field_1749, var0, var1, var2, var3);
+         IDXFile var7 = new IDXFile(var5, class_135.field_1749, var0, var1, var2, var3);
          return var7;
       } catch (RuntimeException var6) {
          throw class_223.method_4281(var6);
@@ -178,18 +178,18 @@ public class class_373 {
 
    // $FF: renamed from: <clinit> () void
    static {
-      class_373 var10000 = new class_373("p11_full");
-      field_4116 = var10000;
-      var10000 = new class_373("p12_full");
-      field_4124 = var10000;
-      var10000 = new class_373("b12_full");
-      field_4117 = var10000;
-      var10000 = new class_373("verdana_11pt_regular");
-      field_4118 = var10000;
-      var10000 = new class_373("verdana_13pt_regular");
-      field_4115 = var10000;
-      var10000 = new class_373("verdana_15pt_regular");
-      field_4119 = var10000;
+      FontHandler var10000 = new FontHandler("p11_full");
+      p11_full = var10000;
+      var10000 = new FontHandler("p12_full");
+      p12_full = var10000;
+      var10000 = new FontHandler("b12_full");
+      b12_full = var10000;
+      var10000 = new FontHandler("verdana_11pt_regular");
+      verdana_11pt_regular = var10000;
+      var10000 = new FontHandler("verdana_13pt_regular");
+      verdana_13pt_regular = var10000;
+      var10000 = new FontHandler("verdana_15pt_regular");
+      verdana_15pt_regular = var10000;
    }
 
    // $FF: renamed from: ln (int) boolean
@@ -358,10 +358,10 @@ public class class_373 {
    }
 
    // $FF: renamed from: <init> (java.lang.String) void
-   class_373(String var1) {
+   FontHandler(String var1) {
       super();
       try {
-         this.field_4121 = var1;
+         this.name = var1;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2);
       }

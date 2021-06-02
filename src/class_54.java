@@ -11,7 +11,7 @@ public class class_54 extends class_51 {
    // $FF: renamed from: an int
    static int field_405;
    // $FF: renamed from: ez jp
-   static class_307 field_406;
+   static IDXFile idx20;
    // $FF: renamed from: j int
    public static final int field_407 = 31;
    // $FF: renamed from: v int

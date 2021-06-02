@@ -444,7 +444,7 @@ public abstract class class_68 extends class_65 {
    }
 
    // $FF: renamed from: x (java.lang.String, int, int, int, int) void
-   public void method_872(String var1, int var2, int var3, int var4, int var5) {
+   public void drawString(String var1, int var2, int var3, int var4, int var5) {
       if(var1 != null) {
          this.method_878(var4, var5);
          this.method_861(var1, var2 - this.method_885(var1) / 2, var3);

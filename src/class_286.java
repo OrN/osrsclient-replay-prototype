@@ -3,7 +3,7 @@
 public class class_286 {
 
    // $FF: renamed from: dt jp
-   static class_307 field_3275;
+   static IDXFile idx5;
 
 
     // $FF: renamed from: hd (int, int, int, int, int, int, int, int) void

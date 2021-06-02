@@ -113,7 +113,7 @@ public class class_190 {
       super();
       try {
          this.field_2285 = false;
-         int var1 = class_123.field_1348.method_5393(19);
+         int var1 = class_123.idx2.method_5393(19);
          this.field_2282 = new HashMap();
          this.field_2281 = new boolean[var1];
 
@@ -124,8 +124,8 @@ public class class_190 {
          }
 
          var2 = 0;
-         if(class_123.field_1348.method_5503(15, -1677083054)) {
-            var2 = class_123.field_1348.method_5393(15);
+         if(class_123.idx2.method_5503(15, -1677083054)) {
+            var2 = class_123.idx2.method_5393(15);
          }
 
          this.field_2283 = new String[var2];

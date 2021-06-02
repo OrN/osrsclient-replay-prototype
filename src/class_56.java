@@ -120,18 +120,18 @@ public class class_56 extends class_51 {
          class_37.field_98.method_5074();
          ((class_245)class_70.field_555).method_4703((short)128);
          class_90.field_901.method_5074();
-         class_314.field_3783.method_5450((byte)94);
-         class_125.field_1360.method_5450((byte)36);
-         class_44.field_326.method_5450((byte)81);
-         class_137.field_1762.method_5450((byte)70);
-         class_286.field_3275.method_5450((byte)93);
-         class_194.field_2307.method_5450((byte)102);
-         class_148.field_1871.method_5450((byte)95);
-         class_311.field_3749.method_5450((byte)127);
-         class_240.field_2680.method_5450((byte)93);
-         class_157.field_1956.method_5450((byte)112);
-         class_221.field_2516.method_5450((byte)120);
-         class_189.field_2275.method_5450((byte)50);
+         class_314.idx0.method_5450((byte)94);
+         class_125.idx1.method_5450((byte)36);
+         class_44.idx3.method_5450((byte)81);
+         class_137.idx4.method_5450((byte)70);
+         class_286.idx5.method_5450((byte)93);
+         class_194.idx6.method_5450((byte)102);
+         class_148.idx7.method_5450((byte)95);
+         class_311.idx8.method_5450((byte)127);
+         class_240.idx9.method_5450((byte)93);
+         class_157.idx10.method_5450((byte)112);
+         class_221.idx11.method_5450((byte)120);
+         class_189.idx12.method_5450((byte)50);
          class_206.field_2401.method_4723();
 
          for(int var1 = 0; var1 < 4; ++var1) {

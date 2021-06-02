@@ -85,7 +85,7 @@ final class class_294 implements Comparator {
                   throw new IllegalStateException();
                }
 
-               class_162.method_3399(class_221.field_2516, var0, 0, class_87.preferences.field_2122 * 1285356667, false);
+               class_162.method_3399(class_221.idx11, var0, 0, class_87.preferences.field_2122 * 1285356667, false);
                client.field_1657 = true;
             }
          }

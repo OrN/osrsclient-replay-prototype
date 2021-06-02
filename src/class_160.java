@@ -931,7 +931,7 @@ public class class_160 {
    }
 
    // $FF: renamed from: s (kt, kt, kt, byte) void
-   static void method_3376(class_69 var0, class_69 var1, class_69 var2, byte var3) {
+   static void drawLoginScreen(class_69 var0, class_69 var1, class_69 var2, byte var3) {
       Replay.clientReady = true;
 
       try {
@@ -953,17 +953,17 @@ public class class_160 {
                      throw new IllegalStateException();
                   }
 
-                  class_347.field_3926 = class_259.method_4969(class_311.field_3749, "sl_back", "");
+                  class_347.field_3926 = class_259.method_4969(class_311.idx8, "sl_back", "");
                }
 
-               class_307 var41;
+               IDXFile var41;
                class_66[] var48;
                if(null == class_55.field_411) {
                   if(var3 != 0) {
                      return;
                   }
 
-                  var41 = class_311.field_3749;
+                  var41 = class_311.idx8;
                   var29 = var41.method_5399("sl_flags");
                   var33 = var41.method_5400(var29, "");
                   var48 = class_212.method_4182(var41, var29, var33);
@@ -975,7 +975,7 @@ public class class_160 {
                      throw new IllegalStateException();
                   }
 
-                  var41 = class_311.field_3749;
+                  var41 = class_311.idx8;
                   var29 = var41.method_5399("sl_arrows");
                   var33 = var41.method_5400(var29, "");
                   var48 = class_212.method_4182(var41, var29, var33);
@@ -987,7 +987,7 @@ public class class_160 {
                      throw new IllegalStateException();
                   }
 
-                  var41 = class_311.field_3749;
+                  var41 = class_311.idx8;
                   var29 = var41.method_5399("sl_stars");
                   var33 = var41.method_5400(var29, "");
                   var48 = class_212.method_4182(var41, var29, var33);
@@ -995,7 +995,7 @@ public class class_160 {
                }
 
                if(null == class_180.field_2238) {
-                  class_180.field_2238 = class_79.method_1257(class_311.field_3749, "leftarrow", "");
+                  class_180.field_2238 = class_79.method_1257(class_311.idx8, "leftarrow", "");
                }
 
                if(class_234.field_2625 == null) {
@@ -1003,13 +1003,13 @@ public class class_160 {
                      throw new IllegalStateException();
                   }
 
-                  class_234.field_2625 = class_79.method_1257(class_311.field_3749, "rightarrow", "");
+                  class_234.field_2625 = class_79.method_1257(class_311.idx8, "rightarrow", "");
                }
 
                class_65.method_681(751544539 * class_177.field_2183, 23, 765, 480, 0);
                class_65.method_710(class_177.field_2183 * 751544539, 0, 125, 23, 12425273, 9135624);
                class_65.method_710(751544539 * class_177.field_2183 + 125, 0, 640, 23, 5197647, 2697513);
-               var0.method_872(class_305.field_3434, 751544539 * class_177.field_2183 + 62, 15, 0, -1);
+               var0.drawString(class_305.field_3434, 751544539 * class_177.field_2183 + 62, 15, 0, -1);
                if(class_119.field_1318 != null) {
                   if(var3 != 0) {
                      throw new IllegalStateException();
@@ -1150,7 +1150,7 @@ public class class_160 {
                }
 
                class_65.method_681(708 + class_177.field_2183 * 751544539, 4, 50, 16, 0);
-               var1.method_872(class_305.strCancel, class_177.field_2183 * 751544539 + 708 + 25, 16, 16777215, -1);
+               var1.drawString(class_305.strCancel, class_177.field_2183 * 751544539 + 708 + 25, 16, 16777215, -1);
                class_177.field_2208 = 952650267;
                if(class_347.field_3926 != null) {
                   if(var3 != 0) {
@@ -1386,8 +1386,8 @@ public class class_160 {
                         var53[var50 + -1484367493 * var19.field_1880].draw(29 + var44, var13);
                      }
 
-                     var0.method_872(Integer.toString(-1428153959 * var19.field_1894), var44 + 15, var43 / 2 + var13 + 5, var23, -1);
-                     var1.method_872(var21, 60 + var44, var43 / 2 + var13 + 5, 268435455, -1);
+                     var0.drawString(Integer.toString(-1428153959 * var19.field_1894), var44 + 15, var43 / 2 + var13 + 5, var23, -1);
+                     var1.drawString(var21, 60 + var44, var43 / 2 + var13 + 5, 268435455, -1);
                      var13 += var43 + var34;
                      ++var15;
                      if(var15 >= var33) {
@@ -1416,7 +1416,7 @@ public class class_160 {
 
                      class_65.method_681(GameMouseListener.field_1722 * -678881683 - var18 / 2, var46, var18, var45, 16777120);
                      class_65.method_670(-678881683 * GameMouseListener.field_1722 - var18 / 2, var46, var18, var45, 0);
-                     var1.method_872(class_166.field_2083[1383104493 * class_177.field_2208].field_1889, GameMouseListener.field_1722 * -678881683, 4 + var46 + var1.field_522, 0, -1);
+                     var1.drawString(class_166.field_2083[1383104493 * class_177.field_2208].field_1889, GameMouseListener.field_1722 * -678881683, 4 + var46 + var1.field_522, 0, -1);
                   }
                }
 
@@ -1424,9 +1424,9 @@ public class class_160 {
             }
          } else {
             label974: {
-               class_177.field_2186.method_765(751544539 * class_177.field_2183, 0);
-               class_52.field_378.method_765(class_177.field_2183 * 751544539 + 382, 0);
-               class_372.field_4114.draw(class_177.field_2183 * 751544539 + 382 - class_372.field_4114.field_498 / 2, 18);
+               class_177.loginFireLeft.method_765(751544539 * class_177.field_2183, 0);
+               class_52.loginFireRight.method_765(class_177.field_2183 * 751544539 + 382, 0);
+               IDXMap.runescapeLogo.draw(class_177.field_2183 * 751544539 + 382 - IDXMap.runescapeLogo.field_498 / 2, 18);
                if(0 != client.field_1421 * -888167097) {
                   if(5 != -888167097 * client.field_1421) {
                      break label974;
@@ -1438,13 +1438,13 @@ public class class_160 {
                }
 
                var4 = 20;
-               var0.method_872(class_305.field_3616, class_177.field_2189 * 2130552221 + 180, 245 - var4, 16777215, -1);
+               var0.drawString(class_305.field_3616, class_177.field_2189 * 2130552221 + 180, 245 - var4, 16777215, -1);
                var5 = 253 - var4;
                class_65.method_670(class_177.field_2189 * 2130552221 + 180 - 152, var5, 304, 34, 9179409);
                class_65.method_670(180 + class_177.field_2189 * 2130552221 - 151, 1 + var5, 302, 32, 0);
                class_65.method_681(class_177.field_2189 * 2130552221 + 180 - 150, 2 + var5, -1692315957 * class_177.field_2190, 30, 9179409);
                class_65.method_681(class_177.field_2190 * -1692315957 + (180 + 2130552221 * class_177.field_2189 - 150), 2 + var5, 300 - class_177.field_2190 * -1692315957, 30, 0);
-               var0.method_872(class_177.loadProgressText, class_177.field_2189 * 2130552221 + 180, 276 - var4, 16777215, -1);
+               var0.drawString(class_177.loadProgressText, class_177.field_2189 * 2130552221 + 180, 276 - var4, 16777215, -1);
             }
 
             String var6;
@@ -1456,13 +1456,13 @@ public class class_160 {
                   return;
                }
 
-               class_299.loginBackground.draw(180 + 2130552221 * class_177.field_2189 - class_299.loginBackground.field_498 / 2, 271 - class_299.loginBackground.field_492 / 2);
+               class_299.loginMenuBackground.draw(180 + 2130552221 * class_177.field_2189 - class_299.loginMenuBackground.field_498 / 2, 271 - class_299.loginMenuBackground.field_492 / 2);
                var25 = 201;
-               var0.method_872(class_177.field_2196, 2130552221 * class_177.field_2189 + 180, var25, 16776960, 0);
+               var0.drawString(class_177.field_2196, 2130552221 * class_177.field_2189 + 180, var25, 16776960, 0);
                var26 = var25 + 15;
-               var0.method_872(class_177.field_2197, 180 + class_177.field_2189 * 2130552221, var26, 16776960, 0);
+               var0.drawString(class_177.field_2197, 180 + class_177.field_2189 * 2130552221, var26, 16776960, 0);
                var26 += 15;
-               var0.method_872(class_177.field_2213, 180 + 2130552221 * class_177.field_2189, var26, 16776960, 0);
+               var0.drawString(class_177.field_2213, 180 + 2130552221 * class_177.field_2189, var26, 16776960, 0);
                var26 += 15;
                var26 += 7;
                if(-677995589 * class_177.loginMenuStage != 4) {
@@ -1521,7 +1521,7 @@ public class class_160 {
                   }
                }
 
-               class_299.loginBackground.draw(2130552221 * class_177.field_2189, 171);
+               class_299.loginMenuBackground.draw(2130552221 * class_177.field_2189, 171);
                short var28;
                if(class_177.loginMenuStage * -677995589 == 0) {
                   if(var3 != 0) {
@@ -1529,7 +1529,7 @@ public class class_160 {
                   }
 
                   var25 = 251;
-                  var0.method_872(class_305.field_3647, 180 + class_177.field_2189 * 2130552221, var25, 16776960, 0);
+                  var0.drawString(class_305.field_3647, 180 + class_177.field_2189 * 2130552221, var25, 16776960, 0);
                   var26 = var25 + 30;
                   var5 = 2130552221 * class_177.field_2189 + 180 - 80;
                   var28 = 291;
@@ -1543,21 +1543,21 @@ public class class_160 {
                      throw new IllegalStateException();
                   }
 
-                  var0.method_872(class_177.field_2191, 2130552221 * class_177.field_2189 + 180, 201, 16776960, 0);
+                  var0.drawString(class_177.field_2191, 2130552221 * class_177.field_2189 + 180, 201, 16776960, 0);
                   var25 = 236;
-                  var0.method_872(class_177.field_2196, 180 + class_177.field_2189 * 2130552221, var25, 16777215, 0);
+                  var0.drawString(class_177.field_2196, 180 + class_177.field_2189 * 2130552221, var25, 16777215, 0);
                   var26 = var25 + 15;
-                  var0.method_872(class_177.field_2197, 180 + class_177.field_2189 * 2130552221, var26, 16777215, 0);
+                  var0.drawString(class_177.field_2197, 180 + class_177.field_2189 * 2130552221, var26, 16777215, 0);
                   var26 += 15;
-                  var0.method_872(class_177.field_2213, 180 + class_177.field_2189 * 2130552221, var26, 16777215, 0);
+                  var0.drawString(class_177.field_2213, 180 + class_177.field_2189 * 2130552221, var26, 16777215, 0);
                   var26 += 15;
                   var5 = 2130552221 * class_177.field_2189 + 180 - 80;
                   var28 = 321;
                   class_177.loginButton.draw(var5 - 73, var28 - 20);
-                  var0.method_872(class_305.field_3408, var5, var28 + 5, 16777215, 0);
+                  var0.drawString(class_305.field_3408, var5, var28 + 5, 16777215, 0);
                   var5 = 80 + 180 + class_177.field_2189 * 2130552221;
                   class_177.loginButton.draw(var5 - 73, var28 - 20);
-                  var0.method_872(class_305.strCancel, var5, var28 + 5, 16777215, 0);
+                  var0.drawString(class_305.strCancel, var5, var28 + 5, 16777215, 0);
                } else {
                   StringBuilder var10001;
                   String var52;
@@ -1567,11 +1567,11 @@ public class class_160 {
                      }
 
                      var25 = 201;
-                     var0.method_872(class_177.field_2196, 2097206533 * class_204.field_2391, var25, 16776960, 0);
+                     var0.drawString(class_177.field_2196, 2097206533 * class_204.field_2391, var25, 16776960, 0);
                      var26 = var25 + 15;
-                     var0.method_872(class_177.field_2197, 2097206533 * class_204.field_2391, var26, 16776960, 0);
+                     var0.drawString(class_177.field_2197, 2097206533 * class_204.field_2391, var26, 16776960, 0);
                      var26 += 15;
-                     var0.method_872(class_177.field_2213, 2097206533 * class_204.field_2391, var26, 16776960, 0);
+                     var0.drawString(class_177.field_2213, 2097206533 * class_204.field_2391, var26, 16776960, 0);
                      var26 += 15;
                      var26 += 7;
                      var0.method_869(class_305.field_3529, class_204.field_2391 * 2097206533 - 110, var26, 16777215, 0);
@@ -1690,10 +1690,10 @@ public class class_160 {
                      var13 = 2097206533 * class_204.field_2391 - 80;
                      short var14 = 321;
                      class_177.loginButton.draw(var13 - 73, var14 - 20);
-                     var0.method_872(class_305.strLogin, var13, 5 + var14, 16777215, 0);
+                     var0.drawString(class_305.strLogin, var13, 5 + var14, 16777215, 0);
                      var13 = 2097206533 * class_204.field_2391 + 80;
                      class_177.loginButton.draw(var13 - 73, var14 - 20);
-                     var0.method_872(class_305.strCancel, var13, 5 + var14, 16777215, 0);
+                     var0.drawString(class_305.strCancel, var13, 5 + var14, 16777215, 0);
                      var25 = 357;
                      switch(-519325819 * class_177.field_2199) {
                      case 2:
@@ -1707,27 +1707,27 @@ public class class_160 {
                      class_96.field_1062 = var51;
                      var51 = new class_351(2097206533 * class_204.field_2391, var25, var1.method_885(class_305.field_3664), 11);
                      class_151.field_1909 = var51;
-                     var1.method_872(class_105.field_1209, 2097206533 * class_204.field_2391, var25, 16777215, 0);
+                     var1.drawString(class_105.field_1209, 2097206533 * class_204.field_2391, var25, 16777215, 0);
                   } else if(3 == -677995589 * class_177.loginMenuStage) {
                      if(var3 != 0) {
                         return;
                      }
 
                      var25 = 201;
-                     var0.method_872(class_305.field_3654, class_177.field_2189 * 2130552221 + 180, var25, 16776960, 0);
+                     var0.drawString(class_305.field_3654, class_177.field_2189 * 2130552221 + 180, var25, 16776960, 0);
                      var26 = var25 + 20;
-                     var1.method_872(class_305.field_3655, 180 + class_177.field_2189 * 2130552221, var26, 16776960, 0);
+                     var1.drawString(class_305.field_3655, 180 + class_177.field_2189 * 2130552221, var26, 16776960, 0);
                      var26 += 15;
-                     var1.method_872(class_305.field_3589, 180 + class_177.field_2189 * 2130552221, var26, 16776960, 0);
+                     var1.drawString(class_305.field_3589, 180 + class_177.field_2189 * 2130552221, var26, 16776960, 0);
                      var26 += 15;
                      var5 = class_177.field_2189 * 2130552221 + 180;
                      var28 = 276;
                      class_177.loginButton.draw(var5 - 73, var28 - 20);
-                     var2.method_872(class_305.field_3657, var5, var28 + 5, 16777215, 0);
+                     var2.drawString(class_305.field_3657, var5, var28 + 5, 16777215, 0);
                      var5 = class_177.field_2189 * 2130552221 + 180;
                      var28 = 326;
                      class_177.loginButton.draw(var5 - 73, var28 - 20);
-                     var2.method_872(class_305.field_3682, var5, var28 + 5, 16777215, 0);
+                     var2.drawString(class_305.field_3682, var5, var28 + 5, 16777215, 0);
                   } else {
                      short var32;
                      if(4 == -677995589 * class_177.loginMenuStage) {
@@ -1735,13 +1735,13 @@ public class class_160 {
                            throw new IllegalStateException();
                         }
 
-                        var0.method_872(class_305.field_3633, 2130552221 * class_177.field_2189 + 180, 201, 16776960, 0);
+                        var0.drawString(class_305.field_3633, 2130552221 * class_177.field_2189 + 180, 201, 16776960, 0);
                         var25 = 236;
-                        var0.method_872(class_177.field_2196, 2130552221 * class_177.field_2189 + 180, var25, 16777215, 0);
+                        var0.drawString(class_177.field_2196, 2130552221 * class_177.field_2189 + 180, var25, 16777215, 0);
                         var26 = var25 + 15;
-                        var0.method_872(class_177.field_2197, class_177.field_2189 * 2130552221 + 180, var26, 16777215, 0);
+                        var0.drawString(class_177.field_2197, class_177.field_2189 * 2130552221 + 180, var26, 16777215, 0);
                         var26 += 15;
-                        var0.method_872(class_177.field_2213, 180 + 2130552221 * class_177.field_2189, var26, 16777215, 0);
+                        var0.drawString(class_177.field_2213, 180 + 2130552221 * class_177.field_2189, var26, 16777215, 0);
                         var26 += 15;
                         var10001 = (new StringBuilder()).append(class_305.field_3646).append(class_116.method_2249(class_282.field_3249));
                         if(-1702273423 * client.field_1425 % 40 < 20) {
@@ -1773,23 +1773,23 @@ public class class_160 {
                         var31 = 2130552221 * class_177.field_2189 + 180 - 80;
                         var32 = 321;
                         class_177.loginButton.draw(var31 - 73, var32 - 20);
-                        var0.method_872(class_305.field_3408, var31, var32 + 5, 16777215, 0);
+                        var0.drawString(class_305.field_3408, var31, var32 + 5, 16777215, 0);
                         var31 = class_177.field_2189 * 2130552221 + 180 + 80;
                         class_177.loginButton.draw(var31 - 73, var32 - 20);
-                        var0.method_872(class_305.strCancel, var31, 5 + var32, 16777215, 0);
-                        var1.method_872(class_305.field_3634, 180 + class_177.field_2189 * 2130552221, 36 + var32, 255, 0);
+                        var0.drawString(class_305.strCancel, var31, 5 + var32, 16777215, 0);
+                        var1.drawString(class_305.field_3634, 180 + class_177.field_2189 * 2130552221, 36 + var32, 255, 0);
                      } else if(-677995589 * class_177.loginMenuStage == 5) {
                         if(var3 != 0) {
                            throw new IllegalStateException();
                         }
 
-                        var0.method_872(class_305.field_3659, 180 + class_177.field_2189 * 2130552221, 201, 16776960, 0);
+                        var0.drawString(class_305.field_3659, 180 + class_177.field_2189 * 2130552221, 201, 16776960, 0);
                         var25 = 221;
-                        var2.method_872(class_177.field_2196, class_177.field_2189 * 2130552221 + 180, var25, 16776960, 0);
+                        var2.drawString(class_177.field_2196, class_177.field_2189 * 2130552221 + 180, var25, 16776960, 0);
                         var26 = var25 + 15;
-                        var2.method_872(class_177.field_2197, 180 + class_177.field_2189 * 2130552221, var26, 16776960, 0);
+                        var2.drawString(class_177.field_2197, 180 + class_177.field_2189 * 2130552221, var26, 16776960, 0);
                         var26 += 15;
-                        var2.method_872(class_177.field_2213, 2130552221 * class_177.field_2189 + 180, var26, 16776960, 0);
+                        var2.drawString(class_177.field_2213, 2130552221 * class_177.field_2189 + 180, var26, 16776960, 0);
                         var26 += 15;
                         var26 += 14;
                         var0.method_869(class_305.field_3660, 2130552221 * class_177.field_2189 + 180 - 145, var26, 16777215, 0);
@@ -1817,62 +1817,62 @@ public class class_160 {
                         var33 = 180 + class_177.field_2189 * 2130552221 - 80;
                         short var37 = 321;
                         class_177.loginButton.draw(var33 - 73, var37 - 20);
-                        var0.method_872(class_305.field_3661, var33, var37 + 5, 16777215, 0);
+                        var0.drawString(class_305.field_3661, var33, var37 + 5, 16777215, 0);
                         var33 = 80 + 180 + 2130552221 * class_177.field_2189;
                         class_177.loginButton.draw(var33 - 73, var37 - 20);
-                        var0.method_872(class_305.field_3662, var33, var37 + 5, 16777215, 0);
+                        var0.drawString(class_305.field_3662, var33, var37 + 5, 16777215, 0);
                         var37 = 356;
-                        var1.method_872(class_305.field_3664, 2097206533 * class_204.field_2391, var37, 268435455, 0);
+                        var1.drawString(class_305.field_3664, 2097206533 * class_204.field_2391, var37, 268435455, 0);
                      } else if(-677995589 * class_177.loginMenuStage == 6) {
                         var25 = 201;
-                        var0.method_872(class_177.field_2196, class_177.field_2189 * 2130552221 + 180, var25, 16776960, 0);
+                        var0.drawString(class_177.field_2196, class_177.field_2189 * 2130552221 + 180, var25, 16776960, 0);
                         var26 = var25 + 15;
-                        var0.method_872(class_177.field_2197, 180 + class_177.field_2189 * 2130552221, var26, 16776960, 0);
+                        var0.drawString(class_177.field_2197, 180 + class_177.field_2189 * 2130552221, var26, 16776960, 0);
                         var26 += 15;
-                        var0.method_872(class_177.field_2213, 180 + 2130552221 * class_177.field_2189, var26, 16776960, 0);
+                        var0.drawString(class_177.field_2213, 180 + 2130552221 * class_177.field_2189, var26, 16776960, 0);
                         var26 += 15;
                         var5 = 2130552221 * class_177.field_2189 + 180;
                         var28 = 321;
                         class_177.loginButton.draw(var5 - 73, var28 - 20);
-                        var0.method_872(class_305.field_3662, var5, 5 + var28, 16777215, 0);
+                        var0.drawString(class_305.field_3662, var5, 5 + var28, 16777215, 0);
                      } else if(class_177.loginMenuStage * -677995589 == 7) {
                         if(var3 != 0) {
                            throw new IllegalStateException();
                         }
 
                         var25 = 216;
-                        var0.method_872(class_305.field_3513, class_177.field_2189 * 2130552221 + 180, var25, 16776960, 0);
+                        var0.drawString(class_305.field_3513, class_177.field_2189 * 2130552221 + 180, var25, 16776960, 0);
                         var26 = var25 + 15;
-                        var2.method_872(class_305.field_3411, 180 + 2130552221 * class_177.field_2189, var26, 16776960, 0);
+                        var2.drawString(class_305.field_3411, 180 + 2130552221 * class_177.field_2189, var26, 16776960, 0);
                         var26 += 15;
-                        var2.method_872(class_305.field_3702, 2130552221 * class_177.field_2189 + 180, var26, 16776960, 0);
+                        var2.drawString(class_305.field_3702, 2130552221 * class_177.field_2189 + 180, var26, 16776960, 0);
                         var26 += 15;
                         var5 = 2130552221 * class_177.field_2189 + 180 - 80;
                         var28 = 321;
                         class_177.loginButton.draw(var5 - 73, var28 - 20);
-                        var0.method_872(class_305.field_3495, var5, 5 + var28, 16777215, 0);
+                        var0.drawString(class_305.field_3495, var5, 5 + var28, 16777215, 0);
                         var5 = 2130552221 * class_177.field_2189 + 180 + 80;
                         class_177.loginButton.draw(var5 - 73, var28 - 20);
-                        var0.method_872(class_305.field_3662, var5, 5 + var28, 16777215, 0);
+                        var0.drawString(class_305.field_3662, var5, 5 + var28, 16777215, 0);
                      } else if(8 == class_177.loginMenuStage * -677995589) {
                         if(var3 != 0) {
                            return;
                         }
 
                         var25 = 216;
-                        var0.method_872(class_305.field_3540, 180 + class_177.field_2189 * 2130552221, var25, 16776960, 0);
+                        var0.drawString(class_305.field_3540, 180 + class_177.field_2189 * 2130552221, var25, 16776960, 0);
                         var26 = var25 + 15;
-                        var2.method_872(class_305.field_3573, class_177.field_2189 * 2130552221 + 180, var26, 16776960, 0);
+                        var2.drawString(class_305.field_3573, class_177.field_2189 * 2130552221 + 180, var26, 16776960, 0);
                         var26 += 15;
-                        var2.method_872(class_305.field_3694, 180 + 2130552221 * class_177.field_2189, var26, 16776960, 0);
+                        var2.drawString(class_305.field_3694, 180 + 2130552221 * class_177.field_2189, var26, 16776960, 0);
                         var26 += 15;
                         var5 = 2130552221 * class_177.field_2189 + 180 - 80;
                         var28 = 321;
                         class_177.loginButton.draw(var5 - 73, var28 - 20);
-                        var0.method_872(class_305.field_3543, var5, 5 + var28, 16777215, 0);
+                        var0.drawString(class_305.field_3543, var5, 5 + var28, 16777215, 0);
                         var5 = 2130552221 * class_177.field_2189 + 180 + 80;
                         class_177.loginButton.draw(var5 - 73, var28 - 20);
-                        var0.method_872(class_305.field_3662, var5, var28 + 5, 16777215, 0);
+                        var0.drawString(class_305.field_3662, var5, var28 + 5, 16777215, 0);
                      } else if(12 == -677995589 * class_177.loginMenuStage) {
                         if(var3 != 0) {
                            return;
@@ -1897,36 +1897,36 @@ public class class_160 {
                            class_178.showUserLoginMenu(false, (byte)82);
                         }
 
-                        var0.method_872(var35, 2130552221 * class_177.field_2189 + 180, var25, 16776960, 0);
+                        var0.drawString(var35, 2130552221 * class_177.field_2189 + 180, var25, 16776960, 0);
                         var26 = var25 + 15;
-                        var2.method_872(var6, 2130552221 * class_177.field_2189 + 180, var26, 16776960, 0);
+                        var2.drawString(var6, 2130552221 * class_177.field_2189 + 180, var26, 16776960, 0);
                         var26 += 15;
-                        var2.method_872(var7, class_177.field_2189 * 2130552221 + 180, var26, 16776960, 0);
+                        var2.drawString(var7, class_177.field_2189 * 2130552221 + 180, var26, 16776960, 0);
                         var26 += 15;
                         var31 = 2130552221 * class_177.field_2189 + 180;
                         var32 = 276;
                         class_177.loginButton.draw(var31 - 73, var32 - 20);
-                        var0.method_872(class_305.field_3440, var31, var32 + 5, 16777215, 0);
+                        var0.drawString(class_305.field_3440, var31, var32 + 5, 16777215, 0);
                         var31 = 180 + 2130552221 * class_177.field_2189;
                         var32 = 326;
                         class_177.loginButton.draw(var31 - 73, var32 - 20);
-                        var0.method_872(class_305.field_3662, var31, var32 + 5, 16777215, 0);
+                        var0.drawString(class_305.field_3662, var31, var32 + 5, 16777215, 0);
                      } else if(24 == class_177.loginMenuStage * -677995589) {
                         if(var3 != 0) {
                            return;
                         }
 
                         var25 = 221;
-                        var0.method_872(class_177.field_2196, 180 + class_177.field_2189 * 2130552221, var25, 16777215, 0);
+                        var0.drawString(class_177.field_2196, 180 + class_177.field_2189 * 2130552221, var25, 16777215, 0);
                         var26 = var25 + 15;
-                        var0.method_872(class_177.field_2197, 2130552221 * class_177.field_2189 + 180, var26, 16777215, 0);
+                        var0.drawString(class_177.field_2197, 2130552221 * class_177.field_2189 + 180, var26, 16777215, 0);
                         var26 += 15;
-                        var0.method_872(class_177.field_2213, 2130552221 * class_177.field_2189 + 180, var26, 16777215, 0);
+                        var0.drawString(class_177.field_2213, 2130552221 * class_177.field_2189 + 180, var26, 16777215, 0);
                         var26 += 15;
                         var5 = 180 + class_177.field_2189 * 2130552221;
                         var28 = 301;
                         class_177.loginButton.draw(var5 - 73, var28 - 20);
-                        var0.method_872(class_305.field_3546, var5, var28 + 5, 16777215, 0);
+                        var0.drawString(class_305.field_3546, var5, var28 + 5, 16777215, 0);
                      }
                   }
                }
@@ -1972,18 +1972,18 @@ public class class_160 {
                      byte var40 = 100;
                      byte var38 = 35;
                      class_153.field_1925.draw(var26, var27);
-                     var0.method_872(class_305.field_3571 + " " + 1396273817 * client.field_1413, var40 / 2 + var26, var38 / 2 + var27 - 2, 16777215, 0);
+                     var0.drawString(class_305.field_3571 + " " + 1396273817 * client.field_1413, var40 / 2 + var26, var38 / 2 + var27 - 2, 16777215, 0);
                      if(null != class_192.field_2298) {
                         if(var3 != 0) {
                            throw new IllegalStateException();
                         }
 
-                        var1.method_872(class_305.field_3703, var26 + var40 / 2, var27 + var38 / 2 + 12, 16777215, 0);
+                        var1.drawString(class_305.field_3703, var26 + var40 / 2, var27 + var38 / 2 + 12, 16777215, 0);
                      } else {
-                        var1.method_872(class_305.field_3704, var40 / 2 + var26, 12 + var38 / 2 + var27, 16777215, 0);
+                        var1.drawString(class_305.field_3704, var40 / 2 + var26, 12 + var38 / 2 + var27, 16777215, 0);
                      }
                   } else {
-                     class_153.field_1925 = class_79.method_1257(class_311.field_3749, "sl_button", "");
+                     class_153.field_1925 = class_79.method_1257(class_311.idx8, "sl_button", "");
                   }
                }
             }

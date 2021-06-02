@@ -15,9 +15,9 @@ public class class_202 implements class_14 {
    // $FF: renamed from: j int
    final int field_2367;
    // $FF: renamed from: ec jp
-   static class_307 field_2368;
+   static IDXFile idx14;
    // $FF: renamed from: x nd
-   public static Buffer field_2369;
+   public static Buffer buffer;
 
 
    // $FF: renamed from: <clinit> () void

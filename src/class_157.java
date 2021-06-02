@@ -12,7 +12,7 @@ public class class_157 {
    // $FF: renamed from: y md
    class_364 field_1955;
    // $FF: renamed from: de jp
-   static class_307 field_1956;
+   static IDXFile idx10;
    // $FF: renamed from: rw int
    static int field_1957;
    // $FF: renamed from: j int

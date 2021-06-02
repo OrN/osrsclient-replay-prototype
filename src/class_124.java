@@ -23,7 +23,7 @@ public class class_124 extends class_111 {
    }
 
    // $FF: renamed from: fz (jp, java.lang.String, int) void
-   static void method_2278(class_307 var0) {
+   static void method_2278(IDXFile var0) {
       try {
          class_169 var10000 = new class_169(var0);
          class_169 var3 = var10000;

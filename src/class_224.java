@@ -412,7 +412,7 @@ public class class_224 implements class_6 {
                               return;
                            }
 
-                           class_24 var8 = class_24.method_79(class_137.field_1762, var5.field_1195 * 2113426875, 0);
+                           class_24 var8 = class_24.method_79(class_137.idx4, var5.field_1195 * 2113426875, 0);
                            if(var8 != null) {
                               if(var4 != -309944500) {
                                  throw new IllegalStateException();
@@ -440,7 +440,7 @@ public class class_224 implements class_6 {
                            }
 
                            int var13 = (int)(Math.random() * (double)var5.field_1199.length);
-                           class_24 var14 = class_24.method_79(class_137.field_1762, var5.field_1199[var13], 0);
+                           class_24 var14 = class_24.method_79(class_137.idx4, var5.field_1199[var13], 0);
                            if(var14 != null) {
                               if(var4 != -309944500) {
                                  throw new IllegalStateException();

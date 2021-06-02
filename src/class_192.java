@@ -285,7 +285,7 @@ public class class_192 extends class_191 {
    }
 
    // $FF: renamed from: fs (byte) void
-   static void method_3960(byte var0) {
+   static void loadAssets(byte var0) {
       try {
          int var25;
          if(0 == -1127540073 * client.field_1444) {
@@ -315,26 +315,26 @@ public class class_192 extends class_191 {
             }
          } else if(client.field_1444 * -1127540073 == 30) {
             if(var0 != 0) {
-               class_314.field_3783 = class_373.method_6613(0, false, true, true, (byte)28);
-               class_125.field_1360 = class_373.method_6613(1, false, true, true, (byte)-73);
-               class_123.field_1348 = class_373.method_6613(2, true, false, true, (byte)-25);
-               class_44.field_326 = class_373.method_6613(3, false, true, true, (byte)82);
-               class_137.field_1762 = class_373.method_6613(4, false, true, true, (byte)-36);
-               class_286.field_3275 = class_373.method_6613(5, true, true, true, (byte)94);
-               class_194.field_2307 = class_373.method_6613(6, true, true, true, (byte)-13);
-               class_148.field_1871 = class_373.method_6613(7, false, true, true, (byte)-69);
-               class_311.field_3749 = class_373.method_6613(8, false, true, true, (byte)26);
-               class_240.field_2680 = class_373.method_6613(9, false, true, true, (byte)21);
-               class_157.field_1956 = class_373.method_6613(10, false, true, true, (byte)-3);
-               class_221.field_2516 = class_373.method_6613(11, false, true, true, (byte)51);
-               class_189.field_2275 = class_373.method_6613(12, false, true, true, (byte)-81);
-               class_148.field_1869 = class_373.method_6613(13, true, false, true, (byte)-75);
-               class_202.field_2368 = class_373.method_6613(14, false, true, true, (byte)-62);
-               class_341.field_3894 = class_373.method_6613(15, false, true, true, (byte)64);
-               class_123.field_1345 = class_373.method_6613(17, true, true, true, (byte)-64);
-               class_373.field_4123 = class_373.method_6613(18, false, true, true, (byte)43);
-               class_229.field_2573 = class_373.method_6613(19, false, true, true, (byte)53);
-               class_54.field_406 = class_373.method_6613(20, false, true, true, (byte)38);
+               class_314.idx0 = FontHandler.loadIDXFile(0, false, true, true, (byte)28);
+               class_125.idx1 = FontHandler.loadIDXFile(1, false, true, true, (byte)-73);
+               class_123.idx2 = FontHandler.loadIDXFile(2, true, false, true, (byte)-25);
+               class_44.idx3 = FontHandler.loadIDXFile(3, false, true, true, (byte)82);
+               class_137.idx4 = FontHandler.loadIDXFile(4, false, true, true, (byte)-36);
+               class_286.idx5 = FontHandler.loadIDXFile(5, true, true, true, (byte)94);
+               class_194.idx6 = FontHandler.loadIDXFile(6, true, true, true, (byte)-13);
+               class_148.idx7 = FontHandler.loadIDXFile(7, false, true, true, (byte)-69);
+               class_311.idx8 = FontHandler.loadIDXFile(8, false, true, true, (byte)26);
+               class_240.idx9 = FontHandler.loadIDXFile(9, false, true, true, (byte)21);
+               class_157.idx10 = FontHandler.loadIDXFile(10, false, true, true, (byte)-3);
+               class_221.idx11 = FontHandler.loadIDXFile(11, false, true, true, (byte)51);
+               class_189.idx12 = FontHandler.loadIDXFile(12, false, true, true, (byte)-81);
+               class_148.idx13 = FontHandler.loadIDXFile(13, true, false, true, (byte)-75);
+               class_202.idx14 = FontHandler.loadIDXFile(14, false, true, true, (byte)-62);
+               class_341.idx15 = FontHandler.loadIDXFile(15, false, true, true, (byte)64);
+               class_123.idx17 = FontHandler.loadIDXFile(17, true, true, true, (byte)-64);
+               FontHandler.idx18 = FontHandler.loadIDXFile(18, false, true, true, (byte)43);
+               class_229.idx19 = FontHandler.loadIDXFile(19, false, true, true, (byte)53);
+               class_54.idx20 = FontHandler.loadIDXFile(20, false, true, true, (byte)38);
                class_177.loadProgressText = class_305.strConnectingUpdate;
                class_177.field_2190 = 1158487348;
                client.field_1444 = -1863266792;
@@ -344,31 +344,31 @@ public class class_192 extends class_191 {
                byte var10001;
                label584: {
                   byte var35 = 0;
-                  var25 = var35 + class_314.field_3783.method_5488((byte)53) * 4 / 100;
-                  var25 += class_125.field_1360.method_5488((byte)110) * 4 / 100;
-                  var25 += class_123.field_1348.method_5488((byte)92) * 2 / 100;
-                  var25 += class_44.field_326.method_5488((byte)97) * 2 / 100;
-                  var25 += class_137.field_1762.method_5488((byte)40) * 6 / 100;
-                  var25 += class_286.field_3275.method_5488((byte)68) * 4 / 100;
-                  var25 += class_194.field_2307.method_5488((byte)102) * 2 / 100;
-                  var25 += class_148.field_1871.method_5488((byte)63) * 56 / 100;
-                  var25 += class_311.field_3749.method_5488((byte)70) * 2 / 100;
-                  var25 += class_240.field_2680.method_5488((byte)107) * 2 / 100;
-                  var25 += class_157.field_1956.method_5488((byte)65) * 2 / 100;
-                  var25 += class_221.field_2516.method_5488((byte)81) * 2 / 100;
-                  var25 += class_189.field_2275.method_5488((byte)103) * 2 / 100;
-                  var25 += class_148.field_1869.method_5488((byte)40) * 2 / 100;
-                  var25 += class_202.field_2368.method_5488((byte)24) * 2 / 100;
-                  var25 += class_341.field_3894.method_5488((byte)121) * 2 / 100;
-                  var25 += class_229.field_2573.method_5488((byte)27) * 1 / 100;
-                  var25 += class_373.field_4123.method_5488((byte)87) * 1 / 100;
-                  var25 += class_54.field_406.method_5488((byte)85) * 1 / 100;
-                  if(class_123.field_1345.method_5487()) {
+                  var25 = var35 + class_314.idx0.method_5488((byte)53) * 4 / 100;
+                  var25 += class_125.idx1.method_5488((byte)110) * 4 / 100;
+                  var25 += class_123.idx2.method_5488((byte)92) * 2 / 100;
+                  var25 += class_44.idx3.method_5488((byte)97) * 2 / 100;
+                  var25 += class_137.idx4.method_5488((byte)40) * 6 / 100;
+                  var25 += class_286.idx5.method_5488((byte)68) * 4 / 100;
+                  var25 += class_194.idx6.method_5488((byte)102) * 2 / 100;
+                  var25 += class_148.idx7.method_5488((byte)63) * 56 / 100;
+                  var25 += class_311.idx8.method_5488((byte)70) * 2 / 100;
+                  var25 += class_240.idx9.method_5488((byte)107) * 2 / 100;
+                  var25 += class_157.idx10.method_5488((byte)65) * 2 / 100;
+                  var25 += class_221.idx11.method_5488((byte)81) * 2 / 100;
+                  var25 += class_189.idx12.method_5488((byte)103) * 2 / 100;
+                  var25 += class_148.idx13.method_5488((byte)40) * 2 / 100;
+                  var25 += class_202.idx14.method_5488((byte)24) * 2 / 100;
+                  var25 += class_341.idx15.method_5488((byte)121) * 2 / 100;
+                  var25 += class_229.idx19.method_5488((byte)27) * 1 / 100;
+                  var25 += FontHandler.idx18.method_5488((byte)87) * 1 / 100;
+                  var25 += class_54.idx20.method_5488((byte)85) * 1 / 100;
+                  if(class_123.idx17.method_5487()) {
                      if(var0 == 0) {
                         throw new IllegalStateException();
                      }
 
-                     if(class_123.field_1345.method_5423(2118992751)) {
+                     if(class_123.idx17.method_5423(2118992751)) {
                         if(var0 == 0) {
                            throw new IllegalStateException();
                         }
@@ -391,22 +391,22 @@ public class class_192 extends class_191 {
                      class_177.field_2190 = 1737731022;
                   }
                } else {
-                  class_124.method_2278(class_314.field_3783);
-                  class_124.method_2278(class_125.field_1360);
-                  class_124.method_2278(class_137.field_1762);
-                  class_124.method_2278(class_286.field_3275);
-                  class_124.method_2278(class_194.field_2307);
-                  class_124.method_2278(class_148.field_1871);
-                  class_124.method_2278(class_311.field_3749);
-                  class_124.method_2278(class_221.field_2516);
-                  class_124.method_2278(class_202.field_2368);
-                  class_124.method_2278(class_341.field_3894);
-                  class_124.method_2278(class_229.field_2573);
-                  class_124.method_2278(class_373.field_4123);
-                  class_124.method_2278(class_54.field_406);
+                  class_124.method_2278(class_314.idx0);
+                  class_124.method_2278(class_125.idx1);
+                  class_124.method_2278(class_137.idx4);
+                  class_124.method_2278(class_286.idx5);
+                  class_124.method_2278(class_194.idx6);
+                  class_124.method_2278(class_148.idx7);
+                  class_124.method_2278(class_311.idx8);
+                  class_124.method_2278(class_221.idx11);
+                  class_124.method_2278(class_202.idx14);
+                  class_124.method_2278(class_341.idx15);
+                  class_124.method_2278(class_229.idx19);
+                  class_124.method_2278(FontHandler.idx18);
+                  class_124.method_2278(class_54.idx20);
                   class_360 var47 = new class_360();
                   Connection.field_2360 = var47;
-                  Connection.field_2360.method_6293(class_123.field_1345);
+                  Connection.field_2360.method_6293(class_123.idx17);
                   class_177.loadProgressText = class_305.strLoadedUpdateList;
                   class_177.field_2190 = 1737731022;
                   client.field_1444 = 51308507;
@@ -433,7 +433,7 @@ public class class_192 extends class_191 {
             var27.method_2038(9, 128);
             class_362.field_4017 = class_213.method_4188(0, 22050, (byte)1);
             class_362.field_4017.method_2989(var27);
-            class_234.method_4590(class_341.field_3894, class_202.field_2368, class_137.field_1762, var27);
+            class_234.method_4590(class_341.idx15, class_202.idx14, class_137.idx4, var27);
             class_163.field_2034 = class_213.method_4188(1, 2048, (byte)1);
             class_108 var44 = new class_108();
             class_320.field_3804 = var44;
@@ -443,7 +443,7 @@ public class class_192 extends class_191 {
             class_177.loadProgressText = class_305.strPreparedSoundEngine;
             class_177.field_2190 = 2027352859;
             client.field_1444 = 1965883806;
-            class_372 var46 = new class_372(class_311.field_3749, class_148.field_1869);
+            IDXMap var46 = new IDXMap(class_311.idx8, class_148.idx13);
             class_149.field_1879 = var46;
          } else {
             int var2;
@@ -451,18 +451,18 @@ public class class_192 extends class_191 {
                if(var0 == 0) {
                   throw new IllegalStateException();
                } else {
-                  class_373[] var33 = new class_373[]{class_373.field_4124, class_373.field_4116, class_373.field_4119, class_373.field_4115, class_373.field_4118, class_373.field_4117};
+                  FontHandler[] var33 = new FontHandler[]{FontHandler.p12_full, FontHandler.p11_full, FontHandler.verdana_15pt_regular, FontHandler.verdana_13pt_regular, FontHandler.verdana_11pt_regular, FontHandler.b12_full};
                   var2 = var33.length;
-                  class_372 var29 = class_149.field_1879;
-                  class_373[] var36 = new class_373[]{class_373.field_4124, class_373.field_4116, class_373.field_4119, class_373.field_4115, class_373.field_4118, class_373.field_4117};
-                  client.field_1532 = var29.method_6611(var36, -1349307579);
+                  IDXMap var29 = class_149.field_1879;
+                  FontHandler[] fonts = new FontHandler[]{FontHandler.p12_full, FontHandler.p11_full, FontHandler.verdana_15pt_regular, FontHandler.verdana_13pt_regular, FontHandler.verdana_11pt_regular, FontHandler.b12_full};
+                  client.field_1532 = var29.method_6611(fonts, -1349307579);
                   if(client.field_1532.size() < var2) {
                      class_177.loadProgressText = class_305.strLoadingFonts + client.field_1532.size() * 100 / var2 + "%";
                      class_177.field_2190 = -1977992600;
                   } else {
-                     class_98.field_1136 = (class_69)client.field_1532.get(class_373.field_4116);
-                     class_183.field_2251 = (class_69)client.field_1532.get(class_373.field_4124);
-                     class_37.field_241 = (class_69)client.field_1532.get(class_373.field_4117);
+                     class_98.field_1136 = (class_69)client.field_1532.get(FontHandler.p11_full);
+                     class_183.field_2251 = (class_69)client.field_1532.get(FontHandler.p12_full);
+                     class_37.field_241 = (class_69)client.field_1532.get(FontHandler.b12_full);
                      class_114.field_1285 = client.field_1686.method_59((byte)-10);
                      class_177.loadProgressText = class_305.field_3423;
                      class_177.field_2190 = -1977992600;
@@ -472,14 +472,14 @@ public class class_192 extends class_191 {
             } else {
                int var4;
                int var5;
-               class_307 var26;
-               class_307 var28;
+               IDXFile var26;
+               IDXFile var28;
                if(60 == client.field_1444 * -1127540073) {
                   if(var0 == 0) {
                      throw new IllegalStateException();
                   } else {
-                     var26 = class_157.field_1956;
-                     var28 = class_311.field_3749;
+                     var26 = class_157.idx10;
+                     var28 = class_311.idx8;
                      var4 = 0;
                      if(var26.method_5403("title.jpg", "")) {
                         ++var4;
@@ -586,31 +586,31 @@ public class class_192 extends class_191 {
                } else if(70 == -1127540073 * client.field_1444) {
                   if(var0 == 0) {
                      throw new IllegalStateException();
-                  } else if(!class_123.field_1348.method_5423(2083167949)) {
+                  } else if(!class_123.idx2.method_5423(2083167949)) {
                      if(var0 == 0) {
                         throw new IllegalStateException();
                      } else {
-                        class_177.loadProgressText = class_305.field_3426 + class_123.field_1348.method_5494(-1371864603) + "%";
+                        class_177.loadProgressText = class_305.field_3426 + class_123.idx2.method_5494(-1371864603) + "%";
                         class_177.field_2190 = -819505252;
                      }
                   } else {
-                     class_307 var32 = class_123.field_1348;
+                     IDXFile var32 = class_123.idx2;
                      class_209.field_2421 = var32;
-                     class_125.method_2284(class_123.field_1348);
-                     class_175.method_3739(class_123.field_1348, class_148.field_1871);
-                     var26 = class_123.field_1348;
-                     var28 = class_148.field_1871;
+                     class_125.method_2284(class_123.idx2);
+                     class_175.method_3739(class_123.idx2, class_148.idx7);
+                     var26 = class_123.idx2;
+                     var28 = class_148.idx7;
                      boolean var30 = client.field_1417;
                      class_87.field_802 = var26;
                      class_327.field_3846 = var28;
                      class_87.field_806 = var30;
-                     class_307 var31 = class_123.field_1348;
-                     class_307 var6 = class_148.field_1871;
+                     IDXFile var31 = class_123.idx2;
+                     IDXFile var6 = class_148.idx7;
                      class_88.field_890 = var31;
                      class_88.field_878 = var6;
-                     class_124.method_2281(class_123.field_1348);
-                     class_307 var7 = class_123.field_1348;
-                     class_307 var8 = class_148.field_1871;
+                     class_124.method_2281(class_123.idx2);
+                     IDXFile var7 = class_123.idx2;
+                     IDXFile var8 = class_148.idx7;
                      boolean var9 = client.field_1416;
                      class_69 var10 = class_98.field_1136;
                      class_368.field_4096 = var7;
@@ -618,47 +618,47 @@ public class class_192 extends class_191 {
                      class_49.field_363 = var9;
                      class_80.field_701 = class_368.field_4096.method_5393(10) * 1504295717;
                      class_322.field_3809 = var10;
-                     class_307 var11 = class_123.field_1348;
-                     class_307 var12 = class_314.field_3783;
-                     class_307 var13 = class_125.field_1360;
+                     IDXFile var11 = class_123.idx2;
+                     IDXFile var12 = class_314.idx0;
+                     IDXFile var13 = class_125.idx1;
                      class_72.field_563 = var11;
                      class_72.field_579 = var12;
                      class_72.field_564 = var13;
-                     class_118.method_2257(class_123.field_1348, class_148.field_1871);
-                     class_184.method_3850(class_123.field_1348);
-                     class_293.method_5303(class_123.field_1348);
-                     class_307 var14 = class_44.field_326;
-                     class_307 var15 = class_148.field_1871;
-                     class_307 var16 = class_311.field_3749;
-                     class_307 var17 = class_148.field_1869;
+                     class_118.method_2257(class_123.idx2, class_148.idx7);
+                     class_184.method_3850(class_123.idx2);
+                     class_293.method_5303(class_123.idx2);
+                     IDXFile var14 = class_44.idx3;
+                     IDXFile var15 = class_148.idx7;
+                     IDXFile var16 = class_311.idx8;
+                     IDXFile var17 = class_148.idx13;
                      class_46.field_343 = var14;
                      class_61.field_480 = var15;
                      class_279.field_3227 = var16;
                      class_243.field_2697 = var17;
                      class_37.field_93 = new class_37[class_46.field_343.method_5457()][];
                      class_37.field_94 = new boolean[class_46.field_343.method_5457()];
-                     class_162.method_3390(class_123.field_1348);
-                     class_315.method_5603(class_123.field_1348);
-                     class_203.method_4078(class_123.field_1348);
-                     class_307 var18 = class_123.field_1348;
+                     class_162.method_3390(class_123.idx2);
+                     class_315.method_5603(class_123.idx2);
+                     class_203.method_4078(class_123.idx2);
+                     IDXFile var18 = class_123.idx2;
                      class_86.field_796 = var18;
-                     class_259 var40 = new class_259(54, class_123.field_1348);
+                     class_259 var40 = new class_259(54, class_123.idx2);
                      class_151.field_1912 = var40;
-                     var40 = new class_259(47, class_123.field_1348);
+                     var40 = new class_259(47, class_123.idx2);
                      class_255.field_2887 = var40;
                      class_190 var41 = new class_190();
                      class_151.field_1913 = var41;
-                     class_307 var19 = class_123.field_1348;
-                     class_307 var20 = class_311.field_3749;
-                     class_307 var21 = class_148.field_1869;
+                     IDXFile var19 = class_123.idx2;
+                     IDXFile var20 = class_311.idx8;
+                     IDXFile var21 = class_148.idx13;
                      class_76.field_625 = var19;
                      class_76.field_634 = var20;
                      class_76.field_633 = var21;
-                     class_307 var22 = class_123.field_1348;
-                     class_307 var23 = class_311.field_3749;
+                     IDXFile var22 = class_123.idx2;
+                     IDXFile var23 = class_311.idx8;
                      class_77.field_654 = var22;
                      class_77.field_661 = var23;
-                     class_189.method_3898(class_123.field_1348, class_311.field_3749, -1243272557);
+                     class_189.method_3898(class_123.idx2, class_311.idx8, -1243272557);
                      class_177.loadProgressText = class_305.field_3427;
                      class_177.field_2190 = -819505252;
                      client.field_1444 = 568433712;
@@ -670,7 +670,7 @@ public class class_192 extends class_191 {
                         throw new IllegalStateException();
                      }
 
-                     class_88.field_891 = ClientOpcode.method_5032(class_311.field_3749, Connection.field_2360.field_3997 * -1949566455, 0, (byte)14);
+                     class_88.field_891 = ClientOpcode.method_5032(class_311.idx8, Connection.field_2360.field_3997 * -1949566455, 0, (byte)14);
                   } else {
                      ++var25;
                   }
@@ -680,7 +680,7 @@ public class class_192 extends class_191 {
                         return;
                      }
 
-                     class_165.field_2067 = ClientOpcode.method_5032(class_311.field_3749, Connection.field_2360.field_3995 * -1513831133, 0, (byte)68);
+                     class_165.field_2067 = ClientOpcode.method_5032(class_311.idx8, Connection.field_2360.field_3995 * -1513831133, 0, (byte)68);
                   } else {
                      ++var25;
                   }
@@ -690,7 +690,7 @@ public class class_192 extends class_191 {
                         throw new IllegalStateException();
                      }
 
-                     class_114.field_1284 = class_212.method_4182(class_311.field_3749, Connection.field_2360.field_3994 * 791427789, 0);
+                     class_114.field_1284 = class_212.method_4182(class_311.idx8, Connection.field_2360.field_3994 * 791427789, 0);
                   } else {
                      ++var25;
                   }
@@ -700,7 +700,7 @@ public class class_192 extends class_191 {
                         return;
                      }
 
-                     class_138.field_1773 = class_80.method_1338(class_311.field_3749, Connection.field_2360.field_4000 * -14842639, 0);
+                     class_138.field_1773 = class_80.method_1338(class_311.idx8, Connection.field_2360.field_4000 * -14842639, 0);
                   } else {
                      ++var25;
                   }
@@ -710,7 +710,7 @@ public class class_192 extends class_191 {
                         throw new IllegalStateException();
                      }
 
-                     class_245.field_2718 = class_80.method_1338(class_311.field_3749, Connection.field_2360.field_3998 * 765584361, 0);
+                     class_245.field_2718 = class_80.method_1338(class_311.idx8, Connection.field_2360.field_3998 * 765584361, 0);
                   } else {
                      ++var25;
                   }
@@ -720,7 +720,7 @@ public class class_192 extends class_191 {
                         throw new IllegalStateException();
                      }
 
-                     class_40.field_270 = class_80.method_1338(class_311.field_3749, Connection.field_2360.field_3999 * -1577822991, 0);
+                     class_40.field_270 = class_80.method_1338(class_311.idx8, Connection.field_2360.field_3999 * -1577822991, 0);
                   } else {
                      ++var25;
                   }
@@ -730,7 +730,7 @@ public class class_192 extends class_191 {
                         throw new IllegalStateException();
                      }
 
-                     class_230.field_2576 = class_80.method_1338(class_311.field_3749, Connection.field_2360.field_4003 * -1223274063, 0);
+                     class_230.field_2576 = class_80.method_1338(class_311.idx8, Connection.field_2360.field_4003 * -1223274063, 0);
                   } else {
                      ++var25;
                   }
@@ -740,7 +740,7 @@ public class class_192 extends class_191 {
                         throw new IllegalStateException();
                      }
 
-                     class_169.field_2114 = class_80.method_1338(class_311.field_3749, -1228774673 * Connection.field_2360.field_4001, 0);
+                     class_169.field_2114 = class_80.method_1338(class_311.idx8, -1228774673 * Connection.field_2360.field_4001, 0);
                   } else {
                      ++var25;
                   }
@@ -750,7 +750,7 @@ public class class_192 extends class_191 {
                         throw new IllegalStateException();
                      }
 
-                     class_222.field_2518 = class_80.method_1338(class_311.field_3749, Connection.field_2360.field_4002 * -353348843, 0);
+                     class_222.field_2518 = class_80.method_1338(class_311.idx8, Connection.field_2360.field_4002 * -353348843, 0);
                   } else {
                      ++var25;
                   }
@@ -760,13 +760,13 @@ public class class_192 extends class_191 {
                         throw new IllegalStateException();
                      }
 
-                     class_100.field_1151 = class_212.method_4182(class_311.field_3749, 1865970227 * Connection.field_2360.field_3996, 0);
+                     class_100.field_1151 = class_212.method_4182(class_311.idx8, 1865970227 * Connection.field_2360.field_3996, 0);
                   } else {
                      ++var25;
                   }
 
                   if(class_223.field_2528 == null) {
-                     class_223.field_2528 = class_212.method_4182(class_311.field_3749, Connection.field_2360.field_4004 * 1606283035, 0);
+                     class_223.field_2528 = class_212.method_4182(class_311.idx8, Connection.field_2360.field_4004 * 1606283035, 0);
                   } else {
                      ++var25;
                   }
@@ -793,7 +793,7 @@ public class class_192 extends class_191 {
                } else if(-1127540073 * client.field_1444 == 90) {
                   if(var0 == 0) {
                      throw new IllegalStateException();
-                  } else if(!class_240.field_2680.method_5423(2078907090)) {
+                  } else if(!class_240.idx9.method_5423(2078907090)) {
                      if(var0 == 0) {
                         throw new IllegalStateException();
                      } else {
@@ -811,7 +811,7 @@ public class class_192 extends class_191 {
                      } else {
                         var10006 = 128;
                      }
-                     class_245 var39 = new class_245(class_240.field_2680, class_311.field_3749, 20, class_87.preferences.field_2128, var10006);
+                     class_245 var39 = new class_245(class_240.idx9, class_311.idx8, 20, class_87.preferences.field_2128, var10006);
                      class_149.field_1892 = var39;
                      class_70.method_1028(class_149.field_1892);
                      class_70.method_973(class_87.preferences.field_2128);
@@ -839,7 +839,7 @@ public class class_192 extends class_191 {
                   class_177.field_2190 = 1893067964;
                   client.field_1444 = -1294833080;
                } else if(client.field_1444 * -1127540073 == 120) {
-                  if(!class_157.field_1956.method_5403("huffman", "")) {
+                  if(!class_157.idx10.method_5403("huffman", "")) {
                      if(var0 == 0) {
                         throw new IllegalStateException();
                      } else {
@@ -847,7 +847,7 @@ public class class_192 extends class_191 {
                         class_177.field_2190 = -1427057138;
                      }
                   } else {
-                     class_276 var37 = new class_276(class_157.field_1956.method_5384("huffman", ""));
+                     class_276 var37 = new class_276(class_157.idx10.method_5384("huffman", ""));
                      class_276 var1 = var37;
                      class_178.method_3801(var1);
                      class_177.loadProgressText = class_305.field_3429;
@@ -856,21 +856,21 @@ public class class_192 extends class_191 {
                   }
                } else if(client.field_1444 * -1127540073 == 130) {
                   if(var0 != 0) {
-                     if(!class_44.field_326.method_5423(2083077757)) {
-                        class_177.loadProgressText = class_305.field_3699 + class_44.field_326.method_5494(-1371864603) * 4 / 5 + "%";
+                     if(!class_44.idx3.method_5423(2083077757)) {
+                        class_177.loadProgressText = class_305.field_3699 + class_44.idx3.method_5494(-1371864603) * 4 / 5 + "%";
                         class_177.field_2190 = -452214944;
-                     } else if(!class_189.field_2275.method_5423(2142216639)) {
+                     } else if(!class_189.idx12.method_5423(2142216639)) {
                         if(var0 == 0) {
                            throw new IllegalStateException();
                         } else {
-                           class_177.loadProgressText = class_305.field_3699 + (80 + class_189.field_2275.method_5494(-1371864603) / 6) + "%";
+                           class_177.loadProgressText = class_305.field_3699 + (80 + class_189.idx12.method_5494(-1371864603) / 6) + "%";
                            class_177.field_2190 = -452214944;
                         }
-                     } else if(!class_148.field_1869.method_5423(2052891340)) {
+                     } else if(!class_148.idx13.method_5423(2052891340)) {
                         if(var0 == 0) {
                            throw new IllegalStateException();
                         } else {
-                           class_177.loadProgressText = class_305.field_3699 + (96 + class_148.field_1869.method_5494(-1371864603) / 50) + "%";
+                           class_177.loadProgressText = class_305.field_3699 + (96 + class_148.idx13.method_5494(-1371864603) / 50) + "%";
                            class_177.field_2190 = -452214944;
                         }
                      } else {
@@ -884,8 +884,8 @@ public class class_192 extends class_191 {
                      throw new IllegalStateException();
                   } else {
                      class_177.field_2190 = 1497469444;
-                     if(!class_229.field_2573.method_5404(class_254.field_2874.field_2873)) {
-                        class_177.loadProgressText = class_305.strLoadMap + class_229.field_2573.method_5410(class_254.field_2874.field_2873) / 10 + "%";
+                     if(!class_229.idx19.method_5404(class_254.field_2874.field_2873)) {
+                        class_177.loadProgressText = class_305.strLoadMap + class_229.idx19.method_5410(class_254.field_2874.field_2873) / 10 + "%";
                      } else {
                         if(null == class_287.field_3278) {
                            if(var0 == 0) {
@@ -894,7 +894,7 @@ public class class_192 extends class_191 {
 
                            class_363 var10000 = new class_363();
                            class_287.field_3278 = var10000;
-                           class_287.field_3278.method_6391(class_229.field_2573, class_373.field_4123, class_54.field_406, class_37.field_241, client.field_1532, class_114.field_1284, 1276633974);
+                           class_287.field_3278.method_6391(class_229.idx19, FontHandler.idx18, class_54.idx20, class_37.field_241, client.field_1532, class_114.field_1284, 1276633974);
                         }
 
                         class_177.loadProgressText = class_305.strLoadedMap;

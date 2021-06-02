@@ -5,7 +5,7 @@ public class class_60 extends class_59 {
    // $FF: renamed from: f byte
    public byte field_472;
    // $FF: renamed from: v jp
-   public class_307 field_473;
+   public IDXFile field_473;
    // $FF: renamed from: n int
    public int field_474;
    // $FF: renamed from: ti int

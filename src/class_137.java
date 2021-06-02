@@ -5,7 +5,7 @@ public final class class_137 {
    // $FF: renamed from: r int
    public static int field_1760;
     // $FF: renamed from: du jp
-   static class_307 field_1762;
+   static IDXFile idx4;
     // $FF: renamed from: h int
    public static int field_1766;
 
