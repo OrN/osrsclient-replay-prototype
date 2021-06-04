@@ -514,7 +514,7 @@ public class class_167 {
                      throw new IllegalStateException();
                   }
 
-                  if(class_206.field_2401.method_4753(class_115.field_1289 * 1115122599, var12, var13, var10) >= 0) {
+                  if(GameSocket.field_2401.method_4753(class_115.field_1289 * 1115122599, var12, var13, var10) >= 0) {
                      class_87 var17 = class_121.method_2269(var15, 237922695);
                      if(var17.field_842 != null) {
                         var17 = var17.method_1492(1894862325);

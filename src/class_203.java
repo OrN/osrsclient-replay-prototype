@@ -12,7 +12,7 @@ public class class_203 {
    // $FF: renamed from: y nd
    Buffer field_2373;
    // $FF: renamed from: v ls
-   class_206 field_2374;
+   GameSocket field_2374;
    // $FF: renamed from: j nb
    NetworkBuffer networkBuffer;
    // $FF: renamed from: r hl
@@ -77,7 +77,7 @@ public class class_203 {
                   var2.method_471((byte)100);
                }
 
-               this.field_2374.method_4132(this.field_2373.data, 0, this.field_2373.offset * -442398587);
+               this.field_2374.write(this.field_2373.data, 0, this.field_2373.offset * -442398587);
                this.field_2372 = 0;
             }
          }
@@ -119,7 +119,7 @@ public class class_203 {
    }
 
    // $FF: renamed from: y (ls, int) void
-   void method_4080(class_206 var1) {
+   void method_4080(GameSocket var1) {
       try {
          this.field_2374 = var1;
       } catch (RuntimeException var3) {
@@ -137,7 +137,7 @@ public class class_203 {
    }
 
    // $FF: renamed from: r (int) ls
-   class_206 method_4083() {
+   GameSocket method_4083() {
       try {
          return this.field_2374;
       } catch (RuntimeException var2) {

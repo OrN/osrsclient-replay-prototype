@@ -150,8 +150,8 @@ public class class_84 extends class_59 {
    // $FF: renamed from: j (int) void
    public static void method_1428() {
       try {
-         if(class_314.field_3771 != null) {
-            class_314.field_3771.close(1840761151);
+         if(class_314.gameSocket != null) {
+            class_314.gameSocket.close(1840761151);
          }
 
       } catch (RuntimeException var1) {

@@ -293,7 +293,7 @@ public class class_192 extends class_191 {
                throw new IllegalStateException();
             } else {
                class_251 var48 = new class_251(4, 104, 104, class_166.field_2078);
-               class_206.field_2401 = var48;
+               GameSocket.field_2401 = var48;
 
                for(var25 = 0; var25 < 4; ++var25) {
                   class_240[] var49 = client.field_1475;
@@ -570,7 +570,7 @@ public class class_192 extends class_191 {
                      var28.method_5403("sl_arrows", "");
                      var28.method_5403("sl_stars", "");
                      var28.method_5403("sl_button", "");
-                     var5 = class_206.method_4141();
+                     var5 = GameSocket.method_4141();
                      if(var4 < var5) {
                         if(var0 != 0) {
                            class_177.loadProgressText = class_305.field_3501 + var4 * 100 / var5 + "%";

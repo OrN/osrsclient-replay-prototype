@@ -110,7 +110,7 @@ public class class_280 {
    // $FF: renamed from: hm (int, int, int, int, int, int) void
    static final void method_5161(int var0, int var1, int var2, int var3, int var4, int var5) {
       try {
-         long var6 = class_206.field_2401.method_4749(var0, var1, var2);
+         long var6 = GameSocket.field_2401.method_4749(var0, var1, var2);
          int var8;
          int var9;
          int var10;
@@ -123,7 +123,7 @@ public class class_280 {
                return;
             }
 
-            var8 = class_206.field_2401.method_4753(var0, var1, var2, var6);
+            var8 = GameSocket.field_2401.method_4753(var0, var1, var2, var6);
             var9 = var8 >> 6 & 3;
             var10 = var8 & 31;
             var11 = var3;
@@ -307,13 +307,13 @@ public class class_280 {
             }
          }
 
-         var6 = class_206.field_2401.method_4818(var0, var1, var2);
+         var6 = GameSocket.field_2401.method_4818(var0, var1, var2);
          if(0L != var6) {
             if(var5 == -795163869) {
                throw new IllegalStateException();
             }
 
-            var8 = class_206.field_2401.method_4753(var0, var1, var2, var6);
+            var8 = GameSocket.field_2401.method_4753(var0, var1, var2, var6);
             var9 = var8 >> 6 & 3;
             var10 = var8 & 31;
             var11 = class_164.method_3425(var6);
@@ -404,7 +404,7 @@ public class class_280 {
             }
          }
 
-         var6 = class_206.field_2401.method_4752(var0, var1, var2);
+         var6 = GameSocket.field_2401.method_4752(var0, var1, var2);
          if(var6 != 0L) {
             if(var5 == -795163869) {
                throw new IllegalStateException();

@@ -165,7 +165,7 @@ public class class_151 implements Comparator {
 
                                  long var6 = class_141.method_3047(0, 0, 1, var10003, client.field_1460[var2], -1873448602);
                                  var3.field_1080 = -690346567 * client.field_1425;
-                                 class_206.field_2401.method_4875(1115122599 * class_115.field_1289, -130212619 * var3.field_1077, 1248597615 * var3.field_1076, class_205.method_4113(var3.field_1079 * -662659008 - 64 + var3.field_1077 * -130212619, var3.field_1079 * -662659008 - 64 + var3.field_1076 * 1248597615, 1115122599 * class_115.field_1289, 585478738), 60 + (var3.field_1079 * -662659008 - 64), var3, -1073291133 * var3.field_1119, var6, var3.field_1095);
+                                 GameSocket.field_2401.method_4875(1115122599 * class_115.field_1289, -130212619 * var3.field_1077, 1248597615 * var3.field_1076, class_205.method_4113(var3.field_1079 * -662659008 - 64 + var3.field_1077 * -130212619, var3.field_1079 * -662659008 - 64 + var3.field_1076 * 1248597615, 1115122599 * class_115.field_1289, 585478738), 60 + (var3.field_1079 * -662659008 - 64), var3, -1073291133 * var3.field_1119, var6, var3.field_1095);
                               }
                            }
                         }

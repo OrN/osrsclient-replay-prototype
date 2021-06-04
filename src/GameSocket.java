@@ -1,7 +1,7 @@
 import java.io.IOException;
 
 // $FF: renamed from: ls
-public abstract class class_206 {
+public abstract class GameSocket {
 
    // $FF: renamed from: gt gt
    static class_251 field_2401;
@@ -44,7 +44,7 @@ public abstract class class_206 {
    public abstract int method_4131() throws IOException;
 
    // $FF: renamed from: r (byte[], int, int, int) void
-   public abstract void method_4132(byte[] var1, int var2, int var3) throws IOException;
+   public abstract void write(byte[] var1, int var2, int var3) throws IOException;
 
    // $FF: renamed from: a (int) boolean
    public abstract boolean method_4133(int var1) throws IOException;
@@ -53,7 +53,7 @@ public abstract class class_206 {
    public abstract boolean method_4134(int var1) throws IOException;
 
    // $FF: renamed from: <init> () void
-   protected class_206() {
+   protected GameSocket() {
       super();
       try {
       } catch (RuntimeException var1) {

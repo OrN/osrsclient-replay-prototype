@@ -80,7 +80,7 @@ public class class_189 extends class_181 {
                throw new IllegalStateException();
             }
 
-            var2 = class_206.field_2401.method_4749(var0.field_369 * -28991277, 1813016497 * var0.field_364, var0.field_367 * -396145343);
+            var2 = GameSocket.field_2401.method_4749(var0.field_369 * -28991277, 1813016497 * var0.field_364, var0.field_367 * -396145343);
          }
 
          if(var0.field_365 * -1769235093 == 1) {
@@ -88,7 +88,7 @@ public class class_189 extends class_181 {
                throw new IllegalStateException();
             }
 
-            var2 = class_206.field_2401.method_4750(-28991277 * var0.field_369, var0.field_364 * 1813016497, var0.field_367 * -396145343);
+            var2 = GameSocket.field_2401.method_4750(-28991277 * var0.field_369, var0.field_364 * 1813016497, var0.field_367 * -396145343);
          }
 
          if(-1769235093 * var0.field_365 == 2) {
@@ -96,7 +96,7 @@ public class class_189 extends class_181 {
                throw new IllegalStateException();
             }
 
-            var2 = class_206.field_2401.method_4818(var0.field_369 * -28991277, var0.field_364 * 1813016497, var0.field_367 * -396145343);
+            var2 = GameSocket.field_2401.method_4818(var0.field_369 * -28991277, var0.field_364 * 1813016497, var0.field_367 * -396145343);
          }
 
          if(-1769235093 * var0.field_365 == 3) {
@@ -104,7 +104,7 @@ public class class_189 extends class_181 {
                return;
             }
 
-            var2 = class_206.field_2401.method_4752(var0.field_369 * -28991277, var0.field_364 * 1813016497, -396145343 * var0.field_367);
+            var2 = GameSocket.field_2401.method_4752(var0.field_369 * -28991277, var0.field_364 * 1813016497, -396145343 * var0.field_367);
          }
 
          if(0L != var2) {
@@ -112,7 +112,7 @@ public class class_189 extends class_181 {
                throw new IllegalStateException();
             }
 
-            int var7 = class_206.field_2401.method_4753(-28991277 * var0.field_369, var0.field_364 * 1813016497, var0.field_367 * -396145343, var2);
+            int var7 = GameSocket.field_2401.method_4753(-28991277 * var0.field_369, var0.field_364 * 1813016497, var0.field_367 * -396145343, var2);
             var4 = class_164.method_3425(var2);
             var5 = var7 & 31;
             var6 = var7 >> 6 & 3;

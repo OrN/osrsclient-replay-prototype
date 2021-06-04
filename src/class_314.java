@@ -16,7 +16,7 @@ public class class_314 {
    // $FF: renamed from: m java.util.zip.CRC32
    public static CRC32 crc32;
    // $FF: renamed from: v ls
-   public static class_206 field_3771;
+   public static GameSocket gameSocket;
    // $FF: renamed from: w byte
    public static byte field_3772;
    // $FF: renamed from: s int
@@ -26,7 +26,7 @@ public class class_314 {
    // $FF: renamed from: l int
    public static int field_3775;
    // $FF: renamed from: e nd
-   public static Buffer field_3776;
+   public static Buffer buffer;
    // $FF: renamed from: a int
    public static int field_3777;
    // $FF: renamed from: t int
@@ -61,7 +61,7 @@ public class class_314 {
       field_3769 = var10000;
       field_3775 = 0;
       Buffer var1 = new Buffer(8);
-      field_3776 = var1;
+      buffer = var1;
       field_3777 = 0;
       crc32 = new CRC32();
       idxFiles = new IDXFile[256];

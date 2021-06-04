@@ -542,7 +542,7 @@ public final class class_97 extends class_91 {
                      throw new IllegalStateException();
                   }
 
-                  class_206.field_2401.method_4853(var2, var5, 512, var0, var6, var4);
+                  GameSocket.field_2401.method_4853(var2, var5, 512, var0, var6, var4);
                }
 
                if(var0 < 3) {
@@ -555,7 +555,7 @@ public final class class_97 extends class_91 {
                         return;
                      }
 
-                     class_206.field_2401.method_4853(var2, var5, 512, 1 + var0, var6, var4);
+                     GameSocket.field_2401.method_4853(var2, var5, 512, 1 + var0, var6, var4);
                   }
                }
 
@@ -600,7 +600,7 @@ public final class class_97 extends class_91 {
             }
 
             for(var7 = 0; var7 < 104; ++var7) {
-               long var8 = class_206.field_2401.method_4752(1115122599 * class_115.field_1289, var6, var7);
+               long var8 = GameSocket.field_2401.method_4752(1115122599 * class_115.field_1289, var6, var7);
                if(var8 != 0L) {
                   if(var1 == 16) {
                      throw new IllegalStateException();

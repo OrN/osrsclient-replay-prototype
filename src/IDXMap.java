@@ -43,7 +43,7 @@ public class IDXMap {
 
                ret.put(font, this.map.get(font));
             } else {
-               class_69 var7 = class_206.method_4140(this.field_4111, this.field_4112, font.name, "");
+               class_69 var7 = GameSocket.method_4140(this.field_4111, this.field_4112, font.name, "");
                if(null != var7) {
                   if(var2 == -987560303) {
                      throw new IllegalStateException();
@@ -71,7 +71,7 @@ public class IDXMap {
          if(this.map.containsKey(var5)) {
             var2.put(var5, this.map.get(var5));
          } else {
-            class_69 var6 = class_206.method_4140(this.field_4111, this.field_4112, var5.name, "");
+            class_69 var6 = GameSocket.method_4140(this.field_4111, this.field_4112, var5.name, "");
             if(null != var6) {
                this.map.put(var5, var6);
                var2.put(var5, var6);

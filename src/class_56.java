@@ -132,7 +132,7 @@ public class class_56 extends class_51 {
          class_157.idx10.method_5450((byte)112);
          class_221.idx11.method_5450((byte)120);
          class_189.idx12.method_5450((byte)50);
-         class_206.field_2401.method_4723();
+         GameSocket.field_2401.method_4723();
 
          for(int var1 = 0; var1 < 4; ++var1) {
             if(var0 == 0) {

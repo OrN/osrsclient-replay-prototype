@@ -284,7 +284,7 @@ public final class class_41 extends class_27 {
                                     throw new IllegalStateException();
                                  }
 
-                                 class_269 var42 = class_206.field_2401.method_4889(class_115.field_1289 * 1115122599, var4, var5);
+                                 class_269 var42 = GameSocket.field_2401.method_4889(class_115.field_1289 * 1115122599, var4, var5);
                                  if(null != var42) {
                                     if(var1 != 236848204) {
                                        throw new IllegalStateException();
@@ -312,7 +312,7 @@ public final class class_41 extends class_27 {
                                     throw new IllegalStateException();
                                  }
 
-                                 class_265 var44 = class_206.field_2401.method_4746(class_115.field_1289 * 1115122599, var4, var5);
+                                 class_265 var44 = GameSocket.field_2401.method_4746(class_115.field_1289 * 1115122599, var4, var5);
                                  if(var44 != null) {
                                     label669: {
                                        if(var1 != 236848204) {
@@ -365,7 +365,7 @@ public final class class_41 extends class_27 {
                                     throw new IllegalStateException();
                                  }
 
-                                 class_261 var45 = class_206.field_2401.method_4724(1115122599 * class_115.field_1289, var4, var5);
+                                 class_261 var45 = GameSocket.field_2401.method_4724(1115122599 * class_115.field_1289, var4, var5);
                                  if(11 == var8) {
                                     if(var1 != 236848204) {
                                        throw new IllegalStateException();
@@ -389,7 +389,7 @@ public final class class_41 extends class_27 {
                                     throw new IllegalStateException();
                                  }
 
-                                 class_248 var46 = class_206.field_2401.method_4733(class_115.field_1289 * 1115122599, var4, var5);
+                                 class_248 var46 = GameSocket.field_2401.method_4733(class_115.field_1289 * 1115122599, var4, var5);
                                  if(null != var46) {
                                     if(var1 != 236848204) {
                                        return;

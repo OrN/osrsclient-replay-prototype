@@ -73,19 +73,19 @@ public class NetworkOutput implements Runnable {
    }
 
    // $FF: renamed from: n (byte[], int, int, int) void
-   void method_6190(byte[] var1, int var2, int var3, int var4) throws IOException {
+   void write(byte[] src, int offset, int len, int var4) throws IOException {
       try {
-         if(var3 >= 0) {
+         if(len >= 0) {
             if(var4 <= -208274515) {
                throw new IllegalStateException();
             }
 
-            if(var2 >= 0) {
+            if(offset >= 0) {
                if(var4 <= -208274515) {
                   throw new IllegalStateException();
                }
 
-               if(var2 + var3 <= var1.length) {
+               if(offset + len <= src.length) {
                   synchronized(this) {
                      if(null != this.field_3933) {
                         throw new IOException(this.field_3933.toString());
@@ -102,7 +102,7 @@ public class NetworkOutput implements Runnable {
                         var6 = -1232062539 * this.offset - 956656333 * this.field_3928 - 1;
                      }
 
-                     if(var6 < var3) {
+                     if(var6 < len) {
                         if(var4 <= -208274515) {
                            throw new IllegalStateException();
                         }
@@ -110,19 +110,19 @@ public class NetworkOutput implements Runnable {
                         throw new IOException("");
                      }
 
-                     if(this.field_3928 * 956656333 + var3 <= this.field_3929 * 255745785) {
+                     if(this.field_3928 * 956656333 + len <= this.field_3929 * 255745785) {
                         if(var4 <= -208274515) {
                            return;
                         }
 
-                        System.arraycopy(var1, var2, this.data, 956656333 * this.field_3928, var3);
+                        System.arraycopy(src, offset, this.data, 956656333 * this.field_3928, len);
                      } else {
-                        int var7 = this.field_3929 * 255745785 - 956656333 * this.field_3928;
-                        System.arraycopy(var1, var2, this.data, this.field_3928 * 956656333, var7);
-                        System.arraycopy(var1, var2 + var7, this.data, 0, var3 - var7);
+                        int length = this.field_3929 * 255745785 - 956656333 * this.field_3928;
+                        System.arraycopy(src, offset, this.data, this.field_3928 * 956656333, length);
+                        System.arraycopy(src, offset + length, this.data, 0, len - length);
                      }
 
-                     this.field_3928 = -1276341755 * ((var3 + this.field_3928 * 956656333) % (this.field_3929 * 255745785));
+                     this.field_3928 = -1276341755 * ((len + this.field_3928 * 956656333) % (this.field_3929 * 255745785));
                      this.notifyAll();
                      return;
                   }

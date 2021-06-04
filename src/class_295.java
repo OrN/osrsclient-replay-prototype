@@ -72,7 +72,7 @@ public class class_295 implements class_14 {
    // $FF: renamed from: v (boolean, byte) void
    public static void method_5317(boolean var0, byte var1) {
       try {
-         if(class_314.field_3771 == null) {
+         if(class_314.gameSocket == null) {
             if(var1 > 16) {
                ;
             }
@@ -93,16 +93,16 @@ public class class_295 implements class_14 {
 
                var2.writeByte(var10001);
                var2.writeTriReversed(0);
-               class_314.field_3771.method_4132(var2.data, 0, 4);
+               class_314.gameSocket.write(var2.data, 0, 4);
             } catch (IOException var5) {
                try {
-                  class_314.field_3771.close(1650867413);
+                  class_314.gameSocket.close(1650867413);
                } catch (Exception var4) {
                   ;
                }
 
                class_314.field_3782 += 447278907;
-               class_314.field_3771 = null;
+               class_314.gameSocket = null;
             }
 
          }

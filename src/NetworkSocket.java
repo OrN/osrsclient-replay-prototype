@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.net.Socket;
 
 // $FF: renamed from: lg
-public class class_207 extends class_206 {
+public class NetworkSocket extends GameSocket {
 
    // $FF: renamed from: n lw
    NetworkInput networkInput;
@@ -52,9 +52,9 @@ public class class_207 extends class_206 {
    }
 
    // $FF: renamed from: r (byte[], int, int, int) void
-   public void method_4132(byte[] var1, int var2, int var3) throws IOException {
+   public void write(byte[] src, int offset, int len) throws IOException {
       try {
-         this.networkOutput.method_6190(var1, var2, var3, 1271901026);
+         this.networkOutput.write(src, offset, len, 1271901026);
       } catch (RuntimeException var5) {
          throw class_223.method_4281(var5);
       }
@@ -65,7 +65,7 @@ public class class_207 extends class_206 {
    }
 
    // $FF: renamed from: <init> (java.net.Socket, int, int) void
-   public class_207(Socket var1, int var2, int var3) throws IOException {
+   public NetworkSocket(Socket var1, int var2, int var3) throws IOException {
       super();
       try {
          this.socket = var1;
@@ -166,11 +166,11 @@ public class class_207 extends class_206 {
 
    // $FF: renamed from: h (byte[], int, int) void
    public void method_4138(byte[] var1, int var2, int var3) throws IOException {
-      this.networkOutput.method_6190(var1, var2, var3, 1885508786);
+      this.networkOutput.write(var1, var2, var3, 1885508786);
    }
 
    // $FF: renamed from: q (byte[], int, int) void
    public void method_4139(byte[] var1, int var2, int var3) throws IOException {
-      this.networkOutput.method_6190(var1, var2, var3, 136944451);
+      this.networkOutput.write(var1, var2, var3, 136944451);
    }
 }

@@ -115,7 +115,7 @@ public final class client extends GameApplet implements class_16 {
    // $FF: renamed from: fw ds
    public static final class_203 field_1463;
    // $FF: renamed from: fj ls
-   static class_206 field_1464;
+   static GameSocket field_1464;
    // $FF: renamed from: tu int[]
    static int[] field_1465;
    // $FF: renamed from: fg int
@@ -1154,7 +1154,7 @@ public final class client extends GameApplet implements class_16 {
                   }
                }
 
-               if(class_314.field_3771 == null) {
+               if(class_314.gameSocket == null) {
                   var2 = false;
                } else {
                   try {
@@ -1183,7 +1183,7 @@ public final class client extends GameApplet implements class_16 {
                         var7 = var10000;
                         var7.writeByte(1);
                         var7.writeTriReversed((int)var6.field_9);
-                        class_314.field_3771.method_4132(var7.data, 0, 4);
+                        class_314.gameSocket.write(var7.data, 0, 4);
                         class_314.field_3779.method_6525(var6, var6.field_9);
                         class_314.field_3768 -= -51966071;
                         class_314.field_3780 += 923119039;
@@ -1207,7 +1207,7 @@ public final class client extends GameApplet implements class_16 {
                         var7 = var10000;
                         var7.writeByte(0);
                         var7.writeTriReversed((int)var6.field_9);
-                        class_314.field_3771.method_4132(var7.data, 0, 4);
+                        class_314.gameSocket.write(var7.data, 0, 4);
                         var6.method_635();
                         class_314.field_3769.method_6525(var6, var6.field_9);
                         class_314.field_3773 -= 422170945;
@@ -1222,7 +1222,7 @@ public final class client extends GameApplet implements class_16 {
                               throw new IllegalStateException();
                            }
 
-                           int var23 = class_314.field_3771.method_4117(1659206769);
+                           int var23 = class_314.gameSocket.method_4117(1659206769);
                            if(var23 < 0) {
                               if(var1 != 1243838219) {
                                  throw new IllegalStateException();
@@ -1258,24 +1258,24 @@ public final class client extends GameApplet implements class_16 {
                                        return;
                                     }
 
-                                    var9 = var8 - -442398587 * class_314.field_3776.offset;
+                                    var9 = var8 - -442398587 * class_314.buffer.offset;
                                     if(var9 > var23) {
                                        var9 = var23;
                                     }
 
-                                    class_314.field_3771.read(class_314.field_3776.data, -442398587 * class_314.field_3776.offset, var9, -2041736219);
+                                    class_314.gameSocket.read(class_314.buffer.data, -442398587 * class_314.buffer.offset, var9, -2041736219);
                                     if(0 != class_314.field_3772) {
                                        if(var1 != 1243838219) {
                                           throw new IllegalStateException();
                                        }
 
                                        for(var10 = 0; var10 < var9; ++var10) {
-                                          class_314.field_3776.data[var10 + -442398587 * class_314.field_3776.offset] ^= class_314.field_3772;
+                                          class_314.buffer.data[var10 + -442398587 * class_314.buffer.offset] ^= class_314.field_3772;
                                        }
                                     }
 
-                                    class_314.field_3776.offset += -1025691571 * var9;
-                                    if(-442398587 * class_314.field_3776.offset < var8) {
+                                    class_314.buffer.offset += -1025691571 * var9;
+                                    if(-442398587 * class_314.buffer.offset < var8) {
                                        if(var1 != 1243838219) {
                                           throw new IllegalStateException();
                                        }
@@ -1287,11 +1287,11 @@ public final class client extends GameApplet implements class_16 {
                                           throw new IllegalStateException();
                                        }
 
-                                       class_314.field_3776.offset = 0;
-                                       var10 = class_314.field_3776.readUnsignedByte();
-                                       i = class_314.field_3776.readShort();
-                                       int var12 = class_314.field_3776.readUnsignedByte();
-                                       var13 = class_314.field_3776.readInt();
+                                       class_314.buffer.offset = 0;
+                                       var10 = class_314.buffer.readUnsignedByte();
+                                       i = class_314.buffer.readShort();
+                                       int var12 = class_314.buffer.readUnsignedByte();
+                                       var13 = class_314.buffer.readInt();
                                        long var14 = (long)((var10 << 16) + i);
                                        class_60 var16 = (class_60)class_314.field_3779.method_6523(var14);
                                        class_123.field_1350 = true;
@@ -1326,19 +1326,19 @@ public final class client extends GameApplet implements class_16 {
                                        class_154.buffer.writeByte(var12);
                                        class_154.buffer.writeIntReverse(var13);
                                        class_314.field_3777 = 438516600;
-                                       class_314.field_3776.offset = 0;
+                                       class_314.buffer.offset = 0;
                                     } else if(0 == class_314.field_3777 * -288041073) {
                                        if(var1 != 1243838219) {
                                           throw new IllegalStateException();
                                        }
 
-                                       if(class_314.field_3776.data[0] == -1) {
+                                       if(class_314.buffer.data[0] == -1) {
                                           if(var1 != 1243838219) {
                                              throw new IllegalStateException();
                                           }
 
                                           class_314.field_3777 = 591685487;
-                                          class_314.field_3776.offset = 0;
+                                          class_314.buffer.offset = 0;
                                        } else {
                                           class_185.field_2260 = null;
                                        }
@@ -1362,7 +1362,7 @@ public final class client extends GameApplet implements class_16 {
                                        var10 = var23;
                                     }
 
-                                    class_314.field_3771.read(class_154.buffer.data, -442398587 * class_154.buffer.offset, var10, -1823275345);
+                                    class_314.gameSocket.read(class_154.buffer.data, -442398587 * class_154.buffer.offset, var10, -1823275345);
                                     if(class_314.field_3772 != 0) {
                                        if(var1 != 1243838219) {
                                           throw new IllegalStateException();
@@ -1414,13 +1414,13 @@ public final class client extends GameApplet implements class_16 {
                                              }
 
                                              try {
-                                                class_314.field_3771.close(1972914584);
+                                                class_314.gameSocket.close(1972914584);
                                              } catch (Exception var19) {
                                                 ;
                                              }
 
                                              class_314.field_3778 += -1422471611;
-                                             class_314.field_3771 = null;
+                                             class_314.gameSocket = null;
                                              class_314.field_3772 = (byte)((int)(Math.random() * 255.0D + 1.0D));
                                              var2 = false;
                                              break;
@@ -1461,13 +1461,13 @@ public final class client extends GameApplet implements class_16 {
                      }
                   } catch (IOException var20) {
                      try {
-                        class_314.field_3771.close(2094314261);
+                        class_314.gameSocket.close(2094314261);
                      } catch (Exception var18) {
                         ;
                      }
 
                      class_314.field_3782 += 447278907;
-                     class_314.field_3771 = null;
+                     class_314.gameSocket = null;
                      var2 = false;
                   }
                }
@@ -2392,7 +2392,7 @@ public final class client extends GameApplet implements class_16 {
    // $FF: renamed from: hh (ds, int) boolean
    final boolean method_2457(class_203 var1, int var2) {
       try {
-         class_206 var3 = var1.method_4083();
+         GameSocket var3 = var1.method_4083();
          NetworkBuffer var4 = var1.networkBuffer;
          if(var3 == null) {
             return false;
@@ -5557,7 +5557,7 @@ public final class client extends GameApplet implements class_16 {
    final void method_2460(int var1, int var2) {
       try {
          class_58.method_633(var1, var2, -372153509);
-         class_206.field_2401.method_4755(class_115.field_1289 * 1115122599, var1, var2, false);
+         GameSocket.field_2401.method_4755(class_115.field_1289 * 1115122599, var1, var2, false);
          field_1553 = true;
       } catch (RuntimeException var4) {
          throw class_223.method_4281(var4);
@@ -6565,30 +6565,30 @@ public final class client extends GameApplet implements class_16 {
          boolean var10 = false;
          boolean var11 = false;
          if(var1 == 0) {
-            var7 = class_206.field_2401.method_4749(var0, var2, var3);
+            var7 = GameSocket.field_2401.method_4749(var0, var2, var3);
          }
 
          if(1 == var1) {
-            var7 = class_206.field_2401.method_4750(var0, var2, var3);
+            var7 = GameSocket.field_2401.method_4750(var0, var2, var3);
          }
 
          if(2 == var1) {
-            var7 = class_206.field_2401.method_4818(var0, var2, var3);
+            var7 = GameSocket.field_2401.method_4818(var0, var2, var3);
          }
 
          if(3 == var1) {
-            var7 = class_206.field_2401.method_4752(var0, var2, var3);
+            var7 = GameSocket.field_2401.method_4752(var0, var2, var3);
          }
 
          int var12;
          if(0L != var7) {
-            var12 = class_206.field_2401.method_4753(var0, var2, var3, var7);
+            var12 = GameSocket.field_2401.method_4753(var0, var2, var3, var7);
             int var14 = class_164.method_3425(var7);
             int var15 = var12 & -2134559339;
             int var16 = var12 >> 6 & 3;
             class_87 var13;
             if(0 == var1) {
-               class_206.field_2401.method_4740(var0, var2, var3);
+               GameSocket.field_2401.method_4740(var0, var2, var3);
                var13 = class_121.method_2269(var14, 1441412161);
                if(0 != 1384594797 * var13.field_818) {
                   field_1475[var0].method_4615(var2, var3, var15, var16, var13.field_837, 1920477090);
@@ -6596,11 +6596,11 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(1 == var1) {
-               class_206.field_2401.method_4741(var0, var2, var3);
+               GameSocket.field_2401.method_4741(var0, var2, var3);
             }
 
             if(2 == var1) {
-               class_206.field_2401.method_4808(var0, var2, var3);
+               GameSocket.field_2401.method_4808(var0, var2, var3);
                var13 = class_121.method_2269(var14, -1641357784);
                if(-288612135 * var13.field_839 + var2 > -475794303 || var13.field_839 * -288612135 + var3 > 708237794 || var2 + -1812944985 * var13.field_851 > -1504206914 || var13.field_851 * -1496387721 + var3 > 103) {
                   return;
@@ -6612,7 +6612,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(3 == var1) {
-               class_206.field_2401.method_4743(var0, var2, var3);
+               GameSocket.field_2401.method_4743(var0, var2, var3);
                var13 = class_121.method_2269(var14, 45693391);
                if(1384594797 * var13.field_818 == 1) {
                   field_1475[var0].method_4608(var2, var3);
@@ -6626,7 +6626,7 @@ public final class client extends GameApplet implements class_16 {
                var12 = var0 + 1;
             }
 
-            class_141.method_3050(var0, var12, var2, var3, var4, var5, var6, class_206.field_2401, field_1475[var0], (byte)3);
+            class_141.method_3050(var0, var12, var2, var3, var4, var5, var6, GameSocket.field_2401, field_1475[var0], (byte)3);
          }
       }
 
@@ -6648,7 +6648,7 @@ public final class client extends GameApplet implements class_16 {
                var0.field_1160 = false;
                var0.field_1149 = class_205.method_4113(-130212619 * var0.field_1077, var0.field_1076 * 876596683, class_115.field_1289 * -1638960527, 1528111934) * -1225750221;
                var0.field_1080 = -690346567 * field_1425;
-               class_206.field_2401.method_4735(-636474636 * class_115.field_1289, var0.field_1077 * 1673645470, -1291774225 * var0.field_1076, var0.field_1149 * -483485189, var0, var0.field_1119 * -16529892, var4, var0.field_1156 * -1707701922, -220166153 * var0.field_1157, var0.field_1158 * 482792791, var0.field_1159 * -1028292805);
+               GameSocket.field_2401.method_4735(-636474636 * class_115.field_1289, var0.field_1077 * 1673645470, -1291774225 * var0.field_1076, var0.field_1149 * -483485189, var0, var0.field_1119 * -16529892, var4, var0.field_1156 * -1707701922, -220166153 * var0.field_1157, var0.field_1158 * 482792791, var0.field_1159 * -1028292805);
             } else {
                if((693340783 * var0.field_1077 & 127) == 64 && (1106301835 * var0.field_1076 & 127) == 64) {
                   if(-1557838637 * field_1559 == field_1514[var2][var3]) {
@@ -6660,7 +6660,7 @@ public final class client extends GameApplet implements class_16 {
 
                var0.field_1149 = class_205.method_4113(var0.field_1077 * 1271901041, 1248597615 * var0.field_1076, -426466349 * class_115.field_1289, -1338408802) * -843696567;
                var0.field_1080 = field_1425 * -690346567;
-               class_206.field_2401.method_4875(class_115.field_1289 * 1115122599, var0.field_1077 * 1734373497, 1248597615 * var0.field_1076, 474031562 * var0.field_1149, 60, var0, -1073291133 * var0.field_1119, var4, var0.field_1095);
+               GameSocket.field_2401.method_4875(class_115.field_1289 * 1115122599, var0.field_1077 * 1734373497, 1248597615 * var0.field_1076, 474031562 * var0.field_1149, 60, var0, -1073291133 * var0.field_1119, var4, var0.field_1095);
             }
          }
       }
@@ -6669,7 +6669,7 @@ public final class client extends GameApplet implements class_16 {
 
    // $FF: renamed from: rg (int, int, int, int, int) void
    static final void method_2476(int var0, int var1, int var2, int var3, int var4) {
-      long var5 = class_206.field_2401.method_4749(var0, var1, var2);
+      long var5 = GameSocket.field_2401.method_4749(var0, var1, var2);
       int var7;
       int var8;
       int var9;
@@ -6677,7 +6677,7 @@ public final class client extends GameApplet implements class_16 {
       int var14;
       int var23;
       if(var5 != 0L) {
-         var7 = class_206.field_2401.method_4753(var0, var1, var2, var5);
+         var7 = GameSocket.field_2401.method_4753(var0, var1, var2, var5);
          var8 = var7 >> 6 & 3;
          var9 = var7 & 31;
          var10 = var3;
@@ -6765,9 +6765,9 @@ public final class client extends GameApplet implements class_16 {
          }
       }
 
-      var5 = class_206.field_2401.method_4818(var0, var1, var2);
+      var5 = GameSocket.field_2401.method_4818(var0, var1, var2);
       if(0L != var5) {
-         var7 = class_206.field_2401.method_4753(var0, var1, var2, var5);
+         var7 = GameSocket.field_2401.method_4753(var0, var1, var2, var5);
          var8 = var7 >> 6 & 3;
          var9 = var7 & 31;
          var10 = class_164.method_3425(var5);
@@ -6807,7 +6807,7 @@ public final class client extends GameApplet implements class_16 {
          }
       }
 
-      var5 = class_206.field_2401.method_4752(var0, var1, var2);
+      var5 = GameSocket.field_2401.method_4752(var0, var1, var2);
       if(var5 != 0L) {
          var7 = class_164.method_3425(var5);
          class_87 var19 = class_121.method_2269(var7, 1599701089);
@@ -6895,7 +6895,7 @@ public final class client extends GameApplet implements class_16 {
                var0.field_1160 = false;
                var0.field_1149 = class_205.method_4113(-130212619 * var0.field_1077, var0.field_1076 * 1248597615, class_115.field_1289 * 1115122599, -1104515136) * -1225750221;
                var0.field_1080 = -690346567 * field_1425;
-               class_206.field_2401.method_4735(1115122599 * class_115.field_1289, var0.field_1077 * -130212619, 1248597615 * var0.field_1076, var0.field_1149 * -483485189, var0, var0.field_1119 * -1073291133, var4, var0.field_1156 * -1119093931, 1402081485 * var0.field_1157, var0.field_1158 * 482792791, var0.field_1159 * -1028292805);
+               GameSocket.field_2401.method_4735(1115122599 * class_115.field_1289, var0.field_1077 * -130212619, 1248597615 * var0.field_1076, var0.field_1149 * -483485189, var0, var0.field_1119 * -1073291133, var4, var0.field_1156 * -1119093931, 1402081485 * var0.field_1157, var0.field_1158 * 482792791, var0.field_1159 * -1028292805);
             } else {
                if((-130212619 * var0.field_1077 & 127) == 64 && (1248597615 * var0.field_1076 & 127) == 64) {
                   if(-213028925 * field_1559 == field_1514[var2][var3]) {
@@ -6907,7 +6907,7 @@ public final class client extends GameApplet implements class_16 {
 
                var0.field_1149 = class_205.method_4113(var0.field_1077 * -130212619, 1248597615 * var0.field_1076, 1115122599 * class_115.field_1289, 1258261173) * -1225750221;
                var0.field_1080 = field_1425 * -690346567;
-               class_206.field_2401.method_4875(class_115.field_1289 * 1115122599, var0.field_1077 * -130212619, 1248597615 * var0.field_1076, -483485189 * var0.field_1149, 60, var0, -1073291133 * var0.field_1119, var4, var0.field_1095);
+               GameSocket.field_2401.method_4875(class_115.field_1289 * 1115122599, var0.field_1077 * -130212619, 1248597615 * var0.field_1076, -483485189 * var0.field_1149, 60, var0, -1073291133 * var0.field_1119, var4, var0.field_1095);
             }
          }
       }
@@ -8116,7 +8116,7 @@ public final class client extends GameApplet implements class_16 {
                var0.field_1160 = false;
                var0.field_1149 = class_205.method_4113(-130212619 * var0.field_1077, var0.field_1076 * 1248597615, class_115.field_1289 * 1115122599, -622345138) * -1225750221;
                var0.field_1080 = -690346567 * field_1425;
-               class_206.field_2401.method_4735(1115122599 * class_115.field_1289, var0.field_1077 * -130212619, 1248597615 * var0.field_1076, var0.field_1149 * -483485189, var0, var0.field_1119 * -1073291133, var4, var0.field_1156 * -1119093931, 1402081485 * var0.field_1157, var0.field_1158 * 482792791, var0.field_1159 * -1028292805);
+               GameSocket.field_2401.method_4735(1115122599 * class_115.field_1289, var0.field_1077 * -130212619, 1248597615 * var0.field_1076, var0.field_1149 * -483485189, var0, var0.field_1119 * -1073291133, var4, var0.field_1156 * -1119093931, 1402081485 * var0.field_1157, var0.field_1158 * 482792791, var0.field_1159 * -1028292805);
             } else {
                if((-130212619 * var0.field_1077 & 127) == 64 && (1248597615 * var0.field_1076 & 127) == 64) {
                   if(-213028925 * field_1559 == field_1514[var2][var3]) {
@@ -8128,7 +8128,7 @@ public final class client extends GameApplet implements class_16 {
 
                var0.field_1149 = class_205.method_4113(var0.field_1077 * -130212619, 1248597615 * var0.field_1076, 1115122599 * class_115.field_1289, -582135623) * -1225750221;
                var0.field_1080 = field_1425 * -690346567;
-               class_206.field_2401.method_4875(class_115.field_1289 * 1115122599, var0.field_1077 * -130212619, 1248597615 * var0.field_1076, -483485189 * var0.field_1149, 60, var0, -1073291133 * var0.field_1119, var4, var0.field_1095);
+               GameSocket.field_2401.method_4875(class_115.field_1289 * 1115122599, var0.field_1077 * -130212619, 1248597615 * var0.field_1076, -483485189 * var0.field_1149, 60, var0, -1073291133 * var0.field_1119, var4, var0.field_1095);
             }
          }
       }
@@ -8159,7 +8159,7 @@ public final class client extends GameApplet implements class_16 {
 
                long var5 = class_141.method_3047(0, 0, 1, !var2.field_1141.field_886, field_1460[var1], -471860498);
                var2.field_1080 = -690346567 * field_1425;
-               class_206.field_2401.method_4875(1115122599 * class_115.field_1289, -130212619 * var2.field_1077, 1248597615 * var2.field_1076, class_205.method_4113(var2.field_1079 * -662659008 - 64 + var2.field_1077 * -130212619, var2.field_1079 * -662659008 - 64 + var2.field_1076 * 1248597615, 1115122599 * class_115.field_1289, -1369961430), 60 + (var2.field_1079 * -662659008 - 64), var2, -1073291133 * var2.field_1119, var5, var2.field_1095);
+               GameSocket.field_2401.method_4875(1115122599 * class_115.field_1289, -130212619 * var2.field_1077, 1248597615 * var2.field_1076, class_205.method_4113(var2.field_1079 * -662659008 - 64 + var2.field_1077 * -130212619, var2.field_1079 * -662659008 - 64 + var2.field_1076 * 1248597615, 1115122599 * class_115.field_1289, -1369961430), 60 + (var2.field_1079 * -662659008 - 64), var2, -1073291133 * var2.field_1119, var5, var2.field_1095);
             }
          }
       }
@@ -8184,7 +8184,7 @@ public final class client extends GameApplet implements class_16 {
 
                long var5 = class_141.method_3047(0, 0, 1, !var2.field_1141.field_886, field_1460[var1], -884992528);
                var2.field_1080 = -690346567 * field_1425;
-               class_206.field_2401.method_4875(1115122599 * class_115.field_1289, -130212619 * var2.field_1077, 1248597615 * var2.field_1076, class_205.method_4113(var2.field_1079 * -662659008 - 64 + var2.field_1077 * -130212619, var2.field_1079 * -662659008 - 64 + var2.field_1076 * 1248597615, 1115122599 * class_115.field_1289, -1687713275), 60 + (var2.field_1079 * -662659008 - 64), var2, -1073291133 * var2.field_1119, var5, var2.field_1095);
+               GameSocket.field_2401.method_4875(1115122599 * class_115.field_1289, -130212619 * var2.field_1077, 1248597615 * var2.field_1076, class_205.method_4113(var2.field_1079 * -662659008 - 64 + var2.field_1077 * -130212619, var2.field_1079 * -662659008 - 64 + var2.field_1076 * 1248597615, 1115122599 * class_115.field_1289, -1687713275), 60 + (var2.field_1079 * -662659008 - 64), var2, -1073291133 * var2.field_1119, var5, var2.field_1095);
             }
          }
       }
@@ -8209,7 +8209,7 @@ public final class client extends GameApplet implements class_16 {
 
                long var5 = class_141.method_3047(0, 0, 1, !var2.field_1141.field_886, field_1460[var1], -748601639);
                var2.field_1080 = 1825770896 * field_1425;
-               class_206.field_2401.method_4875(-455588578 * class_115.field_1289, -130212619 * var2.field_1077, 1248597615 * var2.field_1076, class_205.method_4113(var2.field_1079 * -662659008 - 1248636792 + var2.field_1077 * 1892403109, var2.field_1079 * -1990254469 - 64 + var2.field_1076 * 1248597615, 1115122599 * class_115.field_1289, -750017952), -1232499985 + (var2.field_1079 * -662659008 - 64), var2, 543378465 * var2.field_1119, var5, var2.field_1095);
+               GameSocket.field_2401.method_4875(-455588578 * class_115.field_1289, -130212619 * var2.field_1077, 1248597615 * var2.field_1076, class_205.method_4113(var2.field_1079 * -662659008 - 1248636792 + var2.field_1077 * 1892403109, var2.field_1079 * -1990254469 - 64 + var2.field_1076 * 1248597615, 1115122599 * class_115.field_1289, -750017952), -1232499985 + (var2.field_1079 * -662659008 - 64), var2, 543378465 * var2.field_1119, var5, var2.field_1095);
             }
          }
       }
@@ -12478,7 +12478,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             class_46.method_536(-1808857292);
-            class_206.field_2401.method_4723();
+            GameSocket.field_2401.method_4723();
 
             for(var1 = 0; var1 < 4; ++var1) {
                field_1475[var1].method_4609(1643034078);
@@ -12533,7 +12533,7 @@ public final class client extends GameApplet implements class_16 {
                      var4 = (class_275.field_3216[var30] >> 8) * 64 - class_243.field_2700 * 697161691;
                      var32 = (class_275.field_3216[var30] & 255) * 64 - class_154.field_1929 * -27903763;
                      class_46.method_536(-1808857292);
-                     class_251 var6 = class_206.field_2401;
+                     class_251 var6 = GameSocket.field_2401;
                      class_240[] var35 = field_1475;
                      var10000 = new Buffer(var31);
                      var8 = var10000;
@@ -12685,7 +12685,7 @@ public final class client extends GameApplet implements class_16 {
 
                            for(var11 = 0; var11 < class_275.field_3216.length; ++var11) {
                               if(var10 == class_275.field_3216[var11] && null != class_168.field_2103[var11]) {
-                                 FontHandler.method_6614(class_168.field_2103[var11], var30, 8 * var3, 8 * var4, var34, 8 * (var38 & 7), 8 * (var9 & 7), var36, class_206.field_2401, field_1475, -915212653);
+                                 FontHandler.method_6614(class_168.field_2103[var11], var30, 8 * var3, 8 * var4, var34, 8 * (var38 & 7), 8 * (var9 & 7), var36, GameSocket.field_2401, field_1475, -915212653);
                                  break;
                               }
                            }
@@ -12697,7 +12697,7 @@ public final class client extends GameApplet implements class_16 {
 
             class_245.method_4709(true, -131315439);
             class_46.method_536(-1808857292);
-            class_120.method_2266(class_206.field_2401, field_1475, -1580902995);
+            class_120.method_2266(GameSocket.field_2401, field_1475, -1580902995);
             class_245.method_4709(true, 234139556);
             var30 = class_166.field_2070 * 1752941579;
             if(var30 > class_115.field_1289 * 1115122599) {
@@ -12709,9 +12709,9 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(field_1417) {
-               class_206.field_2401.method_4815(class_166.field_2070 * 1752941579);
+               GameSocket.field_2401.method_4815(class_166.field_2070 * 1752941579);
             } else {
-               class_206.field_2401.method_4815(0);
+               GameSocket.field_2401.method_4815(0);
             }
 
             for(var3 = 0; var3 < 104; ++var3) {
@@ -12799,11 +12799,11 @@ public final class client extends GameApplet implements class_16 {
 
          for(var5 = 1; var5 < -1823825985; ++var5) {
             if(0 == (class_166.field_2069[var0][var5][var3] & 24)) {
-               class_206.field_2401.method_4853(var1, var4, 2079053883, var0, var5, var3);
+               GameSocket.field_2401.method_4853(var1, var4, 2079053883, var0, var5, var3);
             }
 
             if(var0 < 3 && (class_166.field_2069[var0 + 1][var5][var3] & 8) != 0) {
-               class_206.field_2401.method_4853(var1, var4, 1307679295, 1 + var0, var5, var3);
+               GameSocket.field_2401.method_4853(var1, var4, 1307679295, 1 + var0, var5, var3);
             }
 
             var4 += 4;
@@ -12831,7 +12831,7 @@ public final class client extends GameApplet implements class_16 {
 
       for(var5 = 0; var5 < 104; ++var5) {
          for(var6 = 0; var6 < -367945161; ++var6) {
-            long var7 = class_206.field_2401.method_4752(2076213933 * class_115.field_1289, var5, var6);
+            long var7 = GameSocket.field_2401.method_4752(2076213933 * class_115.field_1289, var5, var6);
             if(var7 != 0L) {
                int var9 = class_164.method_3425(var7);
                int var10 = class_121.method_2269(var9, 1980964919).field_815 * 715137677;
@@ -12958,7 +12958,7 @@ public final class client extends GameApplet implements class_16 {
 
    // $FF: renamed from: rr (int, int, int, int, int) void
    static final void method_2609(int var0, int var1, int var2, int var3, int var4) {
-      long var5 = class_206.field_2401.method_4749(var0, var1, var2);
+      long var5 = GameSocket.field_2401.method_4749(var0, var1, var2);
       int var7;
       int var8;
       int var9;
@@ -12966,7 +12966,7 @@ public final class client extends GameApplet implements class_16 {
       int var14;
       int var23;
       if(var5 != 0L) {
-         var7 = class_206.field_2401.method_4753(var0, var1, var2, var5);
+         var7 = GameSocket.field_2401.method_4753(var0, var1, var2, var5);
          var8 = var7 >> 6 & 3;
          var9 = var7 & 31;
          var10 = var3;
@@ -13054,9 +13054,9 @@ public final class client extends GameApplet implements class_16 {
          }
       }
 
-      var5 = class_206.field_2401.method_4818(var0, var1, var2);
+      var5 = GameSocket.field_2401.method_4818(var0, var1, var2);
       if(0L != var5) {
-         var7 = class_206.field_2401.method_4753(var0, var1, var2, var5);
+         var7 = GameSocket.field_2401.method_4753(var0, var1, var2, var5);
          var8 = var7 >> 6 & 3;
          var9 = var7 & 31;
          var10 = class_164.method_3425(var5);
@@ -13096,7 +13096,7 @@ public final class client extends GameApplet implements class_16 {
          }
       }
 
-      var5 = class_206.field_2401.method_4752(var0, var1, var2);
+      var5 = GameSocket.field_2401.method_4752(var0, var1, var2);
       if(var5 != 0L) {
          var7 = class_164.method_3425(var5);
          class_87 var19 = class_121.method_2269(var7, -275945698);
@@ -13114,7 +13114,7 @@ public final class client extends GameApplet implements class_16 {
 
    // $FF: renamed from: rl (int, int, int, int, int) void
    static final void method_2610(int var0, int var1, int var2, int var3, int var4) {
-      long var5 = class_206.field_2401.method_4749(var0, var1, var2);
+      long var5 = GameSocket.field_2401.method_4749(var0, var1, var2);
       int var7;
       int var8;
       int var9;
@@ -13122,7 +13122,7 @@ public final class client extends GameApplet implements class_16 {
       int var14;
       int var23;
       if(var5 != 0L) {
-         var7 = class_206.field_2401.method_4753(var0, var1, var2, var5);
+         var7 = GameSocket.field_2401.method_4753(var0, var1, var2, var5);
          var8 = var7 >> 6 & 3;
          var9 = var7 & 31;
          var10 = var3;
@@ -13210,9 +13210,9 @@ public final class client extends GameApplet implements class_16 {
          }
       }
 
-      var5 = class_206.field_2401.method_4818(var0, var1, var2);
+      var5 = GameSocket.field_2401.method_4818(var0, var1, var2);
       if(0L != var5) {
-         var7 = class_206.field_2401.method_4753(var0, var1, var2, var5);
+         var7 = GameSocket.field_2401.method_4753(var0, var1, var2, var5);
          var8 = var7 >> 6 & 3;
          var9 = var7 & -708023656;
          var10 = class_164.method_3425(var5);
@@ -13252,7 +13252,7 @@ public final class client extends GameApplet implements class_16 {
          }
       }
 
-      var5 = class_206.field_2401.method_4752(var0, var1, var2);
+      var5 = GameSocket.field_2401.method_4752(var0, var1, var2);
       if(var5 != 0L) {
          var7 = class_164.method_3425(var5);
          class_87 var19 = class_121.method_2269(var7, 1642309346);
@@ -13270,7 +13270,7 @@ public final class client extends GameApplet implements class_16 {
 
    // $FF: renamed from: ry (ds) boolean
    final boolean method_2611(class_203 var1) {
-      class_206 var2 = var1.method_4083();
+      GameSocket var2 = var1.method_4083();
       NetworkBuffer var3 = var1.networkBuffer;
       if(var2 == null) {
          return false;
@@ -14979,7 +14979,7 @@ public final class client extends GameApplet implements class_16 {
             if(var3 >= 0 && var4 >= 0 && var3 < 470719515 && var4 < 103) {
                class_96 var10001;
                if(0 == var9) {
-                  class_269 var40 = class_206.field_2401.method_4889(class_115.field_1289 * 1440522634, var3, var4);
+                  class_269 var40 = GameSocket.field_2401.method_4889(class_115.field_1289 * 1440522634, var3, var4);
                   if(null != var40) {
                      var11 = class_164.method_3425(1374506562499121997L * var40.field_3169);
                      if(2 == var7) {
@@ -14995,7 +14995,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(1 == var9) {
-                  class_265 var41 = class_206.field_2401.method_4746(class_115.field_1289 * -1543124366, var3, var4);
+                  class_265 var41 = GameSocket.field_2401.method_4746(class_115.field_1289 * -1543124366, var3, var4);
                   if(var41 != null) {
                      var11 = class_164.method_3425(3146556658035252985L * var41.field_3035);
                      if(var7 != 4 && 5 != var7) {
@@ -15019,7 +15019,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(var9 == 2) {
-                  class_261 var43 = class_206.field_2401.method_4724(-1804332874 * class_115.field_1289, var3, var4);
+                  class_261 var43 = GameSocket.field_2401.method_4724(-1804332874 * class_115.field_1289, var3, var4);
                   if(11 == var7) {
                      var7 = 10;
                   }
@@ -15031,7 +15031,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(3 == var9) {
-                  class_248 var44 = class_206.field_2401.method_4733(class_115.field_1289 * 1115122599, var3, var4);
+                  class_248 var44 = GameSocket.field_2401.method_4733(class_115.field_1289 * 1115122599, var3, var4);
                   if(null != var44) {
                      var10001 = new class_96(class_164.method_3425(var44.field_2750 * 5096767537878498943L), 22, var8, -1226802692 * class_115.field_1289, var3, var4, var5, false, var44.field_2749);
                      var44.field_2749 = var10001;
@@ -15306,7 +15306,7 @@ public final class client extends GameApplet implements class_16 {
             if(var3 >= 0 && var4 >= 0 && var3 < 103 && var4 < 103) {
                class_96 var10001;
                if(0 == var9) {
-                  class_269 var40 = class_206.field_2401.method_4889(class_115.field_1289 * 1115122599, var3, var4);
+                  class_269 var40 = GameSocket.field_2401.method_4889(class_115.field_1289 * 1115122599, var3, var4);
                   if(null != var40) {
                      var11 = class_164.method_3425(1374506562499121997L * var40.field_3169);
                      if(2 == var7) {
@@ -15322,7 +15322,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(1 == var9) {
-                  class_265 var41 = class_206.field_2401.method_4746(class_115.field_1289 * 1115122599, var3, var4);
+                  class_265 var41 = GameSocket.field_2401.method_4746(class_115.field_1289 * 1115122599, var3, var4);
                   if(var41 != null) {
                      var11 = class_164.method_3425(3146556658035252985L * var41.field_3035);
                      if(var7 != 4 && 5 != var7) {
@@ -15346,7 +15346,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(var9 == 2) {
-                  class_261 var43 = class_206.field_2401.method_4724(1115122599 * class_115.field_1289, var3, var4);
+                  class_261 var43 = GameSocket.field_2401.method_4724(1115122599 * class_115.field_1289, var3, var4);
                   if(11 == var7) {
                      var7 = 10;
                   }
@@ -15358,7 +15358,7 @@ public final class client extends GameApplet implements class_16 {
                }
 
                if(3 == var9) {
-                  class_248 var44 = class_206.field_2401.method_4733(class_115.field_1289 * 1115122599, var3, var4);
+                  class_248 var44 = GameSocket.field_2401.method_4733(class_115.field_1289 * 1115122599, var3, var4);
                   if(null != var44) {
                      var10001 = new class_96(class_164.method_3425(var44.field_2750 * 5096767537878498943L), 22, var8, 1115122599 * class_115.field_1289, var3, var4, var5, false, var44.field_2749);
                      var44.field_2749 = var10001;
@@ -16162,23 +16162,23 @@ public final class client extends GameApplet implements class_16 {
       int var4 = 0;
       int var5 = 0;
       if(0 == var0.field_365 * -1769235093) {
-         var1 = class_206.field_2401.method_4749(var0.field_369 * -28991277, 1813016497 * var0.field_364, var0.field_367 * -396145343);
+         var1 = GameSocket.field_2401.method_4749(var0.field_369 * -28991277, 1813016497 * var0.field_364, var0.field_367 * -396145343);
       }
 
       if(var0.field_365 * -1769235093 == 1) {
-         var1 = class_206.field_2401.method_4750(-28991277 * var0.field_369, var0.field_364 * 1813016497, var0.field_367 * -396145343);
+         var1 = GameSocket.field_2401.method_4750(-28991277 * var0.field_369, var0.field_364 * 1813016497, var0.field_367 * -396145343);
       }
 
       if(-1769235093 * var0.field_365 == 2) {
-         var1 = class_206.field_2401.method_4818(var0.field_369 * -28991277, var0.field_364 * 1813016497, var0.field_367 * -396145343);
+         var1 = GameSocket.field_2401.method_4818(var0.field_369 * -28991277, var0.field_364 * 1813016497, var0.field_367 * -396145343);
       }
 
       if(-1769235093 * var0.field_365 == 3) {
-         var1 = class_206.field_2401.method_4752(var0.field_369 * -28991277, var0.field_364 * 1813016497, -396145343 * var0.field_367);
+         var1 = GameSocket.field_2401.method_4752(var0.field_369 * -28991277, var0.field_364 * 1813016497, -396145343 * var0.field_367);
       }
 
       if(0L != var1) {
-         int var6 = class_206.field_2401.method_4753(-28991277 * var0.field_369, var0.field_364 * 1813016497, var0.field_367 * -396145343, var1);
+         int var6 = GameSocket.field_2401.method_4753(-28991277 * var0.field_369, var0.field_364 * 1813016497, var0.field_367 * -396145343, var1);
          var3 = class_164.method_3425(var1);
          var4 = var6 & 31;
          var5 = var6 >> 6 & 3;
@@ -16196,23 +16196,23 @@ public final class client extends GameApplet implements class_16 {
       int var4 = 0;
       int var5 = 0;
       if(0 == var0.field_365 * -1769235093) {
-         var1 = class_206.field_2401.method_4749(var0.field_369 * -28991277, 1813016497 * var0.field_364, var0.field_367 * -396145343);
+         var1 = GameSocket.field_2401.method_4749(var0.field_369 * -28991277, 1813016497 * var0.field_364, var0.field_367 * -396145343);
       }
 
       if(var0.field_365 * -1769235093 == 1) {
-         var1 = class_206.field_2401.method_4750(-28991277 * var0.field_369, var0.field_364 * 1813016497, var0.field_367 * -396145343);
+         var1 = GameSocket.field_2401.method_4750(-28991277 * var0.field_369, var0.field_364 * 1813016497, var0.field_367 * -396145343);
       }
 
       if(-1769235093 * var0.field_365 == 2) {
-         var1 = class_206.field_2401.method_4818(var0.field_369 * -28991277, var0.field_364 * 1813016497, var0.field_367 * -396145343);
+         var1 = GameSocket.field_2401.method_4818(var0.field_369 * -28991277, var0.field_364 * 1813016497, var0.field_367 * -396145343);
       }
 
       if(-1769235093 * var0.field_365 == 3) {
-         var1 = class_206.field_2401.method_4752(var0.field_369 * -28991277, var0.field_364 * 1813016497, -396145343 * var0.field_367);
+         var1 = GameSocket.field_2401.method_4752(var0.field_369 * -28991277, var0.field_364 * 1813016497, -396145343 * var0.field_367);
       }
 
       if(0L != var1) {
-         int var6 = class_206.field_2401.method_4753(-28991277 * var0.field_369, var0.field_364 * 1813016497, var0.field_367 * -396145343, var1);
+         int var6 = GameSocket.field_2401.method_4753(-28991277 * var0.field_369, var0.field_364 * 1813016497, var0.field_367 * -396145343, var1);
          var3 = class_164.method_3425(var1);
          var4 = var6 & 31;
          var5 = var6 >> 6 & 3;
@@ -16235,30 +16235,30 @@ public final class client extends GameApplet implements class_16 {
          boolean var10 = false;
          boolean var11 = false;
          if(var1 == 0) {
-            var7 = class_206.field_2401.method_4749(var0, var2, var3);
+            var7 = GameSocket.field_2401.method_4749(var0, var2, var3);
          }
 
          if(1 == var1) {
-            var7 = class_206.field_2401.method_4750(var0, var2, var3);
+            var7 = GameSocket.field_2401.method_4750(var0, var2, var3);
          }
 
          if(2 == var1) {
-            var7 = class_206.field_2401.method_4818(var0, var2, var3);
+            var7 = GameSocket.field_2401.method_4818(var0, var2, var3);
          }
 
          if(3 == var1) {
-            var7 = class_206.field_2401.method_4752(var0, var2, var3);
+            var7 = GameSocket.field_2401.method_4752(var0, var2, var3);
          }
 
          int var12;
          if(0L != var7) {
-            var12 = class_206.field_2401.method_4753(var0, var2, var3, var7);
+            var12 = GameSocket.field_2401.method_4753(var0, var2, var3, var7);
             int var14 = class_164.method_3425(var7);
             int var15 = var12 & 31;
             int var16 = var12 >> 6 & 3;
             class_87 var13;
             if(0 == var1) {
-               class_206.field_2401.method_4740(var0, var2, var3);
+               GameSocket.field_2401.method_4740(var0, var2, var3);
                var13 = class_121.method_2269(var14, 296228343);
                if(0 != 1384594797 * var13.field_818) {
                   field_1475[var0].method_4615(var2, var3, var15, var16, var13.field_837, 1982492772);
@@ -16266,11 +16266,11 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(1 == var1) {
-               class_206.field_2401.method_4741(var0, var2, var3);
+               GameSocket.field_2401.method_4741(var0, var2, var3);
             }
 
             if(2 == var1) {
-               class_206.field_2401.method_4808(var0, var2, var3);
+               GameSocket.field_2401.method_4808(var0, var2, var3);
                var13 = class_121.method_2269(var14, -956570518);
                if(-288612135 * var13.field_839 + var2 > 103 || var13.field_839 * -288612135 + var3 > 103 || var2 + -1812944985 * var13.field_851 > 103 || var13.field_851 * -1812944985 + var3 > 103) {
                   return;
@@ -16282,7 +16282,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             if(3 == var1) {
-               class_206.field_2401.method_4743(var0, var2, var3);
+               GameSocket.field_2401.method_4743(var0, var2, var3);
                var13 = class_121.method_2269(var14, 1261947205);
                if(1384594797 * var13.field_818 == 1) {
                   field_1475[var0].method_4608(var2, var3);
@@ -16296,7 +16296,7 @@ public final class client extends GameApplet implements class_16 {
                var12 = var0 + 1;
             }
 
-            class_141.method_3050(var0, var12, var2, var3, var4, var5, var6, class_206.field_2401, field_1475[var0], (byte)-124);
+            class_141.method_3050(var0, var12, var2, var3, var4, var5, var6, GameSocket.field_2401, field_1475[var0], (byte)-124);
          }
       }
 
@@ -16414,7 +16414,7 @@ public final class client extends GameApplet implements class_16 {
    static final void method_2620(int var0, int var1) {
       class_335 var2 = field_1635[class_115.field_1289 * 1115122599][var0][var1];
       if(null == var2) {
-         class_206.field_2401.method_4805(class_115.field_1289 * 619512123, var0, var1);
+         GameSocket.field_2401.method_4805(class_115.field_1289 * 619512123, var0, var1);
       } else {
          long var3 = -99999999L;
          class_94 var5 = null;
@@ -16434,7 +16434,7 @@ public final class client extends GameApplet implements class_16 {
          }
 
          if(null == var5) {
-            class_206.field_2401.method_4805(class_115.field_1289 * 1750931368, var0, var1);
+            GameSocket.field_2401.method_4805(class_115.field_1289 * 1750931368, var0, var1);
          } else {
             var2.method_5970(var5);
             class_94 var11 = null;
@@ -16453,7 +16453,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             long var9 = class_141.method_3047(var0, var1, 3, false, 0, -912565270);
-            class_206.field_2401.method_4730(-611347514 * class_115.field_1289, var0, var1, class_205.method_4113(var0 * 128 + -2112331651, -1943064406 + 128 * var1, class_115.field_1289 * 1115122599, 769872552), var5, var9, var11, var12);
+            GameSocket.field_2401.method_4730(-611347514 * class_115.field_1289, var0, var1, class_205.method_4113(var0 * 128 + -2112331651, -1943064406 + 128 * var1, class_115.field_1289 * 1115122599, 769872552), var5, var9, var11, var12);
          }
       }
    }
@@ -16462,7 +16462,7 @@ public final class client extends GameApplet implements class_16 {
    static final void method_2621(int var0, int var1) {
       class_335 var2 = field_1635[class_115.field_1289 * 1115122599][var0][var1];
       if(null == var2) {
-         class_206.field_2401.method_4805(class_115.field_1289 * 1115122599, var0, var1);
+         GameSocket.field_2401.method_4805(class_115.field_1289 * 1115122599, var0, var1);
       } else {
          long var3 = -99999999L;
          class_94 var5 = null;
@@ -16482,7 +16482,7 @@ public final class client extends GameApplet implements class_16 {
          }
 
          if(null == var5) {
-            class_206.field_2401.method_4805(class_115.field_1289 * 1115122599, var0, var1);
+            GameSocket.field_2401.method_4805(class_115.field_1289 * 1115122599, var0, var1);
          } else {
             var2.method_5970(var5);
             class_94 var11 = null;
@@ -16501,7 +16501,7 @@ public final class client extends GameApplet implements class_16 {
             }
 
             long var9 = class_141.method_3047(var0, var1, 3, false, 0, 1423516498);
-            class_206.field_2401.method_4730(1115122599 * class_115.field_1289, var0, var1, class_205.method_4113(var0 * 128 + 64, 64 + 128 * var1, class_115.field_1289 * 1115122599, 469405345), var5, var9, var11, var12);
+            GameSocket.field_2401.method_4730(1115122599 * class_115.field_1289, var0, var1, class_205.method_4113(var0 * 128 + 64, 64 + 128 * var1, class_115.field_1289 * 1115122599, 469405345), var5, var9, var11, var12);
          }
       }
    }
@@ -17225,11 +17225,11 @@ public final class client extends GameApplet implements class_16 {
 
          for(var5 = 1; var5 < -1758541388; ++var5) {
             if(0 == (class_166.field_2069[var0][var5][var3] & 24)) {
-               class_206.field_2401.method_4853(var1, var4, -294486319, var0, var5, var3);
+               GameSocket.field_2401.method_4853(var1, var4, -294486319, var0, var5, var3);
             }
 
             if(var0 < 3 && (class_166.field_2069[var0 + 1][var5][var3] & 8) != 0) {
-               class_206.field_2401.method_4853(var1, var4, 512, 1 + var0, var5, var3);
+               GameSocket.field_2401.method_4853(var1, var4, 512, 1 + var0, var5, var3);
             }
 
             var4 += 4;
@@ -17257,7 +17257,7 @@ public final class client extends GameApplet implements class_16 {
 
       for(var5 = 0; var5 < -22050003; ++var5) {
          for(var6 = 0; var6 < 1152879818; ++var6) {
-            long var7 = class_206.field_2401.method_4752(-386624534 * class_115.field_1289, var5, var6);
+            long var7 = GameSocket.field_2401.method_4752(-386624534 * class_115.field_1289, var5, var6);
             if(var7 != 0L) {
                int var9 = class_164.method_3425(var7);
                int var10 = class_121.method_2269(var9, 89065248).field_815 * 715137677;
@@ -17638,14 +17638,14 @@ public final class client extends GameApplet implements class_16 {
    // $FF: renamed from: tf (int, int) void
    final void method_2649(int var1, int var2) {
       class_58.method_633(var1, var2, 439653495);
-      class_206.field_2401.method_4755(class_115.field_1289 * 1115122599, var1, var2, false);
+      GameSocket.field_2401.method_4755(class_115.field_1289 * 1115122599, var1, var2, false);
       field_1553 = true;
    }
 
    // $FF: renamed from: tn (int, int) void
    final void method_2650(int var1, int var2) {
       class_58.method_633(var1, var2, 536672045);
-      class_206.field_2401.method_4755(class_115.field_1289 * 1115122599, var1, var2, false);
+      GameSocket.field_2401.method_4755(class_115.field_1289 * 1115122599, var1, var2, false);
       field_1553 = true;
    }
 
@@ -17772,7 +17772,7 @@ public final class client extends GameApplet implements class_16 {
       class_157.idx10.method_5450((byte)125);
       class_221.idx11.method_5450((byte)115);
       class_189.idx12.method_5450((byte)39);
-      class_206.field_2401.method_4723();
+      GameSocket.field_2401.method_4723();
 
       for(int var0 = 0; var0 < 4; ++var0) {
          field_1475[var0].method_4609(1549070687);
@@ -18402,7 +18402,7 @@ public final class client extends GameApplet implements class_16 {
             int var13 = class_313.method_5578(var8);
             int var14 = class_164.method_3425(class_255.field_2883[var8]);
             int var15 = var14;
-            if(2 == var13 && class_206.field_2401.method_4753(class_115.field_1289 * 1115122599, var11, var12, var9) >= 0) {
+            if(2 == var13 && GameSocket.field_2401.method_4753(class_115.field_1289 * 1115122599, var11, var12, var9) >= 0) {
                class_87 var16 = class_121.method_2269(var14, 1175617286);
                if(var16.field_842 != null) {
                   var16 = var16.method_1492(-458797975);
@@ -18604,7 +18604,7 @@ public final class client extends GameApplet implements class_16 {
             int var13 = class_313.method_5578(var8);
             int var14 = class_164.method_3425(class_255.field_2883[var8]);
             int var15 = var14;
-            if(2 == var13 && class_206.field_2401.method_4753(class_115.field_1289 * 161341823, var11, var12, var9) >= 0) {
+            if(2 == var13 && GameSocket.field_2401.method_4753(class_115.field_1289 * 161341823, var11, var12, var9) >= 0) {
                class_87 var16 = class_121.method_2269(var14, -700411027);
                if(var16.field_842 != null) {
                   var16 = var16.method_1492(2031678306);
@@ -18799,7 +18799,7 @@ public final class client extends GameApplet implements class_16 {
             int var13 = class_313.method_5578(var8);
             int var14 = class_164.method_3425(class_255.field_2883[var8]);
             int var15 = var14;
-            if(2 == var13 && class_206.field_2401.method_4753(class_115.field_1289 * 1115122599, var11, var12, var9) >= 0) {
+            if(2 == var13 && GameSocket.field_2401.method_4753(class_115.field_1289 * 1115122599, var11, var12, var9) >= 0) {
                class_87 var16 = class_121.method_2269(var14, -1039392196);
                if(var16.field_842 != null) {
                   var16 = var16.method_1492(1277229841);
@@ -21443,7 +21443,7 @@ public final class client extends GameApplet implements class_16 {
       class_157.idx10.method_5450((byte)124);
       class_221.idx11.method_5450((byte)62);
       class_189.idx12.method_5450((byte)89);
-      class_206.field_2401.method_4723();
+      GameSocket.field_2401.method_4723();
 
       for(int var0 = 0; var0 < 4; ++var0) {
          field_1475[var0].method_4609(2023823232);
@@ -23633,8 +23633,8 @@ public final class client extends GameApplet implements class_16 {
 
                      if(field_1467) {
                         Socket var3 = (Socket)class_215.hostData.socket;
-                        class_207 var10000 = new class_207(var3, '\u9c40', 5000);
-                        class_207 var2 = var10000;
+                        NetworkSocket var10000 = new NetworkSocket(var3, '\u9c40', 5000);
+                        NetworkSocket var2 = var10000;
                         class_234.clientSocket = var2;
                      } else {
                         class_208 var16 = new class_208((Socket)class_215.hostData.socket, connection, 5000);
@@ -23645,7 +23645,7 @@ public final class client extends GameApplet implements class_16 {
                      Buffer var11 = var17;
                      var11.writeByte(15);
                      var11.writeIntReverse(196);
-                     class_234.clientSocket.method_4132(var11.data, 0, 5);
+                     class_234.clientSocket.write(var11.data, 0, 5);
                      field_1569 += -1833627567;
                      class_35.field_63 = class_87.method_1516((byte)1) * -666039520055302667L;
                   }
@@ -23702,7 +23702,7 @@ public final class client extends GameApplet implements class_16 {
                         throw new IllegalStateException();
                      }
 
-                     class_206 var13 = class_234.clientSocket;
+                     GameSocket var13 = class_234.clientSocket;
                      boolean var18;
                      if(-888167097 * field_1421 > 20) {
                         if(var1 <= -2025370252) {
@@ -23715,23 +23715,23 @@ public final class client extends GameApplet implements class_16 {
                      }
 
                      boolean var14 = var18;
-                     if(class_314.field_3771 != null) {
+                     if(class_314.gameSocket != null) {
                         if(var1 <= -2025370252) {
                            throw new IllegalStateException();
                         }
 
                         try {
-                           class_314.field_3771.close(1994010114);
+                           class_314.gameSocket.close(1994010114);
                         } catch (Exception var8) {
                            ;
                         }
 
-                        class_314.field_3771 = null;
+                        class_314.gameSocket = null;
                      }
 
-                     class_314.field_3771 = var13;
+                     class_314.gameSocket = var13;
                      class_295.method_5317(var14, (byte)31);
-                     class_314.field_3776.offset = 0;
+                     class_314.buffer.offset = 0;
                      class_185.field_2260 = null;
                      class_154.buffer = null;
                      class_314.field_3777 = 0;
@@ -23761,16 +23761,16 @@ public final class client extends GameApplet implements class_16 {
                                        var15.writeByte(4);
                                        var15.writeByte(class_314.field_3772);
                                        var15.writeShortReverse(0);
-                                       class_314.field_3771.method_4132(var15.data, 0, 4);
+                                       class_314.gameSocket.write(var15.data, 0, 4);
                                     } catch (IOException var7) {
                                        try {
-                                          class_314.field_3771.close(2111338388);
+                                          class_314.gameSocket.close(2111338388);
                                        } catch (Exception var6) {
                                           ;
                                        }
 
                                        class_314.field_3782 += 447278907;
-                                       class_314.field_3771 = null;
+                                       class_314.gameSocket = null;
                                     }
                                  }
 
@@ -24506,7 +24506,7 @@ public final class client extends GameApplet implements class_16 {
                   }
 
                   if(null != var2) {
-                     ((class_206)var2).close(1917447756);
+                     ((GameSocket)var2).close(1917447756);
                      var2 = null;
                   }
 
@@ -24541,15 +24541,15 @@ public final class client extends GameApplet implements class_16 {
                      }
 
                      Socket var5 = (Socket)class_187.field_2269.socket;
-                     class_207 var10000 = new class_207(var5, '\u9c40', 5000);
-                     class_207 var4 = var10000;
+                     NetworkSocket var10000 = new NetworkSocket(var5, '\u9c40', 5000);
+                     NetworkSocket var4 = var10000;
                      var2 = var4;
                   } else {
                      class_208 var43 = new class_208((Socket)class_187.field_2269.socket, connection, 5000);
                      var2 = var43;
                   }
 
-                  field_1463.method_4080((class_206)var2);
+                  field_1463.method_4080((GameSocket)var2);
                   class_187.field_2269 = null;
                   loginStage = 38763798;
                }
@@ -24595,7 +24595,7 @@ public final class client extends GameApplet implements class_16 {
                      throw new IllegalStateException();
                   }
 
-                  if(!((class_206)var2).method_4118(1, -211935081)) {
+                  if(!((GameSocket)var2).method_4118(1, -211935081)) {
                      var20 = false;
                   }
                }
@@ -24605,7 +24605,7 @@ public final class client extends GameApplet implements class_16 {
                      throw new IllegalStateException();
                   }
 
-                  var21 = ((class_206)var2).method_4120(479468921);
+                  var21 = ((GameSocket)var2).method_4120(479468921);
                   if(null != class_362.field_4017) {
                      if(var1 != -607645058) {
                         return;
@@ -24647,7 +24647,7 @@ public final class client extends GameApplet implements class_16 {
                      return;
                   }
 
-                  var23 = ((class_206)var2).method_4117(1659206769);
+                  var23 = ((GameSocket)var2).method_4117(1659206769);
                   if(var23 > 8 - -442398587 * var3.offset) {
                      if(var1 != -607645058) {
                         throw new IllegalStateException();
@@ -24661,7 +24661,7 @@ public final class client extends GameApplet implements class_16 {
                         throw new IllegalStateException();
                      }
 
-                     ((class_206)var2).read(var3.data, -442398587 * var3.offset, var23, -2036346310);
+                     ((GameSocket)var2).read(var3.data, -442398587 * var3.offset, var23, -2036346310);
                      var3.offset += var23 * -1025691571;
                   }
                }
@@ -24876,13 +24876,13 @@ public final class client extends GameApplet implements class_16 {
                   throw new IllegalStateException();
                }
 
-               if(((class_206)var2).method_4117(1659206769) > 0) {
+               if(((GameSocket)var2).method_4117(1659206769) > 0) {
                   label943: {
                      if(var1 != -607645058) {
                         return;
                      }
 
-                     var23 = ((class_206)var2).method_4120(132371406);
+                     var23 = ((GameSocket)var2).method_4120(132371406);
                      if(var23 == 21) {
                         if(var1 != -607645058) {
                            throw new IllegalStateException();
@@ -24955,12 +24955,12 @@ public final class client extends GameApplet implements class_16 {
                }
             }
 
-            if(7 == loginStage * -1024706269 && ((class_206)var2).method_4117(1659206769) >= 2) {
+            if(7 == loginStage * -1024706269 && ((GameSocket)var2).method_4117(1659206769) >= 2) {
                if(var1 != -607645058) {
                   return;
                }
 
-               ((class_206)var2).read(var3.data, 0, 2, -2023586322);
+               ((GameSocket)var2).read(var3.data, 0, 2, -2023586322);
                var3.offset = 0;
                class_125.field_1365 = var3.readShort() * 1844196831;
                loginStage = 155055192;
@@ -24971,9 +24971,9 @@ public final class client extends GameApplet implements class_16 {
                   return;
                }
 
-               if(((class_206)var2).method_4117(1659206769) >= 2057684511 * class_125.field_1365) {
+               if(((GameSocket)var2).method_4117(1659206769) >= 2057684511 * class_125.field_1365) {
                   var3.offset = 0;
-                  ((class_206)var2).read(var3.data, -442398587 * var3.offset, class_125.field_1365 * 2057684511, -1915010423);
+                  ((GameSocket)var2).read(var3.data, -442398587 * var3.offset, class_125.field_1365 * 2057684511, -1915010423);
                   class_144[] var31 = new class_144[]{class_144.field_1826};
                   class_144 var24 = var31[var3.readUnsignedByte()];
 
@@ -25024,12 +25024,12 @@ public final class client extends GameApplet implements class_16 {
                   throw new IllegalStateException();
                }
 
-               if(((class_206)var2).method_4117(1659206769) > 0) {
+               if(((GameSocket)var2).method_4117(1659206769) > 0) {
                   if(var1 != -607645058) {
                      throw new IllegalStateException();
                   }
 
-                  class_175.field_2170 = ((class_206)var2).method_4120(513743264) * 415803325;
+                  class_175.field_2170 = ((GameSocket)var2).method_4120(513743264) * 415803325;
                   loginStage = 213200889;
                }
             }
@@ -25039,12 +25039,12 @@ public final class client extends GameApplet implements class_16 {
                   return;
                }
 
-               if(((class_206)var2).method_4117(1659206769) >= class_175.field_2170 * -495301739) {
+               if(((GameSocket)var2).method_4117(1659206769) >= class_175.field_2170 * -495301739) {
                   if(var1 != -607645058) {
                      throw new IllegalStateException();
                   }
 
-                  ((class_206)var2).read(var3.data, 0, class_175.field_2170 * -495301739, -1828889386);
+                  ((GameSocket)var2).read(var3.data, 0, class_175.field_2170 * -495301739, -1828889386);
                   var3.offset = 0;
                   loginStage = 116291394;
                }
@@ -25055,12 +25055,12 @@ public final class client extends GameApplet implements class_16 {
                   throw new IllegalStateException();
                }
 
-               if(((class_206)var2).method_4117(1659206769) > 0) {
+               if(((GameSocket)var2).method_4117(1659206769) > 0) {
                   if(var1 != -607645058) {
                      throw new IllegalStateException();
                   }
 
-                  field_1451 = (((class_206)var2).method_4120(2009312021) + 3) * -611102628;
+                  field_1451 = (((GameSocket)var2).method_4120(2009312021) + 3) * -611102628;
                   loginStage = 251964687;
                }
             }
@@ -25086,12 +25086,12 @@ public final class client extends GameApplet implements class_16 {
                      throw new IllegalStateException();
                   }
 
-                  if(((class_206)var2).method_4117(1659206769) >= 1) {
+                  if(((GameSocket)var2).method_4117(1659206769) >= 1) {
                      if(var1 != -607645058) {
                         throw new IllegalStateException();
                      }
 
-                     class_52.field_391 = ((class_206)var2).method_4120(1800705491) * 1817336233;
+                     class_52.field_391 = ((GameSocket)var2).method_4120(1800705491) * 1817336233;
                      loginStage = 290728485;
                   }
                }
@@ -25102,14 +25102,14 @@ public final class client extends GameApplet implements class_16 {
                      throw new IllegalStateException();
                   }
 
-                  if(((class_206)var2).method_4117(1659206769) >= class_52.field_391 * -318023015) {
+                  if(((GameSocket)var2).method_4117(1659206769) >= class_52.field_391 * -318023015) {
                      label982: {
                         if(var1 != -607645058) {
                            throw new IllegalStateException();
                         }
 
                         boolean var49;
-                        if(((class_206)var2).method_4120(-301895213) == 1) {
+                        if(((GameSocket)var2).method_4120(-301895213) == 1) {
                            if(var1 != -607645058) {
                               return;
                            }
@@ -25120,7 +25120,7 @@ public final class client extends GameApplet implements class_16 {
                         }
 
                         var20 = var49;
-                        ((class_206)var2).read(var3.data, 0, 4, -1966288614);
+                        ((GameSocket)var2).read(var3.data, 0, 4, -1966288614);
                         var3.offset = 0;
                         var26 = false;
                         if(var20) {
@@ -25176,8 +25176,8 @@ public final class client extends GameApplet implements class_16 {
                         }
 
                         class_94.savePreferences(-2074912368);
-                        field_1586 = ((class_206)var2).method_4120(-203602842) * 703256039;
-                        if(((class_206)var2).method_4120(176298380) == 1) {
+                        field_1586 = ((GameSocket)var2).method_4120(-203602842) * 703256039;
+                        if(((GameSocket)var2).method_4120(176298380) == 1) {
                            if(var1 != -607645058) {
                               throw new IllegalStateException();
                            }
@@ -25188,11 +25188,11 @@ public final class client extends GameApplet implements class_16 {
                         }
 
                         field_1618 = var49;
-                        field_1534 = ((class_206)var2).method_4120(-615945148) * -696342299;
+                        field_1534 = ((GameSocket)var2).method_4120(-615945148) * -696342299;
                         field_1534 = (field_1534 * 929092845 << 8) * -696342299;
-                        field_1534 += ((class_206)var2).method_4120(2017353655) * -696342299;
-                        field_1535 = ((class_206)var2).method_4120(1069412977) * -1503566861;
-                        ((class_206)var2).read(var3.data, 0, 1, -2084766081);
+                        field_1534 += ((GameSocket)var2).method_4120(2017353655) * -696342299;
+                        field_1535 = ((GameSocket)var2).method_4120(1069412977) * -1503566861;
+                        ((GameSocket)var2).read(var3.data, 0, 1, -2084766081);
                         var3.offset = 0;
                         ServerOpcode[] var28 = class_176.method_3744();
                         var30 = var3.method_377(1807969364);
@@ -25200,7 +25200,7 @@ public final class client extends GameApplet implements class_16 {
                            if(var30 < var28.length) {
                               field_1463.opcode = var28[var30];
                               field_1463.field_2380 = field_1463.opcode.field_3027 * 1568909879;
-                              ((class_206)var2).read(var3.data, 0, 2, -1943967720);
+                              ((GameSocket)var2).read(var3.data, 0, 2, -1943967720);
                               var3.offset = 0;
                               field_1463.field_2380 = var3.readShort() * 930611749;
 
@@ -25230,13 +25230,13 @@ public final class client extends GameApplet implements class_16 {
                         throw new IllegalStateException();
                      }
 
-                     if(((class_206)var2).method_4117(1659206769) >= 2) {
+                     if(((GameSocket)var2).method_4117(1659206769) >= 2) {
                         if(var1 != -607645058) {
                            throw new IllegalStateException();
                         }
 
                         var3.offset = 0;
-                        ((class_206)var2).read(var3.data, 0, 2, -2137440239);
+                        ((GameSocket)var2).read(var3.data, 0, 2, -2137440239);
                         var3.offset = 0;
                         class_227.field_2565 = var3.readShort() * 2046835883;
                         loginStage = 348874182;
@@ -25248,13 +25248,13 @@ public final class client extends GameApplet implements class_16 {
                         throw new IllegalStateException();
                      }
 
-                     if(((class_206)var2).method_4117(1659206769) >= -232137213 * class_227.field_2565) {
+                     if(((GameSocket)var2).method_4117(1659206769) >= -232137213 * class_227.field_2565) {
                         if(var1 != -607645058) {
                            return;
                         }
 
                         var3.offset = 0;
-                        ((class_206)var2).read(var3.data, 0, -232137213 * class_227.field_2565, -2023374011);
+                        ((GameSocket)var2).read(var3.data, 0, -232137213 * class_227.field_2565, -2023374011);
                         var3.offset = 0;
                         String var42 = var3.method_139(-391631059);
                         String var36 = var3.method_139(-391631059);
@@ -25266,7 +25266,7 @@ public final class client extends GameApplet implements class_16 {
 
                   if(loginStage * -1024706269 == 19) {
                      if(-1 == -83736147 * field_1463.field_2380) {
-                        if(((class_206)var2).method_4117(1659206769) < 2) {
+                        if(((GameSocket)var2).method_4117(1659206769) < 2) {
                            if(var1 != -607645058) {
                               return;
                            }
@@ -25274,17 +25274,17 @@ public final class client extends GameApplet implements class_16 {
                            return;
                         }
 
-                        ((class_206)var2).read(var3.data, 0, 2, -1912434092);
+                        ((GameSocket)var2).read(var3.data, 0, 2, -1912434092);
                         var3.offset = 0;
                         field_1463.field_2380 = var3.readShort() * 930611749;
                      }
 
-                     if(((class_206)var2).method_4117(1659206769) < field_1463.field_2380 * -83736147) {
+                     if(((GameSocket)var2).method_4117(1659206769) < field_1463.field_2380 * -83736147) {
                         if(var1 != -607645058) {
                            throw new IllegalStateException();
                         }
                      } else {
-                        ((class_206)var2).read(var3.data, 0, field_1463.field_2380 * -83736147, -1896267622);
+                        ((GameSocket)var2).read(var3.data, 0, field_1463.field_2380 * -83736147, -1896267622);
                         var3.offset = 0;
                         var23 = -83736147 * field_1463.field_2380;
                         field_1468.method_5899();
@@ -25326,9 +25326,9 @@ public final class client extends GameApplet implements class_16 {
                      }
                   }
                } else {
-                  if(((class_206)var2).method_4117(1659206769) >= -83736147 * field_1463.field_2380) {
+                  if(((GameSocket)var2).method_4117(1659206769) >= -83736147 * field_1463.field_2380) {
                      var3.offset = 0;
-                     ((class_206)var2).read(var3.data, 0, -83736147 * field_1463.field_2380, -1952136097);
+                     ((GameSocket)var2).read(var3.data, 0, -83736147 * field_1463.field_2380, -1952136097);
                      field_1468.method_5897((byte)-99);
                      field_1426 = -5663195623892396483L;
                      class_289.field_3284.field_2028 = 0;
@@ -27030,7 +27030,7 @@ public final class client extends GameApplet implements class_16 {
             int var13 = class_313.method_5578(var8);
             int var14 = class_164.method_3425(class_255.field_2883[var8]);
             int var15 = var14;
-            if(2 == var13 && class_206.field_2401.method_4753(class_115.field_1289 * 1115122599, var11, var12, var9) >= 0) {
+            if(2 == var13 && GameSocket.field_2401.method_4753(class_115.field_1289 * 1115122599, var11, var12, var9) >= 0) {
                class_87 var16 = class_121.method_2269(var14, 1922654868);
                if(var16.field_842 != null) {
                   var16 = var16.method_1492(-507690938);

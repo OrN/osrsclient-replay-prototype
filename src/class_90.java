@@ -844,9 +844,9 @@ public class class_90 extends class_59 {
                   throw new IllegalStateException();
                }
 
-               class_206.field_2401.method_4841();
+               GameSocket.field_2401.method_4841();
             } else {
-               class_206.field_2401.method_4755(class_115.field_1289 * 1115122599, var0, var1, true);
+               GameSocket.field_2401.method_4755(class_115.field_1289 * 1115122599, var0, var1, true);
             }
          }
 

@@ -234,7 +234,7 @@ public class class_231 extends class_230 {
                }
 
                class_46.method_536(-1808857292);
-               class_206.field_2401.method_4723();
+               GameSocket.field_2401.method_4723();
 
                for(var2 = 0; var2 < 4; ++var2) {
                   if(var0 != 0) {
@@ -331,7 +331,7 @@ public class class_231 extends class_230 {
                         var5 = (class_275.field_3216[var32] >> 8) * 64 - class_243.field_2700 * 697161691;
                         var34 = (class_275.field_3216[var32] & 255) * 64 - class_154.field_1929 * -27903763;
                         class_46.method_536(-1808857292);
-                        class_251 var7 = class_206.field_2401;
+                        class_251 var7 = GameSocket.field_2401;
                         class_240[] var37 = client.field_1475;
                         var10000 = new Buffer(var33);
                         var9 = var10000;
@@ -645,7 +645,7 @@ public class class_231 extends class_230 {
                                           throw new IllegalStateException();
                                        }
 
-                                       FontHandler.method_6614(class_168.field_2103[var12], var32, 8 * var4, 8 * var5, var36, 8 * (var40 & 7), 8 * (var10 & 7), var38, class_206.field_2401, client.field_1475, 305716239);
+                                       FontHandler.method_6614(class_168.field_2103[var12], var32, 8 * var4, 8 * var5, var36, 8 * (var40 & 7), 8 * (var10 & 7), var38, GameSocket.field_2401, client.field_1475, 305716239);
                                        break;
                                     }
                                  }
@@ -658,7 +658,7 @@ public class class_231 extends class_230 {
 
                class_245.method_4709(true, -1423260224);
                class_46.method_536(-1808857292);
-               class_120.method_2266(class_206.field_2401, client.field_1475, -1580902995);
+               class_120.method_2266(GameSocket.field_2401, client.field_1475, -1580902995);
                class_245.method_4709(true, 660381724);
                var32 = class_166.field_2070 * 1752941579;
                if(var32 > class_115.field_1289 * 1115122599) {
@@ -674,9 +674,9 @@ public class class_231 extends class_230 {
                      return;
                   }
 
-                  class_206.field_2401.method_4815(class_166.field_2070 * 1752941579);
+                  GameSocket.field_2401.method_4815(class_166.field_2070 * 1752941579);
                } else {
-                  class_206.field_2401.method_4815(0);
+                  GameSocket.field_2401.method_4815(0);
                }
 
                for(var4 = 0; var4 < 104; ++var4) {

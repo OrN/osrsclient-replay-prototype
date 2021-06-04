@@ -5,7 +5,7 @@ import java.io.OutputStream;
 import java.net.Socket;
 
 // $FF: renamed from: ea
-public final class class_208 extends class_206 implements Runnable {
+public final class class_208 extends GameSocket implements Runnable {
 
    // $FF: renamed from: j eu
    HostData field_2405;
@@ -191,7 +191,7 @@ public final class class_208 extends class_206 implements Runnable {
                                     var0.field_1160 = false;
                                     var0.field_1149 = class_205.method_4113(-130212619 * var0.field_1077, var0.field_1076 * 1248597615, class_115.field_1289 * 1115122599, 1127602993) * -1225750221;
                                     var0.field_1080 = -690346567 * client.field_1425;
-                                    class_206.field_2401.method_4735(1115122599 * class_115.field_1289, var0.field_1077 * -130212619, 1248597615 * var0.field_1076, var0.field_1149 * -483485189, var0, var0.field_1119 * -1073291133, var5, var0.field_1156 * -1119093931, 1402081485 * var0.field_1157, var0.field_1158 * 482792791, var0.field_1159 * -1028292805);
+                                    GameSocket.field_2401.method_4735(1115122599 * class_115.field_1289, var0.field_1077 * -130212619, 1248597615 * var0.field_1076, var0.field_1149 * -483485189, var0, var0.field_1119 * -1073291133, var5, var0.field_1156 * -1119093931, 1402081485 * var0.field_1157, var0.field_1158 * 482792791, var0.field_1159 * -1028292805);
                                     return;
                                  }
                               }
@@ -211,7 +211,7 @@ public final class class_208 extends class_206 implements Runnable {
 
                            var0.field_1149 = class_205.method_4113(var0.field_1077 * -130212619, 1248597615 * var0.field_1076, 1115122599 * class_115.field_1289, 2036215183) * -1225750221;
                            var0.field_1080 = client.field_1425 * -690346567;
-                           class_206.field_2401.method_4875(class_115.field_1289 * 1115122599, var0.field_1077 * -130212619, 1248597615 * var0.field_1076, -483485189 * var0.field_1149, 60, var0, -1073291133 * var0.field_1119, var5, var0.field_1095);
+                           GameSocket.field_2401.method_4875(class_115.field_1289 * 1115122599, var0.field_1077 * -130212619, 1248597615 * var0.field_1076, -483485189 * var0.field_1149, 60, var0, -1073291133 * var0.field_1119, var5, var0.field_1095);
                         }
                      }
                   }
@@ -390,7 +390,7 @@ public final class class_208 extends class_206 implements Runnable {
    }
 
    // $FF: renamed from: r (byte[], int, int, int) void
-   public void method_4132(byte[] var1, int var2, int var3) throws IOException {
+   public void write(byte[] var1, int var2, int var3) throws IOException {
       try {
          this.method_4145(var1, var2, var3, (byte)12);
       } catch (RuntimeException var5) {

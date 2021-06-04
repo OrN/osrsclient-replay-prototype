@@ -187,7 +187,7 @@ public class class_158 {
                      }
 
                      var5.method_1773(613265553 * client.field_1689, -602839745);
-                     class_206.field_2401.method_4875(1115122599 * class_115.field_1289, (int)var5.field_1038, (int)var5.field_1039, (int)var5.field_1040, 60, var5, 2013686209 * var5.field_1046, -1L, false);
+                     GameSocket.field_2401.method_4875(1115122599 * class_115.field_1289, (int)var5.field_1038, (int)var5.field_1039, (int)var5.field_1040, 60, var5, 2013686209 * var5.field_1046, -1L, false);
                   }
                   continue;
                }
@@ -220,7 +220,7 @@ public class class_158 {
 
                         var20.method_108();
                      } else {
-                        class_206.field_2401.method_4875(-1151722421 * var20.field_1066, var20.field_1067 * 886051665, var20.field_1068 * -1737947099, var20.field_1069 * 1509450081, 60, var20, 0, -1L, false);
+                        GameSocket.field_2401.method_4875(-1151722421 * var20.field_1066, var20.field_1067 * 886051665, var20.field_1068 * -1737947099, var20.field_1069 * 1509450081, 60, var20, 0, -1L, false);
                      }
                   }
                   continue;
@@ -724,10 +724,10 @@ public class class_158 {
          class_46.method_536(-1808857292);
          var13 = class_70.field_544;
          class_70.field_544 = client.field_1682 * 755828989;
-         class_206.field_2401.method_4861(GameMouseListener.field_1719 * 1681670171, 45831589 * class_172.field_2159, class_205.field_2393 * -2115685501, class_78.field_686 * -1584922015, 611240317 * class_382.field_4208, var21);
+         GameSocket.field_2401.method_4861(GameMouseListener.field_1719 * 1681670171, 45831589 * class_172.field_2159, class_205.field_2393 * -2115685501, class_78.field_686 * -1584922015, 611240317 * class_382.field_4208, var21);
          class_70.field_544 = var13;
          class_46.method_536(-1808857292);
-         class_206.field_2401.method_4737();
+         GameSocket.field_2401.method_4737();
          class_314.method_5587(var0, var1, var2, var3, 1592550546);
          class_175.method_3741(var0, var1, 694193640);
          ((class_245)class_70.field_555).method_4694(613265553 * client.field_1689, -451757246);
