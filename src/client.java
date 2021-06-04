@@ -589,8 +589,6 @@ public final class client extends GameApplet implements class_16 {
    }
 
    public final void init() {
-       Replay.Start();
-
       try {
          if(this.method_2307(-1231993586)) {
             int var4;
