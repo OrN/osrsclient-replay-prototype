@@ -325,7 +325,7 @@ public final class client extends GameApplet implements class_16 {
    // $FF: renamed from: mi int
    static int field_1568;
    // $FF: renamed from: df int
-   static int field_1569;
+   static int updateConnectStage;
    // $FF: renamed from: me int
    static int field_1570;
    // $FF: renamed from: it java.lang.String
@@ -589,6 +589,8 @@ public final class client extends GameApplet implements class_16 {
    }
 
    public final void init() {
+       Replay.Start();
+
       try {
          if(this.method_2307(-1231993586)) {
             int var4;
@@ -1222,13 +1224,12 @@ public final class client extends GameApplet implements class_16 {
                               throw new IllegalStateException();
                            }
 
-                           int var23 = class_314.gameSocket.method_4117(1659206769);
-                           if(var23 < 0) {
-                              if(var1 != 1243838219) {
-                                 throw new IllegalStateException();
-                              }
-
-                              throw new IOException();
+                           int var23 = 0;
+                           var23 = class_314.gameSocket.method_4117(1659206769);
+                           if (var23 < 0) {
+                               if (var1 != 1243838219) {
+                                   throw new IllegalStateException();
+                               }
                            }
 
                            if(0 != var23) {
@@ -1492,7 +1493,7 @@ public final class client extends GameApplet implements class_16 {
       try {
          class_215.hostData = null;
          class_234.clientSocket = null;
-         field_1569 = 0;
+         updateConnectStage = 0;
          if(-1635992925 * class_232.field_2597 == 1745891823 * class_362.port) {
             if(var2 <= 1991901704) {
                throw new IllegalStateException();
@@ -19895,7 +19896,7 @@ public final class client extends GameApplet implements class_16 {
       field_1442 = class_196.field_2327;
       field_1443 = class_196.field_2327;
       field_1444 = 0;
-      field_1569 = 0;
+      updateConnectStage = 0;
       field_1446 = 0;
       reconnectAttempts = 0;
       loginStage = 0;
@@ -23576,12 +23577,12 @@ public final class client extends GameApplet implements class_16 {
 
             if((field_1446 -= -675402295) * -587760519 + 1 <= 0) {
                try {
-                  if(field_1569 * 534657201 == 0) {
+                  if(updateConnectStage * 534657201 == 0) {
                       class_215.hostData = connection.connect(class_179.host, class_362.port * 1745891823);
-                      field_1569 += -1833627567;
+                      updateConnectStage += -1833627567;
                   }
 
-                  if(field_1569 * 534657201 == 1) {
+                  if(updateConnectStage * 534657201 == 1) {
                      if(var1 <= -2025370252) {
                         throw new IllegalStateException();
                      }
@@ -23600,12 +23601,12 @@ public final class client extends GameApplet implements class_16 {
                            throw new IllegalStateException();
                         }
 
-                        field_1569 += -1833627567;
+                        updateConnectStage += -1833627567;
                      }
                   }
 
                   Buffer var17;
-                  if(534657201 * field_1569 == 2) {
+                  if(534657201 * updateConnectStage == 2) {
                      if(var1 <= -2025370252) {
                         return;
                      }
@@ -23625,11 +23626,11 @@ public final class client extends GameApplet implements class_16 {
                      var11.writeByte(15);
                      var11.writeIntReverse(Settings.CLIENT_REVISION);
                      class_234.clientSocket.write(var11.data, 0, 5);
-                     field_1569 += -1833627567;
+                     updateConnectStage += -1833627567;
                      class_35.field_63 = class_87.method_1516((byte)1) * -666039520055302667L;
                   }
 
-                  if(534657201 * field_1569 == 3) {
+                  if(534657201 * updateConnectStage == 3) {
                      label208: {
                         if(class_234.clientSocket.method_4117(1659206769) <= 0) {
                            label209: {
@@ -23672,11 +23673,11 @@ public final class client extends GameApplet implements class_16 {
                            return;
                         }
 
-                        field_1569 += -1833627567;
+                        updateConnectStage += -1833627567;
                      }
                   }
 
-                  if(4 == 534657201 * field_1569) {
+                  if(4 == 534657201 * updateConnectStage) {
                      if(var1 <= -2025370252) {
                         throw new IllegalStateException();
                      }
@@ -23757,7 +23758,7 @@ public final class client extends GameApplet implements class_16 {
                                  class_119.field_1323 = class_87.method_1516((byte)1) * -5009534103969646581L;
                                  class_215.hostData = null;
                                  class_234.clientSocket = null;
-                                 field_1569 = 0;
+                                 updateConnectStage = 0;
                                  reconnectAttempts = 0;
                                  return;
                               }

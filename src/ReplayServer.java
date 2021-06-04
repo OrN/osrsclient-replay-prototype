@@ -29,12 +29,17 @@ public class ReplayServer implements Runnable {
 
     public void run() {
         try {
+            boolean update = replayPath.endsWith("update.bin");
+
             sock = ServerSocketChannel.open();
             sock.bind(new InetSocketAddress(DEFAULT_PORT));
 
             client = sock.accept();
 
-            inputIn = new DataInputStream(new BufferedInputStream(new FileInputStream(new File(ReplayServer.replayPath + "/input.bin"))));
+            if (update)
+                inputIn = new DataInputStream(new BufferedInputStream(new FileInputStream(new File(ReplayServer.replayPath))));
+            else
+                inputIn = new DataInputStream(new BufferedInputStream(new FileInputStream(new File(ReplayServer.replayPath + "/input.bin"))));
 
             // Wait for client response before starting
             ByteBuffer readData = ByteBuffer.allocate(1000);
@@ -47,7 +52,8 @@ public class ReplayServer implements Runnable {
             for (;;) {
                 currentTimestamp = System.currentTimeMillis() - replayStartTime;
 
-                //System.out.println("current: " + currentTimestamp + ", next: " + nextTimestamp);
+                if (update)
+                    currentTimestamp = nextTimestamp;
 
                 while (currentTimestamp >= nextTimestamp) {
                     int len = inputIn.readInt();
@@ -65,7 +71,6 @@ public class ReplayServer implements Runnable {
                 Thread.sleep(1);
             }
         } catch (Exception e) {
-            e.printStackTrace();
         }
 
         try {
@@ -77,6 +82,14 @@ public class ReplayServer implements Runnable {
 
     public static String getHost(String host) {
         String ret = "127.0.0.1";
+
+        if (!Replay.clientReady && Settings.DISABLE_CLIENT_UPDATER) {
+            ReplayServer.replayPath = "./assets/update.bin";
+            ReplayServer.Start();
+            System.out.println(ret);
+            return ret;
+        }
+
         if (!Settings.ENABLE_REPLAY_SUPPORT || !Replay.isPlayback())
             ret = host;
         System.out.println(ret);
