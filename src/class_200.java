@@ -97,7 +97,7 @@ public class class_200 implements Runnable {
             URLConnection var3 = null;
 
             try {
-               var3 = var1.field_2306.openConnection();
+               var3 = var1.url.openConnection();
                var3.setConnectTimeout(1498990057);
                var3.setReadTimeout(12624274);
                var3.setUseCaches(false);
@@ -151,7 +151,7 @@ public class class_200 implements Runnable {
             URLConnection var3 = null;
 
             try {
-               var3 = var1.field_2306.openConnection();
+               var3 = var1.url.openConnection();
                var3.setConnectTimeout(5000);
                var3.setReadTimeout(-1770600986);
                var3.setUseCaches(false);
@@ -205,7 +205,7 @@ public class class_200 implements Runnable {
                URLConnection var3 = null;
 
                try {
-                  var3 = var1.field_2306.openConnection();
+                  var3 = var1.url.openConnection();
                   var3.setConnectTimeout(5000);
                   var3.setReadTimeout(5000);
                   var3.setUseCaches(false);

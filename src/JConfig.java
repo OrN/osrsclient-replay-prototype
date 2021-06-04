@@ -1,9 +1,7 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.net.InetAddress;
 import java.net.URL;
 import java.net.URLConnection;
-import java.net.UnknownHostException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -17,6 +15,33 @@ public class JConfig {
     private Map<String, String> m_data = new HashMap<>();
 
     public boolean fetch(String url) {
+        if (Settings.OFFLINE_MODE) {
+            parameters.put("20", "https://token-auth.production.jxp.aws.jagex.com/");
+            parameters.put("7", "0");
+            parameters.put("17", "http://www.runescape.com/g=oldscape/slr.ws?order=LPWM");
+            parameters.put("13", ".runescape.com");
+            parameters.put("8", "true");
+            parameters.put("11", "https://auth.jagex.com");
+            parameters.put("3", "true");
+            parameters.put("14", "0");
+            parameters.put("15", "0");
+            parameters.put("1", "1");
+            parameters.put("10", "5");
+            parameters.put("18", "");
+            parameters.put("12", "301"); // World
+            parameters.put("9", "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+            parameters.put("5", "1");
+            parameters.put("19", "196515767263-1oo20deqm6edn7ujlihl6rpadk9drhva.apps.googleusercontent.com");
+            parameters.put("2", "https://payments.jagex.com/");
+            parameters.put("4", "50385");
+            parameters.put("16", "false");
+            parameters.put("6", "0");
+            m_data.put("codebase", "http://127.0.0.1/");
+            Settings.EMULATE_CLIENT_UPDATER = true;
+            Settings.EMULATE_WORLD_SWITCHER = true;
+            return true;
+        }
+
         try {
             URL configURL = new URL(url);
 

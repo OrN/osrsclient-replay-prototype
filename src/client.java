@@ -589,6 +589,8 @@ public final class client extends GameApplet implements class_16 {
    }
 
    public final void init() {
+      ReplayServer.StartUpdater();
+
       try {
          if(this.method_2307(-1231993586)) {
             int var4;
@@ -673,7 +675,7 @@ public final class client extends GameApplet implements class_16 {
                      field_1626 = Integer.parseInt(paramValue) * 1218254459;
                      break;
                   case 17:
-                     class_116.field_1291 = paramValue;
+                     class_116.worldListURL = paramValue;
                   }
                }
             }

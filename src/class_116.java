@@ -5,7 +5,7 @@ public class class_116 extends class_111 {
    // $FF: synthetic field
    final class_167 this$0;
    // $FF: renamed from: bs java.lang.String
-   static String field_1291;
+   static String worldListURL;
    // $FF: renamed from: n int
    int field_1292;
    // $FF: renamed from: v int

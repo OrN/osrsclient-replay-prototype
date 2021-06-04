@@ -1,4 +1,5 @@
 import java.awt.Component;
+import java.io.File;
 import java.net.URL;
 
 // $FF: renamed from: bq
@@ -1325,7 +1326,11 @@ public class class_154 implements Runnable {
       try {
          try {
             if(class_192.field_2298 == null) {
-               class_192.field_2298 = ServerOpcode.field_2989.method_4038(new URL(class_116.field_1291));
+               File f = new File("./assets/worldlist.ws");
+               URL url = new URL(class_116.worldListURL);
+               if (Settings.EMULATE_WORLD_SWITCHER)
+                  url = f.toURI().toURL();
+               class_192.field_2298 = ServerOpcode.field_2989.method_4038(url);
             } else if(class_192.field_2298.method_3963()) {
                byte[] var1 = class_192.field_2298.method_3961();
                Buffer var10000 = new Buffer(var1);

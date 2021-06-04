@@ -1,5 +1,6 @@
 import java.io.*;
 import java.net.InetSocketAddress;
+import java.net.StandardSocketOptions;
 import java.nio.ByteBuffer;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
@@ -32,6 +33,7 @@ public class ReplayServer implements Runnable {
             boolean update = replayPath.endsWith("update.bin");
 
             sock = ServerSocketChannel.open();
+            sock.setOption(StandardSocketOptions.SO_REUSEADDR, true);
             sock.bind(new InetSocketAddress(DEFAULT_PORT));
 
             client = sock.accept();
@@ -70,24 +72,25 @@ public class ReplayServer implements Runnable {
 
                 Thread.sleep(1);
             }
-        } catch (Exception e) {
-        }
-
-        try {
-            inputIn.close();
-            sock.close();
-            client.close();
         } catch (Exception e) {}
+
+        try { client.close(); } catch (Exception e) {}
+        try { inputIn.close(); } catch (Exception e) {}
+        try { sock.close(); } catch (Exception e) {}
+    }
+
+    public static void StartUpdater() {
+        if (!Replay.clientReady && Settings.EMULATE_CLIENT_UPDATER) {
+            ReplayServer.replayPath = "./assets/update.bin";
+            ReplayServer.Start();
+        }
     }
 
     public static String getHost(String host) {
         String ret = "127.0.0.1";
 
-        if (!Replay.clientReady && Settings.DISABLE_CLIENT_UPDATER) {
-            ReplayServer.replayPath = "./assets/update.bin";
-            ReplayServer.Start();
+        if (Settings.OFFLINE_MODE || (!Replay.clientReady && Settings.EMULATE_CLIENT_UPDATER))
             return ret;
-        }
 
         if (!Settings.ENABLE_REPLAY_SUPPORT || !Replay.isPlayback())
             ret = host;

@@ -9,10 +9,8 @@ public class class_194 {
    volatile boolean field_2303;
    // $FF: renamed from: f byte[]
    volatile byte[] field_2304;
-   // $FF: renamed from: t int
-   static final int field_2305 = 19136770;
    // $FF: renamed from: v java.net.URL
-   final URL field_2306;
+   final URL url;
    // $FF: renamed from: dn jp
    static IDXFile idx6;
 
@@ -30,7 +28,7 @@ public class class_194 {
    class_194(URL var1) {
       super();
       try {
-         this.field_2306 = var1;
+         this.url = var1;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2);
       }
