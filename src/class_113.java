@@ -103,7 +103,7 @@ public class class_113 extends class_111 {
          }
 
          class_309.field_3741 = var10000 * -1518998617;
-         class_362.field_4020 = class_232.field_2597 * 1024747149;
+         class_362.port = class_232.field_2597 * 1024747149;
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2);
       }

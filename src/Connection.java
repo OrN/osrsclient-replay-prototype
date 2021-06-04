@@ -55,7 +55,7 @@ public class Connection implements Runnable {
    }
 
    // $FF: renamed from: f (java.lang.String, int, byte) eu
-   public final HostData method_4057(String var1, int var2) {
+   public final HostData connect(String var1, int var2) {
       try {
          return this.method_4056(1, var2, var1, 2094219759);
       } catch (RuntimeException var4) {

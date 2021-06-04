@@ -12,7 +12,7 @@ public class class_362 implements class_18 {
    // $FF: renamed from: y int
    int field_4019;
    // $FF: renamed from: em int
-   static int field_4020;
+   static int port;
 
 
    // $FF: renamed from: v (byte) my
