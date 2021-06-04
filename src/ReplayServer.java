@@ -86,13 +86,11 @@ public class ReplayServer implements Runnable {
         if (!Replay.clientReady && Settings.DISABLE_CLIENT_UPDATER) {
             ReplayServer.replayPath = "./assets/update.bin";
             ReplayServer.Start();
-            System.out.println(ret);
             return ret;
         }
 
         if (!Settings.ENABLE_REPLAY_SUPPORT || !Replay.isPlayback())
             ret = host;
-        System.out.println(ret);
         return ret;
     }
 }
