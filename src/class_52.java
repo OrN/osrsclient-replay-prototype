@@ -401,12 +401,12 @@ public class class_52 extends class_51 {
                         throw new IllegalStateException();
                      }
 
-                     if(GameMouseListener.field_1701 * 1003938789 <= class_180.field_2238.field_498 && 339791065 * GameMouseListener.field_1711 >= -1538307343 * class_58.field_460 / 2 - 50) {
+                     if(GameMouseListener.field_1701 * 1003938789 <= class_180.field_2238.field_498 && 339791065 * GameMouseListener.field_1711 >= -1538307343 * class_58.canvasHeight / 2 - 50) {
                         if(var1 == 0) {
                            throw new IllegalStateException();
                         }
 
-                        if(339791065 * GameMouseListener.field_1711 <= 50 + class_58.field_460 * -1538307343 / 2) {
+                        if(339791065 * GameMouseListener.field_1711 <= 50 + class_58.canvasHeight * -1538307343 / 2) {
                            if(var1 == 0) {
                               return;
                            }
@@ -423,12 +423,12 @@ public class class_52 extends class_51 {
                   throw new IllegalStateException();
                }
 
-               if(1003938789 * GameMouseListener.field_1701 >= class_137.field_1766 * 646214551 - class_234.field_2625.field_498 - 5) {
+               if(1003938789 * GameMouseListener.field_1701 >= class_137.canvasWidth * 646214551 - class_234.field_2625.field_498 - 5) {
                   if(var1 == 0) {
                      throw new IllegalStateException();
                   }
 
-                  if(GameMouseListener.field_1701 * 1003938789 <= class_137.field_1766 * 646214551 && GameMouseListener.field_1711 * 339791065 >= -1538307343 * class_58.field_460 / 2 - 50 && GameMouseListener.field_1711 * 339791065 <= class_58.field_460 * -1538307343 / 2 + 50) {
+                  if(GameMouseListener.field_1701 * 1003938789 <= class_137.canvasWidth * 646214551 && GameMouseListener.field_1711 * 339791065 >= -1538307343 * class_58.canvasHeight / 2 - 50 && GameMouseListener.field_1711 * 339791065 <= class_58.canvasHeight * -1538307343 / 2 + 50) {
                      if(var1 == 0) {
                         throw new IllegalStateException();
                      }

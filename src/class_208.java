@@ -265,7 +265,7 @@ public final class class_208 extends GameSocket implements Runnable {
                      return;
                   }
 
-                  this.field_2405 = this.field_2409.method_4058(this, 3);
+                  this.field_2405 = this.field_2409.setRunnable(this, 3);
                }
 
                this.notifyAll();
@@ -800,7 +800,7 @@ public final class class_208 extends GameSocket implements Runnable {
                }
 
                if(this.field_2405 == null) {
-                  this.field_2405 = this.field_2409.method_4058(this, 3);
+                  this.field_2405 = this.field_2409.setRunnable(this, 3);
                }
 
                this.notifyAll();
@@ -830,7 +830,7 @@ public final class class_208 extends GameSocket implements Runnable {
                }
 
                if(this.field_2405 == null) {
-                  this.field_2405 = this.field_2409.method_4058(this, 3);
+                  this.field_2405 = this.field_2409.setRunnable(this, 3);
                }
 
                this.notifyAll();

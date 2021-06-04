@@ -834,7 +834,7 @@ public class class_192 extends class_191 {
                } else if(-1127540073 * client.field_1444 == 110) {
                   class_163 var38 = new class_163();
                   class_289.field_3284 = var38;
-                  client.connection.method_4058(class_289.field_3284, 10);
+                  client.connection.setRunnable(class_289.field_3284, 10);
                   class_177.loadProgressText = class_305.strLoadedInput;
                   class_177.field_2190 = 1893067964;
                   client.field_1444 = -1294833080;

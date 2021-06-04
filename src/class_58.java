@@ -11,7 +11,7 @@ public class class_58 extends class_27 {
    // $FF: renamed from: v int
    int field_459;
    // $FF: renamed from: q int
-   public static int field_460;
+   public static int canvasHeight;
    // $FF: renamed from: j java.lang.reflect.Field[]
    Field[] field_461;
    // $FF: renamed from: f int[]
@@ -161,12 +161,12 @@ public class class_58 extends class_27 {
          var3 += 8;
          var4 = 22 + client.field_1554 * 1512749503;
          var5 = var0 - var3 / 2;
-         if(var3 + var5 > 646214551 * class_137.field_1766) {
+         if(var3 + var5 > 646214551 * class_137.canvasWidth) {
             if(var2 <= -1059258562) {
                throw new IllegalStateException();
             }
 
-            var5 = class_137.field_1766 * 646214551 - var3;
+            var5 = class_137.canvasWidth * 646214551 - var3;
          }
 
          if(var5 < 0) {
@@ -174,8 +174,8 @@ public class class_58 extends class_27 {
          }
 
          int var6 = var1;
-         if(var1 + var4 > field_460 * -1538307343) {
-            var6 = field_460 * -1538307343 - var4;
+         if(var1 + var4 > canvasHeight * -1538307343) {
+            var6 = canvasHeight * -1538307343 - var4;
          }
 
          if(var6 < 0) {

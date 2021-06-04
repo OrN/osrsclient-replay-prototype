@@ -7,7 +7,7 @@ public final class class_137 {
     // $FF: renamed from: du jp
    static IDXFile idx4;
     // $FF: renamed from: h int
-   public static int field_1766;
+   public static int canvasWidth;
 
 
     // $FF: renamed from: jf (int, int, int, int, int, int, int, byte) void

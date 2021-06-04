@@ -936,7 +936,7 @@ public class class_160 {
          Replay.clientReady = true;
 
       try {
-         class_177.field_2183 = 1213207379 * ((class_137.field_1766 * 646214551 - 765) / 2);
+         class_177.field_2183 = 1213207379 * ((class_137.canvasWidth * 646214551 - 765) / 2);
          class_177.field_2189 = -1366237486 + 322976471 * class_177.field_2183;
          class_204.field_2391 = 1849138212 + -1802309191 * class_177.field_2189;
          byte var4;
@@ -1226,7 +1226,7 @@ public class class_160 {
                            return;
                         }
 
-                        class_180.field_2238.draw(8, class_58.field_460 * -1538307343 / 2 - class_180.field_2238.field_492 / 2);
+                        class_180.field_2238.draw(8, class_58.canvasHeight * -1538307343 / 2 - class_180.field_2238.field_492 / 2);
                      }
                   }
 
@@ -1236,7 +1236,7 @@ public class class_160 {
                      }
 
                      if(class_177.field_2195 * -1580902995 < -386301875 * class_177.field_2193) {
-                        class_234.field_2625.draw(646214551 * class_137.field_1766 - class_234.field_2625.field_498 - 8, -1538307343 * class_58.field_460 / 2 - class_234.field_2625.field_492 / 2);
+                        class_234.field_2625.draw(646214551 * class_137.canvasWidth - class_234.field_2625.field_498 - 8, -1538307343 * class_58.canvasHeight / 2 - class_234.field_2625.field_492 / 2);
                      }
                   }
 
@@ -1940,7 +1940,7 @@ public class class_160 {
 
                int[] var47 = new int[4];
                class_65.method_655(var47);
-               class_65.method_694(class_177.field_2183 * 751544539, 0, class_177.field_2183 * 751544539 + 765, class_58.field_460 * -1538307343);
+               class_65.method_694(class_177.field_2183 * 751544539, 0, class_177.field_2183 * 751544539 + 765, class_58.canvasHeight * -1538307343);
                class_176.field_2181.method_3401(class_177.field_2183 * 751544539 - 22, -1702273423 * client.field_1425, -2082612852);
                class_176.field_2181.method_3401(22 + 751544539 * class_177.field_2183 + 765 - 128, client.field_1425 * -1702273423, -413196021);
                class_65.method_690(var47);

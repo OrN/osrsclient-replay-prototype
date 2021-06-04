@@ -117,7 +117,7 @@ public class class_229 {
 
             class_295.method_5317(false, (byte)78);
             class_177.field_2206 = true;
-            class_177.field_2183 = (646214551 * class_137.field_1766 - 765) / 2 * 1213207379;
+            class_177.field_2183 = (646214551 * class_137.canvasWidth - 765) / 2 * 1213207379;
             class_177.field_2189 = -1366237486 + 322976471 * class_177.field_2183;
             class_204.field_2391 = 1849138212 + class_177.field_2189 * -1802309191;
             class_177.loginFireLeft.method_765(751544539 * class_177.field_2183, 0);

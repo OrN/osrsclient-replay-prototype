@@ -477,8 +477,8 @@ public class class_187 extends class_181 {
                            if(var3 <= -460481447) {
                               throw new IllegalStateException();
                            } else {
-                              class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_137.field_1766 * 646214551;
-                              class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = -1538307343 * class_58.field_460;
+                              class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = class_137.canvasWidth * 646214551;
+                              class_165.field_2052[(class_136.field_1752 += -1087727229) * -26460885 - 1] = -1538307343 * class_58.canvasHeight;
                               return 1;
                            }
                         } else if(var0 == 3133) {

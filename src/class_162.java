@@ -803,11 +803,11 @@ public class class_162 {
    }
 
    // $FF: renamed from: n (java.awt.Component, int) void
-   static void method_3417(Component var0) {
+   static void initKeyboardListener(Component component) {
       try {
-         var0.setFocusTraversalKeysEnabled(false);
-         var0.addKeyListener(class_145.field_1846);
-         var0.addFocusListener(class_145.field_1846);
+         component.setFocusTraversalKeysEnabled(false);
+         component.addKeyListener(class_145.field_1846);
+         component.addFocusListener(class_145.field_1846);
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2);
       }

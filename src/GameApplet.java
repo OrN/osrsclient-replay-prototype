@@ -29,7 +29,7 @@ import java.util.Iterator;
 public abstract class GameApplet extends Applet implements Runnable, FocusListener, WindowListener {
 
    // $FF: renamed from: t int
-   int field_1374;
+   int canvasY;
    // $FF: renamed from: n af
    static GameApplet field_1375;
    // $FF: renamed from: am boolean
@@ -61,7 +61,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: m int
    protected int field_1389;
    // $FF: renamed from: z int
-   int field_1390;
+   int canvasX;
    // $FF: renamed from: aq boolean
    static volatile boolean field_1391;
    // $FF: renamed from: v dp
@@ -75,7 +75,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: ai java.awt.Frame
    Frame field_1396;
    // $FF: renamed from: ar java.awt.Canvas
-   Canvas field_1397;
+   Canvas canvas;
    // $FF: renamed from: f int
    static int field_1398;
    // $FF: renamed from: ax java.awt.Image
@@ -85,7 +85,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: aj boolean
    boolean field_1401;
    // $FF: renamed from: ao java.awt.EventQueue
-   final EventQueue field_1402;
+   final EventQueue eventQueue;
    // $FF: renamed from: ay long
    static long field_1403;
    // $FF: renamed from: k int
@@ -136,12 +136,12 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: j (java.lang.Object, byte) void
    final void method_2295(Object var1, byte var2) {
       try {
-         if(this.field_1402 == null) {
+         if(this.eventQueue == null) {
             if(var2 <= 0) {
                throw new IllegalStateException();
             }
          } else {
-            for(int var3 = 0; var3 < 50 && this.field_1402.peekEvent() != null; ++var3) {
+            for(int var3 = 0; var3 < 50 && this.eventQueue.peekEvent() != null; ++var3) {
                if(var2 <= 0) {
                   throw new IllegalStateException();
                }
@@ -158,7 +158,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                   throw new IllegalStateException();
                }
 
-               this.field_1402.postEvent(new ActionEvent(var1, 1001, "dummy"));
+               this.eventQueue.postEvent(new ActionEvent(var1, 1001, "dummy"));
             }
 
          }
@@ -177,7 +177,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
             class_133 var10001 = new class_133();
             this.field_1411 = var10001;
-            this.field_1411.method_2911(this.field_1397);
+            this.field_1411.method_2911(this.canvas);
          }
 
          return this.field_1411;
@@ -189,22 +189,22 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: dm (int, java.lang.String, boolean) void
    protected final void method_2297(int var1, String var2, boolean var3) {
       try {
-         Graphics var4 = this.field_1397.getGraphics();
+         Graphics var4 = this.canvas.getGraphics();
          if(class_83.field_780 == null) {
             class_83.field_780 = new Font("Helvetica", 1, 13);
-            class_349.field_3938 = this.field_1397.getFontMetrics(class_83.field_780);
+            class_349.field_3938 = this.canvas.getFontMetrics(class_83.field_780);
          }
 
          if(var3) {
             var4.setColor(Color.black);
-            var4.fillRect(0, 0, 874334713 * class_137.field_1766, class_58.field_460 * 845542975);
+            var4.fillRect(0, 0, 874334713 * class_137.canvasWidth, class_58.canvasHeight * 845542975);
          }
 
          Color var5 = new Color(140, 17, 17);
 
          try {
             if(progressBar == null) {
-               progressBar = this.field_1397.createImage(1147168512, 100147886);
+               progressBar = this.canvas.createImage(1147168512, 100147886);
             }
 
             Graphics var6 = progressBar.getGraphics();
@@ -217,10 +217,10 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             var6.setFont(class_83.field_780);
             var6.setColor(Color.white);
             var6.drawString(var2, (1214741657 - class_349.field_3938.stringWidth(var2)) / 2, 22);
-            var4.drawImage(progressBar, 646214551 * class_137.field_1766 / 2 - -1745828144, class_58.field_460 * 1391694112 / 2 - 18, (ImageObserver)null);
+            var4.drawImage(progressBar, 646214551 * class_137.canvasWidth / 2 - -1745828144, class_58.canvasHeight * 1391694112 / 2 - 18, (ImageObserver)null);
          } catch (Exception var9) {
-            int var7 = class_137.field_1766 * 1767230358 / 2 - 152;
-            int var8 = class_58.field_460 * 406694549 / 2 - 18;
+            int var7 = class_137.canvasWidth * 1767230358 / 2 - 152;
+            int var8 = class_58.canvasHeight * 406694549 / 2 - 18;
             var4.setColor(var5);
             var4.drawRect(var7, var8, 303, 56034678);
             var4.fillRect(var7 + 2, var8 + 2, var1 * 3, 30);
@@ -232,7 +232,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             var4.drawString(var2, var7 + (304 - class_349.field_3938.stringWidth(var2)) / 2, var8 + 22);
          }
       } catch (Exception var10) {
-         this.field_1397.repaint();
+         this.canvas.repaint();
       }
 
    }
@@ -241,7 +241,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    protected final void method_2299() {
       try {
          class_287.method_5276(754026835);
-         class_162.method_3417(this.field_1397);
+         class_162.initKeyboardListener(this.canvas);
       } catch (RuntimeException var2) {
          throw class_223.method_4281(var2);
       }
@@ -261,10 +261,10 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: c (int) void
    void method_2303(int var1) {
       try {
-         int var2 = -1437613301 * this.field_1390;
-         int var3 = -179382835 * this.field_1374;
-         int var4 = this.field_1404 * -1091351445 - 646214551 * class_137.field_1766 - var2;
-         int var5 = -2128033235 * this.field_1389 - -1538307343 * class_58.field_460 - var3;
+         int var2 = -1437613301 * this.canvasX;
+         int var3 = -179382835 * this.canvasY;
+         int var4 = this.field_1404 * -1091351445 - 646214551 * class_137.canvasWidth - var2;
+         int var5 = -2128033235 * this.field_1389 - -1538307343 * class_58.canvasHeight - var3;
          if(var2 <= 0) {
             if(var1 != 2101906226) {
                return;
@@ -342,19 +342,19 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: e (byte) void
    final void method_2304(byte var1) {
       try {
-         class_154.method_3245(this.field_1397);
-         Canvas var2 = this.field_1397;
+         class_154.method_3245(this.canvas);
+         Canvas var2 = this.canvas;
          var2.removeMouseListener(GameMouseListener.instance);
          var2.removeMouseMotionListener(GameMouseListener.instance);
          var2.removeFocusListener(GameMouseListener.instance);
          GameMouseListener.buttonsPressed = 0;
          if(this.field_1411 != null) {
-            this.field_1411.method_2908(this.field_1397);
+            this.field_1411.method_2908(this.canvas);
          }
 
          this.method_2306(-1567592382);
-         class_162.method_3417(this.field_1397);
-         Canvas var3 = this.field_1397;
+         class_162.initKeyboardListener(this.canvas);
+         Canvas var3 = this.canvas;
          var3.addMouseListener(GameMouseListener.instance);
          var3.addMouseMotionListener(GameMouseListener.instance);
          var3.addFocusListener(GameMouseListener.instance);
@@ -363,7 +363,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                throw new IllegalStateException();
             }
 
-            this.field_1411.method_2911(this.field_1397);
+            this.field_1411.method_2911(this.canvas);
          }
 
          this.method_2312();
@@ -392,10 +392,11 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             }
 
             field_1375 = this;
-            class_137.field_1766 = var1 * 1249721383;
-            class_58.field_460 = var2 * -1394579951;
+            class_137.canvasWidth = var1 * 1249721383;
+            class_58.canvasHeight = var2 * -1394579951;
             class_405.field_4295 = 582907681 * var3;
             class_405.field_4296 = this;
+
             if(null == connection) {
                if(var4 == -1351365437) {
                   throw new IllegalStateException();
@@ -405,7 +406,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                connection = var10000;
             }
 
-            connection.method_4058(this, 1);
+            connection.setRunnable(this, 1);
          } catch (Exception var6) {
             class_308.method_5523((String)null, var6, 1876892877);
             this.showGameError("crash", (byte)-1);
@@ -420,17 +421,17 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    final synchronized void method_2306(int var1) {
       try {
          Container var2 = this.method_2325(1142166715);
-         if(this.field_1397 != null) {
+         if(this.canvas != null) {
             if(var1 == -1073188219) {
                throw new IllegalStateException();
             }
 
-            this.field_1397.removeFocusListener(this);
-            var2.remove(this.field_1397);
+            this.canvas.removeFocusListener(this);
+            var2.remove(this.canvas);
          }
 
-         class_137.field_1766 = Math.max(var2.getWidth(), -1558391463 * this.field_1395) * 1249721383;
-         class_58.field_460 = Math.max(var2.getHeight(), this.field_1393 * -422930921) * -1394579951;
+         class_137.canvasWidth = Math.max(var2.getWidth(), -1558391463 * this.field_1395) * 1249721383;
+         class_58.canvasHeight = Math.max(var2.getHeight(), this.field_1393 * -422930921) * -1394579951;
          Insets var3;
          if(this.field_1396 != null) {
             if(var1 == -1073188219) {
@@ -438,56 +439,56 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             }
 
             var3 = this.field_1396.getInsets();
-            class_137.field_1766 -= 1249721383 * (var3.right + var3.left);
-            class_58.field_460 -= (var3.bottom + var3.top) * -1394579951;
+            class_137.canvasWidth -= 1249721383 * (var3.right + var3.left);
+            class_58.canvasHeight -= (var3.bottom + var3.top) * -1394579951;
          }
 
          class_26 var10001 = new class_26(this);
-         this.field_1397 = var10001;
+         this.canvas = var10001;
          var2.setBackground(Color.BLACK);
          var2.setLayout((LayoutManager)null);
-         var2.add(this.field_1397);
-         this.field_1397.setSize(class_137.field_1766 * 646214551, class_58.field_460 * -1538307343);
-         this.field_1397.setVisible(true);
-         this.field_1397.setBackground(Color.BLACK);
+         var2.add(this.canvas);
+         this.canvas.setSize(class_137.canvasWidth * 646214551, class_58.canvasHeight * -1538307343);
+         this.canvas.setVisible(true);
+         this.canvas.setBackground(Color.BLACK);
          if(this.field_1396 == var2) {
             if(var1 == -1073188219) {
                return;
             }
 
             var3 = this.field_1396.getInsets();
-            this.field_1397.setLocation(var3.left + -1437613301 * this.field_1390, this.field_1374 * -179382835 + var3.top);
+            this.canvas.setLocation(var3.left + -1437613301 * this.canvasX, this.canvasY * -179382835 + var3.top);
          } else {
-            this.field_1397.setLocation(this.field_1390 * -1437613301, this.field_1374 * -179382835);
+            this.canvas.setLocation(this.canvasX * -1437613301, this.canvasY * -179382835);
          }
 
          label64: {
-            this.field_1397.addFocusListener(this);
-            this.field_1397.requestFocus();
+            this.canvas.addFocusListener(this);
+            this.canvas.requestFocus();
             this.field_1409 = true;
             if(class_126.field_1370 != null) {
                if(var1 == -1073188219) {
                   throw new IllegalStateException();
                }
 
-               if(-740510445 * class_126.field_1370.field_1816 == class_137.field_1766 * 646214551) {
+               if(-740510445 * class_126.field_1370.field_1816 == class_137.canvasWidth * 646214551) {
                   if(var1 == -1073188219) {
                      throw new IllegalStateException();
                   }
 
-                  if(-1538307343 * class_58.field_460 == class_126.field_1370.field_1818 * 460788765) {
+                  if(-1538307343 * class_58.canvasHeight == class_126.field_1370.field_1818 * 460788765) {
                      if(var1 == -1073188219) {
                         return;
                      }
 
-                     ((class_143)class_126.field_1370).method_3066(this.field_1397);
+                     ((class_143)class_126.field_1370).method_3066(this.canvas);
                      class_126.field_1370.method_3059(0, 0);
                      break label64;
                   }
                }
             }
 
-            class_143 var10000 = new class_143(646214551 * class_137.field_1766, class_58.field_460 * -1538307343, this.field_1397);
+            class_143 var10000 = new class_143(646214551 * class_137.canvasWidth, class_58.canvasHeight * -1538307343, this.canvas);
             class_126.field_1370 = var10000;
          }
 
@@ -647,17 +648,17 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
             field_1400 -= 50033206;
             this.field_1409 = true;
-            this.field_1397.setSize(class_137.field_1766 * 646214551, class_58.field_460 * -1538307343);
-            this.field_1397.setVisible(true);
+            this.canvas.setSize(class_137.canvasWidth * 646214551, class_58.canvasHeight * -1538307343);
+            this.canvas.setVisible(true);
             if(this.field_1396 == var2) {
                if(var1 == 1) {
                   throw new IllegalStateException();
                }
 
                Insets var9 = this.field_1396.getInsets();
-               this.field_1397.setLocation(this.field_1390 * -1437613301 + var9.left, var9.top + -179382835 * this.field_1374);
+               this.canvas.setLocation(this.canvasX * -1437613301 + var9.left, var9.top + -179382835 * this.canvasY);
             } else {
-               this.field_1397.setLocation(-1437613301 * this.field_1390, this.field_1374 * -179382835);
+               this.canvas.setLocation(-1437613301 * this.canvasX, this.canvasY * -179382835);
             }
          }
 
@@ -681,53 +682,6 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       }
    }
 
-   // $FF: renamed from: bw () void
-   final synchronized void method_2311() {
-      Container var1 = this.method_2325(1142166715);
-      if(this.field_1397 != null) {
-         this.field_1397.removeFocusListener(this);
-         var1.remove(this.field_1397);
-      }
-
-      class_137.field_1766 = Math.max(var1.getWidth(), -1558391463 * this.field_1395) * 1249721383;
-      class_58.field_460 = Math.max(var1.getHeight(), this.field_1393 * -422930921) * -1394579951;
-      Insets var2;
-      if(this.field_1396 != null) {
-         var2 = this.field_1396.getInsets();
-         class_137.field_1766 -= 1249721383 * (var2.right + var2.left);
-         class_58.field_460 -= (var2.bottom + var2.top) * -1394579951;
-      }
-
-      class_26 var10001 = new class_26(this);
-      this.field_1397 = var10001;
-      var1.setBackground(Color.BLACK);
-      var1.setLayout((LayoutManager)null);
-      var1.add(this.field_1397);
-      this.field_1397.setSize(class_137.field_1766 * 646214551, class_58.field_460 * -1538307343);
-      this.field_1397.setVisible(true);
-      this.field_1397.setBackground(Color.BLACK);
-      if(this.field_1396 == var1) {
-         var2 = this.field_1396.getInsets();
-         this.field_1397.setLocation(var2.left + -1437613301 * this.field_1390, this.field_1374 * -179382835 + var2.top);
-      } else {
-         this.field_1397.setLocation(this.field_1390 * -1437613301, this.field_1374 * -179382835);
-      }
-
-      this.field_1397.addFocusListener(this);
-      this.field_1397.requestFocus();
-      this.field_1409 = true;
-      if(class_126.field_1370 != null && -740510445 * class_126.field_1370.field_1816 == class_137.field_1766 * 646214551 && -1538307343 * class_58.field_460 == class_126.field_1370.field_1818 * 460788765) {
-         ((class_143)class_126.field_1370).method_3066(this.field_1397);
-         class_126.field_1370.method_3059(0, 0);
-      } else {
-         class_143 var10000 = new class_143(646214551 * class_137.field_1766, class_58.field_460 * -1538307343, this.field_1397);
-         class_126.field_1370 = var10000;
-      }
-
-      this.field_1376 = false;
-      this.field_1408 = class_87.method_1516((byte)1) * 1457858577470444969L;
-   }
-
    // $FF: renamed from: ae (int) void
    final void method_2312() {
       try {
@@ -744,7 +698,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             field_1378 = true;
 
             try {
-               this.field_1397.removeFocusListener(this);
+               this.canvas.removeFocusListener(this);
             } catch (Exception var6) {
                ;
             }
@@ -845,7 +799,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             this.field_1409 = true;
             if(class_87.method_1516((byte)1) - 8555805370222747289L * this.field_1408 > 1000L) {
                Rectangle var2 = var1.getClipBounds();
-               if(var2 == null || var2.width >= 646214551 * class_137.field_1766 && var2.height >= -1538307343 * class_58.field_460) {
+               if(var2 == null || var2.width >= 646214551 * class_137.canvasWidth && var2.height >= -1538307343 * class_58.canvasHeight) {
                   this.field_1376 = true;
                }
             }
@@ -879,19 +833,19 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             if(null != Connection.javaVendor) {
                String var1 = Connection.javaVendor.toLowerCase();
                if(var1.indexOf("sun") != -1 || var1.indexOf("apple") != -1) {
-                  String var2 = Connection.javaVersion;
-                  if(var2.equals("1.1") || var2.startsWith("1.1.") || var2.equals("1.2") || var2.startsWith("1.2.") || var2.equals("1.3") || var2.startsWith("1.3.") || var2.equals("1.4") || var2.startsWith("1.4.") || var2.equals("1.5") || var2.startsWith("1.5.") || var2.equals("1.6.0")) {
+                  String javaVersion = Connection.javaVersion;
+                  if(javaVersion.equals("1.1") || javaVersion.startsWith("1.1.") || javaVersion.equals("1.2") || javaVersion.startsWith("1.2.") || javaVersion.equals("1.3") || javaVersion.startsWith("1.3.") || javaVersion.equals("1.4") || javaVersion.startsWith("1.4.") || javaVersion.equals("1.5") || javaVersion.startsWith("1.5.") || javaVersion.equals("1.6.0")) {
                      this.showGameError("wrongjava", (byte)-1);
                      return;
                   }
 
-                  if(var2.startsWith("1.6.0_")) {
+                  if(javaVersion.startsWith("1.6.0_")) {
                      int var3;
-                     for(var3 = 6; var3 < var2.length() && class_184.method_3852(var2.charAt(var3), (byte)-13); ++var3) {
+                     for(var3 = 6; var3 < javaVersion.length() && class_184.method_3852(javaVersion.charAt(var3), (byte)-13); ++var3) {
                         ;
                      }
 
-                     String var4 = var2.substring(6, var3);
+                     String var4 = javaVersion.substring(6, var3);
                      if(class_52.method_575(var4) && class_168.method_3609(var4) < 10) {
                         this.showGameError("wrongjava", (byte)-1);
                         return;
@@ -925,7 +879,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                }
 
                this.method_2310((byte)-49);
-               this.method_2295(this.field_1397, (byte)104);
+               this.method_2295(this.canvas, (byte)104);
             }
          } catch (Exception var6) {
             class_308.method_5523((String)null, var6, 2070444539);
@@ -987,9 +941,9 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    }
 
    // $FF: renamed from: u (byte) void
-   protected final void method_2317() {
+   protected final void addMouseListeners() {
       try {
-         Canvas var2 = this.field_1397;
+         Canvas var2 = this.canvas;
          var2.addMouseListener(GameMouseListener.instance);
          var2.addMouseMotionListener(GameMouseListener.instance);
          var2.addFocusListener(GameMouseListener.instance);
@@ -1011,14 +965,14 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    protected final void drawBootstrapScreen(int var1, String var2, boolean var3, int var4) {
       try {
          try {
-            Graphics var5 = this.field_1397.getGraphics();
+            Graphics var5 = this.canvas.getGraphics();
             if(class_83.field_780 == null) {
                if(var4 != 91092739) {
                   throw new IllegalStateException();
                }
 
                class_83.field_780 = new Font("Helvetica", 1, 13);
-               class_349.field_3938 = this.field_1397.getFontMetrics(class_83.field_780);
+               class_349.field_3938 = this.canvas.getFontMetrics(class_83.field_780);
             }
 
             if(var3) {
@@ -1027,14 +981,14 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                }
 
                var5.setColor(Color.black);
-               var5.fillRect(0, 0, 646214551 * class_137.field_1766, class_58.field_460 * -1538307343);
+               var5.fillRect(0, 0, 646214551 * class_137.canvasWidth, class_58.canvasHeight * -1538307343);
             }
 
             Color var6 = new Color(140, 17, 17);
 
             try {
                if(progressBar == null) {
-                  progressBar = this.field_1397.createImage(304, 34);
+                  progressBar = this.canvas.createImage(304, 34);
                }
 
                Graphics var7 = progressBar.getGraphics();
@@ -1047,10 +1001,10 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                var7.setFont(class_83.field_780);
                var7.setColor(Color.white);
                var7.drawString(var2, (304 - class_349.field_3938.stringWidth(var2)) / 2, 22);
-               var5.drawImage(progressBar, 646214551 * class_137.field_1766 / 2 - 152, class_58.field_460 * -1538307343 / 2 - 18, (ImageObserver)null);
+               var5.drawImage(progressBar, 646214551 * class_137.canvasWidth / 2 - 152, class_58.canvasHeight * -1538307343 / 2 - 18, (ImageObserver)null);
             } catch (Exception var10) {
-               int var8 = class_137.field_1766 * 646214551 / 2 - 152;
-               int var9 = class_58.field_460 * -1538307343 / 2 - 18;
+               int var8 = class_137.canvasWidth * 646214551 / 2 - 152;
+               int var9 = class_58.canvasHeight * -1538307343 / 2 - 18;
                var5.setColor(var6);
                var5.drawRect(var8, var9, 303, 33);
                var5.fillRect(var8 + 2, var9 + 2, var1 * 3, 30);
@@ -1062,7 +1016,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                var5.drawString(var2, var8 + (304 - class_349.field_3938.stringWidth(var2)) / 2, var9 + 22);
             }
          } catch (Exception var11) {
-            this.field_1397.repaint();
+            this.canvas.repaint();
          }
 
       } catch (RuntimeException var12) {
@@ -1208,18 +1162,18 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             this.field_1389 = -1130359387;
          }
 
-         class_137.field_1766 = Math.min(this.field_1404 * -1091351445, this.field_1394 * 59571423) * -1736652606;
-         class_58.field_460 = Math.min(this.field_1389 * 975696603, this.field_1384 * -45318295) * 1042785380;
-         this.field_1390 = (this.field_1404 * 634137331 - class_137.field_1766 * -1320700608) / 2 * 182874275;
-         this.field_1374 = 0;
-         this.field_1397.setSize(-1597247435 * class_137.field_1766, class_58.field_460 * -1538307343);
-         class_143 var10000 = new class_143(class_137.field_1766 * -734029269, -1037294039 * class_58.field_460, this.field_1397);
+         class_137.canvasWidth = Math.min(this.field_1404 * -1091351445, this.field_1394 * 59571423) * -1736652606;
+         class_58.canvasHeight = Math.min(this.field_1389 * 975696603, this.field_1384 * -45318295) * 1042785380;
+         this.canvasX = (this.field_1404 * 634137331 - class_137.canvasWidth * -1320700608) / 2 * 182874275;
+         this.canvasY = 0;
+         this.canvas.setSize(-1597247435 * class_137.canvasWidth, class_58.canvasHeight * -1538307343);
+         class_143 var10000 = new class_143(class_137.canvasWidth * -734029269, -1037294039 * class_58.canvasHeight, this.canvas);
          class_126.field_1370 = var10000;
          if(this.field_1396 == var1) {
             Insets var3 = this.field_1396.getInsets();
-            this.field_1397.setLocation(var3.left + 1945507136 * this.field_1390, this.field_1374 * 1710890974 + var3.top);
+            this.canvas.setLocation(var3.left + 1945507136 * this.canvasX, this.canvasY * 1710890974 + var3.top);
          } else {
-            this.field_1397.setLocation(-1974672071 * this.field_1390, this.field_1374 * -179382835);
+            this.canvas.setLocation(-1974672071 * this.canvasX, this.canvasY * -179382835);
          }
 
          this.field_1409 = true;
@@ -1233,7 +1187,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
          this.field_1409 = true;
          if(class_87.method_1516((byte)1) - 8555805370222747289L * this.field_1408 > 1000L) {
             Rectangle var2 = var1.getClipBounds();
-            if(var2 == null || var2.width >= 646214551 * class_137.field_1766 && var2.height >= -1538307343 * class_58.field_460) {
+            if(var2 == null || var2.width >= 646214551 * class_137.canvasWidth && var2.height >= -1538307343 * class_58.canvasHeight) {
                this.field_1376 = true;
             }
          }
@@ -1253,7 +1207,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
          this.field_1409 = true;
          if(class_87.method_1516((byte)1) - 8555805370222747289L * this.field_1408 > 1000L) {
             Rectangle var2 = var1.getClipBounds();
-            if(var2 == null || var2.width >= 646214551 * class_137.field_1766 && var2.height >= -1538307343 * class_58.field_460) {
+            if(var2 == null || var2.width >= 646214551 * class_137.canvasWidth && var2.height >= -1538307343 * class_58.canvasHeight) {
                this.field_1376 = true;
             }
          }
@@ -1319,18 +1273,18 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
                this.field_1389 = -1130359387;
             }
 
-            class_137.field_1766 = Math.min(this.field_1404 * -1091351445, this.field_1394 * 59571423) * 1249721383;
-            class_58.field_460 = Math.min(this.field_1389 * -2128033235, this.field_1384 * -45318295) * -1394579951;
-            this.field_1390 = (this.field_1404 * -1091351445 - class_137.field_1766 * 646214551) / 2 * 182874275;
-            this.field_1374 = 0;
-            this.field_1397.setSize(646214551 * class_137.field_1766, class_58.field_460 * -1538307343);
-            class_143 var10000 = new class_143(class_137.field_1766 * 646214551, -1538307343 * class_58.field_460, this.field_1397);
+            class_137.canvasWidth = Math.min(this.field_1404 * -1091351445, this.field_1394 * 59571423) * 1249721383;
+            class_58.canvasHeight = Math.min(this.field_1389 * -2128033235, this.field_1384 * -45318295) * -1394579951;
+            this.canvasX = (this.field_1404 * -1091351445 - class_137.canvasWidth * 646214551) / 2 * 182874275;
+            this.canvasY = 0;
+            this.canvas.setSize(646214551 * class_137.canvasWidth, class_58.canvasHeight * -1538307343);
+            class_143 var10000 = new class_143(class_137.canvasWidth * 646214551, -1538307343 * class_58.canvasHeight, this.canvas);
             class_126.field_1370 = var10000;
             if(this.field_1396 == var2) {
                Insets var4 = this.field_1396.getInsets();
-               this.field_1397.setLocation(var4.left + -1437613301 * this.field_1390, this.field_1374 * -179382835 + var4.top);
+               this.canvas.setLocation(var4.left + -1437613301 * this.canvasX, this.canvasY * -179382835 + var4.top);
             } else {
-               this.field_1397.setLocation(-1437613301 * this.field_1390, this.field_1374 * -179382835);
+               this.canvas.setLocation(-1437613301 * this.canvasX, this.canvasY * -179382835);
             }
 
             this.field_1409 = true;
@@ -1348,8 +1302,8 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
    // $FF: renamed from: aw (java.lang.Object) void
    final void method_2344(Object var1) {
-      if(this.field_1402 != null) {
-         for(int var2 = 0; var2 < 50 && this.field_1402.peekEvent() != null; ++var2) {
+      if(this.eventQueue != null) {
+         for(int var2 = 0; var2 < 50 && this.eventQueue.peekEvent() != null; ++var2) {
             try {
                Thread.sleep(1L);
             } catch (InterruptedException var4) {
@@ -1358,7 +1312,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
          }
 
          if(null != var1) {
-            this.field_1402.postEvent(new ActionEvent(var1, 1001, "dummy"));
+            this.eventQueue.postEvent(new ActionEvent(var1, 1001, "dummy"));
          }
 
       }
@@ -1369,7 +1323,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       if(null == this.field_1411) {
          class_133 var10001 = new class_133();
          this.field_1411 = var10001;
-         this.field_1411.method_2911(this.field_1397);
+         this.field_1411.method_2911(this.canvas);
       }
 
       return this.field_1411;
@@ -1413,7 +1367,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
    // $FF: renamed from: bv () void
    protected final void method_2352() {
-      Canvas var1 = this.field_1397;
+      Canvas var1 = this.canvas;
       var1.addMouseListener(GameMouseListener.instance);
       var1.addMouseMotionListener(GameMouseListener.instance);
       var1.addFocusListener(GameMouseListener.instance);
@@ -1502,7 +1456,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
    // $FF: renamed from: bz () void
    protected final void method_2357() {
-      Canvas var1 = this.field_1397;
+      Canvas var1 = this.canvas;
       var1.addMouseListener(GameMouseListener.instance);
       var1.addMouseMotionListener(GameMouseListener.instance);
       var1.addFocusListener(GameMouseListener.instance);
@@ -1545,18 +1499,18 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             this.field_1389 = -1130359387;
          }
 
-         class_137.field_1766 = Math.min(this.field_1404 * -1091351445, this.field_1394 * -1452339372) * -1681032011;
-         class_58.field_460 = Math.min(this.field_1389 * 1348387333, this.field_1384 * -715252648) * -879615098;
-         this.field_1390 = (this.field_1404 * -1091351445 - class_137.field_1766 * -978954037) / 2 * 182874275;
-         this.field_1374 = 0;
-         this.field_1397.setSize(646214551 * class_137.field_1766, class_58.field_460 * -1207012468);
-         class_143 var10000 = new class_143(class_137.field_1766 * -1015788710, -514790564 * class_58.field_460, this.field_1397);
+         class_137.canvasWidth = Math.min(this.field_1404 * -1091351445, this.field_1394 * -1452339372) * -1681032011;
+         class_58.canvasHeight = Math.min(this.field_1389 * 1348387333, this.field_1384 * -715252648) * -879615098;
+         this.canvasX = (this.field_1404 * -1091351445 - class_137.canvasWidth * -978954037) / 2 * 182874275;
+         this.canvasY = 0;
+         this.canvas.setSize(646214551 * class_137.canvasWidth, class_58.canvasHeight * -1207012468);
+         class_143 var10000 = new class_143(class_137.canvasWidth * -1015788710, -514790564 * class_58.canvasHeight, this.canvas);
          class_126.field_1370 = var10000;
          if(this.field_1396 == var1) {
             Insets var3 = this.field_1396.getInsets();
-            this.field_1397.setLocation(var3.left + -1437613301 * this.field_1390, this.field_1374 * -1043059929 + var3.top);
+            this.canvas.setLocation(var3.left + -1437613301 * this.canvasX, this.canvasY * -1043059929 + var3.top);
          } else {
-            this.field_1397.setLocation(806893732 * this.field_1390, this.field_1374 * -179382835);
+            this.canvas.setLocation(806893732 * this.canvasX, this.canvasY * -179382835);
          }
 
          this.field_1409 = true;
@@ -1579,18 +1533,18 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             this.field_1389 = -1130359387;
          }
 
-         class_137.field_1766 = Math.min(this.field_1404 * -1091351445, this.field_1394 * 59571423) * 1249721383;
-         class_58.field_460 = Math.min(this.field_1389 * -2128033235, this.field_1384 * -45318295) * -1394579951;
-         this.field_1390 = (this.field_1404 * -1091351445 - class_137.field_1766 * 646214551) / 2 * 182874275;
-         this.field_1374 = 0;
-         this.field_1397.setSize(646214551 * class_137.field_1766, class_58.field_460 * -1538307343);
-         class_143 var10000 = new class_143(class_137.field_1766 * 646214551, -1538307343 * class_58.field_460, this.field_1397);
+         class_137.canvasWidth = Math.min(this.field_1404 * -1091351445, this.field_1394 * 59571423) * 1249721383;
+         class_58.canvasHeight = Math.min(this.field_1389 * -2128033235, this.field_1384 * -45318295) * -1394579951;
+         this.canvasX = (this.field_1404 * -1091351445 - class_137.canvasWidth * 646214551) / 2 * 182874275;
+         this.canvasY = 0;
+         this.canvas.setSize(646214551 * class_137.canvasWidth, class_58.canvasHeight * -1538307343);
+         class_143 var10000 = new class_143(class_137.canvasWidth * 646214551, -1538307343 * class_58.canvasHeight, this.canvas);
          class_126.field_1370 = var10000;
          if(this.field_1396 == var1) {
             Insets var3 = this.field_1396.getInsets();
-            this.field_1397.setLocation(var3.left + -1437613301 * this.field_1390, this.field_1374 * -179382835 + var3.top);
+            this.canvas.setLocation(var3.left + -1437613301 * this.canvasX, this.canvasY * -179382835 + var3.top);
          } else {
-            this.field_1397.setLocation(-1437613301 * this.field_1390, this.field_1374 * -179382835);
+            this.canvas.setLocation(-1437613301 * this.canvasX, this.canvasY * -179382835);
          }
 
          this.field_1409 = true;
@@ -1648,10 +1602,10 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
    // $FF: renamed from: bx () void
    void method_2365() {
-      int var1 = -1437613301 * this.field_1390;
-      int var2 = -179382835 * this.field_1374;
-      int var3 = this.field_1404 * -1091351445 - 646214551 * class_137.field_1766 - var1;
-      int var4 = -2128033235 * this.field_1389 - -1538307343 * class_58.field_460 - var2;
+      int var1 = -1437613301 * this.canvasX;
+      int var2 = -179382835 * this.canvasY;
+      int var3 = this.field_1404 * -1091351445 - 646214551 * class_137.canvasWidth - var1;
+      int var4 = -2128033235 * this.field_1389 - -1538307343 * class_58.canvasHeight - var2;
       if(var1 > 0 || var3 > 0 || var2 > 0 || var4 > 0) {
          try {
             Container var5 = this.method_2325(1142166715);
@@ -1689,10 +1643,10 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
    // $FF: renamed from: bp () void
    void method_2366() {
-      int var1 = -455119970 * this.field_1390;
-      int var2 = -1464452260 * this.field_1374;
-      int var3 = this.field_1404 * 960591519 - 697497548 * class_137.field_1766 - var1;
-      int var4 = -2128033235 * this.field_1389 - -1312097346 * class_58.field_460 - var2;
+      int var1 = -455119970 * this.canvasX;
+      int var2 = -1464452260 * this.canvasY;
+      int var3 = this.field_1404 * 960591519 - 697497548 * class_137.canvasWidth - var1;
+      int var4 = -2128033235 * this.field_1389 - -1312097346 * class_58.canvasHeight - var2;
       if(var1 > 0 || var3 > 0 || var2 > 0 || var4 > 0) {
          try {
             Container var5 = this.method_2325(1142166715);
@@ -1730,24 +1684,24 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
    // $FF: renamed from: bn () void
    final void method_2367() {
-      class_154.method_3245(this.field_1397);
-      Canvas var1 = this.field_1397;
+      class_154.method_3245(this.canvas);
+      Canvas var1 = this.canvas;
       var1.removeMouseListener(GameMouseListener.instance);
       var1.removeMouseMotionListener(GameMouseListener.instance);
       var1.removeFocusListener(GameMouseListener.instance);
       GameMouseListener.buttonsPressed = 0;
       if(this.field_1411 != null) {
-         this.field_1411.method_2908(this.field_1397);
+         this.field_1411.method_2908(this.canvas);
       }
 
       this.method_2306(-270674896);
-      class_162.method_3417(this.field_1397);
-      Canvas var2 = this.field_1397;
+      class_162.initKeyboardListener(this.canvas);
+      Canvas var2 = this.canvas;
       var2.addMouseListener(GameMouseListener.instance);
       var2.addMouseMotionListener(GameMouseListener.instance);
       var2.addFocusListener(GameMouseListener.instance);
       if(this.field_1411 != null) {
-         this.field_1411.method_2911(this.field_1397);
+         this.field_1411.method_2911(this.canvas);
       }
 
       this.method_2312();
@@ -1758,8 +1712,8 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       super();
       try {
          this.field_1381 = false;
-         this.field_1390 = 0;
-         this.field_1374 = 0;
+         this.canvasX = 0;
+         this.canvasY = 0;
          this.field_1409 = true;
          this.field_1401 = false;
          this.field_1376 = false;
@@ -1772,7 +1726,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             ;
          }
 
-         this.field_1402 = var1;
+         this.eventQueue = var1;
          class_141 var10000 = new class_141();
          class_180.method_3820(var10000);
       } catch (RuntimeException var4) {
@@ -1782,8 +1736,8 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
    // $FF: renamed from: aq (java.lang.Object) void
    final void method_2369(Object var1) {
-      if(this.field_1402 != null) {
-         for(int var2 = 0; var2 < 50 && this.field_1402.peekEvent() != null; ++var2) {
+      if(this.eventQueue != null) {
+         for(int var2 = 0; var2 < 50 && this.eventQueue.peekEvent() != null; ++var2) {
             try {
                Thread.sleep(1L);
             } catch (InterruptedException var4) {
@@ -1792,7 +1746,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
          }
 
          if(null != var1) {
-            this.field_1402.postEvent(new ActionEvent(var1, 1001, "dummy"));
+            this.eventQueue.postEvent(new ActionEvent(var1, 1001, "dummy"));
          }
 
       }
@@ -1801,43 +1755,43 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: bi () void
    final synchronized void method_2370() {
       Container var1 = this.method_2325(1142166715);
-      if(this.field_1397 != null) {
-         this.field_1397.removeFocusListener(this);
-         var1.remove(this.field_1397);
+      if(this.canvas != null) {
+         this.canvas.removeFocusListener(this);
+         var1.remove(this.canvas);
       }
 
-      class_137.field_1766 = Math.max(var1.getWidth(), -405973523 * this.field_1395) * 1249721383;
-      class_58.field_460 = Math.max(var1.getHeight(), this.field_1393 * 707764166) * 1372046042;
+      class_137.canvasWidth = Math.max(var1.getWidth(), -405973523 * this.field_1395) * 1249721383;
+      class_58.canvasHeight = Math.max(var1.getHeight(), this.field_1393 * 707764166) * 1372046042;
       Insets var2;
       if(this.field_1396 != null) {
          var2 = this.field_1396.getInsets();
-         class_137.field_1766 -= -774967732 * (var2.right + var2.left);
-         class_58.field_460 -= (var2.bottom + var2.top) * 9233454;
+         class_137.canvasWidth -= -774967732 * (var2.right + var2.left);
+         class_58.canvasHeight -= (var2.bottom + var2.top) * 9233454;
       }
 
       class_26 var10001 = new class_26(this);
-      this.field_1397 = var10001;
+      this.canvas = var10001;
       var1.setBackground(Color.BLACK);
       var1.setLayout((LayoutManager)null);
-      var1.add(this.field_1397);
-      this.field_1397.setSize(class_137.field_1766 * 646214551, class_58.field_460 * -1538307343);
-      this.field_1397.setVisible(true);
-      this.field_1397.setBackground(Color.BLACK);
+      var1.add(this.canvas);
+      this.canvas.setSize(class_137.canvasWidth * 646214551, class_58.canvasHeight * -1538307343);
+      this.canvas.setVisible(true);
+      this.canvas.setBackground(Color.BLACK);
       if(this.field_1396 == var1) {
          var2 = this.field_1396.getInsets();
-         this.field_1397.setLocation(var2.left + -1437613301 * this.field_1390, this.field_1374 * -964863954 + var2.top);
+         this.canvas.setLocation(var2.left + -1437613301 * this.canvasX, this.canvasY * -964863954 + var2.top);
       } else {
-         this.field_1397.setLocation(this.field_1390 * -1437613301, this.field_1374 * 936848177);
+         this.canvas.setLocation(this.canvasX * -1437613301, this.canvasY * 936848177);
       }
 
-      this.field_1397.addFocusListener(this);
-      this.field_1397.requestFocus();
+      this.canvas.addFocusListener(this);
+      this.canvas.requestFocus();
       this.field_1409 = true;
-      if(class_126.field_1370 != null && -38164928 * class_126.field_1370.field_1816 == class_137.field_1766 * 646214551 && -1538307343 * class_58.field_460 == class_126.field_1370.field_1818 * -317262549) {
-         ((class_143)class_126.field_1370).method_3066(this.field_1397);
+      if(class_126.field_1370 != null && -38164928 * class_126.field_1370.field_1816 == class_137.canvasWidth * 646214551 && -1538307343 * class_58.canvasHeight == class_126.field_1370.field_1818 * -317262549) {
+         ((class_143)class_126.field_1370).method_3066(this.canvas);
          class_126.field_1370.method_3059(0, 0);
       } else {
-         class_143 var10000 = new class_143(1120109090 * class_137.field_1766, class_58.field_460 * -587809659, this.field_1397);
+         class_143 var10000 = new class_143(1120109090 * class_137.canvasWidth, class_58.canvasHeight * -587809659, this.canvas);
          class_126.field_1370 = var10000;
       }
 
@@ -1907,68 +1861,6 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       }
    }
 
-   // $FF: renamed from: by () void
-   public void method_2373() {
-      try {
-         if(null != Connection.javaVendor) {
-            String var1 = Connection.javaVendor.toLowerCase();
-            if(var1.indexOf("sun") != -1 || var1.indexOf("apple") != -1) {
-               String var2 = Connection.javaVersion;
-               if(var2.equals("1.1") || var2.startsWith("1.1.") || var2.equals("1.2") || var2.startsWith("1.2.") || var2.equals("1.3") || var2.startsWith("1.3.") || var2.equals("1.4") || var2.startsWith("1.4.") || var2.equals("1.5") || var2.startsWith("1.5.") || var2.equals("1.6.0")) {
-                  this.showGameError("wrongjava", (byte)-1);
-                  return;
-               }
-
-               if(var2.startsWith("1.6.0_")) {
-                  int var3;
-                  for(var3 = 6; var3 < var2.length() && class_184.method_3852(var2.charAt(var3), (byte)-128); ++var3) {
-                     ;
-                  }
-
-                  String var4 = var2.substring(6, var3);
-                  if(class_52.method_575(var4) && class_168.method_3609(var4) < 10) {
-                     this.showGameError("wrongjava", (byte)-1);
-                     return;
-                  }
-               }
-
-               field_1388 = 1525954742;
-            }
-         }
-
-         this.setFocusCycleRoot(true);
-         this.method_2306(-862310966);
-         this.method_2318(-232069568);
-
-         Object var7;
-         try {
-            class_193 var9 = new class_193();
-            var7 = var9;
-         } catch (Throwable var5) {
-            class_192 var10000 = new class_192();
-            var7 = var10000;
-         }
-
-         field_1383 = (class_191)var7;
-
-         while(0L == 3801980113368397719L * field_1377 || class_87.method_1516((byte)1) < 3801980113368397719L * field_1377) {
-            class_299.field_3366 = field_1383.method_3951(field_1380 * -796842912, -292863000 * field_1388, -1754240577) * -1805106898;
-
-            for(int var8 = 0; var8 < class_299.field_3366 * -422571580; ++var8) {
-               this.method_2309(-286617613);
-            }
-
-            this.method_2310((byte)-15);
-            this.method_2295(this.field_1397, (byte)115);
-         }
-      } catch (Exception var6) {
-         class_308.method_5523((String)null, var6, 1942525812);
-         this.showGameError("crash", (byte)-1);
-      }
-
-      this.method_2313(764127006);
-   }
-
    // $FF: renamed from: bc () void
    public void method_2374() {
       try {
@@ -2021,7 +1913,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             }
 
             this.method_2310((byte)-6);
-            this.method_2295(this.field_1397, (byte)72);
+            this.method_2295(this.canvas, (byte)72);
          }
       } catch (Exception var6) {
          class_308.method_5523((String)null, var6, 1872071416);
@@ -2054,13 +1946,13 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       if((field_1400 += -2109411912) * -680869274 - 1 > -1316753874) {
          field_1400 -= 50033206;
          this.field_1409 = true;
-         this.field_1397.setSize(class_137.field_1766 * 1905675324, class_58.field_460 * -1538307343);
-         this.field_1397.setVisible(true);
+         this.canvas.setSize(class_137.canvasWidth * 1905675324, class_58.canvasHeight * -1538307343);
+         this.canvas.setVisible(true);
          if(this.field_1396 == var1) {
             Insets var7 = this.field_1396.getInsets();
-            this.field_1397.setLocation(this.field_1390 * 1413610636 + var7.left, var7.top + -1641390218 * this.field_1374);
+            this.canvas.setLocation(this.canvasX * 1413610636 + var7.left, var7.top + -1641390218 * this.canvasY);
          } else {
-            this.field_1397.setLocation(-1437613301 * this.field_1390, this.field_1374 * -2126659940);
+            this.canvas.setLocation(-1437613301 * this.canvasX, this.canvasY * -2126659940);
          }
       }
 
@@ -2092,13 +1984,13 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       if((field_1400 += -943892141) * 53993890 - 1 > 50) {
          field_1400 -= 50033206;
          this.field_1409 = true;
-         this.field_1397.setSize(class_137.field_1766 * 646214551, class_58.field_460 * -1538307343);
-         this.field_1397.setVisible(true);
+         this.canvas.setSize(class_137.canvasWidth * 646214551, class_58.canvasHeight * -1538307343);
+         this.canvas.setVisible(true);
          if(this.field_1396 == var1) {
             Insets var7 = this.field_1396.getInsets();
-            this.field_1397.setLocation(this.field_1390 * 382422707 + var7.left, var7.top + 1759435648 * this.field_1374);
+            this.canvas.setLocation(this.canvasX * 382422707 + var7.left, var7.top + 1759435648 * this.canvasY);
          } else {
-            this.field_1397.setLocation(-144953211 * this.field_1390, this.field_1374 * -179382835);
+            this.canvas.setLocation(-144953211 * this.canvasX, this.canvasY * -179382835);
          }
       }
 
@@ -2130,13 +2022,13 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       if((field_1400 += -943892141) * 116937435 - 1 > 50) {
          field_1400 -= 50033206;
          this.field_1409 = true;
-         this.field_1397.setSize(class_137.field_1766 * 646214551, class_58.field_460 * -1538307343);
-         this.field_1397.setVisible(true);
+         this.canvas.setSize(class_137.canvasWidth * 646214551, class_58.canvasHeight * -1538307343);
+         this.canvas.setVisible(true);
          if(this.field_1396 == var1) {
             Insets var7 = this.field_1396.getInsets();
-            this.field_1397.setLocation(this.field_1390 * -1437613301 + var7.left, var7.top + -179382835 * this.field_1374);
+            this.canvas.setLocation(this.canvasX * -1437613301 + var7.left, var7.top + -179382835 * this.canvasY);
          } else {
-            this.field_1397.setLocation(-1437613301 * this.field_1390, this.field_1374 * -179382835);
+            this.canvas.setLocation(-1437613301 * this.canvasX, this.canvasY * -179382835);
          }
       }
 
@@ -2168,18 +2060,18 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             this.field_1389 = -1130359387;
          }
 
-         class_137.field_1766 = Math.min(this.field_1404 * -1091351445, this.field_1394 * -1734241603) * 432020363;
-         class_58.field_460 = Math.min(this.field_1389 * -2128033235, this.field_1384 * -45318295) * -1394579951;
-         this.field_1390 = (this.field_1404 * -1091351445 - class_137.field_1766 * 2036421293) / 2 * -1942847044;
-         this.field_1374 = 0;
-         this.field_1397.setSize(910962566 * class_137.field_1766, class_58.field_460 * -1538307343);
-         class_143 var10000 = new class_143(class_137.field_1766 * 1590030796, -1538307343 * class_58.field_460, this.field_1397);
+         class_137.canvasWidth = Math.min(this.field_1404 * -1091351445, this.field_1394 * -1734241603) * 432020363;
+         class_58.canvasHeight = Math.min(this.field_1389 * -2128033235, this.field_1384 * -45318295) * -1394579951;
+         this.canvasX = (this.field_1404 * -1091351445 - class_137.canvasWidth * 2036421293) / 2 * -1942847044;
+         this.canvasY = 0;
+         this.canvas.setSize(910962566 * class_137.canvasWidth, class_58.canvasHeight * -1538307343);
+         class_143 var10000 = new class_143(class_137.canvasWidth * 1590030796, -1538307343 * class_58.canvasHeight, this.canvas);
          class_126.field_1370 = var10000;
          if(this.field_1396 == var1) {
             Insets var3 = this.field_1396.getInsets();
-            this.field_1397.setLocation(var3.left + -1437613301 * this.field_1390, this.field_1374 * -179382835 + var3.top);
+            this.canvas.setLocation(var3.left + -1437613301 * this.canvasX, this.canvasY * -179382835 + var3.top);
          } else {
-            this.field_1397.setLocation(-220133251 * this.field_1390, this.field_1374 * -179382835);
+            this.canvas.setLocation(-220133251 * this.canvasX, this.canvasY * -179382835);
          }
 
          this.field_1409 = true;
@@ -2226,7 +2118,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
          field_1378 = true;
 
          try {
-            this.field_1397.removeFocusListener(this);
+            this.canvas.removeFocusListener(this);
          } catch (Exception var5) {
             ;
          }
@@ -2263,7 +2155,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
          field_1378 = true;
 
          try {
-            this.field_1397.removeFocusListener(this);
+            this.canvas.removeFocusListener(this);
          } catch (Exception var5) {
             ;
          }
@@ -2300,7 +2192,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
          field_1378 = true;
 
          try {
-            this.field_1397.removeFocusListener(this);
+            this.canvas.removeFocusListener(this);
          } catch (Exception var5) {
             ;
          }
@@ -2333,7 +2225,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
 
    // $FF: renamed from: bm () void
    protected final void method_2386() {
-      Canvas var1 = this.field_1397;
+      Canvas var1 = this.canvas;
       var1.addMouseListener(GameMouseListener.instance);
       var1.addMouseMotionListener(GameMouseListener.instance);
       var1.addFocusListener(GameMouseListener.instance);
@@ -2472,13 +2364,13 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
       if((field_1400 += -943892141) * 116937435 - 1 > 50) {
          field_1400 -= 50033206;
          this.field_1409 = true;
-         this.field_1397.setSize(class_137.field_1766 * 646214551, class_58.field_460 * -1538307343);
-         this.field_1397.setVisible(true);
+         this.canvas.setSize(class_137.canvasWidth * 646214551, class_58.canvasHeight * -1538307343);
+         this.canvas.setVisible(true);
          if(this.field_1396 == var1) {
             Insets var7 = this.field_1396.getInsets();
-            this.field_1397.setLocation(this.field_1390 * -1437613301 + var7.left, var7.top + -179382835 * this.field_1374);
+            this.canvas.setLocation(this.canvasX * -1437613301 + var7.left, var7.top + -179382835 * this.canvasY);
          } else {
-            this.field_1397.setLocation(-1437613301 * this.field_1390, this.field_1374 * -179382835);
+            this.canvas.setLocation(-1437613301 * this.canvasX, this.canvasY * -179382835);
          }
       }
 
@@ -2512,7 +2404,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
          this.field_1409 = true;
          if(class_87.method_1516((byte)1) - 8555805370222747289L * this.field_1408 > 1000L) {
             Rectangle var2 = var1.getClipBounds();
-            if(var2 == null || var2.width >= 646214551 * class_137.field_1766 && var2.height >= -1538307343 * class_58.field_460) {
+            if(var2 == null || var2.width >= 646214551 * class_137.canvasWidth && var2.height >= -1538307343 * class_58.canvasHeight) {
                this.field_1376 = true;
             }
          }
@@ -2594,22 +2486,22 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: de (int, java.lang.String, boolean) void
    protected final void method_2422(int var1, String var2, boolean var3) {
       try {
-         Graphics var4 = this.field_1397.getGraphics();
+         Graphics var4 = this.canvas.getGraphics();
          if(class_83.field_780 == null) {
             class_83.field_780 = new Font("Helvetica", 1, 13);
-            class_349.field_3938 = this.field_1397.getFontMetrics(class_83.field_780);
+            class_349.field_3938 = this.canvas.getFontMetrics(class_83.field_780);
          }
 
          if(var3) {
             var4.setColor(Color.black);
-            var4.fillRect(0, 0, 646214551 * class_137.field_1766, class_58.field_460 * -675589112);
+            var4.fillRect(0, 0, 646214551 * class_137.canvasWidth, class_58.canvasHeight * -675589112);
          }
 
          Color var5 = new Color(140, 17, 17);
 
          try {
             if(progressBar == null) {
-               progressBar = this.field_1397.createImage(304, 34);
+               progressBar = this.canvas.createImage(304, 34);
             }
 
             Graphics var6 = progressBar.getGraphics();
@@ -2622,10 +2514,10 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             var6.setFont(class_83.field_780);
             var6.setColor(Color.white);
             var6.drawString(var2, (-1787750115 - class_349.field_3938.stringWidth(var2)) / 2, 22);
-            var4.drawImage(progressBar, 646214551 * class_137.field_1766 / 2 - 152, class_58.field_460 * -1538307343 / 2 - 18, (ImageObserver)null);
+            var4.drawImage(progressBar, 646214551 * class_137.canvasWidth / 2 - 152, class_58.canvasHeight * -1538307343 / 2 - 18, (ImageObserver)null);
          } catch (Exception var9) {
-            int var7 = class_137.field_1766 * 646214551 / 2 - 1954650480;
-            int var8 = class_58.field_460 * -1538307343 / 2 - 18;
+            int var7 = class_137.canvasWidth * 646214551 / 2 - 1954650480;
+            int var8 = class_58.canvasHeight * -1538307343 / 2 - 18;
             var4.setColor(var5);
             var4.drawRect(var7, var8, -1782561951, -1323140454);
             var4.fillRect(var7 + 2, var8 + 2, var1 * 3, 30);
@@ -2637,7 +2529,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             var4.drawString(var2, var7 + (304 - class_349.field_3938.stringWidth(var2)) / 2, var8 + 22);
          }
       } catch (Exception var10) {
-         this.field_1397.repaint();
+         this.canvas.repaint();
       }
 
    }
@@ -2693,22 +2585,22 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: dp (int, java.lang.String, boolean) void
    protected final void method_2429(int var1, String var2, boolean var3) {
       try {
-         Graphics var4 = this.field_1397.getGraphics();
+         Graphics var4 = this.canvas.getGraphics();
          if(class_83.field_780 == null) {
             class_83.field_780 = new Font("Helvetica", 1, 13);
-            class_349.field_3938 = this.field_1397.getFontMetrics(class_83.field_780);
+            class_349.field_3938 = this.canvas.getFontMetrics(class_83.field_780);
          }
 
          if(var3) {
             var4.setColor(Color.black);
-            var4.fillRect(0, 0, 646214551 * class_137.field_1766, class_58.field_460 * -1665738637);
+            var4.fillRect(0, 0, 646214551 * class_137.canvasWidth, class_58.canvasHeight * -1665738637);
          }
 
          Color var5 = new Color(140, 17, 17);
 
          try {
             if(progressBar == null) {
-               progressBar = this.field_1397.createImage(-1398851682, 1673405168);
+               progressBar = this.canvas.createImage(-1398851682, 1673405168);
             }
 
             Graphics var6 = progressBar.getGraphics();
@@ -2721,10 +2613,10 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             var6.setFont(class_83.field_780);
             var6.setColor(Color.white);
             var6.drawString(var2, (304 - class_349.field_3938.stringWidth(var2)) / 2, 22);
-            var4.drawImage(progressBar, 719180240 * class_137.field_1766 / 2 - 152, class_58.field_460 * 2105862257 / 2 - 18, (ImageObserver)null);
+            var4.drawImage(progressBar, 719180240 * class_137.canvasWidth / 2 - 152, class_58.canvasHeight * 2105862257 / 2 - 18, (ImageObserver)null);
          } catch (Exception var9) {
-            int var7 = class_137.field_1766 * -463745456 / 2 - 152;
-            int var8 = class_58.field_460 * -1538307343 / 2 - 18;
+            int var7 = class_137.canvasWidth * -463745456 / 2 - 152;
+            int var8 = class_58.canvasHeight * -1538307343 / 2 - 18;
             var4.setColor(var5);
             var4.drawRect(var7, var8, -336471142, 33);
             var4.fillRect(var7 + 2, var8 + 2, var1 * 3, 30);
@@ -2736,7 +2628,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
             var4.drawString(var2, var7 + (-822245966 - class_349.field_3938.stringWidth(var2)) / 2, var8 + 22);
          }
       } catch (Exception var10) {
-         this.field_1397.repaint();
+         this.canvas.repaint();
       }
 
    }
@@ -2759,7 +2651,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: bl () void
    protected final void method_2431() {
       class_287.method_5276(754026835);
-      class_162.method_3417(this.field_1397);
+      class_162.initKeyboardListener(this.canvas);
    }
 
    // $FF: renamed from: ex () li
@@ -2893,7 +2785,7 @@ public abstract class GameApplet extends Applet implements Runnable, FocusListen
    // $FF: renamed from: bu () void
    protected final void method_2442() {
       class_287.method_5276(754026835);
-      class_162.method_3417(this.field_1397);
+      class_162.initKeyboardListener(this.canvas);
    }
 
    // $FF: renamed from: v (java.awt.Graphics) void

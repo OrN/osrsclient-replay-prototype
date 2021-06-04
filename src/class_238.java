@@ -136,8 +136,8 @@ public class class_238 implements class_14 {
 
          class_40 var4 = class_112.newPacket(ClientOpcode.OPCODE_90, client.field_1463.isaac, (byte)8);
          var4.networkBuffer.writeByte(class_78.method_1223(702215999));
-         var4.networkBuffer.writeShortReverse(646214551 * class_137.field_1766);
-         var4.networkBuffer.writeShortReverse(-1538307343 * class_58.field_460);
+         var4.networkBuffer.writeShortReverse(646214551 * class_137.canvasWidth);
+         var4.networkBuffer.writeShortReverse(-1538307343 * class_58.canvasHeight);
          client.field_1463.method_4079(var4);
       } catch (RuntimeException var3) {
          throw class_223.method_4281(var3);

@@ -23,11 +23,11 @@ public class Connection implements Runnable {
 
    // $FF: renamed from: d (java.lang.String, int) eu
    public final HostData method_4055(String var1, int var2) {
-      return this.setRunnable(1, var2, var1, 943820878);
+      return this.setHostData(1, var2, var1, 943820878);
    }
 
    // $FF: renamed from: n (int, int, int, java.lang.Object, int) eu
-   final HostData setRunnable(int var1, int port, Object runnable, int var5) {
+   final HostData setHostData(int var1, int port, Object runnable, int var5) {
       try {
          HostData var10000 = new HostData();
          HostData var6 = var10000;
@@ -57,16 +57,16 @@ public class Connection implements Runnable {
    // $FF: renamed from: f (java.lang.String, int, byte) eu
    public final HostData connect(String var1, int var2) {
       try {
-         return this.setRunnable(1, var2, var1, 2094219759);
+         return this.setHostData(1, var2, var1, 2094219759);
       } catch (RuntimeException var4) {
          throw class_223.method_4281(var4);
       }
    }
 
    // $FF: renamed from: y (java.lang.Runnable, int, byte) eu
-   public final HostData method_4058(Runnable var1, int var2) {
+   public final HostData setRunnable(Runnable var1, int var2) {
       try {
-         return this.setRunnable(2, var2, var1, -46619903);
+         return this.setHostData(2, var2, var1, -46619903);
       } catch (RuntimeException var4) {
          throw class_223.method_4281(var4);
       }
@@ -185,12 +185,12 @@ public class Connection implements Runnable {
 
    // $FF: renamed from: l (java.lang.String, int) eu
    public final HostData method_4064(String var1, int var2) {
-      return this.setRunnable(1, var2, var1, 1664192045);
+      return this.setHostData(1, var2, var1, 1664192045);
    }
 
    // $FF: renamed from: s (java.lang.String, int) eu
    public final HostData method_4065(String var1, int var2) {
-      return this.setRunnable(1, var2, var1, 1591396315);
+      return this.setHostData(1, var2, var1, 1591396315);
    }
 
    // $FF: renamed from: <init> () void
@@ -241,16 +241,16 @@ public class Connection implements Runnable {
 
    // $FF: renamed from: o (java.lang.Runnable, int) eu
    public final HostData method_4068(Runnable var1, int var2) {
-      return this.setRunnable(2, var2, var1, 621516851);
+      return this.setHostData(2, var2, var1, 621516851);
    }
 
    // $FF: renamed from: c (java.lang.Runnable, int) eu
    public final HostData method_4069(Runnable var1, int var2) {
-      return this.setRunnable(2, var2, var1, -1981665603);
+      return this.setHostData(2, var2, var1, -1981665603);
    }
 
    // $FF: renamed from: u (java.lang.String, int) eu
    public final HostData method_4070(String var1, int var2) {
-      return this.setRunnable(1, var2, var1, -925684790);
+      return this.setHostData(1, var2, var1, -925684790);
    }
 }

@@ -903,8 +903,8 @@ public class class_240 {
 
             class_40 var2 = class_112.newPacket(ClientOpcode.OPCODE_90, client.field_1463.isaac, (byte)8);
             var2.networkBuffer.writeByte(class_78.method_1223(702215999));
-            var2.networkBuffer.writeShortReverse(class_137.field_1766 * 646214551);
-            var2.networkBuffer.writeShortReverse(class_58.field_460 * -1538307343);
+            var2.networkBuffer.writeShortReverse(class_137.canvasWidth * 646214551);
+            var2.networkBuffer.writeShortReverse(class_58.canvasHeight * -1538307343);
             client.field_1463.method_4079(var2);
          }
 
