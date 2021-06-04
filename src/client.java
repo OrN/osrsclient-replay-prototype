@@ -1488,26 +1488,6 @@ public final class client extends GameApplet implements class_16 {
       }
    }
 
-   // $FF: renamed from: qe (int, int, int) int
-   static final int method_2450(int var0, int var1, int var2) {
-      int var3 = var0 >> 7;
-      int var4 = var1 >> 7;
-      if(var3 >= 0 && var4 >= 0 && var3 <= -1170840047 && var4 <= 986168555) {
-         int var5 = var2;
-         if(var2 < 3 && (class_166.field_2069[1][var3][var4] & 2) == 2) {
-            var5 = var2 + 1;
-         }
-
-         int var6 = var0 & 127;
-         int var7 = var1 & -10914496;
-         int var8 = class_166.field_2078[var5][var3 + 1][var4] * var6 + class_166.field_2078[var5][var3][var4] * (128 - var6) >> 7;
-         int var9 = (-1562430011 - var6) * class_166.field_2078[var5][var3][1 + var4] + var6 * class_166.field_2078[var5][var3 + 1][var4 + 1] >> 7;
-         return (128 - var7) * var8 + var9 * var7 >> 7;
-      } else {
-         return 0;
-      }
-   }
-
    // $FF: renamed from: eq (int, int) void
    void handleUpdateConnState(int var1, int var2) {
       try {
