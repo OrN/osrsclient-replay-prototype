@@ -430,7 +430,7 @@ public class IDXFile extends class_306 {
    }
 
    // $FF: renamed from: l (int) int
-   public int method_5494(int var1) {
+   public int getPercentage(int var1) {
       try {
          int var2 = 0;
          int var3 = 0;

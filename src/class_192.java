@@ -590,7 +590,7 @@ public class class_192 extends class_191 {
                      if(var0 == 0) {
                         throw new IllegalStateException();
                      } else {
-                        class_177.loadProgressText = class_305.field_3426 + class_123.idx2.method_5494(-1371864603) + "%";
+                        class_177.loadProgressText = class_305.strLoadingConfig + class_123.idx2.getPercentage(-1371864603) + "%";
                         class_177.field_2190 = -819505252;
                      }
                   } else {
@@ -857,20 +857,20 @@ public class class_192 extends class_191 {
                } else if(client.field_1444 * -1127540073 == 130) {
                   if(var0 != 0) {
                      if(!class_44.idx3.method_5423(2083077757)) {
-                        class_177.loadProgressText = class_305.field_3699 + class_44.idx3.method_5494(-1371864603) * 4 / 5 + "%";
+                        class_177.loadProgressText = class_305.field_3699 + class_44.idx3.getPercentage(-1371864603) * 4 / 5 + "%";
                         class_177.field_2190 = -452214944;
                      } else if(!class_189.idx12.method_5423(2142216639)) {
                         if(var0 == 0) {
                            throw new IllegalStateException();
                         } else {
-                           class_177.loadProgressText = class_305.field_3699 + (80 + class_189.idx12.method_5494(-1371864603) / 6) + "%";
+                           class_177.loadProgressText = class_305.field_3699 + (80 + class_189.idx12.getPercentage(-1371864603) / 6) + "%";
                            class_177.field_2190 = -452214944;
                         }
                      } else if(!class_148.idx13.method_5423(2052891340)) {
                         if(var0 == 0) {
                            throw new IllegalStateException();
                         } else {
-                           class_177.loadProgressText = class_305.field_3699 + (96 + class_148.idx13.method_5494(-1371864603) / 50) + "%";
+                           class_177.loadProgressText = class_305.field_3699 + (96 + class_148.idx13.getPercentage(-1371864603) / 50) + "%";
                            class_177.field_2190 = -452214944;
                         }
                      } else {

@@ -51,7 +51,7 @@ public class class_305 {
    // $FF: renamed from: h java.lang.String
    public static String field_3425;
    // $FF: renamed from: q java.lang.String
-   public static String field_3426;
+   public static String strLoadingConfig;
    // $FF: renamed from: i java.lang.String
    public static String field_3427;
    // $FF: renamed from: gu java.lang.String
@@ -861,7 +861,7 @@ public class class_305 {
       field_3423 = "Loaded fonts";
       field_3501 = "Loading title screen - ";
       field_3425 = "Loaded title screen";
-      field_3426 = "Loading config - ";
+      strLoadingConfig = "Loading config - ";
       field_3427 = "Loaded config";
       field_3498 = "Loading sprites - ";
       strLoadingSprites = "Loaded sprites";

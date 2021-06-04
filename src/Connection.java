@@ -9,7 +9,7 @@ public class Connection implements Runnable {
    // $FF: renamed from: n java.lang.String
    public static String javaVersion;
    // $FF: renamed from: f eu
-   HostData field_2354;
+   HostData hostData;
    // $FF: renamed from: p java.lang.Thread
    Thread thread;
    // $FF: renamed from: y eu
@@ -43,7 +43,7 @@ public class Connection implements Runnable {
                this.field_2357.field_2453 = var6;
                this.field_2357 = var6;
             } else {
-               this.field_2357 = this.field_2354 = var6;
+               this.field_2357 = this.hostData = var6;
             }
 
             this.notify();
@@ -82,10 +82,10 @@ public class Connection implements Runnable {
                      return;
                   }
 
-                  if(this.field_2354 != null) {
-                     var1 = this.field_2354;
-                     this.field_2354 = this.field_2354.field_2453;
-                     if(this.field_2354 == null) {
+                  if(this.hostData != null) {
+                     var1 = this.hostData;
+                     this.hostData = this.hostData.field_2453;
+                     if(this.hostData == null) {
                         this.field_2357 = null;
                      }
                      break;
@@ -197,7 +197,7 @@ public class Connection implements Runnable {
    public Connection() {
       super();
       try {
-         this.field_2354 = null;
+         this.hostData = null;
          this.field_2357 = null;
          this.field_2358 = false;
          javaVendor = "Unknown";
